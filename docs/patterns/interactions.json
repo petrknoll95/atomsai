@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-26T11:31:34.257Z",
+  "base": "http://127.0.0.1:3001",
+  "results": [
+    {
+      "engine": "chromium",
+      "checks": [
+        "Count changes pixels",
+        "Concentric source and inferred counts change geometry",
+        "Palette changes pixels",
+        "Zoom and pan change pixels",
+        "Reset restores exact output",
+        "Idle canvas is static",
+        "No page overflow",
+        "Renderer works with all image requests blocked",
+        "Exact fixture origin and dimensions",
+        "WebGL context loss/restoration restores exact output"
+      ],
+      "widths": [
+        {
+          "viewport": 1440,
+          "scrollWidth": 1440
+        },
+        {
+          "viewport": 768,
+          "scrollWidth": 768
+        },
+        {
+          "viewport": 390,
+          "scrollWidth": 390
+        },
+        {
+          "viewport": 320,
+          "scrollWidth": 320
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "checks": [
+        "Count changes pixels",
+        "Concentric source and inferred counts change geometry",
+        "Palette changes pixels",
+        "Zoom and pan change pixels",
+        "Reset restores exact output",
+        "Idle canvas is static",
+        "No page overflow",
+        "Renderer works with all image requests blocked",
+        "Exact fixture origin and dimensions",
+        "WebGL context loss/restoration restores exact output"
+      ],
+      "widths": [
+        {
+          "viewport": 1440,
+          "scrollWidth": 1440
+        },
+        {
+          "viewport": 768,
+          "scrollWidth": 768
+        },
+        {
+          "viewport": 390,
+          "scrollWidth": 390
+        },
+        {
+          "viewport": 320,
+          "scrollWidth": 320
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

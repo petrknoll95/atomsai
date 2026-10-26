@@ -1,0 +1,7 @@
+/* Content is visible in server HTML and without JavaScript. Only the enhanced
+   scroll controller temporarily supplies opacity, never visibility or aria-hidden. */
+.scope { min-width: 0; }
+
+@media print, (prefers-reduced-motion: reduce) {
+  .scope :is(section, footer) { opacity: 1 !important; }
+}

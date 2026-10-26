@@ -1,0 +1,84 @@
+const imgUpperField = "https://www.figma.com/api/mcp/asset/19c173c3-9dd4-4c0a-8f80-9e58f27c5303.svg";
+const imgLowerField = "https://www.figma.com/api/mcp/asset/2fb6d84a-f90d-488c-ac6c-d5d8ae50de09.svg";
+const imgHighlight = "https://www.figma.com/api/mcp/asset/cb70f323-7b1e-4ab0-93dd-3b0ca1685b8a.svg";
+const imgReflection = "https://www.figma.com/api/mcp/asset/16006eaa-9d18-4584-aa50-62a7af20eed0.svg";
+
+export default function Faq() {
+  return (
+    <div className="bg-[var(--color-background,#10231e)] content-stretch flex flex-col items-start px-[var(--margin,48px)] py-[var(--calc(var(--spacing)*16),64px)] relative size-full" data-node-id="198:8125" data-name="FAQ">
+      <div className="bg-[var(--color-surface,#f6f1e8)] grid grid-cols-[repeat(2,minmax(0,1fr))] grid-rows-[repeat(1,fit-content(100%))] overflow-clip relative rounded-[var(--radius-4xl,32px)] shrink-0 w-full" data-node-id="198:8190" data-name="Applications">
+        <div className="[word-break:break-word] content-stretch flex flex-col font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] h-[400px] items-start justify-between justify-self-stretch leading-[0.95] not-italic p-[var(--calc(var(--spacing)*10),40px)] relative shrink-0 text-[length:var(--text-6xl,60px)] text-balance tracking-[-0.9px]" data-node-id="198:10236">
+          <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] min-w-full relative shrink-0 text-[color:var(--color-muted-foreground,#f6f1e8)] w-[min-content] whitespace-pre-wrap" data-node-id="198:8201">
+            {`Your competitors `}
+            <br aria-hidden />
+            are automating.
+          </p>
+          <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] h-[45px] relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] w-[1424px]" data-node-id="198:8553">
+            Are you?
+          </p>
+        </div>
+        <div className="content-stretch flex flex-col h-[400px] items-start justify-self-stretch p-[16px] relative shrink-0" data-node-id="198:10430">
+          <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-center justify-center min-h-px overflow-clip relative rounded-[var(--radius-2xl,16px)] w-full" data-node-id="198:10238">
+            <div className="-translate-y-1/2 absolute aspect-[720.0003051757812/720.000244140625] flex items-center justify-center left-0 right-0 top-1/2" data-node-id="198:8191" style={{ containerType: "size" }}>
+              <div className="-rotate-90 flex-none h-[100cqw] w-[100cqh]">
+                <div className="overflow-clip relative size-full" data-name="Pattern/Offset">
+                  <div className="absolute inset-0 overflow-clip" data-node-id="I198:8191;77:1664" data-name="Offset — editable masks">
+                    <div className="absolute bg-[var(----pattern-offset-base,#8c78b0)] inset-[-2.5%]" data-node-id="I198:8191;77:1665" data-name="base" />
+                    <div className="absolute inset-[-2.5%] overflow-clip" data-node-id="I198:8191;77:1666" data-name="Upper field">
+                      <div className="absolute bg-[var(----pattern-offset-upper-field,#8c78b0)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[840px_840px]" data-node-id="I198:8191;77:1688" style={{ maskImage: `url("${imgUpperField}")` }} data-name="upper-field" />
+                    </div>
+                    <div className="absolute inset-[-2.5%] overflow-clip" data-node-id="I198:8191;77:1689" data-name="Lower field">
+                      <div className="absolute bg-[var(----pattern-offset-lower-field,#f0ebf5)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[840px_840px]" data-node-id="I198:8191;77:1711" style={{ maskImage: `url("${imgLowerField}")` }} data-name="lower-field" />
+                    </div>
+                    <div className="absolute inset-[-2.5%] overflow-clip" data-node-id="I198:8191;77:1712" data-name="Highlight">
+                      <div className="absolute bg-[var(----pattern-offset-highlight,#8c78b0)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[840px_840px]" data-node-id="I198:8191;77:1734" style={{ maskImage: `url("${imgHighlight}")` }} data-name="highlight" />
+                    </div>
+                    <div className="absolute bg-black inset-[-2.5%] mix-blend-plus-lighter overflow-clip" data-node-id="I198:8191;77:1735" data-name="Reflection">
+                      <div className="absolute bg-[var(----pattern-offset-reflection,white)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[840px_840px]" data-node-id="I198:8191;77:1757" style={{ maskImage: `url("${imgReflection}")` }} data-name="reflection" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-[var(--color-primary,#f6f1e8)] content-stretch flex gap-[var(--calc(var(--spacing)*2),8px)] h-[56px] items-center justify-center px-[var(--calc(var(--spacing)*7),28px)] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="198:10441" data-name="Button/Large">
+              <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-primary-foreground,#27433b)] text-[length:var(--text-base,16px)] whitespace-nowrap" data-node-id="I198:10441;33:464" style={{ fontVariationSettings: '"ital" 100' }}>
+                Find your starting point
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Display/6xl: Font(family: "var(--font-display)", style: Regular, size: var(--text-6xl), weight: var(--font-weight-normal), lineHeight: 0.949999988079071, letterSpacing: -1.5), Label/base: Font(family: "var(--font-sans)", style: Regular, size: var(--text-base), weight: var(--font-weight-medium), lineHeight: 1.399999976158142, letterSpacing: 0).
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Density=2
+**Node ID:** 77:1663
+
+Editable offset interference pattern, rebuilt from brand master 1032:17492. Color carriers bind to pattern/offset/\* in Theme. Preserve aspect ratio: scale or crop, never stretch. Mask gradients define geometry and are intentionally not themed.
+
+## Pattern/Offset
+**Node ID:** 77:2805
+
+Theme-aware Offset pattern. Choose Density; inherit the containing frame’s Theme mode. Color variables: pattern/offset/\*. Density 0, 1, 2, 3 correspond to 5, 10, 20, 40 slits. Scale uniformly or crop inside a frame. Never stretch. Keep type in calm areas and use one pattern structure per composition. Masks remain grayscale; edit the bound color layers for color.
+
+## Button/Large
+**Node ID:** 33:624
+
+Pill button, Large: h-14 px-7 gap-2 text-base rounded-full font-medium. Styles — Primary: bg-primary text-primary-foreground. Secondary: bg-secondary text-secondary-foreground. Outline: border border-control-border text-foreground (hover/pressed: border-foreground). Ghost: text-foreground. Link: px-0 text-foreground, muted-foreground on hover and pressed. Never underlined. States — hover/pressed for filled and Ghost styles: state layer of the style’s foreground at var(--state-hover)/var(--state-pressed) (hover:bg-primary-hover etc.). Focus: outline-2 outline-offset-2 outline-ring. Disabled: opacity var(--state-disabled). Lead with an action icon, trail with a navigation arrow. Supported hosts: background and surface. State opacity is exported as percent / 100. Target active label contrast ≥4.8:1; focus outline must not be clipped. Outline stays transparent in every state: no background fill or state overlay. Hover and pressed use the border; focus retains the focus ring.
+
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

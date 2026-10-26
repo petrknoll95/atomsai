@@ -1,0 +1,49 @@
+{
+  "base": "http://127.0.0.1:3000",
+  "date": "2026-10-26T12:02:53.797Z",
+  "delay": 7000,
+  "results": [
+    {
+      "browser": "chromium",
+      "passed": true,
+      "checks": [
+        "timer-linked line fill",
+        "automatic next slide",
+        "last-to-first loop",
+        "hover does not interrupt",
+        "drag hold and release retain the clock",
+        "line navigation retains the clock",
+        "explicit pause/play control",
+        "focus does not interrupt",
+        "autoplay continues behind the story dialog",
+        "inactive slide inertness",
+        "dialog focus restoration",
+        "reduced motion",
+        "1200/768/390/320px overflow",
+        "horizontal drag at 390px"
+      ],
+      "errors": []
+    },
+    {
+      "browser": "webkit",
+      "passed": true,
+      "checks": [
+        "timer-linked line fill",
+        "automatic next slide",
+        "last-to-first loop",
+        "hover does not interrupt",
+        "drag hold and release retain the clock",
+        "line navigation retains the clock",
+        "explicit pause/play control",
+        "focus does not interrupt",
+        "autoplay continues behind the story dialog",
+        "inactive slide inertness",
+        "dialog focus restoration",
+        "reduced motion",
+        "1200/768/390/320px overflow",
+        "horizontal drag at 390px"
+      ],
+      "errors": []
+    }
+  ]
+}

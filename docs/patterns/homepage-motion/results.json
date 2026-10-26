@@ -1,0 +1,243 @@
+{
+  "date": "2026-10-26T16:17:18.747Z",
+  "results": [
+    {
+      "name": "chromium",
+      "width": 390,
+      "placements": [
+        {
+          "application": "offerings-drift",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "offerings-concentric",
+          "motion": "ripple",
+          "animates": true
+        },
+        {
+          "application": "offerings-band",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "applications-drift",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "applications-band",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "applications-concentric",
+          "motion": "ripple",
+          "animates": true
+        },
+        {
+          "application": "applications-offset",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "preview-drift",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "preview-concentric",
+          "motion": "ripple",
+          "animates": true
+        },
+        {
+          "application": "cta-pattern",
+          "motion": "tide",
+          "animates": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "chromium",
+      "width": 1600,
+      "placements": [
+        {
+          "application": "offerings-drift",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "offerings-concentric",
+          "motion": "ripple",
+          "animates": true
+        },
+        {
+          "application": "offerings-band",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "applications-drift",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "applications-band",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "applications-concentric",
+          "motion": "ripple",
+          "animates": true
+        },
+        {
+          "application": "applications-offset",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "preview-drift",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "preview-concentric",
+          "motion": "ripple",
+          "animates": true
+        },
+        {
+          "application": "cta-pattern",
+          "motion": "tide",
+          "animates": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "webkit",
+      "width": 1600,
+      "placements": [
+        {
+          "application": "offerings-drift",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "offerings-concentric",
+          "motion": "ripple",
+          "animates": true
+        },
+        {
+          "application": "offerings-band",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "applications-drift",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "applications-band",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "applications-concentric",
+          "motion": "ripple",
+          "animates": true
+        },
+        {
+          "application": "applications-offset",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "preview-drift",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "preview-concentric",
+          "motion": "ripple",
+          "animates": true
+        },
+        {
+          "application": "preview-concentric",
+          "motion": "ripple",
+          "animates": true
+        },
+        {
+          "application": "cta-pattern",
+          "motion": "tide",
+          "animates": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "webkit",
+      "width": 390,
+      "placements": [
+        {
+          "application": "offerings-drift",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "offerings-concentric",
+          "motion": "ripple",
+          "animates": true
+        },
+        {
+          "application": "offerings-band",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "applications-drift",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "applications-band",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "applications-concentric",
+          "motion": "ripple",
+          "animates": true
+        },
+        {
+          "application": "applications-offset",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "preview-drift",
+          "motion": "tide",
+          "animates": true
+        },
+        {
+          "application": "preview-concentric",
+          "motion": "ripple",
+          "animates": true
+        },
+        {
+          "application": "preview-concentric",
+          "motion": "ripple",
+          "animates": true
+        },
+        {
+          "application": "cta-pattern",
+          "motion": "tide",
+          "animates": true
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

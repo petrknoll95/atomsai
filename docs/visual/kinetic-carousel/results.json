@@ -1,0 +1,282 @@
+{
+  "date": "2026-10-26T10:54:07.830Z",
+  "source": "186:4407",
+  "sourceDiameter": 669.0908813476562,
+  "sourceWindowRatios": [
+    0.2,
+    0.4,
+    1,
+    0.4,
+    0.2
+  ],
+  "gap": 8,
+  "frames": [
+    {
+      "samples": 83,
+      "distinctMasks": 79,
+      "maxDiameterChange": 0.0001220703125
+    }
+  ],
+  "results": [
+    {
+      "engine": "Chromium",
+      "width": 1600,
+      "pageWidth": 1600,
+      "circles": [
+        {
+          "width": 669.078125,
+          "height": 669.078125
+        },
+        {
+          "width": 669.078125,
+          "height": 669.078125
+        },
+        {
+          "width": 669.078125,
+          "height": 669.078125
+        },
+        {
+          "width": 669.078125,
+          "height": 669.078125
+        },
+        {
+          "width": 669.078125,
+          "height": 669.078125
+        }
+      ],
+      "trackTransform": "none"
+    },
+    {
+      "engine": "Chromium",
+      "width": 1024,
+      "pageWidth": 1024,
+      "circles": [
+        {
+          "width": 421.8125,
+          "height": 421.8125
+        },
+        {
+          "width": 421.8125,
+          "height": 421.8125
+        },
+        {
+          "width": 421.8125,
+          "height": 421.8125
+        },
+        {
+          "width": 421.8125,
+          "height": 421.8125
+        },
+        {
+          "width": 421.8125,
+          "height": 421.8125
+        }
+      ],
+      "trackTransform": "none"
+    },
+    {
+      "engine": "Chromium",
+      "width": 768,
+      "pageWidth": 768,
+      "circles": [
+        {
+          "width": 305.453125,
+          "height": 305.453125
+        },
+        {
+          "width": 305.453125,
+          "height": 305.453125
+        },
+        {
+          "width": 305.453125,
+          "height": 305.453125
+        },
+        {
+          "width": 305.453125,
+          "height": 305.453125
+        },
+        {
+          "width": 305.453125,
+          "height": 305.453125
+        }
+      ],
+      "trackTransform": "none"
+    },
+    {
+      "engine": "Chromium",
+      "width": 390,
+      "pageWidth": 390,
+      "circles": [
+        {
+          "width": 267.1875,
+          "height": 267.1875
+        },
+        {
+          "width": 267.1875,
+          "height": 267.1875
+        },
+        {
+          "width": 267.1875,
+          "height": 267.1875
+        }
+      ],
+      "trackTransform": "none"
+    },
+    {
+      "engine": "Chromium",
+      "width": 320,
+      "pageWidth": 320,
+      "circles": [
+        {
+          "width": 211.1875,
+          "height": 211.1875
+        },
+        {
+          "width": 211.1875,
+          "height": 211.1875
+        },
+        {
+          "width": 211.1875,
+          "height": 211.1875
+        }
+      ],
+      "trackTransform": "none"
+    },
+    {
+      "engine": "WebKit",
+      "width": 1600,
+      "pageWidth": 1600,
+      "circles": [
+        {
+          "width": 669.078125,
+          "height": 669.078125
+        },
+        {
+          "width": 669.078125,
+          "height": 669.078125
+        },
+        {
+          "width": 669.078125,
+          "height": 669.078125
+        },
+        {
+          "width": 669.078125,
+          "height": 669.078125
+        },
+        {
+          "width": 669.078125,
+          "height": 669.078125
+        }
+      ],
+      "trackTransform": "none"
+    },
+    {
+      "engine": "WebKit",
+      "width": 1024,
+      "pageWidth": 1024,
+      "circles": [
+        {
+          "width": 421.8125,
+          "height": 421.8125
+        },
+        {
+          "width": 421.8125,
+          "height": 421.8125
+        },
+        {
+          "width": 421.8125,
+          "height": 421.8125
+        },
+        {
+          "width": 421.8125,
+          "height": 421.8125
+        },
+        {
+          "width": 421.8125,
+          "height": 421.8125
+        }
+      ],
+      "trackTransform": "none"
+    },
+    {
+      "engine": "WebKit",
+      "width": 768,
+      "pageWidth": 768,
+      "circles": [
+        {
+          "width": 305.453125,
+          "height": 305.453125
+        },
+        {
+          "width": 305.453125,
+          "height": 305.453125
+        },
+        {
+          "width": 305.453125,
+          "height": 305.453125
+        },
+        {
+          "width": 305.453125,
+          "height": 305.453125
+        },
+        {
+          "width": 305.453125,
+          "height": 305.453125
+        }
+      ],
+      "trackTransform": "none"
+    },
+    {
+      "engine": "WebKit",
+      "width": 390,
+      "pageWidth": 390,
+      "circles": [
+        {
+          "width": 267.1875,
+          "height": 267.1875
+        },
+        {
+          "width": 267.1875,
+          "height": 267.1875
+        },
+        {
+          "width": 267.1875,
+          "height": 267.1875
+        }
+      ],
+      "trackTransform": "none"
+    },
+    {
+      "engine": "WebKit",
+      "width": 320,
+      "pageWidth": 320,
+      "circles": [
+        {
+          "width": 211.1875,
+          "height": 211.1875
+        },
+        {
+          "width": 211.1875,
+          "height": 211.1875
+        },
+        {
+          "width": 211.1875,
+          "height": 211.1875
+        }
+      ],
+      "trackTransform": "none"
+    },
+    {
+      "engine": "Chromium touch",
+      "width": 390,
+      "reducedMotion": "reduce",
+      "selection": "Logistics"
+    },
+    {
+      "engine": "Chromium touch",
+      "width": 390,
+      "reducedMotion": "no-preference",
+      "selection": "Logistics"
+    }
+  ]
+}

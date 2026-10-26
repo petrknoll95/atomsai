@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-26T16:01:40.668Z",
+  "results": [
+    {
+      "browser": "chromium",
+      "mode": "touch",
+      "errors": [],
+      "dimensions": {
+        "width": 525,
+        "height": 525,
+        "cssWidth": 350,
+        "dpr": 3,
+        "maskPrecision": "float16",
+        "retainedMaskBytes": 4875264
+      },
+      "visibility": "Simulated hidden-document event stops frames; visible event resumes"
+    },
+    {
+      "browser": "chromium",
+      "mode": "rgba8",
+      "errors": [],
+      "dimensions": {
+        "width": 525,
+        "height": 525,
+        "cssWidth": 350,
+        "dpr": 3,
+        "maskPrecision": "uint8",
+        "retainedMaskBytes": 2437632
+      },
+      "visibility": "Simulated hidden-document event stops frames; visible event resumes"
+    },
+    {
+      "browser": "chromium",
+      "mode": "unavailable",
+      "errors": [],
+      "fallback": "Visible explanation and disabled playback"
+    },
+    {
+      "browser": "webkit",
+      "mode": "touch",
+      "errors": [],
+      "dimensions": {
+        "width": 525,
+        "height": 525,
+        "cssWidth": 350,
+        "dpr": 3,
+        "maskPrecision": "float16",
+        "retainedMaskBytes": 4875264
+      },
+      "visibility": "Simulated hidden-document event stops frames; visible event resumes"
+    },
+    {
+      "browser": "webkit",
+      "mode": "rgba8",
+      "errors": [],
+      "dimensions": {
+        "width": 525,
+        "height": 525,
+        "cssWidth": 350,
+        "dpr": 3,
+        "maskPrecision": "uint8",
+        "retainedMaskBytes": 2437632
+      },
+      "visibility": "Simulated hidden-document event stops frames; visible event resumes"
+    },
+    {
+      "browser": "webkit",
+      "mode": "unavailable",
+      "errors": [],
+      "fallback": "Visible explanation and disabled playback"
+    }
+  ]
+}

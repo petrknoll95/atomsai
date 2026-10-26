@@ -1,0 +1,58 @@
+[
+  {
+    "path": "public/assets/figma/offerings-drift.png",
+    "figmaNode": "186:4156",
+    "fileKey": "pLyUMYhdCUYzwz0UXPtGY8",
+    "method": "Original Figma PNG asset export; includes original ancestor clipping/transforms; no interface content except original company logo artwork",
+    "sha256": "68ab95a453bcf5a1bd109c0c799e3a860f7f5a9bc9808f769723128a418de529"
+  },
+  {
+    "path": "public/assets/figma/offerings-concentric.png",
+    "figmaNode": "186:4172",
+    "fileKey": "pLyUMYhdCUYzwz0UXPtGY8",
+    "method": "Original Figma PNG asset export; includes original ancestor clipping/transforms; no interface content except original company logo artwork",
+    "sha256": "8019bbfb748b80c75f434e62af16e624fda00a1d9af47a787329c7c1b3bfefd0"
+  },
+  {
+    "path": "public/assets/figma/offerings-band.png",
+    "figmaNode": "186:4188",
+    "fileKey": "pLyUMYhdCUYzwz0UXPtGY8",
+    "method": "Original Figma PNG asset export; includes original ancestor clipping/transforms; no interface content except original company logo artwork",
+    "sha256": "0c762875078d0c446318e84e5bec29a2b4fa9a3ad415498806e73f4e30709ff4"
+  },
+  {
+    "path": "public/assets/figma/applications-concentric.png",
+    "figmaNode": "I260:7420;260:7305",
+    "fileKey": "pLyUMYhdCUYzwz0UXPtGY8",
+    "method": "Original Figma PNG asset export; includes original ancestor clipping/transforms; no interface content except original company logo artwork",
+    "sha256": "0239830a0c9a3a2eb64805d3ac0015539df6903dfe2d95277c8bd9c897e40ae6"
+  },
+  {
+    "path": "public/assets/figma/preview-drift.png",
+    "figmaNode": "273:11359",
+    "fileKey": "pLyUMYhdCUYzwz0UXPtGY8",
+    "method": "Original Figma PNG asset export; includes original ancestor clipping/transforms; no interface content except original company logo artwork",
+    "sha256": "c433670a86fc5b99515fcfb14b8a6a119dd3c4ef5b7e476c385dd9a774804e73"
+  },
+  {
+    "path": "public/assets/figma/preview-concentric.png",
+    "figmaNode": "215:15653",
+    "fileKey": "pLyUMYhdCUYzwz0UXPtGY8",
+    "method": "Original Figma PNG asset export; includes original ancestor clipping/transforms; no interface content except original company logo artwork",
+    "sha256": "906e8946c9e645f642a0a09ca46f2358c5dae0f5bfd56360225035de1fd4bf67"
+  },
+  {
+    "path": "public/assets/figma/cta-pattern.png",
+    "figmaNode": "198:8191",
+    "fileKey": "pLyUMYhdCUYzwz0UXPtGY8",
+    "method": "Original Figma PNG asset export; includes original ancestor clipping/transforms; no interface content except original company logo artwork",
+    "sha256": "b07f74673fc69fb779af9ddb7f967b28cbdef87c71d37db91ddfd14b5515bc08"
+  },
+  {
+    "path": "public/assets/figma/stories-Company.png",
+    "figmaNode": "202:11800",
+    "fileKey": "pLyUMYhdCUYzwz0UXPtGY8",
+    "method": "Original Figma PNG asset export; includes original ancestor clipping/transforms; no interface content except original company logo artwork",
+    "sha256": "2b3622ae318777d011fdcd03e7b15fd95cb10eaca1d3bd2e9db116fedc858e79"
+  }
+]

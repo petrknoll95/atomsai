@@ -1,0 +1,3346 @@
+{
+  "id": "77:2250",
+  "setId": "77:2806",
+  "kind": "single-band",
+  "density": "3",
+  "description": "Editable single-band interference pattern, rebuilt from brand master 1032:17495. Color carriers bind to pattern/single-band/* in Theme. Preserve aspect ratio: scale or crop, never stretch. Mask gradients define geometry and are intentionally not themed.",
+  "root": {
+    "id": "77:2250",
+    "name": "Density=3",
+    "type": "frame",
+    "bounds": [
+      856,
+      888,
+      800,
+      800
+    ],
+    "transform": [
+      1,
+      0,
+      856,
+      0,
+      1,
+      888
+    ],
+    "opacity": 1,
+    "blendMode": "PASS_THROUGH",
+    "visible": true,
+    "isMask": false,
+    "clip": false,
+    "paints": [],
+    "children": [
+      {
+        "id": "77:2251",
+        "name": "Single band — editable masks",
+        "type": "frame",
+        "bounds": [
+          0,
+          0,
+          800,
+          800
+        ],
+        "transform": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "opacity": 1,
+        "blendMode": "PASS_THROUGH",
+        "visible": true,
+        "isMask": false,
+        "clip": true,
+        "paints": [],
+        "children": [
+          {
+            "id": "77:2252",
+            "name": "base",
+            "type": "rect",
+            "bounds": [
+              -20,
+              -20,
+              840,
+              840
+            ],
+            "transform": [
+              1,
+              0,
+              -20,
+              0,
+              1,
+              -20
+            ],
+            "opacity": 1,
+            "blendMode": "PASS_THROUGH",
+            "visible": true,
+            "isMask": false,
+            "paints": [
+              {
+                "opacity": 1,
+                "blendMode": "NORMAL",
+                "visible": true,
+                "colorRole": "pattern/single-band/base",
+                "variableId": "VariableID:77:822"
+              }
+            ]
+          },
+          {
+            "id": "77:2253",
+            "name": "Slits",
+            "type": "frame",
+            "bounds": [
+              -20,
+              -20,
+              840,
+              840
+            ],
+            "transform": [
+              1,
+              0,
+              -20,
+              0,
+              1,
+              -20
+            ],
+            "opacity": 1,
+            "blendMode": "PASS_THROUGH",
+            "visible": true,
+            "isMask": false,
+            "clip": false,
+            "paints": [],
+            "children": [
+              {
+                "id": "77:2254",
+                "name": "Mask",
+                "type": "frame",
+                "bounds": [
+                  0,
+                  0,
+                  840,
+                  840
+                ],
+                "transform": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "opacity": 1,
+                "blendMode": "PASS_THROUGH",
+                "visible": true,
+                "isMask": true,
+                "maskType": "LUMINANCE",
+                "clip": true,
+                "paints": [
+                  {
+                    "opacity": 1,
+                    "blendMode": "NORMAL",
+                    "visible": true,
+                    "rgba": [
+                      0,
+                      0,
+                      0,
+                      1
+                    ]
+                  }
+                ],
+                "effects": [
+                  {
+                    "type": "LAYER_BLUR",
+                    "radius": 1.8899998664855957,
+                    "visible": true,
+                    "blurType": "NORMAL"
+                  }
+                ],
+                "repeat": {
+                  "axis": "x",
+                  "count": 40,
+                  "step": 21,
+                  "template": {
+                    "id": "77:2255",
+                    "name": "1",
+                    "type": "rect",
+                    "bounds": [
+                      0,
+                      0,
+                      21,
+                      840
+                    ],
+                    "transform": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "opacity": 1,
+                    "blendMode": "PASS_THROUGH",
+                    "visible": true,
+                    "isMask": false,
+                    "paints": [
+                      {
+                        "opacity": 1,
+                        "blendMode": "NORMAL",
+                        "visible": true,
+                        "gradient": "g77_2255_0"
+                      }
+                    ]
+                  },
+                  "sourceIds": [
+                    "77:2255",
+                    "77:2256",
+                    "77:2257",
+                    "77:2258",
+                    "77:2259",
+                    "77:2260",
+                    "77:2261",
+                    "77:2262",
+                    "77:2263",
+                    "77:2264",
+                    "77:2265",
+                    "77:2266",
+                    "77:2267",
+                    "77:2268",
+                    "77:2269",
+                    "77:2270",
+                    "77:2271",
+                    "77:2272",
+                    "77:2273",
+                    "77:2274",
+                    "77:2275",
+                    "77:2276",
+                    "77:2277",
+                    "77:2278",
+                    "77:2279",
+                    "77:2280",
+                    "77:2281",
+                    "77:2282",
+                    "77:2283",
+                    "77:2284",
+                    "77:2285",
+                    "77:2286",
+                    "77:2287",
+                    "77:2288",
+                    "77:2289",
+                    "77:2290",
+                    "77:2291",
+                    "77:2292",
+                    "77:2293",
+                    "77:2294"
+                  ],
+                  "sourceTypes": [
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle"
+                  ]
+                }
+              },
+              {
+                "id": "77:2295",
+                "name": "Field 1",
+                "type": "frame",
+                "bounds": [
+                  0,
+                  0,
+                  840,
+                  840
+                ],
+                "transform": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "opacity": 1,
+                "blendMode": "PASS_THROUGH",
+                "visible": true,
+                "isMask": false,
+                "clip": false,
+                "paints": [],
+                "children": [
+                  {
+                    "id": "77:2296",
+                    "name": "Slits — duplicate a slit",
+                    "type": "frame",
+                    "bounds": [
+                      0,
+                      0,
+                      840,
+                      840
+                    ],
+                    "transform": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "opacity": 1,
+                    "blendMode": "PASS_THROUGH",
+                    "visible": true,
+                    "isMask": true,
+                    "maskType": "LUMINANCE",
+                    "clip": true,
+                    "paints": [
+                      {
+                        "opacity": 1,
+                        "blendMode": "NORMAL",
+                        "visible": true,
+                        "rgba": [
+                          0,
+                          0,
+                          0,
+                          1
+                        ]
+                      }
+                    ],
+                    "effects": [
+                      {
+                        "type": "LAYER_BLUR",
+                        "radius": 1.8899998664855957,
+                        "visible": true,
+                        "blurType": "NORMAL"
+                      }
+                    ],
+                    "repeat": {
+                      "axis": "x",
+                      "count": 40,
+                      "step": 21,
+                      "template": {
+                        "id": "77:2297",
+                        "name": "1",
+                        "type": "rect",
+                        "bounds": [
+                          0,
+                          0,
+                          21,
+                          840
+                        ],
+                        "transform": [
+                          1,
+                          0,
+                          0,
+                          0,
+                          1,
+                          0
+                        ],
+                        "opacity": 1,
+                        "blendMode": "PASS_THROUGH",
+                        "visible": true,
+                        "isMask": false,
+                        "paints": [
+                          {
+                            "opacity": 1,
+                            "blendMode": "NORMAL",
+                            "visible": true,
+                            "gradient": "g77_2297_0"
+                          }
+                        ]
+                      },
+                      "sourceIds": [
+                        "77:2297",
+                        "77:2298",
+                        "77:2299",
+                        "77:2300",
+                        "77:2301",
+                        "77:2302",
+                        "77:2303",
+                        "77:2304",
+                        "77:2305",
+                        "77:2306",
+                        "77:2307",
+                        "77:2308",
+                        "77:2309",
+                        "77:2310",
+                        "77:2311",
+                        "77:2312",
+                        "77:2313",
+                        "77:2314",
+                        "77:2315",
+                        "77:2316",
+                        "77:2317",
+                        "77:2318",
+                        "77:2319",
+                        "77:2320",
+                        "77:2321",
+                        "77:2322",
+                        "77:2323",
+                        "77:2324",
+                        "77:2325",
+                        "77:2326",
+                        "77:2327",
+                        "77:2328",
+                        "77:2329",
+                        "77:2330",
+                        "77:2331",
+                        "77:2332",
+                        "77:2333",
+                        "77:2334",
+                        "77:2335",
+                        "77:2336"
+                      ],
+                      "sourceTypes": [
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle"
+                      ]
+                    }
+                  },
+                  {
+                    "id": "77:2337",
+                    "name": "lower-field",
+                    "type": "rect",
+                    "bounds": [
+                      0,
+                      0,
+                      840,
+                      840
+                    ],
+                    "transform": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "opacity": 1,
+                    "blendMode": "PASS_THROUGH",
+                    "visible": true,
+                    "isMask": false,
+                    "paints": [
+                      {
+                        "opacity": 1,
+                        "blendMode": "NORMAL",
+                        "visible": true,
+                        "colorRole": "pattern/single-band/lower-field",
+                        "variableId": "VariableID:77:823"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "77:2338",
+                "name": "Field 2",
+                "type": "frame",
+                "bounds": [
+                  0,
+                  0,
+                  840,
+                  840
+                ],
+                "transform": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "opacity": 1,
+                "blendMode": "PASS_THROUGH",
+                "visible": true,
+                "isMask": false,
+                "clip": false,
+                "paints": [],
+                "children": [
+                  {
+                    "id": "77:2339",
+                    "name": "Slits — duplicate a slit",
+                    "type": "frame",
+                    "bounds": [
+                      0,
+                      0,
+                      840,
+                      840
+                    ],
+                    "transform": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "opacity": 1,
+                    "blendMode": "PASS_THROUGH",
+                    "visible": true,
+                    "isMask": true,
+                    "maskType": "LUMINANCE",
+                    "clip": true,
+                    "paints": [
+                      {
+                        "opacity": 1,
+                        "blendMode": "NORMAL",
+                        "visible": true,
+                        "rgba": [
+                          0,
+                          0,
+                          0,
+                          1
+                        ]
+                      }
+                    ],
+                    "effects": [
+                      {
+                        "type": "LAYER_BLUR",
+                        "radius": 1.8899998664855957,
+                        "visible": true,
+                        "blurType": "NORMAL"
+                      }
+                    ],
+                    "repeat": {
+                      "axis": "x",
+                      "count": 40,
+                      "step": 21,
+                      "template": {
+                        "id": "77:2340",
+                        "name": "1",
+                        "type": "rect",
+                        "bounds": [
+                          0,
+                          0,
+                          21,
+                          840
+                        ],
+                        "transform": [
+                          1,
+                          0,
+                          0,
+                          0,
+                          1,
+                          0
+                        ],
+                        "opacity": 1,
+                        "blendMode": "PASS_THROUGH",
+                        "visible": true,
+                        "isMask": false,
+                        "paints": [
+                          {
+                            "opacity": 1,
+                            "blendMode": "NORMAL",
+                            "visible": true,
+                            "gradient": "g77_2340_0"
+                          }
+                        ]
+                      },
+                      "sourceIds": [
+                        "77:2340",
+                        "77:2341",
+                        "77:2342",
+                        "77:2343",
+                        "77:2344",
+                        "77:2345",
+                        "77:2346",
+                        "77:2347",
+                        "77:2348",
+                        "77:2349",
+                        "77:2350",
+                        "77:2351",
+                        "77:2352",
+                        "77:2353",
+                        "77:2354",
+                        "77:2355",
+                        "77:2356",
+                        "77:2357",
+                        "77:2358",
+                        "77:2359",
+                        "77:2360",
+                        "77:2361",
+                        "77:2362",
+                        "77:2363",
+                        "77:2364",
+                        "77:2365",
+                        "77:2366",
+                        "77:2367",
+                        "77:2368",
+                        "77:2369",
+                        "77:2370",
+                        "77:2371",
+                        "77:2372",
+                        "77:2373",
+                        "77:2374",
+                        "77:2375",
+                        "77:2376",
+                        "77:2377",
+                        "77:2378",
+                        "77:2379"
+                      ],
+                      "sourceTypes": [
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle"
+                      ]
+                    }
+                  },
+                  {
+                    "id": "77:2380",
+                    "name": "upper-field",
+                    "type": "rect",
+                    "bounds": [
+                      0,
+                      0,
+                      840,
+                      840
+                    ],
+                    "transform": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "opacity": 1,
+                    "blendMode": "PASS_THROUGH",
+                    "visible": true,
+                    "isMask": false,
+                    "paints": [
+                      {
+                        "opacity": 1,
+                        "blendMode": "NORMAL",
+                        "visible": true,
+                        "colorRole": "pattern/single-band/upper-field",
+                        "variableId": "VariableID:77:824"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "77:2381",
+                "name": "Field 3",
+                "type": "frame",
+                "bounds": [
+                  0,
+                  0,
+                  840,
+                  840
+                ],
+                "transform": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "opacity": 1,
+                "blendMode": "PASS_THROUGH",
+                "visible": true,
+                "isMask": false,
+                "clip": false,
+                "paints": [],
+                "children": [
+                  {
+                    "id": "77:2382",
+                    "name": "Slits — duplicate a slit",
+                    "type": "frame",
+                    "bounds": [
+                      0,
+                      0,
+                      840,
+                      840
+                    ],
+                    "transform": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "opacity": 1,
+                    "blendMode": "PASS_THROUGH",
+                    "visible": true,
+                    "isMask": true,
+                    "maskType": "LUMINANCE",
+                    "clip": true,
+                    "paints": [
+                      {
+                        "opacity": 1,
+                        "blendMode": "NORMAL",
+                        "visible": true,
+                        "rgba": [
+                          0,
+                          0,
+                          0,
+                          1
+                        ]
+                      }
+                    ],
+                    "effects": [
+                      {
+                        "type": "LAYER_BLUR",
+                        "radius": 1.8899998664855957,
+                        "visible": true,
+                        "blurType": "NORMAL"
+                      }
+                    ],
+                    "repeat": {
+                      "axis": "x",
+                      "count": 40,
+                      "step": 21,
+                      "template": {
+                        "id": "77:2383",
+                        "name": "1",
+                        "type": "rect",
+                        "bounds": [
+                          0,
+                          0,
+                          21,
+                          840
+                        ],
+                        "transform": [
+                          1,
+                          0,
+                          0,
+                          0,
+                          1,
+                          0
+                        ],
+                        "opacity": 1,
+                        "blendMode": "PASS_THROUGH",
+                        "visible": true,
+                        "isMask": false,
+                        "paints": [
+                          {
+                            "opacity": 1,
+                            "blendMode": "NORMAL",
+                            "visible": true,
+                            "gradient": "g77_2383_0"
+                          }
+                        ]
+                      },
+                      "sourceIds": [
+                        "77:2383",
+                        "77:2384",
+                        "77:2385",
+                        "77:2386",
+                        "77:2387",
+                        "77:2388",
+                        "77:2389",
+                        "77:2390",
+                        "77:2391",
+                        "77:2392",
+                        "77:2393",
+                        "77:2394",
+                        "77:2395",
+                        "77:2396",
+                        "77:2397",
+                        "77:2398",
+                        "77:2399",
+                        "77:2400",
+                        "77:2401",
+                        "77:2402",
+                        "77:2403",
+                        "77:2404",
+                        "77:2405",
+                        "77:2406",
+                        "77:2407",
+                        "77:2408",
+                        "77:2409",
+                        "77:2410",
+                        "77:2411",
+                        "77:2412",
+                        "77:2413",
+                        "77:2414",
+                        "77:2415",
+                        "77:2416",
+                        "77:2417",
+                        "77:2418",
+                        "77:2419",
+                        "77:2420",
+                        "77:2421",
+                        "77:2422"
+                      ],
+                      "sourceTypes": [
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle"
+                      ]
+                    }
+                  },
+                  {
+                    "id": "77:2423",
+                    "name": "upper-field",
+                    "type": "rect",
+                    "bounds": [
+                      0,
+                      0,
+                      840,
+                      840
+                    ],
+                    "transform": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "opacity": 1,
+                    "blendMode": "PASS_THROUGH",
+                    "visible": true,
+                    "isMask": false,
+                    "paints": [
+                      {
+                        "opacity": 1,
+                        "blendMode": "NORMAL",
+                        "visible": true,
+                        "colorRole": "pattern/single-band/upper-field",
+                        "variableId": "VariableID:77:824"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "77:2424",
+            "name": "Reflections",
+            "type": "frame",
+            "bounds": [
+              -20,
+              -20,
+              840,
+              840
+            ],
+            "transform": [
+              1,
+              0,
+              -20,
+              0,
+              1,
+              -20
+            ],
+            "opacity": 1,
+            "blendMode": "PASS_THROUGH",
+            "visible": true,
+            "isMask": false,
+            "clip": true,
+            "paints": [],
+            "children": [
+              {
+                "id": "77:2425",
+                "name": "Color",
+                "type": "frame",
+                "bounds": [
+                  0,
+                  0,
+                  840,
+                  840
+                ],
+                "transform": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "opacity": 1,
+                "blendMode": "PASS_THROUGH",
+                "visible": true,
+                "isMask": false,
+                "clip": false,
+                "paints": [],
+                "children": [
+                  {
+                    "id": "77:2426",
+                    "name": "Slits — reflections",
+                    "type": "frame",
+                    "bounds": [
+                      0,
+                      0,
+                      840,
+                      840
+                    ],
+                    "transform": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "opacity": 1,
+                    "blendMode": "PASS_THROUGH",
+                    "visible": true,
+                    "isMask": true,
+                    "maskType": "LUMINANCE",
+                    "clip": false,
+                    "paints": [
+                      {
+                        "opacity": 1,
+                        "blendMode": "NORMAL",
+                        "visible": true,
+                        "rgba": [
+                          0,
+                          0,
+                          0,
+                          1
+                        ]
+                      }
+                    ],
+                    "repeat": {
+                      "axis": "x",
+                      "count": 40,
+                      "step": 21,
+                      "template": {
+                        "id": "77:2427",
+                        "name": "1",
+                        "type": "rect",
+                        "bounds": [
+                          0,
+                          0,
+                          21,
+                          840
+                        ],
+                        "transform": [
+                          1,
+                          0,
+                          0,
+                          0,
+                          1,
+                          0
+                        ],
+                        "opacity": 0.20000000298023224,
+                        "blendMode": "PASS_THROUGH",
+                        "visible": true,
+                        "isMask": false,
+                        "paints": [
+                          {
+                            "opacity": 1,
+                            "blendMode": "NORMAL",
+                            "visible": true,
+                            "gradient": "g77_2427_0"
+                          }
+                        ]
+                      },
+                      "sourceIds": [
+                        "77:2427",
+                        "77:2428",
+                        "77:2429",
+                        "77:2430",
+                        "77:2431",
+                        "77:2432",
+                        "77:2433",
+                        "77:2434",
+                        "77:2435",
+                        "77:2436",
+                        "77:2437",
+                        "77:2438",
+                        "77:2439",
+                        "77:2440",
+                        "77:2441",
+                        "77:2442",
+                        "77:2443",
+                        "77:2444",
+                        "77:2445",
+                        "77:2446",
+                        "77:2447",
+                        "77:2448",
+                        "77:2449",
+                        "77:2450",
+                        "77:2451",
+                        "77:2452",
+                        "77:2453",
+                        "77:2454",
+                        "77:2455",
+                        "77:2456",
+                        "77:2457",
+                        "77:2458",
+                        "77:2459",
+                        "77:2460",
+                        "77:2461",
+                        "77:2462",
+                        "77:2463",
+                        "77:2464",
+                        "77:2465",
+                        "77:2466"
+                      ],
+                      "sourceTypes": [
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle"
+                      ]
+                    }
+                  },
+                  {
+                    "id": "77:2467",
+                    "name": "reflection-1",
+                    "type": "rect",
+                    "bounds": [
+                      0,
+                      0,
+                      840,
+                      840
+                    ],
+                    "transform": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "opacity": 1,
+                    "blendMode": "PASS_THROUGH",
+                    "visible": true,
+                    "isMask": false,
+                    "paints": [
+                      {
+                        "opacity": 1,
+                        "blendMode": "NORMAL",
+                        "visible": true,
+                        "colorRole": "pattern/single-band/reflection-1",
+                        "variableId": "VariableID:77:825"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "77:2468",
+                "name": "Filter",
+                "type": "frame",
+                "bounds": [
+                  0,
+                  0,
+                  840,
+                  840
+                ],
+                "transform": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "opacity": 1,
+                "blendMode": "OVERLAY",
+                "visible": true,
+                "isMask": false,
+                "clip": false,
+                "paints": [],
+                "children": [
+                  {
+                    "id": "77:2469",
+                    "name": "Lighten",
+                    "type": "frame",
+                    "bounds": [
+                      0,
+                      0,
+                      840,
+                      840
+                    ],
+                    "transform": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "opacity": 0.15000000596046448,
+                    "blendMode": "OVERLAY",
+                    "visible": true,
+                    "isMask": true,
+                    "maskType": "ALPHA",
+                    "clip": false,
+                    "paints": [],
+                    "repeat": {
+                      "axis": "x",
+                      "count": 40,
+                      "step": 21,
+                      "template": {
+                        "id": "77:2470",
+                        "name": "1",
+                        "type": "rect",
+                        "bounds": [
+                          0,
+                          0,
+                          21,
+                          840
+                        ],
+                        "transform": [
+                          1,
+                          0,
+                          0,
+                          0,
+                          1,
+                          0
+                        ],
+                        "opacity": 1,
+                        "blendMode": "PASS_THROUGH",
+                        "visible": true,
+                        "isMask": false,
+                        "paints": [
+                          {
+                            "opacity": 1,
+                            "blendMode": "LINEAR_DODGE",
+                            "visible": true,
+                            "gradient": "g77_2470_0"
+                          }
+                        ]
+                      },
+                      "sourceIds": [
+                        "77:2470",
+                        "77:2471",
+                        "77:2472",
+                        "77:2473",
+                        "77:2474",
+                        "77:2475",
+                        "77:2476",
+                        "77:2477",
+                        "77:2478",
+                        "77:2479",
+                        "77:2480",
+                        "77:2481",
+                        "77:2482",
+                        "77:2483",
+                        "77:2484",
+                        "77:2485",
+                        "77:2486",
+                        "77:2487",
+                        "77:2488",
+                        "77:2489",
+                        "77:2490",
+                        "77:2491",
+                        "77:2492",
+                        "77:2493",
+                        "77:2494",
+                        "77:2495",
+                        "77:2496",
+                        "77:2497",
+                        "77:2498",
+                        "77:2499",
+                        "77:2500",
+                        "77:2501",
+                        "77:2502",
+                        "77:2503",
+                        "77:2504",
+                        "77:2505",
+                        "77:2506",
+                        "77:2507",
+                        "77:2508",
+                        "77:2509"
+                      ],
+                      "sourceTypes": [
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle"
+                      ]
+                    }
+                  },
+                  {
+                    "id": "77:2510",
+                    "name": "reflection-2",
+                    "type": "rect",
+                    "bounds": [
+                      0,
+                      0,
+                      840,
+                      840
+                    ],
+                    "transform": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "opacity": 1,
+                    "blendMode": "PASS_THROUGH",
+                    "visible": true,
+                    "isMask": false,
+                    "paints": [
+                      {
+                        "opacity": 1,
+                        "blendMode": "NORMAL",
+                        "visible": true,
+                        "colorRole": "pattern/single-band/reflection-2",
+                        "variableId": "VariableID:77:826"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "77:2511",
+                "name": "Filter",
+                "type": "frame",
+                "bounds": [
+                  0,
+                  0,
+                  840,
+                  840
+                ],
+                "transform": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "opacity": 1,
+                "blendMode": "NORMAL",
+                "visible": true,
+                "isMask": false,
+                "clip": false,
+                "paints": [],
+                "children": [
+                  {
+                    "id": "77:2512",
+                    "name": "Lighten",
+                    "type": "frame",
+                    "bounds": [
+                      0,
+                      0,
+                      840,
+                      840
+                    ],
+                    "transform": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "opacity": 1,
+                    "blendMode": "PASS_THROUGH",
+                    "visible": true,
+                    "isMask": true,
+                    "maskType": "LUMINANCE",
+                    "clip": false,
+                    "paints": [],
+                    "repeat": {
+                      "axis": "x",
+                      "count": 40,
+                      "step": 21,
+                      "template": {
+                        "id": "77:2513",
+                        "name": "1",
+                        "type": "rect",
+                        "bounds": [
+                          0,
+                          0,
+                          21,
+                          840
+                        ],
+                        "transform": [
+                          1,
+                          0,
+                          0,
+                          0,
+                          1,
+                          0
+                        ],
+                        "opacity": 1,
+                        "blendMode": "PASS_THROUGH",
+                        "visible": true,
+                        "isMask": false,
+                        "paints": [
+                          {
+                            "opacity": 1,
+                            "blendMode": "NORMAL",
+                            "visible": true,
+                            "gradient": "g77_2513_0"
+                          }
+                        ]
+                      },
+                      "sourceIds": [
+                        "77:2513",
+                        "77:2514",
+                        "77:2515",
+                        "77:2516",
+                        "77:2517",
+                        "77:2518",
+                        "77:2519",
+                        "77:2520",
+                        "77:2521",
+                        "77:2522",
+                        "77:2523",
+                        "77:2524",
+                        "77:2525",
+                        "77:2526",
+                        "77:2527",
+                        "77:2528",
+                        "77:2529",
+                        "77:2530",
+                        "77:2531",
+                        "77:2532",
+                        "77:2533",
+                        "77:2534",
+                        "77:2535",
+                        "77:2536",
+                        "77:2537",
+                        "77:2538",
+                        "77:2539",
+                        "77:2540",
+                        "77:2541",
+                        "77:2542",
+                        "77:2543",
+                        "77:2544",
+                        "77:2545",
+                        "77:2546",
+                        "77:2547",
+                        "77:2548",
+                        "77:2549",
+                        "77:2550",
+                        "77:2551",
+                        "77:2552"
+                      ],
+                      "sourceTypes": [
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle",
+                        "rectangle"
+                      ]
+                    }
+                  },
+                  {
+                    "id": "77:2553",
+                    "name": "reflection-3",
+                    "type": "rect",
+                    "bounds": [
+                      0,
+                      0,
+                      840,
+                      840
+                    ],
+                    "transform": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "opacity": 1,
+                    "blendMode": "PASS_THROUGH",
+                    "visible": true,
+                    "isMask": false,
+                    "paints": [
+                      {
+                        "opacity": 1,
+                        "blendMode": "NORMAL",
+                        "visible": true,
+                        "colorRole": "pattern/single-band/reflection-3",
+                        "variableId": "VariableID:77:827"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "gradients": {
+    "g77_2255_0": {
+      "type": "radial",
+      "matrix": [
+        0.39436620473861694,
+        8.000000093488779e-7,
+        0.3028165102005005,
+        0,
+        -0.35639140009880066,
+        0.6781957149505615
+      ],
+      "stops": [
+        [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.03125,
+          1,
+          1,
+          1,
+          0.9997349977493286
+        ],
+        [
+          0.0625,
+          1,
+          1,
+          1,
+          0.9993262887001038
+        ],
+        [
+          0.09375,
+          1,
+          1,
+          1,
+          0.9986960291862488
+        ],
+        [
+          0.125,
+          1,
+          1,
+          1,
+          0.9977238774299622
+        ],
+        [
+          0.15625,
+          1,
+          1,
+          1,
+          0.9962248206138611
+        ],
+        [
+          0.1875,
+          1,
+          1,
+          1,
+          0.9939128160476685
+        ],
+        [
+          0.21875,
+          1,
+          1,
+          1,
+          0.9903473258018494
+        ],
+        [
+          0.25,
+          1,
+          1,
+          1,
+          0.9848484992980957
+        ],
+        [
+          0.28125,
+          1,
+          1,
+          1,
+          0.9763681888580322
+        ],
+        [
+          0.3125,
+          1,
+          1,
+          1,
+          0.9632896780967712
+        ],
+        [
+          0.34375,
+          1,
+          1,
+          1,
+          0.943120002746582
+        ],
+        [
+          0.375,
+          1,
+          1,
+          1,
+          0.9120140075683594
+        ],
+        [
+          0.40625,
+          1,
+          1,
+          1,
+          0.8640419840812683
+        ],
+        [
+          0.4375,
+          1,
+          1,
+          1,
+          0.7900590896606445
+        ],
+        [
+          0.46875,
+          1,
+          1,
+          1,
+          0.675961971282959
+        ],
+        [
+          0.5,
+          1,
+          1,
+          1,
+          0.5
+        ],
+        [
+          0.53125,
+          1,
+          1,
+          1,
+          0.3240380883216858
+        ],
+        [
+          0.5625,
+          1,
+          1,
+          1,
+          0.2099408060312271
+        ],
+        [
+          0.59375,
+          1,
+          1,
+          1,
+          0.1359580010175705
+        ],
+        [
+          0.625,
+          1,
+          1,
+          1,
+          0.08798599988222122
+        ],
+        [
+          0.65625,
+          1,
+          1,
+          1,
+          0.05688000097870827
+        ],
+        [
+          0.6875,
+          1,
+          1,
+          1,
+          0.03671029955148697
+        ],
+        [
+          0.71875,
+          1,
+          1,
+          1,
+          0.023631799966096878
+        ],
+        [
+          0.75,
+          1,
+          1,
+          1,
+          0.015151499770581722
+        ],
+        [
+          0.78125,
+          1,
+          1,
+          1,
+          0.009652700275182724
+        ],
+        [
+          0.8125,
+          1,
+          1,
+          1,
+          0.006087199784815311
+        ],
+        [
+          0.84375,
+          1,
+          1,
+          1,
+          0.003775200108066201
+        ],
+        [
+          0.875,
+          1,
+          1,
+          1,
+          0.0022760999854654074
+        ],
+        [
+          0.90625,
+          1,
+          1,
+          1,
+          0.0013040000339969993
+        ],
+        [
+          0.9375,
+          1,
+          1,
+          1,
+          0.000673700007610023
+        ],
+        [
+          0.96875,
+          1,
+          1,
+          1,
+          0.00026500000967644155
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "sourceIds": [
+        "77:2255"
+      ]
+    },
+    "g77_2297_0": {
+      "type": "radial",
+      "matrix": [
+        0.6109092235565186,
+        6.000000212225132e-7,
+        0.19454510509967804,
+        0,
+        -0.5453997254371643,
+        0.772699773311615
+      ],
+      "stops": [
+        [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.03125,
+          1,
+          1,
+          1,
+          0.9997349977493286
+        ],
+        [
+          0.0625,
+          1,
+          1,
+          1,
+          0.9993262887001038
+        ],
+        [
+          0.09375,
+          1,
+          1,
+          1,
+          0.9986960291862488
+        ],
+        [
+          0.125,
+          1,
+          1,
+          1,
+          0.9977238774299622
+        ],
+        [
+          0.15625,
+          1,
+          1,
+          1,
+          0.9962248206138611
+        ],
+        [
+          0.1875,
+          1,
+          1,
+          1,
+          0.9939128160476685
+        ],
+        [
+          0.21875,
+          1,
+          1,
+          1,
+          0.9903473258018494
+        ],
+        [
+          0.25,
+          1,
+          1,
+          1,
+          0.9848484992980957
+        ],
+        [
+          0.28125,
+          1,
+          1,
+          1,
+          0.9763681888580322
+        ],
+        [
+          0.3125,
+          1,
+          1,
+          1,
+          0.9632896780967712
+        ],
+        [
+          0.34375,
+          1,
+          1,
+          1,
+          0.943120002746582
+        ],
+        [
+          0.375,
+          1,
+          1,
+          1,
+          0.9120140075683594
+        ],
+        [
+          0.40625,
+          1,
+          1,
+          1,
+          0.8640419840812683
+        ],
+        [
+          0.4375,
+          1,
+          1,
+          1,
+          0.7900590896606445
+        ],
+        [
+          0.46875,
+          1,
+          1,
+          1,
+          0.675961971282959
+        ],
+        [
+          0.5,
+          1,
+          1,
+          1,
+          0.5
+        ],
+        [
+          0.53125,
+          1,
+          1,
+          1,
+          0.3240380883216858
+        ],
+        [
+          0.5625,
+          1,
+          1,
+          1,
+          0.2099408060312271
+        ],
+        [
+          0.59375,
+          1,
+          1,
+          1,
+          0.1359580010175705
+        ],
+        [
+          0.625,
+          1,
+          1,
+          1,
+          0.08798599988222122
+        ],
+        [
+          0.65625,
+          1,
+          1,
+          1,
+          0.05688000097870827
+        ],
+        [
+          0.6875,
+          1,
+          1,
+          1,
+          0.03671029955148697
+        ],
+        [
+          0.71875,
+          1,
+          1,
+          1,
+          0.023631799966096878
+        ],
+        [
+          0.75,
+          1,
+          1,
+          1,
+          0.015151499770581722
+        ],
+        [
+          0.78125,
+          1,
+          1,
+          1,
+          0.009652700275182724
+        ],
+        [
+          0.8125,
+          1,
+          1,
+          1,
+          0.006087199784815311
+        ],
+        [
+          0.84375,
+          1,
+          1,
+          1,
+          0.003775200108066201
+        ],
+        [
+          0.875,
+          1,
+          1,
+          1,
+          0.0022760999854654074
+        ],
+        [
+          0.90625,
+          1,
+          1,
+          1,
+          0.0013040000339969993
+        ],
+        [
+          0.9375,
+          1,
+          1,
+          1,
+          0.000673700007610023
+        ],
+        [
+          0.96875,
+          1,
+          1,
+          1,
+          0.00026500000967644155
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "sourceIds": [
+        "77:2297"
+      ]
+    },
+    "g77_2340_0": {
+      "type": "radial",
+      "matrix": [
+        0.6109092235565186,
+        6.000000212225132e-7,
+        0.19454510509967804,
+        0,
+        -0.7139766216278076,
+        0.8569881916046143
+      ],
+      "stops": [
+        [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.03125,
+          1,
+          1,
+          1,
+          0.9997349977493286
+        ],
+        [
+          0.0625,
+          1,
+          1,
+          1,
+          0.9993262887001038
+        ],
+        [
+          0.09375,
+          1,
+          1,
+          1,
+          0.9986960291862488
+        ],
+        [
+          0.125,
+          1,
+          1,
+          1,
+          0.9977238774299622
+        ],
+        [
+          0.15625,
+          1,
+          1,
+          1,
+          0.9962248206138611
+        ],
+        [
+          0.1875,
+          1,
+          1,
+          1,
+          0.9939128160476685
+        ],
+        [
+          0.21875,
+          1,
+          1,
+          1,
+          0.9903473258018494
+        ],
+        [
+          0.25,
+          1,
+          1,
+          1,
+          0.9848484992980957
+        ],
+        [
+          0.28125,
+          1,
+          1,
+          1,
+          0.9763681888580322
+        ],
+        [
+          0.3125,
+          1,
+          1,
+          1,
+          0.9632896780967712
+        ],
+        [
+          0.34375,
+          1,
+          1,
+          1,
+          0.943120002746582
+        ],
+        [
+          0.375,
+          1,
+          1,
+          1,
+          0.9120140075683594
+        ],
+        [
+          0.40625,
+          1,
+          1,
+          1,
+          0.8640419840812683
+        ],
+        [
+          0.4375,
+          1,
+          1,
+          1,
+          0.7900590896606445
+        ],
+        [
+          0.46875,
+          1,
+          1,
+          1,
+          0.675961971282959
+        ],
+        [
+          0.5,
+          1,
+          1,
+          1,
+          0.5
+        ],
+        [
+          0.53125,
+          1,
+          1,
+          1,
+          0.3240380883216858
+        ],
+        [
+          0.5625,
+          1,
+          1,
+          1,
+          0.2099408060312271
+        ],
+        [
+          0.59375,
+          1,
+          1,
+          1,
+          0.1359580010175705
+        ],
+        [
+          0.625,
+          1,
+          1,
+          1,
+          0.08798599988222122
+        ],
+        [
+          0.65625,
+          1,
+          1,
+          1,
+          0.05688000097870827
+        ],
+        [
+          0.6875,
+          1,
+          1,
+          1,
+          0.03671029955148697
+        ],
+        [
+          0.71875,
+          1,
+          1,
+          1,
+          0.023631799966096878
+        ],
+        [
+          0.75,
+          1,
+          1,
+          1,
+          0.015151499770581722
+        ],
+        [
+          0.78125,
+          1,
+          1,
+          1,
+          0.009652700275182724
+        ],
+        [
+          0.8125,
+          1,
+          1,
+          1,
+          0.006087199784815311
+        ],
+        [
+          0.84375,
+          1,
+          1,
+          1,
+          0.003775200108066201
+        ],
+        [
+          0.875,
+          1,
+          1,
+          1,
+          0.0022760999854654074
+        ],
+        [
+          0.90625,
+          1,
+          1,
+          1,
+          0.0013040000339969993
+        ],
+        [
+          0.9375,
+          1,
+          1,
+          1,
+          0.000673700007610023
+        ],
+        [
+          0.96875,
+          1,
+          1,
+          1,
+          0.00026500000967644155
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "sourceIds": [
+        "77:2340"
+      ]
+    },
+    "g77_2383_0": {
+      "type": "radial",
+      "matrix": [
+        0.42748090624809265,
+        0.0000010999999631167157,
+        0.2862589955329895,
+        1.0000000116860974e-7,
+        -0.9485173225402832,
+        0.9742584824562073
+      ],
+      "stops": [
+        [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.03125,
+          1,
+          1,
+          1,
+          0.9997349977493286
+        ],
+        [
+          0.0625,
+          1,
+          1,
+          1,
+          0.9993262887001038
+        ],
+        [
+          0.09375,
+          1,
+          1,
+          1,
+          0.9986960291862488
+        ],
+        [
+          0.125,
+          1,
+          1,
+          1,
+          0.9977238774299622
+        ],
+        [
+          0.15625,
+          1,
+          1,
+          1,
+          0.9962248206138611
+        ],
+        [
+          0.1875,
+          1,
+          1,
+          1,
+          0.9939128160476685
+        ],
+        [
+          0.21875,
+          1,
+          1,
+          1,
+          0.9903473258018494
+        ],
+        [
+          0.25,
+          1,
+          1,
+          1,
+          0.9848484992980957
+        ],
+        [
+          0.28125,
+          1,
+          1,
+          1,
+          0.9763681888580322
+        ],
+        [
+          0.3125,
+          1,
+          1,
+          1,
+          0.9632896780967712
+        ],
+        [
+          0.34375,
+          1,
+          1,
+          1,
+          0.943120002746582
+        ],
+        [
+          0.375,
+          1,
+          1,
+          1,
+          0.9120140075683594
+        ],
+        [
+          0.40625,
+          1,
+          1,
+          1,
+          0.8640419840812683
+        ],
+        [
+          0.4375,
+          1,
+          1,
+          1,
+          0.7900590896606445
+        ],
+        [
+          0.46875,
+          1,
+          1,
+          1,
+          0.675961971282959
+        ],
+        [
+          0.5,
+          1,
+          1,
+          1,
+          0.5
+        ],
+        [
+          0.53125,
+          1,
+          1,
+          1,
+          0.3240380883216858
+        ],
+        [
+          0.5625,
+          1,
+          1,
+          1,
+          0.2099408060312271
+        ],
+        [
+          0.59375,
+          1,
+          1,
+          1,
+          0.1359580010175705
+        ],
+        [
+          0.625,
+          1,
+          1,
+          1,
+          0.08798599988222122
+        ],
+        [
+          0.65625,
+          1,
+          1,
+          1,
+          0.05688000097870827
+        ],
+        [
+          0.6875,
+          1,
+          1,
+          1,
+          0.03671029955148697
+        ],
+        [
+          0.71875,
+          1,
+          1,
+          1,
+          0.023631799966096878
+        ],
+        [
+          0.75,
+          1,
+          1,
+          1,
+          0.015151499770581722
+        ],
+        [
+          0.78125,
+          1,
+          1,
+          1,
+          0.009652700275182724
+        ],
+        [
+          0.8125,
+          1,
+          1,
+          1,
+          0.006087199784815311
+        ],
+        [
+          0.84375,
+          1,
+          1,
+          1,
+          0.003775200108066201
+        ],
+        [
+          0.875,
+          1,
+          1,
+          1,
+          0.0022760999854654074
+        ],
+        [
+          0.90625,
+          1,
+          1,
+          1,
+          0.0013040000339969993
+        ],
+        [
+          0.9375,
+          1,
+          1,
+          1,
+          0.000673700007610023
+        ],
+        [
+          0.96875,
+          1,
+          1,
+          1,
+          0.00026500000967644155
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "sourceIds": [
+        "77:2383"
+      ]
+    },
+    "g77_2427_0": {
+      "type": "radial",
+      "matrix": [
+        0,
+        0.9999539852142334,
+        -0.00016110000433400273,
+        -1.8577901124954224,
+        2.0000000233721948e-7,
+        2.3560945987701416
+      ],
+      "stops": [
+        [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.03125,
+          1,
+          1,
+          1,
+          0.9971312880516052
+        ],
+        [
+          0.0625,
+          1,
+          1,
+          1,
+          0.9887694716453552
+        ],
+        [
+          0.09375,
+          1,
+          1,
+          1,
+          0.9752808213233948
+        ],
+        [
+          0.125,
+          1,
+          1,
+          1,
+          0.9570313096046448
+        ],
+        [
+          0.15625,
+          1,
+          1,
+          1,
+          0.93438720703125
+        ],
+        [
+          0.1875,
+          1,
+          1,
+          1,
+          0.9077147841453552
+        ],
+        [
+          0.21875,
+          1,
+          1,
+          1,
+          0.87738037109375
+        ],
+        [
+          0.25,
+          1,
+          1,
+          1,
+          0.84375
+        ],
+        [
+          0.28125,
+          1,
+          1,
+          1,
+          0.8071898818016052
+        ],
+        [
+          0.3125,
+          1,
+          1,
+          1,
+          0.76806640625
+        ],
+        [
+          0.34375,
+          1,
+          1,
+          1,
+          0.72674560546875
+        ],
+        [
+          0.375,
+          1,
+          1,
+          1,
+          0.6835938096046448
+        ],
+        [
+          0.40625,
+          1,
+          1,
+          1,
+          0.6389771103858948
+        ],
+        [
+          0.4375,
+          1,
+          1,
+          1,
+          0.59326171875
+        ],
+        [
+          0.46875,
+          1,
+          1,
+          1,
+          0.5468140244483948
+        ],
+        [
+          0.5,
+          1,
+          1,
+          1,
+          0.5
+        ],
+        [
+          0.53125,
+          1,
+          1,
+          1,
+          0.4531860053539276
+        ],
+        [
+          0.5625,
+          1,
+          1,
+          1,
+          0.4067383110523224
+        ],
+        [
+          0.59375,
+          1,
+          1,
+          1,
+          0.3610228896141052
+        ],
+        [
+          0.625,
+          1,
+          1,
+          1,
+          0.3164063096046448
+        ],
+        [
+          0.65625,
+          1,
+          1,
+          1,
+          0.27325439453125
+        ],
+        [
+          0.6875,
+          1,
+          1,
+          1,
+          0.23193359375
+        ],
+        [
+          0.71875,
+          1,
+          1,
+          1,
+          0.19281010329723358
+        ],
+        [
+          0.75,
+          1,
+          1,
+          1,
+          0.15625
+        ],
+        [
+          0.78125,
+          1,
+          1,
+          1,
+          0.12261959910392761
+        ],
+        [
+          0.8125,
+          1,
+          1,
+          1,
+          0.09228520095348358
+        ],
+        [
+          0.84375,
+          1,
+          1,
+          1,
+          0.0656128004193306
+        ],
+        [
+          0.875,
+          1,
+          1,
+          1,
+          0.04296879842877388
+        ],
+        [
+          0.90625,
+          1,
+          1,
+          1,
+          0.024719199165701866
+        ],
+        [
+          0.9375,
+          1,
+          1,
+          1,
+          0.011230500414967537
+        ],
+        [
+          0.96875,
+          1,
+          1,
+          1,
+          0.002868700074031949
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "sourceIds": [
+        "77:2427"
+      ]
+    },
+    "g77_2470_0": {
+      "type": "radial",
+      "matrix": [
+        0,
+        1.2173912525177002,
+        -0.10869559645652771,
+        -0.4897904098033905,
+        -4.0000000467443897e-7,
+        0.7448955774307251
+      ],
+      "stops": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0.03125,
+          0,
+          0,
+          0,
+          0.00012209999840706587
+        ],
+        [
+          0.0625,
+          0,
+          0,
+          0,
+          0.0009765999857336283
+        ],
+        [
+          0.09375,
+          0,
+          0,
+          0,
+          0.0032959000673145056
+        ],
+        [
+          0.125,
+          0,
+          0,
+          0,
+          0.0078125
+        ],
+        [
+          0.15625,
+          0,
+          0,
+          0,
+          0.015258800238370895
+        ],
+        [
+          0.1875,
+          0,
+          0,
+          0,
+          0.026367200538516045
+        ],
+        [
+          0.21875,
+          0,
+          0,
+          0,
+          0.04187009856104851
+        ],
+        [
+          0.25,
+          0,
+          0,
+          0,
+          0.0625
+        ],
+        [
+          0.28125,
+          0,
+          0,
+          0,
+          0.08898930251598358
+        ],
+        [
+          0.3125,
+          0,
+          0,
+          0,
+          0.1220702975988388
+        ],
+        [
+          0.34375,
+          0,
+          0,
+          0,
+          0.1624756008386612
+        ],
+        [
+          0.375,
+          0,
+          0,
+          0,
+          0.2109375
+        ],
+        [
+          0.40625,
+          0,
+          0,
+          0,
+          0.2681885063648224
+        ],
+        [
+          0.4375,
+          0,
+          0,
+          0,
+          0.3349609076976776
+        ],
+        [
+          0.46875,
+          0,
+          0,
+          0,
+          0.4119873046875
+        ],
+        [
+          0.5,
+          0,
+          0,
+          0,
+          0.5
+        ],
+        [
+          0.53125,
+          0,
+          0,
+          0,
+          0.5880126953125
+        ],
+        [
+          0.5625,
+          0,
+          0,
+          0,
+          0.6650391221046448
+        ],
+        [
+          0.59375,
+          0,
+          0,
+          0,
+          0.7318115234375
+        ],
+        [
+          0.625,
+          0,
+          0,
+          0,
+          0.7890625
+        ],
+        [
+          0.65625,
+          0,
+          0,
+          0,
+          0.8375244140625
+        ],
+        [
+          0.6875,
+          0,
+          0,
+          0,
+          0.8779296875
+        ],
+        [
+          0.71875,
+          0,
+          0,
+          0,
+          0.9110106825828552
+        ],
+        [
+          0.75,
+          0,
+          0,
+          0,
+          0.9375
+        ],
+        [
+          0.78125,
+          0,
+          0,
+          0,
+          0.9581298828125
+        ],
+        [
+          0.8125,
+          0,
+          0,
+          0,
+          0.9736328125
+        ],
+        [
+          0.84375,
+          0,
+          0,
+          0,
+          0.9847412109375
+        ],
+        [
+          0.875,
+          0,
+          0,
+          0,
+          0.9921875
+        ],
+        [
+          0.90625,
+          0,
+          0,
+          0,
+          0.9967041015625
+        ],
+        [
+          0.9375,
+          0,
+          0,
+          0,
+          0.9990233778953552
+        ],
+        [
+          0.96875,
+          0,
+          0,
+          0,
+          0.9998779296875
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "sourceIds": [
+        "77:2470"
+      ]
+    },
+    "g77_2513_0": {
+      "type": "radial",
+      "matrix": [
+        0,
+        1.7177914381027222,
+        -0.3588956892490387,
+        -1.0000003576278687,
+        0,
+        1
+      ],
+      "stops": [
+        [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.03125,
+          1,
+          1,
+          1,
+          0.999969482421875
+        ],
+        [
+          0.0625,
+          1,
+          1,
+          1,
+          0.9997559189796448
+        ],
+        [
+          0.09375,
+          1,
+          1,
+          1,
+          0.999176025390625
+        ],
+        [
+          0.125,
+          1,
+          1,
+          1,
+          0.998046875
+        ],
+        [
+          0.15625,
+          1,
+          1,
+          1,
+          0.996185302734375
+        ],
+        [
+          0.1875,
+          1,
+          1,
+          1,
+          0.993408203125
+        ],
+        [
+          0.21875,
+          1,
+          1,
+          1,
+          0.989532470703125
+        ],
+        [
+          0.25,
+          1,
+          1,
+          1,
+          0.984375
+        ],
+        [
+          0.28125,
+          1,
+          1,
+          1,
+          0.977752685546875
+        ],
+        [
+          0.3125,
+          1,
+          1,
+          1,
+          0.969482421875
+        ],
+        [
+          0.34375,
+          1,
+          1,
+          1,
+          0.959381103515625
+        ],
+        [
+          0.375,
+          1,
+          1,
+          1,
+          0.947265625
+        ],
+        [
+          0.40625,
+          1,
+          1,
+          1,
+          0.932952880859375
+        ],
+        [
+          0.4375,
+          1,
+          1,
+          1,
+          0.9162598252296448
+        ],
+        [
+          0.46875,
+          1,
+          1,
+          1,
+          0.897003173828125
+        ],
+        [
+          0.5,
+          1,
+          1,
+          1,
+          0.875
+        ],
+        [
+          0.53125,
+          1,
+          1,
+          1,
+          0.8500670790672302
+        ],
+        [
+          0.5625,
+          1,
+          1,
+          1,
+          0.822021484375
+        ],
+        [
+          0.59375,
+          1,
+          1,
+          1,
+          0.7906798720359802
+        ],
+        [
+          0.625,
+          1,
+          1,
+          1,
+          0.755859375
+        ],
+        [
+          0.65625,
+          1,
+          1,
+          1,
+          0.717376708984375
+        ],
+        [
+          0.6875,
+          1,
+          1,
+          1,
+          0.675048828125
+        ],
+        [
+          0.71875,
+          1,
+          1,
+          1,
+          0.628692626953125
+        ],
+        [
+          0.75,
+          1,
+          1,
+          1,
+          0.578125
+        ],
+        [
+          0.78125,
+          1,
+          1,
+          1,
+          0.5231627821922302
+        ],
+        [
+          0.8125,
+          1,
+          1,
+          1,
+          0.4636229872703552
+        ],
+        [
+          0.84375,
+          1,
+          1,
+          1,
+          0.399322509765625
+        ],
+        [
+          0.875,
+          1,
+          1,
+          1,
+          0.3300780951976776
+        ],
+        [
+          0.90625,
+          1,
+          1,
+          1,
+          0.255706787109375
+        ],
+        [
+          0.9375,
+          1,
+          1,
+          1,
+          0.1760254055261612
+        ],
+        [
+          0.96875,
+          1,
+          1,
+          1,
+          0.09085080027580261
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "sourceIds": [
+        "77:2513"
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "gradientCount": 328,
+  "stopCount": 12859,
+  "variants": 14,
+  "counts": {
+    "nodes": 319,
+    "repeats": 15,
+    "masks": 23,
+    "gradientRefs": 328,
+    "colorRefs": 29
+  },
+  "issues": []
+}

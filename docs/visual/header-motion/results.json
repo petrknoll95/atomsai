@@ -1,0 +1,2671 @@
+{
+  "date": "2026-10-26T13:54:28.896Z",
+  "base": "http://127.0.0.1:3001",
+  "results": [
+    {
+      "engine": "chromium",
+      "checks": [
+        "All three desktop menus reveal/close through intermediate frames; closing content is inert and Escape restores focus.",
+        "Trigger hover fades smoothly without opening the menu.",
+        "Rapid close/reopen and switching menus cannot leave stale panels; outside click dismisses.",
+        "Keyboard product previews still work; a completed close resets the default preview on reopening.",
+        "Reduced motion settles instantly; the final panel retains original 736 × 444 geometry and matches the Figma comparison tolerance.",
+        "Changing motion preference during exit and resizing to mobile finishes safely; the full-screen menu opens without overflow."
+      ],
+      "errors": [],
+      "transitions": [
+        {
+          "name": "Applications",
+          "opening": [
+            {
+              "time": 0.09999990463256836,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 12.799999713897705,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 30.299999713897705,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 64.7999997138977,
+              "opacity": 0.3768,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.477259
+            },
+            {
+              "time": 65.89999961853027,
+              "opacity": 0.3768,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.477259
+            },
+            {
+              "time": 80.59999990463257,
+              "opacity": 0.5116,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.631912
+            },
+            {
+              "time": 96.69999980926514,
+              "opacity": 0.6255,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.75259
+            },
+            {
+              "time": 113.2999997138977,
+              "opacity": 0.7201,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.843506
+            },
+            {
+              "time": 130.39999961853027,
+              "opacity": 0.8015,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.912209
+            },
+            {
+              "time": 146.19999980926514,
+              "opacity": 0.8621,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.955051
+            },
+            {
+              "time": 163.7999997138977,
+              "opacity": 0.9138,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.98331
+            },
+            {
+              "time": 180.2999997138977,
+              "opacity": 0.9473,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.99537
+            },
+            {
+              "time": 197,
+              "opacity": 0.9719,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.999623
+            },
+            {
+              "time": 213.59999990463257,
+              "opacity": 0.9873,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 230.39999961853027,
+              "opacity": 0.9954,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 247,
+              "opacity": 0.9991,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 263.7999997138977,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 280.3999996185303,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 297,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 313.3999996185303,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 330,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 347,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 363.59999990463257,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 380,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 396.2999997138977,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 413.2999997138977,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 430,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 446.69999980926514,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 463.3999996185303,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 480,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 497,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 513.3999996185303,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 530.0999999046326,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 546.7999997138977,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 563.3999996185303,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            }
+          ],
+          "closing": [
+            {
+              "time": 0,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 8.900000095367432,
+              "opacity": 0.729,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 25.5,
+              "opacity": 0.5001,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 42.200000286102295,
+              "opacity": 0.325,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 59.09999990463257,
+              "opacity": 0.2028,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 75.40000009536743,
+              "opacity": 0.1115,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 92.09999990463257,
+              "opacity": 0.0527,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 108.7000002861023,
+              "opacity": 0.0208,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 125.7000002861023,
+              "opacity": 0.0048,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 141.80000019073486,
+              "opacity": 0.0003,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 159,
+              "opacity": 0,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 175.80000019073486,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 191.5,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 208.7000002861023,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 225.7000002861023,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 242.2000002861023,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 259,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 275.2000002861023,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 292.30000019073486,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 308.80000019073486,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 324.7000002861023,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 341.90000009536743,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 358.09999990463257,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 375.7000002861023,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 392.2000002861023,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 408.40000009536743,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 425.59999990463257,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 442,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 459,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            }
+          ]
+        },
+        {
+          "name": "Infrastructure",
+          "opening": [
+            {
+              "time": 0,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 11.700000286102295,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 28.300000190734863,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 45.30000019073486,
+              "opacity": 0.187,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.243665
+            },
+            {
+              "time": 61,
+              "opacity": 0.349,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.444137
+            },
+            {
+              "time": 77.40000009536743,
+              "opacity": 0.496,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.614525
+            },
+            {
+              "time": 94.90000009536743,
+              "opacity": 0.6189,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.745963
+            },
+            {
+              "time": 111.59999990463257,
+              "opacity": 0.7201,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.843506
+            },
+            {
+              "time": 128.40000009536743,
+              "opacity": 0.8015,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.912209
+            },
+            {
+              "time": 144.7000002861023,
+              "opacity": 0.8621,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.955051
+            },
+            {
+              "time": 161.5,
+              "opacity": 0.9114,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.982198
+            },
+            {
+              "time": 178.30000019073486,
+              "opacity": 0.9473,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.99537
+            },
+            {
+              "time": 194.90000009536743,
+              "opacity": 0.9707,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.999529
+            },
+            {
+              "time": 211.30000019073486,
+              "opacity": 0.9866,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 228,
+              "opacity": 0.995,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 244.7000002861023,
+              "opacity": 0.999,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 261.59999990463257,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 278.30000019073486,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 294.90000009536743,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 311,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 328.30000019073486,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 344.7000002861023,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 361.40000009536743,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 378.30000019073486,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 394.7000002861023,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 411.5,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 428.09999990463257,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 444.7000002861023,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 461.7000002861023,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 478.09999990463257,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 494.90000009536743,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 511.5,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 528.3000001907349,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 544.7000002861023,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 561.5999999046326,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            }
+          ],
+          "closing": [
+            {
+              "time": 0,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 11.700000286102295,
+              "opacity": 0.7139,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 28.100000381469727,
+              "opacity": 0.5001,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 45,
+              "opacity": 0.325,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 60.90000009536743,
+              "opacity": 0.2028,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 78.2000002861023,
+              "opacity": 0.1115,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 94.90000009536743,
+              "opacity": 0.0527,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 111.40000009536743,
+              "opacity": 0.0208,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 128.30000019073486,
+              "opacity": 0.0048,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 145.10000038146973,
+              "opacity": 0.0002,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 161.5,
+              "opacity": 0,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 178.7000002861023,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 194.80000019073486,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 211.40000009536743,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 228.2000002861023,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 244.7000002861023,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 261.40000009536743,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 278.30000019073486,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 295,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 311.6000003814697,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 328.30000019073486,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 345,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 361,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 378.1000003814697,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 395,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 411.6000003814697,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 428.30000019073486,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 445,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 461.7000002861023,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            }
+          ]
+        },
+        {
+          "name": "Industries",
+          "opening": [
+            {
+              "time": 0,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 12.599999904632568,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 28.799999713897705,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 46.40000009536743,
+              "opacity": 0.1978,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.257416
+            },
+            {
+              "time": 62.69999980926514,
+              "opacity": 0.3584,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.455329
+            },
+            {
+              "time": 79.19999980926514,
+              "opacity": 0.5038,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.623285
+            },
+            {
+              "time": 96,
+              "opacity": 0.6255,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.75259
+            },
+            {
+              "time": 112.19999980926514,
+              "opacity": 0.7201,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.843506
+            },
+            {
+              "time": 129.40000009536743,
+              "opacity": 0.8015,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.912209
+            },
+            {
+              "time": 145.40000009536743,
+              "opacity": 0.8621,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.955051
+            },
+            {
+              "time": 162.69999980926514,
+              "opacity": 0.9114,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.982198
+            },
+            {
+              "time": 179.40000009536743,
+              "opacity": 0.9473,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.99537
+            },
+            {
+              "time": 195.7999997138977,
+              "opacity": 0.9719,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.999623
+            },
+            {
+              "time": 212.5,
+              "opacity": 0.9866,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 229.19999980926514,
+              "opacity": 0.9954,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 246,
+              "opacity": 0.9991,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 262.69999980926514,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 279.19999980926514,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 295.59999990463257,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 312.59999990463257,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 329.2999997138977,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 346,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 362.5,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 379.19999980926514,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 395.90000009536743,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 412.59999990463257,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 429.09999990463257,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 445.59999990463257,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 462.5,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 479.19999980926514,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 496,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 512.5999999046326,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 529,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 545.9000000953674,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 562,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            }
+          ],
+          "closing": [
+            {
+              "time": 0,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 12.5,
+              "opacity": 0.7139,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 29.300000190734863,
+              "opacity": 0.4884,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 45.80000019073486,
+              "opacity": 0.325,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 62.5,
+              "opacity": 0.1964,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 79.09999990463257,
+              "opacity": 0.1072,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 95.80000019073486,
+              "opacity": 0.0527,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 112.5,
+              "opacity": 0.0194,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 129.19999980926514,
+              "opacity": 0.0048,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 146.09999990463257,
+              "opacity": 0.0002,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 162.59999990463257,
+              "opacity": 0,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 179.59999990463257,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 195.40000009536743,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 212.19999980926514,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 228.69999980926514,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 245.5,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 262.09999990463257,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 279.09999990463257,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 295.40000009536743,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 312.59999990463257,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 328.69999980926514,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 345.40000009536743,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 362.09999990463257,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 378.80000019073486,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 395.30000019073486,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 412.09999990463257,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 428.69999980926514,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 445.40000009536743,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 462,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            }
+          ]
+        }
+      ],
+      "geometry": {
+        "x": 204,
+        "y": 80,
+        "width": 736,
+        "height": 444
+      },
+      "meanAbsoluteChannelError": 1.3821504928841886,
+      "baselineMeanAbsoluteChannelError": 0
+    },
+    {
+      "engine": "webkit",
+      "checks": [
+        "All three desktop menus reveal/close through intermediate frames; closing content is inert and Escape restores focus.",
+        "Trigger hover fades smoothly without opening the menu.",
+        "Rapid close/reopen and switching menus cannot leave stale panels; outside click dismisses.",
+        "Keyboard product previews still work; a completed close resets the default preview on reopening.",
+        "Reduced motion settles instantly; the final panel retains original 736 × 444 geometry and matches the Figma comparison tolerance.",
+        "Changing motion preference during exit and resizing to mobile finishes safely; the full-screen menu opens without overflow."
+      ],
+      "errors": [],
+      "transitions": [
+        {
+          "name": "Applications",
+          "opening": [
+            {
+              "time": 0,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 1,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 18,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 34,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 36,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 55,
+              "opacity": 0.2297,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.297668
+            },
+            {
+              "time": 68,
+              "opacity": 0.3584,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.455329
+            },
+            {
+              "time": 84,
+              "opacity": 0.5038,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.623285
+            },
+            {
+              "time": 101,
+              "opacity": 0.6255,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.75259
+            },
+            {
+              "time": 118,
+              "opacity": 0.7201,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.843506
+            },
+            {
+              "time": 134,
+              "opacity": 0.8015,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.912209
+            },
+            {
+              "time": 151,
+              "opacity": 0.8654,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.957125
+            },
+            {
+              "time": 168,
+              "opacity": 0.9114,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.982198
+            },
+            {
+              "time": 184,
+              "opacity": 0.9473,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.99537
+            },
+            {
+              "time": 201,
+              "opacity": 0.9719,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.999623
+            },
+            {
+              "time": 218,
+              "opacity": 0.9866,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 234,
+              "opacity": 0.995,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 251,
+              "opacity": 0.999,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 268,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 285,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 301,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 318,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 334,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 351,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 368,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 384,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 401,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 418,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 434,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 451,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 468,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 484,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 501,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 518,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 534,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 551,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            }
+          ],
+          "closing": [
+            {
+              "time": 0,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 6,
+              "opacity": 0.729,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 22,
+              "opacity": 0.5001,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 39,
+              "opacity": 0.325,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 56,
+              "opacity": 0.2028,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 72,
+              "opacity": 0.1115,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 89,
+              "opacity": 0.0527,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 106,
+              "opacity": 0.0208,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 122,
+              "opacity": 0.0048,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 139,
+              "opacity": 0.0002,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 156,
+              "opacity": 0,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 172,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 189,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 206,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 222,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 239,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 256,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 272,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 289,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 306,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 322,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 339,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 356,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 372,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 389,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 406,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 422,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 439,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 456,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            }
+          ]
+        },
+        {
+          "name": "Infrastructure",
+          "opening": [
+            {
+              "time": 0,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 11,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 28,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 29,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 45,
+              "opacity": 0.187,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.243665
+            },
+            {
+              "time": 61,
+              "opacity": 0.3584,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.455329
+            },
+            {
+              "time": 78,
+              "opacity": 0.5038,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.623285
+            },
+            {
+              "time": 95,
+              "opacity": 0.6189,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.745963
+            },
+            {
+              "time": 111,
+              "opacity": 0.7201,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.843506
+            },
+            {
+              "time": 128,
+              "opacity": 0.8015,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.912209
+            },
+            {
+              "time": 145,
+              "opacity": 0.8621,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.955051
+            },
+            {
+              "time": 161,
+              "opacity": 0.9114,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.982198
+            },
+            {
+              "time": 178,
+              "opacity": 0.9473,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.99537
+            },
+            {
+              "time": 195,
+              "opacity": 0.9707,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.999529
+            },
+            {
+              "time": 211,
+              "opacity": 0.9866,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 228,
+              "opacity": 0.9954,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 245,
+              "opacity": 0.999,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 261,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 278,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 295,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 311,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 328,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 345,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 361,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 378,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 395,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 411,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 429,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 445,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 461,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 478,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 495,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 511,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 528,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 545,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 562,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            }
+          ],
+          "closing": [
+            {
+              "time": 0,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 11,
+              "opacity": 0.729,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 28,
+              "opacity": 0.512,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 43,
+              "opacity": 0.343,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 61,
+              "opacity": 0.2028,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 78,
+              "opacity": 0.1159,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 94,
+              "opacity": 0.0554,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 111,
+              "opacity": 0.0208,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 128,
+              "opacity": 0.0054,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 144,
+              "opacity": 0.0003,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 161,
+              "opacity": 0,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 178,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 194,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 211,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 228,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 244,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 261,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 278,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 294,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 311,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 327,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 345,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 361,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 378,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 394,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 412,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 428,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 444,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 461,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            }
+          ]
+        },
+        {
+          "name": "Industries",
+          "opening": [
+            {
+              "time": 0,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 10,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 26,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 27,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 0
+            },
+            {
+              "time": 47,
+              "opacity": 0.2297,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.297668
+            },
+            {
+              "time": 64,
+              "opacity": 0.4038,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.509038
+            },
+            {
+              "time": 81,
+              "opacity": 0.5345,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.657
+            },
+            {
+              "time": 98,
+              "opacity": 0.657,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.784
+            },
+            {
+              "time": 114,
+              "opacity": 0.746,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.86648
+            },
+            {
+              "time": 131,
+              "opacity": 0.822,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.927662
+            },
+            {
+              "time": 148,
+              "opacity": 0.8781,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.964784
+            },
+            {
+              "time": 164,
+              "opacity": 0.9232,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.987296
+            },
+            {
+              "time": 182,
+              "opacity": 0.9571,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.99763
+            },
+            {
+              "time": 198,
+              "opacity": 0.9762,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 0.999875
+            },
+            {
+              "time": 215,
+              "opacity": 0.9898,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 231,
+              "opacity": 0.9969,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 248,
+              "opacity": 0.9995,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 264,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 281,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 298,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 314,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 331,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 348,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 364,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 381,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 398,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 414,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 431,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 448,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 464,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 481,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 497,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 515,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 531,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 548,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 564,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            }
+          ],
+          "closing": [
+            {
+              "time": 0,
+              "opacity": 1,
+              "expanded": "true",
+              "inert": false,
+              "emphasis": 1
+            },
+            {
+              "time": 12,
+              "opacity": 0.7139,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 29,
+              "opacity": 0.5001,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 45,
+              "opacity": 0.325,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 62,
+              "opacity": 0.1964,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 79,
+              "opacity": 0.1115,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 95,
+              "opacity": 0.0527,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 112,
+              "opacity": 0.0194,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 128,
+              "opacity": 0.0054,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 145,
+              "opacity": 0.0002,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 162,
+              "opacity": 0,
+              "expanded": "false",
+              "inert": true,
+              "emphasis": 1
+            },
+            {
+              "time": 179,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 195,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 212,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 229,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 245,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 262,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 279,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 295,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 312,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 329,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 345,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 362,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 379,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 395,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 412,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 430,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 445,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            },
+            {
+              "time": 461,
+              "opacity": 0,
+              "expanded": "false",
+              "emphasis": 1
+            }
+          ]
+        }
+      ],
+      "geometry": {
+        "x": 204,
+        "y": 80,
+        "width": 736,
+        "height": 444
+      },
+      "meanAbsoluteChannelError": 2.045175610393002,
+      "baselineMeanAbsoluteChannelError": 0
+    }
+  ]
+}

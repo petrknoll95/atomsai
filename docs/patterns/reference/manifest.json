@@ -1,0 +1,142 @@
+[
+  {
+    "kind": "drift",
+    "count": 5,
+    "id": "77:863",
+    "width": 800,
+    "height": 800,
+    "format": "png",
+    "original_width": 800,
+    "original_height": 800
+  },
+  {
+    "kind": "drift",
+    "count": 10,
+    "id": "77:1248",
+    "width": 800,
+    "height": 800,
+    "format": "png",
+    "original_width": 800,
+    "original_height": 800
+  },
+  {
+    "kind": "drift",
+    "count": 20,
+    "id": "77:1303",
+    "width": 800,
+    "height": 800,
+    "format": "png",
+    "original_width": 800,
+    "original_height": 800
+  },
+  {
+    "kind": "drift",
+    "count": 40,
+    "id": "77:1398",
+    "width": 800,
+    "height": 800,
+    "format": "png",
+    "original_width": 800,
+    "original_height": 800
+  },
+  {
+    "kind": "offset",
+    "count": 5,
+    "id": "77:1573",
+    "width": 800,
+    "height": 800,
+    "format": "png",
+    "original_width": 800,
+    "original_height": 800
+  },
+  {
+    "kind": "offset",
+    "count": 10,
+    "id": "77:1608",
+    "width": 800,
+    "height": 800,
+    "format": "png",
+    "original_width": 800,
+    "original_height": 800
+  },
+  {
+    "kind": "offset",
+    "count": 20,
+    "id": "77:1663",
+    "width": 800,
+    "height": 800,
+    "format": "png",
+    "original_width": 800,
+    "original_height": 800
+  },
+  {
+    "kind": "offset",
+    "count": 40,
+    "id": "77:1758",
+    "width": 800,
+    "height": 800,
+    "format": "png",
+    "original_width": 800,
+    "original_height": 800
+  },
+  {
+    "kind": "single-band",
+    "count": 5,
+    "id": "77:1933",
+    "width": 800,
+    "height": 800,
+    "format": "png",
+    "original_width": 800,
+    "original_height": 800
+  },
+  {
+    "kind": "single-band",
+    "count": 10,
+    "id": "77:1992",
+    "width": 800,
+    "height": 800,
+    "format": "png",
+    "original_width": 800,
+    "original_height": 800
+  },
+  {
+    "kind": "single-band",
+    "count": 20,
+    "id": "77:2086",
+    "width": 800,
+    "height": 800,
+    "format": "png",
+    "original_width": 800,
+    "original_height": 800
+  },
+  {
+    "kind": "single-band",
+    "count": 40,
+    "id": "77:2250",
+    "width": 800,
+    "height": 800,
+    "format": "png",
+    "original_width": 800,
+    "original_height": 800
+  },
+  {
+    "kind": "concentric",
+    "count": 15,
+    "id": "77:2554",
+    "width": 800,
+    "height": 800,
+    "format": "png",
+    "original_width": 800,
+    "original_height": 800
+  },
+  {
+    "kind": "concentric",
+    "count": 29,
+    "id": "77:2644",
+    "width": 800,
+    "height": 800,
+    "format": "png",
+    "original_width": 800,
+    "original_height": 800
+  }
+]

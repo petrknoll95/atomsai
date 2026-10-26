@@ -1,0 +1,2284 @@
+{
+  "id": "77:1398",
+  "setId": "77:2804",
+  "kind": "drift",
+  "density": "3",
+  "description": "Editable drift interference pattern, rebuilt from brand master 1032:17487. Color carriers bind to pattern/drift/* in Theme. Preserve aspect ratio: scale or crop, never stretch. Mask gradients define geometry and are intentionally not themed.",
+  "root": {
+    "id": "77:1398",
+    "name": "Density=3",
+    "type": "frame",
+    "bounds": [
+      856,
+      888,
+      800,
+      800
+    ],
+    "transform": [
+      1,
+      0,
+      856,
+      0,
+      1,
+      888
+    ],
+    "opacity": 1,
+    "blendMode": "PASS_THROUGH",
+    "visible": true,
+    "isMask": false,
+    "clip": true,
+    "paints": [],
+    "children": [
+      {
+        "id": "77:1399",
+        "name": "Drift — editable masks",
+        "type": "frame",
+        "bounds": [
+          0,
+          0,
+          800,
+          800
+        ],
+        "transform": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "opacity": 1,
+        "blendMode": "PASS_THROUGH",
+        "visible": true,
+        "isMask": false,
+        "clip": true,
+        "paints": [],
+        "children": [
+          {
+            "id": "77:1400",
+            "name": "base",
+            "type": "rect",
+            "bounds": [
+              -20,
+              -20,
+              840,
+              840
+            ],
+            "transform": [
+              1,
+              0,
+              -20,
+              0,
+              1,
+              -20
+            ],
+            "opacity": 1,
+            "blendMode": "PASS_THROUGH",
+            "visible": true,
+            "isMask": false,
+            "paints": [
+              {
+                "opacity": 1,
+                "blendMode": "NORMAL",
+                "visible": true,
+                "colorRole": "pattern/drift/base",
+                "variableId": "VariableID:77:812"
+              }
+            ]
+          },
+          {
+            "id": "77:1401",
+            "name": "Lower field",
+            "type": "frame",
+            "bounds": [
+              -20,
+              -20,
+              840,
+              840
+            ],
+            "transform": [
+              1,
+              0,
+              -20,
+              0,
+              1,
+              -20
+            ],
+            "opacity": 1,
+            "blendMode": "PASS_THROUGH",
+            "visible": true,
+            "isMask": false,
+            "clip": true,
+            "paints": [],
+            "children": [
+              {
+                "id": "77:1402",
+                "name": "Slits — duplicate a slit",
+                "type": "frame",
+                "bounds": [
+                  0,
+                  0,
+                  840,
+                  840
+                ],
+                "transform": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "opacity": 1,
+                "blendMode": "PASS_THROUGH",
+                "visible": true,
+                "isMask": true,
+                "maskType": "LUMINANCE",
+                "clip": true,
+                "paints": [
+                  {
+                    "opacity": 1,
+                    "blendMode": "NORMAL",
+                    "visible": true,
+                    "rgba": [
+                      0,
+                      0,
+                      0,
+                      1
+                    ]
+                  }
+                ],
+                "effects": [
+                  {
+                    "type": "LAYER_BLUR",
+                    "radius": 1.8899998664855957,
+                    "visible": true,
+                    "blurType": "NORMAL"
+                  }
+                ],
+                "repeat": {
+                  "axis": "x",
+                  "count": 40,
+                  "step": 21,
+                  "template": {
+                    "id": "77:1403",
+                    "name": "1",
+                    "type": "rect",
+                    "bounds": [
+                      0,
+                      0,
+                      21,
+                      840
+                    ],
+                    "transform": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "opacity": 1,
+                    "blendMode": "PASS_THROUGH",
+                    "visible": true,
+                    "isMask": false,
+                    "paints": [
+                      {
+                        "opacity": 1,
+                        "blendMode": "NORMAL",
+                        "visible": true,
+                        "gradient": "g77_1403_0"
+                      },
+                      {
+                        "opacity": 1,
+                        "blendMode": "NORMAL",
+                        "visible": true,
+                        "gradient": "g77_1403_1"
+                      }
+                    ]
+                  },
+                  "sourceIds": [
+                    "77:1403",
+                    "77:1404",
+                    "77:1405",
+                    "77:1406",
+                    "77:1407",
+                    "77:1408",
+                    "77:1409",
+                    "77:1410",
+                    "77:1411",
+                    "77:1412",
+                    "77:1413",
+                    "77:1414",
+                    "77:1415",
+                    "77:1416",
+                    "77:1417",
+                    "77:1418",
+                    "77:1419",
+                    "77:1420",
+                    "77:1421",
+                    "77:1422",
+                    "77:1423",
+                    "77:1424",
+                    "77:1425",
+                    "77:1426",
+                    "77:1427",
+                    "77:1428",
+                    "77:1429",
+                    "77:1430",
+                    "77:1431",
+                    "77:1432",
+                    "77:1433",
+                    "77:1434",
+                    "77:1435",
+                    "77:1436",
+                    "77:1437",
+                    "77:1438",
+                    "77:1439",
+                    "77:1440",
+                    "77:1441",
+                    "77:1442"
+                  ],
+                  "sourceTypes": [
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle"
+                  ]
+                }
+              },
+              {
+                "id": "77:1443",
+                "name": "lower-field",
+                "type": "rect",
+                "bounds": [
+                  0,
+                  0,
+                  840,
+                  840
+                ],
+                "transform": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "opacity": 1,
+                "blendMode": "PASS_THROUGH",
+                "visible": true,
+                "isMask": false,
+                "paints": [
+                  {
+                    "opacity": 1,
+                    "blendMode": "NORMAL",
+                    "visible": true,
+                    "colorRole": "pattern/drift/lower-field",
+                    "variableId": "VariableID:77:813"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "77:1444",
+            "name": "Upper field",
+            "type": "frame",
+            "bounds": [
+              -20,
+              -20,
+              840,
+              840
+            ],
+            "transform": [
+              1,
+              0,
+              -20,
+              0,
+              1,
+              -20
+            ],
+            "opacity": 1,
+            "blendMode": "PASS_THROUGH",
+            "visible": true,
+            "isMask": false,
+            "clip": true,
+            "paints": [],
+            "children": [
+              {
+                "id": "77:1445",
+                "name": "Slits — duplicate a slit",
+                "type": "frame",
+                "bounds": [
+                  0,
+                  0,
+                  840,
+                  840
+                ],
+                "transform": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "opacity": 1,
+                "blendMode": "PASS_THROUGH",
+                "visible": true,
+                "isMask": true,
+                "maskType": "LUMINANCE",
+                "clip": true,
+                "paints": [
+                  {
+                    "opacity": 1,
+                    "blendMode": "NORMAL",
+                    "visible": true,
+                    "rgba": [
+                      0,
+                      0,
+                      0,
+                      1
+                    ]
+                  }
+                ],
+                "effects": [
+                  {
+                    "type": "LAYER_BLUR",
+                    "radius": 1.8899998664855957,
+                    "visible": true,
+                    "blurType": "NORMAL"
+                  }
+                ],
+                "repeat": {
+                  "axis": "x",
+                  "count": 40,
+                  "step": 21,
+                  "template": {
+                    "id": "77:1446",
+                    "name": "1",
+                    "type": "rect",
+                    "bounds": [
+                      0,
+                      0,
+                      21,
+                      840
+                    ],
+                    "transform": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "opacity": 1,
+                    "blendMode": "PASS_THROUGH",
+                    "visible": true,
+                    "isMask": false,
+                    "paints": [
+                      {
+                        "opacity": 1,
+                        "blendMode": "NORMAL",
+                        "visible": true,
+                        "gradient": "g77_1446_0"
+                      },
+                      {
+                        "opacity": 1,
+                        "blendMode": "NORMAL",
+                        "visible": true,
+                        "gradient": "g77_1446_1"
+                      }
+                    ]
+                  },
+                  "sourceIds": [
+                    "77:1446",
+                    "77:1447",
+                    "77:1448",
+                    "77:1449",
+                    "77:1450",
+                    "77:1451",
+                    "77:1452",
+                    "77:1453",
+                    "77:1454",
+                    "77:1455",
+                    "77:1456",
+                    "77:1457",
+                    "77:1458",
+                    "77:1459",
+                    "77:1460",
+                    "77:1461",
+                    "77:1462",
+                    "77:1463",
+                    "77:1464",
+                    "77:1465",
+                    "77:1466",
+                    "77:1467",
+                    "77:1468",
+                    "77:1469",
+                    "77:1470",
+                    "77:1471",
+                    "77:1472",
+                    "77:1473",
+                    "77:1474",
+                    "77:1475",
+                    "77:1476",
+                    "77:1477",
+                    "77:1478",
+                    "77:1479",
+                    "77:1480",
+                    "77:1481",
+                    "77:1482",
+                    "77:1483",
+                    "77:1484",
+                    "77:1485"
+                  ],
+                  "sourceTypes": [
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle"
+                  ]
+                }
+              },
+              {
+                "id": "77:1486",
+                "name": "upper-field",
+                "type": "rect",
+                "bounds": [
+                  0,
+                  0,
+                  840,
+                  840
+                ],
+                "transform": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "opacity": 1,
+                "blendMode": "PASS_THROUGH",
+                "visible": true,
+                "isMask": false,
+                "paints": [
+                  {
+                    "opacity": 1,
+                    "blendMode": "NORMAL",
+                    "visible": true,
+                    "colorRole": "pattern/drift/upper-field",
+                    "variableId": "VariableID:77:814"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "77:1487",
+            "name": "Highlight",
+            "type": "frame",
+            "bounds": [
+              -20,
+              -20,
+              840,
+              840
+            ],
+            "transform": [
+              1,
+              0,
+              -20,
+              0,
+              1,
+              -20
+            ],
+            "opacity": 1,
+            "blendMode": "PASS_THROUGH",
+            "visible": true,
+            "isMask": false,
+            "clip": true,
+            "paints": [],
+            "children": [
+              {
+                "id": "77:1488",
+                "name": "Slits — duplicate a slit",
+                "type": "frame",
+                "bounds": [
+                  0,
+                  0,
+                  840,
+                  840
+                ],
+                "transform": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "opacity": 1,
+                "blendMode": "PASS_THROUGH",
+                "visible": true,
+                "isMask": true,
+                "maskType": "LUMINANCE",
+                "clip": true,
+                "paints": [
+                  {
+                    "opacity": 1,
+                    "blendMode": "NORMAL",
+                    "visible": true,
+                    "rgba": [
+                      0,
+                      0,
+                      0,
+                      1
+                    ]
+                  }
+                ],
+                "effects": [
+                  {
+                    "type": "LAYER_BLUR",
+                    "radius": 1.8899998664855957,
+                    "visible": true,
+                    "blurType": "NORMAL"
+                  }
+                ],
+                "repeat": {
+                  "axis": "x",
+                  "count": 40,
+                  "step": 21,
+                  "template": {
+                    "id": "77:1489",
+                    "name": "1",
+                    "type": "rect",
+                    "bounds": [
+                      0,
+                      0,
+                      21,
+                      840
+                    ],
+                    "transform": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "opacity": 1,
+                    "blendMode": "PASS_THROUGH",
+                    "visible": true,
+                    "isMask": false,
+                    "paints": [
+                      {
+                        "opacity": 1,
+                        "blendMode": "NORMAL",
+                        "visible": true,
+                        "gradient": "g77_1489_0"
+                      },
+                      {
+                        "opacity": 1,
+                        "blendMode": "NORMAL",
+                        "visible": true,
+                        "gradient": "g77_1489_1"
+                      }
+                    ]
+                  },
+                  "sourceIds": [
+                    "77:1489",
+                    "77:1490",
+                    "77:1491",
+                    "77:1492",
+                    "77:1493",
+                    "77:1494",
+                    "77:1495",
+                    "77:1496",
+                    "77:1497",
+                    "77:1498",
+                    "77:1499",
+                    "77:1500",
+                    "77:1501",
+                    "77:1502",
+                    "77:1503",
+                    "77:1504",
+                    "77:1505",
+                    "77:1506",
+                    "77:1507",
+                    "77:1508",
+                    "77:1509",
+                    "77:1510",
+                    "77:1511",
+                    "77:1512",
+                    "77:1513",
+                    "77:1514",
+                    "77:1515",
+                    "77:1516",
+                    "77:1517",
+                    "77:1518",
+                    "77:1519",
+                    "77:1520",
+                    "77:1521",
+                    "77:1522",
+                    "77:1523",
+                    "77:1524",
+                    "77:1525",
+                    "77:1526",
+                    "77:1527",
+                    "77:1528"
+                  ],
+                  "sourceTypes": [
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle"
+                  ]
+                }
+              },
+              {
+                "id": "77:1529",
+                "name": "highlight",
+                "type": "rect",
+                "bounds": [
+                  0,
+                  0,
+                  840,
+                  840
+                ],
+                "transform": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "opacity": 1,
+                "blendMode": "PASS_THROUGH",
+                "visible": true,
+                "isMask": false,
+                "paints": [
+                  {
+                    "opacity": 1,
+                    "blendMode": "NORMAL",
+                    "visible": true,
+                    "colorRole": "pattern/drift/highlight",
+                    "variableId": "VariableID:77:815"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "77:1530",
+            "name": "Reflections",
+            "type": "frame",
+            "bounds": [
+              -20,
+              -20,
+              840,
+              840
+            ],
+            "transform": [
+              1,
+              0,
+              -20,
+              0,
+              1,
+              -20
+            ],
+            "opacity": 1,
+            "blendMode": "LINEAR_DODGE",
+            "visible": true,
+            "isMask": false,
+            "clip": true,
+            "paints": [
+              {
+                "opacity": 1,
+                "blendMode": "NORMAL",
+                "visible": true,
+                "rgba": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            ],
+            "children": [
+              {
+                "id": "77:1531",
+                "name": "Slits — reflections",
+                "type": "frame",
+                "bounds": [
+                  0,
+                  0,
+                  840,
+                  840
+                ],
+                "transform": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "opacity": 1,
+                "blendMode": "PASS_THROUGH",
+                "visible": true,
+                "isMask": true,
+                "maskType": "LUMINANCE",
+                "clip": false,
+                "paints": [
+                  {
+                    "opacity": 1,
+                    "blendMode": "NORMAL",
+                    "visible": true,
+                    "rgba": [
+                      0,
+                      0,
+                      0,
+                      1
+                    ]
+                  }
+                ],
+                "repeat": {
+                  "axis": "x",
+                  "count": 40,
+                  "step": 21,
+                  "template": {
+                    "id": "77:1532",
+                    "name": "1",
+                    "type": "rect",
+                    "bounds": [
+                      0,
+                      0,
+                      21,
+                      840
+                    ],
+                    "transform": [
+                      1,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    "opacity": 0.20000000298023224,
+                    "blendMode": "PASS_THROUGH",
+                    "visible": true,
+                    "isMask": false,
+                    "paints": [
+                      {
+                        "opacity": 1,
+                        "blendMode": "NORMAL",
+                        "visible": true,
+                        "gradient": "g77_1532_0"
+                      }
+                    ]
+                  },
+                  "sourceIds": [
+                    "77:1532",
+                    "77:1533",
+                    "77:1534",
+                    "77:1535",
+                    "77:1536",
+                    "77:1537",
+                    "77:1538",
+                    "77:1539",
+                    "77:1540",
+                    "77:1541",
+                    "77:1542",
+                    "77:1543",
+                    "77:1544",
+                    "77:1545",
+                    "77:1546",
+                    "77:1547",
+                    "77:1548",
+                    "77:1549",
+                    "77:1550",
+                    "77:1551",
+                    "77:1552",
+                    "77:1553",
+                    "77:1554",
+                    "77:1555",
+                    "77:1556",
+                    "77:1557",
+                    "77:1558",
+                    "77:1559",
+                    "77:1560",
+                    "77:1561",
+                    "77:1562",
+                    "77:1563",
+                    "77:1564",
+                    "77:1565",
+                    "77:1566",
+                    "77:1567",
+                    "77:1568",
+                    "77:1569",
+                    "77:1570",
+                    "77:1571"
+                  ],
+                  "sourceTypes": [
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle",
+                    "rectangle"
+                  ]
+                }
+              },
+              {
+                "id": "77:1572",
+                "name": "reflection",
+                "type": "rect",
+                "bounds": [
+                  0,
+                  0,
+                  840,
+                  840
+                ],
+                "transform": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "opacity": 1,
+                "blendMode": "PASS_THROUGH",
+                "visible": true,
+                "isMask": false,
+                "paints": [
+                  {
+                    "opacity": 1,
+                    "blendMode": "NORMAL",
+                    "visible": true,
+                    "colorRole": "pattern/drift/reflection",
+                    "variableId": "VariableID:77:816"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "gradients": {
+    "g77_1403_0": {
+      "type": "radial",
+      "matrix": [
+        0.5263158082962036,
+        0,
+        0.2368420958518982,
+        0,
+        0.29069769382476807,
+        -0.15406979620456696
+      ],
+      "stops": [
+        [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.8600000143051147,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.8669999837875366,
+          1,
+          1,
+          1,
+          0.9927499890327454
+        ],
+        [
+          0.8740000128746033,
+          1,
+          1,
+          1,
+          0.972000002861023
+        ],
+        [
+          0.8809999823570251,
+          1,
+          1,
+          1,
+          0.9392499923706055
+        ],
+        [
+          0.8880000114440918,
+          1,
+          1,
+          1,
+          0.8960000276565552
+        ],
+        [
+          0.8949999809265137,
+          1,
+          1,
+          1,
+          0.84375
+        ],
+        [
+          0.9020000100135803,
+          1,
+          1,
+          1,
+          0.7839999794960022
+        ],
+        [
+          0.9089999794960022,
+          1,
+          1,
+          1,
+          0.7182499766349792
+        ],
+        [
+          0.9160000085830688,
+          1,
+          1,
+          1,
+          0.6480000019073486
+        ],
+        [
+          0.9229999780654907,
+          1,
+          1,
+          1,
+          0.5747500061988831
+        ],
+        [
+          0.9300000071525574,
+          1,
+          1,
+          1,
+          0.5
+        ],
+        [
+          0.9369999766349792,
+          1,
+          1,
+          1,
+          0.42524999380111694
+        ],
+        [
+          0.9440000057220459,
+          1,
+          1,
+          1,
+          0.35199999809265137
+        ],
+        [
+          0.9509999752044678,
+          1,
+          1,
+          1,
+          0.28174999356269836
+        ],
+        [
+          0.9580000042915344,
+          1,
+          1,
+          1,
+          0.2160000056028366
+        ],
+        [
+          0.9649999737739563,
+          1,
+          1,
+          1,
+          0.15625
+        ],
+        [
+          0.972000002861023,
+          1,
+          1,
+          1,
+          0.10400000214576721
+        ],
+        [
+          0.9789999723434448,
+          1,
+          1,
+          1,
+          0.060750000178813934
+        ],
+        [
+          0.9860000014305115,
+          1,
+          1,
+          1,
+          0.02800000086426735
+        ],
+        [
+          0.9929999709129333,
+          1,
+          1,
+          1,
+          0.007249999791383743
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "sourceIds": [
+        "77:1403"
+      ]
+    },
+    "g77_1403_1": {
+      "type": "radial",
+      "matrix": [
+        0.5263158082962036,
+        0,
+        0.2368420958518982,
+        0,
+        -0.29069769382476807,
+        0.1366278976202011
+      ],
+      "stops": [
+        [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.8600000143051147,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.8669999837875366,
+          1,
+          1,
+          1,
+          0.9927499890327454
+        ],
+        [
+          0.8740000128746033,
+          1,
+          1,
+          1,
+          0.972000002861023
+        ],
+        [
+          0.8809999823570251,
+          1,
+          1,
+          1,
+          0.9392499923706055
+        ],
+        [
+          0.8880000114440918,
+          1,
+          1,
+          1,
+          0.8960000276565552
+        ],
+        [
+          0.8949999809265137,
+          1,
+          1,
+          1,
+          0.84375
+        ],
+        [
+          0.9020000100135803,
+          1,
+          1,
+          1,
+          0.7839999794960022
+        ],
+        [
+          0.9089999794960022,
+          1,
+          1,
+          1,
+          0.7182499766349792
+        ],
+        [
+          0.9160000085830688,
+          1,
+          1,
+          1,
+          0.6480000019073486
+        ],
+        [
+          0.9229999780654907,
+          1,
+          1,
+          1,
+          0.5747500061988831
+        ],
+        [
+          0.9300000071525574,
+          1,
+          1,
+          1,
+          0.5
+        ],
+        [
+          0.9369999766349792,
+          1,
+          1,
+          1,
+          0.42524999380111694
+        ],
+        [
+          0.9440000057220459,
+          1,
+          1,
+          1,
+          0.35199999809265137
+        ],
+        [
+          0.9509999752044678,
+          1,
+          1,
+          1,
+          0.28174999356269836
+        ],
+        [
+          0.9580000042915344,
+          1,
+          1,
+          1,
+          0.2160000056028366
+        ],
+        [
+          0.9649999737739563,
+          1,
+          1,
+          1,
+          0.15625
+        ],
+        [
+          0.972000002861023,
+          1,
+          1,
+          1,
+          0.10400000214576721
+        ],
+        [
+          0.9789999723434448,
+          1,
+          1,
+          1,
+          0.060750000178813934
+        ],
+        [
+          0.9860000014305115,
+          1,
+          1,
+          1,
+          0.02800000086426735
+        ],
+        [
+          0.9929999709129333,
+          1,
+          1,
+          1,
+          0.007249999791383743
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "sourceIds": [
+        "77:1403"
+      ]
+    },
+    "g77_1446_0": {
+      "type": "radial",
+      "matrix": [
+        0.5,
+        0,
+        0.25,
+        0,
+        0.20833329856395721,
+        0.8916667103767395
+      ],
+      "stops": [
+        [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.8600000143051147,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.8669999837875366,
+          1,
+          1,
+          1,
+          0.9927499890327454
+        ],
+        [
+          0.8740000128746033,
+          1,
+          1,
+          1,
+          0.972000002861023
+        ],
+        [
+          0.8809999823570251,
+          1,
+          1,
+          1,
+          0.9392499923706055
+        ],
+        [
+          0.8880000114440918,
+          1,
+          1,
+          1,
+          0.8960000276565552
+        ],
+        [
+          0.8949999809265137,
+          1,
+          1,
+          1,
+          0.84375
+        ],
+        [
+          0.9020000100135803,
+          1,
+          1,
+          1,
+          0.7839999794960022
+        ],
+        [
+          0.9089999794960022,
+          1,
+          1,
+          1,
+          0.7182499766349792
+        ],
+        [
+          0.9160000085830688,
+          1,
+          1,
+          1,
+          0.6480000019073486
+        ],
+        [
+          0.9229999780654907,
+          1,
+          1,
+          1,
+          0.5747500061988831
+        ],
+        [
+          0.9300000071525574,
+          1,
+          1,
+          1,
+          0.5
+        ],
+        [
+          0.9369999766349792,
+          1,
+          1,
+          1,
+          0.42524999380111694
+        ],
+        [
+          0.9440000057220459,
+          1,
+          1,
+          1,
+          0.35199999809265137
+        ],
+        [
+          0.9509999752044678,
+          1,
+          1,
+          1,
+          0.28174999356269836
+        ],
+        [
+          0.9580000042915344,
+          1,
+          1,
+          1,
+          0.2160000056028366
+        ],
+        [
+          0.9649999737739563,
+          1,
+          1,
+          1,
+          0.15625
+        ],
+        [
+          0.972000002861023,
+          1,
+          1,
+          1,
+          0.10400000214576721
+        ],
+        [
+          0.9789999723434448,
+          1,
+          1,
+          1,
+          0.060750000178813934
+        ],
+        [
+          0.9860000014305115,
+          1,
+          1,
+          1,
+          0.02800000086426735
+        ],
+        [
+          0.9929999709129333,
+          1,
+          1,
+          1,
+          0.007249999791383743
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "sourceIds": [
+        "77:1446"
+      ]
+    },
+    "g77_1446_1": {
+      "type": "radial",
+      "matrix": [
+        0.5,
+        0,
+        0.25,
+        0,
+        -0.20833329856395721,
+        1.100000023841858
+      ],
+      "stops": [
+        [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.8600000143051147,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.8669999837875366,
+          1,
+          1,
+          1,
+          0.9927499890327454
+        ],
+        [
+          0.8740000128746033,
+          1,
+          1,
+          1,
+          0.972000002861023
+        ],
+        [
+          0.8809999823570251,
+          1,
+          1,
+          1,
+          0.9392499923706055
+        ],
+        [
+          0.8880000114440918,
+          1,
+          1,
+          1,
+          0.8960000276565552
+        ],
+        [
+          0.8949999809265137,
+          1,
+          1,
+          1,
+          0.84375
+        ],
+        [
+          0.9020000100135803,
+          1,
+          1,
+          1,
+          0.7839999794960022
+        ],
+        [
+          0.9089999794960022,
+          1,
+          1,
+          1,
+          0.7182499766349792
+        ],
+        [
+          0.9160000085830688,
+          1,
+          1,
+          1,
+          0.6480000019073486
+        ],
+        [
+          0.9229999780654907,
+          1,
+          1,
+          1,
+          0.5747500061988831
+        ],
+        [
+          0.9300000071525574,
+          1,
+          1,
+          1,
+          0.5
+        ],
+        [
+          0.9369999766349792,
+          1,
+          1,
+          1,
+          0.42524999380111694
+        ],
+        [
+          0.9440000057220459,
+          1,
+          1,
+          1,
+          0.35199999809265137
+        ],
+        [
+          0.9509999752044678,
+          1,
+          1,
+          1,
+          0.28174999356269836
+        ],
+        [
+          0.9580000042915344,
+          1,
+          1,
+          1,
+          0.2160000056028366
+        ],
+        [
+          0.9649999737739563,
+          1,
+          1,
+          1,
+          0.15625
+        ],
+        [
+          0.972000002861023,
+          1,
+          1,
+          1,
+          0.10400000214576721
+        ],
+        [
+          0.9789999723434448,
+          1,
+          1,
+          1,
+          0.060750000178813934
+        ],
+        [
+          0.9860000014305115,
+          1,
+          1,
+          1,
+          0.02800000086426735
+        ],
+        [
+          0.9929999709129333,
+          1,
+          1,
+          1,
+          0.007249999791383743
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "sourceIds": [
+        "77:1446"
+      ]
+    },
+    "g77_1489_0": {
+      "type": "radial",
+      "matrix": [
+        0.43478259444236755,
+        0,
+        0.28260868787765503,
+        0,
+        -0.25,
+        1.2000000476837158
+      ],
+      "stops": [
+        [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.8600000143051147,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.8669999837875366,
+          1,
+          1,
+          1,
+          0.9927499890327454
+        ],
+        [
+          0.8740000128746033,
+          1,
+          1,
+          1,
+          0.972000002861023
+        ],
+        [
+          0.8809999823570251,
+          1,
+          1,
+          1,
+          0.9392499923706055
+        ],
+        [
+          0.8880000114440918,
+          1,
+          1,
+          1,
+          0.8960000276565552
+        ],
+        [
+          0.8949999809265137,
+          1,
+          1,
+          1,
+          0.84375
+        ],
+        [
+          0.9020000100135803,
+          1,
+          1,
+          1,
+          0.7839999794960022
+        ],
+        [
+          0.9089999794960022,
+          1,
+          1,
+          1,
+          0.7182499766349792
+        ],
+        [
+          0.9160000085830688,
+          1,
+          1,
+          1,
+          0.6480000019073486
+        ],
+        [
+          0.9229999780654907,
+          1,
+          1,
+          1,
+          0.5747500061988831
+        ],
+        [
+          0.9300000071525574,
+          1,
+          1,
+          1,
+          0.5
+        ],
+        [
+          0.9369999766349792,
+          1,
+          1,
+          1,
+          0.42524999380111694
+        ],
+        [
+          0.9440000057220459,
+          1,
+          1,
+          1,
+          0.35199999809265137
+        ],
+        [
+          0.9509999752044678,
+          1,
+          1,
+          1,
+          0.28174999356269836
+        ],
+        [
+          0.9580000042915344,
+          1,
+          1,
+          1,
+          0.2160000056028366
+        ],
+        [
+          0.9649999737739563,
+          1,
+          1,
+          1,
+          0.15625
+        ],
+        [
+          0.972000002861023,
+          1,
+          1,
+          1,
+          0.10400000214576721
+        ],
+        [
+          0.9789999723434448,
+          1,
+          1,
+          1,
+          0.060750000178813934
+        ],
+        [
+          0.9860000014305115,
+          1,
+          1,
+          1,
+          0.02800000086426735
+        ],
+        [
+          0.9929999709129333,
+          1,
+          1,
+          1,
+          0.007249999791383743
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "sourceIds": [
+        "77:1489"
+      ]
+    },
+    "g77_1489_1": {
+      "type": "radial",
+      "matrix": [
+        0.43478259444236755,
+        0,
+        0.28260868787765503,
+        0,
+        0.25,
+        0.949999988079071
+      ],
+      "stops": [
+        [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.8600000143051147,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.8669999837875366,
+          1,
+          1,
+          1,
+          0.9927499890327454
+        ],
+        [
+          0.8740000128746033,
+          1,
+          1,
+          1,
+          0.972000002861023
+        ],
+        [
+          0.8809999823570251,
+          1,
+          1,
+          1,
+          0.9392499923706055
+        ],
+        [
+          0.8880000114440918,
+          1,
+          1,
+          1,
+          0.8960000276565552
+        ],
+        [
+          0.8949999809265137,
+          1,
+          1,
+          1,
+          0.84375
+        ],
+        [
+          0.9020000100135803,
+          1,
+          1,
+          1,
+          0.7839999794960022
+        ],
+        [
+          0.9089999794960022,
+          1,
+          1,
+          1,
+          0.7182499766349792
+        ],
+        [
+          0.9160000085830688,
+          1,
+          1,
+          1,
+          0.6480000019073486
+        ],
+        [
+          0.9229999780654907,
+          1,
+          1,
+          1,
+          0.5747500061988831
+        ],
+        [
+          0.9300000071525574,
+          1,
+          1,
+          1,
+          0.5
+        ],
+        [
+          0.9369999766349792,
+          1,
+          1,
+          1,
+          0.42524999380111694
+        ],
+        [
+          0.9440000057220459,
+          1,
+          1,
+          1,
+          0.35199999809265137
+        ],
+        [
+          0.9509999752044678,
+          1,
+          1,
+          1,
+          0.28174999356269836
+        ],
+        [
+          0.9580000042915344,
+          1,
+          1,
+          1,
+          0.2160000056028366
+        ],
+        [
+          0.9649999737739563,
+          1,
+          1,
+          1,
+          0.15625
+        ],
+        [
+          0.972000002861023,
+          1,
+          1,
+          1,
+          0.10400000214576721
+        ],
+        [
+          0.9789999723434448,
+          1,
+          1,
+          1,
+          0.060750000178813934
+        ],
+        [
+          0.9860000014305115,
+          1,
+          1,
+          1,
+          0.02800000086426735
+        ],
+        [
+          0.9929999709129333,
+          1,
+          1,
+          1,
+          0.007249999791383743
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "sourceIds": [
+        "77:1489"
+      ]
+    },
+    "g77_1532_0": {
+      "type": "radial",
+      "matrix": [
+        0,
+        0.9999539852142334,
+        -0.00016110000433400273,
+        -1.8577901124954224,
+        2.0000000233721948e-7,
+        2.3560945987701416
+      ],
+      "stops": [
+        [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0.03125,
+          0.9975923895835876,
+          0.9975923895835876,
+          0.9975923895835876,
+          1
+        ],
+        [
+          0.0625,
+          0.9903926253318787,
+          0.9903926253318787,
+          0.9903926253318787,
+          1
+        ],
+        [
+          0.09375,
+          0.9784700870513916,
+          0.9784700870513916,
+          0.9784700870513916,
+          1
+        ],
+        [
+          0.125,
+          0.961939811706543,
+          0.961939811706543,
+          0.961939811706543,
+          1
+        ],
+        [
+          0.15625,
+          0.9409605860710144,
+          0.9409605860710144,
+          0.9409605860710144,
+          1
+        ],
+        [
+          0.1875,
+          0.9157348275184631,
+          0.9157348275184631,
+          0.9157348275184631,
+          1
+        ],
+        [
+          0.21875,
+          0.8865051865577698,
+          0.8865051865577698,
+          0.8865051865577698,
+          1
+        ],
+        [
+          0.25,
+          0.8535534143447876,
+          0.8535534143447876,
+          0.8535534143447876,
+          1
+        ],
+        [
+          0.28125,
+          0.8171967267990112,
+          0.8171967267990112,
+          0.8171967267990112,
+          1
+        ],
+        [
+          0.3125,
+          0.7777851223945618,
+          0.7777851223945618,
+          0.7777851223945618,
+          1
+        ],
+        [
+          0.34375,
+          0.7356982827186584,
+          0.7356982827186584,
+          0.7356982827186584,
+          1
+        ],
+        [
+          0.375,
+          0.6913416981697083,
+          0.6913416981697083,
+          0.6913416981697083,
+          1
+        ],
+        [
+          0.40625,
+          0.6451423168182373,
+          0.6451423168182373,
+          0.6451423168182373,
+          1
+        ],
+        [
+          0.4375,
+          0.5975450873374939,
+          0.5975450873374939,
+          0.5975450873374939,
+          1
+        ],
+        [
+          0.46875,
+          0.5490084886550903,
+          0.5490084886550903,
+          0.5490084886550903,
+          1
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          1
+        ],
+        [
+          0.53125,
+          0.4509913921356201,
+          0.4509913921356201,
+          0.4509913921356201,
+          1
+        ],
+        [
+          0.5625,
+          0.4024549126625061,
+          0.4024549126625061,
+          0.4024549126625061,
+          1
+        ],
+        [
+          0.59375,
+          0.3548577129840851,
+          0.3548577129840851,
+          0.3548577129840851,
+          1
+        ],
+        [
+          0.625,
+          0.30865830183029175,
+          0.30865830183029175,
+          0.30865830183029175,
+          1
+        ],
+        [
+          0.65625,
+          0.264301598072052,
+          0.264301598072052,
+          0.264301598072052,
+          1
+        ],
+        [
+          0.6875,
+          0.22221490740776062,
+          0.22221490740776062,
+          0.22221490740776062,
+          1
+        ],
+        [
+          0.71875,
+          0.18280340731143951,
+          0.18280340731143951,
+          0.18280340731143951,
+          1
+        ],
+        [
+          0.75,
+          0.1464466005563736,
+          0.1464466005563736,
+          0.1464466005563736,
+          1
+        ],
+        [
+          0.78125,
+          0.11349479854106903,
+          0.11349479854106903,
+          0.11349479854106903,
+          1
+        ],
+        [
+          0.8125,
+          0.08426520228385925,
+          0.08426520228385925,
+          0.08426520228385925,
+          1
+        ],
+        [
+          0.84375,
+          0.0590393990278244,
+          0.0590393990278244,
+          0.0590393990278244,
+          1
+        ],
+        [
+          0.875,
+          0.03806019946932793,
+          0.03806019946932793,
+          0.03806019946932793,
+          1
+        ],
+        [
+          0.90625,
+          0.021529799327254295,
+          0.021529799327254295,
+          0.021529799327254295,
+          1
+        ],
+        [
+          0.9375,
+          0.009607399813830853,
+          0.009607399813830853,
+          0.009607399813830853,
+          1
+        ],
+        [
+          0.96875,
+          0.002407599939033389,
+          0.002407599939033389,
+          0.002407599939033389,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "sourceIds": [
+        "77:1532"
+      ]
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-26T10:37:40.289Z",
+  "browser": "Playwright Chromium",
+  "viewport": {
+    "width": 1600,
+    "height": 960
+  },
+  "deviceScaleFactor": 1,
+  "sourceFile": "pLyUMYhdCUYzwz0UXPtGY8",
+  "note": "Original Figma exports retained. Crop excludes shadow and outside stroke; CSS geometry is verified separately. Pixel metrics include font rasterization differences.",
+  "results": [
+    {
+      "product": "ServiceAgent",
+      "node": "260:6729",
+      "originalExport": {
+        "file": "header-dropdown.png",
+        "width": 802,
+        "height": 510
+      },
+      "crop": {
+        "left": 33,
+        "top": 21,
+        "width": 736,
+        "height": 444
+      },
+      "geometry": {
+        "x": 204,
+        "y": 80,
+        "width": 736,
+        "height": 444
+      },
+      "meanAbsoluteChannelError": 1.3821504928841886,
+      "pixelsOver24Percent": 1.8798349980415199
+    },
+    {
+      "product": "JustCall",
+      "node": "250:6234",
+      "originalExport": {
+        "file": "header-JustCall.png",
+        "width": 802,
+        "height": 510
+      },
+      "crop": {
+        "left": 33,
+        "top": 21,
+        "width": 736,
+        "height": 444
+      },
+      "geometry": {
+        "x": 204,
+        "y": 80,
+        "width": 736,
+        "height": 444
+      },
+      "meanAbsoluteChannelError": 1.041870675022849,
+      "pixelsOver24Percent": 1.4468272620446534
+    },
+    {
+      "product": "Helpwise",
+      "node": "250:6337",
+      "originalExport": {
+        "file": "header-Helpwise.png",
+        "width": 802,
+        "height": 510
+      },
+      "crop": {
+        "left": 33,
+        "top": 21,
+        "width": 736,
+        "height": 444
+      },
+      "geometry": {
+        "x": 204,
+        "y": 80,
+        "width": 736,
+        "height": 444
+      },
+      "meanAbsoluteChannelError": 1.264797746115681,
+      "pixelsOver24Percent": 1.6279866823345084
+    },
+    {
+      "product": "CallPage",
+      "node": "250:6420",
+      "originalExport": {
+        "file": "header-CallPage.png",
+        "width": 802,
+        "height": 510
+      },
+      "crop": {
+        "left": 33,
+        "top": 21,
+        "width": 736,
+        "height": 444
+      },
+      "geometry": {
+        "x": 204,
+        "y": 80,
+        "width": 736,
+        "height": 444
+      },
+      "meanAbsoluteChannelError": 1.0735827539496017,
+      "pixelsOver24Percent": 1.4030674696435566
+    }
+  ],
+  "errors": []
+}

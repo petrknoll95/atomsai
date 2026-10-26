@@ -1,0 +1,46 @@
+{
+  "name": "atomsai",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "visual": "node scripts/visual-check.mjs && node scripts/render-visual-report.mjs",
+    "test:interactions": "node scripts/interaction-check.mjs",
+    "test:browsers": "node scripts/browser-check.mjs",
+    "visual:header": "node scripts/header-visual-check.mjs",
+    "visual:patterns": "node scripts/pattern-visual-check.mjs && node scripts/render-pattern-report.mjs",
+    "test:patterns": "node scripts/pattern-interaction-check.mjs",
+    "visual:home-patterns": "node scripts/home-pattern-visual-check.mjs",
+    "test:home-patterns": "node scripts/home-pattern-check.mjs",
+    "test:application-hover": "node scripts/application-hover-check.mjs",
+    "test:fullscreen-menu": "node scripts/fullscreen-menu-check.mjs",
+    "test:smooth-scroll": "node scripts/smooth-scroll-check.mjs",
+    "test:pattern-motion": "node scripts/pattern-motion-check.mjs && node scripts/pattern-motion-device-check.mjs",
+    "test:home-motion": "node scripts/home-motion-check.mjs"
+  },
+  "dependencies": {
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
+    "gsap": "^3.15.0",
+    "next": "16.4.3",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.3",
+    "postcss": "^8.5.6",
+    "sharp": "^0.35.5",
+    "tailwindcss": "4.3.3",
+    "typescript": "^5.9.3"
+  }
+}

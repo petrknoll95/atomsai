@@ -1,0 +1,268 @@
+const imgIndicator = "https://www.figma.com/api/mcp/asset/6d25badd-e651-404e-9ca2-e83b75f92ad2.svg";
+const imgVector = "https://www.figma.com/api/mcp/asset/483f5635-7c44-4048-a7a1-fb8307d76f31.svg";
+const imgVector1 = "https://www.figma.com/api/mcp/asset/60123a99-9840-4f44-be2a-584a509310e4.svg";
+const imgVector2 = "https://www.figma.com/api/mcp/asset/24602b2a-63bf-4f0e-93e6-02612d83932d.svg";
+const imgVector3 = "https://www.figma.com/api/mcp/asset/feeecf39-a721-4757-8176-a811cef53bc6.svg";
+const imgVector4 = "https://www.figma.com/api/mcp/asset/bcdf5f02-3a13-42b1-8b72-b2fc7cb03c30.svg";
+const imgVector5 = "https://www.figma.com/api/mcp/asset/6e424db4-1b51-4049-a561-ecb519c1fd44.svg";
+const imgVector6 = "https://www.figma.com/api/mcp/asset/a39c2971-5e6f-4312-a6d0-ed9977795476.svg";
+const imgVector7 = "https://www.figma.com/api/mcp/asset/20001534-e088-4640-88a7-761312fc62ee.svg";
+
+export default function Faq() {
+  return (
+    <div className="bg-[var(--color-background,#10231e)] content-stretch flex flex-col items-start pb-[var(--calc(var(--spacing)*16),64px)] pt-[var(--calc(var(--spacing)*0),0px)] px-[var(--margin,48px)] relative size-full" data-node-id="198:11360" data-name="FAQ">
+      <div className="gap-x-[32px] gap-y-[96px] grid grid-cols-[repeat(6,minmax(0,1fr))] grid-rows-[repeat(2,fit-content(100%))] relative shrink-0 w-full" data-node-id="198:11466" data-name="Grid">
+        <div className="col-[span_3] content-stretch flex flex-col items-start justify-between justify-self-stretch relative self-stretch shrink-0" data-node-id="198:11565" data-name="Left">
+          <div className="content-stretch flex flex-col gap-[40px] items-start relative shrink-0 w-full" data-node-id="198:11578" data-name="Top">
+            <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[0] min-w-full not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-5xl,48px)] tracking-[-0.72px] w-[min-content]" data-node-id="198:11567">
+              <p className="leading-[0.95] mb-0 text-balance">Powerful AI.</p>
+              <p className="leading-[0.95] text-balance">Built for real use.</p>
+            </div>
+            <div className="bg-[var(--color-primary,#f6f1e8)] content-stretch flex gap-[var(--calc(var(--spacing)*2),8px)] h-[44px] items-center justify-center px-[var(--calc(var(--spacing)*5),20px)] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="198:11569" data-name="Button/Medium">
+              <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-primary-foreground,#27433b)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="I198:11569;33:643" style={{ fontVariationSettings: '"ital" 100' }}>
+                Find your starting point
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*4),16px)] items-start justify-center relative shrink-0 w-full" data-node-id="198:11592">
+            <div className="content-stretch flex gap-[var(--calc(var(--spacing)*0.5),2px)] items-center relative shrink-0 w-full" data-node-id="198:11595" data-name="Badges">
+              <div className="bg-[var(--color-primary,#f0ebf5)] border-[1.25px] border-[var(--color-foreground,#f0ebf5)] border-solid content-stretch flex flex-col items-center justify-center relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0 size-[48px]" data-node-id="198:11594" data-name="Badge">
+                <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-col font-['Founders_Grotesk:Medium'] justify-center leading-[0] not-italic relative shrink-0 text-[12.233px] text-[color:var(--color-primary-foreground,#493f58)] text-center tracking-[-0.1835px] whitespace-nowrap" data-node-id="198:11596">
+                  <p className="leading-[0.95] text-balance">SOC II</p>
+                </div>
+              </div>
+              <div className="bg-[var(--color-primary,#f0ebf5)] border-[1.25px] border-[var(--color-foreground,#f0ebf5)] border-solid content-stretch flex flex-col items-center justify-center relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0 size-[48px]" data-node-id="198:11603" data-name="Badge">
+                <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-col font-['Founders_Grotesk:Medium'] justify-center leading-[0] not-italic relative shrink-0 text-[12.233px] text-[color:var(--color-primary-foreground,#493f58)] text-center tracking-[-0.1835px] whitespace-nowrap" data-node-id="198:11604">
+                  <p className="leading-[0.95] text-balance">HIPAA</p>
+                </div>
+              </div>
+              <div className="bg-[var(--color-primary,#f0ebf5)] border-[1.25px] border-[var(--color-foreground,#f0ebf5)] border-solid content-stretch flex flex-col items-center justify-center relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0 size-[48px]" data-node-id="198:11601" data-name="Badge">
+                <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-col font-['Founders_Grotesk:Medium'] justify-center leading-[0] not-italic relative shrink-0 text-[12.233px] text-[color:var(--color-primary-foreground,#493f58)] text-center tracking-[-0.1835px] whitespace-nowrap" data-node-id="198:11602">
+                  <p className="leading-[0.95] text-balance">GDPR</p>
+                </div>
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-normal,425)] leading-[1.4] relative shrink-0 text-[color:var(--color-muted-foreground,#f6f1e8)] text-[length:var(--text-xs,12px)] text-pretty w-full" data-node-id="198:11579" style={{ fontVariationSettings: '"ital" 100' }}>
+              © 2026 AtomsAI, a brand of SaaS Labs US, Inc.
+            </p>
+          </div>
+        </div>
+        <div className="col-[span_3] gap-x-[32px] gap-y-[32px] grid grid-cols-[repeat(2,minmax(0,1fr))] grid-rows-[repeat(1,fit-content(100%))] justify-self-stretch relative self-start shrink-0" data-node-id="198:11566">
+          <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*8),32px)] items-start justify-center justify-self-stretch relative self-start shrink-0" data-node-id="198:11535" data-name="Grouop">
+            <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*3),12px)] items-start relative shrink-0 w-full" data-node-id="198:11467" data-name="Explore">
+              <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-muted-foreground,#f6f1e8)] text-[length:var(--text-xs,12px)] whitespace-nowrap" data-node-id="198:11468" style={{ fontVariationSettings: '"ital" 100' }}>
+                Explore
+              </p>
+              <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*2.5),10px)] items-start relative shrink-0" data-node-id="198:11469" data-name="Links">
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11470" data-name="/applications">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11471">
+                    Applications
+                  </p>
+                </div>
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11472" data-name="/infrastructure">
+                  <div className="relative shrink-0 size-[10px]" data-node-id="202:11813" data-name="Indicator">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIndicator} />
+                  </div>
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11473">
+                    Infrastructure
+                  </p>
+                </div>
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11474" data-name="/services">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11475">
+                    AI Services
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*3),12px)] items-start relative shrink-0 w-full" data-node-id="198:11476" data-name="Capabilities">
+              <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-muted-foreground,#f6f1e8)] text-[length:var(--text-xs,12px)] whitespace-nowrap" data-node-id="198:11477" style={{ fontVariationSettings: '"ital" 100' }}>
+                Capabilities
+              </p>
+              <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*2.5),10px)] items-start relative shrink-0" data-node-id="198:11478" data-name="Links">
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11479" data-name="/capabilities/voice">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11480">
+                    Voice
+                  </p>
+                </div>
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11481" data-name="/capabilities/chat">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11482">
+                    Chat
+                  </p>
+                </div>
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11483" data-name="/agents">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11484">
+                    Custom agents
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*3),12px)] items-start relative shrink-0 w-full" data-node-id="198:11549" data-name="Industries">
+              <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-muted-foreground,#f6f1e8)] text-[length:var(--text-xs,12px)] whitespace-nowrap" data-node-id="198:11550" style={{ fontVariationSettings: '"ital" 100' }}>
+                Industries
+              </p>
+              <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*2.5),10px)] items-start relative shrink-0" data-node-id="198:11551" data-name="Links">
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11552" data-name="/industries/healthcare">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11553">
+                    Healthcare
+                  </p>
+                </div>
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11554" data-name="/industries/insurance">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11555">
+                    Insurance
+                  </p>
+                </div>
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11556" data-name="/industries/lending">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11557">{`Credit & lending`}</p>
+                </div>
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11558" data-name="/industries/logistics">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11559">
+                    Logistics
+                  </p>
+                </div>
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11560" data-name="/industries/retail">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11561">{`Retail & commerce`}</p>
+                </div>
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11562" data-name="/industries/manufacturing">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11563">
+                    Manufacturing
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*8),32px)] items-start justify-self-stretch relative self-start shrink-0" data-node-id="198:11536" data-name="Grouop">
+            <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*3),12px)] items-start relative shrink-0 w-full" data-node-id="198:11500" data-name="Resources">
+              <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-muted-foreground,#f6f1e8)] text-[length:var(--text-xs,12px)] whitespace-nowrap" data-node-id="198:11501" style={{ fontVariationSettings: '"ital" 100' }}>
+                Resources
+              </p>
+              <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*2.5),10px)] items-start relative shrink-0" data-node-id="198:11502" data-name="Links">
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11503" data-name="/resources/blog">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11504">
+                    Blog
+                  </p>
+                </div>
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11505" data-name="/resources/case-studies">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11506">
+                    Customer stories
+                  </p>
+                </div>
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11507" data-name="/help-center">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11508">
+                    Help center
+                  </p>
+                </div>
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11509" data-name="/changelog">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11510">
+                    Website updates
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*3),12px)] items-start relative shrink-0 w-full" data-node-id="198:11511" data-name="Company">
+              <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-muted-foreground,#f6f1e8)] text-[length:var(--text-xs,12px)] whitespace-nowrap" data-node-id="198:11512" style={{ fontVariationSettings: '"ital" 100' }}>
+                Company
+              </p>
+              <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*2.5),10px)] items-start relative shrink-0" data-node-id="198:11513" data-name="Links">
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11514" data-name="/company/about">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11515">
+                    About AtomsAI
+                  </p>
+                </div>
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11516" data-name="/approach">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11517">
+                    How we work
+                  </p>
+                </div>
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11518" data-name="/company/careers">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11519">
+                    Careers
+                  </p>
+                </div>
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11520" data-name="/company/contact">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11521">
+                    Contact
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*3),12px)] items-start relative shrink-0 w-full" data-node-id="198:11581" data-name="Company">
+              <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-muted-foreground,#f6f1e8)] text-[length:var(--text-xs,12px)] whitespace-nowrap" data-node-id="198:11582" style={{ fontVariationSettings: '"ital" 100' }}>
+                Legal
+              </p>
+              <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*2.5),10px)] items-start relative shrink-0" data-node-id="198:11583" data-name="Links">
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11586" data-name="/approach">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11587">
+                    Terms of Service
+                  </p>
+                </div>
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11584" data-name="/company/about">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11585">
+                    Privacy Policy
+                  </p>
+                </div>
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*1),4px)] items-center py-[2px] relative shrink-0 w-full" data-node-id="198:11588" data-name="/company/careers">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[1.3] not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] tracking-[-0.24px] whitespace-nowrap" data-node-id="198:11589">
+                    Cookie Preferences
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-[span_3] h-[212px] relative shrink-0 w-[1504px]" data-node-id="198:11522" data-name="Crop">
+          <div className="-translate-y-1/2 absolute h-[274px] left-0 right-0 top-1/2" data-node-id="198:11523" data-name="Logo/Logotype">
+            <div className="absolute contents inset-[0.1%_0.01%_0.1%_0]" data-node-id="198:11524" data-name="Logo (Rescaled to fit)">
+              <div className="absolute contents inset-[11.21%_0.01%_9.73%_24.74%]" data-node-id="198:11525" data-name="Group">
+                <div className="absolute inset-[11.21%_60.66%_11.2%_24.74%]" data-node-id="198:11526" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+                </div>
+                <div className="absolute inset-[19.46%_54.47%_9.73%_38.58%]" data-node-id="198:11527" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
+                </div>
+                <div className="absolute inset-[33.01%_43.7%_9.73%_45.87%]" data-node-id="198:11528" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector2} />
+                </div>
+                <div className="absolute inset-[33.01%_26.85%_11.2%_57.31%]" data-node-id="198:11529" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector3} />
+                </div>
+                <div className="absolute inset-[33.01%_16.79%_9.73%_74.16%]" data-node-id="198:11530" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector4} />
+                </div>
+                <div className="absolute inset-[11.21%_2.93%_11.2%_83.3%]" data-node-id="198:11531" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector5} />
+                </div>
+                <div className="absolute inset-[11.21%_0.01%_11.2%_98.04%]" data-node-id="198:11532" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector6} />
+                </div>
+              </div>
+              <div className="absolute inset-[0.1%_80%_0.1%_0]" data-node-id="198:11533" data-name="Vector">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector7} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Display/5xl: Font(family: "var(--font-display)", style: Regular, size: var(--text-5xl), weight: var(--font-weight-normal), lineHeight: 0.949999988079071, letterSpacing: -1.5), Label/sm: Font(family: "var(--font-sans)", style: Regular, size: var(--text-sm), weight: var(--font-weight-medium), lineHeight: 1.399999976158142, letterSpacing: 0), Body/xs: Font(family: "var(--font-sans)", style: Regular, size: var(--text-xs), weight: var(--font-weight-normal), lineHeight: 1.399999976158142, letterSpacing: 0), Label/xs: Font(family: "var(--font-sans)", style: Regular, size: var(--text-xs), weight: var(--font-weight-medium), lineHeight: 1.399999976158142, letterSpacing: 0).
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Button/Medium
+**Node ID:** 33:803
+
+Pill button, Medium: h-11 px-5 gap-2 text-sm rounded-full font-medium. Styles — Primary: bg-primary text-primary-foreground. Secondary: bg-secondary text-secondary-foreground. Outline: border border-control-border text-foreground (hover/pressed: border-foreground). Ghost: text-foreground. Link: px-0 text-foreground, muted-foreground on hover and pressed. Never underlined. States — hover/pressed for filled and Ghost styles: state layer of the style’s foreground at var(--state-hover)/var(--state-pressed) (hover:bg-primary-hover etc.). Focus: outline-2 outline-offset-2 outline-ring. Disabled: opacity var(--state-disabled). Lead with an action icon, trail with a navigation arrow. Supported hosts: background and surface. State opacity is exported as percent / 100. Target active label contrast ≥4.8:1; focus outline must not be clipped. Outline stays transparent in every state: no background fill or state overlay. Hover and pressed use the border; focus retains the focus ring.
+
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

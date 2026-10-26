@@ -1,0 +1,57 @@
+{
+  "normalization": "Exclude source IDs and node names; normalize root canvas placement; normalize repeated slit count/width and rectangular-vector type. All remaining geometry, paints including all gradient stops, role bindings, opacity, blend modes, masks, effects and clipping must match exactly.",
+  "singleBandDifference": "Only seven mask/carrier x coordinates (and their transform tx values) are 0.0000009999999974752427px in density0 and0 in densities1–3. Every other normalized property is identical. Exact exports preserve these floats; runtime uses the density0 template.",
+  "comparisons": [
+    {
+      "kind": "drift",
+      "normalizedSceneEqual": [
+        {
+          "density": 1,
+          "equal": true
+        },
+        {
+          "density": 2,
+          "equal": true
+        },
+        {
+          "density": 3,
+          "equal": true
+        }
+      ]
+    },
+    {
+      "kind": "offset",
+      "normalizedSceneEqual": [
+        {
+          "density": 1,
+          "equal": true
+        },
+        {
+          "density": 2,
+          "equal": true
+        },
+        {
+          "density": 3,
+          "equal": true
+        }
+      ]
+    },
+    {
+      "kind": "single-band",
+      "normalizedSceneEqual": [
+        {
+          "density": 1,
+          "equal": false
+        },
+        {
+          "density": 2,
+          "equal": false
+        },
+        {
+          "density": 3,
+          "equal": false
+        }
+      ]
+    }
+  ]
+}

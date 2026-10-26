@@ -1,0 +1,117 @@
+[
+  {
+    "source": "public/assets/figma/industries-BackgroundImage.png",
+    "output": "public/assets/figma/industries-BackgroundImage.webp",
+    "sourceBytes": 5159361,
+    "outputBytes": 3167842,
+    "decodedRgbIdentical": true,
+    "sourceSha256": "4197334d64e1699965cf0ab71ef4b69de2a211c38ded7f5bf4c6cba09d50f97a",
+    "outputSha256": "a87f8e8df0cbf1f32cf6141ce106f102f0c64f6afd94254cf06597e6195cf6a0"
+  },
+  {
+    "source": "public/assets/figma/industries-BackgroundImage.png",
+    "output": "public/assets/figma/industries-BackgroundImage-512.webp",
+    "width": 512,
+    "outputBytes": 203060,
+    "transformation": "Lanczos3 resize; lossless WebP with original ICC profile; used only below 1200px."
+  },
+  {
+    "source": "public/assets/figma/industries-BackgroundImage.png",
+    "output": "public/assets/figma/industries-BackgroundImage-1024.webp",
+    "width": 1024,
+    "outputBytes": 801970,
+    "transformation": "Lanczos3 resize; lossless WebP with original ICC profile; used only below 1200px."
+  },
+  {
+    "source": "public/assets/figma/industries-BackgroundImage1.png",
+    "output": "public/assets/figma/industries-BackgroundImage1.webp",
+    "sourceBytes": 4175670,
+    "outputBytes": 2450184,
+    "decodedRgbIdentical": true,
+    "sourceSha256": "afcfd4ed41ac311940d7765bda3c55787c171d79606052bedf2e4eb93ef33aa8",
+    "outputSha256": "d59bc5cf295b2ef39cee6f1ba3c388df254a75095b4848bf41c2c61342337c40"
+  },
+  {
+    "source": "public/assets/figma/industries-BackgroundImage1.png",
+    "output": "public/assets/figma/industries-BackgroundImage1-512.webp",
+    "width": 512,
+    "outputBytes": 219322,
+    "transformation": "Lanczos3 resize; lossless WebP with original ICC profile; used only below 1200px."
+  },
+  {
+    "source": "public/assets/figma/industries-BackgroundImage1.png",
+    "output": "public/assets/figma/industries-BackgroundImage1-1024.webp",
+    "width": 1024,
+    "outputBytes": 774198,
+    "transformation": "Lanczos3 resize; lossless WebP with original ICC profile; used only below 1200px."
+  },
+  {
+    "source": "public/assets/figma/industries-BackgroundImage2.png",
+    "output": "public/assets/figma/industries-BackgroundImage2.webp",
+    "sourceBytes": 8983367,
+    "outputBytes": 4526638,
+    "decodedRgbIdentical": true,
+    "sourceSha256": "b30a5533a4c2c2ba642c850d8d2bc6e8f19ec7f7d1389d3cc2a730831ac14621",
+    "outputSha256": "574ddcddd7fa6d34da7e96e948e0548a769b60cdfe18e7a594acf47e4deb4a96"
+  },
+  {
+    "source": "public/assets/figma/industries-BackgroundImage2.png",
+    "output": "public/assets/figma/industries-BackgroundImage2-512.webp",
+    "width": 512,
+    "outputBytes": 267778,
+    "transformation": "Lanczos3 resize; lossless WebP with original ICC profile; used only below 1200px."
+  },
+  {
+    "source": "public/assets/figma/industries-BackgroundImage2.png",
+    "output": "public/assets/figma/industries-BackgroundImage2-1024.webp",
+    "width": 1024,
+    "outputBytes": 1053974,
+    "transformation": "Lanczos3 resize; lossless WebP with original ICC profile; used only below 1200px."
+  },
+  {
+    "source": "public/assets/figma/industries-BackgroundImage3.png",
+    "output": "public/assets/figma/industries-BackgroundImage3.webp",
+    "sourceBytes": 9346714,
+    "outputBytes": 4882476,
+    "decodedRgbIdentical": true,
+    "sourceSha256": "8e4a191e10def47031da3287f486130583c1e08a5010ce4e3632f667ea5f2482",
+    "outputSha256": "3fcd9269bdd6fd5af8da79def07def752da1cee3611d5345d849ea74950ce450"
+  },
+  {
+    "source": "public/assets/figma/industries-BackgroundImage3.png",
+    "output": "public/assets/figma/industries-BackgroundImage3-512.webp",
+    "width": 512,
+    "outputBytes": 283400,
+    "transformation": "Lanczos3 resize; lossless WebP with original ICC profile; used only below 1200px."
+  },
+  {
+    "source": "public/assets/figma/industries-BackgroundImage3.png",
+    "output": "public/assets/figma/industries-BackgroundImage3-1024.webp",
+    "width": 1024,
+    "outputBytes": 1130638,
+    "transformation": "Lanczos3 resize; lossless WebP with original ICC profile; used only below 1200px."
+  },
+  {
+    "source": "public/assets/figma/stories-Media.png",
+    "output": "public/assets/figma/stories-Media.webp",
+    "sourceBytes": 1319465,
+    "outputBytes": 677416,
+    "decodedRgbIdentical": true,
+    "sourceSha256": "dc6aeb8b207ebcc4495e080e2b97d44e15021f70e61011ac173d5eb25ebd7263",
+    "outputSha256": "2eea48737d39c6da87abc7dd4dff0c78fd3c1124e5df21cea75397f992eb2e66"
+  },
+  {
+    "source": "public/assets/figma/stories-Media.png",
+    "output": "public/assets/figma/stories-Media-512.webp",
+    "width": 512,
+    "outputBytes": 146776,
+    "transformation": "Lanczos3 resize; lossless WebP with original ICC profile; used only below 1200px."
+  },
+  {
+    "source": "public/assets/figma/stories-Media.png",
+    "output": "public/assets/figma/stories-Media-1024.webp",
+    "width": 1024,
+    "outputBytes": 339862,
+    "transformation": "Lanczos3 resize; lossless WebP with original ICC profile; used only below 1200px."
+  }
+]

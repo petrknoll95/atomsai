@@ -1,0 +1,154 @@
+{
+  "fileKey": "pLyUMYhdCUYzwz0UXPtGY8",
+  "instance": "260:6729",
+  "variantSet": "247:4587",
+  "date": "2026-10-26",
+  "assets": [
+    {
+      "name": "header-base-IconArtwork.svg",
+      "url": "https://www.figma.com/api/mcp/asset/882be518-ede5-453b-ba6c-a5094686ff1b.svg",
+      "nodeId": "260:6729",
+      "path": "public/assets/figma/header-base-IconArtwork.svg"
+    },
+    {
+      "name": "header-base-Icon24RegularSoundWave.svg",
+      "url": "https://www.figma.com/api/mcp/asset/678a7e7c-4e16-48cd-ac3b-2fb58d63fd29.svg",
+      "nodeId": "260:6729",
+      "path": "public/assets/figma/header-base-Icon24RegularSoundWave.svg"
+    },
+    {
+      "name": "header-base-Line1.svg",
+      "url": "https://www.figma.com/api/mcp/asset/2179cf91-4428-4685-b6f0-1e9cd9c36be4.svg",
+      "nodeId": "260:6729",
+      "path": "public/assets/figma/header-base-Line1.svg"
+    },
+    {
+      "name": "header-base-IconArtwork1.svg",
+      "url": "https://www.figma.com/api/mcp/asset/a653e0b9-af65-47b1-9ba7-4825ed690a50.svg",
+      "nodeId": "260:6729",
+      "path": "public/assets/figma/header-base-IconArtwork1.svg"
+    },
+    {
+      "name": "header-base-IconMessage.svg",
+      "url": "https://www.figma.com/api/mcp/asset/6796d809-b467-41c0-b60f-81e1ec1980e3.svg",
+      "nodeId": "260:6729",
+      "path": "public/assets/figma/header-base-IconMessage.svg"
+    },
+    {
+      "name": "header-base-IconArtwork2.svg",
+      "url": "https://www.figma.com/api/mcp/asset/523a5d1f-3097-4729-8312-58e56eab4ec4.svg",
+      "nodeId": "260:6729",
+      "path": "public/assets/figma/header-base-IconArtwork2.svg"
+    },
+    {
+      "name": "header-base-IconCheck.svg",
+      "url": "https://www.figma.com/api/mcp/asset/b2418a50-ca7e-482a-abf2-03322bc31058.svg",
+      "nodeId": "260:6729",
+      "path": "public/assets/figma/header-base-IconCheck.svg"
+    },
+    {
+      "name": "header-helpwise-IconArtwork2.svg",
+      "url": "https://www.figma.com/api/mcp/asset/f47323fa-02eb-4242-9695-1ea52a255b0b.svg",
+      "nodeId": "250:6337",
+      "path": "public/assets/figma/header-helpwise-IconArtwork2.svg"
+    },
+    {
+      "name": "header-helpwise-StatusDot.svg",
+      "url": "https://www.figma.com/api/mcp/asset/0dca9243-1a0f-44f6-89b8-41b46b083583.svg",
+      "nodeId": "250:6337",
+      "path": "public/assets/figma/header-helpwise-StatusDot.svg"
+    },
+    {
+      "name": "header-helpwise-IconArtwork3.svg",
+      "url": "https://www.figma.com/api/mcp/asset/758da6a7-9061-430a-972a-337c6a1b81c0.svg",
+      "nodeId": "250:6337",
+      "path": "public/assets/figma/header-helpwise-IconArtwork3.svg"
+    },
+    {
+      "name": "header-helpwise-IconArtwork4.svg",
+      "url": "https://www.figma.com/api/mcp/asset/ddfc2d87-251c-4a3c-863b-91b15935a9c6.svg",
+      "nodeId": "250:6337",
+      "path": "public/assets/figma/header-helpwise-IconArtwork4.svg"
+    },
+    {
+      "name": "header-callpage-BrowserDot.svg",
+      "url": "https://www.figma.com/api/mcp/asset/0ef062c4-83f6-44c7-b267-4664a3a361f7.svg",
+      "nodeId": "250:6420",
+      "path": "public/assets/figma/header-callpage-BrowserDot.svg"
+    },
+    {
+      "name": "header-callpage-IconArtwork2.svg",
+      "url": "https://www.figma.com/api/mcp/asset/56b34d67-53aa-40dd-bf1f-f895d15a25dd.svg",
+      "nodeId": "250:6420",
+      "path": "public/assets/figma/header-callpage-IconArtwork2.svg"
+    }
+  ],
+  "referenceExports": [
+    {
+      "nodeId": "260:6729",
+      "path": "docs/visual/reference/header-dropdown.png"
+    },
+    {
+      "nodeId": "250:6234",
+      "path": "docs/visual/reference/header-JustCall.png"
+    },
+    {
+      "nodeId": "250:6337",
+      "path": "docs/visual/reference/header-Helpwise.png"
+    },
+    {
+      "nodeId": "250:6420",
+      "path": "docs/visual/reference/header-CallPage.png"
+    }
+  ],
+  "geometry": {
+    "panel": {
+      "x": 204,
+      "y": 80,
+      "width": 736,
+      "height": 444,
+      "radius": 24,
+      "padding": 12,
+      "gap": 12
+    },
+    "left": {
+      "width": 320,
+      "height": 420
+    },
+    "right": {
+      "width": 380,
+      "height": 420
+    },
+    "rows": {
+      "height": 76,
+      "padding": 16,
+      "gap": 4
+    },
+    "referenceExport": {
+      "width": 802,
+      "height": 510,
+      "frameOrigin": {
+        "x": 33,
+        "y": 21
+      }
+    }
+  },
+  "sourceCorrections": [
+    "Outside strokes on dropdown and ServiceAgent booking card are represented without adding layout width.",
+    "Figma text boxes have rounded line heights (14px→20px, 12px→17px, 18px→25px).",
+    "Header chevron has original16×16 slot with13.5×8 artwork and8px gap."
+  ],
+  "inferences": [
+    "All Applications source wrapper incorrectly links to CallPage; local #applications chosen as meaningful navigation.",
+    "AI Services uses #offerings after coordinating agent verified /services returns404.",
+    "Mouse hover and keyboard focus switch previews. Escape restores trigger focus; outside click, link choice, leaving header and viewport resize close the disclosure.",
+    "Mobile source missing: existing compact link menu retained, with same dismissal behavior.",
+    "Illustrative UI has aria-hidden=true, contains no real form controls."
+  ],
+  "measurements": [
+    {
+      "type": "text",
+      "text": "[{\"id\":\"250:6234\",\"nodes\":[{\"id\":\"250:6248\",\"name\":\"Preview\",\"x\":344,\"y\":12,\"w\":380,\"h\":420,\"p\":[48,24,16,24],\"gap\":0},{\"id\":\"255:6244\",\"name\":\"HTML visual — JustCall\",\"x\":24,\"y\":69,\"w\":332,\"h\":314,\"p\":[0,0,0,0],\"gap\":0},{\"id\":\"255:6245\",\"name\":\"Call — Product enquiry\",\"x\":0,\"y\":0,\"w\":332,\"h\":72,\"p\":[16,16,16,16],\"gap\":9},{\"id\":\"260:6604\",\"name\":\"Frame 58\",\"x\":17,\"y\":18,\"w\":36,\"h\":36,\"p\":[0,0,0,0],\"gap\":0},{\"id\":\"255:6249\",\"name\":\"Call details\",\"x\":62,\"y\":17,\"w\":253,\"h\":38,\"p\":[0,0,0,0],\"gap\":1},{\"id\":\"255:6250\",\"name\":\"Label — Product enquiry\",\"x\":0,\"y\":0,\"w\":253,\"h\":20,\"p\":[null,null,null,null],\"characters\":\"Product enquiry\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}},{\"id\":\"255:6251\",\"name\":\"Body — Call ended\",\"x\":0,\"y\":21,\"w\":253,\"h\":17,\"p\":[null,null,null,null],\"characters\":\"Call ended\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}},{\"id\":\"260:6664\",\"name\":\"Frame 60\",\"x\":0,\"y\":72,\"w\":332,\"h\":16,\"p\":[0,0,0,0],\"gap\":8},{\"id\":\"255:6260\",\"name\":\"AI summary — Next step\",\"x\":0,\"y\":88,\"w\":332,\"h\":226,\"p\":[18,18,18,18],\"gap\":0},{\"id\":\"255:6261\",\"name\":\"AI summary heading\",\"x\":19,\"y\":19,\"w\":294,\"h\":24,\"p\":[0,0,0,0],\"gap\":8},{\"id\":\"255:6262\",\"name\":\"Sparkle background\",\"x\":0,\"y\":0,\"w\":24,\"h\":24,\"p\":[0,0,0,0],\"gap\":0},{\"id\":\"I260:6608;261:2035\",\"name\":\"Icon artwork\",\"x\":0,\"y\":0,\"w\":17,\"h\":17,\"p\":[0,0,0,0],\"gap\":0},{\"id\":\"255:6265\",\"name\":\"Label — AI summary\",\"x\":32,\"y\":2,\"w\":262,\"h\":20,\"p\":[null,null,null,null],\"characters\":\"AI summary\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}},{\"id\":\"255:6266\",\"name\":\"Call summary copy\",\"x\":19,\"y\":43,\"w\":294,\"h\":55,\"p\":[12,0,18,0],\"gap\":0},{\"id\":\"255:6267\",\"name\":\"Body — Call summary\",\"x\":0,\"y\":12,\"w\":294,\"h\":25,\"p\":[null,null,null,null],\"characters\":\"Asked about plans and pricing.\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}},{\"id\":\"255:6269\",\"name\":\"Next step and action\",\"x\":19,\"y\":99,\"w\":294,\"h\":108,\"p\":[15,0,0,0],\"gap\":13},{\"id\":\"255:6270\",\"name\":\"Next step copy\",\"x\":0,\"y\":15,\"w\":294,\"h\":43,\"p\":[0,0,0,0],\"gap\":4},{\"id\":\"255:6271\",\"name\":\"Label — Next step\",\"x\":0,\"y\":0,\"w\":294,\"h\":17,\"p\":[null,null,null,null],\"characters\":\"Next step\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}},{\"id\":\"255:6272\",\"name\":\"Body — Next action\",\"x\":0,\"y\":21,\"w\":294,\"h\":22,\"p\":[null,null,null,null],\"characters\":\"Send the plan details.\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}},{\"id\":\"255:6273\",\"name\":\"Button — Send message\",\"x\":0,\"y\":71,\"w\":146,\"h\":37,\"p\":[9,15,9,15],\"gap\":8},{\"id\":\"255:6274\",\"name\":\"Icon — message\",\"x\":16,\"y\":10.5,\"w\":16,\"h\":16,\"p\":[0,0,0,0],\"gap\":0},{\"id\":\"255:6277\",\"name\":\"Label — Send message\",\"x\":40,\"y\":10,\"w\":90,\"h\":17,\"p\":[null,null,null,null],\"characters\":\"Send message\",\"line\":{\"unit\":\"PERCENT\",\"value\":120.00000476837158}},{\"id\":\"250:6276\",\"name\":\"Label — Preview product\",\"x\":16,\"y\":16,\"w\":42,\"h\":17,\"p\":[null,null,null,null],\"characters\":\"JustCall\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}}]},{\"id\":\"250:6337\",\"nodes\":[{\"id\":\"250:6351\",\"name\":\"Preview\",\"x\":344,\"y\":12,\"w\":380,\"h\":420,\"p\":[48,24,16,24],\"gap\":0},{\"id\":\"255:6278\",\"name\":\"HTML visual — Helpwise\",\"x\":24,\"y\":70.5,\"w\":332,\"h\":311,\"p\":[0,0,0,0],\"gap\":14},{\"id\":\"255:6279\",\"name\":\"Shared inbox — Customer conversation\",\"x\":0,\"y\":0,\"w\":332,\"h\":311,\"p\":[0,16,19,16],\"gap\":0},{\"id\":\"255:6280\",\"name\":\"Inbox toolbar\",\"x\":17,\"y\":1,\"w\":298,\"h\":66,\"p\":[20,0,17,0],\"gap\":12},{\"id\":\"255:6281\",\"name\":\"Inbox title\",\"x\":0,\"y\":24.5,\"w\":170,\"h\":20,\"p\":[0,0,0,0],\"gap\":9},{\"id\":\"I260:6653;263:2038\",\"name\":\"Icon artwork\",\"x\":0,\"y\":0,\"w\":16,\"h\":16,\"p\":[0,0,0,0],\"gap\":0},{\"id\":\"255:6285\",\"name\":\"Label — Support inbox\",\"x\":25,\"y\":0,\"w\":85,\"h\":20,\"p\":[null,null,null,null],\"characters\":\"Support inbox\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}},{\"id\":\"255:6286\",\"name\":\"Button — Assignment\",\"x\":182,\"y\":20,\"w\":116,\"h\":29,\"p\":[6,10,6,12],\"gap\":6},{\"id\":\"255:6288\",\"name\":\"Label — Assigned to you\",\"x\":23,\"y\":6,\"w\":83,\"h\":17,\"p\":[null,null,null,null],\"characters\":\"Assigned to you\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}},{\"id\":\"255:6292\",\"name\":\"Customer message\",\"x\":17,\"y\":68,\"w\":298,\"h\":89,\"p\":[20,0,17,0],\"gap\":9},{\"id\":\"255:6295\",\"name\":\"Message content\",\"x\":0,\"y\":20,\"w\":298,\"h\":52,\"p\":[0,0,0,0],\"gap\":7},{\"id\":\"255:6296\",\"name\":\"Sender and time\",\"x\":0,\"y\":0,\"w\":298,\"h\":20,\"p\":[0,0,0,0],\"gap\":8},{\"id\":\"260:6612\",\"name\":\"Avatar — Customer\",\"x\":0,\"y\":0,\"w\":20,\"h\":20,\"p\":[0,0,0,0],\"gap\":0},{\"id\":\"260:6613\",\"name\":\"Label — Customer initial\",\"x\":6,\"y\":6,\"w\":8,\"h\":8,\"p\":[null,null,null,null],\"characters\":\"C\",\"line\":{\"unit\":\"PERCENT\",\"value\":125}},{\"id\":\"255:6297\",\"name\":\"Label — Customer\",\"x\":28,\"y\":0,\"w\":215,\"h\":20,\"p\":[null,null,null,null],\"characters\":\"Customer\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}},{\"id\":\"255:6298\",\"name\":\"Caption — Just now\",\"x\":251,\"y\":1.5,\"w\":47,\"h\":17,\"p\":[null,null,null,null],\"characters\":\"Just now\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}},{\"id\":\"255:6299\",\"name\":\"Body — Customer message\",\"x\":0,\"y\":27,\"w\":298,\"h\":25,\"p\":[null,null,null,null],\"characters\":\"Can you check my delivery?\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}},{\"id\":\"255:6300\",\"name\":\"Internal note\",\"x\":17,\"y\":157,\"w\":298,\"h\":74,\"p\":[14,16,14,16],\"gap\":7},{\"id\":\"255:6301\",\"name\":\"Private note heading\",\"x\":16,\"y\":14,\"w\":266,\"h\":17,\"p\":[0,0,0,0],\"gap\":6},{\"id\":\"I260:6648;263:2028\",\"name\":\"Icon artwork\",\"x\":0,\"y\":0,\"w\":16,\"h\":16,\"p\":[0,0,0,0],\"gap\":0},{\"id\":\"255:6305\",\"name\":\"Label — Internal note\",\"x\":22,\"y\":0,\"w\":244,\"h\":17,\"p\":[null,null,null,null],\"characters\":\"Internal note\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}},{\"id\":\"255:6306\",\"name\":\"Body — Private note\",\"x\":16,\"y\":38,\"w\":266,\"h\":22,\"p\":[null,null,null,null],\"characters\":\"Checking with dispatch.\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}},{\"id\":\"255:6307\",\"name\":\"Conversation action\",\"x\":17,\"y\":231,\"w\":298,\"h\":60,\"p\":[24,0,0,0],\"gap\":0},{\"id\":\"255:6308\",\"name\":\"Button — Reply to customer\",\"x\":0,\"y\":24,\"w\":165,\"h\":36,\"p\":[9,15,9,15],\"gap\":8},{\"id\":\"260:6642\",\"name\":\"Frame 59\",\"x\":16,\"y\":10,\"w\":16,\"h\":16,\"p\":[0,0,0,0],\"gap\":0},{\"id\":\"I260:6638;259:2031\",\"name\":\"Icon artwork\",\"x\":0,\"y\":0,\"w\":16,\"h\":16,\"p\":[0,0,0,0],\"gap\":0},{\"id\":\"255:6312\",\"name\":\"Label — Reply to customer\",\"x\":40,\"y\":13,\"w\":109,\"h\":10,\"p\":[null,null,null,null],\"characters\":\"Reply to customer\",\"line\":{\"unit\":\"PERCENT\",\"value\":120.00000476837158}},{\"id\":\"250:6379\",\"name\":\"Label — Preview product\",\"x\":16,\"y\":16,\"w\":48,\"h\":17,\"p\":[null,null,null,null],\"characters\":\"Helpwise\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}}]},{\"id\":\"250:6420\",\"nodes\":[{\"id\":\"250:6434\",\"name\":\"Preview\",\"x\":344,\"y\":12,\"w\":380,\"h\":420,\"p\":[56,16,0,16],\"gap\":0},{\"id\":\"247:4637\",\"name\":\"Website with callback widget\",\"x\":16,\"y\":56,\"w\":348,\"h\":364,\"p\":[0,0,0,0],\"gap\":0},{\"id\":\"247:4638\",\"name\":\"Browser toolbar\",\"x\":0,\"y\":0,\"w\":348,\"h\":34,\"p\":[0,12,0,12],\"gap\":6},{\"id\":\"247:4643\",\"name\":\"Website canvas\",\"x\":0,\"y\":34,\"w\":348,\"h\":330,\"p\":[12,12,12,12],\"gap\":24},{\"id\":\"247:4644\",\"name\":\"Callback widget\",\"x\":12,\"y\":12,\"w\":324,\"h\":306,\"p\":[20,20,20,20],\"gap\":12},{\"id\":\"247:4645\",\"name\":\"Frame 54\",\"x\":20,\"y\":20,\"w\":284,\"h\":130,\"p\":[0,0,0,0],\"gap\":16},{\"id\":\"247:4646\",\"name\":\"Frame 57\",\"x\":0,\"y\":0,\"w\":284,\"h\":40,\"p\":[0,0,0,0],\"gap\":8},{\"id\":\"247:4647\",\"name\":\"H3 — Callback heading\",\"x\":0,\"y\":0,\"w\":284,\"h\":15,\"p\":[null,null,null,null],\"characters\":\"Let’s talk.\",\"line\":{\"unit\":\"PERCENT\",\"value\":110.00000238418579}},{\"id\":\"247:4648\",\"name\":\"Body — Date and time\",\"x\":0,\"y\":23,\"w\":284,\"h\":17,\"p\":[null,null,null,null],\"characters\":\"Leave your number. We’ll call you.\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}},{\"id\":\"247:4649\",\"name\":\"Callback timing\",\"x\":0,\"y\":56,\"w\":284,\"h\":44,\"p\":[4,4,4,4],\"gap\":4},{\"id\":\"247:4650\",\"name\":\"Tab — Call now\",\"x\":4,\"y\":4,\"w\":136,\"h\":36,\"p\":[8,8,8,8],\"gap\":0},{\"id\":\"247:4651\",\"name\":\"Label — Call now\",\"x\":42,\"y\":8,\"w\":52,\"h\":20,\"p\":[null,null,null,null],\"characters\":\"Call now\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}},{\"id\":\"247:4652\",\"name\":\"Tab — Schedule\",\"x\":144,\"y\":4,\"w\":136,\"h\":36,\"p\":[8,8,8,8],\"gap\":0},{\"id\":\"247:4653\",\"name\":\"Label — Schedule\",\"x\":39,\"y\":8,\"w\":58,\"h\":20,\"p\":[null,null,null,null],\"characters\":\"Schedule\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}},{\"id\":\"247:4654\",\"name\":\"Frame 55\",\"x\":20,\"y\":162,\"w\":284,\"h\":124,\"p\":[0,0,0,0],\"gap\":12},{\"id\":\"247:4655\",\"name\":\"Frame 56\",\"x\":0,\"y\":0,\"w\":284,\"h\":68,\"p\":[0,0,0,0],\"gap\":8},{\"id\":\"247:4656\",\"name\":\"Body — Date and time\",\"x\":0,\"y\":0,\"w\":284,\"h\":17,\"p\":[null,null,null,null],\"characters\":\"Your phone number\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}},{\"id\":\"247:4657\",\"name\":\"Input — Callback phone number\",\"x\":0,\"y\":25,\"w\":284,\"h\":43,\"p\":[0,16,0,16],\"gap\":12},{\"id\":\"I260:6634;259:2028\",\"name\":\"Icon artwork\",\"x\":0,\"y\":0,\"w\":16,\"h\":16,\"p\":[0,0,0,0],\"gap\":0},{\"id\":\"247:4658\",\"name\":\"e.g. +1 555 0100\",\"x\":44,\"y\":11.5,\"w\":97,\"h\":20,\"p\":[null,null,null,null],\"characters\":\"e.g. +1 555 0100\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}},{\"id\":\"I247:4659;33:643\",\"name\":\"Label\",\"x\":85,\"y\":12,\"w\":114,\"h\":20,\"p\":[null,null,null,null],\"characters\":\"Request a callback\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}},{\"id\":\"250:6462\",\"name\":\"Label — Preview product\",\"x\":16,\"y\":16,\"w\":47,\"h\":17,\"p\":[null,null,null,null],\"characters\":\"CallPage\",\"line\":{\"unit\":\"PERCENT\",\"value\":139.9999976158142}}]}]"
+    }
+  ]
+}

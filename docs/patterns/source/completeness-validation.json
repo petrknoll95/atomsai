@@ -1,0 +1,561 @@
+{
+  "fileColorProfile": "DISPLAY_P3",
+  "componentCount": 14,
+  "nodeCount": 1591,
+  "strokes": [],
+  "radii": [],
+  "nonFillBinding": [],
+  "paintTypes": [
+    "SOLID",
+    "GRADIENT_RADIAL"
+  ],
+  "nodeTypes": [
+    "COMPONENT",
+    "FRAME",
+    "RECTANGLE",
+    "VECTOR",
+    "ELLIPSE"
+  ],
+  "geometry": [
+    {
+      "id": "77:863",
+      "density": "0",
+      "root": [
+        800,
+        800
+      ],
+      "masks": [
+        {
+          "id": "77:867",
+          "mask": "LUMINANCE",
+          "count": 5,
+          "step": 168,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:875",
+          "mask": "LUMINANCE",
+          "count": 5,
+          "step": 168,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:883",
+          "mask": "LUMINANCE",
+          "count": 5,
+          "step": 168,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:891",
+          "mask": "LUMINANCE",
+          "count": 5,
+          "step": 168,
+          "maxGeometryError": 0
+        }
+      ]
+    },
+    {
+      "id": "77:1248",
+      "density": "1",
+      "root": [
+        800,
+        800
+      ],
+      "masks": [
+        {
+          "id": "77:1252",
+          "mask": "LUMINANCE",
+          "count": 10,
+          "step": 84,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1265",
+          "mask": "LUMINANCE",
+          "count": 10,
+          "step": 84,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1278",
+          "mask": "LUMINANCE",
+          "count": 10,
+          "step": 84,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1291",
+          "mask": "LUMINANCE",
+          "count": 10,
+          "step": 84,
+          "maxGeometryError": 0
+        }
+      ]
+    },
+    {
+      "id": "77:1303",
+      "density": "2",
+      "root": [
+        800,
+        800
+      ],
+      "masks": [
+        {
+          "id": "77:1307",
+          "mask": "LUMINANCE",
+          "count": 20,
+          "step": 42,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1330",
+          "mask": "LUMINANCE",
+          "count": 20,
+          "step": 42,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1353",
+          "mask": "LUMINANCE",
+          "count": 20,
+          "step": 42,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1376",
+          "mask": "LUMINANCE",
+          "count": 20,
+          "step": 42,
+          "maxGeometryError": 0
+        }
+      ]
+    },
+    {
+      "id": "77:1398",
+      "density": "3",
+      "root": [
+        800,
+        800
+      ],
+      "masks": [
+        {
+          "id": "77:1402",
+          "mask": "LUMINANCE",
+          "count": 40,
+          "step": 21,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1445",
+          "mask": "LUMINANCE",
+          "count": 40,
+          "step": 21,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1488",
+          "mask": "LUMINANCE",
+          "count": 40,
+          "step": 21,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1531",
+          "mask": "LUMINANCE",
+          "count": 40,
+          "step": 21,
+          "maxGeometryError": 0
+        }
+      ]
+    },
+    {
+      "id": "77:1573",
+      "density": "0",
+      "root": [
+        800,
+        800
+      ],
+      "masks": [
+        {
+          "id": "77:1577",
+          "mask": "LUMINANCE",
+          "count": 5,
+          "step": 168,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1585",
+          "mask": "LUMINANCE",
+          "count": 5,
+          "step": 168,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1593",
+          "mask": "LUMINANCE",
+          "count": 5,
+          "step": 168,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1601",
+          "mask": "LUMINANCE",
+          "count": 5,
+          "step": 168,
+          "maxGeometryError": 0
+        }
+      ]
+    },
+    {
+      "id": "77:1608",
+      "density": "1",
+      "root": [
+        800,
+        800
+      ],
+      "masks": [
+        {
+          "id": "77:1612",
+          "mask": "LUMINANCE",
+          "count": 10,
+          "step": 84,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1625",
+          "mask": "LUMINANCE",
+          "count": 10,
+          "step": 84,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1638",
+          "mask": "LUMINANCE",
+          "count": 10,
+          "step": 84,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1651",
+          "mask": "LUMINANCE",
+          "count": 10,
+          "step": 84,
+          "maxGeometryError": 0
+        }
+      ]
+    },
+    {
+      "id": "77:1663",
+      "density": "2",
+      "root": [
+        800,
+        800
+      ],
+      "masks": [
+        {
+          "id": "77:1667",
+          "mask": "LUMINANCE",
+          "count": 20,
+          "step": 42,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1690",
+          "mask": "LUMINANCE",
+          "count": 20,
+          "step": 42,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1713",
+          "mask": "LUMINANCE",
+          "count": 20,
+          "step": 42,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1736",
+          "mask": "LUMINANCE",
+          "count": 20,
+          "step": 42,
+          "maxGeometryError": 0
+        }
+      ]
+    },
+    {
+      "id": "77:1758",
+      "density": "3",
+      "root": [
+        800,
+        800
+      ],
+      "masks": [
+        {
+          "id": "77:1762",
+          "mask": "LUMINANCE",
+          "count": 40,
+          "step": 21,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1805",
+          "mask": "LUMINANCE",
+          "count": 40,
+          "step": 21,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1848",
+          "mask": "LUMINANCE",
+          "count": 40,
+          "step": 21,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1891",
+          "mask": "LUMINANCE",
+          "count": 40,
+          "step": 21,
+          "maxGeometryError": 0
+        }
+      ]
+    },
+    {
+      "id": "77:1933",
+      "density": "0",
+      "root": [
+        800,
+        800
+      ],
+      "masks": [
+        {
+          "id": "77:1937",
+          "mask": "LUMINANCE",
+          "count": 5,
+          "step": 168,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1944",
+          "mask": "LUMINANCE",
+          "count": 5,
+          "step": 168,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1952",
+          "mask": "LUMINANCE",
+          "count": 5,
+          "step": 168,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1960",
+          "mask": "LUMINANCE",
+          "count": 5,
+          "step": 168,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1969",
+          "mask": "LUMINANCE",
+          "count": 5,
+          "step": 168,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1977",
+          "mask": "ALPHA",
+          "count": 5,
+          "step": 168,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:1985",
+          "mask": "LUMINANCE",
+          "count": 5,
+          "step": 168,
+          "maxGeometryError": 0
+        }
+      ]
+    },
+    {
+      "id": "77:1992",
+      "density": "1",
+      "root": [
+        800,
+        800
+      ],
+      "masks": [
+        {
+          "id": "77:1996",
+          "mask": "LUMINANCE",
+          "count": 10,
+          "step": 84,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:2008",
+          "mask": "LUMINANCE",
+          "count": 10,
+          "step": 84,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:2021",
+          "mask": "LUMINANCE",
+          "count": 10,
+          "step": 84,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:2034",
+          "mask": "LUMINANCE",
+          "count": 10,
+          "step": 84,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:2048",
+          "mask": "LUMINANCE",
+          "count": 10,
+          "step": 84,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:2061",
+          "mask": "ALPHA",
+          "count": 10,
+          "step": 84,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:2074",
+          "mask": "LUMINANCE",
+          "count": 10,
+          "step": 84,
+          "maxGeometryError": 0
+        }
+      ]
+    },
+    {
+      "id": "77:2086",
+      "density": "2",
+      "root": [
+        800,
+        800
+      ],
+      "masks": [
+        {
+          "id": "77:2090",
+          "mask": "LUMINANCE",
+          "count": 20,
+          "step": 42,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:2112",
+          "mask": "LUMINANCE",
+          "count": 20,
+          "step": 42,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:2135",
+          "mask": "LUMINANCE",
+          "count": 20,
+          "step": 42,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:2158",
+          "mask": "LUMINANCE",
+          "count": 20,
+          "step": 42,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:2182",
+          "mask": "LUMINANCE",
+          "count": 20,
+          "step": 42,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:2205",
+          "mask": "ALPHA",
+          "count": 20,
+          "step": 42,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:2228",
+          "mask": "LUMINANCE",
+          "count": 20,
+          "step": 42,
+          "maxGeometryError": 0
+        }
+      ]
+    },
+    {
+      "id": "77:2250",
+      "density": "3",
+      "root": [
+        800,
+        800
+      ],
+      "masks": [
+        {
+          "id": "77:2254",
+          "mask": "LUMINANCE",
+          "count": 40,
+          "step": 21,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:2296",
+          "mask": "LUMINANCE",
+          "count": 40,
+          "step": 21,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:2339",
+          "mask": "LUMINANCE",
+          "count": 40,
+          "step": 21,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:2382",
+          "mask": "LUMINANCE",
+          "count": 40,
+          "step": 21,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:2426",
+          "mask": "LUMINANCE",
+          "count": 40,
+          "step": 21,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:2469",
+          "mask": "ALPHA",
+          "count": 40,
+          "step": 21,
+          "maxGeometryError": 0
+        },
+        {
+          "id": "77:2512",
+          "mask": "LUMINANCE",
+          "count": 40,
+          "step": 21,
+          "maxGeometryError": 0
+        }
+      ]
+    }
+  ]
+}

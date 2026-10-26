@@ -1,0 +1,136 @@
+.faq {
+  --faq-duration: 480ms;
+  --faq-ease: cubic-bezier(.4, 0, .2, 1);
+  padding-block: 64px 160px;
+  background: var(--color-background);
+}
+.faqGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--grid-gap); }
+.faqIntro { display: flex; flex-direction: column; align-items: flex-start; gap: 40px; padding-right: 96px; }
+.faqHeader { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
+.faqHeading { min-height: 95px; font-size: var(--text-display-medium); line-height: 1; text-wrap: balance; }
+.faqHeading span { display: block; text-wrap: balance; }
+.faqHeading span:last-child { color: var(--color-muted-foreground); }
+.questions { min-width: 0; }
+.question {
+  margin-block: 0;
+  padding: 16px 24px;
+  border-radius: 12px;
+  transition:
+    padding-block var(--faq-duration) var(--faq-ease),
+    margin-block var(--faq-duration) var(--faq-ease),
+    background-color 320ms ease;
+}
+/* Figma resolves 18px × 140% to a measured 25px line box. */
+.question summary { display: flex; align-items: center; gap: 24px; list-style: none; font-size: var(--text-lead); font-weight: var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; line-height: 25px; text-wrap: pretty; }
+.question summary::-webkit-details-marker { display: none; }
+.question summary > span { flex: 1; min-width: 0; }
+.question summary img, .customQuestion img { flex: none; width: 24px; height: 24px; }
+.question[open] { margin-block: 16px; padding-block: 28px; background: var(--color-surface); }
+.question summary > .questionIcon { display: grid; flex: 0 0 24px; width: 24px; height: 24px; }
+.questionIcon img { grid-area: 1 / 1; transition: transform var(--faq-duration) var(--faq-ease), opacity 240ms ease; }
+.openIcon { opacity: 1; transform: rotate(0deg); }
+.closeIcon { opacity: 0; transform: rotate(-45deg); }
+.question[open] .openIcon { opacity: 0; transform: rotate(45deg); }
+.question[open] .closeIcon { opacity: 1; transform: rotate(0deg); }
+/* Keep native details/summary semantics and exclusive name-group behavior.
+   The discrete visibility transition lets the closing grid finish shrinking. */
+.question::details-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows var(--faq-duration) var(--faq-ease),
+    content-visibility var(--faq-duration) allow-discrete,
+    opacity 220ms ease;
+}
+.question[open]::details-content {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  transition-duration: var(--faq-duration), var(--faq-duration), 320ms;
+  transition-delay: 0s, 0s, 60ms;
+}
+.answerClip { min-height: 0; overflow: hidden; }
+/* Closing content stays painted for the transition, but cannot receive focus
+   or clicks. Browsers without CSS inertness retain native details behavior. */
+.question:not([open]) .answerClip { interactivity: inert; pointer-events: none; }
+.answer { margin-top: 20px; max-width: 480px; color: var(--color-surface-muted-foreground); font-size: var(--text-body); line-height: 22px; text-wrap: pretty; }
+.answer a { text-decoration: underline; text-underline-offset: 3px; }
+.customQuestionWrap { padding-block: 16px; }
+.customQuestion { display: flex; align-items: center; gap: 16px; padding: 15px 23px; border: 1px solid var(--color-border-subtle); border-radius: 12px; font-size: var(--text-lead); font-weight: var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; line-height: 25px; color: var(--color-muted-foreground); transition: border-color 240ms ease, var(--focus-transition); }
+.customQuestion input { flex: 1; min-width: 0; width: 100%; padding: 0; border: 0; background: transparent; color: var(--color-foreground); font: inherit; font-variation-settings: inherit; }
+.customQuestion input::placeholder { color: var(--color-muted-foreground); opacity: 1; }
+.customQuestion:hover { border-color: var(--color-border); }
+@media (prefers-reduced-motion: reduce) {
+  .question, .question::details-content, .questionIcon img, .customQuestion { transition: none; }
+}
+.cta { padding-block: 64px; }
+.ctaPanel { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-radius: var(--radius-panel); overflow: clip; background: var(--color-surface); }
+.ctaHeading { height: 400px; padding: 40px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; font-size: var(--text-display-xlarge); line-height: .95; }
+.ctaHeading > span { text-box: trim-both cap alphabetic; }
+.ctaHeading > span:first-child { min-height: 95px; color: var(--color-muted-foreground); }
+.ctaHeading > span:last-child { height: 45px; }
+.ctaArtworkWrap { height: 400px; padding: 16px; }
+.ctaArtwork { height: 100%; position: relative; display: flex; justify-content: center; align-items: center; overflow: clip; border-radius: var(--radius-card); }
+.ctaPattern { position: absolute; width: 100%; max-width: none; height: 100%; inset: 0; }
+.ctaButton { position: relative; }
+.footer { padding-bottom: 64px; }
+.footerTop { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--grid-gap); }
+.footerIntro { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; gap: 64px; }
+.footerPitch { display: flex; flex-direction: column; align-items: flex-start; gap: 40px; }
+.footerHeading { min-height: 76px; font-size: var(--text-display-large); line-height: .95; }
+.footerLegal { display: flex; flex-direction: column; gap: 16px; }
+.footerLegal p { font-size: var(--text-caption); line-height: 17px; color: var(--color-muted-foreground); }
+.badges { display: flex; gap: 2px; }
+.badge {
+  /* Requested quieter, neutral treatment in place of the original iris fills. */
+  --badge-background: color-mix(in display-p3, var(--palette-cream) 6%, transparent);
+  --badge-foreground: color-mix(in display-p3, var(--palette-cream) 75%, transparent);
+  display: flex; align-items: center; justify-content: center;
+  width: 48px; height: 48px; border: 1.25px solid color-mix(in display-p3, var(--palette-cream) 14%, transparent); border-radius: var(--radius-control);
+  background: var(--badge-background); color: var(--badge-foreground); font-size: 12.233px; line-height: .95; font-weight: 500;
+}
+.footerNav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--grid-gap); }
+.navColumn { display: flex; flex-direction: column; gap: 32px; }
+.navGroup { display: flex; flex-direction: column; gap: 12px; }
+.navGroup h2 { color: var(--color-muted-foreground); font-size: var(--text-caption); line-height: 17px; font-weight: var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; }
+.navGroup ul { display: flex; flex-direction: column; gap: 10px; list-style: none; margin: 0; padding: 0; }
+.navGroup li { display: flex; }
+.navGroup a, .unavailableLink { display: inline-flex; align-items: center; gap: 4px; padding-block: 2px; height: 14px; }
+.navGroup a > span, .unavailableLink > span { font-size: var(--text-body); line-height: 1.3; }
+.navGroup a:hover { color: var(--color-muted-foreground); }
+.navGroup img { flex: none; }
+.footerLogo { display: block; position: relative; width: 100%; aspect-ratio: 1504 / 212; margin-top: 96px; }
+.logoArtwork { position: absolute; width: 100%; aspect-ratio: 1504 / 274; top: 50%; left: 0; transform: translateY(-50%); }
+.logoArtwork > span { position: absolute; }
+.logoArtwork img { position: absolute; width: 100%; height: 100%; max-width: none; }
+@media (max-width: 1199px) {
+  .faqIntro { padding-right: 24px; }
+  .faqHeading { min-height: 0; font-size: 32px; }
+  .ctaHeading { font-size: var(--text-display-large); }
+  .ctaHeading > span:first-child { min-height: 0; }
+  .footerHeading { min-height: 0; font-size: 44px; }
+  .footerTop { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); }
+}
+@media (max-width: 767px) {
+  .faq { padding-block: 64px 80px; }
+  .faqGrid { grid-template-columns: 1fr; gap: 48px; }
+  .faqIntro { padding-right: 0; gap: 32px; }
+  .faqHeader { gap: 20px; }
+  .faqHeading { font-size: 32px; max-width: 580px; }
+  .question { padding-inline: 16px; }
+  .question summary { gap: 16px; font-size: var(--text-body); }
+  .answer { font-size: 15px; }
+  .customQuestion { padding-inline: 15px; font-size: var(--text-body); }
+  .cta { padding-block: 40px 64px; }
+  .ctaPanel { grid-template-columns: 1fr; border-radius: 24px; }
+  .ctaHeading { height: 290px; padding: 28px; font-size: clamp(36px, 8.5vw, 48px); }
+  .ctaArtworkWrap { height: 280px; padding: 12px; }
+  .footer { padding-bottom: 32px; }
+  .footerTop { grid-template-columns: 1fr; gap: 48px; }
+  .footerIntro { gap: 40px; }
+  .footerHeading { font-size: 40px; }
+  .footerPitch { gap: 32px; }
+  .footerNav { gap: 24px; }
+  .navColumn { gap: 28px; }
+  .footerLogo { margin-top: 64px; }
+}

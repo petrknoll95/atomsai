@@ -1,0 +1,3334 @@
+{
+  "date": "2026-10-26T11:58:54.564Z",
+  "base": "http://127.0.0.1:3001",
+  "deviceScaleFactor": 1,
+  "viewportHeight": 960,
+  "method": "Fresh homepage at each width; legacy pattern PNG requests are blocked and fail the check. Each nonzero-size canvas is scrolled into view and must render before capture.",
+  "results": [
+    {
+      "engine": "chromium",
+      "width": 1600,
+      "passed": true,
+      "checks": [
+        "Ten unique applications, eleven decorative canvases",
+        "Below-fold preview and CTA canvases remain pending initially",
+        "Every nonzero-size canvas renders after scrolling into view",
+        "Hidden WebKit-only fallback stays zero-size and pending",
+        "No horizontal overflow; rendered stills remain ready at the page top",
+        "No legacy PNG requests, browser errors, or context loss"
+      ],
+      "legacyRequests": [],
+      "browserErrors": [],
+      "contextEvents": [],
+      "initialCanvases": [
+        {
+          "application": "offerings-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 480,
+          "height": 553,
+          "top": 1012,
+          "left": 48,
+          "bitmapWidth": 480,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "offerings-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 553,
+          "height": 553,
+          "top": 1012,
+          "left": 523.34375,
+          "bitmapWidth": 553,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "offerings-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 480,
+          "height": 553,
+          "top": 1012,
+          "left": 1072,
+          "bitmapWidth": 480,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "applications-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 352,
+          "height": 352,
+          "top": 1941,
+          "left": 48,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-band",
+          "state": "pending",
+          "decorative": true,
+          "width": 352,
+          "height": 352,
+          "top": 1941,
+          "left": 432,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 352,
+          "height": 352,
+          "top": 1941,
+          "left": 816,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-offset",
+          "state": "pending",
+          "decorative": true,
+          "width": 352,
+          "height": 352,
+          "top": 1941,
+          "left": 1200,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 2798,
+          "left": 48,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 2718,
+          "left": 912.015625,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "pending",
+          "decorative": true,
+          "width": 720,
+          "height": 720,
+          "top": 6560.078125,
+          "left": 816,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        }
+      ],
+      "initialLazyCanvases": [
+        {
+          "application": "preview-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 2798,
+          "left": 48,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 2718,
+          "left": 912.015625,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "pending",
+          "decorative": true,
+          "width": 720,
+          "height": 720,
+          "top": 6560.078125,
+          "left": 816,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        }
+      ],
+      "chatBackdrop": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "widget": {
+          "x": 1072,
+          "y": -3630,
+          "width": 479.984375,
+          "height": 640,
+          "top": -3630,
+          "right": 1551.984375,
+          "bottom": -2990,
+          "left": 1072
+        },
+        "display": "none",
+        "position": "static",
+        "blur": "none",
+        "blend": "normal",
+        "state": "pending"
+      },
+      "finalCanvases": [
+        {
+          "application": "offerings-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 480,
+          "height": 553,
+          "top": 1012,
+          "left": 48,
+          "bitmapWidth": 480,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "offerings-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 553,
+          "height": 553,
+          "top": 1012,
+          "left": 523.34375,
+          "bitmapWidth": 553,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "offerings-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 480,
+          "height": 553,
+          "top": 1012,
+          "left": 1072,
+          "bitmapWidth": 480,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "applications-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 352,
+          "height": 352,
+          "top": 1941,
+          "left": 48,
+          "bitmapWidth": 352,
+          "bitmapHeight": 352
+        },
+        {
+          "application": "applications-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 352,
+          "height": 352,
+          "top": 1941,
+          "left": 432,
+          "bitmapWidth": 352,
+          "bitmapHeight": 352
+        },
+        {
+          "application": "applications-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 352,
+          "height": 352,
+          "top": 1941,
+          "left": 816,
+          "bitmapWidth": 352,
+          "bitmapHeight": 352
+        },
+        {
+          "application": "applications-offset",
+          "state": "ready",
+          "decorative": true,
+          "width": 352,
+          "height": 352,
+          "top": 1941,
+          "left": 1200,
+          "bitmapWidth": 352,
+          "bitmapHeight": 352
+        },
+        {
+          "application": "preview-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 2798,
+          "left": 48,
+          "bitmapWidth": 992,
+          "bitmapHeight": 640
+        },
+        {
+          "application": "preview-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 2718,
+          "left": 912.015625,
+          "bitmapWidth": 800,
+          "bitmapHeight": 800
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "ready",
+          "decorative": true,
+          "width": 720,
+          "height": 720,
+          "top": 6560.078125,
+          "left": 816,
+          "bitmapWidth": 720,
+          "bitmapHeight": 720
+        }
+      ],
+      "geometry": {
+        "viewport": 1600,
+        "documentWidth": 1600,
+        "bodyWidth": 1600,
+        "height": 7965,
+        "scrollX": 0,
+        "scrollY": 0
+      },
+      "screenshot": "docs/patterns/homepage/integrated-chromium-1600.png"
+    },
+    {
+      "engine": "chromium",
+      "width": 1200,
+      "passed": true,
+      "checks": [
+        "Ten unique applications, eleven decorative canvases",
+        "Below-fold preview and CTA canvases remain pending initially",
+        "Every nonzero-size canvas renders after scrolling into view",
+        "Hidden WebKit-only fallback stays zero-size and pending",
+        "No horizontal overflow; rendered stills remain ready at the page top",
+        "No legacy PNG requests, browser errors, or context loss"
+      ],
+      "legacyRequests": [],
+      "browserErrors": [],
+      "contextEvents": [],
+      "initialCanvases": [
+        {
+          "application": "offerings-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 480,
+          "height": 553,
+          "top": 1012,
+          "left": -18.671875,
+          "bitmapWidth": 480,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "offerings-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 553,
+          "height": 553,
+          "top": 1012,
+          "left": 323.34375,
+          "bitmapWidth": 553,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "offerings-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 480,
+          "height": 553,
+          "top": 1012,
+          "left": 738.65625,
+          "bitmapWidth": 480,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "applications-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 252,
+          "height": 252,
+          "top": 1941,
+          "left": 48,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-band",
+          "state": "pending",
+          "decorative": true,
+          "width": 252,
+          "height": 252,
+          "top": 1941,
+          "left": 332,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 252,
+          "height": 252,
+          "top": 1941,
+          "left": 616,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-offset",
+          "state": "pending",
+          "decorative": true,
+          "width": 252,
+          "height": 252,
+          "top": 1941,
+          "left": 900,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 2798.234375,
+          "left": -86.796875,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 2718.234375,
+          "left": 577.234375,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "pending",
+          "decorative": true,
+          "width": 720,
+          "height": 720,
+          "top": 6378.40625,
+          "left": 516,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        }
+      ],
+      "initialLazyCanvases": [
+        {
+          "application": "preview-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 2798.234375,
+          "left": -86.796875,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 2718.234375,
+          "left": 577.234375,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "pending",
+          "decorative": true,
+          "width": 720,
+          "height": 720,
+          "top": 6378.40625,
+          "left": 516,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        }
+      ],
+      "chatBackdrop": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "widget": {
+          "x": 802.421875,
+          "y": -3447.765625,
+          "width": 349.578125,
+          "height": 640,
+          "top": -3447.765625,
+          "right": 1152,
+          "bottom": -2807.765625,
+          "left": 802.421875
+        },
+        "display": "none",
+        "position": "static",
+        "blur": "none",
+        "blend": "normal",
+        "state": "pending"
+      },
+      "finalCanvases": [
+        {
+          "application": "offerings-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 480,
+          "height": 553,
+          "top": 1012,
+          "left": -18.671875,
+          "bitmapWidth": 480,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "offerings-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 553,
+          "height": 553,
+          "top": 1012,
+          "left": 323.34375,
+          "bitmapWidth": 553,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "offerings-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 480,
+          "height": 553,
+          "top": 1012,
+          "left": 738.65625,
+          "bitmapWidth": 480,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "applications-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 252,
+          "height": 252,
+          "top": 1941,
+          "left": 48,
+          "bitmapWidth": 252,
+          "bitmapHeight": 252
+        },
+        {
+          "application": "applications-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 252,
+          "height": 252,
+          "top": 1941,
+          "left": 332,
+          "bitmapWidth": 252,
+          "bitmapHeight": 252
+        },
+        {
+          "application": "applications-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 252,
+          "height": 252,
+          "top": 1941,
+          "left": 616,
+          "bitmapWidth": 252,
+          "bitmapHeight": 252
+        },
+        {
+          "application": "applications-offset",
+          "state": "ready",
+          "decorative": true,
+          "width": 252,
+          "height": 252,
+          "top": 1941,
+          "left": 900,
+          "bitmapWidth": 252,
+          "bitmapHeight": 252
+        },
+        {
+          "application": "preview-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 2798.234375,
+          "left": -86.796875,
+          "bitmapWidth": 992,
+          "bitmapHeight": 640
+        },
+        {
+          "application": "preview-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 2718.234375,
+          "left": 577.234375,
+          "bitmapWidth": 800,
+          "bitmapHeight": 800
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "ready",
+          "decorative": true,
+          "width": 720,
+          "height": 720,
+          "top": 6378.40625,
+          "left": 516,
+          "bitmapWidth": 720,
+          "bitmapHeight": 720
+        }
+      ],
+      "geometry": {
+        "viewport": 1200,
+        "documentWidth": 1200,
+        "bodyWidth": 1200,
+        "height": 7727,
+        "scrollX": 0,
+        "scrollY": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "passed": true,
+      "checks": [
+        "Ten unique applications, eleven decorative canvases",
+        "Below-fold preview and CTA canvases remain pending initially",
+        "Every nonzero-size canvas renders after scrolling into view",
+        "Hidden WebKit-only fallback stays zero-size and pending",
+        "No horizontal overflow; rendered stills remain ready at the page top",
+        "No legacy PNG requests, browser errors, or context loss"
+      ],
+      "legacyRequests": [],
+      "browserErrors": [],
+      "contextEvents": [],
+      "initialCanvases": [
+        {
+          "application": "offerings-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 442.671875,
+          "height": 510,
+          "top": 952,
+          "left": -82.671875,
+          "bitmapWidth": 443,
+          "bitmapHeight": 510
+        },
+        {
+          "application": "offerings-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 509.984375,
+          "height": 510,
+          "top": 952,
+          "left": 128.84375,
+          "bitmapWidth": 510,
+          "bitmapHeight": 510
+        },
+        {
+          "application": "offerings-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 442.671875,
+          "height": 510,
+          "top": 952,
+          "left": 407.984375,
+          "bitmapWidth": 443,
+          "bitmapHeight": 510
+        },
+        {
+          "application": "applications-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 336,
+          "height": 336,
+          "top": 1837.828125,
+          "left": 32,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-band",
+          "state": "pending",
+          "decorative": true,
+          "width": 336,
+          "height": 336,
+          "top": 1837.828125,
+          "left": 400,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 336,
+          "height": 336,
+          "top": 2396.734375,
+          "left": 32,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-offset",
+          "state": "pending",
+          "decorative": true,
+          "width": 336,
+          "height": 336,
+          "top": 2396.734375,
+          "left": 400,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 3177.875,
+          "left": -112,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 1173.328125,
+          "height": 1173.3125,
+          "top": 3750.125,
+          "left": -202.65625,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "pending",
+          "decorative": true,
+          "width": 720,
+          "height": 720,
+          "top": 7822.96875,
+          "left": 200,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        }
+      ],
+      "initialLazyCanvases": [
+        {
+          "application": "preview-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 3177.875,
+          "left": -112,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 1173.328125,
+          "height": 1173.3125,
+          "top": 3750.125,
+          "left": -202.65625,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "pending",
+          "decorative": true,
+          "width": 720,
+          "height": 720,
+          "top": 7822.96875,
+          "left": 200,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        }
+      ],
+      "chatBackdrop": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "widget": {
+          "x": 32,
+          "y": -3674.21875,
+          "width": 704,
+          "height": 640,
+          "top": -3674.21875,
+          "right": 736,
+          "bottom": -3034.21875,
+          "left": 32
+        },
+        "display": "none",
+        "position": "static",
+        "blur": "none",
+        "blend": "normal",
+        "state": "pending"
+      },
+      "finalCanvases": [
+        {
+          "application": "offerings-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 442.671875,
+          "height": 510,
+          "top": 952,
+          "left": -82.671875,
+          "bitmapWidth": 443,
+          "bitmapHeight": 510
+        },
+        {
+          "application": "offerings-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 509.984375,
+          "height": 510,
+          "top": 952,
+          "left": 128.84375,
+          "bitmapWidth": 510,
+          "bitmapHeight": 510
+        },
+        {
+          "application": "offerings-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 442.671875,
+          "height": 510,
+          "top": 952,
+          "left": 407.984375,
+          "bitmapWidth": 443,
+          "bitmapHeight": 510
+        },
+        {
+          "application": "applications-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 336,
+          "height": 336,
+          "top": 1837.828125,
+          "left": 32,
+          "bitmapWidth": 336,
+          "bitmapHeight": 336
+        },
+        {
+          "application": "applications-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 336,
+          "height": 336,
+          "top": 1837.828125,
+          "left": 400,
+          "bitmapWidth": 336,
+          "bitmapHeight": 336
+        },
+        {
+          "application": "applications-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 336,
+          "height": 336,
+          "top": 2396.734375,
+          "left": 32,
+          "bitmapWidth": 336,
+          "bitmapHeight": 336
+        },
+        {
+          "application": "applications-offset",
+          "state": "ready",
+          "decorative": true,
+          "width": 336,
+          "height": 336,
+          "top": 2396.734375,
+          "left": 400,
+          "bitmapWidth": 336,
+          "bitmapHeight": 336
+        },
+        {
+          "application": "preview-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 3177.875,
+          "left": -112,
+          "bitmapWidth": 992,
+          "bitmapHeight": 640
+        },
+        {
+          "application": "preview-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 1173.328125,
+          "height": 1173.3125,
+          "top": 3750.125,
+          "left": -202.65625,
+          "bitmapWidth": 1173,
+          "bitmapHeight": 1173
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "ready",
+          "decorative": true,
+          "width": 720,
+          "height": 720,
+          "top": 7822.96875,
+          "left": 200,
+          "bitmapWidth": 720,
+          "bitmapHeight": 720
+        }
+      ],
+      "geometry": {
+        "viewport": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "height": 9115,
+        "scrollX": 0,
+        "scrollY": 0
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "passed": true,
+      "checks": [
+        "Ten unique applications, eleven decorative canvases",
+        "Below-fold preview and CTA canvases remain pending initially",
+        "Every nonzero-size canvas renders after scrolling into view",
+        "Hidden WebKit-only fallback stays zero-size and pending",
+        "No horizontal overflow; rendered stills remain ready at the page top",
+        "No legacy PNG requests, browser errors, or context loss"
+      ],
+      "legacyRequests": [],
+      "browserErrors": [],
+      "contextEvents": [],
+      "initialCanvases": [
+        {
+          "application": "offerings-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 416.625,
+          "height": 480,
+          "top": 872,
+          "left": -13.3125,
+          "bitmapWidth": 417,
+          "bitmapHeight": 480
+        },
+        {
+          "application": "offerings-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 479.984375,
+          "height": 480,
+          "top": 1376,
+          "left": -45.125,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "offerings-band",
+          "state": "pending",
+          "decorative": true,
+          "width": 416.625,
+          "height": 480,
+          "top": 1880,
+          "left": -13.3125,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 350,
+          "height": 350,
+          "top": 2685.203125,
+          "left": 20,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-band",
+          "state": "pending",
+          "decorative": true,
+          "width": 350,
+          "height": 350,
+          "top": 3238.109375,
+          "left": 20,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 350,
+          "height": 350,
+          "top": 3791.015625,
+          "left": 20,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-offset",
+          "state": "pending",
+          "decorative": true,
+          "width": 350,
+          "height": 350,
+          "top": 4343.921875,
+          "left": 20,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 5024.03125,
+          "left": -301,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 5732.9375,
+          "left": -204.984375,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "pending",
+          "decorative": true,
+          "width": 500.859375,
+          "height": 500.859375,
+          "top": 10466.796875,
+          "left": -55.421875,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        }
+      ],
+      "initialLazyCanvases": [
+        {
+          "application": "preview-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 5024.03125,
+          "left": -301,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 5732.9375,
+          "left": -204.984375,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "pending",
+          "decorative": true,
+          "width": 500.859375,
+          "height": 500.859375,
+          "top": 10466.796875,
+          "left": -55.421875,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        }
+      ],
+      "chatBackdrop": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "widget": {
+          "x": 20,
+          "y": -4412.0625,
+          "width": 350,
+          "height": 640,
+          "top": -4412.0625,
+          "right": 370,
+          "bottom": -3772.0625,
+          "left": 20
+        },
+        "display": "none",
+        "position": "static",
+        "blur": "none",
+        "blend": "normal",
+        "state": "pending"
+      },
+      "finalCanvases": [
+        {
+          "application": "offerings-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 416.625,
+          "height": 480,
+          "top": 872,
+          "left": -13.3125,
+          "bitmapWidth": 417,
+          "bitmapHeight": 480
+        },
+        {
+          "application": "offerings-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 479.984375,
+          "height": 480,
+          "top": 1376,
+          "left": -45.125,
+          "bitmapWidth": 480,
+          "bitmapHeight": 480
+        },
+        {
+          "application": "offerings-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 416.625,
+          "height": 480,
+          "top": 1880,
+          "left": -13.3125,
+          "bitmapWidth": 417,
+          "bitmapHeight": 480
+        },
+        {
+          "application": "applications-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 350,
+          "height": 350,
+          "top": 2685.203125,
+          "left": 20,
+          "bitmapWidth": 350,
+          "bitmapHeight": 350
+        },
+        {
+          "application": "applications-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 350,
+          "height": 350,
+          "top": 3238.109375,
+          "left": 20,
+          "bitmapWidth": 350,
+          "bitmapHeight": 350
+        },
+        {
+          "application": "applications-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 350,
+          "height": 350,
+          "top": 3791.015625,
+          "left": 20,
+          "bitmapWidth": 350,
+          "bitmapHeight": 350
+        },
+        {
+          "application": "applications-offset",
+          "state": "ready",
+          "decorative": true,
+          "width": 350,
+          "height": 350,
+          "top": 4343.921875,
+          "left": 20,
+          "bitmapWidth": 350,
+          "bitmapHeight": 350
+        },
+        {
+          "application": "preview-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 5024.03125,
+          "left": -301,
+          "bitmapWidth": 992,
+          "bitmapHeight": 640
+        },
+        {
+          "application": "preview-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 5732.9375,
+          "left": -204.984375,
+          "bitmapWidth": 800,
+          "bitmapHeight": 800
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "ready",
+          "decorative": true,
+          "width": 500.859375,
+          "height": 500.859375,
+          "top": 10466.796875,
+          "left": -55.421875,
+          "bitmapWidth": 501,
+          "bitmapHeight": 501
+        }
+      ],
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "height": 11776,
+        "scrollX": 0,
+        "scrollY": 0
+      },
+      "screenshot": "docs/patterns/homepage/integrated-chromium-390.png"
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "passed": true,
+      "checks": [
+        "Ten unique applications, eleven decorative canvases",
+        "Below-fold preview and CTA canvases remain pending initially",
+        "Every nonzero-size canvas renders after scrolling into view",
+        "Hidden WebKit-only fallback stays zero-size and pending",
+        "No horizontal overflow; rendered stills remain ready at the page top",
+        "No legacy PNG requests, browser errors, or context loss"
+      ],
+      "legacyRequests": [],
+      "browserErrors": [],
+      "contextEvents": [],
+      "initialCanvases": [
+        {
+          "application": "offerings-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 416.625,
+          "height": 480,
+          "top": 947.0625,
+          "left": -48.3125,
+          "bitmapWidth": 417,
+          "bitmapHeight": 480
+        },
+        {
+          "application": "offerings-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 479.984375,
+          "height": 480,
+          "top": 1451.0625,
+          "left": -80.125,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "offerings-band",
+          "state": "pending",
+          "decorative": true,
+          "width": 416.625,
+          "height": 480,
+          "top": 1955.0625,
+          "left": -48.3125,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 280,
+          "height": 280,
+          "top": 2760.265625,
+          "left": 20,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-band",
+          "state": "pending",
+          "decorative": true,
+          "width": 280,
+          "height": 280,
+          "top": 3243.171875,
+          "left": 20,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 280,
+          "height": 280,
+          "top": 3726.078125,
+          "left": 20,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-offset",
+          "state": "pending",
+          "decorative": true,
+          "width": 280,
+          "height": 280,
+          "top": 4208.984375,
+          "left": 20,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 4819.09375,
+          "left": -336,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 5528,
+          "left": -239.984375,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "pending",
+          "decorative": true,
+          "width": 500.859375,
+          "height": 500.859375,
+          "top": 10422.53125,
+          "left": -90.421875,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        }
+      ],
+      "initialLazyCanvases": [
+        {
+          "application": "preview-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 4819.09375,
+          "left": -336,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 5528,
+          "left": -239.984375,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "pending",
+          "decorative": true,
+          "width": 500.859375,
+          "height": 500.859375,
+          "top": 10422.53125,
+          "left": -90.421875,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        }
+      ],
+      "chatBackdrop": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "widget": {
+          "x": 20,
+          "y": -4573,
+          "width": 280,
+          "height": 640,
+          "top": -4573,
+          "right": 300,
+          "bottom": -3933,
+          "left": 20
+        },
+        "display": "none",
+        "position": "static",
+        "blur": "none",
+        "blend": "normal",
+        "state": "pending"
+      },
+      "finalCanvases": [
+        {
+          "application": "offerings-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 416.625,
+          "height": 480,
+          "top": 947.0625,
+          "left": -48.3125,
+          "bitmapWidth": 417,
+          "bitmapHeight": 480
+        },
+        {
+          "application": "offerings-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 479.984375,
+          "height": 480,
+          "top": 1451.0625,
+          "left": -80.125,
+          "bitmapWidth": 480,
+          "bitmapHeight": 480
+        },
+        {
+          "application": "offerings-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 416.625,
+          "height": 480,
+          "top": 1955.0625,
+          "left": -48.3125,
+          "bitmapWidth": 417,
+          "bitmapHeight": 480
+        },
+        {
+          "application": "applications-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 280,
+          "height": 280,
+          "top": 2760.265625,
+          "left": 20,
+          "bitmapWidth": 280,
+          "bitmapHeight": 280
+        },
+        {
+          "application": "applications-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 280,
+          "height": 280,
+          "top": 3243.171875,
+          "left": 20,
+          "bitmapWidth": 280,
+          "bitmapHeight": 280
+        },
+        {
+          "application": "applications-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 280,
+          "height": 280,
+          "top": 3726.078125,
+          "left": 20,
+          "bitmapWidth": 280,
+          "bitmapHeight": 280
+        },
+        {
+          "application": "applications-offset",
+          "state": "ready",
+          "decorative": true,
+          "width": 280,
+          "height": 280,
+          "top": 4208.984375,
+          "left": 20,
+          "bitmapWidth": 280,
+          "bitmapHeight": 280
+        },
+        {
+          "application": "preview-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 4819.09375,
+          "left": -336,
+          "bitmapWidth": 992,
+          "bitmapHeight": 640
+        },
+        {
+          "application": "preview-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 5528,
+          "left": -239.984375,
+          "bitmapWidth": 800,
+          "bitmapHeight": 800
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "ready",
+          "decorative": true,
+          "width": 500.859375,
+          "height": 500.859375,
+          "top": 10422.53125,
+          "left": -90.421875,
+          "bitmapWidth": 501,
+          "bitmapHeight": 501
+        }
+      ],
+      "geometry": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320,
+        "height": 11722,
+        "scrollX": 0,
+        "scrollY": 0
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 1600,
+      "passed": true,
+      "checks": [
+        "Ten unique applications, eleven decorative canvases",
+        "Below-fold preview and CTA canvases remain pending initially",
+        "Every nonzero-size canvas renders after scrolling into view",
+        "WebKit glass backdrop renders, aligns with the full widget, and preserves blur/blending",
+        "No horizontal overflow; rendered stills remain ready at the page top",
+        "No legacy PNG requests, browser errors, or context loss"
+      ],
+      "legacyRequests": [],
+      "browserErrors": [],
+      "contextEvents": [],
+      "initialCanvases": [
+        {
+          "application": "offerings-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 480,
+          "height": 553,
+          "top": 1012,
+          "left": 48,
+          "bitmapWidth": 480,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "offerings-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 553,
+          "height": 553,
+          "top": 1012,
+          "left": 523.34375,
+          "bitmapWidth": 553,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "offerings-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 480,
+          "height": 553,
+          "top": 1012,
+          "left": 1072,
+          "bitmapWidth": 480,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "applications-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 352,
+          "height": 352,
+          "top": 1941,
+          "left": 48,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-band",
+          "state": "pending",
+          "decorative": true,
+          "width": 352,
+          "height": 352,
+          "top": 1941,
+          "left": 432,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 352,
+          "height": 352,
+          "top": 1941,
+          "left": 816,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-offset",
+          "state": "pending",
+          "decorative": true,
+          "width": 352,
+          "height": 352,
+          "top": 1941,
+          "left": 1200,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 2798,
+          "left": 48,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 2718,
+          "left": 912.015625,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 2718,
+          "left": 912.015625,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "pending",
+          "decorative": true,
+          "width": 720,
+          "height": 720,
+          "top": 6560.078125,
+          "left": 816,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        }
+      ],
+      "initialLazyCanvases": [
+        {
+          "application": "preview-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 2798,
+          "left": 48,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 2718,
+          "left": 912.015625,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "pending",
+          "decorative": true,
+          "width": 720,
+          "height": 720,
+          "top": 6560.078125,
+          "left": 816,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        }
+      ],
+      "chatBackdrop": {
+        "rect": {
+          "x": 1072,
+          "y": -3631,
+          "width": 480,
+          "height": 640,
+          "top": -3631,
+          "right": 1552,
+          "bottom": -2991,
+          "left": 1072
+        },
+        "widget": {
+          "x": 1072,
+          "y": -3631,
+          "width": 480,
+          "height": 640,
+          "top": -3631,
+          "right": 1552,
+          "bottom": -2991,
+          "left": 1072
+        },
+        "display": "block",
+        "position": "absolute",
+        "blur": "blur(32px)",
+        "blend": "plus-darker",
+        "state": "ready"
+      },
+      "finalCanvases": [
+        {
+          "application": "offerings-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 480,
+          "height": 553,
+          "top": 1012,
+          "left": 48,
+          "bitmapWidth": 480,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "offerings-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 553,
+          "height": 553,
+          "top": 1012,
+          "left": 523.34375,
+          "bitmapWidth": 553,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "offerings-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 480,
+          "height": 553,
+          "top": 1012,
+          "left": 1072,
+          "bitmapWidth": 480,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "applications-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 352,
+          "height": 352,
+          "top": 1941,
+          "left": 48,
+          "bitmapWidth": 352,
+          "bitmapHeight": 352
+        },
+        {
+          "application": "applications-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 352,
+          "height": 352,
+          "top": 1941,
+          "left": 432,
+          "bitmapWidth": 352,
+          "bitmapHeight": 352
+        },
+        {
+          "application": "applications-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 352,
+          "height": 352,
+          "top": 1941,
+          "left": 816,
+          "bitmapWidth": 352,
+          "bitmapHeight": 352
+        },
+        {
+          "application": "applications-offset",
+          "state": "ready",
+          "decorative": true,
+          "width": 352,
+          "height": 352,
+          "top": 1941,
+          "left": 1200,
+          "bitmapWidth": 352,
+          "bitmapHeight": 352
+        },
+        {
+          "application": "preview-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 2798,
+          "left": 48,
+          "bitmapWidth": 992,
+          "bitmapHeight": 640
+        },
+        {
+          "application": "preview-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 2718,
+          "left": 912.015625,
+          "bitmapWidth": 800,
+          "bitmapHeight": 800
+        },
+        {
+          "application": "preview-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 2718,
+          "left": 912.015625,
+          "bitmapWidth": 800,
+          "bitmapHeight": 800
+        },
+        {
+          "application": "cta-pattern",
+          "state": "ready",
+          "decorative": true,
+          "width": 720,
+          "height": 720,
+          "top": 6560.078125,
+          "left": 816,
+          "bitmapWidth": 720,
+          "bitmapHeight": 720
+        }
+      ],
+      "geometry": {
+        "viewport": 1600,
+        "documentWidth": 1600,
+        "bodyWidth": 1600,
+        "height": 7965,
+        "scrollX": 0,
+        "scrollY": 0
+      },
+      "screenshot": "docs/patterns/homepage/integrated-webkit-1600.png"
+    },
+    {
+      "engine": "webkit",
+      "width": 1200,
+      "passed": true,
+      "checks": [
+        "Ten unique applications, eleven decorative canvases",
+        "Below-fold preview and CTA canvases remain pending initially",
+        "Every nonzero-size canvas renders after scrolling into view",
+        "WebKit glass backdrop renders, aligns with the full widget, and preserves blur/blending",
+        "No horizontal overflow; rendered stills remain ready at the page top",
+        "No legacy PNG requests, browser errors, or context loss"
+      ],
+      "legacyRequests": [],
+      "browserErrors": [],
+      "contextEvents": [],
+      "initialCanvases": [
+        {
+          "application": "offerings-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 480,
+          "height": 553,
+          "top": 1012,
+          "left": -18.671875,
+          "bitmapWidth": 480,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "offerings-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 553,
+          "height": 553,
+          "top": 1012,
+          "left": 323.34375,
+          "bitmapWidth": 553,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "offerings-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 480,
+          "height": 553,
+          "top": 1012,
+          "left": 738.671875,
+          "bitmapWidth": 480,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "applications-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 252,
+          "height": 252,
+          "top": 1941,
+          "left": 48,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-band",
+          "state": "pending",
+          "decorative": true,
+          "width": 252,
+          "height": 252,
+          "top": 1941,
+          "left": 332,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 252,
+          "height": 252,
+          "top": 1941,
+          "left": 616,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-offset",
+          "state": "pending",
+          "decorative": true,
+          "width": 252,
+          "height": 252,
+          "top": 1941,
+          "left": 900,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 2798.234375,
+          "left": -86.78125,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 2718.234375,
+          "left": 577.234375,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 2718.234375,
+          "left": 577.015625,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "pending",
+          "decorative": true,
+          "width": 720,
+          "height": 720,
+          "top": 6378.390625,
+          "left": 516,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        }
+      ],
+      "initialLazyCanvases": [
+        {
+          "application": "preview-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 2798.234375,
+          "left": -86.78125,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 2718.234375,
+          "left": 577.234375,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "pending",
+          "decorative": true,
+          "width": 720,
+          "height": 720,
+          "top": 6378.390625,
+          "left": 516,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        }
+      ],
+      "chatBackdrop": {
+        "rect": {
+          "x": 802.203125,
+          "y": -3448.765625,
+          "width": 349.578125,
+          "height": 640,
+          "top": -3448.765625,
+          "right": 1151.78125,
+          "bottom": -2808.765625,
+          "left": 802.203125
+        },
+        "widget": {
+          "x": 802.421875,
+          "y": -3448.765625,
+          "width": 349.578125,
+          "height": 640,
+          "top": -3448.765625,
+          "right": 1152,
+          "bottom": -2808.765625,
+          "left": 802.421875
+        },
+        "display": "block",
+        "position": "absolute",
+        "blur": "blur(32px)",
+        "blend": "plus-darker",
+        "state": "ready"
+      },
+      "finalCanvases": [
+        {
+          "application": "offerings-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 480,
+          "height": 553,
+          "top": 1012,
+          "left": -18.671875,
+          "bitmapWidth": 480,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "offerings-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 553,
+          "height": 553,
+          "top": 1012,
+          "left": 323.34375,
+          "bitmapWidth": 553,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "offerings-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 480,
+          "height": 553,
+          "top": 1012,
+          "left": 738.671875,
+          "bitmapWidth": 480,
+          "bitmapHeight": 553
+        },
+        {
+          "application": "applications-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 252,
+          "height": 252,
+          "top": 1941,
+          "left": 48,
+          "bitmapWidth": 252,
+          "bitmapHeight": 252
+        },
+        {
+          "application": "applications-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 252,
+          "height": 252,
+          "top": 1941,
+          "left": 332,
+          "bitmapWidth": 252,
+          "bitmapHeight": 252
+        },
+        {
+          "application": "applications-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 252,
+          "height": 252,
+          "top": 1941,
+          "left": 616,
+          "bitmapWidth": 252,
+          "bitmapHeight": 252
+        },
+        {
+          "application": "applications-offset",
+          "state": "ready",
+          "decorative": true,
+          "width": 252,
+          "height": 252,
+          "top": 1941,
+          "left": 900,
+          "bitmapWidth": 252,
+          "bitmapHeight": 252
+        },
+        {
+          "application": "preview-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 2798.234375,
+          "left": -86.78125,
+          "bitmapWidth": 992,
+          "bitmapHeight": 640
+        },
+        {
+          "application": "preview-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 2718.234375,
+          "left": 577.234375,
+          "bitmapWidth": 800,
+          "bitmapHeight": 800
+        },
+        {
+          "application": "preview-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 2718.234375,
+          "left": 577.015625,
+          "bitmapWidth": 800,
+          "bitmapHeight": 800
+        },
+        {
+          "application": "cta-pattern",
+          "state": "ready",
+          "decorative": true,
+          "width": 720,
+          "height": 720,
+          "top": 6378.390625,
+          "left": 516,
+          "bitmapWidth": 720,
+          "bitmapHeight": 720
+        }
+      ],
+      "geometry": {
+        "viewport": 1200,
+        "documentWidth": 1200,
+        "bodyWidth": 1200,
+        "height": 7727,
+        "scrollX": 0,
+        "scrollY": 0
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "passed": true,
+      "checks": [
+        "Ten unique applications, eleven decorative canvases",
+        "Below-fold preview and CTA canvases remain pending initially",
+        "Every nonzero-size canvas renders after scrolling into view",
+        "WebKit glass backdrop renders, aligns with the full widget, and preserves blur/blending",
+        "No horizontal overflow; rendered stills remain ready at the page top",
+        "No legacy PNG requests, browser errors, or context loss"
+      ],
+      "legacyRequests": [],
+      "browserErrors": [],
+      "contextEvents": [],
+      "initialCanvases": [
+        {
+          "application": "offerings-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 442.671875,
+          "height": 510,
+          "top": 952,
+          "left": -82.671875,
+          "bitmapWidth": 443,
+          "bitmapHeight": 510
+        },
+        {
+          "application": "offerings-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 509.984375,
+          "height": 510,
+          "top": 952,
+          "left": 128.84375,
+          "bitmapWidth": 510,
+          "bitmapHeight": 510
+        },
+        {
+          "application": "offerings-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 442.671875,
+          "height": 510,
+          "top": 952,
+          "left": 408,
+          "bitmapWidth": 443,
+          "bitmapHeight": 510
+        },
+        {
+          "application": "applications-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 336,
+          "height": 336,
+          "top": 1837.828125,
+          "left": 32,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-band",
+          "state": "pending",
+          "decorative": true,
+          "width": 336,
+          "height": 336,
+          "top": 1837.828125,
+          "left": 400,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 336,
+          "height": 336,
+          "top": 2396.71875,
+          "left": 32,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-offset",
+          "state": "pending",
+          "decorative": true,
+          "width": 336,
+          "height": 336,
+          "top": 2396.71875,
+          "left": 400,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 3177.84375,
+          "left": -112,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 1173.328125,
+          "height": 1173.3125,
+          "top": 3750.078125,
+          "left": -202.65625,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 1173.328125,
+          "height": 1173.3125,
+          "top": 3750.078125,
+          "left": -202.65625,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "pending",
+          "decorative": true,
+          "width": 720,
+          "height": 720,
+          "top": 7822.90625,
+          "left": 200,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        }
+      ],
+      "initialLazyCanvases": [
+        {
+          "application": "preview-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 3177.84375,
+          "left": -112,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 1173.328125,
+          "height": 1173.3125,
+          "top": 3750.078125,
+          "left": -202.65625,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "pending",
+          "decorative": true,
+          "width": 720,
+          "height": 720,
+          "top": 7822.90625,
+          "left": 200,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        }
+      ],
+      "chatBackdrop": {
+        "rect": {
+          "x": 32,
+          "y": -3674.265625,
+          "width": 704,
+          "height": 640,
+          "top": -3674.265625,
+          "right": 736,
+          "bottom": -3034.265625,
+          "left": 32
+        },
+        "widget": {
+          "x": 32,
+          "y": -3674.265625,
+          "width": 704,
+          "height": 640,
+          "top": -3674.265625,
+          "right": 736,
+          "bottom": -3034.265625,
+          "left": 32
+        },
+        "display": "block",
+        "position": "absolute",
+        "blur": "blur(32px)",
+        "blend": "plus-darker",
+        "state": "ready"
+      },
+      "finalCanvases": [
+        {
+          "application": "offerings-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 442.671875,
+          "height": 510,
+          "top": 952,
+          "left": -82.671875,
+          "bitmapWidth": 443,
+          "bitmapHeight": 510
+        },
+        {
+          "application": "offerings-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 509.984375,
+          "height": 510,
+          "top": 952,
+          "left": 128.84375,
+          "bitmapWidth": 510,
+          "bitmapHeight": 510
+        },
+        {
+          "application": "offerings-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 442.671875,
+          "height": 510,
+          "top": 952,
+          "left": 408,
+          "bitmapWidth": 443,
+          "bitmapHeight": 510
+        },
+        {
+          "application": "applications-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 336,
+          "height": 336,
+          "top": 1837.828125,
+          "left": 32,
+          "bitmapWidth": 336,
+          "bitmapHeight": 336
+        },
+        {
+          "application": "applications-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 336,
+          "height": 336,
+          "top": 1837.828125,
+          "left": 400,
+          "bitmapWidth": 336,
+          "bitmapHeight": 336
+        },
+        {
+          "application": "applications-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 336,
+          "height": 336,
+          "top": 2396.71875,
+          "left": 32,
+          "bitmapWidth": 336,
+          "bitmapHeight": 336
+        },
+        {
+          "application": "applications-offset",
+          "state": "ready",
+          "decorative": true,
+          "width": 336,
+          "height": 336,
+          "top": 2396.71875,
+          "left": 400,
+          "bitmapWidth": 336,
+          "bitmapHeight": 336
+        },
+        {
+          "application": "preview-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 3177.84375,
+          "left": -112,
+          "bitmapWidth": 992,
+          "bitmapHeight": 640
+        },
+        {
+          "application": "preview-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 1173.328125,
+          "height": 1173.3125,
+          "top": 3750.078125,
+          "left": -202.65625,
+          "bitmapWidth": 1173,
+          "bitmapHeight": 1173
+        },
+        {
+          "application": "preview-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 1173.328125,
+          "height": 1173.3125,
+          "top": 3750.078125,
+          "left": -202.65625,
+          "bitmapWidth": 1173,
+          "bitmapHeight": 1173
+        },
+        {
+          "application": "cta-pattern",
+          "state": "ready",
+          "decorative": true,
+          "width": 720,
+          "height": 720,
+          "top": 7822.90625,
+          "left": 200,
+          "bitmapWidth": 720,
+          "bitmapHeight": 720
+        }
+      ],
+      "geometry": {
+        "viewport": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "height": 9115,
+        "scrollX": 0,
+        "scrollY": 0
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "passed": true,
+      "checks": [
+        "Ten unique applications, eleven decorative canvases",
+        "Below-fold preview and CTA canvases remain pending initially",
+        "Every nonzero-size canvas renders after scrolling into view",
+        "WebKit glass backdrop renders, aligns with the full widget, and preserves blur/blending",
+        "No horizontal overflow; rendered stills remain ready at the page top",
+        "No legacy PNG requests, browser errors, or context loss"
+      ],
+      "legacyRequests": [],
+      "browserErrors": [],
+      "contextEvents": [],
+      "initialCanvases": [
+        {
+          "application": "offerings-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 416.625,
+          "height": 480,
+          "top": 872,
+          "left": -13.3125,
+          "bitmapWidth": 417,
+          "bitmapHeight": 480
+        },
+        {
+          "application": "offerings-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 479.984375,
+          "height": 480,
+          "top": 1376,
+          "left": -45.125,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "offerings-band",
+          "state": "pending",
+          "decorative": true,
+          "width": 416.625,
+          "height": 480,
+          "top": 1880,
+          "left": -13.3125,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 350,
+          "height": 350,
+          "top": 2685.1875,
+          "left": 20,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-band",
+          "state": "pending",
+          "decorative": true,
+          "width": 350,
+          "height": 350,
+          "top": 3238.078125,
+          "left": 20,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 350,
+          "height": 350,
+          "top": 3790.96875,
+          "left": 20,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-offset",
+          "state": "pending",
+          "decorative": true,
+          "width": 350,
+          "height": 350,
+          "top": 4343.859375,
+          "left": 20,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 5023.9375,
+          "left": -301,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 5732.828125,
+          "left": -204.984375,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 5732.828125,
+          "left": -204.984375,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "pending",
+          "decorative": true,
+          "width": 500.859375,
+          "height": 500.859375,
+          "top": 10466.625,
+          "left": -55.421875,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        }
+      ],
+      "initialLazyCanvases": [
+        {
+          "application": "preview-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 5023.9375,
+          "left": -301,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 5732.828125,
+          "left": -204.984375,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "pending",
+          "decorative": true,
+          "width": 500.859375,
+          "height": 500.859375,
+          "top": 10466.625,
+          "left": -55.421875,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        }
+      ],
+      "chatBackdrop": {
+        "rect": {
+          "x": 20,
+          "y": -4412.171875,
+          "width": 350,
+          "height": 640,
+          "top": -4412.171875,
+          "right": 370,
+          "bottom": -3772.171875,
+          "left": 20
+        },
+        "widget": {
+          "x": 20,
+          "y": -4412.171875,
+          "width": 350,
+          "height": 640,
+          "top": -4412.171875,
+          "right": 370,
+          "bottom": -3772.171875,
+          "left": 20
+        },
+        "display": "block",
+        "position": "absolute",
+        "blur": "blur(32px)",
+        "blend": "plus-darker",
+        "state": "ready"
+      },
+      "finalCanvases": [
+        {
+          "application": "offerings-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 416.625,
+          "height": 480,
+          "top": 872,
+          "left": -13.3125,
+          "bitmapWidth": 417,
+          "bitmapHeight": 480
+        },
+        {
+          "application": "offerings-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 479.984375,
+          "height": 480,
+          "top": 1376,
+          "left": -45.125,
+          "bitmapWidth": 480,
+          "bitmapHeight": 480
+        },
+        {
+          "application": "offerings-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 416.625,
+          "height": 480,
+          "top": 1880,
+          "left": -13.3125,
+          "bitmapWidth": 417,
+          "bitmapHeight": 480
+        },
+        {
+          "application": "applications-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 350,
+          "height": 350,
+          "top": 2685.1875,
+          "left": 20,
+          "bitmapWidth": 350,
+          "bitmapHeight": 350
+        },
+        {
+          "application": "applications-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 350,
+          "height": 350,
+          "top": 3238.078125,
+          "left": 20,
+          "bitmapWidth": 350,
+          "bitmapHeight": 350
+        },
+        {
+          "application": "applications-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 350,
+          "height": 350,
+          "top": 3790.96875,
+          "left": 20,
+          "bitmapWidth": 350,
+          "bitmapHeight": 350
+        },
+        {
+          "application": "applications-offset",
+          "state": "ready",
+          "decorative": true,
+          "width": 350,
+          "height": 350,
+          "top": 4343.859375,
+          "left": 20,
+          "bitmapWidth": 350,
+          "bitmapHeight": 350
+        },
+        {
+          "application": "preview-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 5023.9375,
+          "left": -301,
+          "bitmapWidth": 992,
+          "bitmapHeight": 640
+        },
+        {
+          "application": "preview-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 5732.828125,
+          "left": -204.984375,
+          "bitmapWidth": 800,
+          "bitmapHeight": 800
+        },
+        {
+          "application": "preview-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 5732.828125,
+          "left": -204.984375,
+          "bitmapWidth": 800,
+          "bitmapHeight": 800
+        },
+        {
+          "application": "cta-pattern",
+          "state": "ready",
+          "decorative": true,
+          "width": 500.859375,
+          "height": 500.859375,
+          "top": 10466.625,
+          "left": -55.421875,
+          "bitmapWidth": 501,
+          "bitmapHeight": 501
+        }
+      ],
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "height": 11776,
+        "scrollX": 0,
+        "scrollY": 0
+      },
+      "screenshot": "docs/patterns/homepage/integrated-webkit-390.png"
+    },
+    {
+      "engine": "webkit",
+      "width": 320,
+      "passed": true,
+      "checks": [
+        "Ten unique applications, eleven decorative canvases",
+        "Below-fold preview and CTA canvases remain pending initially",
+        "Every nonzero-size canvas renders after scrolling into view",
+        "WebKit glass backdrop renders, aligns with the full widget, and preserves blur/blending",
+        "No horizontal overflow; rendered stills remain ready at the page top",
+        "No legacy PNG requests, browser errors, or context loss"
+      ],
+      "legacyRequests": [],
+      "browserErrors": [],
+      "contextEvents": [],
+      "initialCanvases": [
+        {
+          "application": "offerings-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 416.625,
+          "height": 480,
+          "top": 947.0625,
+          "left": -48.3125,
+          "bitmapWidth": 417,
+          "bitmapHeight": 480
+        },
+        {
+          "application": "offerings-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 479.984375,
+          "height": 480,
+          "top": 1451.0625,
+          "left": -80.125,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "offerings-band",
+          "state": "pending",
+          "decorative": true,
+          "width": 416.625,
+          "height": 480,
+          "top": 1955.0625,
+          "left": -48.3125,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 280,
+          "height": 280,
+          "top": 2760.25,
+          "left": 20,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-band",
+          "state": "pending",
+          "decorative": true,
+          "width": 280,
+          "height": 280,
+          "top": 3243.140625,
+          "left": 20,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 280,
+          "height": 280,
+          "top": 3726.03125,
+          "left": 20,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "applications-offset",
+          "state": "pending",
+          "decorative": true,
+          "width": 280,
+          "height": 280,
+          "top": 4208.921875,
+          "left": 20,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 4819,
+          "left": -336,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 5527.890625,
+          "left": -239.984375,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 5527.890625,
+          "left": -239.984375,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "pending",
+          "decorative": true,
+          "width": 500.859375,
+          "height": 500.859375,
+          "top": 10422.359375,
+          "left": -90.421875,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        }
+      ],
+      "initialLazyCanvases": [
+        {
+          "application": "preview-drift",
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 4819,
+          "left": -336,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "preview-concentric",
+          "state": "pending",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 5527.890625,
+          "left": -239.984375,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": "cta-pattern",
+          "state": "pending",
+          "decorative": true,
+          "width": 500.859375,
+          "height": 500.859375,
+          "top": 10422.359375,
+          "left": -90.421875,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        }
+      ],
+      "chatBackdrop": {
+        "rect": {
+          "x": 20,
+          "y": -4573.109375,
+          "width": 280,
+          "height": 640,
+          "top": -4573.109375,
+          "right": 300,
+          "bottom": -3933.109375,
+          "left": 20
+        },
+        "widget": {
+          "x": 20,
+          "y": -4573.109375,
+          "width": 280,
+          "height": 640,
+          "top": -4573.109375,
+          "right": 300,
+          "bottom": -3933.109375,
+          "left": 20
+        },
+        "display": "block",
+        "position": "absolute",
+        "blur": "blur(32px)",
+        "blend": "plus-darker",
+        "state": "ready"
+      },
+      "finalCanvases": [
+        {
+          "application": "offerings-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 416.625,
+          "height": 480,
+          "top": 947.0625,
+          "left": -48.3125,
+          "bitmapWidth": 417,
+          "bitmapHeight": 480
+        },
+        {
+          "application": "offerings-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 479.984375,
+          "height": 480,
+          "top": 1451.0625,
+          "left": -80.125,
+          "bitmapWidth": 480,
+          "bitmapHeight": 480
+        },
+        {
+          "application": "offerings-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 416.625,
+          "height": 480,
+          "top": 1955.0625,
+          "left": -48.3125,
+          "bitmapWidth": 417,
+          "bitmapHeight": 480
+        },
+        {
+          "application": "applications-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 280,
+          "height": 280,
+          "top": 2760.25,
+          "left": 20,
+          "bitmapWidth": 280,
+          "bitmapHeight": 280
+        },
+        {
+          "application": "applications-band",
+          "state": "ready",
+          "decorative": true,
+          "width": 280,
+          "height": 280,
+          "top": 3243.140625,
+          "left": 20,
+          "bitmapWidth": 280,
+          "bitmapHeight": 280
+        },
+        {
+          "application": "applications-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 280,
+          "height": 280,
+          "top": 3726.03125,
+          "left": 20,
+          "bitmapWidth": 280,
+          "bitmapHeight": 280
+        },
+        {
+          "application": "applications-offset",
+          "state": "ready",
+          "decorative": true,
+          "width": 280,
+          "height": 280,
+          "top": 4208.921875,
+          "left": 20,
+          "bitmapWidth": 280,
+          "bitmapHeight": 280
+        },
+        {
+          "application": "preview-drift",
+          "state": "ready",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 4819,
+          "left": -336,
+          "bitmapWidth": 992,
+          "bitmapHeight": 640
+        },
+        {
+          "application": "preview-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 5527.890625,
+          "left": -239.984375,
+          "bitmapWidth": 800,
+          "bitmapHeight": 800
+        },
+        {
+          "application": "preview-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 800,
+          "height": 800,
+          "top": 5527.890625,
+          "left": -239.984375,
+          "bitmapWidth": 800,
+          "bitmapHeight": 800
+        },
+        {
+          "application": "cta-pattern",
+          "state": "ready",
+          "decorative": true,
+          "width": 500.859375,
+          "height": 500.859375,
+          "top": 10422.359375,
+          "left": -90.421875,
+          "bitmapWidth": 501,
+          "bitmapHeight": 501
+        }
+      ],
+      "geometry": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320,
+        "height": 11721,
+        "scrollX": 0,
+        "scrollY": 0
+      }
+    }
+  ],
+  "errors": []
+}

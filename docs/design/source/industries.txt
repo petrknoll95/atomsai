@@ -1,0 +1,188 @@
+const imgBackgroundImage = "https://www.figma.com/api/mcp/asset/bcae7d56-6809-4b47-a9c0-0e75561fc1a1.png";
+const imgBackgroundImage1 = "https://www.figma.com/api/mcp/asset/100b6500-ee2a-4cde-a91f-edd6738b17b0.png";
+const imgBackgroundImage2 = "https://www.figma.com/api/mcp/asset/589ca699-e90b-4734-a5bd-c31731b89b14.png";
+const imgBackgroundImage3 = "https://www.figma.com/api/mcp/asset/75090b58-19cf-43de-aec2-e62fa366c058.png";
+const imgFrame15 = "https://www.figma.com/api/mcp/asset/0e134adb-213f-42fa-bec1-d80fa6fe9a6f.svg";
+const imgIconArtwork = "https://www.figma.com/api/mcp/asset/6d8ab229-969f-4dcd-b2b6-f41ce336ac79.svg";
+const imgIconArtwork1 = "https://www.figma.com/api/mcp/asset/60bfacd0-d069-4514-99a5-aceb5d97d28c.svg";
+
+export default function UseCases() {
+  return (
+    <div className="content-stretch flex flex-col items-start px-[var(--margin,48px)] py-[var(--calc(var(--spacing)*24),96px)] relative size-full" data-node-id="186:4401" data-name="Use Cases">
+      <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*20),80px)] items-start relative shrink-0 w-full" data-node-id="186:4673">
+        <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*4),16px)] items-start relative shrink-0 w-full" data-node-id="186:4676" data-name="Header">
+          <div className="content-stretch flex gap-[var(--calc(var(--spacing)*2),8px)] items-center relative shrink-0" data-node-id="187:7761" data-name="Eyebrow">
+            <div className="h-[20px] relative shrink-0 w-[10px]" data-node-id="187:7762">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame15} />
+            </div>
+            <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="187:7764" style={{ fontVariationSettings: '"ital" 100' }}>
+              Industries
+            </p>
+          </div>
+          <div className="content-stretch flex gap-[32px] items-center relative shrink-0 w-full" data-node-id="187:7766">
+            <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[0.95] min-w-px not-italic relative text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-5xl,48px)] text-balance tracking-[-0.72px]" data-node-id="186:4674">
+              Built for every team and use case
+            </p>
+            <button className="bg-[var(--color-secondary,#ebebe4)] content-stretch cursor-pointer flex gap-[var(--calc(var(--spacing)*2),8px)] h-[44px] items-center justify-center px-[var(--calc(var(--spacing)*5),20px)] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="186:4677" data-name="Button — Find your starting point">
+              <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-secondary-foreground,#27433b)] text-[length:var(--text-sm,14px)] text-left whitespace-nowrap" data-node-id="I186:4677;33:676" style={{ fontVariationSettings: '"ital" 100' }}>
+                View All Industries
+              </p>
+            </button>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*12),48px)] items-start relative shrink-0 w-full" data-node-id="187:4728" data-name="Carousel">
+          <div className="gap-x-[8px] gap-y-[8px] grid grid-cols-[_____minmax(0,1fr)_minmax(0,2fr)_minmax(0,5fr)_minmax(0,2fr)_minmax(0,1fr)] grid-rows-[repeat(1,fit-content(100%))] relative shrink-0 w-full" data-node-id="186:4407" data-name="Carousel">
+            <div className="content-stretch flex flex-col items-end justify-center justify-self-stretch overflow-clip relative self-stretch shrink-0" data-node-id="186:4670" data-name="Wrapper">
+              <div className="aspect-[480/480] bg-[var(--color-secondary,#ebebe4)] content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-center justify-center min-h-px overflow-clip p-[8px] relative rounded-[var(--calc(infinity*1px),9999px)]" data-node-id="186:4664" data-name="Slide">
+                <div className="absolute left-[-3.73px] size-[676px] top-[-3.45px]" data-node-id="187:4702" data-name="Background Image">
+                  <div aria-hidden className="absolute inset-0 pointer-events-none">
+                    <img alt="" className="absolute max-w-none object-cover size-full" src={imgBackgroundImage} />
+                    <div className="absolute bg-[var(--var\(--color-background\),rgba(240,240,236,0.2))] inset-0" />
+                  </div>
+                </div>
+                <div className="backdrop-blur-[6px] bg-[var(--var\(--color-primary\),rgba(39,67,59,0.1))] content-stretch flex items-center overflow-clip px-[12px] py-[6px] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="186:4665" data-name="Generated autolayout">
+                  <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-surface-muted-foreground,#42665a)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="186:4666" style={{ fontVariationSettings: '"ital" 100' }}>{`Models & Infrastructure`}</p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-end justify-center justify-self-stretch overflow-clip relative self-stretch shrink-0" data-node-id="186:4669" data-name="Wrapper">
+              <div className="aspect-[480/480] bg-[var(--color-secondary,#ebebe4)] content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-center justify-center min-h-px overflow-clip p-[8px] relative rounded-[var(--calc(infinity*1px),9999px)]" data-node-id="186:4660" data-name="Slide">
+                <div className="absolute left-[-3.36px] size-[676px] top-[-3.45px]" data-node-id="187:4700" data-name="Background Image">
+                  <div aria-hidden className="absolute inset-0 pointer-events-none">
+                    <img alt="" className="absolute max-w-none object-cover size-full" src={imgBackgroundImage1} />
+                    <div className="absolute bg-[var(--var\(--color-background\),rgba(240,240,236,0.2))] inset-0" />
+                  </div>
+                </div>
+                <div className="backdrop-blur-[18px] bg-[var(--var\(--color-background\),rgba(240,240,236,0.1))] content-stretch flex h-[140px] items-center overflow-clip p-[40px] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="196:7946" data-name="Generated autolayout">
+                  <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-surface-muted-foreground,#42665a)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="196:7947" style={{ fontVariationSettings: '"ital" 100' }}>
+                    Insurance
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-center justify-center justify-self-stretch overflow-clip relative self-start shrink-0" data-node-id="186:4668" data-name="Wrapper">
+              <div className="aspect-[480/480] bg-[var(--color-secondary,#ebebe4)] content-stretch flex flex-col gap-[8px] items-center justify-center overflow-clip relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0 w-full" data-node-id="186:4656" data-name="Slide">
+                <div className="absolute left-[-3.45px] size-[676px] top-[-3.45px]" data-node-id="186:4697" data-name="Background Image">
+                  <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgBackgroundImage2} />
+                </div>
+                <div className="backdrop-blur-[18px] bg-[var(--var\(--color-background\),rgba(240,240,236,0.1))] content-stretch flex h-[140px] items-center overflow-clip p-[40px] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="186:4657" data-name="Generated autolayout">
+                  <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-surface-muted-foreground,#42665a)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="186:4658" style={{ fontVariationSettings: '"ital" 100' }}>
+                    Insurance
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start justify-center justify-self-stretch overflow-clip relative self-stretch shrink-0" data-node-id="186:4671" data-name="Wrapper">
+              <div className="aspect-[480/480] bg-[var(--color-secondary,#ebebe4)] content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-center justify-center min-h-px overflow-clip p-[8px] relative rounded-[var(--calc(infinity*1px),9999px)]" data-node-id="186:4652" data-name="Slide">
+                <div className="absolute left-[-3.55px] size-[676px] top-[-3.45px]" data-node-id="187:4698" data-name="Background Image">
+                  <div aria-hidden className="absolute inset-0 pointer-events-none">
+                    <img alt="" className="absolute max-w-none object-cover size-full" src={imgBackgroundImage3} />
+                    <div className="absolute bg-[var(--var\(--color-background\),rgba(240,240,236,0.2))] inset-0" />
+                  </div>
+                </div>
+                <div className="backdrop-blur-[18px] bg-[var(--var\(--color-background\),rgba(240,240,236,0.1))] content-stretch flex h-[140px] items-center overflow-clip p-[40px] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="196:7943" data-name="Generated autolayout">
+                  <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-surface-muted-foreground,#42665a)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="196:7944" style={{ fontVariationSettings: '"ital" 100' }}>
+                    Insurance
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start justify-center justify-self-stretch overflow-clip relative self-stretch shrink-0" data-node-id="186:4672" data-name="Wrapper">
+              <div className="aspect-[480/480] bg-[var(--color-secondary,#ebebe4)] content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-center justify-center min-h-px overflow-clip p-[8px] relative rounded-[var(--calc(infinity*1px),9999px)]" data-node-id="186:4648" data-name="Slide">
+                <div className="absolute left-[-3.18px] size-[676px] top-[-3.45px]" data-node-id="187:4704" data-name="Background Image">
+                  <div aria-hidden className="absolute inset-0 pointer-events-none">
+                    <img alt="" className="absolute max-w-none object-cover size-full" src={imgBackgroundImage1} />
+                    <div className="absolute bg-[var(--var\(--color-background\),rgba(240,240,236,0.2))] inset-0" />
+                  </div>
+                </div>
+                <div className="backdrop-blur-[6px] bg-[var(--var\(--color-primary\),rgba(39,67,59,0.1))] content-stretch flex items-center overflow-clip px-[12px] py-[6px] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="186:4649" data-name="Generated autolayout">
+                  <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-surface-muted-foreground,#42665a)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="186:4650" style={{ fontVariationSettings: '"ital" 100' }}>{`Models & Infrastructure`}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="gap-x-[32px] gap-y-[32px] grid grid-cols-[repeat(6,minmax(0,1fr))] grid-rows-[repeat(1,fit-content(100%))] relative shrink-0 w-full" data-node-id="187:4757" data-name="Carousel">
+            <div className="col-[span_2] content-stretch flex items-center justify-end justify-self-stretch overflow-clip relative self-stretch shrink-0" data-node-id="187:4763" data-name="Wrapper">
+              <div className="bg-[var(--color-primary,#27433b)] content-stretch flex items-center justify-center relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0 size-[44px]" data-node-id="187:7731" data-name="Icon button/Medium">
+                <div className="relative shrink-0 size-[24px]" data-node-id="I187:7731;34:537" data-name="Icon">
+                  <div className="absolute left-0 size-[24px] top-0" data-node-id="I187:7731;34:537;98:4957" data-name="Icon artwork">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArtwork} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-[span_2] content-stretch flex flex-col gap-[var(--calc(var(--spacing)*4),16px)] items-center justify-center justify-self-stretch relative self-start shrink-0" data-node-id="187:4783" data-name="Descriptor">
+              <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full" data-node-id="187:7747" data-name="Flex">
+                <div className="content-stretch flex items-center justify-center max-w-[480px] px-[var(--calc(var(--spacing)*16),64px)] relative shrink-0 w-full" data-node-id="187:4784" data-name="Container">
+                  <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] min-w-px relative text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] text-center" data-node-id="187:4785" style={{ fontVariationSettings: '"ital" 100' }}>
+                    Insurance
+                  </p>
+                </div>
+                <div className="content-stretch flex items-center justify-center max-w-[480px] px-[var(--calc(var(--spacing)*16),64px)] relative shrink-0" data-node-id="187:4786" data-name="Container">
+                  <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-normal,425)] leading-[1.4] min-w-px relative text-[color:var(--color-muted-foreground,#27433b)] text-[length:var(--text-sm,14px)] text-center text-pretty" data-node-id="187:4787" style={{ fontVariationSettings: '"ital" 100' }}>
+                    Turn broker emails, applications, loss runs and policy documents into structured, review-ready work.
+                  </p>
+                </div>
+              </div>
+              <button className="border border-[var(--color-control-border,#27433b)] border-solid content-stretch cursor-pointer flex gap-[var(--calc(var(--spacing)*1.5),6px)] h-[32px] items-center justify-center px-[var(--calc(var(--spacing)*3),12px)] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="187:7748" data-name="Button — Try the technology">
+                <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] text-left whitespace-nowrap" data-node-id="I187:7748;33:888" style={{ fontVariationSettings: '"ital" 100' }}>
+                  Learn More
+                </p>
+              </button>
+            </div>
+            <div className="col-[span_2] content-stretch flex items-center justify-self-stretch overflow-clip relative self-stretch shrink-0" data-node-id="187:4773" data-name="Wrapper">
+              <div className="bg-[var(--color-primary,#27433b)] content-stretch flex items-center justify-center relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0 size-[44px]" data-node-id="187:7736" data-name="Icon button/Medium">
+                <div className="relative shrink-0 size-[24px]" data-node-id="I187:7736;34:537" data-name="Icon">
+                  <div className="absolute left-0 size-[24px] top-0" data-node-id="I187:7736;34:537;98:4961" data-name="Icon artwork">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArtwork1} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Label/sm: Font(family: "var(--font-sans)", style: Regular, size: var(--text-sm), weight: var(--font-weight-medium), lineHeight: 1.399999976158142, letterSpacing: 0), Display/5xl: Font(family: "var(--font-display)", style: Regular, size: var(--text-5xl), weight: var(--font-weight-normal), lineHeight: 0.949999988079071, letterSpacing: -1.5), Body/sm: Font(family: "var(--font-sans)", style: Regular, size: var(--text-sm), weight: var(--font-weight-normal), lineHeight: 1.399999976158142, letterSpacing: 0).
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Button/Medium
+**Node ID:** 33:803
+
+Pill button, Medium: h-11 px-5 gap-2 text-sm rounded-full font-medium. Styles — Primary: bg-primary text-primary-foreground. Secondary: bg-secondary text-secondary-foreground. Outline: border border-control-border text-foreground (hover/pressed: border-foreground). Ghost: text-foreground. Link: px-0 text-foreground, muted-foreground on hover and pressed. Never underlined. States — hover/pressed for filled and Ghost styles: state layer of the style’s foreground at var(--state-hover)/var(--state-pressed) (hover:bg-primary-hover etc.). Focus: outline-2 outline-offset-2 outline-ring. Disabled: opacity var(--state-disabled). Lead with an action icon, trail with a navigation arrow. Supported hosts: background and surface. State opacity is exported as percent / 100. Target active label contrast ≥4.8:1; focus outline must not be clipped. Outline stays transparent in every state: no background fill or state overlay. Hover and pressed use the border; focus retains the focus ring.
+
+## Icon button/Medium
+**Node ID:** 34:608
+
+Circular icon-only button, Medium: size-11 rounded-full, 24 px icon. Same styles and token-driven states as Button (filled and Ghost styles use a state layer at var(--state-hover)/var(--state-pressed), outline-ring on focus, opacity var(--state-disabled)). Always give it an aria-label. Supported hosts: background and surface. State opacity is exported as percent / 100. Target active label contrast ≥4.8:1; focus outline must not be clipped. Outline stays transparent in every state: no background fill or state overlay. Hover and pressed use the border; focus retains the focus ring.
+
+## Icon/24/arrow-left
+**Node ID:** 28:510
+
+Original SVG from interactive brand guidelines: src/assets/brand/icons/arrow-left.svg. 2px stroke at 24px; miter joins and butt caps.
+
+## Button/Small
+**Node ID:** 33:982
+
+Pill button, Small: h-8 px-3 gap-1.5 text-sm rounded-full font-medium. Styles — Primary: bg-primary text-primary-foreground. Secondary: bg-secondary text-secondary-foreground. Outline: border border-control-border text-foreground (hover/pressed: border-foreground). Ghost: text-foreground. Link: px-0 text-foreground, muted-foreground on hover and pressed. Never underlined. States — hover/pressed for filled and Ghost styles: state layer of the style’s foreground at var(--state-hover)/var(--state-pressed) (hover:bg-primary-hover etc.). Focus: outline-2 outline-offset-2 outline-ring. Disabled: opacity var(--state-disabled). Lead with an action icon, trail with a navigation arrow. Supported hosts: background and surface. State opacity is exported as percent / 100. Target active label contrast ≥4.8:1; focus outline must not be clipped. Outline stays transparent in every state: no background fill or state overlay. Hover and pressed use the border; focus retains the focus ring.
+
+## Icon/24/arrow-right
+**Node ID:** 28:516
+
+Original SVG from interactive brand guidelines: src/assets/brand/icons/arrow-right.svg. 2px stroke at 24px; miter joins and butt caps.
+
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

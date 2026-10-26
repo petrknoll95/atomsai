@@ -1,0 +1,163 @@
+{
+  "date": "2026-10-26T12:17:36.143Z",
+  "base": "http://127.0.0.1:3042",
+  "results": [
+    {
+      "engine": "chromium",
+      "checks": [
+        "Initial content visible; nine outer sections discovered; below-fold content waits",
+        "700ms reveal has intermediate frames, preserves layout, releases opacity, and runs once",
+        "Focus reveals offscreen controls immediately; anchor targets are visible",
+        "Printing includes every section, including unrevealed content",
+        "Live reduced-motion changes reveal everything and clean up in-flight animation",
+        "All sections reveal, including the footer; responsive widths have no overflow",
+        "Initial reduced-motion preference and direct deep links preserve visibility",
+        "Server HTML remains fully visible without JavaScript"
+      ],
+      "errors": [],
+      "responsive": [
+        {
+          "width": 1200,
+          "documentWidth": 1200
+        },
+        {
+          "width": 768,
+          "documentWidth": 768
+        },
+        {
+          "width": 390,
+          "documentWidth": 390
+        },
+        {
+          "width": 320,
+          "documentWidth": 320
+        }
+      ],
+      "samples": [
+        0,
+        0,
+        0.0752,
+        0.203,
+        0.2464,
+        0.3018,
+        0.3576,
+        0.4103,
+        0.4572,
+        0.5043,
+        0.546,
+        0.5877,
+        0.6268,
+        0.6633,
+        0.6954,
+        0.7272,
+        0.755,
+        0.7825,
+        0.8078,
+        0.831,
+        0.8511,
+        0.8707,
+        0.8874,
+        0.9036,
+        0.9181,
+        0.9304,
+        0.942,
+        0.9522,
+        0.9607,
+        0.9685,
+        0.9752,
+        0.9809,
+        0.9854,
+        0.9894,
+        0.9923,
+        0.9948,
+        0.9967,
+        0.9981,
+        0.999,
+        0.9995,
+        0.9998,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "engine": "webkit",
+      "checks": [
+        "Initial content visible; nine outer sections discovered; below-fold content waits",
+        "700ms reveal has intermediate frames, preserves layout, releases opacity, and runs once",
+        "Focus reveals offscreen controls immediately; anchor targets are visible",
+        "Printing includes every section, including unrevealed content",
+        "Live reduced-motion changes reveal everything and clean up in-flight animation",
+        "All sections reveal, including the footer; responsive widths have no overflow",
+        "Initial reduced-motion preference and direct deep links preserve visibility",
+        "Server HTML remains fully visible without JavaScript"
+      ],
+      "errors": [],
+      "responsive": [
+        {
+          "width": 1200,
+          "documentWidth": 1200
+        },
+        {
+          "width": 768,
+          "documentWidth": 768
+        },
+        {
+          "width": 390,
+          "documentWidth": 390
+        },
+        {
+          "width": 320,
+          "documentWidth": 320
+        }
+      ],
+      "samples": [
+        0,
+        0,
+        0.0711,
+        0.177,
+        0.1993,
+        0.2605,
+        0.3185,
+        0.3703,
+        0.4223,
+        0.4714,
+        0.5149,
+        0.5585,
+        0.5995,
+        0.6356,
+        0.6715,
+        0.705,
+        0.7343,
+        0.765,
+        0.7901,
+        0.8134,
+        0.8349,
+        0.8571,
+        0.875,
+        0.8914,
+        0.9071,
+        0.9205,
+        0.9339,
+        0.9451,
+        0.9544,
+        0.9631,
+        0.9706,
+        0.9767,
+        0.9821,
+        0.9867,
+        0.9902,
+        0.993,
+        0.9954,
+        0.9971,
+        0.9983,
+        0.9992,
+        0.9996,
+        0.9999,
+        1,
+        1
+      ]
+    }
+  ],
+  "errors": []
+}

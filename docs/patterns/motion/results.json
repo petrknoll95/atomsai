@@ -1,0 +1,404 @@
+{
+  "date": "2026-10-26T16:00:59.920Z",
+  "base": "http://127.0.0.1:3001",
+  "results": [
+    {
+      "browser": "chromium",
+      "checks": [
+        "All 16 family/motion combinations meet tonal-change thresholds (mean >= 3/255; >= 20% of pixels change by >= 8/255 in at least one channel); phase 0 equals 1 exactly; still comparison matches phase 0",
+        "Playback has no per-frame allocations, palette writes or blocking GL queries; capped at 30fps; pause and live reduced motion stop draws",
+        "Context restoration reconstructs the exact paused frame",
+        "No overflow at 768/390/320px; offscreen preview stops and resumes"
+      ],
+      "comparisons": [
+        {
+          "family": "drift",
+          "motion": "breath",
+          "seamIdentical": true,
+          "meanChange": 9.383033475783476,
+          "maxChange": 36,
+          "changedPixelFraction": 0.5319893162393162
+        },
+        {
+          "family": "drift",
+          "motion": "tide",
+          "seamIdentical": true,
+          "meanChange": 5.307785612535612,
+          "maxChange": 26,
+          "changedPixelFraction": 0.3310534188034188
+        },
+        {
+          "family": "drift",
+          "motion": "orbit",
+          "seamIdentical": true,
+          "meanChange": 3.8276474358974357,
+          "maxChange": 33,
+          "changedPixelFraction": 0.21685470085470085
+        },
+        {
+          "family": "drift",
+          "motion": "silk",
+          "seamIdentical": true,
+          "meanChange": 4.374284188034188,
+          "maxChange": 25,
+          "changedPixelFraction": 0.2730448717948718
+        },
+        {
+          "family": "offset",
+          "motion": "breath",
+          "seamIdentical": true,
+          "meanChange": 35.78197720797721,
+          "maxChange": 120,
+          "changedPixelFraction": 0.7809209401709402
+        },
+        {
+          "family": "offset",
+          "motion": "tide",
+          "seamIdentical": true,
+          "meanChange": 17.69650854700855,
+          "maxChange": 85,
+          "changedPixelFraction": 0.48274786324786323
+        },
+        {
+          "family": "offset",
+          "motion": "orbit",
+          "seamIdentical": true,
+          "meanChange": 12.572166666666666,
+          "maxChange": 94,
+          "changedPixelFraction": 0.4277179487179487
+        },
+        {
+          "family": "offset",
+          "motion": "silk",
+          "seamIdentical": true,
+          "meanChange": 14.125262108262108,
+          "maxChange": 83,
+          "changedPixelFraction": 0.47362606837606835
+        },
+        {
+          "family": "single-band",
+          "motion": "breath",
+          "seamIdentical": true,
+          "meanChange": 18.51580128205128,
+          "maxChange": 46,
+          "changedPixelFraction": 0.8744401709401709
+        },
+        {
+          "family": "single-band",
+          "motion": "tide",
+          "seamIdentical": true,
+          "meanChange": 11.67923433048433,
+          "maxChange": 44,
+          "changedPixelFraction": 0.6543311965811965
+        },
+        {
+          "family": "single-band",
+          "motion": "orbit",
+          "seamIdentical": true,
+          "meanChange": 8.050216524216523,
+          "maxChange": 58,
+          "changedPixelFraction": 0.4790277777777778
+        },
+        {
+          "family": "single-band",
+          "motion": "silk",
+          "seamIdentical": true,
+          "meanChange": 9.150452279202279,
+          "maxChange": 38,
+          "changedPixelFraction": 0.5906068376068376
+        },
+        {
+          "family": "concentric",
+          "motion": "breath",
+          "seamIdentical": true,
+          "meanChange": 24.365153133903135,
+          "maxChange": 38,
+          "changedPixelFraction": 1
+        },
+        {
+          "family": "concentric",
+          "motion": "tide",
+          "seamIdentical": true,
+          "meanChange": 10.313749287749287,
+          "maxChange": 31,
+          "changedPixelFraction": 0.6465811965811966
+        },
+        {
+          "family": "concentric",
+          "motion": "orbit",
+          "seamIdentical": true,
+          "meanChange": 8.092496438746439,
+          "maxChange": 43,
+          "changedPixelFraction": 0.4231388888888889
+        },
+        {
+          "family": "concentric",
+          "motion": "silk",
+          "seamIdentical": true,
+          "meanChange": 9.031174501424502,
+          "maxChange": 27,
+          "changedPixelFraction": 0.5421794871794872
+        }
+      ],
+      "errors": [],
+      "ripples": [
+        {
+          "count": 15,
+          "palette": "forest-dark",
+          "seamIdentical": true,
+          "seamMean": 0.10114102564102564,
+          "outwardError": 4197,
+          "inwardError": 104921
+        },
+        {
+          "count": 15,
+          "palette": "forest-light",
+          "seamIdentical": true,
+          "seamMean": 0.15037820512820513,
+          "outwardError": 6417,
+          "inwardError": 166316
+        },
+        {
+          "count": 15,
+          "palette": "iris",
+          "seamIdentical": true,
+          "seamMean": 0.10674679487179488,
+          "outwardError": 4614,
+          "inwardError": 128482
+        },
+        {
+          "count": 29,
+          "palette": "forest-dark",
+          "seamIdentical": true,
+          "seamMean": 0.09781410256410257,
+          "outwardError": 2479,
+          "inwardError": 104327
+        },
+        {
+          "count": 29,
+          "palette": "forest-light",
+          "seamIdentical": true,
+          "seamMean": 0.14597649572649574,
+          "outwardError": 3736,
+          "inwardError": 165550
+        },
+        {
+          "count": 29,
+          "palette": "iris",
+          "seamIdentical": true,
+          "seamMean": 0.10384508547008547,
+          "outwardError": 2740,
+          "inwardError": 127671
+        }
+      ],
+      "performance": {
+        "compositeDraws": 60,
+        "seconds": 2.0025,
+        "submissionsPerSecond": 29.962546816479403,
+        "allocations": 0,
+        "paletteWrites": 0,
+        "blockingQueries": 0,
+        "retainedMaskBytes": 10732176
+      }
+    },
+    {
+      "browser": "webkit",
+      "checks": [
+        "All 16 family/motion combinations meet tonal-change thresholds (mean >= 3/255; >= 20% of pixels change by >= 8/255 in at least one channel); phase 0 equals 1 exactly; still comparison matches phase 0",
+        "Playback has no per-frame allocations, palette writes or blocking GL queries; capped at 30fps; pause and live reduced motion stop draws",
+        "Context restoration reconstructs the exact paused frame",
+        "No overflow at 768/390/320px; offscreen preview stops and resumes"
+      ],
+      "comparisons": [
+        {
+          "family": "drift",
+          "motion": "breath",
+          "seamIdentical": true,
+          "meanChange": 9.387605413105414,
+          "maxChange": 36,
+          "changedPixelFraction": 0.5323055555555556
+        },
+        {
+          "family": "drift",
+          "motion": "tide",
+          "seamIdentical": true,
+          "meanChange": 5.3108611111111115,
+          "maxChange": 26,
+          "changedPixelFraction": 0.3312863247863248
+        },
+        {
+          "family": "drift",
+          "motion": "orbit",
+          "seamIdentical": true,
+          "meanChange": 3.830807692307692,
+          "maxChange": 33,
+          "changedPixelFraction": 0.21703418803418803
+        },
+        {
+          "family": "drift",
+          "motion": "silk",
+          "seamIdentical": true,
+          "meanChange": 4.377777777777778,
+          "maxChange": 25,
+          "changedPixelFraction": 0.2733076923076923
+        },
+        {
+          "family": "offset",
+          "motion": "breath",
+          "seamIdentical": true,
+          "meanChange": 35.78351566951567,
+          "maxChange": 120,
+          "changedPixelFraction": 0.7808995726495727
+        },
+        {
+          "family": "offset",
+          "motion": "tide",
+          "seamIdentical": true,
+          "meanChange": 17.69601210826211,
+          "maxChange": 86,
+          "changedPixelFraction": 0.48273076923076924
+        },
+        {
+          "family": "offset",
+          "motion": "orbit",
+          "seamIdentical": true,
+          "meanChange": 12.572696581196581,
+          "maxChange": 94,
+          "changedPixelFraction": 0.4277371794871795
+        },
+        {
+          "family": "offset",
+          "motion": "silk",
+          "seamIdentical": true,
+          "meanChange": 14.126191595441595,
+          "maxChange": 83,
+          "changedPixelFraction": 0.4735683760683761
+        },
+        {
+          "family": "single-band",
+          "motion": "breath",
+          "seamIdentical": true,
+          "meanChange": 18.5075754985755,
+          "maxChange": 46,
+          "changedPixelFraction": 0.8748803418803419
+        },
+        {
+          "family": "single-band",
+          "motion": "tide",
+          "seamIdentical": true,
+          "meanChange": 11.676455128205129,
+          "maxChange": 44,
+          "changedPixelFraction": 0.6542713675213675
+        },
+        {
+          "family": "single-band",
+          "motion": "orbit",
+          "seamIdentical": true,
+          "meanChange": 8.044589743589743,
+          "maxChange": 58,
+          "changedPixelFraction": 0.47885470085470083
+        },
+        {
+          "family": "single-band",
+          "motion": "silk",
+          "seamIdentical": true,
+          "meanChange": 9.146768518518519,
+          "maxChange": 38,
+          "changedPixelFraction": 0.5906025641025641
+        },
+        {
+          "family": "concentric",
+          "motion": "breath",
+          "seamIdentical": true,
+          "meanChange": 24.364986467236466,
+          "maxChange": 38,
+          "changedPixelFraction": 1
+        },
+        {
+          "family": "concentric",
+          "motion": "tide",
+          "seamIdentical": true,
+          "meanChange": 10.313878917378917,
+          "maxChange": 31,
+          "changedPixelFraction": 0.6466923076923077
+        },
+        {
+          "family": "concentric",
+          "motion": "orbit",
+          "seamIdentical": true,
+          "meanChange": 8.092419515669516,
+          "maxChange": 43,
+          "changedPixelFraction": 0.4231602564102564
+        },
+        {
+          "family": "concentric",
+          "motion": "silk",
+          "seamIdentical": true,
+          "meanChange": 9.03160113960114,
+          "maxChange": 27,
+          "changedPixelFraction": 0.5422606837606838
+        }
+      ],
+      "errors": [],
+      "ripples": [
+        {
+          "count": 15,
+          "palette": "forest-dark",
+          "seamIdentical": true,
+          "seamMean": 0.1004107905982906,
+          "outwardError": 4203,
+          "inwardError": 104865
+        },
+        {
+          "count": 15,
+          "palette": "forest-light",
+          "seamIdentical": true,
+          "seamMean": 0.14921634615384616,
+          "outwardError": 6399,
+          "inwardError": 166286
+        },
+        {
+          "count": 15,
+          "palette": "iris",
+          "seamIdentical": true,
+          "seamMean": 0.10575801282051282,
+          "outwardError": 4595,
+          "inwardError": 128461
+        },
+        {
+          "count": 29,
+          "palette": "forest-dark",
+          "seamIdentical": true,
+          "seamMean": 0.09731837606837607,
+          "outwardError": 2488,
+          "inwardError": 104298
+        },
+        {
+          "count": 29,
+          "palette": "forest-light",
+          "seamIdentical": true,
+          "seamMean": 0.14511004273504274,
+          "outwardError": 3721,
+          "inwardError": 165495
+        },
+        {
+          "count": 29,
+          "palette": "iris",
+          "seamIdentical": true,
+          "seamMean": 0.10327777777777777,
+          "outwardError": 2743,
+          "inwardError": 127642
+        }
+      ],
+      "performance": {
+        "compositeDraws": 58,
+        "seconds": 2.004,
+        "submissionsPerSecond": 28.942115768463072,
+        "allocations": 0,
+        "paletteWrites": 0,
+        "blockingQueries": 0,
+        "retainedMaskBytes": 10732176
+      }
+    }
+  ]
+}

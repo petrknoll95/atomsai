@@ -1,0 +1,257 @@
+.applications,
+.preview {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding-block: var(--section-space);
+}
+
+.applications { min-height: 903px; }
+.preview { min-height: 1173px; }
+
+.sectionHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.applicationsTitle,
+.previewTitle {
+  width: 100%;
+  font-size: var(--text-display-large);
+  line-height: .95;
+  text-wrap: balance;
+}
+
+.applicationsTitle { max-width: 480px; }
+.previewTitle { max-width: 736px; }
+
+.applicationsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--grid-gap);
+}
+
+.application {
+  --application-progress: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  min-width: 0;
+  text-align: center;
+}
+
+.applicationCircle {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  width: 100%;
+  padding: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.applicationCircle::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid color-mix(in display-p3, var(--color-foreground) calc(10% - var(--application-progress) * 5%), transparent);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.applicationPattern {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: var(--application-progress);
+  transform: scale(calc(1.035 - var(--application-progress) * .035));
+}
+
+.applicationPattern > div { width: 100%; height: 100%; }
+.applicationIcon {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  flex: none;
+  mask-position: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  background: color-mix(in display-p3, var(--color-primary-foreground) calc(var(--application-progress) * 100%), var(--color-foreground));
+}
+.applicationAction,
+.applicationAction:hover {
+  --focus-base-shadow: 0 0 0 0 transparent;
+  color: color-mix(in display-p3, var(--color-primary-foreground) calc(var(--application-progress) * 100%), var(--color-foreground));
+  background: color-mix(in display-p3, var(--color-primary) calc(var(--application-progress) * 100%), transparent);
+  border-color: var(--color-control-border);
+  box-shadow: none;
+  transition: var(--focus-transition);
+}
+/* Its source Primary button has no border. Reserve that original width in
+   both states, compensating for the persistent 1px outline used for idle. */
+.application[data-application='ServiceAgent'] .applicationAction { padding-inline: 11px; }
+@media (prefers-reduced-motion: reduce) {
+  .applicationPattern { transform: none; }
+}
+.applicationCopy { display: flex; flex-direction: column; gap: 32px; width: 100%; }
+.applicationCopyCompact { gap: 20px; }
+.productTitle { font-size: var(--text-display-small); line-height: 1; }
+
+.applicationDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-inline: 40px;
+  font-size: var(--text-label);
+  line-height: 20px;
+  text-wrap: pretty;
+}
+
+.previewGrid { display: grid; grid-template-columns: minmax(0, 2.066666667fr) minmax(0, 1fr); gap: var(--grid-gap); }
+.previewColumn { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; min-width: 0; }
+.previewCopy { display: flex; flex-direction: column; gap: 16px; width: 100%; max-width: 480px; }
+.previewCopy p { font-size: var(--text-body); line-height: 22px; color: var(--color-muted-foreground); text-wrap: pretty; }
+
+.voiceWidget,
+.chatWidget {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 640px;
+  border-radius: var(--radius-panel);
+  overflow: hidden;
+}
+
+.voiceWidget { --color-ring:var(--palette-cream); background: var(--palette-forest-shade); padding-inline: 32px; }
+.voicePattern { position: absolute; width: 992px; max-width: none; height: 640px; }
+/* Figma BACKGROUND_BLUR radius 36 maps to CSS Gaussian blur(18px).
+   Put the panel glass on a sibling layer so the button's backdrop can sample
+   the waveform in WebKit as well as Chromium (avoid nested backdrop roots). */
+.voiceGlass { position: relative; width: min(736px, 100%); height: 320px; border-radius: var(--radius-control); overflow: clip; color: var(--palette-cream); }
+.voiceGlass::before { content: ''; position: absolute; inset: 0; border-radius: inherit; background: #ffffff1a; -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); pointer-events: none; }
+.voiceLine { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 736px; max-width: none; height: 320px; pointer-events: none; }
+.voiceLine, .voiceButtonLine { mask: url('/assets/figma/preview-waveform-fade.svg') center / 736px 320px no-repeat; mask-mode: luminance; }
+.voiceButtonBackdrop { display: none; }
+.voiceLabels { position: absolute; top: 16px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; white-space: nowrap; }
+.voiceType { background: #ffffff1a; }
+.voiceType:hover { background: #ffffff26; }
+.startTalking { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: #ffffff1a; -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); color: white; }
+.startTalking:hover { background: #ffffff26; }
+.voiceWave { display: block; width: 24px; height: 24px; flex: none; object-fit: contain; }
+/* WebKit does not reliably composite this overlapping pair of backdrop filters.
+   Sample the same shader phase and blur a clipped copy; combine the two 18px
+   Gaussian passes as sqrt(18² + 18²). Only this browser creates the extra canvas. */
+@supports (-webkit-backdrop-filter: blur(18px)) and (mix-blend-mode: plus-darker) {
+  .startTalking { isolation: isolate; overflow: hidden; background: transparent !important; -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .voiceButtonBackdrop { display: block; position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+  .voiceButtonPattern { position: absolute; width: 992px; height: 640px; left: 50%; top: 50%; transform: translate(-50%, -50%); filter: blur(25.455844px); }
+  .voiceButtonGlass { position: absolute; inset: 0; background: #ffffff1a; }
+  .voiceButtonLine { position: absolute; width: 736px; max-width: none; height: 320px; left: 50%; top: 50%; transform: translate(-50%, -50%); filter: blur(18px); }
+  .voiceButtonBackdrop::after { content: ''; position: absolute; inset: 0; background: #ffffff1a; }
+  .startTalking:hover .voiceButtonBackdrop::after { background: #ffffff26; }
+}
+
+.voiceHint { position: absolute; left: 0; right: 0; bottom: 16px; color: color-mix(in display-p3, var(--palette-cream) 40%, transparent); font-size: var(--text-caption); font-weight: var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; line-height: 1.4; text-align: center; }
+
+.chatWidget { --chat-inset: 20px; padding: var(--chat-inset); background: var(--palette-iris-shade); --color-ring: var(--palette-cream); }
+.effectDefinitions { position: absolute; width: 0; height: 0; overflow: hidden; pointer-events: none; }
+.chatPattern { position: absolute; inset: 0; width: 100%; height: 100%; }
+.chatGlass { position: relative; display: flex; flex-direction: column; align-items: stretch; gap: 24px; padding: 24px; width: 100%; border-radius: 40px; background: #0003; backdrop-filter: blur(32px); color: white; font-size: var(--text-body); line-height: 22px; }
+.chatGlassBackdrop { display: none; }
+/* Figma's 20% black LINEAR_BURN subtracts .2 from each backdrop channel.
+   The matrix avoids the intermediate highlight clipping of CSS contrast/brightness. */
+@supports (backdrop-filter: blur(32px) url('#property-linear-burn')) {
+  .chatGlass { background: transparent; backdrop-filter: blur(32px) url('#property-linear-burn'); }
+}
+/* WebKit accepts backdrop SVG filters but does not render this chain reliably.
+   Repeat the procedural decorative pattern, aligned to its widget, below live
+   content. Native plus-darker with opaque .8 gray gives max(0, backdrop - .2). */
+@supports (-webkit-backdrop-filter: blur(32px)) and (mix-blend-mode: plus-darker) {
+  .chatWidget { container-type: inline-size; }
+  .chatGlass { isolation: isolate; overflow: hidden; background: transparent; backdrop-filter: none; -webkit-backdrop-filter: none; }
+  .chatGlassBackdrop { display: block; position: absolute; left: 50%; top: 50%; width: calc(100cqw + var(--chat-inset) * 2); height: 640px; transform: translate(-50%, -50%); filter: blur(32px); z-index: -1; pointer-events: none; }
+  .chatGlass::after { content: ''; position: absolute; inset: 0; background: rgb(204 204 204); mix-blend-mode: plus-darker; z-index: -1; pointer-events: none; }
+  .chatGlass > :not(.chatGlassBackdrop) { position: relative; }
+}
+.chatIntro { display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 24px 8px; }
+.chatIntro p { text-align: center; color: color-mix(in display-p3, var(--palette-cream) 60%, transparent); white-space: nowrap; }
+.advisorAvatar { position: relative; width: 64px; height: 64px; flex: none; border-radius: 50%; overflow: hidden; }
+.advisorAvatar img { position: absolute; width: 994.17%; height: 745.63%; max-width: none; left: -447.09%; top: -150.49%; }
+.advisorAvatar::after { content: ''; position: absolute; inset: 0; background: var(--palette-iris); mix-blend-mode: hue; }
+.messageGroup { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; min-width: 0; }
+.visitorGroup { align-items: flex-end; }
+.messageLabel { padding-inline: 8px; color: color-mix(in display-p3, var(--palette-cream) 40%, transparent); font-size: var(--text-label); font-weight: var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; line-height: 20px; }
+.messageBubble { width: fit-content; max-width: 100%; padding: 16px 20px; border-radius: 26px; background: #fafafa33; box-shadow: inset 0 0 18px #fafafa4d; white-space: nowrap; }
+.initialReply { width: 291px; }
+.questionForm { --color-ring: var(--palette-cream); display: flex; align-items: center; gap: 16px; width: 100%; min-height: 56px; padding: 15px 15px 15px 19px; border: 1px solid #ffffff1a; border-radius: var(--radius-card); }
+.questionForm input { flex: 1; width: 100%; min-width: 0; color: white; background: transparent; border: 0; border-radius: 2px; outline-offset: 0; }
+.questionForm input::placeholder { color: #fff6; opacity: 1; }
+.questionForm button { position: relative; display: grid; place-items: center; width: 24px; height: 24px; flex: none; padding: 0; color: white; background: transparent; border: 0; border-radius: 2px; }
+.questionForm button::after { content: ''; position: absolute; inset: -10px; }
+.chatStarted { max-height: 600px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #ffffff66 transparent; }
+.chatStarted .messageBubble { white-space: normal; overflow-wrap: anywhere; }
+
+/* Figma rounds these trimmed text bounds to whole pixels (30 / 19 / 44). */
+@media (min-width: 1440px) {
+  .previewTitle { height: 30px; }
+  .previewCopy .productTitle { height: 19px; }
+}
+
+/* No responsive variants were provided: retain the section hierarchy and original artwork. */
+@media (max-width: 1199px) {
+  .applications { min-height: 0; }
+  .applicationCircle { padding: 24px; }
+  .applicationDescription { padding-inline: 12px; }
+  .previewGrid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .voiceGlass { height: 280px; }
+  .chatWidget { --chat-inset: 16px; }
+  .chatGlass { padding: 20px; }
+  .chatIntro p { white-space: normal; }
+  .messageBubble { white-space: normal; }
+  .advisorBreak { display: none; }
+}
+
+@media (max-width: 899px) {
+  .applicationsGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 48px; }
+  .applicationDescription { max-width: 320px; margin-inline: auto; }
+  .applicationCopyCompact { gap: 32px; }
+  .preview { min-height: 0; }
+  .previewGrid { grid-template-columns: 1fr; gap: 56px; }
+  .voiceWidget { height: 520px; }
+  .chatWidget { height: 640px; --chat-inset: 20px; }
+  .chatGlass { max-width: 440px; padding: 24px; }
+  .voiceGlass { height: 320px; }
+}
+
+@media (max-width: 599px) {
+  .applications,
+  .preview { gap: 48px; }
+  .applicationsTitle,
+  .previewTitle { font-size: 40px; line-height: 1; }
+  .applicationsGrid { grid-template-columns: 1fr; gap: 48px; }
+  .application { width: 100%; max-width: 352px; margin-inline: auto; gap: 24px; }
+  .applicationCopy,
+  .applicationCopyCompact { gap: 20px; }
+  .applicationDescription { padding-inline: 24px; }
+  .voiceWidget { height: 420px; padding-inline: 20px; }
+  .voiceGlass { height: 280px; }
+  .voiceHint { left: 16px; right: 16px; }
+  .chatWidget { height: 640px; --chat-inset: 12px; }
+  .chatGlass { padding: 18px; gap: 20px; border-radius: 28px; }
+  .chatIntro { padding: 12px 0; gap: 20px; }
+  .messageBubble { padding: 12px 16px; }
+  .chatStarted { max-height: 616px; }
+  .questionForm { padding-left: 14px; }
+  .productTitle { font-size: var(--text-display-small); }
+}
+
+@media(min-width:1200px) { .applicationsTitle { height:76px; } .application .productTitle { height:19px; } }

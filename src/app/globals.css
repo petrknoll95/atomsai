@@ -1,0 +1,40 @@
+@import 'tailwindcss' source('../');
+@import '../styles/tokens.css';
+@import '../styles/focus.css';
+/* Browser baseline calibration: +4% ascent, -4% descent; the font's 120% total
+   em box is preserved. See docs/visual/README.md for comparison evidence. */
+@font-face { font-family:'PP Neue Montreal'; src:url('/fonts/PPNeueMontreal-Variable.ttf') format('truetype'); font-style:normal; font-weight:200 800; font-display:swap; ascent-override:99.8%; descent-override:20.2%; }
+@font-face { font-family:'Founders Grotesk'; src:url('/fonts/FoundersGrotesk-Regular.woff2') format('woff2'); font-style:normal; font-weight:400; font-display:swap; }
+@font-face { font-family:'Founders Grotesk'; src:url('/fonts/FoundersGrotesk-Medium.woff2') format('woff2'); font-style:normal; font-weight:500; font-display:swap; }
+@layer base {
+  html,body { overscroll-behavior:none; }
+  html { scroll-behavior:smooth; scroll-padding-top:112px; }
+  body { -webkit-font-smoothing:antialiased; margin:0; background:var(--color-background); color:var(--color-foreground); font-family:var(--font-sans); font-weight: var(--font-weight-normal); font-variation-settings:'wght' var(--font-weight-normal), 'ital' 100;  line-height:1.4; }
+  button,input,textarea { font:inherit; font-variation-settings:inherit; }
+  button,a,input,textarea,summary { -webkit-tap-highlight-color:transparent; }
+  button,summary { cursor:pointer; }
+  a { text-decoration:none; }
+  ::selection { background:var(--palette-iris-tint); color:var(--palette-deep-green); }
+  @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition:none!important; animation:none!important; } }
+}
+@layer components {
+  .page-container { width:100%; max-width:1600px; margin-inline:auto; padding-inline:var(--page-gutter); }
+  .display { font-family:var(--font-display); font-weight:400; font-variation-settings:normal; letter-spacing:-.015em; text-box:trim-both cap alphabetic; }
+  .eyebrow { display:flex; align-items:center; gap:8px; min-height:20px; font-size: var(--text-label); font-weight: var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; line-height:20px; }
+  .eyebrow img { flex:none; width:10px; height:20px; }
+  .button { display:inline-flex; flex-shrink:0; align-items:center; justify-content:center; gap:8px; width:fit-content; border-radius: var(--radius-control); border:0 solid transparent; font-weight: var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; line-height:1.4; white-space:nowrap; transition:background-color .15s,border-color .15s,var(--focus-transition); }
+  .button-small { height:32px; line-height:20px; padding-inline:12px; font-size: var(--text-label); gap:6px; }
+  .button-medium { height:44px; line-height:20px; padding-inline:20px; font-size: var(--text-label); }
+  .button-large { height:56px; line-height:22px; padding-inline:28px; font-size: var(--text-body); }
+  .button-primary { background:var(--color-primary); color:var(--color-primary-foreground); }
+  .button-primary:hover { background:color-mix(in srgb,var(--color-primary),var(--color-primary-foreground) 8%); }
+  .button-secondary { background:var(--color-secondary); color:var(--color-secondary-foreground); }
+  .button-secondary:hover { background:color-mix(in srgb,var(--color-secondary),var(--color-secondary-foreground) 8%); }
+  .button-outline { border-width:1px; border-color:var(--color-control-border); color:var(--color-foreground); }
+  .button-outline:hover { --focus-base-shadow:inset 0 0 0 1px var(--color-foreground); border-color:var(--color-foreground); box-shadow:inset 0 0 0 1px var(--color-foreground); }
+  .skip-link { position:fixed; left:20px; top:-80px; z-index:100; padding:12px 20px; background:var(--palette-deep-green); color:var(--palette-cream); border-radius:12px; }
+  .skip-link:focus { top:12px; }
+}
+
+html[data-smooth-scroll] { scroll-behavior:auto; }
+@media(max-width:767px) { html { scroll-padding-top:96px; } }

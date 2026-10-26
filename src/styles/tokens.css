@@ -1,0 +1,86 @@
+/* Original Figma document profile: DISPLAY_P3. Numeric channels below come from
+   the Palette collection; they are not sRGB hex approximations. Provenance: docs/design/README.md. */
+:root {
+  --palette-paper: color(display-p3 0.980392158 0.980392158 0.980392158);
+  --palette-cream: color(display-p3 0.964705884 0.945098042 0.909803927);
+  --palette-cream-tint: color(display-p3 0.941176474 0.941176474 0.925490201);
+  --palette-stone-tint: color(display-p3 0.922604859 0.922604859 0.894146502);
+  --palette-forest-shade: color(display-p3 0.062745102 0.137254909 0.117647059);
+  --palette-deep-green: color(display-p3 0.152941182 0.262745112 0.231372550);
+  --palette-forest-green: color(display-p3 0.258823544 0.400000006 0.352941185);
+  --palette-iris: color(display-p3 0.549019635 0.470588237 0.690196097);
+  --palette-iris-shade: color(display-p3 0.286274523 0.247058824 0.345098048);
+  --palette-iris-tint: color(display-p3 0.941176474 0.921568632 0.960784316);
+  --page-gutter: 48px;
+  --section-space: 96px;
+  --grid-gap: 32px;
+  --state-hover: 8%;
+  --state-pressed: 16%;
+}
+@theme {
+  --color-background: var(--palette-paper);
+  --color-foreground: var(--palette-deep-green);
+  --color-muted-foreground: color-mix(in display-p3, var(--palette-deep-green) 60%, transparent);
+  --color-surface: var(--palette-cream-tint);
+  --color-surface-muted-foreground: var(--palette-forest-green);
+  --color-primary: var(--palette-deep-green);
+  --color-primary-foreground: var(--palette-cream);
+  --color-secondary: var(--palette-stone-tint);
+  --color-secondary-foreground: var(--palette-deep-green);
+  --color-border: color-mix(in display-p3, var(--palette-deep-green) 10%, transparent);
+  --color-border-subtle: color-mix(in display-p3, var(--palette-deep-green) 5%, transparent);
+  --color-control-border: var(--palette-deep-green);
+  --color-ring: var(--palette-deep-green);
+  --font-sans: 'PP Neue Montreal', 'Helvetica Neue', Arial, sans-serif;
+  --font-display: 'Founders Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --font-weight-normal: 425;
+  --font-weight-medium: 475;
+  --text-caption: 12px;
+  --text-label: 14px;
+  --text-body: 16px;
+  --text-lead: 18px;
+  --text-display-small: 30px;
+  --text-display-medium: 36px;
+  --text-display-large: 48px;
+  --text-display-xlarge: 60px;
+  --text-display-hero: 128px;
+  --spacing: 4px;
+  --radius-card: 16px;
+  --radius-panel: 32px;
+  --radius-control: 9999px;
+  --shadow-card: 0 3px 14px color-mix(in display-p3, var(--palette-deep-green) 3%, transparent);
+}
+/* Actual role variables also support component CSS and inherited local modes. */
+:root {
+  --color-background: var(--palette-paper);
+  --color-foreground: var(--palette-deep-green);
+  --color-muted-foreground: color-mix(in display-p3, var(--palette-deep-green) 60%, transparent);
+  --color-surface: var(--palette-cream-tint);
+  --color-surface-muted-foreground: var(--palette-forest-green);
+  --color-primary: var(--palette-deep-green);
+  --color-primary-foreground: var(--palette-cream);
+  --color-secondary: var(--palette-stone-tint);
+  --color-secondary-foreground: var(--palette-deep-green);
+  --color-border: color-mix(in display-p3, var(--palette-deep-green) 10%, transparent);
+  --color-border-subtle: color-mix(in display-p3, var(--palette-deep-green) 5%, transparent);
+  --color-control-border: var(--palette-deep-green);
+  --color-ring: var(--palette-deep-green);
+}
+.theme-dark {
+  --color-background: var(--palette-forest-shade);
+  --color-foreground: var(--palette-cream);
+  --color-muted-foreground: color-mix(in display-p3, var(--palette-cream) 60%, transparent);
+  --color-surface: color-mix(in display-p3, var(--palette-cream) 10%, transparent);
+  --color-primary: var(--palette-cream);
+  --color-primary-foreground: var(--palette-deep-green);
+  --color-secondary: color-mix(in display-p3, var(--palette-cream) 10%, transparent);
+  --color-secondary-foreground: var(--palette-cream);
+  --color-border: color-mix(in display-p3, var(--palette-cream) 10%, transparent);
+  --color-border-subtle: color-mix(in display-p3, var(--palette-cream) 5%, transparent);
+  --color-control-border: var(--palette-cream);
+  --color-ring: var(--palette-cream);
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
+@media(max-width:1199px) { :root { --page-gutter:32px; } }
+@media(max-width:767px) { :root { --page-gutter:20px; --section-space:64px; --grid-gap:24px; } }

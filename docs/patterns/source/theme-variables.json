@@ -1,0 +1,1353 @@
+{
+  "collection": {
+    "id": "VariableCollectionId:5:2",
+    "name": "Theme",
+    "defaultModeId": "5:0",
+    "modes": [
+      {
+        "name": "Forest Light",
+        "modeId": "5:0"
+      },
+      {
+        "name": "Neutral Light",
+        "modeId": "5:3"
+      },
+      {
+        "name": "Forest Dark",
+        "modeId": "5:2"
+      },
+      {
+        "name": "Iris Light",
+        "modeId": "5:5"
+      },
+      {
+        "name": "Iris Dark",
+        "modeId": "5:6"
+      }
+    ]
+  },
+  "roles": [
+    {
+      "id": "VariableID:77:812",
+      "name": "pattern/drift/base",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:5"
+        },
+        "5:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:4"
+        },
+        "5:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:5"
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:18"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:18"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 0.15294118225574493,
+          "g": 0.26274511218070984,
+          "b": 0.23137255012989044,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.15294118225574493,
+          "g": 0.26274511218070984,
+          "b": 0.23137255012989044,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.062745101749897,
+          "g": 0.13725490868091583,
+          "b": 0.11764705926179886,
+          "a": 1
+        },
+        "5:5": {
+          "r": 0.5490196347236633,
+          "g": 0.47058823704719543,
+          "b": 0.6901960968971252,
+          "a": 1
+        },
+        "5:6": {
+          "r": 0.5490196347236633,
+          "g": 0.47058823704719543,
+          "b": 0.6901960968971252,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:77:813",
+      "name": "pattern/drift/lower-field",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:7"
+        },
+        "5:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:6"
+        },
+        "5:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:7"
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:17"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:17"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 0.4000000059604645,
+          "g": 0.5372549295425415,
+          "b": 0.47058823704719543,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.4000000059604645,
+          "g": 0.5372549295425415,
+          "b": 0.47058823704719543,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.25882354378700256,
+          "g": 0.4000000059604645,
+          "b": 0.3529411852359772,
+          "a": 1
+        },
+        "5:5": {
+          "r": 0.2862745225429535,
+          "g": 0.24705882370471954,
+          "b": 0.3450980484485626,
+          "a": 1
+        },
+        "5:6": {
+          "r": 0.2862745225429535,
+          "g": 0.24705882370471954,
+          "b": 0.3450980484485626,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:77:814",
+      "name": "pattern/drift/upper-field",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:7"
+        },
+        "5:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:6"
+        },
+        "5:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:7"
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:19"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:19"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 0.4000000059604645,
+          "g": 0.5372549295425415,
+          "b": 0.47058823704719543,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.4000000059604645,
+          "g": 0.5372549295425415,
+          "b": 0.47058823704719543,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.25882354378700256,
+          "g": 0.4000000059604645,
+          "b": 0.3529411852359772,
+          "a": 1
+        },
+        "5:5": {
+          "r": 0.9411764740943909,
+          "g": 0.9215686321258545,
+          "b": 0.9607843160629272,
+          "a": 1
+        },
+        "5:6": {
+          "r": 0.9411764740943909,
+          "g": 0.9215686321258545,
+          "b": 0.9607843160629272,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:77:815",
+      "name": "pattern/drift/highlight",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:4"
+        },
+        "5:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:4"
+        },
+        "5:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:4"
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:18"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:18"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 0.062745101749897,
+          "g": 0.13725490868091583,
+          "b": 0.11764705926179886,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.062745101749897,
+          "g": 0.13725490868091583,
+          "b": 0.11764705926179886,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.062745101749897,
+          "g": 0.13725490868091583,
+          "b": 0.11764705926179886,
+          "a": 1
+        },
+        "5:5": {
+          "r": 0.5490196347236633,
+          "g": 0.47058823704719543,
+          "b": 0.6901960968971252,
+          "a": 1
+        },
+        "5:6": {
+          "r": 0.5490196347236633,
+          "g": 0.47058823704719543,
+          "b": 0.6901960968971252,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:77:816",
+      "name": "pattern/drift/reflection",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:10"
+        },
+        "5:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:7"
+        },
+        "5:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:10"
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:21"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:21"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 0.9647058844566345,
+          "g": 0.9450980424880981,
+          "b": 0.9098039269447327,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.9647058844566345,
+          "g": 0.9450980424880981,
+          "b": 0.9098039269447327,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.4000000059604645,
+          "g": 0.5372549295425415,
+          "b": 0.47058823704719543,
+          "a": 1
+        },
+        "5:5": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "5:6": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:77:817",
+      "name": "pattern/offset/base",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:5"
+        },
+        "5:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:4"
+        },
+        "5:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:5"
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:18"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:18"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 0.15294118225574493,
+          "g": 0.26274511218070984,
+          "b": 0.23137255012989044,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.15294118225574493,
+          "g": 0.26274511218070984,
+          "b": 0.23137255012989044,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.062745101749897,
+          "g": 0.13725490868091583,
+          "b": 0.11764705926179886,
+          "a": 1
+        },
+        "5:5": {
+          "r": 0.5490196347236633,
+          "g": 0.47058823704719543,
+          "b": 0.6901960968971252,
+          "a": 1
+        },
+        "5:6": {
+          "r": 0.5490196347236633,
+          "g": 0.47058823704719543,
+          "b": 0.6901960968971252,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:77:818",
+      "name": "pattern/offset/upper-field",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:7"
+        },
+        "5:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:6"
+        },
+        "5:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:7"
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:18"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:18"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 0.4000000059604645,
+          "g": 0.5372549295425415,
+          "b": 0.47058823704719543,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.4000000059604645,
+          "g": 0.5372549295425415,
+          "b": 0.47058823704719543,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.25882354378700256,
+          "g": 0.4000000059604645,
+          "b": 0.3529411852359772,
+          "a": 1
+        },
+        "5:5": {
+          "r": 0.5490196347236633,
+          "g": 0.47058823704719543,
+          "b": 0.6901960968971252,
+          "a": 1
+        },
+        "5:6": {
+          "r": 0.5490196347236633,
+          "g": 0.47058823704719543,
+          "b": 0.6901960968971252,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:77:819",
+      "name": "pattern/offset/lower-field",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:10"
+        },
+        "5:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:10"
+        },
+        "5:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:10"
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:19"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:19"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 0.9647058844566345,
+          "g": 0.9450980424880981,
+          "b": 0.9098039269447327,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.9647058844566345,
+          "g": 0.9450980424880981,
+          "b": 0.9098039269447327,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.9647058844566345,
+          "g": 0.9450980424880981,
+          "b": 0.9098039269447327,
+          "a": 1
+        },
+        "5:5": {
+          "r": 0.9411764740943909,
+          "g": 0.9215686321258545,
+          "b": 0.9607843160629272,
+          "a": 1
+        },
+        "5:6": {
+          "r": 0.9411764740943909,
+          "g": 0.9215686321258545,
+          "b": 0.9607843160629272,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:77:820",
+      "name": "pattern/offset/highlight",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "r": 0.3448955714702606,
+          "g": 0.3448955714702606,
+          "b": 0.3448955714702606,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.3448955714702606,
+          "g": 0.3448955714702606,
+          "b": 0.3448955714702606,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.3448955714702606,
+          "g": 0.3448955714702606,
+          "b": 0.3448955714702606,
+          "a": 1
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:18"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:18"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 0.3448955714702606,
+          "g": 0.3448955714702606,
+          "b": 0.3448955714702606,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.3448955714702606,
+          "g": 0.3448955714702606,
+          "b": 0.3448955714702606,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.3448955714702606,
+          "g": 0.3448955714702606,
+          "b": 0.3448955714702606,
+          "a": 1
+        },
+        "5:5": {
+          "r": 0.5490196347236633,
+          "g": 0.47058823704719543,
+          "b": 0.6901960968971252,
+          "a": 1
+        },
+        "5:6": {
+          "r": 0.5490196347236633,
+          "g": 0.47058823704719543,
+          "b": 0.6901960968971252,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:77:821",
+      "name": "pattern/offset/reflection",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:21"
+        },
+        "5:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:21"
+        },
+        "5:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:21"
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:21"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:21"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "5:3": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "5:2": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "5:5": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "5:6": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:77:822",
+      "name": "pattern/single-band/base",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:5"
+        },
+        "5:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:4"
+        },
+        "5:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:5"
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:17"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:17"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 0.15294118225574493,
+          "g": 0.26274511218070984,
+          "b": 0.23137255012989044,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.15294118225574493,
+          "g": 0.26274511218070984,
+          "b": 0.23137255012989044,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.062745101749897,
+          "g": 0.13725490868091583,
+          "b": 0.11764705926179886,
+          "a": 1
+        },
+        "5:5": {
+          "r": 0.2862745225429535,
+          "g": 0.24705882370471954,
+          "b": 0.3450980484485626,
+          "a": 1
+        },
+        "5:6": {
+          "r": 0.2862745225429535,
+          "g": 0.24705882370471954,
+          "b": 0.3450980484485626,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:77:823",
+      "name": "pattern/single-band/lower-field",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:14"
+        },
+        "5:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:14"
+        },
+        "5:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:14"
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:19"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:19"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 0.6549019813537598,
+          "g": 0.6666666865348816,
+          "b": 0.6627451181411743,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.6549019813537598,
+          "g": 0.6666666865348816,
+          "b": 0.6627451181411743,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.6549019813537598,
+          "g": 0.6666666865348816,
+          "b": 0.6627451181411743,
+          "a": 1
+        },
+        "5:5": {
+          "r": 0.9411764740943909,
+          "g": 0.9215686321258545,
+          "b": 0.9607843160629272,
+          "a": 1
+        },
+        "5:6": {
+          "r": 0.9411764740943909,
+          "g": 0.9215686321258545,
+          "b": 0.9607843160629272,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:77:824",
+      "name": "pattern/single-band/upper-field",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:7"
+        },
+        "5:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:6"
+        },
+        "5:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:7"
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:18"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:18"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 0.4000000059604645,
+          "g": 0.5372549295425415,
+          "b": 0.47058823704719543,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.4000000059604645,
+          "g": 0.5372549295425415,
+          "b": 0.47058823704719543,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.25882354378700256,
+          "g": 0.4000000059604645,
+          "b": 0.3529411852359772,
+          "a": 1
+        },
+        "5:5": {
+          "r": 0.5490196347236633,
+          "g": 0.47058823704719543,
+          "b": 0.6901960968971252,
+          "a": 1
+        },
+        "5:6": {
+          "r": 0.5490196347236633,
+          "g": 0.47058823704719543,
+          "b": 0.6901960968971252,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:77:825",
+      "name": "pattern/single-band/reflection-1",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:21"
+        },
+        "5:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:21"
+        },
+        "5:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:21"
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:21"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:21"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "5:3": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "5:2": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "5:5": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "5:6": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:77:826",
+      "name": "pattern/single-band/reflection-2",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:19"
+        },
+        "5:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:19"
+        },
+        "5:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:19"
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:19"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:19"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 0.9411764740943909,
+          "g": 0.9215686321258545,
+          "b": 0.9607843160629272,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.9411764740943909,
+          "g": 0.9215686321258545,
+          "b": 0.9607843160629272,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.9411764740943909,
+          "g": 0.9215686321258545,
+          "b": 0.9607843160629272,
+          "a": 1
+        },
+        "5:5": {
+          "r": 0.9411764740943909,
+          "g": 0.9215686321258545,
+          "b": 0.9607843160629272,
+          "a": 1
+        },
+        "5:6": {
+          "r": 0.9411764740943909,
+          "g": 0.9215686321258545,
+          "b": 0.9607843160629272,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:77:827",
+      "name": "pattern/single-band/reflection-3",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:5"
+        },
+        "5:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:4"
+        },
+        "5:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:5"
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:17"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:17"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 0.15294118225574493,
+          "g": 0.26274511218070984,
+          "b": 0.23137255012989044,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.15294118225574493,
+          "g": 0.26274511218070984,
+          "b": 0.23137255012989044,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.062745101749897,
+          "g": 0.13725490868091583,
+          "b": 0.11764705926179886,
+          "a": 1
+        },
+        "5:5": {
+          "r": 0.2862745225429535,
+          "g": 0.24705882370471954,
+          "b": 0.3450980484485626,
+          "a": 1
+        },
+        "5:6": {
+          "r": 0.2862745225429535,
+          "g": 0.24705882370471954,
+          "b": 0.3450980484485626,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:77:828",
+      "name": "pattern/concentric/base",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:4"
+        },
+        "5:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:4"
+        },
+        "5:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:4"
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:17"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:17"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 0.062745101749897,
+          "g": 0.13725490868091583,
+          "b": 0.11764705926179886,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.062745101749897,
+          "g": 0.13725490868091583,
+          "b": 0.11764705926179886,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.062745101749897,
+          "g": 0.13725490868091583,
+          "b": 0.11764705926179886,
+          "a": 1
+        },
+        "5:5": {
+          "r": 0.2862745225429535,
+          "g": 0.24705882370471954,
+          "b": 0.3450980484485626,
+          "a": 1
+        },
+        "5:6": {
+          "r": 0.2862745225429535,
+          "g": 0.24705882370471954,
+          "b": 0.3450980484485626,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:77:829",
+      "name": "pattern/concentric/upper-field",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:7"
+        },
+        "5:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:6"
+        },
+        "5:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:7"
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:18"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:18"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 0.4000000059604645,
+          "g": 0.5372549295425415,
+          "b": 0.47058823704719543,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.4000000059604645,
+          "g": 0.5372549295425415,
+          "b": 0.47058823704719543,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.25882354378700256,
+          "g": 0.4000000059604645,
+          "b": 0.3529411852359772,
+          "a": 1
+        },
+        "5:5": {
+          "r": 0.5490196347236633,
+          "g": 0.47058823704719543,
+          "b": 0.6901960968971252,
+          "a": 1
+        },
+        "5:6": {
+          "r": 0.5490196347236633,
+          "g": 0.47058823704719543,
+          "b": 0.6901960968971252,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:77:830",
+      "name": "pattern/concentric/lower-field",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:7"
+        },
+        "5:2": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:6"
+        },
+        "5:3": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:7"
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:18"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:18"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 0.4000000059604645,
+          "g": 0.5372549295425415,
+          "b": 0.47058823704719543,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.4000000059604645,
+          "g": 0.5372549295425415,
+          "b": 0.47058823704719543,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.25882354378700256,
+          "g": 0.4000000059604645,
+          "b": 0.3529411852359772,
+          "a": 1
+        },
+        "5:5": {
+          "r": 0.5490196347236633,
+          "g": 0.47058823704719543,
+          "b": 0.6901960968971252,
+          "a": 1
+        },
+        "5:6": {
+          "r": 0.5490196347236633,
+          "g": 0.47058823704719543,
+          "b": 0.6901960968971252,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:77:831",
+      "name": "pattern/concentric/highlight",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "r": 0.18224161863327026,
+          "g": 0.18224158883094788,
+          "b": 0.18224158883094788,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.18224161863327026,
+          "g": 0.18224158883094788,
+          "b": 0.18224158883094788,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.18224161863327026,
+          "g": 0.18224158883094788,
+          "b": 0.18224158883094788,
+          "a": 1
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:19"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:19"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 0.18224161863327026,
+          "g": 0.18224158883094788,
+          "b": 0.18224158883094788,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.18224161863327026,
+          "g": 0.18224158883094788,
+          "b": 0.18224158883094788,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.18224161863327026,
+          "g": 0.18224158883094788,
+          "b": 0.18224158883094788,
+          "a": 1
+        },
+        "5:5": {
+          "r": 0.9411764740943909,
+          "g": 0.9215686321258545,
+          "b": 0.9607843160629272,
+          "a": 1
+        },
+        "5:6": {
+          "r": 0.9411764740943909,
+          "g": 0.9215686321258545,
+          "b": 0.9607843160629272,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:77:832",
+      "name": "pattern/concentric/reflection",
+      "description": "Pattern color role. Inherits parent Theme mode, independently from page background. Brand Forest, Sage, Graphite and Iris recipes with darker adaptations. Densities share this role.",
+      "valuesByMode": {
+        "5:0": {
+          "r": 0.3931038975715637,
+          "g": 0.3931039571762085,
+          "b": 0.3931039571762085,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.3931038975715637,
+          "g": 0.3931039571762085,
+          "b": 0.3931039571762085,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.3931038975715637,
+          "g": 0.3931039571762085,
+          "b": 0.3931039571762085,
+          "a": 1
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:18"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:18"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 0.3931038975715637,
+          "g": 0.3931039571762085,
+          "b": 0.3931039571762085,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0.3931038975715637,
+          "g": 0.3931039571762085,
+          "b": 0.3931039571762085,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0.3931038975715637,
+          "g": 0.3931039571762085,
+          "b": 0.3931039571762085,
+          "a": 1
+        },
+        "5:5": {
+          "r": 0.5490196347236633,
+          "g": 0.47058823704719543,
+          "b": 0.6901960968971252,
+          "a": 1
+        },
+        "5:6": {
+          "r": 0.5490196347236633,
+          "g": 0.47058823704719543,
+          "b": 0.6901960968971252,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:222:1982",
+      "name": "pattern/concentric/reflection-base",
+      "description": "Reflection backdrop for concentric patterns. Iris uses the brand shade in both light and dark contexts.",
+      "valuesByMode": {
+        "5:0": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "5:5": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:17"
+        },
+        "5:6": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:5:17"
+        }
+      },
+      "resolved": {
+        "5:0": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "5:3": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "5:2": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "5:5": {
+          "r": 0.2862745225429535,
+          "g": 0.24705882370471954,
+          "b": 0.3450980484485626,
+          "a": 1
+        },
+        "5:6": {
+          "r": 0.2862745225429535,
+          "g": 0.24705882370471954,
+          "b": 0.3450980484485626,
+          "a": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+const imgFrame15 = "https://www.figma.com/api/mcp/asset/59b83714-9369-4415-9b5e-087ba01c32ac.svg";
+const imgDots23EqualCircles = "https://www.figma.com/api/mcp/asset/c5a632ae-a676-4551-81d5-705b84c4916f.svg";
+const imgDots18EqualCircles = "https://www.figma.com/api/mcp/asset/a7791fe1-b69f-4287-a50e-7d126c3f2c6a.svg";
+const imgColorUpperFieldCad1C7 = "https://www.figma.com/api/mcp/asset/335d6a00-734c-4dbd-af3e-836329db3049.svg";
+const imgColorLowerField8C78B0 = "https://www.figma.com/api/mcp/asset/a622a350-7a94-4012-abea-53c7a813d106.svg";
+const imgColorHighlight53786A = "https://www.figma.com/api/mcp/asset/e3955ff0-3b56-417a-b753-180cfc3244e8.svg";
+const imgColorReflection = "https://www.figma.com/api/mcp/asset/38f54c02-9355-4f63-8182-74a2ed0bbf30.svg";
+const imgDots19EqualCircles = "https://www.figma.com/api/mcp/asset/2e69305b-9e07-46b9-9bac-5af32b614f53.svg";
+const imgDotsDirectCall = "https://www.figma.com/api/mcp/asset/080bffc9-9021-4458-a583-773dd0510864.svg";
+
+type SectionHomeApplicationsProps = {
+  className?: string;
+  variant?: "A";
+};
+
+function SectionHomeApplications({ className, variant = "A" }: SectionHomeApplicationsProps) {
+  return (
+    <div className={className || "bg-[var(--color-background,#fafafa)] content-stretch flex flex-col gap-[var(--calc(var(--spacing)*16),64px)] items-start overflow-clip px-[var(--margin,48px)] py-[var(--calc(var(--spacing)*24),96px)] relative w-[1598px]"} data-node-id="260:7418">
+      <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*6),24px)] items-center justify-center relative shrink-0 w-[1504px]" data-node-id="260:7284" data-name="Section heading">
+        <div className="content-stretch flex gap-[var(--calc(var(--spacing)*2),8px)] items-center relative shrink-0" data-node-id="260:7285" data-name="Eyebrow">
+          <div className="h-[20px] relative shrink-0 w-[10px]" data-node-id="260:7286">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame15} />
+          </div>
+          <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="260:7288" style={{ fontVariationSettings: '"ital" 100' }}>
+            Applications
+          </p>
+        </div>
+        <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[0.95] max-w-[480px] not-italic relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-5xl,48px)] text-balance text-center tracking-[-0.72px] w-[480px]" data-node-id="260:7289">
+          For the calls, messages and work in between.
+        </p>
+      </div>
+      <div className="gap-x-[32px] gap-y-[32px] grid grid-cols-[repeat(4,minmax(0,1fr))] grid-rows-[repeat(1,fit-content(100%))] relative shrink-0 w-[1504px]" data-node-id="260:7290" data-name="Grid">
+        <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*8),32px)] items-center justify-self-stretch relative self-start shrink-0" data-node-id="260:7291" data-name="Column">
+          <div className="aspect-[352/352] bg-[var(--color-background,#fafafa)] border border-[var(--color-border,#27433b)] border-solid content-stretch flex flex-col items-center justify-center overflow-clip p-[var(--calc(var(--spacing)*10),40px)] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0 w-full" data-node-id="260:7292" data-name="Circle">
+            <div className="content-stretch flex items-center justify-center relative shrink-0 size-[96px]" data-node-id="298:10342" data-name="Application dot icon/JustCall/JC1 Voicewave">
+              <div className="relative shrink-0 size-[96px]" data-node-id="I298:10342;266:6309" data-name="Dots · 23 equal circles">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDots23EqualCircles} />
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*5),20px)] items-center px-[var(--calc(var(--spacing)*10),40px)] relative shrink-0 w-full" data-node-id="260:7294">
+            <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-none min-w-full not-italic relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-3xl,30px)] text-center tracking-[-0.45px] w-[min-content]" data-node-id="298:10393">
+              JustCall
+            </p>
+            <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-normal,425)] leading-[1.4] min-w-full relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] text-center text-pretty w-[min-content]" data-node-id="260:7295" style={{ fontVariationSettings: '"ital" 100' }}>
+              Calls, messages and AI assistance for sales and support teams.
+            </p>
+            <a className="border border-[var(--color-control-border,#27433b)] border-solid content-stretch cursor-pointer flex gap-[var(--calc(var(--spacing)*1.5),6px)] h-[32px] items-center justify-center px-[var(--calc(var(--spacing)*3),12px)] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" href="https://justcall.io/" data-node-id="260:7296" target="_blank" data-name="Button">
+              <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] text-left whitespace-nowrap" data-node-id="I260:7296;33:888" style={{ fontVariationSettings: '"ital" 100' }}>
+                Explore JustCall
+              </p>
+            </a>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*8),32px)] items-center justify-self-stretch relative self-start shrink-0" data-node-id="260:7297" data-name="Column">
+          <div className="aspect-[352/352] bg-[var(--color-background,#fafafa)] border border-[var(--color-border,#27433b)] border-solid content-stretch flex flex-col items-center justify-center overflow-clip p-[var(--calc(var(--spacing)*10),40px)] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0 w-full" data-node-id="260:7298" data-name="Circle">
+            <div className="content-stretch flex items-center justify-center relative shrink-0 size-[96px]" data-node-id="298:10401" data-name="Application dot icon/Helpwise/HW3 Joined threads">
+              <div className="relative shrink-0 size-[96px]" data-node-id="I298:10401;266:6747" data-name="Dots · 18 equal circles">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDots18EqualCircles} />
+              </div>
+            </div>
+          </div>
+          <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-none not-italic relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-3xl,30px)] text-center tracking-[-0.45px] w-full" data-node-id="260:7299">
+            Helpwise
+          </p>
+          <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*5),20px)] items-center px-[var(--calc(var(--spacing)*10),40px)] relative shrink-0 w-full" data-node-id="260:7300">
+            <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-normal,425)] leading-[1.4] min-w-full relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] text-center text-pretty w-[min-content]" data-node-id="260:7301" style={{ fontVariationSettings: '"ital" 100' }}>
+              A shared inbox that keeps customer messages and team replies together.
+            </p>
+            <a className="border border-[var(--color-control-border,#27433b)] border-solid content-stretch cursor-pointer flex gap-[var(--calc(var(--spacing)*1.5),6px)] h-[32px] items-center justify-center px-[var(--calc(var(--spacing)*3),12px)] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" href="https://helpwise.io/" data-node-id="260:7302" target="_blank" data-name="Button">
+              <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] text-left whitespace-nowrap" data-node-id="I260:7302;33:888" style={{ fontVariationSettings: '"ital" 100' }}>
+                Explore Helpwise
+              </p>
+            </a>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*8),32px)] items-center justify-self-stretch relative self-start shrink-0" data-node-id="260:7303" data-name="Column">
+          <div className="aspect-[352/352] bg-[var(--color-background,#fafafa)] border border-[var(--color-border-subtle,#27433b)] border-solid content-stretch flex flex-col gap-[24px] items-center justify-center overflow-clip p-[var(--calc(var(--spacing)*10),40px)] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0 w-full" data-node-id="260:7304" data-name="Circle">
+            <div className="-translate-x-1/2 -translate-y-1/2 absolute content-stretch flex flex-col items-start left-1/2 overflow-clip size-[352px] top-1/2" data-node-id="260:7305" data-name="Patterns / Template / B Concentric / 1">
+              <div className="flex-[1_0_0] min-h-px overflow-clip relative w-full" data-node-id="I260:7305;1042:12650" data-name="Offset — editable masks">
+                <div className="absolute bg-[var(--color-iris-shade,#493f58)] inset-[-2.5%]" data-node-id="I260:7305;1042:12651" data-name="Base Color" />
+                <div className="absolute inset-[-2.5%] overflow-clip" data-node-id="I260:7305;1042:12652" data-name="Upper field">
+                  <div className="absolute bg-[var(--color-iris,#8c78b0)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[840px_840px]" data-node-id="I260:7305;1042:12674" style={{ maskImage: `url("${imgColorUpperFieldCad1C7}")` }} data-name="Color — Upper field / #CAD1C7" />
+                </div>
+                <div className="absolute inset-[-2.5%] overflow-clip" data-node-id="I260:7305;1042:12675" data-name="Lower field">
+                  <div className="absolute bg-[var(--color-iris,#8c78b0)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[840px_840px]" data-node-id="I260:7305;1042:12697" style={{ maskImage: `url("${imgColorLowerField8C78B0}")` }} data-name="Color — Lower field / #8C78B0" />
+                </div>
+                <div className="absolute inset-[-2.5%] overflow-clip" data-node-id="I260:7305;1042:12698" data-name="Highlight">
+                  <div className="absolute bg-[var(--color-iris-tint,#d8cde5)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[840px_840px]" data-node-id="I260:7305;1042:12720" style={{ maskImage: `url("${imgColorHighlight53786A}")` }} data-name="Color — Highlight / #53786A" />
+                </div>
+                <div className="absolute bg-[var(--color-iris-shade,#493f58)] inset-[-2.5%] mix-blend-plus-lighter overflow-clip" data-node-id="I260:7305;1042:12721" data-name="Reflection">
+                  <div className="absolute bg-[var(--color-iris,#8c78b0)] inset-[-23.81%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-10px_-10px] mask-size-[1260px_1260px]" data-node-id="I260:7305;1032:21164" style={{ maskImage: `url("${imgColorReflection}")` }} data-name="Color — Reflection" />
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex items-center justify-center relative shrink-0 size-[96px]" data-node-id="298:10442" data-name="Application dot icon/ServiceAgent/SA1 Dispatch hub">
+              <div className="relative shrink-0 size-[96px]" data-node-id="I298:10442;266:6896" data-name="Dots · 19 equal circles">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDots19EqualCircles} />
+              </div>
+            </div>
+          </div>
+          <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-none not-italic relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-3xl,30px)] text-center tracking-[-0.45px] w-full" data-node-id="260:7306">
+            ServiceAgent
+          </p>
+          <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*5),20px)] items-center px-[var(--calc(var(--spacing)*10),40px)] relative shrink-0 w-full" data-node-id="260:7307">
+            <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-normal,425)] leading-[1.4] min-w-full relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] text-center text-pretty w-[min-content]" data-node-id="260:7308" style={{ fontVariationSettings: '"ital" 100' }}>
+              AI call answering and office workflows for home service businesses.
+            </p>
+            <a className="bg-[var(--color-primary,#27433b)] content-stretch cursor-pointer flex gap-[var(--calc(var(--spacing)*1.5),6px)] h-[32px] items-center justify-center px-[var(--calc(var(--spacing)*3),12px)] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" href="https://serviceagent.ai/" data-node-id="260:7309" target="_blank" data-name="Button">
+              <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-primary-foreground,#f6f1e8)] text-[length:var(--text-sm,14px)] text-left whitespace-nowrap" data-node-id="I260:7309;33:822" style={{ fontVariationSettings: '"ital" 100' }}>
+                Explore ServiceAgent
+              </p>
+            </a>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*8),32px)] items-center justify-self-stretch relative self-start shrink-0" data-node-id="260:7310" data-name="Column">
+          <div className="aspect-[352/352] bg-[var(--color-background,#fafafa)] border border-[var(--color-border,#27433b)] border-solid content-stretch flex flex-col items-center justify-center overflow-clip p-[var(--calc(var(--spacing)*10),40px)] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0 w-full" data-node-id="260:7311" data-name="Circle">
+            <div className="content-stretch flex items-center justify-center relative shrink-0 size-[96px]" data-node-id="302:10683" data-name="Application dot icon/CallPage/CP1 Direct call">
+              <div className="relative shrink-0 size-[96px]" data-node-id="I302:10683;301:8131" data-name="Dots · Direct call">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDotsDirectCall} />
+              </div>
+            </div>
+          </div>
+          <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-none not-italic relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-3xl,30px)] text-center tracking-[-0.45px] w-full" data-node-id="260:7312">
+            CallPage
+          </p>
+          <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*5),20px)] items-center px-[var(--calc(var(--spacing)*10),40px)] relative shrink-0 w-full" data-node-id="260:7313">
+            <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-normal,425)] leading-[1.4] min-w-full relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] text-center text-pretty w-[min-content]" data-node-id="260:7314" style={{ fontVariationSettings: '"ital" 100' }}>
+              Turn website interest into a callback or a scheduled conversation.
+            </p>
+            <a className="border border-[var(--color-control-border,#27433b)] border-solid content-stretch cursor-pointer flex gap-[var(--calc(var(--spacing)*1.5),6px)] h-[32px] items-center justify-center px-[var(--calc(var(--spacing)*3),12px)] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" href="https://www.callpage.io/" data-node-id="260:7315" target="_blank" data-name="Button">
+              <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] text-left whitespace-nowrap" data-node-id="I260:7315;33:888" style={{ fontVariationSettings: '"ital" 100' }}>
+                Explore CallPage
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function SectionHomeApplications1() {
+  return <SectionHomeApplications className="bg-[var(--color-background,#fafafa)] content-stretch flex flex-col gap-[var(--calc(var(--spacing)*16),64px)] items-start px-[var(--margin,48px)] py-[var(--calc(var(--spacing)*24),96px)] relative size-full" />;
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Label/sm: Font(family: "var(--font-sans)", style: Regular, size: var(--text-sm), weight: var(--font-weight-medium), lineHeight: 1.399999976158142, letterSpacing: 0), Display/5xl: Font(family: "var(--font-display)", style: Regular, size: var(--text-5xl), weight: var(--font-weight-normal), lineHeight: 0.949999988079071, letterSpacing: -1.5), Lead/3xl: Font(family: "var(--font-display)", style: Regular, size: var(--text-3xl), weight: var(--font-weight-normal), lineHeight: 1, letterSpacing: -1.5), Body/sm: Font(family: "var(--font-sans)", style: Regular, size: var(--text-sm), weight: var(--font-weight-normal), lineHeight: 1.399999976158142, letterSpacing: 0).
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Application dot icon/JustCall/JC1 Voicewave
+**Node ID:** 266:6308
+
+The rhythm of a live conversation. Sparse equal dots; original 80 px geometry. Color inherits the existing foreground variable.
+
+## Button/Small
+**Node ID:** 33:982
+
+Pill button, Small: h-8 px-3 gap-1.5 text-sm rounded-full font-medium. Styles — Primary: bg-primary text-primary-foreground. Secondary: bg-secondary text-secondary-foreground. Outline: border border-control-border text-foreground (hover/pressed: border-foreground). Ghost: text-foreground. Link: px-0 text-foreground, muted-foreground on hover and pressed. Never underlined. States — hover/pressed for filled and Ghost styles: state layer of the style’s foreground at var(--state-hover)/var(--state-pressed) (hover:bg-primary-hover etc.). Focus: outline-2 outline-offset-2 outline-ring. Disabled: opacity var(--state-disabled). Lead with an action icon, trail with a navigation arrow. Supported hosts: background and surface. State opacity is exported as percent / 100. Target active label contrast ≥4.8:1; focus outline must not be clipped. Outline stays transparent in every state: no background fill or state overlay. Hover and pressed use the border; focus retains the focus ring.
+
+## Application dot icon/Helpwise/HW3 Joined threads
+**Node ID:** 266:6746
+
+Shared context, connected replies. Sparse equal dots; original 80 px geometry. Color inherits the existing foreground variable.
+
+## Application dot icon/ServiceAgent/SA1 Dispatch hub
+**Node ID:** 266:6895
+
+An enquiry becomes action. Sparse equal dots; original 80 px geometry. Color inherits the existing foreground variable.
+
+## Application dot icon/CallPage/CP1 Direct call
+**Node ID:** 266:7163
+
+A familiar handset for a direct conversation. Equal dot geometry; inherits the shared foreground color in every mode.
+
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

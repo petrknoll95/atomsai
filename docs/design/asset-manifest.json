@@ -1,0 +1,387 @@
+[
+  {
+    "section": "industries",
+    "constant": "imgBackgroundImage",
+    "path": "public/assets/figma/industries-BackgroundImage.png"
+  },
+  {
+    "section": "industries",
+    "constant": "imgBackgroundImage1",
+    "path": "public/assets/figma/industries-BackgroundImage1.png"
+  },
+  {
+    "section": "industries",
+    "constant": "imgBackgroundImage2",
+    "path": "public/assets/figma/industries-BackgroundImage2.png"
+  },
+  {
+    "section": "industries",
+    "constant": "imgBackgroundImage3",
+    "path": "public/assets/figma/industries-BackgroundImage3.png"
+  },
+  {
+    "section": "industries",
+    "constant": "imgFrame15",
+    "path": "public/assets/figma/industries-Frame15.svg"
+  },
+  {
+    "section": "industries",
+    "constant": "imgIconArtwork",
+    "path": "public/assets/figma/industries-IconArtwork.svg"
+  },
+  {
+    "section": "industries",
+    "constant": "imgIconArtwork1",
+    "path": "public/assets/figma/industries-IconArtwork1.svg"
+  },
+  {
+    "section": "preview",
+    "constant": "imgImage4",
+    "path": "public/assets/figma/preview-Image4.png"
+  },
+  {
+    "section": "preview",
+    "constant": "imgFrame15",
+    "path": "public/assets/figma/preview-Frame15.svg"
+  },
+  {
+    "section": "preview",
+    "constant": "imgLowerField",
+    "path": "public/assets/figma/preview-LowerField.svg"
+  },
+  {
+    "section": "preview",
+    "constant": "imgUpperField",
+    "path": "public/assets/figma/preview-UpperField.svg"
+  },
+  {
+    "section": "preview",
+    "constant": "imgHighlight",
+    "path": "public/assets/figma/preview-Highlight.svg"
+  },
+  {
+    "section": "preview",
+    "constant": "imgReflection",
+    "path": "public/assets/figma/preview-Reflection.svg"
+  },
+  {
+    "section": "preview",
+    "constant": "imgLine2",
+    "path": "public/assets/figma/preview-Line2.svg"
+  },
+  {
+    "section": "preview",
+    "constant": "imgColorUpperFieldCad1C7",
+    "path": "public/assets/figma/preview-ColorUpperFieldCad1C7.svg"
+  },
+  {
+    "section": "preview",
+    "constant": "imgColorLowerField8C78B0",
+    "path": "public/assets/figma/preview-ColorLowerField8C78B0.svg"
+  },
+  {
+    "section": "preview",
+    "constant": "imgColorHighlight53786A",
+    "path": "public/assets/figma/preview-ColorHighlight53786A.svg"
+  },
+  {
+    "section": "preview",
+    "constant": "imgColorReflection",
+    "path": "public/assets/figma/preview-ColorReflection.svg"
+  },
+  {
+    "section": "preview",
+    "constant": "imgImage3",
+    "path": "public/assets/figma/preview-Image3.svg"
+  },
+  {
+    "section": "preview",
+    "constant": "imgIconArtwork",
+    "path": "public/assets/figma/preview-IconArtwork.svg"
+  },
+  {
+    "section": "hero",
+    "constant": "imgFrame84",
+    "path": "public/assets/figma/hero-Frame84.svg"
+  },
+  {
+    "section": "hero",
+    "constant": "imgBackground",
+    "path": "public/assets/figma/hero-Background.svg"
+  },
+  {
+    "section": "hero",
+    "constant": "imgLogo",
+    "path": "public/assets/figma/hero-Logo.svg"
+  },
+  {
+    "section": "hero",
+    "constant": "imgVector",
+    "path": "public/assets/figma/hero-Vector.svg"
+  },
+  {
+    "section": "hero",
+    "constant": "imgVector1",
+    "path": "public/assets/figma/hero-Vector1.svg"
+  },
+  {
+    "section": "faq",
+    "constant": "imgFrame15",
+    "path": "public/assets/figma/faq-Frame15.svg"
+  },
+  {
+    "section": "faq",
+    "constant": "imgIconArtwork",
+    "path": "public/assets/figma/faq-IconArtwork.svg"
+  },
+  {
+    "section": "faq",
+    "constant": "imgIconArtwork1",
+    "path": "public/assets/figma/faq-IconArtwork1.svg"
+  },
+  {
+    "section": "faq",
+    "constant": "imgIconArtwork2",
+    "path": "public/assets/figma/faq-IconArtwork2.svg"
+  },
+  {
+    "section": "applications",
+    "constant": "imgFrame15",
+    "path": "public/assets/figma/applications-Frame15.svg"
+  },
+  {
+    "section": "applications",
+    "constant": "imgDots23EqualCircles",
+    "path": "public/assets/figma/applications-Dots23EqualCircles.svg"
+  },
+  {
+    "section": "applications",
+    "constant": "imgDots18EqualCircles",
+    "path": "public/assets/figma/applications-Dots18EqualCircles.svg"
+  },
+  {
+    "section": "applications",
+    "constant": "imgColorUpperFieldCad1C7",
+    "path": "public/assets/figma/applications-ColorUpperFieldCad1C7.svg"
+  },
+  {
+    "section": "applications",
+    "constant": "imgColorLowerField8C78B0",
+    "path": "public/assets/figma/applications-ColorLowerField8C78B0.svg"
+  },
+  {
+    "section": "applications",
+    "constant": "imgColorHighlight53786A",
+    "path": "public/assets/figma/applications-ColorHighlight53786A.svg"
+  },
+  {
+    "section": "applications",
+    "constant": "imgColorReflection",
+    "path": "public/assets/figma/applications-ColorReflection.svg"
+  },
+  {
+    "section": "applications",
+    "constant": "imgDots19EqualCircles",
+    "path": "public/assets/figma/applications-Dots19EqualCircles.svg"
+  },
+  {
+    "section": "applications",
+    "constant": "imgDotsDirectCall",
+    "path": "public/assets/figma/applications-DotsDirectCall.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgFrame15",
+    "path": "public/assets/figma/offerings-Frame15.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgLowerField",
+    "path": "public/assets/figma/offerings-LowerField.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgUpperField",
+    "path": "public/assets/figma/offerings-UpperField.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgHighlight",
+    "path": "public/assets/figma/offerings-Highlight.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgReflection",
+    "path": "public/assets/figma/offerings-Reflection.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgMask",
+    "path": "public/assets/figma/offerings-Mask.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgEveryThreadToOneCentre11",
+    "path": "public/assets/figma/offerings-EveryThreadToOneCentre11.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgUnion",
+    "path": "public/assets/figma/offerings-Union.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgUpperField1",
+    "path": "public/assets/figma/offerings-UpperField1.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgLowerField1",
+    "path": "public/assets/figma/offerings-LowerField1.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgHighlight1",
+    "path": "public/assets/figma/offerings-Highlight1.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgReflection1",
+    "path": "public/assets/figma/offerings-Reflection1.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgMask1",
+    "path": "public/assets/figma/offerings-Mask1.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgRisingOffABase11",
+    "path": "public/assets/figma/offerings-RisingOffABase11.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgField1",
+    "path": "public/assets/figma/offerings-Field1.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgLowerField2",
+    "path": "public/assets/figma/offerings-LowerField2.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgUpperField2",
+    "path": "public/assets/figma/offerings-UpperField2.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgUpperField3",
+    "path": "public/assets/figma/offerings-UpperField3.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgReflection2",
+    "path": "public/assets/figma/offerings-Reflection2.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgReflection3",
+    "path": "public/assets/figma/offerings-Reflection3.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgReflection4",
+    "path": "public/assets/figma/offerings-Reflection4.svg"
+  },
+  {
+    "section": "offerings",
+    "constant": "imgRaysAroundACoreOneStillMissing11",
+    "path": "public/assets/figma/offerings-RaysAroundACoreOneStillMissing11.svg"
+  },
+  {
+    "section": "cta",
+    "constant": "imgUpperField",
+    "path": "public/assets/figma/cta-UpperField.svg"
+  },
+  {
+    "section": "cta",
+    "constant": "imgLowerField",
+    "path": "public/assets/figma/cta-LowerField.svg"
+  },
+  {
+    "section": "cta",
+    "constant": "imgHighlight",
+    "path": "public/assets/figma/cta-Highlight.svg"
+  },
+  {
+    "section": "cta",
+    "constant": "imgReflection",
+    "path": "public/assets/figma/cta-Reflection.svg"
+  },
+  {
+    "section": "stories",
+    "constant": "imgMedia",
+    "path": "public/assets/figma/stories-Media.png"
+  },
+  {
+    "section": "stories",
+    "constant": "imgFrame15",
+    "path": "public/assets/figma/stories-Frame15.svg"
+  },
+  {
+    "section": "stories",
+    "constant": "imgUnion",
+    "path": "public/assets/figma/stories-Union.svg"
+  },
+  {
+    "section": "stories",
+    "constant": "imgUnion1",
+    "path": "public/assets/figma/stories-Union1.svg"
+  },
+  {
+    "section": "footer",
+    "constant": "imgIndicator",
+    "path": "public/assets/figma/footer-Indicator.svg"
+  },
+  {
+    "section": "footer",
+    "constant": "imgVector",
+    "path": "public/assets/figma/footer-Vector.svg"
+  },
+  {
+    "section": "footer",
+    "constant": "imgVector1",
+    "path": "public/assets/figma/footer-Vector1.svg"
+  },
+  {
+    "section": "footer",
+    "constant": "imgVector2",
+    "path": "public/assets/figma/footer-Vector2.svg"
+  },
+  {
+    "section": "footer",
+    "constant": "imgVector3",
+    "path": "public/assets/figma/footer-Vector3.svg"
+  },
+  {
+    "section": "footer",
+    "constant": "imgVector4",
+    "path": "public/assets/figma/footer-Vector4.svg"
+  },
+  {
+    "section": "footer",
+    "constant": "imgVector5",
+    "path": "public/assets/figma/footer-Vector5.svg"
+  },
+  {
+    "section": "footer",
+    "constant": "imgVector6",
+    "path": "public/assets/figma/footer-Vector6.svg"
+  },
+  {
+    "section": "footer",
+    "constant": "imgVector7",
+    "path": "public/assets/figma/footer-Vector7.svg"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "method": "Isolated production build with the original header details/summary markup and CSS restored; identical content, assets, fonts and viewport.",
+  "result": [
+    {
+      "engine": "chromium",
+      "baselineToNewMean": 0,
+      "changedChannels": 0,
+      "baselinePngSha256": "96cb7b2e18cd3c0900a8d99808bdad58a7f911be6fad9f5c0739384818cdad28"
+    },
+    {
+      "engine": "webkit",
+      "baselineToNewMean": 0,
+      "changedChannels": 0,
+      "baselinePngSha256": "bf42c8f60efa613b54afd2590849debc99bde7d41561bcb208c2c5425e9d2887"
+    }
+  ]
+}

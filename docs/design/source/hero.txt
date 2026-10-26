@@ -1,0 +1,163 @@
+const imgFrame84 = "https://www.figma.com/api/mcp/asset/2ba8c2c3-fdb1-4086-8f10-ac7e9d2df5cb.svg";
+const imgBackground = "https://www.figma.com/api/mcp/asset/7b56b342-f286-45fa-aea2-6ca72ec31367.svg";
+const imgLogo = "https://www.figma.com/api/mcp/asset/b07168ca-1d4c-4503-b5fb-1ecb41d65633.svg";
+const imgVector = "https://www.figma.com/api/mcp/asset/7d5aa90b-5d7b-421b-a5d7-25f3250dacb5.svg";
+const imgVector1 = "https://www.figma.com/api/mcp/asset/06ba5230-601c-45aa-9943-9d200838a375.svg";
+
+export default function Frame81() {
+  return (
+    <div className="bg-[var(--color-background,#f0f0ec)] relative size-full" data-node-id="294:6060">
+      <div className="absolute h-[960px] left-0 top-0 w-[1601px]" data-node-id="294:6292">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame84} />
+      </div>
+      <div className="absolute contents inset-[0_0_840px_0]" data-node-id="294:6295" data-name="Background">
+        <div className="absolute bg-[var(--color-background,#f0f0ec)] inset-[0_0_840px_0] mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[100%_100%]" data-node-id="294:6297" style={{ maskImage: `url("${imgBackground}")` }} data-name="Background" />
+      </div>
+      <div className="absolute backdrop-blur-[20px] content-stretch flex flex-col h-[96px] items-start justify-between left-0 right-0 top-0" data-node-id="294:6061" data-name="Header / Desktop Header">
+        <div className="content-stretch flex items-center justify-between min-h-[96px] px-[var(--margin,48px)] relative shrink-0 w-full" data-node-id="I294:6061;240:16224">
+          <div className="content-stretch flex gap-[40px] items-center relative shrink-0 w-[1025.57px]" data-node-id="I294:6061;225:15758">
+            <div className="h-[24px] relative shrink-0 w-[135.84px]" data-node-id="I294:6061;225:15759" data-name="Logo">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLogo} />
+            </div>
+            <div className="content-stretch flex gap-[14px] items-center relative shrink-0" data-node-id="I294:6061;225:15760" data-name="Links">
+              <div className="content-stretch flex items-center relative shrink-0" data-node-id="I294:6061;225:15761" data-name="Header / Dropdown Link">
+                <div className="content-stretch flex gap-[8px] items-center px-[8px] py-[4px] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="I294:6061;225:15761;81:4621" data-name="Clickable">
+                  <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="I294:6061;225:15761;81:4584" style={{ fontVariationSettings: '"ital" 100' }}>
+                    Applications
+                  </p>
+                  <div className="relative shrink-0 size-[16px]" data-node-id="I294:6061;225:15761;81:4577" data-name="Icon">
+                    <div className="absolute bottom-1/4 left-[7.81%] right-[7.81%] top-1/4" data-node-id="I294:6061;225:15761;81:4576" data-name="Vector">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex items-center relative shrink-0" data-node-id="I294:6061;225:15762" data-name="Header / Dropdown Link">
+                <div className="content-stretch flex gap-[8px] items-center px-[8px] py-[4px] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="I294:6061;225:15762;81:4621" data-name="Clickable">
+                  <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="I294:6061;225:15762;81:4584" style={{ fontVariationSettings: '"ital" 100' }}>
+                    Infrastructure
+                  </p>
+                  <div className="relative shrink-0 size-[16px]" data-node-id="I294:6061;225:15762;81:4577" data-name="Icon">
+                    <div className="absolute bottom-1/4 left-[7.81%] right-[7.81%] top-1/4" data-node-id="I294:6061;225:15762;81:4576" data-name="Vector">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex items-center relative shrink-0" data-node-id="I294:6061;225:15763" data-name="Header / Link">
+                <div className="content-stretch flex items-center justify-center px-[8px] py-[4px] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="I294:6061;225:15763;81:4622" data-name="Clickable">
+                  <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="I294:6061;225:15763;81:4612" style={{ fontVariationSettings: '"ital" 100' }}>
+                    AI Services
+                  </p>
+                </div>
+              </div>
+              <div className="content-stretch flex items-center relative shrink-0" data-node-id="I294:6061;225:15764" data-name="Header / Dropdown Link">
+                <div className="content-stretch flex gap-[8px] items-center px-[8px] py-[4px] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="I294:6061;225:15764;81:4621" data-name="Clickable">
+                  <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="I294:6061;225:15764;81:4584" style={{ fontVariationSettings: '"ital" 100' }}>
+                    Industries
+                  </p>
+                  <div className="relative shrink-0 size-[16px]" data-node-id="I294:6061;225:15764;81:4577" data-name="Icon">
+                    <div className="absolute bottom-1/4 left-[7.81%] right-[7.81%] top-1/4" data-node-id="I294:6061;225:15764;81:4576" data-name="Vector">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex items-center relative shrink-0" data-node-id="I294:6061;225:15765" data-name="Header / Link">
+                <div className="content-stretch flex items-center justify-center px-[8px] py-[4px] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="I294:6061;225:15765;81:4622" data-name="Clickable">
+                  <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="I294:6061;225:15765;81:4612" style={{ fontVariationSettings: '"ital" 100' }}>
+                    Company
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[8px] items-center relative shrink-0" data-node-id="I294:6061;225:15766" data-name="Group">
+            <a className="bg-[var(--color-primary,#27433b)] content-stretch cursor-pointer flex gap-[var(--calc(var(--spacing)*2),8px)] h-[44px] items-center justify-center px-[var(--calc(var(--spacing)*5),20px)] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" href="https://atomsai.com/company/contact" data-node-id="I294:6061;225:15767" target="_blank" data-name="CTA">
+              <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-primary-foreground,#f6f1e8)] text-[length:var(--text-sm,14px)] text-left whitespace-nowrap" data-node-id="I294:6061;225:15767;33:643" style={{ fontVariationSettings: '"ital" 100' }}>
+                Talk to AtomsAI
+              </p>
+            </a>
+            <div className="bg-[var(--color-primary,#27433b)] content-stretch flex gap-[var(--calc(var(--spacing)*2),8px)] items-center justify-center relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0 size-[44px]" data-node-id="I294:6061;225:15768" data-name="CTA">
+              <div className="relative shrink-0 size-[16px]" data-node-id="I294:6061;225:15769" data-name="Icon">
+                <div className="absolute h-[8px] left-px top-[4px] w-[14px]" data-node-id="I294:6061;225:15770" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute content-stretch flex flex-col items-center justify-center left-[48px] top-[439px] w-[1504px]" data-node-id="294:6062" data-name="Content">
+        <div className="content-stretch flex flex-col gap-[32px] items-center justify-center relative shrink-0 w-[990px]" data-node-id="294:6063" data-name="Container">
+          <div className="bg-[var(--color-white,white)] border border-[var(--color-border-subtle,#27433b)] border-solid content-stretch drop-shadow-[0px_3px_7px_rgba(39,67,59,0.03)] flex gap-[var(--calc(var(--spacing)*0),0px)] items-center justify-center px-[12px] py-[4px] relative rounded-[20px] shrink-0" data-node-id="294:6262">
+            <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="294:6260" style={{ fontVariationSettings: '"ital" 100' }}>
+              30 minutes. Bring one broken workflow.
+            </p>
+          </div>
+          <div className="content-stretch flex flex-col gap-[40px] items-center relative shrink-0 w-full" data-node-id="294:6291">
+            <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-node-id="294:6064">
+              <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[0] min-w-px not-italic relative text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-9xl,128px)] text-center tracking-[-1.92px]" data-node-id="294:6065">
+                <p className="leading-[0.9] mb-0 text-balance">Powerful AI.</p>
+                <p className="leading-[0.9] text-balance">Built for real use.</p>
+              </div>
+            </div>
+            <div className="content-stretch flex items-center justify-center max-w-[480px] relative shrink-0" data-node-id="294:6066">
+              <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-muted-foreground,#27433b)] text-[length:var(--text-lg,18px)] text-center text-pretty w-[480px]" data-node-id="294:6067" style={{ fontVariationSettings: '"ital" 100' }}>
+                AI for the conversations, decisions and workflows that keep business moving. Use our applications, build with PyAI, or work with us on something custom.
+              </p>
+            </div>
+            <div className="content-stretch cursor-pointer flex gap-[12px] items-center justify-center relative shrink-0 w-full" data-node-id="294:6068" data-name="Button group — Explore or try">
+              <button className="bg-[var(--color-primary,#27433b)] content-stretch flex gap-[var(--calc(var(--spacing)*2),8px)] h-[56px] items-center justify-center px-[var(--calc(var(--spacing)*7),28px)] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="294:6069" data-name="Button — Find your starting point">
+                <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-primary-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] text-left whitespace-nowrap" data-node-id="I294:6069;33:464" style={{ fontVariationSettings: '"ital" 100' }}>
+                  Contact Us
+                </p>
+              </button>
+              <button className="bg-[var(--color-secondary,#ebebe4)] content-stretch flex gap-[var(--calc(var(--spacing)*2),8px)] h-[56px] items-center justify-center px-[var(--calc(var(--spacing)*7),28px)] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="294:6070" data-name="Button — Try the technology">
+                <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-secondary-foreground,#27433b)] text-[length:var(--text-base,16px)] text-left whitespace-nowrap" data-node-id="I294:6070;33:497" style={{ fontVariationSettings: '"ital" 100' }}>
+                  Try the technology
+                </p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Label/sm: Font(family: "var(--font-sans)", style: Regular, size: var(--text-sm), weight: var(--font-weight-medium), lineHeight: 1.399999976158142, letterSpacing: 0), Applications/HTML card elevation: Effect(type: DROP_SHADOW, color: #27433B08, offset: (0, 3), radius: 14, spread: 0), Display/9xl: Font(family: "var(--font-display)", style: Regular, size: var(--text-9xl), weight: var(--font-weight-normal), lineHeight: 0.8999999761581421, letterSpacing: -1.5), Body/lg: Font(family: "var(--font-sans)", style: Regular, size: var(--text-lg), weight: var(--font-weight-medium), lineHeight: 1.399999976158142, letterSpacing: 0), Label/base: Font(family: "var(--font-sans)", style: Regular, size: var(--text-base), weight: var(--font-weight-medium), lineHeight: 1.399999976158142, letterSpacing: 0).
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Dropdown=None
+**Node ID:** 225:15820
+
+Site header, 1440 × 88. Logo (logo token), primary navigation (Body/sm, foreground) and the company invitation “Talk to AtomsAI” (Button/Small Primary). Transparent; follows the Theme mode of the frame it sits in.
+
+## Logo/Logotype
+**Node ID:** 43:841
+
+Master AtomsAI logotype (src/assets/brand/logo/logotype.svg), 28 px tall. Fill bound to the logo token, which resolves only to Deep green or Cream. Do not recolour, stretch or re-kern. Clear space: one mark width either side, one mark height above and below.
+
+## Button/Medium
+**Node ID:** 33:803
+
+Pill button, Medium: h-11 px-5 gap-2 text-sm rounded-full font-medium. Styles — Primary: bg-primary text-primary-foreground. Secondary: bg-secondary text-secondary-foreground. Outline: border border-control-border text-foreground (hover/pressed: border-foreground). Ghost: text-foreground. Link: px-0 text-foreground, muted-foreground on hover and pressed. Never underlined. States — hover/pressed for filled and Ghost styles: state layer of the style’s foreground at var(--state-hover)/var(--state-pressed) (hover:bg-primary-hover etc.). Focus: outline-2 outline-offset-2 outline-ring. Disabled: opacity var(--state-disabled). Lead with an action icon, trail with a navigation arrow. Supported hosts: background and surface. State opacity is exported as percent / 100. Target active label contrast ≥4.8:1; focus outline must not be clipped. Outline stays transparent in every state: no background fill or state overlay. Hover and pressed use the border; focus retains the focus ring.
+
+## Button/Large
+**Node ID:** 33:624
+
+Pill button, Large: h-14 px-7 gap-2 text-base rounded-full font-medium. Styles — Primary: bg-primary text-primary-foreground. Secondary: bg-secondary text-secondary-foreground. Outline: border border-control-border text-foreground (hover/pressed: border-foreground). Ghost: text-foreground. Link: px-0 text-foreground, muted-foreground on hover and pressed. Never underlined. States — hover/pressed for filled and Ghost styles: state layer of the style’s foreground at var(--state-hover)/var(--state-pressed) (hover:bg-primary-hover etc.). Focus: outline-2 outline-offset-2 outline-ring. Disabled: opacity var(--state-disabled). Lead with an action icon, trail with a navigation arrow. Supported hosts: background and surface. State opacity is exported as percent / 100. Target active label contrast ≥4.8:1; focus outline must not be clipped. Outline stays transparent in every state: no background fill or state overlay. Hover and pressed use the border; focus retains the focus ring.
+
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

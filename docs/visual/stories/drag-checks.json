@@ -1,0 +1,12 @@
+[
+  {
+    "browser": "chromium",
+    "width": 390,
+    "drag": "passed"
+  },
+  {
+    "browser": "webkit",
+    "width": 390,
+    "drag": "passed"
+  }
+]

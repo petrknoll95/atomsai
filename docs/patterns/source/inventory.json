@@ -1,0 +1,366 @@
+{
+  "path": [
+    {
+      "id": "205:12328",
+      "name": "Patterns",
+      "type": "SECTION"
+    },
+    {
+      "id": "17:2",
+      "name": "Components",
+      "type": "PAGE"
+    }
+  ],
+  "root": {
+    "id": "205:12328",
+    "name": "Patterns",
+    "type": "SECTION",
+    "width": 3680,
+    "height": 3760,
+    "children": 4
+  },
+  "children": [
+    {
+      "id": "77:2804",
+      "name": "Pattern/Drift",
+      "type": "COMPONENT_SET",
+      "width": 1680,
+      "height": 1720,
+      "children": 4,
+      "description": "Theme-aware Drift pattern. Choose Density; inherit the containing frame’s Theme mode. Color variables: pattern/drift/*. Density 0, 1, 2, 3 correspond to 5, 10, 20, 40 slits. Scale uniformly or crop inside a frame. Never stretch. Keep type in calm areas and use one pattern structure per composition. Masks remain grayscale; edit the bound color layers for color.",
+      "definitions": {
+        "Density": {
+          "type": "VARIANT",
+          "defaultValue": "0",
+          "variantOptions": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ]
+        }
+      }
+    },
+    {
+      "id": "77:2805",
+      "name": "Pattern/Offset",
+      "type": "COMPONENT_SET",
+      "width": 1680,
+      "height": 1720,
+      "children": 4,
+      "description": "Theme-aware Offset pattern. Choose Density; inherit the containing frame’s Theme mode. Color variables: pattern/offset/*. Density 0, 1, 2, 3 correspond to 5, 10, 20, 40 slits. Scale uniformly or crop inside a frame. Never stretch. Keep type in calm areas and use one pattern structure per composition. Masks remain grayscale; edit the bound color layers for color.",
+      "definitions": {
+        "Density": {
+          "type": "VARIANT",
+          "defaultValue": "0",
+          "variantOptions": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ]
+        }
+      }
+    },
+    {
+      "id": "77:2806",
+      "name": "Pattern/Single band",
+      "type": "COMPONENT_SET",
+      "width": 1680,
+      "height": 1720,
+      "children": 4,
+      "description": "Theme-aware Single band pattern. Choose Density; inherit the containing frame’s Theme mode. Color variables: pattern/single-band/*. Density 0, 1, 2, 3 correspond to 5, 10, 20, 40 slits. Scale uniformly or crop inside a frame. Never stretch. Keep type in calm areas and use one pattern structure per composition. Masks remain grayscale; edit the bound color layers for color.",
+      "definitions": {
+        "Density": {
+          "type": "VARIANT",
+          "defaultValue": "0",
+          "variantOptions": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ]
+        }
+      }
+    },
+    {
+      "id": "77:2807",
+      "name": "Pattern/Concentric",
+      "type": "COMPONENT_SET",
+      "width": 1680,
+      "height": 880,
+      "children": 2,
+      "description": "Theme-aware Concentric pattern. Choose Density; inherit the containing frame’s Theme mode. Color variables: pattern/concentric/*. Source densities 1 and 2 contain 15 and 30 rings. Scale uniformly or crop inside a frame. Never stretch. Keep type in calm areas and use one pattern structure per composition. Masks remain grayscale; edit the bound color layers for color.",
+      "definitions": {
+        "Density": {
+          "type": "VARIANT",
+          "defaultValue": "1",
+          "variantOptions": [
+            "1",
+            "2"
+          ]
+        }
+      }
+    }
+  ],
+  "sets": [
+    {
+      "id": "77:2804",
+      "name": "Pattern/Drift",
+      "type": "COMPONENT_SET",
+      "width": 1680,
+      "height": 1720,
+      "children": 4,
+      "description": "Theme-aware Drift pattern. Choose Density; inherit the containing frame’s Theme mode. Color variables: pattern/drift/*. Density 0, 1, 2, 3 correspond to 5, 10, 20, 40 slits. Scale uniformly or crop inside a frame. Never stretch. Keep type in calm areas and use one pattern structure per composition. Masks remain grayscale; edit the bound color layers for color.",
+      "definitions": {
+        "Density": {
+          "type": "VARIANT",
+          "defaultValue": "0",
+          "variantOptions": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "77:863",
+          "name": "Density=0",
+          "type": "COMPONENT",
+          "width": 800,
+          "height": 800,
+          "children": 1,
+          "description": "Editable drift interference pattern, rebuilt from brand master 1032:17489. Color carriers bind to pattern/drift/* in Theme. Preserve aspect ratio: scale or crop, never stretch. Mask gradients define geometry and are intentionally not themed.",
+          "variantProperties": {
+            "Density": "0"
+          }
+        },
+        {
+          "id": "77:1248",
+          "name": "Density=1",
+          "type": "COMPONENT",
+          "width": 800,
+          "height": 800,
+          "children": 1,
+          "description": "Editable drift interference pattern, rebuilt from brand master 1032:17490. Color carriers bind to pattern/drift/* in Theme. Preserve aspect ratio: scale or crop, never stretch. Mask gradients define geometry and are intentionally not themed.",
+          "variantProperties": {
+            "Density": "1"
+          }
+        },
+        {
+          "id": "77:1303",
+          "name": "Density=2",
+          "type": "COMPONENT",
+          "width": 800,
+          "height": 800,
+          "children": 1,
+          "description": "Editable drift interference pattern, rebuilt from brand master 1032:17488. Color carriers bind to pattern/drift/* in Theme. Preserve aspect ratio: scale or crop, never stretch. Mask gradients define geometry and are intentionally not themed.",
+          "variantProperties": {
+            "Density": "2"
+          }
+        },
+        {
+          "id": "77:1398",
+          "name": "Density=3",
+          "type": "COMPONENT",
+          "width": 800,
+          "height": 800,
+          "children": 1,
+          "description": "Editable drift interference pattern, rebuilt from brand master 1032:17487. Color carriers bind to pattern/drift/* in Theme. Preserve aspect ratio: scale or crop, never stretch. Mask gradients define geometry and are intentionally not themed.",
+          "variantProperties": {
+            "Density": "3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "77:2805",
+      "name": "Pattern/Offset",
+      "type": "COMPONENT_SET",
+      "width": 1680,
+      "height": 1720,
+      "children": 4,
+      "description": "Theme-aware Offset pattern. Choose Density; inherit the containing frame’s Theme mode. Color variables: pattern/offset/*. Density 0, 1, 2, 3 correspond to 5, 10, 20, 40 slits. Scale uniformly or crop inside a frame. Never stretch. Keep type in calm areas and use one pattern structure per composition. Masks remain grayscale; edit the bound color layers for color.",
+      "definitions": {
+        "Density": {
+          "type": "VARIANT",
+          "defaultValue": "0",
+          "variantOptions": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "77:1573",
+          "name": "Density=0",
+          "type": "COMPONENT",
+          "width": 800,
+          "height": 800,
+          "children": 1,
+          "description": "Editable offset interference pattern, rebuilt from brand master 1032:17494. Color carriers bind to pattern/offset/* in Theme. Preserve aspect ratio: scale or crop, never stretch. Mask gradients define geometry and are intentionally not themed.",
+          "variantProperties": {
+            "Density": "0"
+          }
+        },
+        {
+          "id": "77:1608",
+          "name": "Density=1",
+          "type": "COMPONENT",
+          "width": 800,
+          "height": 800,
+          "children": 1,
+          "description": "Editable offset interference pattern, rebuilt from brand master 1032:17493. Color carriers bind to pattern/offset/* in Theme. Preserve aspect ratio: scale or crop, never stretch. Mask gradients define geometry and are intentionally not themed.",
+          "variantProperties": {
+            "Density": "1"
+          }
+        },
+        {
+          "id": "77:1663",
+          "name": "Density=2",
+          "type": "COMPONENT",
+          "width": 800,
+          "height": 800,
+          "children": 1,
+          "description": "Editable offset interference pattern, rebuilt from brand master 1032:17492. Color carriers bind to pattern/offset/* in Theme. Preserve aspect ratio: scale or crop, never stretch. Mask gradients define geometry and are intentionally not themed.",
+          "variantProperties": {
+            "Density": "2"
+          }
+        },
+        {
+          "id": "77:1758",
+          "name": "Density=3",
+          "type": "COMPONENT",
+          "width": 800,
+          "height": 800,
+          "children": 1,
+          "description": "Editable offset interference pattern, rebuilt from brand master 1032:17491. Color carriers bind to pattern/offset/* in Theme. Preserve aspect ratio: scale or crop, never stretch. Mask gradients define geometry and are intentionally not themed.",
+          "variantProperties": {
+            "Density": "3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "77:2806",
+      "name": "Pattern/Single band",
+      "type": "COMPONENT_SET",
+      "width": 1680,
+      "height": 1720,
+      "children": 4,
+      "description": "Theme-aware Single band pattern. Choose Density; inherit the containing frame’s Theme mode. Color variables: pattern/single-band/*. Density 0, 1, 2, 3 correspond to 5, 10, 20, 40 slits. Scale uniformly or crop inside a frame. Never stretch. Keep type in calm areas and use one pattern structure per composition. Masks remain grayscale; edit the bound color layers for color.",
+      "definitions": {
+        "Density": {
+          "type": "VARIANT",
+          "defaultValue": "0",
+          "variantOptions": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "77:1933",
+          "name": "Density=0",
+          "type": "COMPONENT",
+          "width": 800,
+          "height": 800,
+          "children": 1,
+          "description": "Editable single-band interference pattern, rebuilt from brand master 1032:17498. Color carriers bind to pattern/single-band/* in Theme. Preserve aspect ratio: scale or crop, never stretch. Mask gradients define geometry and are intentionally not themed.",
+          "variantProperties": {
+            "Density": "0"
+          }
+        },
+        {
+          "id": "77:1992",
+          "name": "Density=1",
+          "type": "COMPONENT",
+          "width": 800,
+          "height": 800,
+          "children": 1,
+          "description": "Editable single-band interference pattern, rebuilt from brand master 1032:17497. Color carriers bind to pattern/single-band/* in Theme. Preserve aspect ratio: scale or crop, never stretch. Mask gradients define geometry and are intentionally not themed.",
+          "variantProperties": {
+            "Density": "1"
+          }
+        },
+        {
+          "id": "77:2086",
+          "name": "Density=2",
+          "type": "COMPONENT",
+          "width": 800,
+          "height": 800,
+          "children": 1,
+          "description": "Editable single-band interference pattern, rebuilt from brand master 1032:17496. Color carriers bind to pattern/single-band/* in Theme. Preserve aspect ratio: scale or crop, never stretch. Mask gradients define geometry and are intentionally not themed.",
+          "variantProperties": {
+            "Density": "2"
+          }
+        },
+        {
+          "id": "77:2250",
+          "name": "Density=3",
+          "type": "COMPONENT",
+          "width": 800,
+          "height": 800,
+          "children": 1,
+          "description": "Editable single-band interference pattern, rebuilt from brand master 1032:17495. Color carriers bind to pattern/single-band/* in Theme. Preserve aspect ratio: scale or crop, never stretch. Mask gradients define geometry and are intentionally not themed.",
+          "variantProperties": {
+            "Density": "3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "77:2807",
+      "name": "Pattern/Concentric",
+      "type": "COMPONENT_SET",
+      "width": 1680,
+      "height": 880,
+      "children": 2,
+      "description": "Theme-aware Concentric pattern. Choose Density; inherit the containing frame’s Theme mode. Color variables: pattern/concentric/*. Source densities 1 and 2 contain 15 and 30 rings. Scale uniformly or crop inside a frame. Never stretch. Keep type in calm areas and use one pattern structure per composition. Masks remain grayscale; edit the bound color layers for color.",
+      "definitions": {
+        "Density": {
+          "type": "VARIANT",
+          "defaultValue": "1",
+          "variantOptions": [
+            "1",
+            "2"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "77:2554",
+          "name": "Density=1",
+          "type": "COMPONENT",
+          "width": 800,
+          "height": 800,
+          "children": 1,
+          "description": "Editable concentric interference pattern, rebuilt from brand master 1042:12649. Color carriers bind to pattern/concentric/* in Theme. Preserve aspect ratio: scale or crop, never stretch. Mask gradients define geometry and are intentionally not themed.",
+          "variantProperties": {
+            "Density": "1"
+          }
+        },
+        {
+          "id": "77:2644",
+          "name": "Density=2",
+          "type": "COMPONENT",
+          "width": 800,
+          "height": 800,
+          "children": 1,
+          "description": "Editable concentric interference pattern, rebuilt from brand master 1042:12742. Color carriers bind to pattern/concentric/* in Theme. Preserve aspect ratio: scale or crop, never stretch. Mask gradients define geometry and are intentionally not themed.",
+          "variantProperties": {
+            "Density": "2"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,495 @@
+{
+  "comparison": [
+    {
+      "name": "Pattern/Drift",
+      "crossDensityIdentical": [
+        {
+          "layer": "Lower field",
+          "identical": true
+        },
+        {
+          "layer": "Upper field",
+          "identical": true
+        },
+        {
+          "layer": "Highlight",
+          "identical": true
+        },
+        {
+          "layer": "Reflections",
+          "identical": true
+        }
+      ]
+    },
+    {
+      "name": "Pattern/Offset",
+      "crossDensityIdentical": [
+        {
+          "layer": "Upper field",
+          "identical": true
+        },
+        {
+          "layer": "Lower field",
+          "identical": true
+        },
+        {
+          "layer": "Highlight",
+          "identical": true
+        },
+        {
+          "layer": "Reflection",
+          "identical": true
+        }
+      ]
+    },
+    {
+      "name": "Pattern/Single band",
+      "crossDensityIdentical": [
+        {
+          "layer": "Slits",
+          "identical": true
+        },
+        {
+          "layer": "Field 1",
+          "identical": true
+        },
+        {
+          "layer": "Field 2",
+          "identical": true
+        },
+        {
+          "layer": "Field 3",
+          "identical": true
+        },
+        {
+          "layer": "Color",
+          "identical": true
+        },
+        {
+          "layer": "Filter",
+          "identical": true
+        },
+        {
+          "layer": "Filter",
+          "identical": true
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "77:867",
+      "name": "Slits — duplicate a slit",
+      "parent": "Lower field",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:875",
+      "name": "Slits — duplicate a slit",
+      "parent": "Upper field",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:883",
+      "name": "Slits — duplicate a slit",
+      "parent": "Highlight",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:1252",
+      "name": "Slits — duplicate a slit",
+      "parent": "Lower field",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:1265",
+      "name": "Slits — duplicate a slit",
+      "parent": "Upper field",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:1278",
+      "name": "Slits — duplicate a slit",
+      "parent": "Highlight",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:1307",
+      "name": "Slits — duplicate a slit",
+      "parent": "Lower field",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:1330",
+      "name": "Slits — duplicate a slit",
+      "parent": "Upper field",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:1353",
+      "name": "Slits — duplicate a slit",
+      "parent": "Highlight",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:1402",
+      "name": "Slits — duplicate a slit",
+      "parent": "Lower field",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:1445",
+      "name": "Slits — duplicate a slit",
+      "parent": "Upper field",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:1488",
+      "name": "Slits — duplicate a slit",
+      "parent": "Highlight",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:1937",
+      "name": "Mask",
+      "parent": "Slits",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:1944",
+      "name": "Slits — duplicate a slit",
+      "parent": "Field 1",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:1952",
+      "name": "Slits — duplicate a slit",
+      "parent": "Field 2",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:1960",
+      "name": "Slits — duplicate a slit",
+      "parent": "Field 3",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:1996",
+      "name": "Mask",
+      "parent": "Slits",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:2008",
+      "name": "Slits — duplicate a slit",
+      "parent": "Field 1",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:2021",
+      "name": "Slits — duplicate a slit",
+      "parent": "Field 2",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:2034",
+      "name": "Slits — duplicate a slit",
+      "parent": "Field 3",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:2090",
+      "name": "Mask",
+      "parent": "Slits",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:2112",
+      "name": "Slits — duplicate a slit",
+      "parent": "Field 1",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:2135",
+      "name": "Slits — duplicate a slit",
+      "parent": "Field 2",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:2158",
+      "name": "Slits — duplicate a slit",
+      "parent": "Field 3",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:2254",
+      "name": "Mask",
+      "parent": "Slits",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:2296",
+      "name": "Slits — duplicate a slit",
+      "parent": "Field 1",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:2339",
+      "name": "Slits — duplicate a slit",
+      "parent": "Field 2",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    },
+    {
+      "id": "77:2382",
+      "name": "Slits — duplicate a slit",
+      "parent": "Field 3",
+      "effects": [
+        {
+          "type": "LAYER_BLUR",
+          "visible": true,
+          "radius": 1.8899998664855957,
+          "boundVariables": {},
+          "blurType": "NORMAL"
+        }
+      ]
+    }
+  ],
+  "opacity": [
+    {
+      "id": "77:1977",
+      "name": "Lighten",
+      "opacity": 0.15000000596046448
+    },
+    {
+      "id": "77:2061",
+      "name": "Lighten",
+      "opacity": 0.15000000596046448
+    },
+    {
+      "id": "77:2205",
+      "name": "Lighten",
+      "opacity": 0.15000000596046448
+    },
+    {
+      "id": "77:2469",
+      "name": "Lighten",
+      "opacity": 0.15000000596046448
+    }
+  ]
+}

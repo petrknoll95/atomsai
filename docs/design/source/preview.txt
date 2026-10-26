@@ -1,0 +1,235 @@
+const imgImage4 = "https://www.figma.com/api/mcp/asset/0094512f-69fa-4d8a-8d5e-0f01b2ce1bf9.png";
+const imgFrame15 = "https://www.figma.com/api/mcp/asset/1d21397e-576b-4f1e-b5d7-e914021cd707.svg";
+const imgLowerField = "https://www.figma.com/api/mcp/asset/25141c8a-1e75-4327-8b45-2492a048b539.svg";
+const imgUpperField = "https://www.figma.com/api/mcp/asset/ebc39b37-77fd-4ed2-9fd1-255e15f8e18f.svg";
+const imgHighlight = "https://www.figma.com/api/mcp/asset/99237d98-357c-4e67-8be3-054ed5705a42.svg";
+const imgReflection = "https://www.figma.com/api/mcp/asset/22955fda-5a15-497e-9bfc-8e791c6c1dd0.svg";
+const imgLine2 = "https://www.figma.com/api/mcp/asset/afce6f3e-cb2f-4ca4-a049-cedb04c1f869.svg";
+const imgColorUpperFieldCad1C7 = "https://www.figma.com/api/mcp/asset/9a8782cd-d271-47b7-9e3c-eab39f4154dc.svg";
+const imgColorLowerField8C78B0 = "https://www.figma.com/api/mcp/asset/943ae7da-ad55-4d5e-96f0-5c3587f835a3.svg";
+const imgColorHighlight53786A = "https://www.figma.com/api/mcp/asset/14355a75-0799-4366-bea8-29e01de18ba4.svg";
+const imgColorReflection = "https://www.figma.com/api/mcp/asset/2e9940a6-d7c2-4f41-8317-1346f52b9d43.svg";
+const imgImage3 = "https://www.figma.com/api/mcp/asset/ba234ec7-66b2-449d-8503-36f15d1c1da1.svg";
+const imgIconArtwork = "https://www.figma.com/api/mcp/asset/6a2ffdee-a04f-4c68-b69e-4db58254b93d.svg";
+
+export default function AddedApplicationsFindYourProduct() {
+  return (
+    <div className="bg-[var(--color-background,#f0f0ec)] content-stretch flex flex-col gap-[var(--calc(var(--spacing)*16),64px)] items-start px-[var(--margin,48px)] py-[var(--calc(var(--spacing)*24),96px)] relative size-full" data-node-id="214:13457" data-name="Added — Applications · Find your product">
+      <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*6),24px)] items-center justify-center relative shrink-0 w-[1504px]" data-node-id="214:13458" data-name="Section heading">
+        <div className="content-stretch flex gap-[var(--calc(var(--spacing)*2),8px)] items-center relative shrink-0" data-node-id="214:13459" data-name="Eyebrow">
+          <div className="h-[20px] relative shrink-0 w-[10px]" data-node-id="214:13460">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame15} />
+          </div>
+          <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="214:13462" style={{ fontVariationSettings: '"ital" 100' }}>
+            Try the technology
+          </p>
+        </div>
+        <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[0.95] max-w-[736px] not-italic relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-5xl,48px)] text-balance text-center tracking-[-0.72px] w-[736px]" data-node-id="214:13463">
+          Go ahead. Put it to the test.
+        </p>
+      </div>
+      <div className="gap-x-[32px] gap-y-[32px] grid grid-cols-[repeat(6,minmax(0,1fr))] grid-rows-[repeat(1,fit-content(100%))] relative shrink-0 w-full" data-node-id="214:13938">
+        <div className="col-[span_4] content-stretch flex flex-col gap-[var(--calc(var(--spacing)*6),24px)] items-start justify-self-stretch relative self-start shrink-0" data-node-id="215:15490">
+          <div className="bg-[var(--color-background,#10231e)] content-stretch flex flex-col gap-[8px] h-[640px] items-center justify-center overflow-clip relative rounded-[var(--radius-4xl,32px)] shrink-0 w-full" data-node-id="214:13599" data-name="Widget">
+            <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[640px] left-1/2 overflow-clip top-1/2 w-[992px]" data-node-id="273:11359" data-name="Pattern/Drift">
+              <div className="absolute inset-0 overflow-clip" data-node-id="273:11360" data-name="Drift — editable masks">
+                <div className="absolute bg-[var(----pattern-drift-base,#10231e)] inset-[-2.5%]" data-node-id="273:11361" data-name="base" />
+                <div className="absolute inset-[-2.5%] overflow-clip" data-node-id="273:11362" data-name="Lower field">
+                  <div className="absolute bg-[var(----pattern-drift-lower-field,#42665a)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-position-[-2.344px_-2.344px] mask-size-[1046.289px_676.687px]" data-node-id="273:11365" style={{ maskImage: `url("${imgLowerField}")` }} data-name="lower-field" />
+                </div>
+                <div className="absolute inset-[-2.5%] overflow-clip" data-node-id="273:11366" data-name="Upper field">
+                  <div className="absolute bg-[var(----pattern-drift-upper-field,#42665a)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-position-[-2.344px_-2.344px] mask-size-[1046.289px_676.687px]" data-node-id="273:11369" style={{ maskImage: `url("${imgUpperField}")` }} data-name="upper-field" />
+                </div>
+                <div className="absolute inset-[-2.5%] overflow-clip" data-node-id="273:11370" data-name="Highlight">
+                  <div className="absolute bg-[var(----pattern-drift-highlight,#10231e)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-position-[-2.344px_-2.344px] mask-size-[1046.289px_676.687px]" data-node-id="273:11373" style={{ maskImage: `url("${imgHighlight}")` }} data-name="highlight" />
+                </div>
+                <div className="absolute bg-black inset-[-2.5%] mix-blend-plus-lighter overflow-clip" data-node-id="273:11374" data-name="Reflections">
+                  <div className="absolute bg-[var(----pattern-drift-reflection,#668978)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[1041.602px_672px]" data-node-id="273:11377" style={{ maskImage: `url("${imgReflection}")` }} data-name="reflection" />
+                </div>
+              </div>
+            </div>
+            <div className="backdrop-blur-[18px] bg-[var(--var\(--color-white\),rgba(255,255,255,0.1))] h-[320px] overflow-clip relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0 w-[736px]" data-node-id="214:13601" data-name="Voice preview — PyAI">
+              <div className="-translate-x-1/2 -translate-y-1/2 absolute h-0 left-[calc(50%+1px)] top-1/2 w-[736px]" data-node-id="273:11380">
+                <div className="absolute inset-[-0.5px_0]">
+                  <img alt="" className="block max-w-none size-full" src={imgLine2} />
+                </div>
+              </div>
+              <div className="-translate-x-1/2 absolute content-stretch cursor-pointer flex gap-[8px] items-center left-1/2 top-[16px]" data-node-id="273:11388">
+                <a className="bg-[var(--color-primary,#27433b)] content-stretch flex gap-[var(--calc(var(--spacing)*1.5),6px)] h-[32px] items-center justify-center px-[var(--calc(var(--spacing)*3),12px)] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" href="https://pyai.com/playground" data-node-id="215:13992" target="_blank" data-name="Button — Talk to PyAI">
+                  <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-primary-foreground,#f6f1e8)] text-[length:var(--text-sm,14px)] text-left whitespace-nowrap" data-node-id="I215:13992;33:822" style={{ fontVariationSettings: '"ital" 100' }}>
+                    PyAI
+                  </p>
+                </a>
+                <a className="bg-[var(--var\(--color-white\),rgba(255,255,255,0.1))] content-stretch flex gap-[var(--calc(var(--spacing)*1.5),6px)] h-[32px] items-center justify-center px-[var(--calc(var(--spacing)*3),12px)] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" href="https://pyai.com/playground" data-node-id="273:11381" target="_blank" data-name="Button — Talk to PyAI">
+                  <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-primary-foreground,#f6f1e8)] text-[length:var(--text-sm,14px)] text-left whitespace-nowrap" data-node-id="I273:11381;33:822" style={{ fontVariationSettings: '"ital" 100' }}>
+                    Voice Assistant
+                  </p>
+                </a>
+              </div>
+              <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] justify-center leading-[0] left-[calc(50%+0.5px)] opacity-40 text-[color:var(--color-primary-foreground,#f6f1e8)] text-[length:var(--text-xs,12px)] text-center top-[295.5px] whitespace-nowrap" data-node-id="273:11392" style={{ fontVariationSettings: '"ital" 100' }}>
+                <p className="leading-[1.4]">PyAI Demo. Enable Microphone Access</p>
+              </div>
+              <div className="-translate-x-1/2 absolute backdrop-blur-[18px] bg-[var(--var\(--color-white\),rgba(255,255,255,0.1))] bottom-[132px] content-stretch flex gap-[8px] h-[var(--calc(var(--spacing)*14),56px)] items-center justify-center left-[calc(50%+0.5px)] px-[28px] rounded-[var(--calc(infinity*1px),9999px)]" data-node-id="273:11009" data-name="Button — Talk to PyAI">
+                <div className="relative shrink-0 size-[24px]" data-node-id="I273:11009;33:462" data-name="Leading icon" />
+                <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-white,white)] text-[length:var(--text-base,16px)] whitespace-nowrap" data-node-id="I273:11009;33:464" style={{ fontVariationSettings: '"ital" 100' }}>
+                  Start Talking
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[var(--calc(var(--spacing)*2),8px)] items-center relative shrink-0" data-node-id="215:15492" data-name="Eyebrow">
+            <div className="h-[20px] relative shrink-0 w-[10px]" data-node-id="215:15493">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame15} />
+            </div>
+            <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="215:15495" style={{ fontVariationSettings: '"ital" 100' }}>
+              PyAI
+            </p>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-col gap-[16px] items-start max-w-[480px] relative shrink-0 w-full" data-node-id="215:15505">
+            <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-none not-italic relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-3xl,30px)] tracking-[-0.45px] w-full" data-node-id="215:15503">
+              Hear what PyAI can do.
+            </p>
+            <p className="font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-normal,425)] leading-[1.4] relative shrink-0 text-[color:var(--color-muted-foreground,#27433b)] text-[length:var(--text-base,16px)] text-pretty w-full whitespace-pre-wrap" data-node-id="215:15502" style={{ fontVariationSettings: '"ital" 100' }}>
+              {`Ask a question and hear PyAI respond. `}
+              <br aria-hidden />
+              Try a voice conversation for yourself.
+            </p>
+          </div>
+          <div className="bg-[var(--color-primary,#27433b)] content-stretch flex gap-[var(--calc(var(--spacing)*1.5),6px)] h-[32px] items-center justify-center px-[var(--calc(var(--spacing)*3),12px)] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="215:15518" data-name="Button/Small">
+            <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-primary-foreground,#f6f1e8)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="I215:15518;33:822" style={{ fontVariationSettings: '"ital" 100' }}>
+              Learn more about PyAI
+            </p>
+          </div>
+        </div>
+        <div className="col-[span_2] content-stretch flex flex-col gap-[var(--calc(var(--spacing)*6),24px)] items-start justify-center justify-self-stretch relative self-start shrink-0" data-node-id="215:15491">
+          <div className="bg-[var(--color-surface,#f6f1e8)] content-stretch flex flex-col h-[640px] items-center justify-center overflow-clip p-[var(--calc(var(--spacing)*5),20px)] relative rounded-[var(--radius-4xl,32px)] shrink-0 w-full" data-node-id="215:14516" data-name="Chat preview — Example conversation">
+            <div className="-translate-x-1/2 -translate-y-1/2 absolute content-stretch flex flex-col items-start left-1/2 overflow-clip size-[800px] top-1/2" data-node-id="215:15653" data-name="Patterns / Template / B Concentric / 1">
+              <div className="flex-[1_0_0] min-h-px overflow-clip relative w-full" data-node-id="I215:15653;1042:12650" data-name="Offset — editable masks">
+                <div className="absolute bg-[#493f58] inset-[-2.5%]" data-node-id="I215:15653;1042:12651" data-name="Base Color" />
+                <div className="absolute inset-[-2.5%] overflow-clip" data-node-id="I215:15653;1042:12652" data-name="Upper field">
+                  <div className="absolute bg-[#8c78b0] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[840px_840px]" data-node-id="I215:15653;1042:12674" style={{ maskImage: `url("${imgColorUpperFieldCad1C7}")` }} data-name="Color — Upper field / #CAD1C7" />
+                </div>
+                <div className="absolute inset-[-2.5%] overflow-clip" data-node-id="I215:15653;1042:12675" data-name="Lower field">
+                  <div className="absolute bg-[#8c78b0] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[840px_840px]" data-node-id="I215:15653;1042:12697" style={{ maskImage: `url("${imgColorLowerField8C78B0}")` }} data-name="Color — Lower field / #8C78B0" />
+                </div>
+                <div className="absolute inset-[-2.5%] overflow-clip" data-node-id="I215:15653;1042:12698" data-name="Highlight">
+                  <div className="absolute bg-[#d8cde5] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[840px_840px]" data-node-id="I215:15653;1042:12720" style={{ maskImage: `url("${imgColorHighlight53786A}")` }} data-name="Color — Highlight / #53786A" />
+                </div>
+                <div className="absolute bg-[#493f58] inset-[-2.5%] mix-blend-plus-lighter overflow-clip" data-node-id="I215:15653;1042:12721" data-name="Reflection">
+                  <div className="absolute bg-[#8c78b0] inset-[-23.81%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-10px_-10px] mask-size-[1260px_1260px]" data-node-id="I215:15653;1032:21164" style={{ maskImage: `url("${imgColorReflection}")` }} data-name="Color — Reflection" />
+                </div>
+              </div>
+            </div>
+            <div className="backdrop-blur-[32px] bg-[rgba(0,0,0,0.2)] content-stretch flex flex-col gap-[24px] items-center justify-end p-[24px] relative rounded-[var(--calc(var(--spacing)*10),40px)] shrink-0 w-full" data-node-id="215:14861">
+              <div className="content-stretch flex flex-col gap-[24px] items-center justify-center overflow-clip px-[8px] py-[24px] relative shrink-0 w-full" data-node-id="215:15472">
+                <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="215:15744">
+                  <div className="col-1 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[64px_64px] ml-0 mt-0 relative rounded-[999px] row-1 size-[64px]" data-node-id="215:15478" style={{ maskImage: `url("${imgImage3}")` }} data-name="image 3">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[999px]">
+                      <img alt="" className="absolute h-[745.63%] left-[-447.09%] max-w-none top-[-150.49%] w-[994.17%]" src={imgImage4} />
+                    </div>
+                  </div>
+                  <div className="bg-[var(--color-iris,#8c78b0)] col-1 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[64px_64px] mix-blend-hue ml-0 mt-0 relative rounded-[999px] row-1 size-[64px]" data-node-id="215:15746" style={{ maskImage: `url("${imgImage3}")` }} data-name="image 4" />
+                </div>
+                <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-normal,425)] leading-[1.4] relative shrink-0 text-[color:var(--color-muted-foreground,#f6f1e8)] text-[length:var(--text-base,16px)] text-center text-pretty whitespace-nowrap" data-node-id="215:15473" style={{ fontVariationSettings: '"ital" 100' }}>
+                  What are you looking for in your next home?
+                </p>
+              </div>
+              <div className="content-stretch flex flex-col gap-[8px] items-end relative shrink-0 w-full" data-node-id="215:14517">
+                <div className="content-stretch flex items-center justify-center px-[8px] relative shrink-0" data-node-id="215:14527">
+                  <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] opacity-40 relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="215:14518" style={{ fontVariationSettings: '"ital" 100' }}>
+                    Visitor
+                  </p>
+                </div>
+                <div className="content-stretch flex flex-col items-start overflow-clip px-[var(--calc(var(--spacing)*5),20px)] py-[var(--calc(var(--spacing)*4),16px)] relative rounded-[26px] shrink-0" data-node-id="215:14519" data-name="Example user message">
+                  <div aria-hidden className="absolute bg-[rgba(250,250,250,0.2)] inset-0 pointer-events-none rounded-[26px]" />
+                  <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-normal,425)] leading-[1.4] relative shrink-0 text-[color:var(--color-white,white)] text-[length:var(--text-base,16px)] text-pretty whitespace-nowrap" data-node-id="215:14520" style={{ fontVariationSettings: '"ital" 100' }}>
+                    I’m looking for a two-bedroom home near a park.
+                  </p>
+                  <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_0px_18px_0px_rgba(250,250,250,0.3)]" />
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[8px] items-start justify-center relative shrink-0 w-full" data-node-id="215:14521">
+                <div className="content-stretch flex items-center justify-center px-[8px] relative shrink-0" data-node-id="215:14526">
+                  <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] opacity-40 relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="215:14522" style={{ fontVariationSettings: '"ital" 100' }}>
+                    AI Property Advisor
+                  </p>
+                </div>
+                <div className="content-stretch flex flex-col items-start overflow-clip px-[var(--calc(var(--spacing)*5),20px)] py-[var(--calc(var(--spacing)*4),16px)] relative rounded-[26px] shrink-0" data-node-id="215:14523" data-name="Example advisor reply">
+                  <div aria-hidden className="absolute bg-[rgba(250,250,250,0.2)] inset-0 pointer-events-none rounded-[26px]" />
+                  <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-normal,425)] leading-[1.4] relative shrink-0 text-[color:var(--color-white,white)] text-[length:var(--text-base,16px)] text-pretty whitespace-pre" data-node-id="215:14524" style={{ fontVariationSettings: '"ital" 100' }}>
+                    {`What’s your budget, and when would `}
+                    <br aria-hidden />
+                    you like to move?
+                  </p>
+                  <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_0px_18px_0px_rgba(250,250,250,0.3)]" />
+                </div>
+              </div>
+              <div className="border border-[rgba(255,255,255,0.1)] border-solid content-stretch flex flex-col gap-[var(--calc(var(--spacing)*5),20px)] items-start pl-[var(--calc(var(--spacing)*5),20px)] pr-[var(--calc(var(--spacing)*4),16px)] py-[var(--calc(var(--spacing)*4),16px)] relative rounded-[var(--radius-2xl,16px)] shrink-0 w-full" data-node-id="225:15748" data-name="Custom Question">
+                <div className="content-stretch flex gap-[var(--calc(var(--spacing)*4),16px)] items-center relative shrink-0 w-full" data-node-id="225:15749" data-name="Question row">
+                  <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-normal,425)] leading-[1.4] min-w-px opacity-40 relative text-[color:var(--color-white,white)] text-[length:var(--text-base,16px)] text-pretty" data-node-id="225:15750" style={{ fontVariationSettings: '"ital" 100' }}>
+                    Start typing...
+                  </p>
+                  <div className="relative shrink-0 size-[24px]" data-node-id="225:15751" data-name="Open">
+                    <div className="absolute left-0 size-[24px] top-0" data-node-id="I225:15751;98:4963" data-name="Icon artwork">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArtwork} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[var(--calc(var(--spacing)*2),8px)] items-center relative shrink-0" data-node-id="215:15497" data-name="Eyebrow">
+            <div className="h-[20px] relative shrink-0 w-[10px]" data-node-id="215:15498">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame15} />
+            </div>
+            <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="215:15500" style={{ fontVariationSettings: '"ital" 100' }}>
+              Property Advisor
+            </p>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-col gap-[16px] items-start max-w-[480px] relative shrink-0 w-full" data-node-id="215:15506">
+            <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-none not-italic relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-3xl,30px)] tracking-[-0.45px] w-full whitespace-pre-wrap" data-node-id="215:15507">{`Find a home.  Start with a chat.`}</p>
+            <p className="font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-normal,425)] leading-[1.4] relative shrink-0 text-[color:var(--color-muted-foreground,#27433b)] text-[length:var(--text-base,16px)] text-pretty w-full" data-node-id="215:15508" style={{ fontVariationSettings: '"ital" 100' }}>
+              Tell our demo property advisor what you’re looking for. Explore listings and see how a conversation can help arrange a viewing.
+            </p>
+          </div>
+          <div className="bg-[var(--color-primary,#27433b)] content-stretch flex gap-[var(--calc(var(--spacing)*1.5),6px)] h-[32px] items-center justify-center px-[var(--calc(var(--spacing)*3),12px)] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="215:15510" data-name="Button/Small">
+            <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-primary-foreground,#f6f1e8)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="I215:15510;33:822" style={{ fontVariationSettings: '"ital" 100' }}>
+              Try the property advisor
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Label/sm: Font(family: "var(--font-sans)", style: Regular, size: var(--text-sm), weight: var(--font-weight-medium), lineHeight: 1.399999976158142, letterSpacing: 0), Display/5xl: Font(family: "var(--font-display)", style: Regular, size: var(--text-5xl), weight: var(--font-weight-normal), lineHeight: 0.949999988079071, letterSpacing: -1.5), Label/xs: Font(family: "var(--font-sans)", style: Regular, size: var(--text-xs), weight: var(--font-weight-medium), lineHeight: 1.399999976158142, letterSpacing: 0), Label/base: Font(family: "var(--font-sans)", style: Regular, size: var(--text-base), weight: var(--font-weight-medium), lineHeight: 1.399999976158142, letterSpacing: 0), Lead/3xl: Font(family: "var(--font-display)", style: Regular, size: var(--text-3xl), weight: var(--font-weight-normal), lineHeight: 1, letterSpacing: -1.5), Body/base: Font(family: "var(--font-sans)", style: Regular, size: var(--text-base), weight: var(--font-weight-normal), lineHeight: 1.399999976158142, letterSpacing: 0).
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Button/Small
+**Node ID:** 33:982
+
+Pill button, Small: h-8 px-3 gap-1.5 text-sm rounded-full font-medium. Styles — Primary: bg-primary text-primary-foreground. Secondary: bg-secondary text-secondary-foreground. Outline: border border-control-border text-foreground (hover/pressed: border-foreground). Ghost: text-foreground. Link: px-0 text-foreground, muted-foreground on hover and pressed. Never underlined. States — hover/pressed for filled and Ghost styles: state layer of the style’s foreground at var(--state-hover)/var(--state-pressed) (hover:bg-primary-hover etc.). Focus: outline-2 outline-offset-2 outline-ring. Disabled: opacity var(--state-disabled). Lead with an action icon, trail with a navigation arrow. Supported hosts: background and surface. State opacity is exported as percent / 100. Target active label contrast ≥4.8:1; focus outline must not be clipped. Outline stays transparent in every state: no background fill or state overlay. Hover and pressed use the border; focus retains the focus ring.
+
+## Button/Large
+**Node ID:** 33:624
+
+Pill button, Large: h-14 px-7 gap-2 text-base rounded-full font-medium. Styles — Primary: bg-primary text-primary-foreground. Secondary: bg-secondary text-secondary-foreground. Outline: border border-control-border text-foreground (hover/pressed: border-foreground). Ghost: text-foreground. Link: px-0 text-foreground, muted-foreground on hover and pressed. Never underlined. States — hover/pressed for filled and Ghost styles: state layer of the style’s foreground at var(--state-hover)/var(--state-pressed) (hover:bg-primary-hover etc.). Focus: outline-2 outline-offset-2 outline-ring. Disabled: opacity var(--state-disabled). Lead with an action icon, trail with a navigation arrow. Supported hosts: background and surface. State opacity is exported as percent / 100. Target active label contrast ≥4.8:1; focus outline must not be clipped. Outline stays transparent in every state: no background fill or state overlay. Hover and pressed use the border; focus retains the focus ring.
+
+## Icon/24/arrow-up
+**Node ID:** 28:519
+
+Original SVG from interactive brand guidelines: src/assets/brand/icons/arrow-up.svg. 2px stroke at 24px; miter joins and butt caps.
+
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

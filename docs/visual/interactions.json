@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-26",
+  "checks": [
+    "One page heading; visible skip link bypasses navigation and continues at the hero action.",
+    "Original Applications previews respond to keyboard focus; Escape restores focus and outside click dismisses.",
+    "FAQ opens by keyboard and keeps one answer expanded.",
+    "Industry navigation, selection, Escape dismissal and focus restoration work.",
+    "Story dialog exposes supplied results; Escape restores the trigger focus.",
+    "Property advisor accepts messages with Enter, shows a follow-up question and keeps controls usable at 320px.",
+    "All local anchors resolve and reduced-motion mode disables smooth scrolling.",
+    "Full-screen menu works by keyboard at 320px and closes after navigation."
+  ],
+  "errors": []
+}

@@ -1,0 +1,178 @@
+const imgFrame15 = "https://www.figma.com/api/mcp/asset/b8a235c7-b984-43da-9a7d-fe74cdc094e1.svg";
+const imgIconArtwork = "https://www.figma.com/api/mcp/asset/69a0337a-937a-4b93-8dab-ea288e96d7c4.svg";
+const imgIconArtwork1 = "https://www.figma.com/api/mcp/asset/d4935cd2-438b-49d1-bc02-ca7f2a445a54.svg";
+const imgIconArtwork2 = "https://www.figma.com/api/mcp/asset/8be6d6a6-9ed0-41eb-b281-ddf5c46e1532.svg";
+
+export default function Faq() {
+  return (
+    <div className="bg-[var(--color-background,#fafafa)] content-stretch flex flex-col items-start pb-[var(--calc(var(--spacing)*40),160px)] pt-[var(--calc(var(--spacing)*16),64px)] px-[var(--margin,48px)] relative size-full" data-node-id="190:6581" data-name="FAQ">
+      <div className="gap-x-[32px] gap-y-[32px] grid grid-cols-[repeat(2,minmax(0,1fr))] grid-rows-[repeat(1,fit-content(100%))] relative shrink-0 w-full" data-node-id="190:6582" data-name="Questions and answers">
+        <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*10),40px)] items-start justify-self-stretch pr-[var(--calc(var(--spacing)*24),96px)] relative self-start shrink-0" data-node-id="190:6583" data-name="Intro">
+          <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*6),24px)] items-start relative shrink-0 w-full" data-node-id="190:6584" data-name="Header">
+            <div className="content-stretch flex gap-[var(--calc(var(--spacing)*2),8px)] items-center relative shrink-0" data-node-id="190:6585" data-name="Eyebrow">
+              <div className="h-[20px] relative shrink-0 w-[10px]" data-node-id="190:6586">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame15} />
+              </div>
+              <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="190:6588" style={{ fontVariationSettings: '"ital" 100' }}>
+                FAQ
+              </p>
+            </div>
+            <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[0] min-w-full not-italic relative shrink-0 text-[0px] text-[color:var(--color-foreground,#27433b)] text-balance tracking-[-0.54px] w-[min-content]" data-node-id="190:6590">
+              <span className="font-['Founders_Grotesk:Regular'] leading-none text-[36px]">
+                A few things to know first.
+                <br aria-hidden />
+              </span>
+              <span className="font-['Founders_Grotesk:Regular'] leading-none text-[36px] text-[rgba(39,67,59,0.6)]">Choose a starting point with a clearer picture of what comes next.</span>
+            </p>
+          </div>
+          <div className="bg-[var(--color-primary,#27433b)] content-stretch flex gap-[var(--calc(var(--spacing)*2),8px)] h-[44px] items-center justify-center px-[var(--calc(var(--spacing)*5),20px)] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="190:6592" data-name="Button — Visit the Trust Center">
+            <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-primary-foreground,#f6f1e8)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="I190:6592;33:643" style={{ fontVariationSettings: '"ital" 100' }}>
+              Visit the Trust Center
+            </p>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col items-start justify-self-stretch relative self-start shrink-0" data-node-id="190:6604" data-name="Questions">
+          <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*5),20px)] items-start px-[var(--calc(var(--spacing)*6),24px)] py-[var(--calc(var(--spacing)*4),16px)] relative rounded-[var(--radius-xl,12px)] shrink-0 w-full" data-node-id="191:7884" data-name="FAQ — How do Applications, PyAI and AI Services fit together? · draft copy">
+            <div className="content-stretch flex gap-[var(--calc(var(--spacing)*6),24px)] items-center relative shrink-0 w-full" data-node-id="191:7885" data-name="Question row">
+              <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] min-w-px relative text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-lg,18px)] text-pretty" data-node-id="191:7886" style={{ fontVariationSettings: '"ital" 100' }}>
+                How do Applications, PyAI and AI Services fit together?
+              </p>
+              <div className="relative shrink-0 size-[24px]" data-node-id="191:7887" data-name="Open">
+                <div className="absolute left-0 size-[24px] top-0" data-node-id="I191:7887;98:5006" data-name="Icon artwork">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArtwork} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col items-start py-[var(--calc(var(--spacing)*4),16px)] relative shrink-0 w-full" data-node-id="191:7834" data-name="Extra Spacing">
+            <div className="bg-[var(--color-surface,#f0f0ec)] content-stretch flex flex-col gap-[var(--calc(var(--spacing)*5),20px)] items-start px-[var(--calc(var(--spacing)*6),24px)] py-[var(--calc(var(--spacing)*7),28px)] relative rounded-[var(--radius-xl,12px)] shrink-0 w-full" data-node-id="191:7919" data-name="FAQ — Can I use a product without a custom project?">
+              <div className="content-stretch flex gap-[var(--calc(var(--spacing)*6),24px)] items-center relative shrink-0 w-full" data-node-id="191:7920" data-name="Question row">
+                <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] min-w-px relative text-[color:var(--color-surface-foreground,#27433b)] text-[length:var(--text-lg,18px)] text-pretty" data-node-id="191:7921" style={{ fontVariationSettings: '"ital" 100' }}>
+                  Can I use a product without a custom project?
+                </p>
+                <div className="relative shrink-0 size-[24px]" data-node-id="191:7922" data-name="Close">
+                  <div className="absolute left-0 size-[24px] top-0" data-node-id="I191:7922;98:5012" data-name="Icon artwork">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArtwork1} />
+                  </div>
+                </div>
+              </div>
+              <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-normal,425)] leading-[1.4] max-w-[480px] relative shrink-0 text-[color:var(--color-surface-muted-foreground,#42665a)] text-[length:var(--text-base,16px)] text-pretty w-full" data-node-id="191:7923" style={{ fontVariationSettings: '"ital" 100' }}>
+                Yes. You can use our applications without a custom engineering project. Explore each product to find the right fit. Custom engineering is an option when an existing product doesn’t cover what you need.
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*5),20px)] items-start px-[var(--calc(var(--spacing)*6),24px)] py-[var(--calc(var(--spacing)*4),16px)] relative rounded-[var(--radius-xl,12px)] shrink-0 w-full" data-node-id="191:7912" data-name="FAQ — Which application fits my team? · draft copy">
+            <div className="content-stretch flex gap-[var(--calc(var(--spacing)*6),24px)] items-center relative shrink-0 w-full" data-node-id="191:7913" data-name="Question row">
+              <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] min-w-px relative text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-lg,18px)] text-pretty" data-node-id="191:7914" style={{ fontVariationSettings: '"ital" 100' }}>
+                Which application fits my team?
+              </p>
+              <div className="relative shrink-0 size-[24px]" data-node-id="191:7915" data-name="Open">
+                <div className="absolute left-0 size-[24px] top-0" data-node-id="I191:7915;98:5006" data-name="Icon artwork">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArtwork} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*5),20px)] items-start px-[var(--calc(var(--spacing)*6),24px)] py-[var(--calc(var(--spacing)*4),16px)] relative rounded-[var(--radius-xl,12px)] shrink-0 w-full" data-node-id="191:7877" data-name="FAQ — Can I build PyAI into my own product? · draft copy">
+            <div className="content-stretch flex gap-[var(--calc(var(--spacing)*6),24px)] items-center relative shrink-0 w-full" data-node-id="191:7878" data-name="Question row">
+              <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] min-w-px relative text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-lg,18px)] text-pretty" data-node-id="191:7879" style={{ fontVariationSettings: '"ital" 100' }}>
+                Can I build PyAI into my own product?
+              </p>
+              <div className="relative shrink-0 size-[24px]" data-node-id="191:7880" data-name="Open">
+                <div className="absolute left-0 size-[24px] top-0" data-node-id="I191:7880;98:5006" data-name="Icon artwork">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArtwork} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*5),20px)] items-start px-[var(--calc(var(--spacing)*6),24px)] py-[var(--calc(var(--spacing)*4),16px)] relative rounded-[var(--radius-xl,12px)] shrink-0 w-full" data-node-id="191:7905" data-name="FAQ — Can you work with our existing systems?">
+            <div className="content-stretch flex gap-[var(--calc(var(--spacing)*6),24px)] items-center relative shrink-0 w-full" data-node-id="191:7906" data-name="Question row">
+              <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] min-w-px relative text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-lg,18px)] text-pretty" data-node-id="191:7907" style={{ fontVariationSettings: '"ital" 100' }}>
+                Can you work with our existing systems?
+              </p>
+              <div className="relative shrink-0 size-[24px]" data-node-id="191:7908" data-name="Open">
+                <div className="absolute left-0 size-[24px] top-0" data-node-id="I191:7908;98:5006" data-name="Icon artwork">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArtwork} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*5),20px)] items-start px-[var(--calc(var(--spacing)*6),24px)] py-[var(--calc(var(--spacing)*4),16px)] relative rounded-[var(--radius-xl,12px)] shrink-0 w-full" data-node-id="191:7891" data-name="FAQ — How do you handle our data requirements?">
+            <div className="content-stretch flex gap-[var(--calc(var(--spacing)*6),24px)] items-center relative shrink-0 w-full" data-node-id="191:7892" data-name="Question row">
+              <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] min-w-px relative text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-lg,18px)] text-pretty" data-node-id="191:7893" style={{ fontVariationSettings: '"ital" 100' }}>
+                How do you handle our data requirements?
+              </p>
+              <div className="relative shrink-0 size-[24px]" data-node-id="191:7894" data-name="Open">
+                <div className="absolute left-0 size-[24px] top-0" data-node-id="I191:7894;98:5006" data-name="Icon artwork">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArtwork} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*5),20px)] items-start px-[var(--calc(var(--spacing)*6),24px)] py-[var(--calc(var(--spacing)*4),16px)] relative rounded-[var(--radius-xl,12px)] shrink-0 w-full" data-node-id="191:7898" data-name="FAQ — How much can an AI system do on its own? · draft copy">
+            <div className="content-stretch flex gap-[var(--calc(var(--spacing)*6),24px)] items-center relative shrink-0 w-full" data-node-id="191:7899" data-name="Question row">
+              <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] min-w-px relative text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-lg,18px)] text-pretty" data-node-id="191:7900" style={{ fontVariationSettings: '"ital" 100' }}>
+                How much can an AI system do on its own?
+              </p>
+              <div className="relative shrink-0 size-[24px]" data-node-id="191:7901" data-name="Open">
+                <div className="absolute left-0 size-[24px] top-0" data-node-id="I191:7901;98:5006" data-name="Icon artwork">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArtwork} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col items-start py-[var(--calc(var(--spacing)*4),16px)] relative shrink-0 w-full" data-node-id="191:7860" data-name="Extra Spacing">
+            <div className="bg-[var(--color-background,#fafafa)] border border-[var(--color-border-subtle,#27433b)] border-solid content-stretch flex flex-col gap-[var(--calc(var(--spacing)*5),20px)] items-start px-[var(--calc(var(--spacing)*6),24px)] py-[var(--calc(var(--spacing)*4),16px)] relative rounded-[var(--radius-xl,12px)] shrink-0 w-full" data-node-id="191:7868" data-name="Custom Question">
+              <div className="content-stretch flex gap-[var(--calc(var(--spacing)*4),16px)] items-center relative shrink-0 w-full" data-node-id="191:7869" data-name="Question row">
+                <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] min-w-px relative text-[color:var(--color-muted-foreground,#27433b)] text-[length:var(--text-lg,18px)] text-pretty" data-node-id="191:7871" style={{ fontVariationSettings: '"ital" 100' }}>
+                  Can’t find your question? Ask it here...
+                </p>
+                <div className="relative shrink-0 size-[24px]" data-node-id="191:7872" data-name="Open">
+                  <div className="absolute left-0 size-[24px] top-0" data-node-id="I191:7872;98:4963" data-name="Icon artwork">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconArtwork2} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Label/sm: Font(family: "var(--font-sans)", style: Regular, size: var(--text-sm), weight: var(--font-weight-medium), lineHeight: 1.399999976158142, letterSpacing: 0), Display/4xl: Font(family: "var(--font-display)", style: Regular, size: var(--text-4xl), weight: var(--font-weight-normal), lineHeight: 1, letterSpacing: -1.5), Body/lg: Font(family: "var(--font-sans)", style: Regular, size: var(--text-lg), weight: var(--font-weight-medium), lineHeight: 1.399999976158142, letterSpacing: 0), Body/base: Font(family: "var(--font-sans)", style: Regular, size: var(--text-base), weight: var(--font-weight-normal), lineHeight: 1.399999976158142, letterSpacing: 0).
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Button/Medium
+**Node ID:** 33:803
+
+Pill button, Medium: h-11 px-5 gap-2 text-sm rounded-full font-medium. Styles — Primary: bg-primary text-primary-foreground. Secondary: bg-secondary text-secondary-foreground. Outline: border border-control-border text-foreground (hover/pressed: border-foreground). Ghost: text-foreground. Link: px-0 text-foreground, muted-foreground on hover and pressed. Never underlined. States — hover/pressed for filled and Ghost styles: state layer of the style’s foreground at var(--state-hover)/var(--state-pressed) (hover:bg-primary-hover etc.). Focus: outline-2 outline-offset-2 outline-ring. Disabled: opacity var(--state-disabled). Lead with an action icon, trail with a navigation arrow. Supported hosts: background and surface. State opacity is exported as percent / 100. Target active label contrast ≥4.8:1; focus outline must not be clipped. Outline stays transparent in every state: no background fill or state overlay. Hover and pressed use the border; focus retains the focus ring.
+
+## Icon/24/Regular/plus
+**Node ID:** 98:5005
+
+Original SVG from interactive brand guidelines: src/assets/brand/icons/plus.svg. 1.5px stroke at 24px; miter joins and butt caps.
+
+## Icon/24/Regular/close
+**Node ID:** 98:5011
+
+Original SVG from interactive brand guidelines: src/assets/brand/icons/close.svg. 1.5px stroke at 24px; miter joins and butt caps.
+
+## Icon/24/arrow-up
+**Node ID:** 28:519
+
+Original SVG from interactive brand guidelines: src/assets/brand/icons/arrow-up.svg. 2px stroke at 24px; miter joins and butt caps.
+
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

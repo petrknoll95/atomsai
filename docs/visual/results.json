@@ -1,0 +1,5010 @@
+{
+  "date": "2026-10-26",
+  "browser": "Playwright Chromium",
+  "deviceScaleFactor": 1,
+  "reference": {
+    "width": 1600,
+    "height": 7966,
+    "node": "185:3428"
+  },
+  "renderedHeight": 7966,
+  "comparison": [
+    {
+      "section": "hero",
+      "meanAbsoluteChannelError": 0.867828125,
+      "pixelsOver32Percent": 0.8059244791666667
+    },
+    {
+      "section": "offerings",
+      "meanAbsoluteChannelError": 2.899388968140751,
+      "pixelsOver32Percent": 0.18429029957203993
+    },
+    {
+      "section": "applications",
+      "meanAbsoluteChannelError": 0.5624187892211148,
+      "pixelsOver32Percent": 0.5960686600221484
+    },
+    {
+      "section": "preview",
+      "meanAbsoluteChannelError": 0.8311963626030122,
+      "pixelsOver32Percent": 0.5363384484228474
+    },
+    {
+      "section": "industries",
+      "meanAbsoluteChannelError": 3.4798992732147895,
+      "pixelsOver32Percent": 2.882461896697714
+    },
+    {
+      "section": "stories",
+      "meanAbsoluteChannelError": 2.245381080316742,
+      "pixelsOver32Percent": 0.8905542986425339
+    },
+    {
+      "section": "faq",
+      "meanAbsoluteChannelError": 0.592934231069477,
+      "pixelsOver32Percent": 0.678132318501171
+    },
+    {
+      "section": "cta",
+      "meanAbsoluteChannelError": 0.8420273042929293,
+      "pixelsOver32Percent": 0.12571022727272727
+    },
+    {
+      "section": "footer",
+      "meanAbsoluteChannelError": 0.5896860328638498,
+      "pixelsOver32Percent": 0.6722951344430218
+    }
+  ],
+  "errors": [],
+  "viewports": [
+    {
+      "width": 1600,
+      "applicationsState": "ServiceAgent hover (Figma target)",
+      "viewport": 1600,
+      "viewportHeight": 7966,
+      "scrollWidth": 1600,
+      "height": 7966,
+      "sections": [
+        {
+          "name": "hero",
+          "x": 0,
+          "y": 0,
+          "width": 1600,
+          "height": 960,
+          "expectedHeight": 960,
+          "heightError": 0
+        },
+        {
+          "name": "offerings",
+          "x": 0,
+          "y": 960,
+          "width": 1600,
+          "height": 701,
+          "expectedHeight": 701,
+          "heightError": 0
+        },
+        {
+          "name": "applications-title",
+          "x": 0,
+          "y": 1661,
+          "width": 1600,
+          "height": 903,
+          "expectedHeight": 903,
+          "heightError": 0
+        },
+        {
+          "name": "preview-title",
+          "x": 0,
+          "y": 2564,
+          "width": 1600,
+          "height": 1173,
+          "expectedHeight": 1173,
+          "heightError": 0
+        },
+        {
+          "name": "industries-title",
+          "x": 0,
+          "y": 3737,
+          "width": 1600,
+          "height": 1181.078125,
+          "expectedHeight": 1181.0908203125,
+          "heightError": -0.0126953125
+        },
+        {
+          "name": "customer-stories-title",
+          "x": 0,
+          "y": 4918.078125,
+          "width": 1600,
+          "height": 884,
+          "expectedHeight": 884,
+          "heightError": 0
+        },
+        {
+          "name": "faq-heading",
+          "x": 0,
+          "y": 5802.078125,
+          "width": 1600,
+          "height": 854,
+          "expectedHeight": 854,
+          "heightError": 0
+        },
+        {
+          "name": "closing-heading",
+          "x": 0,
+          "y": 6656.078125,
+          "width": 1600,
+          "height": 528,
+          "expectedHeight": 528,
+          "heightError": 0
+        },
+        {
+          "name": "FOOTER",
+          "x": 0,
+          "y": 7184.078125,
+          "width": 1600,
+          "height": 781,
+          "expectedHeight": 781,
+          "heightError": 0
+        }
+      ],
+      "assets": [
+        {
+          "src": "/assets/figma/hero-Frame84.svg",
+          "loaded": true,
+          "naturalWidth": 1601,
+          "naturalHeight": 960,
+          "x": 0,
+          "y": 0,
+          "width": 1601,
+          "height": 960
+        },
+        {
+          "src": "/assets/figma/hero-Logo.svg",
+          "loaded": true,
+          "naturalWidth": 136,
+          "naturalHeight": 24,
+          "x": 48,
+          "y": 36,
+          "width": 135.828125,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/hero-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 316.078125,
+          "y": 44,
+          "width": 13.5,
+          "height": 8
+        },
+        {
+          "src": "/assets/figma/hero-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 451.078125,
+          "y": 44,
+          "width": 13.5,
+          "height": 8
+        },
+        {
+          "src": "/assets/figma/hero-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 663.078125,
+          "y": 44,
+          "width": 13.5,
+          "height": 8
+        },
+        {
+          "src": "/assets/figma/hero-Vector1.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 1523,
+          "y": 44,
+          "width": 14,
+          "height": 8
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 48,
+          "y": 960,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/offerings-EveryThreadToOneCentre11.svg",
+          "loaded": true,
+          "naturalWidth": 80,
+          "naturalHeight": 80,
+          "x": 88,
+          "y": 1052,
+          "width": 80,
+          "height": 80
+        },
+        {
+          "src": "/assets/figma/offerings-Union.svg",
+          "loaded": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "x": 472,
+          "y": 1505.6875,
+          "width": 16,
+          "height": 15.984375
+        },
+        {
+          "src": "/assets/figma/offerings-RisingOffABase11.svg",
+          "loaded": true,
+          "naturalWidth": 80,
+          "naturalHeight": 80,
+          "x": 600,
+          "y": 1052,
+          "width": 80,
+          "height": 80
+        },
+        {
+          "src": "/assets/figma/offerings-Union.svg",
+          "loaded": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "x": 984,
+          "y": 1505.6875,
+          "width": 16,
+          "height": 15.984375
+        },
+        {
+          "src": "/assets/figma/offerings-RaysAroundACoreOneStillMissing11.svg",
+          "loaded": true,
+          "naturalWidth": 80,
+          "naturalHeight": 80,
+          "x": 1112,
+          "y": 1052,
+          "width": 80,
+          "height": 80
+        },
+        {
+          "src": "/assets/figma/offerings-Union.svg",
+          "loaded": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "x": 1496,
+          "y": 1505.6875,
+          "width": 16,
+          "height": 15.984375
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 753.90625,
+          "y": 1757,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 735.515625,
+          "y": 2660,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/preview-Line2.svg",
+          "loaded": true,
+          "naturalWidth": 736,
+          "naturalHeight": 1,
+          "x": 176,
+          "y": 3117.5,
+          "width": 736,
+          "height": 1
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 48,
+          "y": 3462,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/preview-Image4.png",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 1536,
+          "x": 993.859375,
+          "y": 2809.6875,
+          "width": 636.265625,
+          "height": 477.203125
+        },
+        {
+          "src": "/assets/figma/preview-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 1467.984375,
+          "y": 3314,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 1072,
+          "y": 3462,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 48,
+          "y": 3833,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 2048,
+          "x": -490.7015380859375,
+          "y": 3989.546875,
+          "width": 675.984375,
+          "height": 675.984375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage1.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 2048,
+          "x": -215.0703125,
+          "y": 3989.546875,
+          "width": 675.984375,
+          "height": 675.984375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage2.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 2048,
+          "x": 462.0078125,
+          "y": 3989.546875,
+          "width": 675.984375,
+          "height": 675.984375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage3.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 2048,
+          "x": 1139.0859375,
+          "y": 3989.546875,
+          "width": 675.984375,
+          "height": 675.984375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 2048,
+          "x": 1414.7171630859375,
+          "y": 3989.546875,
+          "width": 675.9844970703125,
+          "height": 675.984375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage1.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 2048,
+          "x": 1556.5328369140625,
+          "y": 3989.546875,
+          "width": 675.9842529296875,
+          "height": 675.984375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage2.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 2048,
+          "x": -632.51708984375,
+          "y": 3989.546875,
+          "width": 675.984375,
+          "height": 675.984375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage3.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 2048,
+          "x": -632.51708984375,
+          "y": 3989.546875,
+          "width": 675.984375,
+          "height": 675.984375
+        },
+        {
+          "src": "/assets/figma/industries-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 494,
+          "y": 4754.078125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/industries-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 1082,
+          "y": 4754.078125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 3072,
+          "x": -2960,
+          "y": 5014.078125,
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": -2416,
+          "y": 5014.078125,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": -2416,
+          "y": 5616.078125,
+          "width": 183.765625,
+          "height": 32
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 3072,
+          "x": -1456,
+          "y": 5014.078125,
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": -912,
+          "y": 5014.078125,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": -912,
+          "y": 5616.078125,
+          "width": 183.765625,
+          "height": 32
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 3072,
+          "x": 48,
+          "y": 5014.078125,
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 592,
+          "y": 5014.078125,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": 592,
+          "y": 5616.078125,
+          "width": 183.765625,
+          "height": 32
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 3072,
+          "x": 1552,
+          "y": 5014.078125,
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 2096,
+          "y": 5014.078125,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": 2096,
+          "y": 5616.078125,
+          "width": 183.765625,
+          "height": 32
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 48,
+          "y": 5866.078125,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 1504,
+          "y": 5882.578125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 1504,
+          "y": 5967.578125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 1504,
+          "y": 6138.578125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 1504,
+          "y": 6195.578125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 1504,
+          "y": 6252.578125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 1504,
+          "y": 6309.578125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 1504,
+          "y": 6366.578125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork2.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 1504,
+          "y": 6439.578125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/footer-Indicator.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 10,
+          "x": 816,
+          "y": 7239.078125,
+          "width": 10,
+          "height": 10
+        },
+        {
+          "src": "/assets/figma/footer-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 220,
+          "naturalHeight": 213,
+          "x": 420.078125,
+          "y": 7688.78125,
+          "width": 219.609375,
+          "height": 212.609375
+        },
+        {
+          "src": "/assets/figma/footer-Vector1.svg",
+          "loaded": true,
+          "naturalWidth": 105,
+          "naturalHeight": 194,
+          "x": 628.234375,
+          "y": 7711.390625,
+          "width": 104.546875,
+          "height": 194.03125
+        },
+        {
+          "src": "/assets/figma/footer-Vector2.svg",
+          "loaded": true,
+          "naturalWidth": 157,
+          "naturalHeight": 157,
+          "x": 737.875,
+          "y": 7748.515625,
+          "width": 156.890625,
+          "height": 156.90625
+        },
+        {
+          "src": "/assets/figma/footer-Vector3.svg",
+          "loaded": true,
+          "naturalWidth": 238,
+          "naturalHeight": 153,
+          "x": 909.9375,
+          "y": 7748.515625,
+          "width": 238.25,
+          "height": 152.875
+        },
+        {
+          "src": "/assets/figma/footer-Vector4.svg",
+          "loaded": true,
+          "naturalWidth": 136,
+          "naturalHeight": 157,
+          "x": 1163.359375,
+          "y": 7748.515625,
+          "width": 136.125,
+          "height": 156.90625
+        },
+        {
+          "src": "/assets/figma/footer-Vector5.svg",
+          "loaded": true,
+          "naturalWidth": 207,
+          "naturalHeight": 213,
+          "x": 1300.828125,
+          "y": 7688.78125,
+          "width": 207.109375,
+          "height": 212.609375
+        },
+        {
+          "src": "/assets/figma/footer-Vector6.svg",
+          "loaded": true,
+          "naturalWidth": 29,
+          "naturalHeight": 213,
+          "x": 1522.515625,
+          "y": 7688.78125,
+          "width": 29.34375,
+          "height": 212.609375
+        },
+        {
+          "src": "/assets/figma/footer-Vector7.svg",
+          "loaded": true,
+          "naturalWidth": 301,
+          "naturalHeight": 273,
+          "x": 48,
+          "y": 7658.34375,
+          "width": 300.8125,
+          "height": 273.46875
+        }
+      ],
+      "fonts": {
+        "body": "\"PP Neue Montreal\", \"Helvetica Neue\", Arial, sans-serif",
+        "headline": "\"Founders Grotesk\", \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "overflowing": [
+        {
+          "tag": "DIV",
+          "className": "zOB0Iq_slide"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_storyGrid"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_portrait"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_storyContent"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_quoteBlock"
+        },
+        {
+          "tag": "DIV",
+          "className": "eyebrow "
+        },
+        {
+          "tag": "IMG",
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "className": ""
+        },
+        {
+          "tag": "FIGURE",
+          "className": "-6Sfoq_testimonial"
+        },
+        {
+          "tag": "BLOCKQUOTE",
+          "className": "display -6Sfoq_quote"
+        },
+        {
+          "tag": "FIGCAPTION",
+          "className": "-6Sfoq_person"
+        },
+        {
+          "tag": "SPAN",
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_companyRow"
+        },
+        {
+          "tag": "IMG",
+          "className": "-6Sfoq_companyLogo"
+        }
+      ]
+    },
+    {
+      "width": 1200,
+      "applicationsState": "default",
+      "viewport": 1200,
+      "viewportHeight": 960,
+      "scrollWidth": 1200,
+      "height": 7727,
+      "sections": [
+        {
+          "name": "hero",
+          "x": 0,
+          "y": 0,
+          "width": 1200,
+          "height": 960
+        },
+        {
+          "name": "offerings",
+          "x": 0,
+          "y": 960,
+          "width": 1200,
+          "height": 701
+        },
+        {
+          "name": "applications-title",
+          "x": 0,
+          "y": 1661,
+          "width": 1200,
+          "height": 903
+        },
+        {
+          "name": "preview-title",
+          "x": 0,
+          "y": 2564,
+          "width": 1200,
+          "height": 1173.140625
+        },
+        {
+          "name": "industries-title",
+          "x": 0,
+          "y": 3737.140625,
+          "width": 1200,
+          "height": 999.265625
+        },
+        {
+          "name": "customer-stories-title",
+          "x": 0,
+          "y": 4736.40625,
+          "width": 1200,
+          "height": 884
+        },
+        {
+          "name": "faq-heading",
+          "x": 0,
+          "y": 5620.40625,
+          "width": 1200,
+          "height": 854
+        },
+        {
+          "name": "closing-heading",
+          "x": 0,
+          "y": 6474.40625,
+          "width": 1200,
+          "height": 528
+        },
+        {
+          "name": "FOOTER",
+          "x": 0,
+          "y": 7002.40625,
+          "width": 1200,
+          "height": 724.609375
+        }
+      ],
+      "assets": [
+        {
+          "src": "/assets/figma/hero-Frame84.svg",
+          "loaded": true,
+          "naturalWidth": 1601,
+          "naturalHeight": 960,
+          "x": -200,
+          "y": 0,
+          "width": 1601,
+          "height": 960
+        },
+        {
+          "src": "/assets/figma/hero-Logo.svg",
+          "loaded": true,
+          "naturalWidth": 136,
+          "naturalHeight": 24,
+          "x": 48,
+          "y": 36,
+          "width": 135.828125,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/hero-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 316.078125,
+          "y": 44,
+          "width": 13.5,
+          "height": 8
+        },
+        {
+          "src": "/assets/figma/hero-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 451.078125,
+          "y": 44,
+          "width": 13.5,
+          "height": 8
+        },
+        {
+          "src": "/assets/figma/hero-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 663.078125,
+          "y": 44,
+          "width": 13.5,
+          "height": 8
+        },
+        {
+          "src": "/assets/figma/hero-Vector1.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 1123,
+          "y": 44,
+          "width": 14,
+          "height": 8
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 48,
+          "y": 960,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/offerings-EveryThreadToOneCentre11.svg",
+          "loaded": true,
+          "naturalWidth": 80,
+          "naturalHeight": 80,
+          "x": 88,
+          "y": 1052,
+          "width": 80,
+          "height": 80
+        },
+        {
+          "src": "/assets/figma/offerings-Union.svg",
+          "loaded": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "x": 338.65625,
+          "y": 1541.6875,
+          "width": 16,
+          "height": 15.984375
+        },
+        {
+          "src": "/assets/figma/offerings-RisingOffABase11.svg",
+          "loaded": true,
+          "naturalWidth": 80,
+          "naturalHeight": 80,
+          "x": 466.65625,
+          "y": 1052,
+          "width": 80,
+          "height": 80
+        },
+        {
+          "src": "/assets/figma/offerings-Union.svg",
+          "loaded": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "x": 717.328125,
+          "y": 1541.6875,
+          "width": 16,
+          "height": 15.984375
+        },
+        {
+          "src": "/assets/figma/offerings-RaysAroundACoreOneStillMissing11.svg",
+          "loaded": true,
+          "naturalWidth": 80,
+          "naturalHeight": 80,
+          "x": 845.328125,
+          "y": 1052,
+          "width": 80,
+          "height": 80
+        },
+        {
+          "src": "/assets/figma/offerings-Union.svg",
+          "loaded": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "x": 1095.984375,
+          "y": 1541.6875,
+          "width": 16,
+          "height": 15.984375
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 553.90625,
+          "y": 1757,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 535.515625,
+          "y": 2660,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/preview-Line2.svg",
+          "loaded": true,
+          "naturalWidth": 736,
+          "naturalHeight": 1,
+          "x": 80,
+          "y": 3117.734375,
+          "width": 658.421875,
+          "height": 1
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 48,
+          "y": 3462.234375,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/preview-Image4.png",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 1536,
+          "x": 659.078125,
+          "y": 2809.921875,
+          "width": 636.265625,
+          "height": 477.203125
+        },
+        {
+          "src": "/assets/figma/preview-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 1068,
+          "y": 3314.234375,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 802.421875,
+          "y": 3462.234375,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 48,
+          "y": 3833.140625,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 2048,
+          "x": -344.3203125,
+          "y": 3990.625,
+          "width": 492.296875,
+          "height": 492.296875
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage1.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 2048,
+          "x": -141.4140625,
+          "y": 3990.625,
+          "width": 492.296875,
+          "height": 492.296875
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage2.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 2048,
+          "x": 353.8515625,
+          "y": 3990.625,
+          "width": 492.296875,
+          "height": 492.296875
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage3.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 2048,
+          "x": 849.1171875,
+          "y": 3990.625,
+          "width": 492.296875,
+          "height": 492.296875
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 2048,
+          "x": 1052.0234375,
+          "y": 3990.625,
+          "width": 492.296875,
+          "height": 492.296875
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage1.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 2048,
+          "x": 1157.4765625,
+          "y": 3990.625,
+          "width": 492.296875,
+          "height": 492.296875
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage2.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 2048,
+          "x": -449.7734375,
+          "y": 3990.625,
+          "width": 492.296875,
+          "height": 492.296875
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage3.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 2048,
+          "x": -449.7734375,
+          "y": 3990.625,
+          "width": 492.296875,
+          "height": 492.296875
+        },
+        {
+          "src": "/assets/figma/industries-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 360.65625,
+          "y": 4572.40625,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/industries-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 815.328125,
+          "y": 4572.40625,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 3072,
+          "x": -2160,
+          "y": 4832.40625,
+          "width": 346.65625,
+          "height": 640
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": -1749.34375,
+          "y": 4832.40625,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": -1749.34375,
+          "y": 5434.40625,
+          "width": 183.765625,
+          "height": 32
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 3072,
+          "x": -1056,
+          "y": 4832.40625,
+          "width": 346.65625,
+          "height": 640
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": -645.34375,
+          "y": 4832.40625,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": -645.34375,
+          "y": 5434.40625,
+          "width": 183.765625,
+          "height": 32
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 3072,
+          "x": 48,
+          "y": 4832.40625,
+          "width": 346.65625,
+          "height": 640
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 458.65625,
+          "y": 4832.40625,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": 458.65625,
+          "y": 5434.40625,
+          "width": 183.765625,
+          "height": 32
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 3072,
+          "x": 1152,
+          "y": 4832.40625,
+          "width": 346.65625,
+          "height": 640
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 1562.65625,
+          "y": 4832.40625,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": 1562.65625,
+          "y": 5434.40625,
+          "width": 183.765625,
+          "height": 32
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 48,
+          "y": 5684.40625,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 1104,
+          "y": 5700.90625,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 1104,
+          "y": 5785.90625,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 1104,
+          "y": 5956.90625,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 1104,
+          "y": 6013.90625,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 1104,
+          "y": 6070.90625,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 1104,
+          "y": 6127.90625,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 1104,
+          "y": 6184.90625,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork2.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 1104,
+          "y": 6257.90625,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/footer-Indicator.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 10,
+          "x": 616,
+          "y": 7057.40625,
+          "width": 10,
+          "height": 10
+        },
+        {
+          "src": "/assets/figma/footer-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 220,
+          "naturalHeight": 213,
+          "x": 321.125,
+          "y": 7507.171875,
+          "width": 161.203125,
+          "height": 156.078125
+        },
+        {
+          "src": "/assets/figma/footer-Vector1.svg",
+          "loaded": true,
+          "naturalWidth": 105,
+          "naturalHeight": 194,
+          "x": 473.921875,
+          "y": 7523.765625,
+          "width": 76.734375,
+          "height": 142.4375
+        },
+        {
+          "src": "/assets/figma/footer-Vector2.svg",
+          "loaded": true,
+          "naturalWidth": 157,
+          "naturalHeight": 157,
+          "x": 554.390625,
+          "y": 7551.03125,
+          "width": 115.171875,
+          "height": 115.171875
+        },
+        {
+          "src": "/assets/figma/footer-Vector3.svg",
+          "loaded": true,
+          "naturalWidth": 238,
+          "naturalHeight": 153,
+          "x": 680.6875,
+          "y": 7551.03125,
+          "width": 174.890625,
+          "height": 112.21875
+        },
+        {
+          "src": "/assets/figma/footer-Vector4.svg",
+          "loaded": true,
+          "naturalWidth": 136,
+          "naturalHeight": 157,
+          "x": 866.71875,
+          "y": 7551.03125,
+          "width": 99.921875,
+          "height": 115.171875
+        },
+        {
+          "src": "/assets/figma/footer-Vector5.svg",
+          "loaded": true,
+          "naturalWidth": 207,
+          "naturalHeight": 213,
+          "x": 967.625,
+          "y": 7507.171875,
+          "width": 152.03125,
+          "height": 156.078125
+        },
+        {
+          "src": "/assets/figma/footer-Vector6.svg",
+          "loaded": true,
+          "naturalWidth": 29,
+          "naturalHeight": 213,
+          "x": 1130.359375,
+          "y": 7507.171875,
+          "width": 21.53125,
+          "height": 156.078125
+        },
+        {
+          "src": "/assets/figma/footer-Vector7.svg",
+          "loaded": true,
+          "naturalWidth": 301,
+          "naturalHeight": 273,
+          "x": 48,
+          "y": 7484.828125,
+          "width": 220.8125,
+          "height": 200.75
+        }
+      ],
+      "fonts": {
+        "body": "\"PP Neue Montreal\", \"Helvetica Neue\", Arial, sans-serif",
+        "headline": "\"Founders Grotesk\", \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "overflowing": [
+        {
+          "tag": "DIV",
+          "className": "zOB0Iq_slide"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_storyGrid"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_portrait"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_storyContent"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_quoteBlock"
+        },
+        {
+          "tag": "DIV",
+          "className": "eyebrow "
+        },
+        {
+          "tag": "IMG",
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "className": ""
+        },
+        {
+          "tag": "FIGURE",
+          "className": "-6Sfoq_testimonial"
+        },
+        {
+          "tag": "BLOCKQUOTE",
+          "className": "display -6Sfoq_quote"
+        },
+        {
+          "tag": "FIGCAPTION",
+          "className": "-6Sfoq_person"
+        },
+        {
+          "tag": "SPAN",
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_companyRow"
+        },
+        {
+          "tag": "IMG",
+          "className": "-6Sfoq_companyLogo"
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "applicationsState": "default",
+      "viewport": 1024,
+      "viewportHeight": 960,
+      "scrollWidth": 1024,
+      "height": 7601,
+      "sections": [
+        {
+          "name": "hero",
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 900
+        },
+        {
+          "name": "offerings",
+          "x": 0,
+          "y": 900,
+          "width": 1024,
+          "height": 658
+        },
+        {
+          "name": "applications-title",
+          "x": 0,
+          "y": 1558,
+          "width": 1024,
+          "height": 786.734375
+        },
+        {
+          "name": "preview-title",
+          "x": 0,
+          "y": 2344.734375,
+          "width": 1024,
+          "height": 1173.140625
+        },
+        {
+          "name": "industries-title",
+          "x": 0,
+          "y": 3517.875,
+          "width": 1024,
+          "height": 933.8125
+        },
+        {
+          "name": "customer-stories-title",
+          "x": 0,
+          "y": 4451.6875,
+          "width": 1024,
+          "height": 1016
+        },
+        {
+          "name": "faq-heading",
+          "x": 0,
+          "y": 5467.6875,
+          "width": 1024,
+          "height": 901
+        },
+        {
+          "name": "closing-heading",
+          "x": 0,
+          "y": 6368.6875,
+          "width": 1024,
+          "height": 528
+        },
+        {
+          "name": "FOOTER",
+          "x": 0,
+          "y": 6896.6875,
+          "width": 1024,
+          "height": 704.3125
+        }
+      ],
+      "assets": [
+        {
+          "src": "/assets/figma/hero-Frame84.svg",
+          "loaded": true,
+          "naturalWidth": 1601,
+          "naturalHeight": 960,
+          "x": -288,
+          "y": 0,
+          "width": 1601,
+          "height": 960
+        },
+        {
+          "src": "/assets/figma/hero-Logo.svg",
+          "loaded": true,
+          "naturalWidth": 136,
+          "naturalHeight": 24,
+          "x": 32,
+          "y": 36,
+          "width": 135.828125,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/hero-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/hero-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/hero-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/hero-Vector1.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 963,
+          "y": 44,
+          "width": 14,
+          "height": 8
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 32,
+          "y": 900,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/offerings-EveryThreadToOneCentre11.svg",
+          "loaded": true,
+          "naturalWidth": 80,
+          "naturalHeight": 80,
+          "x": 60,
+          "y": 980,
+          "width": 80,
+          "height": 80
+        },
+        {
+          "src": "/assets/figma/offerings-Union.svg",
+          "loaded": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "x": 286.65625,
+          "y": 1415,
+          "width": 16,
+          "height": 15.984375
+        },
+        {
+          "src": "/assets/figma/offerings-RisingOffABase11.svg",
+          "loaded": true,
+          "naturalWidth": 80,
+          "naturalHeight": 80,
+          "x": 390.65625,
+          "y": 980,
+          "width": 80,
+          "height": 80
+        },
+        {
+          "src": "/assets/figma/offerings-Union.svg",
+          "loaded": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "x": 617.328125,
+          "y": 1415,
+          "width": 16,
+          "height": 15.984375
+        },
+        {
+          "src": "/assets/figma/offerings-RaysAroundACoreOneStillMissing11.svg",
+          "loaded": true,
+          "naturalWidth": 80,
+          "naturalHeight": 80,
+          "x": 721.328125,
+          "y": 980,
+          "width": 80,
+          "height": 80
+        },
+        {
+          "src": "/assets/figma/offerings-Union.svg",
+          "loaded": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "x": 947.984375,
+          "y": 1415,
+          "width": 16,
+          "height": 15.984375
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 465.90625,
+          "y": 1654,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 447.515625,
+          "y": 2440.734375,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/preview-Line2.svg",
+          "loaded": true,
+          "naturalWidth": 736,
+          "naturalHeight": 1,
+          "x": 64,
+          "y": 2898.46875,
+          "width": 400,
+          "height": 1
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 32,
+          "y": 3242.96875,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/preview-Image4.png",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 1536,
+          "x": 441.875,
+          "y": 2590.65625,
+          "width": 636.265625,
+          "height": 477.203125
+        },
+        {
+          "src": "/assets/figma/preview-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 916,
+          "y": 3094.96875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 528,
+          "y": 3242.96875,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 32,
+          "y": 3613.875,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage.webp",
+          "loaded": true,
+          "naturalWidth": 512,
+          "naturalHeight": 512,
+          "x": -307.6156311035156,
+          "y": 3771.703125,
+          "width": 426.15625,
+          "height": 426.15625
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage1.webp",
+          "loaded": true,
+          "naturalWidth": 512,
+          "naturalHeight": 512,
+          "x": -130.890625,
+          "y": 3771.703125,
+          "width": 426.15625,
+          "height": 426.15625
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage2.webp",
+          "loaded": true,
+          "naturalWidth": 512,
+          "naturalHeight": 512,
+          "x": 298.921875,
+          "y": 3771.703125,
+          "width": 426.15625,
+          "height": 426.15625
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage3.webp",
+          "loaded": true,
+          "naturalWidth": 512,
+          "naturalHeight": 512,
+          "x": 728.734375,
+          "y": 3771.703125,
+          "width": 426.15625,
+          "height": 426.15625
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage.webp",
+          "loaded": true,
+          "naturalWidth": 512,
+          "naturalHeight": 512,
+          "x": 905.4593505859375,
+          "y": 3771.703125,
+          "width": 426.15625,
+          "height": 426.15625
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage1.webp",
+          "loaded": true,
+          "naturalWidth": 512,
+          "naturalHeight": 512,
+          "x": 997.8218994140625,
+          "y": 3771.703125,
+          "width": 426.15625,
+          "height": 426.15625
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage2.webp",
+          "loaded": true,
+          "naturalWidth": 512,
+          "naturalHeight": 512,
+          "x": -399.97802734375,
+          "y": 3771.703125,
+          "width": 426.15625,
+          "height": 426.15625
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage3.webp",
+          "loaded": true,
+          "naturalWidth": 512,
+          "naturalHeight": 512,
+          "x": -399.97802734375,
+          "y": 3771.703125,
+          "width": 426.15625,
+          "height": 426.15625
+        },
+        {
+          "src": "/assets/figma/industries-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 296.65625,
+          "y": 4287.6875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/industries-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 703.328125,
+          "y": 4287.6875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 409,
+          "naturalHeight": 614,
+          "x": -1888,
+          "y": 4547.6875,
+          "width": 364.796875,
+          "height": 560
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": -1491.203125,
+          "y": 4547.6875,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": -1491.203125,
+          "y": 5069.6875,
+          "width": 183.765625,
+          "height": 32
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 409,
+          "naturalHeight": 614,
+          "x": -928,
+          "y": 4547.6875,
+          "width": 364.796875,
+          "height": 560
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": -531.203125,
+          "y": 4547.6875,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": -531.203125,
+          "y": 5069.6875,
+          "width": 183.765625,
+          "height": 32
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 409,
+          "naturalHeight": 614,
+          "x": 32,
+          "y": 4547.6875,
+          "width": 364.796875,
+          "height": 560
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 428.796875,
+          "y": 4547.6875,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": 428.796875,
+          "y": 5069.6875,
+          "width": 183.765625,
+          "height": 32
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 409,
+          "naturalHeight": 614,
+          "x": 992,
+          "y": 4547.6875,
+          "width": 364.796875,
+          "height": 560
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 1388.796875,
+          "y": 4547.6875,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": 1388.796875,
+          "y": 5069.6875,
+          "width": 183.765625,
+          "height": 32
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 32,
+          "y": 5531.6875,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 944,
+          "y": 5560.6875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 944,
+          "y": 5658.1875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 944,
+          "y": 5851.1875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 944,
+          "y": 5908.1875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 944,
+          "y": 5965.1875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 944,
+          "y": 6022.1875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 944,
+          "y": 6079.1875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork2.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 944,
+          "y": 6152.1875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/footer-Indicator.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 10,
+          "x": 481.59375,
+          "y": 6951.6875,
+          "width": 10,
+          "height": 10
+        },
+        {
+          "src": "/assets/figma/footer-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 220,
+          "naturalHeight": 213,
+          "x": 269.5,
+          "y": 7401.4921875,
+          "width": 140.171875,
+          "height": 135.71875
+        },
+        {
+          "src": "/assets/figma/footer-Vector1.svg",
+          "loaded": true,
+          "naturalWidth": 105,
+          "naturalHeight": 194,
+          "x": 402.359375,
+          "y": 7415.9296875,
+          "width": 66.734375,
+          "height": 123.84375
+        },
+        {
+          "src": "/assets/figma/footer-Vector2.svg",
+          "loaded": true,
+          "naturalWidth": 157,
+          "naturalHeight": 157,
+          "x": 472.34375,
+          "y": 7439.6171875,
+          "width": 100.140625,
+          "height": 100.15625
+        },
+        {
+          "src": "/assets/figma/footer-Vector3.svg",
+          "loaded": true,
+          "naturalWidth": 238,
+          "naturalHeight": 153,
+          "x": 582.171875,
+          "y": 7439.6171875,
+          "width": 152.078125,
+          "height": 97.59375
+        },
+        {
+          "src": "/assets/figma/footer-Vector4.svg",
+          "loaded": true,
+          "naturalWidth": 136,
+          "naturalHeight": 157,
+          "x": 743.921875,
+          "y": 7439.6171875,
+          "width": 86.90625,
+          "height": 100.15625
+        },
+        {
+          "src": "/assets/figma/footer-Vector5.svg",
+          "loaded": true,
+          "naturalWidth": 207,
+          "naturalHeight": 213,
+          "x": 831.671875,
+          "y": 7401.4921875,
+          "width": 132.203125,
+          "height": 135.71875
+        },
+        {
+          "src": "/assets/figma/footer-Vector6.svg",
+          "loaded": true,
+          "naturalWidth": 29,
+          "naturalHeight": 213,
+          "x": 973.171875,
+          "y": 7401.4921875,
+          "width": 18.734375,
+          "height": 135.71875
+        },
+        {
+          "src": "/assets/figma/footer-Vector7.svg",
+          "loaded": true,
+          "naturalWidth": 301,
+          "naturalHeight": 273,
+          "x": 32,
+          "y": 7382.0703125,
+          "width": 192,
+          "height": 174.546875
+        }
+      ],
+      "fonts": {
+        "body": "\"PP Neue Montreal\", \"Helvetica Neue\", Arial, sans-serif",
+        "headline": "\"Founders Grotesk\", \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "overflowing": [
+        {
+          "tag": "DIV",
+          "className": "zOB0Iq_slide"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_storyGrid"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_portrait"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_storyContent"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_quoteBlock"
+        },
+        {
+          "tag": "DIV",
+          "className": "eyebrow "
+        },
+        {
+          "tag": "IMG",
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "className": ""
+        },
+        {
+          "tag": "FIGURE",
+          "className": "-6Sfoq_testimonial"
+        },
+        {
+          "tag": "BLOCKQUOTE",
+          "className": "display -6Sfoq_quote"
+        },
+        {
+          "tag": "FIGCAPTION",
+          "className": "-6Sfoq_person"
+        },
+        {
+          "tag": "SPAN",
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_companyRow"
+        },
+        {
+          "tag": "IMG",
+          "className": "-6Sfoq_companyLogo"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "applicationsState": "default",
+      "viewport": 768,
+      "viewportHeight": 960,
+      "scrollWidth": 768,
+      "height": 9115,
+      "sections": [
+        {
+          "name": "hero",
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 900
+        },
+        {
+          "name": "offerings",
+          "x": 0,
+          "y": 900,
+          "width": 768,
+          "height": 658
+        },
+        {
+          "name": "applications-title",
+          "x": 0,
+          "y": 1558,
+          "width": 768,
+          "height": 1445.640625
+        },
+        {
+          "name": "preview-title",
+          "x": 0,
+          "y": 3003.640625,
+          "width": 768,
+          "height": 1952.046875
+        },
+        {
+          "name": "industries-title",
+          "x": 0,
+          "y": 4955.6875,
+          "width": 768,
+          "height": 849.28125
+        },
+        {
+          "name": "customer-stories-title",
+          "x": 0,
+          "y": 5804.96875,
+          "width": 768,
+          "height": 1016
+        },
+        {
+          "name": "faq-heading",
+          "x": 0,
+          "y": 6820.96875,
+          "width": 768,
+          "height": 1098
+        },
+        {
+          "name": "closing-heading",
+          "x": 0,
+          "y": 7918.96875,
+          "width": 768,
+          "height": 528
+        },
+        {
+          "name": "FOOTER",
+          "x": 0,
+          "y": 8446.96875,
+          "width": 768,
+          "height": 668.21875
+        }
+      ],
+      "assets": [
+        {
+          "src": "/assets/figma/hero-Frame84.svg",
+          "loaded": true,
+          "naturalWidth": 1601,
+          "naturalHeight": 960,
+          "x": -416,
+          "y": 0,
+          "width": 1601,
+          "height": 960
+        },
+        {
+          "src": "/assets/figma/hero-Logo.svg",
+          "loaded": true,
+          "naturalWidth": 136,
+          "naturalHeight": 24,
+          "x": 32,
+          "y": 36,
+          "width": 135.828125,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/hero-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/hero-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/hero-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/hero-Vector1.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 707,
+          "y": 44,
+          "width": 14,
+          "height": 8
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 32,
+          "y": 900,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/offerings-EveryThreadToOneCentre11.svg",
+          "loaded": true,
+          "naturalWidth": 80,
+          "naturalHeight": 80,
+          "x": 60,
+          "y": 980,
+          "width": 80,
+          "height": 80
+        },
+        {
+          "src": "/assets/figma/offerings-Union.svg",
+          "loaded": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "x": 201.328125,
+          "y": 1415,
+          "width": 16,
+          "height": 15.984375
+        },
+        {
+          "src": "/assets/figma/offerings-RisingOffABase11.svg",
+          "loaded": true,
+          "naturalWidth": 80,
+          "naturalHeight": 80,
+          "x": 305.328125,
+          "y": 980,
+          "width": 80,
+          "height": 80
+        },
+        {
+          "src": "/assets/figma/offerings-Union.svg",
+          "loaded": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "x": 446.65625,
+          "y": 1415,
+          "width": 16,
+          "height": 15.984375
+        },
+        {
+          "src": "/assets/figma/offerings-RaysAroundACoreOneStillMissing11.svg",
+          "loaded": true,
+          "naturalWidth": 80,
+          "naturalHeight": 80,
+          "x": 550.65625,
+          "y": 980,
+          "width": 80,
+          "height": 80
+        },
+        {
+          "src": "/assets/figma/offerings-Union.svg",
+          "loaded": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "x": 691.984375,
+          "y": 1415,
+          "width": 16,
+          "height": 15.984375
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 337.90625,
+          "y": 1654,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 319.515625,
+          "y": 3099.640625,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/preview-Line2.svg",
+          "loaded": true,
+          "naturalWidth": 736,
+          "naturalHeight": 1,
+          "x": 64,
+          "y": 3497.375,
+          "width": 640,
+          "height": 1
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 32,
+          "y": 3781.875,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/preview-Image4.png",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 1536,
+          "x": 65.875,
+          "y": 4028.46875,
+          "width": 636.265625,
+          "height": 477.203125
+        },
+        {
+          "src": "/assets/figma/preview-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 540,
+          "y": 4532.78125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 32,
+          "y": 4680.78125,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 32,
+          "y": 5051.6875,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage.webp",
+          "loaded": true,
+          "naturalWidth": 384,
+          "naturalHeight": 384,
+          "x": -213.92343139648438,
+          "y": 5241.953125,
+          "width": 308.59375,
+          "height": 308.59375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage1.webp",
+          "loaded": true,
+          "naturalWidth": 384,
+          "naturalHeight": 384,
+          "x": -83.7421875,
+          "y": 5241.953125,
+          "width": 308.59375,
+          "height": 308.59375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage2.webp",
+          "loaded": true,
+          "naturalWidth": 384,
+          "naturalHeight": 384,
+          "x": 229.7109375,
+          "y": 5241.953125,
+          "width": 308.59375,
+          "height": 308.59375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage3.webp",
+          "loaded": true,
+          "naturalWidth": 384,
+          "naturalHeight": 384,
+          "x": 543.1640625,
+          "y": 5241.953125,
+          "width": 308.59375,
+          "height": 308.59375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage.webp",
+          "loaded": true,
+          "naturalWidth": 384,
+          "naturalHeight": 384,
+          "x": 673.3453369140625,
+          "y": 5241.953125,
+          "width": 308.59375,
+          "height": 308.59375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage1.webp",
+          "loaded": true,
+          "naturalWidth": 384,
+          "naturalHeight": 384,
+          "x": 742.4359130859375,
+          "y": 5241.953125,
+          "width": 308.59375,
+          "height": 308.59375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage2.webp",
+          "loaded": true,
+          "naturalWidth": 384,
+          "naturalHeight": 384,
+          "x": -283.01416015625,
+          "y": 5241.953125,
+          "width": 308.59375,
+          "height": 308.59375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage3.webp",
+          "loaded": true,
+          "naturalWidth": 384,
+          "naturalHeight": 384,
+          "x": -283.01416015625,
+          "y": 5241.953125,
+          "width": 308.59375,
+          "height": 308.59375
+        },
+        {
+          "src": "/assets/figma/industries-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 211.328125,
+          "y": 5640.96875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/industries-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 532.65625,
+          "y": 5640.96875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 307,
+          "naturalHeight": 460,
+          "x": -1376,
+          "y": 5900.96875,
+          "width": 262.390625,
+          "height": 560
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": -1081.609375,
+          "y": 5900.96875,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": -1081.609375,
+          "y": 6422.96875,
+          "width": 183.765625,
+          "height": 32
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 307,
+          "naturalHeight": 460,
+          "x": -672,
+          "y": 5900.96875,
+          "width": 262.390625,
+          "height": 560
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": -377.609375,
+          "y": 5900.96875,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": -377.609375,
+          "y": 6422.96875,
+          "width": 183.765625,
+          "height": 32
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 307,
+          "naturalHeight": 460,
+          "x": 32,
+          "y": 5900.96875,
+          "width": 262.390625,
+          "height": 560
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 326.390625,
+          "y": 5900.96875,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": 326.390625,
+          "y": 6422.96875,
+          "width": 183.765625,
+          "height": 32
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 307,
+          "naturalHeight": 460,
+          "x": 736,
+          "y": 5900.96875,
+          "width": 262.390625,
+          "height": 560
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 1030.390625,
+          "y": 5900.96875,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": 1030.390625,
+          "y": 6422.96875,
+          "width": 183.765625,
+          "height": 32
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 32,
+          "y": 6884.96875,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 688,
+          "y": 6913.96875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 688,
+          "y": 7023.96875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 688,
+          "y": 7263.96875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 688,
+          "y": 7345.96875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 688,
+          "y": 7427.96875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 688,
+          "y": 7509.96875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 688,
+          "y": 7591.96875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork2.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 688,
+          "y": 7689.96875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/footer-Indicator.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 10,
+          "x": 366.390625,
+          "y": 8501.96875,
+          "width": 10,
+          "height": 10
+        },
+        {
+          "src": "/assets/figma/footer-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 220,
+          "naturalHeight": 213,
+          "x": 206.15625,
+          "y": 8951.828125,
+          "width": 102.8125,
+          "height": 99.515625
+        },
+        {
+          "src": "/assets/figma/footer-Vector1.svg",
+          "loaded": true,
+          "naturalWidth": 105,
+          "naturalHeight": 194,
+          "x": 303.59375,
+          "y": 8962.40625,
+          "width": 48.9375,
+          "height": 90.828125
+        },
+        {
+          "src": "/assets/figma/footer-Vector2.svg",
+          "loaded": true,
+          "naturalWidth": 157,
+          "naturalHeight": 157,
+          "x": 354.921875,
+          "y": 8979.78125,
+          "width": 73.4375,
+          "height": 73.453125
+        },
+        {
+          "src": "/assets/figma/footer-Vector3.svg",
+          "loaded": true,
+          "naturalWidth": 238,
+          "naturalHeight": 153,
+          "x": 435.453125,
+          "y": 8979.78125,
+          "width": 111.53125,
+          "height": 71.5625
+        },
+        {
+          "src": "/assets/figma/footer-Vector4.svg",
+          "loaded": true,
+          "naturalWidth": 136,
+          "naturalHeight": 157,
+          "x": 554.078125,
+          "y": 8979.78125,
+          "width": 63.734375,
+          "height": 73.453125
+        },
+        {
+          "src": "/assets/figma/footer-Vector5.svg",
+          "loaded": true,
+          "naturalWidth": 207,
+          "naturalHeight": 213,
+          "x": 618.421875,
+          "y": 8951.828125,
+          "width": 96.953125,
+          "height": 99.515625
+        },
+        {
+          "src": "/assets/figma/footer-Vector6.svg",
+          "loaded": true,
+          "naturalWidth": 29,
+          "naturalHeight": 213,
+          "x": 722.1875,
+          "y": 8951.828125,
+          "width": 13.75,
+          "height": 99.515625
+        },
+        {
+          "src": "/assets/figma/footer-Vector7.svg",
+          "loaded": true,
+          "naturalWidth": 301,
+          "naturalHeight": 273,
+          "x": 32,
+          "y": 8937.578125,
+          "width": 140.8125,
+          "height": 128
+        }
+      ],
+      "fonts": {
+        "body": "\"PP Neue Montreal\", \"Helvetica Neue\", Arial, sans-serif",
+        "headline": "\"Founders Grotesk\", \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "overflowing": [
+        {
+          "tag": "DIV",
+          "className": "zOB0Iq_slide"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_storyGrid"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_portrait"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_storyContent"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_quoteBlock"
+        },
+        {
+          "tag": "DIV",
+          "className": "eyebrow "
+        },
+        {
+          "tag": "IMG",
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "className": ""
+        },
+        {
+          "tag": "FIGURE",
+          "className": "-6Sfoq_testimonial"
+        },
+        {
+          "tag": "BLOCKQUOTE",
+          "className": "display -6Sfoq_quote"
+        },
+        {
+          "tag": "FIGCAPTION",
+          "className": "-6Sfoq_person"
+        },
+        {
+          "tag": "SPAN",
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_companyRow"
+        },
+        {
+          "tag": "IMG",
+          "className": "-6Sfoq_companyLogo"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "applicationsState": "default",
+      "viewport": 390,
+      "viewportHeight": 960,
+      "scrollWidth": 390,
+      "height": 11776,
+      "sections": [
+        {
+          "name": "hero",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 820
+        },
+        {
+          "name": "offerings",
+          "x": 0,
+          "y": 820,
+          "width": 390,
+          "height": 1604
+        },
+        {
+          "name": "applications-title",
+          "x": 0,
+          "y": 2424,
+          "width": 390,
+          "height": 2488.828125
+        },
+        {
+          "name": "preview-title",
+          "x": 0,
+          "y": 4912.828125,
+          "width": 390,
+          "height": 1807.015625
+        },
+        {
+          "name": "industries-title",
+          "x": 0,
+          "y": 6719.84375,
+          "width": 390,
+          "height": 745.875
+        },
+        {
+          "name": "customer-stories-title",
+          "x": 0,
+          "y": 7465.71875,
+          "width": 390,
+          "height": 1583.34375
+        },
+        {
+          "name": "faq-heading",
+          "x": 0,
+          "y": 9049.0625,
+          "width": 390,
+          "height": 1198.15625
+        },
+        {
+          "name": "closing-heading",
+          "x": 0,
+          "y": 10247.21875,
+          "width": 390,
+          "height": 674
+        },
+        {
+          "name": "FOOTER",
+          "x": 0,
+          "y": 10921.21875,
+          "width": 390,
+          "height": 854.53125
+        }
+      ],
+      "assets": [
+        {
+          "src": "/assets/figma/hero-Frame84.svg",
+          "loaded": true,
+          "naturalWidth": 1601,
+          "naturalHeight": 960,
+          "x": -605,
+          "y": 0,
+          "width": 1601,
+          "height": 960
+        },
+        {
+          "src": "/assets/figma/hero-Logo.svg",
+          "loaded": true,
+          "naturalWidth": 136,
+          "naturalHeight": 24,
+          "x": 20,
+          "y": 28,
+          "width": 135.828125,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/hero-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/hero-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/hero-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/hero-Vector1.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 341,
+          "y": 36,
+          "width": 14,
+          "height": 8
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 20,
+          "y": 820,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/offerings-EveryThreadToOneCentre11.svg",
+          "loaded": true,
+          "naturalWidth": 80,
+          "naturalHeight": 80,
+          "x": 52,
+          "y": 904,
+          "width": 80,
+          "height": 80
+        },
+        {
+          "src": "/assets/figma/offerings-Union.svg",
+          "loaded": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "x": 322,
+          "y": 1301,
+          "width": 16,
+          "height": 15.984375
+        },
+        {
+          "src": "/assets/figma/offerings-RisingOffABase11.svg",
+          "loaded": true,
+          "naturalWidth": 80,
+          "naturalHeight": 80,
+          "x": 52,
+          "y": 1408,
+          "width": 80,
+          "height": 80
+        },
+        {
+          "src": "/assets/figma/offerings-Union.svg",
+          "loaded": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "x": 322,
+          "y": 1805,
+          "width": 16,
+          "height": 15.984375
+        },
+        {
+          "src": "/assets/figma/offerings-RaysAroundACoreOneStillMissing11.svg",
+          "loaded": true,
+          "naturalWidth": 80,
+          "naturalHeight": 80,
+          "x": 52,
+          "y": 1912,
+          "width": 80,
+          "height": 80
+        },
+        {
+          "src": "/assets/figma/offerings-Union.svg",
+          "loaded": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "x": 322,
+          "y": 2309,
+          "width": 16,
+          "height": 15.984375
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 148.90625,
+          "y": 2488,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 130.515625,
+          "y": 4976.828125,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/preview-Line2.svg",
+          "loaded": true,
+          "naturalWidth": 736,
+          "naturalHeight": 1,
+          "x": 40,
+          "y": 5343.53125,
+          "width": 310,
+          "height": 1
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 20,
+          "y": 5578.03125,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/preview-Image4.png",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 1536,
+          "x": -123.125,
+          "y": 5818.625,
+          "width": 636.265625,
+          "height": 477.203125
+        },
+        {
+          "src": "/assets/figma/preview-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 300,
+          "y": 6322.9375,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 20,
+          "y": 6476.9375,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 20,
+          "y": 6783.84375,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage.webp",
+          "loaded": true,
+          "naturalWidth": 312,
+          "naturalHeight": 312,
+          "x": -256.5546875,
+          "y": 6989.15625,
+          "width": 269.9375,
+          "height": 269.9375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage1.webp",
+          "loaded": true,
+          "naturalWidth": 312,
+          "naturalHeight": 312,
+          "x": -215.15625,
+          "y": 6989.15625,
+          "width": 269.9375,
+          "height": 269.9375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage2.webp",
+          "loaded": true,
+          "naturalWidth": 312,
+          "naturalHeight": 312,
+          "x": 60.03125,
+          "y": 6989.15625,
+          "width": 269.9375,
+          "height": 269.9375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage3.webp",
+          "loaded": true,
+          "naturalWidth": 312,
+          "naturalHeight": 312,
+          "x": 335.21875,
+          "y": 6989.15625,
+          "width": 269.9375,
+          "height": 269.9375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage.webp",
+          "loaded": true,
+          "naturalWidth": 312,
+          "naturalHeight": 312,
+          "x": 376.6171875,
+          "y": 6989.15625,
+          "width": 269.9375,
+          "height": 269.9375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage1.webp",
+          "loaded": true,
+          "naturalWidth": 312,
+          "naturalHeight": 312,
+          "x": 384.6171875,
+          "y": 6989.15625,
+          "width": 269.9375,
+          "height": 269.9375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage2.webp",
+          "loaded": true,
+          "naturalWidth": 312,
+          "naturalHeight": 312,
+          "x": -264.5546875,
+          "y": 6989.15625,
+          "width": 269.9375,
+          "height": 269.9375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage3.webp",
+          "loaded": true,
+          "naturalWidth": 312,
+          "naturalHeight": 312,
+          "x": -264.5546875,
+          "y": 6989.15625,
+          "width": 269.9375,
+          "height": 269.9375
+        },
+        {
+          "src": "/assets/figma/industries-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 30,
+          "y": 7333.71875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/industries-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 336,
+          "y": 7333.71875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 390,
+          "naturalHeight": 585,
+          "x": -680,
+          "y": 7529.71875,
+          "width": 350,
+          "height": 466.65625
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": -680,
+          "y": 8028.375,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": -680,
+          "y": 8369.15625,
+          "width": 160,
+          "height": 27.8125
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 390,
+          "naturalHeight": 585,
+          "x": -330,
+          "y": 7529.71875,
+          "width": 350,
+          "height": 466.65625
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": -330,
+          "y": 8028.375,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": -330,
+          "y": 8369.15625,
+          "width": 160,
+          "height": 27.8125
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 390,
+          "naturalHeight": 585,
+          "x": 20,
+          "y": 7529.71875,
+          "width": 350,
+          "height": 466.65625
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 20,
+          "y": 8028.375,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": 20,
+          "y": 8369.15625,
+          "width": 160,
+          "height": 27.8125
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 390,
+          "naturalHeight": 585,
+          "x": 370,
+          "y": 7529.71875,
+          "width": 350,
+          "height": 466.65625
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 370,
+          "y": 8028.375,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": 370,
+          "y": 8369.15625,
+          "width": 160,
+          "height": 27.8125
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 20,
+          "y": 9113.0625,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 330,
+          "y": 9422.21875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 330,
+          "y": 9532.21875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 330,
+          "y": 9759.71875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 330,
+          "y": 9816.71875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 330,
+          "y": 9873.71875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 330,
+          "y": 9943.21875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 330,
+          "y": 10025.21875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork2.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 330,
+          "y": 10110.71875,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/footer-Indicator.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 10,
+          "x": 20,
+          "y": 11284.421875,
+          "width": 10,
+          "height": 10
+        },
+        {
+          "src": "/assets/figma/footer-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 220,
+          "naturalHeight": 213,
+          "x": 106.578125,
+          "y": 11694.34375,
+          "width": 51.125,
+          "height": 49.484375
+        },
+        {
+          "src": "/assets/figma/footer-Vector1.svg",
+          "loaded": true,
+          "naturalWidth": 105,
+          "naturalHeight": 194,
+          "x": 155.015625,
+          "y": 11699.59375,
+          "width": 24.34375,
+          "height": 45.171875
+        },
+        {
+          "src": "/assets/figma/footer-Vector2.svg",
+          "loaded": true,
+          "naturalWidth": 157,
+          "naturalHeight": 157,
+          "x": 180.53125,
+          "y": 11708.234375,
+          "width": 36.53125,
+          "height": 36.53125
+        },
+        {
+          "src": "/assets/figma/footer-Vector3.svg",
+          "loaded": true,
+          "naturalWidth": 238,
+          "naturalHeight": 153,
+          "x": 220.578125,
+          "y": 11708.234375,
+          "width": 55.453125,
+          "height": 35.59375
+        },
+        {
+          "src": "/assets/figma/footer-Vector4.svg",
+          "loaded": true,
+          "naturalWidth": 136,
+          "naturalHeight": 157,
+          "x": 279.546875,
+          "y": 11708.234375,
+          "width": 31.703125,
+          "height": 36.53125
+        },
+        {
+          "src": "/assets/figma/footer-Vector5.svg",
+          "loaded": true,
+          "naturalWidth": 207,
+          "naturalHeight": 213,
+          "x": 311.546875,
+          "y": 11694.34375,
+          "width": 48.203125,
+          "height": 49.484375
+        },
+        {
+          "src": "/assets/figma/footer-Vector6.svg",
+          "loaded": true,
+          "naturalWidth": 29,
+          "naturalHeight": 213,
+          "x": 363.125,
+          "y": 11694.34375,
+          "width": 6.84375,
+          "height": 49.484375
+        },
+        {
+          "src": "/assets/figma/footer-Vector7.svg",
+          "loaded": true,
+          "naturalWidth": 301,
+          "naturalHeight": 273,
+          "x": 20,
+          "y": 11687.265625,
+          "width": 70,
+          "height": 63.625
+        }
+      ],
+      "fonts": {
+        "body": "\"PP Neue Montreal\", \"Helvetica Neue\", Arial, sans-serif",
+        "headline": "\"Founders Grotesk\", \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "overflowing": [
+        {
+          "tag": "DIV",
+          "className": "zOB0Iq_slide"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_storyGrid"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_portrait"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_storyContent"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_quoteBlock"
+        },
+        {
+          "tag": "DIV",
+          "className": "eyebrow "
+        },
+        {
+          "tag": "SPAN",
+          "className": ""
+        },
+        {
+          "tag": "FIGURE",
+          "className": "-6Sfoq_testimonial"
+        },
+        {
+          "tag": "BLOCKQUOTE",
+          "className": "display -6Sfoq_quote"
+        },
+        {
+          "tag": "FIGCAPTION",
+          "className": "-6Sfoq_person"
+        },
+        {
+          "tag": "SPAN",
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_companyRow"
+        },
+        {
+          "tag": "IMG",
+          "className": "-6Sfoq_companyLogo"
+        },
+        {
+          "tag": "BUTTON",
+          "className": "button button-medium button-outline"
+        }
+      ],
+      "keyboardFocus": {
+        "text": "Skip to content",
+        "outline": "solid"
+      },
+      "menuOpens": true
+    },
+    {
+      "width": 320,
+      "applicationsState": "default",
+      "viewport": 320,
+      "viewportHeight": 960,
+      "scrollWidth": 320,
+      "height": 11722,
+      "sections": [
+        {
+          "name": "hero",
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 895.0625
+        },
+        {
+          "name": "offerings",
+          "x": 0,
+          "y": 895.0625,
+          "width": 320,
+          "height": 1604
+        },
+        {
+          "name": "applications-title",
+          "x": 0,
+          "y": 2499.0625,
+          "width": 320,
+          "height": 2208.828125
+        },
+        {
+          "name": "preview-title",
+          "x": 0,
+          "y": 4707.890625,
+          "width": 320,
+          "height": 1859.015625
+        },
+        {
+          "name": "industries-title",
+          "x": 0,
+          "y": 6566.90625,
+          "width": 320,
+          "height": 689.875
+        },
+        {
+          "name": "customer-stories-title",
+          "x": 0,
+          "y": 7256.78125,
+          "width": 320,
+          "height": 1562.015625
+        },
+        {
+          "name": "faq-heading",
+          "x": 0,
+          "y": 8818.796875,
+          "width": 320,
+          "height": 1384.15625
+        },
+        {
+          "name": "closing-heading",
+          "x": 0,
+          "y": 10202.953125,
+          "width": 320,
+          "height": 674
+        },
+        {
+          "name": "FOOTER",
+          "x": 0,
+          "y": 10876.953125,
+          "width": 320,
+          "height": 844.65625
+        }
+      ],
+      "assets": [
+        {
+          "src": "/assets/figma/hero-Frame84.svg",
+          "loaded": true,
+          "naturalWidth": 1601,
+          "naturalHeight": 960,
+          "x": -640,
+          "y": 0,
+          "width": 1601,
+          "height": 960
+        },
+        {
+          "src": "/assets/figma/hero-Logo.svg",
+          "loaded": true,
+          "naturalWidth": 136,
+          "naturalHeight": 24,
+          "x": 20,
+          "y": 28,
+          "width": 135.828125,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/hero-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/hero-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/hero-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/hero-Vector1.svg",
+          "loaded": true,
+          "naturalWidth": 14,
+          "naturalHeight": 8,
+          "x": 271,
+          "y": 36,
+          "width": 14,
+          "height": 8
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 20,
+          "y": 895.0625,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/offerings-EveryThreadToOneCentre11.svg",
+          "loaded": true,
+          "naturalWidth": 80,
+          "naturalHeight": 80,
+          "x": 52,
+          "y": 979.0625,
+          "width": 80,
+          "height": 80
+        },
+        {
+          "src": "/assets/figma/offerings-Union.svg",
+          "loaded": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "x": 252,
+          "y": 1376.0625,
+          "width": 16,
+          "height": 15.984375
+        },
+        {
+          "src": "/assets/figma/offerings-RisingOffABase11.svg",
+          "loaded": true,
+          "naturalWidth": 80,
+          "naturalHeight": 80,
+          "x": 52,
+          "y": 1483.0625,
+          "width": 80,
+          "height": 80
+        },
+        {
+          "src": "/assets/figma/offerings-Union.svg",
+          "loaded": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "x": 252,
+          "y": 1912.75,
+          "width": 16,
+          "height": 15.984375
+        },
+        {
+          "src": "/assets/figma/offerings-RaysAroundACoreOneStillMissing11.svg",
+          "loaded": true,
+          "naturalWidth": 80,
+          "naturalHeight": 80,
+          "x": 52,
+          "y": 1987.0625,
+          "width": 80,
+          "height": 80
+        },
+        {
+          "src": "/assets/figma/offerings-Union.svg",
+          "loaded": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "x": 252,
+          "y": 2416.75,
+          "width": 16,
+          "height": 15.984375
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 113.90625,
+          "y": 2563.0625,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 95.515625,
+          "y": 4771.890625,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/preview-Line2.svg",
+          "loaded": true,
+          "naturalWidth": 736,
+          "naturalHeight": 1,
+          "x": 40,
+          "y": 5138.59375,
+          "width": 240,
+          "height": 1
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 20,
+          "y": 5373.09375,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/preview-Image4.png",
+          "loaded": true,
+          "naturalWidth": 2048,
+          "naturalHeight": 1536,
+          "x": -158.125,
+          "y": 5602.6875,
+          "width": 636.265625,
+          "height": 477.203125
+        },
+        {
+          "src": "/assets/figma/preview-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 230,
+          "y": 6129,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 20,
+          "y": 6272,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 20,
+          "y": 6630.90625,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage.webp",
+          "loaded": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "x": -200.2578125,
+          "y": 6836.515625,
+          "width": 213.359375,
+          "height": 213.359375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage1.webp",
+          "loaded": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "x": -165.859375,
+          "y": 6836.515625,
+          "width": 213.359375,
+          "height": 213.359375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage2.webp",
+          "loaded": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "x": 53.328125,
+          "y": 6836.515625,
+          "width": 213.359375,
+          "height": 213.359375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage3.webp",
+          "loaded": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "x": 272.515625,
+          "y": 6836.515625,
+          "width": 213.359375,
+          "height": 213.359375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage.webp",
+          "loaded": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "x": 306.9140625,
+          "y": 6836.515625,
+          "width": 213.359375,
+          "height": 213.359375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage1.webp",
+          "loaded": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "x": 314.9140625,
+          "y": 6836.515625,
+          "width": 213.359375,
+          "height": 213.359375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage2.webp",
+          "loaded": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "x": -208.2578125,
+          "y": 6836.515625,
+          "width": 213.359375,
+          "height": 213.359375
+        },
+        {
+          "src": "/assets/figma/industries-BackgroundImage3.webp",
+          "loaded": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "x": -208.2578125,
+          "y": 6836.515625,
+          "width": 213.359375,
+          "height": 213.359375
+        },
+        {
+          "src": "/assets/figma/industries-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 30,
+          "y": 7124.78125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/industries-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 266,
+          "y": 7124.78125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 320,
+          "naturalHeight": 480,
+          "x": -540,
+          "y": 7320.78125,
+          "width": 280,
+          "height": 373.328125
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": -540,
+          "y": 7726.109375,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": -540,
+          "y": 8138.890625,
+          "width": 160,
+          "height": 27.8125
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 320,
+          "naturalHeight": 480,
+          "x": -260,
+          "y": 7320.78125,
+          "width": 280,
+          "height": 373.328125
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": -260,
+          "y": 7726.109375,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": -260,
+          "y": 8138.890625,
+          "width": 160,
+          "height": 27.8125
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 320,
+          "naturalHeight": 480,
+          "x": 20,
+          "y": 7320.78125,
+          "width": 280,
+          "height": 373.328125
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 20,
+          "y": 7726.109375,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": 20,
+          "y": 8138.890625,
+          "width": 160,
+          "height": 27.8125
+        },
+        {
+          "src": "/assets/figma/stories-Media.webp",
+          "loaded": true,
+          "naturalWidth": 320,
+          "naturalHeight": 480,
+          "x": 300,
+          "y": 7320.78125,
+          "width": 280,
+          "height": 373.328125
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 300,
+          "y": 7726.109375,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/stories-Company.svg",
+          "loaded": true,
+          "naturalWidth": 184,
+          "naturalHeight": 32,
+          "x": 300,
+          "y": 8138.890625,
+          "width": 160,
+          "height": 27.8125
+        },
+        {
+          "src": "/assets/figma/offerings-Frame15.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 20,
+          "x": 20,
+          "y": 8882.796875,
+          "width": 10,
+          "height": 20
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 260,
+          "y": 9255.953125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 260,
+          "y": 9365.953125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 260,
+          "y": 9627.953125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 260,
+          "y": 9709.953125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 260,
+          "y": 9791.953125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 260,
+          "y": 9873.953125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 260,
+          "y": 9955.953125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork1.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "/assets/figma/faq-IconArtwork2.svg",
+          "loaded": true,
+          "naturalWidth": 24,
+          "naturalHeight": 24,
+          "x": 260,
+          "y": 10053.953125,
+          "width": 24,
+          "height": 24
+        },
+        {
+          "src": "/assets/figma/footer-Indicator.svg",
+          "loaded": true,
+          "naturalWidth": 10,
+          "naturalHeight": 10,
+          "x": 20,
+          "y": 11240.15625,
+          "width": 10,
+          "height": 10
+        },
+        {
+          "src": "/assets/figma/footer-Vector.svg",
+          "loaded": true,
+          "naturalWidth": 220,
+          "naturalHeight": 213,
+          "x": 89.265625,
+          "y": 11650.078125,
+          "width": 40.890625,
+          "height": 39.59375
+        },
+        {
+          "src": "/assets/figma/footer-Vector1.svg",
+          "loaded": true,
+          "naturalWidth": 105,
+          "naturalHeight": 194,
+          "x": 128.015625,
+          "y": 11654.296875,
+          "width": 19.46875,
+          "height": 36.125
+        },
+        {
+          "src": "/assets/figma/footer-Vector2.svg",
+          "loaded": true,
+          "naturalWidth": 157,
+          "naturalHeight": 157,
+          "x": 148.421875,
+          "y": 11661.203125,
+          "width": 29.21875,
+          "height": 29.21875
+        },
+        {
+          "src": "/assets/figma/footer-Vector3.svg",
+          "loaded": true,
+          "naturalWidth": 238,
+          "naturalHeight": 153,
+          "x": 180.453125,
+          "y": 11661.203125,
+          "width": 44.375,
+          "height": 28.46875
+        },
+        {
+          "src": "/assets/figma/footer-Vector4.svg",
+          "loaded": true,
+          "naturalWidth": 136,
+          "naturalHeight": 157,
+          "x": 227.640625,
+          "y": 11661.203125,
+          "width": 25.359375,
+          "height": 29.21875
+        },
+        {
+          "src": "/assets/figma/footer-Vector5.svg",
+          "loaded": true,
+          "naturalWidth": 207,
+          "naturalHeight": 213,
+          "x": 253.234375,
+          "y": 11650.078125,
+          "width": 38.5625,
+          "height": 39.59375
+        },
+        {
+          "src": "/assets/figma/footer-Vector6.svg",
+          "loaded": true,
+          "naturalWidth": 29,
+          "naturalHeight": 213,
+          "x": 294.5,
+          "y": 11650.078125,
+          "width": 5.484375,
+          "height": 39.59375
+        },
+        {
+          "src": "/assets/figma/footer-Vector7.svg",
+          "loaded": true,
+          "naturalWidth": 301,
+          "naturalHeight": 273,
+          "x": 20,
+          "y": 11644.421875,
+          "width": 56,
+          "height": 50.90625
+        }
+      ],
+      "fonts": {
+        "body": "\"PP Neue Montreal\", \"Helvetica Neue\", Arial, sans-serif",
+        "headline": "\"Founders Grotesk\", \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "overflowing": [
+        {
+          "tag": "DIV",
+          "className": "zOB0Iq_slide"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_storyGrid"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_portrait"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_storyContent"
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_quoteBlock"
+        },
+        {
+          "tag": "DIV",
+          "className": "eyebrow "
+        },
+        {
+          "tag": "SPAN",
+          "className": ""
+        },
+        {
+          "tag": "FIGURE",
+          "className": "-6Sfoq_testimonial"
+        },
+        {
+          "tag": "BLOCKQUOTE",
+          "className": "display -6Sfoq_quote"
+        },
+        {
+          "tag": "FIGCAPTION",
+          "className": "-6Sfoq_person"
+        },
+        {
+          "tag": "SPAN",
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "className": ""
+        },
+        {
+          "tag": "DIV",
+          "className": "-6Sfoq_companyRow"
+        },
+        {
+          "tag": "IMG",
+          "className": "-6Sfoq_companyLogo"
+        },
+        {
+          "tag": "BUTTON",
+          "className": "button button-medium button-outline"
+        }
+      ]
+    }
+  ]
+}

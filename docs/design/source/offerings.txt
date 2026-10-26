@@ -1,0 +1,229 @@
+const imgFrame15 = "https://www.figma.com/api/mcp/asset/a5d69766-b907-4b4a-8940-c088d2c244af.svg";
+const imgLowerField = "https://www.figma.com/api/mcp/asset/f022174d-dfa2-4592-8d15-b08833afae96.svg";
+const imgUpperField = "https://www.figma.com/api/mcp/asset/a6135fab-b133-4f37-92ea-9ac4893ef754.svg";
+const imgHighlight = "https://www.figma.com/api/mcp/asset/43abd470-9837-447a-8121-adb5baccbbe0.svg";
+const imgReflection = "https://www.figma.com/api/mcp/asset/c92c7936-c66f-40a3-9aa1-2241cc0ad43d.svg";
+const imgMask = "https://www.figma.com/api/mcp/asset/d6f985f3-3ba5-40b1-a514-1f2a964c3fda.svg";
+const imgEveryThreadToOneCentre11 = "https://www.figma.com/api/mcp/asset/b11cd2c8-2c8e-4bd4-a59d-4e57940ea1e4.svg";
+const imgUnion = "https://www.figma.com/api/mcp/asset/17d4dcda-5f19-49cf-9668-5860a4c8db76.svg";
+const imgUpperField1 = "https://www.figma.com/api/mcp/asset/c0146acc-84fd-42ec-ad08-63f3bf5ad1c2.svg";
+const imgLowerField1 = "https://www.figma.com/api/mcp/asset/4ff9fd5c-9fd5-4c3f-8adc-0127612ae6b7.svg";
+const imgHighlight1 = "https://www.figma.com/api/mcp/asset/6a562326-05a1-4e4b-8814-b77265fb0bb4.svg";
+const imgReflection1 = "https://www.figma.com/api/mcp/asset/d23af78f-8ab6-4463-bc10-91a5391e07d0.svg";
+const imgMask1 = "https://www.figma.com/api/mcp/asset/00f8ce14-b736-4e66-ac79-1108a1c709a2.svg";
+const imgRisingOffABase11 = "https://www.figma.com/api/mcp/asset/1ad82e9a-8943-49d6-aa80-c4bc417c1c12.svg";
+const imgField1 = "https://www.figma.com/api/mcp/asset/31517068-de67-46a9-8b98-5de2f3069979.svg";
+const imgLowerField2 = "https://www.figma.com/api/mcp/asset/9e71820d-87e7-4b43-88db-bab446a81bdb.svg";
+const imgUpperField2 = "https://www.figma.com/api/mcp/asset/67241b5a-7756-4793-9e21-aa300f656d5c.svg";
+const imgUpperField3 = "https://www.figma.com/api/mcp/asset/fcd009ca-a9ed-4481-bd89-f667b1cd953f.svg";
+const imgReflection2 = "https://www.figma.com/api/mcp/asset/f05834cf-f14c-4bf6-98c1-f0293f3d2543.svg";
+const imgReflection3 = "https://www.figma.com/api/mcp/asset/9cb8f701-4e73-4545-854a-40ebd4220ecf.svg";
+const imgReflection4 = "https://www.figma.com/api/mcp/asset/5bbc92ce-c7ff-4eb0-8537-9f09262d1559.svg";
+const imgRaysAroundACoreOneStillMissing11 = "https://www.figma.com/api/mcp/asset/42dcbe69-8280-4d9b-adbe-b3dcd907604f.svg";
+
+export default function Offerings() {
+  return (
+    <div className="content-stretch flex flex-col items-start pb-[var(--calc(var(--spacing)*24),96px)] pt-[var(--calc(var(--spacing)*0),0px)] px-[var(--margin,48px)] relative size-full" data-node-id="186:4138" data-name="Offerings">
+      <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*8),32px)] items-start relative shrink-0 w-full" data-node-id="186:4388" data-name="Container">
+        <div className="content-stretch flex gap-[var(--calc(var(--spacing)*2),8px)] items-center relative shrink-0" data-node-id="186:4389" data-name="Eyebrow">
+          <div className="h-[20px] relative shrink-0 w-[10px]" data-node-id="186:4390">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame15} />
+          </div>
+          <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-foreground,#27433b)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="186:4392" style={{ fontVariationSettings: '"ital" 100' }}>
+            Try the technology
+          </p>
+        </div>
+        <div className="content-stretch flex gap-[var(--calc(var(--spacing)*8),32px)] items-start relative shrink-0 w-full" data-node-id="186:4154" data-name="Three ways">
+          <div className="bg-[var(--color-secondary,#f6f1e8)] content-stretch flex flex-[1_0_0] flex-col gap-[var(--calc(var(--spacing)*32),128px)] items-start min-w-px overflow-clip p-[var(--calc(var(--spacing)*10),40px)] relative rounded-[var(--radius-2xl,16px)]" data-node-id="186:4155" data-name="Applications">
+            <div className="absolute inset-0 overflow-clip" data-node-id="186:4156" data-name="Pattern/Drift">
+              <div className="absolute inset-0 overflow-clip" data-node-id="I186:4156;77:864" data-name="Drift — editable masks">
+                <div className="absolute bg-[var(----pattern-drift-base,#10231e)] inset-[-2.5%]" data-node-id="I186:4156;77:865" data-name="base" />
+                <div className="absolute inset-[-2.5%] overflow-clip" data-node-id="I186:4156;77:866" data-name="Lower field">
+                  <div className="absolute bg-[var(----pattern-drift-lower-field,#42665a)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-position-[-1.89px_-1.89px] mask-size-[843.78px_843.78px]" data-node-id="I186:4156;77:873" style={{ maskImage: `url("${imgLowerField}")` }} data-name="lower-field" />
+                </div>
+                <div className="absolute inset-[-2.5%] overflow-clip" data-node-id="I186:4156;77:874" data-name="Upper field">
+                  <div className="absolute bg-[var(----pattern-drift-upper-field,#42665a)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-position-[-1.89px_-1.89px] mask-size-[843.78px_843.78px]" data-node-id="I186:4156;77:881" style={{ maskImage: `url("${imgUpperField}")` }} data-name="upper-field" />
+                </div>
+                <div className="absolute inset-[-2.5%] overflow-clip" data-node-id="I186:4156;77:882" data-name="Highlight">
+                  <div className="absolute bg-[var(----pattern-drift-highlight,#10231e)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-position-[-1.89px_-1.89px] mask-size-[843.78px_843.78px]" data-node-id="I186:4156;77:889" style={{ maskImage: `url("${imgHighlight}")` }} data-name="highlight" />
+                </div>
+                <div className="absolute bg-black inset-[-2.5%] mix-blend-plus-lighter overflow-clip" data-node-id="I186:4156;77:890" data-name="Reflections">
+                  <div className="absolute bg-[var(----pattern-drift-reflection,#668978)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[840px_840px]" data-node-id="I186:4156;77:897" style={{ maskImage: `url("${imgReflection}")` }} data-name="reflection" />
+                </div>
+              </div>
+            </div>
+            <div className="absolute bottom-0 contents left-0 mix-blend-color-burn" data-node-id="186:4157" data-name="Color">
+              <div className="absolute bg-[var(--color-background,#10231e)] bottom-0 h-[583px] left-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[486px_583px] mix-blend-color-burn w-[486px]" data-node-id="186:4159" style={{ maskImage: `url("${imgMask}")` }} data-name="Mask" />
+            </div>
+            <div className="absolute bg-[var(--color-background,#10231e)] inset-0 mix-blend-screen opacity-75" data-node-id="186:4160" data-name="Mask" />
+            <div className="relative shrink-0 size-[80px]" data-node-id="186:4161" data-name="Every thread to one centre · 1:1">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEveryThreadToOneCentre11} />
+            </div>
+            <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*6),24px)] items-start relative shrink-0 w-full" data-node-id="186:4163" data-name="Content">
+              <div className="backdrop-blur-[6px] bg-[var(--var\(--color-primary\),rgba(246,241,232,0.1))] content-stretch flex items-center overflow-clip px-[12px] py-[6px] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="186:4164" data-name="Generated autolayout">
+                <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="186:4165" style={{ fontVariationSettings: '"ital" 100' }}>
+                  Applications
+                </p>
+              </div>
+              <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[0] min-w-full not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-4xl,36px)] tracking-[-0.54px] w-[min-content]" data-node-id="186:4166">
+                <p className="leading-none mb-0 text-balance">More conversations.</p>
+                <p className="leading-none text-balance">Less chasing.</p>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[var(--calc(var(--spacing)*2),8px)] items-center relative shrink-0 w-full" data-node-id="186:4167" data-name="Link">
+              <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] min-w-px relative text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)]" data-node-id="186:4168" style={{ fontVariationSettings: '"ital" 100' }}>
+                Find your application
+              </p>
+              <div className="h-[16px] relative shrink-0 w-[16.001px]" data-node-id="186:4169" data-name="Union">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion} />
+              </div>
+            </div>
+          </div>
+          <div className="bg-[var(--color-secondary,#f6f1e8)] content-stretch flex flex-[1_0_0] flex-col gap-[var(--calc(var(--spacing)*32),128px)] items-start min-w-px overflow-clip p-[var(--calc(var(--spacing)*10),40px)] relative rounded-[var(--radius-2xl,16px)]" data-node-id="186:4171" data-name="Models & infrastructure">
+            <div className="-translate-x-1/2 absolute aspect-[583/583] bottom-0 left-[calc(50%-0.17px)] overflow-clip top-0" data-node-id="186:4172" data-name="Pattern/Concentric">
+              <div className="absolute inset-0 overflow-clip" data-node-id="I186:4172;77:2555" data-name="Concentric — editable masks">
+                <div className="absolute bg-[var(----pattern-concentric-base,#10231e)] inset-[-2.5%]" data-node-id="I186:4172;77:2556" data-name="base" />
+                <div className="absolute inset-[-2.5%] overflow-clip" data-node-id="I186:4172;77:2557" data-name="Upper field">
+                  <div className="absolute bg-[var(----pattern-concentric-upper-field,#42665a)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[840px_840px]" data-node-id="I186:4172;77:2589" style={{ maskImage: `url("${imgUpperField1}")` }} data-name="upper-field" />
+                </div>
+                <div className="absolute inset-[-2.5%] overflow-clip" data-node-id="I186:4172;77:2590" data-name="Lower field">
+                  <div className="absolute bg-[var(----pattern-concentric-lower-field,#42665a)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[840px_840px]" data-node-id="I186:4172;77:2607" style={{ maskImage: `url("${imgLowerField1}")` }} data-name="lower-field" />
+                </div>
+                <div className="absolute inset-[-2.5%] overflow-clip" data-node-id="I186:4172;77:2608" data-name="Highlight">
+                  <div className="absolute bg-[var(----pattern-concentric-highlight,#2e2e2e)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[840px_840px]" data-node-id="I186:4172;77:2625" style={{ maskImage: `url("${imgHighlight1}")` }} data-name="highlight" />
+                </div>
+                <div className="absolute bg-[var(--pattern\/concentric\/reflection-base,black)] inset-[-2.5%] mix-blend-plus-lighter overflow-clip" data-node-id="I186:4172;77:2626" data-name="Reflection">
+                  <div className="absolute bg-[var(----pattern-concentric-reflection,#646464)] inset-[-23.81%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-10px_-10px] mask-size-[1260px_1260px]" data-node-id="I186:4172;77:2643" style={{ maskImage: `url("${imgReflection1}")` }} data-name="reflection" />
+                </div>
+              </div>
+            </div>
+            <div className="absolute contents inset-[-6.15%_-0.07%_0_0] mix-blend-color-burn" data-node-id="186:4173" data-name="Color">
+              <div className="absolute bg-[var(--color-secondary,#f6f1e8)] inset-[-6.15%_0_0_0] mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[480.004px_587px] mix-blend-color-burn" data-node-id="186:4175" style={{ maskImage: `url("${imgMask1}")` }} data-name="Mask" />
+            </div>
+            <div className="absolute bg-[var(--color-background,#10231e)] inset-0 mix-blend-screen opacity-75" data-node-id="186:4176" data-name="Mask" />
+            <div className="relative shrink-0 size-[80px]" data-node-id="186:4177" data-name="Rising off a base · 1:1">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRisingOffABase11} />
+            </div>
+            <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*6),24px)] items-start relative shrink-0 w-full" data-node-id="186:4179" data-name="Content">
+              <div className="backdrop-blur-[6px] bg-[var(--var\(--color-primary\),rgba(246,241,232,0.1))] content-stretch flex items-center overflow-clip px-[12px] py-[6px] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="186:4180" data-name="Generated autolayout">
+                <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="186:4181" style={{ fontVariationSettings: '"ital" 100' }}>{`Models & Infrastructure`}</p>
+              </div>
+              <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[0] min-w-full not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-4xl,36px)] tracking-[-0.54px] w-[min-content]" data-node-id="186:4182">
+                <p className="leading-none mb-0 text-balance">Models and infrastructure.</p>
+                <p className="leading-none text-balance">More room to build.</p>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[var(--calc(var(--spacing)*2),8px)] items-center relative shrink-0 w-full" data-node-id="186:4183" data-name="Link">
+              <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] min-w-px relative text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)]" data-node-id="186:4184" style={{ fontVariationSettings: '"ital" 100' }}>
+                Explore PyAI
+              </p>
+              <div className="h-[16px] relative shrink-0 w-[16.001px]" data-node-id="186:4185" data-name="Union">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion} />
+              </div>
+            </div>
+          </div>
+          <div className="bg-[var(--color-secondary,#f6f1e8)] content-stretch flex flex-[1_0_0] flex-col gap-[var(--calc(var(--spacing)*32),128px)] items-start min-w-px overflow-clip p-[var(--calc(var(--spacing)*10),40px)] relative rounded-[var(--radius-2xl,16px)]" data-node-id="186:4187" data-name="AI Services">
+            <div className="absolute inset-0 overflow-clip" data-node-id="I186:4188;77:1934" data-name="Single band — editable masks">
+              <div className="absolute bg-[var(----pattern-single-band-base,#10231e)] inset-[-2.5%]" data-node-id="I186:4188;77:1935" data-name="base" />
+              <div className="absolute inset-[-2.5%]" data-node-id="I186:4188;77:1936" data-name="Slits">
+                <div className="absolute inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-position-[-1.89px_-1.89px] mask-size-[843.78px_843.78px]" data-node-id="I186:4188;77:1943" style={{ maskImage: `url("${imgField1}")` }} data-name="Field 1">
+                  <div className="absolute bg-[var(----pattern-single-band-lower-field,#a7aaa9)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-position-[-1.89px_-1.89px] mask-size-[843.78px_843.78px]" data-node-id="I186:4188;77:1950" style={{ maskImage: `url("${imgLowerField2}")` }} data-name="lower-field" />
+                </div>
+                <div className="absolute inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-position-[-1.89px_-1.89px] mask-size-[843.78px_843.78px]" data-node-id="I186:4188;77:1951" style={{ maskImage: `url("${imgField1}")` }} data-name="Field 2">
+                  <div className="absolute bg-[var(----pattern-single-band-upper-field,#42665a)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-position-[-1.89px_-1.89px] mask-size-[843.78px_843.78px]" data-node-id="I186:4188;77:1958" style={{ maskImage: `url("${imgUpperField2}")` }} data-name="upper-field" />
+                </div>
+                <div className="absolute inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-position-[-1.89px_-1.89px] mask-size-[843.78px_843.78px]" data-node-id="I186:4188;77:1959" style={{ maskImage: `url("${imgField1}")` }} data-name="Field 3">
+                  <div className="absolute bg-[var(----pattern-single-band-upper-field,#42665a)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-position-[-1.89px_-1.89px] mask-size-[843.78px_843.78px]" data-node-id="I186:4188;77:1966" style={{ maskImage: `url("${imgUpperField3}")` }} data-name="upper-field" />
+                </div>
+              </div>
+              <div className="absolute inset-[-2.5%] overflow-clip" data-node-id="I186:4188;77:1967" data-name="Reflections">
+                <div className="absolute bg-[var(----pattern-single-band-reflection-1,white)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[840px_840px]" data-node-id="I186:4188;77:1975" style={{ maskImage: `url("${imgReflection2}")` }} data-name="reflection-1" />
+                <div className="absolute inset-0 mix-blend-overlay" data-node-id="I186:4188;77:1976" data-name="Filter">
+                  <div className="absolute bg-[var(----pattern-single-band-reflection-2,#f0ebf5)] inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[840px_840px]" data-node-id="I186:4188;77:1983" style={{ maskImage: `url("${imgReflection3}")` }} data-name="reflection-2" />
+                </div>
+                <div className="absolute bg-[var(----pattern-single-band-reflection-3,#10231e)] inset-0 mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[840px_840px]" data-node-id="I186:4188;77:1991" style={{ maskImage: `url("${imgReflection4}")` }} data-name="reflection-3" />
+              </div>
+            </div>
+            <div className="absolute contents inset-[-6.15%_-0.07%_0_0] mix-blend-color-burn" data-node-id="186:4189" data-name="Color">
+              <div className="absolute bg-[var(--color-secondary,#f6f1e8)] inset-[-6.15%_0_0_0] mask-intersect mask-luminance mask-no-clip mask-no-repeat mask-size-[480.004px_587px] mix-blend-color-burn" data-node-id="186:4191" style={{ maskImage: `url("${imgMask1}")` }} data-name="Mask" />
+            </div>
+            <div className="absolute bg-[var(--color-background,#10231e)] inset-0 mix-blend-screen opacity-75" data-node-id="186:4192" data-name="Mask" />
+            <div className="relative shrink-0 size-[80px]" data-node-id="186:4193" data-name="Rays around a core, one still missing · 1:1">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRaysAroundACoreOneStillMissing11} />
+            </div>
+            <div className="content-stretch flex flex-col gap-[var(--calc(var(--spacing)*6),24px)] items-start relative shrink-0 w-full" data-node-id="186:4195" data-name="Content">
+              <div className="backdrop-blur-[6px] bg-[var(--var\(--color-primary\),rgba(246,241,232,0.1))] content-stretch flex items-center overflow-clip px-[12px] py-[6px] relative rounded-[var(--calc(infinity*1px),9999px)] shrink-0" data-node-id="186:4196" data-name="Generated autolayout">
+                <p className="[word-break:break-word] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-sm,14px)] whitespace-nowrap" data-node-id="186:4197" style={{ fontVariationSettings: '"ital" 100' }}>
+                  AI Services
+                </p>
+              </div>
+              <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-[family-name:var(--font-display,'Founders_Grotesk:Regular')] leading-[0] min-w-full not-italic relative shrink-0 text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-4xl,36px)] tracking-[-0.54px] w-[min-content]" data-node-id="186:4198">
+                <p className="leading-none mb-0 text-balance">When the right solution</p>
+                <p className="leading-none text-balance">doesn’t exist yet.</p>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[var(--calc(var(--spacing)*2),8px)] items-center relative shrink-0 w-full" data-node-id="186:4199" data-name="Link">
+              <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font-sans,'PP_Neue_Montreal:Regular')] font-[var(--font-weight-medium,475)] leading-[1.4] min-w-px relative text-[color:var(--color-foreground,#f6f1e8)] text-[length:var(--text-base,16px)]" data-node-id="186:4200" style={{ fontVariationSettings: '"ital" 100' }}>
+                Discuss your project
+              </p>
+              <div className="h-[16px] relative shrink-0 w-[16.001px]" data-node-id="186:4201" data-name="Union">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Label/sm: Font(family: "var(--font-sans)", style: Regular, size: var(--text-sm), weight: var(--font-weight-medium), lineHeight: 1.399999976158142, letterSpacing: 0), Display/4xl: Font(family: "var(--font-display)", style: Regular, size: var(--text-4xl), weight: var(--font-weight-normal), lineHeight: 1, letterSpacing: -1.5), Label/base: Font(family: "var(--font-sans)", style: Regular, size: var(--text-base), weight: var(--font-weight-medium), lineHeight: 1.399999976158142, letterSpacing: 0).
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Density=0
+**Node ID:** 77:863
+
+Editable drift interference pattern, rebuilt from brand master 1032:17489. Color carriers bind to pattern/drift/\* in Theme. Preserve aspect ratio: scale or crop, never stretch. Mask gradients define geometry and are intentionally not themed.
+
+## Pattern/Drift
+**Node ID:** 77:2804
+
+Theme-aware Drift pattern. Choose Density; inherit the containing frame’s Theme mode. Color variables: pattern/drift/\*. Density 0, 1, 2, 3 correspond to 5, 10, 20, 40 slits. Scale uniformly or crop inside a frame. Never stretch. Keep type in calm areas and use one pattern structure per composition. Masks remain grayscale; edit the bound color layers for color.
+
+## Icon/arrow-northeast
+**Node ID:** 17:12
+
+AtomsAI stroke icon &quot;arrow-northeast&quot; from src/assets/brand/icons, drawn at 32 px (Medium 2 at 24, scaled to 2.67; Medium pairs with headings). Stroke takes the text color: foreground.
+
+## Density=1
+**Node ID:** 77:2554
+
+Editable concentric interference pattern, rebuilt from brand master 1042:12649. Color carriers bind to pattern/concentric/\* in Theme. Preserve aspect ratio: scale or crop, never stretch. Mask gradients define geometry and are intentionally not themed.
+
+## Pattern/Concentric
+**Node ID:** 77:2807
+
+Theme-aware Concentric pattern. Choose Density; inherit the containing frame’s Theme mode. Color variables: pattern/concentric/\*. Source densities 1 and 2 contain 15 and 30 rings. Scale uniformly or crop inside a frame. Never stretch. Keep type in calm areas and use one pattern structure per composition. Masks remain grayscale; edit the bound color layers for color.
+
+## Density=0
+**Node ID:** 77:1933
+
+Editable single-band interference pattern, rebuilt from brand master 1032:17498. Color carriers bind to pattern/single-band/\* in Theme. Preserve aspect ratio: scale or crop, never stretch. Mask gradients define geometry and are intentionally not themed.
+
+## Pattern/Single band
+**Node ID:** 77:2806
+
+Theme-aware Single band pattern. Choose Density; inherit the containing frame’s Theme mode. Color variables: pattern/single-band/\*. Density 0, 1, 2, 3 correspond to 5, 10, 20, 40 slits. Scale uniformly or crop inside a frame. Never stretch. Keep type in calm areas and use one pattern structure per composition. Masks remain grayscale; edit the bound color layers for color.
+
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

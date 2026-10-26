@@ -1,0 +1,16 @@
+.viewport {
+  container-type: size;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Preserve the original viewport's aspect ratio and cover its responsive slot. */
+.artwork {
+  --artwork-width: max(100cqw, calc(100cqh * var(--artwork-ratio)));
+  --artwork-height: max(100cqh, calc(100cqw / var(--artwork-ratio)));
+  position: absolute;
+  left: calc((100cqw - var(--artwork-width)) / 2);
+  top: calc((100cqh - var(--artwork-height)) / 2);
+  width: var(--artwork-width);
+  height: var(--artwork-height);
+}

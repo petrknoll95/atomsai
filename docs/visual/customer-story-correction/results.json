@@ -1,0 +1,1667 @@
+{
+  "date": "2026-10-26T11:24:00.224Z",
+  "base": "http://127.0.0.1:59721",
+  "method": "Isolated production snapshot of the existing kinetic preview with only the customer-story correction applied.",
+  "results": [
+    {
+      "engine": "chromium",
+      "width": 1600,
+      "scrollWidth": 1600,
+      "cards": [
+        {
+          "rect": {
+            "x": 1328,
+            "y": 5014.078125,
+            "width": 224,
+            "height": 208,
+            "top": 5014.078125,
+            "right": 1552,
+            "bottom": 5222.078125,
+            "left": 1328
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "78%",
+              "color": [
+                54,
+                103,
+                89,
+                255
+              ],
+              "contrast": 5.670824129492414
+            },
+            {
+              "text": "94%",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Invoice auto-match rate on 40k invoices/quarter",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": [
+            {
+              "color": "color(display-p3 0.152941 0.262745 0.231373)",
+              "mask": "url(\"http://127.0.0.1:59721/assets/figma/stories-Union1.svg\")",
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "rect": {
+            "x": 1328,
+            "y": 5230.078125,
+            "width": 224,
+            "height": 208,
+            "top": 5230.078125,
+            "right": 1552,
+            "bottom": 5438.078125,
+            "left": 1328
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "5 days",
+              "color": [
+                54,
+                103,
+                89,
+                255
+              ],
+              "contrast": 5.670824129492414
+            },
+            {
+              "text": "4 hours",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Month-end audit prepfirst two quarters",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": [
+            {
+              "color": "color(display-p3 0.152941 0.262745 0.231373)",
+              "mask": "url(\"http://127.0.0.1:59721/assets/figma/stories-Union1.svg\")",
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "rect": {
+            "x": 1328,
+            "y": 5446.078125,
+            "width": 224,
+            "height": 208,
+            "top": 5446.078125,
+            "right": 1552,
+            "bottom": 5654.078125,
+            "left": 1328
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "−81%",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Cost per processed document vs. prior BPO rate",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": []
+        }
+      ],
+      "errors": [],
+      "dialogKeyboard": "Enter opens; Escape closes and restores focus"
+    },
+    {
+      "engine": "chromium",
+      "width": 1100,
+      "scrollWidth": 1100,
+      "cards": [
+        {
+          "rect": {
+            "x": 32,
+            "y": 5193.234375,
+            "width": 340,
+            "height": 180,
+            "top": 5193.234375,
+            "right": 372,
+            "bottom": 5373.234375,
+            "left": 32
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "78%",
+              "color": [
+                54,
+                103,
+                89,
+                255
+              ],
+              "contrast": 5.670824129492414
+            },
+            {
+              "text": "94%",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Invoice auto-match rate on 40k invoices/quarter",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": [
+            {
+              "color": "color(display-p3 0.152941 0.262745 0.231373)",
+              "mask": "url(\"http://127.0.0.1:59721/assets/figma/stories-Union1.svg\")",
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "rect": {
+            "x": 380,
+            "y": 5193.234375,
+            "width": 340,
+            "height": 180,
+            "top": 5193.234375,
+            "right": 720,
+            "bottom": 5373.234375,
+            "left": 380
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "5 days",
+              "color": [
+                54,
+                103,
+                89,
+                255
+              ],
+              "contrast": 5.670824129492414
+            },
+            {
+              "text": "4 hours",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Month-end audit prepfirst two quarters",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": [
+            {
+              "color": "color(display-p3 0.152941 0.262745 0.231373)",
+              "mask": "url(\"http://127.0.0.1:59721/assets/figma/stories-Union1.svg\")",
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "rect": {
+            "x": 728,
+            "y": 5193.234375,
+            "width": 340,
+            "height": 180,
+            "top": 5193.234375,
+            "right": 1068,
+            "bottom": 5373.234375,
+            "left": 728
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "−81%",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Cost per processed document vs. prior BPO rate",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": []
+        }
+      ],
+      "errors": [],
+      "dialogKeyboard": "Enter opens; Escape closes and restores focus"
+    },
+    {
+      "engine": "chromium",
+      "width": 700,
+      "scrollWidth": 700,
+      "cards": [
+        {
+          "rect": {
+            "x": 20,
+            "y": 7648.25,
+            "width": 660,
+            "height": 160,
+            "top": 7648.25,
+            "right": 680,
+            "bottom": 7808.25,
+            "left": 20
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "78%",
+              "color": [
+                54,
+                103,
+                89,
+                255
+              ],
+              "contrast": 5.670824129492414
+            },
+            {
+              "text": "94%",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Invoice auto-match rate on 40k invoices/quarter",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": [
+            {
+              "color": "color(display-p3 0.152941 0.262745 0.231373)",
+              "mask": "url(\"http://127.0.0.1:59721/assets/figma/stories-Union1.svg\")",
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "rect": {
+            "x": 20,
+            "y": 7816.25,
+            "width": 660,
+            "height": 160,
+            "top": 7816.25,
+            "right": 680,
+            "bottom": 7976.25,
+            "left": 20
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "5 days",
+              "color": [
+                54,
+                103,
+                89,
+                255
+              ],
+              "contrast": 5.670824129492414
+            },
+            {
+              "text": "4 hours",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Month-end audit prepfirst two quarters",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": [
+            {
+              "color": "color(display-p3 0.152941 0.262745 0.231373)",
+              "mask": "url(\"http://127.0.0.1:59721/assets/figma/stories-Union1.svg\")",
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "rect": {
+            "x": 20,
+            "y": 7984.25,
+            "width": 660,
+            "height": 160,
+            "top": 7984.25,
+            "right": 680,
+            "bottom": 8144.25,
+            "left": 20
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "−81%",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Cost per processed document vs. prior BPO rate",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": []
+        }
+      ],
+      "errors": [],
+      "dialogKeyboard": "Enter opens; Escape closes and restores focus"
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "scrollWidth": 390,
+      "cards": [
+        {
+          "rect": {
+            "x": 20,
+            "y": 8459.0625,
+            "width": 350,
+            "height": 160,
+            "top": 8459.0625,
+            "right": 370,
+            "bottom": 8619.0625,
+            "left": 20
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "78%",
+              "color": [
+                54,
+                103,
+                89,
+                255
+              ],
+              "contrast": 5.670824129492414
+            },
+            {
+              "text": "94%",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Invoice auto-match rate on 40k invoices/quarter",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": [
+            {
+              "color": "color(display-p3 0.152941 0.262745 0.231373)",
+              "mask": "url(\"http://127.0.0.1:59721/assets/figma/stories-Union1.svg\")",
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "rect": {
+            "x": 20,
+            "y": 8627.0625,
+            "width": 350,
+            "height": 160,
+            "top": 8627.0625,
+            "right": 370,
+            "bottom": 8787.0625,
+            "left": 20
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "5 days",
+              "color": [
+                54,
+                103,
+                89,
+                255
+              ],
+              "contrast": 5.670824129492414
+            },
+            {
+              "text": "4 hours",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Month-end audit prepfirst two quarters",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": [
+            {
+              "color": "color(display-p3 0.152941 0.262745 0.231373)",
+              "mask": "url(\"http://127.0.0.1:59721/assets/figma/stories-Union1.svg\")",
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "rect": {
+            "x": 20,
+            "y": 8795.0625,
+            "width": 350,
+            "height": 160,
+            "top": 8795.0625,
+            "right": 370,
+            "bottom": 8955.0625,
+            "left": 20
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "−81%",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Cost per processed document vs. prior BPO rate",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": []
+        }
+      ],
+      "errors": [],
+      "dialogKeyboard": "Enter opens; Escape closes and restores focus"
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "scrollWidth": 320,
+      "cards": [
+        {
+          "rect": {
+            "x": 20,
+            "y": 8228.796875,
+            "width": 280,
+            "height": 160,
+            "top": 8228.796875,
+            "right": 300,
+            "bottom": 8388.796875,
+            "left": 20
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "78%",
+              "color": [
+                54,
+                103,
+                89,
+                255
+              ],
+              "contrast": 5.670824129492414
+            },
+            {
+              "text": "94%",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Invoice auto-match rate on 40k invoices/quarter",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": [
+            {
+              "color": "color(display-p3 0.152941 0.262745 0.231373)",
+              "mask": "url(\"http://127.0.0.1:59721/assets/figma/stories-Union1.svg\")",
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "rect": {
+            "x": 20,
+            "y": 8396.796875,
+            "width": 280,
+            "height": 160,
+            "top": 8396.796875,
+            "right": 300,
+            "bottom": 8556.796875,
+            "left": 20
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "5 days",
+              "color": [
+                54,
+                103,
+                89,
+                255
+              ],
+              "contrast": 5.670824129492414
+            },
+            {
+              "text": "4 hours",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Month-end audit prepfirst two quarters",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": [
+            {
+              "color": "color(display-p3 0.152941 0.262745 0.231373)",
+              "mask": "url(\"http://127.0.0.1:59721/assets/figma/stories-Union1.svg\")",
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "rect": {
+            "x": 20,
+            "y": 8564.796875,
+            "width": 280,
+            "height": 160,
+            "top": 8564.796875,
+            "right": 300,
+            "bottom": 8724.796875,
+            "left": 20
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "−81%",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Cost per processed document vs. prior BPO rate",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": []
+        }
+      ],
+      "errors": [],
+      "dialogKeyboard": "Enter opens; Escape closes and restores focus"
+    },
+    {
+      "engine": "webkit",
+      "width": 1600,
+      "scrollWidth": 1600,
+      "cards": [
+        {
+          "rect": {
+            "x": 1328,
+            "y": 5014.078125,
+            "width": 224,
+            "height": 208,
+            "top": 5014.078125,
+            "right": 1552,
+            "bottom": 5222.078125,
+            "left": 1328
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "78%",
+              "color": [
+                54,
+                103,
+                89,
+                255
+              ],
+              "contrast": 5.670824129492414
+            },
+            {
+              "text": "94%",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Invoice auto-match rate on 40k invoices/quarter",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": [
+            {
+              "color": "color(display-p3 0.152941 0.262745 0.231373)",
+              "mask": "url(\"http://127.0.0.1:59721/assets/figma/stories-Union1.svg\")",
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "rect": {
+            "x": 1328,
+            "y": 5230.078125,
+            "width": 224,
+            "height": 208,
+            "top": 5230.078125,
+            "right": 1552,
+            "bottom": 5438.078125,
+            "left": 1328
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "5 days",
+              "color": [
+                54,
+                103,
+                89,
+                255
+              ],
+              "contrast": 5.670824129492414
+            },
+            {
+              "text": "4 hours",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Month-end audit prepfirst two quarters",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": [
+            {
+              "color": "color(display-p3 0.152941 0.262745 0.231373)",
+              "mask": "url(\"http://127.0.0.1:59721/assets/figma/stories-Union1.svg\")",
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "rect": {
+            "x": 1328,
+            "y": 5446.078125,
+            "width": 224,
+            "height": 208,
+            "top": 5446.078125,
+            "right": 1552,
+            "bottom": 5654.078125,
+            "left": 1328
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "−81%",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Cost per processed document vs. prior BPO rate",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": []
+        }
+      ],
+      "errors": [],
+      "dialogKeyboard": "Enter opens; Escape closes and restores focus"
+    },
+    {
+      "engine": "webkit",
+      "width": 1100,
+      "scrollWidth": 1100,
+      "cards": [
+        {
+          "rect": {
+            "x": 32,
+            "y": 5193.203125,
+            "width": 340,
+            "height": 180,
+            "top": 5193.203125,
+            "right": 372,
+            "bottom": 5373.203125,
+            "left": 32
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "78%",
+              "color": [
+                54,
+                103,
+                89,
+                255
+              ],
+              "contrast": 5.670824129492414
+            },
+            {
+              "text": "94%",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Invoice auto-match rate on 40k invoices/quarter",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": [
+            {
+              "color": "color(display-p3 0.152941 0.262745 0.231373)",
+              "mask": "url(\"http://127.0.0.1:59721/assets/figma/stories-Union1.svg\")",
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "rect": {
+            "x": 380,
+            "y": 5193.203125,
+            "width": 340,
+            "height": 180,
+            "top": 5193.203125,
+            "right": 720,
+            "bottom": 5373.203125,
+            "left": 380
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "5 days",
+              "color": [
+                54,
+                103,
+                89,
+                255
+              ],
+              "contrast": 5.670824129492414
+            },
+            {
+              "text": "4 hours",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Month-end audit prepfirst two quarters",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": [
+            {
+              "color": "color(display-p3 0.152941 0.262745 0.231373)",
+              "mask": "url(\"http://127.0.0.1:59721/assets/figma/stories-Union1.svg\")",
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "rect": {
+            "x": 728,
+            "y": 5193.203125,
+            "width": 340,
+            "height": 180,
+            "top": 5193.203125,
+            "right": 1068,
+            "bottom": 5373.203125,
+            "left": 728
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "−81%",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Cost per processed document vs. prior BPO rate",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": []
+        }
+      ],
+      "errors": [],
+      "dialogKeyboard": "Enter opens; Escape closes and restores focus"
+    },
+    {
+      "engine": "webkit",
+      "width": 700,
+      "scrollWidth": 700,
+      "cards": [
+        {
+          "rect": {
+            "x": 20,
+            "y": 7648.15625,
+            "width": 660,
+            "height": 160,
+            "top": 7648.15625,
+            "right": 680,
+            "bottom": 7808.15625,
+            "left": 20
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "78%",
+              "color": [
+                54,
+                103,
+                89,
+                255
+              ],
+              "contrast": 5.670824129492414
+            },
+            {
+              "text": "94%",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Invoice auto-match rate on 40k invoices/quarter",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": [
+            {
+              "color": "color(display-p3 0.152941 0.262745 0.231373)",
+              "mask": "url(\"http://127.0.0.1:59721/assets/figma/stories-Union1.svg\")",
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "rect": {
+            "x": 20,
+            "y": 7816.15625,
+            "width": 660,
+            "height": 160,
+            "top": 7816.15625,
+            "right": 680,
+            "bottom": 7976.15625,
+            "left": 20
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "5 days",
+              "color": [
+                54,
+                103,
+                89,
+                255
+              ],
+              "contrast": 5.670824129492414
+            },
+            {
+              "text": "4 hours",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Month-end audit prepfirst two quarters",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": [
+            {
+              "color": "color(display-p3 0.152941 0.262745 0.231373)",
+              "mask": "url(\"http://127.0.0.1:59721/assets/figma/stories-Union1.svg\")",
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "rect": {
+            "x": 20,
+            "y": 7984.15625,
+            "width": 660,
+            "height": 160,
+            "top": 7984.15625,
+            "right": 680,
+            "bottom": 8144.15625,
+            "left": 20
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "−81%",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Cost per processed document vs. prior BPO rate",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": []
+        }
+      ],
+      "errors": [],
+      "dialogKeyboard": "Enter opens; Escape closes and restores focus"
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "scrollWidth": 390,
+      "cards": [
+        {
+          "rect": {
+            "x": 20,
+            "y": 8458.90625,
+            "width": 350,
+            "height": 160,
+            "top": 8458.90625,
+            "right": 370,
+            "bottom": 8618.90625,
+            "left": 20
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "78%",
+              "color": [
+                54,
+                103,
+                89,
+                255
+              ],
+              "contrast": 5.670824129492414
+            },
+            {
+              "text": "94%",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Invoice auto-match rate on 40k invoices/quarter",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": [
+            {
+              "color": "color(display-p3 0.152941 0.262745 0.231373)",
+              "mask": "url(\"http://127.0.0.1:59721/assets/figma/stories-Union1.svg\")",
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "rect": {
+            "x": 20,
+            "y": 8626.90625,
+            "width": 350,
+            "height": 160,
+            "top": 8626.90625,
+            "right": 370,
+            "bottom": 8786.90625,
+            "left": 20
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "5 days",
+              "color": [
+                54,
+                103,
+                89,
+                255
+              ],
+              "contrast": 5.670824129492414
+            },
+            {
+              "text": "4 hours",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Month-end audit prepfirst two quarters",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": [
+            {
+              "color": "color(display-p3 0.152941 0.262745 0.231373)",
+              "mask": "url(\"http://127.0.0.1:59721/assets/figma/stories-Union1.svg\")",
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "rect": {
+            "x": 20,
+            "y": 8794.90625,
+            "width": 350,
+            "height": 160,
+            "top": 8794.90625,
+            "right": 370,
+            "bottom": 8954.90625,
+            "left": 20
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "−81%",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Cost per processed document vs. prior BPO rate",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": []
+        }
+      ],
+      "errors": [],
+      "dialogKeyboard": "Enter opens; Escape closes and restores focus"
+    },
+    {
+      "engine": "webkit",
+      "width": 320,
+      "scrollWidth": 320,
+      "cards": [
+        {
+          "rect": {
+            "x": 20,
+            "y": 8228.640625,
+            "width": 280,
+            "height": 160,
+            "top": 8228.640625,
+            "right": 300,
+            "bottom": 8388.640625,
+            "left": 20
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "78%",
+              "color": [
+                54,
+                103,
+                89,
+                255
+              ],
+              "contrast": 5.670824129492414
+            },
+            {
+              "text": "94%",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Invoice auto-match rate on 40k invoices/quarter",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": [
+            {
+              "color": "color(display-p3 0.152941 0.262745 0.231373)",
+              "mask": "url(\"http://127.0.0.1:59721/assets/figma/stories-Union1.svg\")",
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "rect": {
+            "x": 20,
+            "y": 8396.640625,
+            "width": 280,
+            "height": 160,
+            "top": 8396.640625,
+            "right": 300,
+            "bottom": 8556.640625,
+            "left": 20
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "5 days",
+              "color": [
+                54,
+                103,
+                89,
+                255
+              ],
+              "contrast": 5.670824129492414
+            },
+            {
+              "text": "4 hours",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Month-end audit prepfirst two quarters",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": [
+            {
+              "color": "color(display-p3 0.152941 0.262745 0.231373)",
+              "mask": "url(\"http://127.0.0.1:59721/assets/figma/stories-Union1.svg\")",
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "rect": {
+            "x": 20,
+            "y": 8564.640625,
+            "width": 280,
+            "height": 160,
+            "top": 8564.640625,
+            "right": 300,
+            "bottom": 8724.640625,
+            "left": 20
+          },
+          "background": [
+            240,
+            240,
+            236,
+            255
+          ],
+          "text": [
+            {
+              "text": "−81%",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            },
+            {
+              "text": "Cost per processed document vs. prior BPO rate",
+              "color": [
+                29,
+                68,
+                59,
+                255
+              ],
+              "contrast": 9.463440335891644
+            }
+          ],
+          "arrows": []
+        }
+      ],
+      "errors": [],
+      "dialogKeyboard": "Enter opens; Escape closes and restores focus"
+    }
+  ]
+}

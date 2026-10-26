@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-26T16:26:29.732Z",
+  "results": [
+    {
+      "browser": "chromium",
+      "errors": [],
+      "geometry": {
+        "width": 736,
+        "height": 320,
+        "backdrop": "none",
+        "surfaceBackdrop": "blur(18px)"
+      },
+      "fallback": false,
+      "assets": [
+        {
+          "src": "/assets/figma/preview-waveform.svg",
+          "loaded": true,
+          "width": 736,
+          "height": 320,
+          "naturalWidth": 736,
+          "naturalHeight": 320
+        },
+        {
+          "src": "/assets/figma/preview-waveform.svg",
+          "loaded": true,
+          "width": 736,
+          "height": 320,
+          "naturalWidth": 736,
+          "naturalHeight": 320
+        },
+        {
+          "src": "/assets/figma/preview-voice-icon.svg",
+          "loaded": true,
+          "width": 24,
+          "height": 24,
+          "naturalWidth": 24,
+          "naturalHeight": 24
+        }
+      ],
+      "blurPixelDifference": 0.9631226053639846
+    },
+    {
+      "browser": "webkit",
+      "errors": [],
+      "geometry": {
+        "width": 736,
+        "height": 320,
+        "backdrop": "none",
+        "surfaceBackdrop": "blur(18px)"
+      },
+      "fallback": true,
+      "assets": [
+        {
+          "src": "/assets/figma/preview-waveform.svg",
+          "loaded": true,
+          "width": 736,
+          "height": 320,
+          "naturalWidth": 736,
+          "naturalHeight": 320
+        },
+        {
+          "src": "/assets/figma/preview-waveform.svg",
+          "loaded": true,
+          "width": 736,
+          "height": 320,
+          "naturalWidth": 736,
+          "naturalHeight": 320
+        },
+        {
+          "src": "/assets/figma/preview-voice-icon.svg",
+          "loaded": true,
+          "width": 24,
+          "height": 24,
+          "naturalWidth": 24,
+          "naturalHeight": 24
+        }
+      ],
+      "blurPixelDifference": 2.789887794198139,
+      "phaseDifference": 0
+    }
+  ]
+}

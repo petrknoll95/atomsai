@@ -1,0 +1,18 @@
+.viewport { overflow: hidden; }
+.track { display: flex; touch-action: pan-y pinch-zoom; }
+.slide { flex: 0 0 100%; min-width: 0; }
+.pagination { position: relative; display: flex; gap: var(--grid-gap); height: 4px; margin-top: 48px; }
+.dot { position: relative; display: flex; align-items: center; flex: 1; min-width: 0; height: 44px; margin-block: -20px; padding: 0; border: 0; background: transparent; transition: flex-grow .3s ease, var(--focus-transition); }
+.dot[aria-current='true'] { flex-grow: 3.285714; }
+.line { display: block; overflow: hidden; width: 100%; height: 4px; border-radius: var(--radius-control); background: var(--color-border); }
+.fill { display: block; width: 100%; height: 100%; background: var(--color-foreground); transform: scaleX(0); transform-origin: left; }
+.playback { position: absolute; right: 0; bottom: 20px; display: grid; place-items: center; width: 28px; height: 28px; padding: 0; border: 0; border-radius: 50%; color: var(--color-foreground); background: transparent; }
+.playback::before { content: ''; position: absolute; inset: -8px; }
+.playback:hover { background: var(--color-surface); }
+.playback svg { width: 14px; height: 14px; fill: currentColor; }
+@media (max-width: 767px) { .pagination { gap: 12px; margin-top: 48px; } }
+@media (prefers-reduced-motion: reduce) {
+  .dot { transition: none; }
+  .dot[aria-current='true'] .fill { transform: scaleX(1) !important; }
+  .playback { display: none; }
+}

@@ -1,0 +1,377 @@
+{
+  "checkedAt": "2026-10-26T10:19:25.289Z",
+  "sourceExplicit": [
+    "https://justcall.io/",
+    "https://helpwise.io/",
+    "https://serviceagent.ai/",
+    "https://www.callpage.io/",
+    "https://atomsai.com/company/contact",
+    "https://pyai.com/playground"
+  ],
+  "local": [
+    {
+      "href": "#main",
+      "resolves": true
+    },
+    {
+      "href": "#technology",
+      "resolves": true
+    },
+    {
+      "href": "#applications",
+      "resolves": true
+    },
+    {
+      "href": "#trust-center",
+      "resolves": true
+    },
+    {
+      "href": "#offerings",
+      "resolves": true
+    },
+    {
+      "href": "#top",
+      "resolves": true
+    }
+  ],
+  "external": [
+    {
+      "url": "https://atomsai.com/agents",
+      "sourceExplicit": false,
+      "chain": [
+        {
+          "url": "https://atomsai.com/agents",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "Agents · AtomsAI",
+      "error": ""
+    },
+    {
+      "url": "https://atomsai.com/applications",
+      "sourceExplicit": false,
+      "chain": [
+        {
+          "url": "https://atomsai.com/applications",
+          "status": 404,
+          "location": null
+        }
+      ],
+      "title": "Page not found · AtomsAI",
+      "error": ""
+    },
+    {
+      "url": "https://atomsai.com/approach",
+      "sourceExplicit": false,
+      "chain": [
+        {
+          "url": "https://atomsai.com/approach",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "Our approach · AtomsAI",
+      "error": ""
+    },
+    {
+      "url": "https://atomsai.com/capabilities/chat",
+      "sourceExplicit": false,
+      "chain": [
+        {
+          "url": "https://atomsai.com/capabilities/chat",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "Chat agents · AtomsAI",
+      "error": ""
+    },
+    {
+      "url": "https://atomsai.com/capabilities/voice",
+      "sourceExplicit": false,
+      "chain": [
+        {
+          "url": "https://atomsai.com/capabilities/voice",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "Voice agents · AtomsAI",
+      "error": ""
+    },
+    {
+      "url": "https://atomsai.com/changelog",
+      "sourceExplicit": false,
+      "chain": [
+        {
+          "url": "https://atomsai.com/changelog",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "Changelog · AtomsAI",
+      "error": ""
+    },
+    {
+      "url": "https://atomsai.com/company/about",
+      "sourceExplicit": false,
+      "chain": [
+        {
+          "url": "https://atomsai.com/company/about",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "About · AtomsAI",
+      "error": ""
+    },
+    {
+      "url": "https://atomsai.com/company/careers",
+      "sourceExplicit": false,
+      "chain": [
+        {
+          "url": "https://atomsai.com/company/careers",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "Careers · AtomsAI",
+      "error": ""
+    },
+    {
+      "url": "https://atomsai.com/company/contact",
+      "sourceExplicit": true,
+      "chain": [
+        {
+          "url": "https://atomsai.com/company/contact",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "Contact · AtomsAI",
+      "error": ""
+    },
+    {
+      "url": "https://atomsai.com/help-center",
+      "sourceExplicit": false,
+      "chain": [
+        {
+          "url": "https://atomsai.com/help-center",
+          "status": 404,
+          "location": null
+        }
+      ],
+      "title": "Page not found · AtomsAI",
+      "error": ""
+    },
+    {
+      "url": "https://atomsai.com/industries/healthcare",
+      "sourceExplicit": false,
+      "chain": [
+        {
+          "url": "https://atomsai.com/industries/healthcare",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "AI workflows for Healthcare · AtomsAI",
+      "error": ""
+    },
+    {
+      "url": "https://atomsai.com/industries/insurance",
+      "sourceExplicit": false,
+      "chain": [
+        {
+          "url": "https://atomsai.com/industries/insurance",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "AI workflows for Insurance · AtomsAI",
+      "error": ""
+    },
+    {
+      "url": "https://atomsai.com/industries/lending",
+      "sourceExplicit": false,
+      "chain": [
+        {
+          "url": "https://atomsai.com/industries/lending",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "AI workflows for Credit · AtomsAI",
+      "error": ""
+    },
+    {
+      "url": "https://atomsai.com/industries/logistics",
+      "sourceExplicit": false,
+      "chain": [
+        {
+          "url": "https://atomsai.com/industries/logistics",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "AI workflows for Logistics · AtomsAI",
+      "error": ""
+    },
+    {
+      "url": "https://atomsai.com/industries/manufacturing",
+      "sourceExplicit": false,
+      "chain": [
+        {
+          "url": "https://atomsai.com/industries/manufacturing",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "AI workflows for Manufacturing · AtomsAI",
+      "error": ""
+    },
+    {
+      "url": "https://atomsai.com/industries/retail",
+      "sourceExplicit": false,
+      "chain": [
+        {
+          "url": "https://atomsai.com/industries/retail",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "AI workflows for Retail &amp; commerce · AtomsAI",
+      "error": ""
+    },
+    {
+      "url": "https://atomsai.com/infrastructure",
+      "sourceExplicit": false,
+      "chain": [
+        {
+          "url": "https://atomsai.com/infrastructure",
+          "status": 404,
+          "location": null
+        }
+      ],
+      "title": "Page not found · AtomsAI",
+      "error": ""
+    },
+    {
+      "url": "https://atomsai.com/resources/blog",
+      "sourceExplicit": false,
+      "chain": [
+        {
+          "url": "https://atomsai.com/resources/blog",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "Blog · AtomsAI",
+      "error": ""
+    },
+    {
+      "url": "https://atomsai.com/resources/case-studies",
+      "sourceExplicit": false,
+      "chain": [
+        {
+          "url": "https://atomsai.com/resources/case-studies",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "Case studies · AtomsAI",
+      "error": ""
+    },
+    {
+      "url": "https://atomsai.com/services",
+      "sourceExplicit": false,
+      "chain": [
+        {
+          "url": "https://atomsai.com/services",
+          "status": 404,
+          "location": null
+        }
+      ],
+      "title": "Page not found · AtomsAI",
+      "error": ""
+    },
+    {
+      "url": "https://helpwise.io/",
+      "sourceExplicit": true,
+      "chain": [
+        {
+          "url": "https://helpwise.io/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "Helpwise: Easy-to-use & affordable customer service platform",
+      "error": ""
+    },
+    {
+      "url": "https://justcall.io/",
+      "sourceExplicit": true,
+      "chain": [
+        {
+          "url": "https://justcall.io/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "JustCall: AI Communication Platform for Sales &amp; Support Teams",
+      "error": ""
+    },
+    {
+      "url": "https://pyai.com/",
+      "sourceExplicit": false,
+      "chain": [
+        {
+          "url": "https://pyai.com/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "PyAI: Natural voice AI. Remarkable conversations.",
+      "error": ""
+    },
+    {
+      "url": "https://pyai.com/playground",
+      "sourceExplicit": true,
+      "chain": [
+        {
+          "url": "https://pyai.com/playground",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "Playground - mine a call, hear a voice, talk to an agent - PyAI",
+      "error": ""
+    },
+    {
+      "url": "https://serviceagent.ai/",
+      "sourceExplicit": true,
+      "chain": [
+        {
+          "url": "https://serviceagent.ai/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "AI Back Office for Home Service Businesses | ServiceAgent",
+      "error": ""
+    },
+    {
+      "url": "https://www.callpage.io/",
+      "sourceExplicit": true,
+      "chain": [
+        {
+          "url": "https://www.callpage.io/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "CallPage | Convert Traffic Into Sales Calls",
+      "error": ""
+    }
+  ]
+}

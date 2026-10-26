@@ -1,0 +1,19 @@
+import fs from 'node:fs/promises';
+
+const report = JSON.parse(await fs.readFile('docs/patterns/results.json', 'utf8'));
+const keys = [...new Set(report.results.map(row => row.key))];
+const engines = [...new Set(report.results.map(row => row.engine))];
+await fs.writeFile('docs/patterns/index.html', `<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AtomsAI pattern comparison</title>
+<style>*{box-sizing:border-box}body{margin:0;font:14px/1.5 system-ui,sans-serif;color:#27433b;background:#fafafa}header{padding:20px 28px;border-bottom:1px solid #d8dfdb;position:sticky;top:0;background:#fafafaf5;z-index:1}h1{font-size:22px;margin:0 0 6px}p{margin:0}nav{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:16px 0 10px}button,select{font:inherit;color:inherit;border:1px solid #b6c4be;background:white;padding:8px 12px;border-radius:8px;cursor:pointer}button[aria-pressed=true]{background:#27433b;color:white}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #8c78b0;outline-offset:3px}a{color:inherit}main{padding:24px;overflow:auto}img{display:block;width:800px;height:auto;max-width:100%;margin:auto;box-shadow:0 0 0 1px #b6c4be}main.actual img{max-width:none}#metric{font-size:13px;color:#526b61}label{margin-inline:8px}</style>
+<header><h1>Four patterns, original and procedural</h1><p>All 14 Figma configurations at 800 × 800 pixels. No alignment correction, scaling or blur. Overlay: 50%. Difference: 8×.</p>
+<nav aria-label="Comparison controls"><select id="variant" aria-label="Pattern and count">${keys.map(key => `<option>${key}</option>`).join('')}</select><select id="engine" aria-label="Browser">${engines.map(engine => `<option>${engine}</option>`).join('')}</select><button data-mode="reference">Figma</button><button data-mode="rendered">Shader</button><button data-mode="overlay" aria-pressed="true">Overlay</button><button data-mode="difference">Difference ×8</button><label><input type="checkbox" id="actual">Actual pixels</label><a href="README.md">Method and limitations</a></nav><p id="metric"></p></header>
+<main><img id="comparison" alt="Original Figma and procedural pattern overlay"></main>
+<script>
+const rows=${JSON.stringify(report.results.map(({ key, engine, meanAbsoluteChannelError, maximumChannelError, p99MaximumPixelError, pixelsOver8Percent }) => ({ key, engine, meanAbsoluteChannelError, maximumChannelError, p99MaximumPixelError, pixelsOver8Percent })))};
+const variant=document.querySelector('#variant'),engine=document.querySelector('#engine'),picture=document.querySelector('#comparison');let mode='overlay';
+function update(){const key=variant.value,browser=engine.value;picture.src=mode==='reference'?'reference/'+key+'.png':mode==='rendered'?'rendered/'+key+'-'+browser+'.png':'comparison/'+key+'-'+browser+'-'+mode+'.png';picture.alt=key+' '+browser+' '+mode;document.querySelectorAll('[data-mode]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.mode===mode)));const row=rows.find(row=>row.key===key&&row.engine===browser);document.querySelector('#metric').textContent=row?'Mean absolute channel error '+row.meanAbsoluteChannelError.toFixed(4)+' / 255 · 99th percentile pixel error '+row.p99MaximumPixelError+' · Maximum '+row.maximumChannelError+' · Pixels above 8: '+row.pixelsOver8Percent.toFixed(4)+'%':'No capture for this browser.';}
+document.querySelectorAll('[data-mode]').forEach(button=>button.onclick=()=>{mode=button.dataset.mode;update()});variant.onchange=update;engine.onchange=update;document.querySelector('#actual').onchange=event=>document.querySelector('main').classList.toggle('actual',event.target.checked);update();
+</script></html>`);
+console.log('Pattern comparison viewer: docs/patterns/index.html');

@@ -1,0 +1,727 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="756" height="756" viewBox="0 0 756 756" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Slits &#226;&#128;&#148; reflections">
+<rect width="756" height="756" fill="black" style="fill:black;fill-opacity:1;"/>
+<rect id="1" opacity="0.2" width="37.8" height="756" fill="url(#paint0_radial_0_201)"/>
+<rect id="2" opacity="0.2" x="37.8" width="37.8" height="756" fill="url(#paint1_radial_0_201)"/>
+<rect id="3" opacity="0.2" x="75.6" width="37.8" height="756" fill="url(#paint2_radial_0_201)"/>
+<rect id="4" opacity="0.2" x="113.4" width="37.8" height="756" fill="url(#paint3_radial_0_201)"/>
+<rect id="5" opacity="0.2" x="151.2" width="37.8" height="756" fill="url(#paint4_radial_0_201)"/>
+<rect id="6" opacity="0.2" x="189" width="37.8" height="756" fill="url(#paint5_radial_0_201)"/>
+<rect id="7" opacity="0.2" x="226.8" width="37.8" height="756" fill="url(#paint6_radial_0_201)"/>
+<rect id="8" opacity="0.2" x="264.6" width="37.8" height="756" fill="url(#paint7_radial_0_201)"/>
+<rect id="9" opacity="0.2" x="302.4" width="37.8" height="756" fill="url(#paint8_radial_0_201)"/>
+<rect id="10" opacity="0.2" x="340.2" width="37.8" height="756" fill="url(#paint9_radial_0_201)"/>
+<rect id="11" opacity="0.2" x="378" width="37.8" height="756" fill="url(#paint10_radial_0_201)"/>
+<rect id="12" opacity="0.2" x="415.8" width="37.8" height="756" fill="url(#paint11_radial_0_201)"/>
+<rect id="13" opacity="0.2" x="453.6" width="37.8" height="756" fill="url(#paint12_radial_0_201)"/>
+<rect id="14" opacity="0.2" x="491.4" width="37.8" height="756" fill="url(#paint13_radial_0_201)"/>
+<rect id="15" opacity="0.2" x="529.2" width="37.8" height="756" fill="url(#paint14_radial_0_201)"/>
+<rect id="16" opacity="0.2" x="567" width="37.8" height="756" fill="url(#paint15_radial_0_201)"/>
+<rect id="17" opacity="0.2" x="604.8" width="37.8" height="756" fill="url(#paint16_radial_0_201)"/>
+<rect id="18" opacity="0.2" x="642.6" width="37.8" height="756" fill="url(#paint17_radial_0_201)"/>
+<rect id="19" opacity="0.2" x="680.4" width="37.8" height="756" fill="url(#paint18_radial_0_201)"/>
+<rect id="20" opacity="0.2" x="718.2" width="37.8" height="756" fill="url(#paint19_radial_0_201)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_0_201" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(37.7655 378.139) rotate(90) scale(378.018 10.1734)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="0.03125" stop-color="#FEFEFE" style="stop-color:#FEFEFE;stop-color:color(display-p3 0.9976 0.9976 0.9976);stop-opacity:1;"/>
+<stop offset="0.0625" stop-color="#FDFDFD" style="stop-color:#FDFDFD;stop-color:color(display-p3 0.9904 0.9904 0.9904);stop-opacity:1;"/>
+<stop offset="0.09375" stop-color="#FAFAFA" style="stop-color:#FAFAFA;stop-color:color(display-p3 0.9785 0.9785 0.9785);stop-opacity:1;"/>
+<stop offset="0.125" stop-color="#F5F5F5" style="stop-color:#F5F5F5;stop-color:color(display-p3 0.9619 0.9619 0.9619);stop-opacity:1;"/>
+<stop offset="0.15625" stop-color="#F0F0F0" style="stop-color:#F0F0F0;stop-color:color(display-p3 0.9410 0.9410 0.9410);stop-opacity:1;"/>
+<stop offset="0.1875" stop-color="#EAEAEA" style="stop-color:#EAEAEA;stop-color:color(display-p3 0.9157 0.9157 0.9157);stop-opacity:1;"/>
+<stop offset="0.21875" stop-color="#E2E2E2" style="stop-color:#E2E2E2;stop-color:color(display-p3 0.8865 0.8865 0.8865);stop-opacity:1;"/>
+<stop offset="0.25" stop-color="#DADADA" style="stop-color:#DADADA;stop-color:color(display-p3 0.8536 0.8536 0.8536);stop-opacity:1;"/>
+<stop offset="0.28125" stop-color="#D0D0D0" style="stop-color:#D0D0D0;stop-color:color(display-p3 0.8172 0.8172 0.8172);stop-opacity:1;"/>
+<stop offset="0.3125" stop-color="#C6C6C6" style="stop-color:#C6C6C6;stop-color:color(display-p3 0.7778 0.7778 0.7778);stop-opacity:1;"/>
+<stop offset="0.34375" stop-color="#BCBCBC" style="stop-color:#BCBCBC;stop-color:color(display-p3 0.7357 0.7357 0.7357);stop-opacity:1;"/>
+<stop offset="0.375" stop-color="#B0B0B0" style="stop-color:#B0B0B0;stop-color:color(display-p3 0.6913 0.6913 0.6913);stop-opacity:1;"/>
+<stop offset="0.40625" stop-color="#A5A5A5" style="stop-color:#A5A5A5;stop-color:color(display-p3 0.6451 0.6451 0.6451);stop-opacity:1;"/>
+<stop offset="0.4375" stop-color="#989898" style="stop-color:#989898;stop-color:color(display-p3 0.5975 0.5975 0.5975);stop-opacity:1;"/>
+<stop offset="0.46875" stop-color="#8C8C8C" style="stop-color:#8C8C8C;stop-color:color(display-p3 0.5490 0.5490 0.5490);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#808080" style="stop-color:#808080;stop-color:color(display-p3 0.5000 0.5000 0.5000);stop-opacity:1;"/>
+<stop offset="0.53125" stop-color="#737373" style="stop-color:#737373;stop-color:color(display-p3 0.4510 0.4510 0.4510);stop-opacity:1;"/>
+<stop offset="0.5625" stop-color="#676767" style="stop-color:#676767;stop-color:color(display-p3 0.4025 0.4025 0.4025);stop-opacity:1;"/>
+<stop offset="0.59375" stop-color="#5A5A5A" style="stop-color:#5A5A5A;stop-color:color(display-p3 0.3549 0.3549 0.3549);stop-opacity:1;"/>
+<stop offset="0.625" stop-color="#4F4F4F" style="stop-color:#4F4F4F;stop-color:color(display-p3 0.3087 0.3087 0.3087);stop-opacity:1;"/>
+<stop offset="0.65625" stop-color="#434343" style="stop-color:#434343;stop-color:color(display-p3 0.2643 0.2643 0.2643);stop-opacity:1;"/>
+<stop offset="0.6875" stop-color="#393939" style="stop-color:#393939;stop-color:color(display-p3 0.2222 0.2222 0.2222);stop-opacity:1;"/>
+<stop offset="0.71875" stop-color="#2F2F2F" style="stop-color:#2F2F2F;stop-color:color(display-p3 0.1828 0.1828 0.1828);stop-opacity:1;"/>
+<stop offset="0.75" stop-color="#252525" style="stop-color:#252525;stop-color:color(display-p3 0.1464 0.1464 0.1464);stop-opacity:1;"/>
+<stop offset="0.78125" stop-color="#1D1D1D" style="stop-color:#1D1D1D;stop-color:color(display-p3 0.1135 0.1135 0.1135);stop-opacity:1;"/>
+<stop offset="0.8125" stop-color="#151515" style="stop-color:#151515;stop-color:color(display-p3 0.0843 0.0843 0.0843);stop-opacity:1;"/>
+<stop offset="0.84375" stop-color="#0F0F0F" style="stop-color:#0F0F0F;stop-color:color(display-p3 0.0590 0.0590 0.0590);stop-opacity:1;"/>
+<stop offset="0.875" stop-color="#0A0A0A" style="stop-color:#0A0A0A;stop-color:color(display-p3 0.0381 0.0381 0.0381);stop-opacity:1;"/>
+<stop offset="0.90625" stop-color="#050505" style="stop-color:#050505;stop-color:color(display-p3 0.0215 0.0215 0.0215);stop-opacity:1;"/>
+<stop offset="0.9375" stop-color="#020202" style="stop-color:#020202;stop-color:color(display-p3 0.0096 0.0096 0.0096);stop-opacity:1;"/>
+<stop offset="0.96875" stop-color="#010101" style="stop-color:#010101;stop-color:color(display-p3 0.0024 0.0024 0.0024);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:black;stop-opacity:1;"/>
+</radialGradient>
+<radialGradient id="paint1_radial_0_201" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(75.5655 378.139) rotate(90) scale(378.018 10.1734)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="0.03125" stop-color="#FEFEFE" style="stop-color:#FEFEFE;stop-color:color(display-p3 0.9976 0.9976 0.9976);stop-opacity:1;"/>
+<stop offset="0.0625" stop-color="#FDFDFD" style="stop-color:#FDFDFD;stop-color:color(display-p3 0.9904 0.9904 0.9904);stop-opacity:1;"/>
+<stop offset="0.09375" stop-color="#FAFAFA" style="stop-color:#FAFAFA;stop-color:color(display-p3 0.9785 0.9785 0.9785);stop-opacity:1;"/>
+<stop offset="0.125" stop-color="#F5F5F5" style="stop-color:#F5F5F5;stop-color:color(display-p3 0.9619 0.9619 0.9619);stop-opacity:1;"/>
+<stop offset="0.15625" stop-color="#F0F0F0" style="stop-color:#F0F0F0;stop-color:color(display-p3 0.9410 0.9410 0.9410);stop-opacity:1;"/>
+<stop offset="0.1875" stop-color="#EAEAEA" style="stop-color:#EAEAEA;stop-color:color(display-p3 0.9157 0.9157 0.9157);stop-opacity:1;"/>
+<stop offset="0.21875" stop-color="#E2E2E2" style="stop-color:#E2E2E2;stop-color:color(display-p3 0.8865 0.8865 0.8865);stop-opacity:1;"/>
+<stop offset="0.25" stop-color="#DADADA" style="stop-color:#DADADA;stop-color:color(display-p3 0.8536 0.8536 0.8536);stop-opacity:1;"/>
+<stop offset="0.28125" stop-color="#D0D0D0" style="stop-color:#D0D0D0;stop-color:color(display-p3 0.8172 0.8172 0.8172);stop-opacity:1;"/>
+<stop offset="0.3125" stop-color="#C6C6C6" style="stop-color:#C6C6C6;stop-color:color(display-p3 0.7778 0.7778 0.7778);stop-opacity:1;"/>
+<stop offset="0.34375" stop-color="#BCBCBC" style="stop-color:#BCBCBC;stop-color:color(display-p3 0.7357 0.7357 0.7357);stop-opacity:1;"/>
+<stop offset="0.375" stop-color="#B0B0B0" style="stop-color:#B0B0B0;stop-color:color(display-p3 0.6913 0.6913 0.6913);stop-opacity:1;"/>
+<stop offset="0.40625" stop-color="#A5A5A5" style="stop-color:#A5A5A5;stop-color:color(display-p3 0.6451 0.6451 0.6451);stop-opacity:1;"/>
+<stop offset="0.4375" stop-color="#989898" style="stop-color:#989898;stop-color:color(display-p3 0.5975 0.5975 0.5975);stop-opacity:1;"/>
+<stop offset="0.46875" stop-color="#8C8C8C" style="stop-color:#8C8C8C;stop-color:color(display-p3 0.5490 0.5490 0.5490);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#808080" style="stop-color:#808080;stop-color:color(display-p3 0.5000 0.5000 0.5000);stop-opacity:1;"/>
+<stop offset="0.53125" stop-color="#737373" style="stop-color:#737373;stop-color:color(display-p3 0.4510 0.4510 0.4510);stop-opacity:1;"/>
+<stop offset="0.5625" stop-color="#676767" style="stop-color:#676767;stop-color:color(display-p3 0.4025 0.4025 0.4025);stop-opacity:1;"/>
+<stop offset="0.59375" stop-color="#5A5A5A" style="stop-color:#5A5A5A;stop-color:color(display-p3 0.3549 0.3549 0.3549);stop-opacity:1;"/>
+<stop offset="0.625" stop-color="#4F4F4F" style="stop-color:#4F4F4F;stop-color:color(display-p3 0.3087 0.3087 0.3087);stop-opacity:1;"/>
+<stop offset="0.65625" stop-color="#434343" style="stop-color:#434343;stop-color:color(display-p3 0.2643 0.2643 0.2643);stop-opacity:1;"/>
+<stop offset="0.6875" stop-color="#393939" style="stop-color:#393939;stop-color:color(display-p3 0.2222 0.2222 0.2222);stop-opacity:1;"/>
+<stop offset="0.71875" stop-color="#2F2F2F" style="stop-color:#2F2F2F;stop-color:color(display-p3 0.1828 0.1828 0.1828);stop-opacity:1;"/>
+<stop offset="0.75" stop-color="#252525" style="stop-color:#252525;stop-color:color(display-p3 0.1464 0.1464 0.1464);stop-opacity:1;"/>
+<stop offset="0.78125" stop-color="#1D1D1D" style="stop-color:#1D1D1D;stop-color:color(display-p3 0.1135 0.1135 0.1135);stop-opacity:1;"/>
+<stop offset="0.8125" stop-color="#151515" style="stop-color:#151515;stop-color:color(display-p3 0.0843 0.0843 0.0843);stop-opacity:1;"/>
+<stop offset="0.84375" stop-color="#0F0F0F" style="stop-color:#0F0F0F;stop-color:color(display-p3 0.0590 0.0590 0.0590);stop-opacity:1;"/>
+<stop offset="0.875" stop-color="#0A0A0A" style="stop-color:#0A0A0A;stop-color:color(display-p3 0.0381 0.0381 0.0381);stop-opacity:1;"/>
+<stop offset="0.90625" stop-color="#050505" style="stop-color:#050505;stop-color:color(display-p3 0.0215 0.0215 0.0215);stop-opacity:1;"/>
+<stop offset="0.9375" stop-color="#020202" style="stop-color:#020202;stop-color:color(display-p3 0.0096 0.0096 0.0096);stop-opacity:1;"/>
+<stop offset="0.96875" stop-color="#010101" style="stop-color:#010101;stop-color:color(display-p3 0.0024 0.0024 0.0024);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:black;stop-opacity:1;"/>
+</radialGradient>
+<radialGradient id="paint2_radial_0_201" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(113.366 378.139) rotate(90) scale(378.018 10.1734)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="0.03125" stop-color="#FEFEFE" style="stop-color:#FEFEFE;stop-color:color(display-p3 0.9976 0.9976 0.9976);stop-opacity:1;"/>
+<stop offset="0.0625" stop-color="#FDFDFD" style="stop-color:#FDFDFD;stop-color:color(display-p3 0.9904 0.9904 0.9904);stop-opacity:1;"/>
+<stop offset="0.09375" stop-color="#FAFAFA" style="stop-color:#FAFAFA;stop-color:color(display-p3 0.9785 0.9785 0.9785);stop-opacity:1;"/>
+<stop offset="0.125" stop-color="#F5F5F5" style="stop-color:#F5F5F5;stop-color:color(display-p3 0.9619 0.9619 0.9619);stop-opacity:1;"/>
+<stop offset="0.15625" stop-color="#F0F0F0" style="stop-color:#F0F0F0;stop-color:color(display-p3 0.9410 0.9410 0.9410);stop-opacity:1;"/>
+<stop offset="0.1875" stop-color="#EAEAEA" style="stop-color:#EAEAEA;stop-color:color(display-p3 0.9157 0.9157 0.9157);stop-opacity:1;"/>
+<stop offset="0.21875" stop-color="#E2E2E2" style="stop-color:#E2E2E2;stop-color:color(display-p3 0.8865 0.8865 0.8865);stop-opacity:1;"/>
+<stop offset="0.25" stop-color="#DADADA" style="stop-color:#DADADA;stop-color:color(display-p3 0.8536 0.8536 0.8536);stop-opacity:1;"/>
+<stop offset="0.28125" stop-color="#D0D0D0" style="stop-color:#D0D0D0;stop-color:color(display-p3 0.8172 0.8172 0.8172);stop-opacity:1;"/>
+<stop offset="0.3125" stop-color="#C6C6C6" style="stop-color:#C6C6C6;stop-color:color(display-p3 0.7778 0.7778 0.7778);stop-opacity:1;"/>
+<stop offset="0.34375" stop-color="#BCBCBC" style="stop-color:#BCBCBC;stop-color:color(display-p3 0.7357 0.7357 0.7357);stop-opacity:1;"/>
+<stop offset="0.375" stop-color="#B0B0B0" style="stop-color:#B0B0B0;stop-color:color(display-p3 0.6913 0.6913 0.6913);stop-opacity:1;"/>
+<stop offset="0.40625" stop-color="#A5A5A5" style="stop-color:#A5A5A5;stop-color:color(display-p3 0.6451 0.6451 0.6451);stop-opacity:1;"/>
+<stop offset="0.4375" stop-color="#989898" style="stop-color:#989898;stop-color:color(display-p3 0.5975 0.5975 0.5975);stop-opacity:1;"/>
+<stop offset="0.46875" stop-color="#8C8C8C" style="stop-color:#8C8C8C;stop-color:color(display-p3 0.5490 0.5490 0.5490);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#808080" style="stop-color:#808080;stop-color:color(display-p3 0.5000 0.5000 0.5000);stop-opacity:1;"/>
+<stop offset="0.53125" stop-color="#737373" style="stop-color:#737373;stop-color:color(display-p3 0.4510 0.4510 0.4510);stop-opacity:1;"/>
+<stop offset="0.5625" stop-color="#676767" style="stop-color:#676767;stop-color:color(display-p3 0.4025 0.4025 0.4025);stop-opacity:1;"/>
+<stop offset="0.59375" stop-color="#5A5A5A" style="stop-color:#5A5A5A;stop-color:color(display-p3 0.3549 0.3549 0.3549);stop-opacity:1;"/>
+<stop offset="0.625" stop-color="#4F4F4F" style="stop-color:#4F4F4F;stop-color:color(display-p3 0.3087 0.3087 0.3087);stop-opacity:1;"/>
+<stop offset="0.65625" stop-color="#434343" style="stop-color:#434343;stop-color:color(display-p3 0.2643 0.2643 0.2643);stop-opacity:1;"/>
+<stop offset="0.6875" stop-color="#393939" style="stop-color:#393939;stop-color:color(display-p3 0.2222 0.2222 0.2222);stop-opacity:1;"/>
+<stop offset="0.71875" stop-color="#2F2F2F" style="stop-color:#2F2F2F;stop-color:color(display-p3 0.1828 0.1828 0.1828);stop-opacity:1;"/>
+<stop offset="0.75" stop-color="#252525" style="stop-color:#252525;stop-color:color(display-p3 0.1464 0.1464 0.1464);stop-opacity:1;"/>
+<stop offset="0.78125" stop-color="#1D1D1D" style="stop-color:#1D1D1D;stop-color:color(display-p3 0.1135 0.1135 0.1135);stop-opacity:1;"/>
+<stop offset="0.8125" stop-color="#151515" style="stop-color:#151515;stop-color:color(display-p3 0.0843 0.0843 0.0843);stop-opacity:1;"/>
+<stop offset="0.84375" stop-color="#0F0F0F" style="stop-color:#0F0F0F;stop-color:color(display-p3 0.0590 0.0590 0.0590);stop-opacity:1;"/>
+<stop offset="0.875" stop-color="#0A0A0A" style="stop-color:#0A0A0A;stop-color:color(display-p3 0.0381 0.0381 0.0381);stop-opacity:1;"/>
+<stop offset="0.90625" stop-color="#050505" style="stop-color:#050505;stop-color:color(display-p3 0.0215 0.0215 0.0215);stop-opacity:1;"/>
+<stop offset="0.9375" stop-color="#020202" style="stop-color:#020202;stop-color:color(display-p3 0.0096 0.0096 0.0096);stop-opacity:1;"/>
+<stop offset="0.96875" stop-color="#010101" style="stop-color:#010101;stop-color:color(display-p3 0.0024 0.0024 0.0024);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:black;stop-opacity:1;"/>
+</radialGradient>
+<radialGradient id="paint3_radial_0_201" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(151.166 378.139) rotate(90) scale(378.018 10.1734)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="0.03125" stop-color="#FEFEFE" style="stop-color:#FEFEFE;stop-color:color(display-p3 0.9976 0.9976 0.9976);stop-opacity:1;"/>
+<stop offset="0.0625" stop-color="#FDFDFD" style="stop-color:#FDFDFD;stop-color:color(display-p3 0.9904 0.9904 0.9904);stop-opacity:1;"/>
+<stop offset="0.09375" stop-color="#FAFAFA" style="stop-color:#FAFAFA;stop-color:color(display-p3 0.9785 0.9785 0.9785);stop-opacity:1;"/>
+<stop offset="0.125" stop-color="#F5F5F5" style="stop-color:#F5F5F5;stop-color:color(display-p3 0.9619 0.9619 0.9619);stop-opacity:1;"/>
+<stop offset="0.15625" stop-color="#F0F0F0" style="stop-color:#F0F0F0;stop-color:color(display-p3 0.9410 0.9410 0.9410);stop-opacity:1;"/>
+<stop offset="0.1875" stop-color="#EAEAEA" style="stop-color:#EAEAEA;stop-color:color(display-p3 0.9157 0.9157 0.9157);stop-opacity:1;"/>
+<stop offset="0.21875" stop-color="#E2E2E2" style="stop-color:#E2E2E2;stop-color:color(display-p3 0.8865 0.8865 0.8865);stop-opacity:1;"/>
+<stop offset="0.25" stop-color="#DADADA" style="stop-color:#DADADA;stop-color:color(display-p3 0.8536 0.8536 0.8536);stop-opacity:1;"/>
+<stop offset="0.28125" stop-color="#D0D0D0" style="stop-color:#D0D0D0;stop-color:color(display-p3 0.8172 0.8172 0.8172);stop-opacity:1;"/>
+<stop offset="0.3125" stop-color="#C6C6C6" style="stop-color:#C6C6C6;stop-color:color(display-p3 0.7778 0.7778 0.7778);stop-opacity:1;"/>
+<stop offset="0.34375" stop-color="#BCBCBC" style="stop-color:#BCBCBC;stop-color:color(display-p3 0.7357 0.7357 0.7357);stop-opacity:1;"/>
+<stop offset="0.375" stop-color="#B0B0B0" style="stop-color:#B0B0B0;stop-color:color(display-p3 0.6913 0.6913 0.6913);stop-opacity:1;"/>
+<stop offset="0.40625" stop-color="#A5A5A5" style="stop-color:#A5A5A5;stop-color:color(display-p3 0.6451 0.6451 0.6451);stop-opacity:1;"/>
+<stop offset="0.4375" stop-color="#989898" style="stop-color:#989898;stop-color:color(display-p3 0.5975 0.5975 0.5975);stop-opacity:1;"/>
+<stop offset="0.46875" stop-color="#8C8C8C" style="stop-color:#8C8C8C;stop-color:color(display-p3 0.5490 0.5490 0.5490);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#808080" style="stop-color:#808080;stop-color:color(display-p3 0.5000 0.5000 0.5000);stop-opacity:1;"/>
+<stop offset="0.53125" stop-color="#737373" style="stop-color:#737373;stop-color:color(display-p3 0.4510 0.4510 0.4510);stop-opacity:1;"/>
+<stop offset="0.5625" stop-color="#676767" style="stop-color:#676767;stop-color:color(display-p3 0.4025 0.4025 0.4025);stop-opacity:1;"/>
+<stop offset="0.59375" stop-color="#5A5A5A" style="stop-color:#5A5A5A;stop-color:color(display-p3 0.3549 0.3549 0.3549);stop-opacity:1;"/>
+<stop offset="0.625" stop-color="#4F4F4F" style="stop-color:#4F4F4F;stop-color:color(display-p3 0.3087 0.3087 0.3087);stop-opacity:1;"/>
+<stop offset="0.65625" stop-color="#434343" style="stop-color:#434343;stop-color:color(display-p3 0.2643 0.2643 0.2643);stop-opacity:1;"/>
+<stop offset="0.6875" stop-color="#393939" style="stop-color:#393939;stop-color:color(display-p3 0.2222 0.2222 0.2222);stop-opacity:1;"/>
+<stop offset="0.71875" stop-color="#2F2F2F" style="stop-color:#2F2F2F;stop-color:color(display-p3 0.1828 0.1828 0.1828);stop-opacity:1;"/>
+<stop offset="0.75" stop-color="#252525" style="stop-color:#252525;stop-color:color(display-p3 0.1464 0.1464 0.1464);stop-opacity:1;"/>
+<stop offset="0.78125" stop-color="#1D1D1D" style="stop-color:#1D1D1D;stop-color:color(display-p3 0.1135 0.1135 0.1135);stop-opacity:1;"/>
+<stop offset="0.8125" stop-color="#151515" style="stop-color:#151515;stop-color:color(display-p3 0.0843 0.0843 0.0843);stop-opacity:1;"/>
+<stop offset="0.84375" stop-color="#0F0F0F" style="stop-color:#0F0F0F;stop-color:color(display-p3 0.0590 0.0590 0.0590);stop-opacity:1;"/>
+<stop offset="0.875" stop-color="#0A0A0A" style="stop-color:#0A0A0A;stop-color:color(display-p3 0.0381 0.0381 0.0381);stop-opacity:1;"/>
+<stop offset="0.90625" stop-color="#050505" style="stop-color:#050505;stop-color:color(display-p3 0.0215 0.0215 0.0215);stop-opacity:1;"/>
+<stop offset="0.9375" stop-color="#020202" style="stop-color:#020202;stop-color:color(display-p3 0.0096 0.0096 0.0096);stop-opacity:1;"/>
+<stop offset="0.96875" stop-color="#010101" style="stop-color:#010101;stop-color:color(display-p3 0.0024 0.0024 0.0024);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:black;stop-opacity:1;"/>
+</radialGradient>
+<radialGradient id="paint4_radial_0_201" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(188.966 378.139) rotate(90) scale(378.018 10.1734)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="0.03125" stop-color="#FEFEFE" style="stop-color:#FEFEFE;stop-color:color(display-p3 0.9976 0.9976 0.9976);stop-opacity:1;"/>
+<stop offset="0.0625" stop-color="#FDFDFD" style="stop-color:#FDFDFD;stop-color:color(display-p3 0.9904 0.9904 0.9904);stop-opacity:1;"/>
+<stop offset="0.09375" stop-color="#FAFAFA" style="stop-color:#FAFAFA;stop-color:color(display-p3 0.9785 0.9785 0.9785);stop-opacity:1;"/>
+<stop offset="0.125" stop-color="#F5F5F5" style="stop-color:#F5F5F5;stop-color:color(display-p3 0.9619 0.9619 0.9619);stop-opacity:1;"/>
+<stop offset="0.15625" stop-color="#F0F0F0" style="stop-color:#F0F0F0;stop-color:color(display-p3 0.9410 0.9410 0.9410);stop-opacity:1;"/>
+<stop offset="0.1875" stop-color="#EAEAEA" style="stop-color:#EAEAEA;stop-color:color(display-p3 0.9157 0.9157 0.9157);stop-opacity:1;"/>
+<stop offset="0.21875" stop-color="#E2E2E2" style="stop-color:#E2E2E2;stop-color:color(display-p3 0.8865 0.8865 0.8865);stop-opacity:1;"/>
+<stop offset="0.25" stop-color="#DADADA" style="stop-color:#DADADA;stop-color:color(display-p3 0.8536 0.8536 0.8536);stop-opacity:1;"/>
+<stop offset="0.28125" stop-color="#D0D0D0" style="stop-color:#D0D0D0;stop-color:color(display-p3 0.8172 0.8172 0.8172);stop-opacity:1;"/>
+<stop offset="0.3125" stop-color="#C6C6C6" style="stop-color:#C6C6C6;stop-color:color(display-p3 0.7778 0.7778 0.7778);stop-opacity:1;"/>
+<stop offset="0.34375" stop-color="#BCBCBC" style="stop-color:#BCBCBC;stop-color:color(display-p3 0.7357 0.7357 0.7357);stop-opacity:1;"/>
+<stop offset="0.375" stop-color="#B0B0B0" style="stop-color:#B0B0B0;stop-color:color(display-p3 0.6913 0.6913 0.6913);stop-opacity:1;"/>
+<stop offset="0.40625" stop-color="#A5A5A5" style="stop-color:#A5A5A5;stop-color:color(display-p3 0.6451 0.6451 0.6451);stop-opacity:1;"/>
+<stop offset="0.4375" stop-color="#989898" style="stop-color:#989898;stop-color:color(display-p3 0.5975 0.5975 0.5975);stop-opacity:1;"/>
+<stop offset="0.46875" stop-color="#8C8C8C" style="stop-color:#8C8C8C;stop-color:color(display-p3 0.5490 0.5490 0.5490);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#808080" style="stop-color:#808080;stop-color:color(display-p3 0.5000 0.5000 0.5000);stop-opacity:1;"/>
+<stop offset="0.53125" stop-color="#737373" style="stop-color:#737373;stop-color:color(display-p3 0.4510 0.4510 0.4510);stop-opacity:1;"/>
+<stop offset="0.5625" stop-color="#676767" style="stop-color:#676767;stop-color:color(display-p3 0.4025 0.4025 0.4025);stop-opacity:1;"/>
+<stop offset="0.59375" stop-color="#5A5A5A" style="stop-color:#5A5A5A;stop-color:color(display-p3 0.3549 0.3549 0.3549);stop-opacity:1;"/>
+<stop offset="0.625" stop-color="#4F4F4F" style="stop-color:#4F4F4F;stop-color:color(display-p3 0.3087 0.3087 0.3087);stop-opacity:1;"/>
+<stop offset="0.65625" stop-color="#434343" style="stop-color:#434343;stop-color:color(display-p3 0.2643 0.2643 0.2643);stop-opacity:1;"/>
+<stop offset="0.6875" stop-color="#393939" style="stop-color:#393939;stop-color:color(display-p3 0.2222 0.2222 0.2222);stop-opacity:1;"/>
+<stop offset="0.71875" stop-color="#2F2F2F" style="stop-color:#2F2F2F;stop-color:color(display-p3 0.1828 0.1828 0.1828);stop-opacity:1;"/>
+<stop offset="0.75" stop-color="#252525" style="stop-color:#252525;stop-color:color(display-p3 0.1464 0.1464 0.1464);stop-opacity:1;"/>
+<stop offset="0.78125" stop-color="#1D1D1D" style="stop-color:#1D1D1D;stop-color:color(display-p3 0.1135 0.1135 0.1135);stop-opacity:1;"/>
+<stop offset="0.8125" stop-color="#151515" style="stop-color:#151515;stop-color:color(display-p3 0.0843 0.0843 0.0843);stop-opacity:1;"/>
+<stop offset="0.84375" stop-color="#0F0F0F" style="stop-color:#0F0F0F;stop-color:color(display-p3 0.0590 0.0590 0.0590);stop-opacity:1;"/>
+<stop offset="0.875" stop-color="#0A0A0A" style="stop-color:#0A0A0A;stop-color:color(display-p3 0.0381 0.0381 0.0381);stop-opacity:1;"/>
+<stop offset="0.90625" stop-color="#050505" style="stop-color:#050505;stop-color:color(display-p3 0.0215 0.0215 0.0215);stop-opacity:1;"/>
+<stop offset="0.9375" stop-color="#020202" style="stop-color:#020202;stop-color:color(display-p3 0.0096 0.0096 0.0096);stop-opacity:1;"/>
+<stop offset="0.96875" stop-color="#010101" style="stop-color:#010101;stop-color:color(display-p3 0.0024 0.0024 0.0024);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:black;stop-opacity:1;"/>
+</radialGradient>
+<radialGradient id="paint5_radial_0_201" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(226.766 378.139) rotate(90) scale(378.018 10.1734)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="0.03125" stop-color="#FEFEFE" style="stop-color:#FEFEFE;stop-color:color(display-p3 0.9976 0.9976 0.9976);stop-opacity:1;"/>
+<stop offset="0.0625" stop-color="#FDFDFD" style="stop-color:#FDFDFD;stop-color:color(display-p3 0.9904 0.9904 0.9904);stop-opacity:1;"/>
+<stop offset="0.09375" stop-color="#FAFAFA" style="stop-color:#FAFAFA;stop-color:color(display-p3 0.9785 0.9785 0.9785);stop-opacity:1;"/>
+<stop offset="0.125" stop-color="#F5F5F5" style="stop-color:#F5F5F5;stop-color:color(display-p3 0.9619 0.9619 0.9619);stop-opacity:1;"/>
+<stop offset="0.15625" stop-color="#F0F0F0" style="stop-color:#F0F0F0;stop-color:color(display-p3 0.9410 0.9410 0.9410);stop-opacity:1;"/>
+<stop offset="0.1875" stop-color="#EAEAEA" style="stop-color:#EAEAEA;stop-color:color(display-p3 0.9157 0.9157 0.9157);stop-opacity:1;"/>
+<stop offset="0.21875" stop-color="#E2E2E2" style="stop-color:#E2E2E2;stop-color:color(display-p3 0.8865 0.8865 0.8865);stop-opacity:1;"/>
+<stop offset="0.25" stop-color="#DADADA" style="stop-color:#DADADA;stop-color:color(display-p3 0.8536 0.8536 0.8536);stop-opacity:1;"/>
+<stop offset="0.28125" stop-color="#D0D0D0" style="stop-color:#D0D0D0;stop-color:color(display-p3 0.8172 0.8172 0.8172);stop-opacity:1;"/>
+<stop offset="0.3125" stop-color="#C6C6C6" style="stop-color:#C6C6C6;stop-color:color(display-p3 0.7778 0.7778 0.7778);stop-opacity:1;"/>
+<stop offset="0.34375" stop-color="#BCBCBC" style="stop-color:#BCBCBC;stop-color:color(display-p3 0.7357 0.7357 0.7357);stop-opacity:1;"/>
+<stop offset="0.375" stop-color="#B0B0B0" style="stop-color:#B0B0B0;stop-color:color(display-p3 0.6913 0.6913 0.6913);stop-opacity:1;"/>
+<stop offset="0.40625" stop-color="#A5A5A5" style="stop-color:#A5A5A5;stop-color:color(display-p3 0.6451 0.6451 0.6451);stop-opacity:1;"/>
+<stop offset="0.4375" stop-color="#989898" style="stop-color:#989898;stop-color:color(display-p3 0.5975 0.5975 0.5975);stop-opacity:1;"/>
+<stop offset="0.46875" stop-color="#8C8C8C" style="stop-color:#8C8C8C;stop-color:color(display-p3 0.5490 0.5490 0.5490);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#808080" style="stop-color:#808080;stop-color:color(display-p3 0.5000 0.5000 0.5000);stop-opacity:1;"/>
+<stop offset="0.53125" stop-color="#737373" style="stop-color:#737373;stop-color:color(display-p3 0.4510 0.4510 0.4510);stop-opacity:1;"/>
+<stop offset="0.5625" stop-color="#676767" style="stop-color:#676767;stop-color:color(display-p3 0.4025 0.4025 0.4025);stop-opacity:1;"/>
+<stop offset="0.59375" stop-color="#5A5A5A" style="stop-color:#5A5A5A;stop-color:color(display-p3 0.3549 0.3549 0.3549);stop-opacity:1;"/>
+<stop offset="0.625" stop-color="#4F4F4F" style="stop-color:#4F4F4F;stop-color:color(display-p3 0.3087 0.3087 0.3087);stop-opacity:1;"/>
+<stop offset="0.65625" stop-color="#434343" style="stop-color:#434343;stop-color:color(display-p3 0.2643 0.2643 0.2643);stop-opacity:1;"/>
+<stop offset="0.6875" stop-color="#393939" style="stop-color:#393939;stop-color:color(display-p3 0.2222 0.2222 0.2222);stop-opacity:1;"/>
+<stop offset="0.71875" stop-color="#2F2F2F" style="stop-color:#2F2F2F;stop-color:color(display-p3 0.1828 0.1828 0.1828);stop-opacity:1;"/>
+<stop offset="0.75" stop-color="#252525" style="stop-color:#252525;stop-color:color(display-p3 0.1464 0.1464 0.1464);stop-opacity:1;"/>
+<stop offset="0.78125" stop-color="#1D1D1D" style="stop-color:#1D1D1D;stop-color:color(display-p3 0.1135 0.1135 0.1135);stop-opacity:1;"/>
+<stop offset="0.8125" stop-color="#151515" style="stop-color:#151515;stop-color:color(display-p3 0.0843 0.0843 0.0843);stop-opacity:1;"/>
+<stop offset="0.84375" stop-color="#0F0F0F" style="stop-color:#0F0F0F;stop-color:color(display-p3 0.0590 0.0590 0.0590);stop-opacity:1;"/>
+<stop offset="0.875" stop-color="#0A0A0A" style="stop-color:#0A0A0A;stop-color:color(display-p3 0.0381 0.0381 0.0381);stop-opacity:1;"/>
+<stop offset="0.90625" stop-color="#050505" style="stop-color:#050505;stop-color:color(display-p3 0.0215 0.0215 0.0215);stop-opacity:1;"/>
+<stop offset="0.9375" stop-color="#020202" style="stop-color:#020202;stop-color:color(display-p3 0.0096 0.0096 0.0096);stop-opacity:1;"/>
+<stop offset="0.96875" stop-color="#010101" style="stop-color:#010101;stop-color:color(display-p3 0.0024 0.0024 0.0024);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:black;stop-opacity:1;"/>
+</radialGradient>
+<radialGradient id="paint6_radial_0_201" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(264.566 378.139) rotate(90) scale(378.018 10.1734)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="0.03125" stop-color="#FEFEFE" style="stop-color:#FEFEFE;stop-color:color(display-p3 0.9976 0.9976 0.9976);stop-opacity:1;"/>
+<stop offset="0.0625" stop-color="#FDFDFD" style="stop-color:#FDFDFD;stop-color:color(display-p3 0.9904 0.9904 0.9904);stop-opacity:1;"/>
+<stop offset="0.09375" stop-color="#FAFAFA" style="stop-color:#FAFAFA;stop-color:color(display-p3 0.9785 0.9785 0.9785);stop-opacity:1;"/>
+<stop offset="0.125" stop-color="#F5F5F5" style="stop-color:#F5F5F5;stop-color:color(display-p3 0.9619 0.9619 0.9619);stop-opacity:1;"/>
+<stop offset="0.15625" stop-color="#F0F0F0" style="stop-color:#F0F0F0;stop-color:color(display-p3 0.9410 0.9410 0.9410);stop-opacity:1;"/>
+<stop offset="0.1875" stop-color="#EAEAEA" style="stop-color:#EAEAEA;stop-color:color(display-p3 0.9157 0.9157 0.9157);stop-opacity:1;"/>
+<stop offset="0.21875" stop-color="#E2E2E2" style="stop-color:#E2E2E2;stop-color:color(display-p3 0.8865 0.8865 0.8865);stop-opacity:1;"/>
+<stop offset="0.25" stop-color="#DADADA" style="stop-color:#DADADA;stop-color:color(display-p3 0.8536 0.8536 0.8536);stop-opacity:1;"/>
+<stop offset="0.28125" stop-color="#D0D0D0" style="stop-color:#D0D0D0;stop-color:color(display-p3 0.8172 0.8172 0.8172);stop-opacity:1;"/>
+<stop offset="0.3125" stop-color="#C6C6C6" style="stop-color:#C6C6C6;stop-color:color(display-p3 0.7778 0.7778 0.7778);stop-opacity:1;"/>
+<stop offset="0.34375" stop-color="#BCBCBC" style="stop-color:#BCBCBC;stop-color:color(display-p3 0.7357 0.7357 0.7357);stop-opacity:1;"/>
+<stop offset="0.375" stop-color="#B0B0B0" style="stop-color:#B0B0B0;stop-color:color(display-p3 0.6913 0.6913 0.6913);stop-opacity:1;"/>
+<stop offset="0.40625" stop-color="#A5A5A5" style="stop-color:#A5A5A5;stop-color:color(display-p3 0.6451 0.6451 0.6451);stop-opacity:1;"/>
+<stop offset="0.4375" stop-color="#989898" style="stop-color:#989898;stop-color:color(display-p3 0.5975 0.5975 0.5975);stop-opacity:1;"/>
+<stop offset="0.46875" stop-color="#8C8C8C" style="stop-color:#8C8C8C;stop-color:color(display-p3 0.5490 0.5490 0.5490);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#808080" style="stop-color:#808080;stop-color:color(display-p3 0.5000 0.5000 0.5000);stop-opacity:1;"/>
+<stop offset="0.53125" stop-color="#737373" style="stop-color:#737373;stop-color:color(display-p3 0.4510 0.4510 0.4510);stop-opacity:1;"/>
+<stop offset="0.5625" stop-color="#676767" style="stop-color:#676767;stop-color:color(display-p3 0.4025 0.4025 0.4025);stop-opacity:1;"/>
+<stop offset="0.59375" stop-color="#5A5A5A" style="stop-color:#5A5A5A;stop-color:color(display-p3 0.3549 0.3549 0.3549);stop-opacity:1;"/>
+<stop offset="0.625" stop-color="#4F4F4F" style="stop-color:#4F4F4F;stop-color:color(display-p3 0.3087 0.3087 0.3087);stop-opacity:1;"/>
+<stop offset="0.65625" stop-color="#434343" style="stop-color:#434343;stop-color:color(display-p3 0.2643 0.2643 0.2643);stop-opacity:1;"/>
+<stop offset="0.6875" stop-color="#393939" style="stop-color:#393939;stop-color:color(display-p3 0.2222 0.2222 0.2222);stop-opacity:1;"/>
+<stop offset="0.71875" stop-color="#2F2F2F" style="stop-color:#2F2F2F;stop-color:color(display-p3 0.1828 0.1828 0.1828);stop-opacity:1;"/>
+<stop offset="0.75" stop-color="#252525" style="stop-color:#252525;stop-color:color(display-p3 0.1464 0.1464 0.1464);stop-opacity:1;"/>
+<stop offset="0.78125" stop-color="#1D1D1D" style="stop-color:#1D1D1D;stop-color:color(display-p3 0.1135 0.1135 0.1135);stop-opacity:1;"/>
+<stop offset="0.8125" stop-color="#151515" style="stop-color:#151515;stop-color:color(display-p3 0.0843 0.0843 0.0843);stop-opacity:1;"/>
+<stop offset="0.84375" stop-color="#0F0F0F" style="stop-color:#0F0F0F;stop-color:color(display-p3 0.0590 0.0590 0.0590);stop-opacity:1;"/>
+<stop offset="0.875" stop-color="#0A0A0A" style="stop-color:#0A0A0A;stop-color:color(display-p3 0.0381 0.0381 0.0381);stop-opacity:1;"/>
+<stop offset="0.90625" stop-color="#050505" style="stop-color:#050505;stop-color:color(display-p3 0.0215 0.0215 0.0215);stop-opacity:1;"/>
+<stop offset="0.9375" stop-color="#020202" style="stop-color:#020202;stop-color:color(display-p3 0.0096 0.0096 0.0096);stop-opacity:1;"/>
+<stop offset="0.96875" stop-color="#010101" style="stop-color:#010101;stop-color:color(display-p3 0.0024 0.0024 0.0024);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:black;stop-opacity:1;"/>
+</radialGradient>
+<radialGradient id="paint7_radial_0_201" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(302.366 378.139) rotate(90) scale(378.018 10.1734)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="0.03125" stop-color="#FEFEFE" style="stop-color:#FEFEFE;stop-color:color(display-p3 0.9976 0.9976 0.9976);stop-opacity:1;"/>
+<stop offset="0.0625" stop-color="#FDFDFD" style="stop-color:#FDFDFD;stop-color:color(display-p3 0.9904 0.9904 0.9904);stop-opacity:1;"/>
+<stop offset="0.09375" stop-color="#FAFAFA" style="stop-color:#FAFAFA;stop-color:color(display-p3 0.9785 0.9785 0.9785);stop-opacity:1;"/>
+<stop offset="0.125" stop-color="#F5F5F5" style="stop-color:#F5F5F5;stop-color:color(display-p3 0.9619 0.9619 0.9619);stop-opacity:1;"/>
+<stop offset="0.15625" stop-color="#F0F0F0" style="stop-color:#F0F0F0;stop-color:color(display-p3 0.9410 0.9410 0.9410);stop-opacity:1;"/>
+<stop offset="0.1875" stop-color="#EAEAEA" style="stop-color:#EAEAEA;stop-color:color(display-p3 0.9157 0.9157 0.9157);stop-opacity:1;"/>
+<stop offset="0.21875" stop-color="#E2E2E2" style="stop-color:#E2E2E2;stop-color:color(display-p3 0.8865 0.8865 0.8865);stop-opacity:1;"/>
+<stop offset="0.25" stop-color="#DADADA" style="stop-color:#DADADA;stop-color:color(display-p3 0.8536 0.8536 0.8536);stop-opacity:1;"/>
+<stop offset="0.28125" stop-color="#D0D0D0" style="stop-color:#D0D0D0;stop-color:color(display-p3 0.8172 0.8172 0.8172);stop-opacity:1;"/>
+<stop offset="0.3125" stop-color="#C6C6C6" style="stop-color:#C6C6C6;stop-color:color(display-p3 0.7778 0.7778 0.7778);stop-opacity:1;"/>
+<stop offset="0.34375" stop-color="#BCBCBC" style="stop-color:#BCBCBC;stop-color:color(display-p3 0.7357 0.7357 0.7357);stop-opacity:1;"/>
+<stop offset="0.375" stop-color="#B0B0B0" style="stop-color:#B0B0B0;stop-color:color(display-p3 0.6913 0.6913 0.6913);stop-opacity:1;"/>
+<stop offset="0.40625" stop-color="#A5A5A5" style="stop-color:#A5A5A5;stop-color:color(display-p3 0.6451 0.6451 0.6451);stop-opacity:1;"/>
+<stop offset="0.4375" stop-color="#989898" style="stop-color:#989898;stop-color:color(display-p3 0.5975 0.5975 0.5975);stop-opacity:1;"/>
+<stop offset="0.46875" stop-color="#8C8C8C" style="stop-color:#8C8C8C;stop-color:color(display-p3 0.5490 0.5490 0.5490);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#808080" style="stop-color:#808080;stop-color:color(display-p3 0.5000 0.5000 0.5000);stop-opacity:1;"/>
+<stop offset="0.53125" stop-color="#737373" style="stop-color:#737373;stop-color:color(display-p3 0.4510 0.4510 0.4510);stop-opacity:1;"/>
+<stop offset="0.5625" stop-color="#676767" style="stop-color:#676767;stop-color:color(display-p3 0.4025 0.4025 0.4025);stop-opacity:1;"/>
+<stop offset="0.59375" stop-color="#5A5A5A" style="stop-color:#5A5A5A;stop-color:color(display-p3 0.3549 0.3549 0.3549);stop-opacity:1;"/>
+<stop offset="0.625" stop-color="#4F4F4F" style="stop-color:#4F4F4F;stop-color:color(display-p3 0.3087 0.3087 0.3087);stop-opacity:1;"/>
+<stop offset="0.65625" stop-color="#434343" style="stop-color:#434343;stop-color:color(display-p3 0.2643 0.2643 0.2643);stop-opacity:1;"/>
+<stop offset="0.6875" stop-color="#393939" style="stop-color:#393939;stop-color:color(display-p3 0.2222 0.2222 0.2222);stop-opacity:1;"/>
+<stop offset="0.71875" stop-color="#2F2F2F" style="stop-color:#2F2F2F;stop-color:color(display-p3 0.1828 0.1828 0.1828);stop-opacity:1;"/>
+<stop offset="0.75" stop-color="#252525" style="stop-color:#252525;stop-color:color(display-p3 0.1464 0.1464 0.1464);stop-opacity:1;"/>
+<stop offset="0.78125" stop-color="#1D1D1D" style="stop-color:#1D1D1D;stop-color:color(display-p3 0.1135 0.1135 0.1135);stop-opacity:1;"/>
+<stop offset="0.8125" stop-color="#151515" style="stop-color:#151515;stop-color:color(display-p3 0.0843 0.0843 0.0843);stop-opacity:1;"/>
+<stop offset="0.84375" stop-color="#0F0F0F" style="stop-color:#0F0F0F;stop-color:color(display-p3 0.0590 0.0590 0.0590);stop-opacity:1;"/>
+<stop offset="0.875" stop-color="#0A0A0A" style="stop-color:#0A0A0A;stop-color:color(display-p3 0.0381 0.0381 0.0381);stop-opacity:1;"/>
+<stop offset="0.90625" stop-color="#050505" style="stop-color:#050505;stop-color:color(display-p3 0.0215 0.0215 0.0215);stop-opacity:1;"/>
+<stop offset="0.9375" stop-color="#020202" style="stop-color:#020202;stop-color:color(display-p3 0.0096 0.0096 0.0096);stop-opacity:1;"/>
+<stop offset="0.96875" stop-color="#010101" style="stop-color:#010101;stop-color:color(display-p3 0.0024 0.0024 0.0024);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:black;stop-opacity:1;"/>
+</radialGradient>
+<radialGradient id="paint8_radial_0_201" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(340.166 378.139) rotate(90) scale(378.018 10.1734)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="0.03125" stop-color="#FEFEFE" style="stop-color:#FEFEFE;stop-color:color(display-p3 0.9976 0.9976 0.9976);stop-opacity:1;"/>
+<stop offset="0.0625" stop-color="#FDFDFD" style="stop-color:#FDFDFD;stop-color:color(display-p3 0.9904 0.9904 0.9904);stop-opacity:1;"/>
+<stop offset="0.09375" stop-color="#FAFAFA" style="stop-color:#FAFAFA;stop-color:color(display-p3 0.9785 0.9785 0.9785);stop-opacity:1;"/>
+<stop offset="0.125" stop-color="#F5F5F5" style="stop-color:#F5F5F5;stop-color:color(display-p3 0.9619 0.9619 0.9619);stop-opacity:1;"/>
+<stop offset="0.15625" stop-color="#F0F0F0" style="stop-color:#F0F0F0;stop-color:color(display-p3 0.9410 0.9410 0.9410);stop-opacity:1;"/>
+<stop offset="0.1875" stop-color="#EAEAEA" style="stop-color:#EAEAEA;stop-color:color(display-p3 0.9157 0.9157 0.9157);stop-opacity:1;"/>
+<stop offset="0.21875" stop-color="#E2E2E2" style="stop-color:#E2E2E2;stop-color:color(display-p3 0.8865 0.8865 0.8865);stop-opacity:1;"/>
+<stop offset="0.25" stop-color="#DADADA" style="stop-color:#DADADA;stop-color:color(display-p3 0.8536 0.8536 0.8536);stop-opacity:1;"/>
+<stop offset="0.28125" stop-color="#D0D0D0" style="stop-color:#D0D0D0;stop-color:color(display-p3 0.8172 0.8172 0.8172);stop-opacity:1;"/>
+<stop offset="0.3125" stop-color="#C6C6C6" style="stop-color:#C6C6C6;stop-color:color(display-p3 0.7778 0.7778 0.7778);stop-opacity:1;"/>
+<stop offset="0.34375" stop-color="#BCBCBC" style="stop-color:#BCBCBC;stop-color:color(display-p3 0.7357 0.7357 0.7357);stop-opacity:1;"/>
+<stop offset="0.375" stop-color="#B0B0B0" style="stop-color:#B0B0B0;stop-color:color(display-p3 0.6913 0.6913 0.6913);stop-opacity:1;"/>
+<stop offset="0.40625" stop-color="#A5A5A5" style="stop-color:#A5A5A5;stop-color:color(display-p3 0.6451 0.6451 0.6451);stop-opacity:1;"/>
+<stop offset="0.4375" stop-color="#989898" style="stop-color:#989898;stop-color:color(display-p3 0.5975 0.5975 0.5975);stop-opacity:1;"/>
+<stop offset="0.46875" stop-color="#8C8C8C" style="stop-color:#8C8C8C;stop-color:color(display-p3 0.5490 0.5490 0.5490);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#808080" style="stop-color:#808080;stop-color:color(display-p3 0.5000 0.5000 0.5000);stop-opacity:1;"/>
+<stop offset="0.53125" stop-color="#737373" style="stop-color:#737373;stop-color:color(display-p3 0.4510 0.4510 0.4510);stop-opacity:1;"/>
+<stop offset="0.5625" stop-color="#676767" style="stop-color:#676767;stop-color:color(display-p3 0.4025 0.4025 0.4025);stop-opacity:1;"/>
+<stop offset="0.59375" stop-color="#5A5A5A" style="stop-color:#5A5A5A;stop-color:color(display-p3 0.3549 0.3549 0.3549);stop-opacity:1;"/>
+<stop offset="0.625" stop-color="#4F4F4F" style="stop-color:#4F4F4F;stop-color:color(display-p3 0.3087 0.3087 0.3087);stop-opacity:1;"/>
+<stop offset="0.65625" stop-color="#434343" style="stop-color:#434343;stop-color:color(display-p3 0.2643 0.2643 0.2643);stop-opacity:1;"/>
+<stop offset="0.6875" stop-color="#393939" style="stop-color:#393939;stop-color:color(display-p3 0.2222 0.2222 0.2222);stop-opacity:1;"/>
+<stop offset="0.71875" stop-color="#2F2F2F" style="stop-color:#2F2F2F;stop-color:color(display-p3 0.1828 0.1828 0.1828);stop-opacity:1;"/>
+<stop offset="0.75" stop-color="#252525" style="stop-color:#252525;stop-color:color(display-p3 0.1464 0.1464 0.1464);stop-opacity:1;"/>
+<stop offset="0.78125" stop-color="#1D1D1D" style="stop-color:#1D1D1D;stop-color:color(display-p3 0.1135 0.1135 0.1135);stop-opacity:1;"/>
+<stop offset="0.8125" stop-color="#151515" style="stop-color:#151515;stop-color:color(display-p3 0.0843 0.0843 0.0843);stop-opacity:1;"/>
+<stop offset="0.84375" stop-color="#0F0F0F" style="stop-color:#0F0F0F;stop-color:color(display-p3 0.0590 0.0590 0.0590);stop-opacity:1;"/>
+<stop offset="0.875" stop-color="#0A0A0A" style="stop-color:#0A0A0A;stop-color:color(display-p3 0.0381 0.0381 0.0381);stop-opacity:1;"/>
+<stop offset="0.90625" stop-color="#050505" style="stop-color:#050505;stop-color:color(display-p3 0.0215 0.0215 0.0215);stop-opacity:1;"/>
+<stop offset="0.9375" stop-color="#020202" style="stop-color:#020202;stop-color:color(display-p3 0.0096 0.0096 0.0096);stop-opacity:1;"/>
+<stop offset="0.96875" stop-color="#010101" style="stop-color:#010101;stop-color:color(display-p3 0.0024 0.0024 0.0024);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:black;stop-opacity:1;"/>
+</radialGradient>
+<radialGradient id="paint9_radial_0_201" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(377.966 378.139) rotate(90) scale(378.018 10.1734)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="0.03125" stop-color="#FEFEFE" style="stop-color:#FEFEFE;stop-color:color(display-p3 0.9976 0.9976 0.9976);stop-opacity:1;"/>
+<stop offset="0.0625" stop-color="#FDFDFD" style="stop-color:#FDFDFD;stop-color:color(display-p3 0.9904 0.9904 0.9904);stop-opacity:1;"/>
+<stop offset="0.09375" stop-color="#FAFAFA" style="stop-color:#FAFAFA;stop-color:color(display-p3 0.9785 0.9785 0.9785);stop-opacity:1;"/>
+<stop offset="0.125" stop-color="#F5F5F5" style="stop-color:#F5F5F5;stop-color:color(display-p3 0.9619 0.9619 0.9619);stop-opacity:1;"/>
+<stop offset="0.15625" stop-color="#F0F0F0" style="stop-color:#F0F0F0;stop-color:color(display-p3 0.9410 0.9410 0.9410);stop-opacity:1;"/>
+<stop offset="0.1875" stop-color="#EAEAEA" style="stop-color:#EAEAEA;stop-color:color(display-p3 0.9157 0.9157 0.9157);stop-opacity:1;"/>
+<stop offset="0.21875" stop-color="#E2E2E2" style="stop-color:#E2E2E2;stop-color:color(display-p3 0.8865 0.8865 0.8865);stop-opacity:1;"/>
+<stop offset="0.25" stop-color="#DADADA" style="stop-color:#DADADA;stop-color:color(display-p3 0.8536 0.8536 0.8536);stop-opacity:1;"/>
+<stop offset="0.28125" stop-color="#D0D0D0" style="stop-color:#D0D0D0;stop-color:color(display-p3 0.8172 0.8172 0.8172);stop-opacity:1;"/>
+<stop offset="0.3125" stop-color="#C6C6C6" style="stop-color:#C6C6C6;stop-color:color(display-p3 0.7778 0.7778 0.7778);stop-opacity:1;"/>
+<stop offset="0.34375" stop-color="#BCBCBC" style="stop-color:#BCBCBC;stop-color:color(display-p3 0.7357 0.7357 0.7357);stop-opacity:1;"/>
+<stop offset="0.375" stop-color="#B0B0B0" style="stop-color:#B0B0B0;stop-color:color(display-p3 0.6913 0.6913 0.6913);stop-opacity:1;"/>
+<stop offset="0.40625" stop-color="#A5A5A5" style="stop-color:#A5A5A5;stop-color:color(display-p3 0.6451 0.6451 0.6451);stop-opacity:1;"/>
+<stop offset="0.4375" stop-color="#989898" style="stop-color:#989898;stop-color:color(display-p3 0.5975 0.5975 0.5975);stop-opacity:1;"/>
+<stop offset="0.46875" stop-color="#8C8C8C" style="stop-color:#8C8C8C;stop-color:color(display-p3 0.5490 0.5490 0.5490);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#808080" style="stop-color:#808080;stop-color:color(display-p3 0.5000 0.5000 0.5000);stop-opacity:1;"/>
+<stop offset="0.53125" stop-color="#737373" style="stop-color:#737373;stop-color:color(display-p3 0.4510 0.4510 0.4510);stop-opacity:1;"/>
+<stop offset="0.5625" stop-color="#676767" style="stop-color:#676767;stop-color:color(display-p3 0.4025 0.4025 0.4025);stop-opacity:1;"/>
+<stop offset="0.59375" stop-color="#5A5A5A" style="stop-color:#5A5A5A;stop-color:color(display-p3 0.3549 0.3549 0.3549);stop-opacity:1;"/>
+<stop offset="0.625" stop-color="#4F4F4F" style="stop-color:#4F4F4F;stop-color:color(display-p3 0.3087 0.3087 0.3087);stop-opacity:1;"/>
+<stop offset="0.65625" stop-color="#434343" style="stop-color:#434343;stop-color:color(display-p3 0.2643 0.2643 0.2643);stop-opacity:1;"/>
+<stop offset="0.6875" stop-color="#393939" style="stop-color:#393939;stop-color:color(display-p3 0.2222 0.2222 0.2222);stop-opacity:1;"/>
+<stop offset="0.71875" stop-color="#2F2F2F" style="stop-color:#2F2F2F;stop-color:color(display-p3 0.1828 0.1828 0.1828);stop-opacity:1;"/>
+<stop offset="0.75" stop-color="#252525" style="stop-color:#252525;stop-color:color(display-p3 0.1464 0.1464 0.1464);stop-opacity:1;"/>
+<stop offset="0.78125" stop-color="#1D1D1D" style="stop-color:#1D1D1D;stop-color:color(display-p3 0.1135 0.1135 0.1135);stop-opacity:1;"/>
+<stop offset="0.8125" stop-color="#151515" style="stop-color:#151515;stop-color:color(display-p3 0.0843 0.0843 0.0843);stop-opacity:1;"/>
+<stop offset="0.84375" stop-color="#0F0F0F" style="stop-color:#0F0F0F;stop-color:color(display-p3 0.0590 0.0590 0.0590);stop-opacity:1;"/>
+<stop offset="0.875" stop-color="#0A0A0A" style="stop-color:#0A0A0A;stop-color:color(display-p3 0.0381 0.0381 0.0381);stop-opacity:1;"/>
+<stop offset="0.90625" stop-color="#050505" style="stop-color:#050505;stop-color:color(display-p3 0.0215 0.0215 0.0215);stop-opacity:1;"/>
+<stop offset="0.9375" stop-color="#020202" style="stop-color:#020202;stop-color:color(display-p3 0.0096 0.0096 0.0096);stop-opacity:1;"/>
+<stop offset="0.96875" stop-color="#010101" style="stop-color:#010101;stop-color:color(display-p3 0.0024 0.0024 0.0024);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:black;stop-opacity:1;"/>
+</radialGradient>
+<radialGradient id="paint10_radial_0_201" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(415.766 378.139) rotate(90) scale(378.018 10.1734)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="0.03125" stop-color="#FEFEFE" style="stop-color:#FEFEFE;stop-color:color(display-p3 0.9976 0.9976 0.9976);stop-opacity:1;"/>
+<stop offset="0.0625" stop-color="#FDFDFD" style="stop-color:#FDFDFD;stop-color:color(display-p3 0.9904 0.9904 0.9904);stop-opacity:1;"/>
+<stop offset="0.09375" stop-color="#FAFAFA" style="stop-color:#FAFAFA;stop-color:color(display-p3 0.9785 0.9785 0.9785);stop-opacity:1;"/>
+<stop offset="0.125" stop-color="#F5F5F5" style="stop-color:#F5F5F5;stop-color:color(display-p3 0.9619 0.9619 0.9619);stop-opacity:1;"/>
+<stop offset="0.15625" stop-color="#F0F0F0" style="stop-color:#F0F0F0;stop-color:color(display-p3 0.9410 0.9410 0.9410);stop-opacity:1;"/>
+<stop offset="0.1875" stop-color="#EAEAEA" style="stop-color:#EAEAEA;stop-color:color(display-p3 0.9157 0.9157 0.9157);stop-opacity:1;"/>
+<stop offset="0.21875" stop-color="#E2E2E2" style="stop-color:#E2E2E2;stop-color:color(display-p3 0.8865 0.8865 0.8865);stop-opacity:1;"/>
+<stop offset="0.25" stop-color="#DADADA" style="stop-color:#DADADA;stop-color:color(display-p3 0.8536 0.8536 0.8536);stop-opacity:1;"/>
+<stop offset="0.28125" stop-color="#D0D0D0" style="stop-color:#D0D0D0;stop-color:color(display-p3 0.8172 0.8172 0.8172);stop-opacity:1;"/>
+<stop offset="0.3125" stop-color="#C6C6C6" style="stop-color:#C6C6C6;stop-color:color(display-p3 0.7778 0.7778 0.7778);stop-opacity:1;"/>
+<stop offset="0.34375" stop-color="#BCBCBC" style="stop-color:#BCBCBC;stop-color:color(display-p3 0.7357 0.7357 0.7357);stop-opacity:1;"/>
+<stop offset="0.375" stop-color="#B0B0B0" style="stop-color:#B0B0B0;stop-color:color(display-p3 0.6913 0.6913 0.6913);stop-opacity:1;"/>
+<stop offset="0.40625" stop-color="#A5A5A5" style="stop-color:#A5A5A5;stop-color:color(display-p3 0.6451 0.6451 0.6451);stop-opacity:1;"/>
+<stop offset="0.4375" stop-color="#989898" style="stop-color:#989898;stop-color:color(display-p3 0.5975 0.5975 0.5975);stop-opacity:1;"/>
+<stop offset="0.46875" stop-color="#8C8C8C" style="stop-color:#8C8C8C;stop-color:color(display-p3 0.5490 0.5490 0.5490);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#808080" style="stop-color:#808080;stop-color:color(display-p3 0.5000 0.5000 0.5000);stop-opacity:1;"/>
+<stop offset="0.53125" stop-color="#737373" style="stop-color:#737373;stop-color:color(display-p3 0.4510 0.4510 0.4510);stop-opacity:1;"/>
+<stop offset="0.5625" stop-color="#676767" style="stop-color:#676767;stop-color:color(display-p3 0.4025 0.4025 0.4025);stop-opacity:1;"/>
+<stop offset="0.59375" stop-color="#5A5A5A" style="stop-color:#5A5A5A;stop-color:color(display-p3 0.3549 0.3549 0.3549);stop-opacity:1;"/>
+<stop offset="0.625" stop-color="#4F4F4F" style="stop-color:#4F4F4F;stop-color:color(display-p3 0.3087 0.3087 0.3087);stop-opacity:1;"/>
+<stop offset="0.65625" stop-color="#434343" style="stop-color:#434343;stop-color:color(display-p3 0.2643 0.2643 0.2643);stop-opacity:1;"/>
+<stop offset="0.6875" stop-color="#393939" style="stop-color:#393939;stop-color:color(display-p3 0.2222 0.2222 0.2222);stop-opacity:1;"/>
+<stop offset="0.71875" stop-color="#2F2F2F" style="stop-color:#2F2F2F;stop-color:color(display-p3 0.1828 0.1828 0.1828);stop-opacity:1;"/>
+<stop offset="0.75" stop-color="#252525" style="stop-color:#252525;stop-color:color(display-p3 0.1464 0.1464 0.1464);stop-opacity:1;"/>
+<stop offset="0.78125" stop-color="#1D1D1D" style="stop-color:#1D1D1D;stop-color:color(display-p3 0.1135 0.1135 0.1135);stop-opacity:1;"/>
+<stop offset="0.8125" stop-color="#151515" style="stop-color:#151515;stop-color:color(display-p3 0.0843 0.0843 0.0843);stop-opacity:1;"/>
+<stop offset="0.84375" stop-color="#0F0F0F" style="stop-color:#0F0F0F;stop-color:color(display-p3 0.0590 0.0590 0.0590);stop-opacity:1;"/>
+<stop offset="0.875" stop-color="#0A0A0A" style="stop-color:#0A0A0A;stop-color:color(display-p3 0.0381 0.0381 0.0381);stop-opacity:1;"/>
+<stop offset="0.90625" stop-color="#050505" style="stop-color:#050505;stop-color:color(display-p3 0.0215 0.0215 0.0215);stop-opacity:1;"/>
+<stop offset="0.9375" stop-color="#020202" style="stop-color:#020202;stop-color:color(display-p3 0.0096 0.0096 0.0096);stop-opacity:1;"/>
+<stop offset="0.96875" stop-color="#010101" style="stop-color:#010101;stop-color:color(display-p3 0.0024 0.0024 0.0024);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:black;stop-opacity:1;"/>
+</radialGradient>
+<radialGradient id="paint11_radial_0_201" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(453.566 378.139) rotate(90) scale(378.018 10.1734)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="0.03125" stop-color="#FEFEFE" style="stop-color:#FEFEFE;stop-color:color(display-p3 0.9976 0.9976 0.9976);stop-opacity:1;"/>
+<stop offset="0.0625" stop-color="#FDFDFD" style="stop-color:#FDFDFD;stop-color:color(display-p3 0.9904 0.9904 0.9904);stop-opacity:1;"/>
+<stop offset="0.09375" stop-color="#FAFAFA" style="stop-color:#FAFAFA;stop-color:color(display-p3 0.9785 0.9785 0.9785);stop-opacity:1;"/>
+<stop offset="0.125" stop-color="#F5F5F5" style="stop-color:#F5F5F5;stop-color:color(display-p3 0.9619 0.9619 0.9619);stop-opacity:1;"/>
+<stop offset="0.15625" stop-color="#F0F0F0" style="stop-color:#F0F0F0;stop-color:color(display-p3 0.9410 0.9410 0.9410);stop-opacity:1;"/>
+<stop offset="0.1875" stop-color="#EAEAEA" style="stop-color:#EAEAEA;stop-color:color(display-p3 0.9157 0.9157 0.9157);stop-opacity:1;"/>
+<stop offset="0.21875" stop-color="#E2E2E2" style="stop-color:#E2E2E2;stop-color:color(display-p3 0.8865 0.8865 0.8865);stop-opacity:1;"/>
+<stop offset="0.25" stop-color="#DADADA" style="stop-color:#DADADA;stop-color:color(display-p3 0.8536 0.8536 0.8536);stop-opacity:1;"/>
+<stop offset="0.28125" stop-color="#D0D0D0" style="stop-color:#D0D0D0;stop-color:color(display-p3 0.8172 0.8172 0.8172);stop-opacity:1;"/>
+<stop offset="0.3125" stop-color="#C6C6C6" style="stop-color:#C6C6C6;stop-color:color(display-p3 0.7778 0.7778 0.7778);stop-opacity:1;"/>
+<stop offset="0.34375" stop-color="#BCBCBC" style="stop-color:#BCBCBC;stop-color:color(display-p3 0.7357 0.7357 0.7357);stop-opacity:1;"/>
+<stop offset="0.375" stop-color="#B0B0B0" style="stop-color:#B0B0B0;stop-color:color(display-p3 0.6913 0.6913 0.6913);stop-opacity:1;"/>
+<stop offset="0.40625" stop-color="#A5A5A5" style="stop-color:#A5A5A5;stop-color:color(display-p3 0.6451 0.6451 0.6451);stop-opacity:1;"/>
+<stop offset="0.4375" stop-color="#989898" style="stop-color:#989898;stop-color:color(display-p3 0.5975 0.5975 0.5975);stop-opacity:1;"/>
+<stop offset="0.46875" stop-color="#8C8C8C" style="stop-color:#8C8C8C;stop-color:color(display-p3 0.5490 0.5490 0.5490);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#808080" style="stop-color:#808080;stop-color:color(display-p3 0.5000 0.5000 0.5000);stop-opacity:1;"/>
+<stop offset="0.53125" stop-color="#737373" style="stop-color:#737373;stop-color:color(display-p3 0.4510 0.4510 0.4510);stop-opacity:1;"/>
+<stop offset="0.5625" stop-color="#676767" style="stop-color:#676767;stop-color:color(display-p3 0.4025 0.4025 0.4025);stop-opacity:1;"/>
+<stop offset="0.59375" stop-color="#5A5A5A" style="stop-color:#5A5A5A;stop-color:color(display-p3 0.3549 0.3549 0.3549);stop-opacity:1;"/>
+<stop offset="0.625" stop-color="#4F4F4F" style="stop-color:#4F4F4F;stop-color:color(display-p3 0.3087 0.3087 0.3087);stop-opacity:1;"/>
+<stop offset="0.65625" stop-color="#434343" style="stop-color:#434343;stop-color:color(display-p3 0.2643 0.2643 0.2643);stop-opacity:1;"/>
+<stop offset="0.6875" stop-color="#393939" style="stop-color:#393939;stop-color:color(display-p3 0.2222 0.2222 0.2222);stop-opacity:1;"/>
+<stop offset="0.71875" stop-color="#2F2F2F" style="stop-color:#2F2F2F;stop-color:color(display-p3 0.1828 0.1828 0.1828);stop-opacity:1;"/>
+<stop offset="0.75" stop-color="#252525" style="stop-color:#252525;stop-color:color(display-p3 0.1464 0.1464 0.1464);stop-opacity:1;"/>
+<stop offset="0.78125" stop-color="#1D1D1D" style="stop-color:#1D1D1D;stop-color:color(display-p3 0.1135 0.1135 0.1135);stop-opacity:1;"/>
+<stop offset="0.8125" stop-color="#151515" style="stop-color:#151515;stop-color:color(display-p3 0.0843 0.0843 0.0843);stop-opacity:1;"/>
+<stop offset="0.84375" stop-color="#0F0F0F" style="stop-color:#0F0F0F;stop-color:color(display-p3 0.0590 0.0590 0.0590);stop-opacity:1;"/>
+<stop offset="0.875" stop-color="#0A0A0A" style="stop-color:#0A0A0A;stop-color:color(display-p3 0.0381 0.0381 0.0381);stop-opacity:1;"/>
+<stop offset="0.90625" stop-color="#050505" style="stop-color:#050505;stop-color:color(display-p3 0.0215 0.0215 0.0215);stop-opacity:1;"/>
+<stop offset="0.9375" stop-color="#020202" style="stop-color:#020202;stop-color:color(display-p3 0.0096 0.0096 0.0096);stop-opacity:1;"/>
+<stop offset="0.96875" stop-color="#010101" style="stop-color:#010101;stop-color:color(display-p3 0.0024 0.0024 0.0024);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:black;stop-opacity:1;"/>
+</radialGradient>
+<radialGradient id="paint12_radial_0_201" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(491.366 378.139) rotate(90) scale(378.018 10.1734)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="0.03125" stop-color="#FEFEFE" style="stop-color:#FEFEFE;stop-color:color(display-p3 0.9976 0.9976 0.9976);stop-opacity:1;"/>
+<stop offset="0.0625" stop-color="#FDFDFD" style="stop-color:#FDFDFD;stop-color:color(display-p3 0.9904 0.9904 0.9904);stop-opacity:1;"/>
+<stop offset="0.09375" stop-color="#FAFAFA" style="stop-color:#FAFAFA;stop-color:color(display-p3 0.9785 0.9785 0.9785);stop-opacity:1;"/>
+<stop offset="0.125" stop-color="#F5F5F5" style="stop-color:#F5F5F5;stop-color:color(display-p3 0.9619 0.9619 0.9619);stop-opacity:1;"/>
+<stop offset="0.15625" stop-color="#F0F0F0" style="stop-color:#F0F0F0;stop-color:color(display-p3 0.9410 0.9410 0.9410);stop-opacity:1;"/>
+<stop offset="0.1875" stop-color="#EAEAEA" style="stop-color:#EAEAEA;stop-color:color(display-p3 0.9157 0.9157 0.9157);stop-opacity:1;"/>
+<stop offset="0.21875" stop-color="#E2E2E2" style="stop-color:#E2E2E2;stop-color:color(display-p3 0.8865 0.8865 0.8865);stop-opacity:1;"/>
+<stop offset="0.25" stop-color="#DADADA" style="stop-color:#DADADA;stop-color:color(display-p3 0.8536 0.8536 0.8536);stop-opacity:1;"/>
+<stop offset="0.28125" stop-color="#D0D0D0" style="stop-color:#D0D0D0;stop-color:color(display-p3 0.8172 0.8172 0.8172);stop-opacity:1;"/>
+<stop offset="0.3125" stop-color="#C6C6C6" style="stop-color:#C6C6C6;stop-color:color(display-p3 0.7778 0.7778 0.7778);stop-opacity:1;"/>
+<stop offset="0.34375" stop-color="#BCBCBC" style="stop-color:#BCBCBC;stop-color:color(display-p3 0.7357 0.7357 0.7357);stop-opacity:1;"/>
+<stop offset="0.375" stop-color="#B0B0B0" style="stop-color:#B0B0B0;stop-color:color(display-p3 0.6913 0.6913 0.6913);stop-opacity:1;"/>
+<stop offset="0.40625" stop-color="#A5A5A5" style="stop-color:#A5A5A5;stop-color:color(display-p3 0.6451 0.6451 0.6451);stop-opacity:1;"/>
+<stop offset="0.4375" stop-color="#989898" style="stop-color:#989898;stop-color:color(display-p3 0.5975 0.5975 0.5975);stop-opacity:1;"/>
+<stop offset="0.46875" stop-color="#8C8C8C" style="stop-color:#8C8C8C;stop-color:color(display-p3 0.5490 0.5490 0.5490);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#808080" style="stop-color:#808080;stop-color:color(display-p3 0.5000 0.5000 0.5000);stop-opacity:1;"/>
+<stop offset="0.53125" stop-color="#737373" style="stop-color:#737373;stop-color:color(display-p3 0.4510 0.4510 0.4510);stop-opacity:1;"/>
+<stop offset="0.5625" stop-color="#676767" style="stop-color:#676767;stop-color:color(display-p3 0.4025 0.4025 0.4025);stop-opacity:1;"/>
+<stop offset="0.59375" stop-color="#5A5A5A" style="stop-color:#5A5A5A;stop-color:color(display-p3 0.3549 0.3549 0.3549);stop-opacity:1;"/>
+<stop offset="0.625" stop-color="#4F4F4F" style="stop-color:#4F4F4F;stop-color:color(display-p3 0.3087 0.3087 0.3087);stop-opacity:1;"/>
+<stop offset="0.65625" stop-color="#434343" style="stop-color:#434343;stop-color:color(display-p3 0.2643 0.2643 0.2643);stop-opacity:1;"/>
+<stop offset="0.6875" stop-color="#393939" style="stop-color:#393939;stop-color:color(display-p3 0.2222 0.2222 0.2222);stop-opacity:1;"/>
+<stop offset="0.71875" stop-color="#2F2F2F" style="stop-color:#2F2F2F;stop-color:color(display-p3 0.1828 0.1828 0.1828);stop-opacity:1;"/>
+<stop offset="0.75" stop-color="#252525" style="stop-color:#252525;stop-color:color(display-p3 0.1464 0.1464 0.1464);stop-opacity:1;"/>
+<stop offset="0.78125" stop-color="#1D1D1D" style="stop-color:#1D1D1D;stop-color:color(display-p3 0.1135 0.1135 0.1135);stop-opacity:1;"/>
+<stop offset="0.8125" stop-color="#151515" style="stop-color:#151515;stop-color:color(display-p3 0.0843 0.0843 0.0843);stop-opacity:1;"/>
+<stop offset="0.84375" stop-color="#0F0F0F" style="stop-color:#0F0F0F;stop-color:color(display-p3 0.0590 0.0590 0.0590);stop-opacity:1;"/>
+<stop offset="0.875" stop-color="#0A0A0A" style="stop-color:#0A0A0A;stop-color:color(display-p3 0.0381 0.0381 0.0381);stop-opacity:1;"/>
+<stop offset="0.90625" stop-color="#050505" style="stop-color:#050505;stop-color:color(display-p3 0.0215 0.0215 0.0215);stop-opacity:1;"/>
+<stop offset="0.9375" stop-color="#020202" style="stop-color:#020202;stop-color:color(display-p3 0.0096 0.0096 0.0096);stop-opacity:1;"/>
+<stop offset="0.96875" stop-color="#010101" style="stop-color:#010101;stop-color:color(display-p3 0.0024 0.0024 0.0024);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:black;stop-opacity:1;"/>
+</radialGradient>
+<radialGradient id="paint13_radial_0_201" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(529.166 378.139) rotate(90) scale(378.018 10.1734)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="0.03125" stop-color="#FEFEFE" style="stop-color:#FEFEFE;stop-color:color(display-p3 0.9976 0.9976 0.9976);stop-opacity:1;"/>
+<stop offset="0.0625" stop-color="#FDFDFD" style="stop-color:#FDFDFD;stop-color:color(display-p3 0.9904 0.9904 0.9904);stop-opacity:1;"/>
+<stop offset="0.09375" stop-color="#FAFAFA" style="stop-color:#FAFAFA;stop-color:color(display-p3 0.9785 0.9785 0.9785);stop-opacity:1;"/>
+<stop offset="0.125" stop-color="#F5F5F5" style="stop-color:#F5F5F5;stop-color:color(display-p3 0.9619 0.9619 0.9619);stop-opacity:1;"/>
+<stop offset="0.15625" stop-color="#F0F0F0" style="stop-color:#F0F0F0;stop-color:color(display-p3 0.9410 0.9410 0.9410);stop-opacity:1;"/>
+<stop offset="0.1875" stop-color="#EAEAEA" style="stop-color:#EAEAEA;stop-color:color(display-p3 0.9157 0.9157 0.9157);stop-opacity:1;"/>
+<stop offset="0.21875" stop-color="#E2E2E2" style="stop-color:#E2E2E2;stop-color:color(display-p3 0.8865 0.8865 0.8865);stop-opacity:1;"/>
+<stop offset="0.25" stop-color="#DADADA" style="stop-color:#DADADA;stop-color:color(display-p3 0.8536 0.8536 0.8536);stop-opacity:1;"/>
+<stop offset="0.28125" stop-color="#D0D0D0" style="stop-color:#D0D0D0;stop-color:color(display-p3 0.8172 0.8172 0.8172);stop-opacity:1;"/>
+<stop offset="0.3125" stop-color="#C6C6C6" style="stop-color:#C6C6C6;stop-color:color(display-p3 0.7778 0.7778 0.7778);stop-opacity:1;"/>
+<stop offset="0.34375" stop-color="#BCBCBC" style="stop-color:#BCBCBC;stop-color:color(display-p3 0.7357 0.7357 0.7357);stop-opacity:1;"/>
+<stop offset="0.375" stop-color="#B0B0B0" style="stop-color:#B0B0B0;stop-color:color(display-p3 0.6913 0.6913 0.6913);stop-opacity:1;"/>
+<stop offset="0.40625" stop-color="#A5A5A5" style="stop-color:#A5A5A5;stop-color:color(display-p3 0.6451 0.6451 0.6451);stop-opacity:1;"/>
+<stop offset="0.4375" stop-color="#989898" style="stop-color:#989898;stop-color:color(display-p3 0.5975 0.5975 0.5975);stop-opacity:1;"/>
+<stop offset="0.46875" stop-color="#8C8C8C" style="stop-color:#8C8C8C;stop-color:color(display-p3 0.5490 0.5490 0.5490);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#808080" style="stop-color:#808080;stop-color:color(display-p3 0.5000 0.5000 0.5000);stop-opacity:1;"/>
+<stop offset="0.53125" stop-color="#737373" style="stop-color:#737373;stop-color:color(display-p3 0.4510 0.4510 0.4510);stop-opacity:1;"/>
+<stop offset="0.5625" stop-color="#676767" style="stop-color:#676767;stop-color:color(display-p3 0.4025 0.4025 0.4025);stop-opacity:1;"/>
+<stop offset="0.59375" stop-color="#5A5A5A" style="stop-color:#5A5A5A;stop-color:color(display-p3 0.3549 0.3549 0.3549);stop-opacity:1;"/>
+<stop offset="0.625" stop-color="#4F4F4F" style="stop-color:#4F4F4F;stop-color:color(display-p3 0.3087 0.3087 0.3087);stop-opacity:1;"/>
+<stop offset="0.65625" stop-color="#434343" style="stop-color:#434343;stop-color:color(display-p3 0.2643 0.2643 0.2643);stop-opacity:1;"/>
+<stop offset="0.6875" stop-color="#393939" style="stop-color:#393939;stop-color:color(display-p3 0.2222 0.2222 0.2222);stop-opacity:1;"/>
+<stop offset="0.71875" stop-color="#2F2F2F" style="stop-color:#2F2F2F;stop-color:color(display-p3 0.1828 0.1828 0.1828);stop-opacity:1;"/>
+<stop offset="0.75" stop-color="#252525" style="stop-color:#252525;stop-color:color(display-p3 0.1464 0.1464 0.1464);stop-opacity:1;"/>
+<stop offset="0.78125" stop-color="#1D1D1D" style="stop-color:#1D1D1D;stop-color:color(display-p3 0.1135 0.1135 0.1135);stop-opacity:1;"/>
+<stop offset="0.8125" stop-color="#151515" style="stop-color:#151515;stop-color:color(display-p3 0.0843 0.0843 0.0843);stop-opacity:1;"/>
+<stop offset="0.84375" stop-color="#0F0F0F" style="stop-color:#0F0F0F;stop-color:color(display-p3 0.0590 0.0590 0.0590);stop-opacity:1;"/>
+<stop offset="0.875" stop-color="#0A0A0A" style="stop-color:#0A0A0A;stop-color:color(display-p3 0.0381 0.0381 0.0381);stop-opacity:1;"/>
+<stop offset="0.90625" stop-color="#050505" style="stop-color:#050505;stop-color:color(display-p3 0.0215 0.0215 0.0215);stop-opacity:1;"/>
+<stop offset="0.9375" stop-color="#020202" style="stop-color:#020202;stop-color:color(display-p3 0.0096 0.0096 0.0096);stop-opacity:1;"/>
+<stop offset="0.96875" stop-color="#010101" style="stop-color:#010101;stop-color:color(display-p3 0.0024 0.0024 0.0024);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:black;stop-opacity:1;"/>
+</radialGradient>
+<radialGradient id="paint14_radial_0_201" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(566.966 378.139) rotate(90) scale(378.018 10.1734)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="0.03125" stop-color="#FEFEFE" style="stop-color:#FEFEFE;stop-color:color(display-p3 0.9976 0.9976 0.9976);stop-opacity:1;"/>
+<stop offset="0.0625" stop-color="#FDFDFD" style="stop-color:#FDFDFD;stop-color:color(display-p3 0.9904 0.9904 0.9904);stop-opacity:1;"/>
+<stop offset="0.09375" stop-color="#FAFAFA" style="stop-color:#FAFAFA;stop-color:color(display-p3 0.9785 0.9785 0.9785);stop-opacity:1;"/>
+<stop offset="0.125" stop-color="#F5F5F5" style="stop-color:#F5F5F5;stop-color:color(display-p3 0.9619 0.9619 0.9619);stop-opacity:1;"/>
+<stop offset="0.15625" stop-color="#F0F0F0" style="stop-color:#F0F0F0;stop-color:color(display-p3 0.9410 0.9410 0.9410);stop-opacity:1;"/>
+<stop offset="0.1875" stop-color="#EAEAEA" style="stop-color:#EAEAEA;stop-color:color(display-p3 0.9157 0.9157 0.9157);stop-opacity:1;"/>
+<stop offset="0.21875" stop-color="#E2E2E2" style="stop-color:#E2E2E2;stop-color:color(display-p3 0.8865 0.8865 0.8865);stop-opacity:1;"/>
+<stop offset="0.25" stop-color="#DADADA" style="stop-color:#DADADA;stop-color:color(display-p3 0.8536 0.8536 0.8536);stop-opacity:1;"/>
+<stop offset="0.28125" stop-color="#D0D0D0" style="stop-color:#D0D0D0;stop-color:color(display-p3 0.8172 0.8172 0.8172);stop-opacity:1;"/>
+<stop offset="0.3125" stop-color="#C6C6C6" style="stop-color:#C6C6C6;stop-color:color(display-p3 0.7778 0.7778 0.7778);stop-opacity:1;"/>
+<stop offset="0.34375" stop-color="#BCBCBC" style="stop-color:#BCBCBC;stop-color:color(display-p3 0.7357 0.7357 0.7357);stop-opacity:1;"/>
+<stop offset="0.375" stop-color="#B0B0B0" style="stop-color:#B0B0B0;stop-color:color(display-p3 0.6913 0.6913 0.6913);stop-opacity:1;"/>
+<stop offset="0.40625" stop-color="#A5A5A5" style="stop-color:#A5A5A5;stop-color:color(display-p3 0.6451 0.6451 0.6451);stop-opacity:1;"/>
+<stop offset="0.4375" stop-color="#989898" style="stop-color:#989898;stop-color:color(display-p3 0.5975 0.5975 0.5975);stop-opacity:1;"/>
+<stop offset="0.46875" stop-color="#8C8C8C" style="stop-color:#8C8C8C;stop-color:color(display-p3 0.5490 0.5490 0.5490);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#808080" style="stop-color:#808080;stop-color:color(display-p3 0.5000 0.5000 0.5000);stop-opacity:1;"/>
+<stop offset="0.53125" stop-color="#737373" style="stop-color:#737373;stop-color:color(display-p3 0.4510 0.4510 0.4510);stop-opacity:1;"/>
+<stop offset="0.5625" stop-color="#676767" style="stop-color:#676767;stop-color:color(display-p3 0.4025 0.4025 0.4025);stop-opacity:1;"/>
+<stop offset="0.59375" stop-color="#5A5A5A" style="stop-color:#5A5A5A;stop-color:color(display-p3 0.3549 0.3549 0.3549);stop-opacity:1;"/>
+<stop offset="0.625" stop-color="#4F4F4F" style="stop-color:#4F4F4F;stop-color:color(display-p3 0.3087 0.3087 0.3087);stop-opacity:1;"/>
+<stop offset="0.65625" stop-color="#434343" style="stop-color:#434343;stop-color:color(display-p3 0.2643 0.2643 0.2643);stop-opacity:1;"/>
+<stop offset="0.6875" stop-color="#393939" style="stop-color:#393939;stop-color:color(display-p3 0.2222 0.2222 0.2222);stop-opacity:1;"/>
+<stop offset="0.71875" stop-color="#2F2F2F" style="stop-color:#2F2F2F;stop-color:color(display-p3 0.1828 0.1828 0.1828);stop-opacity:1;"/>
+<stop offset="0.75" stop-color="#252525" style="stop-color:#252525;stop-color:color(display-p3 0.1464 0.1464 0.1464);stop-opacity:1;"/>
+<stop offset="0.78125" stop-color="#1D1D1D" style="stop-color:#1D1D1D;stop-color:color(display-p3 0.1135 0.1135 0.1135);stop-opacity:1;"/>
+<stop offset="0.8125" stop-color="#151515" style="stop-color:#151515;stop-color:color(display-p3 0.0843 0.0843 0.0843);stop-opacity:1;"/>
+<stop offset="0.84375" stop-color="#0F0F0F" style="stop-color:#0F0F0F;stop-color:color(display-p3 0.0590 0.0590 0.0590);stop-opacity:1;"/>
+<stop offset="0.875" stop-color="#0A0A0A" style="stop-color:#0A0A0A;stop-color:color(display-p3 0.0381 0.0381 0.0381);stop-opacity:1;"/>
+<stop offset="0.90625" stop-color="#050505" style="stop-color:#050505;stop-color:color(display-p3 0.0215 0.0215 0.0215);stop-opacity:1;"/>
+<stop offset="0.9375" stop-color="#020202" style="stop-color:#020202;stop-color:color(display-p3 0.0096 0.0096 0.0096);stop-opacity:1;"/>
+<stop offset="0.96875" stop-color="#010101" style="stop-color:#010101;stop-color:color(display-p3 0.0024 0.0024 0.0024);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:black;stop-opacity:1;"/>
+</radialGradient>
+<radialGradient id="paint15_radial_0_201" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(604.766 378.139) rotate(90) scale(378.018 10.1734)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="0.03125" stop-color="#FEFEFE" style="stop-color:#FEFEFE;stop-color:color(display-p3 0.9976 0.9976 0.9976);stop-opacity:1;"/>
+<stop offset="0.0625" stop-color="#FDFDFD" style="stop-color:#FDFDFD;stop-color:color(display-p3 0.9904 0.9904 0.9904);stop-opacity:1;"/>
+<stop offset="0.09375" stop-color="#FAFAFA" style="stop-color:#FAFAFA;stop-color:color(display-p3 0.9785 0.9785 0.9785);stop-opacity:1;"/>
+<stop offset="0.125" stop-color="#F5F5F5" style="stop-color:#F5F5F5;stop-color:color(display-p3 0.9619 0.9619 0.9619);stop-opacity:1;"/>
+<stop offset="0.15625" stop-color="#F0F0F0" style="stop-color:#F0F0F0;stop-color:color(display-p3 0.9410 0.9410 0.9410);stop-opacity:1;"/>
+<stop offset="0.1875" stop-color="#EAEAEA" style="stop-color:#EAEAEA;stop-color:color(display-p3 0.9157 0.9157 0.9157);stop-opacity:1;"/>
+<stop offset="0.21875" stop-color="#E2E2E2" style="stop-color:#E2E2E2;stop-color:color(display-p3 0.8865 0.8865 0.8865);stop-opacity:1;"/>
+<stop offset="0.25" stop-color="#DADADA" style="stop-color:#DADADA;stop-color:color(display-p3 0.8536 0.8536 0.8536);stop-opacity:1;"/>
+<stop offset="0.28125" stop-color="#D0D0D0" style="stop-color:#D0D0D0;stop-color:color(display-p3 0.8172 0.8172 0.8172);stop-opacity:1;"/>
+<stop offset="0.3125" stop-color="#C6C6C6" style="stop-color:#C6C6C6;stop-color:color(display-p3 0.7778 0.7778 0.7778);stop-opacity:1;"/>
+<stop offset="0.34375" stop-color="#BCBCBC" style="stop-color:#BCBCBC;stop-color:color(display-p3 0.7357 0.7357 0.7357);stop-opacity:1;"/>
+<stop offset="0.375" stop-color="#B0B0B0" style="stop-color:#B0B0B0;stop-color:color(display-p3 0.6913 0.6913 0.6913);stop-opacity:1;"/>
+<stop offset="0.40625" stop-color="#A5A5A5" style="stop-color:#A5A5A5;stop-color:color(display-p3 0.6451 0.6451 0.6451);stop-opacity:1;"/>
+<stop offset="0.4375" stop-color="#989898" style="stop-color:#989898;stop-color:color(display-p3 0.5975 0.5975 0.5975);stop-opacity:1;"/>
+<stop offset="0.46875" stop-color="#8C8C8C" style="stop-color:#8C8C8C;stop-color:color(display-p3 0.5490 0.5490 0.5490);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#808080" style="stop-color:#808080;stop-color:color(display-p3 0.5000 0.5000 0.5000);stop-opacity:1;"/>
+<stop offset="0.53125" stop-color="#737373" style="stop-color:#737373;stop-color:color(display-p3 0.4510 0.4510 0.4510);stop-opacity:1;"/>
+<stop offset="0.5625" stop-color="#676767" style="stop-color:#676767;stop-color:color(display-p3 0.4025 0.4025 0.4025);stop-opacity:1;"/>
+<stop offset="0.59375" stop-color="#5A5A5A" style="stop-color:#5A5A5A;stop-color:color(display-p3 0.3549 0.3549 0.3549);stop-opacity:1;"/>
+<stop offset="0.625" stop-color="#4F4F4F" style="stop-color:#4F4F4F;stop-color:color(display-p3 0.3087 0.3087 0.3087);stop-opacity:1;"/>
+<stop offset="0.65625" stop-color="#434343" style="stop-color:#434343;stop-color:color(display-p3 0.2643 0.2643 0.2643);stop-opacity:1;"/>
+<stop offset="0.6875" stop-color="#393939" style="stop-color:#393939;stop-color:color(display-p3 0.2222 0.2222 0.2222);stop-opacity:1;"/>
+<stop offset="0.71875" stop-color="#2F2F2F" style="stop-color:#2F2F2F;stop-color:color(display-p3 0.1828 0.1828 0.1828);stop-opacity:1;"/>
+<stop offset="0.75" stop-color="#252525" style="stop-color:#252525;stop-color:color(display-p3 0.1464 0.1464 0.1464);stop-opacity:1;"/>
+<stop offset="0.78125" stop-color="#1D1D1D" style="stop-color:#1D1D1D;stop-color:color(display-p3 0.1135 0.1135 0.1135);stop-opacity:1;"/>
+<stop offset="0.8125" stop-color="#151515" style="stop-color:#151515;stop-color:color(display-p3 0.0843 0.0843 0.0843);stop-opacity:1;"/>
+<stop offset="0.84375" stop-color="#0F0F0F" style="stop-color:#0F0F0F;stop-color:color(display-p3 0.0590 0.0590 0.0590);stop-opacity:1;"/>
+<stop offset="0.875" stop-color="#0A0A0A" style="stop-color:#0A0A0A;stop-color:color(display-p3 0.0381 0.0381 0.0381);stop-opacity:1;"/>
+<stop offset="0.90625" stop-color="#050505" style="stop-color:#050505;stop-color:color(display-p3 0.0215 0.0215 0.0215);stop-opacity:1;"/>
+<stop offset="0.9375" stop-color="#020202" style="stop-color:#020202;stop-color:color(display-p3 0.0096 0.0096 0.0096);stop-opacity:1;"/>
+<stop offset="0.96875" stop-color="#010101" style="stop-color:#010101;stop-color:color(display-p3 0.0024 0.0024 0.0024);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:black;stop-opacity:1;"/>
+</radialGradient>
+<radialGradient id="paint16_radial_0_201" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(642.566 378.139) rotate(90) scale(378.018 10.1734)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="0.03125" stop-color="#FEFEFE" style="stop-color:#FEFEFE;stop-color:color(display-p3 0.9976 0.9976 0.9976);stop-opacity:1;"/>
+<stop offset="0.0625" stop-color="#FDFDFD" style="stop-color:#FDFDFD;stop-color:color(display-p3 0.9904 0.9904 0.9904);stop-opacity:1;"/>
+<stop offset="0.09375" stop-color="#FAFAFA" style="stop-color:#FAFAFA;stop-color:color(display-p3 0.9785 0.9785 0.9785);stop-opacity:1;"/>
+<stop offset="0.125" stop-color="#F5F5F5" style="stop-color:#F5F5F5;stop-color:color(display-p3 0.9619 0.9619 0.9619);stop-opacity:1;"/>
+<stop offset="0.15625" stop-color="#F0F0F0" style="stop-color:#F0F0F0;stop-color:color(display-p3 0.9410 0.9410 0.9410);stop-opacity:1;"/>
+<stop offset="0.1875" stop-color="#EAEAEA" style="stop-color:#EAEAEA;stop-color:color(display-p3 0.9157 0.9157 0.9157);stop-opacity:1;"/>
+<stop offset="0.21875" stop-color="#E2E2E2" style="stop-color:#E2E2E2;stop-color:color(display-p3 0.8865 0.8865 0.8865);stop-opacity:1;"/>
+<stop offset="0.25" stop-color="#DADADA" style="stop-color:#DADADA;stop-color:color(display-p3 0.8536 0.8536 0.8536);stop-opacity:1;"/>
+<stop offset="0.28125" stop-color="#D0D0D0" style="stop-color:#D0D0D0;stop-color:color(display-p3 0.8172 0.8172 0.8172);stop-opacity:1;"/>
+<stop offset="0.3125" stop-color="#C6C6C6" style="stop-color:#C6C6C6;stop-color:color(display-p3 0.7778 0.7778 0.7778);stop-opacity:1;"/>
+<stop offset="0.34375" stop-color="#BCBCBC" style="stop-color:#BCBCBC;stop-color:color(display-p3 0.7357 0.7357 0.7357);stop-opacity:1;"/>
+<stop offset="0.375" stop-color="#B0B0B0" style="stop-color:#B0B0B0;stop-color:color(display-p3 0.6913 0.6913 0.6913);stop-opacity:1;"/>
+<stop offset="0.40625" stop-color="#A5A5A5" style="stop-color:#A5A5A5;stop-color:color(display-p3 0.6451 0.6451 0.6451);stop-opacity:1;"/>
+<stop offset="0.4375" stop-color="#989898" style="stop-color:#989898;stop-color:color(display-p3 0.5975 0.5975 0.5975);stop-opacity:1;"/>
+<stop offset="0.46875" stop-color="#8C8C8C" style="stop-color:#8C8C8C;stop-color:color(display-p3 0.5490 0.5490 0.5490);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#808080" style="stop-color:#808080;stop-color:color(display-p3 0.5000 0.5000 0.5000);stop-opacity:1;"/>
+<stop offset="0.53125" stop-color="#737373" style="stop-color:#737373;stop-color:color(display-p3 0.4510 0.4510 0.4510);stop-opacity:1;"/>
+<stop offset="0.5625" stop-color="#676767" style="stop-color:#676767;stop-color:color(display-p3 0.4025 0.4025 0.4025);stop-opacity:1;"/>
+<stop offset="0.59375" stop-color="#5A5A5A" style="stop-color:#5A5A5A;stop-color:color(display-p3 0.3549 0.3549 0.3549);stop-opacity:1;"/>
+<stop offset="0.625" stop-color="#4F4F4F" style="stop-color:#4F4F4F;stop-color:color(display-p3 0.3087 0.3087 0.3087);stop-opacity:1;"/>
+<stop offset="0.65625" stop-color="#434343" style="stop-color:#434343;stop-color:color(display-p3 0.2643 0.2643 0.2643);stop-opacity:1;"/>
+<stop offset="0.6875" stop-color="#393939" style="stop-color:#393939;stop-color:color(display-p3 0.2222 0.2222 0.2222);stop-opacity:1;"/>
+<stop offset="0.71875" stop-color="#2F2F2F" style="stop-color:#2F2F2F;stop-color:color(display-p3 0.1828 0.1828 0.1828);stop-opacity:1;"/>
+<stop offset="0.75" stop-color="#252525" style="stop-color:#252525;stop-color:color(display-p3 0.1464 0.1464 0.1464);stop-opacity:1;"/>
+<stop offset="0.78125" stop-color="#1D1D1D" style="stop-color:#1D1D1D;stop-color:color(display-p3 0.1135 0.1135 0.1135);stop-opacity:1;"/>
+<stop offset="0.8125" stop-color="#151515" style="stop-color:#151515;stop-color:color(display-p3 0.0843 0.0843 0.0843);stop-opacity:1;"/>
+<stop offset="0.84375" stop-color="#0F0F0F" style="stop-color:#0F0F0F;stop-color:color(display-p3 0.0590 0.0590 0.0590);stop-opacity:1;"/>
+<stop offset="0.875" stop-color="#0A0A0A" style="stop-color:#0A0A0A;stop-color:color(display-p3 0.0381 0.0381 0.0381);stop-opacity:1;"/>
+<stop offset="0.90625" stop-color="#050505" style="stop-color:#050505;stop-color:color(display-p3 0.0215 0.0215 0.0215);stop-opacity:1;"/>
+<stop offset="0.9375" stop-color="#020202" style="stop-color:#020202;stop-color:color(display-p3 0.0096 0.0096 0.0096);stop-opacity:1;"/>
+<stop offset="0.96875" stop-color="#010101" style="stop-color:#010101;stop-color:color(display-p3 0.0024 0.0024 0.0024);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:black;stop-opacity:1;"/>
+</radialGradient>
+<radialGradient id="paint17_radial_0_201" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(680.366 378.139) rotate(90) scale(378.018 10.1734)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="0.03125" stop-color="#FEFEFE" style="stop-color:#FEFEFE;stop-color:color(display-p3 0.9976 0.9976 0.9976);stop-opacity:1;"/>
+<stop offset="0.0625" stop-color="#FDFDFD" style="stop-color:#FDFDFD;stop-color:color(display-p3 0.9904 0.9904 0.9904);stop-opacity:1;"/>
+<stop offset="0.09375" stop-color="#FAFAFA" style="stop-color:#FAFAFA;stop-color:color(display-p3 0.9785 0.9785 0.9785);stop-opacity:1;"/>
+<stop offset="0.125" stop-color="#F5F5F5" style="stop-color:#F5F5F5;stop-color:color(display-p3 0.9619 0.9619 0.9619);stop-opacity:1;"/>
+<stop offset="0.15625" stop-color="#F0F0F0" style="stop-color:#F0F0F0;stop-color:color(display-p3 0.9410 0.9410 0.9410);stop-opacity:1;"/>
+<stop offset="0.1875" stop-color="#EAEAEA" style="stop-color:#EAEAEA;stop-color:color(display-p3 0.9157 0.9157 0.9157);stop-opacity:1;"/>
+<stop offset="0.21875" stop-color="#E2E2E2" style="stop-color:#E2E2E2;stop-color:color(display-p3 0.8865 0.8865 0.8865);stop-opacity:1;"/>
+<stop offset="0.25" stop-color="#DADADA" style="stop-color:#DADADA;stop-color:color(display-p3 0.8536 0.8536 0.8536);stop-opacity:1;"/>
+<stop offset="0.28125" stop-color="#D0D0D0" style="stop-color:#D0D0D0;stop-color:color(display-p3 0.8172 0.8172 0.8172);stop-opacity:1;"/>
+<stop offset="0.3125" stop-color="#C6C6C6" style="stop-color:#C6C6C6;stop-color:color(display-p3 0.7778 0.7778 0.7778);stop-opacity:1;"/>
+<stop offset="0.34375" stop-color="#BCBCBC" style="stop-color:#BCBCBC;stop-color:color(display-p3 0.7357 0.7357 0.7357);stop-opacity:1;"/>
+<stop offset="0.375" stop-color="#B0B0B0" style="stop-color:#B0B0B0;stop-color:color(display-p3 0.6913 0.6913 0.6913);stop-opacity:1;"/>
+<stop offset="0.40625" stop-color="#A5A5A5" style="stop-color:#A5A5A5;stop-color:color(display-p3 0.6451 0.6451 0.6451);stop-opacity:1;"/>
+<stop offset="0.4375" stop-color="#989898" style="stop-color:#989898;stop-color:color(display-p3 0.5975 0.5975 0.5975);stop-opacity:1;"/>
+<stop offset="0.46875" stop-color="#8C8C8C" style="stop-color:#8C8C8C;stop-color:color(display-p3 0.5490 0.5490 0.5490);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#808080" style="stop-color:#808080;stop-color:color(display-p3 0.5000 0.5000 0.5000);stop-opacity:1;"/>
+<stop offset="0.53125" stop-color="#737373" style="stop-color:#737373;stop-color:color(display-p3 0.4510 0.4510 0.4510);stop-opacity:1;"/>
+<stop offset="0.5625" stop-color="#676767" style="stop-color:#676767;stop-color:color(display-p3 0.4025 0.4025 0.4025);stop-opacity:1;"/>
+<stop offset="0.59375" stop-color="#5A5A5A" style="stop-color:#5A5A5A;stop-color:color(display-p3 0.3549 0.3549 0.3549);stop-opacity:1;"/>
+<stop offset="0.625" stop-color="#4F4F4F" style="stop-color:#4F4F4F;stop-color:color(display-p3 0.3087 0.3087 0.3087);stop-opacity:1;"/>
+<stop offset="0.65625" stop-color="#434343" style="stop-color:#434343;stop-color:color(display-p3 0.2643 0.2643 0.2643);stop-opacity:1;"/>
+<stop offset="0.6875" stop-color="#393939" style="stop-color:#393939;stop-color:color(display-p3 0.2222 0.2222 0.2222);stop-opacity:1;"/>
+<stop offset="0.71875" stop-color="#2F2F2F" style="stop-color:#2F2F2F;stop-color:color(display-p3 0.1828 0.1828 0.1828);stop-opacity:1;"/>
+<stop offset="0.75" stop-color="#252525" style="stop-color:#252525;stop-color:color(display-p3 0.1464 0.1464 0.1464);stop-opacity:1;"/>
+<stop offset="0.78125" stop-color="#1D1D1D" style="stop-color:#1D1D1D;stop-color:color(display-p3 0.1135 0.1135 0.1135);stop-opacity:1;"/>
+<stop offset="0.8125" stop-color="#151515" style="stop-color:#151515;stop-color:color(display-p3 0.0843 0.0843 0.0843);stop-opacity:1;"/>
+<stop offset="0.84375" stop-color="#0F0F0F" style="stop-color:#0F0F0F;stop-color:color(display-p3 0.0590 0.0590 0.0590);stop-opacity:1;"/>
+<stop offset="0.875" stop-color="#0A0A0A" style="stop-color:#0A0A0A;stop-color:color(display-p3 0.0381 0.0381 0.0381);stop-opacity:1;"/>
+<stop offset="0.90625" stop-color="#050505" style="stop-color:#050505;stop-color:color(display-p3 0.0215 0.0215 0.0215);stop-opacity:1;"/>
+<stop offset="0.9375" stop-color="#020202" style="stop-color:#020202;stop-color:color(display-p3 0.0096 0.0096 0.0096);stop-opacity:1;"/>
+<stop offset="0.96875" stop-color="#010101" style="stop-color:#010101;stop-color:color(display-p3 0.0024 0.0024 0.0024);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:black;stop-opacity:1;"/>
+</radialGradient>
+<radialGradient id="paint18_radial_0_201" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(718.166 378.139) rotate(90) scale(378.018 10.1734)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="0.03125" stop-color="#FEFEFE" style="stop-color:#FEFEFE;stop-color:color(display-p3 0.9976 0.9976 0.9976);stop-opacity:1;"/>
+<stop offset="0.0625" stop-color="#FDFDFD" style="stop-color:#FDFDFD;stop-color:color(display-p3 0.9904 0.9904 0.9904);stop-opacity:1;"/>
+<stop offset="0.09375" stop-color="#FAFAFA" style="stop-color:#FAFAFA;stop-color:color(display-p3 0.9785 0.9785 0.9785);stop-opacity:1;"/>
+<stop offset="0.125" stop-color="#F5F5F5" style="stop-color:#F5F5F5;stop-color:color(display-p3 0.9619 0.9619 0.9619);stop-opacity:1;"/>
+<stop offset="0.15625" stop-color="#F0F0F0" style="stop-color:#F0F0F0;stop-color:color(display-p3 0.9410 0.9410 0.9410);stop-opacity:1;"/>
+<stop offset="0.1875" stop-color="#EAEAEA" style="stop-color:#EAEAEA;stop-color:color(display-p3 0.9157 0.9157 0.9157);stop-opacity:1;"/>
+<stop offset="0.21875" stop-color="#E2E2E2" style="stop-color:#E2E2E2;stop-color:color(display-p3 0.8865 0.8865 0.8865);stop-opacity:1;"/>
+<stop offset="0.25" stop-color="#DADADA" style="stop-color:#DADADA;stop-color:color(display-p3 0.8536 0.8536 0.8536);stop-opacity:1;"/>
+<stop offset="0.28125" stop-color="#D0D0D0" style="stop-color:#D0D0D0;stop-color:color(display-p3 0.8172 0.8172 0.8172);stop-opacity:1;"/>
+<stop offset="0.3125" stop-color="#C6C6C6" style="stop-color:#C6C6C6;stop-color:color(display-p3 0.7778 0.7778 0.7778);stop-opacity:1;"/>
+<stop offset="0.34375" stop-color="#BCBCBC" style="stop-color:#BCBCBC;stop-color:color(display-p3 0.7357 0.7357 0.7357);stop-opacity:1;"/>
+<stop offset="0.375" stop-color="#B0B0B0" style="stop-color:#B0B0B0;stop-color:color(display-p3 0.6913 0.6913 0.6913);stop-opacity:1;"/>
+<stop offset="0.40625" stop-color="#A5A5A5" style="stop-color:#A5A5A5;stop-color:color(display-p3 0.6451 0.6451 0.6451);stop-opacity:1;"/>
+<stop offset="0.4375" stop-color="#989898" style="stop-color:#989898;stop-color:color(display-p3 0.5975 0.5975 0.5975);stop-opacity:1;"/>
+<stop offset="0.46875" stop-color="#8C8C8C" style="stop-color:#8C8C8C;stop-color:color(display-p3 0.5490 0.5490 0.5490);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#808080" style="stop-color:#808080;stop-color:color(display-p3 0.5000 0.5000 0.5000);stop-opacity:1;"/>
+<stop offset="0.53125" stop-color="#737373" style="stop-color:#737373;stop-color:color(display-p3 0.4510 0.4510 0.4510);stop-opacity:1;"/>
+<stop offset="0.5625" stop-color="#676767" style="stop-color:#676767;stop-color:color(display-p3 0.4025 0.4025 0.4025);stop-opacity:1;"/>
+<stop offset="0.59375" stop-color="#5A5A5A" style="stop-color:#5A5A5A;stop-color:color(display-p3 0.3549 0.3549 0.3549);stop-opacity:1;"/>
+<stop offset="0.625" stop-color="#4F4F4F" style="stop-color:#4F4F4F;stop-color:color(display-p3 0.3087 0.3087 0.3087);stop-opacity:1;"/>
+<stop offset="0.65625" stop-color="#434343" style="stop-color:#434343;stop-color:color(display-p3 0.2643 0.2643 0.2643);stop-opacity:1;"/>
+<stop offset="0.6875" stop-color="#393939" style="stop-color:#393939;stop-color:color(display-p3 0.2222 0.2222 0.2222);stop-opacity:1;"/>
+<stop offset="0.71875" stop-color="#2F2F2F" style="stop-color:#2F2F2F;stop-color:color(display-p3 0.1828 0.1828 0.1828);stop-opacity:1;"/>
+<stop offset="0.75" stop-color="#252525" style="stop-color:#252525;stop-color:color(display-p3 0.1464 0.1464 0.1464);stop-opacity:1;"/>
+<stop offset="0.78125" stop-color="#1D1D1D" style="stop-color:#1D1D1D;stop-color:color(display-p3 0.1135 0.1135 0.1135);stop-opacity:1;"/>
+<stop offset="0.8125" stop-color="#151515" style="stop-color:#151515;stop-color:color(display-p3 0.0843 0.0843 0.0843);stop-opacity:1;"/>
+<stop offset="0.84375" stop-color="#0F0F0F" style="stop-color:#0F0F0F;stop-color:color(display-p3 0.0590 0.0590 0.0590);stop-opacity:1;"/>
+<stop offset="0.875" stop-color="#0A0A0A" style="stop-color:#0A0A0A;stop-color:color(display-p3 0.0381 0.0381 0.0381);stop-opacity:1;"/>
+<stop offset="0.90625" stop-color="#050505" style="stop-color:#050505;stop-color:color(display-p3 0.0215 0.0215 0.0215);stop-opacity:1;"/>
+<stop offset="0.9375" stop-color="#020202" style="stop-color:#020202;stop-color:color(display-p3 0.0096 0.0096 0.0096);stop-opacity:1;"/>
+<stop offset="0.96875" stop-color="#010101" style="stop-color:#010101;stop-color:color(display-p3 0.0024 0.0024 0.0024);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:black;stop-opacity:1;"/>
+</radialGradient>
+<radialGradient id="paint19_radial_0_201" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(755.966 378.139) rotate(90) scale(378.018 10.1734)">
+<stop stop-color="white" style="stop-color:white;stop-opacity:1;"/>
+<stop offset="0.03125" stop-color="#FEFEFE" style="stop-color:#FEFEFE;stop-color:color(display-p3 0.9976 0.9976 0.9976);stop-opacity:1;"/>
+<stop offset="0.0625" stop-color="#FDFDFD" style="stop-color:#FDFDFD;stop-color:color(display-p3 0.9904 0.9904 0.9904);stop-opacity:1;"/>
+<stop offset="0.09375" stop-color="#FAFAFA" style="stop-color:#FAFAFA;stop-color:color(display-p3 0.9785 0.9785 0.9785);stop-opacity:1;"/>
+<stop offset="0.125" stop-color="#F5F5F5" style="stop-color:#F5F5F5;stop-color:color(display-p3 0.9619 0.9619 0.9619);stop-opacity:1;"/>
+<stop offset="0.15625" stop-color="#F0F0F0" style="stop-color:#F0F0F0;stop-color:color(display-p3 0.9410 0.9410 0.9410);stop-opacity:1;"/>
+<stop offset="0.1875" stop-color="#EAEAEA" style="stop-color:#EAEAEA;stop-color:color(display-p3 0.9157 0.9157 0.9157);stop-opacity:1;"/>
+<stop offset="0.21875" stop-color="#E2E2E2" style="stop-color:#E2E2E2;stop-color:color(display-p3 0.8865 0.8865 0.8865);stop-opacity:1;"/>
+<stop offset="0.25" stop-color="#DADADA" style="stop-color:#DADADA;stop-color:color(display-p3 0.8536 0.8536 0.8536);stop-opacity:1;"/>
+<stop offset="0.28125" stop-color="#D0D0D0" style="stop-color:#D0D0D0;stop-color:color(display-p3 0.8172 0.8172 0.8172);stop-opacity:1;"/>
+<stop offset="0.3125" stop-color="#C6C6C6" style="stop-color:#C6C6C6;stop-color:color(display-p3 0.7778 0.7778 0.7778);stop-opacity:1;"/>
+<stop offset="0.34375" stop-color="#BCBCBC" style="stop-color:#BCBCBC;stop-color:color(display-p3 0.7357 0.7357 0.7357);stop-opacity:1;"/>
+<stop offset="0.375" stop-color="#B0B0B0" style="stop-color:#B0B0B0;stop-color:color(display-p3 0.6913 0.6913 0.6913);stop-opacity:1;"/>
+<stop offset="0.40625" stop-color="#A5A5A5" style="stop-color:#A5A5A5;stop-color:color(display-p3 0.6451 0.6451 0.6451);stop-opacity:1;"/>
+<stop offset="0.4375" stop-color="#989898" style="stop-color:#989898;stop-color:color(display-p3 0.5975 0.5975 0.5975);stop-opacity:1;"/>
+<stop offset="0.46875" stop-color="#8C8C8C" style="stop-color:#8C8C8C;stop-color:color(display-p3 0.5490 0.5490 0.5490);stop-opacity:1;"/>
+<stop offset="0.5" stop-color="#808080" style="stop-color:#808080;stop-color:color(display-p3 0.5000 0.5000 0.5000);stop-opacity:1;"/>
+<stop offset="0.53125" stop-color="#737373" style="stop-color:#737373;stop-color:color(display-p3 0.4510 0.4510 0.4510);stop-opacity:1;"/>
+<stop offset="0.5625" stop-color="#676767" style="stop-color:#676767;stop-color:color(display-p3 0.4025 0.4025 0.4025);stop-opacity:1;"/>
+<stop offset="0.59375" stop-color="#5A5A5A" style="stop-color:#5A5A5A;stop-color:color(display-p3 0.3549 0.3549 0.3549);stop-opacity:1;"/>
+<stop offset="0.625" stop-color="#4F4F4F" style="stop-color:#4F4F4F;stop-color:color(display-p3 0.3087 0.3087 0.3087);stop-opacity:1;"/>
+<stop offset="0.65625" stop-color="#434343" style="stop-color:#434343;stop-color:color(display-p3 0.2643 0.2643 0.2643);stop-opacity:1;"/>
+<stop offset="0.6875" stop-color="#393939" style="stop-color:#393939;stop-color:color(display-p3 0.2222 0.2222 0.2222);stop-opacity:1;"/>
+<stop offset="0.71875" stop-color="#2F2F2F" style="stop-color:#2F2F2F;stop-color:color(display-p3 0.1828 0.1828 0.1828);stop-opacity:1;"/>
+<stop offset="0.75" stop-color="#252525" style="stop-color:#252525;stop-color:color(display-p3 0.1464 0.1464 0.1464);stop-opacity:1;"/>
+<stop offset="0.78125" stop-color="#1D1D1D" style="stop-color:#1D1D1D;stop-color:color(display-p3 0.1135 0.1135 0.1135);stop-opacity:1;"/>
+<stop offset="0.8125" stop-color="#151515" style="stop-color:#151515;stop-color:color(display-p3 0.0843 0.0843 0.0843);stop-opacity:1;"/>
+<stop offset="0.84375" stop-color="#0F0F0F" style="stop-color:#0F0F0F;stop-color:color(display-p3 0.0590 0.0590 0.0590);stop-opacity:1;"/>
+<stop offset="0.875" stop-color="#0A0A0A" style="stop-color:#0A0A0A;stop-color:color(display-p3 0.0381 0.0381 0.0381);stop-opacity:1;"/>
+<stop offset="0.90625" stop-color="#050505" style="stop-color:#050505;stop-color:color(display-p3 0.0215 0.0215 0.0215);stop-opacity:1;"/>
+<stop offset="0.9375" stop-color="#020202" style="stop-color:#020202;stop-color:color(display-p3 0.0096 0.0096 0.0096);stop-opacity:1;"/>
+<stop offset="0.96875" stop-color="#010101" style="stop-color:#010101;stop-color:color(display-p3 0.0024 0.0024 0.0024);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:black;stop-opacity:1;"/>
+</radialGradient>
+</defs>
+</svg>

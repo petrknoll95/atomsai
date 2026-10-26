@@ -1,0 +1,198 @@
+{
+  "date": "2026-10-26T15:15:35.101Z",
+  "base": "http://127.0.0.1:3001",
+  "results": [
+    {
+      "browser": "chromium",
+      "width": 1600,
+      "touch": false,
+      "lag": {
+        "native": 1200,
+        "rendered": 163.94332885742188
+      },
+      "settled": {
+        "native": 1200,
+        "rendered": 1197.044189453125,
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1600,
+          "height": 96,
+          "top": 0,
+          "right": 1600,
+          "bottom": 96,
+          "left": 0
+        }
+      },
+      "checks": [
+        "GSAP catch-up and settling",
+        "fixed header",
+        "modal scroll lock/restoration",
+        "section navigation and focus",
+        "live reduced motion",
+        "initial deep link"
+      ],
+      "errors": []
+    },
+    {
+      "browser": "chromium",
+      "width": 390,
+      "touch": false,
+      "lag": {
+        "native": 1200,
+        "rendered": 163.94482421875
+      },
+      "settled": {
+        "native": 1200,
+        "rendered": 1197.643310546875,
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 80,
+          "top": 0,
+          "right": 390,
+          "bottom": 80,
+          "left": 0
+        }
+      },
+      "checks": [
+        "GSAP catch-up and settling",
+        "fixed header",
+        "modal scroll lock/restoration",
+        "section navigation and focus",
+        "live reduced motion",
+        "initial deep link"
+      ],
+      "errors": []
+    },
+    {
+      "browser": "chromium",
+      "width": 390,
+      "touch": true,
+      "lag": {
+        "native": 1200,
+        "rendered": 1200
+      },
+      "settled": {
+        "native": 1200,
+        "rendered": 1200,
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 80,
+          "top": 0,
+          "right": 390,
+          "bottom": 80,
+          "left": 0
+        }
+      },
+      "checks": [
+        "Native touch scrolling",
+        "fixed header",
+        "modal scroll lock/restoration",
+        "section navigation and focus",
+        "live reduced motion",
+        "initial deep link"
+      ],
+      "errors": []
+    },
+    {
+      "browser": "webkit",
+      "width": 1600,
+      "touch": false,
+      "lag": {
+        "native": 1200,
+        "rendered": 172.8310546875
+      },
+      "settled": {
+        "native": 1200,
+        "rendered": 1197.602294921875,
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1600,
+          "height": 96,
+          "top": 0,
+          "right": 1600,
+          "bottom": 96,
+          "left": 0
+        }
+      },
+      "checks": [
+        "GSAP catch-up and settling",
+        "fixed header",
+        "modal scroll lock/restoration",
+        "section navigation and focus",
+        "live reduced motion",
+        "initial deep link"
+      ],
+      "errors": []
+    },
+    {
+      "browser": "webkit",
+      "width": 390,
+      "touch": false,
+      "lag": {
+        "native": 1200,
+        "rendered": 163.94482421875
+      },
+      "settled": {
+        "native": 1200,
+        "rendered": 1197.5672607421875,
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 80,
+          "top": 0,
+          "right": 390,
+          "bottom": 80,
+          "left": 0
+        }
+      },
+      "checks": [
+        "GSAP catch-up and settling",
+        "fixed header",
+        "modal scroll lock/restoration",
+        "section navigation and focus",
+        "live reduced motion",
+        "initial deep link"
+      ],
+      "errors": []
+    },
+    {
+      "browser": "webkit",
+      "width": 390,
+      "touch": true,
+      "lag": {
+        "native": 1200,
+        "rendered": 1200
+      },
+      "settled": {
+        "native": 1200,
+        "rendered": 1200,
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 80,
+          "top": 0,
+          "right": 390,
+          "bottom": 80,
+          "left": 0
+        }
+      },
+      "checks": [
+        "Native touch scrolling",
+        "fixed header",
+        "modal scroll lock/restoration",
+        "section navigation and focus",
+        "live reduced motion",
+        "initial deep link"
+      ],
+      "errors": []
+    }
+  ]
+}
