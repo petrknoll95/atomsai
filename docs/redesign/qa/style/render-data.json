@@ -1,0 +1,182 @@
+[
+  {
+    "name": "home",
+    "width": 1440,
+    "heading": {
+      "family": "\"Founders Grotesk\", \"Helvetica Neue\", Arial, sans-serif",
+      "size": "89.28px",
+      "weight": "400"
+    },
+    "body": {
+      "family": "\"PP Neue Montreal\", \"Helvetica Neue\", Arial, sans-serif",
+      "weight": "425"
+    },
+    "gutter": "48px",
+    "height": 8831
+  },
+  {
+    "name": "home",
+    "width": 390,
+    "heading": {
+      "family": "\"Founders Grotesk\", \"Helvetica Neue\", Arial, sans-serif",
+      "size": "44px",
+      "weight": "400"
+    },
+    "body": {
+      "family": "\"PP Neue Montreal\", \"Helvetica Neue\", Arial, sans-serif",
+      "weight": "425"
+    },
+    "gutter": "20px",
+    "height": 12595
+  },
+  {
+    "name": "approach",
+    "width": 1440,
+    "heading": {
+      "family": "\"Founders Grotesk\", \"Helvetica Neue\", Arial, sans-serif",
+      "size": "96.48px",
+      "weight": "400"
+    },
+    "body": {
+      "family": "\"PP Neue Montreal\", \"Helvetica Neue\", Arial, sans-serif",
+      "weight": "425"
+    },
+    "gutter": "48px",
+    "height": 5579
+  },
+  {
+    "name": "approach",
+    "width": 390,
+    "heading": {
+      "family": "\"Founders Grotesk\", \"Helvetica Neue\", Arial, sans-serif",
+      "size": "48px",
+      "weight": "400"
+    },
+    "body": {
+      "family": "\"PP Neue Montreal\", \"Helvetica Neue\", Arial, sans-serif",
+      "weight": "425"
+    },
+    "gutter": "20px",
+    "height": 7640
+  },
+  {
+    "name": "voice",
+    "width": 1440,
+    "heading": {
+      "family": "\"Founders Grotesk\", \"Helvetica Neue\", Arial, sans-serif",
+      "size": "103.68px",
+      "weight": "400"
+    },
+    "body": {
+      "family": "\"PP Neue Montreal\", \"Helvetica Neue\", Arial, sans-serif",
+      "weight": "425"
+    },
+    "gutter": "48px",
+    "height": 4831
+  },
+  {
+    "name": "voice",
+    "width": 390,
+    "heading": {
+      "family": "\"Founders Grotesk\", \"Helvetica Neue\", Arial, sans-serif",
+      "size": "54px",
+      "weight": "400"
+    },
+    "body": {
+      "family": "\"PP Neue Montreal\", \"Helvetica Neue\", Arial, sans-serif",
+      "weight": "425"
+    },
+    "gutter": "20px",
+    "height": 6227
+  },
+  {
+    "name": "healthcare",
+    "width": 1440,
+    "heading": {
+      "family": "\"Founders Grotesk\", \"Helvetica Neue\", Arial, sans-serif",
+      "size": "87.84px",
+      "weight": "400"
+    },
+    "body": {
+      "family": "\"PP Neue Montreal\", \"Helvetica Neue\", Arial, sans-serif",
+      "weight": "425"
+    },
+    "gutter": "48px",
+    "height": 4834
+  },
+  {
+    "name": "healthcare",
+    "width": 390,
+    "heading": {
+      "family": "\"Founders Grotesk\", \"Helvetica Neue\", Arial, sans-serif",
+      "size": "44px",
+      "weight": "400"
+    },
+    "body": {
+      "family": "\"PP Neue Montreal\", \"Helvetica Neue\", Arial, sans-serif",
+      "weight": "425"
+    },
+    "gutter": "20px",
+    "height": 6338
+  },
+  {
+    "name": "trust",
+    "width": 1440,
+    "heading": {
+      "family": "\"Founders Grotesk\", \"Helvetica Neue\", Arial, sans-serif",
+      "size": "100.8px",
+      "weight": "400"
+    },
+    "body": {
+      "family": "\"PP Neue Montreal\", \"Helvetica Neue\", Arial, sans-serif",
+      "weight": "425"
+    },
+    "gutter": "48px",
+    "height": 5748
+  },
+  {
+    "name": "trust",
+    "width": 390,
+    "heading": {
+      "family": "\"Founders Grotesk\", \"Helvetica Neue\", Arial, sans-serif",
+      "size": "58px",
+      "weight": "400"
+    },
+    "body": {
+      "family": "\"PP Neue Montreal\", \"Helvetica Neue\", Arial, sans-serif",
+      "weight": "425"
+    },
+    "gutter": "20px",
+    "height": 7461
+  },
+  {
+    "name": "contact",
+    "width": 1440,
+    "heading": {
+      "family": "\"Founders Grotesk\", \"Helvetica Neue\", Arial, sans-serif",
+      "size": "83.52px",
+      "weight": "400"
+    },
+    "body": {
+      "family": "\"PP Neue Montreal\", \"Helvetica Neue\", Arial, sans-serif",
+      "weight": "425"
+    },
+    "gutter": "48px",
+    "height": 2393
+  },
+  {
+    "name": "contact",
+    "width": 390,
+    "heading": {
+      "family": "\"Founders Grotesk\", \"Helvetica Neue\", Arial, sans-serif",
+      "size": "52px",
+      "weight": "400"
+    },
+    "body": {
+      "family": "\"PP Neue Montreal\", \"Helvetica Neue\", Arial, sans-serif",
+      "weight": "425"
+    },
+    "gutter": "20px",
+    "height": 3573
+  }
+]

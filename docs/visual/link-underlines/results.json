@@ -1,0 +1,30 @@
+[
+  {
+    "browser": "chromium",
+    "middle": "inset(0px 35.8449% 0px 0px)",
+    "line": {
+      "width": 141.828,
+      "text": 141.828125,
+      "row": 410.65625,
+      "decoration": "none"
+    },
+    "keyboard": true,
+    "reducedMotion": true,
+    "faq": true,
+    "mobileOverflow": false
+  },
+  {
+    "browser": "webkit",
+    "middle": "inset(0px 27.8283% 0px 0px)",
+    "line": {
+      "width": 142.203125,
+      "text": 142.203125,
+      "row": 410.65625,
+      "decoration": "none"
+    },
+    "keyboard": true,
+    "reducedMotion": true,
+    "faq": true,
+    "mobileOverflow": false
+  }
+]

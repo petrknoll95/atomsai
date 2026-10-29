@@ -1,0 +1,496 @@
+AtomsAI / Knowledge agent
+Ask anything.
+Get the answer, with proof.
+Answers your team's questions from your documents, your accounts and your customer records, in seconds, with the source. Everyone sees only what their role allows.
+Contact us
+See what it does
+Built for small and growing businesses where every question ends up with the owner.
+Brightside Plumbing · Ask anything
+Live
+Slack ·
+Dana, office manager
+What did we charge the Hendersons for their boiler, and is it still under
+warranty?
+$4,200 on March 3. Yes, our 2-year parts warranty covers it until March 2027. They
+called on October 2 about a noise, and no visit is booked yet.
+Invoice #1182 · QuickBooks
+Warranty policy · Drive
+Call on Oct 2 · JustCall
+Answered in 4 seconds, from three places
+Dana sees invoices and customers · margins and payroll stay with the owner
+01 / Ask
+02 / Check access
+03 / Find
+04 / Answer, with proof
+Why it matters
+What it does
+Sources & stack
+Questions
+By industry
+Controls & evals
+Pricing
+Why it matters
+In a small business, the answers live in the owner's head, a shared drive and the accounts.
+Every question becomes an interruption, or a search through folders and spreadsheets.
+When the owner is out, nobody knows.
+Everything goes through the owner
+Prices, policies, who paid: the team asks, and the owner stops what they're doing.
+Answers in five places
+Drive, email, the accounting software, the CRM and someone's notebook.
+New staff take months
+Every new hire learns by asking, and the same questions come up again and again.
+Your business already has the answers.
+Now everyone can ask.
+Same team. Fewer interruptions.
+What a 10-person business looks like, before and with a knowledge agent
+Ask the owner
+60
+questions that go to the owner each week
+15 min
+time to find an answer
+3 months
+time for a new hire to get up to speed
+With the knowledge agent
+10
+questions that go to the owner each week
+Seconds
+time to find an answer
+3 weeks
+time for a new hire to get up to speed
+50 fewer interruptions a week for the owner
+, and a team that can find answers on its own.
+Illustrative
+What it does
+Your documents, your numbers, your customers.
+One place to ask.
+Answers from your documents.
+Policies, price lists, manuals and checklists, wherever they're saved.
+Example · a question a new technician would ask the owner
+Do we fit carbon monoxide alarms with every boiler install?
+Yes. Every install gets one, and it's included in the price. Log the serial
+number on the job sheet.
+Installation checklist, step 9 · Google
+Drive
+Knows your numbers.
+Sales, unpaid invoices and job costs, straight from your books.
+Revenue this month
+$84,200 · QuickBooks
+Overdue 60+ days
+6 customers, $12,480
+Riverside job margin
+31% · owner only
+Knows every customer.
+Invoices, calls, jobs and warranties for one customer, in one answer.
+Example · “Tell me about the Hendersons”
+Invoices
+3 paid · $6,150 this year
+Last call
+Oct 2 · noise from the boiler
+Warranty
+Parts covered until March 2027
+Open jobs
+None booked yet
+Access by role.
+Access by role, so margins and payroll stay private.
+Owner
+Everything
+Office manager
+Customers, invoices, payments
+Technician
+Jobs, manuals, procedures
+Shows its proof.
+Every figure links to the invoice, file or call it came from.
+$4,200
+Invoice #1182, March 3
+Until March 2027
+Warranty policy, section 2
+Noise reported
+Call with Mrs Henderson, Oct 2
+Says when it doesn't know.
+Asks the right person, and remembers the answer.
+To Mike · Owner
+Asked
+“Price for a heat pump install?”
+Found
+No price list for heat pumps yet
+Next
+Mike's answer is saved for next time
+Ask it anywhere.
+In the apps your team already uses, or by phone from a job.
+Slack
+Teams
+WhatsApp
+Web chat
+A phone call
+Fewer interruptions, faster answers.
+The owner gets their day back, the team finds answers on its own, and new staff are useful in weeks.
+Example · one month, one 10-person business
+50
+fewer interruptions a week for the owner
+4s
+to an answer, on average
+3 weeks
+for a new hire to get up to speed
+100%
+of answers show their source
+Sources, capabilities and integrations
+Every place your answers live.
+Connected in an afternoon.
+Reads your files, accounts, payments, CRM, calls and email. Answers in Slack, Teams, WhatsApp, web chat or on the phone.
+7
+Sources in. One answer.
+Documents
+Accounting
+Payments
+CRM
+Calls
+Tickets
+Email
+Secure by default
+SOC 2 Type II, HIPAA and GDPR. Your data is never used to train models.
+Questions answered today
+00:00 → 23:59
+Always on
+Evenings, weekends and while the owner is on holiday. The answers don't go home at five.
+Hands over to your team
+The person who knows, with the question and what the agent already found.
+When it hands over
+As per your rules
+It can't find the answer
+The answer needs a judgment call
+The person asking isn't allowed to see it
+AI agent
+Pricing exception
+→
+MR
+Mike R.
+Owner
+Billing question
+→
+DL
+Dana L.
+Office manager
+Technical question
+→
+LT
+Leo T.
+Lead technician
+Handover note
+· question, who asked, what was found
+At home in your stack
+Google Drive, SharePoint, Dropbox and Notion. QuickBooks, Xero and Stripe. HubSpot, Zoho and Salesforce. JustCall for calls. Slack, Microsoft Teams and WhatsApp to ask. Anything else through APIs and webhooks.
+Scoped access, approved per action
+Questions
+Every question.
+Answered, or routed.
+See what your team asked, where the answers came from, and what was held back.
+Questions · this week
+Answered from
+Illustrative
+Questions
+342
+Answered
+94%
+Average time
+4s
+Held back by role
+6
+“Who owes us more than 60 days?”
+QuickBooks
+Mike · owner
+Answered
+“Torque spec for the Vaillant valve?”
+Manual
+Leo · technician
+Answered
+“What's our margin on the Riverside job?”
+QuickBooks
+Leo · technician
+Not allowed → Mike
+“Did the Hendersons pay?”
+Stripe
+CRM
+Dana · office
+Answered
+“Price for a heat pump install?”
+Drive
+Sam · sales
+Not found → Mike
+1 question waiting for the owner
+Answer it
+Hold a source
+One view of every question
+Who asked, what they asked, and where the answer came from.
+Access by role
+Owners, managers and staff each see what their role needs, and nothing more.
+Gaps become answers
+Questions it couldn't answer show you what to write down next.
+Answer or hold
+Reply to a question yourself, or hold a source while you tidy it up.
+Team keeps asking?
+There's a play for that.
+Pick your industry to see the questions it answers, and who can see what.
+Home services
+2
+Dental & clinics
+2
+Real estate agencies
+2
+Accounting & law firms
+2
+Retail shops
+2
+Construction
+2
+Auto repair
+2
+Agencies & services
+2
+Restaurants & cafés
+2
+Home services
+Technicians call the office for every spec, price and customer detail.
+Docs
+Spec from the manual
+WhatsApp
+Trigger
+A technician needs a part number on site.
+Agent
+Finds it in the manufacturer manual.
+Result
+Job finished without a call
+Customer
+Past jobs at this address
+Voice
+Trigger
+A technician arrives at a repeat customer.
+Agent
+Lists past jobs, parts and warranty.
+Result
+Right fix, first time
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Dental & clinics
+Front desk staff check the same insurance and policy questions all day.
+Docs
+Cancellation policy
+Web chat
+Trigger
+A receptionist checks the late-cancel fee.
+Agent
+Answers from the practice policy.
+Result
+Same answer every time
+Numbers
+Unpaid balances
+Slack
+Trigger
+The manager asks who owes over $500.
+Agent
+Lists patients from the billing system.
+Result
+Follow-ups sent the same day
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Real estate agencies
+Agents need listing, contract and commission details fast.
+Docs
+Contract terms
+WhatsApp
+Trigger
+An agent asks the notice period on a lease.
+Agent
+Finds it in the signed lease.
+Result
+Answer during the viewing
+Numbers
+Commission this quarter
+Slack
+Trigger
+An agent asks what they've earned.
+Agent
+Shows only their own deals and commission.
+Result
+No spreadsheet requests
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Accounting & law firms
+Staff search folders for templates, deadlines and client history.
+Customer
+Client deadlines
+Teams
+Trigger
+A junior asks what's due for a client this month.
+Agent
+Lists filings and deadlines from the client file.
+Result
+Nothing missed
+Numbers
+Unbilled hours
+Teams
+Trigger
+A partner asks about unbilled time.
+Agent
+Totals it by client from the time system.
+Result
+Invoices out on time
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Retail shops
+Staff ask about stock, returns and promotions all day.
+Numbers
+Best sellers this week
+WhatsApp
+Trigger
+The owner asks what's selling.
+Agent
+Ranks products from the till and Shopify.
+Result
+Reorder decided in a minute
+Docs
+Returns rule
+Web chat
+Trigger
+A staff member asks about a return without a receipt.
+Agent
+Answers from the returns policy.
+Result
+Fair, consistent answer
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Construction
+Site teams need drawings, specs and costs, and the office is far away.
+Docs
+Spec on site
+WhatsApp
+Voice
+Trigger
+A foreman asks the concrete grade for a slab.
+Agent
+Finds it in the project spec.
+Result
+No waiting on the office
+Numbers
+Job costs so far
+Slack
+Trigger
+The owner asks if a job is over budget.
+Agent
+Compares costs to the quote from the books.
+Result
+Caught before it's too late
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Auto repair
+Mechanics and the front desk need part prices and car history.
+Customer
+Car history
+Web chat
+Trigger
+A regular customer brings their car in.
+Agent
+Shows past repairs and what's due.
+Result
+Better advice, more work
+Numbers
+Price a job
+Web chat
+Trigger
+The desk asks the usual price for brakes.
+Agent
+Shows recent invoices for the same job.
+Result
+Consistent quotes
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Agencies & services
+Client details live in emails, decks and the owner's memory.
+Customer
+Before a client call
+Slack
+Trigger
+A manager asks what's open with a client.
+Agent
+Summarises projects, invoices and last emails.
+Result
+Ready in a minute
+Numbers
+Profit by client
+Slack
+Trigger
+The owner asks which clients are least profitable.
+Agent
+Compares hours and invoices. Owner only.
+Result
+Better pricing decisions
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Restaurants & cafés
+Recipes, allergens and supplier details are in someone's head.
+Docs
+Allergens
+WhatsApp
+Trigger
+A server asks if a dish has nuts.
+Agent
+Answers from the recipe sheet.
+Result
+Safe answer, fast
+Numbers
+Supplier spend
+Slack
+Trigger
+The owner asks what was spent on produce.
+Agent
+Totals supplier bills from the books.
+Result
+Costs under control
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Each person only sees what their role allows. You set the roles.
+Controls and evals
+Right answer, right person.
+Always with proof.
+Controls
+Access by role
+Set what each role can see: finances, customers, documents or jobs.
+Numbers from your books
+Figures are read from your accounts, never estimated or made up.
+Every answer logged
+Who asked what, what they were shown, and where it came from.
+Your data stays yours
+Nothing is used to train models, and you can disconnect any source.
+Evals
+Tested on your questions
+Your team's most-asked questions, checked before launch.
+Numbers checked
+Figures compared with your own reports, so they match to the cent.
+Access tested
+Every role is tested, to prove private data stays private.
+Measured against your goals
+Questions answered, time saved and gaps closed, reviewed with you monthly.
+Pricing
+Custom built.
+Priced for your requirements.
+No fixed tiers. Every knowledge agent is built around your journeys, channels and systems, so we price it the same way: after we understand what you need.
+What shapes the price
+Team size and roles
+Sources: files, accounts, CRM, calls
+Access rules
+Where your team asks: Slack, Teams, WhatsApp, phone
+Languages
+Always included
+Set-up and connections with our team
+Roles and access set up with you
+Testing on your real questions
+Monthly reviews and tuning
+Security: SOC 2 Type II, HIPAA, GDPR
+Tell us what you need.
+Share your journeys, channels and systems. We'll come back with a scope and a
+price.
+Contact us
+Bring your 20 most-asked questions.
+We'll show you the answers, with proof.
+Share the questions your team asks every week. We'll show the answers from your own files and books, and who would be allowed to see each one.
+Contact us
+Pricing

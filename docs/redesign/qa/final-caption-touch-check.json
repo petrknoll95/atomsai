@@ -1,0 +1,154 @@
+[
+  {
+    "engine": "chromium",
+    "route": "/capabilities/voice",
+    "checks": [
+      {
+        "tag": "DIV",
+        "fontSize": "12px",
+        "height": 16.796875,
+        "width": 240
+      },
+      {
+        "tag": "SPAN",
+        "fontSize": "12px",
+        "height": 28.796875,
+        "width": 102.828125
+      },
+      {
+        "tag": "SPAN",
+        "fontSize": "12px",
+        "height": 28,
+        "width": 28
+      },
+      {
+        "tag": "INPUT",
+        "fontSize": "16px",
+        "height": 44,
+        "width": 184
+      }
+    ],
+    "scrollWidth": 320
+  },
+  {
+    "engine": "chromium",
+    "route": "/industries/healthcare",
+    "checks": [
+      {
+        "tag": "SPAN",
+        "fontSize": "12px",
+        "height": 14.390625,
+        "width": 42.96875
+      },
+      {
+        "tag": "SPAN",
+        "fontSize": "12px",
+        "height": 33.59375,
+        "width": 98
+      }
+    ],
+    "scrollWidth": 320
+  },
+  {
+    "engine": "chromium",
+    "route": "/approach",
+    "checks": [
+      {
+        "tag": "SPAN",
+        "fontSize": "12px",
+        "height": 34,
+        "width": 93
+      }
+    ],
+    "scrollWidth": 320
+  },
+  {
+    "engine": "chromium",
+    "route": "/company/contact",
+    "checks": [
+      {
+        "tag": "DIV",
+        "fontSize": "12px",
+        "height": 16.796875,
+        "width": 232
+      }
+    ],
+    "scrollWidth": 320
+  },
+  {
+    "engine": "webkit",
+    "route": "/capabilities/voice",
+    "checks": [
+      {
+        "tag": "DIV",
+        "fontSize": "12px",
+        "height": 16.796875,
+        "width": 240
+      },
+      {
+        "tag": "SPAN",
+        "fontSize": "12px",
+        "height": 28.796875,
+        "width": 102.828125
+      },
+      {
+        "tag": "SPAN",
+        "fontSize": "12px",
+        "height": 28,
+        "width": 28
+      },
+      {
+        "tag": "INPUT",
+        "fontSize": "16px",
+        "height": 44,
+        "width": 184
+      }
+    ],
+    "scrollWidth": 320
+  },
+  {
+    "engine": "webkit",
+    "route": "/industries/healthcare",
+    "checks": [
+      {
+        "tag": "SPAN",
+        "fontSize": "12px",
+        "height": 14.390625,
+        "width": 42.96875
+      },
+      {
+        "tag": "SPAN",
+        "fontSize": "12px",
+        "height": 33.59375,
+        "width": 98
+      }
+    ],
+    "scrollWidth": 320
+  },
+  {
+    "engine": "webkit",
+    "route": "/approach",
+    "checks": [
+      {
+        "tag": "SPAN",
+        "fontSize": "12px",
+        "height": 34,
+        "width": 93
+      }
+    ],
+    "scrollWidth": 320
+  },
+  {
+    "engine": "webkit",
+    "route": "/company/contact",
+    "checks": [
+      {
+        "tag": "DIV",
+        "fontSize": "12px",
+        "height": 16.796875,
+        "width": 232
+      }
+    ],
+    "scrollWidth": 320
+  }
+]

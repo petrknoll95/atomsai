@@ -1,0 +1,285 @@
+{
+  "base": "http://127.0.0.1:3001",
+  "results": [
+    {
+      "browser": "chromium",
+      "width": 1600,
+      "passed": true,
+      "heroFrames": [
+        [
+          0,
+          0
+        ],
+        [
+          0.3757,
+          0
+        ],
+        [
+          0.6418,
+          0.3479
+        ],
+        [
+          0.8106,
+          0.6208
+        ],
+        [
+          0.9121,
+          0.7992
+        ],
+        [
+          0.9661,
+          0.9057
+        ],
+        [
+          0.9905,
+          0.9634
+        ],
+        [
+          0.9986,
+          0.9896
+        ],
+        [
+          1,
+          0.9982
+        ],
+        [
+          1,
+          0.9999
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "checks": [
+        "load stagger",
+        "unchanged heading dimensions",
+        "scroll reveal",
+        "section fade reaches full opacity",
+        "resize",
+        "keyboard focus",
+        "live reduced motion",
+        "no overflow"
+      ],
+      "errors": []
+    },
+    {
+      "browser": "chromium",
+      "width": 390,
+      "passed": true,
+      "heroFrames": [
+        [
+          0,
+          0
+        ],
+        [
+          0.5642,
+          0.2275
+        ],
+        [
+          0.7561,
+          0.5305
+        ],
+        [
+          0.8809,
+          0.7423
+        ],
+        [
+          0.9509,
+          0.874
+        ],
+        [
+          0.984,
+          0.9467
+        ],
+        [
+          0.9967,
+          0.9822
+        ],
+        [
+          0.9998,
+          0.9962
+        ],
+        [
+          1,
+          0.9997
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "checks": [
+        "load stagger",
+        "unchanged heading dimensions",
+        "scroll reveal",
+        "section fade reaches full opacity",
+        "resize",
+        "keyboard focus",
+        "live reduced motion",
+        "no overflow"
+      ],
+      "errors": []
+    },
+    {
+      "browser": "webkit",
+      "width": 1600,
+      "passed": true,
+      "heroFrames": [
+        [
+          0,
+          0
+        ],
+        [
+          0.4915,
+          0.1167
+        ],
+        [
+          0.7173,
+          0.4677
+        ],
+        [
+          0.8593,
+          0.7042
+        ],
+        [
+          0.9389,
+          0.8501
+        ],
+        [
+          0.9787,
+          0.934
+        ],
+        [
+          0.995,
+          0.9768
+        ],
+        [
+          0.9995,
+          0.994
+        ],
+        [
+          1,
+          0.9994
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "checks": [
+        "load stagger",
+        "unchanged heading dimensions",
+        "scroll reveal",
+        "section fade reaches full opacity",
+        "resize",
+        "keyboard focus",
+        "live reduced motion",
+        "no overflow"
+      ],
+      "errors": []
+    },
+    {
+      "browser": "webkit",
+      "width": 390,
+      "passed": true,
+      "heroFrames": [
+        [
+          0,
+          0
+        ],
+        [
+          0.5989,
+          0.281
+        ],
+        [
+          0.7872,
+          0.5818
+        ],
+        [
+          0.8999,
+          0.7766
+        ],
+        [
+          0.96,
+          0.8928
+        ],
+        [
+          0.9879,
+          0.9564
+        ],
+        [
+          0.9979,
+          0.9866
+        ],
+        [
+          0.9999,
+          0.9974
+        ],
+        [
+          1,
+          0.9999
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "checks": [
+        "load stagger",
+        "unchanged heading dimensions",
+        "scroll reveal",
+        "section fade reaches full opacity",
+        "resize",
+        "keyboard focus",
+        "live reduced motion",
+        "no overflow"
+      ],
+      "errors": []
+    }
+  ]
+}

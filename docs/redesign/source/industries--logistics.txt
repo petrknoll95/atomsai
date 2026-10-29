@@ -1,0 +1,268 @@
+Industries
+/
+Logistics
+Answer every shipment question. Before it becomes a complaint.
+One agent across chat, phone, SMS and email that answers “where is it?” from live tracking, works delivery exceptions, and closes out proof of delivery and billing, inside your TMS.
+Book a demo
+→
+Try the chat agent
+Built for your rules
+Texts and calls follow consent and quiet hours, and rates, credits and claims are approved by your team.
+Shipment question answered
+8 sec
+ETA sent to Harbor Supply · 1:40pm today
+Handled
+Connected during your build
+MercuryGate
+Oracle TMS
+Descartes
+project44
+Samsara
+NetSuite
+Salesforce
+Your phone system
+What it brings
+Where your operation feels it.
+Frees up dispatch
+Fewer “where is it?” calls
+Every status question is answered from live tracking in seconds, any hour, on the channel the customer used.
+1
+Question understood
+Finds the shipment from the PO, BOL or phone.
+2
+Live status checked
+Reads the latest tracking and driver updates.
+3
+Customer updated
+Sends status, ETA and window where they asked.
+4
+Follow-up set
+Texts again when the truck is an hour out.
+Connected to MercuryGate, project44, Samsara and SMS during your build.
+Raises service quality
+Fix exceptions before customers call
+Late, refused and damaged loads are worked the moment they’re flagged, and the customer hears it from you first.
+1
+Exception spotted
+Watches for late, refused or damaged loads.
+2
+Customer told first
+Explains what happened and what happens next.
+3
+New appointment booked
+Books a new delivery window with the receiver.
+4
+Shipment record updated
+Updates the appointment and adds a TMS note.
+Connected to Oracle TMS, Samsara, email and your phone system during your build.
+Speeds up cash
+Get paid faster
+Signed PODs are collected and checked the day freight is delivered, so invoices go out the same day.
+1
+Delivery confirmed
+Picks up the delivered event from tracking.
+2
+POD collected
+Asks the driver or receiver for the signed POD.
+3
+POD checked
+Matches it to the BOL; mismatches go to your team.
+4
+Invoice released
+Queues the invoice with the POD attached.
+Connected to Descartes, NetSuite, email and your document portal during your build.
+HS
+Harbor Supply Co.
+Shipper · PO 88213
+Text · 6:40am
+Where’s PO 88213? Our dock closes at 3.
+Checking now. PO 88213 is BOL 55120, 18 pallets.
+✓ Answered in 8 sec
+Live status checked
+Status
+In transit, Joliet IL
+ETA
+✓
+1:40pm today
+Before 3pm dock close
+✓
+Yes
+Sent by text · 6:41am
+ETA 1:40pm · window 1:15 to 2:15pm
+Well ahead of the 3pm dock close
+Samsara
+Alert set · text when 60 min out
+Logged on BOL 55120 in MercuryGate
+The result
+Status, ETA and a delivery window sent in one text, without a dispatcher.
+RD
+Ray Delgado
+Driver · Load 40718
+Text · 9:05am
+Stuck in traffic on I-80. Running about 2 hours late.
+Thanks Ray. I’ll move the 11am appointment and tell the customer.
+✓ Exception flagged
+Customer told first
+Customer
+Northfield Foods
+Delay
+2 hours, traffic on I-80
+Told by
+✓
+Text and email · 9:07am
+Booked with receiver
+New appointment · Today 1:30pm
+Dock 4, Northfield Foods DC
+Oracle TMS
+Appointment and note updated
+Cause logged on Load 40718
+The result
+Missed appointment rebooked and the customer told before they noticed.
+Descartes
+Shipment 77304 delivered · 11:52am
+No signed POD on file, invoice on hold
+ML
+Marcus Lee
+Driver · Shipment 77304
+Text · 12:00pm
+Hi Marcus, can you send a photo of the signed POD for shipment 77304?
+Sure, sending it now.
+✓ POD requested
+POD checked
+Signature and date
+✓
+Signed, today
+Pieces
+✓
+18 of 18
+Bill of lading
+✓
+BOL and POD agree
+NetSuite · 1:15pm
+Invoice released with POD
+Same day as delivery
+The result
+Signed POD matched and the invoice released the same afternoon.
+Illustrative examples. Connections and rules are set up during your build.
+Before and after
+Same shipments. Fewer calls, faster cash.
+Example 3PL, 12,000 shipments a month. Illustrative figures.
+Status questions handled by staff
+Today
+All
+With the agent
+Few
+Status questions after hours
+Today
+Next morning
+With the agent
+Seconds
+Exceptions the customer hears about first
+Today
+Most
+With the agent
+Few
+Days from delivery to invoice
+Today
+6 days
+With the agent
+1 day
+Customers hear about problems from you first
+, and invoices go out the day freight is delivered.
+Win back your database
+Your shipper list. More freight from it.
+The agent keeps in touch with the shippers who already know you, across email and SMS.
+Lanes going quiet
+Shippers who stopped booking a regular lane get a check-in before they move it.
+Quotes that weren’t booked
+Rate quotes that never turned into loads get a follow-up and a question.
+Ahead of peak
+Shippers hear about your capacity before the busy season, not during it.
+For the owner
+Ask the business anything.
+The Intelligence agent reads every conversation and call, and answers your questions in plain English.
+Find what’s slipping
+Late loads, exceptions without an owner, and invoices held up by a missing POD.
+See what’s working
+On-time rate and exception time by carrier, lane and customer, without building a report.
+Approve the next step
+It suggests the follow-up; you say go, and the agent does it.
+See the Intelligence agent
+↗
+Which invoices are held up by a missing POD?
+Three delivered shipments have no signed POD, holding $14,860 in invoices.
+Shipment 77412 · Lakeview Grocers
+$6,240 · 2 days
+Shipment 77389 · Brennan Hardware
+$4,980 · 3 days
+Shipment 77356 · Cove Paper Co.
+$3,640 · 4 days
+Request all three PODs today
+Waits for your go-ahead
+Controls and testing
+Your operation. Your rules.
+Controls
+Approved commitments only
+Rates, credits and claims are decided by your team. The agent collects and hands over.
+Consent and quiet hours
+Texts and calls follow opt-in and quiet hours, and STOP always works.
+Verified before details
+Callers are checked against the shipment before anything about it is shared.
+Full audit trail
+Every update, exception and document is logged on the shipment.
+Testing
+Tested on your shipments
+Status questions, exceptions, claims and angry customers, before launch.
+Checked on every conversation
+Each conversation is scored for accuracy, handover and tone.
+Reported weekly
+Status calls handled, exception time and days to invoice, by customer.
+People in the loop
+You choose what the agent does alone and what waits for your team.
+Book a demo
+See it on your shipments.
+In 30 minutes you’ll see
+A “where is my shipment?” question answered from live tracking, by text, live.
+A delivery exception worked: customer told, new appointment booked, record updated.
+How it connects to your TMS and tracking, and what your first build would cover.
+Name
+*
+Company
+*
+Business email
+*
+Phone
+(optional)
+Company size
+*
+Choose one
+Under 200 staff
+200–1,000 staff
+1,001–5,000 staff
+Over 5,000 staff
+Your role
+(optional)
+Optional. You can call or text me about this request at the number above.
+Calls and texts may be automated or by an AI agent. Consent isn’t a
+condition of purchase; reply STOP to opt out.
+Website
+Book my demo
+We’ll only use this to set up your demo.
+See our privacy policy.
+Send these details by email
+FAQ
+Questions 3PLs and carriers ask.
+Explore the Trust Center
+↗
+Which TMS and tracking systems does it work with?
+We connect to the systems you run, such as MercuryGate, Oracle TMS, Descartes, project44 or Samsara, and to your finance system, email and phones. The connections are built as part of your build.
+Does the agent quote rates or approve claims?
+No. It answers from your tracking and approved information, collects what your team needs, and hands rates, credits and claims to your people.
+Can it answer the phone as well as text?
+Yes. One agent works across web chat, phone, SMS and email with one memory, so a customer who texts and then calls doesn’t start over.
+How does it handle proof of delivery?
+It requests the signed POD, checks it against the bill of lading, and queues the invoice in your finance system. Anything that doesn’t match goes to your team.
+Is it secure?
+AtomsAI comes from the team behind JustCall. It is SOC 2 Type II and HIPAA compliant, and every conversation, document and handover is logged.
+How long does it take to go live?
+It depends on the workflows and the systems we connect. In the demo we look at yours and agree what the first build covers.

@@ -1,17 +1,18 @@
-/* A fine, flush edge with a faint halo. Kept separate from hover motion. */
+/* One soft, consistently sized focus ring across light and dark surfaces. */
 :root {
+  --focus-ring-width: 4px;
+  --focus-ring-opacity: 14%;
   --focus-transition: outline-color 200ms ease, box-shadow 200ms ease;
 }
 :where(a, button, input, textarea, select, summary, [tabindex], [data-focus-surface]) {
-  outline: 1px solid transparent;
+  outline: var(--focus-ring-width) solid transparent;
   outline-offset: 0;
   transition: var(--focus-transition);
 }
 html :is(:focus-visible, [data-focus-surface]:has(> input:focus-visible)) {
-  outline: 1px solid color-mix(in display-p3, var(--color-ring) 55%, transparent);
+  outline: var(--focus-ring-width) solid color-mix(in srgb, var(--color-ring) var(--focus-ring-opacity), transparent);
   outline-offset: 0;
-  box-shadow: var(--focus-base-shadow, 0 0 0 0 transparent),
-    0 0 0 2px color-mix(in display-p3, var(--color-ring) 6%, transparent);
+  box-shadow: var(--focus-base-shadow, 0 0 0 0 transparent);
 }
 /* Composite fields highlight their outer shape, without a second ring inside. */
 html [data-focus-surface] > input:focus-visible {
@@ -23,7 +24,7 @@ html [data-focus-surface] > input:focus-visible {
 }
 @media (forced-colors: active) {
   html :is(:focus-visible, [data-focus-surface]:has(> input:focus-visible)) {
-    outline: 2px solid Highlight;
+    outline: var(--focus-ring-width) solid Highlight;
     outline-offset: 0;
     box-shadow: none;
   }

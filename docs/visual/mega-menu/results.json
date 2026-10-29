@@ -1,0 +1,212 @@
+[
+  {
+    "browser": "chromium",
+    "width": 1600,
+    "height": 1000,
+    "menu": "Applications",
+    "passed": true
+  },
+  {
+    "browser": "chromium",
+    "width": 1600,
+    "height": 1000,
+    "menu": "Infrastructure",
+    "passed": true
+  },
+  {
+    "browser": "chromium",
+    "width": 1600,
+    "height": 1000,
+    "menu": "Industries",
+    "passed": true
+  },
+  {
+    "browser": "chromium",
+    "width": 1600,
+    "height": 1000,
+    "menu": "Resources",
+    "passed": true
+  },
+  {
+    "browser": "chromium",
+    "width": 1600,
+    "height": 1000,
+    "menu": "Company",
+    "passed": true
+  },
+  {
+    "browser": "chromium",
+    "width": 1200,
+    "height": 800,
+    "menu": "Applications",
+    "passed": true
+  },
+  {
+    "browser": "chromium",
+    "width": 1200,
+    "height": 800,
+    "menu": "Infrastructure",
+    "passed": true
+  },
+  {
+    "browser": "chromium",
+    "width": 1200,
+    "height": 800,
+    "menu": "Industries",
+    "passed": true
+  },
+  {
+    "browser": "chromium",
+    "width": 1200,
+    "height": 800,
+    "menu": "Resources",
+    "passed": true
+  },
+  {
+    "browser": "chromium",
+    "width": 1200,
+    "height": 800,
+    "menu": "Company",
+    "passed": true
+  },
+  {
+    "browser": "chromium",
+    "width": 1440,
+    "height": 600,
+    "menu": "Applications",
+    "passed": true
+  },
+  {
+    "browser": "chromium",
+    "width": 1440,
+    "height": 600,
+    "menu": "Infrastructure",
+    "passed": true
+  },
+  {
+    "browser": "chromium",
+    "width": 1440,
+    "height": 600,
+    "menu": "Industries",
+    "passed": true
+  },
+  {
+    "browser": "chromium",
+    "width": 1440,
+    "height": 600,
+    "menu": "Resources",
+    "passed": true
+  },
+  {
+    "browser": "chromium",
+    "width": 1440,
+    "height": 600,
+    "menu": "Company",
+    "passed": true
+  },
+  {
+    "browser": "webkit",
+    "width": 1600,
+    "height": 1000,
+    "menu": "Applications",
+    "passed": true
+  },
+  {
+    "browser": "webkit",
+    "width": 1600,
+    "height": 1000,
+    "menu": "Infrastructure",
+    "passed": true
+  },
+  {
+    "browser": "webkit",
+    "width": 1600,
+    "height": 1000,
+    "menu": "Industries",
+    "passed": true
+  },
+  {
+    "browser": "webkit",
+    "width": 1600,
+    "height": 1000,
+    "menu": "Resources",
+    "passed": true
+  },
+  {
+    "browser": "webkit",
+    "width": 1600,
+    "height": 1000,
+    "menu": "Company",
+    "passed": true
+  },
+  {
+    "browser": "webkit",
+    "width": 1200,
+    "height": 800,
+    "menu": "Applications",
+    "passed": true
+  },
+  {
+    "browser": "webkit",
+    "width": 1200,
+    "height": 800,
+    "menu": "Infrastructure",
+    "passed": true
+  },
+  {
+    "browser": "webkit",
+    "width": 1200,
+    "height": 800,
+    "menu": "Industries",
+    "passed": true
+  },
+  {
+    "browser": "webkit",
+    "width": 1200,
+    "height": 800,
+    "menu": "Resources",
+    "passed": true
+  },
+  {
+    "browser": "webkit",
+    "width": 1200,
+    "height": 800,
+    "menu": "Company",
+    "passed": true
+  },
+  {
+    "browser": "webkit",
+    "width": 1440,
+    "height": 600,
+    "menu": "Applications",
+    "passed": true
+  },
+  {
+    "browser": "webkit",
+    "width": 1440,
+    "height": 600,
+    "menu": "Infrastructure",
+    "passed": true
+  },
+  {
+    "browser": "webkit",
+    "width": 1440,
+    "height": 600,
+    "menu": "Industries",
+    "passed": true
+  },
+  {
+    "browser": "webkit",
+    "width": 1440,
+    "height": 600,
+    "menu": "Resources",
+    "passed": true
+  },
+  {
+    "browser": "webkit",
+    "width": 1440,
+    "height": 600,
+    "menu": "Company",
+    "passed": true
+  }
+]

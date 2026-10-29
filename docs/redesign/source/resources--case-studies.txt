@@ -1,0 +1,66 @@
+Home
+/
+Resources
+/
+Case studies
+Three workflows, measured before and after.
+Example baselines, builds and outcomes. Client names and results are
+illustrative; every number states its denominator.
+All resources
+Meridian Health
+Meridian Health
+Support answers that stop costing twelve minutes each
+A 240-seat support org was answering policy questions from a 900-page handbook and four wikis. One cited answer layer, wired into the ticket, cut average handle time by 38% in seven weeks.
+Read the case study
+Average handle time
+−38%
+Average handle time
+across 1.2M annual contacts
+First-contact resolution
++22%
+First-contact resolution
+90 days post-launch
+Teardown to production
+7 weeks
+Teardown to production
+three engineers
+Northwind Logistics
+Northwind Logistics
+Invoices that match themselves, exceptions that route themselves
+40,000 invoices a quarter hit a matching rule set that failed on every non-standard PO line. Chaining extraction, matching, exception routing and ERP write-back moved auto-match from 78% to 94%.
+Read the case study
+Invoice auto-match rate
+78% → 94%
+Invoice auto-match rate
+on 40k invoices/quarter
+Month-end audit prep
+5 days → 4 hours
+Month-end audit prep
+first two quarters
+Cost per processed document
+−81%
+Cost per processed document
+vs. prior BPO rate
+Kestrel Financial
+Kestrel Financial
+Underwriting in hours, with the reasoning attached
+Commercial submissions waited 3.5 days for a first look and inbound leads waited 3 hours for routing. An intake and scoring system now produces a cited risk memo for every submission, approved by a human underwriter.
+Read the case study
+Underwriting cycle time
+3.5 days → 11 hours
+Underwriting cycle time
+6-month window
+Speed-to-lead, inbound
+3h → 4min
+Speed-to-lead, inbound
+median, all inbound enquiries
+Qualified meetings booked
++34%
+Qualified meetings booked
+8-person team, one quarter
+The reasoning behind the numbers.
+Short pieces from the engineers who built these, on the decisions a metric does not show.
+Read the blog
+What breaks between a demo and production, written after fixing it.
+See how we build
+The teardown, the evals, the approval gates and the handover.

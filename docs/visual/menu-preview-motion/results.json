@@ -1,0 +1,5270 @@
+[
+  {
+    "browser": "chromium",
+    "transitions": [
+      {
+        "product": "JustCall",
+        "frames": [
+          {
+            "y": 122.184,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.1605
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.8395
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 98.3493,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.295
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.705
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 77.0369,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.4213
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.5787
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 59.3917,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.5315
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.4685
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 45.7338,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.6215
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.3785
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 33.9574,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.7037
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.2963
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 24.6166,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.773
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.227
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 17.726,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.8275
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.1725
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 12.1071,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.875
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.125
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 7.9435,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.9129
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.0871
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 5.1065,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.9407
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.0593
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 3.0059,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.963
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.037
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 1.6315,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.9788
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.0212
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0.8305,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.9889
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.0111
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0.348,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.9954
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.0046
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0.1233,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.9985
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.0015
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0.0272,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.9998
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.0002
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0.0028,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "product": "Helpwise",
+        "frames": [
+          {
+            "y": 14.0975,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.8484
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.1516
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 26.1364,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.7129
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.2871
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 36.9077,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.5857
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.4143
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 45.8319,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.4746
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.5254
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 53.1331,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.3785
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.6215
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 58.7105,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.3008
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.6992
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 63.4474,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.2307
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.7693
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 67.137,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.1725
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.8275
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 69.9465,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.125
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.875
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 71.9234,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.0891
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.9109
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 73.4467,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.0593
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.9407
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 74.4971,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.037
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.963
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 75.1521,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.022
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.978
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 75.5848,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.0111
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.9889
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 75.8158,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.0049
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.9951
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 75.9384,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.0015
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.9985
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 75.9849,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.0002
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.9998
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 75.9988,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "product": "CallPage",
+        "frames": [
+          {
+            "y": 104.195,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.8484
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.1516
+              }
+            ]
+          },
+          {
+            "y": 129.651,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.705
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.295
+              }
+            ]
+          },
+          {
+            "y": 148.655,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.5927
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.4073
+              }
+            ]
+          },
+          {
+            "y": 167.664,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.4746
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.5254
+              }
+            ]
+          },
+          {
+            "y": 182.266,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.3785
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.6215
+              }
+            ]
+          },
+          {
+            "y": 193.421,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.3008
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.6992
+              }
+            ]
+          },
+          {
+            "y": 202.399,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.2345
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.7655
+              }
+            ]
+          },
+          {
+            "y": 209.892,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.1756
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.8244
+              }
+            ]
+          },
+          {
+            "y": 215.605,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.1275
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.8725
+              }
+            ]
+          },
+          {
+            "y": 219.847,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.0891
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.9109
+              }
+            ]
+          },
+          {
+            "y": 222.893,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.0593
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.9407
+              }
+            ]
+          },
+          {
+            "y": 224.893,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.0382
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.9618
+              }
+            ]
+          },
+          {
+            "y": 226.304,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.022
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.978
+              }
+            ]
+          },
+          {
+            "y": 227.169,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.0111
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.9889
+              }
+            ]
+          },
+          {
+            "y": 227.632,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.0049
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.9951
+              }
+            ]
+          },
+          {
+            "y": 227.867,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.0016
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.9984
+              }
+            ]
+          },
+          {
+            "y": 227.973,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.0002
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.9998
+              }
+            ]
+          },
+          {
+            "y": 227.997,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "product": "ServiceAgent",
+        "frames": [
+          {
+            "y": 213.902,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.1516
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.8484
+              }
+            ]
+          },
+          {
+            "y": 201.175,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.295
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.705
+              }
+            ]
+          },
+          {
+            "y": 190.518,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.4213
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.5787
+              }
+            ]
+          },
+          {
+            "y": 181.696,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.5315
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.4685
+              }
+            ]
+          },
+          {
+            "y": 174.867,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.6215
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.3785
+              }
+            ]
+          },
+          {
+            "y": 168.979,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.7037
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.2963
+              }
+            ]
+          },
+          {
+            "y": 164.553,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.7693
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.2307
+              }
+            ]
+          },
+          {
+            "y": 160.863,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.8275
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.1725
+              }
+            ]
+          },
+          {
+            "y": 158.053,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.875
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.125
+              }
+            ]
+          },
+          {
+            "y": 156.077,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.9109
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.0891
+              }
+            ]
+          },
+          {
+            "y": 154.553,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.9407
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.0593
+              }
+            ]
+          },
+          {
+            "y": 153.503,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.963
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.037
+              }
+            ]
+          },
+          {
+            "y": 152.816,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.9788
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.0212
+              }
+            ]
+          },
+          {
+            "y": 152.415,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.9889
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.0111
+              }
+            ]
+          },
+          {
+            "y": 152.174,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.9954
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.0046
+              }
+            ]
+          },
+          {
+            "y": 152.062,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.9985
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.0015
+              }
+            ]
+          },
+          {
+            "y": 152.014,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.9998
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.0002
+              }
+            ]
+          },
+          {
+            "y": 152.001,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "rapidSwitch": true,
+    "keyboard": true,
+    "reducedMotion": true,
+    "reopenDefault": true,
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "transitions": [
+      {
+        "product": "JustCall",
+        "frames": [
+          {
+            "y": 98.349297,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.295
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.705
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 78.184502,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.4143
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.5857
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 60.3363,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.5254
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.4746
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 46.510601,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.6163
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.3837
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 33.957401,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.7037
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.2963
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 25.1052,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.7693
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.2307
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 17.726,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.8275
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.1725
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 12.1071,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.875
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.125
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 8.1532,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.9109
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.0891
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 5.1065,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.9407
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.0593
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 3.1073,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.9618
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.0382
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 1.762,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.9773
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.0227
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0.8305,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.9889
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.0111
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0.3684,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.9951
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.0049
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0.1233,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.9985
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.0015
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0.0218,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.9999
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.0001
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0.0034,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 0,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 1
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "product": "Helpwise",
+        "frames": [
+          {
+            "y": 26.825399,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.705
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.295
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 36.9077,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.5857
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.4143
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 46.3041,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.4685
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.5315
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 53.133099,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.3785
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.6215
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 58.710499,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.3008
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.6992
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 63.447399,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.2307
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.7693
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 67.325104,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.1694
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.8306
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 69.946503,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.125
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.875
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 72.028297,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.0871
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.9129
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 73.446701,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.0593
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.9407
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 74.497101,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.037
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.963
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 75.1521,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.022
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.978
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 75.584801,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.0111
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.9889
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 75.825996,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.0046
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.9954
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 75.942802,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.0013
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.9987
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 75.986397,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0.0002
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.9998
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 75.998802,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 76,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 1
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "product": "CallPage",
+        "frames": [
+          {
+            "y": 131.014297,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.6971
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.3029
+              }
+            ]
+          },
+          {
+            "y": 152.098099,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.5718
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.4282
+              }
+            ]
+          },
+          {
+            "y": 169.541702,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.4625
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.5375
+              }
+            ]
+          },
+          {
+            "y": 183.033203,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.3732
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.6268
+              }
+            ]
+          },
+          {
+            "y": 194.655807,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.2919
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.7081
+              }
+            ]
+          },
+          {
+            "y": 202.894806,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.2307
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.7693
+              }
+            ]
+          },
+          {
+            "y": 210.650208,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.1694
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.8306
+              }
+            ]
+          },
+          {
+            "y": 215.892899,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.125
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.875
+              }
+            ]
+          },
+          {
+            "y": 220.056503,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.0871
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.9129
+              }
+            ]
+          },
+          {
+            "y": 223.040894,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.0578
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.9422
+              }
+            ]
+          },
+          {
+            "y": 225.093094,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.0359
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.9641
+              }
+            ]
+          },
+          {
+            "y": 226.3685,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.0212
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.9788
+              }
+            ]
+          },
+          {
+            "y": 227.169495,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.0111
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.9889
+              }
+            ]
+          },
+          {
+            "y": 227.671402,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.0044
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.9956
+              }
+            ]
+          },
+          {
+            "y": 227.885605,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.0013
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.9987
+              }
+            ]
+          },
+          {
+            "y": 227.972794,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0.0002
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.9998
+              }
+            ]
+          },
+          {
+            "y": 227.998093,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          },
+          {
+            "y": 228,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0
+              },
+              {
+                "name": "CallPage",
+                "opacity": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "product": "ServiceAgent",
+        "frames": [
+          {
+            "y": 200.492905,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.3029
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.6971
+              }
+            ]
+          },
+          {
+            "y": 191.0923,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.4143
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.5857
+              }
+            ]
+          },
+          {
+            "y": 182.168106,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.5254
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.4746
+              }
+            ]
+          },
+          {
+            "y": 174.483398,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.6268
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.3732
+              }
+            ]
+          },
+          {
+            "y": 168.978699,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.7037
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.2963
+              }
+            ]
+          },
+          {
+            "y": 164.552597,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.7693
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.2307
+              }
+            ]
+          },
+          {
+            "y": 160.674896,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.8306
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.1694
+              }
+            ]
+          },
+          {
+            "y": 158.053497,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.875
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.125
+              }
+            ]
+          },
+          {
+            "y": 155.971695,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.9129
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.0871
+              }
+            ]
+          },
+          {
+            "y": 154.479507,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.9422
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.0578
+              }
+            ]
+          },
+          {
+            "y": 153.502899,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.963
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.037
+              }
+            ]
+          },
+          {
+            "y": 152.7845,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.9796
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.0204
+              }
+            ]
+          },
+          {
+            "y": 152.3965,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.9894
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.0106
+              }
+            ]
+          },
+          {
+            "y": 152.164307,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.9956
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.0044
+              }
+            ]
+          },
+          {
+            "y": 152.0616,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.9985
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.0015
+              }
+            ]
+          },
+          {
+            "y": 152.012207,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 0.9998
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0.0002
+              }
+            ]
+          },
+          {
+            "y": 152.001205,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          },
+          {
+            "y": 152,
+            "figures": [
+              {
+                "name": "JustCall",
+                "opacity": 0
+              },
+              {
+                "name": "Helpwise",
+                "opacity": 0
+              },
+              {
+                "name": "ServiceAgent",
+                "opacity": 1
+              },
+              {
+                "name": "CallPage",
+                "opacity": 0
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "rapidSwitch": true,
+    "keyboard": true,
+    "reducedMotion": true,
+    "reopenDefault": true,
+    "errors": []
+  }
+]

@@ -1,0 +1,117 @@
+Home
+/
+Resources
+/
+Case studies
+/
+Meridian Health
+Support answers that stop costing twelve minutes each
+A 240-seat support org was answering policy questions from a 900-page handbook and four wikis. One cited answer layer, wired into the ticket, cut average handle time by 38% in seven weeks.
+Illustrative example. Names and results are fictional and do not represent verified customer outcomes.
+Contact us
+Published
+14 July 2026
+Measured result
+Average handle time
+−38%
+Average handle time
+across 1.2M annual contacts
+First-contact resolution
++22%
+First-contact resolution
+90 days post-launch
+Teardown to production
+7 weeks
+Teardown to production
+three engineers
+Contact us
+The situation
+Meridian Health ran a 240-seat support organisation handling
+1.2 million contacts a year
+across billing, eligibility and clinical scheduling. The authoritative source for most answers was a 900-page policy handbook, supplemented by four wikis, a shared drive of PDFs and a Slack channel called
+#ask-ops
+where two senior specialists spent roughly a third of their week answering the same forty questions.
+Average handle time sat at
+14 minutes 20 seconds
+. Internal sampling put four to five of those minutes on “finding or confirming the answer.” New hires took
+six weeks
+before they could answer unaided, and the most common escalation reason was not complexity — it was uncertainty.
+They had already run two AI pilots. Both produced fluent answers in a demo and neither shipped, for the same reason: nobody could tell whether an answer was correct, and the answers lived in a separate tab from the ticket.
+What we found in the teardown
+Two days with eight agents and one team lead produced the list that shaped the build: the top 200 questions actually asked, with the source that should answer each one. Three things stood out.
+First,
+31%
+of those questions had
+two
+conflicting sources — the handbook and a wiki page updated at different times. Second, the answer often depended on plan type, which the agent already had on screen but which no search could use. Third, agents didn’t want an answer; they wanted an answer they could quote to a member with a policy reference.
+So the requirement wasn’t retrieval quality. It was citation, freshness, and context from the ticket.
+What we built
+Seven weeks, three engineers, inside their AWS account.
+The top-200 list became the eval set before any documents were ingested. We connected their Confluence, SharePoint and the handbook repository, resolved the conflicting-source problem by making publication recency and document authority explicit fields, and tuned retrieval against the eval set rather than against a benchmark.
+Two design rules did most of the work. An answer with no source is a refusal, not a guess — the system says “no policy covers this, escalate” and routes accordingly. And document permissions are inherited, so an agent never sees a document they couldn’t open directly.
+Answers surface inside Zendesk, in the ticket, with the plan type already applied and the citation one click from the source paragraph. Re-indexing is wired to their publication event, and the eval suite runs on every document change — a policy update that breaks fourteen answers becomes a failing test the same day.
+Result
+Over the
+90 days
+after launch, on comparable volume:
+Average handle time
+−38%
+First-contact resolution
++22%
+Time-to-unaided for new hires
+6 weeks → 9 days
+#ask-ops
+volume
+−64%
+, returning roughly two-thirds of a senior specialist’s week
+The two specialists now own the exception queue and the eval set. Meridian’s engineering team has run the system without us since the month after handover, and it lives in their repository under their license.
+“We’d done two pilots that never shipped. This one was in production in seven weeks and my team runs it without me.”
+— Dana Whitfield, Chief Operating Officer, Meridian Health
+Same workflow, same volume, measured either side.
+The left figure is what the workflow cost before we arrived, out of their own reporting. The right is what it cost after, over the window named beneath it.
+Average handle time
+−38%
+across 1.2M annual contacts
+First-contact resolution
++22%
+90 days post-launch
+Teardown to production
+7 weeks
+three engineers
+Other workflows we took apart.
+Same method, different queue. Each one states its baseline, its window and its denominator.
+Northwind Logistics
+Northwind Logistics
+Invoices that match themselves, exceptions that route themselves
+40,000 invoices a quarter hit a matching rule set that failed on every non-standard PO line. Chaining extraction, matching, exception routing and ERP write-back moved auto-match from 78% to 94%.
+Read the case study
+Invoice auto-match rate
+78% → 94%
+Invoice auto-match rate
+on 40k invoices/quarter
+Month-end audit prep
+5 days → 4 hours
+Month-end audit prep
+first two quarters
+Cost per processed document
+−81%
+Cost per processed document
+vs. prior BPO rate
+Kestrel Financial
+Kestrel Financial
+Underwriting in hours, with the reasoning attached
+Commercial submissions waited 3.5 days for a first look and inbound leads waited 3 hours for routing. An intake and scoring system now produces a cited risk memo for every submission, approved by a human underwriter.
+Read the case study
+Underwriting cycle time
+3.5 days → 11 hours
+Underwriting cycle time
+6-month window
+Speed-to-lead, inbound
+3h → 4min
+Speed-to-lead, inbound
+median, all inbound enquiries
+Qualified meetings booked
++34%
+Qualified meetings booked
+8-person team, one quarter
+Read the blog

@@ -1,0 +1,112 @@
+[
+  {
+    "route": "/approach",
+    "mode": "desktop",
+    "lcp": 320,
+    "cls": "0.00000",
+    "load": 289,
+    "transfer": "709.6",
+    "js": "401.2",
+    "fonts": "256.8",
+    "maxEvent": 80
+  },
+  {
+    "route": "/capabilities/voice",
+    "mode": "desktop",
+    "lcp": 348,
+    "cls": "0.00000",
+    "load": 311,
+    "transfer": "716.8",
+    "js": "405.1",
+    "fonts": "256.8",
+    "maxEvent": 64
+  },
+  {
+    "route": "/industries/healthcare",
+    "mode": "desktop",
+    "lcp": 328,
+    "cls": "0.00000",
+    "load": 297,
+    "transfer": "742.6",
+    "js": "408.5",
+    "fonts": "256.8",
+    "maxEvent": 72
+  },
+  {
+    "route": "/trust",
+    "mode": "desktop",
+    "lcp": 328,
+    "cls": "0.00000",
+    "load": 302,
+    "transfer": "710.9",
+    "js": "402.5",
+    "fonts": "256.8",
+    "maxEvent": 72
+  },
+  {
+    "route": "/company/contact",
+    "mode": "desktop",
+    "lcp": 320,
+    "cls": "0.00000",
+    "load": 297,
+    "transfer": "711.8",
+    "js": "403.4",
+    "fonts": "256.8",
+    "maxEvent": 72
+  },
+  {
+    "route": "/approach",
+    "mode": "mobile",
+    "lcp": 904,
+    "cls": "0.00005",
+    "load": 3655,
+    "transfer": "709.6",
+    "js": "401.2",
+    "fonts": "256.8",
+    "maxEvent": 40
+  },
+  {
+    "route": "/capabilities/voice",
+    "mode": "mobile",
+    "lcp": 944,
+    "cls": "0.00054",
+    "load": 3708,
+    "transfer": "716.8",
+    "js": "405.1",
+    "fonts": "256.8",
+    "maxEvent": 40
+  },
+  {
+    "route": "/industries/healthcare",
+    "mode": "mobile",
+    "lcp": 1008,
+    "cls": "0.00004",
+    "load": 3820,
+    "transfer": "739.8",
+    "js": "408.5",
+    "fonts": "256.8",
+    "maxEvent": 40
+  },
+  {
+    "route": "/trust",
+    "mode": "mobile",
+    "lcp": 900,
+    "cls": "0.00002",
+    "load": 3665,
+    "transfer": "710.9",
+    "js": "402.5",
+    "fonts": "256.8",
+    "maxEvent": 40
+  },
+  {
+    "route": "/company/contact",
+    "mode": "mobile",
+    "lcp": 892,
+    "cls": "0.03123",
+    "load": 3669,
+    "transfer": "711.8",
+    "js": "403.4",
+    "fonts": "256.8",
+    "maxEvent": 40
+  }
+]

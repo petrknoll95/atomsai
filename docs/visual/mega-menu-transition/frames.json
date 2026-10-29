@@ -1,0 +1,3166 @@
+[
+  {
+    "browser": "chromium",
+    "from": "Applications",
+    "to": "Industries",
+    "frames": [
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 453,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -12.6594,
+            "opacity": 0.8022,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 54.2504,
+            "opacity": 0.1523,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 447,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -22.9364,
+            "opacity": 0.6416,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 46.1346,
+            "opacity": 0.2791,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 442,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -31.7413,
+            "opacity": 0.504,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 38.9653,
+            "opacity": 0.3912,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 437,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -39.611,
+            "opacity": 0.3811,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 32.2995,
+            "opacity": 0.4953,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 433,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -46.0838,
+            "opacity": 0.2799,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 26.5279,
+            "opacity": 0.5855,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 430,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -51.0221,
+            "opacity": 0.2028,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 21.8375,
+            "opacity": 0.6588,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 427,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -55.173,
+            "opacity": 0.1379,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 17.5662,
+            "opacity": 0.7255,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 424,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -58.3285,
+            "opacity": 0.0886,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 13.9544,
+            "opacity": 0.782,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 422,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -60.5112,
+            "opacity": 0.0545,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 11.0933,
+            "opacity": 0.8267,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 420,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -62.124,
+            "opacity": 0.0293,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 8.5609,
+            "opacity": 0.8662,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 419,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -63.1426,
+            "opacity": 0.0134,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 6.489,
+            "opacity": 0.8986,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 418,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -63.6809,
+            "opacity": 0.005,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 4.9063,
+            "opacity": 0.9233,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 417,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -63.936,
+            "opacity": 0.001,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 3.5621,
+            "opacity": 0.9443,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 416,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -63.9984,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 2.5151,
+            "opacity": 0.9607,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 415,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 1.7586,
+            "opacity": 0.9725,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 415,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 1.1568,
+            "opacity": 0.9819,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 415,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0.7245,
+            "opacity": 0.9887,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 414,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0.4409,
+            "opacity": 0.9931,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 414,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0.2406,
+            "opacity": 0.9962,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 414,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0.1178,
+            "opacity": 0.9982,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 414,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0.0523,
+            "opacity": 0.9992,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 414,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0.0175,
+            "opacity": 0.9997,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 414,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0.0039,
+            "opacity": 0.9999,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 414,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0.0004,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 414,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "browser": "chromium",
+    "from": "Industries",
+    "to": "Applications",
+    "frames": [
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 421,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -54.2504,
+            "opacity": 0.1523,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 12.6594,
+            "opacity": 0.8022,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 427,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -46.1346,
+            "opacity": 0.2791,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 22.9364,
+            "opacity": 0.6416,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 432,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -38.5469,
+            "opacity": 0.3977,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 32.2454,
+            "opacity": 0.4962,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 437,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -32.2995,
+            "opacity": 0.4953,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 39.611,
+            "opacity": 0.3811,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 441,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -26.5279,
+            "opacity": 0.5855,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 46.0838,
+            "opacity": 0.2799,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 444,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -21.5667,
+            "opacity": 0.663,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 51.2963,
+            "opacity": 0.1985,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 448,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -17.3362,
+            "opacity": 0.7291,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 55.3849,
+            "opacity": 0.1346,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 450,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -13.9544,
+            "opacity": 0.782,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 58.3285,
+            "opacity": 0.0886,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 452,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -10.9304,
+            "opacity": 0.8292,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 60.625,
+            "opacity": 0.0527,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 454,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -8.4268,
+            "opacity": 0.8683,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 62.199,
+            "opacity": 0.0281,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 455,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -6.489,
+            "opacity": 0.8986,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 63.1426,
+            "opacity": 0.0134,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 457,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -4.8181,
+            "opacity": 0.9247,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 63.7037,
+            "opacity": 0.0046,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 457,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -3.4927,
+            "opacity": 0.9454,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 63.9437,
+            "opacity": 0.0009,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 458,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -2.5151,
+            "opacity": 0.9607,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 63.9984,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 459,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -1.7178,
+            "opacity": 0.9732,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 459,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -1.1271,
+            "opacity": 0.9824,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 459,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -0.7245,
+            "opacity": 0.9887,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -0.4265,
+            "opacity": 0.9933,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -0.2315,
+            "opacity": 0.9964,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -0.1178,
+            "opacity": 0.9982,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -0.0494,
+            "opacity": 0.9992,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -0.0175,
+            "opacity": 0.9997,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -0.0039,
+            "opacity": 0.9999,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -0.0003,
+            "opacity": 1,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "browser": "webkit",
+    "from": "Applications",
+    "to": "Industries",
+    "frames": [
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 452,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -14.7037,
+            "opacity": 0.7703,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 52.653,
+            "opacity": 0.1773,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 447,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -23.528601,
+            "opacity": 0.6324,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 45.659599,
+            "opacity": 0.2866,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 442,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -32.245399,
+            "opacity": 0.4962,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 38.546902,
+            "opacity": 0.3977,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 437,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -40.029099,
+            "opacity": 0.3745,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 31.9361,
+            "opacity": 0.501,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 433,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -46.424,
+            "opacity": 0.2746,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 26.214399,
+            "opacity": 0.5904,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 429,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -51.566601,
+            "opacity": 0.1943,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 21.2983,
+            "opacity": 0.6672,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 426,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -55.384899,
+            "opacity": 0.1346,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 17.336201,
+            "opacity": 0.7291,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 424,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -58.486,
+            "opacity": 0.0862,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 13.7609,
+            "opacity": 0.785,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 422,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -60.625,
+            "opacity": 0.0527,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 10.9304,
+            "opacity": 0.8292,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 420,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -62.199001,
+            "opacity": 0.0281,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 8.4268,
+            "opacity": 0.8683,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 419,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -63.187,
+            "opacity": 0.0127,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 6.3801,
+            "opacity": 0.9003,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 417,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -63.703701,
+            "opacity": 0.0046,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 4.8181,
+            "opacity": 0.9247,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 417,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -63.943699,
+            "opacity": 0.0009,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 3.4927,
+            "opacity": 0.9454,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 416,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -63.999001,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 2.4617,
+            "opacity": 0.9615,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 415,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 1.7178,
+            "opacity": 0.9732,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 415,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 1.0979,
+            "opacity": 0.9828,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 415,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0.7036,
+            "opacity": 0.989,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 414,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0.4265,
+            "opacity": 0.9933,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 414,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0.2315,
+            "opacity": 0.9964,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 414,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0.1125,
+            "opacity": 0.9982,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 414,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0.0494,
+            "opacity": 0.9992,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 414,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0.0162,
+            "opacity": 0.9997,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 414,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0.0035,
+            "opacity": 0.9999,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 414,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0.0003,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 414,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": false,
+            "x": -64,
+            "opacity": 0,
+            "inert": true
+          },
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "browser": "webkit",
+    "from": "Industries",
+    "to": "Applications",
+    "frames": [
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 413.734375,
+        "panes": [
+          {
+            "name": "Industries",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 425,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -49.062901,
+            "opacity": 0.2334,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 19.261101,
+            "opacity": 0.699,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 429,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -42.8862,
+            "opacity": 0.3299,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 26.962999,
+            "opacity": 0.5787,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 432,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -38.546902,
+            "opacity": 0.3977,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 32.245399,
+            "opacity": 0.4962,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 437,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -31.9361,
+            "opacity": 0.501,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 40.029099,
+            "opacity": 0.3745,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 441,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -26.527901,
+            "opacity": 0.5855,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 46.083801,
+            "opacity": 0.2799,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 444,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -21.5667,
+            "opacity": 0.663,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 51.296299,
+            "opacity": 0.1985,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 448,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -17.336201,
+            "opacity": 0.7291,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 55.384899,
+            "opacity": 0.1346,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 450,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -13.9544,
+            "opacity": 0.782,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 58.328499,
+            "opacity": 0.0886,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 452,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -10.9304,
+            "opacity": 0.8292,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 60.625,
+            "opacity": 0.0527,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 454,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -8.4268,
+            "opacity": 0.8683,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 62.199001,
+            "opacity": 0.0281,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 455,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -6.3801,
+            "opacity": 0.9003,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 63.187,
+            "opacity": 0.0127,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 457,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -4.8181,
+            "opacity": 0.9247,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 63.703701,
+            "opacity": 0.0046,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 457,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -3.4927,
+            "opacity": 0.9454,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 63.943699,
+            "opacity": 0.0009,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 458,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -2.4617,
+            "opacity": 0.9615,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 63.999001,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 459,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -1.7178,
+            "opacity": 0.9732,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 459,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -1.1271,
+            "opacity": 0.9824,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 459,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -0.7245,
+            "opacity": 0.9887,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -0.4265,
+            "opacity": 0.9933,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -0.2315,
+            "opacity": 0.9964,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -0.1178,
+            "opacity": 0.9982,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -0.0466,
+            "opacity": 0.9993,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -0.0162,
+            "opacity": 0.9997,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -0.0039,
+            "opacity": 0.9999,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": -0.0003,
+            "opacity": 1,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          },
+          {
+            "name": "Industries",
+            "active": false,
+            "x": 64,
+            "opacity": 0,
+            "inert": true
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      },
+      {
+        "sameSurface": true,
+        "opacity": 1,
+        "height": 460,
+        "panes": [
+          {
+            "name": "Applications",
+            "active": true,
+            "x": 0,
+            "opacity": 1,
+            "inert": false
+          }
+        ]
+      }
+    ]
+  }
+]

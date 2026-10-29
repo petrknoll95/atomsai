@@ -1,0 +1,54 @@
+import { chromium, webkit, expect } from '@playwright/test';
+import fs from 'node:fs/promises';
+const dir = 'docs/visual/integrations-marquee';
+await fs.mkdir(dir, { recursive: true });
+const url = 'http://127.0.0.1:3001/integration-variants/marquee#integrations';
+for (const [name, engine] of [['chromium', chromium], ['webkit', webkit]]) {
+  const browser = await engine.launch();
+  const page = await browser.newPage({ reducedMotion: 'reduce' });
+  for (const width of [1600, 1024, 390, 320]) {
+    await page.setViewportSize({ width, height: 1100 });
+    await page.goto(url);
+    const section = page.locator('#integrations');
+    await section.scrollIntoViewIfNeeded();
+    await expect(section.getByRole('heading')).toBeVisible();
+    await expect.poll(() => section.locator('img').evaluateAll(images => images.every(image => image.complete && image.naturalWidth > 0))).toBe(true);
+    await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    await section.screenshot({ path: `${dir}/${name}-${width}.png` });
+  }
+  await page.close();
+  const motion = await browser.newPage({ viewport: { width: 1600, height: 1100 } });
+  await motion.goto(url);
+  const section = motion.locator('#integrations');
+  await section.scrollIntoViewIfNeeded();
+  const track = motion.locator('[data-integration-marquee] > div');
+  const position = () => track.evaluate(el => new DOMMatrix(getComputedStyle(el).transform).m41);
+  await motion.waitForTimeout(1800);
+  const before = await position();
+  await motion.waitForTimeout(600);
+  expect(await position()).not.toBe(before);
+  await motion.locator('[data-integration-marquee]').hover();
+  await motion.waitForTimeout(300);
+  const hover = await position();
+  await motion.waitForTimeout(400);
+  expect(Math.abs(await position() - hover)).toBeLessThan(.5);
+  await motion.mouse.move(0, 0);
+  await motion.waitForTimeout(700);
+  expect(await position()).not.toBe(hover);
+  await section.getByRole('button', { name: 'Pause integrations marquee' }).click();
+  await motion.mouse.move(0, 0);
+  const paused = await position();
+  await motion.waitForTimeout(400);
+  expect(Math.abs(await position() - paused)).toBeLessThan(.5);
+  await section.getByRole('button', { name: 'Play integrations marquee' }).click();
+  await motion.mouse.move(0, 0);
+  await motion.waitForTimeout(700);
+  expect(await position()).not.toBe(paused);
+  await motion.emulateMedia({ reducedMotion: 'reduce' });
+  await motion.waitForTimeout(300);
+  const reduced = await position();
+  await motion.waitForTimeout(400);
+  expect(Math.abs(await position() - reduced)).toBeLessThan(.5);
+  console.log(`${name}: responsive layout, icons, motion, hover pause, manual pause/resume and reduced motion passed`);
+  await browser.close();
+}

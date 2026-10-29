@@ -1,0 +1,22 @@
+[
+  {
+    "browser": "chromium",
+    "rest": 0,
+    "hover": 12,
+    "intermediate": 6.36,
+    "zoom": 1.06,
+    "keyboard": true,
+    "reducedMotion": true,
+    "noMobileOverflow": true
+  },
+  {
+    "browser": "webkit",
+    "rest": 0,
+    "hover": 12,
+    "intermediate": 6.36,
+    "zoom": 1.06,
+    "keyboard": true,
+    "reducedMotion": true,
+    "noMobileOverflow": true
+  }
+]

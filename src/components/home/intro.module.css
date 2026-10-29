@@ -1,0 +1,13 @@
+.intro {
+  display:grid;
+  place-items:center;
+  padding:48px var(--page-gutter) clamp(80px,8vw,120px);
+  text-align:center;
+}
+.headline {
+  width:100%;
+  max-width:1200px;
+  font-size:clamp(30px,5vw,80px);
+  line-height:1;
+  text-wrap:balance;
+}

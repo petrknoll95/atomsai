@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-26T16:17:18.747Z",
+  "date": "2026-10-27T13:56:47.506Z",
   "results": [
     {
       "name": "chromium",
-      "width": 390,
+      "width": 1600,
       "placements": [
         {
           "application": "offerings-drift",
@@ -60,7 +60,7 @@
     },
     {
       "name": "chromium",
-      "width": 1600,
+      "width": 390,
       "placements": [
         {
           "application": "offerings-drift",

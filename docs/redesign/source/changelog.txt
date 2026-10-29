@@ -1,0 +1,79 @@
+What changed, newest first.
+Every release of this site and of the projects around it. Dated, grouped, and
+written the way we would want to read it. The engineering detail for each
+release is one disclosure away.
+4
+releases
+·
+newest 2 September 2026
+2 September 2026
+v0.4
+Logo: client-supplied lockup adopted; dot-sphere retained as brand graphic
+The logo is now the client's own artwork — a fan/burst symbol with italic serif &quot;atoms&quot; and upright sans &quot;AI&quot;. The halftone dot-sphere stays, with a different job: it is the loading animation and the graphic language, not the mark.
+Changed
+The logo is the supplied lockup, adopted as artwork rather than rebuilt: fan/burst symbol, italic serif &quot;atoms&quot;, upright sans &quot;AI&quot;, and a period. Monochrome, outlined, and shipped in exactly three fills — ink, white and currentColor. Sky is no longer a logo colour; the accent belongs to the page.
+The lockup is no longer live text, so its two halves can no longer drift apart at any size.
+The navbar orb, the footer lockup, the footer's giant baseline wordmark, the OG cards, the favicon, the app icons and the apple-touch icon all carry the new artwork.
+The preloader keeps its timing to the frame: the graphic still scales in at 0.00s and the panel still lifts at 1.35s.
+Kept
+The halftone dot-sphere and the phyllotaxis spiral, in full — the preloader's opening beat, the homepage hero stage, the capability cards and stages, the case-study cover tiles and the section ornaments. Only their role changed, from mark to brand graphic, and /brand now has a Graphics section that says so.
+Removed
+The dot-family logo files: the dot-A monogram, its solid-A fallback, its own lockup, its favicon and its app icon. There is no letterform monogram any more; a favicon, an avatar and an app tile carry the square crop of the supplied symbol.
+Engineering notes
+6
+scripts/split-logo.mjs derives every distributable file from that one artwork. It measures each path's bounding box, cuts the row at its widest horizontal gap so the leftmost cluster becomes the symbol, crops a viewBox and sets a fill. Crop and fill are the only operations — no glyph is redrawn, re-spaced or re-weighted — and it prints the bounds it measured.
+&quot;AtomsAI&quot; used to be set as DOM text in Geist and glued to a mark with a measured gap, which meant a gap constant, a width ratio and a container-query fallback to keep the two halves in step. The artwork's own bounds are the ratio now.
+The OG card art is one sharp() call on lockup-reversed.svg. The CanvasKit glyph-by-glyph wordmark renderer is gone with the webfont it existed to work around.
+src/lib/brand-dots.ts and its one generator are unchanged, so the rendered graphic and the distributable SVGs still cannot drift.
+The retired dot-family geometry is kept for reference in design/drafts/dot-family/, outside the built site.
+The preloader's 0.29s beat is now the lockup being revealed beneath the sphere, because a filled path has no characters to stagger.
+2 September 2026
+v0.3
+Logo revised to the dot family
+The mark is now a halftone field of dots rather than a drawn object. One generator produces every size of it, the app icons, the monogram and the OG art.
+Changed
+The mark is a halftone dot-sphere: Fibonacci-distributed points on the front hemisphere, each dot sized by how much light it catches, and a single sky dot off the shoulder. Nothing in it is a gradient, so it reproduces at one colour and holds up at any size.
+New members of the family: the dot-A monogram (with a solid-A fallback below 48px, where the counter closes), the phyllotaxis spiral used as both the motion source and a section ornament, and a hand-set 7-dot cluster for anything under 40px.
+Case-study covers are drawn from the same dot generator, without the sky dot — the proof visuals carry the system texture without wearing our identity.
+The cloud gradient's specular moved to a centred, soft position, so a cloud tile reads as a cloud rather than as a lit ball.
+Removed
+The glossy ring-and-nucleus atom, along with the CSS sphere, the two stroked orbit ellipses and the half-plane clip that drew it.
+Engineering notes
+2
+src/lib/brand-dots.ts is the one generator behind every rendered mark — the inline SVG components, the raster app icons and the OG card art all call it, so the geometry cannot drift between them.
+The legacy atom files are kept for reference in design/legacy-atom/, outside the built site.
+2 September 2026
+v0.2
+Site pages
+In progress
+The hubs and detail templates around the homepage: capabilities, approach, resources, company, and the routes that carry content rather than pitch.
+Added
+Resources hub at /resources — a tabbed shell over case studies, blog, the existing guide library and the free tools.
+Case-study template with a sticky metrics sidebar, a dark stage cover tile and related stories.
+Blog template with a sticky table of contents built from the post's own headings, an author card and prev/next.
+Three case studies and three posts.
+RSS feed for the blog at /resources/blog/rss.xml.
+This changelog.
+Still moving
+Guides, free tools, industry hubs and accelerators still point at the current atomsai.com URLs. They move onto this site with the 301 map.
+Every number in a case study is illustrative and awaits client sign-off. Named people are fictional and marked.
+Engineering notes
+3
+The resources tab state lives in the URL hash.
+Case-study frontmatter carries a `capability` slug, so a capability sub-page can pull its own proof without a second list.
+OG cards are registered per route, including one per case study and post.
+1 September 2026
+v0.1
+Brand and homepage
+The rebuild starts: a new brand system, the token layer everything else reads from, and the homepage in full.
+Added
+New brand: the halftone dot mark — a sphere of Fibonacci-distributed dots lit by size rather than by a gradient, with one sky dot off its shoulder — plus the sky-blue accent, Geist for display and body, and the motion language.
+/brand, the living style guide, which prints what the browser computed rather than what the docs claim.
+Homepage: hero stage, logo marquee, the numbered sections through to the FAQ, and the full-viewport footer CTA.
+Engineering notes
+4
+tokens.css and the Tailwind theme bridge — colour, radius, shadow, spacing and duration all resolve through custom properties.
+GSAP + Lenis motion runtime with a reduced-motion branch that sets final states instead of skipping reveals.
+The five React islands on the homepage became .astro components with scoped scripts, taking react-dom off the critical path.
+robots.txt now publishes an absolute sitemap URL.
+Want the next entry to be your workflow? The ask is at the foot of this page.

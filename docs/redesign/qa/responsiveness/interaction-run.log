@@ -1,0 +1,546 @@
+[
+  {
+    "engine": "chromium",
+    "motion": "reduce",
+    "tabKey": "Tab",
+    "focusTrap": true,
+    "focus": [
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "About us"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Careers"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Contact us"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Trust Center"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Brand"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Company overview"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Terms of Service"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Privacy Policy"
+      },
+      {
+        "inHeader": true,
+        "inDialog": false,
+        "trigger": false,
+        "text": ""
+      },
+      {
+        "inHeader": true,
+        "inDialog": false,
+        "trigger": true,
+        "text": ""
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Applications"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Infrastructure"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "AI Services"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Industries"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Resources"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Company"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "About us"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Careers"
+      }
+    ],
+    "restored": {
+      "scrollY": 800,
+      "focused": "Open site menu"
+    },
+    "voiceTab": "true",
+    "audioTime": "0.1",
+    "transcriptOpen": true,
+    "healthTab": "true",
+    "hostedCopy": true,
+    "form": {
+      "width": 320,
+      "scrollWidth": 320,
+      "focused": "Ready for your email app.",
+      "previewScroll": [
+        {
+          "h": 380,
+          "sh": 1153
+        }
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "motion": "no-preference",
+    "tabKey": "Tab",
+    "focusTrap": true,
+    "focus": [
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "About us"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Careers"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Contact us"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Trust Center"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Brand"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Company overview"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Terms of Service"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Privacy Policy"
+      },
+      {
+        "inHeader": true,
+        "inDialog": false,
+        "trigger": false,
+        "text": ""
+      },
+      {
+        "inHeader": true,
+        "inDialog": false,
+        "trigger": true,
+        "text": ""
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Applications"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Infrastructure"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "AI Services"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Industries"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Resources"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Company"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "About us"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Careers"
+      }
+    ],
+    "restored": {
+      "scrollY": 800,
+      "focused": "Open site menu"
+    },
+    "voiceTab": "true",
+    "audioTime": "0.3",
+    "transcriptOpen": true,
+    "healthTab": "true",
+    "hostedCopy": true,
+    "form": {
+      "width": 320,
+      "scrollWidth": 320,
+      "focused": "Ready for your email app.",
+      "previewScroll": [
+        {
+          "h": 380,
+          "sh": 1153
+        }
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "motion": "reduce",
+    "tabKey": "Option+Tab (Safari full navigation)",
+    "focusTrap": true,
+    "focus": [
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "About us"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Careers"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Contact us"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Trust Center"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Brand"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Company overview"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Terms of Service"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Privacy Policy"
+      },
+      {
+        "inHeader": true,
+        "inDialog": false,
+        "trigger": false,
+        "text": ""
+      },
+      {
+        "inHeader": true,
+        "inDialog": false,
+        "trigger": true,
+        "text": ""
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "ApplicationsJustCallHelpwiseServiceAgent"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Applications"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Infrastructure"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "AI Services"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Industries"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Resources"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Company"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "About us"
+      }
+    ],
+    "restored": {
+      "scrollY": 800,
+      "focused": "Open site menu"
+    },
+    "voiceTab": "true",
+    "audioTime": "0.1",
+    "transcriptOpen": true,
+    "healthTab": "true",
+    "hostedCopy": true,
+    "form": {
+      "width": 320,
+      "scrollWidth": 320,
+      "focused": "Ready for your email app.",
+      "previewScroll": [
+        {
+          "h": 380,
+          "sh": 1153
+        }
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "motion": "no-preference",
+    "tabKey": "Option+Tab (Safari full navigation)",
+    "focusTrap": true,
+    "focus": [
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "About us"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Careers"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Contact us"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Trust Center"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Brand"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Company overview"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Terms of Service"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Privacy Policy"
+      },
+      {
+        "inHeader": true,
+        "inDialog": false,
+        "trigger": false,
+        "text": ""
+      },
+      {
+        "inHeader": true,
+        "inDialog": false,
+        "trigger": true,
+        "text": ""
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "ApplicationsJustCallHelpwiseServiceAgent"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Applications"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Infrastructure"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "AI Services"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Industries"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Resources"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "Company"
+      },
+      {
+        "inHeader": true,
+        "inDialog": true,
+        "trigger": false,
+        "text": "About us"
+      }
+    ],
+    "restored": {
+      "scrollY": 800,
+      "focused": "Open site menu"
+    },
+    "voiceTab": "true",
+    "audioTime": "0.1",
+    "transcriptOpen": true,
+    "healthTab": "true",
+    "hostedCopy": true,
+    "form": {
+      "width": 320,
+      "scrollWidth": 320,
+      "focused": "Ready for your email app.",
+      "previewScroll": [
+        {
+          "h": 380,
+          "sh": 1153
+        }
+      ]
+    }
+  }
+]

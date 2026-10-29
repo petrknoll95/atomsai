@@ -1,0 +1,138 @@
+{
+  "base": "http://127.0.0.1:3002",
+  "checkedAt": "2026-10-28T22:13:09.963Z",
+  "checks": [
+    {
+      "name": "Homepage AI Services navigates locally",
+      "data": true
+    },
+    {
+      "name": "Approach primary CTA reaches contact",
+      "data": true
+    },
+    {
+      "name": "Empty contact submission blocked",
+      "data": true
+    },
+    {
+      "name": "Contact review and mailto preserve draft",
+      "data": {
+        "href": "mailto:hello@atomsai.com?subject=AI%20Services%20%E2%80%94%20Example%20team&body=Hi%20AtomsAI%2C%0A%0AA%20sample%20workflow%20%26%20its%20handoffs.%0A%0AQA%20Reviewer%0AExample%20team%0AReply%20to%3A%20qa%40example.com"
+      }
+    },
+    {
+      "name": "Review focus transferred",
+      "data": true
+    },
+    {
+      "name": "Edit retains draft",
+      "data": true
+    },
+    {
+      "name": "Footer Voice link reaches local page",
+      "data": true
+    },
+    {
+      "name": "Voice in-page sample anchor",
+      "data": true
+    },
+    {
+      "name": "Voice transcript opens",
+      "data": true
+    },
+    {
+      "name": "Header industry menu reaches local Healthcare",
+      "data": true
+    },
+    {
+      "name": "Healthcare trust path reaches local Trust",
+      "data": true
+    },
+    {
+      "name": "Trust deployment comparison changes",
+      "data": true
+    },
+    {
+      "name": "Trust document requests have actual email links",
+      "data": {
+        "count": 9
+      }
+    },
+    {
+      "name": "Secondary footer Applications anchor arrives at homepage section",
+      "data": {
+        "top": 112,
+        "bottom": 1015
+      }
+    },
+    {
+      "name": "Compact Company menu reaches local Trust",
+      "data": true
+    },
+    {
+      "name": "Metadata and landmarks /approach",
+      "data": {
+        "title": "AI Services — From workflow to working system | AtomsAI",
+        "description": "Find the right workflow, build it into your systems, and put your team in control. Explore the five steps of an AtomsAI engagement.",
+        "canonical": "https://atomsai.com/approach",
+        "main": 1,
+        "h1": 1,
+        "lang": "en",
+        "emptyControls": []
+      }
+    },
+    {
+      "name": "Metadata and landmarks /capabilities/voice",
+      "data": {
+        "title": "Voice AI — Conversations that move work forward | AtomsAI",
+        "description": "Voice agents that answer in context, connect to your tools, and help callers take the next step. Explore a sample and plan your first voice workflow.",
+        "canonical": "https://atomsai.com/capabilities/voice",
+        "main": 1,
+        "h1": 1,
+        "lang": "en",
+        "emptyControls": []
+      }
+    },
+    {
+      "name": "Metadata and landmarks /industries/healthcare",
+      "data": {
+        "title": "AI for healthcare teams — AtomsAI",
+        "description": "Connect patient enquiries, scheduling and front-office follow-ups. AI workflows built around your practice systems, with your clinical team in control.",
+        "canonical": "https://atomsai.com/industries/healthcare",
+        "main": 1,
+        "h1": 1,
+        "lang": "en",
+        "emptyControls": []
+      }
+    },
+    {
+      "name": "Metadata and landmarks /trust",
+      "data": {
+        "title": "Trust Center — AtomsAI",
+        "description": "Review how AtomsAI handles deployment, data, access and security documentation. Start with your environment and the scope of your engagement.",
+        "canonical": "https://atomsai.com/trust",
+        "main": 1,
+        "h1": 1,
+        "lang": "en",
+        "emptyControls": []
+      }
+    },
+    {
+      "name": "Metadata and landmarks /company/contact",
+      "data": {
+        "title": "Contact — Find your starting point | AtomsAI",
+        "description": "Tell AtomsAI about the workflow you want to improve. Start a conversation about AI applications, infrastructure, or a custom build.",
+        "canonical": "https://atomsai.com/company/contact",
+        "main": 1,
+        "h1": 1,
+        "lang": "en",
+        "emptyControls": []
+      }
+    },
+    {
+      "name": "No browser runtime errors",
+      "data": true
+    }
+  ],
+  "errors": []
+}

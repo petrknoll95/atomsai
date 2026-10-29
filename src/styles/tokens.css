@@ -12,6 +12,10 @@
   --palette-iris-shade: color(display-p3 0.286274523 0.247058824 0.345098048);
   --palette-iris-tint: color(display-p3 0.941176474 0.921568632 0.960784316);
   --page-gutter: 48px;
+  --header-inset: var(--page-gutter);
+  --header-top: 24px;
+  --header-height: 72px;
+  --header-padding: 20px;
   --section-space: 96px;
   --grid-gap: 32px;
   --state-hover: 8%;
@@ -24,7 +28,7 @@
   --color-surface: var(--palette-cream-tint);
   --color-surface-muted-foreground: var(--palette-forest-green);
   --color-primary: var(--palette-deep-green);
-  --color-primary-foreground: var(--palette-cream);
+  --color-primary-foreground: var(--palette-paper);
   --color-secondary: var(--palette-stone-tint);
   --color-secondary-foreground: var(--palette-deep-green);
   --color-border: color-mix(in display-p3, var(--palette-deep-green) 10%, transparent);
@@ -51,14 +55,14 @@
   --shadow-card: 0 3px 14px color-mix(in display-p3, var(--palette-deep-green) 3%, transparent);
 }
 /* Actual role variables also support component CSS and inherited local modes. */
-:root {
+:root, .theme-light, [data-theme="light"] {
   --color-background: var(--palette-paper);
   --color-foreground: var(--palette-deep-green);
   --color-muted-foreground: color-mix(in display-p3, var(--palette-deep-green) 60%, transparent);
   --color-surface: var(--palette-cream-tint);
   --color-surface-muted-foreground: var(--palette-forest-green);
   --color-primary: var(--palette-deep-green);
-  --color-primary-foreground: var(--palette-cream);
+  --color-primary-foreground: var(--palette-paper);
   --color-secondary: var(--palette-stone-tint);
   --color-secondary-foreground: var(--palette-deep-green);
   --color-border: color-mix(in display-p3, var(--palette-deep-green) 10%, transparent);
@@ -66,7 +70,10 @@
   --color-control-border: var(--palette-deep-green);
   --color-ring: var(--palette-deep-green);
 }
-.theme-dark {
+.theme-light, [data-theme="light"] {
+  color: var(--color-foreground);
+}
+.theme-dark, [data-theme="dark"] {
   --color-background: var(--palette-forest-shade);
   --color-foreground: var(--palette-cream);
   --color-muted-foreground: color-mix(in display-p3, var(--palette-cream) 60%, transparent);
@@ -84,3 +91,5 @@
 }
 @media(max-width:1199px) { :root { --page-gutter:32px; } }
 @media(max-width:767px) { :root { --page-gutter:20px; --section-space:64px; --grid-gap:24px; } }
+
+@media(max-width:767px) { :root { --header-inset:16px; --header-top:12px; --header-height:64px; --header-padding:12px; } }

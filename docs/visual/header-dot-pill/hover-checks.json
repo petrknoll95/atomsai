@@ -1,0 +1,20 @@
+[
+  {
+    "name": "chromium",
+    "hover": true,
+    "gapCrossing": true,
+    "switching": true,
+    "keyboard": true,
+    "arrowsRemoved": true,
+    "errors": []
+  },
+  {
+    "name": "webkit",
+    "hover": true,
+    "gapCrossing": true,
+    "switching": true,
+    "keyboard": true,
+    "arrowsRemoved": true,
+    "errors": []
+  }
+]

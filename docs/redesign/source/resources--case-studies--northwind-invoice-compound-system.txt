@@ -1,0 +1,130 @@
+Home
+/
+Resources
+/
+Case studies
+/
+Northwind Logistics
+Invoices that match themselves, exceptions that route themselves
+40,000 invoices a quarter hit a matching rule set that failed on every non-standard PO line. Chaining extraction, matching, exception routing and ERP write-back moved auto-match from 78% to 94%.
+Illustrative example. Names and results are fictional and do not represent verified customer outcomes.
+Contact us
+Published
+2 June 2026
+Measured result
+Invoice auto-match rate
+78% → 94%
+Invoice auto-match rate
+on 40k invoices/quarter
+Month-end audit prep
+5 days → 4 hours
+Month-end audit prep
+first two quarters
+Cost per processed document
+−81%
+Cost per processed document
+vs. prior BPO rate
+Contact us
+The situation
+Northwind Logistics processed about
+40,000 supplier invoices a quarter
+against purchase orders in their ERP. A rules-based matcher handled
+78%
+of them. The remaining
+8,800 a quarter
+went to a shared mailbox worked by four people and an offshore BPO team, at a blended cost of
+$4.10 per document
+.
+Jane in AP manually fixed invoices that failed OCR on Fridays — a real person, a real Friday. Month-end made it worse: five days of gathering evidence across five systems so the controller could close.
+The mailbox was the actual problem. Exceptions weren’t typed, so nobody could say which failure category was expensive. They aged silently, and the only visible number was the auto-match rate.
+What we found in the teardown
+We asked for the last 600 exceptions and categorised them with the AP team over two days. The distribution decided the design:
+41%
+— non-standard PO line descriptions or unit-of-measure mismatch
+23%
+— partial deliveries against a single PO
+18%
+— OCR failures on three specific supplier templates
+11%
+— currency and tax-code edge cases
+7%
+— genuine disputes needing a human
+Roughly
+82%
+of exceptions fell into four mechanical categories. Only the last group needed judgement. Nobody had known this, because the mailbox never asked.
+What we built
+Five weeks, in their Azure tenant, as a state machine with a durable record per invoice: intake, classification, extraction, validation against the ERP, decision, write-back, and a typed exception route for each failure category.
+Every item is either finished, waiting on a named human, or in a queue with an owner and an age. Writes are idempotent and any item can be replayed from any state, because a chain you can’t safely re-run will eventually be run twice.
+Approval gates use finance’s thresholds, not ours: above
+$25,000
+a human approves with the extraction and the source document side by side; below it the system commits and logs. Those thresholds are configuration — they started tight and loosened once the pass rate earned it.
+Because every step writes to one run record, month-end evidence assembles continuously instead of being reconstructed.
+Result
+Measured over the first
+two quarters
+post-launch:
+Auto-match rate
+78% → 94%
+Cost per processed document
+−81%
+,
+$4.10 → $0.78
+Month-end audit prep
+5 days → 4 hours
+Exceptions older than 5 days:
+~340 → 11
+The BPO contract wasn’t renewed. Two of the four AP staff moved to supplier management. Jane owns the exception rubric and the eval set, which is a better use of a Friday.
+“The evals are what sold my board. I can show a number for accuracy and a number for cost, per workflow, per month.”
+— Aaron Vasquez, Chief Financial Officer, Northwind Logistics
+Same workflow, same volume, measured either side.
+The left figure is what the workflow cost before we arrived, out of their own reporting. The right is what it cost after, over the window named beneath it.
+Invoice auto-match rate
+78%
+→
+94%
+on 40k invoices/quarter
+Month-end audit prep
+5 days
+→
+4 hours
+first two quarters
+Cost per processed document
+−81%
+vs. prior BPO rate
+Other workflows we took apart.
+Same method, different queue. Each one states its baseline, its window and its denominator.
+Meridian Health
+Meridian Health
+Support answers that stop costing twelve minutes each
+A 240-seat support org was answering policy questions from a 900-page handbook and four wikis. One cited answer layer, wired into the ticket, cut average handle time by 38% in seven weeks.
+Read the case study
+Average handle time
+−38%
+Average handle time
+across 1.2M annual contacts
+First-contact resolution
++22%
+First-contact resolution
+90 days post-launch
+Teardown to production
+7 weeks
+Teardown to production
+three engineers
+Kestrel Financial
+Kestrel Financial
+Underwriting in hours, with the reasoning attached
+Commercial submissions waited 3.5 days for a first look and inbound leads waited 3 hours for routing. An intake and scoring system now produces a cited risk memo for every submission, approved by a human underwriter.
+Read the case study
+Underwriting cycle time
+3.5 days → 11 hours
+Underwriting cycle time
+6-month window
+Speed-to-lead, inbound
+3h → 4min
+Speed-to-lead, inbound
+median, all inbound enquiries
+Qualified meetings booked
++34%
+Qualified meetings booked
+8-person team, one quarter
+Read the blog

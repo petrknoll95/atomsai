@@ -1,0 +1,356 @@
+Most AI work dies in the gap after the demo.
+What closes that gap is not a better model. It is integration into the systems you already run, evals you set the thresholds on, and a handover that leaves the thing in your repository.
+Contact us
+See the five steps
+SOC 2 Type II · HIPAA · GDPR · Runs in your VPC
+Play the 30-second walkthrough
+Five steps. One working system. Yours.
+The same sequence every time, whether it’s one workflow or a programme. Each step ends in something you can inspect, not a status update.
+STEP 01 OF 05
+Teardown
+We watch the work happen. Screens, exports, the spreadsheet nobody admits to.
+Workflow priorities
+Payback
+Risk
+View details
+A ranked list of workflows with volume, cycle time and failure rate
+Effort, payback and risk estimate per workflow
+A named recommendation for which one goes first, and why the others wait
+The reasons any of them are a bad idea right now
+We need: 2–4 practitioners for a working session, read-only access to two or three screens, and an export of the last few hundred exceptions.
+Ranked workflows
+Illustrative
+HIGHEST-PRIORITY WORKFLOW
+Invoice exceptions
+ranked first
+Workflows ranked by payback against risk
+Rank
+Workflow
+Payback
+Risk
+01
+Invoice exceptions
+High
+Low
+02
+Order changes
+Medium
+Low
+03
+Refund reviews
+Medium
+Medium
+01 goes first.
+Compare effort, payback and risk before
+choosing.
+OUT
+Ranked workflow list
+Explore this step
+STEP 01 OF 05
+Teardown
+01
+What you take away
+04
+deliverables
+A ranked list of workflows with volume, cycle time and failure rate
+Effort, payback and risk estimate per workflow
+A named recommendation for which one goes first, and why the others wait
+The reasons any of them are a bad idea right now
+From your team
+2–4 practitioners for a working session, read-only access to two or three screens, and an export of the last few hundred exceptions.
+Back to overview
+STEP 02 OF 05
+Blueprint
+The chosen workflow drawn end to end: data in, decisions, approval gates, systems written to, failure paths.
+Workflow map
+Approval rules
+Success criteria
+View details
+End-to-end workflow spec with decision points and failure paths
+Approval-gate design with thresholds and named owners
+Integration list with access requirements and lead times
+Baseline metrics, target metrics and measurement method
+Eval plan: what pass looks like, what fail looks like
+Deployment and data-flow diagram for your security review
+End-to-end spec
+Illustrative
+ONE WORKFLOW · EVERY DECISION
+Mapped
+Data in
+Source data
+Decision
+Rules & logic
+Approval gate
+Named owner
+Write to ERP
+System of record
+Approval
+≥ $10k · named owner
+Failure
+Route to review queue
+OUT
+Signed end-to-end spec
+Explore this step
+STEP 02 OF 05
+Blueprint
+02
+What you take away
+06
+deliverables
+End-to-end workflow spec with decision points and failure paths
+Approval-gate design with thresholds and named owners
+Integration list with access requirements and lead times
+Baseline metrics, target metrics and measurement method
+Eval plan: what pass looks like, what fail looks like
+Deployment and data-flow diagram for your security review
+From your team
+One workflow, three signatories
+Back to overview
+STEP 03 OF 05
+Build & integrate
+Our engineers in your repo, behind your reviews. Real connections to the systems you already run.
+Live integrations
+Your repository
+Safe testing
+View details
+The workflow running on production data in a shadow lane
+Code, prompts, infrastructure definitions and tests in your repo, merged as we go
+Live connections to your systems with your credentials and scopes
+A side-by-side comparison of system output against your team’s for the shadow period
+Demonstrations of something working, never a status slide
+Shadow comparison
+Illustrative
+SAME INPUT. TWO INDEPENDENT RUNS.
+Shadow
+Your team
+✓
+✓
+✓
+✓
+✓
+✓
+System
+✓
+✓
+✓
+!
+✓
+✓
+5 agree
+1 needs review
+Same production data. Nothing commits until you approve the comparison.
+OUT
+Live in a shadow lane
+Explore this step
+STEP 03 OF 05
+Build & integrate
+03
+What you take away
+05
+deliverables
+The workflow running on production data in a shadow lane
+Code, prompts, infrastructure definitions and tests in your repo, merged as we go
+Live connections to your systems with your credentials and scopes
+A side-by-side comparison of system output against your team’s for the shadow period
+Demonstrations of something working, never a status slide
+From your team
+Repo access, your code review
+Back to overview
+STEP 04 OF 05
+Evals & hardening
+Failure tests, cost ceilings, latency budgets, drift alarms, rollback.
+Quality checks
+Cost limits
+Rollback
+View details
+Eval suite in CI with thresholds you set, not us
+Cost ceiling and latency budget per run, alerting on breach
+Drift monitoring with a named owner and escalation path
+Documented worst case, blast radius and rollback procedure
+Load and failure-mode test results
+Eval scoreboard
+Illustrative
+RELEASE READINESS
+2 / 3 passing
+Accuracy
+94%
+Pass
+Cost / run
+$0.11
+Pass
+Latency
+3.1s
+Review
+Thresholds set by your team. A breach triggers an alert; rollback is
+documented.
+OUT
+Eval scoreboard in CI
+Explore this step
+STEP 04 OF 05
+Evals & hardening
+04
+What you take away
+05
+deliverables
+Eval suite in CI with thresholds you set, not us
+Cost ceiling and latency budget per run, alerting on breach
+Drift monitoring with a named owner and escalation path
+Documented worst case, blast radius and rollback procedure
+Load and failure-mode test results
+From your team
+Thresholds you set
+Back to overview
+STEP 05 OF 05
+Handover & scale
+Runbook, training, on-call handoff, and the next two workflows queued.
+Team training
+Runbooks
+Full ownership
+View details
+Runbook, alert catalogue and on-call procedure
+Training sessions for operators and for your engineers
+Supervised operation period where your team runs it
+Full code, prompt, eval and infrastructure handover under your license
+Updated workflow ranking for whatever goes next
+Runbook & on-call
+Illustrative
+✓
+BUILT TO BE YOURS
+Your team. Full control.
+Your repository · Your license
+✓
+Alert catalogue
+✓
+Recovery procedures
+✓
+Escalation paths
+Primary
+Your on-call owner
+Backup
+Named escalation owner
+OUT
+Your team running it
+Explore this step
+STEP 05 OF 05
+Handover & scale
+05
+What you take away
+05
+deliverables
+Runbook, alert catalogue and on-call procedure
+Training sessions for operators and for your engineers
+Supervised operation period where your team runs it
+Full code, prompt, eval and infrastructure handover under your license
+Updated workflow ranking for whatever goes next
+From your team
+Two operators, one on-call owner
+Back to overview
+From the first decision to full ownership. Every step has a clear output.
+Then set what it may do alone
+Autonomy is a setting, and you set it.
+Drag the handle. Every position is a real configuration we ship, the boundary is written into the blueprint and signed before the build, and the log line underneath is what your auditor reads at that setting.
+Autonomy level
+Playing through the five settings — move the handle to take over.
+Suggest only
+Draft and queue
+Act within policy
+Act and notify
+Full autonomy
+Incoming work is checked by the agent, then committed or sent to a person.
+5
+3
+Inbound work
+Agent
+Committed
+To a person
+5
+of 8 items commit without a person.
+Suggest only
+The system drafts. A person sends everything.
+The agent does this alone
+Reads the queue and the systems of record
+Drafts the decision, the reply and the reasoning
+Ranks its own confidence and flags the weak ones
+The agent asks first
+Every write, without exception
+Every outbound message
+Every exception and every refusal
+Draft and queue
+It acts where nothing changes, and queues what does.
+The agent does this alone
+Every read, enrichment and classification
+Writes to its own scratch records
+Assembles the approval with the evidence attached
+The agent asks first
+Any write to a system of record
+Anything a customer or supplier will see
+Anything under its confidence floor
+Act within policy
+It commits the clear cases. The threshold is yours.
+The agent does this alone
+Commits anything above your confidence floor
+Writes to the systems named in the blueprint
+Retries and reroutes documented failures
+The agent asks first
+Anything over the value threshold you set
+Anything below the confidence floor
+Any counterparty or account it has not seen
+Act and notify
+It owns the lane and tells you what it did.
+The agent does this alone
+Commits the whole workflow end to end
+Opens and closes its own exception tickets
+Escalates on its own eval and drift alarms
+The agent asks first
+Anything outside the blueprint’s scope
+Anything an eval marked as drift
+Any change to its own thresholds
+Full autonomy
+It runs the lane. You read the scoreboard.
+The agent does this alone
+Runs the workflow unattended, including the exceptions
+Rolls back its own failures inside the documented radius
+Reports against the baseline you signed off
+The agent asks first
+A new system, scope or data class
+A threshold change, which needs a signature
+Anything the runbook names as human-only
+Audit trail
+09:14:02
+invoice #48120 · matched to PO 7741 · confidence 0.94
+auto-approved · policy ≤ $10k · sampled for review
+Every run is logged with its inputs, its reasoning and the identity that authorised it — so an audit request is a query.
+Read the Trust Center
+What executives ask before signing.
+01
+What do you need from us, realistically?
+Two to four practitioners for the teardown sessions, a process owner who can make decisions, an engineering contact for access, and a security reviewer.
+Access provisioning can be the main dependency — read-only access for discovery, write scopes before the shadow lane. We identify approval and service-account requirements in the blueprint so access does not become a surprise during the build.
+02
+How is this different from hiring a consultancy or an agency?
+We do the consulting part — the teardown, the baseline, the sequencing call — and then we build the thing. The deliverable is a running system in your repository, not a recommendation deck. The people in the teardown are the people who write the code. There is no discovery phase that bills for six weeks, and no hand-off to a delivery team you haven’t met.
+If it helps: our first output is a ranked list that sometimes tells you not to buy anything yet.
+Consultants who ship.
+03
+What if the workflow turns out not to be worth automating?
+Then the teardown said so and you saved a quarter. We baseline before we build, and if the numbers don’t clear a payback bar we’ll say it out loud and point at the next workflow on the list.
+We’d rather lose one engagement than ship something your team quietly abandons in month three.
+04
+Who owns the code, the prompts and the evals?
+You do, from the first merge. Code, prompts, pipelines, eval suites, infrastructure definitions and runbooks land in your repository under your license as we go. There is no runtime you rent from us and no component that stops working if you stop working with us.
+This is your moat — not ours.
+05
+Can you work inside our security and compliance constraints?
+That’s the normal case. Your cloud account, your VPC, your KMS keys, your model provider, including self-hosted. SOC 2 Type II and HIPAA-capable. RBAC per action, approval gates, queryable audit trail, and a contractual commitment not to train on your data.
+The blueprint contains the data-flow diagram your security team needs, and we’ll fill in your questionnaire.
+typical security review turnaround
+06
+What happens after handover?
+Your team operates it with us alongside them until the handover is agreed, then it’s yours. Some clients bring us back per workflow, some move to an embedded pod, some never call again — all three are fine outcomes.
+What we won’t do is make continued payment a condition of the system continuing to run.
+length of the supervised operation period
+Have other questions?
+Contact the team
+Start at the teardown, not the contract.
+Bring the process that keeps breaking and we will tell you, on the call, whether it is worth automating yet.
+Contact us

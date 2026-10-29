@@ -1,0 +1,273 @@
+Industries
+/
+Insurance
+Answer every quote request. Before the next agency does.
+One agent across chat, phone, SMS and email that replies to new quote requests in seconds, handles service requests, and works your renewals, inside your agency management system.
+Book a demo
+→
+Try the chat agent
+Built for your rules
+Texts and calls follow consent and quiet hours, and the agent never binds coverage or gives advice your licensed team should give.
+Quote request answered
+8 sec
+Call booked with Dana · 9:30am
+Handled
+Connected during your build
+Applied Epic
+AMS360
+HawkSoft
+EZLynx
+Salesforce
+HubSpot
+Outlook and Gmail
+Your phone system
+What it brings
+Where your agency feels it.
+Grows revenue
+Write more policies
+Every quote request gets a reply in seconds, day or night, and a call with the right producer while the client is still shopping.
+1
+Answered in seconds
+Every quote request gets a reply, day or night.
+2
+Details collected
+Asks what your producers need, nothing more.
+3
+Producer call booked
+Books into the right producer’s calendar.
+4
+Agency system updated
+Every answer lands on the prospect record.
+Connected to Applied Epic, EZLynx, HubSpot and your calendar during your build.
+Raises service quality
+Clear service the same day
+Certificate and policy requests are checked against the policy and drafted from your template. Your team approves in one click.
+1
+Request understood
+Reads the request and confirms what’s needed.
+2
+Policy checked
+Checks coverage and endorsements before drafting.
+3
+Certificate ready to approve
+Drafted from your template; your team approves.
+4
+Sent and logged
+Goes out the moment it’s approved.
+Connected to Applied Epic, AMS360, Outlook and your certificate templates during your build.
+Protects your book
+Keep more renewals
+Renewals with a price change are spotted weeks ahead, and the client hears from you before the bill does.
+1
+Renewal flagged early
+Spots renewals with a price change 45 days out.
+2
+Client reached
+Explains the change before the bill does.
+3
+Review booked
+Puts the client in front of an account manager.
+4
+Outcome logged
+Your team sees what happened and what’s next.
+Connected to HawkSoft, AMS360, your email and phones during your build.
+PS
+Priya Shah
+New prospect · Dayton, OH
+Web chat · 9:12pm
+Hi, I need a home and auto quote. Just bought a place in Dayton.
+Congratulations, Priya. When do you close, and how many drivers?
+✓ Answered in 8 sec
+Details collected
+Closing date
+Nov 30
+Drivers
+Two
+Vehicles
+2021 RAV4, 2018 Civic
+Claims, last 5 years
+None
+Booked
+Quote call · Tomorrow 9:30am
+with Dana, personal lines
+Applied Epic
+Prospect created, answers attached
+Umbrella interest flagged for Dana
+The result
+Quote started and a producer call booked, two minutes after a 9pm chat.
+BC
+Brightline Construction
+Commercial client
+Email · 8:20am
+Need a certificate for the Elm St site. Parkside LLC as additional insured, please.
+On it. You’ll have it this morning.
+✓ Request logged
+Policy checked
+General liability
+✓
+Active to Mar 2027
+Additional insured
+✓
+Endorsement on file
+Certificate of liability insurance
+Holder
+Parkside LLC, additional insured
+Project
+Elm St site
+Status
+Sent to Maria to approve
+Approved by Maria · 10:14am
+Sent to Brightline
+Attached to the client in AMS360
+The result
+Certificate approved and sent the same morning, logged on the client.
+Renewals, next 45 days
+Luis Ortiz
+Home ·  renews Dec 10
++12%
+Flagged
+Avery Cole
+Auto ·  renews Dec 14
++3%
+J. Okafor
+Home and auto ·  renews Dec 22
+0%
+LO
+Luis Ortiz
+Home policy · renews Dec 10
+Text · 9:01am
+Hi Luis, your home policy renews Dec 10 and the premium is rising 12%. Want us to review your options?
+Yes please, that’s a big jump.
+Booked
+Renewal review · Wednesday 2pm
+with Sam, account manager
+HawkSoft
+Notes saved, remarketing opened
+Your team sees what’s next
+The result
+Review booked 45 days out, before the client asked anyone else.
+Illustrative examples. Connections and rules are set up during your build.
+Before and after
+Same quote requests. More policies written.
+Example agency, 400 quote requests a month. Illustrative figures.
+Time to first reply on a quote request
+Today
+4 hours
+With the agent
+Seconds
+Requests that arrive after hours
+Today
+Wait for morning
+With the agent
+Answered
+Quotes followed up after 5 days
+Today
+Some
+With the agent
+Every one
+Certificate requests handled by the service team
+Today
+All
+With the agent
+Approvals only
+More quotes reach a producer while the client is still shopping
+, and the service team gets its afternoons back.
+Sources:
+Oldroyd, McElheran and Elkington, “The Short Life of Online Sales Leads”, HBR, 2011
+Win back your database
+Your book of business. Working for you.
+The agent reaches the clients you already have, at the moments that matter, across SMS and email.
+Renewals started early
+Every renewal gets a check-in weeks ahead, not a notice.
+Single-policy clients
+Auto-only and home-only clients get a well-timed offer to review the rest.
+Old quotes revisited
+Quotes that never closed get a friendly follow-up at their next renewal date.
+For the owner
+Ask the business anything.
+The Intelligence agent reads every conversation and call, and answers your questions in plain English.
+Find what’s slipping
+Which quotes went quiet, which renewals are at risk, which requests waited too long.
+See what’s working
+Close rate by lead source, producer and line of business, without building a report.
+Approve the next step
+It suggests the follow-up; you say go, and the agent does it.
+See the Intelligence agent
+↗
+Which renewals are at risk this month?
+Three renewals have a premium rise above 8% and no reply yet.
+Kim Bakery · Business owner’s policy
++9% · no reply
+Harbor Dental · General liability
++11% · no reply
+M. Reyes · Home
++14% · opened, no reply
+Offer all three a review
+Waits for your go-ahead
+Controls and testing
+Your agency. Your rules.
+Controls
+No advice, no binding
+Coverage advice and binding stay with your licensed team. The agent collects and hands over.
+Consent and quiet hours
+Texts and calls follow opt-in and quiet hours, and STOP always works.
+Your approved answers
+It answers from the scripts and documents your team signs off.
+Full audit trail
+Every conversation, document sent and handover is logged.
+Testing
+Tested on your requests
+Real quote, certificate and claim conversations, including the awkward ones, before launch.
+Checked on every conversation
+Each conversation is scored for accuracy and handover, and problems are flagged.
+Reported weekly
+Response time, handovers and outcomes, by office and line of business.
+People in the loop
+You choose what the agent does alone and what waits for approval.
+Book a demo
+See it on your agency’s requests.
+In 30 minutes you’ll see
+A quote request from your website answered and booked with a producer, live.
+A certificate request handled from your template, ready for one-click approval.
+How it connects to your agency system, and what your first build would cover.
+Name
+*
+Company
+*
+Business email
+*
+Phone
+(optional)
+Company size
+*
+Choose one
+Under 200 staff
+200–1,000 staff
+1,001–5,000 staff
+Over 5,000 staff
+Your role
+(optional)
+Optional. You can call or text me about this request at the number above.
+Calls and texts may be automated or by an AI agent. Consent isn’t a
+condition of purchase; reply STOP to opt out.
+Website
+Book my demo
+We’ll only use this to set up your demo.
+See our privacy policy.
+Send these details by email
+FAQ
+Questions agencies ask.
+Explore the Trust Center
+↗
+Does the agent give coverage advice or bind policies?
+No. It answers from the information your team approves, collects what your producers need, and hands anything that needs a licensed person to your team with the full conversation.
+Which agency management systems can it connect to?
+We connect to the system you run, such as Applied Epic, AMS360, HawkSoft or EZLynx, and to your CRM, email and phones. The connections are built as part of your build.
+Can it answer the phone as well as chat?
+Yes. One agent works across web chat, phone, SMS and email with one memory, so a client who chats at night and calls in the morning doesn’t repeat themselves.
+How does it handle texting rules?
+Texts and calls go only to people who have given consent, inside the quiet hours you set, and every opt-out is honored straight away.
+Is it secure?
+AtomsAI comes from the team behind JustCall. It is SOC 2 Type II, signs a BAA for HIPAA, and follows GDPR.
+How long does it take to go live?
+It depends on the workflows and the systems we connect. In the demo we look at yours and agree what the first build covers.

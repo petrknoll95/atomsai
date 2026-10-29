@@ -1,0 +1,45 @@
+/* Concept A prototype values; local so the current header/theme stay unchanged. */
+.hero { --prototype-cream:#f6f1e8; --prototype-green:#27433b; --prototype-gutter-start:calc(max(var(--header-inset), (100vw - 1600px + 2 * var(--page-gutter)) / 2) + var(--header-padding)); --prototype-gutter-end:var(--prototype-gutter-start); position:relative; background:var(--hero-surface,var(--prototype-cream)); color:var(--prototype-green); }
+.hero { --hero-scroll-length:520; --hero-particle-length:380; --hero-white-start:350; --hero-white-end:440; }
+.hero[data-enhanced] { height:calc(var(--hero-scroll-length) * 1svh + var(--stage-height,100svh)); }
+.stage { position:relative; min-height:100svh; overflow:hidden; background:var(--hero-surface,var(--prototype-cream)); }
+.hero[data-enhanced] .stage { height:var(--stage-height,100svh); }
+.field { position:absolute; inset:0 0 auto; height:100svh; contain:strict; pointer-events:none; }
+.field canvas { display:block; }
+.content { position:absolute; inset:0 0 auto; height:100svh; }
+.content[data-hidden] { visibility:hidden; }
+.row { position:absolute; top:50%; left:var(--prototype-gutter-start); right:var(--prototype-gutter-end); display:flex; align-items:center; justify-content:space-between; gap:24px; transform:translateY(-50%); }
+.title { font-family:var(--font-display); font-size:60px; font-weight:400; line-height:.95; letter-spacing:-.015em; white-space:nowrap; text-wrap:balance; text-box:trim-both cap alphabetic; }
+.row > a { flex-shrink:0; height:44px; padding-inline:20px; font-size:14px; background:color-mix(in srgb,#c7cdba 40%,var(--prototype-cream)); color:var(--prototype-green); }
+.lead { position:absolute; left:var(--prototype-gutter-start); bottom:40px; width:446px; max-width:calc(100% - var(--prototype-gutter-start) - var(--prototype-gutter-end)); color:#42665a; font-size:16px; line-height:1.4; }
+.reveal { position:relative; margin-top:100svh; background:var(--color-background); }
+.nextContent { min-height:100svh; display:flex; flex-direction:column; justify-content:center; padding:calc(var(--header-top) + var(--header-height) + 40px) 0 64px; background:var(--color-background); }
+.nextContent :global([data-section='offerings']) { padding-block:0; }
+.hero[data-enhanced] .reveal { position:absolute; inset:0; margin-top:0; clip-path:circle(0 at 50% 50%); }
+.hero[data-enhanced] .nextContent { transform:translate3d(0,var(--reveal-offset,0px),0); }
+/* Reserve the final scroll geometry before hydration or the lazy canvas loads.
+   The reveal stays in the grid for its natural height until GSAP pins it. */
+@media(scripting:enabled) {
+  .hero:not([data-field-state='unavailable']) { padding-bottom:calc(var(--hero-scroll-length) * 1svh); }
+  .hero:not([data-enhanced]):not([data-field-state='unavailable']) .stage { display:grid; }
+  .hero:not([data-enhanced]):not([data-field-state='unavailable']) .reveal { grid-area:1 / 1; margin-top:0; clip-path:circle(0 at 50% 50%); }
+  .content .row, .content .lead { opacity:0; transition:opacity .45s ease-out; }
+  .content[data-copy-ready] .row, .content[data-copy-ready] .lead, .content:focus-within .row, .content:focus-within .lead { opacity:1; }
+}
+@media(max-width:1100px) { .row { flex-direction:column; align-items:flex-start; gap:28px; } .title { font-size:48px; white-space:normal; } }
+@media(max-width:599px) { .title { font-size:36px; line-height:1; } .lead { bottom:80px; } }
+@media(max-width:767px), (max-height:600px) and (pointer:coarse) {
+  .hero { --hero-scroll-length:270; --hero-particle-length:190; --hero-white-start:170; --hero-white-end:240; }
+  .nextContent { justify-content:flex-start; padding-top:calc(var(--header-top) + var(--header-height) + 28px); padding-bottom:48px; }
+  .nextContent :global([data-section='offerings']) > :last-child { margin-top:24px; grid-template-columns:1fr; }
+  .nextContent :global([data-offering]) { height:clamp(360px,calc(100svh - var(--header-top) - var(--header-height) - 116px),480px); padding:24px; gap:clamp(20px,6svh,64px); }
+  .nextContent :global([data-offering]) > img { width:64px; height:64px; }
+  .nextContent :global([data-offering]) h2 { font-size:clamp(28px,8vw,36px); }
+}
+@media(max-height:500px) and (pointer:coarse) {
+  .hero { --hero-scroll-length:220; --hero-particle-length:150; --hero-white-start:130; --hero-white-end:210; }
+}
+@media(prefers-reduced-motion:reduce) { .hero { --hero-scroll-length:60; } }
+@media(scripting:enabled) and (prefers-reduced-motion:reduce) {
+  .content .row, .content .lead { transition:none; }
+}

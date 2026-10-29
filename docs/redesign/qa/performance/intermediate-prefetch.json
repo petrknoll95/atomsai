@@ -1,0 +1,2813 @@
+{
+  "measuredAt": "2026-10-28T22:10:39.036Z",
+  "browserVersion": "156.0.8078.4",
+  "mobileProfile": {
+    "latencyMs": 150,
+    "downloadMbps": 1.6,
+    "cpuSlowdown": 4
+  },
+  "results": [
+    {
+      "mode": "desktop",
+      "route": "/approach",
+      "errors": [],
+      "perf": {
+        "lcp": [
+          {
+            "startTime": 320,
+            "duration": 0,
+            "name": "",
+            "element": "H1",
+            "elementText": "From workflow.To working system."
+          }
+        ],
+        "shifts": [],
+        "tasks": [
+          {
+            "startTime": 54.5,
+            "duration": 231,
+            "name": "self"
+          }
+        ],
+        "events": []
+      },
+      "nav": {
+        "name": "http://127.0.0.1:3002/approach",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 286.2000002861023,
+        "navigationId": 8273,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0,
+        "domainLookupStart": 0.40000009536743164,
+        "domainLookupEnd": 0.5,
+        "connectStart": 0.5,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.7000002861022949,
+        "requestStart": 0.8000001907348633,
+        "responseStart": 16.200000286102295,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 16.200000286102295,
+        "responseEnd": 16.5,
+        "transferSize": 12150,
+        "encodedBodySize": 11850,
+        "decodedBodySize": 69418,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 27.40000009536743,
+        "domContentLoadedEventStart": 27.40000009536743,
+        "domContentLoadedEventEnd": 27.40000009536743,
+        "domComplete": 286.2000002861023,
+        "loadEventStart": 286.2000002861023,
+        "loadEventEnd": 286.2000002861023,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:3002/fonts/FoundersGrotesk-Regular.woff2",
+          "initiatorType": "link",
+          "transferSize": 31456,
+          "encodedBodySize": 31156,
+          "decodedBodySize": 31156,
+          "duration": 2.6999998092651367
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector.svg",
+          "initiatorType": "link",
+          "transferSize": 775,
+          "encodedBodySize": 475,
+          "decodedBodySize": 475,
+          "duration": 4.800000190734863
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector1.svg",
+          "initiatorType": "link",
+          "transferSize": 1203,
+          "encodedBodySize": 903,
+          "decodedBodySize": 903,
+          "duration": 5.400000095367432
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector2.svg",
+          "initiatorType": "link",
+          "transferSize": 824,
+          "encodedBodySize": 524,
+          "decodedBodySize": 1068,
+          "duration": 6.199999809265137
+        },
+        {
+          "name": "http://127.0.0.1:3002/fonts/PPNeueMontreal-Variable.ttf",
+          "initiatorType": "link",
+          "transferSize": 199116,
+          "encodedBodySize": 198816,
+          "decodedBodySize": 403264,
+          "duration": 17
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector5.svg",
+          "initiatorType": "link",
+          "transferSize": 778,
+          "encodedBodySize": 478,
+          "decodedBodySize": 478,
+          "duration": 7.900000095367432
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector3.svg",
+          "initiatorType": "link",
+          "transferSize": 941,
+          "encodedBodySize": 641,
+          "decodedBodySize": 1138,
+          "duration": 8.099999904632568
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector4.svg",
+          "initiatorType": "link",
+          "transferSize": 1125,
+          "encodedBodySize": 825,
+          "decodedBodySize": 1509,
+          "duration": 8.300000190734863
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector6.svg",
+          "initiatorType": "link",
+          "transferSize": 639,
+          "encodedBodySize": 339,
+          "decodedBodySize": 339,
+          "duration": 8.599999904632568
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector7.svg",
+          "initiatorType": "link",
+          "transferSize": 1260,
+          "encodedBodySize": 960,
+          "decodedBodySize": 960,
+          "duration": 9
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1xzhxmtf6oa8c.css",
+          "initiatorType": "link",
+          "transferSize": 5678,
+          "encodedBodySize": 5378,
+          "decodedBodySize": 25541,
+          "duration": 4
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1devhxmpyrf7g.css",
+          "initiatorType": "link",
+          "transferSize": 19954,
+          "encodedBodySize": 19654,
+          "decodedBodySize": 111950,
+          "duration": 7.100000381469727
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1ckvzn7sfprko.js",
+          "initiatorType": "link",
+          "transferSize": 2335,
+          "encodedBodySize": 2035,
+          "decodedBodySize": 5584,
+          "duration": 9.700000286102295
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1-nqmp1rl8kqt.js",
+          "initiatorType": "script",
+          "transferSize": 8951,
+          "encodedBodySize": 8651,
+          "decodedBodySize": 34043,
+          "duration": 10.200000286102295
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+          "initiatorType": "script",
+          "transferSize": 4240,
+          "encodedBodySize": 3940,
+          "decodedBodySize": 10030,
+          "duration": 10.600000381469727
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/219pmyy8ibs_1.js",
+          "initiatorType": "script",
+          "transferSize": 3686,
+          "encodedBodySize": 3386,
+          "decodedBodySize": 7933,
+          "duration": 11.400000095367432
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/3ysx6h2mxw917.js",
+          "initiatorType": "script",
+          "transferSize": 7033,
+          "encodedBodySize": 6733,
+          "decodedBodySize": 22019,
+          "duration": 11.600000381469727
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/34goyxc2anvlg.js",
+          "initiatorType": "script",
+          "transferSize": 45459,
+          "encodedBodySize": 45159,
+          "decodedBodySize": 163051,
+          "duration": 13.100000381469727
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/0bossxf30blzv.js",
+          "initiatorType": "script",
+          "transferSize": 33264,
+          "encodedBodySize": 32964,
+          "decodedBodySize": 94266,
+          "duration": 13.5
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/216iyidhmrh3u.js",
+          "initiatorType": "script",
+          "transferSize": 72199,
+          "encodedBodySize": 71899,
+          "decodedBodySize": 229597,
+          "duration": 14.700000286102295
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/2yhk9aeug-aqs.js",
+          "initiatorType": "script",
+          "transferSize": 27418,
+          "encodedBodySize": 27118,
+          "decodedBodySize": 70153,
+          "duration": 14.599999904632568
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/hero-Logo.svg",
+          "initiatorType": "css",
+          "transferSize": 2441,
+          "encodedBodySize": 2141,
+          "decodedBodySize": 5609,
+          "duration": 3.5
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/hero-Vector1.svg",
+          "initiatorType": "css",
+          "transferSize": 630,
+          "encodedBodySize": 330,
+          "decodedBodySize": 1119,
+          "duration": 4.900000095367432
+        },
+        {
+          "name": "http://127.0.0.1:3002/fonts/FoundersGrotesk-Medium.woff2",
+          "initiatorType": "css",
+          "transferSize": 32428,
+          "encodedBodySize": 32128,
+          "decodedBodySize": 32128,
+          "duration": 2.700000286102295
+        },
+        {
+          "name": "http://127.0.0.1:3002/?_rsc=5UHz3iYbcSUxZzs8",
+          "initiatorType": "fetch",
+          "transferSize": 720,
+          "encodedBodySize": 420,
+          "decodedBodySize": 1201,
+          "duration": 6.5
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/3k-bjk35zs-4n.css",
+          "initiatorType": "link",
+          "transferSize": 6105,
+          "encodedBodySize": 5805,
+          "decodedBodySize": 27501,
+          "duration": 2.799999713897705
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/offerings-Union.svg",
+          "initiatorType": "link",
+          "transferSize": 761,
+          "encodedBodySize": 461,
+          "decodedBodySize": 461,
+          "duration": 1.3000001907348633
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/offerings-EveryThreadToOneCentre11.svg",
+          "initiatorType": "link",
+          "transferSize": 1553,
+          "encodedBodySize": 1253,
+          "decodedBodySize": 5538,
+          "duration": 2.3000001907348633
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/offerings-RisingOffABase11.svg",
+          "initiatorType": "link",
+          "transferSize": 1591,
+          "encodedBodySize": 1291,
+          "decodedBodySize": 5921,
+          "duration": 2.700000286102295
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/faq-IconArtwork.svg",
+          "initiatorType": "link",
+          "transferSize": 678,
+          "encodedBodySize": 378,
+          "decodedBodySize": 378,
+          "duration": 1.5
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/offerings-RaysAroundACoreOneStillMissing11.svg",
+          "initiatorType": "link",
+          "transferSize": 1638,
+          "encodedBodySize": 1338,
+          "decodedBodySize": 5882,
+          "duration": 3.200000286102295
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/faq-IconArtwork1.svg",
+          "initiatorType": "link",
+          "transferSize": 688,
+          "encodedBodySize": 388,
+          "decodedBodySize": 388,
+          "duration": 4.199999809265137
+        },
+        {
+          "name": "http://127.0.0.1:3002/?_rsc=mDJD5MZZVCR5cc5Y",
+          "initiatorType": "fetch",
+          "transferSize": 7774,
+          "encodedBodySize": 7474,
+          "decodedBodySize": 45349,
+          "duration": 3.799999713897705
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/2_m-s9-bs7bdc.js",
+          "initiatorType": "script",
+          "transferSize": 8313,
+          "encodedBodySize": 8013,
+          "decodedBodySize": 20350,
+          "duration": 1.1000003814697266
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/0fs-e4b_t02lu.js",
+          "initiatorType": "script",
+          "transferSize": 30342,
+          "encodedBodySize": 30042,
+          "decodedBodySize": 94162,
+          "duration": 2.1000003814697266
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/2jcw3z4io2glf.js",
+          "initiatorType": "script",
+          "transferSize": 165747,
+          "encodedBodySize": 165447,
+          "decodedBodySize": 612232,
+          "duration": 9.299999713897705
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector.svg",
+          "naturalWidth": 220,
+          "displayWidth": 196.234375,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector1.svg",
+          "naturalWidth": 105,
+          "displayWidth": 93.4375,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector2.svg",
+          "naturalWidth": 157,
+          "displayWidth": 140.203125,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector3.svg",
+          "naturalWidth": 238,
+          "displayWidth": 212.90625,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector4.svg",
+          "naturalWidth": 136,
+          "displayWidth": 121.640625,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector5.svg",
+          "naturalWidth": 207,
+          "displayWidth": 185.078125,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector6.svg",
+          "naturalWidth": 29,
+          "displayWidth": 26.21875,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector7.svg",
+          "naturalWidth": 301,
+          "displayWidth": 268.8125,
+          "complete": true
+        }
+      ],
+      "audioRequests": 0,
+      "interaction": "native disclosure",
+      "interactionEvents": [
+        {
+          "startTime": 3889,
+          "duration": 64,
+          "name": "pointerover",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3889,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3889,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3889,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3889,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3889,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3889,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3889,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3889,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3889,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3889,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3889,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3889,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3889,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3889,
+          "duration": 64,
+          "name": "mouseover",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3889.1000003814697,
+          "duration": 64,
+          "name": "pointerdown",
+          "interactionId": 7800
+        },
+        {
+          "startTime": 3889.1000003814697,
+          "duration": 64,
+          "name": "mousedown",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3889.2000002861023,
+          "duration": 64,
+          "name": "pointerup",
+          "interactionId": 7800
+        },
+        {
+          "startTime": 3889.2000002861023,
+          "duration": 64,
+          "name": "mouseup",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3889.2000002861023,
+          "duration": 64,
+          "name": "click",
+          "interactionId": 7800
+        }
+      ],
+      "postInteractionTasks": [],
+      "idleWindowSeconds": 1.5,
+      "idleCpu": {
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0,
+        "ScriptDuration": 0.007989999999999997,
+        "TaskDuration": 0.023743000000000014
+      }
+    },
+    {
+      "mode": "desktop",
+      "route": "/capabilities/voice",
+      "errors": [],
+      "perf": {
+        "lcp": [
+          {
+            "startTime": 320,
+            "duration": 0,
+            "name": "",
+            "element": "H1",
+            "elementText": "A conversation.A next step."
+          }
+        ],
+        "shifts": [],
+        "tasks": [
+          {
+            "startTime": 40.19999980926514,
+            "duration": 250,
+            "name": "self"
+          }
+        ],
+        "events": []
+      },
+      "nav": {
+        "name": "http://127.0.0.1:3002/capabilities/voice",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 291.90000009536743,
+        "navigationId": 6450,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0,
+        "domainLookupStart": 0.3000001907348633,
+        "domainLookupEnd": 0.5,
+        "connectStart": 0.5,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.5,
+        "requestStart": 0.5,
+        "responseStart": 5.199999809265137,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 5.199999809265137,
+        "responseEnd": 5.400000095367432,
+        "transferSize": 10971,
+        "encodedBodySize": 10671,
+        "decodedBodySize": 58658,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 14.5,
+        "domContentLoadedEventStart": 14.5,
+        "domContentLoadedEventEnd": 14.599999904632568,
+        "domComplete": 291.90000009536743,
+        "loadEventStart": 291.90000009536743,
+        "loadEventEnd": 291.90000009536743,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:3002/fonts/FoundersGrotesk-Regular.woff2",
+          "initiatorType": "link",
+          "transferSize": 31456,
+          "encodedBodySize": 31156,
+          "decodedBodySize": 31156,
+          "duration": 1.4000000953674316
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector.svg",
+          "initiatorType": "link",
+          "transferSize": 775,
+          "encodedBodySize": 475,
+          "decodedBodySize": 475,
+          "duration": 1.9000000953674316
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector1.svg",
+          "initiatorType": "link",
+          "transferSize": 1203,
+          "encodedBodySize": 903,
+          "decodedBodySize": 903,
+          "duration": 2.1999998092651367
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector2.svg",
+          "initiatorType": "link",
+          "transferSize": 824,
+          "encodedBodySize": 524,
+          "decodedBodySize": 1068,
+          "duration": 2.9000000953674316
+        },
+        {
+          "name": "http://127.0.0.1:3002/fonts/PPNeueMontreal-Variable.ttf",
+          "initiatorType": "link",
+          "transferSize": 199116,
+          "encodedBodySize": 198816,
+          "decodedBodySize": 403264,
+          "duration": 12.800000190734863
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector3.svg",
+          "initiatorType": "link",
+          "transferSize": 941,
+          "encodedBodySize": 641,
+          "decodedBodySize": 1138,
+          "duration": 3.0999999046325684
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector5.svg",
+          "initiatorType": "link",
+          "transferSize": 778,
+          "encodedBodySize": 478,
+          "decodedBodySize": 478,
+          "duration": 2.8000001907348633
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector4.svg",
+          "initiatorType": "link",
+          "transferSize": 1125,
+          "encodedBodySize": 825,
+          "decodedBodySize": 1509,
+          "duration": 3.200000286102295
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1xzhxmtf6oa8c.css",
+          "initiatorType": "link",
+          "transferSize": 5678,
+          "encodedBodySize": 5378,
+          "decodedBodySize": 25541,
+          "duration": 1.9000000953674316
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1devhxmpyrf7g.css",
+          "initiatorType": "link",
+          "transferSize": 19954,
+          "encodedBodySize": 19654,
+          "decodedBodySize": 111950,
+          "duration": 3.200000286102295
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector6.svg",
+          "initiatorType": "link",
+          "transferSize": 639,
+          "encodedBodySize": 339,
+          "decodedBodySize": 339,
+          "duration": 3.8000001907348633
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector7.svg",
+          "initiatorType": "link",
+          "transferSize": 1260,
+          "encodedBodySize": 960,
+          "decodedBodySize": 960,
+          "duration": 3.8000001907348633
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1ckvzn7sfprko.js",
+          "initiatorType": "link",
+          "transferSize": 2335,
+          "encodedBodySize": 2035,
+          "decodedBodySize": 5584,
+          "duration": 4.800000190734863
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1-nqmp1rl8kqt.js",
+          "initiatorType": "script",
+          "transferSize": 8951,
+          "encodedBodySize": 8651,
+          "decodedBodySize": 34043,
+          "duration": 5
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+          "initiatorType": "script",
+          "transferSize": 4240,
+          "encodedBodySize": 3940,
+          "decodedBodySize": 10030,
+          "duration": 5.300000190734863
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/3ysx6h2mxw917.js",
+          "initiatorType": "script",
+          "transferSize": 7033,
+          "encodedBodySize": 6733,
+          "decodedBodySize": 22019,
+          "duration": 6.200000286102295
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/2sutd2630cet3.js",
+          "initiatorType": "script",
+          "transferSize": 7840,
+          "encodedBodySize": 7540,
+          "decodedBodySize": 20096,
+          "duration": 6.300000190734863
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/34goyxc2anvlg.js",
+          "initiatorType": "script",
+          "transferSize": 45459,
+          "encodedBodySize": 45159,
+          "decodedBodySize": 163051,
+          "duration": 8.400000095367432
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/216iyidhmrh3u.js",
+          "initiatorType": "script",
+          "transferSize": 72199,
+          "encodedBodySize": 71899,
+          "decodedBodySize": 229597,
+          "duration": 9.400000095367432
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/0bossxf30blzv.js",
+          "initiatorType": "script",
+          "transferSize": 33264,
+          "encodedBodySize": 32964,
+          "decodedBodySize": 94266,
+          "duration": 8.099999904632568
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/2yhk9aeug-aqs.js",
+          "initiatorType": "script",
+          "transferSize": 27418,
+          "encodedBodySize": 27118,
+          "decodedBodySize": 70153,
+          "duration": 8.399999618530273
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/hero-Logo.svg",
+          "initiatorType": "css",
+          "transferSize": 2441,
+          "encodedBodySize": 2141,
+          "decodedBodySize": 5609,
+          "duration": 1.1999998092651367
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/hero-Vector1.svg",
+          "initiatorType": "css",
+          "transferSize": 630,
+          "encodedBodySize": 330,
+          "decodedBodySize": 1119,
+          "duration": 1.0999999046325684
+        },
+        {
+          "name": "http://127.0.0.1:3002/fonts/FoundersGrotesk-Medium.woff2",
+          "initiatorType": "css",
+          "transferSize": 32428,
+          "encodedBodySize": 32128,
+          "decodedBodySize": 32128,
+          "duration": 0.5
+        },
+        {
+          "name": "http://127.0.0.1:3002/?_rsc=rMwSz-E4iK0nArzE",
+          "initiatorType": "fetch",
+          "transferSize": 720,
+          "encodedBodySize": 420,
+          "decodedBodySize": 1201,
+          "duration": 2.200000286102295
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/offerings-EveryThreadToOneCentre11.svg",
+          "initiatorType": "link",
+          "transferSize": 1553,
+          "encodedBodySize": 1253,
+          "decodedBodySize": 5538,
+          "duration": 2.6999998092651367
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/3k-bjk35zs-4n.css",
+          "initiatorType": "link",
+          "transferSize": 6105,
+          "encodedBodySize": 5805,
+          "decodedBodySize": 27501,
+          "duration": 2.5999999046325684
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/offerings-Union.svg",
+          "initiatorType": "link",
+          "transferSize": 761,
+          "encodedBodySize": 461,
+          "decodedBodySize": 461,
+          "duration": 2
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/faq-IconArtwork.svg",
+          "initiatorType": "link",
+          "transferSize": 678,
+          "encodedBodySize": 378,
+          "decodedBodySize": 378,
+          "duration": 2.1000003814697266
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/offerings-RisingOffABase11.svg",
+          "initiatorType": "link",
+          "transferSize": 1591,
+          "encodedBodySize": 1291,
+          "decodedBodySize": 5921,
+          "duration": 2.5
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/offerings-RaysAroundACoreOneStillMissing11.svg",
+          "initiatorType": "link",
+          "transferSize": 1638,
+          "encodedBodySize": 1338,
+          "decodedBodySize": 5882,
+          "duration": 2.6000003814697266
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/faq-IconArtwork1.svg",
+          "initiatorType": "link",
+          "transferSize": 688,
+          "encodedBodySize": 388,
+          "decodedBodySize": 388,
+          "duration": 3.5
+        },
+        {
+          "name": "http://127.0.0.1:3002/?_rsc=NOY--sma2bqBZ0m9",
+          "initiatorType": "fetch",
+          "transferSize": 7774,
+          "encodedBodySize": 7474,
+          "decodedBodySize": 45349,
+          "duration": 3.299999713897705
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/2_m-s9-bs7bdc.js",
+          "initiatorType": "script",
+          "transferSize": 8313,
+          "encodedBodySize": 8013,
+          "decodedBodySize": 20350,
+          "duration": 1.299999713897705
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/0fs-e4b_t02lu.js",
+          "initiatorType": "script",
+          "transferSize": 30342,
+          "encodedBodySize": 30042,
+          "decodedBodySize": 94162,
+          "duration": 2.0999999046325684
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/2jcw3z4io2glf.js",
+          "initiatorType": "script",
+          "transferSize": 165747,
+          "encodedBodySize": 165447,
+          "decodedBodySize": 612232,
+          "duration": 8.900000095367432
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector.svg",
+          "naturalWidth": 220,
+          "displayWidth": 196.234375,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector1.svg",
+          "naturalWidth": 105,
+          "displayWidth": 93.4375,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector2.svg",
+          "naturalWidth": 157,
+          "displayWidth": 140.203125,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector3.svg",
+          "naturalWidth": 238,
+          "displayWidth": 212.90625,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector4.svg",
+          "naturalWidth": 136,
+          "displayWidth": 121.640625,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector5.svg",
+          "naturalWidth": 207,
+          "displayWidth": 185.078125,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector6.svg",
+          "naturalWidth": 29,
+          "displayWidth": 26.21875,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector7.svg",
+          "naturalWidth": 301,
+          "displayWidth": 268.8125,
+          "complete": true
+        }
+      ],
+      "audioRequests": 0,
+      "interaction": "workflow tab",
+      "interactionEvents": [
+        {
+          "startTime": 3875.800000190735,
+          "duration": 64,
+          "name": "pointerover",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3875.800000190735,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3875.800000190735,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3875.800000190735,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3875.800000190735,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3875.800000190735,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3875.800000190735,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3875.800000190735,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3875.800000190735,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3875.800000190735,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3875.800000190735,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3875.800000190735,
+          "duration": 64,
+          "name": "mouseover",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3875.9000000953674,
+          "duration": 64,
+          "name": "pointerdown",
+          "interactionId": 5347
+        },
+        {
+          "startTime": 3875.9000000953674,
+          "duration": 64,
+          "name": "mousedown",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3875.9000000953674,
+          "duration": 64,
+          "name": "pointerup",
+          "interactionId": 5347
+        },
+        {
+          "startTime": 3875.9000000953674,
+          "duration": 64,
+          "name": "mouseup",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3875.9000000953674,
+          "duration": 64,
+          "name": "click",
+          "interactionId": 5347
+        }
+      ],
+      "postInteractionTasks": [],
+      "idleWindowSeconds": 1.5,
+      "idleCpu": {
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0,
+        "ScriptDuration": 0.004978999999999997,
+        "TaskDuration": 0.014225000000000043
+      }
+    },
+    {
+      "mode": "desktop",
+      "route": "/industries/healthcare",
+      "errors": [],
+      "perf": {
+        "lcp": [
+          {
+            "startTime": 336,
+            "duration": 0,
+            "name": "",
+            "element": "IMG",
+            "elementText": ""
+          }
+        ],
+        "shifts": [],
+        "tasks": [
+          {
+            "startTime": 50.19999980926514,
+            "duration": 250,
+            "name": "self"
+          }
+        ],
+        "events": []
+      },
+      "nav": {
+        "name": "http://127.0.0.1:3002/industries/healthcare",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 301.19999980926514,
+        "navigationId": 7127,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0,
+        "domainLookupStart": 0.3000001907348633,
+        "domainLookupEnd": 0.40000009536743164,
+        "connectStart": 0.40000009536743164,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.5,
+        "requestStart": 0.5999999046325684,
+        "responseStart": 4.800000190734863,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 4.800000190734863,
+        "responseEnd": 5,
+        "transferSize": 11188,
+        "encodedBodySize": 10888,
+        "decodedBodySize": 61046,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 20,
+        "domContentLoadedEventStart": 20,
+        "domContentLoadedEventEnd": 20,
+        "domComplete": 301.19999980926514,
+        "loadEventStart": 301.19999980926514,
+        "loadEventEnd": 301.19999980926514,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:3002/fonts/FoundersGrotesk-Regular.woff2",
+          "initiatorType": "link",
+          "transferSize": 31456,
+          "encodedBodySize": 31156,
+          "decodedBodySize": 31156,
+          "duration": 1.0999999046325684
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector1.svg",
+          "initiatorType": "link",
+          "transferSize": 1203,
+          "encodedBodySize": 903,
+          "decodedBodySize": 903,
+          "duration": 9.700000286102295
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector.svg",
+          "initiatorType": "link",
+          "transferSize": 775,
+          "encodedBodySize": 475,
+          "decodedBodySize": 475,
+          "duration": 9.900000095367432
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector2.svg",
+          "initiatorType": "link",
+          "transferSize": 824,
+          "encodedBodySize": 524,
+          "decodedBodySize": 1068,
+          "duration": 10.300000190734863
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector3.svg",
+          "initiatorType": "link",
+          "transferSize": 941,
+          "encodedBodySize": 641,
+          "decodedBodySize": 1138,
+          "duration": 10.800000190734863
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector4.svg",
+          "initiatorType": "link",
+          "transferSize": 1125,
+          "encodedBodySize": 825,
+          "decodedBodySize": 1509,
+          "duration": 10.800000190734863
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/image?url=%2Fassets%2Ffigma%2Findustries-BackgroundImage1-1024.webp&w=828&q=75",
+          "initiatorType": "link",
+          "transferSize": 26248,
+          "encodedBodySize": 25948,
+          "decodedBodySize": 25948,
+          "duration": 12.800000190734863
+        },
+        {
+          "name": "http://127.0.0.1:3002/fonts/PPNeueMontreal-Variable.ttf",
+          "initiatorType": "link",
+          "transferSize": 199116,
+          "encodedBodySize": 198816,
+          "decodedBodySize": 403264,
+          "duration": 23.90000009536743
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1xzhxmtf6oa8c.css",
+          "initiatorType": "link",
+          "transferSize": 5678,
+          "encodedBodySize": 5378,
+          "decodedBodySize": 25541,
+          "duration": 9.199999809265137
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1devhxmpyrf7g.css",
+          "initiatorType": "link",
+          "transferSize": 19954,
+          "encodedBodySize": 19654,
+          "decodedBodySize": 111950,
+          "duration": 10.699999809265137
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector5.svg",
+          "initiatorType": "link",
+          "transferSize": 778,
+          "encodedBodySize": 478,
+          "decodedBodySize": 478,
+          "duration": 10.799999713897705
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector6.svg",
+          "initiatorType": "link",
+          "transferSize": 639,
+          "encodedBodySize": 339,
+          "decodedBodySize": 339,
+          "duration": 11.399999618530273
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector7.svg",
+          "initiatorType": "link",
+          "transferSize": 1260,
+          "encodedBodySize": 960,
+          "decodedBodySize": 960,
+          "duration": 11.599999904632568
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1ckvzn7sfprko.js",
+          "initiatorType": "link",
+          "transferSize": 2335,
+          "encodedBodySize": 2035,
+          "decodedBodySize": 5584,
+          "duration": 11.799999713897705
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1-nqmp1rl8kqt.js",
+          "initiatorType": "script",
+          "transferSize": 8951,
+          "encodedBodySize": 8651,
+          "decodedBodySize": 34043,
+          "duration": 12.099999904632568
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/216iyidhmrh3u.js",
+          "initiatorType": "script",
+          "transferSize": 72199,
+          "encodedBodySize": 71899,
+          "decodedBodySize": 229597,
+          "duration": 20.90000009536743
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1t7th41y18anm.js",
+          "initiatorType": "script",
+          "transferSize": 548,
+          "encodedBodySize": 248,
+          "decodedBodySize": 248,
+          "duration": 14.199999809265137
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+          "initiatorType": "script",
+          "transferSize": 4240,
+          "encodedBodySize": 3940,
+          "decodedBodySize": 10030,
+          "duration": 14.599999904632568
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/3ysx6h2mxw917.js",
+          "initiatorType": "script",
+          "transferSize": 7033,
+          "encodedBodySize": 6733,
+          "decodedBodySize": 22019,
+          "duration": 15.099999904632568
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/3wll5dqccqkjs.js",
+          "initiatorType": "script",
+          "transferSize": 10802,
+          "encodedBodySize": 10502,
+          "decodedBodySize": 29309,
+          "duration": 17
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/34goyxc2anvlg.js",
+          "initiatorType": "script",
+          "transferSize": 45459,
+          "encodedBodySize": 45159,
+          "decodedBodySize": 163051,
+          "duration": 16.90000009536743
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/2yhk9aeug-aqs.js",
+          "initiatorType": "script",
+          "transferSize": 27418,
+          "encodedBodySize": 27118,
+          "decodedBodySize": 70153,
+          "duration": 17.90000009536743
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/0bossxf30blzv.js",
+          "initiatorType": "script",
+          "transferSize": 33264,
+          "encodedBodySize": 32964,
+          "decodedBodySize": 94266,
+          "duration": 18.90000009536743
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/hero-Logo.svg",
+          "initiatorType": "css",
+          "transferSize": 2441,
+          "encodedBodySize": 2141,
+          "decodedBodySize": 5609,
+          "duration": 4.5
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/hero-Vector1.svg",
+          "initiatorType": "css",
+          "transferSize": 630,
+          "encodedBodySize": 330,
+          "decodedBodySize": 1119,
+          "duration": 6.800000190734863
+        },
+        {
+          "name": "http://127.0.0.1:3002/fonts/FoundersGrotesk-Medium.woff2",
+          "initiatorType": "css",
+          "transferSize": 32428,
+          "encodedBodySize": 32128,
+          "decodedBodySize": 32128,
+          "duration": 2.299999713897705
+        },
+        {
+          "name": "http://127.0.0.1:3002/?_rsc=Hq7ILlzmUYLpgcVk",
+          "initiatorType": "fetch",
+          "transferSize": 720,
+          "encodedBodySize": 420,
+          "decodedBodySize": 1201,
+          "duration": 2.9000000953674316
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/3k-bjk35zs-4n.css",
+          "initiatorType": "link",
+          "transferSize": 6105,
+          "encodedBodySize": 5805,
+          "decodedBodySize": 27501,
+          "duration": 4
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/offerings-EveryThreadToOneCentre11.svg",
+          "initiatorType": "link",
+          "transferSize": 1553,
+          "encodedBodySize": 1253,
+          "decodedBodySize": 5538,
+          "duration": 6.399999618530273
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/offerings-Union.svg",
+          "initiatorType": "link",
+          "transferSize": 761,
+          "encodedBodySize": 461,
+          "decodedBodySize": 461,
+          "duration": 1.799999713897705
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/offerings-RisingOffABase11.svg",
+          "initiatorType": "link",
+          "transferSize": 1591,
+          "encodedBodySize": 1291,
+          "decodedBodySize": 5921,
+          "duration": 3.5999999046325684
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/offerings-RaysAroundACoreOneStillMissing11.svg",
+          "initiatorType": "link",
+          "transferSize": 1638,
+          "encodedBodySize": 1338,
+          "decodedBodySize": 5882,
+          "duration": 6.300000190734863
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/faq-IconArtwork.svg",
+          "initiatorType": "link",
+          "transferSize": 678,
+          "encodedBodySize": 378,
+          "decodedBodySize": 378,
+          "duration": 1.9000000953674316
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/faq-IconArtwork1.svg",
+          "initiatorType": "link",
+          "transferSize": 688,
+          "encodedBodySize": 388,
+          "decodedBodySize": 388,
+          "duration": 6.300000190734863
+        },
+        {
+          "name": "http://127.0.0.1:3002/?_rsc=chLPOYwQ9XZ-D8c1",
+          "initiatorType": "fetch",
+          "transferSize": 7774,
+          "encodedBodySize": 7474,
+          "decodedBodySize": 45349,
+          "duration": 6
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/2_m-s9-bs7bdc.js",
+          "initiatorType": "script",
+          "transferSize": 8313,
+          "encodedBodySize": 8013,
+          "decodedBodySize": 20350,
+          "duration": 1.4000000953674316
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/0fs-e4b_t02lu.js",
+          "initiatorType": "script",
+          "transferSize": 30342,
+          "encodedBodySize": 30042,
+          "decodedBodySize": 94162,
+          "duration": 2.8000001907348633
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/2jcw3z4io2glf.js",
+          "initiatorType": "script",
+          "transferSize": 165747,
+          "encodedBodySize": 165447,
+          "decodedBodySize": 612232,
+          "duration": 10.400000095367432
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3002/_next/image?url=%2Fassets%2Ffigma%2Findustries-BackgroundImage1-1024.webp&w=828&q=75",
+          "naturalWidth": 792,
+          "displayWidth": 762.890625,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector.svg",
+          "naturalWidth": 220,
+          "displayWidth": 196.234375,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector1.svg",
+          "naturalWidth": 105,
+          "displayWidth": 93.4375,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector2.svg",
+          "naturalWidth": 157,
+          "displayWidth": 140.203125,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector3.svg",
+          "naturalWidth": 238,
+          "displayWidth": 212.90625,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector4.svg",
+          "naturalWidth": 136,
+          "displayWidth": 121.640625,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector5.svg",
+          "naturalWidth": 207,
+          "displayWidth": 185.078125,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector6.svg",
+          "naturalWidth": 29,
+          "displayWidth": 26.21875,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector7.svg",
+          "naturalWidth": 301,
+          "displayWidth": 268.8125,
+          "complete": true
+        }
+      ],
+      "audioRequests": 0,
+      "interaction": "workflow tab",
+      "interactionEvents": [
+        {
+          "startTime": 3908.9000000953674,
+          "duration": 80,
+          "name": "pointerover",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3908.9000000953674,
+          "duration": 80,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3908.9000000953674,
+          "duration": 80,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3908.9000000953674,
+          "duration": 80,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3908.9000000953674,
+          "duration": 80,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3908.9000000953674,
+          "duration": 80,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3908.9000000953674,
+          "duration": 80,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3908.9000000953674,
+          "duration": 80,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3908.9000000953674,
+          "duration": 80,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3908.9000000953674,
+          "duration": 80,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3908.9000000953674,
+          "duration": 80,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3908.9000000953674,
+          "duration": 80,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3908.9000000953674,
+          "duration": 80,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3908.9000000953674,
+          "duration": 80,
+          "name": "mouseover",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3908.9000000953674,
+          "duration": 80,
+          "name": "pointerdown",
+          "interactionId": 448
+        },
+        {
+          "startTime": 3908.9000000953674,
+          "duration": 80,
+          "name": "mousedown",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3909,
+          "duration": 80,
+          "name": "pointerup",
+          "interactionId": 448
+        },
+        {
+          "startTime": 3909,
+          "duration": 80,
+          "name": "mouseup",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3909,
+          "duration": 80,
+          "name": "click",
+          "interactionId": 448
+        }
+      ],
+      "postInteractionTasks": [],
+      "idleWindowSeconds": 1.5,
+      "idleCpu": {
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0,
+        "ScriptDuration": 0.008145,
+        "TaskDuration": 0.023692999999999964
+      }
+    },
+    {
+      "mode": "desktop",
+      "route": "/trust",
+      "errors": [],
+      "perf": {
+        "lcp": [
+          {
+            "startTime": 316,
+            "duration": 0,
+            "name": "",
+            "element": "H1",
+            "elementText": "Your data.Your boundaries."
+          }
+        ],
+        "shifts": [],
+        "tasks": [
+          {
+            "startTime": 38.5,
+            "duration": 252,
+            "name": "self"
+          }
+        ],
+        "events": []
+      },
+      "nav": {
+        "name": "http://127.0.0.1:3002/trust",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 292,
+        "navigationId": 8797,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0,
+        "domainLookupStart": 0.20000028610229492,
+        "domainLookupEnd": 0.40000009536743164,
+        "connectStart": 0.40000009536743164,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.5,
+        "requestStart": 0.5,
+        "responseStart": 5,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 5,
+        "responseEnd": 5.300000190734863,
+        "transferSize": 11187,
+        "encodedBodySize": 10887,
+        "decodedBodySize": 64981,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 14.599999904632568,
+        "domContentLoadedEventStart": 14.599999904632568,
+        "domContentLoadedEventEnd": 14.599999904632568,
+        "domComplete": 292,
+        "loadEventStart": 292,
+        "loadEventEnd": 292,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:3002/fonts/FoundersGrotesk-Regular.woff2",
+          "initiatorType": "link",
+          "transferSize": 31456,
+          "encodedBodySize": 31156,
+          "decodedBodySize": 31156,
+          "duration": 1.1999998092651367
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector.svg",
+          "initiatorType": "link",
+          "transferSize": 775,
+          "encodedBodySize": 475,
+          "decodedBodySize": 475,
+          "duration": 1.9000000953674316
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector1.svg",
+          "initiatorType": "link",
+          "transferSize": 1203,
+          "encodedBodySize": 903,
+          "decodedBodySize": 903,
+          "duration": 2.0999999046325684
+        },
+        {
+          "name": "http://127.0.0.1:3002/fonts/PPNeueMontreal-Variable.ttf",
+          "initiatorType": "link",
+          "transferSize": 199116,
+          "encodedBodySize": 198816,
+          "decodedBodySize": 403264,
+          "duration": 12.099999904632568
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector2.svg",
+          "initiatorType": "link",
+          "transferSize": 824,
+          "encodedBodySize": 524,
+          "decodedBodySize": 1068,
+          "duration": 2.5
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector3.svg",
+          "initiatorType": "link",
+          "transferSize": 941,
+          "encodedBodySize": 641,
+          "decodedBodySize": 1138,
+          "duration": 2.700000286102295
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector4.svg",
+          "initiatorType": "link",
+          "transferSize": 1125,
+          "encodedBodySize": 825,
+          "decodedBodySize": 1509,
+          "duration": 3.1000003814697266
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1xzhxmtf6oa8c.css",
+          "initiatorType": "link",
+          "transferSize": 5678,
+          "encodedBodySize": 5378,
+          "decodedBodySize": 25541,
+          "duration": 1.5999999046325684
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1devhxmpyrf7g.css",
+          "initiatorType": "link",
+          "transferSize": 19954,
+          "encodedBodySize": 19654,
+          "decodedBodySize": 111950,
+          "duration": 3.1999998092651367
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector5.svg",
+          "initiatorType": "link",
+          "transferSize": 778,
+          "encodedBodySize": 478,
+          "decodedBodySize": 478,
+          "duration": 2.6999998092651367
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector6.svg",
+          "initiatorType": "link",
+          "transferSize": 639,
+          "encodedBodySize": 339,
+          "decodedBodySize": 339,
+          "duration": 3.299999713897705
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector7.svg",
+          "initiatorType": "link",
+          "transferSize": 1260,
+          "encodedBodySize": 960,
+          "decodedBodySize": 960,
+          "duration": 3.5999999046325684
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1ckvzn7sfprko.js",
+          "initiatorType": "link",
+          "transferSize": 2335,
+          "encodedBodySize": 2035,
+          "decodedBodySize": 5584,
+          "duration": 3.5999999046325684
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1-nqmp1rl8kqt.js",
+          "initiatorType": "script",
+          "transferSize": 8951,
+          "encodedBodySize": 8651,
+          "decodedBodySize": 34043,
+          "duration": 4.599999904632568
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+          "initiatorType": "script",
+          "transferSize": 4240,
+          "encodedBodySize": 3940,
+          "decodedBodySize": 10030,
+          "duration": 5
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/3ysx6h2mxw917.js",
+          "initiatorType": "script",
+          "transferSize": 7033,
+          "encodedBodySize": 6733,
+          "decodedBodySize": 22019,
+          "duration": 5.299999713897705
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/0676eyxzkfkmm.js",
+          "initiatorType": "script",
+          "transferSize": 5139,
+          "encodedBodySize": 4839,
+          "decodedBodySize": 12419,
+          "duration": 5.699999809265137
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/34goyxc2anvlg.js",
+          "initiatorType": "script",
+          "transferSize": 45459,
+          "encodedBodySize": 45159,
+          "decodedBodySize": 163051,
+          "duration": 7
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/0bossxf30blzv.js",
+          "initiatorType": "script",
+          "transferSize": 33264,
+          "encodedBodySize": 32964,
+          "decodedBodySize": 94266,
+          "duration": 7.699999809265137
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/2yhk9aeug-aqs.js",
+          "initiatorType": "script",
+          "transferSize": 27418,
+          "encodedBodySize": 27118,
+          "decodedBodySize": 70153,
+          "duration": 7.799999713897705
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/216iyidhmrh3u.js",
+          "initiatorType": "script",
+          "transferSize": 72199,
+          "encodedBodySize": 71899,
+          "decodedBodySize": 229597,
+          "duration": 8.699999809265137
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/hero-Logo.svg",
+          "initiatorType": "css",
+          "transferSize": 2441,
+          "encodedBodySize": 2141,
+          "decodedBodySize": 5609,
+          "duration": 1.1000003814697266
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/hero-Vector1.svg",
+          "initiatorType": "css",
+          "transferSize": 630,
+          "encodedBodySize": 330,
+          "decodedBodySize": 1119,
+          "duration": 1
+        },
+        {
+          "name": "http://127.0.0.1:3002/fonts/FoundersGrotesk-Medium.woff2",
+          "initiatorType": "css",
+          "transferSize": 32428,
+          "encodedBodySize": 32128,
+          "decodedBodySize": 32128,
+          "duration": 0.5999999046325684
+        },
+        {
+          "name": "http://127.0.0.1:3002/?_rsc=yFVsRMOBl0ExDbOU",
+          "initiatorType": "fetch",
+          "transferSize": 720,
+          "encodedBodySize": 420,
+          "decodedBodySize": 1201,
+          "duration": 1.5999999046325684
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/3k-bjk35zs-4n.css",
+          "initiatorType": "link",
+          "transferSize": 6105,
+          "encodedBodySize": 5805,
+          "decodedBodySize": 27501,
+          "duration": 2
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/offerings-Union.svg",
+          "initiatorType": "link",
+          "transferSize": 761,
+          "encodedBodySize": 461,
+          "decodedBodySize": 461,
+          "duration": 1.299999713897705
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/offerings-EveryThreadToOneCentre11.svg",
+          "initiatorType": "link",
+          "transferSize": 1553,
+          "encodedBodySize": 1253,
+          "decodedBodySize": 5538,
+          "duration": 1.8999996185302734
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/offerings-RisingOffABase11.svg",
+          "initiatorType": "link",
+          "transferSize": 1591,
+          "encodedBodySize": 1291,
+          "decodedBodySize": 5921,
+          "duration": 1.799999713897705
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/offerings-RaysAroundACoreOneStillMissing11.svg",
+          "initiatorType": "link",
+          "transferSize": 1638,
+          "encodedBodySize": 1338,
+          "decodedBodySize": 5882,
+          "duration": 1.799999713897705
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/faq-IconArtwork.svg",
+          "initiatorType": "link",
+          "transferSize": 678,
+          "encodedBodySize": 378,
+          "decodedBodySize": 378,
+          "duration": 1.6999998092651367
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/faq-IconArtwork1.svg",
+          "initiatorType": "link",
+          "transferSize": 688,
+          "encodedBodySize": 388,
+          "decodedBodySize": 388,
+          "duration": 2.700000286102295
+        },
+        {
+          "name": "http://127.0.0.1:3002/?_rsc=7UVVAhdKCNMWqCfl",
+          "initiatorType": "fetch",
+          "transferSize": 7774,
+          "encodedBodySize": 7474,
+          "decodedBodySize": 45349,
+          "duration": 2.5
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/2_m-s9-bs7bdc.js",
+          "initiatorType": "script",
+          "transferSize": 8313,
+          "encodedBodySize": 8013,
+          "decodedBodySize": 20350,
+          "duration": 1.0999999046325684
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/0fs-e4b_t02lu.js",
+          "initiatorType": "script",
+          "transferSize": 30342,
+          "encodedBodySize": 30042,
+          "decodedBodySize": 94162,
+          "duration": 2
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/2jcw3z4io2glf.js",
+          "initiatorType": "script",
+          "transferSize": 165747,
+          "encodedBodySize": 165447,
+          "decodedBodySize": 612232,
+          "duration": 9
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector.svg",
+          "naturalWidth": 220,
+          "displayWidth": 196.234375,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector1.svg",
+          "naturalWidth": 105,
+          "displayWidth": 93.4375,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector2.svg",
+          "naturalWidth": 157,
+          "displayWidth": 140.203125,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector3.svg",
+          "naturalWidth": 238,
+          "displayWidth": 212.90625,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector4.svg",
+          "naturalWidth": 136,
+          "displayWidth": 121.640625,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector5.svg",
+          "naturalWidth": 207,
+          "displayWidth": 185.078125,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector6.svg",
+          "naturalWidth": 29,
+          "displayWidth": 26.21875,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector7.svg",
+          "naturalWidth": 301,
+          "displayWidth": 268.8125,
+          "complete": true
+        }
+      ],
+      "audioRequests": 0,
+      "interaction": "deployment change",
+      "interactionEvents": [
+        {
+          "startTime": 3877,
+          "duration": 64,
+          "name": "pointerover",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3877,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3877,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3877,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3877,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3877,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3877,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3877,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3877,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3877,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3877,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3877,
+          "duration": 64,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3877,
+          "duration": 64,
+          "name": "mouseover",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3877,
+          "duration": 64,
+          "name": "pointerdown",
+          "interactionId": 8260
+        },
+        {
+          "startTime": 3877,
+          "duration": 64,
+          "name": "mousedown",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3877.0999999046326,
+          "duration": 64,
+          "name": "pointerup",
+          "interactionId": 8260
+        },
+        {
+          "startTime": 3877.0999999046326,
+          "duration": 64,
+          "name": "mouseup",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3877.0999999046326,
+          "duration": 64,
+          "name": "click",
+          "interactionId": 8260
+        }
+      ],
+      "postInteractionTasks": [],
+      "idleWindowSeconds": 1.5,
+      "idleCpu": {
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0,
+        "ScriptDuration": 0.007554000000000002,
+        "TaskDuration": 0.022305999999999993
+      }
+    },
+    {
+      "mode": "desktop",
+      "route": "/company/contact",
+      "errors": [],
+      "perf": {
+        "lcp": [
+          {
+            "startTime": 320,
+            "duration": 0,
+            "name": "",
+            "element": "H1",
+            "elementText": "Let’s find yourstarting point."
+          }
+        ],
+        "shifts": [],
+        "tasks": [
+          {
+            "startTime": 39.30000019073486,
+            "duration": 255,
+            "name": "self"
+          }
+        ],
+        "events": []
+      },
+      "nav": {
+        "name": "http://127.0.0.1:3002/company/contact",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 295.2000002861023,
+        "navigationId": 5175,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.10000038146972656,
+        "domainLookupStart": 0.40000009536743164,
+        "domainLookupEnd": 0.5,
+        "connectStart": 0.5,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.6000003814697266,
+        "requestStart": 0.7000002861022949,
+        "responseStart": 4.5,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 4.5,
+        "responseEnd": 4.800000190734863,
+        "transferSize": 8709,
+        "encodedBodySize": 8409,
+        "decodedBodySize": 45307,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 13.900000095367432,
+        "domContentLoadedEventStart": 13.900000095367432,
+        "domContentLoadedEventEnd": 13.900000095367432,
+        "domComplete": 295.2000002861023,
+        "loadEventStart": 295.2000002861023,
+        "loadEventEnd": 295.2000002861023,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector.svg",
+          "initiatorType": "link",
+          "transferSize": 775,
+          "encodedBodySize": 475,
+          "decodedBodySize": 475,
+          "duration": 1.8000001907348633
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector1.svg",
+          "initiatorType": "link",
+          "transferSize": 1203,
+          "encodedBodySize": 903,
+          "decodedBodySize": 903,
+          "duration": 1.8000001907348633
+        },
+        {
+          "name": "http://127.0.0.1:3002/fonts/FoundersGrotesk-Regular.woff2",
+          "initiatorType": "link",
+          "transferSize": 31456,
+          "encodedBodySize": 31156,
+          "decodedBodySize": 31156,
+          "duration": 1.1999998092651367
+        },
+        {
+          "name": "http://127.0.0.1:3002/fonts/PPNeueMontreal-Variable.ttf",
+          "initiatorType": "link",
+          "transferSize": 199116,
+          "encodedBodySize": 198816,
+          "decodedBodySize": 403264,
+          "duration": 12.199999809265137
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector2.svg",
+          "initiatorType": "link",
+          "transferSize": 824,
+          "encodedBodySize": 524,
+          "decodedBodySize": 1068,
+          "duration": 2.5
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector3.svg",
+          "initiatorType": "link",
+          "transferSize": 941,
+          "encodedBodySize": 641,
+          "decodedBodySize": 1138,
+          "duration": 2.700000286102295
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector5.svg",
+          "initiatorType": "link",
+          "transferSize": 778,
+          "encodedBodySize": 478,
+          "decodedBodySize": 478,
+          "duration": 2.5999999046325684
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector4.svg",
+          "initiatorType": "link",
+          "transferSize": 1125,
+          "encodedBodySize": 825,
+          "decodedBodySize": 1509,
+          "duration": 3
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1xzhxmtf6oa8c.css",
+          "initiatorType": "link",
+          "transferSize": 5678,
+          "encodedBodySize": 5378,
+          "decodedBodySize": 25541,
+          "duration": 1.6000003814697266
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1devhxmpyrf7g.css",
+          "initiatorType": "link",
+          "transferSize": 19954,
+          "encodedBodySize": 19654,
+          "decodedBodySize": 111950,
+          "duration": 2.700000286102295
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector6.svg",
+          "initiatorType": "link",
+          "transferSize": 639,
+          "encodedBodySize": 339,
+          "decodedBodySize": 339,
+          "duration": 2.9000000953674316
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/footer-Vector7.svg",
+          "initiatorType": "link",
+          "transferSize": 1260,
+          "encodedBodySize": 960,
+          "decodedBodySize": 960,
+          "duration": 3
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1ckvzn7sfprko.js",
+          "initiatorType": "link",
+          "transferSize": 2335,
+          "encodedBodySize": 2035,
+          "decodedBodySize": 5584,
+          "duration": 3.6000003814697266
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/1-nqmp1rl8kqt.js",
+          "initiatorType": "script",
+          "transferSize": 8951,
+          "encodedBodySize": 8651,
+          "decodedBodySize": 34043,
+          "duration": 3.8000001907348633
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+          "initiatorType": "script",
+          "transferSize": 4240,
+          "encodedBodySize": 3940,
+          "decodedBodySize": 10030,
+          "duration": 4.199999809265137
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/3ysx6h2mxw917.js",
+          "initiatorType": "script",
+          "transferSize": 7033,
+          "encodedBodySize": 6733,
+          "decodedBodySize": 22019,
+          "duration": 4.699999809265137
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/43yp_3b8576nc.js",
+          "initiatorType": "script",
+          "transferSize": 6063,
+          "encodedBodySize": 5763,
+          "decodedBodySize": 15436,
+          "duration": 4.799999713897705
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/34goyxc2anvlg.js",
+          "initiatorType": "script",
+          "transferSize": 45459,
+          "encodedBodySize": 45159,
+          "decodedBodySize": 163051,
+          "duration": 6.899999618530273
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/0bossxf30blzv.js",
+          "initiatorType": "script",
+          "transferSize": 33264,
+          "encodedBodySize": 32964,
+          "decodedBodySize": 94266,
+          "duration": 7.5
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/216iyidhmrh3u.js",
+          "initiatorType": "script",
+          "transferSize": 72199,
+          "encodedBodySize": 71899,
+          "decodedBodySize": 229597,
+          "duration": 8.299999713897705
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/2yhk9aeug-aqs.js",
+          "initiatorType": "script",
+          "transferSize": 27418,
+          "encodedBodySize": 27118,
+          "decodedBodySize": 70153,
+          "duration": 7.299999713897705
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/hero-Logo.svg",
+          "initiatorType": "css",
+          "transferSize": 2441,
+          "encodedBodySize": 2141,
+          "decodedBodySize": 5609,
+          "duration": 1
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/hero-Vector1.svg",
+          "initiatorType": "css",
+          "transferSize": 630,
+          "encodedBodySize": 330,
+          "decodedBodySize": 1119,
+          "duration": 0.7999997138977051
+        },
+        {
+          "name": "http://127.0.0.1:3002/fonts/FoundersGrotesk-Medium.woff2",
+          "initiatorType": "css",
+          "transferSize": 32428,
+          "encodedBodySize": 32128,
+          "decodedBodySize": 32128,
+          "duration": 0.5999999046325684
+        },
+        {
+          "name": "http://127.0.0.1:3002/?_rsc=qtVddXLm4C2TUPPU",
+          "initiatorType": "fetch",
+          "transferSize": 720,
+          "encodedBodySize": 420,
+          "decodedBodySize": 1201,
+          "duration": 3
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/3k-bjk35zs-4n.css",
+          "initiatorType": "link",
+          "transferSize": 6105,
+          "encodedBodySize": 5805,
+          "decodedBodySize": 27501,
+          "duration": 2
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/offerings-EveryThreadToOneCentre11.svg",
+          "initiatorType": "link",
+          "transferSize": 1553,
+          "encodedBodySize": 1253,
+          "decodedBodySize": 5538,
+          "duration": 1.8000001907348633
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/offerings-Union.svg",
+          "initiatorType": "link",
+          "transferSize": 761,
+          "encodedBodySize": 461,
+          "decodedBodySize": 461,
+          "duration": 0.8000001907348633
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/offerings-RisingOffABase11.svg",
+          "initiatorType": "link",
+          "transferSize": 1591,
+          "encodedBodySize": 1291,
+          "decodedBodySize": 5921,
+          "duration": 1.8000001907348633
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/offerings-RaysAroundACoreOneStillMissing11.svg",
+          "initiatorType": "link",
+          "transferSize": 1638,
+          "encodedBodySize": 1338,
+          "decodedBodySize": 5882,
+          "duration": 2
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/faq-IconArtwork.svg",
+          "initiatorType": "link",
+          "transferSize": 678,
+          "encodedBodySize": 378,
+          "decodedBodySize": 378,
+          "duration": 1.8999996185302734
+        },
+        {
+          "name": "http://127.0.0.1:3002/assets/figma/faq-IconArtwork1.svg",
+          "initiatorType": "link",
+          "transferSize": 688,
+          "encodedBodySize": 388,
+          "decodedBodySize": 388,
+          "duration": 2
+        },
+        {
+          "name": "http://127.0.0.1:3002/?_rsc=cOrOjqC2Sx-bf2aO",
+          "initiatorType": "fetch",
+          "transferSize": 7774,
+          "encodedBodySize": 7474,
+          "decodedBodySize": 45349,
+          "duration": 2.5999999046325684
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/2_m-s9-bs7bdc.js",
+          "initiatorType": "script",
+          "transferSize": 8313,
+          "encodedBodySize": 8013,
+          "decodedBodySize": 20350,
+          "duration": 0.9000000953674316
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/0fs-e4b_t02lu.js",
+          "initiatorType": "script",
+          "transferSize": 30342,
+          "encodedBodySize": 30042,
+          "decodedBodySize": 94162,
+          "duration": 2
+        },
+        {
+          "name": "http://127.0.0.1:3002/_next/static/chunks/2jcw3z4io2glf.js",
+          "initiatorType": "script",
+          "transferSize": 165747,
+          "encodedBodySize": 165447,
+          "decodedBodySize": 612232,
+          "duration": 9.100000381469727
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector.svg",
+          "naturalWidth": 220,
+          "displayWidth": 196.234375,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector1.svg",
+          "naturalWidth": 105,
+          "displayWidth": 93.4375,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector2.svg",
+          "naturalWidth": 157,
+          "displayWidth": 140.203125,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector3.svg",
+          "naturalWidth": 238,
+          "displayWidth": 212.90625,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector4.svg",
+          "naturalWidth": 136,
+          "displayWidth": 121.640625,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector5.svg",
+          "naturalWidth": 207,
+          "displayWidth": 185.078125,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector6.svg",
+          "naturalWidth": 29,
+          "displayWidth": 26.21875,
+          "complete": true
+        },
+        {
+          "src": "http://127.0.0.1:3002/assets/figma/footer-Vector7.svg",
+          "naturalWidth": 301,
+          "displayWidth": 268.8125,
+          "complete": true
+        }
+      ],
+      "audioRequests": 0,
+      "interaction": "prepare local email draft",
+      "interactionEvents": [
+        {
+          "startTime": 3861.1000003814697,
+          "duration": 16,
+          "name": "beforeinput",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3861.2000002861023,
+          "duration": 16,
+          "name": "input",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3864.1000003814697,
+          "duration": 16,
+          "name": "beforeinput",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3864.2000002861023,
+          "duration": 16,
+          "name": "input",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3891.7000002861023,
+          "duration": 88,
+          "name": "pointerover",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3891.7000002861023,
+          "duration": 88,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3891.7000002861023,
+          "duration": 88,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3891.7000002861023,
+          "duration": 88,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3891.7000002861023,
+          "duration": 88,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3891.7000002861023,
+          "duration": 88,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3891.7000002861023,
+          "duration": 88,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3891.7000002861023,
+          "duration": 88,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3891.7000002861023,
+          "duration": 88,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3891.7000002861023,
+          "duration": 88,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3891.7000002861023,
+          "duration": 88,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3891.7000002861023,
+          "duration": 88,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3891.7000002861023,
+          "duration": 88,
+          "name": "mouseover",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3891.7000002861023,
+          "duration": 88,
+          "name": "pointerdown",
+          "interactionId": 1726
+        },
+        {
+          "startTime": 3891.7000002861023,
+          "duration": 88,
+          "name": "mousedown",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3891.800000190735,
+          "duration": 88,
+          "name": "pointerup",
+          "interactionId": 1726
+        },
+        {
+          "startTime": 3891.800000190735,
+          "duration": 88,
+          "name": "mouseup",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3891.800000190735,
+          "duration": 88,
+          "name": "click",
+          "interactionId": 1726
+        },
+        {
+          "startTime": 3927.2000002861023,
+          "duration": 56,
+          "name": "pointerout",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3927.2000002861023,
+          "duration": 56,
+          "name": "pointerleave",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3927.2000002861023,
+          "duration": 56,
+          "name": "pointerleave",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3927.2000002861023,
+          "duration": 56,
+          "name": "pointerleave",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3927.2000002861023,
+          "duration": 56,
+          "name": "pointerover",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3927.2000002861023,
+          "duration": 56,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3927.2000002861023,
+          "duration": 56,
+          "name": "pointerenter",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3927.2000002861023,
+          "duration": 56,
+          "name": "mouseout",
+          "interactionId": 0
+        },
+        {
+          "startTime": 3927.2000002861023,
+          "duration": 56,
+          "name": "mouseover",
+          "interactionId": 0
+        }
+      ],
+      "postInteractionTasks": [],
+      "idleWindowSeconds": 1.5,
+      "idleCpu": {
+        "LayoutDuration": 0,
+        "RecalcStyleDuration": 0,
+        "ScriptDuration": 0.0026750000000000003,
+        "TaskDuration": 0.007682999999999995
+      }
+    }
+  ]
+}

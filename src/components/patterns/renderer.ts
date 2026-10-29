@@ -1,6 +1,6 @@
 import { buildPatternModel } from './model';
 import { blurShader, compositeShader, maskShader, vertexShader } from './shaders';
-import type { PatternOptions } from './types';
+import type { PatternOptions, PatternResolution } from './types';
 
 type Target = { framebuffer: WebGLFramebuffer; textures: WebGLTexture[] };
 
@@ -76,12 +76,12 @@ export function createPatternRenderer(canvas: HTMLCanvasElement) {
     else gl!.texImage2D(gl!.TEXTURE_2D, 0, floatTargets ? gl!.RGBA16F : gl!.RGBA8, width, height, 0, gl!.RGBA, floatTargets ? gl!.HALF_FLOAT : gl!.UNSIGNED_BYTE, null);
     return value;
   }
-  function target(size: number) {
+  function target(width: number, height = width) {
     const framebuffer = gl!.createFramebuffer();
     if (!framebuffer) throw new Error('Could not allocate pattern framebuffer.');
     const value: Target = { framebuffer, textures: [] }; targets.push(value);
     gl!.bindFramebuffer(gl!.FRAMEBUFFER, framebuffer);
-    const pair = [texture(size, size), texture(size, size)];
+    const pair = [texture(width, height), texture(width, height)];
     pair.forEach((value, i) => gl!.framebufferTexture2D(gl!.FRAMEBUFFER, gl!.COLOR_ATTACHMENT0 + i, gl!.TEXTURE_2D, value, 0));
     gl!.drawBuffers([gl!.COLOR_ATTACHMENT0, gl!.COLOR_ATTACHMENT1]);
     if (gl!.checkFramebufferStatus(gl!.FRAMEBUFFER) !== gl!.FRAMEBUFFER_COMPLETE) throw new Error('Pattern framebuffer is incomplete.');
@@ -97,7 +97,7 @@ export function createPatternRenderer(canvas: HTMLCanvasElement) {
     removed.forEach(value => { if (keep.includes(value)) textures.push(value); else gl!.deleteTexture(value); });
   }
 
-  function render(options: PatternOptions, width: number, height: number, pixelRatio = 1, retain = false) {
+  function render(options: PatternOptions, width: number, height: number, pixelRatio = 1, retain = false, resolution: PatternResolution = 'balanced') {
     if (gl!.isContextLost()) return;
     const started = performance.now();
     releaseTargets();
@@ -106,9 +106,21 @@ export function createPatternRenderer(canvas: HTMLCanvasElement) {
     try {
       const model = buildPatternModel(options);
       const maxTexture = gl!.getParameter(gl!.MAX_TEXTURE_SIZE) as number;
-      const dpr = retain ? Math.min(1.5, Math.max(1, pixelRatio), 1024 / Math.max(width, height)) : Math.min(2, Math.max(1, pixelRatio));
+      const display = retain && resolution === 'display';
+      const maxBuffer = gl!.getParameter(gl!.MAX_RENDERBUFFER_SIZE) as number;
+      const viewport = gl!.getParameter(gl!.MAX_VIEWPORT_DIMS) as Int32Array;
+      const dpr = display
+        ? Math.min(2, Math.max(1, pixelRatio), Math.sqrt(12_000_000 / (width * height)), Math.min(6144, maxBuffer, maxTexture, viewport[0]) / width, Math.min(6144, maxBuffer, maxTexture, viewport[1]) / height)
+        : retain ? Math.min(1.5, Math.max(1, pixelRatio), 1024 / Math.max(width, height)) : Math.min(2, Math.max(1, pixelRatio));
       canvas.width = Math.max(1, Math.round(width * dpr)); canvas.height = Math.max(1, Math.round(height * dpr));
       const size = Math.min(2048, maxTexture, Math.ceil(Math.max(canvas.width, canvas.height) * 840 / 800));
+      // Stretch-fit linear fields need no square intermediate. Allocate the same
+      // maximum mask area as 2048², with more samples along the wide slit axis.
+      const rectangular = display && options.fit === 'stretch' && options.kind !== 'concentric';
+      const desiredWidth = canvas.width * 840 / 800, desiredHeight = canvas.height * 840 / 800;
+      const maskScale = Math.min(1, Math.sqrt(2048 ** 2 / (desiredWidth * desiredHeight)), maxTexture / desiredWidth, maxTexture / desiredHeight);
+      const maskWidth = rectangular ? Math.max(1, Math.floor(desiredWidth * maskScale)) : size;
+      const maskHeight = rectangular ? Math.max(1, Math.floor(desiredHeight * maskScale)) : size;
       const gradientData = new Float32Array(128 * model.gradients.length * 4);
       model.gradients.forEach((gradient, row) => {
         const start = row * 128 * 4;
@@ -125,11 +137,11 @@ export function createPatternRenderer(canvas: HTMLCanvasElement) {
       model.masks.forEach((mask, i) => {
         metadata.set([offset, mask.shapes.length, mask.opacity, mask.alphaOnly ? 1 : 0], i * 4);
         // Figma's blur radius is the diameter-like UI value; Gaussian sigma is half.
-        sigma[i] = mask.blur * 0.5 * size / 840 * (options.blurScale ?? 1);
+        sigma[i] = mask.blur * 0.5 * maskWidth / 840 * (options.blurScale ?? 1);
         offset += mask.shapes.length;
       });
-      const first = target(size);
-      gl!.viewport(0, 0, size, size); gl!.useProgram(masks);
+      const first = target(maskWidth, maskHeight);
+      gl!.viewport(0, 0, maskWidth, maskHeight); gl!.useProgram(masks);
       gl!.bindFramebuffer(gl!.FRAMEBUFFER, first.framebuffer);
       bind(masks, 'uGradients', gradientTexture, 0); bind(masks, 'uShapes', shapeTexture, 1);
       gl!.uniform4fv(uniform(masks, 'uMasks[0]'), metadata);
@@ -137,15 +149,15 @@ export function createPatternRenderer(canvas: HTMLCanvasElement) {
       gl!.uniform1i(uniform(masks, 'uConcentric'), model.kind === 'concentric' ? 1 : 0);
       gl!.uniform1f(uniform(masks, 'uCount'), model.count);
       gl!.uniform1f(uniform(masks, 'uPitch'), model.ringPitch);
-      gl!.uniform1f(uniform(masks, 'uFieldSize'), size);
+      gl!.uniform1f(uniform(masks, 'uFieldSize'), maskWidth);
       gl!.drawArrays(gl!.TRIANGLES, 0, 3);
       let finalMask = first;
       if (sigma.some(value => value > 0)) {
-        const horizontal = target(size), vertical = target(size);
+        const horizontal = target(maskWidth, maskHeight), vertical = target(maskWidth, maskHeight);
         gl!.useProgram(blur);
-        for (const [input, output, dx, dy] of [[first, horizontal, 1 / size, 0], [horizontal, vertical, 0, 1 / size]] as const) {
+        for (const [input, output, dx, dy] of [[first, horizontal, 1 / maskWidth, 0], [horizontal, vertical, 0, 1 / maskHeight]] as const) {
           // Figma's layer blur is isotropic even when the instance is stretched.
-          const blurAspect = options.fit === 'stretch' && dy ? width / height : 1;
+          const blurAspect = dy ? (options.fit === 'stretch' ? width / height : 1) * maskHeight / maskWidth : 1;
           gl!.uniform4fv(uniform(blur, 'uSigmaA'), sigma.slice(0, 4).map(value => value * blurAspect));
           gl!.uniform4fv(uniform(blur, 'uSigmaB'), sigma.slice(4, 8).map(value => value * blurAspect));
           gl!.bindFramebuffer(gl!.FRAMEBUFFER, output.framebuffer);
@@ -180,7 +192,9 @@ export function createPatternRenderer(canvas: HTMLCanvasElement) {
       canvas.dataset.renderMs = (performance.now() - started).toFixed(2);
       canvas.dataset.prepareCount = String(Number(canvas.dataset.prepareCount ?? 0) + 1);
       if (retain) { retained = finalMask.textures; prepared = true; }
-      canvas.dataset.retainedMaskBytes = String(retain ? size * size * 2 * (floatTargets ? 8 : 4) : 0);
+      canvas.dataset.resolution = resolution;
+      canvas.dataset.maskSize = `${maskWidth}x${maskHeight}`;
+      canvas.dataset.retainedMaskBytes = String(retain ? maskWidth * maskHeight * 2 * (floatTargets ? 8 : 4) : 0);
     } finally {
       // Animation retains only the two final masks, never gradients or blur scratch targets.
       releaseTargets(retained);
@@ -188,8 +202,8 @@ export function createPatternRenderer(canvas: HTMLCanvasElement) {
   }
   return {
     render,
-    prepare(options: PatternOptions, width: number, height: number, pixelRatio = 1) {
-      render(options, width, height, pixelRatio, true);
+    prepare(options: PatternOptions, width: number, height: number, pixelRatio = 1, resolution: PatternResolution = 'balanced') {
+      render(options, width, height, pixelRatio, true, resolution);
     },
     drawMotion(kind: number, phase: number, intensity: number) {
       if (!prepared) return;

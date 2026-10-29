@@ -1,0 +1,277 @@
+Industries
+/
+Retail & e-commerce
+Help every shopper. Like your best store associate.
+One agent across chat, phone, SMS and email that recommends the right products from your live catalogue, answers order and return questions, and brings shoppers back, inside your store and support systems.
+Book a demo
+→
+Try the chat agent
+Built for your rules
+Recommendations come only from what’s in stock at your prices, and marketing texts go only to shoppers who opted in.
+Shopper helped
+6 sec
+Boots in the cart · arriving Thursday
+Handled
+Connected during your build
+Shopify
+BigCommerce
+Salesforce Commerce Cloud
+NetSuite
+Klaviyo
+Zendesk
+Your shipping carriers
+Your phone system
+What it brings
+Where your brand feels it.
+Grows revenue
+Sell more online
+Every shopper gets help like your best store associate would give, with products from your live catalogue, day or night.
+1
+Need understood
+Asks one or two questions, nothing more.
+2
+Live stock checked
+Finds what’s in stock in their size.
+3
+Products recommended
+A few options, a reason for each.
+4
+Added to cart
+Adds the choice and answers delivery questions.
+Connected to Shopify, your catalogue, Klaviyo and your web chat during your build.
+Frees store staff
+Keep staff on the floor
+Store calls are answered with that store’s hours and stock, so nobody leaves a customer to pick up the phone.
+1
+Store line answered
+Answers with that store’s hours and stock.
+2
+Stock checked
+Checks item, size and color at that store.
+3
+Item held
+Holds it for pickup or books a fitting.
+4
+Shopper confirmed
+Texts the hold details and store address.
+Connected to NetSuite, your store inventory, your phone system and SMS during your build.
+Keeps customers loyal
+Resolve orders faster
+“Where’s my order?” and exchanges are handled in seconds, under your return policy, with exceptions sent to your team.
+1
+Order found
+From the customer’s email or order number.
+2
+Tracking checked
+Gives the real delivery date from the carrier.
+3
+Exchange started
+Under your policy. Exceptions go to your team.
+4
+Ticket closed
+Logged and closed in your help desk.
+Connected to Shopify, Zendesk, your carriers and your email during your build.
+VD
+Visitor from Denver
+New shopper · first visit
+Web chat · 10:20pm
+Waterproof hiking boots for a trip next week, wide fit, under $180.
+Happy to help. What size do you wear, and is it mostly trail or rocky ground?
+✓ Answered in 6 sec
+Live stock checked
+Size
+10.5 wide
+Waterproof, under $180
+✓
+3 styles in stock
+Ships by
+✓
+Tomorrow
+Recommended
+Ridgeline Mid
+$159 · wide toe box, waterproof
+Goes with
+Merino hiking socks · $18
+In cart · 10:22pm
+Boots + wool socks · $177
+Arrives Thursday, before the trip
+The result
+Boots and socks in the cart from a 10pm chat, arriving Thursday.
+JL
+Jordan Lee
+Caller · Northgate Mall store
+Phone · Saturday 11:05am
+Do you have the green rain jacket in medium?
+Let me check Northgate for you. Is that the Cascade rain jacket?
+✓ Answered on the first ring
+Stock checked · Northgate Mall
+Item
+Cascade rain jacket, green
+Medium
+✓
+2 in stock
+Price
+$129
+Held
+Held for pickup · until 6pm today
+Northgate Mall store, front counter
+JL
+Jordan Lee
+Pickup today
+Text · 11:07am
+Hi Jordan, your green Cascade rain jacket (M) is held at Northgate Mall until 6pm today. Suite 112, near the food court.
+Perfect, see you around 4.
+The result
+Jacket held for pickup from a call the store didn’t have to take.
+EW
+Erin Walsh
+Order #10482 · shipped Mon
+Email · 7:48am
+My boots haven’t arrived, and I think I need a half size up.
+Hi Erin, I’ve found order #10482. Checking where it is now.
+✓ Order found
+Tracking checked
+Shipped
+Monday
+Status
+✓
+Out for delivery today
+Expected
+By 7pm
+Exchange started
+Size
+10.5 → 11
+Return policy
+✓
+Within 30 days, unworn
+Return label
+✓
+Emailed to Erin
+Zendesk
+Ticket closed, conversation logged
+Size 11 ships when the return is scanned
+The result
+Delivery confirmed and a size exchange started in one email.
+Illustrative examples. Connections and rules are set up during your build.
+Before and after
+Same shoppers. More orders.
+Example brand, 30,000 customer conversations a month. Illustrative figures.
+Shoppers who get product help online
+Today
+Few
+With the agent
+Every one
+Order status questions handled by staff
+Today
+All
+With the agent
+Almost none
+Questions answered after hours
+Today
+Next day
+With the agent
+Seconds
+Store calls answered
+Today
+When free
+With the agent
+Every one
+More shoppers buy on the visit they came in on
+, and your team handles the conversations that need a person.
+Win back your database
+Your past buyers. Your next orders.
+The agent reaches shoppers who opted in, at the right moment, across SMS and email.
+Time to reorder
+Customers who buy the same things again hear from you when they’re likely to run out.
+What goes with it
+Recent buyers get suggestions that go with what they bought.
+Lapsed customers
+Customers who haven’t bought in a while get a check-in and an offer you approve.
+For the owner
+Ask the business anything.
+The Intelligence agent reads every conversation and call, and answers your questions in plain English.
+Find what’s slipping
+Products shoppers ask for that you don’t have, and questions that stop orders.
+See what’s working
+Sales helped, returns avoided and top questions, by store and channel.
+Approve the next step
+It suggests the follow-up; you say go, and the agent does it.
+See the Intelligence agent
+↗
+What are shoppers asking for that we don’t have?
+Three items came up in more than 40 conversations this month with nothing in stock to offer.
+Trail runners · wide fit
+64 asks · out of stock
+Cascade rain jacket · XS
+48 asks · out of stock
+Kids’ snow boots · size 13
+41 asks · out of stock
+Tell opted-in askers when each is back
+Waits for your go-ahead
+Controls and testing
+Your brand. Your rules.
+Controls
+Only what’s in stock
+Recommendations come from your live catalogue at your prices. No invented discounts.
+Opt-in marketing only
+Marketing texts go only to shoppers who opted in, inside quiet hours.
+Your return policy, exactly
+Returns and exchanges follow your policy. Exceptions go to your team.
+Full audit trail
+Every conversation, recommendation and return is logged.
+Testing
+Tested on your catalogue
+Product questions, sizing, returns and angry customers, before launch.
+Checked on every conversation
+Each conversation is scored for accuracy, tone and policy.
+Reported weekly
+Sales helped, questions resolved and handovers, by store and channel.
+People in the loop
+You choose what the agent does alone and what waits for your team.
+Book a demo
+See it on your catalogue.
+In 30 minutes you’ll see
+A shopper question answered with real products from your catalogue, live.
+An order status question and an exchange handled end to end.
+How it connects to your store and support systems, and what your first build would cover.
+Name
+*
+Company
+*
+Business email
+*
+Phone
+(optional)
+Company size
+*
+Choose one
+Under 200 staff
+200–1,000 staff
+1,001–5,000 staff
+Over 5,000 staff
+Your role
+(optional)
+Optional. You can call or text me about this request at the number above.
+Calls and texts may be automated or by an AI agent. Consent isn’t a
+condition of purchase; reply STOP to opt out.
+Website
+Book my demo
+We’ll only use this to set up your demo.
+See our privacy policy.
+Send these details by email
+FAQ
+Questions retailers ask.
+Explore the Trust Center
+↗
+Does the agent recommend from our real catalogue?
+Yes. It reads your live catalogue, stock and prices, and recommends only what you can sell. It never invents a product or a discount.
+Which commerce and support systems does it work with?
+We connect to the systems you run, such as Shopify, BigCommerce, Salesforce Commerce Cloud, NetSuite, Klaviyo or Zendesk, and to your carriers and phones. The connections are built as part of your build.
+Can it handle returns and exchanges?
+Yes, following your return policy exactly. Anything outside the policy goes to your team with the details.
+Does it work for our stores as well as online?
+Yes. One agent answers your website, store phones, SMS and email, with each store’s hours and stock.
+Is it secure?
+AtomsAI comes from the team behind JustCall. It is SOC 2 Type II and HIPAA compliant, and every conversation is logged.
+How long does it take to go live?
+It depends on the workflows and the systems we connect. In the demo we look at yours and agree what the first build covers.

@@ -1,0 +1,73 @@
+Home
+/
+Resources
+/
+Blog
+/
+Write the evals before the prompt
+measure AI accuracy
+test AI before launch
+AI evals
+Write the evals before the prompt
+How do you test an AI agent before launch?
+An eval suite isn't QA you add at the end. It's the specification — and the only thing that lets a CXO answer 'is it working?' with a number instead of an opinion.
+AtomsAI editorial
+8 July 2026
+3 min read
+On this page
+Why write the evals before the prompt?
+What should you test beyond accuracy?
+Why do evals matter to the business?
+Questions buyers ask
+Written by
+DO
+Daniel Okafor
+Engineering lead, evals and reliability
+Builds the labelled set before the prompt, and keeps a cost ceiling in CI on every workflow we hand over.
+Illustrative author profile. Attribution and biography are fictional.
+Share
+LinkedIn
+X
+Copy link
+To test an AI agent before launch, build the eval set first: a labelled sample of real inputs and correct outcomes from the people who do the work today. It becomes the specification, gives you a pass rate instead of an opinion, and lets you set the threshold yourself. Then add tests for cost, bad input and drift.
+Most teams build the thing, then try to measure it. That order is why so many systems get quietly switched off.
+Why write the evals before the prompt?
+An eval suite written first is a specification. Before we ingest a document or write a prompt, we sit with practitioners and collect the real inputs: the questions a support team gets asked most, recent exceptions from an AP mailbox, past underwriting decisions with their outcomes. Labelling that set is small work next to the build, and it decides the whole design. Sorting exceptions this way can show that most of them fall into a few mechanical buckets, which changes what gets built.
+It also changes what “good” means. Without a labelled set, quality is whatever the last demo felt like. With one, you have a pass rate, and you can set the threshold yourself. That threshold belongs to the customer, not the vendor. A decision workflow may need a very high pass rate, while a drafting workflow that a person reviews can start lower. Both can be right, because the cost of being wrong is very different.
+What should you test beyond accuracy?
+Cost per run, with a ceiling.
+A system that works but costs more per item than the work it replaces is a system finance will kill. Put the ceiling in CI.
+Malformed and adversarial input.
+Missing fields, wrong currencies, duplicate submissions, a document in an unexpected language. Each becomes a test and a documented behaviour.
+Drift.
+Scores move — model updates, document changes, seasonal input shifts. An alarm on a moving score is what separates a system you trust from one you hope about.
+Why do evals matter to the business?
+The commercial argument matters more than the engineering one. A CXO cannot defend a system they can’t measure. Hand them a scoreboard — accuracy, cost, latency, per workflow, per month — and the conversation about expanding to the next workflow takes ten minutes.
+Evals from day one. Not later.
+The pass rate is also what decides how much an agent can do on its own; see
+how much autonomy an agent should have
+. For where evals sit in a build, see
+how we work
+.
+Questions buyers ask
+What is an AI eval?
+An eval is a test that scores an AI system’s output against known correct answers from your own work. A set of them, built from real inputs, tells you the pass rate before anything goes live.
+How do you test an AI agent before launch?
+Collect a labelled set of real inputs from the team that does the work today, write the evals against it before writing prompts, and add tests for cost per run, malformed input and drift.
+What accuracy should an AI agent have before launch?
+It depends on what a mistake costs, and you set the threshold, not the vendor. A decision workflow needs a much higher pass rate than a drafting workflow that a person reviews.
+How do you measure AI accuracy after launch?
+Keep running the same evals and put an alarm on the score. Model updates, document changes and seasonal shifts all move it.
+Without a labelled set, quality is whatever the last demo felt like. With one you have a pass rate — and the threshold belongs to the customer, not the vendor.
+Write the evals before the prompt
+Previous post
+How much autonomy should an agent have?
+Next post
+The demo was never the hard part
+Read the blog
+The posts argue it. The studies price it.
+The same workflows from the other end: what the baseline was, what we built, and what moved once it was live.
+Read the case studies
+Three illustrative workflows, with the baseline, the build and the denominator.
+See how we build
+Five steps, four to eight weeks, and you own what comes out.

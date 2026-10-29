@@ -1,0 +1,10 @@
+
+> atomsai@0.1.0 lint
+> eslint .
+
+
+/Users/petrknoll/Documents/GitHub/atomsai/docs/redesign/qa/responsiveness/interactions.mjs
+  33:118  warning  'menuData' is defined but never used  @typescript-eslint/no-unused-vars
+
+✖ 1 problem (0 errors, 1 warning)
+

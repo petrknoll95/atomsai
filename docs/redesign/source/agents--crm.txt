@@ -1,0 +1,503 @@
+AtomsAI / CRM agent
+Your CRM, always right.
+Without anyone typing.
+Updates your CRM from every call, email and meeting, keeps it free of duplicates and gaps, and flags deals at risk. Your reps sell, and your forecast reflects what buyers actually said.
+Contact us
+See what it does
+Built for sales and revenue operations teams on Salesforce, HubSpot and Zoho.
+Cobalt Systems · Greenfield Foods deal
+Live
+Call ended ·
+Jordan with Greenfield Foods, 24 min
+Buyer said
+“Budget is approved for Q1. Maria, our CFO, signs off. Send us a proposal.”
+Field
+Before
+After
+Stage
+Discovery
+Proposal
+Close date
+Dec 15
+Jan 31
+Next step
+Blank
+Send proposal by Friday
+Decision maker
+Blank
+Maria Lopez, CFO
+CRM updated 30 seconds after the call
+Jordan didn't type a thing · close date moved, so the forecast was updated too
+01 / Listen
+02 / Update
+03 / Clean
+04 / Flag risk
+Why it matters
+What it does
+Sources & stack
+Pipeline
+By industry
+Controls & evals
+Pricing
+Why it matters
+Your forecast is only as good as your CRM.
+Reps are busy selling, so calls go unlogged and fields go out of date.
+By the time a deal slips, the CRM still says it's on track.
+Reps hate data entry
+Every call means minutes of typing, so most calls never make it into the CRM.
+Duplicates and gaps
+Three records for one company, and no job title for the person who signs.
+Deals slip unseen
+The warning was on a call last week. The CRM never heard it.
+Your buyers tell your reps everything.
+Your CRM hears almost none of it.
+Same team. A CRM you can trust.
+What a 20-rep sales team's CRM looks like, kept by hand and with a CRM agent
+Kept by hand
+4 in 10
+calls logged in the CRM
+5 in 10
+deals with a clear next step
+5
+hours a week each rep spends on the CRM
+With the CRM agent
+All
+calls logged in the CRM
+9 in 10
+deals with a clear next step
+Under 1
+hours a week each rep spends on the CRM
+80 hours a week back for selling
+, and a forecast built on what buyers actually said.
+Illustrative
+What it does
+Logs it, cleans it, flags the risk.
+One agent for your whole CRM.
+Updates the CRM after every call.
+Stage, close date, people and next steps, filled in from what the buyer actually said.
+Example · what the buyer said, and the field it changed
+“Budget is approved for Q1.”
+Close date → Jan 31
+“Maria, our CFO, signs off.”
+Decision maker → Maria Lopez
+“Send us a proposal.”
+Stage → Proposal
+Logs every touch.
+Calls, emails and meetings, on the right deal.
+Call · 24 min
+Summary and next step
+Email to Maria
+Attached to the deal
+Zoom demo
+Notes and attendees
+Flags deals at risk.
+Silence, competitors, moving dates: spotted from calls and emails, with the reason, before the deal slips.
+Example · deals at risk this week, and why
+Atlas Freight · $120k
+No reply in 14 days
+Nova Retail · $38k
+Competitor mentioned twice
+Pike & Co · $54k
+Close date moved 3 times
+Merges duplicates.
+One company, one record, with the history kept.
+Orbit Media
+Created by Jordan
+Orbit Media Ltd
+From a web form
+orbitmedia.com
+From an email
+Merged into one company
+Fills the gaps.
+Titles, phones and company details, from signatures and calls.
+Job title
+CFO · from her email signature
+Phone
++1 312 555 0187 · same
+Company size
+220 staff · from the call
+Keeps the forecast honest.
+Checks each deal's stage against what was said, and tells the manager when they don't match.
+To Sam · Sales manager
+Deal
+Pike & Co · $54k
+Rep says
+Commit
+Agent says
+Best case: no decision maker met yet
+Briefs every call.
+Who's joining, what was said and what was promised, before each call.
+Brief · Thursday, Greenfield Foods
+Maria (CFO) joins. Budget approved for Q1. They mentioned Flowdesk. You
+promised the proposal by Friday.
+Sent to Jordan an hour before the call
+A CRM you can trust, and time back to sell.
+Every call logged, a clean database, deals flagged before they slip, and a forecast built on what buyers said.
+Example · one quarter, one 20-rep sales team
+100%
+of calls and emails logged
+4 hrs
+a week back for every rep
+±8%
+forecast accuracy, from ±25%
+1,200
+duplicate records merged
+Sources, capabilities and integrations
+Every call, email and meeting.
+Written into your CRM.
+Reads calls, video meetings, email and calendars, and updates Salesforce, HubSpot or Zoho, field by field, with a link back to where it heard it.
+5
+Sources in. One clean CRM.
+Calls
+Video meetings
+Email
+Calendar
+Chat
+Secure by default
+SOC 2 Type II, HIPAA and GDPR. Your data is never used to train models.
+CRM updates today
+00:00 → 23:59
+Always on
+Every call and email, for every rep, every day, including the ones nobody would have logged.
+Hands over to your team
+The rep or their manager, with the deal, what changed and why.
+When it hands over
+As per your rules
+A big deal is at risk
+It isn't sure of a field
+Two records conflict
+AI agent
+Field to confirm
+→
+JP
+Jordan P.
+Account executive
+Deal at risk
+→
+SK
+Sam K.
+Sales manager
+Records conflict
+→
+PM
+Priya M.
+Revenue operations
+Handover note
+· deal, what changed, where it was heard
+At home in your stack
+Salesforce, HubSpot, Zoho, Pipedrive and Microsoft Dynamics. Gmail and Outlook. Google Calendar and Outlook Calendar. Zoom, Google Meet and Microsoft Teams. JustCall for calls. Slack for alerts. Anything else through APIs and webhooks.
+Scoped access, approved per action
+Pipeline
+Every deal.
+Up to date, with the risks in view.
+See what changed today, where it came from, and which deals need attention.
+Pipeline · today
+Where it came from
+Illustrative
+Open deals
+184
+Updated today
+61
+At risk
+9
+Fields filled
+1,240
+Greenfield Foods · $64k
+Call
+Moved to Proposal · CFO added
+Updated
+Atlas Freight · $120k
+Email
+No reply in 14 days
+At risk
+Nova Retail · $38k
+Call
+Email
+Mentioned a competitor twice
+At risk
+Kite Health · $22k
+Call
+Amount unclear on the call
+Rep to confirm
+Orbit Media
+CRM
+3 records for one company
+Merged
+1 field waiting for the rep
+Review
+Hold updates
+One view of every change
+Every field the agent updated, with the call or email it came from.
+Big changes need a yes
+Amounts and stages can wait for the rep to confirm, if you prefer.
+Undo anything
+Every change and merge can be reversed in one click.
+Review or hold
+Check the fields it wasn't sure of, or hold updates for a deal your team is handling.
+Sales team on the phone?
+There's a play for that.
+Pick your industry to see what the agent logs, cleans and flags.
+B2B software
+2
+Real estate
+2
+Insurance brokers
+2
+Financial advisory
+2
+Manufacturing & distribution
+2
+Recruiting & staffing
+2
+Auto dealers
+2
+Education admissions
+2
+Medical devices
+2
+B2B software
+Long deals with many people, and a forecast nobody trusts.
+Update
+Demo call to stage change
+Video
+CRM
+Trigger
+A demo ends with “send us pricing”.
+Agent
+Moves the stage, adds the buyers, sets the next step.
+Result
+Deal up to date without the rep
+Risk
+Champion went quiet
+Email
+Trigger
+The main contact hasn't replied in two weeks.
+Agent
+Flags the deal and suggests another contact.
+Result
+Deal rescued before quarter end
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Real estate
+Agents talk to dozens of buyers a week and log almost none of it.
+Update
+Viewing feedback
+Voice
+Trigger
+A buyer calls after a viewing.
+Agent
+Logs what they liked, budget and timing.
+Result
+Better matches next time
+Hygiene
+Same buyer, three records
+CRM
+Trigger
+A buyer enquires through three portals.
+Agent
+Merges them into one contact.
+Result
+One history, one agent
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Insurance brokers
+Renewal dates, policies and notes scattered across emails.
+Update
+Quote call logged
+Voice
+Trigger
+A client asks for a quote on a new van.
+Agent
+Logs the vehicle, cover wanted and renewal date.
+Result
+Quote ready, renewal tracked
+Fill
+Missing renewal dates
+Email
+Trigger
+Policies have no renewal date in the CRM.
+Agent
+Finds them in policy emails and fills them in.
+Result
+No renewal missed
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Financial advisory
+Advisers must record every client conversation, and it eats their week.
+Update
+Client review notes
+Video
+Trigger
+A yearly review meeting ends.
+Agent
+Writes the notes, goals and actions into the CRM.
+Result
+Compliant record, no typing
+Next step
+Promised follow-up
+Email
+Trigger
+The adviser promised a pension summary.
+Agent
+Adds the task with a due date.
+Result
+Sent on time
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Manufacturing & distribution
+Reps sell by phone and email, and orders stall in the CRM.
+Update
+Order volumes from a call
+Voice
+Trigger
+A buyer mentions next quarter's volumes.
+Agent
+Updates the opportunity amount and date.
+Result
+Forecast matches reality
+Risk
+Price pushback
+Email
+Trigger
+A buyer says a competitor quoted lower.
+Agent
+Flags the deal and alerts the sales manager.
+Result
+Counter-offer sent in time
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Recruiting & staffing
+Recruiters juggle clients and candidates, and records go stale fast.
+Update
+Client call to new job
+Voice
+Trigger
+A client describes a new role on a call.
+Agent
+Creates the job with salary, skills and start date.
+Result
+Job open the same day
+Hygiene
+Stale candidates
+CRM
+Trigger
+Candidate records are a year old.
+Agent
+Flags them for a quick check-in.
+Result
+Fresh, usable database
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Auto dealers
+Leads come from everywhere, and follow-ups get missed.
+Update
+Test drive feedback
+Voice
+Trigger
+A buyer calls after a test drive.
+Agent
+Logs the model, trade-in and budget.
+Result
+Right offer, sent fast
+Risk
+Hot lead gone cold
+SMS
+Trigger
+A buyer hasn't replied in a week.
+Agent
+Flags them to the sales manager.
+Result
+Lead saved
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Education admissions
+Counsellors talk to hundreds of applicants and log very little.
+Update
+Applicant call
+Voice
+Trigger
+A student asks about a course and funding.
+Agent
+Logs the course, intake and funding question.
+Result
+Right follow-up sent
+Hygiene
+Duplicate applicants
+CRM
+Trigger
+A student applies twice with different emails.
+Agent
+Merges the records.
+Result
+One application, one counsellor
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Medical devices
+Long sales to hospitals, with many people involved.
+Update
+Hospital meeting notes
+Video
+Trigger
+A meeting with a hospital buying committee ends.
+Agent
+Logs who attended, concerns and next steps.
+Result
+Everyone on the deal up to date
+Risk
+Budget cycle missed
+Email
+Trigger
+The hospital's budget deadline is near.
+Agent
+Flags the deal and suggests a next step.
+Result
+Deal kept in this year's budget
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Which fields update on their own, and which wait for the rep, is up to you.
+Controls and evals
+Every change traceable.
+Nothing you can't undo.
+Controls
+Only the fields you choose
+You decide which fields it can update, and which need the rep to confirm.
+Every change explained
+Each update links to the moment in the call or email it came from.
+Merges are reversible
+Nothing is deleted. Merged records keep their full history.
+Your data stays yours
+Access is limited to your CRM, and nothing is used to train models.
+Evals
+Tested on your past calls
+Compared with what your reps entered, field by field, before launch.
+Re-tested on every change
+A saved test set re-runs whenever fields or rules change.
+Field accuracy tracked
+Every rep correction is counted, so accuracy is measured, not assumed.
+Forecast checked
+Risk flags are compared with deals that actually slipped, every quarter.
+Pricing
+Custom built.
+Priced for your requirements.
+No fixed tiers. Every CRM agent is built around your journeys, channels and systems, so we price it the same way: after we understand what you need.
+What shapes the price
+Number of reps and deals
+Sources: calls, meetings, email, calendar
+CRM and the fields it updates
+Data clean-up needed at the start
+Risk and forecast rules
+Always included
+Design and build with our team
+A one-time clean-up of your CRM
+Testing on your past calls before launch
+Weekly reviews and tuning after go-live
+Security: SOC 2 Type II, HIPAA, GDPR
+Tell us what you need.
+Share your journeys, channels and systems. We'll come back with a scope and a
+price.
+Contact us
+Bring last quarter's pipeline.
+We'll show you what your CRM missed.
+Share a sample of deals and their calls. We'll show which fields were wrong, which deals were at risk, and how early the agent would have flagged them.
+Contact us
+Pricing

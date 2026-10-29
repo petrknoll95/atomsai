@@ -1,0 +1,940 @@
+[
+  {
+    "engine": "chromium",
+    "route": "/approach",
+    "width": 320,
+    "errors": [],
+    "scrollWidth": 320,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": []
+  },
+  {
+    "engine": "chromium",
+    "route": "/capabilities/voice",
+    "width": 320,
+    "errors": [],
+    "scrollWidth": 320,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "",
+        "w": 184,
+        "h": 20
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/industries/healthcare",
+    "width": 320,
+    "errors": [],
+    "scrollWidth": 320,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Industries / Healthcare",
+        "w": 134.359375,
+        "h": 16.796875
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/trust",
+    "width": 320,
+    "errors": [],
+    "scrollWidth": 320,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "security@atomsai.com",
+        "w": 134.765625,
+        "h": 19.59375
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/company/contact",
+    "width": 320,
+    "errors": [],
+    "scrollWidth": 320,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Privacy policy ↗",
+        "w": 78.984375,
+        "h": 16.796875
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/approach",
+    "width": 390,
+    "errors": [],
+    "scrollWidth": 390,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": []
+  },
+  {
+    "engine": "chromium",
+    "route": "/capabilities/voice",
+    "width": 390,
+    "errors": [],
+    "scrollWidth": 390,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "",
+        "w": 246,
+        "h": 20
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/industries/healthcare",
+    "width": 390,
+    "errors": [],
+    "scrollWidth": 390,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Industries / Healthcare",
+        "w": 134.359375,
+        "h": 16.796875
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/trust",
+    "width": 390,
+    "errors": [],
+    "scrollWidth": 390,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "See how we build approval rules into the workflow ↗",
+        "w": 304.96875,
+        "h": 19.59375
+      },
+      {
+        "text": "security@atomsai.com",
+        "w": 134.765625,
+        "h": 19.59375
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/company/contact",
+    "width": 390,
+    "errors": [],
+    "scrollWidth": 390,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Privacy policy ↗",
+        "w": 78.984375,
+        "h": 16.796875
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/approach",
+    "width": 768,
+    "errors": [],
+    "scrollWidth": 768,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": []
+  },
+  {
+    "engine": "chromium",
+    "route": "/capabilities/voice",
+    "width": 768,
+    "errors": [],
+    "scrollWidth": 768,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "",
+        "w": 256,
+        "h": 20
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/industries/healthcare",
+    "width": 768,
+    "errors": [],
+    "scrollWidth": 768,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Industries / Healthcare",
+        "w": 152.734375,
+        "h": 19.59375
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/trust",
+    "width": 768,
+    "errors": [],
+    "scrollWidth": 768,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "See how we build approval rules into the workflow ↗",
+        "w": 304.96875,
+        "h": 19.59375
+      },
+      {
+        "text": "security@atomsai.com",
+        "w": 134.765625,
+        "h": 19.59375
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/company/contact",
+    "width": 768,
+    "errors": [],
+    "scrollWidth": 768,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Privacy policy ↗",
+        "w": 78.984375,
+        "h": 16.796875
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/approach",
+    "width": 1024,
+    "errors": [],
+    "scrollWidth": 1024,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": []
+  },
+  {
+    "engine": "chromium",
+    "route": "/capabilities/voice",
+    "width": 1024,
+    "errors": [],
+    "scrollWidth": 1024,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "",
+        "w": 387.15625,
+        "h": 20
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/industries/healthcare",
+    "width": 1024,
+    "errors": [],
+    "scrollWidth": 1024,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Industries / Healthcare",
+        "w": 152.734375,
+        "h": 19.59375
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/trust",
+    "width": 1024,
+    "errors": [],
+    "scrollWidth": 1024,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "See how we build approval rules into the workflow ↗",
+        "w": 304.96875,
+        "h": 19.59375
+      },
+      {
+        "text": "security@atomsai.com",
+        "w": 134.765625,
+        "h": 19.59375
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/company/contact",
+    "width": 1024,
+    "errors": [],
+    "scrollWidth": 1024,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Privacy policy ↗",
+        "w": 78.984375,
+        "h": 16.796875
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/approach",
+    "width": 1440,
+    "errors": [],
+    "scrollWidth": 1440,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": []
+  },
+  {
+    "engine": "chromium",
+    "route": "/capabilities/voice",
+    "width": 1440,
+    "errors": [],
+    "scrollWidth": 1440,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "",
+        "w": 574.03125,
+        "h": 20
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/industries/healthcare",
+    "width": 1440,
+    "errors": [],
+    "scrollWidth": 1440,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Industries / Healthcare",
+        "w": 152.734375,
+        "h": 19.59375
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/trust",
+    "width": 1440,
+    "errors": [],
+    "scrollWidth": 1440,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "See how we build approval rules into the workflow ↗",
+        "w": 304.96875,
+        "h": 19.59375
+      },
+      {
+        "text": "security@atomsai.com",
+        "w": 134.765625,
+        "h": 19.59375
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/company/contact",
+    "width": 1440,
+    "errors": [],
+    "scrollWidth": 1440,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Privacy policy ↗",
+        "w": 78.984375,
+        "h": 16.796875
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/approach",
+    "width": 1920,
+    "errors": [],
+    "scrollWidth": 1920,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": []
+  },
+  {
+    "engine": "chromium",
+    "route": "/capabilities/voice",
+    "width": 1920,
+    "errors": [],
+    "scrollWidth": 1920,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "",
+        "w": 658.5625,
+        "h": 20
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/industries/healthcare",
+    "width": 1920,
+    "errors": [],
+    "scrollWidth": 1920,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Industries / Healthcare",
+        "w": 152.734375,
+        "h": 19.59375
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/trust",
+    "width": 1920,
+    "errors": [],
+    "scrollWidth": 1920,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "See how we build approval rules into the workflow ↗",
+        "w": 304.96875,
+        "h": 19.59375
+      },
+      {
+        "text": "security@atomsai.com",
+        "w": 134.765625,
+        "h": 19.59375
+      }
+    ]
+  },
+  {
+    "engine": "chromium",
+    "route": "/company/contact",
+    "width": 1920,
+    "errors": [],
+    "scrollWidth": 1920,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Privacy policy ↗",
+        "w": 78.984375,
+        "h": 16.796875
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/approach",
+    "width": 320,
+    "errors": [],
+    "scrollWidth": 320,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": []
+  },
+  {
+    "engine": "webkit",
+    "route": "/capabilities/voice",
+    "width": 320,
+    "errors": [],
+    "scrollWidth": 320,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "",
+        "w": 184,
+        "h": 20
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/industries/healthcare",
+    "width": 320,
+    "errors": [],
+    "scrollWidth": 320,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Industries / Healthcare",
+        "w": 134.359375,
+        "h": 16.796875
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/trust",
+    "width": 320,
+    "errors": [],
+    "scrollWidth": 320,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "security@atomsai.com",
+        "w": 134.765625,
+        "h": 19.59375
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/company/contact",
+    "width": 320,
+    "errors": [],
+    "scrollWidth": 320,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Privacy policy ↗",
+        "w": 78.96875,
+        "h": 16.796875
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/approach",
+    "width": 390,
+    "errors": [],
+    "scrollWidth": 390,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": []
+  },
+  {
+    "engine": "webkit",
+    "route": "/capabilities/voice",
+    "width": 390,
+    "errors": [],
+    "scrollWidth": 390,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "",
+        "w": 246,
+        "h": 20
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/industries/healthcare",
+    "width": 390,
+    "errors": [],
+    "scrollWidth": 390,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Industries / Healthcare",
+        "w": 134.359375,
+        "h": 16.796875
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/trust",
+    "width": 390,
+    "errors": [],
+    "scrollWidth": 390,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "See how we build approval rules into the workflow ↗",
+        "w": 305.484375,
+        "h": 19.59375
+      },
+      {
+        "text": "security@atomsai.com",
+        "w": 134.765625,
+        "h": 19.59375
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/company/contact",
+    "width": 390,
+    "errors": [],
+    "scrollWidth": 390,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Privacy policy ↗",
+        "w": 78.96875,
+        "h": 16.796875
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/approach",
+    "width": 768,
+    "errors": [],
+    "scrollWidth": 768,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": []
+  },
+  {
+    "engine": "webkit",
+    "route": "/capabilities/voice",
+    "width": 768,
+    "errors": [],
+    "scrollWidth": 768,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "",
+        "w": 256,
+        "h": 20
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/industries/healthcare",
+    "width": 768,
+    "errors": [],
+    "scrollWidth": 768,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Industries / Healthcare",
+        "w": 152.734375,
+        "h": 19.59375
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/trust",
+    "width": 768,
+    "errors": [],
+    "scrollWidth": 768,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "See how we build approval rules into the workflow ↗",
+        "w": 305.484375,
+        "h": 19.59375
+      },
+      {
+        "text": "security@atomsai.com",
+        "w": 134.765625,
+        "h": 19.59375
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/company/contact",
+    "width": 768,
+    "errors": [],
+    "scrollWidth": 768,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Privacy policy ↗",
+        "w": 78.96875,
+        "h": 16.796875
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/approach",
+    "width": 1024,
+    "errors": [],
+    "scrollWidth": 1024,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": []
+  },
+  {
+    "engine": "webkit",
+    "route": "/capabilities/voice",
+    "width": 1024,
+    "errors": [],
+    "scrollWidth": 1024,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "",
+        "w": 387.15625,
+        "h": 20
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/industries/healthcare",
+    "width": 1024,
+    "errors": [],
+    "scrollWidth": 1024,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Industries / Healthcare",
+        "w": 152.734375,
+        "h": 19.59375
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/trust",
+    "width": 1024,
+    "errors": [],
+    "scrollWidth": 1024,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "See how we build approval rules into the workflow ↗",
+        "w": 305.484375,
+        "h": 19.59375
+      },
+      {
+        "text": "security@atomsai.com",
+        "w": 134.765625,
+        "h": 19.59375
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/company/contact",
+    "width": 1024,
+    "errors": [],
+    "scrollWidth": 1024,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Privacy policy ↗",
+        "w": 78.96875,
+        "h": 16.796875
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/approach",
+    "width": 1440,
+    "errors": [],
+    "scrollWidth": 1440,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": []
+  },
+  {
+    "engine": "webkit",
+    "route": "/capabilities/voice",
+    "width": 1440,
+    "errors": [],
+    "scrollWidth": 1440,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "",
+        "w": 574.03125,
+        "h": 20
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/industries/healthcare",
+    "width": 1440,
+    "errors": [],
+    "scrollWidth": 1440,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Industries / Healthcare",
+        "w": 152.734375,
+        "h": 19.59375
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/trust",
+    "width": 1440,
+    "errors": [],
+    "scrollWidth": 1440,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "See how we build approval rules into the workflow ↗",
+        "w": 305.484375,
+        "h": 19.59375
+      },
+      {
+        "text": "security@atomsai.com",
+        "w": 134.765625,
+        "h": 19.59375
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/company/contact",
+    "width": 1440,
+    "errors": [],
+    "scrollWidth": 1440,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Privacy policy ↗",
+        "w": 78.96875,
+        "h": 16.796875
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/approach",
+    "width": 1920,
+    "errors": [],
+    "scrollWidth": 1920,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": []
+  },
+  {
+    "engine": "webkit",
+    "route": "/capabilities/voice",
+    "width": 1920,
+    "errors": [],
+    "scrollWidth": 1920,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "",
+        "w": 658.5625,
+        "h": 20
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/industries/healthcare",
+    "width": 1920,
+    "errors": [],
+    "scrollWidth": 1920,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Industries / Healthcare",
+        "w": 152.734375,
+        "h": 19.59375
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/trust",
+    "width": 1920,
+    "errors": [],
+    "scrollWidth": 1920,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "See how we build approval rules into the workflow ↗",
+        "w": 305.484375,
+        "h": 19.59375
+      },
+      {
+        "text": "security@atomsai.com",
+        "w": 134.765625,
+        "h": 19.59375
+      }
+    ]
+  },
+  {
+    "engine": "webkit",
+    "route": "/company/contact",
+    "width": 1920,
+    "errors": [],
+    "scrollWidth": 1920,
+    "unloaded": [],
+    "outside": [],
+    "smallControls": [
+      {
+        "text": "Privacy policy ↗",
+        "w": 78.96875,
+        "h": 16.796875
+      }
+    ]
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "name": "chromium",
+    "width": 1600,
+    "height": 900,
+    "centered": true,
+    "animated": true,
+    "interaction": true,
+    "reveal": true,
+    "reducedMotion": true,
+    "errors": []
+  },
+  {
+    "name": "chromium",
+    "width": 390,
+    "height": 844,
+    "centered": true,
+    "animated": true,
+    "interaction": true,
+    "reveal": true,
+    "reducedMotion": true,
+    "errors": []
+  },
+  {
+    "name": "chromium",
+    "width": 320,
+    "height": 568,
+    "centered": true,
+    "animated": true,
+    "interaction": true,
+    "reveal": true,
+    "reducedMotion": true,
+    "errors": []
+  },
+  {
+    "name": "webkit",
+    "width": 1600,
+    "height": 900,
+    "centered": true,
+    "animated": true,
+    "interaction": true,
+    "reveal": true,
+    "reducedMotion": true,
+    "errors": []
+  },
+  {
+    "name": "webkit",
+    "width": 390,
+    "height": 844,
+    "centered": true,
+    "animated": true,
+    "interaction": true,
+    "reveal": true,
+    "reducedMotion": true,
+    "errors": []
+  },
+  {
+    "name": "webkit",
+    "width": 320,
+    "height": 568,
+    "centered": true,
+    "animated": true,
+    "interaction": true,
+    "reveal": true,
+    "reducedMotion": true,
+    "errors": []
+  }
+]

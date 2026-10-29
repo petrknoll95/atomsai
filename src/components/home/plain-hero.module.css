@@ -1,0 +1,13 @@
+.surface {
+  --hero-theme-mix: 0%;
+  --hero-dot-color: var(--palette-deep-green);
+  --hero-dot-opacity: .65;
+  transition: color .24s ease;
+  background: color-mix(in srgb, var(--palette-paper) var(--hero-theme-mix), var(--palette-forest-shade));
+}
+.surface [data-variant='stars'] {
+  --hero-surface: transparent;
+  color: inherit;
+}
+.surface[data-theme='light'] { --color-foreground: var(--palette-forest-shade); }
+@media (prefers-reduced-motion: reduce) { .surface { transition: none; } }

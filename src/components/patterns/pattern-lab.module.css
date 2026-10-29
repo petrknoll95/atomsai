@@ -28,7 +28,7 @@
 .controls { border: 1px solid var(--color-border); border-radius: 20px; padding: 24px; background: var(--color-background); }
 .controlsHeading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 28px; }
 .panelHeading { font-size: 25px; line-height: 1; }
-.reset { font-size: 12px; color: var(--color-muted-foreground); text-decoration: underline; text-underline-offset: 3px; padding-block: 5px; }
+.reset { font-size: 12px; color: var(--color-muted-foreground); padding-block: 5px; }
 .reset:hover { color: var(--color-foreground); }
 .group { min-width: 0; border: 0; border-top: 1px solid var(--color-border); padding-top: 20px; margin-top: 24px; }
 .group legend { padding-right: 12px; font-size: 12px; font-weight: 475; font-variation-settings: 'wght' 475, 'ital' 100; }

@@ -1,0 +1,484 @@
+AtomsAI / Rep assist
+Make your reps answer right,
+on every call.
+Listens to every call and shows your reps the right answer, the right reply to an objection and the lines they must read, as the customer speaks. Then it writes the notes.
+Contact us
+See what it does
+Built for sales and service teams who spend the day on the phone.
+Shield Car Insurance · Jordan on a call
+Live call
+Inbound ·
+quote for a 2021 Civic
+Caller
+That's more than I pay now. I'll probably stay where I am.
+Price objection · try this
+Ask if they have a second car. Multi-car saves 12%, which brings the quote under
+what they pay now.
+Jordan
+Do you have another car at home? Insuring both with us saves 12%.
+Caller
+My wife's car, yes. Okay, what would that come to?
+Policy bought · 2 cars
+Prompt used at 04:12 · disclosures read · notes written to the CRM
+01 / Listen
+02 / Prompt
+03 / Check
+04 / Write it up
+Why it matters
+What it does
+Channels & stack
+Live calls
+By industry
+Controls & evals
+Pricing
+Why it matters
+Your reps talk to customers all day, and every call is a chance to win or lose one.
+The answer they need is in a document, a playbook or a colleague's head.
+They usually find it after the call, when it's too late.
+New reps take months
+It takes a long time to learn every product, rule and objection, and customers notice.
+Required lines get missed
+A forgotten disclosure turns a good sale into a complaint or a fine.
+Notes eat the day
+Minutes after every call go on typing up what happened, instead of the next customer.
+Your best rep can't be on every call.
+Their answers can.
+Same calls. More sales.
+What 100 sales calls turn into, reps on their own and with rep assist
+On their own
+100
+sales calls
+4 in 10
+price objections answered well
+18
+calls that end in a sale
+With rep assist
+100
+sales calls
+8 in 10
+price objections answered well
+26
+calls that end in a sale
+8 more sales from every 100 calls
+, because every rep handles objections like your best one.
+Illustrative
+What it does
+A coach in every rep's ear.
+On every call, as it happens.
+Prompts in the moment.
+Hears what the customer says and shows the rep what to say next, within seconds.
+Example · what the rep sees, as the caller speaks
+Caller · 04:08
+“That's more than I pay now.”
+Price objection
+Ask about a second car. Multi-car saves 12%.
+Shown 2 seconds after the caller said it
+Answers any question.
+From your policies, product docs and price lists, with the source.
+Does it cover a rental car if mine is in the shop?
+Yes, up to $40 a day for 30 days on the Full cover plan.
+From the policy guide, page 12
+Handles objections like your best rep.
+Learns how your top performers answer each objection, and shows every rep the replies that win.
+Two ways your best reps answer “it's too expensive”
+Show the saving
+Multi-car brings it to $96 a month, under their current $104.
+Show the value
+Accident forgiveness is included. Their current plan doesn't have it.
+Learned from calls that ended in a sale
+Keeps every call compliant.
+Tracks the lines that must be read, and reminds the rep before it's too late.
+Call recording notice
+Read
+Cancellation terms
+Read
+Price is a quote, not final
+Not read yet · reminder shown
+Writes the notes for you.
+Summary, next step and CRM fields, filled in when the call ends.
+Summary
+Bought Full cover for 2 cars
+Next step
+Send documents by email today
+CRM
+Deal won · $1,152 a year
+Suggests the next step.
+A follow-up, a quote or a booking, so no call ends without one.
+Before the call ends
+Suggested next step
+Book a call for Friday to add the second car.
+Booked in the rep's calendar
+Calls in a supervisor.
+When a call goes wrong, a team lead can listen in or join.
+To Dana · Team lead
+Call
+Ben K. · cancellation, 8 minutes
+Why
+Customer upset, asked twice to cancel
+Ready
+Listen in or join the call
+More sales, faster ramp, no missed lines.
+Every rep performs closer to your best, new reps are ready sooner, and nobody types notes after a call.
+Example · one quarter, one sales and service team
++44%
+more sales from the same calls
+4 weeks
+for new reps to reach target, down from 10
+99%
+of required disclosures read
+0 min
+spent on notes after each call
+Channels, capabilities and integrations
+Every call and chat.
+Connected to what your reps use.
+Works on phone calls, video meetings and live chat, inside the tools your reps already have open. Notes and next steps land in your CRM.
+4
+Channels. One coach.
+Phone calls
+Video meetings
+Live chat
+Email follow-ups
+Secure by default
+SOC 2 Type II, HIPAA and GDPR. Your data is never used to train models.
+Prompts shown today
+00:00 → 23:59
+Always on
+On every call, for every rep, in every shift, including the new starter on their first day.
+Hands over to your team
+The right team lead, with the live call, what was said and why it was flagged.
+When it hands over
+As per your rules
+The customer is upset
+A big deal is at risk
+A required line was missed
+AI agent
+Customer upset
+→
+DR
+Dana R.
+Team lead
+Big deal at risk
+→
+SK
+Sam K.
+Sales manager
+Compliance miss
+→
+PM
+Priya M.
+QA lead
+Handover note
+· live call, transcript so far, why it was flagged
+At home in your stack
+JustCall and other dialers. Zoom, Google Meet and Microsoft Teams. Salesforce, HubSpot and Zoho. Your knowledge base, playbooks and price lists. Anything else through APIs and webhooks.
+Scoped access, approved per action
+Live calls
+Every call.
+One view for your team leads.
+See every call as it happens, and which ones need a supervisor.
+Live calls · now
+Sales and service
+Illustrative
+Calls live
+24
+Prompts shown today
+1,312
+Prompts used
+68%
+Disclosures read
+99%
+Jordan P. · Quote · 2021 Civic
+06:40 on the call
+Prompt used · sale
+Aisha M. · Claim question
+03:15 on the call
+On track
+Ben K. · Cancellation call
+08:02 on the call
+Customer upset
+Rosa T. · Renewal
+05:28 on the call
+Disclosure missed
+Leo D. · New quote
+01:50 on the call
+On track
+2 calls need a supervisor
+Listen in
+Join the call
+One view of every live call
+Who is on a call, how it's going, and which prompts were used.
+Compliance on every call
+Required lines tracked live, with misses flagged before the call ends.
+Voice built in-house
+Our own speech engine hears the call fast enough to prompt in time.
+Listen in or join
+A team lead can listen without the customer knowing, or join the call to help.
+Reps on the phone?
+There's a play for that.
+Pick your industry to see what your reps would see on their screen.
+Insurance
+2
+Credit & lending
+2
+B2B software
+2
+Real estate
+2
+Healthcare
+2
+Telecom & utilities
+2
+Retail & e-commerce
+2
+Auto dealers
+2
+Education
+2
+Insurance
+Reps must quote, compare cover and read disclosures, all on one call.
+Objection
+“It's more than I pay now”
+Voice
+Trigger
+A caller pushes back on price.
+Agent
+Suggests the multi-car discount and what's included.
+Result
+Policy bought
+Compliance
+Disclosures on every call
+Voice
+Trigger
+A rep is about to take payment.
+Agent
+Reminds them to read the required terms first.
+Result
+Every sale compliant
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Credit & lending
+Rates, terms and rules change often, and reps must get them exactly right.
+Answer
+“What would my rate be?”
+Voice
+Trigger
+A caller asks about rates.
+Agent
+Shows today's approved rate table for their profile.
+Result
+Right rate, first time
+Compliance
+Required lending disclosures
+Voice
+Trigger
+The rep moves to the application.
+Agent
+Checks each required statement is read.
+Result
+Clean audit
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+B2B software
+Demos throw up technical questions and competitor comparisons.
+Battlecard
+“We're also looking at a competitor”
+Video
+Trigger
+A prospect names a competitor.
+Agent
+Shows the battlecard: where you win and what to ask.
+Result
+Deal kept on track
+Answer
+Security question
+Video
+Trigger
+A buyer asks about SSO or data residency.
+Agent
+Shows the approved answer and the doc to send.
+Result
+No “I'll get back to you”
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Real estate
+Agents juggle listings, prices and buyer questions on every call.
+Answer
+Listing details mid-call
+Voice
+Trigger
+A buyer asks about HOA fees.
+Agent
+Shows the fee and what it covers from the listing.
+Result
+Viewing booked
+Next step
+Book the viewing
+Voice
+Trigger
+The buyer sounds interested.
+Agent
+Suggests open slots and books one.
+Result
+Viewing in the calendar
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Healthcare
+Patient calls mix scheduling, billing and coverage, with privacy rules on top.
+Answer
+Coverage question
+Voice
+Trigger
+A patient asks if a procedure is covered.
+Agent
+Shows their plan's coverage and the copay.
+Result
+Answered on the first call
+Compliance
+Identity check first
+Voice
+Trigger
+A caller asks about their bill.
+Agent
+Reminds the rep to verify identity first.
+Result
+Privacy protected
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Telecom & utilities
+Cancellation calls are where customers are won or lost.
+Save
+“I want to cancel”
+Voice
+Trigger
+A customer asks to cancel.
+Agent
+Shows the offers they qualify for and how to present them.
+Result
+Customer kept
+Answer
+Outage question
+Voice
+Chat
+Trigger
+A caller asks why the service is down.
+Agent
+Shows the live outage note and fix time.
+Result
+Short, calm call
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Retail & e-commerce
+Agents handle orders, returns and product questions across chat and phone.
+Upsell
+Add-on that fits
+Chat
+Voice
+Trigger
+A customer orders running shoes.
+Agent
+Suggests socks that go with them.
+Result
+Bigger order
+Answer
+Return rules
+Chat
+Trigger
+A customer asks about a return after 30 days.
+Agent
+Shows the policy and what the agent can offer.
+Result
+Fair answer, fast
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Auto dealers
+Sales calls need stock, finance and trade-in answers fast.
+Answer
+Is it in stock?
+Voice
+Trigger
+A caller asks about a model and colour.
+Agent
+Shows live stock at nearby lots.
+Result
+Test drive booked
+Objection
+Monthly payment too high
+Voice
+Trigger
+A buyer balks at the payment.
+Agent
+Suggests a longer term or a lower trim.
+Result
+Deal saved
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Education
+Admissions teams answer the same course and fees questions all day.
+Answer
+Fees and scholarships
+Voice
+Chat
+Trigger
+A parent asks about scholarships.
+Agent
+Shows the ones the student qualifies for.
+Result
+Application started
+Next step
+Book a campus visit
+Voice
+Trigger
+A student sounds keen.
+Agent
+Suggests a visit date and books it.
+Result
+Visit booked
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Prompts come only from content you approve: your playbooks, policies and best calls.
+Controls and evals
+Your playbook.
+Your rep stays in charge.
+Controls
+Only approved content
+Prompts and answers come from the playbooks, policies and prices you choose.
+The rep decides
+Rep assist suggests. It never speaks to the customer or acts on its own.
+Recording consent
+Calls are only heard where consent is given, as your rules require.
+Full audit trail
+Every prompt shown and used is logged with the call.
+Evals
+Tested on your calls
+Replayed against your recorded calls before launch, to check prompts are right and on time.
+Re-tested on every change
+A saved test set re-runs whenever playbooks or prices change.
+Rated by your reps
+Reps mark prompts useful or not, and the weak ones get fixed.
+Measured against your goals
+Conversion, ramp time and compliance, reviewed with you weekly.
+Pricing
+Custom built.
+Priced for your requirements.
+No fixed tiers. Every rep assist is built around your journeys, channels and systems, so we price it the same way: after we understand what you need.
+What shapes the price
+Number of reps and calls
+Channels: phone, video, chat
+Playbooks, policies and price lists
+CRM and dialer
+Compliance rules to track
+Always included
+Design and build with our team
+Playbook set-up from your best calls
+Testing on your recorded calls before launch
+Weekly reviews and tuning after go-live
+Security: SOC 2 Type II, HIPAA, GDPR
+Tell us what you need.
+Share your journeys, channels and systems. We'll come back with a scope and a
+price.
+Contact us
+Bring 20 recorded calls.
+We'll show you what your reps would have seen.
+Share a handful of calls, won and lost. We'll show the prompts rep assist would have given, and where they'd have changed the outcome.
+Contact us
+Pricing

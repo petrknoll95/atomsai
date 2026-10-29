@@ -2,6 +2,8 @@ import type { CSSProperties } from 'react';
 
 export type PatternKind = 'drift' | 'offset' | 'single-band' | 'concentric';
 export type PatternMode = 'light' | 'dark';
+/** Card-sized motion uses a lower budget; large backgrounds opt into display resolution. */
+export type PatternResolution = 'balanced' | 'display';
 /** Encoded Display P3 channels, in the same 0–1 space as the Figma document. */
 export type PatternColor = readonly [number, number, number];
 export type PatternColors = Partial<Record<'base' | 'upper' | 'lower' | 'highlight' | 'reflection' | 'reflectionBase' | 'field1' | 'field2' | 'field3' | 'overlay' | 'shade', PatternColor>>;

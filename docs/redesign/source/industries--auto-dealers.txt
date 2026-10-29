@@ -1,0 +1,271 @@
+Industries
+/
+Auto dealers
+Answer every lead. Book the test drive.
+One agent across chat, phone, SMS and email that works every sales and service lead, books test drives and service appointments into your calendars, and brings customers back, inside your CRM and DMS.
+Book a demo
+→
+Try the chat agent
+Built for your rules
+Texts and calls follow consent and quiet hours, and prices, trade values and financing terms come only from what your managers approve.
+Internet lead answered
+8 sec
+Test drive booked with Marcus · Mon 5:30pm
+Handled
+Connected during your build
+CDK Global
+Reynolds and Reynolds
+Tekion
+VinSolutions
+DealerSocket
+Elead
+Your website inventory
+Your phone system
+What it brings
+Where your dealership feels it.
+Sells more cars
+Book more test drives
+Every internet lead gets a reply in seconds, nights and weekends included, and a test drive booked while the shopper is still looking.
+1
+Answered in seconds
+Replies on their channel and confirms the car.
+2
+Trade and timing captured
+Asks about the trade-in and when they’re buying.
+3
+Test drive booked
+Books a salesperson and requests a trade appraisal.
+4
+CRM updated
+Lead, vehicle and trade-in land in your CRM.
+Connected to VinSolutions, your website inventory, Google Calendar and SMS during your build.
+Keeps bays full
+Complete more repair orders
+Every service call is answered and booked into a real advisor and bay, even when your advisors are busy.
+1
+Call answered
+Answers the line and finds the customer’s vehicle.
+2
+Right slot found
+Matches the job to the right advisor and bay.
+3
+Repair order booked
+Books the visit and opens the repair order.
+4
+Customer kept posted
+Confirms the visit and answers “is it ready?”
+Connected to CDK Global, Tekion, your phone system and SMS during your build.
+Keeps customers loyal
+Bring customers back
+Customers due for service or near a lease end hear from you first, with a reminder or offer your managers approved.
+1
+Moment spotted
+Finds service due and leases or loans ending.
+2
+Customer reached
+Sends an approved reminder to opted-in customers.
+3
+Visit booked
+Books service, or sales for a lease end.
+4
+History logged
+Sales and service see the same history.
+Connected to CDK Global, DealerSocket, email and SMS during your build.
+CN
+Chris Nolan
+Internet lead · 2022 RAV4
+Text · Sun 6:10pm
+Is the 2022 RAV4 on your site still there? Could I drive it tomorrow?
+It is, Chris, the XLE is on the lot. Will you be trading anything in?
+✓ Answered in 8 sec
+Trade and timing
+Vehicle
+✓
+2022 RAV4 XLE, in stock
+Trade-in
+2016 Civic, 92k miles
+Buying
+This month
+Best time
+Weekdays after 5pm
+Booked
+Test drive · Mon 5:30pm
+with Marcus · trade appraisal requested
+VinSolutions
+Lead created, vehicle and trade logged
+Appraisal request sent to the used car manager
+The result
+Test drive and trade appraisal booked from a Sunday-night text.
+AG
+Alicia Grant
+Service customer · 2019 Camry
+Call · 8:12am
+My check engine light is on. Can you look at it this week?
+Sure, Alicia. I see your 2019 Camry. Let me find you a time.
+✓ Answered on the first ring
+Right slot found
+Vehicle
+✓
+2019 Camry, 61k miles
+Job
+Diagnostic, check engine light
+Advisor
+✓
+Dev
+Bay open
+✓
+Wed 8:00am
+Booked
+Repair order #55210 · Wed 8:00am
+with advisor Dev, concern noted
+SMS
+Confirmation text sent
+Status updates come from the repair order
+The result
+Repair order opened from a call before the advisors were free.
+Customers to reach, next 90 days
+Maya Chen · 2022 Highlander
+Lease ends Jan 26 · service due
+Tom Reilly · 2020 F-150
+Service due Nov 12
+R. Patel · 2021 Accord
+Loan ends Dec 3
+MC
+Maya Chen
+Lease ends Jan 26 · 2022 Highlander
+Text · 10:00am
+Hi Maya, your Highlander lease ends Jan 26 and its 30k service is due. Want to handle both in one visit?
+What are my options?
+Booked
+Lease-end visit · Sat 10:00am
+with sales, 30k service booked the same visit
+DealerSocket
+Outcome logged for sales and service
+Both teams see the same history
+The result
+Lease-end customer booked with sales and service on one visit.
+Illustrative examples. Connections and rules are set up during your build.
+Before and after
+Same leads. More cars sold and serviced.
+Example group, 2,500 sales leads and 6,000 service calls a month. Illustrative figures.
+Time to first reply on an internet lead
+Today
+1 hour
+With the agent
+Seconds
+Weekend and after-hours leads
+Today
+Wait for Monday
+With the agent
+Answered
+Service calls that go unanswered
+Today
+1 in 4
+With the agent
+None
+Customers reminded when service is due
+Today
+Some
+With the agent
+Every one
+More leads reach the lot, and more calls become repair orders
+, without adding BDC staff.
+Sources:
+Oldroyd, McElheran and Elkington, “The Short Life of Online Sales Leads”, HBR, 2011
+Win back your database
+Your customer list. Back in the dealership.
+The agent reaches customers you already sold to, at the right moment, across SMS and email.
+Service due
+Every customer due for maintenance gets a reminder with times to book.
+Leases and loans ending
+Customers near the end of a lease or loan hear from you before they shop.
+Lost service customers
+Customers who stopped coming for service get a check-in and an offer you approve.
+For the owner
+Ask the business anything.
+The Intelligence agent reads every conversation and call, and answers your questions in plain English.
+Find what’s slipping
+Unworked leads, missed service calls and appointments that didn’t show.
+See what’s working
+Appointments and sales by lead source, store and salesperson, without building a report.
+Approve the next step
+It suggests the follow-up; you say go, and the agent does it.
+See the Intelligence agent
+↗
+Which weekend leads haven’t been worked?
+Three leads from the weekend have no test drive booked and no reply from a salesperson.
+J. Alvarez · 2023 Tacoma
+Sat 7:40pm · no reply
+Erin Walsh · 2021 CR-V
+Sun 11:15am · no reply
+D. Brooks · 2022 Accord
+Sun 4:05pm · opened, no reply
+Send all three a follow-up
+Waits for your go-ahead
+Controls and testing
+Your dealership. Your rules.
+Controls
+Approved prices and offers only
+Negotiation, trade values and financing stay with your team.
+Consent and quiet hours
+Texts and calls follow opt-in and quiet hours, and STOP always works.
+Real availability
+Test drives and service book into real calendars, bays and advisors.
+Full audit trail
+Every conversation, booking and handover is logged.
+Testing
+Tested on your leads
+Sales and service conversations, including price questions and angry customers, before launch.
+Checked on every conversation
+Each conversation is scored for accuracy, handover and tone.
+Reported weekly
+Response time, appointments and shows, by rooftop and department.
+People in the loop
+You choose what the agent does alone and what waits for a manager.
+Book a demo
+See it on your leads and service lane.
+In 30 minutes you’ll see
+An internet lead answered and booked for a test drive, live.
+A service call booked into real advisor and bay availability.
+How it connects to your CRM and DMS, and what your first build would cover.
+Name
+*
+Company
+*
+Business email
+*
+Phone
+(optional)
+Company size
+*
+Choose one
+Under 200 staff
+200–1,000 staff
+1,001–5,000 staff
+Over 5,000 staff
+Your role
+(optional)
+Optional. You can call or text me about this request at the number above.
+Calls and texts may be automated or by an AI agent. Consent isn’t a
+condition of purchase; reply STOP to opt out.
+Website
+Book my demo
+We’ll only use this to set up your demo.
+See our privacy policy.
+Send these details by email
+FAQ
+Questions dealers ask.
+Explore the Trust Center
+↗
+Can the agent replace our BDC?
+It handles the work your BDC can’t get to, like nights, weekends and follow-up on every lead, and hands warm customers to your people. Most groups use it alongside their team.
+Which CRMs and DMSs does it work with?
+We connect to the systems you run, such as CDK Global, Reynolds and Reynolds, Tekion, VinSolutions, DealerSocket or Elead, and to your inventory and phones. The connections are built as part of your build.
+Will it quote prices or financing?
+Only the prices and offers your managers approve. Negotiation, trade values and financing terms go to your team.
+Does it answer service calls too?
+Yes. One agent works across sales and service, on chat, phone, SMS and email, with one memory per customer.
+Is it secure?
+AtomsAI comes from the team behind JustCall. It is SOC 2 Type II and HIPAA compliant, and every conversation, booking and handover is logged.
+How long does it take to go live?
+It depends on the workflows and the systems we connect. In the demo we look at yours and agree what the first build covers.

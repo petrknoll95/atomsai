@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-26T11:58:54.564Z",
-  "base": "http://127.0.0.1:3001",
+  "date": "2026-10-27T18:28:43.361Z",
+  "base": "http://127.0.0.1:3010",
   "deviceScaleFactor": 1,
   "viewportHeight": 960,
   "method": "Fresh homepage at each width; legacy pattern PNG requests are blocked and fail the check. Each nonzero-size canvas is scrolled into view and must render before capture.",
@@ -10,7 +10,7 @@
       "width": 1600,
       "passed": true,
       "checks": [
-        "Ten unique applications, eleven decorative canvases",
+        "Ten unique applications, twelve decorative canvases including glass fallbacks",
         "Below-fold preview and CTA canvases remain pending initially",
         "Every nonzero-size canvas renders after scrolling into view",
         "Hidden WebKit-only fallback stays zero-size and pending",
@@ -23,36 +23,36 @@
       "initialCanvases": [
         {
           "application": "offerings-drift",
-          "state": "ready",
+          "state": "pending",
           "decorative": true,
-          "width": 480,
-          "height": 553,
-          "top": 1012,
+          "width": 490.65625,
+          "height": 565.265625,
+          "top": 1005.875,
           "left": 48,
-          "bitmapWidth": 480,
-          "bitmapHeight": 553
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
         },
         {
           "application": "offerings-concentric",
-          "state": "ready",
+          "state": "pending",
           "decorative": true,
-          "width": 553,
-          "height": 553,
-          "top": 1012,
-          "left": 523.34375,
-          "bitmapWidth": 553,
-          "bitmapHeight": 553
+          "width": 565.28125,
+          "height": 565.28125,
+          "top": 1005.859375,
+          "left": 517.1875,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
         },
         {
           "application": "offerings-band",
-          "state": "ready",
+          "state": "pending",
           "decorative": true,
-          "width": 480,
-          "height": 553,
-          "top": 1012,
-          "left": 1072,
-          "bitmapWidth": 480,
-          "bitmapHeight": 553
+          "width": 490.65625,
+          "height": 565.265625,
+          "top": 1005.875,
+          "left": 1061.328125,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
         },
         {
           "application": "applications-drift",
@@ -106,6 +106,17 @@
           "height": 640,
           "top": 2798,
           "left": 48,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": null,
+          "state": "pending",
+          "decorative": true,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0,
           "bitmapWidth": 300,
           "bitmapHeight": 150
         },
@@ -191,12 +202,12 @@
         },
         "widget": {
           "x": 1072,
-          "y": -3630,
+          "y": -3586,
           "width": 479.984375,
           "height": 640,
-          "top": -3630,
+          "top": -3586,
           "right": 1551.984375,
-          "bottom": -2990,
+          "bottom": -2946,
           "left": 1072
         },
         "display": "none",
@@ -210,34 +221,34 @@
           "application": "offerings-drift",
           "state": "ready",
           "decorative": true,
-          "width": 480,
-          "height": 553,
-          "top": 1012,
+          "width": 490.65625,
+          "height": 565.265625,
+          "top": 1005.875,
           "left": 48,
-          "bitmapWidth": 480,
-          "bitmapHeight": 553
+          "bitmapWidth": 491,
+          "bitmapHeight": 565
         },
         {
           "application": "offerings-concentric",
           "state": "ready",
           "decorative": true,
-          "width": 553,
-          "height": 553,
-          "top": 1012,
-          "left": 523.34375,
-          "bitmapWidth": 553,
-          "bitmapHeight": 553
+          "width": 565.28125,
+          "height": 565.28125,
+          "top": 1005.859375,
+          "left": 517.1875,
+          "bitmapWidth": 565,
+          "bitmapHeight": 565
         },
         {
           "application": "offerings-band",
           "state": "ready",
           "decorative": true,
-          "width": 480,
-          "height": 553,
-          "top": 1012,
-          "left": 1072,
-          "bitmapWidth": 480,
-          "bitmapHeight": 553
+          "width": 490.65625,
+          "height": 565.265625,
+          "top": 1005.875,
+          "left": 1061.328125,
+          "bitmapWidth": 491,
+          "bitmapHeight": 565
         },
         {
           "application": "applications-drift",
@@ -295,6 +306,17 @@
           "bitmapHeight": 640
         },
         {
+          "application": null,
+          "state": "pending",
+          "decorative": true,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
           "application": "preview-concentric",
           "state": "ready",
           "decorative": true,
@@ -343,7 +365,7 @@
       "width": 1200,
       "passed": true,
       "checks": [
-        "Ten unique applications, eleven decorative canvases",
+        "Ten unique applications, twelve decorative canvases including glass fallbacks",
         "Below-fold preview and CTA canvases remain pending initially",
         "Every nonzero-size canvas renders after scrolling into view",
         "Hidden WebKit-only fallback stays zero-size and pending",
@@ -356,36 +378,36 @@
       "initialCanvases": [
         {
           "application": "offerings-drift",
-          "state": "ready",
+          "state": "pending",
           "decorative": true,
           "width": 480,
           "height": 553,
           "top": 1012,
-          "left": -18.671875,
-          "bitmapWidth": 480,
-          "bitmapHeight": 553
+          "left": -13.328125,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
         },
         {
           "application": "offerings-concentric",
-          "state": "ready",
+          "state": "pending",
           "decorative": true,
           "width": 553,
           "height": 553,
           "top": 1012,
           "left": 323.34375,
-          "bitmapWidth": 553,
-          "bitmapHeight": 553
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
         },
         {
           "application": "offerings-band",
-          "state": "ready",
+          "state": "pending",
           "decorative": true,
           "width": 480,
           "height": 553,
           "top": 1012,
-          "left": 738.65625,
-          "bitmapWidth": 480,
-          "bitmapHeight": 553
+          "left": 733.328125,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
         },
         {
           "application": "applications-drift",
@@ -439,6 +461,17 @@
           "height": 640,
           "top": 2798.234375,
           "left": -86.796875,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": null,
+          "state": "pending",
+          "decorative": true,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0,
           "bitmapWidth": 300,
           "bitmapHeight": 150
         },
@@ -524,12 +557,12 @@
         },
         "widget": {
           "x": 802.421875,
-          "y": -3447.765625,
+          "y": -3403.765625,
           "width": 349.578125,
           "height": 640,
-          "top": -3447.765625,
+          "top": -3403.765625,
           "right": 1152,
-          "bottom": -2807.765625,
+          "bottom": -2763.765625,
           "left": 802.421875
         },
         "display": "none",
@@ -546,7 +579,7 @@
           "width": 480,
           "height": 553,
           "top": 1012,
-          "left": -18.671875,
+          "left": -13.328125,
           "bitmapWidth": 480,
           "bitmapHeight": 553
         },
@@ -568,7 +601,7 @@
           "width": 480,
           "height": 553,
           "top": 1012,
-          "left": 738.65625,
+          "left": 733.328125,
           "bitmapWidth": 480,
           "bitmapHeight": 553
         },
@@ -628,6 +661,17 @@
           "bitmapHeight": 640
         },
         {
+          "application": null,
+          "state": "pending",
+          "decorative": true,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
           "application": "preview-concentric",
           "state": "ready",
           "decorative": true,
@@ -675,7 +719,7 @@
       "width": 768,
       "passed": true,
       "checks": [
-        "Ten unique applications, eleven decorative canvases",
+        "Ten unique applications, twelve decorative canvases including glass fallbacks",
         "Below-fold preview and CTA canvases remain pending initially",
         "Every nonzero-size canvas renders after scrolling into view",
         "Hidden WebKit-only fallback stays zero-size and pending",
@@ -693,7 +737,7 @@
           "width": 442.671875,
           "height": 510,
           "top": 952,
-          "left": -82.671875,
+          "left": -77.328125,
           "bitmapWidth": 443,
           "bitmapHeight": 510
         },
@@ -704,7 +748,7 @@
           "width": 509.984375,
           "height": 510,
           "top": 952,
-          "left": 128.84375,
+          "left": 128.859375,
           "bitmapWidth": 510,
           "bitmapHeight": 510
         },
@@ -715,7 +759,7 @@
           "width": 442.671875,
           "height": 510,
           "top": 952,
-          "left": 407.984375,
+          "left": 402.671875,
           "bitmapWidth": 443,
           "bitmapHeight": 510
         },
@@ -775,6 +819,17 @@
           "bitmapHeight": 150
         },
         {
+          "application": null,
+          "state": "pending",
+          "decorative": true,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
           "application": "preview-concentric",
           "state": "pending",
           "decorative": true,
@@ -802,7 +857,7 @@
           "decorative": true,
           "width": 720,
           "height": 720,
-          "top": 7822.96875,
+          "top": 7797.96875,
           "left": 200,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -837,7 +892,7 @@
           "decorative": true,
           "width": 720,
           "height": 720,
-          "top": 7822.96875,
+          "top": 7797.96875,
           "left": 200,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -856,12 +911,12 @@
         },
         "widget": {
           "x": 32,
-          "y": -3674.21875,
+          "y": -3605.21875,
           "width": 704,
           "height": 640,
-          "top": -3674.21875,
+          "top": -3605.21875,
           "right": 736,
-          "bottom": -3034.21875,
+          "bottom": -2965.21875,
           "left": 32
         },
         "display": "none",
@@ -878,7 +933,7 @@
           "width": 442.671875,
           "height": 510,
           "top": 952,
-          "left": -82.671875,
+          "left": -77.328125,
           "bitmapWidth": 443,
           "bitmapHeight": 510
         },
@@ -889,7 +944,7 @@
           "width": 509.984375,
           "height": 510,
           "top": 952,
-          "left": 128.84375,
+          "left": 128.859375,
           "bitmapWidth": 510,
           "bitmapHeight": 510
         },
@@ -900,7 +955,7 @@
           "width": 442.671875,
           "height": 510,
           "top": 952,
-          "left": 407.984375,
+          "left": 402.671875,
           "bitmapWidth": 443,
           "bitmapHeight": 510
         },
@@ -960,6 +1015,17 @@
           "bitmapHeight": 640
         },
         {
+          "application": null,
+          "state": "pending",
+          "decorative": true,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
           "application": "preview-concentric",
           "state": "ready",
           "decorative": true,
@@ -967,8 +1033,8 @@
           "height": 1173.3125,
           "top": 3750.125,
           "left": -202.65625,
-          "bitmapWidth": 1173,
-          "bitmapHeight": 1173
+          "bitmapWidth": 1024,
+          "bitmapHeight": 1024
         },
         {
           "application": "preview-concentric",
@@ -987,7 +1053,7 @@
           "decorative": true,
           "width": 720,
           "height": 720,
-          "top": 7822.96875,
+          "top": 7797.96875,
           "left": 200,
           "bitmapWidth": 720,
           "bitmapHeight": 720
@@ -997,7 +1063,7 @@
         "viewport": 768,
         "documentWidth": 768,
         "bodyWidth": 768,
-        "height": 9115,
+        "height": 9090,
         "scrollX": 0,
         "scrollY": 0
       }
@@ -1007,7 +1073,7 @@
       "width": 390,
       "passed": true,
       "checks": [
-        "Ten unique applications, eleven decorative canvases",
+        "Ten unique applications, twelve decorative canvases including glass fallbacks",
         "Below-fold preview and CTA canvases remain pending initially",
         "Every nonzero-size canvas renders after scrolling into view",
         "Hidden WebKit-only fallback stays zero-size and pending",
@@ -1035,7 +1101,7 @@
           "decorative": true,
           "width": 479.984375,
           "height": 480,
-          "top": 1376,
+          "top": 1368,
           "left": -45.125,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1046,7 +1112,7 @@
           "decorative": true,
           "width": 416.625,
           "height": 480,
-          "top": 1880,
+          "top": 1864,
           "left": -13.3125,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1057,7 +1123,7 @@
           "decorative": true,
           "width": 350,
           "height": 350,
-          "top": 2685.203125,
+          "top": 2669.203125,
           "left": 20,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1068,7 +1134,7 @@
           "decorative": true,
           "width": 350,
           "height": 350,
-          "top": 3238.109375,
+          "top": 3222.109375,
           "left": 20,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1079,7 +1145,7 @@
           "decorative": true,
           "width": 350,
           "height": 350,
-          "top": 3791.015625,
+          "top": 3775.015625,
           "left": 20,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1090,7 +1156,7 @@
           "decorative": true,
           "width": 350,
           "height": 350,
-          "top": 4343.921875,
+          "top": 4327.921875,
           "left": 20,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1101,8 +1167,19 @@
           "decorative": true,
           "width": 992,
           "height": 640,
-          "top": 5024.03125,
+          "top": 5008.03125,
           "left": -301,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": null,
+          "state": "pending",
+          "decorative": true,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0,
           "bitmapWidth": 300,
           "bitmapHeight": 150
         },
@@ -1112,7 +1189,7 @@
           "decorative": true,
           "width": 800,
           "height": 800,
-          "top": 5732.9375,
+          "top": 5716.9375,
           "left": -204.984375,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1134,7 +1211,7 @@
           "decorative": true,
           "width": 500.859375,
           "height": 500.859375,
-          "top": 10466.796875,
+          "top": 10450.796875,
           "left": -55.421875,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1147,7 +1224,7 @@
           "decorative": true,
           "width": 992,
           "height": 640,
-          "top": 5024.03125,
+          "top": 5008.03125,
           "left": -301,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1158,7 +1235,7 @@
           "decorative": true,
           "width": 800,
           "height": 800,
-          "top": 5732.9375,
+          "top": 5716.9375,
           "left": -204.984375,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1169,7 +1246,7 @@
           "decorative": true,
           "width": 500.859375,
           "height": 500.859375,
-          "top": 10466.796875,
+          "top": 10450.796875,
           "left": -55.421875,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1188,12 +1265,12 @@
         },
         "widget": {
           "x": 20,
-          "y": -4412.0625,
+          "y": -4376.0625,
           "width": 350,
           "height": 640,
-          "top": -4412.0625,
+          "top": -4376.0625,
           "right": 370,
-          "bottom": -3772.0625,
+          "bottom": -3736.0625,
           "left": 20
         },
         "display": "none",
@@ -1220,7 +1297,7 @@
           "decorative": true,
           "width": 479.984375,
           "height": 480,
-          "top": 1376,
+          "top": 1368,
           "left": -45.125,
           "bitmapWidth": 480,
           "bitmapHeight": 480
@@ -1231,7 +1308,7 @@
           "decorative": true,
           "width": 416.625,
           "height": 480,
-          "top": 1880,
+          "top": 1864,
           "left": -13.3125,
           "bitmapWidth": 417,
           "bitmapHeight": 480
@@ -1242,7 +1319,7 @@
           "decorative": true,
           "width": 350,
           "height": 350,
-          "top": 2685.203125,
+          "top": 2669.203125,
           "left": 20,
           "bitmapWidth": 350,
           "bitmapHeight": 350
@@ -1253,7 +1330,7 @@
           "decorative": true,
           "width": 350,
           "height": 350,
-          "top": 3238.109375,
+          "top": 3222.109375,
           "left": 20,
           "bitmapWidth": 350,
           "bitmapHeight": 350
@@ -1264,7 +1341,7 @@
           "decorative": true,
           "width": 350,
           "height": 350,
-          "top": 3791.015625,
+          "top": 3775.015625,
           "left": 20,
           "bitmapWidth": 350,
           "bitmapHeight": 350
@@ -1275,7 +1352,7 @@
           "decorative": true,
           "width": 350,
           "height": 350,
-          "top": 4343.921875,
+          "top": 4327.921875,
           "left": 20,
           "bitmapWidth": 350,
           "bitmapHeight": 350
@@ -1286,10 +1363,21 @@
           "decorative": true,
           "width": 992,
           "height": 640,
-          "top": 5024.03125,
+          "top": 5008.03125,
           "left": -301,
           "bitmapWidth": 992,
           "bitmapHeight": 640
+        },
+        {
+          "application": null,
+          "state": "pending",
+          "decorative": true,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
         },
         {
           "application": "preview-concentric",
@@ -1297,7 +1385,7 @@
           "decorative": true,
           "width": 800,
           "height": 800,
-          "top": 5732.9375,
+          "top": 5716.9375,
           "left": -204.984375,
           "bitmapWidth": 800,
           "bitmapHeight": 800
@@ -1319,7 +1407,7 @@
           "decorative": true,
           "width": 500.859375,
           "height": 500.859375,
-          "top": 10466.796875,
+          "top": 10450.796875,
           "left": -55.421875,
           "bitmapWidth": 501,
           "bitmapHeight": 501
@@ -1329,7 +1417,7 @@
         "viewport": 390,
         "documentWidth": 390,
         "bodyWidth": 390,
-        "height": 11776,
+        "height": 11760,
         "scrollX": 0,
         "scrollY": 0
       },
@@ -1340,7 +1428,7 @@
       "width": 320,
       "passed": true,
       "checks": [
-        "Ten unique applications, eleven decorative canvases",
+        "Ten unique applications, twelve decorative canvases including glass fallbacks",
         "Below-fold preview and CTA canvases remain pending initially",
         "Every nonzero-size canvas renders after scrolling into view",
         "Hidden WebKit-only fallback stays zero-size and pending",
@@ -1368,7 +1456,7 @@
           "decorative": true,
           "width": 479.984375,
           "height": 480,
-          "top": 1451.0625,
+          "top": 1443.0625,
           "left": -80.125,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1379,7 +1467,7 @@
           "decorative": true,
           "width": 416.625,
           "height": 480,
-          "top": 1955.0625,
+          "top": 1939.0625,
           "left": -48.3125,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1390,7 +1478,7 @@
           "decorative": true,
           "width": 280,
           "height": 280,
-          "top": 2760.265625,
+          "top": 2744.265625,
           "left": 20,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1401,7 +1489,7 @@
           "decorative": true,
           "width": 280,
           "height": 280,
-          "top": 3243.171875,
+          "top": 3227.171875,
           "left": 20,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1412,7 +1500,7 @@
           "decorative": true,
           "width": 280,
           "height": 280,
-          "top": 3726.078125,
+          "top": 3710.078125,
           "left": 20,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1423,7 +1511,7 @@
           "decorative": true,
           "width": 280,
           "height": 280,
-          "top": 4208.984375,
+          "top": 4192.984375,
           "left": 20,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1434,8 +1522,19 @@
           "decorative": true,
           "width": 992,
           "height": 640,
-          "top": 4819.09375,
+          "top": 4803.09375,
           "left": -336,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": null,
+          "state": "pending",
+          "decorative": true,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0,
           "bitmapWidth": 300,
           "bitmapHeight": 150
         },
@@ -1445,7 +1544,7 @@
           "decorative": true,
           "width": 800,
           "height": 800,
-          "top": 5528,
+          "top": 5512,
           "left": -239.984375,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1467,7 +1566,7 @@
           "decorative": true,
           "width": 500.859375,
           "height": 500.859375,
-          "top": 10422.53125,
+          "top": 10381.53125,
           "left": -90.421875,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1480,7 +1579,7 @@
           "decorative": true,
           "width": 992,
           "height": 640,
-          "top": 4819.09375,
+          "top": 4803.09375,
           "left": -336,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1491,7 +1590,7 @@
           "decorative": true,
           "width": 800,
           "height": 800,
-          "top": 5528,
+          "top": 5512,
           "left": -239.984375,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1502,7 +1601,7 @@
           "decorative": true,
           "width": 500.859375,
           "height": 500.859375,
-          "top": 10422.53125,
+          "top": 10381.53125,
           "left": -90.421875,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -1521,12 +1620,12 @@
         },
         "widget": {
           "x": 20,
-          "y": -4573,
+          "y": -4512,
           "width": 280,
           "height": 640,
-          "top": -4573,
+          "top": -4512,
           "right": 300,
-          "bottom": -3933,
+          "bottom": -3872,
           "left": 20
         },
         "display": "none",
@@ -1553,7 +1652,7 @@
           "decorative": true,
           "width": 479.984375,
           "height": 480,
-          "top": 1451.0625,
+          "top": 1443.0625,
           "left": -80.125,
           "bitmapWidth": 480,
           "bitmapHeight": 480
@@ -1564,7 +1663,7 @@
           "decorative": true,
           "width": 416.625,
           "height": 480,
-          "top": 1955.0625,
+          "top": 1939.0625,
           "left": -48.3125,
           "bitmapWidth": 417,
           "bitmapHeight": 480
@@ -1575,7 +1674,7 @@
           "decorative": true,
           "width": 280,
           "height": 280,
-          "top": 2760.265625,
+          "top": 2744.265625,
           "left": 20,
           "bitmapWidth": 280,
           "bitmapHeight": 280
@@ -1586,7 +1685,7 @@
           "decorative": true,
           "width": 280,
           "height": 280,
-          "top": 3243.171875,
+          "top": 3227.171875,
           "left": 20,
           "bitmapWidth": 280,
           "bitmapHeight": 280
@@ -1597,7 +1696,7 @@
           "decorative": true,
           "width": 280,
           "height": 280,
-          "top": 3726.078125,
+          "top": 3710.078125,
           "left": 20,
           "bitmapWidth": 280,
           "bitmapHeight": 280
@@ -1608,7 +1707,7 @@
           "decorative": true,
           "width": 280,
           "height": 280,
-          "top": 4208.984375,
+          "top": 4192.984375,
           "left": 20,
           "bitmapWidth": 280,
           "bitmapHeight": 280
@@ -1619,10 +1718,21 @@
           "decorative": true,
           "width": 992,
           "height": 640,
-          "top": 4819.09375,
+          "top": 4803.09375,
           "left": -336,
           "bitmapWidth": 992,
           "bitmapHeight": 640
+        },
+        {
+          "application": null,
+          "state": "pending",
+          "decorative": true,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "left": 0,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
         },
         {
           "application": "preview-concentric",
@@ -1630,7 +1740,7 @@
           "decorative": true,
           "width": 800,
           "height": 800,
-          "top": 5528,
+          "top": 5512,
           "left": -239.984375,
           "bitmapWidth": 800,
           "bitmapHeight": 800
@@ -1652,7 +1762,7 @@
           "decorative": true,
           "width": 500.859375,
           "height": 500.859375,
-          "top": 10422.53125,
+          "top": 10381.53125,
           "left": -90.421875,
           "bitmapWidth": 501,
           "bitmapHeight": 501
@@ -1662,7 +1772,7 @@
         "viewport": 320,
         "documentWidth": 320,
         "bodyWidth": 320,
-        "height": 11722,
+        "height": 11681,
         "scrollX": 0,
         "scrollY": 0
       }
@@ -1672,7 +1782,7 @@
       "width": 1600,
       "passed": true,
       "checks": [
-        "Ten unique applications, eleven decorative canvases",
+        "Ten unique applications, twelve decorative canvases including glass fallbacks",
         "Below-fold preview and CTA canvases remain pending initially",
         "Every nonzero-size canvas renders after scrolling into view",
         "WebKit glass backdrop renders, aligns with the full widget, and preserves blur/blending",
@@ -1685,36 +1795,36 @@
       "initialCanvases": [
         {
           "application": "offerings-drift",
-          "state": "ready",
+          "state": "pending",
           "decorative": true,
-          "width": 480,
-          "height": 553,
-          "top": 1012,
+          "width": 490.65625,
+          "height": 565.265625,
+          "top": 1005.875,
           "left": 48,
-          "bitmapWidth": 480,
-          "bitmapHeight": 553
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
         },
         {
           "application": "offerings-concentric",
-          "state": "ready",
+          "state": "pending",
           "decorative": true,
-          "width": 553,
-          "height": 553,
-          "top": 1012,
-          "left": 523.34375,
-          "bitmapWidth": 553,
-          "bitmapHeight": 553
+          "width": 565.28125,
+          "height": 565.28125,
+          "top": 1005.859375,
+          "left": 517.1875,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
         },
         {
           "application": "offerings-band",
-          "state": "ready",
+          "state": "pending",
           "decorative": true,
-          "width": 480,
-          "height": 553,
-          "top": 1012,
-          "left": 1072,
-          "bitmapWidth": 480,
-          "bitmapHeight": 553
+          "width": 490.671875,
+          "height": 565.28125,
+          "top": 1005.859375,
+          "left": 1061.328125,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
         },
         {
           "application": "applications-drift",
@@ -1772,6 +1882,17 @@
           "bitmapHeight": 150
         },
         {
+          "application": null,
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 2798,
+          "left": 47.75,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
           "application": "preview-concentric",
           "state": "pending",
           "decorative": true,
@@ -1843,22 +1964,22 @@
       "chatBackdrop": {
         "rect": {
           "x": 1072,
-          "y": -3631,
+          "y": -3587,
           "width": 480,
           "height": 640,
-          "top": -3631,
+          "top": -3587,
           "right": 1552,
-          "bottom": -2991,
+          "bottom": -2947,
           "left": 1072
         },
         "widget": {
           "x": 1072,
-          "y": -3631,
+          "y": -3587,
           "width": 480,
           "height": 640,
-          "top": -3631,
+          "top": -3587,
           "right": 1552,
-          "bottom": -2991,
+          "bottom": -2947,
           "left": 1072
         },
         "display": "block",
@@ -1872,34 +1993,34 @@
           "application": "offerings-drift",
           "state": "ready",
           "decorative": true,
-          "width": 480,
-          "height": 553,
-          "top": 1012,
+          "width": 490.65625,
+          "height": 565.265625,
+          "top": 1005.875,
           "left": 48,
-          "bitmapWidth": 480,
-          "bitmapHeight": 553
+          "bitmapWidth": 491,
+          "bitmapHeight": 565
         },
         {
           "application": "offerings-concentric",
           "state": "ready",
           "decorative": true,
-          "width": 553,
-          "height": 553,
-          "top": 1012,
-          "left": 523.34375,
-          "bitmapWidth": 553,
-          "bitmapHeight": 553
+          "width": 565.28125,
+          "height": 565.28125,
+          "top": 1005.859375,
+          "left": 517.1875,
+          "bitmapWidth": 565,
+          "bitmapHeight": 565
         },
         {
           "application": "offerings-band",
           "state": "ready",
           "decorative": true,
-          "width": 480,
-          "height": 553,
-          "top": 1012,
-          "left": 1072,
-          "bitmapWidth": 480,
-          "bitmapHeight": 553
+          "width": 490.671875,
+          "height": 565.28125,
+          "top": 1005.859375,
+          "left": 1061.328125,
+          "bitmapWidth": 491,
+          "bitmapHeight": 565
         },
         {
           "application": "applications-drift",
@@ -1953,6 +2074,17 @@
           "height": 640,
           "top": 2798,
           "left": 48,
+          "bitmapWidth": 992,
+          "bitmapHeight": 640
+        },
+        {
+          "application": null,
+          "state": "ready",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 2798,
+          "left": 47.75,
           "bitmapWidth": 992,
           "bitmapHeight": 640
         },
@@ -2005,7 +2137,7 @@
       "width": 1200,
       "passed": true,
       "checks": [
-        "Ten unique applications, eleven decorative canvases",
+        "Ten unique applications, twelve decorative canvases including glass fallbacks",
         "Below-fold preview and CTA canvases remain pending initially",
         "Every nonzero-size canvas renders after scrolling into view",
         "WebKit glass backdrop renders, aligns with the full widget, and preserves blur/blending",
@@ -2018,36 +2150,36 @@
       "initialCanvases": [
         {
           "application": "offerings-drift",
-          "state": "ready",
+          "state": "pending",
           "decorative": true,
           "width": 480,
           "height": 553,
           "top": 1012,
-          "left": -18.671875,
-          "bitmapWidth": 480,
-          "bitmapHeight": 553
+          "left": -13.328125,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
         },
         {
           "application": "offerings-concentric",
-          "state": "ready",
+          "state": "pending",
           "decorative": true,
           "width": 553,
           "height": 553,
           "top": 1012,
           "left": 323.34375,
-          "bitmapWidth": 553,
-          "bitmapHeight": 553
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
         },
         {
           "application": "offerings-band",
-          "state": "ready",
+          "state": "pending",
           "decorative": true,
           "width": 480,
           "height": 553,
           "top": 1012,
-          "left": 738.671875,
-          "bitmapWidth": 480,
-          "bitmapHeight": 553
+          "left": 733.328125,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
         },
         {
           "application": "applications-drift",
@@ -2101,6 +2233,17 @@
           "height": 640,
           "top": 2798.234375,
           "left": -86.78125,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": null,
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 2798.234375,
+          "left": -87.046875,
           "bitmapWidth": 300,
           "bitmapHeight": 150
         },
@@ -2176,22 +2319,22 @@
       "chatBackdrop": {
         "rect": {
           "x": 802.203125,
-          "y": -3448.765625,
+          "y": -3404.765625,
           "width": 349.578125,
           "height": 640,
-          "top": -3448.765625,
+          "top": -3404.765625,
           "right": 1151.78125,
-          "bottom": -2808.765625,
+          "bottom": -2764.765625,
           "left": 802.203125
         },
         "widget": {
           "x": 802.421875,
-          "y": -3448.765625,
+          "y": -3404.765625,
           "width": 349.578125,
           "height": 640,
-          "top": -3448.765625,
+          "top": -3404.765625,
           "right": 1152,
-          "bottom": -2808.765625,
+          "bottom": -2764.765625,
           "left": 802.421875
         },
         "display": "block",
@@ -2208,7 +2351,7 @@
           "width": 480,
           "height": 553,
           "top": 1012,
-          "left": -18.671875,
+          "left": -13.328125,
           "bitmapWidth": 480,
           "bitmapHeight": 553
         },
@@ -2230,7 +2373,7 @@
           "width": 480,
           "height": 553,
           "top": 1012,
-          "left": 738.671875,
+          "left": 733.328125,
           "bitmapWidth": 480,
           "bitmapHeight": 553
         },
@@ -2290,6 +2433,17 @@
           "bitmapHeight": 640
         },
         {
+          "application": null,
+          "state": "ready",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 2798.234375,
+          "left": -87.046875,
+          "bitmapWidth": 992,
+          "bitmapHeight": 640
+        },
+        {
           "application": "preview-concentric",
           "state": "ready",
           "decorative": true,
@@ -2337,7 +2491,7 @@
       "width": 768,
       "passed": true,
       "checks": [
-        "Ten unique applications, eleven decorative canvases",
+        "Ten unique applications, twelve decorative canvases including glass fallbacks",
         "Below-fold preview and CTA canvases remain pending initially",
         "Every nonzero-size canvas renders after scrolling into view",
         "WebKit glass backdrop renders, aligns with the full widget, and preserves blur/blending",
@@ -2355,7 +2509,7 @@
           "width": 442.671875,
           "height": 510,
           "top": 952,
-          "left": -82.671875,
+          "left": -77.328125,
           "bitmapWidth": 443,
           "bitmapHeight": 510
         },
@@ -2366,7 +2520,7 @@
           "width": 509.984375,
           "height": 510,
           "top": 952,
-          "left": 128.84375,
+          "left": 128.859375,
           "bitmapWidth": 510,
           "bitmapHeight": 510
         },
@@ -2377,7 +2531,7 @@
           "width": 442.671875,
           "height": 510,
           "top": 952,
-          "left": 408,
+          "left": 402.671875,
           "bitmapWidth": 443,
           "bitmapHeight": 510
         },
@@ -2437,6 +2591,17 @@
           "bitmapHeight": 150
         },
         {
+          "application": null,
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 3177.84375,
+          "left": -112.25,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
           "application": "preview-concentric",
           "state": "pending",
           "decorative": true,
@@ -2464,7 +2629,7 @@
           "decorative": true,
           "width": 720,
           "height": 720,
-          "top": 7822.90625,
+          "top": 7797.90625,
           "left": 200,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -2499,7 +2664,7 @@
           "decorative": true,
           "width": 720,
           "height": 720,
-          "top": 7822.90625,
+          "top": 7797.90625,
           "left": 200,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -2508,22 +2673,22 @@
       "chatBackdrop": {
         "rect": {
           "x": 32,
-          "y": -3674.265625,
+          "y": -3605.265625,
           "width": 704,
           "height": 640,
-          "top": -3674.265625,
+          "top": -3605.265625,
           "right": 736,
-          "bottom": -3034.265625,
+          "bottom": -2965.265625,
           "left": 32
         },
         "widget": {
           "x": 32,
-          "y": -3674.265625,
+          "y": -3605.265625,
           "width": 704,
           "height": 640,
-          "top": -3674.265625,
+          "top": -3605.265625,
           "right": 736,
-          "bottom": -3034.265625,
+          "bottom": -2965.265625,
           "left": 32
         },
         "display": "block",
@@ -2540,7 +2705,7 @@
           "width": 442.671875,
           "height": 510,
           "top": 952,
-          "left": -82.671875,
+          "left": -77.328125,
           "bitmapWidth": 443,
           "bitmapHeight": 510
         },
@@ -2551,7 +2716,7 @@
           "width": 509.984375,
           "height": 510,
           "top": 952,
-          "left": 128.84375,
+          "left": 128.859375,
           "bitmapWidth": 510,
           "bitmapHeight": 510
         },
@@ -2562,7 +2727,7 @@
           "width": 442.671875,
           "height": 510,
           "top": 952,
-          "left": 408,
+          "left": 402.671875,
           "bitmapWidth": 443,
           "bitmapHeight": 510
         },
@@ -2622,15 +2787,15 @@
           "bitmapHeight": 640
         },
         {
-          "application": "preview-concentric",
+          "application": null,
           "state": "ready",
           "decorative": true,
-          "width": 1173.328125,
-          "height": 1173.3125,
-          "top": 3750.078125,
-          "left": -202.65625,
-          "bitmapWidth": 1173,
-          "bitmapHeight": 1173
+          "width": 992,
+          "height": 640,
+          "top": 3177.84375,
+          "left": -112.25,
+          "bitmapWidth": 992,
+          "bitmapHeight": 640
         },
         {
           "application": "preview-concentric",
@@ -2640,8 +2805,19 @@
           "height": 1173.3125,
           "top": 3750.078125,
           "left": -202.65625,
-          "bitmapWidth": 1173,
-          "bitmapHeight": 1173
+          "bitmapWidth": 1024,
+          "bitmapHeight": 1024
+        },
+        {
+          "application": "preview-concentric",
+          "state": "ready",
+          "decorative": true,
+          "width": 1173.328125,
+          "height": 1173.3125,
+          "top": 3750.078125,
+          "left": -202.65625,
+          "bitmapWidth": 1024,
+          "bitmapHeight": 1024
         },
         {
           "application": "cta-pattern",
@@ -2649,7 +2825,7 @@
           "decorative": true,
           "width": 720,
           "height": 720,
-          "top": 7822.90625,
+          "top": 7797.90625,
           "left": 200,
           "bitmapWidth": 720,
           "bitmapHeight": 720
@@ -2659,7 +2835,7 @@
         "viewport": 768,
         "documentWidth": 768,
         "bodyWidth": 768,
-        "height": 9115,
+        "height": 9090,
         "scrollX": 0,
         "scrollY": 0
       }
@@ -2669,7 +2845,7 @@
       "width": 390,
       "passed": true,
       "checks": [
-        "Ten unique applications, eleven decorative canvases",
+        "Ten unique applications, twelve decorative canvases including glass fallbacks",
         "Below-fold preview and CTA canvases remain pending initially",
         "Every nonzero-size canvas renders after scrolling into view",
         "WebKit glass backdrop renders, aligns with the full widget, and preserves blur/blending",
@@ -2697,7 +2873,7 @@
           "decorative": true,
           "width": 479.984375,
           "height": 480,
-          "top": 1376,
+          "top": 1368,
           "left": -45.125,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -2708,7 +2884,7 @@
           "decorative": true,
           "width": 416.625,
           "height": 480,
-          "top": 1880,
+          "top": 1864,
           "left": -13.3125,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -2719,7 +2895,7 @@
           "decorative": true,
           "width": 350,
           "height": 350,
-          "top": 2685.1875,
+          "top": 2669.1875,
           "left": 20,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -2730,7 +2906,7 @@
           "decorative": true,
           "width": 350,
           "height": 350,
-          "top": 3238.078125,
+          "top": 3222.078125,
           "left": 20,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -2741,7 +2917,7 @@
           "decorative": true,
           "width": 350,
           "height": 350,
-          "top": 3790.96875,
+          "top": 3774.96875,
           "left": 20,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -2752,7 +2928,7 @@
           "decorative": true,
           "width": 350,
           "height": 350,
-          "top": 4343.859375,
+          "top": 4327.859375,
           "left": 20,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -2763,7 +2939,18 @@
           "decorative": true,
           "width": 992,
           "height": 640,
-          "top": 5023.9375,
+          "top": 5007.9375,
+          "left": -301,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": null,
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 5007.9375,
           "left": -301,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -2774,7 +2961,7 @@
           "decorative": true,
           "width": 800,
           "height": 800,
-          "top": 5732.828125,
+          "top": 5716.828125,
           "left": -204.984375,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -2785,7 +2972,7 @@
           "decorative": true,
           "width": 800,
           "height": 800,
-          "top": 5732.828125,
+          "top": 5716.828125,
           "left": -204.984375,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -2796,7 +2983,7 @@
           "decorative": true,
           "width": 500.859375,
           "height": 500.859375,
-          "top": 10466.625,
+          "top": 10450.625,
           "left": -55.421875,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -2809,7 +2996,7 @@
           "decorative": true,
           "width": 992,
           "height": 640,
-          "top": 5023.9375,
+          "top": 5007.9375,
           "left": -301,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -2820,7 +3007,7 @@
           "decorative": true,
           "width": 800,
           "height": 800,
-          "top": 5732.828125,
+          "top": 5716.828125,
           "left": -204.984375,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -2831,7 +3018,7 @@
           "decorative": true,
           "width": 500.859375,
           "height": 500.859375,
-          "top": 10466.625,
+          "top": 10450.625,
           "left": -55.421875,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -2840,22 +3027,22 @@
       "chatBackdrop": {
         "rect": {
           "x": 20,
-          "y": -4412.171875,
+          "y": -4376.171875,
           "width": 350,
           "height": 640,
-          "top": -4412.171875,
+          "top": -4376.171875,
           "right": 370,
-          "bottom": -3772.171875,
+          "bottom": -3736.171875,
           "left": 20
         },
         "widget": {
           "x": 20,
-          "y": -4412.171875,
+          "y": -4376.171875,
           "width": 350,
           "height": 640,
-          "top": -4412.171875,
+          "top": -4376.171875,
           "right": 370,
-          "bottom": -3772.171875,
+          "bottom": -3736.171875,
           "left": 20
         },
         "display": "block",
@@ -2882,7 +3069,7 @@
           "decorative": true,
           "width": 479.984375,
           "height": 480,
-          "top": 1376,
+          "top": 1368,
           "left": -45.125,
           "bitmapWidth": 480,
           "bitmapHeight": 480
@@ -2893,7 +3080,7 @@
           "decorative": true,
           "width": 416.625,
           "height": 480,
-          "top": 1880,
+          "top": 1864,
           "left": -13.3125,
           "bitmapWidth": 417,
           "bitmapHeight": 480
@@ -2904,7 +3091,7 @@
           "decorative": true,
           "width": 350,
           "height": 350,
-          "top": 2685.1875,
+          "top": 2669.1875,
           "left": 20,
           "bitmapWidth": 350,
           "bitmapHeight": 350
@@ -2915,7 +3102,7 @@
           "decorative": true,
           "width": 350,
           "height": 350,
-          "top": 3238.078125,
+          "top": 3222.078125,
           "left": 20,
           "bitmapWidth": 350,
           "bitmapHeight": 350
@@ -2926,7 +3113,7 @@
           "decorative": true,
           "width": 350,
           "height": 350,
-          "top": 3790.96875,
+          "top": 3774.96875,
           "left": 20,
           "bitmapWidth": 350,
           "bitmapHeight": 350
@@ -2937,7 +3124,7 @@
           "decorative": true,
           "width": 350,
           "height": 350,
-          "top": 4343.859375,
+          "top": 4327.859375,
           "left": 20,
           "bitmapWidth": 350,
           "bitmapHeight": 350
@@ -2948,7 +3135,18 @@
           "decorative": true,
           "width": 992,
           "height": 640,
-          "top": 5023.9375,
+          "top": 5007.9375,
+          "left": -301,
+          "bitmapWidth": 992,
+          "bitmapHeight": 640
+        },
+        {
+          "application": null,
+          "state": "ready",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 5007.9375,
           "left": -301,
           "bitmapWidth": 992,
           "bitmapHeight": 640
@@ -2959,7 +3157,7 @@
           "decorative": true,
           "width": 800,
           "height": 800,
-          "top": 5732.828125,
+          "top": 5716.828125,
           "left": -204.984375,
           "bitmapWidth": 800,
           "bitmapHeight": 800
@@ -2970,7 +3168,7 @@
           "decorative": true,
           "width": 800,
           "height": 800,
-          "top": 5732.828125,
+          "top": 5716.828125,
           "left": -204.984375,
           "bitmapWidth": 800,
           "bitmapHeight": 800
@@ -2981,7 +3179,7 @@
           "decorative": true,
           "width": 500.859375,
           "height": 500.859375,
-          "top": 10466.625,
+          "top": 10450.625,
           "left": -55.421875,
           "bitmapWidth": 501,
           "bitmapHeight": 501
@@ -2991,7 +3189,7 @@
         "viewport": 390,
         "documentWidth": 390,
         "bodyWidth": 390,
-        "height": 11776,
+        "height": 11760,
         "scrollX": 0,
         "scrollY": 0
       },
@@ -3002,7 +3200,7 @@
       "width": 320,
       "passed": true,
       "checks": [
-        "Ten unique applications, eleven decorative canvases",
+        "Ten unique applications, twelve decorative canvases including glass fallbacks",
         "Below-fold preview and CTA canvases remain pending initially",
         "Every nonzero-size canvas renders after scrolling into view",
         "WebKit glass backdrop renders, aligns with the full widget, and preserves blur/blending",
@@ -3030,7 +3228,7 @@
           "decorative": true,
           "width": 479.984375,
           "height": 480,
-          "top": 1451.0625,
+          "top": 1443.0625,
           "left": -80.125,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -3041,7 +3239,7 @@
           "decorative": true,
           "width": 416.625,
           "height": 480,
-          "top": 1955.0625,
+          "top": 1939.0625,
           "left": -48.3125,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -3052,7 +3250,7 @@
           "decorative": true,
           "width": 280,
           "height": 280,
-          "top": 2760.25,
+          "top": 2744.25,
           "left": 20,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -3063,7 +3261,7 @@
           "decorative": true,
           "width": 280,
           "height": 280,
-          "top": 3243.140625,
+          "top": 3227.140625,
           "left": 20,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -3074,7 +3272,7 @@
           "decorative": true,
           "width": 280,
           "height": 280,
-          "top": 3726.03125,
+          "top": 3710.03125,
           "left": 20,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -3085,7 +3283,7 @@
           "decorative": true,
           "width": 280,
           "height": 280,
-          "top": 4208.921875,
+          "top": 4192.921875,
           "left": 20,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -3096,8 +3294,19 @@
           "decorative": true,
           "width": 992,
           "height": 640,
-          "top": 4819,
+          "top": 4803,
           "left": -336,
+          "bitmapWidth": 300,
+          "bitmapHeight": 150
+        },
+        {
+          "application": null,
+          "state": "pending",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 4803,
+          "left": -336.25,
           "bitmapWidth": 300,
           "bitmapHeight": 150
         },
@@ -3107,7 +3316,7 @@
           "decorative": true,
           "width": 800,
           "height": 800,
-          "top": 5527.890625,
+          "top": 5511.890625,
           "left": -239.984375,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -3118,7 +3327,7 @@
           "decorative": true,
           "width": 800,
           "height": 800,
-          "top": 5527.890625,
+          "top": 5511.890625,
           "left": -239.984375,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -3129,7 +3338,7 @@
           "decorative": true,
           "width": 500.859375,
           "height": 500.859375,
-          "top": 10422.359375,
+          "top": 10381.359375,
           "left": -90.421875,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -3142,7 +3351,7 @@
           "decorative": true,
           "width": 992,
           "height": 640,
-          "top": 4819,
+          "top": 4803,
           "left": -336,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -3153,7 +3362,7 @@
           "decorative": true,
           "width": 800,
           "height": 800,
-          "top": 5527.890625,
+          "top": 5511.890625,
           "left": -239.984375,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -3164,7 +3373,7 @@
           "decorative": true,
           "width": 500.859375,
           "height": 500.859375,
-          "top": 10422.359375,
+          "top": 10381.359375,
           "left": -90.421875,
           "bitmapWidth": 300,
           "bitmapHeight": 150
@@ -3173,22 +3382,22 @@
       "chatBackdrop": {
         "rect": {
           "x": 20,
-          "y": -4573.109375,
+          "y": -4512.109375,
           "width": 280,
           "height": 640,
-          "top": -4573.109375,
+          "top": -4512.109375,
           "right": 300,
-          "bottom": -3933.109375,
+          "bottom": -3872.109375,
           "left": 20
         },
         "widget": {
           "x": 20,
-          "y": -4573.109375,
+          "y": -4512.109375,
           "width": 280,
           "height": 640,
-          "top": -4573.109375,
+          "top": -4512.109375,
           "right": 300,
-          "bottom": -3933.109375,
+          "bottom": -3872.109375,
           "left": 20
         },
         "display": "block",
@@ -3215,7 +3424,7 @@
           "decorative": true,
           "width": 479.984375,
           "height": 480,
-          "top": 1451.0625,
+          "top": 1443.0625,
           "left": -80.125,
           "bitmapWidth": 480,
           "bitmapHeight": 480
@@ -3226,7 +3435,7 @@
           "decorative": true,
           "width": 416.625,
           "height": 480,
-          "top": 1955.0625,
+          "top": 1939.0625,
           "left": -48.3125,
           "bitmapWidth": 417,
           "bitmapHeight": 480
@@ -3237,7 +3446,7 @@
           "decorative": true,
           "width": 280,
           "height": 280,
-          "top": 2760.25,
+          "top": 2744.25,
           "left": 20,
           "bitmapWidth": 280,
           "bitmapHeight": 280
@@ -3248,7 +3457,7 @@
           "decorative": true,
           "width": 280,
           "height": 280,
-          "top": 3243.140625,
+          "top": 3227.140625,
           "left": 20,
           "bitmapWidth": 280,
           "bitmapHeight": 280
@@ -3259,7 +3468,7 @@
           "decorative": true,
           "width": 280,
           "height": 280,
-          "top": 3726.03125,
+          "top": 3710.03125,
           "left": 20,
           "bitmapWidth": 280,
           "bitmapHeight": 280
@@ -3270,7 +3479,7 @@
           "decorative": true,
           "width": 280,
           "height": 280,
-          "top": 4208.921875,
+          "top": 4192.921875,
           "left": 20,
           "bitmapWidth": 280,
           "bitmapHeight": 280
@@ -3281,8 +3490,19 @@
           "decorative": true,
           "width": 992,
           "height": 640,
-          "top": 4819,
+          "top": 4803,
           "left": -336,
+          "bitmapWidth": 992,
+          "bitmapHeight": 640
+        },
+        {
+          "application": null,
+          "state": "ready",
+          "decorative": true,
+          "width": 992,
+          "height": 640,
+          "top": 4803,
+          "left": -336.25,
           "bitmapWidth": 992,
           "bitmapHeight": 640
         },
@@ -3292,7 +3512,7 @@
           "decorative": true,
           "width": 800,
           "height": 800,
-          "top": 5527.890625,
+          "top": 5511.890625,
           "left": -239.984375,
           "bitmapWidth": 800,
           "bitmapHeight": 800
@@ -3303,7 +3523,7 @@
           "decorative": true,
           "width": 800,
           "height": 800,
-          "top": 5527.890625,
+          "top": 5511.890625,
           "left": -239.984375,
           "bitmapWidth": 800,
           "bitmapHeight": 800
@@ -3314,7 +3534,7 @@
           "decorative": true,
           "width": 500.859375,
           "height": 500.859375,
-          "top": 10422.359375,
+          "top": 10381.359375,
           "left": -90.421875,
           "bitmapWidth": 501,
           "bitmapHeight": 501
@@ -3324,7 +3544,7 @@
         "viewport": 320,
         "documentWidth": 320,
         "bodyWidth": 320,
-        "height": 11721,
+        "height": 11680,
         "scrollX": 0,
         "scrollY": 0
       }

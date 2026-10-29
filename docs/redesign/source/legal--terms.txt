@@ -1,0 +1,527 @@
+Home
+/
+Legal
+/
+Terms and Conditions
+Terms and Conditions
+Last updated:
+August 2026
+On this page
+1. Definitions.
+2. Services Provided.
+3. Quality and Maintenance.
+4. Intellectual Property License.
+5. Acceptable Use Policy.
+6. Pricing, Billing, and Refund Policy.
+7. Protection of Data.
+8. Confidentiality.
+9. Warranty; Disclaimer
+10. Limitations of Liability
+11. Indemnification
+12. Term and Termination
+13. Miscellaneous
+This online terms and conditions (“Terms”), by and between the Customer, as defined
+under these Terms, and SaaS Labs US, Inc., a Delaware corporation with principal
+office at 355 Bryant Street, #403 San Francisco, CA 94107, United States of America
+(“AtomsAI”, or “us”), together with any and all applicable Order Form(s), schedules,
+exhibits (collectively, the “Agreement”) constitute a legal and binding agreement
+between AtomsAI and the Customer and set forth the terms pursuant to which the
+Customer may access and/or use the Site and Services, as defined. AtomsAI and
+Customer may be individually referred to as a “Party”, and collectively as
+“Parties”.
+By clicking on the “Accept” button or checking the checkbox on the signup page when
+subscribing to the Services, entering into an Order Form or otherwise using and/or
+permitting any User to access and/or use any of the Services or accessing the Site,
+Customer affirms: (i) that it has been read, agreed and will comply with this
+Agreement, (ii) that the representative of the Customer is at least 18 years of age
+and has the required authority to enter into this Agreement on behalf of the
+Customer, and to bind the Customer to this Agreement.
+IF YOU DO NOT AGREE TO THIS AGREEMENT, YOU MUST NOT CLICK ACCEPT OR THE CHECKBOX ON
+THE SIGNUP PAGE OR SIGN THE ORDER FORM, USE ANY OF THE SERVICES, OR ACCESS THE SITE.
+1. Definitions.
+“Administrator”
+means the individual(s) who have been granted the
+right by Customer to set up the account, have access to control settings, and have
+greater control over the permissions;
+“Affiliate”
+means any entity that directly or indirectly controls,
+is controlled by, or is under common control with the subject entity;
+“Applicable Law”
+means any and all law, statute, regulation, rule,
+ordinance, treaty convention, and/or court or administrative order or ruling of any
+governing body with jurisdiction over the Service, the Customer, and/or the Customer’s
+use of the Services;
+“Authorized User”
+means individual(s) who are employees, contractors,
+or agents of the Customer, and have been given access to the AtomsAI Account;
+“Confidential Information”
+shall include but is not limited to any
+and all information, data, ideas, marketing information, marketing methods, customer
+lists, financial information, and business strategies in any and all forms, formats,
+and mediums, in writing orally or through other means, whether identified as confidential
+or not that arises from or relates to a Party, its business, business plans, procedures,
+finances, owners, officers, employees or agents. A Party’s Confidential Information
+shall not include information that (a) is or becomes a part of the public through
+no act or omission of the other Party; (b) was rightfully in the possession of the
+other Party or was known by it prior to its disclosure; (c) is independently developed
+by the Receiving Party without the use of any Confidential Information of the other
+Party; (d) was or is provided by the Disclosing Party to third parties without restriction
+on disclosure, and (e) is required to be disclosed by law or by request of any government
+or regulatory authority.
+“Customer”
+means, in the case of an individual accepting this Agreement
+on behalf of a company or other legal entity, the company or other legal entity on
+behalf of which such individual is accepting this Agreement;
+“Customer Data”
+means any data, content, or materials that the Customer
+uploads into, enters into, or submits to the Service including from Third-Party Integrations.
+This excludes Usage Data.
+“Documentation”
+means AtomsAI’s user manuals, handbooks, help articles
+and guides relating to the Site or Service provided by AtomsAI to Customer;
+“Effective Date”
+means the date on which the Customer subscribes
+to the Service;
+“Feedback”
+means any suggestions or idea for modifying the Service
+or a portion of the Service including without limited to intellectual property rights
+in any such suggestions or idea;
+“AtomsAI Account”
+means the account established by AtomsAI and associated
+with the Customer pursuant to entering into this Agreement;
+“Service”
+means any and all services made available to Customer By
+AtomsAI from time to time under this Agreement;
+“Site”
+as defined as the website
+www.atomsai.com
+“Usage Data”
+means the data regarding applications utilized with
+the Service, configurations, log data, and the performance results for the Service;
+“Third-Party Products”
+means any products, content, services, information,
+websites, Integrations, or other materials that are owned by third parties and are
+incorporated into or accessible through the Service.
+2. Services Provided.
+2.1 Permitted Use.
+Subject to these Terms, Customer may use the Service
+for its own business purposes in accordance with the Terms. This includes the right
+to copy and use the software and Documentation as part of the Customer’s Permitted Use.
+The Customer will comply with the Documentation in using the Service.
+2.2 Users.
+The Customer may permit Authorized Users to use the Service
+on its behalf. The Customer is responsible for provisioning and managing its user accounts,
+for its Authorized Users’ actions through the Service and for their compliance with
+these Terms. The Customer will ensure that the Administrator and Authorized Users keep
+their login credentials confidential and will promptly notify us upon learning of any
+compromise of User accounts or credentials.
+2.3 Affiliates.
+Customer’s Affiliates may serve as Users under these
+Terms. Alternatively, Customer’s Affiliates may enter into their own Agreement, which
+creates a separate agreement between each such Affiliate and AtomsAI incorporating these
+Terms with the Affiliate treated as “Customer”. Neither Customer nor any Customer Affiliate
+has any rights under each other’s separate agreement with us, and breach or termination
+of any such separate agreement affects only that agreement.
+2.4 Inputs and Outputs.
+The Customer may upload or process any information
+through the Service (“Inputs”), and receive output generated by the Service based on
+the Inputs (“Outputs”, and together collectively with Inputs, the “Content”). The Customer
+is solely responsible for the Input, and for ensuring the Content applies with applicable
+laws and this Agreement.
+The Customer agrees that they will be responsible for the Content processed and
+generated by the Service. The Customer agrees that the Customer will not include
+any sensitive personal data including but not limited to racial or ethnic origin,
+political origins, religious or philosophical beliefs, health data, or data
+concerning anyone’s sex life or sexual orientation in any Inputs for processing by
+the Service.
+3. Quality and Maintenance.
+3.1 Minimum Disruptions.
+AtomsAI shall use reasonable endeavours to
+provide the Service with minimum disruptions. AtomsAI cannot guarantee that the Service
+will always function without any disruptions, interruptions, or delays. Since the Service
+will be transmitted through public internet lines and the public switched telephone
+network, there may be power outages or internet service disruptions and the Customer
+may experience some disruptions that can interfere with quality service. AtomsAI does
+not warrant full availability of any type.
+3.2 Support Services.
+AtomsAI will provide standard support services
+to resolve technical issues with and answer queries regarding the use of the Service
+for purchased Service Customers at no additional cost.
+3.3 Upgrades.
+AtomsAI may change technical features in order to keep
+pace with the latest demands and technological developments or to comply with any Applicable
+Laws without obtaining the Customer’s written pre-approval. AtomsAI may also have to
+repair, improve, and/or upgrade, provide patches, enhancements, or fixes for the Service
+and this may require us to restrict, limit, suspend, interfere and/or interrupt the
+Service at any time in our sole discretion including in the event of an emergency. AtomsAI
+shall endeavour to provide the Customer with advance notice where practicable and carry
+out such maintenance, where possible, outside of regular business hours.
+3.4 Enforcing Security.
+Actual or attempted unauthorized use of any
+of the Site or the Service may result in criminal and/or civil prosecution by the appropriate
+legal and judicial authorities. AtomsAI reserves the right to view, monitor, and record
+activity on the Site and Service without notice to the fullest extent permitted by applicable
+law. This right extends to our review of your Inputs, and call recordings. Any information
+obtained by monitoring, reviewing or recording is subject to review by law enforcement
+organizations in accordance with our Privacy Notice.
+4. Intellectual Property License.
+4.1 Limited License.
+Subject to this Agreement, and the Customer’s
+Administrator(s) and Authorized User(s) continued and full compliance with the Agreement,
+AtomsAI grants to the Customer, during the Term, a limited, revocable, non-exclusive,
+non-transferable and right to access and use the Service and Site solely for its internal
+business purposes.
+4.2 Restrictions.
+The Customer shall not and cause its Administrator(s)
+and/or Authorized User(s) to refrain from any unauthorized use, directly or indirectly,
+including but not limited to: (a) sublicense, sell, rent, lease, transfer, assign, distribute,
+or otherwise commercially exploit or make the Service, or any part thereof available
+to any third party other than Administrator(s) and/or Authorized Users; (b) modify,
+reverse engineer, decompile or disassemble, make derivative works of the Service or
+any party thereof, and shall not build a similar or competitive product or service;
+(c) permit other third parties to use the Service, including but not limited to shared
+use via a network connection except under the terms of this Agreement; (d) rent, lease,
+loan, sublicense, distribute or otherwise transfer rights to the Service, or any party
+thereof available to any third party other than Authorized Users; (e) circumvent or
+disable any technological features or measures in the Service; (f) attempt to, or in
+conjunction with any device, program, or service designed to circumvent technological
+measures employed to control access to, or the rights in a content file or other work
+protected by copyright law in any jurisdiction; (g) use the Site, Service, or Documentation
+in any manner or for any purpose that infringes, misappropriates, or otherwise violates
+any intellectual property right or other right of any person, or that violates any applicable
+law, regulation or rule.
+AtomsAI reserves its right to suspend or terminate the license to the Service in
+the event the Customer and/or Administrator(s) and/or Authorized User(s) is found
+using the AtomsAI Account in violation of Clause 4.2.
+4.3 AtomsAI Ownership.
+Customer agrees that AtomsAI owns all rights,
+titles and interests in and to all Intellectual Property rights in the Service, the
+Site, the Documentation, as well as any content herein, except as otherwise stated (“AtomsAI
+Intellectual Property”). All rights not expressly granted to the Customer are reserved
+by AtomsAI. AtomsAI owns the Usage Data derived from the operation of the Service. Nothing
+contained herein shall prevent AtomsAI from utilising the Usage Data to provide, maintain
+and/or improving the Service provided that any data so used shall be de-identified and
+presented in the aggregate so that it will not disclose the identity of the Customer
+to any third party. AtomsAI reserves all rights and licenses expressly granted under
+this Agreement. Nothing in this Agreement grants, by implication, waiver, estoppel,
+or otherwise, to the Customer or any third party, any intellectual property rights or
+other right, title, or interest in or to the AtomsAI Intellectual Property.
+4.4 Customer Data.
+AtomsAI agrees, as between the Parties, the Customer
+retains all rights, titles, and interests in and to all Intellectual Property rights
+in the Customer Data. Customer acknowledges that AtomsAI is not responsible for the
+creation, content, or use of the Customer Data by Customer or any third party. Customer
+grants AtomsAI, its affiliates, and applicable contractors a limited-term license to
+host, copy, use, transmit, store and display any product integration for the Customer
+using the Service and the Customer Data as appropriate to provide and ensure proper
+operation of the Service and associated systems in accordance with the Agreement. If
+the Customer chooses to use a Third-Party Product with the Service, then the Customer
+allows the Third-Party Product to access Customer Data as appropriate. Use of any such
+Third-Party Product is subject to the terms and conditions of such Third-Party Product,
+and Customer warrants that Customer has agreed to such terms independently from their
+use of AtomsAI Site and Service. Customer warrants that it owns or has acquired the
+necessary licenses to grant AtomsAI the above license to use Customer Data.
+4.5 Use of Trademarks.
+The Customer grants AtomsAI the right to use
+and reproduce the Customer’s name, logo and trademark to identify the Customer as an
+AtomsAI customer on the Site and other marketing materials. In the event, the Customer
+does not agree with the use of the Customer’s name, logo and/or trademark to identify
+the Customer as an AtomsAI customer or that the use of Customer’s name, logo and/or
+trademark is not in line with the Customer’s branding or similar guidelines, the Customer
+shall notify AtomsAI at
+start@atomsai.com
+4.6 Feedback.
+All Feedback given by the Customer to AtomsAI shall be
+used without restriction or obligation. All Feedback is provided “as is” and AtomsAI
+will not publicly identify the Customer as the source of Feedback without the Customer’s
+permission. The Customer has agreed not to treat any Feedback given to AtomsAI as Customer’s
+Confidential Information, Intellectual Property or its trade secret, and nothing in
+this Agreement or in the Parties’ dealings arising out of or related to this Agreement
+will restrict AtomsAI’s right to use, profit from, disclose, publish, keep secret or
+otherwise exploit Feedback, without compensating or crediting the Customer.
+4.7 Documentation License.
+Subject to the Agreement, AtomsAI hereby
+grants the Customer a non-exclusive, non-sublicensable, non-transferable license for
+Administrator(s) and Authorized User(s) to use the Documentation during the Term solely
+for your internal business purposes in connection with the use of the Site and Service.
+5. Acceptable Use Policy.
+5.1 Restricted Activities.
+The Customer is responsible for any use
+of the Service. Any access and use of the Service must comply with the following Acceptable
+Use Policy (“AUP”). Customer must not and cause its Administrator(s) and/or Authorized
+Users not to use AtomsAI to:
+(a) violate any laws, regulations, governmental orders, industry standards, or
+published policy, or any applicable third-party policy including, industry code of
+conduct, or requirement communicated or otherwise made available by AtomsAI or
+guidance in any applicable jurisdiction including that require consent to be
+obtained before transmitting, recording, collecting or monitoring data or
+communications;
+(b) violate or infringe on Intellectual Property, privacy or rights of another;
+(c) to transmit or store any content or communications (commercial or otherwise)
+that is illegal, harmful, unwanted, inappropriate, or objectionable in the
+recipient's jurisdiction including content or communication which AtomsAI
+determines (i) is false or inaccurate; (ii) is hateful or encourages hatred or
+violence against individuals or groups; (iii) could endanger public safety, or
+(iv) the sale or promotion of prohibited substances, prescription medicines or
+prohibited goods;
+(d) to transmit or store any content or communications that is sexually explicit,
+pornographic, obscene, or other content which is objectionable in AtomsAI's sole
+discretion;
+(e) to sell, trade, resell or otherwise exploit AtomsAI Account for any
+unauthorized commercial purpose;
+(f) stalk, harass, harm another individual or impersonate another individual,
+misrepresent or falsely identify, engage in spamming, phishing or pharming;
+(g) to engage in fraudulent activity with respect to third parties;
+(h) to engage in spamming or other unsolicited advertising, marketing or other
+activities in connection with any unsolicited or harassing messages (commercial or
+otherwise) including but not limited to unsolicited or unwanted phone calls;
+(i) to use any robot, spider, another automatic device, or manual process to
+monitor, copy or 'scrape' web pages or the content contained in the website or for
+any other unauthorized purpose without our prior written consent;
+(j) using any device, software, or routine to interfere or attempt to interfere
+with the proper working of the Service;
+(k) send any communications on behalf of, or purporting to originate on behalf of
+AtomsAI;
+5.2 Breach of AUP.
+In the event, the Customer breaches any of the terms
+of the AUP, AtomsAI may immediately suspend or terminate all or part of the access to
+the Service and/or Agreement and report and share relevant information of any activities
+deemed illegal or against applicable laws and regulations to the appropriate authorities
+in accordance with the applicable data privacy laws and regulations. In addition to
+the restrictions mentioned in the AUP, AtomsAI reserves the right to impose limits on
+the Customer’s use of the Service.
+6. Pricing, Billing, and Refund Policy.
+6.1 Payment.
+By providing a valid credit or debit card information
+(“Payment Method”), the Customer expressly authorizes AtomsAI and/or any other company
+acting as a billing agent for AtomsAI to (a) charge the Payment Method for fees corresponding
+to fees chargeable at the billing frequency chosen by Customer while selecting the Plan
+from the Site; and (b) for any and all other fees in connection with the Service including
+attempting to charge and/or place holds on such Customer’s Payment Method until such
+amounts are paid in full. The Customer expressly agrees to provide AtomsAI with updated
+Payment Method information upon AtomsAI’s request and any time the information previously
+provided is no longer valid. The Customer is solely responsible for maintaining and
+updating the Payment Method information. Customer shall be solely responsible for the
+consequences of any expired or incomplete Payment Method information and insufficient
+funds to pay invoices including charges incurred as a result of such attempts to charge.
+Unless otherwise stated on the invoice, payment is due in full in advance upon receipt
+of the invoice.
+6.2 Late Fees.
+The Customer acknowledges and agrees that for any amount(s)
+that are not paid by the due date, AtomsAI may charge a late payment fee equal to 1.5%
+of the Customer’s outstanding balance per month, or the maximum rate permitted by law,
+whichever is highest. AtomsAI shall be entitled to charge the Customer all costs or
+fees associated with recovering the outstanding amounts due under the Agreement.
+6.3 Taxes.
+Unless otherwise stated, the pricing does not include taxes,
+levies, duties, or assessments including value-added, sales, use or withholding taxes
+assessable by any local, state, or provincial authorities (“Taxes”). The Customer is
+responsible for paying all applicable Taxes associated with the purchases hereunder.
+6.4 Refunds.
+The Customer is billed in advance and is non-refundable.
+7. Protection of Data.
+AtomsAI will take commercially reasonable administrative, physical, and technical
+safeguards for the protection of the security, confidentiality, and integrity of
+Customer’s Data, complying in any case with Applicable Laws and regulations as
+well as any data processing agreement or addendum as concluded between the
+Parties. AtomsAI shall make reasonable efforts to ensure ongoing compliance with
+applicable laws and regulations and the maintenance of a state-of-the-art security
+infrastructure.
+8. Confidentiality.
+8.1 Obligation of Confidentiality.
+Each Party ('Receiving Party') shall
+not, without the other Party's ('Disclosing Party') prior written consent, disclose
+or permit the disclosure of any Confidential Information provided by the Disclosing
+Party to the Receiving Party under or in connection with this Agreement, except that
+the Confidential Information may be disclosed to the Receiving Party's employees, Affiliates,
+subcontractors or professional advisors to the extent necessary to carry out its duties
+and obligations under this Agreement. The Parties (including their respective employees
+and agents) agree to hold each other's Confidential Information in confidence during
+the Term of this Agreement and for three (3) years thereafter. The Parties further agree
+not to disclose or make any Confidential Information of the other Party available in
+any form to any third party other than its employees, Representatives, Affiliates, legal
+counsel, professional advisors, consultants, accountants on a need-to-know basis or
+to use it for any purpose other than the implementation of this Agreement.
+8.2 Compelled by Law.
+If the Receiving Party or any of its Representatives
+is compelled by applicable law to disclose any Confidential Information then, to the
+extent permitted by applicable law, the Receiving Party shall provide prior notice of
+such compelled disclosure and reasonable assistance, at the other party's cost if the
+other party wishes to contest the disclosure.
+8.3 Return of Confidential Information.
+Upon termination or expiration
+of the Agreement, each Party shall, upon the other Party's instructions, return to the
+other Party, or destroy, the Confidential Information and any copies thereof.
+9. Warranty; Disclaimer
+9.1 Customer Warranty.
+Customer warrants that Customer owns all right,
+title, and interest, including all intellectual property rights, in and to Customer
+Data and that both the Customer Data and your use of the Site and Service are in compliance
+with the AUP.
+9.2 DISCLAIMER.
+TO THE FULLEST EXTENT PERMITTED BY LAW, THE CUSTOMER
+AGREES THAT THE SERVICES ARE BEING PROVIDED ‘AS IS' AND ‘AS AVAILABLE', AND EXCEPT FOR
+THE WARRANTIES EXPRESSLY SET FORTH IN THIS AGREEMENT, ATOMSAI MAKES NO OTHER WARRANTIES,
+EXPRESS OR IMPLIED, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT,
+AND FITNESS FOR A PARTICULAR PURPOSE AND ANY WARRANTIES ARISING FROM A COURSE OF DEALING
+OR USAGE IN TRADE, TOGETHER WITH SIMILAR WARRANTIES, WHETHER ARISING UNDER ANY LAW OR
+OTHERWISE. ATOMSAI DOES NOT REPRESENT OR WARRANT THAT THE SITE OR ANY PORTION OF THE
+SERVICES WILL ALWAYS BE AVAILABLE, ACCESSIBLE, UNINTERRUPTED, TIMELY, SECURE, CONTINUOUS,
+ERROR-FREE OR WILL OPERATE WITHOUT PACKET LOSS, NOR DOES ATOMSAI WARRANT ANY CONNECTION
+TO OR TRANSMISSION FROM THE INTERNET, OR ANY QUALITY OF CALLS MADE THROUGH THE SERVICES
+BEYOND SUCH TERMS. ATOMSAI DOES NOT PROVIDE ANY WARRANTY OR GUARANTEE AS TO THE ACCURACY,
+COMPLETENESS, OR RELIABILITY OF THE OUTPUTS AND DOES NOT ACCEPT ANY LIABILITY OR RESPONSIBILITY
+ARISING IN ANY WAY FROM THE CUSTOMER’S USE OF THE OUTPUT OR ANY OMISSIONS OR ERRORS
+CONTAINED IN THE OUTPUT. THE CUSTOMER ALSO ACKNOWLEDGES AND AGREES THAT ATOMSAI CANNOT
+GUARANTEE THAT IP-BASED COMMUNICATIONS ARE COMPLETELY SECURE, ERROR OR VIRUS-FREE AND
+THAT THE OUTPUT IS FREE OF CONTENT THAT INFRINGES THIRD-PARTY RIGHTS INCLUDING WITHOUT
+LIMITATION PRIVACY AND INTELLECTUAL PROPERTY RIGHTS.
+10. Limitations of Liability
+10.1 Limitation.
+NO EVENT WILL THE COLLECTIVE LIABILITY OF EITHER PARTY
+(INCLUDING ITS OFFICERS, DIRECTORS, EMPLOYEES, AFFILIATES, AGENTS, LICENSORS, REPRESENTATIVES,
+ATTORNEYS, AND BUSINESS PARTNERS) REGARDLESS OF THE TYPE OF ACTION WHETHER IN CONTRACT,
+TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, EXCEED UP TO THE AGGREGATE AMOUNTS PAID OR
+PAYABLE BY CUSTOMER HEREUNDER DURING THE TWELVE MONTHS IMMEDIATELY PRECEDING THE APPLICABLE
+CLAIM. ANY CAUSE OF ACTION THE CUSTOMER MAY HAVE WITH RESPECT TO ITS USE OF THE SITE
+AND SERVICE MUST BE COMMENCED AND PROVIDED TO ATOMSAI WITHIN ONE YEAR AFTER THE CLAIM
+OR CAUSE OF ACTION ARISES OR IT SHALL BE DEEMED WAIVED BY THE CUSTOMER.
+10.2 Exclusions.
+IN NO EVENT WILL EITHER PARTY (INCLUDING ITS OFFICERS,
+DIRECTORS, EMPLOYEES, AFFILIATES, AGENTS, LICENSORS, REPRESENTATIVES, ATTORNEYS, AND
+BUSINESS PARTNERS) BE LIABLE FOR ANY SPECIAL, CONSEQUENTIAL, INCIDENTAL, INDIRECT OR
+PUNITIVE DAMAGES, OR LOST PROFITS OR LOST REVENUE ARISING OUT OF OR RELATED TO THE SUBJECT
+MATTER OF THIS AGREEMENT OR THE USE OF OR INABILITY TO USE THE SERVICE. THE FOREGOING
+EXCLUSION AND LIABILITY LIMITATIONS APPLY EVEN IF SUCH PARTY HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.
+11. Indemnification
+The Customer shall, at its own expense and subject to the limitations set forth in
+this Clause, indemnify and defend AtomsAI from and against any and all third party
+claims arising out of (a) Customer's breach of the terms of this Agreement and
+accompanying policies, (b) claims of violation of any laws, regulations or rights
+of a third party by the Customer, (c) claims related to Customer Data and/or
+claims relating to data transferred to the applications of third parties or (d)
+claims that arise from the actions of the Customer, Administrators and/or
+Authorized Users in connection with their use of the Service, and hold AtomsAI
+harmless from and against any and all liability, losses, damages, and costs
+(including attorneys' fees) or agreed in settlement by Customer resulting from
+such claims.
+12. Term and Termination
+12.1 Term.
+The term of this Agreement shall begin on the Effective
+Date and continue until the expiration of the Plan, or unless terminated earlier in
+accordance with the terms of this Clause (“Term”). The Term starts on the date of signing
+up for the Service. The Term shall automatically renew for successive periods of the
+same duration unless the Party provides a notice of non-renewal to the Party before
+the expiry of the Term.
+12.2 Termination.
+Either Party may terminate this Agreement if the
+other party (a) fails to cure a material breach of this Agreement within 30 days after
+notice, (b) ceases operation without a successor, (c) at the written recommendation
+of a government or regulatory agency following a change in Applicable Law, (d) subject
+to Applicable Laws, upon the commencement by or against the other Party of insolvency,
+receivership or bankruptcy proceedings. AtomsAI may terminate this Agreement at any
+time and for any reason without any liability whatsoever.
+12.3 Effects of Termination or Expiration.
+Upon termination or expiration
+of this Agreement, Customer shall cease to have access to and use of the Service at
+the end of the ongoing billing cycle. Customer shall be liable to pay AtomsAI immediately
+and without further notice, and in any case no later than thirty (30) days thereof,
+any accrued fees, charges, including any outstanding fees.
+12.4 Suspension of AtomsAI Account.
+AtomsAI may suspend access to the
+Service immediately if the Customer is in material breach of this Agreement including
+non-payment of fees or is using the Services in violation of law or applicable regulations.
+The suspension will not relieve the Customer of its obligation to pay fees and costs
+associated with the AtomsAI account. AtomsAI shall not be responsible for any damages
+arising from the suspension of the Service.
+13. Miscellaneous
+13.1 Notices.
+Except as set out in this Agreement, notices or other
+communications must be in English and are deemed to have been fully given when made
+in writing and delivered via email, and for AtomsAI, addressed to
+start@atomsai.com
+and to Customer at either the physical address or email address associated with the
+Customer's AtomsAI account.
+13.2 Independent Contractors.
+The Parties are independent contractors
+and have no right to assume or create any obligation or responsibility on behalf of
+the other party. This Agreement does not create or imply any partnership, agency, or
+joint venture.
+13.3. Force Majeure.
+Neither Party is liable to the other for any delay
+or failure to perform hereunder (excluding payment obligations) due to circumstances
+beyond such Party's reasonable control including acts of God, acts of government, flood,
+fire, earthquakes, civil unrest, acts of terror, strikes, service disruptions involving
+hardware, software or power systems not within such party's possession or reasonable
+control, and denial of service attacks.
+13.4. Severability.
+If any provision of these terms is found to be
+unenforceable or invalid, that provision will be limited to the minimum extent necessary
+so that these terms will otherwise remain enforceable and in full force and effect.
+13.5 Amendments.
+AtomsAI reserves the right to update or change the
+terms of this Agreement or any of its policies from time to time, and will endeavour
+to provide an advance notice to the Customer at the email address associated with the
+AtomsAI Account or via a pop-up on the site. Any use of the Service after the change
+in the terms of this Agreement or any of its policies will be deemed as Customer's acceptance
+of such updates.
+13.6. Entire Agreement.
+This Agreement together with any Order Form(s),
+Purchases, exhibits and/or schedules, constitutes the entire and sole agreement among
+the parties with respect to the subject matter hereof and supersedes any previous or
+contemporaneous agreements, negotiations, understandings, or other matters, whether
+oral or written, with respect to the subject matter thereof.
+13.7. No Third-Party Beneficiaries.
+The parties agree that there will
+no third-party beneficiaries to this Agreement.
+13.8. Anti-Bribery.
+Neither party has received or been offered any
+illegal or improper bribe, kickback, payment, gift, or thing of value from an employee
+or agent of the other party in connection with this Agreement.
+13.9. Export Control.
+The Service may be subject to export laws and
+regulations of the United States and other jurisdictions. AtomsAI and Customer each
+represent that it is not named on any U.S. government denied-party list. Customer will
+not permit any Administrator and/or Authorized User to access or use the Services in
+a U.S.-embargoed country or region or in violation of any U.S. export law or regulation.
+13.10. Early Access and Betas.
+AtomsAI may offer optional Early Access
+and Betas. Use of Early Access and Betas is permitted only for Customer's internal evaluation
+during the period designated by AtomsAI (or if not designated, a maximum of 14 days).
+Either Party may terminate Customer's use of Trials and Betas at any time for any reason.
+Trials and Betas may be inoperable, incomplete, or include features never released.
+Notwithstanding anything else in this Agreement, AtomsAI offers no warranty, indemnity,
+and is not liable for any loss caused to the Customer.
+13.11 Governing and Jurisdiction.
+The Agreement shall be governed in
+all respect by the laws of the state of Delaware without regard to its conflict of law
+provisions. If any litigation is validity instituted in connection with this Agreement,
+the Parties hereby consent to the exclusive personal jurisdiction of the state and federal
+courts in Delaware and waive any objection as to venue or inconvenient forum. The Parties
+hereby waive any right to a jury trial of all claims or causes of actions in connection
+with a dispute related to this Agreement. To the extent permitted by applicable law,
+the Parties hereby waive their rights to assert any claim as plaintiff or class member
+in any purported class action, collective action, and other representative proceedings
+with respect to the Service.
+13.12 Assignment.
+This Agreement shall be binding upon and inure to
+the benefit of the parties hereto and their respective successors and permitted assigns,
+but neither this Agreement nor any of the rights, interests or obligations hereunder
+shall be assigned by any of the Parties hereto without the prior written consent of
+the other Party. Provided, however, either Party may assign this Agreement without such
+consent to a successor in interest.
+13.13 Waivers.
+No waiver shall be deemed to have been made by either
+party unless expressed in writing and signed by the waiving party. Any such written
+waiver shall not constitute a waiver of any prior or future obligations to comply with
+such term, provision, condition or requirement.
+13.14 Survival.
+The following clauses will survive termination or expiration
+of this Agreement: Clause 9 (Disclaimers), Clause 6 (Pricing, Billing and Refund Policy),
+Clause 10 (Limitations of Liability), Clause 11 (Indemnification), Clause 8 (Confidentiality),
+Clause 4 (Intellectual Property Rights), Clause 13 (Miscellaneous), and Clause 7 (Protection
+of Data) till the time AtomsAI has access to Customer Data.
+Related
+Trust Center
+Privacy Notice

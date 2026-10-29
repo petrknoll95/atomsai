@@ -1,0 +1,70 @@
+[
+  {
+    "browser": "chromium",
+    "marks": [
+      {
+        "width": 80,
+        "height": 80,
+        "mask": "url(\"http://127.0.0.1:3001/assets/products/justcall-mark.svg\")",
+        "color": "color(srgb 0 0 0)"
+      },
+      {
+        "width": 80,
+        "height": 80,
+        "mask": "url(\"http://127.0.0.1:3001/assets/products/helpwise-mark.svg\")",
+        "color": "color(srgb 0 0 0)"
+      },
+      {
+        "width": 80,
+        "height": 80,
+        "mask": "url(\"http://127.0.0.1:3001/assets/products/serviceagent-mark.svg\")",
+        "color": "color(srgb 0 0 0)"
+      },
+      {
+        "width": 80,
+        "height": 80,
+        "mask": "url(\"http://127.0.0.1:3001/assets/products/callpage-mark.svg\")",
+        "color": "color(srgb 0 0 0)"
+      }
+    ],
+    "hoverWhite": true,
+    "idleBlack": true,
+    "keyboardFocus": true,
+    "mobileOverflow": false,
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "marks": [
+      {
+        "width": 80,
+        "height": 80,
+        "mask": "url(\"http://127.0.0.1:3001/assets/products/justcall-mark.svg\")",
+        "color": "color(srgb 0 0 0)"
+      },
+      {
+        "width": 80,
+        "height": 80,
+        "mask": "url(\"http://127.0.0.1:3001/assets/products/helpwise-mark.svg\")",
+        "color": "color(srgb 0 0 0)"
+      },
+      {
+        "width": 80,
+        "height": 80,
+        "mask": "url(\"http://127.0.0.1:3001/assets/products/serviceagent-mark.svg\")",
+        "color": "color(srgb 0 0 0)"
+      },
+      {
+        "width": 80,
+        "height": 80,
+        "mask": "url(\"http://127.0.0.1:3001/assets/products/callpage-mark.svg\")",
+        "color": "color(srgb 0 0 0)"
+      }
+    ],
+    "hoverWhite": true,
+    "idleBlack": true,
+    "keyboardFocus": true,
+    "mobileOverflow": false,
+    "errors": []
+  }
+]

@@ -1,0 +1,528 @@
+AtomsAI / Front desk agent
+Every call answered.
+At every location.
+Answers calls and chats for every location: answers questions, books and reschedules, takes messages and routes to the right person. More bookings, fuller diaries, and a front desk that's always staffed.
+Contact us
+Try the chat demo
+Try the voice demo
+Built for groups with many locations. Works with your phones, calendars and booking system.
+Northside Dental
+Live call
+Call ·
+Riverside location
+Answered on the first ring
+Hi, do you take Delta Dental? And could I get a cleaning this week?
+Yes, we're in network with Delta Dental. At Riverside, Dr. Patel has Thursday at
+4:30pm or Friday at 8:00am. Which suits you?
+Thursday. Also, can someone call me about last month's bill?
+Done. I've booked Thursday and asked billing to call you tomorrow morning.
+Booked Thu 4:30pm · billing callback set for 9:30am
+Answer from the insurance list · message routed to Maria in billing
+One call: a question answered, a visit
+booked, a message routed
+01 / Answer
+02 / Book
+03 / Route
+04 / Remind
+Why it matters
+What it does
+Channels & stack
+Front desk view
+By industry
+Controls & evals
+Pricing
+Why it matters
+Phones ringing.
+Desks overwhelmed.
+Front desks juggle callers, walk-ins and admin at once.
+Across many locations, the cracks add up to lost bookings and empty slots.
+Calls ring out
+The desk is with a customer, at lunch or closed. The caller goes somewhere else.
+Every location answers differently
+Different answers, different booking habits, and no one sees the whole picture.
+The same questions all day
+Hours, parking, prices and insurance, asked hundreds of times a week.
+What it does
+Everything a great front desk does.
+On every call, at any hour.
+Answers every call and chat.
+On the first ring, for every location. Each caller gets the right outcome: an answer, a booking, a message or the right person.
+Talk to the voice agent
+Example · four calls, one morning, dental group
+“Do you take Delta Dental?”
+Answered from your insurance list
+Answered
+“Can I get in this week?”
+Booked Thu 4:30pm, Riverside
+Booked
+“Can someone call me about my bill?”
+Message to billing, callback 9:30am
+Routed
+“My tooth is really painful”
+Transferred to the nurse line
+Escalated
+Answers the everyday questions.
+Hours, parking, prices and insurance, from your own information.
+Is there parking at Riverside?
+Yes, free parking behind the building. The entrance is on Elm Street.
+Source: Riverside location page
+Books and reschedules.
+Only offers times that are actually free with the right person, and confirms in the same conversation.
+Try the live demo
+Example · new patient, dental practice
+I need a cleaning next week, after 4 if possible. I'm new.
+Welcome! New-patient cleanings take an hour. These are free after 4pm:
+Mon 4:15pm
+Dr. Patel
+Tue 5:00pm
+Dr. Okafor
+Wed 4:45pm
+Dr. Patel
+Wednesday, please.
+Booked Wed 4:45pm · new-patient form sent
+Calendar updated
+Takes messages and routes.
+The right person gets the message, with a time to call back.
+Message for Maria · Billing
+Caller
+Priya Shah, Riverside patient
+About
+Question on last month's bill
+Call back
+Tomorrow 9:30am
+Cuts no-shows.
+Reminders that ask for a reply, then a call if there's none.
+48 hours before
+Text with details
+24 hours before
+Text: reply C to confirm
+No reply
+Short reminder call
+Fills cancellations.
+Offers freed slots to your waitlist.
+9:00 slot opened
+Texted 3 people on the waitlist
+M. Chen replied first
+Booked in 6 minutes
+Follows your rules.
+Who does what, how long it takes, and what counts as urgent.
+Your booking rules
+Crown fitting
+90 min · Dr. Okafor only · Room 2
+Cleaning
+60 min new, 45 min existing
+Emergency
+Same day, held 11:30 and 4:00
+Buffer
+10 min after every surgical visit
+One front desk for every location.
+Knows each site's hours, services and diary, and finds the nearest free slot.
+Downtown
+Next free: today 3:30
+Riverside
+Next free: tomorrow 9:00
+Northgate
+Next free: Thu 11:15
+Answers after hours.
+Urgent calls reach the on-call team; the rest get booked.
+9:40 pm
+Toothache call · booked first slot tomorrow
+Grows sales and fills the diary.
+Turns missed calls into bookings, refills cancellations, suggests the right add-on, and shows the fill rate of every location.
+Example · one week, three locations
+17
+bookings from calls that would have rung out
+9
+cancellations refilled from the waitlist
+14
+visits booked with an add-on, like whitening or the next check-up
+Diary fill rate
+Downtown
+94%
+Riverside
+91%
+Northgate
+86%
+Channels, capabilities and integrations
+Every channel.
+Every location. One front desk.
+One agent across phone, text and chat for every site. Bookings land in your calendars, messages reach your team.
+5
+Channels. One memory.
+Web chat
+Voice
+WhatsApp
+SMS
+Email
+Secure by default
+SOC 2 Type II, HIPAA and GDPR. Your data is never used to train models.
+Conversations today
+00:00 → 23:59
+Always on
+Lunch breaks, evenings and weekends. Every caller gets an answer, not a voicemail.
+Hands over to your team
+The right person at the right location, with the reason for the call and the full conversation.
+When it hands over
+As per your rules
+The question is clinical or out of scope
+The customer asks for a person
+It isn't confident, or the customer is upset
+AI agent
+Insurance question
+→
+ML
+Maria L.
+Billing
+Clinical question
+→
+NL
+Nurse line
+Clinical
+Complaint
+→
+SK
+Sam K.
+Practice manager
+Handover note
+· summary, what was tried, full transcript
+At home in your stack
+Google Calendar, Outlook and Calendly. Practice and booking systems through their APIs. JustCall for calls and texts, WhatsApp Business, and your CRM. Anything else through APIs and webhooks.
+Scoped access, approved per action
+Front desk view
+Every location.
+One view, all day.
+See every call and chat across your sites: answered, booked, routed or escalated.
+Front desk · all locations
+This morning
+Live
+Calls and chats
+142
+Answered
+100%
+Booked
+38
+Diary fill rate
+92%
+9:02
+Riverside
+Insurance question, then booked a cleaning
+Booked
+9:05
+Downtown
+Asked about opening hours
+Answered
+9:07
+Northgate
+Bill query, message taken for billing
+Routed
+9:11
+Downtown
+Severe toothache
+Sent to nurse
+9:14
+Riverside
+Moved Friday's visit to next week
+Rescheduled
+3 calls in progress
+Take over
+Pause
+One view across every location
+Calls, texts, chat and WhatsApp for every site, with the outcome of each.
+Same answers everywhere
+Every site gives the same, approved answers, checked on every call.
+Voice built in-house
+Our own speech engine, for natural calls that sound like your front desk.
+Take over any time
+Pause the agent for one customer or join a call live.
+Talk to the voice agent
+Got a front desk?
+There's a play for that.
+Pick your industry to see what the agent answers, books and routes.
+Dental & clinics
+3
+Home services
+2
+Salons & spas
+2
+Automotive service
+2
+Real estate
+2
+Financial advisory
+2
+Fitness & wellness
+2
+Legal & professional
+2
+Education
+2
+Dental & clinics
+Phones ring during procedures, and every location answers differently.
+Book
+New patient, first visit
+Web chat
+Voice
+Trigger
+A new patient asks for a cleaning after work.
+Agent
+Checks insurance and visit type, offers slots with the right provider.
+Result
+Booked, with forms sent before the visit
+Route
+Urgent pain, after hours
+Voice
+Trigger
+A patient calls at 9pm with severe pain.
+Agent
+Checks urgency, gives safe next steps, pages the on-call dentist.
+Result
+On-call dentist reached in minutes
+Grow sales
+Add whitening to a cleaning
+SMS
+Voice
+Trigger
+A patient books a cleaning before a wedding.
+Agent
+Mentions whitening, gives the price and books it in the same visit.
+Result
+Higher-value visit, same slot
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Home services
+The phone rings while everyone is on a job, and the call goes to a competitor.
+Book
+Book the right technician
+Voice
+Web chat
+Trigger
+A homeowner needs an AC repair.
+Agent
+Checks the job type and area, offers arrival windows.
+Result
+Visit booked on the technician's route
+Answer
+“How much for a boiler service?”
+Voice
+Web chat
+Trigger
+A homeowner asks about prices.
+Agent
+Gives the price range from your list and offers a visit.
+Result
+Question answered, visit booked
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Salons & spas
+Stylists can't answer the phone mid-appointment, and messages pile up across channels.
+Book
+Book with a favourite stylist
+WhatsApp
+Instagram
+Trigger
+A client asks for a cut and colour with Mia.
+Agent
+Knows the service length and Mia's diary, offers times.
+Result
+Booked with a deposit link
+Fill rate
+Last-minute cancellation
+SMS
+Trigger
+A 2pm slot opens up.
+Agent
+Offers it to clients on the waitlist.
+Result
+Slot filled the same morning
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Automotive service
+Service desks spend mornings on the phone instead of with the customers in front of them.
+Book
+Service with a courtesy car
+Voice
+Web chat
+Trigger
+An owner's car is due for a service.
+Agent
+Checks the model and mileage, offers bays and a courtesy car.
+Result
+Service booked, car reserved
+Route
+Parts delayed
+SMS
+Voice
+Trigger
+A part won't arrive in time.
+Agent
+Tells the owner and offers the next free day.
+Result
+Moved before the customer drives in
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Real estate
+Calls about different listings land on whoever picks up first.
+Book
+Viewing, booked in one go
+WhatsApp
+Web chat
+Trigger
+A buyer wants to see a flat this weekend.
+Agent
+Checks the agent's diary and the seller's access times.
+Result
+Viewing booked, everyone notified
+Route
+Right agent for the listing
+Voice
+WhatsApp
+Trigger
+A buyer calls about a flat on Elm Street.
+Agent
+Answers the basics and passes them to the listing agent with notes.
+Result
+Listing agent calls back, briefed
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Financial advisory
+Advisers are in client meetings while new enquiries go to voicemail.
+Book
+First meeting with an adviser
+Web chat
+Voice
+Trigger
+A prospect asks about retirement planning.
+Agent
+Checks the topic, books the right adviser, sends the document list.
+Result
+Meeting booked with documents ready
+Answer
+Office to video
+SMS
+Trigger
+A client can't make it to the office.
+Agent
+Offers a video meeting at the same time.
+Result
+Meeting kept, not lost
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Fitness & wellness
+The front desk is busy at peak times, and enquiries go unanswered.
+Book
+Free trial class
+Instagram
+Web chat
+Trigger
+Someone asks about trying a class.
+Agent
+Suggests a class for their level and books a spot.
+Result
+Trial booked, welcome text sent
+Fill rate
+Waitlist for full classes
+SMS
+Trigger
+A spot opens in a full class.
+Agent
+Offers it to the waitlist in order.
+Result
+Class full again
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Legal & professional
+Every caller needs the right expert, and reception spends the day triaging.
+Book
+Initial consultation
+Web chat
+Voice
+Trigger
+A client asks about a tenancy dispute.
+Agent
+Checks the matter type and conflicts, books the right lawyer.
+Result
+Consultation booked with a short brief
+Remind
+Paid consultation reminder
+SMS
+Email
+Trigger
+A paid consultation is in two days.
+Agent
+Sends a reminder and the payment link.
+Result
+Paid and confirmed ahead
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Education
+Admissions phones and inboxes peak at the same time every year.
+Book
+Campus tour
+Web chat
+SMS
+Trigger
+A family asks about visiting the campus.
+Agent
+Offers tour times and collects the student's interests.
+Result
+Tour booked, guide briefed
+Book
+Admissions call
+Voice
+Email
+Trigger
+An applicant has questions about funding.
+Agent
+Books the right counsellor and shares the agenda.
+Result
+Call booked with the right person
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Bookings are made against your live calendar and rules. Reminders follow consent and quiet hours.
+Controls and evals
+Your front desk.
+Your rules.
+Controls
+Only real availability
+Books into your live calendar, so there are no double bookings.
+Your booking rules
+Lengths, providers, rooms and buffers are enforced, not suggested.
+Consent and privacy
+Texts follow opt-in and quiet hours. HIPAA-ready for healthcare.
+Full audit trail
+Every booking, change and reminder is logged.
+Evals
+Tested before launch
+Real calls and edge cases: urgent symptoms, double bookings, wrong location, after hours.
+Re-tested on every change
+A saved test set re-runs whenever rules or calendars change.
+Quality checked live
+Every conversation is scored, and misses are flagged for review.
+Measured against your goals
+Answer rate, bookings and no-shows by location, reviewed with you weekly.
+Pricing
+Custom built.
+Priced for your requirements.
+No fixed tiers. Every front desk agent is built around your journeys, channels and systems, so we price it the same way: after we understand what you need.
+What shapes the price
+Number of locations
+Call and chat volume
+Channels: voice, SMS, chat, WhatsApp
+Calendars, booking and phone systems
+Compliance needs: HIPAA, consent, data residency
+Always included
+Design and build with our team
+Testing before launch
+Routing, reminders and waitlist set-up
+Weekly reviews and tuning after go-live
+Security: SOC 2 Type II, HIPAA, GDPR
+Tell us what you need.
+Share your journeys, channels and systems. We'll come back with a scope and a
+price.
+Contact us
+Bring one location.
+We'll show you the missed calls.
+Share a week of call logs from one site. We'll show the calls that went unanswered and what the agent would have done with each.
+Contact us
+Try the live demo
+Pricing

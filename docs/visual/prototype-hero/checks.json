@@ -1,0 +1,190 @@
+[
+  {
+    "name": "chromium",
+    "width": 1600,
+    "geometry": {
+      "range": 3420,
+      "height": 4320,
+      "titleX": 68,
+      "leadX": 68,
+      "logoX": 68,
+      "buttonRight": 1532,
+      "menuRight": 1532,
+      "overflow": false
+    },
+    "scroll": true,
+    "reveal": true,
+    "alignment": true,
+    "errors": []
+  },
+  {
+    "name": "chromium",
+    "width": 1200,
+    "geometry": {
+      "range": 3420,
+      "height": 4320,
+      "titleX": 68,
+      "leadX": 68,
+      "logoX": 68,
+      "buttonRight": 1132,
+      "menuRight": 1132,
+      "overflow": false
+    },
+    "scroll": true,
+    "reveal": true,
+    "alignment": true,
+    "errors": []
+  },
+  {
+    "name": "chromium",
+    "width": 900,
+    "geometry": {
+      "range": 3420,
+      "height": 4320,
+      "titleX": 52,
+      "leadX": 52,
+      "logoX": 52,
+      "buttonRight": 213.375,
+      "menuRight": 848,
+      "overflow": false
+    },
+    "scroll": true,
+    "reveal": true,
+    "alignment": true,
+    "errors": []
+  },
+  {
+    "name": "chromium",
+    "width": 390,
+    "geometry": {
+      "range": 3420,
+      "height": 5072,
+      "titleX": 28,
+      "leadX": 28,
+      "logoX": 28,
+      "buttonRight": 189.375,
+      "menuRight": 362,
+      "overflow": false
+    },
+    "scroll": true,
+    "reveal": true,
+    "alignment": true,
+    "errors": []
+  },
+  {
+    "name": "chromium",
+    "width": 320,
+    "geometry": {
+      "range": 3420,
+      "height": 5072,
+      "titleX": 28,
+      "leadX": 28,
+      "logoX": 28,
+      "buttonRight": 189.375,
+      "menuRight": 292,
+      "overflow": false
+    },
+    "scroll": true,
+    "reveal": true,
+    "alignment": true,
+    "errors": []
+  },
+  {
+    "name": "chromium",
+    "reducedMotion": true
+  },
+  {
+    "name": "webkit",
+    "width": 1600,
+    "geometry": {
+      "range": 3420,
+      "height": 4320,
+      "titleX": 68,
+      "leadX": 68,
+      "logoX": 68,
+      "buttonRight": 1532,
+      "menuRight": 1532,
+      "overflow": false
+    },
+    "scroll": true,
+    "reveal": true,
+    "alignment": true,
+    "errors": []
+  },
+  {
+    "name": "webkit",
+    "width": 1200,
+    "geometry": {
+      "range": 3420,
+      "height": 4320,
+      "titleX": 68,
+      "leadX": 68,
+      "logoX": 68,
+      "buttonRight": 1132,
+      "menuRight": 1132,
+      "overflow": false
+    },
+    "scroll": true,
+    "reveal": true,
+    "alignment": true,
+    "errors": []
+  },
+  {
+    "name": "webkit",
+    "width": 900,
+    "geometry": {
+      "range": 3420,
+      "height": 4320,
+      "titleX": 52,
+      "leadX": 52,
+      "logoX": 52,
+      "buttonRight": 213.375,
+      "menuRight": 848,
+      "overflow": false
+    },
+    "scroll": true,
+    "reveal": true,
+    "alignment": true,
+    "errors": []
+  },
+  {
+    "name": "webkit",
+    "width": 390,
+    "geometry": {
+      "range": 3420,
+      "height": 5108,
+      "titleX": 28,
+      "leadX": 28,
+      "logoX": 28,
+      "buttonRight": 189.375,
+      "menuRight": 362,
+      "overflow": false
+    },
+    "scroll": true,
+    "reveal": true,
+    "alignment": true,
+    "errors": []
+  },
+  {
+    "name": "webkit",
+    "width": 320,
+    "geometry": {
+      "range": 3420,
+      "height": 5108,
+      "titleX": 28,
+      "leadX": 28,
+      "logoX": 28,
+      "buttonRight": 189.375,
+      "menuRight": 292,
+      "overflow": false
+    },
+    "scroll": true,
+    "reveal": true,
+    "alignment": true,
+    "errors": []
+  },
+  {
+    "name": "webkit",
+    "reducedMotion": true
+  }
+]

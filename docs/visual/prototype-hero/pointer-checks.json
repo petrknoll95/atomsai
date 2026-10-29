@@ -1,0 +1,28 @@
+[
+  {
+    "name": "chromium",
+    "energies": [
+      0.076,
+      0.575
+    ],
+    "displaced": 105.674,
+    "settling": 8.421,
+    "rings": true,
+    "reveal": true,
+    "reducedMotion": true,
+    "errors": []
+  },
+  {
+    "name": "webkit",
+    "energies": [
+      0.077,
+      0.736
+    ],
+    "displaced": 109.09,
+    "settling": 8.073,
+    "rings": true,
+    "reveal": true,
+    "reducedMotion": true,
+    "errors": []
+  }
+]

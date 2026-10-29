@@ -1,0 +1,136 @@
+Home
+/
+Solutions
+/
+AI front desk for dental groups: every channel, one memory
+AI front desk for dental groups: every channel, one memory
+One AI front desk for dental groups across chat, SMS, email and phone, with one memory. Books, confirms and runs recall in your practice software.
+Connects during your build to
+Open Dental
+Dentrix
+Eaglesoft
+Curve Dental
+Contact us
+On this page
+What the work looks like today
+What the agent does
+How we connect your practice software
+What you control
+Security
+Time to live
+Questions buyers ask
+Share
+LinkedIn
+X
+Copy link
+A dental group’s patients don’t all call. They message the website chat at lunch, text after work, reply to a reminder, email about their child’s appointment, and call when they’re in pain. AtomsAI’s front desk agent answers every channel with one memory: it books into your practice software, confirms and reschedules, works your recall list, and hands anything clinical or financial to your team with a summary. See the
+AtomsAI front desk agent
+.
+What the work looks like today
+Most front desks are built around the phone and the schedule. Practice software does that part well: it holds the calendar, the operatories, the providers and the patient record.
+But patients now arrive from everywhere. The website chat goes to an email alias. Texts sit on someone’s phone. Reminder replies land in a texting tool. Calls stack up at 8am and at lunch, while the same two people are checking patients in and out. Each channel is handled in a different place, by whoever gets to it, and none of them writes back into the schedule on its own.
+That’s the gap. Conversations on those channels don’t become appointments until someone types them in.
+What the agent does
+Each workflow below runs in your practice software.
+New patients, on any channel, any time
+Trigger:
+a new patient asks about a first visit on the website chat at 9pm, or by text, or by phone.
+Agent:
+answers, asks what they need and which office suits them, checks for an existing record before creating one, collects insurance details for your team to verify, and books a new-patient exam with the right provider.
+Result:
+the patient is on tomorrow’s schedule, confirmed on the channel they used, with a note on the appointment saying what they asked.
+Confirmations on the channel patients answer
+Trigger:
+an appointment two days out is still unconfirmed.
+Agent:
+replaces or works alongside the reminders you already send: a text, then an email if there’s no reply, and a call if your rules allow. It marks the appointment confirmed as soon as the patient answers, and offers new times if they can’t make it.
+Result:
+reschedules go straight back onto the schedule, and the front desk sees who confirmed without chasing anyone. See
+why people no-show after a reminder
+.
+Filling a cancelled slot
+Trigger:
+a patient cancels tomorrow’s 9:00am hygiene appointment.
+Agent:
+records it as a cancelled appointment the way your office does, adds it to the unscheduled list if you want, then offers the slot to patients on your short-notice list and those due for recall who need that type of visit, on their preferred channel.
+Result:
+the first to accept gets the slot, and the rest are told it’s taken.
+Recall that runs every week
+Trigger:
+patients past due for their cleaning.
+Agent:
+reaches out, answers questions from your approved answers, books them, and logs each contact on the patient’s record.
+Result:
+past-due patients are contacted every week without anyone building a list.
+The same questions, answered once
+Trigger:
+“Where do I park?”, “Can I bring my child to the same visit?”, “What should I bring?”
+Agent:
+answers from your office’s approved answers, on whichever channel the patient used, and hands anything clinical, financial or insurance-related to your team with a summary.
+Result:
+fewer interruptions for routine questions.
+How we connect your practice software
+We build the connection to your practice software as part of your build, through the route its maker provides, and confirm it in a front-desk workflow review before you commit.
+Practice software
+What the agent reads and writes
+Route we build on
+Open Dental
+Open time by provider and operatory, appointments (create, move, confirm, break as missed or cancelled), appointment notes, patient records, recall and short-notice lists, communication log
+Open Dental’s API: your office enables it and adds the key we send (
+docs
+)
+Dentrix and Dentrix Enterprise
+The same scheduling, patient and recall work, within what Henry Schein One’s program allows
+The
+Dentrix Developer Program
+Dentrix Ascend
+The same scheduling, patient and recall work, within what Henry Schein One’s program allows
+Henry Schein One’s
+API Exchange
+Eaglesoft
+The same scheduling, patient and recall work, within what Patterson’s program allows
+Patterson’s partner program for Eaglesoft (Patterson Innovation Connection)
+Curve Dental
+The same scheduling, patient and recall work, within what Curve’s program allows
+Curve Dental’s
+partner program
+Running something else? We check how it can be connected in the workflow review and build around it.
+What you control
+Booking rules:
+which appointment types the agent may book, for which providers and operatories, and how far ahead.
+Channels and hours:
+which channels it answers, and during which hours.
+Your voice:
+the messages it sends, in your practice’s voice.
+Staged rollout:
+new-patient bookings can go to a person for approval for the first few weeks, then run on their own once you trust them.
+Pain and emergencies:
+pain, swelling or injury goes straight to your on-call line or team, with the conversation attached. The agent never assesses symptoms.
+Handover:
+when a patient asks for a person, or the agent isn’t sure, it hands over with a summary, what it already tried, and the full conversation. Your team can pause it for one patient or step into any conversation.
+Hard limits:
+the agent never changes clinical notes or treatment plans, never posts payments and never deletes records.
+Security
+AtomsAI is SOC 2 Type II, supports HIPAA and signs a Business Associate Agreement before any patient data is shared, and follows GDPR. The agent reads and writes only what its job needs.
+Time to live
+A standard front desk agent goes live in days. Custom work that connects your practice software with your phones, website chat, texting and a second system takes 4 to 8 weeks.
+Contact us for a review of your front-desk workflow:
+Contact us
+Questions buyers ask
+Can an AI agent book appointments straight into our practice software?
+Yes. The agent checks open time for the right provider and operatory, books on the patient’s record and adds a note saying how it was booked.
+Which practice software can it connect to?
+We build the connection to your practice software as part of your build, through the route its maker provides (for ex. Open Dental’s API, the Dentrix Developer Program, Patterson’s partner program for Eaglesoft, or Curve Dental’s partner program), and confirm it in a front-desk workflow review before you commit.
+Does it work for a group with several offices?
+Yes. The agent knows which providers, operatories and hours each office has, so a patient who messages the main number or website is booked at the office they want.
+Is patient data safe?
+AtomsAI is SOC 2 Type II and we sign a Business Associate Agreement (BAA) before we touch any patient data. The agent only reads and writes what its job needs.
+How long does it take to go live?
+A standard front desk agent goes live in days. Custom work across your practice software, phones and website takes 4 to 8 weeks.
+All solutions
+The posts argue it. The studies price it.
+The same workflows from the other end: what the baseline was, what we built, and what moved once it was live.
+Read the case studies
+Three illustrative workflows, with the baseline, the build and the denominator.
+See how we build
+Five steps, four to eight weeks, and you own what comes out.

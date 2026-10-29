@@ -1,4 +1,21 @@
+.stage { position: relative; container-type: inline-size; }
+.portraitViewport { position: absolute; inset: 0; overflow: hidden; }
+.portraitTrack { display: flex; height: 100%; touch-action: pan-y pinch-zoom; }
+.portraitSlide { position: relative; flex: 0 0 100%; min-width: 0; height: 100%; }
+/* The stationary image covers all fractional mask edges; slit layers only exist
+   visually during a transition. Gestures pass through to the Embla viewport. */
+.portraitStill, .slitLayer { position:absolute; inset:0; pointer-events:none; }
+.portraitStill > picture { position:absolute; inset:0; }
+.portraitStill > picture > img, .portraitSlit > picture > img { inset:-1px; width:calc(100% + 2px); height:calc(100% + 2px); max-width:none; }
+.slitLayer { visibility:hidden; }
+.portraitSlit { position:absolute; top:0; bottom:0; left:calc(var(--slit-index) * 12.5%); width:12.5%; overflow:hidden; }
+.portraitSlit > picture { position:absolute; top:0; bottom:0; width:800%; left:calc(var(--slit-index) * -100%); }
 .viewport { overflow: hidden; }
+/* Keep the slide's layout width, but allow its 16px reveal and focus rings to
+   paint past the content edges. Padding works in Safari as well as Chromium. */
+.contentViewport { padding: 20px; margin: -20px; }
+.viewport, .viewport * { -webkit-user-select: none; user-select: none; }
+.viewport img { -webkit-user-drag: none; }
 .track { display: flex; touch-action: pan-y pinch-zoom; }
 .slide { flex: 0 0 100%; min-width: 0; }
 .pagination { position: relative; display: flex; gap: var(--grid-gap); height: 4px; margin-top: 48px; }
@@ -6,13 +23,20 @@
 .dot[aria-current='true'] { flex-grow: 3.285714; }
 .line { display: block; overflow: hidden; width: 100%; height: 4px; border-radius: var(--radius-control); background: var(--color-border); }
 .fill { display: block; width: 100%; height: 100%; background: var(--color-foreground); transform: scaleX(0); transform-origin: left; }
-.playback { position: absolute; right: 0; bottom: 20px; display: grid; place-items: center; width: 28px; height: 28px; padding: 0; border: 0; border-radius: 50%; color: var(--color-foreground); background: transparent; }
-.playback::before { content: ''; position: absolute; inset: -8px; }
-.playback:hover { background: var(--color-surface); }
-.playback svg { width: 14px; height: 14px; fill: currentColor; }
+.imageControl { position: absolute; z-index: 1; display: grid; place-items: center; width: 36px; height: 36px; padding: 0; border: 0; border-radius: 50%; color: var(--palette-deep-green); background: var(--palette-cream); transition: background-color .2s ease, var(--focus-transition); }
+/* Preserve a comfortable hit area around the smaller visible control. */
+.imageControl::after { content: ''; position: absolute; inset: -4px; border-radius: inherit; }
+.imageControl:hover { background: var(--palette-paper); }
+.imageControl svg { width: 18px; height: 18px; }
+.playback { top: 16px; right: 16px; }
+.previous { bottom: 16px; left: 16px; }
+.next { bottom: 16px; right: 16px; }
+.playback svg { width: 12px; height: 12px; fill: currentColor; }
 @media (max-width: 767px) { .pagination { gap: 12px; margin-top: 48px; } }
 @media (prefers-reduced-motion: reduce) {
   .dot { transition: none; }
   .dot[aria-current='true'] .fill { transform: scaleX(1) !important; }
   .playback { display: none; }
 }
+
+.companyName { display:block; max-width:220px; font-size:24px; line-height:1; letter-spacing:-.04em; text-wrap:balance; }

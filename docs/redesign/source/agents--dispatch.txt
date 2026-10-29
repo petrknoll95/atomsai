@@ -1,0 +1,501 @@
+AtomsAI / Dispatch and delivery agent
+Every delivery confirmed.
+Delivered the first time.
+Confirms delivery windows, answers “where's my order?”, warns customers about delays and rebooks missed drops. Fewer wasted trips, fewer calls, and dispatchers free to run the day.
+Contact us
+See what it does
+Built for retailers with their own fleet, last-mile carriers and freight teams.
+Northline Furniture · Deliveries
+Live agent
+SMS ·
+Order 30418 · 3-seat sofa
+Route 12 · tomorrow
+Hi Sam, your sofa arrives tomorrow between 10am and 12pm. Two people will carry it
+in. Will someone be home?
+I'm at work in the morning. Can it come later?
+Route 12 can bring it between 2pm and 4pm tomorrow. Shall I move it?
+Yes, 2pm to 4pm
+Another day
+Yes please.
+Moved to 2pm–4pm · route updated
+Failed delivery avoided · driver and dispatcher told · reminder set for 30
+minutes before
+01 / Confirm
+02 / Update
+03 / Deliver
+04 / Fix problems
+Why it matters
+What it does
+Channels & stack
+Today's deliveries
+By industry
+Controls & evals
+Pricing
+Why it matters
+Every delivery depends on the customer being ready when the truck arrives.
+Most customers only hear from you when something has already gone wrong.
+So drivers wait at empty doors, and dispatchers spend the day on the phone.
+No one home
+A missed delivery means a second trip, a second driver and an unhappy customer.
+“Where's my order?”
+Customers call to ask, and dispatchers stop running the day to answer.
+Delays found out too late
+Customers learn a delivery is late when it doesn't arrive.
+A failed delivery is paid for twice.
+One message the day before saves most.
+Same deliveries. Fewer trips wasted.
+What 1,000 home deliveries look like, without and with a dispatch and delivery agent
+Without an agent
+1,000
+deliveries booked
+80
+failed on the first attempt
+300
+“where's my order?” calls
+With the agent
+1,000
+deliveries booked
+20
+failed on the first attempt
+40
+“where's my order?” calls
+60 fewer trips paid for twice
+, and dispatchers free to run the day instead of answering the phone.
+Illustrative
+What it does
+Everything a great dispatch desk does.
+For every stop, all day.
+Confirms every delivery window.
+Asks every customer the day before, moves the slot if needed, and notes access or a safe place.
+Example · the day before, every customer asked
+S. Lee · sofa
+Moved to 2pm–4pm
+R. Patel · bed frame
+Confirmed 10am–12pm
+J. Kim · table
+Leave with the neighbour at no. 14
+Answers “where's my order?”
+Live from the route, on any channel.
+Where's my fridge?
+Your driver is 3 stops away. Expect them in about 25 minutes.
+Live from the driver's route
+Warns before it's late.
+Spots a delay on the route and tells every affected customer, with a new time or a new day.
+Example · 11:05am, route 4
+Truck 4 delayed
+Road closure, about 40 minutes late
+6 customers told
+New time sent before they noticed
+1 rebooked
+Couldn't wait, moved to Thursday
+Checks in with drivers.
+Quick status calls, so ETAs stay right.
+Check call · driver, route 12
+Hi Marco, how's the Lee delivery going?
+Unloading now. Leaving in 20.
+ETA updated for the next 4 stops
+Rebooks missed deliveries.
+Calls straight away and puts the new slot on a route.
+12:10pm
+No one home at J. Kim's
+12:14pm
+Called, new slot picked
+Thursday
+2pm–4pm, added to route 9
+Handles problems at the door.
+Damage, wrong item or no access, sent to dispatch with what's needed to fix it.
+To Priya · Dispatch
+Order
+30436 · dresser
+Said
+“There's a scratch on the top.”
+Done
+Photo collected, replacement options ready
+Collects proof of delivery.
+Photo, signature, time and place, filed with the order.
+Photo
+Sofa in the living room
+Signed
+R. Patel
+Time and place
+11:42am · 14 Elm St
+More delivered first time, fewer calls.
+Fewer wasted trips, happier customers, and dispatchers running the day instead of answering the phone.
+Example · one month, one delivery fleet
+98%
+delivered on the first attempt
+87%
+fewer “where's my order?” calls
+100%
+of delays told before the window
+4.8★
+average delivery rating
+Channels, capabilities and integrations
+Customers and drivers.
+Connected to your routes.
+One agent for customers on text, WhatsApp, voice and chat, and for drivers by phone. Every change lands in your routing and order systems.
+6
+Channels. One delivery view.
+SMS
+WhatsApp
+Voice
+Tracking page chat
+Email
+Driver calls
+Secure by default
+SOC 2 Type II, HIPAA and GDPR. Your data is never used to train models.
+Delivery messages today
+00:00 → 23:59
+Always on
+From the early-morning route to the last evening drop, and the evening before, when customers confirm.
+Hands over to your team
+The right dispatcher, with the order, the route, what the customer said and any photos.
+When it hands over
+As per your rules
+Damage or a wrong item
+A driver can't reach the address
+The customer asks for a person
+AI agent
+Damage or wrong item
+→
+PR
+Priya R.
+Dispatch
+Driver can't get in
+→
+MD
+Marco D.
+Fleet lead
+Refund or credit
+→
+LS
+Leah S.
+Customer care
+Handover note
+· order, route, customer message, photos
+At home in your stack
+Route planning and dispatch tools like Onfleet, Descartes and Route4Me. Telematics like Samsara. Shopify, NetSuite and SAP for orders. JustCall for calls and texts, WhatsApp Business and email. Anything else through APIs and webhooks.
+Scoped access, approved per action
+Today's deliveries
+Every stop.
+One view.
+See where every delivery stands, and how each customer was reached.
+Deliveries · today
+Replied
+Tried
+Illustrative
+Stops today
+214
+Windows confirmed
+96%
+Delivered first time
+98%
+Calls to dispatch
+7
+30418 · S. Lee
+SMS
+Sofa · moved to 2pm–4pm
+Confirmed
+30422 · A. Gomez
+SMS
+WhatsApp
+Fridge · driver 3 stops away
+On the way
+30425 · R. Patel
+SMS
+Bed frame · delivered 11:42
+Delivered
+30431 · J. Kim
+SMS
+Voice
+Table · not home at 12:10
+Rebooked Thu
+30436 · M. Shah
+SMS
+Dresser · scratched on arrival
+Damage → team
+1 delivery needs a dispatcher
+Step in
+Hold messages
+One view of every stop
+Status, changes and messages, and which channel each customer replied on.
+Routes kept up to date
+New windows and rebooked drops go straight into your routing tool.
+Voice built in-house
+Our own speech engine, for quick, natural calls with customers and drivers.
+Step in or hold messages
+Reply to a customer yourself and the agent steps back. Or hold messages for a route, for example during a big delay.
+Something to deliver?
+There's a play for that.
+Pick your industry to see how the agent confirms, updates and rescues deliveries.
+Furniture & appliances
+2
+Parcel & last mile
+2
+Freight & trucking
+2
+Grocery & meal kits
+2
+Building supplies
+2
+Medical supplies & pharmacy
+2
+Cold chain
+2
+Field services
+2
+Retail & e-commerce
+2
+Furniture & appliances
+Big items need two people and someone home. A missed delivery costs a whole trip.
+Confirm
+Will someone be home?
+SMS
+Voice
+Trigger
+A sofa is out for delivery tomorrow.
+Agent
+Confirms the window, or moves it to one that suits.
+Result
+Delivered on the first attempt
+Exception
+Damaged on arrival
+SMS
+Trigger
+A customer reports a scratch.
+Agent
+Collects a photo and sends options to the team.
+Result
+Replacement booked, customer kept
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Parcel & last mile
+Thousands of stops a day, and every “where's my parcel?” lands with a person.
+Where is it
+Where's my parcel?
+Web chat
+WhatsApp
+Trigger
+A customer asks where their parcel is.
+Agent
+Answers live from the route, with an arrival time.
+Result
+Answered in seconds, no call
+Rebook
+Missed delivery
+SMS
+Trigger
+No one was home.
+Agent
+Offers a new day, a neighbour or a pickup point.
+Result
+Delivered on the second attempt
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Freight & trucking
+Dispatchers spend the day on check calls with drivers and updates for shippers.
+Check call
+Driver check calls
+Voice
+Trigger
+A load is due to pick up at 2pm.
+Agent
+Calls the driver for status and updates the system.
+Result
+Shipper sees a live ETA
+Delay
+Running late to the dock
+Voice
+Email
+Trigger
+A truck will miss its dock slot.
+Agent
+Tells the warehouse and books a new slot.
+Result
+No wasted trip, no fee
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Grocery & meal kits
+Short delivery windows, chilled food and substitutions to agree.
+Confirm
+Substitutions before the van leaves
+SMS
+WhatsApp
+Trigger
+Two items are out of stock.
+Agent
+Offers swaps and gets a yes or no.
+Result
+No surprises at the door
+Delay
+Van running late
+SMS
+Trigger
+A van is 30 minutes behind.
+Agent
+Tells every customer on the route with the new time.
+Result
+Fewer complaints and refunds
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Building supplies
+Site deliveries need the right gate, the right time and someone to sign.
+Confirm
+Site ready for delivery?
+Voice
+SMS
+Trigger
+A lumber delivery is due on site at 7am.
+Agent
+Checks access, the gate code and who will sign.
+Result
+Unloaded on time
+Proof
+Proof of delivery
+SMS
+Trigger
+The driver drops at an empty site.
+Agent
+Collects a photo and sends it to the contractor.
+Result
+No disputes later
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Medical supplies & pharmacy
+Patients need their supplies on time, and some deliveries need a signature.
+Confirm
+Signature needed
+Voice
+SMS
+Trigger
+A medication delivery needs a signature.
+Agent
+Confirms someone will be home to sign.
+Result
+Delivered first time
+Where is it
+Equipment arriving today
+SMS
+Trigger
+A wheelchair is out for delivery.
+Agent
+Sends the arrival time and setup details.
+Result
+Patient ready, no missed visit
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Cold chain
+Chilled loads can't wait, and a missed slot can spoil the goods.
+Delay
+Reefer load running late
+Voice
+Trigger
+A chilled load will miss its slot.
+Agent
+Calls the receiver and books the next slot.
+Result
+Load kept cold and accepted
+Check call
+Temperature check
+Voice
+Trigger
+A long-haul load is mid-route.
+Agent
+Asks the driver for the reading and logs it.
+Result
+Record ready for the customer
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Field services
+Technicians arrive to empty homes, and customers don't know when to expect them.
+Confirm
+Technician on the way
+SMS
+Trigger
+A technician leaves the previous job.
+Agent
+Sends the arrival time and the technician's name.
+Result
+Customer home, job done
+Rebook
+Job running over
+SMS
+Voice
+Trigger
+The previous job is running long.
+Agent
+Tells the next customer and offers a later time.
+Result
+Day saved, not cancelled
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Retail & e-commerce
+Delivery questions are the top reason customers contact support.
+Where is it
+Order status, any channel
+Web chat
+WhatsApp
+Trigger
+A customer asks where their order is.
+Agent
+Looks up the carrier and answers with a date.
+Result
+No ticket created
+Exception
+Lost parcel
+Email
+Trigger
+A parcel hasn't moved in 5 days.
+Agent
+Opens a claim with the carrier and updates the customer.
+Result
+Customer kept informed
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Windows, rebooking and messages follow your delivery rules and routing system.
+Controls and evals
+Your routes, your rules.
+No promise you can't keep.
+Controls
+Only real slots offered
+New windows come from your routing tool, so the agent never promises a time a truck can't make.
+Your delivery rules
+Safe places, neighbours, signatures and redelivery fees, as you set them.
+Message limits
+Quiet hours and a cap on messages per order, so customers aren't spammed.
+Full audit trail
+Every message, change and proof of delivery is logged with the order.
+Evals
+Tested before launch
+Hard cases first: wrong addresses, angry customers, big delays, damaged goods.
+Re-tested on every change
+A saved test set re-runs whenever rules or routes change.
+Every contact checked
+Each conversation is scored for accuracy and tone, with misses flagged.
+Measured against your goals
+First-time delivery, calls to dispatch and ratings, reviewed with you weekly.
+Pricing
+Custom built.
+Priced for your requirements.
+No fixed tiers. Every dispatch and delivery agent is built around your journeys, channels and systems, so we price it the same way: after we understand what you need.
+What shapes the price
+Number of deliveries and drivers
+Channels: text, WhatsApp, voice, chat
+Routing, telematics and order systems
+Delivery rules and exceptions
+Regions and languages
+Always included
+Design and build with our team
+Testing on hard cases before launch
+Accuracy checks on every contact
+Weekly reviews and tuning after go-live
+Security: SOC 2 Type II, HIPAA, GDPR
+Tell us what you need.
+Share your journeys, channels and systems. We'll come back with a scope and a
+price.
+Contact us
+Bring last month's failed deliveries.
+We'll show you which ones we'd have saved.
+Share a sample of deliveries and failed drops. We'll show how many the agent would have confirmed, moved or rebooked, and what that saves.
+Contact us
+Pricing

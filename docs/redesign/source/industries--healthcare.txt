@@ -1,0 +1,269 @@
+Industries
+/
+Healthcare
+Answer every patient. At every location.
+One agent across chat, phone, SMS and email that answers calls on the first ring, books and reschedules into your practice system, and handles billing questions, so your front desk can focus on the patients in front of them.
+Book a demo
+→
+Try the chat agent
+Built for your rules
+HIPAA compliant, no medical advice, and anything urgent goes straight to your clinical team.
+Patient call answered
+2 sec
+Cleaning moved to Tue 4:00pm · Dr. Kim
+Handled
+Connected during your build
+athenahealth
+eClinicalWorks
+NextGen
+Epic
+Dentrix
+Open Dental
+Salesforce Health Cloud
+Your phone system
+What it brings
+Where your practice feels it.
+No missed patients
+Answer every call
+Every call is answered on the first ring at every location, the patient is verified, and anything urgent goes to your clinical team.
+1
+Answered on the first ring
+Answers in your practice’s name, even at peak times.
+2
+Patient verified
+Checks who’s calling before sharing anything.
+3
+Handled or routed
+Anything urgent goes straight to your clinical team.
+4
+Call logged
+Adds a call summary to the patient’s record.
+Connected to your phone system, athenahealth, Dentrix and SMS during your build.
+Fills your schedule
+Fill every chair
+Reschedules take a few texts, and every freed slot is offered to your waitlist before the day starts.
+1
+New times offered
+Offers times with the same provider, from your schedule.
+2
+Visit rebooked
+Moves the visit and sends a confirmation.
+3
+Slot offered to waitlist
+Offers the freed slot to the waitlist, in order.
+4
+Slot filled
+Books whoever accepts first and sends intake forms.
+Connected to Dentrix, Open Dental, eClinicalWorks and SMS during your build.
+Gets bills paid
+Fewer billing calls
+Statement questions are answered from your billing system, with a payment link sent before the call ends.
+1
+Question taken
+Picks up billing questions by phone, text or chat.
+2
+Patient verified
+Verifies the patient before opening the account.
+3
+Statement explained
+Explains the charges and what insurance paid.
+4
+Payment link sent
+Sends a link, or books billing for a dispute.
+Connected to athenahealth, your payment portal, SMS and email during your build.
+MB
+Maya Brooks
+Patient · Eastside location
+Call · 7:42am
+I need to move my cleaning on Thursday. Something came up.
+Happy to help. Can I have your name and date of birth first?
+✓ Answered on the first ring
+Patient verified
+Identity
+✓
+Verified, date of birth
+Appointment found
+✓
+Thu 3:00pm, Dr. Kim
+Request handled
+Request
+Reschedule
+Urgent or clinical
+✓
+None
+Next
+New times offered by text
+Dentrix
+Call summary added
+On Maya’s record · Eastside
+The result
+Call answered before opening, patient verified, request handled.
+MB
+Maya Brooks
+Cleaning · Thu 3:00pm, Dr. Kim
+Text · 7:44am
+Hi Maya, Dr. Kim has Tue 4:00pm or Wed 9:30am. Which works best?
+Tuesday at 4 please.
+Rebooked
+Cleaning · Tue 4:00pm
+with Dr. Kim · confirmation sent
+Thu 3:00pm offered to waitlist
+Slot
+Thu 3:00pm, Dr. Kim · Eastside
+Waitlist
+6 patients
+Offered to
+First 3, by text
+Filled · 8:09am
+Linda Park · Thu 3:00pm
+Intake forms sent
+The result
+Thursday slot moved and refilled from the waitlist by 8:09am.
+RA
+Ray Alvarez
+Patient · billing question
+Call · 11:20am
+Why do I owe $85 from my last visit?
+I can check that for you. First, can you confirm your date of birth?
+Patient verified
+Identity
+✓
+Verified, date of birth
+Account
+✓
+One open balance
+Statement explained
+Visit
+Sep 30, cleaning + X-rays
+Insurance paid
+$240
+Patient share
+$85, deductible
+Sent by text · 11:24am
+Payment link · $85
+Logged on Ray’s account in athenahealth
+The result
+Bill explained and a payment link sent in one call.
+Illustrative examples. Connections and rules are set up during your build.
+Before and after
+Same patients. Fewer empty chairs.
+Example group, 9,000 calls and messages a month. Illustrative figures.
+Calls that go to voicemail or hang up
+Today
+1 in 5
+With the agent
+None
+Booking requests after hours
+Today
+Wait for morning
+With the agent
+Booked
+Cancelled slots offered to the waitlist
+Today
+Some
+With the agent
+Every one
+Billing questions answered without staff
+Today
+None
+With the agent
+Most
+More visits booked and kept
+, and a front desk that can look up from the phone.
+Win back your database
+Your patient list. Back on the schedule.
+The agent reaches patients who are due, across SMS and email, inside your consent rules.
+Overdue recalls
+Patients past due for a routine visit get a reminder with times to book.
+Unscheduled follow-ups
+Patients told to come back who never booked hear from you.
+Lapsed patients
+Patients who haven’t visited in over a year get a friendly check-in.
+For the owner
+Ask the business anything.
+The Intelligence agent reads every call and conversation, and answers your questions in plain English.
+Find what’s slipping
+Missed calls, unfilled slots and slow callbacks, by location.
+See what’s working
+Bookings, recalls and no-shows by location and provider, without building a report.
+Approve the next step
+It suggests the follow-up; you say go, and the agent does it.
+See the Intelligence agent
+↗
+Which locations have unfilled slots this week?
+Three locations have 23 open slots and patients waiting to be seen.
+Northside · Dr. Patel
+11 open · 14 on waitlist
+Eastside · Dr. Kim
+7 open · 5 on waitlist
+Riverside · Dr. Owens
+5 open · 9 due for recall
+Offer every slot to the waitlist and recalls
+Waits for your go-ahead
+Controls and testing
+Your practice. Your rules.
+Controls
+No medical advice
+Clinical questions and anything urgent go to your clinical team, every time.
+HIPAA compliant
+Patients are verified before anything about their care or bill is shared.
+Only real availability
+Bookings follow your providers, rooms and visit lengths. No double bookings.
+Full audit trail
+Every call, booking and message is logged.
+Testing
+Tested before launch
+Real calls and edge cases: urgent symptoms, wrong location, double bookings, after hours.
+Checked on every conversation
+Each conversation is scored for accuracy, escalation and tone.
+Reported weekly
+Answer rate, bookings and handovers, by location.
+People in the loop
+You choose what the agent does alone and what waits for staff.
+Book a demo
+See it on your front office.
+In 30 minutes you’ll see
+A patient call answered and rescheduled into a real calendar, live.
+An urgent call routed to your clinical team, and a billing question answered.
+How it connects to your practice system, and what your first build would cover.
+Name
+*
+Company
+*
+Business email
+*
+Phone
+(optional)
+Company size
+*
+Choose one
+Under 200 staff
+200–1,000 staff
+1,001–5,000 staff
+Over 5,000 staff
+Your role
+(optional)
+Optional. You can call or text me about this request at the number above.
+Calls and texts may be automated or by an AI agent. Consent isn’t a
+condition of purchase; reply STOP to opt out.
+Website
+Book my demo
+We’ll only use this to set up your demo.
+See our privacy policy.
+Send these details by email
+FAQ
+Questions practices ask.
+Explore the Trust Center
+↗
+Is the agent HIPAA compliant?
+Yes. AtomsAI is SOC 2 Type II and HIPAA compliant, patients are verified before anything about their care or bill is shared, and every conversation is logged.
+Does it give medical advice?
+No. It handles scheduling, intake and administrative questions. Clinical questions and anything urgent go to your clinical team, following the escalation rules you set.
+Which practice systems does it work with?
+We connect to the systems you run, such as athenahealth, eClinicalWorks, NextGen, Epic, Dentrix or Open Dental, and to your phones. The connections are built as part of your build.
+Can it handle all our locations?
+Yes. One agent answers for every location, with each site’s hours, providers and services, and one view of everything it handled.
+Will patients know they’re talking to an AI agent?
+You decide how the agent introduces itself. Patients can ask for a person at any time.
+How long does it take to go live?
+It depends on the workflows and the systems we connect. In the demo we look at yours and agree what the first build covers.

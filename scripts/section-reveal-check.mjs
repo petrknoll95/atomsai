@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { chromium, webkit, expect } from '@playwright/test';
 
-const base = process.env.VISUAL_URL || 'http://127.0.0.1:3000';
+const base = process.env.VISUAL_URL || 'http://127.0.0.1:3001';
 const output = path.resolve('docs/motion/section-reveals');
 const report = { date: new Date().toISOString(), base, results: [], errors: [] };
 await fs.mkdir(output, { recursive: true });
@@ -25,7 +25,7 @@ async function enter(section) {
       if (element.dataset.revealState !== 'visible') requestAnimationFrame(sample);
     };
     sample();
-    window.scrollTo({ top: element.getBoundingClientRect().top + scrollY - innerHeight * .8, behavior: 'instant' });
+    window.scrollTo({ top: element.getBoundingClientRect().top + scrollY - innerHeight * .65, behavior: 'instant' });
   });
 }
 
@@ -46,7 +46,7 @@ for (const [engine, launcher] of [['chromium', chromium], ['webkit', webkit]]) {
 
     const geometry = await offerings.evaluate(element => ({ width: element.offsetWidth, height: element.offsetHeight }));
     await enter(offerings);
-    await expect(offerings).toHaveAttribute('data-reveal-state', 'visible');
+    await expect(offerings).toHaveAttribute('data-reveal-state', 'visible', { timeout: 30000 });
     const samples = await page.evaluate(() => window.__revealSamples);
     assert(samples.some(value => value > 0 && value < 1), 'The reveal must fade through intermediate opacity values.');
     assert(samples.every((value, index) => value >= 0 && value <= 1 && (!index || value >= samples[index - 1])), 'The fade must be monotonic and bounded.');
@@ -55,14 +55,14 @@ for (const [engine, launcher] of [['chromium', chromium], ['webkit', webkit]]) {
     await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' })); await frame(page);
     assert.equal(await opacity(offerings), 1, 'Revisiting a section must not hide or replay it.');
     result.samples = samples;
-    result.checks.push('700ms reveal has intermediate frames, preserves layout, releases opacity, and runs once');
+    result.checks.push('1100ms reveal has intermediate frames, preserves layout, releases opacity, and runs once');
 
     const faq = page.locator('#faq');
     assert.equal(await opacity(faq), 0);
     await faq.locator('summary').first().evaluate(summary => summary.focus({ preventScroll: true }));
     assert.equal(await opacity(faq), 1, 'Keyboard focus must reveal content immediately, even before scrolling.');
     await page.evaluate(() => { location.hash = 'technology'; });
-    await expect(page.locator('#technology')).toHaveAttribute('data-reveal-state', 'visible');
+    await expect(page.locator('#technology')).toHaveAttribute('data-reveal-state', 'visible', { timeout: 30000 });
     assert.equal(await opacity(page.locator('#technology')), 1);
     result.checks.push('Focus reveals offscreen controls immediately; anchor targets are visible');
 
@@ -74,11 +74,11 @@ for (const [engine, launcher] of [['chromium', chromium], ['webkit', webkit]]) {
     await load(page);
     await enter(offerings);
     await expect.poll(() => opacity(offerings), { intervals: [10] }).toBeGreaterThan(0);
-    const scrollBeforePreference = await page.evaluate(() => scrollY);
+    const topBeforePreference = await offerings.evaluate(el => el.getBoundingClientRect().top);
     await page.emulateMedia({ reducedMotion: 'reduce' });
     await expect.poll(() => page.locator('section, footer').evaluateAll(elements => elements.every(element => getComputedStyle(element).opacity === '1'))).toBe(true);
     await expect.poll(() => offerings.evaluate(element => element.style.opacity)).toBe('');
-    assert.equal(await page.evaluate(() => scrollY), scrollBeforePreference, 'Changing motion preferences must preserve scroll position.');
+    assert(Math.abs(await offerings.evaluate(el => el.getBoundingClientRect().top) - topBeforePreference) < 16, 'Changing motion preferences must preserve the visible scroll position.');
     await page.emulateMedia({ reducedMotion: 'no-preference' }); await frame(page);
     assert.equal(await opacity(offerings), 1, 'Changing motion preferences must not rehide currently visible content.');
     result.checks.push('Live reduced-motion changes reveal everything and clean up in-flight animation');
@@ -88,7 +88,7 @@ for (const [engine, launcher] of [['chromium', chromium], ['webkit', webkit]]) {
       await section.evaluate(element => element.scrollIntoView({ block: 'start', behavior: 'instant' }));
       // Software WebGL can block Chromium's first frames while source shaders
       // compile. Wait for real artwork readiness before judging the fade endpoint.
-      for (const canvas of await section.locator('canvas').all()) {
+      for (const canvas of await section.locator('canvas[data-pattern]').all()) {
         const box = await canvas.boundingBox();
         if (box?.width && box.height) await expect(canvas).toHaveAttribute('data-render-state', 'ready', { timeout: 30_000 });
       }

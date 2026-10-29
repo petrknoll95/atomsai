@@ -1,0 +1,102 @@
+[
+  {
+    "route": "/approach",
+    "mode": "desktop",
+    "lcp": 348,
+    "cls": "0.00000",
+    "load": 302,
+    "transfer": "492.0",
+    "reduction": "30.7",
+    "js": "199.8"
+  },
+  {
+    "route": "/capabilities/voice",
+    "mode": "desktop",
+    "lcp": 312,
+    "cls": "0.00000",
+    "load": 289,
+    "transfer": "496.1",
+    "reduction": "30.8",
+    "js": "203.9"
+  },
+  {
+    "route": "/industries/healthcare",
+    "mode": "desktop",
+    "lcp": 320,
+    "cls": "0.00000",
+    "load": 289,
+    "transfer": "525.2",
+    "reduction": "29.3",
+    "js": "207.3"
+  },
+  {
+    "route": "/trust",
+    "mode": "desktop",
+    "lcp": 316,
+    "cls": "0.00000",
+    "load": 291,
+    "transfer": "493.5",
+    "reduction": "30.6",
+    "js": "201.2"
+  },
+  {
+    "route": "/company/contact",
+    "mode": "desktop",
+    "lcp": 324,
+    "cls": "0.00000",
+    "load": 299,
+    "transfer": "494.4",
+    "reduction": "30.5",
+    "js": "202.1"
+  },
+  {
+    "route": "/approach",
+    "mode": "mobile",
+    "lcp": 872,
+    "cls": "0.00005",
+    "load": 2812,
+    "transfer": "492.0",
+    "reduction": "30.7",
+    "js": "199.8"
+  },
+  {
+    "route": "/capabilities/voice",
+    "mode": "mobile",
+    "lcp": 892,
+    "cls": "0.00055",
+    "load": 2847,
+    "transfer": "496.1",
+    "reduction": "30.8",
+    "js": "203.9"
+  },
+  {
+    "route": "/industries/healthcare",
+    "mode": "mobile",
+    "lcp": 988,
+    "cls": "0.00004",
+    "load": 2967,
+    "transfer": "522.4",
+    "reduction": "29.4",
+    "js": "207.3"
+  },
+  {
+    "route": "/trust",
+    "mode": "mobile",
+    "lcp": 876,
+    "cls": "0.00002",
+    "load": 2819,
+    "transfer": "493.5",
+    "reduction": "30.6",
+    "js": "201.2"
+  },
+  {
+    "route": "/company/contact",
+    "mode": "mobile",
+    "lcp": 868,
+    "cls": "0.03123",
+    "load": 2827,
+    "transfer": "494.4",
+    "reduction": "30.5",
+    "js": "202.1"
+  }
+]

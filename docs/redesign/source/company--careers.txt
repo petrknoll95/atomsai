@@ -1,0 +1,70 @@
+Home
+/
+Company
+/
+Careers
+Senior builders, in four time zones.
+Small team, real on-call, other people’s codebases. If you’d rather ship one workflow that survives than five that demo well, read on.
+Send a note
+Remote-first · United States · India · Poland · Australia
+We hire senior. That’s the filter.
+Three shapes of work, not a requisition list. We have no open-role feed yet, so nothing here pretends to be one — if any of these is you, send a note.
+We’re small on purpose and every hire is someone who could lead an engagement in their first quarter. That means shipping into other people’s codebases, sitting with the practitioner who’s embarrassed about their spreadsheet, and being comfortable saying “this shouldn’t be automated” to an executive who wants it automated.
+Teams in the United States, India, Poland and Australia. Remote-first with deliberate overlap hours, because the work is collaborative and the on-call is real.
+What we look for
+Production experience, not benchmark experience
+Willingness to own the unglamorous half: integrations, exceptions, alerting
+Direct communication with non-technical executives
+Comfort writing evals before prompts
+Forward-deployed engineer
+Ships inside the customer’s repository
+You sit in their standups, write behind their code review, and own the integration nobody wants: the write-back, the exception queue, the 2am alert.
+You probably
+Has shipped into a codebase they did not own
+Comfortable in a room with a sceptical VP
+Reads other people’s data models for fun
+Evals & reliability engineer
+Turns behaviour into pass/fail numbers
+You write the labelled set before the prompt, put accuracy, cost and latency thresholds in CI, and build the drift alarm that has a named owner.
+You probably
+Has run a regression suite that blocked a release
+Thinks “it looks good” is not a result
+Can explain a threshold to a risk committee
+Delivery lead
+Keeps the four-to-eight-week promise honest
+You run the teardown, rank the workflows, and say “don’t automate that yet” more often than “yes”. You own the handover, including the runbook.
+You probably
+Has told a customer to buy less
+Writes the runbook rather than delegating it
+Has carried a pager for something they scoped
+What the job is actually like.
+Remote-first, with overlap
+Four time zones and deliberate overlap hours, because the work is collaborative.
+Senior-only team
+No layers to route around. The person who scopes the work writes the code.
+On-call is a rota, not a promise
+Real coverage across geos, and it is staffed before it is sold.
+Learning budget
+Conference, course and hardware allowance per year.
+Health cover
+Country-appropriate medical cover for you and your dependents.
+Equity
+Participation in the group’s equity programme.
+Send a note. That’s the process.
+Nothing here fits? Send a note with one thing you shipped, what broke, and what you did about it.
+One thing you shipped, and what it was for.
+What broke after it shipped, and what you did about it.
+Which of the three role shapes above fits, in your words.
+Where you are, and your rough notice period.
+Send a note
+careers@atomsai.com
+Applicant data is handled under a careers-specific privacy notice.
+See our privacy policy
+.
+MC
+DO
+EK
+RS
+Not looking, but curious what we ship?
+Book the same thirty minutes a customer would. It is the fastest way to see how the work actually runs.
+Contact us

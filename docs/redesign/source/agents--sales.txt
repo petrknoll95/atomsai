@@ -1,0 +1,565 @@
+AtomsAI / Sales agent
+Every click.
+A conversation that sells.
+Talks to every visitor your ads bring in, answers their questions, recommends the right product and books the sale. More revenue from the same ad spend.
+Contact us
+Try the chat demo
+Try the voice demo
+Voice, chat and text. Day and night. Live in 4–8 weeks.
+Shield Car Insurance
+Live agent
+From the ad
+“Car insurance quote in 2 minutes”
+Looking for car insurance? I can get you a price in two minutes. What do you
+drive?
+A 2021 Honda Civic.
+Great. Any claims in the last three years?
+No claims
+One or more
+No claims.
+Policy bought · $96 a month
+Paid in the chat · documents emailed
+Sale credited to the ad that brought the
+visitor
+01 / Engage
+02 / Recommend
+03 / Qualify
+04 / Book or buy
+Why it matters
+What it does
+Channels & stack
+Conversation manager
+By industry
+Controls & evals
+Pricing
+Why it matters
+Ads, search and social bring people to your website.
+Most of them look around and leave without talking to anyone.
+And the money spent bringing them is gone.
+Their question goes unanswered
+They want one quick answer. They find a long form instead, and leave.
+No one is there when they're ready
+People shop at night and on weekends. By the time you reply, they've bought elsewhere.
+They can't decide
+Too many options and no one to ask. People who can't decide don't buy.
+You pay for every visitor.
+Most leave without buying.
+Same ad spend. More revenue.
+What 1,000 paid visitors turn into, without and with a sales agent
+Without an agent
+1,000
+visitors from your ads
+20
+talk to someone
+6
+become customers
+With the sales agent
+1,000
+visitors from your ads
+140
+talk to someone
+18
+become customers
+3× the customers from the same spend
+, so every dollar you put into ads earns more back.
+Illustrative
+What it does
+Everything a great sales rep does.
+On every visit, at any hour.
+Recommends from what you have in stock.
+Asks what the shopper needs, checks your live catalogue for size, price and stock, and suggests the best fits with reasons. Works the same for products, properties or plans.
+Try the live demo
+Example · online shoe store
+I need running shoes for a half marathon. Size 9, under $150.
+Here are three in stock in your size:
+Ridge Runner 4
+Size 9 in stock
+$138
+Most cushioning
+Swift Lite
+Size 9 in stock
+$124
+Lightest
+Tempo Pro
+2 left in size 9
+$149
+Most support
+The Ridge Runner, please.
+Ridge Runner 4, size 9
+$138 · in cart
+Picks up from the ad.
+Knows which ad brought the visitor, and opens with that offer instead of a generic hello.
+The ad they clicked
+Sponsored
+· strideco.com
+Running Shoes, 20% Off This Week
+Free returns. Every size in stock.
+The agent's first message
+Here for the 20% off running shoes? Tell me your size and I'll show you what's
+in stock.
+Upsells and cross-sells.
+Once the shopper has chosen, suggests what goes with it, like socks with running shoes, and adds it to the same order.
+Same shopper, next step
+Great choice. Most runners pair these with cushioned running socks. Want to
+add a pair?
+Running socks
+Pairs with Ridge Runner 4
+$12
+Gel insoles
+For half-marathon distance
+$24
+Just the socks, thanks.
+Ridge Runner 4 + running socks
+$150 · Checkout →
+Works the same for
+Real estate
+→
+Mortgage pre-approval and home insurance
+Auto
+→
+Extended warranty and service plan
+Software
+→
+More seats or the next tier
+Catches them before they leave.
+Spots the moments a visitor is about to drop off, and steps in with the right question.
+When the visitor moves to close the tab
+→ Asks what's holding them back
+When the visitor spends 40 seconds on pricing
+→ Offers to find the right plan
+When the visitor comes back a second time
+→ Picks up where they left off
+Qualifies and scores.
+Your criteria, asked naturally. Every score explained.
+82
+Budget confirmed
+Buying in 30 days
+Decision maker
+Books the right rep.
+Territory, round robin or account owner. Rep alerted with a brief.
+Tue 10:00
+Tue 14:30
+Wed 09:15
+Wed 16:00
+Dana R. · West territory
+Works after hours.
+The same agent at 2am. Meetings and orders waiting by morning.
+2:14 am
+3 meetings booked overnight
+Text or call your leads in seconds.
+A form fill or portal enquiry triggers a call or text while the buyer is still looking, then follows up if they go quiet.
+0s
+Form submitted
+9s
+Texts or calls back
+2m
+Qualified
+4m
+Viewing booked
+Channels, capabilities and integrations
+Wherever the buyer starts.
+At home in your stack.
+One agent and one memory across channels. A chat can become a call, and a call can end with a text confirming the booking.
+5
+Channels. One memory.
+Web chat
+Voice
+WhatsApp
+SMS
+Email
+Secure by default
+SOC 2 Type II, HIPAA and GDPR. Your data is never used to train models.
+Conversations today
+00:00 → 23:59
+Always on
+Nights, weekends and peaks. Every visitor gets an answer the moment they ask.
+Hands over to your team
+The right person, with a summary, lead score and full transcript. No one asks the buyer twice.
+When it hands over
+As per your rules
+The question is out of scope
+The buyer asks for a person
+It isn't confident in the answer
+AI agent
+Pricing exception
+→
+SK
+Sam K.
+Listings
+Ready to sign
+→
+DR
+Dana R.
+Sales
+Existing customer
+→
+PM
+Priya M.
+Account manager
+Handover note
+· summary, what was tried, full transcript
+At home in your stack
+Salesforce, HubSpot and Zoho. Shopify and product feeds. Google Calendar and Outlook. JustCall, WhatsApp Business and your ad accounts. Anything else through APIs and webhooks.
+Scoped access, approved per action
+Conversation manager
+Every conversation.
+Your call.
+See what the agent is saying on every channel, as it happens. Step in on the
+deals that need a person, and let the agent carry the rest.
+One view across every channel
+Voice, web chat, WhatsApp, SMS and email in a single inbox, filtered by status or owner.
+Voice built in-house
+Our own speech engine, for natural, low-latency calls we tune for your business.
+Compliance tracked on every call
+Disclosures, consent and approved claims checked on every conversation, not a sample.
+Take over any time
+Pause the AI for one contact or join live. Handover comes with a summary.
+Talk to the voice agent
+Conversations
+12 live
+All
+Voice
+Web chat
+WhatsApp
+SMS
+Email
++1 415 555 0142
+Sold
+Voice · 2021 Civic quote · policy bought
+Priya S.
+AI handling
+Web chat · Comparing two cover levels
+Marco T.
+Needs you
+WhatsApp · Asks for a multi-car discount
+J. Okafor
+Nurturing
+SMS · Quote follow-up 2 of 3 sent
+Lena W.
+Paused
+Email · Paused by Sam · existing customer
+Voice call
+· 4m 12s · AtomsAI voice
+4/4 checks passed
+This call is recorded, and I'm an AI assistant for Shield Car Insurance. Is
+now a good time?
+Yes, I asked for a quote for my Honda Civic.
+Compliance · every call
+AI and recorded-line disclosure
+Consent to contact
+Price quoted from approved rates
+Key policy terms read before purchase
+Take over
+Pause AI
+Got a lead?
+There's a play for that.
+Pick your industry to see the plays the agent runs: what sets it off, what it does, and the result.
+Retail & e-commerce
+3
+Credit & lending
+2
+Real estate
+3
+Insurance
+2
+Healthcare
+2
+Automotive
+3
+Home services
+2
+B2B SaaS
+2
+Logistics & manufacturing
+2
+Retail & e-commerce
+Shoppers who can't decide don't buy, and carts go cold overnight.
+Guided selling
+The right product, from what's in stock
+Web chat
+WhatsApp
+Trigger
+“Trail shoes under $150, wide fit.”
+Agent
+Checks the live catalogue, suggests three with reasons, then offers matching socks.
+Result
+Shoes and socks in the cart
+Re-engage
+Back in stock, in your size
+WhatsApp
+SMS
+Trigger
+An item a shopper asked about is restocked.
+Agent
+Messages them with the item, price and a one-tap link.
+Result
+Order placed before it sells out
+Re-engage
+Cart left behind
+WhatsApp
+Email
+Trigger
+A known contact abandons a cart.
+Agent
+Answers the question that stopped them.
+Result
+Order completed
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Credit & lending
+Applicants compare three lenders at once. The first useful answer wins.
+Ads & bounce
+Refinance ad to a pre-qualified call
+Web chat
+Voice
+Trigger
+A visitor from a refinance ad lingers on the rates table.
+Agent
+Opens with their rate, estimates loan-to-value, checks goals.
+Result
+Loan-officer call booked with a brief
+Re-engage
+Unfinished application, finished
+Voice
+SMS
+Trigger
+An application stalls at the document step.
+Agent
+Calls with consent, finds the blocker, texts the upload link.
+Result
+Application resumed, blocker noted
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Real estate
+Portal leads go cold in minutes, and buyers search at night.
+Speed to lead
+Portal lead called in under a minute
+Voice
+SMS
+Trigger
+A buyer enquires on a listing portal.
+Agent
+Calls back in seconds, checks budget, timeline and finance.
+Result
+Viewing booked, agent briefed
+Re-engage
+New listing, old enquiry
+WhatsApp
+SMS
+Trigger
+A listing matches a past enquiry.
+Agent
+Sends the match with photos and asks to view.
+Result
+Dormant lead back with a viewing
+Cross-sell
+Viewing, then mortgage and insurance
+Web chat
+WhatsApp
+Trigger
+A buyer books a viewing.
+Agent
+Offers a mortgage pre-approval call and a home-insurance quote.
+Result
+Viewing plus partner leads
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Insurance
+Quote forms are long, and renewals slip by unnoticed.
+Ads & bounce
+Quote page exit, saved
+Web chat
+Trigger
+A visitor moves to leave the quote form.
+Agent
+Finishes the quote in chat with three questions.
+Result
+Quote shared, broker call booked
+Re-engage
+Renewal window outreach
+Voice
+Email
+Trigger
+A policy is 30 days from renewal.
+Agent
+Reviews cover changes and flags a better-fit plan.
+Result
+Renewal confirmed or review booked
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Healthcare
+New patients reach out after the front desk has closed.
+After hours
+New-patient intake at 10pm
+Web chat
+Voice
+Trigger
+A new patient reaches out after hours.
+Agent
+Collects reason for visit and insurance, checks availability.
+Result
+First appointment booked
+Ads & bounce
+Treatment ad to consultation
+WhatsApp
+Web chat
+Trigger
+A visitor clicks an implant or whitening ad.
+Agent
+Answers cost and recovery questions from approved content.
+Result
+Consultation booked
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Automotive
+Waitlisted buyers forget you by the time their car arrives.
+Re-engage
+Your variant is in stock
+Voice
+SMS
+Trigger
+A waitlisted buyer's exact trim arrives.
+Agent
+Calls to confirm interest, answers finance questions.
+Result
+Test drive booked
+Guided selling
+Trade-in estimate in chat
+Web chat
+WhatsApp
+Trigger
+A shopper asks what their car is worth.
+Agent
+Collects make, mileage and photos, gives a range.
+Result
+Appraisal booked with the test drive
+Upsell
+Warranty and service plan with the car
+Web chat
+Voice
+Trigger
+A buyer reserves a car.
+Agent
+Explains the extended warranty and service plan, with prices.
+Result
+Plan added to the deal
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Home services
+Peak-season and after-hours calls go unanswered.
+After hours
+Burst pipe at 11pm
+Voice
+Trigger
+An emergency call comes in after hours.
+Agent
+Triages urgency, gives safe next steps, checks on-call slots.
+Result
+Emergency job booked, technician paged
+Speed to lead
+Estimate request, same day
+Web chat
+SMS
+Trigger
+A homeowner requests a quote online.
+Agent
+Collects job details and photos, offers visit slots.
+Result
+Estimate visit booked
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+B2B SaaS
+Buyers research alone and only talk to sales once they've decided.
+Ads & bounce
+Pricing-page visitor to the right demo
+Web chat
+Voice
+Trigger
+A visitor from LinkedIn spends time on pricing.
+Agent
+Answers plan and security questions, qualifies.
+Result
+Demo booked with the right AE
+Speed to lead
+Trial sign-up, same-day call
+Email
+Voice
+Trigger
+A team signs up for a trial.
+Agent
+Learns the use case and team size, offers help.
+Result
+Onboarding call booked
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Logistics & manufacturing
+Quote requests arrive incomplete and wait days for a reply.
+Speed to lead
+Freight quote request, answered
+Web chat
+Email
+Trigger
+A shipper submits a lane and volume enquiry.
+Agent
+Captures origin, destination, mode and timing.
+Result
+Complete request to the sales desk
+Guided selling
+Spec questions before the RFQ
+Web chat
+Trigger
+An engineer reads a datasheet late at night.
+Agent
+Answers tolerance and material questions from your docs.
+Result
+Qualified RFQ to a sales engineer
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Outbound examples assume permission to contact the customer.
+Controls and evals
+Your rules.
+Tested before every launch.
+Controls
+Approved answers only
+Prices, offers and claims come from your content. It never invents a discount.
+Consent and quiet hours
+Outbound follows opt-in, do-not-call lists, calling hours and TCPA.
+AI disclosure
+Visitors know they are talking to an AI, as EU and US state rules require.
+Full audit trail
+Every message, action and CRM update is logged and reviewable.
+Evals
+Scenario tests before launch
+Real buyer conversations and edge cases run before a single customer sees the agent.
+Re-tested on every change
+A saved test set re-runs whenever prompts, knowledge or tools change.
+Live quality scoring
+Every conversation is scored, and drops are flagged for review.
+Measured against your goals
+Booking, conversion and handover rates reviewed with you every week.
+Pricing
+Custom built.
+Priced for your requirements.
+No fixed tiers. Every sales agent is built around your journeys, channels and systems, so we price it the same way: after we understand what you need.
+What shapes the price
+Channels: web chat, voice, WhatsApp, SMS, email
+Conversation and call volume
+Integrations: CRM, calendars, catalogue, phone
+Languages and regions
+Compliance and data-residency needs
+Always included
+Design and build with our team
+Scenario testing before launch
+Conversation manager and compliance tracking
+Weekly reviews and tuning after go-live
+Security: SOC 2 Type II, HIPAA, GDPR
+Tell us what you need.
+Share your journeys, channels and systems. We'll come back with a scope and a
+price.
+Contact us
+Bring one journey.
+We'll show you the leak.
+Share a landing page or a product range. We'll show where buyers drop off and what the agent would do with them.
+Contact us
+Try the live demo
+Pricing

@@ -1,0 +1,122 @@
+Home
+/
+Resources
+/
+Case studies
+/
+Kestrel Financial
+Underwriting in hours, with the reasoning attached
+Commercial submissions waited 3.5 days for a first look and inbound leads waited 3 hours for routing. An intake and scoring system now produces a cited risk memo for every submission, approved by a human underwriter.
+Illustrative example. Names and results are fictional and do not represent verified customer outcomes.
+Contact us
+Published
+21 April 2026
+Measured result
+Underwriting cycle time
+3.5 days → 11 hours
+Underwriting cycle time
+6-month window
+Speed-to-lead, inbound
+3h → 4min
+Speed-to-lead, inbound
+median, all inbound enquiries
+Qualified meetings booked
++34%
+Qualified meetings booked
+8-person team, one quarter
+Contact us
+The situation
+Kestrel Financial underwrote commercial policies from broker submissions arriving as email with attachments — loss runs, financials, applications, occasionally a photograph of a form. Median time from submission to first underwriter look was
+3.5 days
+, and
+19%
+of submissions were declined for reasons visible on page one.
+Separately, their eight-person commercial team routed inbound web enquiries by hand. Median speed-to-lead:
+3 hours
+, worse on Fridays and non-existent at weekends. Brokers who didn’t hear back in a day went elsewhere.
+Two problems, one root cause: the first pass on any inbound item was a human doing mechanical work with no queue discipline.
+What we found in the teardown
+We spent a day with their two most senior underwriters writing down how they actually decide: the factors they look for, the order, the disqualifiers, the weights, the point at which they stop reading. It took four hours and produced a two-page rubric neither had ever seen written down.
+That rubric became the specification and the eval. We replayed
+400 historical submissions
+through it manually before building anything, and measured agreement with the recorded decision. The rubric alone agreed
+86%
+of the time — which told us the constraint was reading speed and consistency, not judgement.
+What we built
+Six weeks, in their VPC with their own model endpoints, in two parts.
+Intake and memo.
+Submissions are parsed, classified and checked for completeness; missing documents trigger an automatic broker request. For complete submissions the system produces a structured memo: factors found, source document and line for each, rubric version applied, a confidence figure, and an explicit list of what it could not verify. Low confidence routes to a senior underwriter by design, not by exception. No policy is bound without a human approving the memo.
+Inbound routing.
+Enquiries are enriched, scored against the same rubric, matched to territory and assigned in minutes, with a drafted first response the rep edits rather than writes.
+The compounding part is the override loop. Every underwriter override is captured with a reason code, aggregated weekly, and turned into either a rubric change or a new eval case.
+Result
+Over
+six months
+:
+Underwriting cycle time
+3.5 days → 11 hours
+Speed-to-lead
+3h → 4min
+Qualified meetings booked
++34%
+for the eight-person team in one quarter
+First-pass agreement with senior reviewers
+86% → 94%
+after two quarters of override feedback
+Page-one declines now surfaced in
+under 20 minutes
+The artifact their regulator liked most wasn’t the model. It was a documented, versioned rubric and a queryable record of every decision and every override.
+“Everything ran in our VPC with our keys. Security cleared it in nine days, which has never happened here before.”
+— Marcus Bell, Chief Information Security Officer, Kestrel Financial
+Same workflow, same volume, measured either side.
+The left figure is what the workflow cost before we arrived, out of their own reporting. The right is what it cost after, over the window named beneath it.
+Underwriting cycle time
+3.5 days
+→
+11 hours
+6-month window
+Speed-to-lead, inbound
+3h
+→
+4min
+median, all inbound enquiries
+Qualified meetings booked
++34%
+8-person team, one quarter
+Other workflows we took apart.
+Same method, different queue. Each one states its baseline, its window and its denominator.
+Meridian Health
+Meridian Health
+Support answers that stop costing twelve minutes each
+A 240-seat support org was answering policy questions from a 900-page handbook and four wikis. One cited answer layer, wired into the ticket, cut average handle time by 38% in seven weeks.
+Read the case study
+Average handle time
+−38%
+Average handle time
+across 1.2M annual contacts
+First-contact resolution
++22%
+First-contact resolution
+90 days post-launch
+Teardown to production
+7 weeks
+Teardown to production
+three engineers
+Northwind Logistics
+Northwind Logistics
+Invoices that match themselves, exceptions that route themselves
+40,000 invoices a quarter hit a matching rule set that failed on every non-standard PO line. Chaining extraction, matching, exception routing and ERP write-back moved auto-match from 78% to 94%.
+Read the case study
+Invoice auto-match rate
+78% → 94%
+Invoice auto-match rate
+on 40k invoices/quarter
+Month-end audit prep
+5 days → 4 hours
+Month-end audit prep
+first two quarters
+Cost per processed document
+−81%
+Cost per processed document
+vs. prior BPO rate
+Read the blog

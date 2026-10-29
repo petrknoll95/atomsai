@@ -1,0 +1,51 @@
+{
+  "base": "http://127.0.0.1:3010",
+  "results": [
+    {
+      "browser": "chromium",
+      "failures": [
+        {
+          "blocked": "http://127.0.0.1:3010/_next/static/chunks/3rho-k9b2xgk3.css",
+          "intercepted": 1,
+          "contained": true
+        },
+        {
+          "blocked": "http://127.0.0.1:3010/_next/static/chunks/1jlreakeg13l3.css",
+          "intercepted": 1,
+          "contained": true
+        },
+        {
+          "blocked": "all",
+          "intercepted": 2,
+          "contained": true
+        }
+      ],
+      "reloads": 6,
+      "failedAssets": [],
+      "errors": []
+    },
+    {
+      "browser": "webkit",
+      "failures": [
+        {
+          "blocked": "http://127.0.0.1:3010/_next/static/chunks/3rho-k9b2xgk3.css",
+          "intercepted": 1,
+          "contained": true
+        },
+        {
+          "blocked": "http://127.0.0.1:3010/_next/static/chunks/1jlreakeg13l3.css",
+          "intercepted": 1,
+          "contained": true
+        },
+        {
+          "blocked": "all",
+          "intercepted": 2,
+          "contained": true
+        }
+      ],
+      "reloads": 6,
+      "failedAssets": [],
+      "errors": []
+    }
+  ]
+}

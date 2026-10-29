@@ -4,4 +4,5 @@
 
 @media print, (prefers-reduced-motion: reduce) {
   .scope :is(section, footer) { opacity: 1 !important; }
+  .scope :is(h1, h2, [data-text-reveal], :global(.text-reveal-line)) { opacity: 1 !important; transform: none !important; }
 }

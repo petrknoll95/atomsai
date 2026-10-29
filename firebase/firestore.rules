@@ -1,0 +1,63 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function guest() { return request.auth != null; }
+    function text(value, max) { return value is string && value.size() > 0 && value.size() <= max; }
+    function validImage(i) {
+      return i is map && i.keys().hasOnly(['dataUrl','width','height'])
+        && text(i.dataUrl,120000) && i.dataUrl.matches('data:image/jpeg;base64,[A-Za-z0-9+/=]+')
+        && i.width is int && i.width > 0 && i.width <= 480
+        && i.height is int && i.height > 0 && i.height <= 320;
+    }
+    function validMeta(m) {
+      return m is map && m.keys().hasOnly(['context','screen','screenshot'])
+        && (!('screen' in m) || text(m.screen,300))
+        && (!('screenshot' in m) || validImage(m.screenshot)) && m.context is map
+        && m.context.keys().hasOnly(['browser','viewportWidth','viewportHeight','pixelRatio','pageUrl'])
+        && text(m.context.browser,100) && text(m.context.pageUrl,2000)
+        && m.context.viewportWidth is int && m.context.viewportWidth > 0 && m.context.viewportWidth <= 100000
+        && m.context.viewportHeight is int && m.context.viewportHeight > 0 && m.context.viewportHeight <= 100000
+        && m.context.pixelRatio is number && m.context.pixelRatio > 0 && m.context.pixelRatio <= 100;
+    }
+    function validComment(d, id) {
+      return d.keys().hasOnly(['id','ownerUid','author','text','anchor','createdAt','updatedAt','resolved','resolvedBy','resolvedAt','meta'])
+        && (!('meta' in d) || validMeta(d.meta))
+        && d.id == id && text(d.ownerUid,128) && text(d.author,100) && text(d.text,8000)
+        && text(d.createdAt,40) && text(d.updatedAt,40) && d.resolved is bool
+        && d.anchor is map && d.anchor.keys().hasOnly(['selector','offsetX','offsetY','viewportX','viewportY'])
+        && d.anchor.selector is string && d.anchor.selector.size() <= 2000
+        && d.anchor.offsetX is number && d.anchor.offsetY is number
+        && d.anchor.viewportX is number && d.anchor.viewportY is number
+        && d.resolvedBy is string && d.resolvedBy.size() <= 100
+        && d.resolvedAt is string && d.resolvedAt.size() <= 40;
+    }
+    function validReply(d, id) {
+      return d.keys().hasOnly(['id','commentId','ownerUid','author','text','createdAt','updatedAt'])
+        && d.id == id && text(d.commentId,100) && text(d.ownerUid,128)
+        && text(d.author,100) && text(d.text,8000)
+        && text(d.createdAt,40) && text(d.updatedAt,40);
+    }
+    match /pages/{page}/comments/{id} {
+      allow read: if guest();
+      allow create: if guest() && validComment(request.resource.data,id)
+        && request.resource.data.ownerUid == request.auth.uid;
+      allow update: if guest() && validComment(request.resource.data,id)
+        && request.resource.data.ownerUid == resource.data.ownerUid
+        && request.resource.data.createdAt == resource.data.createdAt
+        && request.resource.data.get('meta', null) == resource.data.get('meta', null)
+        && (resource.data.ownerUid == request.auth.uid
+          || request.resource.data.diff(resource.data).affectedKeys().hasOnly(['resolved','resolvedBy','resolvedAt','updatedAt']));
+      allow delete: if guest() && resource.data.ownerUid == request.auth.uid;
+    }
+    match /pages/{page}/replies/{id} {
+      allow read: if guest();
+      allow create: if guest() && validReply(request.resource.data,id)
+        && request.resource.data.ownerUid == request.auth.uid
+        && exists(/databases/$(database)/documents/pages/$(page)/comments/$(request.resource.data.commentId));
+      allow update: if guest() && validReply(request.resource.data,id)
+        && resource.data.ownerUid == request.auth.uid
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['text','updatedAt']);
+      allow delete: if guest() && resource.data.ownerUid == request.auth.uid;
+    }
+  }
+}

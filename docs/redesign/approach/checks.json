@@ -1,0 +1,90 @@
+[
+  {
+    "engine": "chromium",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "overflow": false,
+    "h1": 1,
+    "title": "AI Services — From workflow to working system | AtomsAI",
+    "detailsOpens": true,
+    "faqOpens": true
+  },
+  {
+    "engine": "chromium",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "overflow": false,
+    "h1": 1,
+    "title": "AI Services — From workflow to working system | AtomsAI",
+    "detailsOpens": true,
+    "faqOpens": true
+  },
+  {
+    "engine": "chromium",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "overflow": false,
+    "h1": 1,
+    "title": "AI Services — From workflow to working system | AtomsAI",
+    "detailsOpens": true,
+    "faqOpens": true
+  },
+  {
+    "engine": "chromium",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "overflow": false,
+    "h1": 1,
+    "title": "AI Services — From workflow to working system | AtomsAI",
+    "detailsOpens": true,
+    "faqOpens": true
+  },
+  {
+    "engine": "webkit",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "overflow": false,
+    "h1": 1,
+    "title": "AI Services — From workflow to working system | AtomsAI",
+    "detailsOpens": true,
+    "faqOpens": true
+  },
+  {
+    "engine": "webkit",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "overflow": false,
+    "h1": 1,
+    "title": "AI Services — From workflow to working system | AtomsAI",
+    "detailsOpens": true,
+    "faqOpens": true
+  },
+  {
+    "engine": "webkit",
+    "width": 390,
+    "status": 200,
+    "errors": [],
+    "overflow": false,
+    "h1": 1,
+    "title": "AI Services — From workflow to working system | AtomsAI",
+    "detailsOpens": true,
+    "faqOpens": true
+  },
+  {
+    "engine": "webkit",
+    "width": 320,
+    "status": 200,
+    "errors": [],
+    "overflow": false,
+    "h1": 1,
+    "title": "AI Services — From workflow to working system | AtomsAI",
+    "detailsOpens": true,
+    "faqOpens": true
+  }
+]

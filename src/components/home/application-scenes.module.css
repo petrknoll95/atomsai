@@ -1,0 +1,86 @@
+.microMuted { font-size: var(--text-caption); line-height:17px; color:var(--color-muted-foreground); }
+.microDivider { height:1px; flex:none; background:var(--color-border-subtle); }
+.bookingFlow { width:100%; display:flex; flex-direction:column; gap:15px; }
+.customerBubble,.confirmationBubble { border-radius: var(--radius-control); padding:10px 20px; width:fit-content; }
+.customerBubble { background:var(--illustration-card); align-self:flex-end; }
+.confirmationBubble { background:var(--color-primary); color:var(--color-primary-foreground); }
+.bookingCard { display:flex; flex-direction:column; gap:15px; padding:15px; border-radius:20px 22.5px 22.5px; background:var(--illustration-card); box-shadow:0 0 0 1px var(--color-border-subtle),0 3.75px 15px color-mix(in display-p3,var(--palette-deep-green) 5.5%,transparent); }
+.appointment { display:flex; align-items:center; gap:15px; height:48px; }
+.calendarIcon { width:48px; height:48px; padding:11.25px; flex:none; border-radius:11.25px; background:var(--color-secondary); }
+.appointmentCopy { display:flex; flex-direction:column; gap:2.5px; }
+.appointmentCopy>p:first-child { font-size: var(--text-body); line-height:22px; }
+.bookingResult { display:flex; align-items:center; gap:12px; font-size:13.125px; line-height:18px; }
+.bookingBadge { display:flex; align-items:center; gap:5.625px; border-radius: var(--radius-control); padding:8px 11.25px; background:var(--color-secondary); white-space:nowrap; }
+.bookingResult>span:last-child { font-weight: var(--font-weight-normal); font-variation-settings:'wght' var(--font-weight-normal), 'ital' 100; color:var(--color-muted-foreground); }
+.callFlow { width:100%; }
+.callCard,.summaryCard,.inboxCard { background:var(--illustration-card); border:1px solid var(--illustration-outline); box-shadow:var(--shadow-card); border-radius:20px; }
+.callCard { display:flex; gap:9px; align-items:center; padding:16px; }
+.waveIcon { width:36px; height:36px; display:grid; place-items:center; flex:none; background:var(--color-secondary); border-radius:50%; }
+.callCopy { display:flex; flex-direction:column; gap:1px; }
+.connector { height:16px; display:flex; justify-content:center; }
+.connector::after { content:""; width:1px; background:var(--illustration-outline); }
+.previewIcon { display:inline-block; flex-shrink:0; background:currentColor; mask-position:center; mask-size:contain; mask-repeat:no-repeat; }
+.summaryCard { padding:18px; }
+.summaryHeading { display:flex; gap:8px; align-items:center; }
+.starIcon { width:24px; height:24px; display:grid; place-items:center; border-radius:7px; background:var(--illustration-accent); }
+.summaryCopy { padding:12px 0 18px; font-size: var(--text-lead); line-height:25px; }
+.illustrationDivider { height:1px; background:var(--illustration-divider); }
+.nextStep { padding-top:15px; display:flex; flex-direction:column; gap:13px; align-items:flex-start; }
+.nextCopy { margin-top:4px; font-size: var(--text-body); line-height:22px; font-weight: var(--font-weight-normal); font-variation-settings:'wght' var(--font-weight-normal), 'ital' 100; }
+.microAction { display:inline-flex; align-items:center; gap:8px; padding:9px 15px; background:var(--illustration-card); border:1px solid var(--illustration-outline); border-radius: var(--radius-control); line-height:17px; }
+.inboxCard { width:100%; padding:0 16px 19px; }
+.inboxToolbar { display:flex; align-items:center; gap:12px; padding:20px 0 17px; }
+.inboxTitle { display:flex; align-items:center; gap:9px; flex:1; }
+.assigned { display:flex; align-items:center; gap:6px; padding:6px 10px 6px 12px; border-radius: var(--radius-control); background:var(--illustration-assignment); color:var(--color-foreground); font-size: var(--text-caption); line-height:17px; white-space:nowrap; }
+.customerMessage { display:flex; flex-direction:column; gap:7px; padding:20px 0 17px; }
+.sender { display:flex; gap:8px; align-items:center; }
+.sender>span:last-child { margin-left:auto; }
+.avatar { display:grid; place-items:center; width:20px; height:20px; border-radius:50%; background:var(--color-secondary); font-size:11px; font-weight: 530; font-variation-settings:'wght' 530, 'ital' 100; }
+.customerMessage>p { font-size: var(--text-lead); line-height:25px; }
+.privateNote { padding:14px 16px; border-radius:12px; background:var(--illustration-accent); }
+.privateNote>div { display:flex; align-items:center; gap:6px; font-size: var(--text-caption); line-height:17px; }
+.privateNote>p { margin-top:7px; font-size: var(--text-body); line-height:22px; font-weight: var(--font-weight-normal); font-variation-settings:'wght' var(--font-weight-normal), 'ital' 100; }
+.reply { padding-top:24px; }
+.reply .microAction>span { text-box:trim-both cap alphabetic; }
+.browserPreview { width:100%; height:364px; overflow:hidden; border-radius:16px 16px 0 0; background:var(--illustration-card); box-shadow:inset 0 1px 0 var(--color-border-subtle),inset 1px 0 0 var(--color-border-subtle),inset -1px 0 0 var(--color-border-subtle),0 4px 16px color-mix(in display-p3,var(--palette-deep-green) 5.5%,transparent); }
+.browserToolbar { position:relative; display:flex; align-items:center; gap:6px; height:34px; padding:0 12px; box-shadow:inset 0 -1px 0 var(--color-border-subtle); }
+.browserToolbar>span { position:absolute; left:50%; top:13px; transform:translateX(-50%); width:80px; height:8px; border-radius:99px; background:var(--color-foreground); opacity:.1; }
+.browserCanvas { height:330px; padding:12px; }
+.callbackWidget { height:100%; display:flex; flex-direction:column; gap:12px; padding:20px; border-radius: var(--radius-card); background:var(--illustration-card); box-shadow:0 0 0 1px var(--color-border-subtle),0 4px 16px color-mix(in display-p3,var(--palette-deep-green) 5.5%,transparent); }
+.callbackIntro { flex:1; display:flex; flex-direction:column; gap:16px; }
+.callbackTitle { font-size:24px; line-height:1.1; margin-bottom:8px; }
+.callbackTiming { display:flex; gap:4px; padding:4px; background:var(--color-secondary); border-radius: var(--radius-control); }
+.callbackTiming>span { flex:1; text-align:center; padding:8px; border-radius: var(--radius-control); }
+.callbackTiming>span:first-child { background:var(--illustration-card); }
+.callbackForm { display:flex; flex-direction:column; gap:12px; }
+.callbackInput { display:flex; align-items:center; gap:12px; height:43px; padding:0 16px; box-shadow:inset 0 0 0 1px var(--color-border); border-radius: var(--radius-control); color:var(--color-muted-foreground); margin-top:8px; }
+.callbackSubmit { display:grid; place-items:center; height:44px; padding:0 20px; border-radius: var(--radius-control); background:var(--color-primary); color:var(--color-primary-foreground); }
+
+/* Flat AtomsAI counterpart of the reference's pale, lightly outlined surfaces. */
+.bookingFlow, .callFlow, .inboxCard, .browserPreview {
+  --illustration-card: var(--palette-paper);
+  --illustration-outline: var(--scene-line);
+  --illustration-divider: var(--scene-line);
+  --illustration-assignment: var(--palette-cream);
+  --illustration-accent: var(--palette-cream);
+}
+.callCard, .summaryCard, .inboxCard, .bookingCard, .browserPreview {
+  background: var(--palette-paper); border: 1px solid var(--scene-line);
+  border-radius: 10px; box-shadow: none;
+}
+.customerBubble, .confirmationBubble { border: 1px solid var(--scene-line); border-radius: 10px; }
+.customerBubble { background: var(--palette-paper); }
+.confirmationBubble { background: var(--palette-paper); color: var(--scene-ink); }
+.calendarIcon, .waveIcon, .avatar { background: var(--palette-cream); }
+.bookingBadge, .assigned { background: var(--palette-cream); border-radius: 5px; }
+.microAction { background: var(--palette-cream); border-radius: 6px; }
+.privateNote { background: var(--palette-cream); border-radius: 7px; }
+.browserToolbar { box-shadow: none; border-bottom: 1px solid var(--scene-line); }
+.browserToolbar > span { position: static; transform: none; width: 8px; height: 8px; background: currentColor; opacity: .35; }
+.browserToolbar > span:last-child { position: absolute; left: 50%; top: 13px; transform: translateX(-50%); width: 80px; height: 8px; background: var(--scene-ink); opacity: .1; }
+.callbackWidget { background: var(--palette-cream); box-shadow: none; border: 1px solid var(--scene-line); border-radius: 8px; }
+.callbackTiming { background: var(--palette-cream); border: 1px solid var(--scene-line); border-radius: 6px; }
+.callbackTiming > span { border-radius: 4px; }
+.callbackTiming > span:first-child { background: var(--palette-cream); box-shadow: inset 0 0 0 1px var(--scene-line); }
+.callbackInput { background: var(--palette-cream); box-shadow: none; border: 1px solid var(--scene-line); border-radius: 6px; }
+.callbackSubmit { background: var(--palette-cream); color: var(--scene-ink); border: 1px solid var(--scene-line); border-radius: 6px; }

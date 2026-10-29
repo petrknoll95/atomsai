@@ -1,0 +1,386 @@
+[
+  {
+    "browser": "chromium",
+    "width": 947,
+    "deviceScaleFactor": 1,
+    "fraction": 0.53,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 947,
+    "deviceScaleFactor": 1,
+    "fraction": 0.347,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 947,
+    "deviceScaleFactor": 1,
+    "fraction": 0.183,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 1001,
+    "deviceScaleFactor": 1,
+    "fraction": 0.53,
+    "brightnessExcess": 0.25,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 1001,
+    "deviceScaleFactor": 1,
+    "fraction": 0.347,
+    "brightnessExcess": 0.25,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 1001,
+    "deviceScaleFactor": 1,
+    "fraction": 0.183,
+    "brightnessExcess": 0.25,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 1600,
+    "deviceScaleFactor": 1,
+    "fraction": 0.53,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 1600,
+    "deviceScaleFactor": 1,
+    "fraction": 0.347,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 1600,
+    "deviceScaleFactor": 1,
+    "fraction": 0.183,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 390,
+    "deviceScaleFactor": 1,
+    "fraction": 0.53,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 390,
+    "deviceScaleFactor": 1,
+    "fraction": 0.347,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 390,
+    "deviceScaleFactor": 1,
+    "fraction": 0.183,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 947,
+    "deviceScaleFactor": 2,
+    "fraction": 0.53,
+    "brightnessExcess": 0.027777777777771462,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 947,
+    "deviceScaleFactor": 2,
+    "fraction": 0.347,
+    "brightnessExcess": 0.027777777777771462,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 947,
+    "deviceScaleFactor": 2,
+    "fraction": 0.183,
+    "brightnessExcess": 0.027777777777771462,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 1001,
+    "deviceScaleFactor": 2,
+    "fraction": 0.53,
+    "brightnessExcess": 0.13888888888888573,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 1001,
+    "deviceScaleFactor": 2,
+    "fraction": 0.347,
+    "brightnessExcess": 0.13888888888888573,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 1001,
+    "deviceScaleFactor": 2,
+    "fraction": 0.183,
+    "brightnessExcess": 0.13888888888888573,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 1600,
+    "deviceScaleFactor": 2,
+    "fraction": 0.53,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 1600,
+    "deviceScaleFactor": 2,
+    "fraction": 0.347,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 1600,
+    "deviceScaleFactor": 2,
+    "fraction": 0.183,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 390,
+    "deviceScaleFactor": 2,
+    "fraction": 0.53,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 390,
+    "deviceScaleFactor": 2,
+    "fraction": 0.347,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "chromium",
+    "width": 390,
+    "deviceScaleFactor": 2,
+    "fraction": 0.183,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 947,
+    "deviceScaleFactor": 1,
+    "fraction": 0.53,
+    "brightnessExcess": 0.2777777777777999,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 947,
+    "deviceScaleFactor": 1,
+    "fraction": 0.347,
+    "brightnessExcess": 0.2777777777777999,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 947,
+    "deviceScaleFactor": 1,
+    "fraction": 0.183,
+    "brightnessExcess": 0.2777777777777999,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 1001,
+    "deviceScaleFactor": 1,
+    "fraction": 0.53,
+    "brightnessExcess": 0.25,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 1001,
+    "deviceScaleFactor": 1,
+    "fraction": 0.347,
+    "brightnessExcess": 0.25,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 1001,
+    "deviceScaleFactor": 1,
+    "fraction": 0.183,
+    "brightnessExcess": 0.25,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 1600,
+    "deviceScaleFactor": 1,
+    "fraction": 0.53,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 1600,
+    "deviceScaleFactor": 1,
+    "fraction": 0.347,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 1600,
+    "deviceScaleFactor": 1,
+    "fraction": 0.183,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 390,
+    "deviceScaleFactor": 1,
+    "fraction": 0.53,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 390,
+    "deviceScaleFactor": 1,
+    "fraction": 0.347,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 390,
+    "deviceScaleFactor": 1,
+    "fraction": 0.183,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 947,
+    "deviceScaleFactor": 2,
+    "fraction": 0.53,
+    "brightnessExcess": 0.2500000000000284,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 947,
+    "deviceScaleFactor": 2,
+    "fraction": 0.347,
+    "brightnessExcess": 0.2500000000000284,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 947,
+    "deviceScaleFactor": 2,
+    "fraction": 0.183,
+    "brightnessExcess": 0.2500000000000284,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 1001,
+    "deviceScaleFactor": 2,
+    "fraction": 0.53,
+    "brightnessExcess": 0.2361111111111711,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 1001,
+    "deviceScaleFactor": 2,
+    "fraction": 0.347,
+    "brightnessExcess": 0.2361111111111711,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 1001,
+    "deviceScaleFactor": 2,
+    "fraction": 0.183,
+    "brightnessExcess": 0.2361111111111711,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 1600,
+    "deviceScaleFactor": 2,
+    "fraction": 0.53,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 1600,
+    "deviceScaleFactor": 2,
+    "fraction": 0.347,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 1600,
+    "deviceScaleFactor": 2,
+    "fraction": 0.183,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 390,
+    "deviceScaleFactor": 2,
+    "fraction": 0.53,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 390,
+    "deviceScaleFactor": 2,
+    "fraction": 0.347,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  },
+  {
+    "browser": "webkit",
+    "width": 390,
+    "deviceScaleFactor": 2,
+    "fraction": 0.183,
+    "brightnessExcess": 0,
+    "exposedBacking": false
+  }
+]

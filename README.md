@@ -9,6 +9,11 @@ npm run dev
 
 Open http://localhost:3000. Production: `npm run build && npm start`.
 
+Use `npm run dev -- --port 3001` for the live editing preview. Development uses
+`.next-preview/`; production builds use `.next/`, so running build checks cannot
+remove chunks being served by the preview. Stop a production server before
+rebuilding its output. See [reload failure regression evidence](docs/visual/reload/README.md).
+
 ## Structure
 
 - `src/app/`: page composition, metadata, fonts and global styles.

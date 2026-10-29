@@ -39,7 +39,7 @@ export function useStoryAutoplay(embla: EmblaCarouselType | undefined) {
   const bars = useRef<(HTMLSpanElement | null)[]>([]);
   const toggle = useRef<() => void>(() => {});
   const [paused, setPaused] = useState(false);
-  const [active, setActive] = useState(2);
+  const [active, setActive] = useState(0);
 
   useEffect(() => {
     if (!embla) return;
@@ -68,9 +68,10 @@ export function useStoryAutoplay(embla: EmblaCarouselType | undefined) {
     };
     const select = () => {
       setActive(embla.selectedScrollSnap());
-      // Manual navigation transfers the remaining time to the selected line.
-      // It does not reset or stop the running autoplay clock.
-      startProgress();
+      // Every new story gets a full interval, including arrows, pagination and
+      // either swipe surface. Reset emits timerset to restart the matching bar.
+      if (autoplay.isPlaying()) autoplay.reset();
+      else startProgress(); // Clear the previous bar without resuming pause.
     };
     toggle.current = () => {
       manuallyPaused = !manuallyPaused;

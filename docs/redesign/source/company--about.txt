@@ -1,0 +1,146 @@
+Home
+/
+Company
+/
+About
+Operators first. The AI came second.
+We build production AI for enterprises from inside their teams — an applied engineering group from SaaS Labs, the company behind JustCall.
+Contact us
+We kept getting called in after the pilot failed.
+AtomsAI started from a pattern we saw repeatedly inside SaaS Labs. Companies had budget for AI, appetite for it, and a pilot that had already impressed a steering committee. What they didn’t have was anything running. The model wasn’t the blocker. The blocker was the twelve systems between a good output and a finished piece of work — and the fact that nobody had scoped the exception queue, the approval gate, or the runbook.
+We came at it from the operator side. The group behind us built JustCall and serves more than 6,000 customers, which means we’ve spent years shipping software into other people’s messy, regulated, half-documented workflows and being on call when it breaks. That’s a different instinct from a research lab’s, and it’s the instinct this work needs.
+So we set the company up to do both halves. We consult: we tear the workflow down, baseline it, and tell you which ones are worth automating and in what order. Then we build it — the same senior engineers, in your repository, behind your code review, in your standups. The advice is only worth something once it is running, so we stay until it is. The first thing we produce is a ranked list that sometimes tells you not to buy anything yet. The last thing we produce is a handover, because this is your moat — not ours.
+Consultants who ship.
+It’s on the website because it’s the whole operating model, not a tagline.
+“
+Jane from AP manually fixes invoices that fail OCR on Fridays. We exist to fix Friday.
+Why the company exists, in one sentence.
+Not a startup with a demo video.
+AtomsAI is part of SaaS Labs, the group behind JustCall and a portfolio serving more than 6,000 customers. SaaS Labs is backed by Peak XV Partners and Base10 Partners, with teams across the United States, India, Poland and Australia and 100+ technology partnerships spanning CRM, data, cloud and model providers.
+Practically, that means three things for a buyer. There is a real company behind the invoice, with a security posture — SOC 2 Type II, HIPAA — that has already survived enterprise procurement. There is engineering depth in four time zones, so an on-call commitment is a rota and not a promise. And there are existing partnerships with most of the systems we’ll need to write to, which removes weeks from an integration timeline.
+Backed by Peak XV Partners and Base10 Partners, as part of SaaS Labs.
+SaaS
+Labs
+JustCall
+the product
+6,000+
+customers
+100+
+partnerships
+AtomsAI
+applied AI
+One group. JustCall’s customers and partnerships are the ground AtomsAI ships on.
+Backed by Peak XV Partners & Base10
+Institutional investors in the group.
+Four countries
+United States · India · Poland · Australia.
+SOC 2 Type II · HIPAA
+Audited, with reports available under NDA.
+Read the Trust Center
+Four rules we hire and fire on.
+Consultants who ship.
+We give the advice and then we write the code. The senior engineer who scopes the workflow is the one who merges it. Every engagement ends in a running system, not a recommendation — and no discovery phase bills for six weeks before anything works. If a project needs a slide, it’s because a human needs to be convinced, not because we sell slides.
+Integration is the product.
+The interesting part is never the model. It’s the write-back, the gate, the exception path and the 2am alert. We take pride in the unglamorous half, because that’s the half that decides whether anything ships.
+You own the system.
+Code, prompts, evals, infrastructure and runbooks land in your repository under your license as we go. Nothing stops working if you stop paying us.
+This is your moat — not ours.
+Say the uncomfortable number.
+If a workflow won’t pay back, we say so before the contract. If access approvals are the critical path, we put it in writing on day one. If we were wrong, we’ll be the ones who raise it.
+How we’re different, row by row.
+We advise like a consultancy and ship like an engineering team. Here is where each of the two things you are comparing us against stops short.
+What you get
+An advice-only consultancy
+A strategy deck and a roadmap
+An AI platform
+A licence and a set of building blocks
+Ours →
+What you get
+AtomsAI
+One workflow running in production, with its runbook
+Who writes the code
+An advice-only consultancy
+A staffed team, often junior, often rotating
+An AI platform
+Your team, on their own time
+Ours →
+Who writes the code
+AtomsAI
+The senior engineer who scoped it, in your repository
+Where it runs
+An advice-only consultancy
+Wherever the SI proposes
+An AI platform
+The vendor’s cloud
+Ours →
+Where it runs
+AtomsAI
+Your VPC, your keys, your model provider
+Who owns it at the end
+An advice-only consultancy
+You own the deck
+An AI platform
+The vendor owns the system; you rent it
+Ours →
+Who owns it at the end
+AtomsAI
+You own code, prompts, evals, infrastructure and runbooks
+What happens if you stop paying
+An advice-only consultancy
+The team leaves; the roadmap stalls
+An AI platform
+The system stops
+Ours →
+What happens if you stop paying
+AtomsAI
+Nothing stops. This is your moat — not ours.
+How quality is measured
+An advice-only consultancy
+Steering-committee sentiment
+An AI platform
+Whatever you build yourself
+Ours →
+How quality is measured
+AtomsAI
+An eval suite in your CI, with thresholds you set
+First deliverable
+An advice-only consultancy
+A discovery phase
+An AI platform
+A sandbox account
+Ours →
+First deliverable
+AtomsAI
+A ranked workflow list that sometimes says “not yet”
+Seven dimensions. Hover, focus or tap a card for ours.
+The roles that lead an engagement.
+A view of the responsibilities involved, from scoping to delivery and security.
+GS
+Gaurav Sharma on LinkedIn
+Gaurav Sharma
+Chief Executive Officer
+NT
+Nilesh Tripathi on LinkedIn
+Nilesh Tripathi
+Managing Director
+BG
+Bharat Goyal
+Head of Engineering
+AJ
+Anwesha Jalan on LinkedIn
+Anwesha Jalan
+Head of Product
+HD
+Harit Dagar on LinkedIn
+Harit Dagar
+Applied Engineer
+PJ
+Prateek Jain on LinkedIn
+Prateek Jain
+Applied Engineer
+TS
+Tushar Sankla on LinkedIn
+Tushar Sankla
+Applied Engineer
+We hire senior builders in the US, India, Poland and Australia.
+Explore careers

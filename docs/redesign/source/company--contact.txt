@@ -1,0 +1,63 @@
+Home
+/
+Company
+/
+Contact
+Tell us what’s broken. Skip pleasantries.
+A workflow, a security questionnaire, a partnership or a CV — all four reach a human, usually within a business day.
+Contact us
+Two ways in. Pick either.
+If you have a workflow in mind, tell us about it — the first conversation is a thirty-minute working session, not a pitch. If it’s press, partnerships, security review or careers, use the form or email us directly.
+Book a working session
+Thirty minutes on one broken workflow. No deck.
+Contact us
+General enquiries
+Anything that isn’t one of the below.
+hello@atomsai.com
+Security & compliance reviews
+Questionnaires, SOC 2 report requests, DPAs.
+security@atomsai.com
+Partnerships
+Technology, cloud and model providers.
+partners@atomsai.com
+Press
+Interviews, briefings, brand assets.
+press@atomsai.com
+Careers
+Speculative applications and role questions.
+careers@atomsai.com
+One form, any reason.
+It reaches a person, not a sequence. Pick the reason so it lands with the right one.
+Name
+*
+Company
+*
+Business email
+*
+Phone
+(optional)
+What’s the workflow — or the question?
+*
+Website
+Send message
+We’ll only use this to reply.
+See our privacy policy.
+Send these details by email
+Four countries, one rota.
+Remote-first with deliberate overlap hours, so an on-call commitment is a rota and not a promise.
+Four engineering geos, marked at country level — the cities are the thing still
+owed above.
+United States
+Registered entity and commercial team.
+UTC−5 to UTC−8
+India
+Engineering and delivery.
+UTC+5:30
+Poland
+Engineering and applied research.
+UTC+1
+Australia
+Delivery and on-call coverage.
+UTC+10
+Response time.
+Typical reply: one business day, across four time zones. Security questionnaires take longer if they need a named document.

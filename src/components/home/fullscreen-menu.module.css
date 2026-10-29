@@ -1,41 +1,93 @@
 .trigger,
-.close { display:grid; place-items:center; width:44px; height:44px; padding:0; flex:none; border:0; border-radius:50%; background:var(--color-primary); color:var(--color-primary-foreground); }
+.close { display:grid; place-items:center; width:44px; height:44px; padding:0; flex:none; border:0; border-radius:50%; background:var(--color-primary); color:var(--color-primary-foreground); transition:background-color .2s ease,transform .2s ease,var(--focus-transition); }
+.menuIcon { width:14px; height:8px; background:currentColor; mask:url('/assets/figma/hero-Vector1.svg') center / contain no-repeat; }
 .trigger:hover,
 .close:hover { background:color-mix(in display-p3,var(--color-primary),var(--color-primary-foreground) 8%); }
-.dialog { position:fixed; inset:0; width:100%; height:100dvh; max-width:none; max-height:none; margin:0; padding:0; border:0; background:var(--color-background); color:var(--color-foreground); overflow:auto; overscroll-behavior:contain; scroll-padding-block:112px 16px; }
+.trigger:active, .close:active { transform:scale(.95); }
+.dialog { --menu-track:calc((min(100vw,1600px) - 2 * var(--page-gutter)) / var(--menu-columns)); --color-muted-foreground:color-mix(in display-p3,var(--palette-cream) 80%,transparent); --color-border:color-mix(in display-p3,var(--palette-cream) 20%,transparent); position:fixed; z-index:1; inset:0; width:100%; height:100dvh; max-width:none; max-height:none; margin:0; padding:0; border:0; background:var(--color-background); color:var(--color-foreground); overflow:auto; overscroll-behavior:contain; scroll-padding-block:112px 16px; isolation:isolate; }
 .dialog[open] { display:flex; flex-direction:column; }
 .dialog::backdrop { background:transparent; }
-.topbar { position:sticky; top:0; z-index:1; display:flex; align-items:center; justify-content:space-between; min-height:96px; flex:none; background:var(--color-background); }
+.patternBackdrop { position:fixed; inset:0; z-index:0; overflow:hidden; pointer-events:none; }
+/* Shader slits repeat across 840 units, then crop to 800. Two overflow
+   slits place the remaining boundaries exactly on the shared content grid. */
+.patternField { position:absolute; left:50%; top:0; width:calc(var(--menu-track) * var(--menu-pattern-count) * 800 / 840); height:100%; transform:translateX(-50%); }
+.patternBackdrop::after { content:''; position:absolute; inset:0; background:color-mix(in display-p3,var(--palette-forest-shade) 38%,transparent); }
+.topbar { position:sticky; top:var(--header-top); z-index:2; display:flex; align-items:center; justify-content:space-between; width:calc(100% - 2 * var(--header-inset)); max-width:calc(1600px - 2 * var(--page-gutter)); min-height:var(--header-height); margin-top:var(--header-top); padding-inline:var(--header-padding); flex:none; }
+.actions { display:flex; gap:8px; align-items:center; margin-left:auto; }
 .logo { display:block; width:135.84px; height:24px; flex:none; }
-.logo img { width:100%; height:100%; }
-.content { flex:1; display:flex; align-items:center; padding-block:48px 80px; }
-.navigation { display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,1fr); gap:clamp(64px,10vw,160px); width:100%; }
-.primaryLinks,
-.productLinks { list-style:none; padding:0; margin:0; }
-.primaryLink { display:flex; align-items:center; justify-content:space-between; gap:24px; padding-block:20px; font-size:clamp(52px,5.5vw,88px); line-height:1; border-bottom:1px solid var(--color-border); }
-.primaryLink img { width:24px; height:24px; flex:none; }
-.primaryLink:hover { color:var(--palette-forest-green); }
-.supporting { display:flex; flex-direction:column; align-items:flex-start; justify-content:space-between; gap:40px; padding-block:20px; }
-.label { font-size:var(--text-label); font-weight:var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; color:var(--color-muted-foreground); margin-bottom:16px; }
-.productLinks a { display:flex; flex-direction:column; gap:6px; padding:16px 0; border-radius:4px; }
-.productLinks a > span:first-child { font-size:24px; line-height:1.2; }
-.productLinks a > span:last-child { font-size:var(--text-label); color:var(--color-muted-foreground); }
-.productLinks a:hover > span:first-child { color:var(--palette-forest-green); }
+.logoMark { display:block; width:100%; height:100%; background:currentColor; mask:url('/assets/figma/hero-Logo.svg') center / contain no-repeat; }
+.content { position:relative; z-index:1; flex:1; display:flex; flex-direction:column; align-items:flex-start; gap:48px; padding-block:calc(var(--header-offset) + var(--header-height) + 112px) 64px; }
+.navigation { display:grid; grid-template-columns:repeat(var(--menu-columns),minmax(0,1fr)); align-items:end; width:100%; }
+.primaryLinks { --menu-column-gap:32px; position:relative; list-style:none; padding:0 var(--menu-column-gap) 0 0; margin:0; grid-column:1; min-height:280px; }
+.menuGroup { --menu-indent:32px; }
+/* Size against one slit track, reserving the active dot indent and gutter.
+   5.6em accommodates the longest current label, Infrastructure. */
+.primaryLink { position:relative; display:flex; align-items:center; width:100%; min-height:44px; gap:24px; padding:10px 0; border:0; background:transparent; color:color-mix(in display-p3,var(--palette-cream) 64%,transparent); text-align:left; font-size:min(64px,calc((var(--menu-track) - var(--menu-indent) - var(--menu-column-gap)) / 5.6)); white-space:nowrap; line-height:1.1; transition:color .3s ease; }
+/* Trim the text block itself: the flex control does not own a line box.
+   Centering the trimmed cap-to-baseline box also centers the dot optically. */
+.primaryLink > span, .subLinks a > span { display:block; text-box:trim-both cap alphabetic; }
+.primaryLink > span { min-width:0; transition:transform .4s cubic-bezier(.22,1,.36,1); }
+.primaryLink::before { content:''; position:absolute; left:0; top:calc(50% - 6px); width:12px; height:12px; border-radius:50%; background:var(--palette-cream); opacity:0; transform:scale(0); transition:opacity .25s ease,transform .4s cubic-bezier(.22,1,.36,1); }
+.menuGroup[data-expanded='true'] > .primaryLink, .primaryLink:focus-visible { color:var(--palette-cream); }
+.menuGroup[data-expanded='true'] > .primaryLink > span, .primaryLink:focus-visible > span { transform:translateX(var(--menu-indent)); }
+.menuGroup[data-expanded='true'] > .primaryLink::before, .primaryLink:focus-visible::before { opacity:1; transform:scale(1); }
+/* Each panel starts on the next shader slit. Keeping it inside its group
+   preserves the natural keyboard order without moving the primary links. */
+.submenu { position:absolute; left:100%; top:0; width:100%; opacity:0; visibility:hidden; padding-right:24px; }
+.subLinks { list-style:none; margin:0; padding:12px 0 20px; }
+.subLinks li { opacity:0; transform:translateY(6px); }
+.subLinks a { display:inline-flex; align-items:center; min-height:36px; max-width:100%; font-size:22px; line-height:1.35; color:color-mix(in display-p3,var(--palette-cream) 76%,transparent); transition:color .25s ease,transform .3s cubic-bezier(.22,1,.36,1); }
+.subLinks a:is(:hover,:focus-visible) { color:var(--palette-cream); transform:translateX(3px); }
+.subLinks .allLink { margin-top:8px; font-size:var(--text-label); }
+.subLinks .allLink::after { bottom:-5px; }
+@media (min-width:768px) {
+  /* Match the final primary label's bottom edge, rather than the number
+     of secondary links. Keep the narrow-screen list's natural height. */
+  .primaryLinks { min-height:0; }
+  .submenu { height:100%; display:flex; }
+  .subLinks { flex:1; display:flex; flex-direction:column; padding-bottom:10px; }
+  .subLinks li:has(.allLink) { margin-top:auto; padding-top:8px; }
+  .subLinks .allLink { display:flex; width:fit-content; margin-top:0; min-height:28px; align-items:flex-end; }
+}
+.legal { display:flex; flex-wrap:wrap; column-gap:20px; width:var(--menu-track); max-width:100%; padding-right:20px; margin-top:auto; }
+.legal a { display:flex; align-items:center; min-height:32px; font-size:14px; color:var(--color-muted-foreground); transition:color .25s ease; }
+.legal a > span { text-box:trim-both cap alphabetic; }
+.legal a > span::after { bottom:-4px; }
+.legal a:is(:hover,:focus-visible) { color:var(--palette-cream); }
 @media (max-width:899px) {
-  .navigation { gap:48px; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); }
-  .primaryLink { font-size:44px; padding-block:16px; }
-  .productLinks a > span:first-child { font-size:20px; }
+  .menuGroup { --menu-indent:20px; }
+  .primaryLinks { --menu-column-gap:24px; }
+  .subLinks a { font-size:20px; }
 }
 @media (max-width:767px) {
   .dialog { scroll-padding-block-start:96px; }
-  .topbar { min-height:80px; }
-  .content { padding-block:16px 40px; align-items:flex-start; }
-  .navigation { grid-template-columns:1fr; gap:40px; }
-  .primaryLink { font-size:clamp(36px,8vw,52px); padding-block:14px; }
-  .supporting { gap:32px; padding:0; }
-  .supporting > div { width:100%; }
-  .productLinks { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 20px; }
-  .productLinks a { min-height:48px; padding-block:12px; }
-  .productLinks a > span:last-child { display:none; }
-  .supporting > a { min-height:48px; }
+  .contact { display:none; }
+  .content { padding-block:80px 40px; }
+  .primaryLinks { --menu-column-gap:20px; }
+  .navigation { row-gap:32px; }
+  .menuGroup { --menu-indent:14px; }
+  .primaryLink::before { width:8px; height:8px; top:calc(50% - 4px); }
+  .submenu { padding-right:0; }
+  .subLinks { padding-top:2px; padding-bottom:12px; }
+  .subLinks a { min-height:44px; font-size:16px; }
+  .legal a { min-height:44px; }
 }
+@media (prefers-reduced-motion:reduce) {
+  .trigger, .close, .primaryLink, .primaryLink > span, .primaryLink::before, .subLinks a, .legal a { transition:none; }
+}
+
+/* One mask tile per shader slit: the content grid supplies both pitch and origin.
+   A single masked surface avoids duplicating the WebGL canvas or interactive links. */
+.dialog {
+  --menu-reveal:0%;
+  -webkit-mask-image:linear-gradient(to right,transparent calc(50% - var(--menu-reveal)),#000 calc(50% - var(--menu-reveal)),#000 calc(50% + var(--menu-reveal)),transparent calc(50% + var(--menu-reveal)));
+  mask-image:linear-gradient(to right,transparent calc(50% - var(--menu-reveal)),#000 calc(50% - var(--menu-reveal)),#000 calc(50% + var(--menu-reveal)),transparent calc(50% + var(--menu-reveal)));
+  -webkit-mask-size:var(--menu-track) 100%;
+  mask-size:var(--menu-track) 100%;
+  -webkit-mask-position:calc((100vw - var(--menu-track) * var(--menu-columns)) / 2) 0;
+  mask-position:calc((100vw - var(--menu-track) * var(--menu-columns)) / 2) 0;
+  -webkit-mask-repeat:repeat-x;
+  mask-repeat:repeat-x;
+}
+.dialog[data-menu-state='open'] { -webkit-mask-image:none; mask-image:none; }
+@media(prefers-reduced-motion:reduce) { .dialog { -webkit-mask-image:none; mask-image:none; } }

@@ -1,0 +1,52 @@
+import { chromium, webkit, expect } from '@playwright/test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+const out = 'docs/visual/header-dot-pill';
+await fs.mkdir(out, { recursive:true });
+const results = [];
+for (const [name, engine] of Object.entries({ chromium, webkit })) {
+  const browser = await engine.launch();
+  try {
+    const page = await browser.newPage({ viewport:{width:1440,height:960} });
+    const errors = [];
+    page.on('pageerror', e => errors.push(e.message));
+    await page.goto('http://127.0.0.1:3001/');
+    await page.evaluate(() => document.fonts.ready);
+    await page.waitForTimeout(1400);
+    const nav = page.getByRole('navigation', {name:'Main navigation',exact:true});
+    const company = nav.getByRole('link',{name:'Company',exact:true});
+    const pill = company.locator('[data-nav-pill]');
+    const clip = () => pill.evaluate(el => getComputedStyle(el).clipPath);
+    const rest = await clip();
+    await company.hover();
+    await page.waitForTimeout(180);
+    const middle = await clip();
+    await nav.screenshot({path:`${out}/${name}-during.png`});
+    await page.waitForTimeout(550);
+    const full = await clip();
+    assert.notEqual(rest,middle); assert.notEqual(middle,full);
+    assert.equal(full,'inset(0px round 999px)');
+    await nav.screenshot({path:`${out}/${name}-hover.png`});
+    await page.mouse.move(700,150);
+    await page.waitForTimeout(600);
+    assert.equal(await clip(),rest);
+    const apps = nav.locator('[data-menu="Applications"] > summary');
+    await apps.hover(); await page.waitForTimeout(80);
+    await company.hover(); await page.waitForTimeout(80);
+    await apps.hover(); await page.waitForTimeout(600);
+    await apps.click(); await page.mouse.move(1100,400);
+    await expect(apps).toHaveAttribute('aria-expanded','true');
+    assert.equal(await apps.locator('[data-nav-pill]').evaluate(el=>getComputedStyle(el).clipPath),full);
+    await page.keyboard.press('Escape');
+    await company.focus(); await page.waitForTimeout(600);
+    assert.equal(await clip(),full);
+    await page.emulateMedia({reducedMotion:'reduce'});
+    await page.mouse.move(700,150); await company.evaluate(el=>el.blur());
+    await company.hover();
+    assert.equal(await clip(),full);
+    assert.deepEqual(errors,[]);
+    results.push({name,rest,middle,full,rapidReversal:true,openState:true,keyboard:true,reducedMotion:true,errors});
+  } finally { await browser.close(); }
+}
+await fs.writeFile(`${out}/checks.json`,JSON.stringify(results,null,2));
+console.log('Dot-to-pill motion passed in Chromium and WebKit.');

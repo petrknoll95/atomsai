@@ -1,0 +1,273 @@
+{
+  "base": "http://127.0.0.1:3001",
+  "results": [
+    {
+      "browser": "chromium",
+      "widths": [
+        {
+          "viewport": 320,
+          "width": 240,
+          "height": 280,
+          "radius": 32,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 360,
+          "width": 280,
+          "height": 280,
+          "radius": 33.6,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 390,
+          "width": 310,
+          "height": 280,
+          "radius": 37.2,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 480,
+          "width": 400,
+          "height": 280,
+          "radius": 48,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 599,
+          "width": 519,
+          "height": 280,
+          "radius": 62.28,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 600,
+          "width": 496,
+          "height": 320,
+          "radius": 59.52,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 768,
+          "width": 640,
+          "height": 320,
+          "radius": 160,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 899,
+          "width": 736,
+          "height": 320,
+          "radius": 160,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 900,
+          "width": 338,
+          "height": 280,
+          "radius": 40.56,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 960,
+          "width": 368,
+          "height": 280,
+          "radius": 44.16,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 1024,
+          "width": 400,
+          "height": 280,
+          "radius": 48,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 1100,
+          "width": 438,
+          "height": 280,
+          "radius": 52.56,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 1199,
+          "width": 487.5,
+          "height": 280,
+          "radius": 58.5,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 1200,
+          "width": 658.421875,
+          "height": 320,
+          "radius": 160,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 1440,
+          "width": 736,
+          "height": 320,
+          "radius": 160,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 1600,
+          "width": 736,
+          "height": 320,
+          "radius": 160,
+          "clipped": [],
+          "overflow": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "browser": "webkit",
+      "widths": [
+        {
+          "viewport": 320,
+          "width": 240,
+          "height": 280,
+          "radius": 32,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 360,
+          "width": 280,
+          "height": 280,
+          "radius": 33.599998,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 390,
+          "width": 310,
+          "height": 280,
+          "radius": 37.200001,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 480,
+          "width": 400,
+          "height": 280,
+          "radius": 48,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 599,
+          "width": 519,
+          "height": 280,
+          "radius": 62.279999,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 600,
+          "width": 496,
+          "height": 320,
+          "radius": 59.52,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 768,
+          "width": 640,
+          "height": 320,
+          "radius": 160,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 899,
+          "width": 736,
+          "height": 320,
+          "radius": 160,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 900,
+          "width": 338,
+          "height": 280,
+          "radius": 40.560001,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 960,
+          "width": 368,
+          "height": 280,
+          "radius": 44.16,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 1024,
+          "width": 400,
+          "height": 280,
+          "radius": 48,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 1100,
+          "width": 438,
+          "height": 280,
+          "radius": 52.560001,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 1199,
+          "width": 487.5,
+          "height": 280,
+          "radius": 58.5,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 1200,
+          "width": 658.421875,
+          "height": 320,
+          "radius": 160,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 1440,
+          "width": 736,
+          "height": 320,
+          "radius": 160,
+          "clipped": [],
+          "overflow": false
+        },
+        {
+          "viewport": 1600,
+          "width": 736,
+          "height": 320,
+          "radius": 160,
+          "clipped": [],
+          "overflow": false
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

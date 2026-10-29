@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "slack",
+    "file": "slack.svg",
+    "source": "https://logos.composio.dev/api/slack"
+  },
+  {
+    "slug": "notion",
+    "file": "notion.svg",
+    "source": "https://logos.composio.dev/api/notion"
+  },
+  {
+    "slug": "googledrive",
+    "file": "googledrive.svg",
+    "source": "https://logos.composio.dev/api/googledrive"
+  },
+  {
+    "slug": "gmail",
+    "file": "gmail.svg",
+    "source": "https://logos.composio.dev/api/gmail"
+  },
+  {
+    "slug": "hubspot",
+    "file": "hubspot.svg",
+    "source": "https://logos.composio.dev/api/hubspot"
+  },
+  {
+    "slug": "salesforce",
+    "file": "salesforce.svg",
+    "source": "https://logos.composio.dev/api/salesforce"
+  },
+  {
+    "slug": "zendesk",
+    "file": "zendesk.svg",
+    "source": "https://logos.composio.dev/api/zendesk"
+  },
+  {
+    "slug": "linear",
+    "file": "linear.svg",
+    "source": "https://logos.composio.dev/api/linear"
+  },
+  {
+    "slug": "asana",
+    "file": "asana.svg",
+    "source": "https://logos.composio.dev/api/asana"
+  },
+  {
+    "slug": "jira",
+    "file": "jira.svg",
+    "source": "https://logos.composio.dev/api/jira"
+  },
+  {
+    "slug": "github",
+    "file": "github.svg",
+    "source": "https://logos.composio.dev/api/github"
+  },
+  {
+    "slug": "microsoft_teams",
+    "file": "microsoft_teams.svg",
+    "source": "https://logos.composio.dev/api/microsoft_teams"
+  },
+  {
+    "slug": "googlecalendar",
+    "file": "googlecalendar.svg",
+    "source": "https://logos.composio.dev/api/googlecalendar"
+  },
+  {
+    "slug": "airtable",
+    "file": "airtable.svg",
+    "source": "https://logos.composio.dev/api/airtable"
+  },
+  {
+    "slug": "dropbox",
+    "file": "dropbox.svg",
+    "source": "https://logos.composio.dev/api/dropbox"
+  },
+  {
+    "slug": "zoom",
+    "file": "zoom.svg",
+    "source": "https://logos.composio.dev/api/zoom"
+  },
+  {
+    "slug": "shopify",
+    "file": "shopify.svg",
+    "source": "https://logos.composio.dev/api/shopify"
+  },
+  {
+    "slug": "intercom",
+    "file": "intercom.svg",
+    "source": "https://logos.composio.dev/api/intercom"
+  }
+]

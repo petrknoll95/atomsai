@@ -1,0 +1,2 @@
+.footer { padding-top:64px; background:var(--palette-forest-shade); }
+@media(max-width:767px) { .footer { padding-top:48px; } }

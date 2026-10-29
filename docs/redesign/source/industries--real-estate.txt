@@ -1,0 +1,277 @@
+Industries
+/
+Real estate
+Answer every lead. Book the showing tonight.
+One agent across chat, phone, SMS and email that replies to buyer, seller and rental leads in seconds, books showings into your agents’ calendars, and handles resident requests, inside your CRM.
+Book a demo
+→
+Try the chat agent
+Built for your rules
+Every lead gets the same answers and options, texts and calls follow consent and quiet hours, and pricing or contract questions go to your agents.
+Showing request answered
+8 sec
+Showing booked with Jordan · Sat 11am
+Handled
+Connected during your build
+Follow Up Boss
+kvCORE
+Lofty
+AppFolio
+Yardi
+Buildium
+Salesforce
+Google Calendar and Outlook
+What it brings
+Where your brokerage feels it.
+Grows revenue
+Book more showings
+Every portal and website lead gets a reply in seconds, day or night, and a showing booked while they’re still looking.
+1
+Answered in seconds
+Replies on the lead’s channel, with listing answers.
+2
+Needs understood
+Asks the same questions of every lead.
+3
+Showing booked
+Books with the right agent and sends the address.
+4
+CRM updated
+The lead lands in your CRM with the listing.
+Connected to Follow Up Boss, kvCORE, your portal leads and Google Calendar during your build.
+Saves agent time
+Fewer no-shows
+Every showing is confirmed the day before, rebooked when plans change, and followed by feedback for the listing agent.
+1
+Showings confirmed
+Confirms each showing with address and access notes.
+2
+Changes rebooked
+Offers new times from the agent’s calendar.
+3
+Feedback collected
+Asks the buyer as soon as the showing ends.
+4
+Listing agent updated
+Feedback goes to the listing agent and the listing.
+Connected to Google Calendar, Outlook, ShowingTime and your SMS during your build.
+Keeps residents happy
+Happier residents
+Maintenance and rent questions are handled any hour, and urgent ones reach your on-call team straight away.
+1
+Request taken
+Asks for photos and access times.
+2
+Priority set
+Sorts by your rules; emergencies go to on-call.
+3
+Work order created
+Photos, unit and access details attached.
+4
+Resident kept posted
+Sends the visit time and confirms when it’s done.
+Connected to AppFolio, Yardi, Buildium and your phone system during your build.
+SA
+Sam and Alex Ellis
+Buyer lead · 22 Maple Court
+Portal lead · Sun 7:55pm
+Is 22 Maple Court still available? Could we see it this weekend?
+It is. Would Saturday at 11am work for a showing?
+✓ Answered in 8 sec
+Needs understood
+Listing
+22 Maple Court
+Timeline
+Buying in 2–3 months
+Pre-approved
+Not yet, wants a lender
+Booked
+Showing · Sat 11:00am
+with Jordan, address sent by text
+Follow Up Boss
+Lead created, listing attached
+Lender question flagged for Jordan
+The result
+Showing booked at 8pm on a Sunday, lead in the CRM with the listing.
+Showings tomorrow · 3 of 4 confirmed
+R. Chen
+14 Birch Lane ·  9:00am
+Confirmed
+Maya Brooks
+8 Harbor View ·  10:30am
+Move?
+Asked to move
+T. Alvarez
+301 Pine St ·  1:00pm
+Confirmed
+D. Kim
+56 Oak Ridge Rd ·  4:30pm
+Confirmed
+MB
+Maya Brooks
+Showing · 8 Harbor View
+Text · 6:40pm
+Something came up. Can we do the afternoon instead of 10:30?
+No problem. You’re moved to 3:15pm tomorrow, same address.
+✓ Rebooked · 10:30am → 3:15pm
+Feedback collected
+Showing
+8 Harbor View · 3:15pm
+Buyer said
+“Loved the kitchen, yard too small.”
+Next step
+Wants to see similar homes
+ShowingTime
+Feedback sent to the listing agent
+Logged on 8 Harbor View
+The result
+4 of 4 showings kept, one moved instead of missed, feedback shared.
+U
+Unit 4B
+Elmwood Apartments
+SMS · 7:10am
+My kitchen sink is leaking under the cabinet.
+Sorry about that. Can you send a photo, and is it OK to enter if you’re out?
+✓ 2 photos received
+Priority set
+Issue
+Slow drip, contained
+On-call needed
+✓
+No
+Priority
+✓
+Same day
+AppFolio
+Work order #2291 created
+Photos, unit and access details attached
+Visit booked
+Plumber · Today, 1:00–3:00pm
+Resident told by SMS
+The result
+Work order created and a visit booked before the office opened.
+Illustrative examples. Connections and rules are set up during your build.
+Before and after
+Same leads. More showings booked.
+Example brokerage, 800 leads a month. Illustrative figures.
+Time to first reply on a new lead
+Today
+2 hours
+With the agent
+Seconds
+Leads that arrive after hours
+Today
+Wait for morning
+With the agent
+Answered
+Showings confirmed the day before
+Today
+Some
+With the agent
+Every one
+Leads still followed up after 30 days
+Today
+Few
+With the agent
+All
+More leads reach a showing while they’re still looking
+, and agents spend evenings with clients, not scheduling.
+Sources:
+Oldroyd, McElheran and Elkington, “The Short Life of Online Sales Leads”, HBR, 2011
+Win back your database
+Your past clients. Your next listings.
+The agent keeps in touch with the people who already worked with you, across SMS and email.
+Home anniversaries
+Past buyers hear from you each year, and get a valuation when they ask.
+Old leads revisited
+Leads who went quiet get listings that match what they asked for.
+Lease renewals
+Residents with leases ending soon hear about renewal early.
+For the owner
+Ask the business anything.
+The Intelligence agent reads every conversation and call, and answers your questions in plain English.
+Find what’s slipping
+Which leads went unanswered, which showings fell through, and why.
+See what’s working
+Showings and closings by lead source and agent, without building a report.
+Approve the next step
+It suggests the follow-up; you say go, and the agent does it.
+See the Intelligence agent
+↗
+Which buyer leads went quiet this week?
+Three leads asked about a listing and haven’t booked a showing yet.
+A. Patel · 14 Birch Lane
+Asked Tue · no reply
+Nguyen family · 301 Pine St
+Asked Wed · no reply
+C. Rivera · 56 Oak Ridge Rd
+Opened listings, no reply
+Offer all three a showing
+Waits for your go-ahead
+Controls and testing
+Your brokerage. Your rules.
+Controls
+Fair to every lead
+The same answers and options for everyone, from information your team approved.
+Consent and quiet hours
+Texts and calls follow opt-in and quiet hours, and STOP always works.
+Agents handle the deal
+Pricing, offers and contracts always go to a licensed agent.
+Full audit trail
+Every conversation, booking and work order is logged.
+Testing
+Tested on your leads
+Buyer, seller and resident conversations, including the tricky ones, before launch.
+Checked on every conversation
+Each conversation is scored for accuracy and handover, and problems are flagged.
+Reported weekly
+Response time, showings and work orders, by office and team.
+People in the loop
+You choose what the agent does alone and what waits for approval.
+Book a demo
+See it on your listings and leads.
+In 30 minutes you’ll see
+A lead from your website or a portal answered and booked for a showing, live.
+A resident maintenance request turned into a work order with the details.
+How it connects to your CRM and calendars, and what your first build would cover.
+Name
+*
+Company
+*
+Business email
+*
+Phone
+(optional)
+Company size
+*
+Choose one
+Under 200 staff
+200–1,000 staff
+1,001–5,000 staff
+Over 5,000 staff
+Your role
+(optional)
+Optional. You can call or text me about this request at the number above.
+Calls and texts may be automated or by an AI agent. Consent isn’t a
+condition of purchase; reply STOP to opt out.
+Website
+Book my demo
+We’ll only use this to set up your demo.
+See our privacy policy.
+Send these details by email
+FAQ
+Questions brokerages ask.
+Explore the Trust Center
+↗
+Does the agent negotiate or discuss offers?
+No. It answers questions about listings and process from information you approve, and hands pricing, offers and contracts to your licensed agents.
+Which CRMs and property systems does it work with?
+We connect to the systems you run, such as Follow Up Boss, kvCORE, Lofty, AppFolio, Yardi or Buildium, and to your calendars, email and phones. The connections are built as part of your build.
+How does it treat fair housing?
+Every lead gets the same information and options. The agent doesn’t steer or describe neighborhoods in ways your team hasn’t approved, and every conversation is logged.
+Can it book showings into each agent’s calendar?
+Yes. It books against real availability, sends confirmations and access details, and rebooks when plans change.
+Is it secure?
+AtomsAI comes from the team behind JustCall. It is SOC 2 Type II and HIPAA compliant, and every conversation, booking and handover is logged.
+How long does it take to go live?
+It depends on the workflows and the systems we connect. In the demo we look at yours and agree what the first build covers.

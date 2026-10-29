@@ -1,0 +1,514 @@
+AtomsAI / Customer health
+Keep every customer.
+Grow the right ones.
+Listens to every call, ticket and email for signs a customer might leave, or is ready to buy more. It tells the right person why, acts early and runs the renewal.
+Contact us
+See what it does
+Built for customer success and retention teams at software and subscription businesses.
+Pinecrest Software · Customer success
+Live
+At risk ·
+Maple Logistics · $48,000 a year
+Renews in 60 days
+Call · Tuesday
+“We're also looking at Flowdesk.”
+Tickets · this month
+3 complaints about reports
+Email
+Sarah, who chose us, has left
+Priya, Maple Logistics may not renew. I've drafted an intro to their new admin,
+Tom, and offered him a reports training session on Thursday.
+Send it
+Edit first
+Call booked with Tom · Thursday 11am
+Spotted 60 days before renewal · account owner told · renewal plan started
+01 / Listen
+02 / Warn
+03 / Act
+04 / Renew
+Why it matters
+What it does
+Signals & stack
+Accounts
+By industry
+Controls & evals
+Pricing
+Why it matters
+Customers rarely leave without warning.
+They complain, mention a competitor or go quiet, weeks before they cancel.
+Those warnings sit in calls, tickets and emails that nobody has time to read.
+Found out at renewal
+The first sign of trouble is the cancellation email, when it's too late to fix.
+Warnings dashboards miss
+Usage looks fine while the customer is telling your team they're unhappy.
+Too many accounts each
+Account managers watch their biggest customers and hope the rest are fine.
+Customers tell you before they leave.
+Someone just has to listen.
+Same customers. More of them stay.
+What 500 renewals in a year look like, without and with a customer health agent
+Without an agent
+20 of 80
+at-risk accounts spotted 60 days early
+25
+at-risk accounts saved
+84%
+renewal rate
+With the agent
+72 of 80
+at-risk accounts spotted 60 days early
+50
+at-risk accounts saved
+91%
+renewal rate
+25 more customers kept
+, because the warning came while there was still time to act.
+Illustrative
+What it does
+Everything a great account team does.
+For every account, every day.
+Hears risk in every conversation.
+Competitors mentioned, repeated complaints, a champion leaving: picked up from calls, tickets and emails.
+Example · warnings no dashboard shows
+“We're also looking at Flowdesk.”
+Call
+Competitor
+“The reports still don't load.”
+Ticket
+Third complaint
+“Sarah has left the company.”
+Email
+Champion gone
+Scores every account.
+With the reasons, not just a number.
+Kite Health
+88
+Brightway Dental
+61
+Maple Logistics
+34
+Each score shows the reasons behind it.
+Acts before it's too late.
+Tells the account owner why, drafts the outreach and books the call, the same day the risk appears.
+Example · Maple Logistics, the same morning
+Owner told
+Priya, with the three warnings
+Outreach drafted
+Intro to Tom, the new admin
+Call booked
+Reports training, Thursday
+All done by 10am, 60 days before renewal
+Runs every renewal.
+Reviews, calls and quotes on time, for every account.
+90 days
+Usage review sent
+60 days
+Renewal call booked
+30 days
+Quote sent, signed
+Saves cancellations, fairly.
+Offers a pause or a better-fit plan within your rules. Cancelling stays easy.
+I want to cancel. We're quiet until spring.
+I can pause your plan for 2 months at no cost instead. Want that?
+Paused, not cancelled · cancelling stays one
+click
+Spots a champion leaving.
+Finds who replaced them and helps you meet them.
+To Priya · Account owner
+Signal
+Sarah's email bounced
+Found
+Tom was added as admin last week
+Ready
+Intro email drafted
+Spots growth too.
+Hears when a customer is ready for more seats or a bigger plan, and tells the account owner.
+“We're hiring 20 people”
+Call · more seats
+“Does it connect to our warehouse?”
+Ticket · higher plan
+95% of plan limit used
+Usage · upgrade
+More customers kept, and more of them growing.
+Warnings arrive while there's still time to act, upgrades are found in what customers say, and no renewal is left to the last week.
+Example · one year, one customer success team
+91%
+renewal rate, up from 84%
+60 days
+earlier warning on accounts at risk
+50
+accounts saved this year
+$380k
+of upgrades found
+Signals, capabilities and integrations
+Every signal.
+Connected to your CRM.
+Reads what customers say on calls, tickets, emails and chat, alongside usage and billing. Every risk, reason and action lands in your CRM.
+6
+Signals in. One health view.
+Calls
+Tickets
+Email
+Chat
+Product usage
+Billing
+Secure by default
+SOC 2 Type II, HIPAA and GDPR. Your data is never used to train models.
+Signals read today
+00:00 → 23:59
+Always on
+Every conversation, every day, for every account, not only the biggest ones.
+Hands over to your team
+The account owner, with the warnings, the reasons and a suggested next step.
+When it hands over
+As per your rules
+A large account is at risk
+A save offer needs approval
+The customer asks for a person
+AI agent
+Champion left
+→
+PM
+Priya M.
+Account owner
+Large account at risk
+→
+LK
+Lena K.
+VP customer success
+Save offer approval
+→
+MD
+Marco D.
+Retention lead
+Handover note
+· warnings, reasons, suggested next step
+At home in your stack
+Salesforce, HubSpot and Zoho. Gainsight, ChurnZero and Vitally. Zendesk and Intercom. Stripe and Chargebee for billing. Product analytics and your data warehouse. JustCall for calls. Anything else through APIs and webhooks.
+Scoped access, approved per action
+Accounts
+Every account.
+Every risk and opening, acted on.
+See who is at risk or ready to grow, where you heard it, and what was done.
+Accounts · this month
+Where we heard it
+Illustrative
+Renewals due
+42
+At risk
+7
+Saved this quarter
+$214k
+Renewal rate
+91%
+Maple Logistics · $48k
+Call
+Email
+Renews in 60 days · champion left
+Call booked
+Brightway Dental · $12k
+Usage
+Logins down 40% this month
+Training sent
+Nova Retail · $96k
+Call
+Ticket
+Asked about a cheaper plan
+Owner + VP told
+Kite Health · $30k
+Call
+Hiring 20 people next quarter
+Upgrade lead
+Orbit Media · $8k
+Chat
+Wants to cancel next month
+Paused 2 months
+1 save offer waiting for approval
+Review
+Hold outreach
+One view of every account
+Health, renewal date, warnings, growth signals and actions, in one list.
+See where you heard it
+Every warning links to the call, ticket or email it came from.
+Offers within your rules
+Discounts and pauses above your limit wait for approval.
+Review or hold
+Approve a save offer, or hold outreach for an account your team is handling.
+Customers who renew?
+There's a play for that.
+Pick your industry to see how the agent spots risk and growth, saves accounts and runs renewals.
+B2B software
+2
+Telecom & internet
+2
+Insurance
+2
+Gyms & fitness
+2
+Media & streaming
+2
+Banking & cards
+2
+Energy & utilities
+2
+Subscription boxes
+2
+Education & e-learning
+2
+B2B software
+Renewals are lost months before anyone notices.
+Early warning
+Champion has left
+Email
+CRM
+Trigger
+The person who chose you leaves the customer.
+Agent
+Finds the new admin and drafts an intro.
+Result
+New champion before renewal
+Growth
+“We're hiring 20 people”
+Call
+CRM
+Trigger
+A customer mentions hiring on a check-in call.
+Agent
+Tells the account owner and suggests more seats.
+Result
+Upgrade before renewal
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Telecom & internet
+Customers leave after repeated problems, often without complaining first.
+Early warning
+Third outage this month
+Chat
+SMS
+Trigger
+A customer has had three outages.
+Agent
+Apologises, offers a credit within your rules.
+Result
+Customer stays
+Save
+“I'm switching provider”
+Voice
+Trigger
+A customer calls to cancel.
+Agent
+Offers the plans they qualify for, or cancels if they insist.
+Result
+Kept on a better-fit plan
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Insurance
+Policies lapse at renewal when customers shop around.
+Renewal
+Policy renews next month
+Email
+SMS
+Trigger
+A car policy renews in 30 days.
+Agent
+Explains the new price and any discounts that apply.
+Result
+Renewed, not lapsed
+Early warning
+Unhappy after a claim
+Voice
+Email
+Trigger
+A customer complained about a claim.
+Agent
+Flags the policy as at risk to the retention team.
+Result
+Called before renewal
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Gyms & fitness
+Members stop coming weeks before they cancel.
+Early warning
+Hasn't visited in 3 weeks
+SMS
+WhatsApp
+Trigger
+A member's visits stop.
+Agent
+Checks in and offers a free class.
+Result
+Back in the gym
+Save
+“Cancel my membership”
+Chat
+Trigger
+A member asks to cancel.
+Agent
+Offers a pause, and cancels in one step if they still want to.
+Result
+Paused, not lost
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Media & streaming
+Subscribers drift away when they stop finding things they like.
+Early warning
+Watching less
+Email
+Trigger
+A subscriber's viewing drops sharply.
+Agent
+Sends picks based on what they used to watch.
+Result
+Back to watching
+Save
+Price rise
+Email
+Chat
+Trigger
+A subscriber objects to a price rise.
+Agent
+Offers the cheaper plan with ads.
+Result
+Kept on a lower plan
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Banking & cards
+Customers move their money quietly, one account at a time.
+Early warning
+Salary stopped arriving
+App
+Email
+Trigger
+A customer's salary goes to another bank.
+Agent
+Flags the account and offers a switching bonus.
+Result
+Main account kept
+Save
+Annual card fee
+Voice
+Trigger
+A cardholder calls about the fee.
+Agent
+Offers the no-fee card within your rules.
+Result
+Card kept
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Energy & utilities
+Customers switch at the end of a fixed deal.
+Renewal
+Fixed deal ending
+Email
+SMS
+Trigger
+A fixed tariff ends in 6 weeks.
+Agent
+Shows the best new deal and switches them in one step.
+Result
+Renewed, not switched away
+Early warning
+Billing complaints
+Email
+Trigger
+A customer complains twice about bills.
+Agent
+Flags them as at risk and fixes the bill first.
+Result
+Trust restored
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Subscription boxes
+Subscribers skip, then cancel.
+Early warning
+Skipped two boxes
+Email
+SMS
+Trigger
+A subscriber skips twice in a row.
+Agent
+Asks why and suggests a different box.
+Result
+Back on a box they like
+Save
+Too much
+Chat
+Trigger
+A subscriber says it's too often.
+Agent
+Offers a box every other month.
+Result
+Kept on a slower plan
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Education & e-learning
+Learners stop logging in and quietly don't renew.
+Early warning
+Course stalled
+Email
+WhatsApp
+Trigger
+A learner hasn't logged in for two weeks.
+Agent
+Sends a nudge and books a tutor check-in.
+Result
+Course finished
+Growth
+Team licence renewal
+Email
+Voice
+Trigger
+A company's licences renew next quarter.
+Agent
+Sends a progress report, suggests more seats, books the call.
+Result
+Renewed with more seats
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Save offers follow your rules, and cancelling always stays easy.
+Controls and evals
+Every warning explained.
+Every offer fair.
+Controls
+Reasons, not black boxes
+Every score shows the calls, tickets and numbers behind it.
+Offers within your limits
+Only the discounts and pauses you allow. Anything bigger needs approval.
+Cancelling stays easy
+The agent offers once. If the customer still wants to cancel, it cancels.
+Only the data you connect
+You choose which systems it reads, and nothing is used to train models.
+Evals
+Tested on your past churn
+Replayed on accounts you lost, to show how early it would have warned you.
+Re-tested on every change
+A saved test set re-runs whenever signals or rules change.
+False alarms tracked
+Warnings that didn't lead to churn are reviewed, so the team trusts the alerts.
+Measured against your goals
+Renewal rate, saves and revenue kept, reviewed with you every month.
+Pricing
+Custom built.
+Priced for your requirements.
+No fixed tiers. Every customer health agent is built around your journeys, channels and systems, so we price it the same way: after we understand what you need.
+What shapes the price
+Number of accounts
+Signals: calls, tickets, email, usage, billing
+CRM and customer success platform
+Renewal and save playbooks
+Channels for outreach
+Always included
+Design and build with our team
+Replay on your past churn before launch
+Alert quality checks after go-live
+Monthly reviews and tuning
+Security: SOC 2 Type II, HIPAA, GDPR
+Tell us what you need.
+Share your journeys, channels and systems. We'll come back with a scope and a
+price.
+Contact us
+Bring last year's lost customers.
+We'll show you when they first told you.
+Share a sample of accounts you lost. We'll show the warnings in their calls, tickets and emails, and how early the agent would have raised them.
+Contact us
+Pricing

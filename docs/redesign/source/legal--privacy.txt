@@ -1,0 +1,168 @@
+Home
+/
+Legal
+/
+Privacy Notice
+Privacy Notice
+Last updated:
+August 2026
+On this page
+INFORMATION THAT WE COLLECT
+HOW WE USE YOUR INFORMATION
+DISCLOSURE OF YOUR INFORMATION
+HOW LONG WE RETAIN YOUR INFORMATION
+DATA SUBJECTS’ RIGHTS
+DATA TRANSFERS
+GOOGLE WORKSPACE USER DATA POLICY DISCLOSURE
+HOW DO WE SECURE YOUR INFORMATION
+EU REPRESENTATIVE
+CHILDREN’S PRIVACY
+CHANGES TO THIS NOTICE
+CONTACT INFORMATION
+This Privacy Notice describes how SaaS Labs US, Inc. and its subsidiaries
+(collectively, “SaaS Labs”, “we”, “us” and “our”) collect, use, disclose, and
+otherwise process personal information you may provide when you visit the website
+www.atomsai.com (“Website”) or use AtomsAI (“Services”).
+What is this Notice for?
+This Privacy Notice tells you what to expect
+when we collect and use personal information about you, including the following:
+How we collect your personal information;
+How we use your personal information;
+To whom we disclose your personal information;
+How long we store your personal information;
+Your rights;
+Where we may transfer your personal information;
+How we keep your personal information secure;
+Changes to this Privacy Notice; and
+Contact Information
+What do you need to do?
+Please read this Privacy Notice carefully to
+understand how we control and process your personal information. By engaging with us,
+you confirm that you have read and understood this Privacy Notice.
+Feedback?
+If you have any feedback on this Privacy Notice, please let
+us know at
+start@atomsai.com
+Not Applicable.
+This Privacy Notice does not apply to any other product
+sold by SaaS Labs. This Privacy Notice also does not apply to any third-party application
+that has been integrated with the Services (“Third-Party Integration”), or any other third-party
+products and services that will provide their respective services under their own terms
+of service and privacy notice.
+INFORMATION THAT WE COLLECT
+We may collect your personal information from sources that include the following:
+Provided Directly by You
+Directly provided by you which could include requesting a demo, or signing up
+for the Services, or contacting us directly through our support channels. This
+may include personal information such as name, business email address, and
+mobile number;
+Information provided through the use of our Services
+Contact information from other products you use that are part of SaaS Labs. This
+may include your name, email address, and any other contact details that you may
+have shared;
+Through surveys and feedback. We may contact you for feedback and we may collect
+personal information including your name and email address.
+Automatically Collected
+Information provided as you navigate through the Website and through the use of
+the Services. This can include information about your device and sessions
+including the Internet Protocol address, type of browser and device used to
+access the Services, details about your operating system or device, location
+information and any other information collected via cookies, web beacons and/or
+other technologies
+When you interact with the Services, we will track and collect certain
+information including how you interact with the Services, the features you use,
+the links and buttons you click while using the Services.
+Information from other sources
+From third parties including business partners, networking events, blogs,
+forums, and social media pages. This may include your name, email address,
+mobile number, job title, and company name; We may collect from Saas Labs’
+subsidiaries.
+HOW WE USE YOUR INFORMATION
+We use your personal information for various business purposes such as:
+To communicate with you about the Services
+To provide you with the Services
+To provide you with support services
+To develop and improve the Website and Services
+To verify your account
+Security and Legal Compliance
+We may use information about you where you have given us consent to do for a
+specific reason that is not listed above.
+DISCLOSURE OF YOUR INFORMATION
+Except as described in this Privacy Notice, we will not intentionally disclose
+your information that we collect or store to third parties without your consent.
+We may disclose information to third parties in the following circumstances:
+Contractors, service providers, and other third parties we use to support our
+business and Services, and who are under confidentiality obligations and use it
+for purposes for which we disclose it
+Business Partners including tech partners, sponsors and who provide consulting,
+sales, support and technical services
+Corporate subsidiaries
+Advertising Partners
+Law Enforcement
+For any other purpose disclosed by us when you provide the information
+With your consent
+HOW LONG WE RETAIN YOUR INFORMATION
+We will keep your personal information for no longer than necessary for the
+purposes for which it was obtained, and/or as required to comply with applicable
+laws and to establish, exercise or defend our legal rights.
+DATA SUBJECTS’ RIGHTS
+We provide our customers with the opportunity to access, review, modify, and
+delete the personal information that we process, with exceptions. You can exercise
+the rights listed above at any time by contacting us at
+start@atomsai.com
+. We will verify your identity once you make the request.
+You may opt-out from receiving promotional and marketing emails by clicking on the
+Unsubscribe button or following the instructions in the email, or by contacting us
+at
+start@atomsai.com
+. You will continue to
+receive administrative emails from us.
+We process data on behalf of our customers and in accordance with their
+instructions as a service provider or data processor. If you believe that we have
+collected or stored your data on behalf of a customer as a service provider or
+data processor and you wish to exercise your rights mentioned above, you should
+direct the same requests to that Customer.
+DATA TRANSFERS
+We may transfer, process, and store your personal information in countries or
+regions other than the country or region in which you are a resident. The data
+will be transferred to and stored on our servers in the United States. Our group
+companies may have access to your personal information that may be located in
+other countries.
+GOOGLE WORKSPACE USER DATA POLICY DISCLOSURE
+The use of raw or derived user data received from Workspace APIs will adhere to
+the
+Google Workspace User Data Policy
+, including the Limited Use requirements.
+HOW DO WE SECURE YOUR INFORMATION
+Our top priority is to maintain the security of the information that we collect,
+use, and process in accordance with this Privacy Notice. We have taken
+industry-standard measures that maintain the security, integrity, and
+confidentiality of your personal information.
+EU REPRESENTATIVE
+We have appointed IT Governance Europe Limited to act as our EU representative.
+They can be contacted at
+eurep@itgovernance.eu
+and
+start@atomsai.com
+.
+CHILDREN’S PRIVACY
+Our Services are not designed or marketed to children under the age of 16, or
+knowingly collect or solicit personal information of children below the age of 16
+for its own purposes. If we become aware that a child under the age of 16 has
+provided us with their personal information, we will take steps to delete such
+data and will not retain the data in any form. Further, if you become aware of a
+child under the age of 16 who is using our Services and/or has provided their
+personal information to us, then please write to us at
+start@atomsai.com
+and we will take necessary steps to delete the information about that particular child.
+CHANGES TO THIS NOTICE
+We may update this Privacy Notice from time to time. Any changes we make will be
+posted on this page. Please check this Notice periodically for updates.
+CONTACT INFORMATION
+If you have any questions or complaints regarding this Notice, please contact us
+by email at
+start@atomsai.com
+Related
+Trust Center
+Terms and Conditions
+Cookie preferences

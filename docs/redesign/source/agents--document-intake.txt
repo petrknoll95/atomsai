@@ -1,0 +1,510 @@
+AtomsAI / Document intake agent
+Every document read.
+Checked and filed.
+Reads invoices, forms and statements the moment they arrive, checks them against your records, and puts the data where it belongs. Your team only sees the ones that need a person.
+Contact us
+See what it does
+Built for finance, operations and admin teams buried in paperwork.
+Bluewater Logistics · Accounts payable
+Live
+Email from
+billing@atlastrucking.com
+Invoice_88231.pdf
+Read in 4 seconds
+Supplier
+Atlas Trucking
+Invoice
+#88231
+Amount
+$4,860.00
+PO
+55-1042
+Due
+Nov 30
+Matches PO 55-1042
+Rate matches the contract
+Not a duplicate
+Approved and posted to NetSuite
+40 seconds from inbox to ledger · no one had to type a thing
+01 / Read
+02 / Check
+03 / File
+04 / Flag
+Why it matters
+What it does
+Sources & stack
+Document queue
+By industry
+Controls & evals
+Pricing
+Why it matters
+Invoices, forms and statements arrive all day by email, upload and scan.
+Someone has to open each one, read it and type it into your systems.
+Only then can any work start.
+Hours of typing
+Skilled people spend their day copying numbers from a PDF into another screen.
+Mistakes slip through
+A wrong amount or a duplicate invoice gets paid, and no one notices until month end.
+Work waits in the inbox
+Claims, loans and payments can't move until the paperwork is entered.
+Someone types in every document.
+Most never needed a person.
+Same documents. A fraction of the work.
+What 1,000 supplier invoices a month take, typed by hand and with a document intake agent
+Typed by hand
+6 min
+time per invoice
+100
+hours of typing a month
+3
+days before it's in the system
+With the agent
+Under 1 min
+time per invoice
+15
+hours of typing a month
+Same day
+days before it's in the system
+Your team checks the exceptions instead of typing
+, and wrong or duplicate invoices are stopped before they're paid.
+Illustrative
+What it does
+Everything your admin team does with paperwork.
+In seconds, for every document.
+Reads any document.
+Invoices, delivery notes, forms and receipts, whether typed, scanned or photographed on a phone.
+Example · three documents, three formats
+Invoice PDF
+Atlas Trucking · $4,860
+Read
+Scanned delivery note
+Signed by J. Ortiz · Load 7781
+Read
+Phone photo of a receipt
+Fuel · $186.40 · Oct 12
+Read
+Pulls out what matters.
+Every field links back to where it was found.
+Invoice number
+#88231 · found on page 1
+Amount
+$4,860.00 · found on page 1
+PO number
+55-1042 · found on page 1
+Checks before it files.
+Matches each invoice to the order and what was received, and holds anything that doesn't add up.
+Example · fuel invoice checked against the order
+Purchase order
+$2,130.00
+Goods received
+$2,130.00
+Invoice
+$2,310.00
+Invoice is $180 over the order. Held for
+review, not posted.
+Chases what's missing.
+Asks the sender for exactly what's needed.
+Email to Ridge Carriers
+Hi, invoice #4410 doesn't include a PO number. Could you reply with it so we
+can pay you on time?
+Reply received · invoice moved on
+Files it in the right place.
+Into your accounting, CRM or document system, ready to use.
+Invoices
+→ NetSuite, as bills
+Delivery notes
+→ Attached to the shipment
+Contracts
+→ SharePoint, by customer
+Knows when to ask a person.
+Sends the document, the problem and the options to the right person.
+To Maria · Accounts payable
+Document
+Coastline Fuel invoice
+Why
+Amount is $180 over the PO
+Ready
+Approve, reject or ask the supplier
+Handles every format.
+No templates to set up for each supplier or form.
+PDF
+Scans
+Phone photos
+Handwriting
+Email bodies
+Spreadsheets
+Word files
+Multiple languages
+Less typing, fewer mistakes.
+Most documents go straight through. Your team handles the exceptions, and wrong or duplicate payments are stopped.
+Example · one month, one accounts team
+4,200
+documents this month
+83%
+done without a person
+38s
+from inbox to system, on average
+61
+wrong or duplicate invoices stopped
+Sources, capabilities and integrations
+Every way documents arrive.
+Connected to your systems.
+One agent for every inbox, upload and scanner. Every document ends up in the system it belongs to, with a link back to the original.
+6
+Ways in. One queue.
+Email inbox
+Upload portal
+Scanner
+Phone photo
+Fax
+Shared drive
+Secure by default
+SOC 2 Type II, HIPAA and GDPR. Your data is never used to train models.
+Documents today
+00:00 → 23:59
+Always on
+Documents are read the moment they arrive, day or night, so the queue is clear when your team starts.
+Hands over to your team
+The right person, with the document, the problem highlighted and the options ready to approve.
+When it hands over
+As per your rules
+Amounts don't match the order
+It can't read a field with confidence
+The document type is new
+AI agent
+Amount mismatch
+→
+ML
+Maria L.
+Accounts payable
+New supplier
+→
+TB
+Tom B.
+Procurement
+Contract terms
+→
+PM
+Priya M.
+Legal
+Handover note
+· the original, the problem highlighted, what to decide
+At home in your stack
+NetSuite, QuickBooks, Xero and SAP. Salesforce and HubSpot. Google Drive, SharePoint and Dropbox. Shared inboxes in Gmail and Outlook. Anything else through APIs and webhooks.
+Scoped access, approved per action
+Document queue
+Every document.
+One queue.
+See where every document stands: filed, held, or waiting on someone.
+Document queue · today
+All sources
+Illustrative
+Documents in
+412
+Done without a person
+83%
+Average time
+38s
+Problems caught
+19
+Invoice · Atlas Trucking
+$4,860 · matched to PO
+Posted
+Invoice · Coastline Fuel
+$2,310 · PO says $2,130
+Needs review
+Proof of delivery · Load 7781
+Signed, attached to shipment
+Filed
+Invoice · Ridge Carriers
+No PO number on it
+Waiting on supplier
+Invoice · Atlas Trucking
+Same as #88231
+Duplicate blocked
+1 document needs a person
+Review
+Hold
+One view of every document
+From every inbox, upload and scanner, with its status.
+Every field traceable
+Click any value to see where it was found on the page.
+Duplicates stopped
+The same invoice sent twice is caught before it's paid.
+Review in one click
+Approve, correct or send back anything that's held.
+Drowning in paperwork?
+There's a play for that.
+Pick your industry to see which documents the agent reads, checks and files.
+Logistics & freight
+2
+Insurance
+2
+Lending
+2
+Healthcare
+2
+Manufacturing
+2
+Real estate
+2
+Finance & accounting
+2
+Legal
+2
+Education
+2
+Logistics & freight
+Carrier invoices and delivery proofs pile up, and billing waits on paperwork.
+Invoice match
+Carrier invoice, checked and posted
+Email
+Trigger
+A carrier emails an invoice for a delivered load.
+Agent
+Reads it, matches the rate and load, flags extra charges.
+Result
+Paid at the agreed rate
+Proof of delivery
+Signed delivery note to invoice
+Photo
+Scan
+Trigger
+A driver snaps the signed delivery note.
+Agent
+Checks the signature and date, attaches it to the shipment.
+Result
+Customer billed the same day
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Insurance
+Claims stall while staff key in forms, photos and repair quotes.
+Claim intake
+First notice of loss, complete
+Email
+Upload
+Trigger
+A customer sends a claim form and photos.
+Agent
+Reads the form, checks the policy, asks for what's missing.
+Result
+Claim ready for an adjuster
+Invoice check
+Repair estimate review
+Email
+Trigger
+A garage sends a repair estimate.
+Agent
+Compares parts and labour with approved rates.
+Result
+Over-priced lines flagged
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Lending
+Loan files sit incomplete while staff check payslips and bank statements by hand.
+Application pack
+Payslips and statements, read
+Upload
+Email
+Trigger
+An applicant uploads income documents.
+Agent
+Pulls income and employer, checks they match the application.
+Result
+File ready for underwriting
+Chase
+Missing document reminder
+Email
+SMS
+Trigger
+A bank statement is missing a month.
+Agent
+Asks the applicant for exactly what's missing.
+Result
+File complete in days, not weeks
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Healthcare
+Referrals and insurance forms arrive by fax and email, and get keyed in by hand.
+Referral intake
+Referral to patient record
+Fax
+Email
+Trigger
+A clinic faxes a referral letter.
+Agent
+Reads patient details and reason, creates the record.
+Result
+Patient ready to schedule
+Insurance card
+Card photo to coverage
+Photo
+Trigger
+A patient uploads their insurance card.
+Agent
+Reads member ID and plan, adds them to the chart.
+Result
+Coverage checked before the visit
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Manufacturing
+Supplier invoices, packing slips and certificates all need checking against orders.
+Invoice match
+Three-way match
+Email
+Trigger
+A supplier invoice arrives.
+Agent
+Checks it against the PO and what was received.
+Result
+Posted, or held with the reason
+Certificates
+Quality certificate on file
+Email
+Upload
+Trigger
+A batch certificate is sent with a delivery.
+Agent
+Reads batch and spec, files it with the delivery.
+Result
+Ready for audit
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Real estate
+Leases and tenant applications take hours to review and enter.
+Application pack
+Tenant application, checked
+Upload
+Trigger
+An applicant uploads ID, payslips and references.
+Agent
+Reads each one and checks income against the rent.
+Result
+Ready for a decision
+Lease abstract
+Key lease terms, pulled
+Upload
+Email
+Trigger
+A signed lease is added.
+Agent
+Pulls rent, dates, break clauses and renewals.
+Result
+Terms in the system, renewals on the calendar
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Finance & accounting
+Month end means hundreds of invoices and receipts to enter and code.
+Invoice capture
+Invoices into the ledger
+Email
+Trigger
+Invoices land in the accounts payable inbox.
+Agent
+Reads, codes and posts each one, blocking duplicates.
+Result
+Inbox cleared every day
+Expenses
+Receipts to expense lines
+Photo
+Trigger
+An employee snaps a receipt.
+Agent
+Reads amount, date and merchant, checks the expense policy.
+Result
+Expense ready to approve
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Legal
+Contracts and case papers need careful reading before anything is entered.
+Contract review
+Key terms, summarised
+Upload
+Email
+Trigger
+A signed contract comes back from a client.
+Agent
+Pulls parties, dates, fees and renewal terms.
+Result
+Terms logged, renewal reminder set
+Client intake
+New matter forms
+Upload
+Trigger
+A new client returns intake forms.
+Agent
+Reads them, checks for conflicts, opens the matter.
+Result
+Matter ready for the lawyer
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Education
+Admissions teams sort transcripts, IDs and forms for every applicant.
+Application pack
+Transcripts and IDs, read
+Upload
+Email
+Trigger
+An applicant uploads their documents.
+Agent
+Pulls grades and details, checks the pack is complete.
+Result
+Application ready to review
+Chase
+Missing transcript
+Email
+Trigger
+A required transcript isn't in the pack.
+Agent
+Asks the applicant for it before the deadline.
+Result
+Fewer incomplete applications
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+What the agent checks and where it files follows your rules for each document type.
+Controls and evals
+Nothing posted on a guess.
+Every field traceable.
+Controls
+Your approval rules
+Amount limits, tolerances and who signs off. Anything outside goes to a person.
+Unsure means a person
+If a field can't be read with confidence, it's held, never guessed.
+Sensitive data protected
+Bank details and IDs are masked and access is limited by role.
+Full audit trail
+Every document, field, check and change is logged with the original.
+Evals
+Tested on your documents
+A sample of your real invoices and forms, including the messy ones.
+Re-tested on every change
+A saved test set re-runs whenever rules or document types change.
+Accuracy checked
+Reviewers spot-check fields, and every correction improves the agent.
+Measured against your goals
+Straight-through rate, accuracy and time saved, reviewed with you weekly.
+Pricing
+Custom built.
+Priced for your requirements.
+No fixed tiers. Every document intake agent is built around your journeys, channels and systems, so we price it the same way: after we understand what you need.
+What shapes the price
+Number of documents a month
+Document types: invoices, forms, statements
+Sources: inboxes, uploads, scanners
+Systems it files into
+Checks and approval rules
+Always included
+Design and build with our team
+Testing on your own documents before launch
+Accuracy checks after go-live
+Weekly reviews and tuning
+Security: SOC 2 Type II, HIPAA, GDPR
+Tell us what you need.
+Share your journeys, channels and systems. We'll come back with a scope and a
+price.
+Contact us
+Bring 50 documents.
+We'll show you what goes straight through.
+Share a sample of your invoices or forms. We'll show what the agent reads, what it checks, and which ones still need a person.
+Contact us
+Pricing

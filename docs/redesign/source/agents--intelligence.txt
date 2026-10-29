@@ -1,0 +1,569 @@
+AtomsAI / Intelligence
+Every call.
+Answerable.
+Ask plain-English questions across every call and scorecard, from JustCall or any dialer. Get exact numbers, the evidence behind them, and the coaching that follows.
+Contact us
+See what it does ↓
+Built on top of your scorecards. Numbers are computed, never guessed.
+Ask
+Sales QA · Inside Sales
+Illustrative
+Where are Inside Sales reps weakest on discovery calls last quarter?
+Template
+Discovery, all versions
+Team
+Inside Sales
+Dates
+Jul 1 – Sep 30
+412 calls
+371 of 412 calls scored.
+41 have no score yet.
+Score them
+Computed from scorecards
+Next steps
+is the weakest criterion: met on
+58%
+of calls, down 9 points
+on last quarter.
+Next steps
+58%
+Budget
+71%
+Pain discovered
+79%
+Recorded-line disclosure
+96%
+AI summary
+Reps end calls without a booked follow-up when the buyer mentions budget timing.
+Seen in 61 of 105 calls
+3 examples
+Run record saved · same scope, same numbers,
+every time
+01 / Score
+02 / Ask
+03 / Check
+04 / Coach
+Why it matters
+What it does
+Analytics
+Sources & outputs
+Accuracy
+By industry
+Controls & evals
+Pricing
+Why it matters
+Thousands of calls.
+No clear answers.
+Every call is recorded and most are scored.
+Getting a trustworthy answer across all of them is still hard.
+Answers you can't check
+AI chat replies in paragraphs, with no scope, no coverage and no link back to the calls.
+Scorecards that drift
+Templates get copied and tweaked, so last year's Discovery scores can't be compared with this year's.
+Compliance on a sample
+QA listens to a few calls a week. A missed disclosure on the rest goes unseen.
+What it does
+Everything your QA team wants to know.
+Across every call, in seconds.
+Ask across every scorecard.
+Plain-English questions across reps, teams, templates and dates. Answers come back as tables and charts, not paragraphs.
+How did each rep score on discovery calls last quarter?
+Rep
+Budget
+Pain
+Next steps
+Disclosure
+Maile
+82%
+88%
+61%
+97%
+Tom A.
+74%
+80%
+49%
+95%
+Sari
+69%
+77%
+52%
+99%
+Jordan
+88%
+91%
+72%
+96%
+Computed
+Every cell opens the calls behind it, with
+timestamps and quotes.
+Shows its working.
+Every answer states its scope, its coverage and how it was built.
+Scope
+Discovery · Inside Sales · Q3
+Coverage
+371 of 412 calls scored
+Versions
+6 of 7 criteria shared
+Run record
+query, filters, model, time
+Keeps scorecards comparable.
+Lookalike templates grouped into families with versions.
+Discovery
+v2026
+Active · 7 criteria
+v2025
+Retired · results kept
+6 criteria mapped across versions, so trends stay comparable.
+Tests a new scorecard first.
+Try a new version on past calls before it goes live.
+Business need
+94% agree
+Ready
+Decision maker
+88% agree
+Ready
+Timeline (new)
+71% agree
+Reword
+v2026 tried on 200 past calls before publishing.
+Scores every call, from any dialer.
+Apply scorecards in bulk to calls that were missed.
+JustCall
+Aircall
+RingCentral
+Five9
+Zoom
+Scoring 41 unscored calls
+Discovery v2026 · Inside Sales
+Checks compliance on every call.
+Pass or fail on each rule, with the transcript line as proof. A reviewer confirms every flag.
+Example · lending sales call · checked with PyAI Trace or your own model
+PASS
+Recorded-line disclosure
+00:14 “This call is recorded…”
+PASS
+APR stated correctly
+03:42 “…an APR of 9.4%…”
+FAIL
+No guarantee of approval
+05:10 “You're basically approved”
+Sent to a reviewer to confirm. Nothing is
+acted on automatically.
+Reports on a schedule.
+Save any answer as a weekly report.
+#sales-qa · Monday 8:00
+Weekly discovery QA:
+Next steps up 4 points. Tom A. still lowest on Next
+steps (49%).
+Same query every week · also by email, CSV or API
+Coaching with evidence.
+One focus per rep, picked from their weakest criterion, with clips from teammates who do it well and from their own calls.
+TA
+Tom A.
+Focus for the next 2 weeks: Next steps (49%)
+Sari · great close
+04:12
+Jordan · booked follow-up
+11:30
+Tom · missed next step
+07:45
+Draft plan: one role-play, three calls
+to review, progress checked on the next 20 calls.
+Analytics
+Scores, meet outcomes.
+See which calls win deals.
+Deals are pulled from your CRM and joined to the calls behind them. So you see which parts of your scorecard actually move revenue, and which deals are missing them right now.
+Scorecards vs deals
+Salesforce · 212 closed deals
+Illustrative
+Deals close more often when reps do these steps on the call
+% of deals won, by whether the step happened on the call
+Rep did it
+Rep didn't
+Economic buyer identified
+46%
+of deals won when the rep did it
+21%
+of deals won when the rep didn't
++25 pts
+Next steps agreed
+41%
+of deals won when the rep did it
+18%
+of deals won when the rep didn't
++23 pts
+Budget confirmed
+38%
+of deals won when the rep did it
+29%
+of deals won when the rep didn't
++9 pts
+Pain discovered
+35%
+of deals won when the rep did it
+31%
+of deals won when the rep didn't
++4 pts
+0%
+25%
+50%
+Difference
+31 open deals
+haven't named the economic buyer yet ·
+$1.4M
+See the deals →
+Deals from your CRM
+Salesforce, HubSpot or Zoho: stage, amount, close date and outcome.
+Joined call by call
+Every scored call is matched to its deal and contact.
+Which steps win deals
+Win rate when each step happens on the call, and when it doesn't.
+Open pipeline at risk
+Open deals missing the steps that win, with the calls to review.
+Patterns are shown with deal counts. They point to where to coach, not proof
+of cause.
+Sources and outputs
+From any dialer.
+To wherever you work.
+Built on top of the call platform you already use, including JustCall AI's transcripts and scorecards. Nothing is connected automatically; we connect each source with you during setup.
+Sources
+JustCall
+Transcripts, AI scores and custom scorecards
+Other dialers
+Aircall, RingCentral, Five9 and more
+Meetings and uploads
+Zoom calls and recorded files
+Outputs
+Dashboards
+Quality, coverage and compliance, with pinned answers
+Scheduled reports
+Slack, Teams and email
+Export
+CSV, API, and back to your CRM
+Models
+PyAI Trace
+Our own engine for scoring and compliance checks
+Or your choice of model
+Run checks with the model your compliance team approves
+Numbers from the database
+The model writes the query; it never does the arithmetic
+Accuracy
+Measured.
+Not promised.
+We measure agreement with your own QA team, one rule at a time, and show you the table.
+Calibration
+150 calls hand-scored by your QA team
+Illustrative
+Criterion
+Agreement
+Kappa
+False pass
+False fail
+Use
+Recorded-line disclosure
+98%
+0.91
+0.8%
+1.4%
+Decision
+APR stated correctly
+96%
+0.88
+1.2%
+2.0%
+Decision
+Next steps agreed
+89%
+0.74
+4.1%
+6.8%
+Decision
+Rapport established
+71%
+0.42
+12%
+15%
+Advisory
+Rapport established
+is below your agreed bar, so it is marked advisory and left
+out of rep performance reviews.
+Calibrated on your calls
+Your QA team hand-scores 100–150 calls per scorecard. We score the same calls and compare.
+Reported per criterion
+“Was the APR stated?” is easier than “was rapport built?”. A single blended number would hide that.
+False passes counted separately
+A missed disclosure scored as a pass is a compliance risk. It is never averaged away.
+Re-measured
+Every quarter, and whenever a model or prompt changes.
+Got a question?
+There's an answer in your calls.
+Pick your industry to see the questions teams ask, what Intelligence does across the calls, and the result.
+Credit & lending
+2
+Insurance
+2
+B2B SaaS
+2
+Healthcare
+2
+Real estate
+2
+Automotive
+2
+Retail & e-commerce
+2
+Home services
+2
+Logistics & manufacturing
+2
+Credit & lending
+Disclosures are checked on a sample, and a missed one is a regulatory problem.
+Compliance
+Disclosures on every call
+Voice
+Trigger
+“Did every rep state the APR and recorded-line notice this month?”
+Agent
+Checks every call against each rule and cites the transcript line.
+Result
+Misses flagged for review, by rep
+Ask
+Why applications stall
+Voice
+SMS
+Trigger
+“What do borrowers say before they drop off?”
+Agent
+Groups the reasons across calls, with counts and quotes.
+Result
+Top three reasons, with evidence
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Insurance
+Suitability and claims calls need checking, but QA can't listen to them all.
+Compliance
+Suitability on sales calls
+Voice
+Trigger
+“Are agents checking needs before recommending a policy?”
+Agent
+Scores every sales call on the suitability steps.
+Result
+Gaps by agent and product
+Coaching
+Claims call empathy
+Voice
+Trigger
+“Who handles distressed callers best?”
+Agent
+Finds the strongest calls and builds a playlist.
+Result
+Coaching playlist for new hires
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+B2B SaaS
+MEDDIC is on the slide deck but not always on the calls.
+Ask
+MEDDIC across the pipeline
+Voice
+Video
+Trigger
+“Which open deals have no economic buyer identified?”
+Agent
+Checks every call on each deal against your MEDDIC scorecard.
+Result
+At-risk deals, with the calls behind them
+Report
+Win and loss reasons
+Voice
+Video
+Trigger
+“Why did we lose to competitors in Q3?”
+Agent
+Groups loss reasons across calls and shows coverage.
+Result
+Weekly report to sales leadership
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Healthcare
+Identity checks and scheduling quality vary by agent and shift.
+Compliance
+Identity checks before details
+Voice
+Trigger
+“Did agents verify patients before sharing details?”
+Agent
+Checks every call for the verification step and its order.
+Result
+Misses flagged, with the timestamp
+Coaching
+Scheduling call quality
+Voice
+Trigger
+“Which agents book the most first appointments?”
+Agent
+Compares booking rate and call steps by agent.
+Result
+Focus area per agent
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Real estate
+Lead calls vary wildly between agents, and no one sees why.
+Ask
+Lead-call quality by agent
+Voice
+Trigger
+“Who asks about finance and timeline on first calls?”
+Agent
+Scores first calls on qualification steps.
+Result
+Agent-by-step heatmap
+Coaching
+From call to viewing
+Voice
+Trigger
+“What do top agents say to book a viewing?”
+Agent
+Finds the moments that lead to a booked viewing.
+Result
+Playlist of best moments
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Automotive
+BDC calls set appointments, but not always with the right information.
+Ask
+Appointment-set rate
+Voice
+Trigger
+“Why do some BDC agents set twice as many appointments?”
+Agent
+Compares call steps between top and bottom agents.
+Result
+Three behaviours to coach
+Compliance
+Finance talk on calls
+Voice
+Trigger
+“Are agents quoting rates they shouldn't?”
+Agent
+Flags calls with rate or approval promises.
+Result
+Calls sent for review
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Retail & e-commerce
+Support calls hold the reasons behind returns, but no one has time to listen.
+Ask
+Why products come back
+Voice
+Chat
+Trigger
+“What are customers saying about running-shoe returns?”
+Agent
+Groups return reasons across calls and chats, with counts.
+Result
+Sizing issue found, with quotes
+Report
+Weekly support QA
+Voice
+Chat
+Trigger
+Every Monday morning.
+Agent
+Runs the same scorecard query on last week's conversations.
+Result
+Report in Slack and email
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Home services
+Booking rates differ by CSR, and maintenance plans are rarely offered.
+Coaching
+Booking rate by CSR
+Voice
+Trigger
+“Who converts calls to booked jobs, and how?”
+Agent
+Compares booking steps across CSRs.
+Result
+Focus area per CSR
+Ask
+Maintenance plan offers
+Voice
+Trigger
+“How often do CSRs offer a maintenance plan?”
+Agent
+Checks every booked call for the offer.
+Result
+Offer rate by CSR, with examples
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Logistics & manufacturing
+Escalations repeat, but the pattern is buried in hundreds of calls.
+Ask
+Escalation patterns
+Voice
+Email
+Trigger
+“What drives escalations on delayed shipments?”
+Agent
+Groups causes across calls and emails, with counts.
+Result
+Top causes, with evidence
+Report
+Account-call quality
+Voice
+Trigger
+Every month, per key account.
+Agent
+Scores account calls on your service standard.
+Result
+Monthly report per account
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Compliance flags go to a reviewer. Nothing is acted on automatically.
+Controls and evals
+Your data.
+Your rules.
+Controls
+Role-based access
+Managers see their teams; compliance sees everything it needs.
+Redaction
+Card numbers and personal details masked in transcripts and answers.
+Retention and deletion
+Deleting a call removes its scores and derived data too.
+Run record on every answer
+Query, filters, model and time, so any result can be reproduced.
+Evals
+Calibration against your QA
+Agreement, kappa, false passes and false fails, per criterion.
+Back-test before publishing
+New scorecard versions are tried on past calls first.
+Drift checks
+Re-measured quarterly and on every model change.
+Advisory below the bar
+Criteria under your agreed bar are kept out of performance reviews.
+Pricing
+Custom built.
+Priced for your requirements.
+No fixed tiers. Every Intelligence setup is built around your journeys, channels and systems, so we price it the same way: after we understand what you need.
+What shapes the price
+Call volume and history depth
+Number of scorecards and criteria
+Sources: JustCall and other dialers
+Compliance checks and model choice
+Reports, dashboards and integrations
+Always included
+Scorecard set-up and version mapping
+Calibration study with your QA team
+Dashboards, reports and Ask
+Quarterly re-measurement
+Security: SOC 2 Type II, HIPAA, GDPR
+Tell us what you need.
+Share your journeys, channels and systems. We'll come back with a scope and a
+price.
+Contact us
+Bring one question.
+We'll answer it across every call.
+Send us the five questions you'd ask about your calls. We'll show the answer, the scope and the evidence behind it.
+Contact us
+Pricing

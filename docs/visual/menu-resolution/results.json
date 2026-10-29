@@ -1,0 +1,102 @@
+[
+  {
+    "browser": "chromium",
+    "quality": "balanced",
+    "stats": {
+      "width": 1024,
+      "height": 412,
+      "cssWidth": 2387,
+      "cssHeight": 960,
+      "motion": "tide",
+      "pattern": "drift",
+      "count": "5",
+      "renderState": "ready",
+      "playback": "reduced",
+      "colorSpace": "display-p3-to-srgb",
+      "maskPrecision": "float16",
+      "renderMs": "48.80",
+      "prepareCount": "1",
+      "resolution": "balanced",
+      "maskSize": "1076x1076",
+      "retainedMaskBytes": "18524416",
+      "phase": "0.000000",
+      "motionFrames": "1"
+    },
+    "errors": []
+  },
+  {
+    "browser": "chromium",
+    "quality": "display",
+    "stats": {
+      "width": 4774,
+      "height": 1920,
+      "cssWidth": 2387,
+      "cssHeight": 960,
+      "motion": "tide",
+      "pattern": "drift",
+      "count": "5",
+      "renderState": "ready",
+      "playback": "reduced",
+      "colorSpace": "display-p3-to-srgb",
+      "maskPrecision": "float16",
+      "renderMs": "64.90",
+      "prepareCount": "1",
+      "resolution": "display",
+      "maskSize": "3229x1298",
+      "retainedMaskBytes": "67059872",
+      "phase": "0.000000",
+      "motionFrames": "1"
+    },
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "quality": "balanced",
+    "stats": {
+      "width": 1024,
+      "height": 412,
+      "cssWidth": 2387,
+      "cssHeight": 960,
+      "motion": "tide",
+      "pattern": "drift",
+      "count": "5",
+      "renderState": "ready",
+      "playback": "reduced",
+      "colorSpace": "display-p3-to-srgb",
+      "maskPrecision": "float16",
+      "renderMs": "10.00",
+      "prepareCount": "1",
+      "resolution": "balanced",
+      "maskSize": "1076x1076",
+      "retainedMaskBytes": "18524416",
+      "phase": "0.000000",
+      "motionFrames": "1"
+    },
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "quality": "display",
+    "stats": {
+      "width": 4774,
+      "height": 1920,
+      "cssWidth": 2387,
+      "cssHeight": 960,
+      "motion": "tide",
+      "pattern": "drift",
+      "count": "5",
+      "renderState": "ready",
+      "playback": "reduced",
+      "colorSpace": "display-p3-to-srgb",
+      "maskPrecision": "float16",
+      "renderMs": "46.00",
+      "prepareCount": "1",
+      "resolution": "display",
+      "maskSize": "3229x1298",
+      "retainedMaskBytes": "67059872",
+      "phase": "0.000000",
+      "motionFrames": "1"
+    },
+    "errors": []
+  }
+]

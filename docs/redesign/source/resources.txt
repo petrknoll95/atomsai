@@ -1,0 +1,69 @@
+Home
+/
+Resources
+How the work actually gets done.
+Illustrative workflows with their numbers and method, alongside notes on building and evaluating AI systems. Read the examples and the reasoning without a sign-up.
+Contact us
+See all case studies
+Meridian Health · Healthcare
+Support answers that stop costing twelve minutes each
+−38%
+Average handle time
+Case studies
+Blog
+Case studies
+Blog
+One workflow, measured. The rest are next door.
+Example baselines, builds and outcomes. Client names and results are illustrative; every number includes its measurement context.
+Northwind Logistics
+Northwind Logistics
+Invoices that match themselves, exceptions that route themselves
+40,000 invoices a quarter hit a matching rule set that failed on every non-standard PO line. Chaining extraction, matching, exception routing and ERP write-back moved auto-match from 78% to 94%.
+Read the case study
+Invoice auto-match rate
+78% → 94%
+Invoice auto-match rate
+on 40k invoices/quarter
+Month-end audit prep
+5 days → 4 hours
+Month-end audit prep
+first two quarters
+Cost per processed document
+−81%
+Cost per processed document
+vs. prior BPO rate
+All 3 case studies
+The two most recent notes.
+Short pieces written by the people who fixed it, mostly after fixing it. No listicles.
+26 October 2026
+12 min read
+The quote went out. Then nothing.
+Many unsigned quotes get one email, then silence. Why quotes go quiet, what it costs, and how to follow up across text, email, chat and phone.
+follow up on estimates
+automate quote follow-up
+win more quoted jobs
+Nilesh Tripathi — GM, AtomsAI
+23 October 2026
+11 min read
+The reminder went out. The chair stayed empty.
+Reminders go out by text and replies come back by email, or not at all. Why seats sit empty, what it costs, and how to confirm and rebook on any channel.
+reduce no-shows
+automate appointment reminders
+fill cancelled appointments
+Nilesh Tripathi — GM, AtomsAI
+All 7 posts
+A number without a denominator is a slogan.
+Every figure in these studies names the population it was measured over, the window it was measured in, and the baseline it moved from. If we cannot state all three, we do not publish the number.
+The baseline comes first
+We measure the workflow before we touch it, out of the client's own reporting rather than ours. Where there is no baseline, making one is the first week of the build.
+The same population, after
+After is measured on comparable volume over a stated window — ninety days, a quarter, six months. Never a hand-picked fortnight, and never a projection.
+The client's own dashboard
+Every metric here is one the client already tracked before we arrived, so nobody has to trust a figure we invented to describe our own work.
+MC
+DO
+EK
+RS
+Reading about it is slower than asking.
+Thirty minutes on your actual workflow beats any case study on this page.
+Contact us

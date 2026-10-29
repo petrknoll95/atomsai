@@ -27,9 +27,14 @@ export function ApplicationCard({ name, className, children }: {
         '--application-progress': 1, duration: 0.48, ease: 'power2.out', paused: true,
         onReverseComplete: () => setPatternPlaying(false),
       });
+      const inset = gsap.quickTo(card, '--application-inset', { duration: 1.2, ease: 'power2.out' });
+      const zoom = gsap.quickTo(card, '--application-zoom', { duration: 1.2, ease: 'power2.out' });
       const update = () => {
         const active = pointerInside || keyboardFocused;
         card.dataset.active = String(active);
+        inset(active ? 12 : 0);
+        zoom(active && !reducedMotion.matches ? 1.06 : 1);
+        if (reducedMotion.matches) { inset.tween.progress(1).pause(); zoom.tween.progress(1).pause(); }
         if (active) setPatternPlaying(true);
         if (reducedMotion.matches) { reveal.progress(active ? 1 : 0).pause(); setPatternPlaying(active); }
         else if (active) reveal.timeScale(1).play();

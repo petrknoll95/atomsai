@@ -1,0 +1,50 @@
+[
+  {
+    "browser": "chromium",
+    "label": "Applications",
+    "intermediateY": true,
+    "fixedX": true,
+    "rotation": false,
+    "rapidReversal": true
+  },
+  {
+    "browser": "chromium",
+    "label": "Infrastructure",
+    "intermediateY": true,
+    "fixedX": true,
+    "rotation": false,
+    "rapidReversal": true
+  },
+  {
+    "browser": "chromium",
+    "label": "Industries",
+    "intermediateY": true,
+    "fixedX": true,
+    "rotation": false,
+    "rapidReversal": true
+  },
+  {
+    "browser": "webkit",
+    "label": "Applications",
+    "intermediateY": true,
+    "fixedX": true,
+    "rotation": false,
+    "rapidReversal": true
+  },
+  {
+    "browser": "webkit",
+    "label": "Infrastructure",
+    "intermediateY": true,
+    "fixedX": true,
+    "rotation": false,
+    "rapidReversal": true
+  },
+  {
+    "browser": "webkit",
+    "label": "Industries",
+    "intermediateY": true,
+    "fixedX": true,
+    "rotation": false,
+    "rapidReversal": true
+  }
+]

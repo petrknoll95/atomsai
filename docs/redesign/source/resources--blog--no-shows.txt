@@ -1,0 +1,217 @@
+Home
+/
+Resources
+/
+Blog
+/
+The reminder went out. The chair stayed empty.
+reduce no-shows
+automate appointment reminders
+fill cancelled appointments
+The reminder went out. The chair stayed empty.
+Can your customers cancel at 9pm, by text?
+Reminders go out by text and replies come back by email, or not at all. Why seats sit empty, what it costs, and how to confirm and rebook on any channel.
+Nilesh Tripathi
+23 October 2026
+11 min read
+On this page
+How the work runs today: two empty seats on one Thursday
+Why do people no-show after a reminder?
+What we’d build: confirm and rebook on the channel people answer
+What leaving it costs
+How to start
+Questions buyers ask
+Written by
+NT
+Nilesh Tripathi
+GM, AtomsAI
+Writes AtomsAI's teardowns: one workflow, where it breaks, and what we would build to fix it.
+LinkedIn
+Share
+LinkedIn
+X
+Copy link
+Picture a dental patient who saw her reminder, couldn’t make it, and found that cancelling was harder than not turning up. The reminder came by SMS and only understood one reply. Rescheduling meant phoning during office hours. The email she sent went to an inbox nobody checks until mid-morning. So the chair sits empty, and the practice finds out at the appointment time. Tutoring centres lose trial-class seats the same way. The fix is an agent that confirms on whichever channel people answer, rebooks in your booking system, and offers the freed seat to your waitlist.
+How the work runs today: two empty seats on one Thursday
+Here is how reminders and changes usually run at a small, busy front desk.
+Step
+Who
+Where
+When
+Reminder sent
+The reminder tool, automatically
+SMS
+Two days before
+Replies checked
+Front desk coordinator
+The reminder tool’s inbox
+When there’s a gap between patients
+Unconfirmed list called
+Front desk coordinator
+Phone
+The afternoon before
+Changes handled
+Front desk, or the centre admin
+Phone, the shared inbox, a personal phone
+Office hours
+Freed slot offered
+Front desk
+Phone
+If someone remembers, and there’s time
+Now take two ordinary businesses on the same day: a dental group with three offices, and a tutoring centre that runs free trial classes.
+The dental group, 9:00am hygiene appointment
+When
+Channel
+What happens
+Tuesday, 9:00am
+SMS
+The reminder system texts: “Reply C to confirm.” The patient sees it on her lock screen while driving and means to reply later.
+Wednesday, 2:30pm
+Phone
+The front desk coordinator works through the unconfirmed list. Voicemail.
+Wednesday, 8:40pm
+Email
+The patient realises she has a meeting, and emails the office to ask for next week instead. It lands in the shared inbox.
+Thursday, 8:50am
+Phone
+She tries to call to say sorry. The line is busy with the morning rush. She gives up.
+Thursday, 9:00am
+The hygienist’s chair is empty for an hour. Her email is read at 11:20am.
+The tutoring centre, 4:30pm trial class
+When
+Channel
+What happens
+Monday
+Website form
+A parent books a free maths trial for her son. The confirmation email lands in her promotions tab.
+Wednesday, 9:15pm
+SMS
+She texts the number on the centre’s flyer: “Can we do Saturday instead?” The number is the admin’s own phone, which is off for the evening.
+Thursday, 4:30pm
+The teacher holds the class for a student who isn’t coming. The parent believes she has rescheduled.
+Friday, 10:00am
+SMS
+The admin sees the message, replies with Saturday times, and gets no answer. The family has moved on.
+Nobody in either story was careless. The patient tried twice. The parent asked politely. Both businesses sent reminders. Each seat was lost in the gap between the channel the business used and the channel the customer used. The dental reminder went out by SMS, and the patient answered by email. The centre printed a phone number on its flyer, and the parent texted it at an hour when nobody was holding that phone. In both cases the business did reach the customer, and the customer did reply. The reply just landed somewhere that couldn’t act on it until the seat was already gone.
+Why do people no-show after a reminder?
+1. Reminders talk, but they don’t listen.
+The reminder in our story is one text that understands one reply: “C”. A patient who replies “can I come at 4 instead?” gets no answer, because the reminder can’t do anything with that. A reply on a different channel goes nowhere at all. The cost is a seat that looked confirmed until it was empty. You notice this when your no-show list includes people who did try to get in touch.
+2. Rescheduling is harder than not showing up.
+If changing an appointment means calling during office hours and waiting on hold, then for a busy person the easiest option is to do nothing. Every no-show costs the slot itself, and it may cost the next visit too, because someone who skipped once can feel awkward about booking again. You notice this when rescheduling requests arrive by email and text after hours and sit there until morning.
+3. You find out at the appointment time.
+By 9:00am there’s no one to call into the chair, and by 4:30pm the trial class has started. A slot freed on Wednesday evening could have gone to someone on your waitlist. A slot discovered empty at the appointment time just goes to waste, and so does the hygienist’s or teacher’s hour you’re paying for anyway. You notice this when you have a waitlist and empty chairs on the same day.
+What we’d build: confirm and rebook on the channel people answer
+This is the job of AtomsAI’s
+Front desk agent
+. It answers web chat, phone, SMS and email with one memory, and works inside your booking system once we’ve connected it during your build.
+Appointment coming up
+→ Front desk agent → a text two days before, a second text the day before asking for a reply, and a short reminder call if there’s still no answer. As soon as someone confirms, it’s marked in your schedule.
+Someone can’t make it, on any channel, at any hour
+→ Front desk agent → real times offered from your schedule, the appointment moved, and a confirmation on the same channel. The old slot is released at once.
+A slot is released
+→ Front desk agent → offered to your waitlist in the order you set. The first person to reply is booked into it.
+Here are the same two stories with the agent in place.
+The dental group
+When
+Channel
+What the agent did
+Tuesday, 9:00am
+SMS
+Sent the first reminder. No reply.
+Wednesday, 9:00am
+SMS
+Sent a second text: “Reply C to confirm, or tell us a time that works better.” No reply.
+Wednesday, 2:00pm
+Phone
+Made a short reminder call and left a voicemail saying she can reply by text or email to move it.
+Wednesday, 8:40pm
+Email
+Read her email asking for next week, offered three times, and moved her to Tuesday 4:00pm. Confirmed by email.
+Wednesday, 8:41pm
+SMS
+Offered Thursday 9:00am to the waitlist, in order. A patient due a cleaning replied at 8:52pm and was booked.
+Thursday, 9:00am
+The chair is full.
+The tutoring centre
+(the flyer number is now the centre’s texting number, answered by the agent)
+When
+Channel
+What the agent did
+Monday
+Email, then SMS
+Confirmed the trial by email and by text, with the address and what to bring.
+Wednesday, 9:15pm
+SMS
+Answered the parent with Saturday’s trial times. She picked 10:00am. The Thursday seat went to the next family on the waitlist.
+Saturday, 10:00am
+Her son is at the trial.
+Look at what changed between the two Thursdays. The reminders barely changed, apart from a second text and a short call. The patient still ignored the first text, and the parent still texted at 9:15pm. What changed is that every reply, on every channel, reached something that could act on it. It read the email, understood “next week instead”, checked the schedule, moved the appointment and freed the old slot. The text to the flyer number got the same treatment.
+A cancellation on Wednesday evening is useful, because there’s still time to give the slot to someone who wants it. A cancellation discovered at 9:00am on Thursday is just an empty chair. The agent turns the first kind into a booking, and makes the second kind rarer, by making it easier to say “I can’t make it” than to stay silent.
+If the dental patient had wanted to talk instead, she could have called at 8:50am. The agent would have answered on the first ring, with her history in front of it, and moved the appointment while she was still on the line.
+What you control.
+Which appointment types and classes the agent can confirm, move or cancel. How many reminders, on which channels, how far ahead, and in whose name. Who is on the waitlist and in what order. When someone asks for a person, or it’s a clinical question or outside its rules, it hands over with a summary and the full conversation. Your team can pause the agent for one person or join a call live.
+What we connect during your build.
+Your practice or booking system, or your calendar (Google Calendar, Outlook or Calendly). Your phone line and texts, your website chat and your email. If you run JustCall, we connect your JustCall account during the build.
+What leaving it costs
+Here’s a worked example. Swap in your own numbers.
+A dental group.
+Say its three offices run
+40 hygiene appointments a day
+between them, and
+3 in 40
+are no-shows. That’s
+3 empty chairs a day
+. At
+$150
+a visit, across
+22 working days
+, that’s 3 × $150 × 22 =
+$9,900 a month
+in empty chair time.
+Now say confirming and rebooking on the channel patients answer turned
+1 of those 3
+into a moved appointment, with the slot refilled from the waitlist. That’s
+$3,300 a month
+back, from one slot a day. That rate is an assumption. Your own numbers will tell you what’s realistic.
+A tutoring centre.
+Say it runs
+30 free trials a week
+, and
+1 in 5
+families don’t show. That’s
+6 empty trial seats a week
+. If a third of families who attend a trial go on to enrol, those 6 empty seats are
+2 enrolments a week
+that never had a chance.
+To find your own numbers, take last month’s no-shows and check three things for each: did they get a reminder, did they try to reply or reschedule, and on which channel?
+How to start
+Many of these replies arrive in the evening. The same gap is behind
+the after-hours messages no one sees
+.
+Ask us for a teardown of your reminders and rescheduling. It takes 30 minutes. Bring last month’s no-show count, the channels your reminders go out on, every channel people use to reach you, and your waitlist if you have one. You’ll leave knowing where people drop off, what an agent can confirm and rebook on its own, and what needs your team.
+Standard agents go live in days. Custom work that connects your booking system, phones, texting and website takes 4 to 8 weeks.
+Contact us
+Questions buyers ask
+We already send reminders. Will patients get texted twice?
+No. The agent can take over your reminders or work alongside the ones you already send, so each person gets one sequence. The difference is that it answers replies on web chat, phone, SMS and email with one memory, and acts on them.
+Can people reschedule by text or email instead of calling?
+Yes. They reply on whatever channel they use, at any hour. The agent offers real times from your schedule, moves the appointment, and confirms on the same channel.
+What happens to the slot someone gives up?
+The agent offers it to your waitlist, in the order you set. The first person to reply is booked into it.
+Does it work for classes and trial sessions, not just appointments?
+Yes. For a trial class it confirms the seat with the details, and offers another session if the family can’t make it, so the seat can go to someone else.
+How long does it take to set up?
+Standard agents go live in days. Custom work that connects your booking system, phones, texting and website takes 4 to 8 weeks.
+A cancellation on Wednesday evening is useful, because there’s still time to give the slot to someone who wants it. A cancellation discovered at 9:00am on Thursday is just an empty chair.
+The reminder went out. The chair stayed empty.
+Previous post
+The homeowner asked three companies at lunch
+Next post
+The quote went out. Then nothing.
+Read the blog
+The posts argue it. The studies price it.
+The same workflows from the other end: what the baseline was, what we built, and what moved once it was live.
+Read the case studies
+Three illustrative workflows, with the baseline, the build and the denominator.
+See how we build
+Five steps, four to eight weeks, and you own what comes out.

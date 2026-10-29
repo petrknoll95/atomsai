@@ -65,7 +65,15 @@ export function HomePattern({ application, id, className, style, loading = 'lazy
   loading?: 'eager' | 'lazy';
 }) {
   const { options, viewport: [width, height], instance: [x, y, artworkWidth, artworkHeight] } = homePatternPlacements[application];
-  const viewportStyle = { '--artwork-ratio': width / height } as CSSProperties;
+  // Keep this boundary in the HTML: a failed/late CSS chunk must never let
+  // absolutely positioned decorative canvases use the whole page as their box.
+  const viewportStyle = {
+    '--artwork-ratio': width / height,
+    containerType: 'size',
+    contain: 'strict',
+    overflow: 'hidden',
+    pointerEvents: 'none',
+  } as CSSProperties;
   const instanceStyle: CSSProperties = {
     position: 'absolute', left: `${x / width * 100}%`, top: `${y / height * 100}%`,
     width: `${artworkWidth / width * 100}%`, height: `${artworkHeight / height * 100}%`,

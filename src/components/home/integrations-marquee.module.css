@@ -1,0 +1,35 @@
+.section { padding-block: var(--section-space); }
+.panel {
+  position: relative; overflow: hidden; border-radius: 40px;
+  padding: 92px 48px 112px;
+  background: radial-gradient(ellipse at 0% 0%, color-mix(in srgb, var(--palette-forest-green) 85%, var(--palette-cream)), transparent 65%), radial-gradient(ellipse at 100% 100%, var(--palette-forest-green), transparent 65%), var(--palette-forest-shade);
+}
+.copy { position: relative; display: flex; align-items: center; flex-direction: column; gap: 20px; text-align: center; }
+.title { margin-top: 8px; max-width: 1080px; font-size: clamp(32px, 3.1vw, 48px); line-height: 1.05; text-wrap: balance; }
+.copy p { max-width: 680px; font-size: 18px; line-height: 1.45; color: color-mix(in srgb, var(--palette-cream) 75%, transparent); text-wrap: balance; }
+.viewport { max-width: 1000px; margin: 48px auto 0; overflow: hidden; cursor: grab; touch-action: pan-y pinch-zoom; mask-image: linear-gradient(90deg, transparent, #000 15%, #000 85%, transparent); }
+.viewport:active { cursor: grabbing; }
+.track { display: flex; user-select: none; }
+.slide { flex: 0 0 100px; min-width: 0; padding-right: 14px; }
+.tile { width: 86px; height: 86px; border-radius: 18px; background: var(--palette-paper); display: grid; place-items: center; }
+.tile img { width: 44px; height: 44px; object-fit: contain; pointer-events: none; }
+.pause { position: absolute; right: 24px; bottom: 24px; width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; background: #ffffff0d; color: var(--palette-cream); cursor: pointer; transition: background .25s ease, transform .25s ease; }
+.pause:hover { background: #ffffff1f; transform: scale(1.05); }
+.pause:active { transform: scale(.95); }
+.pause svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; }
+@media (max-width: 767px) {
+  .panel { padding: 56px 20px 80px; border-radius: 28px; }
+  .title { font-size: clamp(30px, 8vw, 40px); }
+  .copy p { font-size: 16px; }
+  .copy p br { display: none; }
+  .viewport { margin-top: 36px; margin-inline: -20px; }
+  .slide { flex-basis: 78px; padding-right: 12px; }
+  .tile { width: 66px; height: 66px; border-radius: 14px; }
+  .tile img { width: 34px; height: 34px; }
+  .pause { bottom: 20px; right: 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pause { display: none; }
+}
+
+.copy > :global(.eyebrow) { align-self: center; }

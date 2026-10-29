@@ -3,7 +3,6 @@
 .header img { width:135.84px; height:24px; }
 .header > span { font-size:12px; }
 .edition { color:var(--color-muted-foreground); margin-left:12px; }
-.header a:last-child { text-decoration:underline; text-underline-offset:4px; }
 .intro { display:flex; align-items:flex-end; justify-content:space-between; gap:48px; padding-block:54px 42px; }
 .eyebrow { font-size:12px; margin-bottom:24px; }
 .eyebrow::before { content:''; display:inline-block; width:6px; height:6px; border-radius:50%; background:currentColor; margin:0 9px 1px 0; }

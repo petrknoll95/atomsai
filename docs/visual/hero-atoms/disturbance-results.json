@@ -1,0 +1,30 @@
+[
+  {
+    "browser": "chromium",
+    "peakDisplacement": 100.72942035307112,
+    "maxOffsets": [
+      100.72942035307112,
+      59.732897496844686,
+      25.465584559343,
+      2.0853525203680334
+    ],
+    "stationaryPointerDoesNothing": true,
+    "monotonicReturn": true,
+    "noOvershoot": true,
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "peakDisplacement": 110.08987231115061,
+    "maxOffsets": [
+      110.08987231115061,
+      63.55127454536198,
+      27.08004346827727,
+      2.219755496757306
+    ],
+    "stationaryPointerDoesNothing": true,
+    "monotonicReturn": true,
+    "noOvershoot": true,
+    "errors": []
+  }
+]

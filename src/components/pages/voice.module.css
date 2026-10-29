@@ -1,0 +1,215 @@
+.page { background:var(--palette-paper); }
+.hero { padding-top:180px; padding-bottom:var(--section-space); }
+.kicker { display:flex; align-items:center; gap:10px; font-size:14px; margin-bottom:36px; }
+.kicker > span { width:7px; height:7px; background:var(--palette-deep-green); border-radius:50%; }
+.heroHeading { display:grid; grid-template-columns:1.25fr 1fr; gap:64px; align-items:end; margin-bottom:64px; }
+.heroHeading h1 { font-size:clamp(72px,7.2vw,112px); line-height:.91; }
+.heroIntro { padding-bottom:5px; }
+.heroIntro > p { font-size:20px; line-height:1.4; }
+.heroActions { display:flex; align-items:center; flex-wrap:wrap; gap:24px; margin-top:32px; }
+.textLink { display:inline-flex; align-items:center; gap:20px; font-size:14px; width:fit-content; padding-block:8px; border-bottom:1px solid var(--color-border); transition:border-color .2s ease; }
+.textLink:hover { border-color:currentColor; }
+.textLink > span { font-size:18px; }
+.sampleWrap { scroll-margin-top:120px; }
+.sample { display:grid; grid-template-columns:1.12fr 1fr; border-radius:var(--radius-panel); overflow:hidden; background:var(--palette-cream-tint); }
+.player { display:flex; flex-direction:column; position:relative; min-height:460px; padding:32px; }
+.playerTop { display:flex; justify-content:space-between; gap:24px; font-size:12px; color:var(--palette-cream); }
+.playerTop > span:last-child { opacity:.65; white-space:nowrap; }
+.soundArtwork { display:flex; align-items:center; justify-content:center; position:relative; flex:1; min-height:290px; overflow:hidden; }
+.soundOrbit { width:210px; aspect-ratio:1; position:absolute; border:1px dotted color-mix(in srgb,var(--palette-cream) 23%,transparent); border-radius:50%; }
+.soundOrbit:nth-child(2) { width:270px; }
+.soundOrbit:nth-child(3) { width:330px; opacity:.5; }
+.soundWave { display:flex; align-items:center; gap:1px; position:absolute; width:100%; max-width:420px; height:120px; top:42%; transform:translateY(-50%); }
+.soundWave > span { display:block; flex:1; min-width:1px; background:var(--palette-cream); border-radius:3px; transition:opacity .15s; }
+.hello { z-index:1; margin-top:116px; font-size:62px; line-height:1; }
+.playerControls { position:relative; display:flex; align-items:center; gap:20px; }
+.playButton { display:grid; place-items:center; width:52px; height:52px; border:0; border-radius:50%; background:var(--palette-cream); color:var(--palette-deep-green); flex-shrink:0; transition:transform .2s; }
+.playButton:hover { transform:scale(1.06); }
+.playerProgress { flex:1; min-width:0; }
+.playerProgress input { display:block; width:100%; height:44px; margin:0; accent-color:var(--palette-cream); cursor:pointer; }
+.playerProgress input::-webkit-slider-runnable-track { height:2px; background:color-mix(in srgb,var(--palette-cream) 25%,transparent); border-radius:2px; }
+.playerProgress input::-webkit-slider-thumb { -webkit-appearance:none; width:12px; height:12px; margin-top:-5px; background:var(--palette-cream); border-radius:50%; }
+.playerProgress input { -webkit-appearance:none; appearance:none; background:transparent; }
+.playerProgress input::-moz-range-track { height:2px; background:color-mix(in srgb,var(--palette-cream) 25%,transparent); }
+.playerProgress input::-moz-range-thumb { width:12px; height:12px; border:0; background:var(--palette-cream); border-radius:50%; }
+.playerProgress > div { display:flex; justify-content:space-between; gap:16px; font-size:12px; }
+.playerProgress > div span:last-child { white-space:nowrap; opacity:.65; }
+.audioError { margin-top:16px; font-size:12px; }
+.conversation { padding:32px 40px; display:flex; flex-direction:column; }
+.conversationTop { display:flex; flex-wrap:wrap; align-items:center; gap:12px; justify-content:space-between; }
+.sectionLabel { font-size:14px; line-height:1.4; }
+.sampleLabel { font-size:var(--text-caption); padding:5px 9px; border:1px solid var(--color-border); border-radius:99px; }
+.quote { margin-top:36px; }
+.quote > span { display:block; font-size:12px; color:var(--palette-forest-green); margin-bottom:14px; }
+.quote > p { font-size:36px; line-height:1; }
+.agentQuote { margin-left:48px; }
+.callOutcome { display:flex; gap:14px; align-items:center; margin-top:auto; padding-top:32px; }
+.outcomeIcon { display:grid; place-items:center; width:40px; height:40px; background:var(--palette-stone-tint); border-radius:50%; font-size:20px; flex:none; }
+.callOutcome p { font-size:14px; }
+.callOutcome div > span { display:block; margin-top:3px; font-size:12px; color:var(--palette-forest-green); }
+.sampleFoot { display:grid; grid-template-columns:1.12fr 1fr; gap:32px; align-items:start; padding-top:20px; font-size:12px; color:var(--palette-forest-green); }
+.transcript { justify-self:stretch; color:var(--palette-deep-green); }
+.transcript summary { display:flex; justify-content:space-between; gap:24px; list-style:none; font-size:14px; padding-bottom:10px; width:100%; }
+.transcript summary::-webkit-details-marker { display:none; }
+.transcript summary > span { font-size:20px; line-height:1; }
+.transcript[open] summary > span { transform:rotate(45deg); }
+.transcript ol { list-style:none; border-top:1px solid var(--color-border); padding-top:8px; }
+.transcript li { display:grid; grid-template-columns:80px 1fr; gap:16px; padding-block:12px; }
+.transcript li > span { color:var(--palette-forest-green); }
+.journeys { padding-block:var(--section-space); border-top:1px solid var(--color-border); }
+.sectionIntro { display:grid; grid-template-columns:1fr 2fr; gap:32px; margin-bottom:56px; }
+.sectionIntro > .sectionLabel { padding-top:4px; }
+.sectionHeading { font-size:clamp(44px,4vw,60px); line-height:.96; }
+.sectionDescription { font-size:18px; line-height:1.5; max-width:490px; margin-top:24px; color:var(--palette-forest-green); }
+.journeyTabs { display:flex; border-bottom:1px solid var(--color-border); }
+.journeyTabs button { display:flex; align-items:center; justify-content:space-between; gap:40px; width:33.333%; min-height:62px; padding:20px 24px; border:0; background:transparent; text-align:left; color:var(--palette-forest-green); border-bottom:2px solid transparent; margin-bottom:-1px; font-size:16px; }
+.journeyTabs button[aria-selected='true'] { border-color:var(--palette-deep-green); color:var(--palette-deep-green); }
+.journeyTabs button:hover { background:var(--palette-cream-tint); }
+.journeyTabs button span { opacity:.5; }
+.journeyTabs button[aria-selected='true'] span { opacity:1; }
+.journeyPanel { display:grid; grid-template-columns:1.1fr 1fr; gap:96px; padding-block:48px; }
+.journeyOpener { font-size:48px; line-height:.98; max-width:500px; margin-top:32px; min-height:98px; }
+.journeyStory h3 { font-size:28px; line-height:1.1; margin:36px 0 16px; }
+.journeyStory > p:last-child { max-width:440px; font-size:16px; line-height:1.55; color:var(--palette-forest-green); }
+.journeyFlow { padding:32px; border-radius:16px; background:var(--palette-cream-tint); }
+.flowLabel { font-size:12px; margin-bottom:24px; }
+.journeyFlow ol { list-style:none; }
+.journeyFlow li { display:flex; gap:20px; padding-bottom:26px; position:relative; }
+.journeyFlow li:not(:last-child)::before { content:''; position:absolute; width:1px; top:29px; bottom:1px; left:13px; background:var(--color-border); }
+.flowIndex { display:grid; place-items:center; width:28px; height:28px; border:1px solid var(--color-border); border-radius:50%; font-size:var(--text-caption); flex:none; }
+.journeyFlow h4 { font-size:14px; font-weight:475; margin-bottom:4px; }
+.journeyFlow li p { font-size:14px; color:var(--palette-forest-green); }
+.journeyResult { display:flex; align-items:center; gap:16px; border-top:1px solid var(--color-border); padding-top:24px; }
+.journeyResult > span { display:grid; place-items:center; width:36px; height:36px; border-radius:50%; background:var(--palette-deep-green); color:var(--palette-cream); flex:none; }
+.journeyResult p { font-size:28px; line-height:1; }
+.connections { margin-top:24px; font-size:12px; color:var(--palette-forest-green); }
+.illustrative { font-size:12px; color:var(--palette-forest-green); }
+.contextSection { background:var(--palette-cream-tint); padding-block:var(--section-space); }
+.contextGrid { display:grid; grid-template-columns:1fr 1fr; gap:96px; }
+.contextIntro .sectionHeading { margin-top:36px; }
+.contextIntro > a { margin-top:32px; }
+.contextRows article { display:grid; grid-template-columns:32px 1fr; gap:20px; padding-block:32px; border-bottom:1px solid var(--color-border); }
+.contextRows article:first-child { padding-top:0; }
+.contextRows article:last-child { border-bottom:0; padding-bottom:0; }
+.rowNumber { font-size:12px; padding-top:4px; color:var(--palette-forest-green); }
+.contextRows h3 { font-size:32px; line-height:1; }
+.contextRows p { margin-top:16px; max-width:470px; color:var(--palette-forest-green); font-size:16px; line-height:1.5; }
+.contextTags { display:flex; gap:8px; flex-wrap:wrap; margin-top:20px; }
+.contextTags span { display:inline-block; padding:5px 10px; border:1px solid var(--color-border); border-radius:99px; font-size:12px; }
+.contextRows .textLink { margin-top:16px; }
+.launch { padding-block:var(--section-space); }
+.launchSteps { display:grid; grid-template-columns:repeat(4,1fr); gap:32px; list-style:none; margin-top:64px; }
+.launchSteps li { border-top:1px solid var(--color-border); padding-top:20px; }
+.stepNumber { font-size:12px; color:var(--palette-forest-green); }
+.launchSteps h3 { font-size:30px; line-height:1; margin:40px 0 18px; }
+.launchSteps p { font-size:14px; line-height:1.55; color:var(--palette-forest-green); max-width:270px; }
+.pyaiNote { margin-top:80px; padding-top:32px; border-top:1px solid var(--color-border); display:grid; grid-template-columns:1fr 2fr auto; align-items:center; gap:32px; }
+.pyaiWord { font-size:44px; }
+.pyaiNote p { color:var(--palette-forest-green); font-size:14px; }
+.closing { padding-bottom:var(--section-space); }
+.closingInner { background:var(--palette-stone-tint); border-radius:var(--radius-panel); padding:48px; display:grid; grid-template-columns:1fr 2fr auto; gap:32px; }
+.closingInner p:not(.sectionLabel) { margin-top:24px; max-width:380px; color:var(--palette-forest-green); }
+.closingInner a { margin-top:32px; }
+.closingMark { font-size:64px; line-height:1; }
+@media(min-width:1600px) { .heroHeading { grid-template-columns:1.3fr 1fr; } }
+@media(max-width:1199px) {
+  .hero { padding-top:160px; }
+  .heroHeading { gap:40px; grid-template-columns:1.2fr 1fr; }
+  .heroHeading h1 { font-size:80px; }
+  .heroIntro > p { font-size:18px; }
+  .heroActions { gap:16px; }
+  .player { padding:24px; }
+  .conversation { padding:24px; }
+  .quote p { font-size:30px; }
+  .agentQuote { margin-left:24px; }
+  .playerTop { font-size:var(--text-caption); gap:12px; }
+  .journeyPanel,.contextGrid { gap:48px; }
+  .sectionIntro { grid-template-columns:1fr 2fr; }
+  .launchSteps { gap:24px; }
+  .launchSteps h3 { font-size:27px; }
+  .closingInner { padding:36px; grid-template-columns:1fr 2fr; }
+  .closingMark { display:none; }
+}
+@media(max-width:900px) {
+  .heroHeading { grid-template-columns:1fr; gap:32px; }
+  .heroIntro { display:flex; align-items:center; justify-content:space-between; gap:24px; }
+  .heroActions { margin-top:0; }
+  .sample { grid-template-columns:1fr 1fr; }
+  .player { min-height:440px; padding:24px 20px; }
+  .playerTop { flex-direction:column; gap:4px; }
+  .playerControls { gap:12px; }
+  .playerProgress > div { font-size:var(--text-caption); gap:8px; }
+  .playerProgress > div > span:first-child { max-width:90px; }
+  .playButton { width:44px; height:44px; }
+  .quote p { font-size:28px; }
+  .agentQuote { margin-left:0; }
+  .callOutcome { gap:10px; }
+  .callOutcome p { font-size:13px; }
+  .journeyPanel { gap:32px; }
+  .journeyFlow { padding:24px; }
+  .contextGrid { gap:40px; }
+  .contextRows h3 { font-size:28px; }
+  .launchSteps { grid-template-columns:repeat(2,1fr); row-gap:40px; }
+  .pyaiNote { grid-template-columns:auto 1fr auto; }
+}
+@media(max-width:767px) {
+  .hero { padding-top:128px; }
+  .kicker { margin-bottom:28px; }
+  .heroHeading { margin-bottom:40px; gap:28px; }
+  .heroHeading h1 { font-size:clamp(54px,12vw,80px); }
+  .heroIntro { display:block; }
+  .heroIntro > p { font-size:17px; }
+  .heroActions { margin-top:24px; gap:24px; }
+  .sample { grid-template-columns:1fr; border-radius:24px; }
+  .player { min-height:360px; padding:24px; }
+  .playerTop { flex-direction:row; font-size:var(--text-caption); gap:12px; }
+  .soundArtwork { min-height:230px; }
+  .soundOrbit { width:150px; }
+  .soundOrbit:nth-child(2) { width:210px; }
+  .soundOrbit:nth-child(3) { width:270px; }
+  .soundWave { transform:translateY(-50%) scaleY(.7); }
+  .hello { font-size:48px; margin-top:100px; }
+  .playerProgress > div > span:first-child { max-width:none; }
+  .playerProgress > div { font-size:var(--text-caption); }
+  .conversation { padding:28px 24px; }
+  .quote { margin-top:28px; }
+  .quote p { font-size:32px; }
+  .agentQuote { margin-left:36px; }
+  .callOutcome { padding-top:28px; }
+  .sampleFoot { grid-template-columns:1fr; gap:20px; padding-top:16px; }
+  .transcript summary { border-bottom:1px solid var(--color-border); padding-bottom:12px; }
+  .transcript[open] summary { border-bottom:0; }
+  .transcript li { grid-template-columns:64px 1fr; gap:12px; }
+  .sectionIntro { grid-template-columns:1fr; gap:28px; margin-bottom:36px; }
+  .sectionHeading { font-size:44px; }
+  .sectionDescription { font-size:16px; margin-top:20px; }
+  .journeyTabs button { padding:16px 10px; min-height:56px; gap:12px; font-size:14px; }
+  .journeyPanel { grid-template-columns:1fr; gap:32px; padding-block:32px; }
+  .journeyOpener { font-size:40px; min-height:0; margin-top:24px; }
+  .journeyStory h3 { font-size:28px; margin-top:28px; }
+  .journeyFlow { padding:24px; }
+  .journeyResult p { font-size:26px; }
+  .contextGrid { grid-template-columns:1fr; gap:48px; }
+  .contextIntro .sectionHeading { margin-top:28px; }
+  .contextRows article { grid-template-columns:24px 1fr; gap:16px; }
+  .contextRows h3 { font-size:30px; }
+  .launchSteps { gap:32px 24px; margin-top:40px; }
+  .launchSteps h3 { font-size:28px; margin-top:28px; }
+  .launchSteps p { font-size:14px; }
+  .pyaiNote { margin-top:48px; grid-template-columns:1fr; gap:20px; }
+  .pyaiWord { font-size:40px; }
+  .closingInner { grid-template-columns:1fr; padding:32px 24px; gap:28px; border-radius:24px; }
+}
+@media(max-width:359px) {
+  .heroHeading h1 { font-size:50px; }
+  .player { padding:20px; }
+  .playerTop { font-size:var(--text-caption); }
+  .conversation { padding:24px 20px; }
+  .conversationTop { gap:8px; }
+  .sampleLabel { font-size:var(--text-caption); }
+  .quote p { font-size:29px; }
+  .agentQuote { margin-left:16px; }
+  .sectionHeading { font-size:40px; }
+  .launchSteps { grid-template-columns:1fr; }
+}
+@media(prefers-reduced-motion:reduce) { .playButton,.textLink,.soundWave > span { transition:none; } }

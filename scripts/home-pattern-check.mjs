@@ -28,7 +28,7 @@ async function settleFrames(page) {
 }
 
 async function canvasState(page) {
-  return page.locator('canvas').evaluateAll(canvases => canvases.map(canvas => {
+  return page.locator('canvas[data-pattern]').evaluateAll(canvases => canvases.map(canvas => {
     const rect = canvas.getBoundingClientRect();
     return {
       application: canvas.closest('[data-home-pattern]')?.getAttribute('data-home-pattern') ?? null,
@@ -113,7 +113,7 @@ for (const [engineName, engine] of [['chromium', chromium], ['webkit', webkit]])
         });
         result.checks.push('Below-fold preview and CTA canvases remain pending initially');
 
-        const canvases = page.locator('canvas');
+        const canvases = page.locator('canvas[data-pattern]');
         for (let index = 0; index < await canvases.count(); index++) {
           const canvas = canvases.nth(index);
           const box = await canvas.boundingBox();

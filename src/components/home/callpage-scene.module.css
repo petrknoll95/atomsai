@@ -1,0 +1,67 @@
+.system {
+  position: relative; z-index: 1;
+  --ink: var(--palette-deep-green);
+  --muted: color-mix(in srgb, var(--ink) 60%, var(--palette-paper));
+  --line: color-mix(in srgb, var(--ink) 10%, transparent);
+  --radius: 1.25rem;
+  --inset: .25em;
+  width: 44em; padding: var(--inset); border-radius: var(--radius);
+  background: color-mix(in srgb, var(--palette-cream-tint) 95%, transparent);
+  backdrop-filter: blur(1.25em); color: var(--ink);
+  font-family: var(--font-sans); font-size: inherit; line-height: 1.5;
+  font-weight: var(--font-weight-normal);
+  font-variation-settings: 'wght' var(--font-weight-normal), 'ital' 100;
+}
+.system * { box-sizing: border-box; }
+.system p { margin: 0; }
+.tabs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); padding: 1.25em .75em; }
+.tab { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .75em; padding: .6em .3em; color: var(--muted); }
+.tab + .tab { border-left: .0625em solid var(--line); }
+.tab[data-active='true'] { color: var(--ink); }
+.tab > span { font-size: .875em; line-height: 1; text-box: trim-both cap alphabetic; white-space: nowrap; }
+.icon { width: 1.8em; height: 1.8em; display: block; }
+.content { padding: 2.5em 3em 2em; border-radius: max(0em, calc(var(--radius) - var(--inset))); background: var(--palette-paper); text-align: center; }
+.heading { font-size: 1.75em; line-height: 1.25; font-weight: var(--font-weight-medium); font-variation-settings: 'wght' var(--font-weight-medium), 'ital' 100; text-wrap: balance; }
+.form { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: .75em; margin-top: 2.5em; }
+.phoneField { display: flex; align-items: center; gap: 1em; padding: 1em; min-height: 3.75em; border: .0625em solid var(--line); border-radius: .75em; text-align: left; color: var(--muted); }
+.country { display: flex; align-items: center; gap: .4em; color: var(--ink); }
+.country svg { width: 1em; height: 1em; display: block; }
+.callButton { display: flex; align-items: center; justify-content: center; padding: 1em; border-radius: .75em; background: var(--ink); color: var(--palette-paper); }
+.content .caption { margin-top: 1.25em; font-size: .875em; color: var(--muted); }
+
+.stage { position: relative; display: grid; place-items: center; width: 48em; height: 48em; isolation: isolate; }
+.device {
+  --device-ink: color-mix(in display-p3, var(--palette-cream) 24%, var(--palette-forest-shade));
+  --device-line: color-mix(in srgb, var(--device-ink) 45%, transparent);
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  width: 24em; height: 48em; border: .1em solid var(--device-line); border-radius: 3.2em;
+  color: var(--device-ink); font-family: var(--font-sans); line-height: 1.4;
+}
+.screenEdge { position: absolute; inset: .35em; border: .0625em solid var(--device-line); border-radius: 2.85em; }
+.notch { position: absolute; top: 1em; left: 50%; transform: translateX(-50%); width: 7.5em; height: 1.8em; border: .0625em solid var(--device-line); border-radius: 2em; display: flex; align-items: center; justify-content: center; gap: .6em; }
+.sideButton { position: absolute; right: -.25em; top: 10em; width: .2em; height: 3.5em; border: .0625em solid var(--device-line); border-radius: .2em; }
+.volumeButtons { position: absolute; left: -.25em; top: 8em; width: .2em; height: 2.5em; border: .0625em solid var(--device-line); border-radius: .2em; }
+.volumeButtons::after { content: ''; position: absolute; top: 3.25em; left: -.0625em; width: .2em; height: 2.5em; border: .0625em solid var(--device-line); border-radius: .2em; }
+.caller { position: absolute; top: 4em; inset-inline: 1em; text-align: center; }
+.caller > span { font-size: .875em; }
+.caller p { margin: .2em 0 0; font-size: 1.75em; line-height: 1.2; }
+.callControls { position: absolute; bottom: 2.8em; left: 2em; right: 2em; display: grid; grid-template-columns: repeat(3, 1fr); row-gap: 1.2em; }
+.callControls > div { display: flex; flex-direction: column; align-items: center; gap: .5em; }
+.callControls > div > span { display: grid; place-items: center; width: 3.5em; height: 3.5em; border: .0625em solid var(--device-line); border-radius: 3em; }
+.callControls svg { width: 1.5em; height: 1.5em; color: var(--device-line); }
+.callControls p { margin: 0; font-size: .875em; }
+.homeIndicator { position: absolute; bottom: 1em; left: 50%; transform: translateX(-50%); width: 7em; height: .25em; border: .0625em solid var(--device-line); border-radius: 1em; }
+
+/* Header vignette: the callback choice and phone field, without legal detail. */
+.compact.system { width: 100%; font-size: var(--text-caption); --radius: 12px; backdrop-filter: none; }
+.compact .tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 10px; }
+.compact .tab { flex-direction: row; gap: 8px; padding: 10px 6px; }
+.compact .tab > span { font-size: 1em; }
+.compact .icon { width: 18px; height: 18px; }
+.compact .content { padding: 24px 16px; }
+.compact .heading { font-size: 1.5em; }
+.compact .form { margin-top: 20px; gap: 8px; }
+.compact .phoneField { padding: 10px; gap: 8px; min-height: 40px; }
+.compact .callButton { padding: 10px; }
+
+.compactStage { width: 100%; display: grid; place-items: center; }

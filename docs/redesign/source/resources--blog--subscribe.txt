@@ -1,0 +1,29 @@
+Home
+/
+Resources
+/
+Blog
+/
+Subscribe
+Follow the blog in your feed reader.
+Copy this address into Feedly, Inoreader, NetNewsWire or any RSS reader. New
+posts show up there as soon as they're published.
+https://atomsai.com/resources/blog/rss.xml
+Copy address
+Back to the blog
+Open the raw feed
+What's in the feed
+26 Oct 2026
+The quote went out. Then nothing.
+23 Oct 2026
+The reminder went out. The chair stayed empty.
+23 Oct 2026
+The homeowner asked three companies at lunch
+20 Oct 2026
+The after-hours messages no one sees
+19 Aug 2026
+The demo was never the hard part
+8 Jul 2026
+Write the evals before the prompt
+27 May 2026
+How much autonomy should an agent have?

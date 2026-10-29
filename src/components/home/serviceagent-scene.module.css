@@ -1,0 +1,28 @@
+.system {
+  --ink: var(--palette-deep-green);
+  --muted: color-mix(in srgb, var(--ink) 70%, var(--palette-paper));
+  --wrapper-radius: 1.25rem;
+  --wrapper-padding: .25em;
+  --inner-radius: max(0em, calc(var(--wrapper-radius) - var(--wrapper-padding)));
+  width: 44em; display: flex; flex-direction: column; gap: 1.25em;
+  color: var(--ink); font-family: var(--font-sans); font-size: inherit; line-height: 1.5;
+  font-weight: var(--font-weight-normal);
+  font-variation-settings: 'wght' var(--font-weight-normal), 'ital' 100;
+}
+.system * { box-sizing: border-box; }
+.card { padding: var(--wrapper-padding); border: 0; border-radius: var(--wrapper-radius); background: color-mix(in srgb, var(--palette-cream-tint) 95%, transparent); backdrop-filter: blur(1.25em); }
+.header { display: flex; align-items: center; gap: .85em; min-height: 4em; padding: 1em 1.5em; }
+.title { font-size: 1.25em; line-height: 1; text-box: trim-both cap alphabetic; font-weight: var(--font-weight-medium); font-variation-settings: 'wght' var(--font-weight-medium), 'ital' 100; }
+.icon { display: block; width: 1.25em; height: 1.25em; flex: none; color: color-mix(in srgb, var(--ink) 60%, transparent); }
+.actions { display: flex; align-items: center; gap: 1.25em; margin-left: auto; }
+.content { display: grid; grid-template-columns: 10em minmax(0, 1fr); align-items: start; column-gap: 1.5em; row-gap: 1.5em; padding: 1.5em; background: var(--palette-paper); border-radius: var(--inner-radius); }
+.content p { margin: 0; color: var(--muted); }
+.label { font-weight: var(--font-weight-medium); font-variation-settings: 'wght' var(--font-weight-medium), 'ital' 100; }
+
+/* Two readable routes in the header, sharing the homepage card treatment. */
+.compact.system { width: 100%; gap: 14px; font-size: var(--text-caption); --wrapper-radius: 12px; }
+.compact .card { backdrop-filter: none; }
+.compact .header { min-height: 38px; padding: 10px 14px; gap: 8px; }
+.compact .title { font-size: 1.1em; }
+.compact .actions { gap: 10px; }
+.compact .content { grid-template-columns: 7em minmax(0, 1fr); gap: 10px 12px; padding: 14px; }

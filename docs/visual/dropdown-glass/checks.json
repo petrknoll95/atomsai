@@ -1,0 +1,166 @@
+[
+  {
+    "name": "chromium",
+    "product": "JustCall",
+    "kind": "drift",
+    "count": 3,
+    "cards": [
+      {
+        "blur": "blur(16px)",
+        "border": "0px",
+        "background": "color(display-p3 0.964706 0.945098 0.909804 / 0.12)"
+      },
+      {
+        "blur": "blur(16px)",
+        "border": "0px",
+        "background": "color(display-p3 0.964706 0.945098 0.909804 / 0.12)"
+      },
+      {
+        "blur": "blur(8px)",
+        "border": "0px",
+        "background": "color(display-p3 0.964706 0.945098 0.909804 / 0.16)"
+      }
+    ]
+  },
+  {
+    "name": "chromium",
+    "product": "Helpwise",
+    "kind": "drift",
+    "count": 5,
+    "cards": [
+      {
+        "blur": "blur(16px)",
+        "border": "0px",
+        "background": "color(display-p3 0.964706 0.945098 0.909804 / 0.12)"
+      },
+      {
+        "blur": "blur(8px)",
+        "border": "0px",
+        "background": "color(display-p3 0.964706 0.945098 0.909804 / 0.16)"
+      }
+    ]
+  },
+  {
+    "name": "chromium",
+    "product": "ServiceAgent",
+    "kind": "single-band",
+    "count": 3,
+    "cards": [
+      {
+        "blur": "blur(16px)",
+        "border": "0px",
+        "background": "color(display-p3 0.964706 0.945098 0.909804 / 0.12)"
+      },
+      {
+        "blur": "blur(16px)",
+        "border": "0px",
+        "background": "color(display-p3 0.964706 0.945098 0.909804 / 0.12)"
+      },
+      {
+        "blur": "blur(16px)",
+        "border": "0px",
+        "background": "color(display-p3 0.964706 0.945098 0.909804 / 0.12)"
+      }
+    ]
+  },
+  {
+    "name": "chromium",
+    "product": "CallPage",
+    "kind": "offset",
+    "count": 8,
+    "cards": [
+      {
+        "blur": "blur(16px)",
+        "border": "0px",
+        "background": "color(display-p3 0.964706 0.945098 0.909804 / 0.12)"
+      },
+      {
+        "blur": "blur(8px)",
+        "border": "0px",
+        "background": "color(display-p3 0.964706 0.945098 0.909804 / 0.16)"
+      }
+    ]
+  },
+  {
+    "name": "webkit",
+    "product": "JustCall",
+    "kind": "drift",
+    "count": 3,
+    "cards": [
+      {
+        "blur": "blur(16px)",
+        "border": "0px",
+        "background": "color(display-p3 0.964706 0.945098 0.909804 / 0.12)"
+      },
+      {
+        "blur": "blur(16px)",
+        "border": "0px",
+        "background": "color(display-p3 0.964706 0.945098 0.909804 / 0.12)"
+      },
+      {
+        "blur": "blur(8px)",
+        "border": "0px",
+        "background": "color(display-p3 0.964706 0.945098 0.909804 / 0.16)"
+      }
+    ]
+  },
+  {
+    "name": "webkit",
+    "product": "Helpwise",
+    "kind": "drift",
+    "count": 5,
+    "cards": [
+      {
+        "blur": "blur(16px)",
+        "border": "0px",
+        "background": "color(display-p3 0.964706 0.945098 0.909804 / 0.12)"
+      },
+      {
+        "blur": "blur(8px)",
+        "border": "0px",
+        "background": "color(display-p3 0.964706 0.945098 0.909804 / 0.16)"
+      }
+    ]
+  },
+  {
+    "name": "webkit",
+    "product": "ServiceAgent",
+    "kind": "single-band",
+    "count": 3,
+    "cards": [
+      {
+        "blur": "blur(16px)",
+        "border": "0px",
+        "background": "color(display-p3 0.964706 0.945098 0.909804 / 0.12)"
+      },
+      {
+        "blur": "blur(16px)",
+        "border": "0px",
+        "background": "color(display-p3 0.964706 0.945098 0.909804 / 0.12)"
+      },
+      {
+        "blur": "blur(16px)",
+        "border": "0px",
+        "background": "color(display-p3 0.964706 0.945098 0.909804 / 0.12)"
+      }
+    ]
+  },
+  {
+    "name": "webkit",
+    "product": "CallPage",
+    "kind": "offset",
+    "count": 8,
+    "cards": [
+      {
+        "blur": "blur(16px)",
+        "border": "0px",
+        "background": "color(display-p3 0.964706 0.945098 0.909804 / 0.12)"
+      },
+      {
+        "blur": "blur(8px)",
+        "border": "0px",
+        "background": "color(display-p3 0.964706 0.945098 0.909804 / 0.16)"
+      }
+    ]
+  }
+]

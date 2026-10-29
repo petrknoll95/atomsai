@@ -3,9 +3,10 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import { createPatternRenderer } from './renderer';
 import { motionPresets, type PatternMotion } from './motion-presets';
-import type { PatternOptions } from './types';
+import type { PatternOptions, PatternResolution } from './types';
 
 export interface MotionPatternProps extends PatternOptions {
+  resolution?: PatternResolution;
   motion?: PatternMotion;
   duration?: number;
   intensity?: number;
@@ -21,10 +22,10 @@ export interface MotionPatternProps extends PatternOptions {
 }
 
 /** One cached-mask composite per frame; palette remains fixed. */
-export function MotionPattern({ motion: requestedMotion, duration = 12, intensity = 0.7, playing = true, phase, syncWith, onProgress, onAvailabilityChange, className, style, ...options }: MotionPatternProps) {
+export function MotionPattern({ motion: requestedMotion, duration = 12, intensity = 0.7, playing = true, resolution = 'balanced', phase, syncWith, onProgress, onAvailabilityChange, className, style, ...options }: MotionPatternProps) {
   const motion = requestedMotion ?? (options.kind === 'concentric' ? 'ripple' : 'tide');
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const latest = useRef({ options, motion, duration, intensity, playing, phase, syncWith, onProgress, onAvailabilityChange });
+  const latest = useRef({ options, motion, duration, intensity, playing, resolution, phase, syncWith, onProgress, onAvailabilityChange });
   const update = useRef<() => void>(() => {});
   const [error, setError] = useState(false);
   useEffect(() => {
@@ -71,11 +72,11 @@ export function MotionPattern({ motion: requestedMotion, duration = 12, intensit
       if (!visible || document.hidden || lost || failed) return;
       const width = canvas.clientWidth, height = canvas.clientHeight;
       if (!width || !height) return;
-      const next = JSON.stringify([latest.current.options, width, height, devicePixelRatio]);
+      const next = JSON.stringify([latest.current.options, latest.current.resolution, width, height, devicePixelRatio]);
       try {
         if (next !== signature) {
           renderer ??= createPatternRenderer(canvas);
-          renderer.prepare(latest.current.options, width, height, devicePixelRatio);
+          renderer.prepare(latest.current.options, width, height, devicePixelRatio, latest.current.resolution);
           signature = next; latest.current.onAvailabilityChange?.(true);
         }
         draw(performance.now());
@@ -113,9 +114,9 @@ export function MotionPattern({ motion: requestedMotion, duration = 12, intensit
     };
   }, []);
   useEffect(() => {
-    latest.current = { options, motion, duration, intensity, playing, phase, syncWith, onProgress, onAvailabilityChange };
+    latest.current = { options, motion, duration, intensity, playing, resolution, phase, syncWith, onProgress, onAvailabilityChange };
     update.current();
-  }, [options.kind, options.count, options.mode, options.colors, options.fit, options.blurScale, options.rotation, options.zoom, options.panX, options.panY, motion, duration, intensity, playing, phase, syncWith, onProgress, onAvailabilityChange]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [options.kind, options.count, options.mode, options.colors, options.fit, options.blurScale, options.rotation, options.zoom, options.panX, options.panY, motion, duration, intensity, playing, resolution, phase, syncWith, onProgress, onAvailabilityChange]); // eslint-disable-line react-hooks/exhaustive-deps
   return <div className={className} style={{ position: 'relative', width: '100%', height: '100%', ...style }}>
     <canvas ref={canvasRef} style={{ display: 'block', width: '100%', height: '100%' }} role="img" aria-label={`${motionPresets.find(preset => preset.id === motion)!.name}, ${options.kind} pattern`} data-motion={motion} data-pattern={options.kind} data-count={options.count} data-render-state="pending" />
     {error && <p role="status" style={{ position: 'absolute', inset: '40% 24px auto', textAlign: 'center', padding: '20px', borderRadius: '12px', background: 'var(--color-background)', color: 'var(--color-foreground)' }}>This browser cannot display the shader. Motion is unavailable.</p>}

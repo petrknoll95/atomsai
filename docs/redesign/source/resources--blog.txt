@@ -1,0 +1,72 @@
+Home
+/
+Resources
+/
+Blog
+Notes from the production side.
+Short pieces on what breaks between a demo and production. Written by the
+people who fixed it, mostly after fixing it. No listicles.
+All resources
+RSS feed
+26 October 2026
+12 min read
+The quote went out. Then nothing.
+Many unsigned quotes get one email, then silence. Why quotes go quiet, what it costs, and how to follow up across text, email, chat and phone.
+follow up on estimates
+automate quote follow-up
+win more quoted jobs
+Nilesh Tripathi — GM, AtomsAI
+23 October 2026
+11 min read
+The reminder went out. The chair stayed empty.
+Reminders go out by text and replies come back by email, or not at all. Why seats sit empty, what it costs, and how to confirm and rebook on any channel.
+reduce no-shows
+automate appointment reminders
+fill cancelled appointments
+Nilesh Tripathi — GM, AtomsAI
+23 October 2026
+10 min read
+The homeowner asked three companies at lunch
+Leads arrive by form, ad, chat, text and phone, then wait in a queue. Where the time goes, what it costs, and how to reply on their channel fast.
+respond to leads faster
+automate lead follow-up
+AI sales assistant
+Nilesh Tripathi — GM, AtomsAI
+20 October 2026
+9 min read
+The after-hours messages no one sees
+After closing, customers message on chat, text, email and phone. Most of it waits until morning. What that costs and how one agent answers it all.
+answer customers after hours
+automate appointment booking
+AI front desk
+Nilesh Tripathi — GM, AtomsAI
+19 August 2026
+3 min read
+The demo was never the hard part
+Pilots don't fail on model quality. They fail on the systems between the demo and a finished piece of work — and on the exception queue nobody scoped.
+move AI pilots to production
+integrate AI with your systems
+AI implementation
+AtomsAI editorial
+8 July 2026
+3 min read
+Write the evals before the prompt
+An eval suite isn't QA you add at the end. It's the specification — and the only thing that lets a CXO answer 'is it working?' with a number instead of an opinion.
+measure AI accuracy
+test AI before launch
+AI evals
+AtomsAI editorial
+27 May 2026
+4 min read
+How much autonomy should an agent have?
+The right answer is a configuration value, not a philosophy. Design the approval gates before the tools, start tight, and let the pass rate buy each loosening.
+set AI approval rules
+control what AI agents can do
+AI agent governance
+AtomsAI editorial
+The posts argue it. The studies price it.
+The same workflows from the other end: what the baseline was, what we built, and what moved once it was live.
+Read the case studies
+Three illustrative workflows, with the baseline, the build and the denominator.
+See how we build
+Five steps, four to eight weeks, and you own what comes out.

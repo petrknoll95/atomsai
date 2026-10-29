@@ -21,7 +21,15 @@
     background-color 320ms ease;
 }
 /* Figma resolves 18px × 140% to a measured 25px line box. */
-.question summary { display: flex; align-items: center; gap: 24px; list-style: none; font-size: var(--text-lead); font-weight: var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; line-height: 25px; text-wrap: pretty; }
+.question summary { position:relative; isolation:isolate; display: flex; align-items: center; gap: 24px; list-style: none; font-size: var(--text-lead); font-weight: var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; line-height: 25px; text-wrap: pretty; }
+/* Give keyboard focus a padded surface without moving the question or icon. */
+.question summary::before { content:''; position:absolute; inset:-10px -12px; z-index:-1; pointer-events:none; border-radius:10px; background:color-mix(in srgb,var(--color-primary) 5%,transparent); box-shadow:0 0 0 var(--focus-ring-width) color-mix(in srgb,var(--color-ring) var(--focus-ring-opacity),transparent); opacity:0; transition:opacity 180ms ease; }
+.faq .question summary:focus-visible { outline:none; box-shadow:none; }
+.faq .question summary:focus-visible::before { opacity:1; }
+@media (forced-colors:active) {
+  .faq .question summary:focus-visible { outline:var(--focus-ring-width) solid Highlight; outline-offset:8px; border-radius:6px; }
+  .question summary::before { display:none; }
+}
 .question summary::-webkit-details-marker { display: none; }
 .question summary > span { flex: 1; min-width: 0; }
 .question summary img, .customQuestion img { flex: none; width: 24px; height: 24px; }
@@ -54,14 +62,26 @@
    or clicks. Browsers without CSS inertness retain native details behavior. */
 .question:not([open]) .answerClip { interactivity: inert; pointer-events: none; }
 .answer { margin-top: 20px; max-width: 480px; color: var(--color-surface-muted-foreground); font-size: var(--text-body); line-height: 22px; text-wrap: pretty; }
-.answer a { text-decoration: underline; text-underline-offset: 3px; }
+.answer a { color: var(--color-primary); }
 .customQuestionWrap { padding-block: 16px; }
 .customQuestion { display: flex; align-items: center; gap: 16px; padding: 15px 23px; border: 1px solid var(--color-border-subtle); border-radius: 12px; font-size: var(--text-lead); font-weight: var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; line-height: 25px; color: var(--color-muted-foreground); transition: border-color 240ms ease, var(--focus-transition); }
 .customQuestion input { flex: 1; min-width: 0; width: 100%; padding: 0; border: 0; background: transparent; color: var(--color-foreground); font: inherit; font-variation-settings: inherit; }
 .customQuestion input::placeholder { color: var(--color-muted-foreground); opacity: 1; }
 .customQuestion:hover { border-color: var(--color-border); }
+.questionSubmit { display: grid; place-items: center; flex: none; width: 44px; height: 44px; margin: -10px; padding: 10px; border: 0; border-radius: 50%; background: transparent; color: var(--color-primary); transition: background-color .2s ease, transform .2s ease; }
+.questionSubmit:enabled:hover { background: var(--color-surface); transform: translateY(-2px); }
+.questionSubmit:enabled:active { transform: scale(.92); }
+.questionSubmit:disabled { cursor: default; opacity: .45; }
+.generatedQuestion { display: flow-root; overflow: hidden; overflow-wrap: anywhere; }
+.generatedSlot { overflow: hidden; }
+.generatedBody { display: flow-root; }
+.generatedAnswer { text-wrap: wrap; }
+.generatedAnswer [data-answer-word] { display: inline-block; }
+.thinking { display: flex; align-items: center; gap: 10px; height: 24px; margin-top: 20px; overflow: hidden; color: var(--color-muted-foreground); font-size: 14px; }
+.thinkingLogo { display: block; flex: none; width: 20px; height: 18px; color: var(--color-primary); }
 @media (prefers-reduced-motion: reduce) {
   .question, .question::details-content, .questionIcon img, .customQuestion { transition: none; }
+  .questionSubmit { transition: none; transform: none !important; }
 }
 .cta { padding-block: 64px; }
 .ctaPanel { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-radius: var(--radius-panel); overflow: clip; background: var(--color-surface); }
@@ -97,8 +117,18 @@
 .navGroup li { display: flex; }
 .navGroup a, .unavailableLink { display: inline-flex; align-items: center; gap: 4px; padding-block: 2px; height: 14px; }
 .navGroup a > span, .unavailableLink > span { font-size: var(--text-body); line-height: 1.3; }
-.navGroup a:hover { color: var(--color-muted-foreground); }
-.navGroup img { flex: none; }
+.navGroup a { position: relative; }
+.navGroup a::before { content: ''; position: absolute; left: 0; top: calc(50% - 5px); width: 10px; height: 10px; border-radius: 50%; background: currentColor; pointer-events: none; opacity: 0; transform: scale(0); transform-origin: center; transition: transform .28s cubic-bezier(.22,1,.36,1), opacity .2s ease; }
+.navGroup a > span { transition: transform .28s cubic-bezier(.22,1,.36,1); }
+.navGroup a:is(:active, :focus-visible, [aria-current]:not([aria-current='false']))::before { opacity: 1; transform: scale(1); }
+.navGroup a:is(:active, :focus-visible, [aria-current]:not([aria-current='false'])) > span { transform: translateX(14px); }
+@media (hover: hover) and (pointer: fine) {
+  .navGroup a:hover::before { opacity: 1; transform: scale(1); }
+  .navGroup a:hover > span { transform: translateX(14px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .navGroup a::before, .navGroup a > span { transition: none; }
+}
 .footerLogo { display: block; position: relative; width: 100%; aspect-ratio: 1504 / 212; margin-top: 96px; }
 .logoArtwork { position: absolute; width: 100%; aspect-ratio: 1504 / 274; top: 50%; left: 0; transform: translateY(-50%); }
 .logoArtwork > span { position: absolute; }

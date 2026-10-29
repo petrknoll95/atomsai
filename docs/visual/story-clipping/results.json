@@ -1,0 +1,147 @@
+{
+  "base": "http://127.0.0.1:3001",
+  "results": [
+    {
+      "browser": "chromium",
+      "widths": [
+        {
+          "width": 320,
+          "buttonOverflow": 0,
+          "logoOverlap": -16,
+          "paintRoom": 20,
+          "overflow": false
+        },
+        {
+          "width": 360,
+          "buttonOverflow": 0,
+          "logoOverlap": -50.96875,
+          "paintRoom": 20,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "buttonOverflow": 0,
+          "logoOverlap": -80.96875,
+          "paintRoom": 20,
+          "overflow": false
+        },
+        {
+          "width": 767,
+          "buttonOverflow": 0,
+          "logoOverlap": -457.96875,
+          "paintRoom": 20,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "buttonOverflow": 0,
+          "logoOverlap": -116.796875,
+          "paintRoom": 20.015625,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "buttonOverflow": 0,
+          "logoOverlap": -270.390625,
+          "paintRoom": 20.015625,
+          "overflow": false
+        },
+        {
+          "width": 1199,
+          "buttonOverflow": 0,
+          "logoOverlap": -375.390625,
+          "paintRoom": 20.015625,
+          "overflow": false
+        },
+        {
+          "width": 1200,
+          "buttonOverflow": 0,
+          "logoOverlap": -179.203125,
+          "paintRoom": 241.34375,
+          "overflow": false
+        },
+        {
+          "width": 1600,
+          "buttonOverflow": 0,
+          "logoOverlap": -379.203125,
+          "paintRoom": 308,
+          "overflow": false
+        }
+      ],
+      "transitionFrames": 12,
+      "noTransitionClipping": true,
+      "errors": []
+    },
+    {
+      "browser": "webkit",
+      "widths": [
+        {
+          "width": 320,
+          "buttonOverflow": 0,
+          "logoOverlap": -16,
+          "paintRoom": 20,
+          "overflow": false
+        },
+        {
+          "width": 360,
+          "buttonOverflow": 0,
+          "logoOverlap": -50.96875,
+          "paintRoom": 20,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "buttonOverflow": 0,
+          "logoOverlap": -80.96875,
+          "paintRoom": 20,
+          "overflow": false
+        },
+        {
+          "width": 767,
+          "buttonOverflow": 0,
+          "logoOverlap": -457.96875,
+          "paintRoom": 20,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "buttonOverflow": 0,
+          "logoOverlap": -116.8125,
+          "paintRoom": 20,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "buttonOverflow": 0,
+          "logoOverlap": -270.40625,
+          "paintRoom": 20,
+          "overflow": false
+        },
+        {
+          "width": 1199,
+          "buttonOverflow": 0,
+          "logoOverlap": -375.40625,
+          "paintRoom": 20,
+          "overflow": false
+        },
+        {
+          "width": 1200,
+          "buttonOverflow": 0,
+          "logoOverlap": -179.203125,
+          "paintRoom": 241.34375,
+          "overflow": false
+        },
+        {
+          "width": 1600,
+          "buttonOverflow": 0,
+          "logoOverlap": -379.203125,
+          "paintRoom": 308,
+          "overflow": false
+        }
+      ],
+      "transitionFrames": 51,
+      "noTransitionClipping": true,
+      "errors": []
+    }
+  ]
+}

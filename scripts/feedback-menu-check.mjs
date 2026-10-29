@@ -1,0 +1,76 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import {chromium, expect} from '@playwright/test';
+const browser = await chromium.launch();
+await fs.mkdir('docs/feedback/checks',{recursive:true});
+try {
+ for (const width of [1440,390]) {
+  const context = await browser.newContext({viewport:{width,height:1000},reducedMotion:'reduce'});
+  const page = await context.newPage();
+  page.setDefaultTimeout(25000);
+  page.on('pageerror',e=>console.log('PAGE ERROR',e.message));
+  page.on('console',m=>{if(m.type()==='warning') console.log(m.text());});
+  await page.goto('http://127.0.0.1:3001');
+  await page.getByRole('button',{name:'Feedback',exact:true}).click();
+  await expect(page.getByRole('button',{name:/Comment mode/})).toBeVisible();
+  await page.getByRole('button',{name:'Open site menu',exact:true}).click();
+  const menu = page.getByRole('dialog',{name:'Site menu'});
+  await expect(menu).toBeVisible();
+  await expect(menu.locator('#pindrop-web-root')).toHaveCount(1);
+  await menu.getByRole('button',{name:/Comment mode/}).click();
+  const target = menu.locator('[data-menu-group="Applications"] > button');
+  const box = await target.boundingBox();
+  assert(box);
+  const occupied = await page.locator('#pindrop-web-pins > *').evaluateAll(nodes => nodes.map(node => {
+    const r = node.getBoundingClientRect(); return {x:r.x+r.width/2,y:r.y+r.height/2};
+  }));
+  const candidates = [.1,.3,.5,.7,.9].flatMap(x => [.2,.8].map(y => ({x:box.x+box.width*x,y:box.y+box.height*y})));
+  const point = candidates.find(p => occupied.every(o => Math.hypot(o.x-p.x,o.y-p.y)>35));
+  assert(point,'Need a free pin position');
+  await page.mouse.click(point.x,point.y);
+  await page.getByPlaceholder('Enter your name').fill('Menu verification');
+  await page.getByRole('button',{name:'Save',exact:true}).click();
+  const marker = `Menu ${width} ${Date.now()}`;
+  await page.getByPlaceholder('Add a comment...').fill(marker);
+  await page.getByRole('button',{name:'Send comment',exact:true}).click();
+  await expect(page.locator('[data-feedback-status]')).toHaveText('Shared feedback · Saved',{timeout:45000});
+  // Close the mobile composer/viewer before selecting the thread from review.
+  const close = page.getByRole('button',{name:'Close comment',exact:true});
+  if (await close.isVisible()) await close.click();
+  await page.getByRole('button',{name:/Review mode/}).click();
+  await page.locator('#pindrop-web-root').getByText(marker,{exact:true}).click();
+  await page.getByText('Browser & viewport',{exact:true}).click();
+  const image = page.getByAltText('Area around the pin when this comment was submitted');
+  await expect(image).toBeVisible();
+  const src = await image.getAttribute('src');
+  assert(src.startsWith('data:image/jpeg;base64,'));
+  await fs.writeFile(`docs/feedback/checks/menu-${width}-crop.jpg`,Buffer.from(src.split(',')[1],'base64'));
+  await page.screenshot({path:`docs/feedback/checks/menu-${width}.png`});
+  if (await close.isVisible()) await close.click();
+  else await page.locator('.pindrop-sheet-scrim').last().click({position:{x:5,y:5}});
+  await expect(page.locator('.pindrop-sheet')).toHaveCount(0);
+  const exitReview = page.getByRole('button',{name:'Exit review mode',exact:true});
+  if (await exitReview.isVisible()) await exitReview.click();
+  else if (await page.locator('.pindrop-sidebar-sheet').isVisible()) await page.locator('.pindrop-sheet-scrim').last().click({position:{x:5,y:5}});
+  await expect(page.locator('.pindrop-sidebar-sheet')).toBeHidden();
+  await page.getByRole('button',{name:'Close site menu',exact:true}).click();
+  await expect(menu).toBeHidden();
+  await expect(page.locator('#pindrop-web-root')).toHaveCount(1);
+  await page.getByRole('button',{name:/Review mode/}).click();
+  await expect(page.locator('#pindrop-web-root').getByText(marker,{exact:true})).toHaveCount(0);
+  if (await exitReview.isVisible()) await exitReview.click();
+  else await page.locator('.pindrop-sheet-scrim').last().click({position:{x:5,y:5}});
+  await page.getByRole('button',{name:'Open site menu',exact:true}).click();
+  await page.getByRole('button',{name:/Review mode/}).click();
+  await expect(page.locator('#pindrop-web-root').getByText(marker,{exact:true})).toBeVisible();
+  await page.reload();
+  await page.getByRole('button',{name:'Open site menu',exact:true}).click();
+  await page.getByRole('button',{name:'Feedback',exact:true}).click();
+  await page.getByRole('button',{name:/Review mode/}).click();
+  await page.locator('#pindrop-web-root').getByText(marker,{exact:true}).click();
+  await page.getByText('Browser & viewport',{exact:true}).click();
+  await expect(page.getByAltText('Area around the pin when this comment was submitted')).toBeVisible();
+  await context.close();
+  console.log(`PASS menu ${width}: toolbar, pin, attachment, page isolation and reopen`);
+ }
+} finally {await browser.close();}

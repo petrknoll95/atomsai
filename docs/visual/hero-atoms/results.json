@@ -1,0 +1,80 @@
+[
+  {
+    "browser": "chromium",
+    "stats": {
+      "heroAtoms": "true",
+      "state": "ready",
+      "particles": "3000",
+      "playback": "running",
+      "frames": "720",
+      "drawMs": "0.55",
+      "pointerEnergy": "0.402",
+      "fps": "60"
+    },
+    "velocityEnergy": [
+      0.061,
+      0.402
+    ],
+    "widths": [
+      {
+        "width": 1024,
+        "particles": 2870
+      },
+      {
+        "width": 768,
+        "particles": 2263
+      },
+      {
+        "width": 390,
+        "particles": 1100
+      },
+      {
+        "width": 320,
+        "particles": 1100
+      }
+    ],
+    "pixelsAnimate": true,
+    "offscreenPauses": true,
+    "reducedMotionStatic": true,
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "stats": {
+      "heroAtoms": "true",
+      "state": "ready",
+      "particles": "3000",
+      "playback": "running",
+      "frames": "720",
+      "drawMs": "0.40",
+      "pointerEnergy": "0.371",
+      "fps": "60"
+    },
+    "velocityEnergy": [
+      0.061,
+      0.417
+    ],
+    "widths": [
+      {
+        "width": 1024,
+        "particles": 2870
+      },
+      {
+        "width": 768,
+        "particles": 2263
+      },
+      {
+        "width": 390,
+        "particles": 1100
+      },
+      {
+        "width": 320,
+        "particles": 1100
+      }
+    ],
+    "pixelsAnimate": true,
+    "offscreenPauses": true,
+    "reducedMotionStatic": true,
+    "errors": []
+  }
+]

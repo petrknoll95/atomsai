@@ -1,0 +1,501 @@
+AtomsAI / Patient access agent
+Every referral booked.
+Ready before they arrive.
+Contacts referred patients, checks their insurance, books the right visit and gets forms done before the day. More patients seen, fewer surprises, and less time on the phone for your staff.
+Contact us
+See what it does
+Built for specialty groups, clinics and health systems.
+Lakeview Orthopedics
+Live agent
+Referral from
+Dr. Patel
+· knee pain
+Insurance checked
+Hi Maria, Dr. Patel referred you to Lakeview Orthopedics for your knee. Your Aetna
+plan covers this visit and your copay is $40. I can book you with Dr. Chen on
+Tuesday at 9:40am or Thursday at 2:15pm.
+Tuesday 9:40am
+Thursday 2:15pm
+Thursday works.
+You're booked. I've sent a short form to fill in before your visit, about 5
+minutes.
+Booked · Thursday 2:15pm with Dr. Chen
+Referral to booked visit in 1 day · insurance checked · intake form sent
+Identity confirmed · visit added to the
+patient record
+01 / Reach out
+02 / Check insurance
+03 / Book
+04 / Prepare
+Why it matters
+What it does
+Channels & stack
+Worklist
+By specialty
+Controls & evals
+Pricing
+Why it matters
+Patients are referred to you every day.
+Someone has to reach them, check their insurance, find a slot and collect their forms.
+When that takes too long, they go elsewhere or not at all.
+Referrals go cold
+Referrals from other doctors wait in a pile while staff answer the phones.
+Patients wait on hold
+Long hold times and voicemail push patients to book somewhere faster.
+Insurance surprises
+Coverage checked late means denied claims, surprise bills and cancelled visits.
+Every referral is a patient who needs you.
+Too many are never booked.
+Same referrals. More patients seen.
+What 100 referrals turn into, without and with a patient access agent
+Without an agent
+100
+referrals received
+55
+booked for a visit
+12
+days to first visit
+With the agent
+100
+referrals received
+85
+booked for a visit
+3
+days to first visit
+30 more patients seen from the same referrals
+, sooner, with insurance checked before they arrive.
+Illustrative
+What it does
+Everything your patient access team does.
+For every patient, the same day.
+Turns referrals into visits.
+Reads each referral the moment it arrives, reaches the patient and books them in.
+Example · one referral, one day
+Referral arrives
+Sent by Dr. Patel · knee pain
+Patient contacted
+Text within 10 minutes
+Visit booked
+Thursday 2:15pm · Dr. Chen
+Checks insurance first.
+Coverage, copay and referral, before the visit is booked.
+Plan
+Aetna PPO · active
+Specialist visit
+Covered · $40 copay
+Referral
+On file with the plan
+Books the right visit.
+The right clinician, visit type, length and location, following your scheduling rules.
+Your scheduling rules, followed
+Visit type
+New patient, knee
+Length
+40 minutes
+Who
+Orthopedic surgeon, not a PA
+Where
+Closest of 3 clinics with an X-ray
+Gets forms done early.
+History, consent and insurance card, before the patient arrives.
+Medical history
+Done · 2 days before the visit
+Consent forms
+Signed · 2 days before the visit
+Insurance card photo
+Uploaded · 2 days before the visit
+Handles prior authorizations.
+Sends requests to the payer with the right notes and follows up until there's an answer.
+Needed?
+MRI needs approval from Cigna
+Sent
+Order and clinical notes attached
+Approved
+Patient told, scan booked
+Fills cancelled slots.
+Offers the opening to patients on the waitlist, right away.
+Example · 9am cancellation
+A 10:20am slot just opened with Dr. Chen today. Would you like it?
+Yes please!
+Filled from the waitlist in 6 minutes
+Never gives medical advice.
+Anything clinical goes straight to a nurse or clinician.
+To the nurse line, now
+Said
+“My leg is swollen and hot since the surgery.”
+Done
+No advice given, call transferred
+Shared
+Patient, surgery date, what they said
+More patients seen, sooner.
+More referrals booked, fewer no-shows and denied claims, and staff free for the patients in front of them.
+Example · one month, one specialty group
+84%
+of referrals booked
+3 days
+from referral to first visit
+38%
+fewer no-shows
+0
+visits with unchecked insurance
+Channels, capabilities and integrations
+Every way patients reach you.
+Connected to your EHR.
+One agent across phone, text, chat and email, and the referrals other doctors send you. Every booking, check and form lands in the patient record.
+5
+Ways in. One patient view.
+Voice
+SMS
+Web chat
+Email
+Referrals from other doctors
+Secure by default
+SOC 2 Type II, HIPAA and GDPR. Your data is never used to train models.
+Patient contacts today
+00:00 → 23:59
+Always on
+Evenings and weekends, when patients have time to book, and during the morning rush when every line is busy.
+Hands over to your team
+The right person, with the patient, their insurance, the referral and the full conversation.
+When it hands over
+As per your rules
+Anything clinical or urgent
+Insurance can't be confirmed
+The patient asks for a person
+AI agent
+Clinical question
+→
+RD
+Rosa D.
+Triage nurse
+Coverage problem
+→
+KW
+Kevin W.
+Insurance team
+Complex scheduling
+→
+NP
+Nina P.
+Scheduler
+Handover note
+· patient, referral, insurance, full conversation
+At home in your stack
+Epic, athenahealth, eClinicalWorks, NextGen and other EHRs and practice management systems. Insurance checks. Google Calendar and Outlook. JustCall for calls and texts. Anything else through APIs, HL7 and FHIR.
+Scoped access, approved per action
+Worklist
+Every referral.
+One worklist.
+See where every patient stands: booked, waiting on insurance, or waiting for staff.
+Patient access · this week
+All locations
+Illustrative
+Referrals in
+186
+Booked
+84%
+Insurance checked
+100%
+Forms done early
+91%
+Maria G. · Knee referral
+Booked Thu 2:15pm · form done
+Ready
+James O. · MRI follow-up
+Prior auth sent to Cigna
+Awaiting payer
+Aisha K. · New patient
+Plan inactive since Sep 30
+Insurance issue
+Robert L. · Shoulder referral
+Texted twice, no reply
+Calling today
+Ellen P. · Post-op check
+Said pain is getting worse
+Nurse called
+2 patients need staff
+Take over
+Pause
+One view of every patient
+Referrals, bookings, insurance and forms, across every channel.
+HIPAA on every contact
+Identity confirmed before anything personal is shared.
+Voice built in-house
+Our own speech engine, for calm, natural calls.
+Take over any time
+Join a call, reply to a text, or pause the agent for a patient.
+Your specialty?
+There's a play for that.
+Pick your specialty to see how the agent books, checks and prepares patients.
+Orthopedics
+2
+Primary care
+2
+Imaging & radiology
+2
+Cardiology
+2
+Behavioral health
+2
+Dental groups
+2
+Eye care
+2
+Women's health & fertility
+2
+Physical therapy
+2
+Orthopedics
+Referrals pile up, and patients in pain book elsewhere while they wait.
+Referral
+Referral to first visit
+SMS
+Voice
+Trigger
+A family doctor refers a patient with knee pain.
+Agent
+Checks insurance, books the right surgeon, sends the forms.
+Result
+Seen in days, not weeks
+Prior auth
+MRI approval
+Insurer
+SMS
+Trigger
+A surgeon orders an MRI.
+Agent
+Sends the request to the payer and tracks it.
+Result
+Approved, patient booked for the scan
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Primary care
+Phones ring all morning, and every new patient needs insurance checked.
+New patient
+Joining the practice
+Web chat
+Voice
+Trigger
+Someone asks if the practice takes new patients.
+Agent
+Checks their plan, books a new-patient visit, sends forms.
+Result
+New patient booked and ready
+Recall
+Annual check-up due
+SMS
+Email
+Trigger
+A patient hasn't had a physical in a year.
+Agent
+Reminds them and offers times that suit them.
+Result
+Check-up booked
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Imaging & radiology
+Scans need approvals and prep instructions, and missed ones waste machine time.
+Prior auth
+CT scan approval
+Insurer
+Trigger
+A CT order arrives from a referring doctor.
+Agent
+Checks if approval is needed and sends it with the notes.
+Result
+Scan booked once approved
+Prep
+Prep instructions
+SMS
+Trigger
+A patient has a scan tomorrow.
+Agent
+Sends fasting and arrival instructions, confirms they've read them.
+Result
+Fewer cancelled scans
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Cardiology
+Follow-ups slip, and patients who need to be seen soon wait too long.
+Referral
+Urgent referral first
+Voice
+Trigger
+A referral is marked urgent.
+Agent
+Calls the patient the same day and books the earliest slot.
+Result
+Urgent patients seen first
+Follow-up
+Post-test follow-up
+SMS
+Voice
+Trigger
+Stress test results are in.
+Agent
+Books the follow-up visit with the cardiologist.
+Result
+No patient lost after testing
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Behavioral health
+Intake takes many calls, and people reaching out need a fast, kind reply.
+Intake
+First appointment
+Web chat
+Voice
+Trigger
+Someone asks for help finding a therapist.
+Agent
+Checks insurance, matches on availability and preferences, books.
+Result
+First session booked
+Safety
+Crisis words heard
+Voice
+Web chat
+Trigger
+A caller mentions harming themselves.
+Agent
+Shares crisis line details and transfers to a clinician at once.
+Result
+Handled by a person, right away
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Dental groups
+Insurance checks and empty chairs eat into every day.
+Insurance
+Coverage before the cleaning
+Insurer
+Trigger
+A patient is booked for next week.
+Agent
+Checks benefits left this year and what the patient will owe.
+Result
+No surprise bills
+Backfill
+Cancelled cleaning
+SMS
+Trigger
+A patient cancels this afternoon.
+Agent
+Offers the slot to patients on the waitlist.
+Result
+Chair filled
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Eye care
+Vision and medical plans are confusing, so patients call with questions.
+Insurance
+Vision or medical plan?
+Voice
+Trigger
+A patient calls about an eye infection.
+Agent
+Checks which plan covers the visit and books it.
+Result
+Billed to the right plan
+Recall
+Yearly eye exam
+SMS
+Email
+Trigger
+A patient is due an exam.
+Agent
+Reminds them and books a time.
+Result
+Exam booked
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Women's health & fertility
+Long journeys with many visits, forms and insurance questions.
+New patient
+First fertility consult
+Web chat
+Voice
+Trigger
+A couple asks about fertility treatment.
+Agent
+Explains next steps, checks coverage, books the consult.
+Result
+Consult booked, forms done
+Follow-up
+Prenatal visits
+SMS
+Trigger
+A patient is 12 weeks pregnant.
+Agent
+Books the next visits on the schedule the practice uses.
+Result
+No missed check-ups
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Physical therapy
+Patients drop off after a few sessions, and visit limits need tracking.
+Insurance
+Visits left on the plan
+Insurer
+Trigger
+A patient starts a course of therapy.
+Agent
+Checks how many visits the plan allows and tracks them.
+Result
+No unpaid visits
+Follow-up
+Missed session
+SMS
+Trigger
+A patient misses a session.
+Agent
+Checks in and rebooks.
+Result
+Course of care completed
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+The agent follows your scheduling rules and never gives medical advice.
+Controls and evals
+Patient data protected.
+Clinical calls left to clinicians.
+Controls
+HIPAA by design
+Signed BAA, identity checks, and access limited to what each task needs.
+No medical advice
+Symptoms and clinical questions go to a nurse or clinician, urgent ones at once.
+Your scheduling rules
+Visit types, providers and slot lengths as you set them. Anything else goes to staff.
+Full audit trail
+Every contact, check, booking and change is logged in the patient record.
+Evals
+Tested before launch
+Hard cases first: urgent symptoms, the wrong person answering, coverage problems.
+Re-tested on every change
+A saved test set re-runs whenever rules or schedules change.
+Every contact checked
+Each conversation is scored for accuracy, privacy and tone, with misses flagged.
+Measured against your goals
+Referrals booked, time to first visit and no-shows, reviewed with you weekly.
+Pricing
+Custom built.
+Priced for your requirements.
+No fixed tiers. Every patient access agent is built around your journeys, channels and systems, so we price it the same way: after we understand what you need.
+What shapes the price
+Number of referrals and patient contacts
+Channels: voice, text, chat, email, referrals
+EHR and practice management systems
+Insurance checks and prior authorizations
+Locations, specialties and scheduling rules
+Always included
+Design and build with our team
+Testing on hard cases before launch
+Privacy and accuracy checks on every contact
+Weekly reviews and tuning after go-live
+Security: SOC 2 Type II, HIPAA with a BAA, GDPR
+Tell us what you need.
+Share your journeys, channels and systems. We'll come back with a scope and a
+price.
+Contact us
+Bring last month's referrals.
+We'll show you who was never seen.
+Share a sample of referrals. We'll show how many the agent would have booked, how fast, and where your staff would still step in.
+Contact us
+Pricing

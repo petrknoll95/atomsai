@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-26T15:08:19.783Z",
+  "date": "2026-10-28T08:55:09.559Z",
   "base": "http://127.0.0.1:3001",
   "results": [
     {
@@ -43,40 +43,56 @@
       "topbarHeight": 96,
       "links": [
         {
-          "name": "Applications",
+          "name": "JustCall",
+          "href": "https://justcall.io/"
+        },
+        {
+          "name": "Helpwise",
+          "href": "https://helpwise.io/"
+        },
+        {
+          "name": "ServiceAgent",
+          "href": "https://serviceagent.ai/"
+        },
+        {
+          "name": "CallPage",
+          "href": "https://www.callpage.io/"
+        },
+        {
+          "name": "All Applications",
           "href": "#applications"
         },
         {
-          "name": "Infrastructure",
+          "name": "Explore PyAI",
           "href": "https://pyai.com/"
+        },
+        {
+          "name": "Try the playground",
+          "href": "https://pyai.com/playground"
         },
         {
           "name": "AI Services",
           "href": "#offerings"
         },
         {
-          "name": "Industries",
+          "name": "Insurance",
+          "href": "https://atomsai.com/industries/insurance"
+        },
+        {
+          "name": "Healthcare",
+          "href": "https://atomsai.com/industries/healthcare"
+        },
+        {
+          "name": "Logistics",
+          "href": "https://atomsai.com/industries/logistics"
+        },
+        {
+          "name": "All Industries",
           "href": "#industries"
         },
         {
           "name": "Company",
           "href": "https://atomsai.com/company/about"
-        },
-        {
-          "name": "JustCallCalls, messages and AI for sales and support.",
-          "href": "https://justcall.io/"
-        },
-        {
-          "name": "HelpwiseOne shared inbox for customer conversations.",
-          "href": "https://helpwise.io/"
-        },
-        {
-          "name": "ServiceAgentAI for calls, bookings and home-service admin.",
-          "href": "https://serviceagent.ai/"
-        },
-        {
-          "name": "CallPageTurn website visits into callbacks and meetings.",
-          "href": "https://www.callpage.io/"
         },
         {
           "name": "Contact AtomsAI",
@@ -159,28 +175,28 @@
       ],
       "opening": [
         {
-          "time": 0.10000038146972656,
+          "time": 0,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 15.800000190734863,
+          "time": 5.299999713897705,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 32.5,
+          "time": 20.799999713897705,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 48.80000019073486,
+          "time": 38.5,
           "open": true,
           "modal": true,
           "state": "opening",
@@ -188,299 +204,19 @@
           "expanded": "true"
         },
         {
-          "time": 65,
+          "time": 105.2999997138977,
           "open": true,
           "modal": true,
           "state": "opening",
-          "opacity": 0.3052,
+          "opacity": 0.657,
           "expanded": "true"
         },
         {
-          "time": 82.5,
+          "time": 2054.3999996185303,
           "open": true,
           "modal": true,
           "state": "opening",
-          "opacity": 0.4457,
-          "expanded": "true"
-        },
-        {
-          "time": 98.30000019073486,
-          "open": true,
-          "modal": true,
-          "state": "opening",
-          "opacity": 0.5536,
-          "expanded": "true"
-        },
-        {
-          "time": 115.30000019073486,
-          "open": true,
-          "modal": true,
-          "state": "opening",
-          "opacity": 0.6517,
-          "expanded": "true"
-        },
-        {
-          "time": 132.60000038146973,
-          "open": true,
-          "modal": true,
-          "state": "opening",
-          "opacity": 0.7343,
-          "expanded": "true"
-        },
-        {
-          "time": 148.60000038146973,
-          "open": true,
-          "modal": true,
-          "state": "opening",
-          "opacity": 0.7991,
-          "expanded": "true"
-        },
-        {
-          "time": 165.90000009536743,
-          "open": true,
-          "modal": true,
-          "state": "opening",
-          "opacity": 0.8553,
-          "expanded": "true"
-        },
-        {
-          "time": 182.5,
-          "open": true,
-          "modal": true,
-          "state": "opening",
-          "opacity": 0.8999,
-          "expanded": "true"
-        },
-        {
-          "time": 199.40000009536743,
-          "open": true,
-          "modal": true,
-          "state": "opening",
-          "opacity": 0.9343,
-          "expanded": "true"
-        },
-        {
-          "time": 215.7000002861023,
-          "open": true,
-          "modal": true,
-          "state": "opening",
-          "opacity": 0.9584,
-          "expanded": "true"
-        },
-        {
-          "time": 232.40000009536743,
-          "open": true,
-          "modal": true,
-          "state": "opening",
-          "opacity": 0.9767,
-          "expanded": "true"
-        },
-        {
-          "time": 249.10000038146973,
-          "open": true,
-          "modal": true,
-          "state": "opening",
-          "opacity": 0.9886,
-          "expanded": "true"
-        },
-        {
-          "time": 265.80000019073486,
-          "open": true,
-          "modal": true,
-          "state": "opening",
-          "opacity": 0.9953,
-          "expanded": "true"
-        },
-        {
-          "time": 282.40000009536743,
-          "open": true,
-          "modal": true,
-          "state": "opening",
-          "opacity": 0.9988,
-          "expanded": "true"
-        },
-        {
-          "time": 298.5,
-          "open": true,
-          "modal": true,
-          "state": "opening",
-          "opacity": 0.9999,
-          "expanded": "true"
-        },
-        {
-          "time": 315.6000003814697,
-          "open": true,
-          "modal": true,
-          "state": "opening",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 332.5,
-          "open": true,
-          "modal": true,
-          "state": "opening",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 348.6000003814697,
-          "open": true,
-          "modal": true,
-          "state": "opening",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 364.90000009536743,
-          "open": true,
-          "modal": true,
-          "state": "opening",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 382.40000009536743,
-          "open": true,
-          "modal": true,
-          "state": "opening",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 399.1000003814697,
-          "open": true,
-          "modal": true,
-          "state": "open",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 415.7000002861023,
-          "open": true,
-          "modal": true,
-          "state": "open",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 432.5,
-          "open": true,
-          "modal": true,
-          "state": "open",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 449.1000003814697,
-          "open": true,
-          "modal": true,
-          "state": "open",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 465.90000009536743,
-          "open": true,
-          "modal": true,
-          "state": "open",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 482.2000002861023,
-          "open": true,
-          "modal": true,
-          "state": "open",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 498.30000019073486,
-          "open": true,
-          "modal": true,
-          "state": "open",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 515.8000001907349,
-          "open": true,
-          "modal": true,
-          "state": "open",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 532.4000000953674,
-          "open": true,
-          "modal": true,
-          "state": "open",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 548.9000000953674,
-          "open": true,
-          "modal": true,
-          "state": "open",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 565.1000003814697,
-          "open": true,
-          "modal": true,
-          "state": "open",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 582.4000000953674,
-          "open": true,
-          "modal": true,
-          "state": "open",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 599.2000002861023,
-          "open": true,
-          "modal": true,
-          "state": "open",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 615.7000002861023,
-          "open": true,
-          "modal": true,
-          "state": "open",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 631.9000000953674,
-          "open": true,
-          "modal": true,
-          "state": "open",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 649.2000002861023,
-          "open": true,
-          "modal": true,
-          "state": "open",
-          "opacity": 1,
-          "expanded": "true"
-        },
-        {
-          "time": 665.8000001907349,
-          "open": true,
-          "modal": true,
-          "state": "open",
-          "opacity": 1,
+          "opacity": 0.8027,
           "expanded": "true"
         }
       ],
@@ -494,7 +230,7 @@
           "expanded": "true"
         },
         {
-          "time": 11.5,
+          "time": 10.400000095367432,
           "open": true,
           "modal": true,
           "state": "closing",
@@ -502,7 +238,7 @@
           "expanded": "true"
         },
         {
-          "time": 28.300000190734863,
+          "time": 31.59999990463257,
           "open": true,
           "modal": true,
           "state": "closing",
@@ -510,71 +246,63 @@
           "expanded": "true"
         },
         {
-          "time": 45.09999990463257,
+          "time": 44.59999990463257,
           "open": true,
           "modal": true,
           "state": "closing",
-          "opacity": 0.9996,
+          "opacity": 0.9999,
           "expanded": "true"
         },
         {
-          "time": 61.80000019073486,
+          "time": 65.69999980926514,
           "open": true,
           "modal": true,
           "state": "closing",
-          "opacity": 0.9928,
+          "opacity": 0.992,
           "expanded": "true"
         },
         {
-          "time": 78.40000009536743,
+          "time": 82.5,
           "open": true,
           "modal": true,
           "state": "closing",
-          "opacity": 0.969,
+          "opacity": 0.9668,
           "expanded": "true"
         },
         {
-          "time": 95.09999990463257,
+          "time": 103.59999990463257,
           "open": true,
           "modal": true,
           "state": "closing",
-          "opacity": 0.9213,
+          "opacity": 0.8952,
           "expanded": "true"
         },
         {
-          "time": 111.69999980926514,
+          "time": 119.40000009536743,
           "open": true,
           "modal": true,
           "state": "closing",
-          "opacity": 0.8336,
+          "opacity": 0.7991,
           "expanded": "true"
         },
         {
-          "time": 127.80000019073486,
+          "time": 140.5,
           "open": true,
           "modal": true,
           "state": "closing",
-          "opacity": 0.7069,
+          "opacity": 0.6018,
           "expanded": "true"
         },
         {
-          "time": 145,
+          "time": 161.59999990463257,
           "open": true,
           "modal": true,
           "state": "closing",
-          "opacity": 0.5149,
+          "opacity": 0.3052,
           "expanded": "true"
         },
         {
-          "time": 160.69999980926514,
-          "open": true,
-          "modal": true,
-          "state": "closing",
-          "opacity": 0.271,
-          "expanded": "true"
-        },
-        {
-          "time": 179.69999980926514,
+          "time": 181,
           "open": false,
           "modal": false,
           "state": "closing",
@@ -582,119 +310,119 @@
           "expanded": "true"
         },
         {
-          "time": 194.69999980926514,
+          "time": 194.7999997138977,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 211.40000009536743,
+          "time": 207.2999997138977,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 227.40000009536743,
+          "time": 224,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 244,
+          "time": 240.59999990463257,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 261.59999990463257,
+          "time": 257.5,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 278.30000019073486,
+          "time": 274,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 294.40000009536743,
+          "time": 290.69999980926514,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 311.69999980926514,
+          "time": 307.2999997138977,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 327.80000019073486,
+          "time": 324.09999990463257,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 344.69999980926514,
+          "time": 340.69999980926514,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 360.80000019073486,
+          "time": 357.2999997138977,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 378.30000019073486,
+          "time": 374.09999990463257,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 395,
+          "time": 390.59999990463257,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 411.59999990463257,
+          "time": 406.5,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 427.5,
+          "time": 423.09999990463257,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 444.5,
+          "time": 440.59999990463257,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 461.59999990463257,
+          "time": 457.2999997138977,
           "open": false,
           "modal": false,
           "opacity": 1,
@@ -741,40 +469,56 @@
       "topbarHeight": 96,
       "links": [
         {
-          "name": "Applications",
+          "name": "JustCall",
+          "href": "https://justcall.io/"
+        },
+        {
+          "name": "Helpwise",
+          "href": "https://helpwise.io/"
+        },
+        {
+          "name": "ServiceAgent",
+          "href": "https://serviceagent.ai/"
+        },
+        {
+          "name": "CallPage",
+          "href": "https://www.callpage.io/"
+        },
+        {
+          "name": "All Applications",
           "href": "#applications"
         },
         {
-          "name": "Infrastructure",
+          "name": "Explore PyAI",
           "href": "https://pyai.com/"
+        },
+        {
+          "name": "Try the playground",
+          "href": "https://pyai.com/playground"
         },
         {
           "name": "AI Services",
           "href": "#offerings"
         },
         {
-          "name": "Industries",
+          "name": "Insurance",
+          "href": "https://atomsai.com/industries/insurance"
+        },
+        {
+          "name": "Healthcare",
+          "href": "https://atomsai.com/industries/healthcare"
+        },
+        {
+          "name": "Logistics",
+          "href": "https://atomsai.com/industries/logistics"
+        },
+        {
+          "name": "All Industries",
           "href": "#industries"
         },
         {
           "name": "Company",
           "href": "https://atomsai.com/company/about"
-        },
-        {
-          "name": "JustCallCalls, messages and AI for sales and support.",
-          "href": "https://justcall.io/"
-        },
-        {
-          "name": "HelpwiseOne shared inbox for customer conversations.",
-          "href": "https://helpwise.io/"
-        },
-        {
-          "name": "ServiceAgentAI for calls, bookings and home-service admin.",
-          "href": "https://serviceagent.ai/"
-        },
-        {
-          "name": "CallPageTurn website visits into callbacks and meetings.",
-          "href": "https://www.callpage.io/"
         },
         {
           "name": "Contact AtomsAI",
@@ -828,40 +572,56 @@
       "topbarHeight": 80,
       "links": [
         {
-          "name": "Applications",
+          "name": "JustCall",
+          "href": "https://justcall.io/"
+        },
+        {
+          "name": "Helpwise",
+          "href": "https://helpwise.io/"
+        },
+        {
+          "name": "ServiceAgent",
+          "href": "https://serviceagent.ai/"
+        },
+        {
+          "name": "CallPage",
+          "href": "https://www.callpage.io/"
+        },
+        {
+          "name": "All Applications",
           "href": "#applications"
         },
         {
-          "name": "Infrastructure",
+          "name": "Explore PyAI",
           "href": "https://pyai.com/"
+        },
+        {
+          "name": "Try the playground",
+          "href": "https://pyai.com/playground"
         },
         {
           "name": "AI Services",
           "href": "#offerings"
         },
         {
-          "name": "Industries",
+          "name": "Insurance",
+          "href": "https://atomsai.com/industries/insurance"
+        },
+        {
+          "name": "Healthcare",
+          "href": "https://atomsai.com/industries/healthcare"
+        },
+        {
+          "name": "Logistics",
+          "href": "https://atomsai.com/industries/logistics"
+        },
+        {
+          "name": "All Industries",
           "href": "#industries"
         },
         {
           "name": "Company",
           "href": "https://atomsai.com/company/about"
-        },
-        {
-          "name": "JustCallCalls, messages and AI for sales and support.",
-          "href": "https://justcall.io/"
-        },
-        {
-          "name": "HelpwiseOne shared inbox for customer conversations.",
-          "href": "https://helpwise.io/"
-        },
-        {
-          "name": "ServiceAgentAI for calls, bookings and home-service admin.",
-          "href": "https://serviceagent.ai/"
-        },
-        {
-          "name": "CallPageTurn website visits into callbacks and meetings.",
-          "href": "https://www.callpage.io/"
         },
         {
           "name": "Contact AtomsAI",
@@ -917,40 +677,56 @@
       "topbarHeight": 80,
       "links": [
         {
-          "name": "Applications",
+          "name": "JustCall",
+          "href": "https://justcall.io/"
+        },
+        {
+          "name": "Helpwise",
+          "href": "https://helpwise.io/"
+        },
+        {
+          "name": "ServiceAgent",
+          "href": "https://serviceagent.ai/"
+        },
+        {
+          "name": "CallPage",
+          "href": "https://www.callpage.io/"
+        },
+        {
+          "name": "All Applications",
           "href": "#applications"
         },
         {
-          "name": "Infrastructure",
+          "name": "Explore PyAI",
           "href": "https://pyai.com/"
+        },
+        {
+          "name": "Try the playground",
+          "href": "https://pyai.com/playground"
         },
         {
           "name": "AI Services",
           "href": "#offerings"
         },
         {
-          "name": "Industries",
+          "name": "Insurance",
+          "href": "https://atomsai.com/industries/insurance"
+        },
+        {
+          "name": "Healthcare",
+          "href": "https://atomsai.com/industries/healthcare"
+        },
+        {
+          "name": "Logistics",
+          "href": "https://atomsai.com/industries/logistics"
+        },
+        {
+          "name": "All Industries",
           "href": "#industries"
         },
         {
           "name": "Company",
           "href": "https://atomsai.com/company/about"
-        },
-        {
-          "name": "JustCallCalls, messages and AI for sales and support.",
-          "href": "https://justcall.io/"
-        },
-        {
-          "name": "HelpwiseOne shared inbox for customer conversations.",
-          "href": "https://helpwise.io/"
-        },
-        {
-          "name": "ServiceAgentAI for calls, bookings and home-service admin.",
-          "href": "https://serviceagent.ai/"
-        },
-        {
-          "name": "CallPageTurn website visits into callbacks and meetings.",
-          "href": "https://www.callpage.io/"
         },
         {
           "name": "Contact AtomsAI",
@@ -1006,40 +782,56 @@
       "topbarHeight": 80,
       "links": [
         {
-          "name": "Applications",
+          "name": "JustCall",
+          "href": "https://justcall.io/"
+        },
+        {
+          "name": "Helpwise",
+          "href": "https://helpwise.io/"
+        },
+        {
+          "name": "ServiceAgent",
+          "href": "https://serviceagent.ai/"
+        },
+        {
+          "name": "CallPage",
+          "href": "https://www.callpage.io/"
+        },
+        {
+          "name": "All Applications",
           "href": "#applications"
         },
         {
-          "name": "Infrastructure",
+          "name": "Explore PyAI",
           "href": "https://pyai.com/"
+        },
+        {
+          "name": "Try the playground",
+          "href": "https://pyai.com/playground"
         },
         {
           "name": "AI Services",
           "href": "#offerings"
         },
         {
-          "name": "Industries",
+          "name": "Insurance",
+          "href": "https://atomsai.com/industries/insurance"
+        },
+        {
+          "name": "Healthcare",
+          "href": "https://atomsai.com/industries/healthcare"
+        },
+        {
+          "name": "Logistics",
+          "href": "https://atomsai.com/industries/logistics"
+        },
+        {
+          "name": "All Industries",
           "href": "#industries"
         },
         {
           "name": "Company",
           "href": "https://atomsai.com/company/about"
-        },
-        {
-          "name": "JustCallCalls, messages and AI for sales and support.",
-          "href": "https://justcall.io/"
-        },
-        {
-          "name": "HelpwiseOne shared inbox for customer conversations.",
-          "href": "https://helpwise.io/"
-        },
-        {
-          "name": "ServiceAgentAI for calls, bookings and home-service admin.",
-          "href": "https://serviceagent.ai/"
-        },
-        {
-          "name": "CallPageTurn website visits into callbacks and meetings.",
-          "href": "https://www.callpage.io/"
         },
         {
           "name": "Contact AtomsAI",
@@ -1095,40 +887,56 @@
       "topbarHeight": 96,
       "links": [
         {
-          "name": "Applications",
+          "name": "JustCall",
+          "href": "https://justcall.io/"
+        },
+        {
+          "name": "Helpwise",
+          "href": "https://helpwise.io/"
+        },
+        {
+          "name": "ServiceAgent",
+          "href": "https://serviceagent.ai/"
+        },
+        {
+          "name": "CallPage",
+          "href": "https://www.callpage.io/"
+        },
+        {
+          "name": "All Applications",
           "href": "#applications"
         },
         {
-          "name": "Infrastructure",
+          "name": "Explore PyAI",
           "href": "https://pyai.com/"
+        },
+        {
+          "name": "Try the playground",
+          "href": "https://pyai.com/playground"
         },
         {
           "name": "AI Services",
           "href": "#offerings"
         },
         {
-          "name": "Industries",
+          "name": "Insurance",
+          "href": "https://atomsai.com/industries/insurance"
+        },
+        {
+          "name": "Healthcare",
+          "href": "https://atomsai.com/industries/healthcare"
+        },
+        {
+          "name": "Logistics",
+          "href": "https://atomsai.com/industries/logistics"
+        },
+        {
+          "name": "All Industries",
           "href": "#industries"
         },
         {
           "name": "Company",
           "href": "https://atomsai.com/company/about"
-        },
-        {
-          "name": "JustCallCalls, messages and AI for sales and support.",
-          "href": "https://justcall.io/"
-        },
-        {
-          "name": "HelpwiseOne shared inbox for customer conversations.",
-          "href": "https://helpwise.io/"
-        },
-        {
-          "name": "ServiceAgentAI for calls, bookings and home-service admin.",
-          "href": "https://serviceagent.ai/"
-        },
-        {
-          "name": "CallPageTurn website visits into callbacks and meetings.",
-          "href": "https://www.callpage.io/"
         },
         {
           "name": "Contact AtomsAI",
@@ -1211,14 +1019,21 @@
       ],
       "opening": [
         {
-          "time": 1,
+          "time": 0,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 3,
+          "time": 5,
+          "open": false,
+          "modal": false,
+          "opacity": 1,
+          "expanded": "false"
+        },
+        {
+          "time": 18,
           "open": false,
           "modal": false,
           "opacity": 1,
@@ -1232,45 +1047,30 @@
           "expanded": "false"
         },
         {
-          "time": 36,
+          "time": 20,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 37,
-          "open": false,
-          "modal": false,
-          "opacity": 1,
-          "expanded": "false"
-        },
-        {
-          "time": 68,
+          "time": 59,
           "open": true,
           "modal": true,
           "state": "opening",
-          "opacity": 0.2967,
+          "opacity": 0.3624,
           "expanded": "true"
         },
         {
-          "time": 111,
+          "time": 105,
           "open": true,
           "modal": true,
           "state": "opening",
-          "opacity": 0.6075,
+          "opacity": 0.6725,
           "expanded": "true"
         },
         {
-          "time": 119,
-          "open": true,
-          "modal": true,
-          "state": "opening",
-          "opacity": 0.6517,
-          "expanded": "true"
-        },
-        {
-          "time": 137,
+          "time": 118,
           "open": true,
           "modal": true,
           "state": "opening",
@@ -1278,15 +1078,15 @@
           "expanded": "true"
         },
         {
-          "time": 152,
+          "time": 135,
           "open": true,
           "modal": true,
           "state": "opening",
-          "opacity": 0.7991,
+          "opacity": 0.8027,
           "expanded": "true"
         },
         {
-          "time": 169,
+          "time": 151,
           "open": true,
           "modal": true,
           "state": "opening",
@@ -1294,7 +1094,7 @@
           "expanded": "true"
         },
         {
-          "time": 186,
+          "time": 167,
           "open": true,
           "modal": true,
           "state": "opening",
@@ -1302,15 +1102,15 @@
           "expanded": "true"
         },
         {
-          "time": 202,
+          "time": 186,
           "open": true,
           "modal": true,
           "state": "opening",
-          "opacity": 0.9325,
+          "opacity": 0.9343,
           "expanded": "true"
         },
         {
-          "time": 219,
+          "time": 201,
           "open": true,
           "modal": true,
           "state": "opening",
@@ -1318,15 +1118,15 @@
           "expanded": "true"
         },
         {
-          "time": 236,
+          "time": 218,
           "open": true,
           "modal": true,
           "state": "opening",
-          "opacity": 0.9758,
+          "opacity": 0.9767,
           "expanded": "true"
         },
         {
-          "time": 252,
+          "time": 234,
           "open": true,
           "modal": true,
           "state": "opening",
@@ -1334,23 +1134,23 @@
           "expanded": "true"
         },
         {
-          "time": 269,
+          "time": 250,
           "open": true,
           "modal": true,
           "state": "opening",
-          "opacity": 0.9953,
+          "opacity": 0.995,
           "expanded": "true"
         },
         {
-          "time": 286,
+          "time": 268,
           "open": true,
           "modal": true,
           "state": "opening",
-          "opacity": 0.9986,
+          "opacity": 0.9988,
           "expanded": "true"
         },
         {
-          "time": 303,
+          "time": 285,
           "open": true,
           "modal": true,
           "state": "opening",
@@ -1358,7 +1158,7 @@
           "expanded": "true"
         },
         {
-          "time": 319,
+          "time": 301,
           "open": true,
           "modal": true,
           "state": "opening",
@@ -1366,7 +1166,7 @@
           "expanded": "true"
         },
         {
-          "time": 336,
+          "time": 318,
           "open": true,
           "modal": true,
           "state": "opening",
@@ -1374,7 +1174,7 @@
           "expanded": "true"
         },
         {
-          "time": 352,
+          "time": 335,
           "open": true,
           "modal": true,
           "state": "opening",
@@ -1382,7 +1182,7 @@
           "expanded": "true"
         },
         {
-          "time": 369,
+          "time": 350,
           "open": true,
           "modal": true,
           "state": "opening",
@@ -1390,7 +1190,7 @@
           "expanded": "true"
         },
         {
-          "time": 386,
+          "time": 368,
           "open": true,
           "modal": true,
           "state": "opening",
@@ -1398,7 +1198,7 @@
           "expanded": "true"
         },
         {
-          "time": 402,
+          "time": 385,
           "open": true,
           "modal": true,
           "state": "open",
@@ -1406,7 +1206,7 @@
           "expanded": "true"
         },
         {
-          "time": 425,
+          "time": 401,
           "open": true,
           "modal": true,
           "state": "open",
@@ -1414,7 +1214,15 @@
           "expanded": "true"
         },
         {
-          "time": 436,
+          "time": 418,
+          "open": true,
+          "modal": true,
+          "state": "open",
+          "opacity": 1,
+          "expanded": "true"
+        },
+        {
+          "time": 434,
           "open": true,
           "modal": true,
           "state": "open",
@@ -1430,7 +1238,7 @@
           "expanded": "true"
         },
         {
-          "time": 469,
+          "time": 468,
           "open": true,
           "modal": true,
           "state": "open",
@@ -1438,7 +1246,7 @@
           "expanded": "true"
         },
         {
-          "time": 486,
+          "time": 484,
           "open": true,
           "modal": true,
           "state": "open",
@@ -1446,7 +1254,7 @@
           "expanded": "true"
         },
         {
-          "time": 502,
+          "time": 501,
           "open": true,
           "modal": true,
           "state": "open",
@@ -1454,7 +1262,7 @@
           "expanded": "true"
         },
         {
-          "time": 519,
+          "time": 518,
           "open": true,
           "modal": true,
           "state": "open",
@@ -1462,7 +1270,7 @@
           "expanded": "true"
         },
         {
-          "time": 537,
+          "time": 535,
           "open": true,
           "modal": true,
           "state": "open",
@@ -1478,7 +1286,7 @@
           "expanded": "true"
         },
         {
-          "time": 569,
+          "time": 568,
           "open": true,
           "modal": true,
           "state": "open",
@@ -1494,7 +1302,7 @@
           "expanded": "true"
         },
         {
-          "time": 602,
+          "time": 601,
           "open": true,
           "modal": true,
           "state": "open",
@@ -1502,7 +1310,7 @@
           "expanded": "true"
         },
         {
-          "time": 619,
+          "time": 618,
           "open": true,
           "modal": true,
           "state": "open",
@@ -1510,7 +1318,7 @@
           "expanded": "true"
         },
         {
-          "time": 636,
+          "time": 635,
           "open": true,
           "modal": true,
           "state": "open",
@@ -1518,7 +1326,7 @@
           "expanded": "true"
         },
         {
-          "time": 652,
+          "time": 651,
           "open": true,
           "modal": true,
           "state": "open",
@@ -1536,7 +1344,7 @@
           "expanded": "true"
         },
         {
-          "time": 13,
+          "time": 12,
           "open": true,
           "modal": true,
           "state": "closing",
@@ -1544,7 +1352,7 @@
           "expanded": "true"
         },
         {
-          "time": 30,
+          "time": 28,
           "open": true,
           "modal": true,
           "state": "closing",
@@ -1552,31 +1360,31 @@
           "expanded": "true"
         },
         {
-          "time": 46,
+          "time": 44,
           "open": true,
           "modal": true,
           "state": "closing",
-          "opacity": 0.9996,
+          "opacity": 0.9997,
           "expanded": "true"
         },
         {
-          "time": 63,
+          "time": 61,
           "open": true,
           "modal": true,
           "state": "closing",
-          "opacity": 0.9928,
+          "opacity": 0.9936,
           "expanded": "true"
         },
         {
-          "time": 80,
+          "time": 79,
           "open": true,
           "modal": true,
           "state": "closing",
-          "opacity": 0.971,
+          "opacity": 0.969,
           "expanded": "true"
         },
         {
-          "time": 96,
+          "time": 95,
           "open": true,
           "modal": true,
           "state": "closing",
@@ -1584,7 +1392,7 @@
           "expanded": "true"
         },
         {
-          "time": 113,
+          "time": 112,
           "open": true,
           "modal": true,
           "state": "closing",
@@ -1592,7 +1400,7 @@
           "expanded": "true"
         },
         {
-          "time": 130,
+          "time": 128,
           "open": true,
           "modal": true,
           "state": "closing",
@@ -1600,7 +1408,7 @@
           "expanded": "true"
         },
         {
-          "time": 146,
+          "time": 145,
           "open": true,
           "modal": true,
           "state": "closing",
@@ -1608,7 +1416,7 @@
           "expanded": "true"
         },
         {
-          "time": 163,
+          "time": 162,
           "open": true,
           "modal": true,
           "state": "closing",
@@ -1616,7 +1424,7 @@
           "expanded": "true"
         },
         {
-          "time": 188,
+          "time": 193,
           "open": false,
           "modal": false,
           "state": "closing",
@@ -1624,112 +1432,119 @@
           "expanded": "true"
         },
         {
-          "time": 224,
+          "time": 207,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 230,
+          "time": 213,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 246,
+          "time": 228,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 263,
+          "time": 245,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 279,
+          "time": 262,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 297,
+          "time": 278,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 313,
+          "time": 295,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 330,
+          "time": 312,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 346,
+          "time": 328,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 363,
+          "time": 345,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 380,
+          "time": 361,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 396,
+          "time": 377,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 413,
+          "time": 395,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 430,
+          "time": 412,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 446,
+          "time": 428,
           "open": false,
           "modal": false,
           "opacity": 1,
           "expanded": "false"
         },
         {
-          "time": 463,
+          "time": 445,
+          "open": false,
+          "modal": false,
+          "opacity": 1,
+          "expanded": "false"
+        },
+        {
+          "time": 462,
           "open": false,
           "modal": false,
           "opacity": 1,
@@ -1776,40 +1591,56 @@
       "topbarHeight": 96,
       "links": [
         {
-          "name": "Applications",
+          "name": "JustCall",
+          "href": "https://justcall.io/"
+        },
+        {
+          "name": "Helpwise",
+          "href": "https://helpwise.io/"
+        },
+        {
+          "name": "ServiceAgent",
+          "href": "https://serviceagent.ai/"
+        },
+        {
+          "name": "CallPage",
+          "href": "https://www.callpage.io/"
+        },
+        {
+          "name": "All Applications",
           "href": "#applications"
         },
         {
-          "name": "Infrastructure",
+          "name": "Explore PyAI",
           "href": "https://pyai.com/"
+        },
+        {
+          "name": "Try the playground",
+          "href": "https://pyai.com/playground"
         },
         {
           "name": "AI Services",
           "href": "#offerings"
         },
         {
-          "name": "Industries",
+          "name": "Insurance",
+          "href": "https://atomsai.com/industries/insurance"
+        },
+        {
+          "name": "Healthcare",
+          "href": "https://atomsai.com/industries/healthcare"
+        },
+        {
+          "name": "Logistics",
+          "href": "https://atomsai.com/industries/logistics"
+        },
+        {
+          "name": "All Industries",
           "href": "#industries"
         },
         {
           "name": "Company",
           "href": "https://atomsai.com/company/about"
-        },
-        {
-          "name": "JustCallCalls, messages and AI for sales and support.",
-          "href": "https://justcall.io/"
-        },
-        {
-          "name": "HelpwiseOne shared inbox for customer conversations.",
-          "href": "https://helpwise.io/"
-        },
-        {
-          "name": "ServiceAgentAI for calls, bookings and home-service admin.",
-          "href": "https://serviceagent.ai/"
-        },
-        {
-          "name": "CallPageTurn website visits into callbacks and meetings.",
-          "href": "https://www.callpage.io/"
         },
         {
           "name": "Contact AtomsAI",
@@ -1863,40 +1694,56 @@
       "topbarHeight": 80,
       "links": [
         {
-          "name": "Applications",
+          "name": "JustCall",
+          "href": "https://justcall.io/"
+        },
+        {
+          "name": "Helpwise",
+          "href": "https://helpwise.io/"
+        },
+        {
+          "name": "ServiceAgent",
+          "href": "https://serviceagent.ai/"
+        },
+        {
+          "name": "CallPage",
+          "href": "https://www.callpage.io/"
+        },
+        {
+          "name": "All Applications",
           "href": "#applications"
         },
         {
-          "name": "Infrastructure",
+          "name": "Explore PyAI",
           "href": "https://pyai.com/"
+        },
+        {
+          "name": "Try the playground",
+          "href": "https://pyai.com/playground"
         },
         {
           "name": "AI Services",
           "href": "#offerings"
         },
         {
-          "name": "Industries",
+          "name": "Insurance",
+          "href": "https://atomsai.com/industries/insurance"
+        },
+        {
+          "name": "Healthcare",
+          "href": "https://atomsai.com/industries/healthcare"
+        },
+        {
+          "name": "Logistics",
+          "href": "https://atomsai.com/industries/logistics"
+        },
+        {
+          "name": "All Industries",
           "href": "#industries"
         },
         {
           "name": "Company",
           "href": "https://atomsai.com/company/about"
-        },
-        {
-          "name": "JustCallCalls, messages and AI for sales and support.",
-          "href": "https://justcall.io/"
-        },
-        {
-          "name": "HelpwiseOne shared inbox for customer conversations.",
-          "href": "https://helpwise.io/"
-        },
-        {
-          "name": "ServiceAgentAI for calls, bookings and home-service admin.",
-          "href": "https://serviceagent.ai/"
-        },
-        {
-          "name": "CallPageTurn website visits into callbacks and meetings.",
-          "href": "https://www.callpage.io/"
         },
         {
           "name": "Contact AtomsAI",
@@ -1952,40 +1799,56 @@
       "topbarHeight": 80,
       "links": [
         {
-          "name": "Applications",
+          "name": "JustCall",
+          "href": "https://justcall.io/"
+        },
+        {
+          "name": "Helpwise",
+          "href": "https://helpwise.io/"
+        },
+        {
+          "name": "ServiceAgent",
+          "href": "https://serviceagent.ai/"
+        },
+        {
+          "name": "CallPage",
+          "href": "https://www.callpage.io/"
+        },
+        {
+          "name": "All Applications",
           "href": "#applications"
         },
         {
-          "name": "Infrastructure",
+          "name": "Explore PyAI",
           "href": "https://pyai.com/"
+        },
+        {
+          "name": "Try the playground",
+          "href": "https://pyai.com/playground"
         },
         {
           "name": "AI Services",
           "href": "#offerings"
         },
         {
-          "name": "Industries",
+          "name": "Insurance",
+          "href": "https://atomsai.com/industries/insurance"
+        },
+        {
+          "name": "Healthcare",
+          "href": "https://atomsai.com/industries/healthcare"
+        },
+        {
+          "name": "Logistics",
+          "href": "https://atomsai.com/industries/logistics"
+        },
+        {
+          "name": "All Industries",
           "href": "#industries"
         },
         {
           "name": "Company",
           "href": "https://atomsai.com/company/about"
-        },
-        {
-          "name": "JustCallCalls, messages and AI for sales and support.",
-          "href": "https://justcall.io/"
-        },
-        {
-          "name": "HelpwiseOne shared inbox for customer conversations.",
-          "href": "https://helpwise.io/"
-        },
-        {
-          "name": "ServiceAgentAI for calls, bookings and home-service admin.",
-          "href": "https://serviceagent.ai/"
-        },
-        {
-          "name": "CallPageTurn website visits into callbacks and meetings.",
-          "href": "https://www.callpage.io/"
         },
         {
           "name": "Contact AtomsAI",
@@ -2041,40 +1904,56 @@
       "topbarHeight": 80,
       "links": [
         {
-          "name": "Applications",
+          "name": "JustCall",
+          "href": "https://justcall.io/"
+        },
+        {
+          "name": "Helpwise",
+          "href": "https://helpwise.io/"
+        },
+        {
+          "name": "ServiceAgent",
+          "href": "https://serviceagent.ai/"
+        },
+        {
+          "name": "CallPage",
+          "href": "https://www.callpage.io/"
+        },
+        {
+          "name": "All Applications",
           "href": "#applications"
         },
         {
-          "name": "Infrastructure",
+          "name": "Explore PyAI",
           "href": "https://pyai.com/"
+        },
+        {
+          "name": "Try the playground",
+          "href": "https://pyai.com/playground"
         },
         {
           "name": "AI Services",
           "href": "#offerings"
         },
         {
-          "name": "Industries",
+          "name": "Insurance",
+          "href": "https://atomsai.com/industries/insurance"
+        },
+        {
+          "name": "Healthcare",
+          "href": "https://atomsai.com/industries/healthcare"
+        },
+        {
+          "name": "Logistics",
+          "href": "https://atomsai.com/industries/logistics"
+        },
+        {
+          "name": "All Industries",
           "href": "#industries"
         },
         {
           "name": "Company",
           "href": "https://atomsai.com/company/about"
-        },
-        {
-          "name": "JustCallCalls, messages and AI for sales and support.",
-          "href": "https://justcall.io/"
-        },
-        {
-          "name": "HelpwiseOne shared inbox for customer conversations.",
-          "href": "https://helpwise.io/"
-        },
-        {
-          "name": "ServiceAgentAI for calls, bookings and home-service admin.",
-          "href": "https://serviceagent.ai/"
-        },
-        {
-          "name": "CallPageTurn website visits into callbacks and meetings.",
-          "href": "https://www.callpage.io/"
         },
         {
           "name": "Contact AtomsAI",

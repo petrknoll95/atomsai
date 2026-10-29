@@ -1,0 +1,162 @@
+[
+  {
+    "browser": "chromium",
+    "width": 1440,
+    "height": 960,
+    "opacities": [
+      0.0233,
+      0.269,
+      0.7919,
+      0.9865,
+      1,
+      1,
+      1,
+      1
+    ],
+    "alignment": 0,
+    "keyboard": true,
+    "reducedMotion": true,
+    "navigation": true,
+    "errors": []
+  },
+  {
+    "browser": "chromium",
+    "width": 390,
+    "height": 844,
+    "opacities": [
+      0.0007,
+      0.1481,
+      0.6515,
+      0.9153,
+      0.9947,
+      1,
+      1,
+      1
+    ],
+    "alignment": 0,
+    "keyboard": true,
+    "reducedMotion": true,
+    "navigation": true,
+    "errors": []
+  },
+  {
+    "browser": "chromium",
+    "width": 320,
+    "height": 568,
+    "opacities": [
+      0,
+      0.0174,
+      0.1481,
+      0.5,
+      0.8519,
+      0.9815,
+      1,
+      1
+    ],
+    "alignment": 0,
+    "keyboard": true,
+    "reducedMotion": true,
+    "navigation": true,
+    "errors": []
+  },
+  {
+    "browser": "chromium",
+    "width": 568,
+    "height": 320,
+    "opacities": [
+      0,
+      0.0174,
+      0.1481,
+      0.5,
+      0.8519,
+      0.9803,
+      1,
+      1
+    ],
+    "alignment": 0,
+    "keyboard": true,
+    "reducedMotion": true,
+    "navigation": true,
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "width": 1440,
+    "height": 960,
+    "opacities": [
+      0.0009,
+      0.0446,
+      0.2434,
+      0.6515,
+      0.9183,
+      0.9951,
+      1,
+      1
+    ],
+    "alignment": 0,
+    "keyboard": true,
+    "reducedMotion": true,
+    "navigation": true,
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "width": 390,
+    "height": 844,
+    "opacities": [
+      0,
+      0.0185,
+      0.1481,
+      0.5,
+      0.8519,
+      0.9815,
+      1,
+      1
+    ],
+    "alignment": 0,
+    "keyboard": true,
+    "reducedMotion": true,
+    "navigation": true,
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "width": 320,
+    "height": 568,
+    "opacities": [
+      0,
+      0.0185,
+      0.1481,
+      0.5,
+      0.8519,
+      0.9815,
+      1,
+      1
+    ],
+    "alignment": 0,
+    "keyboard": true,
+    "reducedMotion": true,
+    "navigation": true,
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "width": 568,
+    "height": 320,
+    "opacities": [
+      0,
+      0.0185,
+      0.1481,
+      0.5,
+      0.8519,
+      0.9826,
+      1,
+      1
+    ],
+    "alignment": 0,
+    "keyboard": true,
+    "reducedMotion": true,
+    "navigation": true,
+    "errors": []
+  }
+]

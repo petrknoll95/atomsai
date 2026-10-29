@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { chromium, webkit, expect } from '@playwright/test';
 
-const base = process.env.VISUAL_URL || 'http://127.0.0.1:3000';
+const base = process.env.VISUAL_URL || 'http://127.0.0.1:3001';
 const output = path.resolve('docs/visual/fullscreen-menu');
 const viewports = [
   { width: 1600, height: 960 }, { width: 768, height: 960 },
@@ -13,7 +13,7 @@ const viewports = [
 const report = { date: new Date().toISOString(), base, results: [], errors: [] };
 const originalDestinations = [
   '#applications', 'https://pyai.com/', '#offerings', '#industries',
-  'https://atomsai.com/company/about', 'https://atomsai.com/company/contact',
+  'https://atomsai.com/company/about',
 ];
 const productDestinations = ['https://justcall.io/', 'https://helpwise.io/', 'https://serviceagent.ai/', 'https://www.callpage.io/'];
 await fs.mkdir(output, { recursive: true });
@@ -67,7 +67,7 @@ async function closed(page, restoreFocus = true) {
 async function checkFocusBoundaries(page, nextKey, previousKey) {
   const dialog = menu(page);
   const controls = dialog.locator('a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex="0"]').filter({ visible: true });
-  assert(await controls.count() >= 11, 'The menu must provide a close control, six original destinations, and four product links.');
+  assert(await controls.count() >= 11, 'The menu must provide a close control, five primary destinations, and four product links.');
   await controls.last().focus();
   await page.keyboard.press(nextKey);
   await expect(controls.first()).toBeFocused();
@@ -140,15 +140,15 @@ for (const [engineName, engine] of [['chromium', chromium], ['webkit', webkit]])
         await open(page);
         await expect(menu(page)).toHaveAttribute('id', controlsId);
         result.geometry = await fullViewport(page);
-        result.topbarHeight = await menu(page).getByRole('button', { name: 'Close site menu', exact: true }).evaluate(button => button.parentElement.getBoundingClientRect().height);
-        assert(Math.abs(result.topbarHeight - (viewport.width < 768 ? 80 : 96)) <= .5, 'The menu top bar must preserve the desktop/mobile header height.');
+        result.topbarHeight = await menu(page).getByRole('button', { name: 'Close site menu', exact: true }).evaluate(button => button.parentElement.parentElement.getBoundingClientRect().height);
+        assert(Math.abs(result.topbarHeight - (viewport.width < 768 ? 64 : 72)) <= .5, 'The menu top bar must preserve the desktop/mobile pill header height.');
         assert(result.geometry.focusedInside, 'Opening the menu must move focus into the dialog.');
-        await expect(navigation(page).getByRole('link')).toHaveCount(10);
-        result.links = await navigation(page).getByRole('link').evaluateAll(links => links.map(link => ({ name: link.textContent.trim(), href: link.getAttribute('href') })));
-        assert.deepEqual(result.links.map(link => link.href).filter(href => originalDestinations.includes(href)), originalDestinations, 'The menu must preserve the original six destinations and their order.');
-        assert.deepEqual(result.links.map(link => link.href).filter(href => productDestinations.includes(href)), productDestinations, 'The supporting links must retain all four original product destinations.');
-        await expect(navigation(page).getByRole('link', { name: 'Applications', exact: true })).toHaveAttribute('href', '#applications');
-        result.checks.push('Reduced motion opens the full-viewport native modal immediately, preserving six original destinations and four product links');
+        await expect(navigation(page).getByRole('link')).toHaveCount(7);
+        result.links = await navigation(page).getByRole('link', { includeHidden: true }).evaluateAll(links => links.map(link => ({ name: link.textContent.trim(), href: link.getAttribute('href') })));
+        assert.deepEqual(result.links.map(link => link.href).filter(href => originalDestinations.includes(href)), originalDestinations, 'The menu must preserve the original five primary destinations and their order.');
+        assert.deepEqual(result.links.map(link => link.href).filter(href => productDestinations.includes(href)), productDestinations, 'The nested applications must retain all four original product destinations.');
+        await expect(navigation(page).getByRole('link', { name: 'All Applications', exact: true })).toHaveAttribute('href', '#applications');
+        result.checks.push('Reduced motion opens the full-viewport native modal immediately, preserving five primary destinations and four product links');
 
         await checkFocusBoundaries(page, nextKey, previousKey);
         result.checks.push('Forward/reverse keyboard boundaries remain inside the menu; background controls reject focus');
@@ -193,7 +193,7 @@ for (const [engineName, engine] of [['chromium', chromium], ['webkit', webkit]])
           }
           result.checks.push('The open menu survives narrow and landscape resizes while filling the new viewport');
         }
-        await navigation(page).getByRole('link', { name: 'Applications', exact: true }).click();
+        await navigation(page).getByRole('link', { name: 'All Applications', exact: true }).click();
         await closed(page, false);
         await expect(page.locator('#applications-title')).toBeFocused();
         await expect(page.locator('#applications-title')).toBeInViewport();

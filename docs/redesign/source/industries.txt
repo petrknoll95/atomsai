@@ -1,0 +1,59 @@
+INDUSTRIES
+Different worlds.
+Connected workflows.
+Every industry has its own systems, exceptions and ways of working. We build
+around yours.
+Explore your industry
+↓
+↗
+Insurance
+Quotes, service and renewals for agencies and brokers.
+↗
+↗
+Lending
+Loan inquiries, documents and payments for lenders.
+↗
+↗
+Real estate
+Leads, showings and residents for brokerages and property managers.
+↗
+↗
+Healthcare
+Front desk, scheduling and billing for medical and dental groups.
+↗
+↗
+Auto dealers
+Sales leads, service and repeat business for dealer groups.
+↗
+↗
+Retail & e-commerce
+Guided selling, stores and order support for retailers.
+↗
+↗
+Logistics
+Shipment updates, exceptions and proof of delivery for 3PLs and carriers.
+↗
+↗
+Manufacturing
+Quotes, order status and warranty support for manufacturers and distributors.
+↗
+SPECIFIC TO YOUR WORLD
+Start with the work.
+Build around the reality.
+THE CONTEXT
+Your systems already hold the story.
+Connect the data, documents and conversations your team depends on, with
+their permissions intact.
+THE WORKFLOW
+Every handoff gets a next step.
+Make the routine work repeatable and give exceptions a named owner, the
+right evidence and an explicit route.
+THE OWNERSHIP
+Your team can run what we build.
+Code, prompts, evaluations and runbooks belong in your repository. The
+workflow stays yours as it evolves.
+DON’T SEE YOUR INDUSTRY?
+Start with your workflow.
+A shared inbox, a manual review, a handoff that always stalls. Tell us where
+the work gets stuck.
+Contact us

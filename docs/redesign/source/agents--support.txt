@@ -1,0 +1,487 @@
+AtomsAI / Support agent
+Every question.
+Answered, and sorted.
+Answers from your knowledge, takes action in your systems within your rules, and hands over to your team with the full story. Chat, voice and email. Day and night.
+Contact us
+Try the chat demo
+Try the voice demo
+Works with your CRM, helpdesk, and order and billing systems.
+StrideCo Support
+Live agent
+Order
+#48213
+· delivered yesterday
+Identity verified
+My new running shoes arrived with a split sole.
+Sorry about that, Maya. Could you send a photo of the sole so I can check?
+sole-split.jpg
+Thanks, I can see the damage. I'll send a replacement in size 9. Please keep the
+shoes and the box: our courier will check them when they collect the pair.
+Replacement approved · arrives Thursday
+Courier collects and checks the damaged pair · Ticket #48213 updated in your CRM
+Policy check passed: damage shown in photo,
+within 30 days, under $200
+01 / Understand
+02 / Verify
+03 / Resolve
+04 / Improve
+Why it matters
+What it does
+Channels & stack
+Quality
+By industry
+Controls & evals
+Pricing
+Why it matters
+Busy queues.
+Waiting customers.
+Most support questions are simple to answer and slow to wait for.
+Three things keep customers in the queue.
+Queues outgrow the team
+Nights, weekends and launch days bring more questions than any team can staff for.
+Customers repeat themselves
+Every handover starts from scratch, so the customer explains the problem again.
+Answers without action
+Most chatbots stop at the FAQ. Refunds, rebookings and order changes still wait in the queue for a person.
+What it does
+Everything a great support team does.
+Instantly, at any hour.
+Resolves the issue, not just the question.
+Checks the order, the policy and its own limits, then does the work: replacements, refunds, rebookings and plan changes, right in your systems.
+Try the live demo
+Example · damaged order, online shoe store
+My new running shoes arrived with a split sole.
+Background checks run
+Identity verified
+· order number and email match
+Within the return window
+· delivered yesterday, 30 days allowed
+Damage confirmed
+· photo of the split sole
+Inside the agent's limit
+· $138 is under $200
+Replacement approved · courier to collect and check the damaged pair
+CRM updated
+Answers from your knowledge.
+Help centre, policies and past tickets, with the source behind every answer.
+Can I return shoes I've already run in?
+Yes. Running shoes can be returned within 30 days, even if worn, as long as
+they're not damaged by use.
+Source: Returns policy · updated 2
+Oct
+Checks who it's talking to.
+Verifies the customer before it shares account details or takes action.
+Order number
+#48213
+Email on the order
+maya.k•••@mail.com
+One-time code
+Sent to •••• 0142
+Follows your procedures.
+Written in plain English. Limits and approvals are enforced, not suggested.
+Your procedure, in plain English
+If an item arrives damaged within 30 days, ask for a photo first, then offer a
+replacement or a refund.
+Refunds over $200 need a manager's approval.
+Ask the customer to keep the item and box for collection.
+Hands over with the full story.
+Your team gets the issue, what was tried and how the customer feels.
+To Priya · Returns team
+Issue
+Wrong size sent twice, wants store credit
+Tried
+Exchange offered, declined
+Mood
+Frustrated
+Speaks your customer's language.
+Detects the language and replies in it, on chat, email and voice.
+¿Dónde está mi pedido?
+Tu pedido #48213 llega el jueves. Te envío el enlace de seguimiento.
+Detected Spanish · replied in Spanish
+Gets better every week.
+Groups the questions it couldn't answer and suggests the fix: a missing article, an unclear policy or an action it isn't allowed to take yet.
+This week: what customers asked that the
+agent couldn't answer
+Sizing for wide feet
+41 conversations
+→ Add the wide-fit guide
+Apply
+Gift receipts
+17 conversations
+→ Allow the agent to resend receipts
+Apply
+Sale-item exchanges
+9 conversations
+→ Clarify the exchange policy
+Apply
+Channels, capabilities and integrations
+Wherever customers ask.
+At home in your helpdesk.
+One agent and one memory across channels. A chat can become a call, and every conversation lands in your helpdesk.
+5
+Channels. One memory.
+Web chat
+Voice
+WhatsApp
+SMS
+Email
+Secure by default
+SOC 2 Type II, HIPAA and GDPR. Your data is never used to train models.
+Conversations today
+00:00 → 23:59
+Always on
+Nights, weekends and launch-day spikes. Every customer gets an answer in seconds.
+Hands over to your team
+The right person, with a summary, what has been tried and the full transcript. No one repeats themselves.
+When it hands over
+As per your rules
+The question is out of scope
+The customer asks for a person
+It isn't confident, or the customer is upset
+AI agent
+Return or exchange
+→
+PM
+Priya M.
+Returns
+Billing dispute
+→
+LT
+Leo T.
+Billing
+Complex or VIP
+→
+AS
+Ana S.
+Tier 2
+Handover note
+· summary, what was tried, full transcript
+At home in your stack
+Zendesk, Intercom, Freshdesk and Salesforce Service Cloud. Shopify, Stripe and your order systems. JustCall, WhatsApp Business and email. Anything else through APIs and webhooks.
+Scoped access, approved per action
+Quality
+Every conversation.
+Checked, and improving.
+Quality checked on every conversation, not a sample, and gaps fixed as they show up.
+Quality
+All channels · this week
+Illustrative
+Conversations
+4,812
+Resolved by the agent
+68%
+Handed to your team
+22%
+Checked for quality
+100%
+Top topics
+Where is my order?
+31%
+Returns and exchanges
+18%
+–
+Sizing for wide feet
+12%
+New
+Damaged on arrival
+6%
+Needs a fix
+41 customers asked about sizing for wide feet. The agent had no guide to answer
+from, so it handed them over.
+Suggested: add the wide-fit guide to knowledge
+Apply fix
+Review
+Pause topic
+One view across every channel
+Chat, voice, email, WhatsApp and SMS, for the agent and your team.
+Quality and compliance on every conversation
+Each one is scored against your standards, with misses flagged for review.
+Voice built in-house
+Our own speech engine, for natural, low-latency calls we tune for your business.
+Fixes suggested every week
+Missing answers and unclear policies, grouped and ready to apply.
+Talk to the voice agent
+Got a queue?
+There's a play for that.
+Pick your industry to see what the agent resolves: what the customer asks, what the agent does, and the result.
+Retail & e-commerce
+2
+Credit & lending
+2
+Insurance
+2
+Healthcare
+2
+Property management
+2
+Automotive
+2
+Home services
+2
+B2B SaaS
+2
+Logistics & manufacturing
+2
+Retail & e-commerce
+“Where is my order?” fills the queue, and returns pile up after every sale.
+Self-service
+Where is my order?
+Web chat
+WhatsApp
+Email
+Trigger
+A customer asks where their parcel is.
+Agent
+Looks up the order, shares live tracking, changes the delivery slot if asked.
+Result
+Answered in seconds, no ticket
+Action
+Damaged on arrival
+Web chat
+Email
+Trigger
+A shoe arrives with a split sole.
+Agent
+Asks for a photo, checks the policy, offers a replacement or refund.
+Result
+Replacement approved, courier checks the item
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Credit & lending
+Simple account questions tie up agents who should be handling hardship cases.
+Action
+Move my payment date
+Voice
+Web chat
+Trigger
+A borrower asks to move this month's payment.
+Agent
+Verifies identity, checks eligibility, confirms the new date and fees.
+Result
+Payment date changed, confirmation sent
+Action
+Lost card, blocked
+Voice
+Trigger
+A customer calls at midnight about a lost card.
+Agent
+Verifies them, blocks the card, orders a replacement.
+Result
+Card blocked within a minute
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Insurance
+Claims start with long phone calls, and policy questions wait in the queue.
+Intake
+First notice of loss
+Voice
+Web chat
+Trigger
+A policyholder reports a car accident.
+Agent
+Takes the details and photos, checks cover, opens the claim.
+Result
+Claim opened with a complete file
+Self-service
+“Am I covered for this?”
+Web chat
+Email
+Trigger
+A customer asks if a burst pipe is covered.
+Agent
+Answers from their policy wording and explains the excess.
+Result
+Answer with the policy clause
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Healthcare
+Phones ring all morning with reschedules and billing questions.
+Action
+Reschedule an appointment
+Voice
+SMS
+Trigger
+A patient needs to move tomorrow's visit.
+Agent
+Verifies them, offers open slots, moves the booking.
+Result
+Rebooked, reminder sent
+Self-service
+Billing question
+Web chat
+Email
+Trigger
+A patient doesn't understand a statement.
+Agent
+Explains each line and sets up a payment plan if eligible.
+Result
+Question closed or plan set up
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Property management
+Maintenance requests arrive by phone, text and email, with half the details missing.
+Intake
+Maintenance request
+WhatsApp
+Voice
+Trigger
+A tenant reports a leaking tap.
+Agent
+Collects photos and access times, sets urgency.
+Result
+Work order raised, tenant updated
+Self-service
+Rent and deposit questions
+Web chat
+Email
+Trigger
+A tenant asks when their deposit comes back.
+Agent
+Answers from the lease and the account status.
+Result
+Answered with the next step
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Automotive
+Service desks spend the day booking slots and answering recall questions.
+Action
+Book a service
+Voice
+Web chat
+Trigger
+An owner's car is due for a service.
+Agent
+Checks the model and mileage, offers slots and a courtesy car.
+Result
+Service booked
+Self-service
+Recall check
+Web chat
+SMS
+Trigger
+An owner asks if a recall applies to them.
+Agent
+Checks the VIN against open recalls and books the fix.
+Result
+Recall repair booked
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Home services
+Customers call to reschedule, and technicians arrive without the right details.
+Action
+Move my appointment
+SMS
+Voice
+Trigger
+A customer can't make tomorrow's visit.
+Agent
+Offers the next free slots and updates the technician's route.
+Result
+Visit rebooked, technician told
+Intake
+Warranty claim
+Web chat
+Email
+Trigger
+A boiler fails within warranty.
+Agent
+Checks the install date and fault, collects photos.
+Result
+Warranty job booked
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+B2B SaaS
+Login, billing and how-to questions bury the real product issues.
+Self-service
+“I can't log in”
+Web chat
+Email
+Trigger
+A user is locked out after SSO changes.
+Agent
+Walks them through the fix from your docs, resets access if allowed.
+Result
+Back in, no engineer needed
+Action
+Change my plan
+Web chat
+Trigger
+An admin wants to add 10 seats.
+Agent
+Confirms the change and price, updates billing.
+Result
+Seats added, invoice sent
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Logistics & manufacturing
+Customers chase shipment status and paperwork by phone and email.
+Self-service
+Shipment exception
+Email
+Voice
+Trigger
+A delivery is held at customs.
+Agent
+Explains the hold, lists the missing documents, updates the ETA.
+Result
+Customer informed before they call
+Self-service
+Proof of delivery
+Web chat
+Email
+Trigger
+A customer asks for a signed delivery note.
+Agent
+Finds the shipment and sends the signed note.
+Result
+Document sent in seconds
+Illustrative workflows, configured around your rules and integrations.
+Try the live demo
+Actions run inside your rules and limits. Sensitive steps need an identity check first.
+Controls and evals
+Your rules.
+Tested before every launch.
+Controls
+Identity before action
+Customers are verified before the agent shares details or changes anything.
+Limits and approvals
+Refunds, credits and exceptions above your limits go to a person.
+Card details stay out of the chat
+Payments go through a secure link, never through the model.
+Full audit trail
+Every answer, action and system update is logged and reviewable.
+Evals
+Simulated customers before launch
+Hundreds of realistic conversations, each checked: right action, right data, policy followed.
+Re-tested on every change
+A saved test set re-runs whenever knowledge, procedures or tools change.
+Quality checked live
+Every conversation is scored, and drops are flagged for review.
+Reviewed with your team
+Resolution, handover and satisfaction reviewed together every week.
+Pricing
+Custom built.
+Priced for your requirements.
+No fixed tiers. Every support agent is built around your journeys, channels and systems, so we price it the same way: after we understand what you need.
+What shapes the price
+Channels: chat, voice, email, WhatsApp, SMS
+Conversation and call volume
+Actions and systems: helpdesk, orders, billing
+Languages and regions
+Compliance needs: HIPAA, PCI, data residency
+Always included
+Design and build with our team
+Simulated testing before launch
+Quality checks on every conversation
+Weekly reviews and tuning after go-live
+Security: SOC 2 Type II, HIPAA, GDPR
+Tell us what you need.
+Share your journeys, channels and systems. We'll come back with a scope and a
+price.
+Contact us
+Bring one queue.
+We'll show you what it resolves.
+Share a week of tickets. We'll show which ones the agent would resolve, which it would hand over, and why.
+Contact us
+Try the live demo
+Pricing

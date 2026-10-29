@@ -1,0 +1,220 @@
+Home
+/
+Resources
+/
+Blog
+/
+The quote went out. Then nothing.
+follow up on estimates
+automate quote follow-up
+win more quoted jobs
+The quote went out. Then nothing.
+How do you follow up on a quote without being a pest?
+Many unsigned quotes get one email, then silence. Why quotes go quiet, what it costs, and how to follow up across text, email, chat and phone.
+Nilesh Tripathi
+26 October 2026
+12 min read
+On this page
+How the work runs today: two quotes that went quiet
+Why do quotes go quiet?
+What we’d build: follow-up that answers, on every channel
+What leaving it costs
+How to start
+Questions buyers ask
+Written by
+NT
+Nilesh Tripathi
+GM, AtomsAI
+Writes AtomsAI's teardowns: one workflow, where it breaks, and what we would build to fix it.
+LinkedIn
+Share
+LinkedIn
+X
+Copy link
+Many quotes don’t die of price. They die of silence. A quote goes out by email, the customer has one question about it, and the question arrives somewhere nobody connects to the quote: a text to the technician’s phone, a website chat at 9pm, a reply to an email address nobody checks. Meanwhile the office sends one “just checking in” email and moves on. The fix is an agent that follows up on every open quote across text, email, chat and phone, answers questions from the quote itself, books the next step, and stops the moment the customer replies or says no.
+How the work runs today: two quotes that went quiet
+Here is how quote follow-up usually runs at a small business that sells big-ticket jobs.
+Step
+Who
+Where
+When
+Quote written
+Technician, estimator or salesperson
+Field-service or quoting software, or the store’s system
+At the visit
+Quote sent
+The software, automatically
+Email, as a PDF
+Same day
+Follow-up
+Office manager or the salesperson
+Phone, email
+When someone remembers, usually once
+Questions from the customer
+Whoever sees them first
+A personal phone, the website chat, a shared inbox
+Whenever they’re noticed
+Quote closed out
+Office manager
+CRM or a spreadsheet
+Weeks later, marked “lost”
+Now take two illustrative businesses in the same week: a heating and cooling company, and a furniture showroom that sells made-to-order sofas.
+The heating and cooling company: a quote for a new furnace and AC
+When
+Channel
+What happens
+Tuesday, 6:10pm
+In person, then email
+The comfort advisor’s visit ends. The software emails a PDF with two options: $9,800 and $12,400. The homeowner says “we’ll talk it over tonight”.
+Wednesday
+Nothing. The office’s follow-up list lives in the office manager’s head.
+Friday, 11:00am
+Phone
+The office manager calls. Voicemail. She leaves a message asking him to call back.
+Saturday, 9:30pm
+Website chat
+The homeowner asks: “Does the $9,800 option include a new thermostat?” The chat takes a name and email and promises a reply “within one business day”.
+Monday, 10:40am
+Email
+Someone answers the chat question. The homeowner replies that they went with another company on Sunday.
+Three weeks later
+CRM
+The quote is marked “lost: price”.
+The furniture showroom: a quote for a custom sectional
+When
+Channel
+What happens
+Saturday, 3:00pm
+In store, then email
+A couple picks a sectional in the showroom. The salesperson emails a quote: $4,200, eight weeks to deliver.
+Tuesday, 8:45pm
+Email
+They reply to the quote email: “Could we see the fabric in grey before we decide?” It lands in the salesperson’s inbox. She’s off until Thursday.
+Thursday, 10:00am
+Email
+She replies with grey swatch photos and an invitation to come in.
+Thursday, 4:30pm
+Email
+They thank her. They found something at another store on Wednesday.
+Nobody in either story was careless, and the price wasn’t the problem. Both customers asked a question, and a question about a quote is a buyer telling you what stands between them and yes. The homeowner asked about a thermostat on a Saturday night through the website chat, which knew nothing about his quote. The couple asked about fabric on a Tuesday evening by replying to an email that only one person could see. In both cases the answer came a day and a half later, after someone else had answered first.
+Why do quotes go quiet?
+1. Follow-up depends on someone remembering.
+The quote goes out automatically. The follow-up doesn’t. It sits on a list in the office manager’s head, competing with today’s phone calls, so most quotes get one email or one call, and then nothing. The cost is every quote that would have closed with one more, better-timed message. You notice this when you can’t say, for last month’s quotes, how many were followed up at all.
+2. The customer’s question lands somewhere that can’t see the quote.
+People answer on whatever channel is in front of them. A text to the technician’s phone, a website chat, a reply to the quote email, a voicemail to the main line. Each lands in a different place, and none of them knows which quote it’s about. So the question waits, or gets a general answer, while the customer is still deciding. You notice this when quotes are marked “lost” and nobody can find the last thing the customer asked.
+3. “Just checking in” isn’t follow-up.
+A generic nudge asks the customer to do the work: dig out the PDF, remember what confused them, and write back. The messages that move a decision answer the thing they were stuck on, such as what each option includes, what the timeline is, or whether financing is available. And the follow-up has to stop when they say no. A business that keeps texting after “we went with someone else” doesn’t get the next job either. You notice this when your “lost” reasons say “price” but nobody ever discussed price.
+What we’d build: follow-up that answers, on every channel
+This is the job of AtomsAI’s
+Sales agent
+. It answers web chat, phone, SMS and email with one memory, and works inside your quoting software and CRM, which we connect during your build.
+Quote sent
+→ Sales agent → a follow-up sequence on the channels and schedule you choose. Each message is about this quote: a text the next day asking if any questions came up, an email a few days later setting out the options side by side, a short call in the second week if there’s still no reply.
+The customer replies or asks a question, on any channel
+→ Sales agent → matches them to the open quote, answers from the quote and your rules, and books the next step: a call with the advisor, a showroom visit, an install date. The sequence stops as soon as they reply.
+The customer says no, not now, or stop
+→ Sales agent → stops at once, records the reason in your CRM in the customer’s own words, and, if they say “ask me in spring”, sets a reminder within your rules.
+Here are the same two stories with the agent in place.
+The heating and cooling company
+When
+Channel
+What the agent did
+Tuesday, 6:10pm
+Email
+The quote went out from the field-service software, as before.
+Wednesday, 10:00am
+SMS
+“Hi, this is the AI assistant for the team that visited yesterday. Any questions about the two options? Reply here, or call if it’s easier.” No reply.
+Thursday, 9:00am
+Email
+Sent a short comparison of the two options from the quote: what each includes, the warranty on each, and install dates available next week.
+Saturday, 9:30pm
+Website chat
+The homeowner asked about the thermostat. The agent matched his email to the open quote and answered from its line items: the $9,800 option includes a standard programmable thermostat, and the quote lists a smart thermostat as an add-on. He asked to talk it through with someone.
+Saturday, 9:34pm
+Website chat, then SMS
+The agent booked a call with the comfort advisor for Sunday at 10:00am, confirmed by text, and stopped the sequence. The advisor got a brief: the quote, the thermostat question and the chat transcript.
+Sunday, 10:00am
+Phone
+The advisor called. The homeowner signed the $9,800 option with the smart thermostat added.
+The furniture showroom
+When
+Channel
+What the agent did
+Sunday, 11:00am
+SMS
+Followed up the Saturday quote: “Thanks for coming in. Anything you’d like to check before you decide?”
+Tuesday, 8:45pm
+Email
+Read their reply about the grey fabric. Sent photos of the grey swatch from the showroom’s catalogue and offered two showroom times on Wednesday. They picked 5:00pm.
+Wednesday, 5:00pm
+In store
+The salesperson, briefed by the agent, had the grey swatch on the sectional when they arrived. They ordered.
+The agent’s follow-up stayed light: one text, one email, and a call only if needed. What changed is that every question reached something that knew which quote it was about and could answer it, at 9:30 on a Saturday night or on the salesperson’s day off. The agent answered what the customers asked and put a person in front of them when they were ready.
+What you control.
+Which quotes the agent follows up, on which channels, how often and how long. What it can answer on its own: what’s in the quote, timelines, next steps. What it never does: change a price, offer a discount, promise a date that isn’t in your calendar, or keep messaging someone who said no. Texts and calls follow consent and quiet hours. Anything outside its rules goes to a person, with a summary, the quote and the full conversation, and your team can join any conversation live.
+What we connect during your build.
+Your field-service or quoting software (for ex. ServiceTitan, Housecall Pro or Jobber), your store system or CRM (for ex. HubSpot or Salesforce), your calendars, and your phone line, texting number, website chat and email. If you run JustCall, we connect your JustCall account during the build.
+What leaving it costs
+Here’s a worked example. Swap in your own numbers.
+A heating and cooling company.
+Say its advisors send
+120 replacement quotes a month
+, at an average of
+$8,000
+, and
+30%
+of them close. That’s
+36 jobs
+, or
+$288,000
+a month.
+Now say following up on every quote, and answering questions on the channel they arrive on, moved the close rate from 30% to
+33%
+. That’s
+39.6 jobs
+: about
+3.6 more a month
+, worth about
+$28,800
+, from quotes you’d already done the work to write. That three-point lift is an assumption. Your own numbers will tell you what’s realistic.
+A furniture showroom.
+Say it writes
+80 custom-order quotes a month
+at
+$3,500
+each, and
+1 in 4
+becomes an order. That’s
+20 orders
+. Every extra order out of the other 60 quotes is $3,500 of revenue the showroom has already done the selling for.
+To find your own numbers, take last quarter’s unsigned quotes and check three things for each: did anyone follow up, did the customer ask a question, and how long did it take to answer?
+How to start
+If leads go quiet before you even get to quote, start with
+speed to lead
+; the same agent covers both.
+Ask us for a teardown of your quote follow-up. It takes 30 minutes. Bring last quarter’s quotes and which ones closed, the software you quote in, every channel customers use to reach you, and who follows up today. You’ll leave knowing where your quotes go quiet, what an agent can follow up and answer on its own, and what needs your team.
+Standard agents go live in days. Custom work that connects your quoting software, CRM, phones, texting and website takes 4 to 8 weeks.
+Contact us
+Questions buyers ask
+How many times should you follow up on a quote?
+Enough to answer the questions people actually have, and no more. A common pattern is a text the next day, an email that lays out the options a few days later, and a short call in the second week. The sequence should stop the moment the customer replies, books, or says no.
+Can an AI agent answer questions about a quote?
+Yes, from the quote itself and the rules you give it. It can explain what each option includes, what changes between them, and what happens next. It never changes a price or invents a discount. Prices and offers come only from your quote and your rules, and it hands anything else to a person with the full conversation.
+What if the customer replies on a different channel from the quote?
+The agent answers web chat, phone, SMS and email with one memory, so it matches the reply to the open quote by phone number or email. The customer doesn’t have to repeat anything, and the follow-up sequence stops.
+Will it keep messaging people who said no?
+No. A no, a “not now” or an opt-out stops the sequence at once. The agent records the reason in your CRM, and if someone says “ask me in spring”, it can set a reminder on the date your rules allow.
+How long does it take to set up?
+Standard agents go live in days. Custom work that connects your quoting software, CRM, phones, texting and website takes 4 to 8 weeks.
+A question about a quote is a buyer telling you what stands between them and yes.
+The quote went out. Then nothing.
+Previous post
+The reminder went out. The chair stayed empty.
+Read the blog
+The posts argue it. The studies price it.
+The same workflows from the other end: what the baseline was, what we built, and what moved once it was live.
+Read the case studies
+Three illustrative workflows, with the baseline, the build and the denominator.
+See how we build
+Five steps, four to eight weeks, and you own what comes out.

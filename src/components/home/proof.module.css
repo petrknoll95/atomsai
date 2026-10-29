@@ -3,39 +3,48 @@
   padding-block: var(--section-space);
 }
 
-.industryHeader { display: flex; flex-direction: column; gap: 16px; margin-bottom: 80px; }
-.headingRow { display: flex; align-items: center; gap: var(--grid-gap); min-height: 44px; }
+.industryHeader { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; margin-bottom: 80px; }
+.industryHeader > :global(.eyebrow) { align-self: center; }
 .heading { flex: 1; min-width: 0; font-size: var(--text-display-large); line-height: .95; text-wrap: balance; }
-.industryChooser { position: relative; flex: none; }
-.industryOptions { position: absolute; right: 0; top: calc(100% + 8px); z-index: 5; display: grid; min-width: 200px; padding: 8px; border: 1px solid var(--color-border); border-radius: var(--radius-card); background: var(--color-background); box-shadow: 0 12px 32px color-mix(in display-p3, var(--palette-forest-shade) 10%, transparent); }
-.industryOptions button { padding: 10px 14px; border-radius: 8px; text-align: left; }
-.industryOptions button:hover { background: var(--color-surface); }
 .carousel { display: flex; flex-direction: column; gap: 48px; -webkit-user-select: none; user-select: none; }
 .carousel img { -webkit-user-drag: none; }
-.carouselViewport { position: relative; overflow: hidden; container-type: inline-size; }
+.carouselViewport { position: relative; overflow: hidden; container-type: inline-size; cursor:grab; }
+.carouselViewport[data-pressed="true"] { cursor:grabbing; }
 .carouselTrack { --circle-size: calc((100cqw - 32px) * 5 / 11); --near-circle: .4; --far-circle: .2; display: flex; height: var(--circle-size); touch-action: pan-y pinch-zoom; }
 .carouselSlide { position: relative; flex: 0 0 var(--circle-size); min-width: 0; height: 100%; will-change: transform, clip-path; transform: translateX(calc((100cqw - var(--circle-size)) / 2 + (var(--circle-travel) - var(--slide-index)) * var(--circle-size) + var(--circle-gap) * 1px)); clip-path: inset(0 calc(var(--mask-right) * 100%) 0 calc(var(--mask-left) * 100%)); }
-.circle { position: relative; width: 100%; height: 100%; border-radius: 50%; overflow: hidden; background: var(--color-secondary); display: flex; align-items: center; justify-content: center; }
+.circle { --industry-inset:0px; position: relative; width: 100%; height: 100%; border-radius: 50%; overflow: hidden; clip-path:inset(var(--industry-inset) round 50%); background: var(--color-secondary); display: flex; align-items: center; justify-content: center; }
+.circle > picture { position:absolute; inset:0; }
 .circle img { position: absolute; width: 101.03261%; max-width: none; height: 101.03261%; left: -.516305%; top: -.516305%; object-fit: cover; }
 .imageWash { position: absolute; inset: 0; opacity: var(--image-wash); background: color-mix(in display-p3, var(--palette-cream-tint) 20%, transparent); }
-.industryBadge { position: relative; display: flex; align-items: center; justify-content: center; flex: none; width: 200px; height: 200px; white-space: nowrap; color: #fff; font-size: var(--text-label); font-weight: 475; font-variation-settings:'wght' 475, 'ital' 100; border-radius: var(--radius-control); background: color-mix(in display-p3, var(--palette-cream-tint) 10%, transparent); backdrop-filter: blur(18px); }
+.industryBadge { position: relative; display: flex; align-items: center; justify-content: center; flex: none; width: 200px; height: 200px; white-space: nowrap; color: #fff; font-size: var(--text-label); font-weight: 475; font-variation-settings:'wght' 475, 'ital' 100; border-radius: var(--radius-control); cursor: pointer; text-decoration: none; }
+/* Grow the glass independently so the label stays crisp and the hit area stable. */
+.industryBadge::before { content:''; position:absolute; inset:0; border-radius:inherit; background:color-mix(in display-p3, var(--palette-cream-tint) 10%, transparent); -webkit-backdrop-filter:blur(18px); backdrop-filter:blur(18px); transform:scale(1); transition:transform .65s cubic-bezier(.22,1,.36,1); pointer-events:none; }
+.industryBadge > span { position:relative; pointer-events:none; }
+.industryBadge:focus-visible::before { transform:scale(1.16); }
+@media (hover:hover) and (pointer:fine) { .industryBadge:hover::before { transform:scale(1.16); } }
+@media (prefers-reduced-motion:reduce) { .industryBadge::before { transition:none; } }
 .carouselControls { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: var(--grid-gap); min-height: 112px; }
 .previous,
 .next { display: flex; align-items: center; }
 .previous { justify-content: flex-end; }
 .next { justify-content: flex-start; }
-.arrowButton { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; flex: none; border-radius: 50%; background: var(--color-primary); color: var(--color-primary-foreground); }
+.arrowButton { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; flex: none; border-radius: 50%; background: var(--color-primary); color: var(--color-primary-foreground); transform: scale(1); transition: transform .24s cubic-bezier(.22,1,.36,1), background-color .18s ease, var(--focus-transition); }
 .arrowButton:hover { background: color-mix(in display-p3, var(--color-primary), var(--color-primary-foreground) 8%); }
+@media (hover: hover) and (pointer: fine) { .arrowButton:hover { transform: scale(1.06); } }
+.arrowButton:active { transform: scale(.94); transition-duration: .1s; }
+@media (prefers-reduced-motion: reduce) { .arrowButton, .arrowButton:hover, .arrowButton:active { transform: none; transition: none; } }
 .arrowButton img { width: 24px; height: 24px; }
-.industryDescription { display: flex; flex-direction: column; align-items: center; gap: 16px; min-width: 0; }
-.descriptionCopy { display: flex; flex-direction: column; gap: 4px; width: 100%; padding-inline: 64px; text-align: center; font-size: var(--text-label); line-height: 20px; min-height: 64px; }
+.industryDescription { display: flex; flex-direction: column; align-items: center; gap: 12px; min-width: 0; }
+.descriptionCopy { display: flex; flex-direction: column; gap: 4px; width: 100%; padding-inline: 64px; text-align: center; font-size: var(--text-label); line-height: 20px; }
 .descriptionCopy h3 { font-size: inherit; font-weight: 475; font-variation-settings:'wght' 475, 'ital' 100; }
 .descriptionCopy p { color: var(--color-muted-foreground); text-wrap: pretty; }
 
 .storyGrid { display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: var(--grid-gap); }
 .portrait { position: relative; grid-column: span 2; border-radius: var(--radius-card); overflow: hidden; background: var(--color-secondary); }
 .portrait img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.storyContent { grid-column: span 3; display: flex; flex-direction: column; justify-content: space-between; height: 640px; padding-inline: var(--grid-gap); }
+/* Match the reserved portrait grid cell while keeping images outside the fade. */
+.portraitCarousel { position: absolute; left: 0; top: 0; z-index: 1; width: calc((100% - 2 * var(--grid-gap)) / 3); height: 640px; }
+.storyContent { grid-column: span 3; display: flex; flex-direction: column; justify-content: space-between; min-width: 0; height: 640px; padding-inline: var(--grid-gap); }
 .quoteBlock { display: flex; flex-direction: column; gap: 64px; }
 .testimonial { display: flex; flex-direction: column; gap: 40px; }
 .quote { min-height: 168px; font-size: var(--text-display-large); line-height: .95; text-wrap: balance; }
@@ -43,7 +52,7 @@
 .person span:first-child { font-weight: 475; font-variation-settings:'wght' 475, 'ital' 100; }
 .person span:last-child { color: var(--color-muted-foreground); }
 .companyRow { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
-.companyLogo { width: 183.7723px; height: 32px; flex: none; }
+.companyLogo { width: 183.7723px; height: 32px; flex: 0 1 auto; min-width: 0; object-fit: contain; object-position: left center; }
 .metrics { display: flex; flex-direction: column; gap: 8px; color: var(--color-foreground); }
 .metric { display: flex; flex: 1; flex-direction: column; justify-content: space-between; gap: 32px; padding: 32px 24px 24px; min-height: 0; border-radius: var(--radius-card); background: var(--color-surface); }
 .metricValues { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
@@ -70,6 +79,7 @@
 @media (max-width: 1199px) {
   .descriptionCopy { padding-inline: 24px; }
   .storyGrid { grid-template-columns: repeat(5,minmax(0,1fr)); }
+  .portraitCarousel { width: calc(40% - .6 * var(--grid-gap)); height: 560px; }
   .storyContent { height: 560px; padding-inline: 0; }
   .metrics { grid-column: 1 / -1; flex-direction: row; }
   .metric { min-height: 180px; }
@@ -78,9 +88,7 @@
 }
 @media (max-width: 767px) {
   .industryHeader { gap: 20px; margin-bottom: 40px; }
-  .headingRow { align-items: flex-start; flex-direction: column; gap: 24px; }
   .heading { font-size: var(--text-display-medium); line-height: 1; }
-  .industryOptions { left: 0; right: auto; }
   .carouselTrack { --circle-size: calc((100cqw - 16px) * .8); --near-circle: .125; --far-circle: 0; }
   .industryBadge { width: 112px; height: 112px; font-size: var(--text-caption); }
   .carousel { gap: 32px; }
@@ -88,6 +96,9 @@
   .descriptionCopy { padding-inline: 0; min-height: 0; }
   .storyGrid { display: flex; flex-direction: column; gap: 32px; }
   .portrait { aspect-ratio: 3 / 4; width: 100%; max-height: 600px; }
+  /* Explicit height prevents Safari's absolute aspect-ratio box shrinking its
+     width when the 600px height cap is reached. */
+  .portraitCarousel { height: min(133.333333cqw, 600px); }
   .storyContent { height: auto; gap: 48px; }
   .quoteBlock { gap: 32px; }
   .quote { font-size: var(--text-display-medium); line-height: 1; }

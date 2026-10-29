@@ -1,0 +1,528 @@
+AtomsAI / Collections agent
+Every overdue payment.
+Recovered with care.
+Reminds, agrees payment plans and takes payments on voice, text and email, within collections rules. More recovered, fewer complaints, and less chasing for your team.
+Contact us
+See what it does
+Built for consumer lending, utilities, healthcare billing and buy-now-pay-later, and for friendly invoice nudges in B2B.
+Brightline Lending
+Live agent
+SMS ·
+Loan ending 4471
+Identity verified
+Hi Dana, your October payment of $412 is 6 days late. Is everything okay? I can
+help you sort it out.
+I lost some shifts this month. I can't pay it all right now.
+Thanks for telling me. You could pay $206 today and $206 on November 15, with no
+late fee. Would that work?
+Yes, set that up
+I need a different plan
+Yes, set that up.
+$206 paid · plan set for November 15
+Paid by secure link · late fee waived per policy · loan account updated
+Required disclosures given · contacted within
+allowed hours
+01 / Remind
+02 / Agree a plan
+03 / Take payment
+04 / Follow up
+Why it matters
+What it does
+Channels & stack
+Worklist
+By industry
+Controls & evals
+Pricing
+Why it matters
+When customers fall behind, most of them want to pay.
+They forgot, they can't pay it all at once, or they'd rather not take a call about it.
+Your team can only reach a few of them in time.
+Too many accounts to call
+Teams reach the biggest balances first. Smaller ones drift further behind until they're written off.
+One wrong call is costly
+Calling at the wrong time, too often, or without the right disclosures brings complaints and fines.
+Customers avoid the call
+Many people won't pick up a collections call, but will answer a text and pay by link.
+Most people want to pay.
+They just need a nudge in time.
+Same accounts. More recovered.
+What 1,000 overdue accounts turn into, without and with a collections agent
+Without an agent
+1,000
+overdue accounts
+300
+reached in the first week
+180
+paid or on a plan
+With the agent
+1,000
+overdue accounts
+1,000
+reached in the first week
+520
+paid or on a plan
+Almost 3× as many accounts back on track
+, because every customer gets a reminder in time, not just the biggest balances.
+Illustrative
+What it does
+Everything a great collections team does.
+For every account, every day.
+Agrees a plan that works.
+Offers payment options within your policy, lets the customer choose, and confirms the plan in writing.
+Example · missed loan payment
+I can't pay it all right now.
+No problem. These options are within your account's rules:
+Pay in full
+$412 today
+Split in two
+$206 today, $206 on Nov 15
+Three months
+$140 a month, starting today
+Split in two, please.
+Plan agreed · reminder set for Nov 14
+Account updated
+Reminds before it's late.
+Friendly nudges before and after the due date.
+5 days before
+Friendly heads-up by text
+Due date
+Reminder with a pay link
+3 days late
+Check-in, offer a plan
+Takes payment securely.
+A secure link to pay by card, bank or wallet, sent in the same conversation.
+Here's a secure link to pay $206. It takes about a minute.
+pay.brightline.com/4471
+Card or bank transfer · Apple Pay · Google Pay
+$206.00
+Card details go to the payment page,
+never into the chat
+Checks it's the right person.
+Before a debt is ever mentioned.
+Date of birth
+Matches the account
+Last 4 of the loan
+4471
+Right person
+Confirmed before the debt is mentioned
+Stays within the rules.
+Hours, frequency, disclosures and opt-outs, enforced on every contact.
+Contact rules, enforced
+Hours
+8am–9pm in the customer's time zone
+Frequency
+No more than 7 call attempts in 7 days
+Disclosures
+Given at the start of every contact
+Opt-outs
+Stop and channel preferences honoured at once
+Handles hardship with care.
+Pauses collection and passes the customer to a specialist.
+To Ana · Hardship specialist
+Said
+“I've just lost my job.”
+Done
+Collection paused, no plan pushed
+Next
+Hardship call booked for tomorrow
+Knows who to contact, and how.
+Learns who is likely to pay and which channel and time each customer answers.
+Next best step, per account
+D. Rivera · $412
+Likely to pay
+Text, after 6pm
+Reminder with a pay link
+K. Osei · $1,240
+Needs help to pay
+Call, mornings
+Offer a plan first
+Learned from every reply, payment and missed promise.
+Recovers more, with more intelligence.
+Every contact teaches the agent who to reach first, how and when. More accounts back on track, fewer written off, and your team on the cases that need a person.
+Example · one week, one lender
+$48,200
+recovered this week
+87%
+of promises to pay kept
+71%
+of accounts resolved without staff
+0
+contacts outside your rules
+Channels, capabilities and integrations
+Every channel.
+Connected to your ledger.
+One agent across text, email and voice. Every promise, plan and payment updates the account in your systems.
+5
+Channels. One memory.
+Web chat
+Voice
+WhatsApp
+SMS
+Email
+Secure by default
+SOC 2 Type II, HIPAA and GDPR. Your data is never used to train models.
+Conversations today
+00:00 → 23:59
+Always on
+Evenings and weekends, when people actually reply, but only within the hours you allow.
+Hands over to your team
+The right specialist, with the account history, what was offered and the full conversation.
+When it hands over
+As per your rules
+The customer disputes the debt
+Signs of hardship or vulnerability
+The customer asks for a person
+AI agent
+Hardship
+→
+AS
+Ana S.
+Hardship specialist
+Dispute
+→
+LT
+Leo T.
+Disputes team
+Legal or bankruptcy
+→
+PM
+Priya M.
+Legal
+Handover note
+· summary, what was tried, full transcript
+At home in your stack
+Loan servicing and billing systems, Stripe and your payment gateway, Salesforce, HubSpot and Zoho. JustCall for calls and texts, and email. Anything else through APIs and webhooks.
+Scoped access, approved per action
+Worklist
+Every account.
+One worklist.
+See where every account stands, and how each customer was reached.
+Collections · this week
+Replied
+Tried
+Illustrative
+Recovered
+$48,200
+Promises kept
+87%
+Resolved without staff
+71%
+Contacts within rules
+100%
+Loan 4471 · D. Rivera
+Email
+SMS
+$412 · 6 days late
+Plan agreed
+Loan 2208 · J. Brooks
+SMS
+Voice
+$980 · 14 days late
+Promise to pay Fri
+Loan 7713 · M. Haddad
+SMS
+$310 · 3 days late
+Paid
+Loan 5190 · K. Osei
+SMS
+Email
+$1,240 · 21 days late
+Dispute → team
+Loan 3362 · L. Park
+SMS
+Email
+Voice
+$560 · 9 days late
+Hardship → specialist
+2 accounts need a person today
+Step in
+Stop contact
+One view of every account
+Status, promises and plans, and which channels were tried and which one the customer replied on.
+Compliance on every contact
+Hours, frequency and disclosures checked on every call and message.
+Voice built in-house
+Our own speech engine, for calm, natural calls.
+Step in or stop contact
+Reply to a customer yourself or join a live call, and the agent steps back. Or stop all contact with an account, for example while a dispute is checked.
+Money owed?
+There's a play for that.
+Pick your industry to see how the agent reminds, agrees plans and recovers payments.
+Credit & lending
+2
+Healthcare billing
+2
+Utilities & telecom
+2
+B2B invoicing
+2
+Property & rent
+2
+Insurance
+2
+Auto finance
+2
+Education
+2
+Retail & BNPL
+2
+Credit & lending
+Collectors can only call the biggest balances, and the rest drift further behind.
+Early reminder
+Before it's late
+SMS
+Email
+Trigger
+A payment is due in 5 days.
+Agent
+Sends a heads-up with the amount and a pay link.
+Result
+Paid on time, no collection needed
+Payment plan
+Missed instalment, back on track
+SMS
+Voice
+Trigger
+A loan payment is 6 days late.
+Agent
+Checks in kindly, offers plans within policy, sends a pay link.
+Result
+First payment made, plan set
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Healthcare billing
+Patients don't understand their bills, so they don't pay them.
+Explain and pay
+“What is this charge?”
+SMS
+Voice
+Trigger
+A patient balance is 30 days old.
+Agent
+Explains what insurance covered and what's left, offers a plan.
+Result
+Bill understood and paid
+Payment plan
+Large balance, monthly plan
+Voice
+Email
+Trigger
+A patient owes $2,400 after surgery.
+Agent
+Offers monthly plans within the practice's rules.
+Result
+12-month plan set up
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Utilities & telecom
+Thousands of small overdue bills, too many to chase by hand.
+Early reminder
+Bill reminder at scale
+SMS
+Email
+Trigger
+A monthly bill is due.
+Agent
+Reminds every customer on their preferred channel.
+Result
+More bills paid by the due date
+Chase
+Final bill after moving out
+SMS
+Email
+Trigger
+A customer moves out and the final bill goes unpaid.
+Agent
+Reaches them at their new contact details with a pay link.
+Result
+Final bill paid, no write-off
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+B2B invoicing
+Finance teams chase overdue invoices one email at a time. A friendly nudge is usually enough.
+Chase
+Overdue invoice follow-up
+Email
+SMS
+Trigger
+An invoice is 15 days overdue.
+Agent
+Emails the right contact, then follows up by text.
+Result
+Payment date confirmed
+Dispute
+“We never got the goods”
+Email
+Trigger
+A customer disputes an invoice.
+Agent
+Logs the dispute, stops chasing and routes it to the account owner.
+Result
+Dispute handled by the right person
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Property & rent
+Rent arrears build up while property managers juggle everything else.
+Chase
+Rent 3 days late
+SMS
+WhatsApp
+Trigger
+Rent hasn't arrived.
+Agent
+Checks in with the tenant and sends a pay link.
+Result
+Rent paid or a date agreed
+Payment plan
+Arrears plan
+Voice
+Email
+Trigger
+A tenant is a month behind.
+Agent
+Offers a catch-up plan within the landlord's rules.
+Result
+Arrears plan in writing
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Insurance
+Missed premiums lapse policies customers actually want to keep.
+Early reminder
+Premium about to lapse
+SMS
+Voice
+Trigger
+A premium is 10 days overdue.
+Agent
+Explains what lapses and when, sends a pay link.
+Result
+Policy kept active
+Payment plan
+Switch to monthly
+Voice
+Trigger
+A customer can't pay the annual premium.
+Agent
+Offers monthly payments if the policy allows.
+Result
+Policy kept, payments spread
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Auto finance
+Late car payments escalate quickly, and calls are hard to make well.
+Payment plan
+Late car payment
+SMS
+Voice
+Trigger
+A car payment is 10 days late.
+Agent
+Offers a short extension or split payment within policy.
+Result
+Account back to current
+Hardship
+Job loss
+Voice
+Trigger
+A borrower says they've lost their job.
+Agent
+Pauses collection and books a hardship specialist.
+Result
+Handled with care, by a person
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Education
+Tuition reminders are awkward, and families need flexible options.
+Early reminder
+Term fees due
+Email
+SMS
+Trigger
+Term fees are due in two weeks.
+Agent
+Reminds parents and explains instalment options.
+Result
+Fees paid or instalments chosen
+Payment plan
+Instalments for a family
+Voice
+Email
+Trigger
+A family asks to spread the fees.
+Agent
+Sets up instalments the school allows.
+Result
+Plan agreed, student stays enrolled
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Retail & BNPL
+Small missed instalments add up across thousands of customers.
+Chase
+Missed instalment
+SMS
+WhatsApp
+Trigger
+A buy-now-pay-later instalment fails.
+Agent
+Lets the customer retry with another card or move the date.
+Result
+Instalment paid within days
+Early reminder
+Card about to expire
+Email
+SMS
+Trigger
+The card on file expires before the next instalment.
+Agent
+Asks the customer to update it through a secure link.
+Result
+Failed payment avoided
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Contact follows your rules on hours, frequency, consent and disclosures.
+Controls and evals
+Firm on the rules.
+Kind to the customer.
+Controls
+Contact rules enforced
+Hours, frequency limits, consent and opt-outs, including FDCPA, Reg F and TCPA in the US.
+Plans within your policy
+Only the plans, waivers and dates you allow. Anything else goes to a person.
+Card details stay out of the chat
+Payments go through a secure link, never through the model.
+Full audit trail
+Every contact, disclosure, promise and payment is logged.
+Evals
+Tested before launch
+Hard cases first: disputes, hardship, the wrong person answering, angry customers.
+Re-tested on every change
+A saved test set re-runs whenever policies or scripts change.
+Every contact checked
+Each conversation is scored for compliance and tone, with misses flagged.
+Measured against your goals
+Recovery rate, promises kept and complaints, reviewed with you weekly.
+Pricing
+Custom built.
+Priced for your requirements.
+No fixed tiers. Every collections agent is built around your journeys, channels and systems, so we price it the same way: after we understand what you need.
+What shapes the price
+Number of accounts and contacts
+Channels: text, email, voice
+Billing, servicing and payment systems
+Rules and regions you operate in
+Compliance needs: FDCPA, Reg F, TCPA, PCI
+Always included
+Design and build with our team
+Testing on hard cases before launch
+Compliance checks on every contact
+Weekly reviews and tuning after go-live
+Security: SOC 2 Type II, HIPAA, GDPR
+Tell us what you need.
+Share your journeys, channels and systems. We'll come back with a scope and a
+price.
+Contact us
+Bring one ledger.
+We'll show you what's recoverable.
+Share a sample of overdue accounts. We'll show which ones the agent would recover, how, and where a person is needed.
+Contact us
+Pricing

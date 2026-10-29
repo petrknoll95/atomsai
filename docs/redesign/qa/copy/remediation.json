@@ -1,0 +1,22 @@
+{
+  "topic": "Let’s talk about AI Services.",
+  "badges": [
+    {
+      "text": "SOC 2",
+      "label": "SOC 2 Type II — review scope and documentation",
+      "href": "/trust#scope"
+    },
+    {
+      "text": "HIPAA",
+      "label": "HIPAA — review scope and documentation",
+      "href": "/trust#scope"
+    },
+    {
+      "text": "GDPR",
+      "label": "GDPR — review scope and documentation",
+      "href": "/trust#scope"
+    }
+  ],
+  "cookieTooltip": "This page does not use optional cookies",
+  "securityRecipient": "mailto:security@atomsai.com?subject=Security%20%26%20compliance%20%E2%80%94%20Example%20Studio&body=Hi%20AtomsAI%2C%0A%0APlease%20share%20the%20scope%20of%20your%20current%20report.%0A%0AAlex%20Example%0AExample%20Studio%0AReply%20to%3A%20alex%40example.com"
+}

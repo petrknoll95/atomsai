@@ -1,0 +1,66 @@
+[
+  {
+    "browser": "chromium",
+    "checks": [
+      {
+        "card": 0,
+        "middle": 1.0317,
+        "hover": 1.06,
+        "return": 1,
+        "fixedForeground": true,
+        "fixedShader": true
+      },
+      {
+        "card": 1,
+        "middle": 1.0317,
+        "hover": 1.06,
+        "return": 1,
+        "fixedForeground": true,
+        "fixedShader": true
+      },
+      {
+        "card": 2,
+        "middle": 1.0318,
+        "hover": 1.06,
+        "return": 1,
+        "fixedForeground": true,
+        "fixedShader": true
+      }
+    ],
+    "keyboard": true,
+    "reducedMotion": true,
+    "noMobileOverflow": true
+  },
+  {
+    "browser": "webkit",
+    "checks": [
+      {
+        "card": 0,
+        "middle": 1.0318,
+        "hover": 1.06,
+        "return": 1,
+        "fixedForeground": true,
+        "fixedShader": true
+      },
+      {
+        "card": 1,
+        "middle": 1.0318,
+        "hover": 1.06,
+        "return": 1,
+        "fixedForeground": true,
+        "fixedShader": true
+      },
+      {
+        "card": 2,
+        "middle": 1.0318,
+        "hover": 1.06,
+        "return": 1,
+        "fixedForeground": true,
+        "fixedShader": true
+      }
+    ],
+    "keyboard": true,
+    "reducedMotion": true,
+    "noMobileOverflow": true
+  }
+]

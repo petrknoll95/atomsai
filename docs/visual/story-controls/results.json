@@ -1,0 +1,278 @@
+[
+  {
+    "browser": "chromium",
+    "pause": true,
+    "navigation": true,
+    "loop": true,
+    "keyboard": true,
+    "reducedMotion": true,
+    "sizes": [
+      {
+        "width": 1600,
+        "geometry": [
+          {
+            "label": "Play customer stories",
+            "left": 419.984375,
+            "right": 16,
+            "top": 16,
+            "bottom": 580,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "Previous customer story",
+            "left": 16,
+            "right": 419.984375,
+            "top": 580,
+            "bottom": 16,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "Next customer story",
+            "left": 419.984375,
+            "right": 16,
+            "top": 580,
+            "bottom": 16,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      },
+      {
+        "width": 1024,
+        "geometry": [
+          {
+            "label": "Play customer stories",
+            "left": 304.796875,
+            "right": 16,
+            "top": 16,
+            "bottom": 500,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "Previous customer story",
+            "left": 16,
+            "right": 304.796875,
+            "top": 500,
+            "bottom": 16,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "Next customer story",
+            "left": 304.796875,
+            "right": 16,
+            "top": 500,
+            "bottom": 16,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "geometry": [
+          {
+            "label": "Play customer stories",
+            "left": 290,
+            "right": 16,
+            "top": 16,
+            "bottom": 406.65625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "Previous customer story",
+            "left": 16,
+            "right": 290,
+            "top": 406.65625,
+            "bottom": 16,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "Next customer story",
+            "left": 290,
+            "right": 16,
+            "top": 406.65625,
+            "bottom": 16,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "geometry": [
+          {
+            "label": "Play customer stories",
+            "left": 220,
+            "right": 16,
+            "top": 16,
+            "bottom": 313.328125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "Previous customer story",
+            "left": 16,
+            "right": 220,
+            "top": 313.328125,
+            "bottom": 16,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "Next customer story",
+            "left": 220,
+            "right": 16,
+            "top": 313.328125,
+            "bottom": 16,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "browser": "webkit",
+    "pause": true,
+    "navigation": true,
+    "loop": true,
+    "keyboard": true,
+    "reducedMotion": true,
+    "sizes": [
+      {
+        "width": 1600,
+        "geometry": [
+          {
+            "label": "Play customer stories",
+            "left": 419.984375,
+            "right": 16,
+            "top": 16,
+            "bottom": 580,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "Previous customer story",
+            "left": 16,
+            "right": 419.984375,
+            "top": 580,
+            "bottom": 16,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "Next customer story",
+            "left": 419.984375,
+            "right": 16,
+            "top": 580,
+            "bottom": 16,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      },
+      {
+        "width": 1024,
+        "geometry": [
+          {
+            "label": "Play customer stories",
+            "left": 304.796875,
+            "right": 16,
+            "top": 16,
+            "bottom": 500,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "Previous customer story",
+            "left": 16,
+            "right": 304.796875,
+            "top": 500,
+            "bottom": 16,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "Next customer story",
+            "left": 304.796875,
+            "right": 16,
+            "top": 500,
+            "bottom": 16,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "geometry": [
+          {
+            "label": "Play customer stories",
+            "left": 290,
+            "right": 16,
+            "top": 16,
+            "bottom": 406.65625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "Previous customer story",
+            "left": 16,
+            "right": 290,
+            "top": 406.65625,
+            "bottom": 16,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "Next customer story",
+            "left": 290,
+            "right": 16,
+            "top": 406.65625,
+            "bottom": 16,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      },
+      {
+        "width": 320,
+        "geometry": [
+          {
+            "label": "Play customer stories",
+            "left": 220,
+            "right": 16,
+            "top": 16,
+            "bottom": 313.328125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "Previous customer story",
+            "left": 16,
+            "right": 220,
+            "top": 313.328125,
+            "bottom": 16,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "Next customer story",
+            "left": 220,
+            "right": 16,
+            "top": 313.328125,
+            "bottom": 16,
+            "width": 44,
+            "height": 44
+          }
+        ]
+      }
+    ]
+  }
+]

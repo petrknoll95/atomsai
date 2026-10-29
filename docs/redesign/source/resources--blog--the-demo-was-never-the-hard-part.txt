@@ -1,0 +1,74 @@
+Home
+/
+Resources
+/
+Blog
+/
+The demo was never the hard part
+move AI pilots to production
+integrate AI with your systems
+AI implementation
+The demo was never the hard part
+Why do AI pilots stall before production?
+Pilots don't fail on model quality. They fail on the systems between the demo and a finished piece of work — and on the exception queue nobody scoped.
+AtomsAI editorial
+19 August 2026
+3 min read
+On this page
+Where does the work actually end?
+How do you know if it’s working?
+Which workflow should you automate first?
+Questions buyers ask
+Written by
+SL
+Sofia Lindqvist
+Delivery lead, applied AI
+Fifteen years shipping operations software before the AI part. Writes down the failure mode first, then the fix.
+Illustrative author profile. Attribution and biography are fictional.
+Share
+LinkedIn
+X
+Copy link
+AI pilots usually stall before production because of what sits between the model’s output and a finished piece of work: writing back to your systems, approvals, the exceptions nobody scoped, and no agreed number for whether it’s working. Fix those, and the model is rarely the problem.
+Stalled AI programmes tend to share a shape. A pilot that worked. A steering committee that approved. And, months later, nothing in production.
+The post-mortem almost always blames the model, or “change management.” It’s usually neither. It’s the gap between producing an output and finishing a piece of work.
+Where does the work actually end?
+A demo ends when the model returns text. The work ends when the invoice is paid, the ticket is closed, the policy is bound. Between those two points sit the write-back to the system of record, the approval nobody had authority to design, the exception path for the documents that arrive malformed, the audit trail your controller needs at month-end, and someone on call when a downstream API returns 500 for an hour.
+None of that is glamorous and all of it is the project.
+Integration is the product.
+How do you know if it’s working?
+The second reason is measurement. A pilot is judged by whether a room was impressed. Production is judged by whether it’s still trusted in month four — and if you can’t answer “is it working?” with a number, trust decays to zero on the first visible mistake. That’s why we write failure tests before the happy path (
+more on evals here
+): accuracy against a labelled set, cost per run against a ceiling, latency against a budget, and an alarm when any of them moves.
+Which workflow should you automate first?
+RFPs name the workflow that’s easiest to describe. The expensive one is the one people are slightly embarrassed about — the shared mailbox, the Friday spreadsheet, the queue with no owner. Look in the exception queue, not the process diagram.
+If you want a cheap test of whether a pilot will survive: ask who owns the runbook, what the rollback is, and what number gets checked on Monday. If nobody can answer, the model quality is irrelevant.
+Somewhere in your finance team, someone spends Friday fixing the invoices that failed OCR.
+Fix Friday.
+See
+how we take a workflow from teardown to production
+, or what a
+document intake agent
+does with invoices that arrive malformed.
+Questions buyers ask
+Why do AI pilots fail to reach production?
+Rarely because of the model. They stall on the work between an output and a finished task: writing back to your systems, approvals, the exceptions nobody scoped, and no agreed number for whether it’s working.
+How do you move an AI pilot into production?
+Scope the full workflow to the point where the work is finished, including write-backs, approvals and the exception path. Agree the numbers that define success before you build, and name who owns the runbook and the rollback.
+Which workflow should we automate with AI first?
+Look in the exception queue, not the process diagram: the shared mailbox, the Friday spreadsheet, the queue with no owner. That is usually where the cost is.
+How do you know if an AI system is working in production?
+Measure it against a labelled set for accuracy, a ceiling for cost per run and a budget for speed, with an alarm when any of them moves.
+A demo proves a model can do the task once. Production proves your business can rely on it every time — and almost nothing you built for the first gets you the second.
+The demo was never the hard part
+Previous post
+Write the evals before the prompt
+Next post
+The after-hours messages no one sees
+Read the blog
+The posts argue it. The studies price it.
+The same workflows from the other end: what the baseline was, what we built, and what moved once it was live.
+Read the case studies
+Three illustrative workflows, with the baseline, the build and the denominator.
+See how we build
+Five steps, four to eight weeks, and you own what comes out.

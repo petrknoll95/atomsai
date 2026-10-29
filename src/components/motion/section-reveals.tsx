@@ -2,17 +2,19 @@
 
 import { useLayoutEffect, useRef, type ReactNode } from 'react';
 import { gsap } from 'gsap';
+import { useHeadlineReveals } from './use-headline-reveals';
 import styles from './section-reveals.module.css';
 
 /** Shared page-entry rhythm. Opacity only: measured layout and artwork stay still. */
 export const sectionRevealSettings = {
-  duration: 0.7,
-  ease: 'power2.out',
-  viewportEntry: 0.85,
+  duration: 1.1,
+  ease: 'power2.inOut',
+  viewportEntry: 0.72,
 } as const;
 
 export function SectionReveals({ children, id }: { children: ReactNode; id?: string }) {
   const rootRef = useRef<HTMLDivElement>(null);
+  useHeadlineReveals(rootRef);
 
   useLayoutEffect(() => {
     const root = rootRef.current;
@@ -20,7 +22,8 @@ export function SectionReveals({ children, id }: { children: ReactNode; id?: str
 
     // Only outer sections: nested semantic sections must not fade twice.
     const sections = Array.from(root.querySelectorAll<HTMLElement>('section, footer')).filter(section =>
-      !section.parentElement?.closest('section, footer') && section.dataset.reveal !== 'off');
+      !section.parentElement?.closest('section, footer') && section.dataset.reveal !== 'off'
+      && section.dataset.section !== 'hero');
     const revealed = new Set<HTMLElement>();
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let context: gsap.Context | undefined;
@@ -42,7 +45,7 @@ export function SectionReveals({ children, id }: { children: ReactNode; id?: str
           section.dataset.revealState = 'visible';
         };
         const showTarget = (target: Element | null) => {
-          if (!target) return;
+          if (!target || target === document.body || target === document.documentElement) return;
           const section = sections.find(section => section.contains(target) || target.contains(section));
           if (section) showImmediately(section);
         };
@@ -60,7 +63,7 @@ export function SectionReveals({ children, id }: { children: ReactNode; id?: str
           const bounds = section.getBoundingClientRect();
           // Preserve the first paint, deep links and browser-restored scroll positions.
           // Sections already passed also stay visible when scrolling back up.
-          if (revealed.has(section) || bounds.top < window.innerHeight || !bounds.height) {
+          if (revealed.has(section) || bounds.top < window.innerHeight * sectionRevealSettings.viewportEntry || !bounds.height) {
             revealed.add(section);
             section.dataset.revealState = 'visible';
             return;

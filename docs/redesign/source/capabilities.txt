@@ -1,0 +1,177 @@
+One platform.
+Every agent your business needs.
+Your knowledge. Your rules. Built around the workflows you actually run.
+The system
+↘
+Voice
+↗
+Chat
+↗
+Integrations
+↘
+Agents
+↗
+Built around
+your business.
+We connect your systems, knowledge, and workflows into agents that work by your
+rules.
+Your rules.
+Every layer.
+Guardrails
+Access
+Policies
+Audit trails
+Security
+Observability
+Evaluation
+Explore trust
+↗
+Agents
+Agent teams
+Enterprise search
+Decisions & actions
+Experiences
+Voice & chat
+Web & mobile
+Human handoffs
+Workflows
+Automation
+Business rules
+Approvals
+Knowledge
+Knowledge graphs
+Quality & lineage
+Grounded retrieval
+Resources
+APIs & tools
+Data sync
+External agents
+Your systems
+CRM & ERP
+Docs & databases
+Email & teams
+Your choice
+of models.
+Anthropic
+Gemini
+Open models
+Matched to the task
+Built for your environment
+Your VPC
+Your cloud
+On-premise
+Capability, in every detail.
+Knowledge
+Tasks & tools
+Guardrails
+Monitoring & evaluation
+Your business. In context.
+Connect documents, records, and relationships so every answer starts with the right source.
+Documents & structured data
+Graph retrieval & semantic search
+Source-aware answers
+Documents
+Policies & files
+Knowledge
+Pages & guides
+Records
+Business data
+Business context
+Connected. Grounded. Permission-aware.
+A grounded answer
+Verified sources
+The right answer.
+With the context behind it.
+Card policy
+Account record
+↗
+An answer is only the start.
+Turn business processes into tools your agent can use, with the right checks before each action.
+Connected business applications
+Reusable workflows
+APIs, webhooks & MCP
+Request
+Email & chat
+Systems
+CRM & helpdesk
+Tools
+APIs & MCP
+Choose the next action
+Right tool. Right order. Right checks.
+A completed task
+3 steps run
+Read the context
+Update the record
+Send the reply
+Reusable workflow
+Webhook out
+↗
+Clear boundaries. At every step.
+Keep conversations and actions within your policies, with permission checks and human approval where it matters.
+Grounding & topic boundaries
+Permissions & approval gates
+An audit trail for every action
+Grounding
+Sources only
+Permissions
+Per role
+Approvals
+Human in loop
+Policy check
+Every answer. Every action. Every time.
+A safe action
+Inside policy
+Request
+Policy check
+Safe action
+Identity checked
+Audit entry
+↗
+See it. Test it. Improve it.
+Follow a run from question to outcome, compare changes, and test against the situations your business actually faces.
+Evaluation sets & experiments
+Run traces & tool activity
+Quality, latency & cost
+Quality
+Graded runs
+Latency
+Per step
+Cost
+Per outcome
+Run inspection
+Traced from question to outcome.
+Quality over time
+Illustrative
+Compare versions
+Full trace
+↗
+Selecting features requires JavaScript. The four capabilities cover connected
+knowledge, tools and workflows, policy guardrails, and monitoring and evaluation.
+Agents we've built
+The platform, at work.
+See the agents we've built on it.
+See agents
+Not on the list?
+We build it
+→
+Inside your apps.
+Across your business.
+The same intelligence, wherever work happens.
+An agent inside your product, with your branding and your business context.
+One agent.
+Knowledge · actions · permissions
+Your own apps
+Web · mobile · internal tools
+Email
+Shared inboxes · follow-ups
+Team messaging
+Slack · Microsoft Teams
+CRM & helpdesk
+Customer records · tickets
+APIs & webhooks
+Events · actions · endpoints
+Custom integrations
+Your systems · your workflow
+Connect your workflow.
+Built into the tools you already use.
+Contact us

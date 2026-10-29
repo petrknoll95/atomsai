@@ -1,0 +1,503 @@
+AtomsAI / Quote agent
+Every request quoted.
+In hours, not days.
+Reads every request for quote, matches each line to your catalog, prices it by your rules and drafts the quote. Your engineers only see what really needs them.
+Contact us
+See what it does
+Built for manufacturers and distributors who win on speed.
+Keystone Industrial Supply · Quotes
+Live
+Request for quote ·
+Delta Packaging
+Needed by Nov 20
+RFQ: bearings, bolts and a bracket
+Please quote the items below and the attached bracket drawing. We need them by
+November 20.
+500 × 6205-2RS bearing
+In stock
+$1,700
+200 × M10 stainless bolt
+In stock
+$680
+50 × custom bracket
+Drawing attached
+Engineer
+Draft quote ready in 6 minutes
+Priced from Delta's contract prices · the engineer only reviews the bracket
+01 / Read
+02 / Match
+03 / Price
+04 / Approve and send
+Why it matters
+What it does
+Channels & stack
+Quote queue
+By industry
+Controls & evals
+Pricing
+Why it matters
+Requests for quotes arrive all day, often with drawings and long part lists.
+Someone has to read each one, look up every item, check stock and price it.
+The first good quote usually wins, and most take days.
+Days to quote
+Requests wait in an inbox while the buyer gets a faster price elsewhere.
+Missing details
+No quantity, no material, no date. The back and forth adds days.
+Engineers on easy quotes
+Your experts look up standard parts instead of pricing the hard ones.
+The first good quote wins the order.
+Yours should be first.
+Same requests. More orders won.
+What 100 requests for quotes a month turn into, quoted by hand and with a quote agent
+Quoted by hand
+3 days
+time to send a quote
+30
+quotes held up by missing details
+22
+orders won
+With the quote agent
+4 hours
+time to send a quote
+5
+quotes held up by missing details
+31
+orders won
+9 more orders a month from the same requests
+, because your quote arrives first.
+Illustrative
+What it does
+Everything your quoting desk does.
+For every request, the same day.
+Reads any request.
+Emails, part lists in spreadsheets, PDFs and drawings, from any customer, in any layout.
+Example · one request, three formats
+Email
+“Please quote the below…”
+Read
+Part list
+48 lines in a spreadsheet
+Read
+Drawing
+Bracket, rev C
+Read
+Matches your catalog.
+Every line to the right part number, even when the buyer uses their own.
+6205-2RS
+→ BRG-6205-2RS
+M10 bolt, stainless
+→ BLT-M10-A2-30
+Custom bracket
+→ Needs an engineer
+Prices by your rules.
+Contract prices, quantity breaks and margin floors, straight from your price lists. Never guessed.
+Example · priced by your rules, not guessed
+List price, 500 bearings
+$1,930
+Delta's contract price
+−12%
+Quantity break, 500+
+Applied
+Margin floor
+Above 18% ✓
+Line total $1,700, from your price list
+Asks for what's missing.
+Quantity, material or date, in one short email.
+Email to Delta Packaging
+Which steel grade do you need for the bracket, 304 or 316?
+Reply: 316 · added to the request
+Checks stock and lead times.
+So the quote says when it can ship.
+Bearings
+1,200 in stock · ships tomorrow
+Bolts
+80 now, 120 more in 5 days
+Bracket
+3 weeks to make
+Sends custom work on.
+With everything ready, so they only price the hard part.
+To Raj · Applications engineer
+Item
+Custom bracket · 50 pieces
+Ready
+Drawing, steel grade 316, due date
+Left
+Only the bracket price to add
+Follows up every quote.
+Checks in, answers questions and re-quotes on request.
+Hi Lisa, any questions on quote Q-2291? Happy to adjust quantities.
+Can you price 1,000 instead of 500?
+New quote drafted at the 1,000 price
+Faster quotes, more orders won.
+Quotes go out in hours, buyers hear from you first, and engineers spend their time on the work only they can do.
+Example · one quarter, one distributor
+4 hrs
+average time to quote, down from 3 days
++40%
+more orders won
+85%
+of lines priced without an engineer
+0
+quotes sent below your margin floor
+Channels, capabilities and integrations
+Every way requests arrive.
+Connected to your ERP.
+Reads requests from email, web forms, phone calls and buyer portals. Prices and stock come from your ERP, and quotes are saved back to it and your CRM.
+5
+Ways in. One quote queue.
+Email
+Web forms
+Phone
+Buyer portals
+File uploads
+Secure by default
+SOC 2 Type II, HIPAA and GDPR. Your data is never used to train models.
+Requests read today
+00:00 → 23:59
+Always on
+Requests that land overnight are drafted by morning, so your quote is the first one the buyer opens.
+Hands over to your team
+The right engineer or sales lead, with the request, the drawing and everything already priced.
+When it hands over
+As per your rules
+Custom or engineered parts
+Below your margin floor
+A large or key customer
+AI agent
+Custom part
+→
+RP
+Raj P.
+Applications engineer
+Below margin floor
+→
+TB
+Tom B.
+Sales manager
+Key account
+→
+KS
+Kate S.
+Account manager
+Handover note
+· request, drawing, priced lines, what's left
+At home in your stack
+NetSuite, SAP, Epicor, Sage and Microsoft Dynamics. Salesforce and HubSpot. Price lists in spreadsheets. Gmail and Outlook. JustCall for calls. Anything else through APIs and webhooks.
+Scoped access, approved per action
+Quote queue
+Every request.
+Drafted, priced and tracked.
+See where every quote stands, and which ones need a person to approve.
+Quote queue · this week
+All channels
+Illustrative
+Requests in
+86
+Time to quote
+4h
+Lines priced automatically
+85%
+Win rate
+31%
+Delta Packaging · 3 lines
+Email
+Draft ready · bracket with the engineer
+Engineer review
+Acme Foods · 48 lines
+Web form
+All matched and priced
+Sent
+Pine Motors · 12 lines
+Phone
+Quantity missing on 2 lines
+Asked buyer
+Vela Energy · 6 lines
+Email
+Below your margin floor
+Manager approval
+Harbor Labs · quote #Q-2291
+Email
+No reply in 4 days
+Followed up
+2 quotes waiting for approval
+Review
+Hold sending
+One view of every quote
+From request to sent to won, across every channel.
+Every price explained
+Click a line to see the price list, discount and rule it used.
+Stock on every line
+Availability and lead time, checked when the quote is drafted.
+Review or hold
+Approve a quote, edit a line, or hold sending for a customer.
+Quoting every day?
+There's a play for that.
+Pick your industry to see how the agent reads, prices and follows up quotes.
+Industrial distribution
+2
+Machining & fabrication
+2
+Electrical & building supplies
+2
+HVAC & equipment
+2
+Auto & truck parts
+2
+Medical supplies
+2
+Food service distribution
+2
+Freight & logistics
+2
+Home services
+2
+Industrial distribution
+Long part lists arrive by email, and every line needs a lookup.
+Part list
+48-line request
+Email
+Trigger
+A buyer emails a spreadsheet of parts.
+Agent
+Matches every line to your catalog and prices it.
+Result
+Quote out the same day
+Substitute
+Part out of stock
+Email
+Trigger
+A requested part has a 6-week lead time.
+Agent
+Offers an approved equivalent that's in stock.
+Result
+Order kept, not lost
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Machining & fabrication
+Every request has drawings, and estimators are the bottleneck.
+Prepare
+Drawing-based request
+Email
+Upload
+Trigger
+A customer sends a drawing for 200 parts.
+Agent
+Reads material, finish and quantity, asks what's missing.
+Result
+Estimator gets a complete request
+Follow-up
+Quote gone quiet
+Email
+Trigger
+A quote has had no reply in a week.
+Agent
+Follows up and offers to adjust quantities.
+Result
+Order closed
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Electrical & building supplies
+Contractors want prices for a whole job, fast, from a materials list.
+Part list
+Materials list for a job
+Email
+Web form
+Trigger
+A contractor sends a list for a new build.
+Agent
+Prices it at the contractor's rates and checks stock.
+Result
+Quote before the competitor's
+Phone
+Quick price by phone
+Voice
+Trigger
+A contractor calls from site for a price.
+Agent
+Quotes from the price list and texts it over.
+Result
+Order placed on the call
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+HVAC & equipment
+Equipment quotes need models, sizes and options checked.
+Configure
+Right unit for the space
+Web form
+Trigger
+A buyer asks for a unit for a 2,000 sq ft office.
+Agent
+Suggests matching models and prices the options.
+Result
+Complete quote, first time
+Follow-up
+Seasonal re-quote
+Email
+Trigger
+A spring price list replaces the winter one.
+Agent
+Re-prices open quotes and sends updates.
+Result
+No quotes on old prices
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Auto & truck parts
+Fleets and garages ask for many parts by vehicle, not by part number.
+Match
+Parts by vehicle
+Voice
+Email
+Trigger
+A fleet asks for brake parts for 12 vans.
+Agent
+Finds the right parts for the model and year.
+Result
+No wrong parts shipped
+Part list
+Monthly fleet order
+Email
+Trigger
+A fleet sends its monthly list.
+Agent
+Prices it at the fleet's contract rates.
+Result
+Order confirmed in an hour
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Medical supplies
+Clinics and hospitals send long lists with strict contract prices.
+Part list
+Clinic restock
+Email
+Portal
+Trigger
+A clinic sends its monthly supply list.
+Agent
+Matches items and applies the contract price.
+Result
+Quote matches the contract
+Substitute
+Backordered gloves
+Email
+Trigger
+A requested glove size is backordered.
+Agent
+Offers the approved alternative.
+Result
+Clinic stays stocked
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Food service distribution
+Restaurants want prices for weekly orders, and prices change often.
+Part list
+Weekly order
+WhatsApp
+Email
+Trigger
+A restaurant sends next week's list.
+Agent
+Prices it at today's rates and confirms delivery day.
+Result
+Order confirmed same day
+Follow-up
+Price change
+SMS
+Trigger
+A key item's price rises.
+Agent
+Tells regular buyers and suggests options.
+Result
+No surprises on the invoice
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Freight & logistics
+Shippers want a freight rate now, and the first rate often wins.
+Rate
+Spot freight quote
+Email
+Trigger
+A shipper asks for a rate, Dallas to Denver.
+Agent
+Prices it from your rate rules and lanes.
+Result
+Rate sent in minutes
+Prepare
+Missing details
+Email
+Trigger
+A request has no weight or pickup date.
+Agent
+Asks for exactly what's missing.
+Result
+Quotable the same hour
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Home services
+Homeowners want a price before booking a visit.
+Estimate
+Price range from photos
+Web chat
+Trigger
+A homeowner sends photos of a damaged fence.
+Agent
+Gives a price range from your price book, books a visit.
+Result
+Visit booked, not lost
+Follow-up
+Estimate not accepted
+SMS
+Trigger
+An estimate has sat for a week.
+Agent
+Checks in and answers questions.
+Result
+Job won
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Prices come only from your own price lists and rules. Custom work is approved by a person.
+Controls and evals
+Your prices. Your rules.
+Your engineer signs off.
+Controls
+Only your price lists
+Prices come from your lists, contracts and rules. Never estimated.
+Margin floors
+Anything below your margin needs a manager's approval.
+You choose what sends itself
+Standard quotes under a limit can go straight out. Everything else waits for a yes.
+Full audit trail
+Every request, price, change and approval is logged with the quote.
+Evals
+Tested on your past requests
+Compared with the quotes your team actually sent, line by line.
+Prices checked to the cent
+Every rule is tested against your price lists before launch.
+Re-tested on every change
+A saved test set re-runs whenever prices or rules change.
+Measured against your goals
+Time to quote, win rate and margin, reviewed with you weekly.
+Pricing
+Custom built.
+Priced for your requirements.
+No fixed tiers. Every quote agent is built around your journeys, channels and systems, so we price it the same way: after we understand what you need.
+What shapes the price
+Number of requests a month
+Catalog size and price rules
+ERP and CRM
+Channels: email, forms, phone, portals
+Approval rules
+Always included
+Design and build with our team
+Price rules set up and tested with you
+Testing on your past requests before launch
+Weekly reviews and tuning after go-live
+Security: SOC 2 Type II, HIPAA, GDPR
+Tell us what you need.
+Share your journeys, channels and systems. We'll come back with a scope and a
+price.
+Contact us
+Bring 20 recent requests.
+We'll show you the quotes, drafted.
+Share a sample of requests and the quotes you sent. We'll show the agent's drafts side by side, and how much faster they'd have gone out.
+Contact us
+Pricing

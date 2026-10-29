@@ -1,0 +1,122 @@
+[
+  {
+    "browser": "chromium",
+    "width": 1440,
+    "errors": [],
+    "geometry": {
+      "viewport": 1440,
+      "scroll": 1440,
+      "headings": 1,
+      "brokenImages": 0
+    },
+    "billingSelection": "true",
+    "billingPanel": true,
+    "handoffSelection": "true",
+    "faqOpened": true
+  },
+  {
+    "browser": "chromium",
+    "width": 768,
+    "errors": [],
+    "geometry": {
+      "viewport": 768,
+      "scroll": 768,
+      "headings": 1,
+      "brokenImages": 0
+    },
+    "billingSelection": "true",
+    "billingPanel": true,
+    "handoffSelection": "true",
+    "faqOpened": true
+  },
+  {
+    "browser": "chromium",
+    "width": 390,
+    "errors": [],
+    "geometry": {
+      "viewport": 390,
+      "scroll": 390,
+      "headings": 1,
+      "brokenImages": 0
+    },
+    "billingSelection": "true",
+    "billingPanel": true,
+    "handoffSelection": "true",
+    "faqOpened": true
+  },
+  {
+    "browser": "chromium",
+    "width": 320,
+    "errors": [],
+    "geometry": {
+      "viewport": 320,
+      "scroll": 320,
+      "headings": 1,
+      "brokenImages": 0
+    },
+    "billingSelection": "true",
+    "billingPanel": true,
+    "handoffSelection": "true",
+    "faqOpened": true
+  },
+  {
+    "browser": "webkit",
+    "width": 1440,
+    "errors": [],
+    "geometry": {
+      "viewport": 1440,
+      "scroll": 1440,
+      "headings": 1,
+      "brokenImages": 0
+    },
+    "billingSelection": "true",
+    "billingPanel": true,
+    "handoffSelection": "true",
+    "faqOpened": true
+  },
+  {
+    "browser": "webkit",
+    "width": 768,
+    "errors": [],
+    "geometry": {
+      "viewport": 768,
+      "scroll": 768,
+      "headings": 1,
+      "brokenImages": 0
+    },
+    "billingSelection": "true",
+    "billingPanel": true,
+    "handoffSelection": "true",
+    "faqOpened": true
+  },
+  {
+    "browser": "webkit",
+    "width": 390,
+    "errors": [],
+    "geometry": {
+      "viewport": 390,
+      "scroll": 390,
+      "headings": 1,
+      "brokenImages": 0
+    },
+    "billingSelection": "true",
+    "billingPanel": true,
+    "handoffSelection": "true",
+    "faqOpened": true
+  },
+  {
+    "browser": "webkit",
+    "width": 320,
+    "errors": [],
+    "geometry": {
+      "viewport": 320,
+      "scroll": 320,
+      "headings": 1,
+      "brokenImages": 0
+    },
+    "billingSelection": "true",
+    "billingPanel": true,
+    "handoffSelection": "true",
+    "faqOpened": true
+  }
+]

@@ -2,9 +2,9 @@
 
 import { useRef, useState, type FormEvent } from 'react';
 import { ButtonLink, Eyebrow } from '../ui';
-import { MotionPattern } from '@/components/patterns/motion-pattern';
-import { HomePattern, homePatternPlacements } from '@/components/patterns/home-pattern';
+import { HomePattern } from '@/components/patterns/home-pattern';
 import styles from './products.module.css';
+import { VoicePreview } from './voice-preview';
 
 const playground = 'https://pyai.com/playground';
 
@@ -73,7 +73,7 @@ function PropertyPreview() {
           </form>
         </div>
       </div>
-      <Eyebrow>Property Advisor</Eyebrow>
+      <Eyebrow href={playground}>Property Advisor</Eyebrow>
       <div className={styles.previewCopy}>
         <h3 className={`display ${styles.productTitle}`}>Find a home. &nbsp;Start with a chat.</h3>
         <p>Tell the property advisor what you’re looking for. Find your next home through a conversation.</p>
@@ -87,32 +87,16 @@ export function Preview() {
   return (
     <section id="technology" className={`page-container ${styles.preview}`} aria-labelledby="preview-title">
       <div className={styles.sectionHeading}>
-        <Eyebrow>Try the technology</Eyebrow>
-        <h2 id="preview-title" className={`display ${styles.previewTitle}`}>Go ahead. Put it to the test.</h2>
+        <Eyebrow href={playground}>Try the technology</Eyebrow>
+        <h2 id="preview-title" className={`display ${styles.previewTitle}`}>See our AI in action.</h2>
       </div>
       <div className={styles.previewGrid}>
         <article className={styles.previewColumn}>
           <div className={styles.voiceWidget}>
             <HomePattern id="voice-preview-pattern" application="preview-drift" className={styles.voicePattern} />
-            <div className={styles.voiceGlass}>
-              <img className={styles.voiceLine} src="/assets/figma/preview-waveform.svg" width="736" height="320" alt="" />
-              <div className={styles.voiceLabels}>
-                <ButtonLink href={playground} target="_blank" rel="noopener noreferrer" size="small">PyAI</ButtonLink>
-                <ButtonLink href={playground} target="_blank" rel="noopener noreferrer" size="small" className={styles.voiceType}>Voice Assistant</ButtonLink>
-              </div>
-              <a href={playground} target="_blank" rel="noopener noreferrer" className={`button button-large ${styles.startTalking}`} aria-label="Start talking in the PyAI playground (opens in a new tab)">
-                <span className={styles.voiceButtonBackdrop} data-voice-button-backdrop aria-hidden="true">
-                  <span className={styles.voiceButtonPattern} data-voice-blur-layer><MotionPattern {...homePatternPlacements['preview-drift'].options} motion="tide" duration={12} intensity={0.7} syncWith="#voice-preview-pattern canvas" /></span>
-                  <span className={styles.voiceButtonGlass} />
-                  <img data-voice-blur-layer className={styles.voiceButtonLine} src="/assets/figma/preview-waveform.svg" width="736" height="320" alt="" />
-                </span>
-                <img className={styles.voiceWave} src="/assets/figma/preview-voice-icon.svg" width="24" height="24" alt="" />
-                Start Talking
-              </a>
-              <p className={styles.voiceHint}>Enable microphone access to start talking.</p>
-            </div>
+            <VoicePreview />
           </div>
-          <Eyebrow>PyAI</Eyebrow>
+          <Eyebrow href="https://pyai.com/">PyAI</Eyebrow>
           <div className={styles.previewCopy}>
             <h3 className={`display ${styles.productTitle}`}>Hear what PyAI can do.</h3>
             <p>Ask a question and hear PyAI respond.<br />Try a voice conversation for yourself.</p>

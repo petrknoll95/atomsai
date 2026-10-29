@@ -1,0 +1,274 @@
+Industries
+/
+Manufacturing
+Answer every RFQ. While the buyer is still deciding.
+One agent across chat, phone, SMS and email that turns RFQs into quotes faster, answers order status, and handles warranty and parts requests, inside your ERP.
+Book a demo
+→
+Try the chat agent
+Built for your rules
+Prices, lead times and warranty decisions come only from your ERP and the rules your team approves.
+RFQ read and priced
+20 min
+Draft quote with Sam to approve · 3 parts
+Handled
+Connected during your build
+SAP
+Epicor
+NetSuite
+Infor
+Salesforce
+HubSpot
+Your quoting tool
+Your phone system
+What it brings
+Where your plant feels it.
+Grows revenue
+Win more RFQs
+Every RFQ is read, priced from your ERP and followed up while the buyer is still deciding. Your team approves before it goes out.
+1
+RFQ read
+Lists parts, quantities and dates from the email.
+2
+Parts matched
+Matches each line to your part numbers and prices.
+3
+Quote drafted
+Adds lead times; anything custom goes to engineering.
+4
+Sent and followed up
+Sends once approved, then follows up until answered.
+Connected to SAP, Salesforce, your price lists and email during your build.
+Frees inside sales
+Fewer “where’s my order?” calls
+Order, shipping and lead-time questions are answered straight from the ERP, with the ship date and tracking.
+1
+Order found
+Finds the order from the PO or order number.
+2
+Status checked
+Reads production and shipping status in the ERP.
+3
+Customer answered
+Replies with the ship date and tracking link.
+4
+Account updated
+Adds a note to the account in your CRM.
+Connected to Epicor, NetSuite, your carriers and email during your build.
+Keeps distributors loyal
+Resolve warranty claims faster
+Claims and parts requests arrive complete, with photos and serial numbers, and the decision stays with your team.
+1
+Request taken
+Picks up the claim wherever it arrives.
+2
+Details collected
+Asks for the serial, purchase date and photos.
+3
+Coverage checked
+Checks the serial; your team makes the decision.
+4
+Claim filed
+Files the complete claim in your warranty system.
+Connected to SAP, your warranty system, email and web chat during your build.
+DP
+Delta Pump Systems
+Buyer · Tulsa, OK
+Email · 7:05am
+Please quote 3 parts at 500 and 1,000 units, delivery by March.
+Thanks, got all three. You’ll have pricing for both quantities today.
+✓ RFQ read · 3 parts, 2 quantities
+Parts matched
+Part numbers
+✓
+3 of 3 matched
+Price breaks
+✓
+Applied from the ERP
+Quantities
+500 and 1,000 units
+Draft quote · Delta Pump Systems
+Lines
+3 parts, 2 quantities
+Lead time
+6 weeks, delivery in March
+Status
+Sent to Sam to approve
+Approved by Sam · 7:25am
+Quote sent to Delta Pump Systems
+Follow-up set for Thursday in Salesforce
+The result
+Draft quote ready for approval 20 minutes after the RFQ email arrived.
+RE
+Ridgeway Equipment
+Customer · Akron, OH
+Email · 10:22am
+When will PO 4471 ship? We need it for a line changeover.
+Checking PO 4471 now. Back to you in a minute.
+✓ Found SO 20518 · 4 lines
+Status checked
+Production
+✓
+Complete, in packing
+Ship date
+✓
+Tomorrow, LTL
+Lines
+4 of 4 ready
+Answered · 10:23am
+PO 4471 ships tomorrow
+Ship date and tracking link sent to Ridgeway
+NetSuite
+Note added to Ridgeway Equipment
+Line changeover noted for the account rep
+The result
+Ship date and tracking sent by email, with no inside-sales call.
+ND
+Northline Distributors
+Distributor · Grand Rapids, MI
+Web chat · 2:14pm
+Our PX-200 pump is leaking after 8 months. Is this covered?
+Sorry about that. Can you send the serial number and a few photos of the leak?
+✓ Claim started
+Details collected
+Serial
+PX200-88431
+Purchased
+Feb 2026
+Photos
+✓
+3 received
+Coverage checked
+Warranty
+✓
+In warranty, 12 months
+Decision
+With Priya, warranty team
+Warranty system
+Claim #W-1192 filed for review
+Serial, photos and purchase date attached
+The result
+Warranty claim filed complete on the first message, ready for a decision.
+Illustrative examples. Connections and rules are set up during your build.
+Before and after
+Same RFQs. More quotes won.
+Example manufacturer, 300 RFQs a month. Illustrative figures.
+Time to send a quote
+Today
+4 days
+With the agent
+Same day
+Order status questions handled by staff
+Today
+All
+With the agent
+Few
+Quotes followed up
+Today
+Some
+With the agent
+Every one
+Warranty claims missing information
+Today
+Most
+With the agent
+Few
+More quotes reach the buyer while they’re still deciding
+, and customer service handles the cases that need a person.
+Win back your database
+Your customer list. More orders from it.
+The agent reaches the customers who already buy from you, at the right moment, across email and SMS.
+Reorder moments
+Customers who order on a cycle hear from you before they run low.
+Quotes that went quiet
+Quotes with no answer get a follow-up and a question about what’s holding them.
+Lapsed accounts
+Accounts that stopped ordering get a check-in from their usual contact.
+For the owner
+Ask the business anything.
+The Intelligence agent reads every conversation and call, and answers your questions in plain English.
+Find what’s slipping
+Quotes waiting on a price, late orders customers asked about, and stuck warranty claims.
+See what’s working
+Win rate by product line, rep and customer, without building a report.
+Approve the next step
+It suggests the follow-up; you say go, and the agent does it.
+See the Intelligence agent
+↗
+Which quotes are going quiet this week?
+Three quotes over $20K were sent more than a week ago with no reply.
+Corbin Hydraulics · hose fittings
+$48K · 9 days, no reply
+Harlan Fluid Controls · valve bodies
+$31K · 12 days, no reply
+Keystone Agri · bracket kits
+$22K · opened, no reply
+Follow up on all three
+Waits for your go-ahead
+Controls and testing
+Your products. Your rules.
+Controls
+Prices and dates from your ERP
+The agent never invents a price, a discount or a lead time.
+Approvals for exceptions
+Custom parts, expedites and warranty decisions go to your team.
+Verified before order details
+Contacts are checked against the account before order details are shared.
+Full audit trail
+Every quote, answer and claim is logged on the account.
+Testing
+Tested on your RFQs
+Real RFQs, order questions and warranty claims, including the messy ones, before launch.
+Checked on every conversation
+Each conversation is scored for accuracy, handover and tone.
+Reported weekly
+Quote turnaround, questions answered and claims filed, by product line.
+People in the loop
+You choose what the agent does alone and what waits for approval.
+Book a demo
+See it on your quotes and orders.
+In 30 minutes you’ll see
+An RFQ turned into a draft quote from your price lists and ERP, live.
+An order status question answered from the ERP, with the ship date and tracking.
+How it connects to your ERP and CRM, and what your first build would cover.
+Name
+*
+Company
+*
+Business email
+*
+Phone
+(optional)
+Company size
+*
+Choose one
+Under 200 staff
+200–1,000 staff
+1,001–5,000 staff
+Over 5,000 staff
+Your role
+(optional)
+Optional. You can call or text me about this request at the number above.
+Calls and texts may be automated or by an AI agent. Consent isn’t a
+condition of purchase; reply STOP to opt out.
+Website
+Book my demo
+We’ll only use this to set up your demo.
+See our privacy policy.
+Send these details by email
+FAQ
+Questions manufacturers ask.
+Explore the Trust Center
+↗
+Which ERPs does it work with?
+We connect to the systems you run, such as SAP, Epicor, NetSuite or Infor, and to your CRM, quoting tool, email and phones. The connections are built as part of your build.
+Does the agent set prices or approve quotes?
+No. It drafts quotes from your price lists and ERP, and a person approves before anything is sent. Custom parts and discounts always go to your team.
+Can it read drawings and RFQ attachments?
+It reads RFQ emails and attached documents to list parts, quantities and dates. Anything it can’t match to a part number goes to your team for review.
+Does it work for distributors and dealers as well as end customers?
+Yes. One agent answers every account on chat, phone, SMS and email, with each account’s own pricing and history.
+Is it secure?
+AtomsAI comes from the team behind JustCall. It is SOC 2 Type II and HIPAA compliant, and every conversation, quote and claim is logged.
+How long does it take to go live?
+It depends on the workflows and the systems we connect. In the demo we look at yours and agree what the first build covers.

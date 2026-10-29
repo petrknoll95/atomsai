@@ -1,0 +1,7 @@
+import {chromium} from 'playwright-core';
+import fs from 'node:fs/promises';
+const label=process.argv[2]||'current';const out=new URL('../docs/visual/header-scroll', import.meta.url).pathname; await fs.mkdir(out, {recursive:true});
+const browser=await chromium.launch();const context=await browser.newContext({viewport:{width:1440,height:900},recordVideo:{dir:out,size:{width:1440,height:900}}});const page=await context.newPage();
+await page.goto('http://127.0.0.1:3001/');await page.waitForSelector('[data-prototype-field][data-ready="true"]');await page.waitForTimeout(1800);
+await page.evaluate(()=>{window.samples=[];window.recording=true;const tick=t=>{const hero=document.querySelector('[data-section="hero"]');window.samples.push({t,scroll:scrollY,top:document.querySelector('header').getBoundingClientRect().top,hero:hero.dataset.progress,flight:hero.dataset.autoFlight||''});if(window.recording)requestAnimationFrame(tick)};requestAnimationFrame(tick)});
+await page.mouse.wheel(0,480);await page.waitForTimeout(3600);await page.mouse.wheel(0,-480);await page.waitForTimeout(3600);await page.evaluate(()=>window.recording=false);const samples=await page.evaluate(()=>window.samples);await fs.writeFile(`${out}/${label}.json`,JSON.stringify(samples));const video=page.video();await context.close();await video.saveAs(`${out}/${label}.webm`);await video.delete();await browser.close();console.log(label, 'recorded',samples.length,'frames');

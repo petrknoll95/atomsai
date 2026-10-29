@@ -1,0 +1,60 @@
+AtomsAI blog
+Short pieces on what breaks between a demo and production, written by the engineers who fixed it.
+https://atomsai.com
+en
+The quote went out. Then nothing.
+https://atomsai.com/resources/blog/quotes-go-quiet
+https://atomsai.com/resources/blog/quotes-go-quiet
+Many unsigned quotes get one email, then silence. Why quotes go quiet, what it costs, and how to follow up across text, email, chat and phone.
+Mon, 26 Oct 2026 00:00:00 GMT
+follow up on estimates
+automate quote follow-up
+win more quoted jobs
+The reminder went out. The chair stayed empty.
+https://atomsai.com/resources/blog/no-shows
+https://atomsai.com/resources/blog/no-shows
+Reminders go out by text and replies come back by email, or not at all. Why seats sit empty, what it costs, and how to confirm and rebook on any channel.
+Fri, 23 Oct 2026 00:00:00 GMT
+reduce no-shows
+automate appointment reminders
+fill cancelled appointments
+The homeowner asked three companies at lunch
+https://atomsai.com/resources/blog/speed-to-lead
+https://atomsai.com/resources/blog/speed-to-lead
+Leads arrive by form, ad, chat, text and phone, then wait in a queue. Where the time goes, what it costs, and how to reply on their channel fast.
+Fri, 23 Oct 2026 00:00:00 GMT
+respond to leads faster
+automate lead follow-up
+AI sales assistant
+The after-hours messages no one sees
+https://atomsai.com/resources/blog/who-answers-at-7pm
+https://atomsai.com/resources/blog/who-answers-at-7pm
+After closing, customers message on chat, text, email and phone. Most of it waits until morning. What that costs and how one agent answers it all.
+Tue, 20 Oct 2026 00:00:00 GMT
+answer customers after hours
+automate appointment booking
+AI front desk
+The demo was never the hard part
+https://atomsai.com/resources/blog/the-demo-was-never-the-hard-part
+https://atomsai.com/resources/blog/the-demo-was-never-the-hard-part
+Pilots don&apos;t fail on model quality. They fail on the systems between the demo and a finished piece of work — and on the exception queue nobody scoped.
+Wed, 19 Aug 2026 00:00:00 GMT
+move AI pilots to production
+integrate AI with your systems
+AI implementation
+Write the evals before the prompt
+https://atomsai.com/resources/blog/write-the-evals-before-the-prompt
+https://atomsai.com/resources/blog/write-the-evals-before-the-prompt
+An eval suite isn&apos;t QA you add at the end. It&apos;s the specification — and the only thing that lets a CXO answer &apos;is it working?&apos; with a number instead of an opinion.
+Wed, 08 Jul 2026 00:00:00 GMT
+measure AI accuracy
+test AI before launch
+AI evals
+How much autonomy should an agent have?
+https://atomsai.com/resources/blog/how-much-autonomy-should-an-agent-have
+https://atomsai.com/resources/blog/how-much-autonomy-should-an-agent-have
+The right answer is a configuration value, not a philosophy. Design the approval gates before the tools, start tight, and let the pass rate buy each loosening.
+Wed, 27 May 2026 00:00:00 GMT
+set AI approval rules
+control what AI agents can do
+AI agent governance

@@ -1,0 +1,271 @@
+Industries
+/
+Lending
+Answer every applicant. While they’re still comparing.
+One agent across chat, phone, SMS and email that replies to loan inquiries in seconds, gets applications complete, and keeps payments on track, inside your loan system.
+Book a demo
+→
+Try the chat agent
+Built for your rules
+Texts and calls follow consent, quiet hours and contact limits, and the agent never makes a credit decision or quotes terms you haven’t approved.
+Loan inquiry answered
+8 sec
+Application started · 8:45pm
+Handled
+Connected during your build
+Encompass
+MeridianLink
+LoanPro
+nCino
+Salesforce
+HubSpot
+Outlook and Gmail
+Your phone system
+What it brings
+Where your lending team feels it.
+Grows revenue
+Fund more loans
+Every inquiry gets a reply in seconds, day or night, and becomes an application the same night.
+1
+Answered in seconds
+Replies from your approved product rules, day or night.
+2
+Applicant qualified
+Asks what your product needs, without quoting rates.
+3
+Application started
+Sends the application with answers filled in.
+4
+Loan officer assigned
+Creates the lead and assigns the right loan officer.
+Connected to MeridianLink, Salesforce, your website and your phone system during your build.
+Speeds up every file
+Complete files faster
+Missing documents are found, requested and checked without a loan officer, so files reach review complete.
+1
+Gaps found
+Lists the documents still missing from the application.
+2
+Documents requested
+Says exactly what’s needed, with a secure upload link.
+3
+Uploads checked
+Checks each upload is right and readable.
+4
+File complete
+Attaches the documents and moves the file to review.
+Connected to Encompass, LoanPro, your document portal and email during your build.
+Protects your portfolio
+Collect earlier
+Late payments are caught in the first week, and the borrower hears from you inside your contact rules.
+1
+Late payment flagged
+Flags payments that haven’t arrived on time.
+2
+Borrower reached
+Sends a reminder inside your contact rules.
+3
+Promise to pay agreed
+Takes a promise; hardship goes to your team.
+4
+Logged and followed up
+Records it and checks the payment arrives.
+Connected to LoanPro, your payment portal, SMS and your phone system during your build.
+ML
+Marcus Lee
+New inquiry · auto refinance
+SMS · 8:40pm
+Can I refinance my car loan? I’m two years into a five-year loan.
+Happy to help, Marcus. What’s the vehicle, and roughly what do you still owe?
+✓ Answered in 8 sec
+Applicant qualified
+Product
+Auto refinance
+Balance
+About $14,000
+Vehicle
+2021 Honda CR-V
+Application started
+Link
+✓
+Sent by text, answers filled in
+Progress
+60% done
+MeridianLink
+Lead created, assigned to Erin
+Auto team · answers attached
+The result
+Application started at 8:45pm and assigned to a loan officer by morning.
+Gaps found · Dana Brooks
+Loan
+Personal loan, applied Monday
+Missing
+Pay stub, photo ID
+Waiting
+4 days
+DB
+Dana Brooks
+Personal loan · applied Monday
+Text · 10:02am
+Hi Dana, to finish your application we just need a recent pay stub and a photo ID. You can upload both here.
+Thanks, I’ll send them at lunch.
+Uploads checked
+Pay stub
+✓
+Received, readable
+Photo ID
+✓
+Received, readable
+LoanPro
+File complete, in your review queue
+Documents attached to Dana’s file
+The result
+File complete in one day instead of four, ready for review.
+Late payment flagged
+Account
+#48213 · Auto loan
+Due
+$386 · Oct 20
+Days late
+3
+Contact so far
+None
+A
+Account #48213
+Auto loan · $386 due Oct 20
+Text · 10:00am
+Hi, your $386 auto loan payment due Oct 20 hasn’t arrived yet. You can pay online here, or reply to set a date.
+I get paid Friday.
+Promise to pay
+$386 · Oct 27
+Agreed by text, inside your rules
+LoanPro
+Promise logged, follow-up set
+Checks the payment arrives Friday
+The result
+Promise to pay logged on day 3, before the account rolled.
+Illustrative examples. Connections and rules are set up during your build.
+Before and after
+Same inquiries. More loans funded.
+Example lender, 1,500 inquiries a month. Illustrative figures.
+Time to first reply on an inquiry
+Today
+3 hours
+With the agent
+Seconds
+Inquiries that arrive after hours
+Today
+Wait for morning
+With the agent
+Answered
+Days a file waits for a missing document
+Today
+4 days
+With the agent
+1 day
+Early late payments contacted
+Today
+Some
+With the agent
+Every one
+More applicants finish with you instead of the lender who answered first
+, and fewer accounts roll into late stages.
+Sources:
+Oldroyd, McElheran and Elkington, “The Short Life of Online Sales Leads”, HBR, 2011
+Win back your database
+Your past borrowers. Your next loans.
+The agent reaches the people who already know you, at the right moment, across SMS and email.
+Refinance moments
+Borrowers whose loans could be refinanced on better terms hear from you first.
+Paid-off customers
+A loan paid in full is a good time to offer the next one.
+Applications that stalled
+Old applications get a friendly check-in when the applicant might be ready.
+For the owner
+Ask the business anything.
+The Intelligence agent reads every conversation and call, and answers your questions in plain English.
+Find what’s slipping
+Which applications stalled, where in the funnel, and why.
+See what’s working
+Funded rate by lead source, product and loan officer, without building a report.
+Approve the next step
+It suggests the follow-up; you say go, and the agent does it.
+See the Intelligence agent
+↗
+Which applications stalled this week?
+Three applications have waited more than three days for a document.
+R. Patel · Auto loan
+Proof of insurance · 5 days
+T. Nguyen · Personal loan
+Pay stub · 4 days
+K. Daniels · Auto refinance
+Payoff letter · 4 days
+Send all three a reminder
+Waits for your go-ahead
+Controls and testing
+Your lending rules. Built in.
+Controls
+No credit decisions
+Approvals, declines and pricing stay with your team. The agent collects and hands over.
+Consent and contact limits
+Texts and calls follow opt-in, quiet hours and the contact limits you set.
+Verified before account details
+Borrowers are verified before the agent shares anything about their account.
+Full audit trail
+Every conversation, document and promise to pay is logged.
+Testing
+Tested on your conversations
+Inquiries, document chases and hardship calls, including the hard ones, before launch.
+Checked on every conversation
+Each conversation is scored for accuracy, tone and compliant wording.
+Reported weekly
+Response time, completed files and payments, by branch and product.
+People in the loop
+You choose what the agent does alone and what waits for approval.
+Book a demo
+See it on your lending workflow.
+In 30 minutes you’ll see
+A loan inquiry from your website answered and turned into an application, live.
+A stalled file completed: the missing document requested, received and checked.
+How it connects to your loan system, and what your first build would cover.
+Name
+*
+Company
+*
+Business email
+*
+Phone
+(optional)
+Company size
+*
+Choose one
+Under 200 staff
+200–1,000 staff
+1,001–5,000 staff
+Over 5,000 staff
+Your role
+(optional)
+Optional. You can call or text me about this request at the number above.
+Calls and texts may be automated or by an AI agent. Consent isn’t a
+condition of purchase; reply STOP to opt out.
+Website
+Book my demo
+We’ll only use this to set up your demo.
+See our privacy policy.
+Send these details by email
+FAQ
+Questions lenders ask.
+Explore the Trust Center
+↗
+Does the agent make credit decisions?
+No. It answers from the product rules you approve, collects applications and documents, and hands decisions to your team.
+Which loan systems does it work with?
+We connect to the systems you run, such as Encompass, MeridianLink, LoanPro or nCino, and to your CRM, email and phones. The connections are built as part of your build.
+Can it help with collections?
+Yes, for early-stage reminders, promises to pay and payment plans your rules allow, inside your consent, quiet-hours and contact-frequency rules. Hardship cases go to your team.
+Does it work on the phone as well as text and chat?
+Yes. One agent works across web chat, phone, SMS and email with one memory, so a borrower who texts and then calls doesn’t start over.
+Is it secure?
+AtomsAI comes from the team behind JustCall. It is SOC 2 Type II and HIPAA compliant, borrowers are verified before account details are shared, and every conversation is logged.
+How long does it take to go live?
+It depends on the workflows and the systems we connect. In the demo we look at yours and agree what the first build covers.

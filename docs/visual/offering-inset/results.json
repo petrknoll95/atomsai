@@ -1,0 +1,26 @@
+[
+  {
+    "browser": "chromium",
+    "initial": -12,
+    "hover": 0,
+    "radius": 12,
+    "intermediate": -5.3088,
+    "foregroundFixed": true,
+    "shaderSizeFixed": true,
+    "keyboard": true,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "browser": "webkit",
+    "initial": -12,
+    "hover": 0,
+    "radius": 12,
+    "intermediate": -5.3088,
+    "foregroundFixed": true,
+    "shaderSizeFixed": true,
+    "keyboard": true,
+    "overflow": false,
+    "errors": []
+  }
+]

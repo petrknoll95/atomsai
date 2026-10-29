@@ -1,0 +1,71 @@
+Home
+/
+Resources
+/
+Blog
+/
+How much autonomy should an agent have?
+set AI approval rules
+control what AI agents can do
+AI agent governance
+How much autonomy should an agent have?
+What should an AI agent do without asking a person?
+The right answer is a configuration value, not a philosophy. Design the approval gates before the tools, start tight, and let the pass rate buy each loosening.
+AtomsAI editorial
+27 May 2026
+4 min read
+On this page
+What should an AI agent never do without approval?
+How do you give an agent more autonomy safely?
+What happens when the agent is confidently wrong?
+Questions buyers ask
+Written by
+PR
+Priya Raman
+Principal engineer, agents and integration
+Spends most of her week inside other people's codebases. Integration is the product, because it keeps being the product.
+Illustrative author profile. Attribution and biography are fictional.
+Share
+LinkedIn
+X
+Copy link
+An AI agent should have as much autonomy as its measured pass rate supports, and no more. Write down what it may not do without a person, express each limit as a number your business already uses, start tight, and loosen one limit at a time. Anything you can’t undo stays with a person.
+“Should the agent do this on its own?” gets argued as a matter of principle. It’s a threshold, and thresholds are cheap to change if you build for it.
+What should an AI agent never do without approval?
+The first artifact we write for any agent is not a prompt or a tool list. It’s the list of things it is not allowed to do without a human. That list determines everything downstream: which credentials it gets, which writes are staged versus committed, what triggers a hold, what a rollback looks like.
+Gates are best expressed as a number your business already understands. In accounts payable that might be a dollar amount: above your limit, a human approves with the extraction and the source document side by side; below it, the system commits and logs. In underwriting it might be confidence: below the line, route to a senior reviewer. Start conservative and loosen once the measured pass rate justifies it. Because the threshold is configuration, loosening it is a settings change, not a re-architecture.
+How do you give an agent more autonomy safely?
+A shadow lane.
+Run on production data, produce real outputs, commit nothing, for one to two weeks. Then compare the system’s decisions against your team’s. That comparison is what gets a workflow approved. It’s a far easier conversation than a debate about model capability.
+Reversibility.
+Every action logged with inputs, reasoning and the identity that authorised it. Idempotent writes. Replay from any state. If you can’t undo an action, it doesn’t get automated yet, whatever the pass rate says.
+What happens when the agent is confidently wrong?
+One more thing worth designing early: what happens when the system is confidently wrong. Not “if” — confidently wrong is the normal failure mode. Who notices, how fast, what’s the blast radius, how do you undo it? Write that down before launch and test it before handover.
+Autonomy isn’t a stance. It’s a dial, with an owner and a number next to it.
+The pass rate that decides each step comes from an eval set; we wrote about that in
+write the evals before the prompt
+. For how we set approvals and permissions on a build, see
+how we work
+and
+trust and security
+.
+Questions buyers ask
+How much autonomy should an AI agent have at launch?
+Less than you think it can handle. Start with tight approval gates, run the agent in a shadow lane against your team for one to two weeks, and loosen one threshold at a time as the measured pass rate supports it.
+What should an AI agent never do without approval?
+Anything you can’t undo, and anything above a limit your business already uses, such as a dollar amount or a confidence score. Write that list before you give the agent any tools.
+How do you set approval rules for an AI agent?
+Express each rule as a number your team already understands and keep it in configuration, not code. Then changing a rule is a settings change, not a rebuild.
+What happens when an AI agent is confidently wrong?
+Plan for it before launch: who notices, how fast, how much it can affect, and how you undo it. Log every action with its inputs, reasoning and who authorised it, so any action can be traced and reversed.
+Autonomy is not a property of the model. It is a threshold your business already knows how to argue about, written down as configuration.
+How much autonomy should an agent have?
+Next post
+Write the evals before the prompt
+Read the blog
+The posts argue it. The studies price it.
+The same workflows from the other end: what the baseline was, what we built, and what moved once it was live.
+Read the case studies
+Three illustrative workflows, with the baseline, the build and the denominator.
+See how we build
+Five steps, four to eight weeks, and you own what comes out.

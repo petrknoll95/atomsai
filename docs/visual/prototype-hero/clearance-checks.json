@@ -1,0 +1,102 @@
+[
+  {
+    "name": "chromium",
+    "width": 1600,
+    "geometry": {
+      "range": 4680,
+      "height": 5580,
+      "titleX": 68,
+      "leadX": 68,
+      "logoX": 68,
+      "buttonRight": 1532,
+      "menuRight": 1532,
+      "overflow": false,
+      "timeline": {
+        "rings": 0.3069230769230769,
+        "start": 0.6730769230769231,
+        "end": 0.8461538461538461
+      }
+    },
+    "scroll": true,
+    "reveal": true,
+    "alignment": true,
+    "errors": []
+  },
+  {
+    "name": "chromium",
+    "width": 390,
+    "geometry": {
+      "range": 2430,
+      "height": 4098,
+      "titleX": 28,
+      "leadX": 28,
+      "logoX": 28,
+      "buttonRight": 189.375,
+      "menuRight": 362,
+      "overflow": false,
+      "timeline": {
+        "rings": 0.29555555555555557,
+        "start": 0.6296296296296297,
+        "end": 0.8888888888888888
+      }
+    },
+    "scroll": true,
+    "reveal": true,
+    "alignment": true,
+    "errors": []
+  },
+  {
+    "name": "chromium",
+    "reducedMotion": true
+  },
+  {
+    "name": "webkit",
+    "width": 1600,
+    "geometry": {
+      "range": 4680,
+      "height": 5580,
+      "titleX": 68,
+      "leadX": 68,
+      "logoX": 68,
+      "buttonRight": 1532,
+      "menuRight": 1532,
+      "overflow": false,
+      "timeline": {
+        "rings": 0.3069230769230769,
+        "start": 0.6730769230769231,
+        "end": 0.8461538461538461
+      }
+    },
+    "scroll": true,
+    "reveal": true,
+    "alignment": true,
+    "errors": []
+  },
+  {
+    "name": "webkit",
+    "width": 390,
+    "geometry": {
+      "range": 2430,
+      "height": 4098,
+      "titleX": 28,
+      "leadX": 28,
+      "logoX": 28,
+      "buttonRight": 189.375,
+      "menuRight": 362,
+      "overflow": false,
+      "timeline": {
+        "rings": 0.29555555555555557,
+        "start": 0.6296296296296297,
+        "end": 0.8888888888888888
+      }
+    },
+    "scroll": true,
+    "reveal": true,
+    "alignment": true,
+    "errors": []
+  },
+  {
+    "name": "webkit",
+    "reducedMotion": true
+  }
+]

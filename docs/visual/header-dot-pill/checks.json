@@ -1,0 +1,24 @@
+[
+  {
+    "name": "chromium",
+    "rest": "inset(13px 83px 13px 0px round 999px)",
+    "middle": "inset(10.7242px 68.4697px 10.7242px 0px round 999px)",
+    "full": "inset(0px round 999px)",
+    "rapidReversal": true,
+    "openState": true,
+    "keyboard": true,
+    "reducedMotion": true,
+    "errors": []
+  },
+  {
+    "name": "webkit",
+    "rest": "inset(13px 83px 13px 0px round 999px)",
+    "middle": "inset(10.724168px 68.469688px 10.724168px 0px round 999px)",
+    "full": "inset(0px round 999px)",
+    "rapidReversal": true,
+    "openState": true,
+    "keyboard": true,
+    "reducedMotion": true,
+    "errors": []
+  }
+]

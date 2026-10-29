@@ -1,0 +1,285 @@
+A LITTLE SIGNAL. A LOT OF POSSIBILITY.
+AtomsAI Voice
+A little conversation.
+A lot more possible.
+A voice that knows your business.
+A conversation that gets somewhere.
+Contact us
+↗
+Try the live agent
+Start a conversation
+Meet Verity
+Your next step.
+Just a call away.
+Talk to the live agent for our example bank.
+Ask about your credit card, or let the agent guide you through an application.
+Allow your microphone to talk.
+Close
+×
+00:00
+Verity Bank
+Credit card assistant
+Ready to connect
+Speaker
+End
+Mute
+Try again ↗
+Tap to hear the agent ▶
+// Live agent activity
+↓
+Enable JavaScript to call the live voice agent.
+Voice in action
+One call.
+All the way.
+A question, a document, a decision. Hear the agent carry the conversation through.
+↗
+66 seconds · One call, start to finish
+Tap for sound
+A card-consolidation call from intake and secure document upload to a decision explained by the agent.
+Be there when they call.
+Know when to reach out.
+From a first enquiry to the next purchase. Explore how a voice agent could work
+across your industry.
+↙
+Inbound enquiries
+↗
+Outbound follow-ups
+Inbound enquiries
+The customer starts the call. Your agent answers questions, captures intent, and helps them take the next step.
+Credit
+01
+Turn a loan enquiry into a clear next step.
+Understand the borrowing need, answer product questions, and collect the details your sales team needs.
+The next step
+↗
+A structured lead + a loan-officer follow-up
+Conversation & action
+↻
+Credit
+Conversation & action
+The conversation
+“What would you like to use the loan for, and roughly what amount are you considering?”
+Business action
+Save stated requirements and organise a specialist callback. Approval stays with the lender.
+What starts the call
+A prospective borrower calls about a loan product.
+Knowledge used
+Published product information and document requirements.
+Required connections
+Product knowledge + CRM + callback scheduling
+Back to overview
+Real estate
+02
+Turn “Is it available?” into a viewing.
+Answer a listing enquiry, understand budget and move-in timing, and help the caller explore suitable properties.
+The next step
+↗
+A qualified buyer or renter + a viewing
+Conversation & action
+↻
+Real estate
+Conversation & action
+The conversation
+“Are you looking to move soon, and is this the area you prefer?”
+Business action
+Save preferences and book a suitable viewing after confirmation.
+What starts the call
+A caller responds to a property listing.
+Knowledge used
+Current listing details and availability.
+Required connections
+Listing inventory + CRM + viewing calendar
+Back to overview
+B2B SaaS
+03
+Give the sales rep a head start.
+Answer product questions while learning the buyer’s use case, team size, existing tools, and purchase timeline.
+The next step
+↗
+A useful discovery brief + the right demo booking
+Conversation & action
+↻
+B2B SaaS
+Conversation & action
+The conversation
+“What are you trying to improve, and how does your team handle it today?”
+Business action
+Create a CRM brief and schedule a demo with the appropriate team.
+What starts the call
+A buyer calls to understand whether the product fits their business.
+Knowledge used
+Product capabilities, documented integrations, and plan information.
+Required connections
+Product knowledge + CRM + routing and calendar
+Back to overview
+Outbound follow-ups
+Your business starts the call, prompted by a lead request, an unfinished journey, or a relevant opportunity.
+Credit
+01
+Help an unfinished application move forward.
+Contact a prospect who requested help, find the step they are stuck on, and explain what is needed next.
+The next step
+↗
+A clear next step + an updated application follow-up
+Conversation & action
+↻
+Credit
+Conversation & action
+The conversation
+“You asked for help with your application. Which step would you like to go through?”
+Business action
+Record the blocker and arrange a loan-officer callback when needed.
+What starts the call
+An incomplete application has an open callback request.
+Knowledge used
+Application process and document requirements for the selected product.
+Required connections
+Application system + knowledge base + CRM
+Back to overview
+Real estate
+02
+Bring a quiet lead back with the right property.
+Re-engage an interested buyer when a newly available listing matches the preferences they previously shared.
+The next step
+↗
+Renewed interest + a scheduled viewing
+Conversation & action
+↻
+Real estate
+Conversation & action
+The conversation
+“A home matching the preferences you shared has become available. Are you still looking in that area?”
+Business action
+Confirm whether their needs have changed, update the CRM, and schedule a viewing if wanted.
+What starts the call
+A listing matches a contactable lead’s recorded budget, area, and home requirements.
+Knowledge used
+Current listing details, availability, and viewing options.
+Required connections
+Listing inventory + CRM + viewing calendar
+Back to overview
+Automotive
+03
+Call when their preferred car is available.
+Follow up with a waitlisted buyer when a matching model or variant arrives, and arrange the next step.
+The next step
+↗
+A stock match + a test-drive booking
+Conversation & action
+↻
+Automotive
+Conversation & action
+The conversation
+“The variant you asked us to contact you about is available. Would you like to arrange a test drive?”
+Business action
+Check interest, confirm a test-drive slot, and log the appointment.
+What starts the call
+A dealership inventory update matches an opted-in buyer’s saved request.
+Knowledge used
+Current stock, vehicle specifications, and showroom slots.
+Required connections
+Dealer inventory + CRM + booking calendar
+Back to overview
+Illustrative workflows, configured around your business rules and available
+integrations. Outbound examples assume permission to contact the customer.
+From the first question
+to the next step.
+01
+Understand the need
+Ask relevant questions and capture what matters to your sales process.
+“What are you looking to do?”
+02
+Answer in context
+Use your business knowledge to respond to product and service questions.
+The right answer. From your knowledge.
+03
+Take action
+Connect to your CRM and tools to carry out the sales actions you configure.
+A booked meeting. An updated record.
+THE INTELLIGENCE BEHIND THE VOICE
+Sounds human.
+Works like part of your team.
+Ⅱ
+Pause motion
+A natural conversation
+More than
+a good listener.
+Answers in context. Acts on the next step.
+NO MENUS · NO KEYPAD · NO HOLD
+Every call, answered.
+All at once, day or night.
+Your knowledge.
+In every answer.
+Your products, policies, and expertise.
+Your rules come first.
+Clear approvals. Thoughtful handoffs.
+→
+A human, when needed.
+A smooth handover to your team.
+At home in your stack.
+Connect your CRM, content, and tools.
+YOUR NEXT STEP
+Put it in the diary.
+Book the meeting. Keep things moving.
+CRM UPDATED
+The details travel.
+Keep the record in step with the call.
+PyAI · our own models
+The pause you don’t hear.
+Because the engine is ours.
+PyAI is the powerhouse behind every call — and we build it.
+PyAI is ours, too →
+~390ms
+median voice-to-voice
+in-region, at human conversational pace · PyAI Omni
+~200ms
+to first partial transcript
+in-region · PyAI Hear
+Omni
+Realtime speech to speech
+Hear
+Speech to text
+Speak
+Text to speech
+Cast
+Delivery and emotion
+AMD
+Machine or human
+Trace
+Every call scored
+Recap
+Summary and next step
+Your sales process.
+Your voice agent.
+Delivered as a service by AtomsAI, configured around your products, knowledge,
+and sales workflows.
+The loan agent is one example. Your business defines the conversation.
+Business knowledge
+Product catalogue, policies, pricing, and FAQs
+Sales questions
+Intent, qualification, timing, and customer context
+Connected actions
+CRM fields, booking, routing, and follow-up tasks
+Handoff rules
+When a person should take over or approve the next step
+From your first brief to your first call
+01
+Define your sales journey
+Choose the calls to handle and what a useful next step looks like.
+02
+Connect knowledge and tools
+Bring your product information, business rules, and systems together.
+03
+Test your agent together
+Work through real scenarios, refine the answers, and check the handoffs.
+04
+Launch for your business
+Put the agent into your workflow and review how the conversations perform.
+Built with your team.
+Configured around the way you sell.
+Put voice to work
+for your business.
+Tell us your industry, the calls you handle, and the next step you want to
+automate.
+Contact us
+Try the voice agent

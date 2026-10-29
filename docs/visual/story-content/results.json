@@ -1,0 +1,28 @@
+[
+  {
+    "browser": "chromium",
+    "uniqueQuotes": 4,
+    "uniqueImages": 4,
+    "widths": [
+      1600,
+      1024,
+      390,
+      320
+    ],
+    "dialogSynchronization": true,
+    "overflow": false
+  },
+  {
+    "browser": "webkit",
+    "uniqueQuotes": 4,
+    "uniqueImages": 4,
+    "widths": [
+      1600,
+      1024,
+      390,
+      320
+    ],
+    "dialogSynchronization": true,
+    "overflow": false
+  }
+]

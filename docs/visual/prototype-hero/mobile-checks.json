@@ -1,0 +1,68 @@
+[
+  {
+    "name": "chromium",
+    "width": 320,
+    "height": 568,
+    "range": 1534,
+    "length": 270,
+    "end": 0.8888888888888888,
+    "nativeRelease": true,
+    "allCardsReachable": true,
+    "errors": []
+  },
+  {
+    "name": "chromium",
+    "width": 390,
+    "height": 844,
+    "range": 2279,
+    "length": 270,
+    "end": 0.8888888888888888,
+    "nativeRelease": true,
+    "allCardsReachable": true,
+    "errors": []
+  },
+  {
+    "name": "chromium",
+    "width": 844,
+    "height": 390,
+    "range": 858,
+    "length": 220,
+    "end": 0.9545454545454546,
+    "nativeRelease": true,
+    "allCardsReachable": true,
+    "errors": []
+  },
+  {
+    "name": "webkit",
+    "width": 320,
+    "height": 568,
+    "range": 1534,
+    "length": 270,
+    "end": 0.8888888888888888,
+    "nativeRelease": true,
+    "allCardsReachable": true,
+    "errors": []
+  },
+  {
+    "name": "webkit",
+    "width": 390,
+    "height": 844,
+    "range": 2279,
+    "length": 270,
+    "end": 0.8888888888888888,
+    "nativeRelease": true,
+    "allCardsReachable": true,
+    "errors": []
+  },
+  {
+    "name": "webkit",
+    "width": 844,
+    "height": 390,
+    "range": 858,
+    "length": 220,
+    "end": 0.9545454545454546,
+    "nativeRelease": true,
+    "allCardsReachable": true,
+    "errors": []
+  }
+]

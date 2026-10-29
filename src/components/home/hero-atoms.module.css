@@ -1,0 +1,6 @@
+.artwork { --hero-atoms-display:block; position:absolute; inset:0; overflow:hidden; pointer-events:none; --hero-atom-color:var(--palette-iris); }
+.fallback { position:absolute; width:1600px; height:960px; left:calc(50% - 800px); top:0; max-width:none; }
+.artwork canvas { position:absolute; inset:0; display:block; pointer-events:none; touch-action:auto!important; opacity:0; transition:opacity 120ms ease-out; mask-image:linear-gradient(to bottom,#000 0%,#000 40%,transparent 96%); }
+.artwork[data-state='ready'] canvas { opacity:1; }
+.artwork[data-state='ready'] .fallback { visibility:hidden; }
+@media (prefers-reduced-motion:reduce) { .artwork canvas { transition:none; } }

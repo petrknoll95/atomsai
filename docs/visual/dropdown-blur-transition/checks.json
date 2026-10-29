@@ -1,0 +1,74 @@
+[
+  {
+    "name": "chromium",
+    "product": "JustCall",
+    "frames": 24,
+    "opaqueWrappers": true
+  },
+  {
+    "name": "chromium",
+    "product": "Helpwise",
+    "frames": 24,
+    "opaqueWrappers": true
+  },
+  {
+    "name": "chromium",
+    "product": "CallPage",
+    "frames": 26,
+    "opaqueWrappers": true
+  },
+  {
+    "name": "chromium",
+    "product": "ServiceAgent",
+    "frames": 24,
+    "opaqueWrappers": true
+  },
+  {
+    "name": "chromium",
+    "product": "JustCall",
+    "frames": 24,
+    "opaqueWrappers": true
+  },
+  {
+    "name": "chromium",
+    "halfRevealBlurPixelDifference": 2.769098918195304,
+    "baselineDelta": 108.80333333333333,
+    "pixelVerification": "passed"
+  },
+  {
+    "name": "webkit",
+    "product": "JustCall",
+    "frames": 27,
+    "opaqueWrappers": true
+  },
+  {
+    "name": "webkit",
+    "product": "Helpwise",
+    "frames": 28,
+    "opaqueWrappers": true
+  },
+  {
+    "name": "webkit",
+    "product": "CallPage",
+    "frames": 27,
+    "opaqueWrappers": true
+  },
+  {
+    "name": "webkit",
+    "product": "ServiceAgent",
+    "frames": 27,
+    "opaqueWrappers": true
+  },
+  {
+    "name": "webkit",
+    "product": "JustCall",
+    "frames": 27,
+    "opaqueWrappers": true
+  },
+  {
+    "name": "webkit",
+    "halfRevealBlurPixelDifference": 0,
+    "baselineDelta": 0,
+    "pixelVerification": "unavailable: headless engine does not rasterize backdrop blur; frame/style checks passed"
+  }
+]

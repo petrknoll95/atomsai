@@ -1,0 +1,34 @@
+[
+  {
+    "browser": "chromium",
+    "width": 815,
+    "delayedBundles": 27,
+    "reloads": 2,
+    "fallbackRequests": 0,
+    "reducedMotion": true
+  },
+  {
+    "browser": "chromium",
+    "width": 390,
+    "delayedBundles": 27,
+    "reloads": 2,
+    "fallbackRequests": 0,
+    "reducedMotion": true
+  },
+  {
+    "browser": "webkit",
+    "width": 815,
+    "delayedBundles": 27,
+    "reloads": 2,
+    "fallbackRequests": 0,
+    "reducedMotion": true
+  },
+  {
+    "browser": "webkit",
+    "width": 390,
+    "delayedBundles": 27,
+    "reloads": 2,
+    "fallbackRequests": 0,
+    "reducedMotion": true
+  }
+]

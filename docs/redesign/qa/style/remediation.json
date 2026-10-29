@@ -1,0 +1,71 @@
+[
+  {
+    "name": "voice",
+    "viewport": 320,
+    "scrollWidth": 320,
+    "labels": [
+      {
+        "text": "One enquiry. A viewing arranged.28 seconds",
+        "fontSize": "10px",
+        "width": 240,
+        "scrollWidth": 240,
+        "left": 40,
+        "right": 280
+      },
+      {
+        "text": "Listen to the conversation0:00 / 0:28",
+        "fontSize": "12px",
+        "width": 184,
+        "scrollWidth": 184,
+        "left": 96,
+        "right": 280
+      },
+      {
+        "text": "Scripted sample",
+        "fontSize": "10px",
+        "width": 87,
+        "scrollWidth": 87,
+        "left": 190.96875,
+        "right": 280
+      }
+    ]
+  },
+  {
+    "name": "contact",
+    "viewport": 320,
+    "scrollWidth": 320,
+    "labels": [
+      {
+        "text": "01 · Your message02 · Review email",
+        "fontSize": "12px",
+        "width": 232,
+        "scrollWidth": 232,
+        "left": 44,
+        "right": 276
+      }
+    ]
+  },
+  {
+    "name": "approach",
+    "viewport": 320,
+    "scrollWidth": 320,
+    "labels": [
+      {
+        "text": "Within agreed policy",
+        "fontSize": "12px",
+        "width": 93,
+        "scrollWidth": 93,
+        "left": 52,
+        "right": 145
+      },
+      {
+        "text": "Needs a decision",
+        "fontSize": "12px",
+        "width": 93,
+        "scrollWidth": 93,
+        "left": 175,
+        "right": 268
+      }
+    ]
+  }
+]

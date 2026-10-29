@@ -36,6 +36,8 @@
 
 .application {
   --application-progress: 0;
+  --application-inset: 0px;
+  --application-zoom: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +57,13 @@
   border-radius: 50%;
 }
 
-.applicationCircle::after {
+.applicationFigure {
+  position:absolute; inset:0; display:grid; place-items:center;
+  clip-path:inset(var(--application-inset) round 50%);
+  border-radius:50%; overflow:hidden;
+}
+
+.applicationFigure::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -70,19 +78,20 @@
   width: 100%;
   height: 100%;
   opacity: var(--application-progress);
-  transform: scale(calc(1.035 - var(--application-progress) * .035));
+  transform: scale(var(--application-zoom));
 }
 
 .applicationPattern > div { width: 100%; height: 100%; }
 .applicationIcon {
+  --application-mark-size: 80px;
   position: relative;
-  width: 96px;
-  height: 96px;
+  width: var(--application-mark-size);
+  height: var(--application-mark-size);
   flex: none;
   mask-position: center;
   mask-size: contain;
   mask-repeat: no-repeat;
-  background: color-mix(in display-p3, var(--color-primary-foreground) calc(var(--application-progress) * 100%), var(--color-foreground));
+  background: color-mix(in srgb, white calc(var(--application-progress) * 100%), black);
 }
 .applicationAction,
 .applicationAction:hover {
@@ -131,37 +140,8 @@
   overflow: hidden;
 }
 
-.voiceWidget { --color-ring:var(--palette-cream); background: var(--palette-forest-shade); padding-inline: 32px; }
+.voiceWidget { --color-ring:var(--palette-cream); container-type: inline-size; background: var(--palette-forest-shade); padding-inline: 32px; }
 .voicePattern { position: absolute; width: 992px; max-width: none; height: 640px; }
-/* Figma BACKGROUND_BLUR radius 36 maps to CSS Gaussian blur(18px).
-   Put the panel glass on a sibling layer so the button's backdrop can sample
-   the waveform in WebKit as well as Chromium (avoid nested backdrop roots). */
-.voiceGlass { position: relative; width: min(736px, 100%); height: 320px; border-radius: var(--radius-control); overflow: clip; color: var(--palette-cream); }
-.voiceGlass::before { content: ''; position: absolute; inset: 0; border-radius: inherit; background: #ffffff1a; -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); pointer-events: none; }
-.voiceLine { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 736px; max-width: none; height: 320px; pointer-events: none; }
-.voiceLine, .voiceButtonLine { mask: url('/assets/figma/preview-waveform-fade.svg') center / 736px 320px no-repeat; mask-mode: luminance; }
-.voiceButtonBackdrop { display: none; }
-.voiceLabels { position: absolute; top: 16px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; white-space: nowrap; }
-.voiceType { background: #ffffff1a; }
-.voiceType:hover { background: #ffffff26; }
-.startTalking { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: #ffffff1a; -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); color: white; }
-.startTalking:hover { background: #ffffff26; }
-.voiceWave { display: block; width: 24px; height: 24px; flex: none; object-fit: contain; }
-/* WebKit does not reliably composite this overlapping pair of backdrop filters.
-   Sample the same shader phase and blur a clipped copy; combine the two 18px
-   Gaussian passes as sqrt(18² + 18²). Only this browser creates the extra canvas. */
-@supports (-webkit-backdrop-filter: blur(18px)) and (mix-blend-mode: plus-darker) {
-  .startTalking { isolation: isolate; overflow: hidden; background: transparent !important; -webkit-backdrop-filter: none; backdrop-filter: none; }
-  .voiceButtonBackdrop { display: block; position: absolute; inset: 0; z-index: -1; pointer-events: none; }
-  .voiceButtonPattern { position: absolute; width: 992px; height: 640px; left: 50%; top: 50%; transform: translate(-50%, -50%); filter: blur(25.455844px); }
-  .voiceButtonGlass { position: absolute; inset: 0; background: #ffffff1a; }
-  .voiceButtonLine { position: absolute; width: 736px; max-width: none; height: 320px; left: 50%; top: 50%; transform: translate(-50%, -50%); filter: blur(18px); }
-  .voiceButtonBackdrop::after { content: ''; position: absolute; inset: 0; background: #ffffff1a; }
-  .startTalking:hover .voiceButtonBackdrop::after { background: #ffffff26; }
-}
-
-.voiceHint { position: absolute; left: 0; right: 0; bottom: 16px; color: color-mix(in display-p3, var(--palette-cream) 40%, transparent); font-size: var(--text-caption); font-weight: var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; line-height: 1.4; text-align: center; }
-
 .chatWidget { --chat-inset: 20px; padding: var(--chat-inset); background: var(--palette-iris-shade); --color-ring: var(--palette-cream); }
 .effectDefinitions { position: absolute; width: 0; height: 0; overflow: hidden; pointer-events: none; }
 .chatPattern { position: absolute; inset: 0; width: 100%; height: 100%; }
@@ -212,7 +192,6 @@
   .applicationCircle { padding: 24px; }
   .applicationDescription { padding-inline: 12px; }
   .previewGrid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
-  .voiceGlass { height: 280px; }
   .chatWidget { --chat-inset: 16px; }
   .chatGlass { padding: 20px; }
   .chatIntro p { white-space: normal; }
@@ -229,7 +208,6 @@
   .voiceWidget { height: 520px; }
   .chatWidget { height: 640px; --chat-inset: 20px; }
   .chatGlass { max-width: 440px; padding: 24px; }
-  .voiceGlass { height: 320px; }
 }
 
 @media (max-width: 599px) {
@@ -243,8 +221,6 @@
   .applicationCopyCompact { gap: 20px; }
   .applicationDescription { padding-inline: 24px; }
   .voiceWidget { height: 420px; padding-inline: 20px; }
-  .voiceGlass { height: 280px; }
-  .voiceHint { left: 16px; right: 16px; }
   .chatWidget { height: 640px; --chat-inset: 12px; }
   .chatGlass { padding: 18px; gap: 20px; border-radius: 28px; }
   .chatIntro { padding: 12px 0; gap: 20px; }
@@ -254,4 +230,7 @@
   .productTitle { font-size: var(--text-display-small); }
 }
 
+
 @media(min-width:1200px) { .applicationsTitle { height:76px; } .application .productTitle { height:19px; } }
+
+.sectionHeading > :global(.eyebrow) { align-self: center; }

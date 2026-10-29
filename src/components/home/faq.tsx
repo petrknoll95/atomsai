@@ -1,14 +1,15 @@
 import { ButtonLink, Eyebrow } from "../ui";
 import styles from "./lower.module.css";
+import { AskQuestion } from "./ask-question";
 
-const contactUrl = "https://atomsai.com/company/contact";
+const contactUrl = "/company/contact";
 
 // Only the second answer is supplied in Figma. The other expanded states offer
 // navigation to the page or the verified contact destination, without new claims.
 const questions = [
   {
     question: "How do Applications, PyAI and AI Services fit together?",
-    answer: <>Explore the <a href="#offerings">three starting points</a> to compare applications, infrastructure and custom engineering.</>,
+    answer: <>Explore the <a className="link-underline" href="#offerings">three starting points</a> to compare applications, infrastructure and custom engineering.</>,
   },
   {
     question: "Can I use a product without a custom project?",
@@ -16,23 +17,23 @@ const questions = [
   },
   {
     question: "Which application fits my team?",
-    answer: <>Start with the <a href="#applications">applications</a> to explore the available products.</>,
+    answer: <>Start with the <a className="link-underline" href="#applications">applications</a> to explore the available products.</>,
   },
   {
     question: "Can I build PyAI into my own product?",
-    answer: <>Explore <a href="https://pyai.com/">PyAI infrastructure</a>, or <a href={contactUrl}>contact the team</a> about your product.</>,
+    answer: <>Explore <a className="link-underline" href="https://pyai.com/">PyAI infrastructure</a>, or <a className="link-underline" href={contactUrl}>contact the team</a> about your product.</>,
   },
   {
     question: "Can you work with our existing systems?",
-    answer: <><a href={contactUrl}>Contact the team</a> to discuss your existing systems and the work you have in mind.</>,
+    answer: <><a className="link-underline" href={contactUrl}>Contact the team</a> to discuss your existing systems and the work you have in mind.</>,
   },
   {
     question: "How do you handle our data requirements?",
-    answer: <><a href={contactUrl}>Contact the team</a> to discuss the data requirements for your project.</>,
+    answer: <><a className="link-underline" href={contactUrl}>Contact the team</a> to discuss the data requirements for your project.</>,
   },
   {
     question: "How much can an AI system do on its own?",
-    answer: <><a href={contactUrl}>Discuss your use case with the team</a> to explore the level of automation you need.</>,
+    answer: <><a className="link-underline" href={contactUrl}>Discuss your use case with the team</a> to explore the level of automation you need.</>,
   },
 ];
 
@@ -42,13 +43,13 @@ export function Faq() {
       <div className={`page-container ${styles.faqGrid}`}>
         <div className={styles.faqIntro}>
           <div className={styles.faqHeader}>
-            <Eyebrow>FAQ</Eyebrow>
+            <Eyebrow href={contactUrl}>FAQ</Eyebrow>
             <h2 className={`display ${styles.faqHeading}`} id="faq-heading">
               <span>A few things to know first.</span>
               <span>Choose a starting point with a clearer picture of what comes next.</span>
             </h2>
           </div>
-          <ButtonLink href="https://atomsai.com/trust">Visit the Trust Center</ButtonLink>
+          <ButtonLink href="/trust">Visit the Trust Center</ButtonLink>
         </div>
         <div className={styles.questions}>
           {questions.map(({ question, answer }, index) => (
@@ -65,17 +66,7 @@ export function Faq() {
               </div>
             </details>
           ))}
-          <div className={styles.customQuestionWrap}>
-            <label className={styles.customQuestion} data-focus-surface>
-              <input
-                type="text"
-                name="question"
-                aria-label="Ask a question"
-                placeholder="Can’t find your question? Ask it here..."
-              />
-              <img src="/assets/figma/faq-IconArtwork2.svg" width="24" height="24" alt="" aria-hidden="true" />
-            </label>
-          </div>
+          <AskQuestion />
         </div>
       </div>
     </section>

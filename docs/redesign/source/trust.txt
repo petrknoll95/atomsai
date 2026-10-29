@@ -1,0 +1,235 @@
+Home
+/
+Trust Center
+Your data stays where you put it.
+The default deployment is your cloud, your keys, your model provider. We don’t train on your data, and every action a system takes is logged and reversible.
+Contact us
+Request the documents
+SOC 2 Type II · HIPAA · GDPR · BYO VPC, keys and model
+Certifications
+Deployment
+Data use
+Access & audit
+Governance
+Documents
+Disclosure
+Audited, not self-certified.
+Certifications tell you a process exists; they don’t tell you what happens to your data on a Tuesday. Each card carries the claim; open it for the scope, the auditor and the window.
+In the normal engagement your data never leaves your cloud account. The system runs in your VPC, calls your model endpoints with your keys, and writes to your systems with credentials you issue and can revoke in one action.
+We do not copy your data into our environment to build with, and we do not train models on it — that is a clause in the contract, not a setting in an admin panel.
+Supporting documentation and scope are not published here. Request the current reports and applicable agreement before relying on a certification or compliance statement.
+SOC 2 Type II
+Report scope not published
+Type II is the one worth asking for: it tests that the controls operated over an audit window rather than that they existed on the day someone looked. The full report is available under NDA.
+Scope, auditor, window
+Scope
+Not published
+Auditor
+Not published
+Audit window
+Not published
+HIPAA
+Supported, with a BAA
+For covered workloads we sign a Business Associate Agreement and design the system so PHI stays inside your perimeter: your storage, your KMS keys, your model endpoint, with egress named and approved in the blueprint before the build starts.
+Scope, auditor, window
+Scope
+PHI stays in your perimeter; egress named in the blueprint
+Auditor
+Not published
+Audit window
+Per engagement, executed before the build starts
+GDPR and UK GDPR
+Supported
+A Data Processing Agreement with Standard Contractual Clauses is available, and EU-resident processing is an option on the default deployment because the compute runs in your account and your region.
+Scope, auditor, window
+Scope
+DPA with SCCs; EU-resident processing on the default deployment
+Auditor
+Not published
+Audit window
+Signed per engagement
+Penetration testing
+Test details not published
+An independent test runs against the reference architecture and the shared tooling. A summary letter is available under NDA; findings and remediation status are walked through on a call with your security team.
+Scope, auditor, window
+Scope
+Reference architecture and shared tooling
+Auditor
+Not published
+Audit window
+Not published
+Not held today.
+Listed here so nobody has to ask twice. We do not claim these.
+ISO 27001
+Not currently held.
+Business continuity / DR targets
+Documented per engagement; no published group-level target yet.
+Three deployment shapes. You pick one.
+Pick a shape and the diagram moves. The first one is the default and the one we recommend; the third is the only one where anything at all sits with us.
+Deployment shape
+Your VPC
+Default
+Your cloud, we operate it
+AtomsAI-hosted
+Pilots only
+Everything runs inside your account. We hold nothing: no compute, no data, no keys, and credentials you can revoke in one action.
+Your account
+Your cloud, your region
+Compute
+Runs in your account
+Data at rest
+Your storage, never copied out
+Encryption keys
+Your KMS
+Model provider
+Yours, including self-hosted open-weight
+Network egress
+Controlled by you
+Credentials
+Issued by you, revocable by you
+AtomsAI
+Our account
+Nothing sits here.
+Typical use
+Regulated workloads, PHI and PII.
+The same architecture in your account, operated by us. The only thing that changes is who holds the on-call pager and a scoped service account.
+Your account
+Your cloud, your region
+Compute
+Runs in your account
+Data at rest
+Your storage
+Encryption keys
+Your KMS
+Model provider
+Yours
+Network egress
+Controlled by you
+AtomsAI
+Our account
+Credentials
+Yours, scoped to our service account
+Typical use
+You want the outcome, not the ops.
+Ours end to end. It exists so a pilot can start on a Monday, and it is not where a regulated workload belongs.
+Your account
+Your cloud, your region
+Nothing sits here.
+AtomsAI
+Our account
+Compute
+Runs in our account
+Data at rest
+Our storage
+Encryption keys
+Managed KMS
+Model provider
+Ours by default
+Network egress
+Controlled by us
+Credentials
+Held by us
+Typical use
+Pilots and non-sensitive workloads. On request only.
+Clouds
+AWS · Google Cloud · Azure
+Model providers
+OpenAI · Anthropic · Amazon Bedrock · Google Vertex · self-hosted open-weight
+Data residency
+US · EU · India · Australia
+Four commitments, in plain language.
+01
+We don’t train on your data.
+Not for our models, not for a shared model, not anonymised, not aggregated. Contractual across every engagement.
+02
+Your data doesn’t leave your perimeter by default.
+If a workflow genuinely requires egress, it’s named in the blueprint, approved by you before the build, and logged.
+03
+Retention is your policy, not ours.
+We hold what your policy allows for as long as it allows, and we can show you where it sits.
+04
+Deletion is a request, not a negotiation.
+On request or at contract end we delete and confirm in writing.
+Sub-processors.
+The full sub-processor list — purpose, location and data category for each — is published separately. We give notice of any addition, and you can object.
+Least privilege, and a log you can query.
+Every system component and every AtomsAI engineer gets the narrowest credential that lets them do the job. Access is role-based per action rather than per system: an agent that reads invoices and writes to one ERP endpoint cannot read anything else, and that scope is reviewed with you at handover. Credentials are issued by you, and revoking them is one action on your side that stops everything.
+Every run is logged with inputs, sources, decisions, the reasoning, the identity that authorised it and the outcome — and the log is in your environment, queryable by your own team. That’s what turns an audit request into a query and an incident review into an afternoon.
+Role-based access per action
+Scopes documented and reviewed with you at handover.
+Queryable audit trail
+In your environment, replayable per run.
+Human approval gates
+Thresholds you set per workflow.
+Reversible actions
+Idempotent writes, replay from any state, documented rollback.
+Engineer access
+Background-checked, MFA-enforced, time-boxed and logged.
+Incident response
+Named escalation path with a notification commitment in the contract.
+Governance is set on the engine page, not promised on this one.
+What a system may not do without a human is written down before it is built, and it drives the credentials, the staged writes, the holds and the rollback. Because it is configuration rather than architecture, you can start conservative and loosen it as the measured pass rate earns it. The control, the eval thresholds and the worst-case documentation all live with the build process.
+How autonomy is set
+The paperwork your reviewer wants.
+Nothing here is a self-serve download yet. Every card opens a pre-addressed request to security@atomsai.com with the document named in the subject, which is the honest form of “available on request” and the one that actually gets your reviewer their file.
+SOC 2 Type II report
+Under NDA
+The full report, not a summary badge.
+Request
+SOC 2 Type II report by email
+HIPAA BAA template
+On request
+For covered workloads.
+Request
+HIPAA BAA template by email
+Data Processing Agreement
+Public
+With Standard Contractual Clauses.
+Request
+Data Processing Agreement by email
+Sub-processor list
+Public
+Purpose, location and data category per sub-processor.
+Request
+Sub-processor list by email
+Security whitepaper
+Public
+The reference architecture and its controls.
+Request
+Security whitepaper by email
+Penetration test summary
+Under NDA
+The most recent third-party test.
+Request
+Penetration test summary by email
+Pre-filled security questionnaire
+On request
+So your reviewer does not retype 300 rows.
+Request
+Pre-filled security questionnaire by email
+Business continuity & DR summary
+On request
+Per engagement, with the targets we committed to.
+Request
+Business continuity & DR summary by email
+Insurance certificates
+On request
+Cyber and professional indemnity.
+Request
+Insurance certificates by email
+Where to look, and who to tell.
+System status
+No public status page yet — ask security@ for current state.
+Report a vulnerability
+security@atomsai.com
+Security questionnaires
+security@atomsai.com
+Privacy requests
+privacy@atomsai.com
+MC
+DO
+EK
+RS
+Bring your security team to the demo.
+Bring the questionnaire too. Thirty minutes on deployment, keys, access and audit.
+Contact us

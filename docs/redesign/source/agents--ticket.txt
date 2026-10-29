@@ -1,0 +1,511 @@
+AtomsAI / Ticket agent
+Every ticket sorted.
+Every deadline met.
+Reads every ticket the moment it arrives, finds the complaints, fraud reports and customers who need extra care, starts the right deadline and sends each one to the right team.
+Contact us
+See what it does
+Built for banks, insurers, utilities, telecoms and outsourced contact centres.
+Northbank · Customer service
+Live
+New ticket
+#88214
+· from David
+Moss
+Overdraft fee again
+This is the third time I've asked you to refund this fee. I've lost hours at
+work and I'm struggling to pay my bills as it is.
+Type
+Formal complaint
+Reply due
+In 15 days · clock started
+Customer
+Third contact this month
+Also
+Possible hardship
+Sent to
+Complaints team · hardship specialist told
+Spotted as a complaint in 3 seconds
+The word “complaint” was never used · acknowledgement drafted for today
+01 / Read
+02 / Classify
+03 / Start the clock
+04 / Route
+Why it matters
+What it does
+Channels & stack
+Ticket queue
+By industry
+Controls & evals
+Pricing
+Why it matters
+Large service teams handle thousands of tickets a day, across many queues and channels.
+Some are complaints, fraud reports or customers in difficulty, with rules on how fast you must reply.
+Miss one in the pile, and it becomes a fine or an ombudsman case.
+Complaints hide in the pile
+Customers rarely write “complaint”. An angry email about a fee looks like any other.
+Deadlines tracked by hand
+Spreadsheets and calendar reminders, until one slips through.
+Every queue sorts differently
+Many brands, clients and teams, each with its own tags and rules to learn.
+Some tickets carry a legal deadline.
+None should wait to be found.
+Same tickets. No missed deadlines.
+What 10,000 tickets a month look like at a bank, sorted by hand and with a ticket agent
+Sorted by hand
+6 in 10
+complaints spotted on day one
+40
+complaints answered after the deadline
+30
+hours a day spent sorting
+With the ticket agent
+All
+complaints spotted on day one
+2
+complaints answered after the deadline
+2
+hours a day spent sorting
+Every complaint found and answered in time
+, and a team of sorters back on customer work.
+Illustrative
+What it does
+Everything your triage team does.
+Without missing a single complaint.
+Finds what matters in every ticket.
+Complaints, fraud, disputes and customers in difficulty, spotted from what people say, not the words they use.
+Example · none of them said “complaint” or “urgent”
+“Third time I've asked about this fee”
+Complaint
+Deadline
+“Someone used my card in Spain”
+Fraud
+Now
+“I lost my job and can't pay”
+Hardship
+Specialist
+Starts the right clock.
+Every deadline set and tracked, with a reminder before it's missed.
+Acknowledge
+By end of day
+Reminder
+Day 10, if still open
+Final reply
+Within 15 days
+Follows every rulebook.
+Each brand, client and team keeps its own tags, routes and service levels, all in one stream.
+Example · one contact centre, three clients, three rulebooks
+Client: Northbank · Complaint
+→ Complaints team, UK
+Client: Vela Energy · Billing
+→ Energy billing desk
+Client: Orbit Telecom · Spanish
+→ Spanish-speaking team
+Protects customers in difficulty.
+Hardship, illness or bereavement goes to a specialist.
+To Ana · Hardship specialist
+Said
+“I'm struggling to pay my bills.”
+Flag
+Possible financial hardship
+Done
+Fees paused until a person reviews it
+Merges every chase.
+Email, letter and call about one problem become one ticket, one clock.
+#88214
+Email · first complaint
+#88218
+Letter · chasing it
+#88230
+Call note · asked again
+One complaint, one clock
+Drafts the acknowledgement.
+In your approved wording, ready to check and send.
+Acknowledgement for the team to check and send
+Dear Mr Moss, we've received your complaint about the overdraft fee. We'll
+reply in full by 29 October.
+Uses your approved wording
+Spots problems early.
+Notices when one complaint type suddenly grows, and tells the complaints lead.
+Alert · 11:20am
+Fee complaints up 3× today
+All mention the new pricing letter. Complaints lead told.
+Every complaint found, every deadline met.
+Fewer fines and ombudsman cases, a full record for your regulator, and sorters back on customer work.
+Example · one month, one bank's service team
+100%
+of complaints found on day one
+0
+complaint deadlines missed
+28 hrs
+of sorting saved every day
+93%
+of tickets sorted without a person
+Channels, capabilities and integrations
+Every channel and queue.
+Sorted inside your systems.
+Works on tickets from email, forms, chat, social, voicemail and scanned letters. Tags, deadlines and routing are set inside the helpdesks and case systems you already use.
+6
+Ways in. One sorted queue.
+Email
+Web forms
+Chat
+Letters
+Social
+Voicemail
+Secure by default
+SOC 2 Type II, HIPAA and GDPR. Your data is never used to train models.
+Tickets sorted today
+00:00 → 23:59
+Always on
+Overnight and at weekends too, so no deadline starts ticking unseen.
+Hands over to your team
+The right team, with the ticket classified, the deadline set and an acknowledgement drafted.
+When it hands over
+As per your rules
+It isn't sure of the type
+Fraud or a customer in difficulty
+A deadline is close
+AI agent
+Complaint
+→
+TW
+Tom W.
+Complaints team
+Fraud
+→
+NF
+Nadia F.
+Fraud team
+Hardship
+→
+AS
+Ana S.
+Specialist
+Handover note
+· type, deadline, customer history, draft acknowledgement
+At home in your stack
+Salesforce Service Cloud, ServiceNow, Zendesk, Freshdesk and Genesys. Complaint and case-management systems. Several helpdesks at once, one per client or brand. Anything else through APIs and webhooks.
+Scoped access, approved per action
+Ticket queue
+Every ticket.
+Every deadline in view.
+See how each ticket was classified, where it went, and which deadlines are close.
+Ticket queue · today
+All channels
+Illustrative
+Tickets in
+12,480
+Sorted automatically
+93%
+Complaints found
+214
+Deadlines at risk
+3
+#88214 · Overdraft fee again
+Email
+Third ask · reply due in 15 days
+Complaint
+#88215 · Card used in Spain
+Chat
+Customer didn't make the payment
+Fraud · now
+#88216 · Can't pay this month
+Email
+Lost job, asks for help
+Hardship team
+#88217 · New address
+Web form
+Simple change
+Service
+#88218 · Same as #88214
+Letter
+Chased by letter
+Merged
+3 complaints close to their deadline
+Review
+Hold routing
+One view of every ticket
+What came in, how it was tagged and which team has it.
+Every decision explained
+Click a tag to see the words that made it a complaint, ready for an audit.
+Deadlines at a glance
+Complaints close to their deadline rise to the top.
+Review or hold
+Check the tickets it wasn't sure about, or pause routing for a team, for example during a system outage.
+Rules on every reply?
+There's a play for that.
+Pick your industry to see how the agent finds, clocks and routes tickets.
+Banking
+2
+Cards & lending
+2
+Insurance
+2
+Utilities & energy
+2
+Telecom
+2
+Outsourced contact centres
+2
+Health insurers
+2
+Investments & pensions
+2
+Public services
+2
+Banking
+Complaints have legal deadlines, and customers rarely use the word “complaint”.
+Complaint
+Unlabelled complaint
+Email
+Trigger
+A customer asks for a fee refund for the third time.
+Agent
+Tags it a complaint and starts the response clock.
+Result
+Answered within the deadline
+Fraud
+Payment they didn't make
+Chat
+Trigger
+A customer reports a card payment abroad.
+Agent
+Flags fraud and sends it to the fraud team now.
+Result
+Card frozen in minutes
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Cards & lending
+Disputes and hardship requests need the right team and the right timeline.
+Dispute
+Charge dispute
+Email
+Web form
+Trigger
+A cardholder disputes a merchant charge.
+Agent
+Tags it a dispute, attaches the transaction, routes it.
+Result
+Dispute opened on time
+Hardship
+Can't make the payment
+Email
+Trigger
+A borrower says they lost their job.
+Agent
+Flags possible hardship for a specialist.
+Result
+Handled with care, by the rules
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Insurance
+Claim complaints and cancellations hide among routine policy questions.
+Complaint
+Unhappy with a claim decision
+Email
+Letter
+Trigger
+A customer disagrees with a claim payout.
+Agent
+Tags it a complaint, links the claim, starts the clock.
+Result
+Reviewed by complaints, not claims
+Route
+Policy change
+Web form
+Trigger
+A customer adds a driver.
+Agent
+Routes it to the policy team as routine.
+Result
+Done the same day
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Utilities & energy
+Billing complaints spike after price changes, and vulnerable customers need priority.
+Vulnerable
+Medical equipment at home
+Email
+Voicemail
+Trigger
+A customer mentions a home oxygen machine.
+Agent
+Flags them for the priority services register.
+Result
+Protected from disconnection
+Trend
+Price-change spike
+Email
+Chat
+Trigger
+Bill complaints jump after a tariff letter.
+Agent
+Groups them and alerts the complaints lead.
+Result
+One clear response, sent early
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Telecom
+Millions of tickets, and complaints that can escalate to an ombudsman.
+Complaint
+Third outage this month
+Chat
+Social
+Trigger
+A customer complains about repeated outages.
+Agent
+Tags a complaint and checks the outage history.
+Result
+Resolved before it escalates
+Merge
+Same problem, every channel
+Email
+Chat
+Social
+Trigger
+One customer writes on three channels.
+Agent
+Merges them into one ticket.
+Result
+One owner, one answer
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Outsourced contact centres
+Every client has its own queues, tags and service levels to follow.
+Route
+Right client, right rulebook
+Email
+Chat
+Trigger
+Tickets for 12 clients arrive in one stream.
+Agent
+Applies each client's tags, teams and deadlines.
+Result
+Every client's service level met
+Route
+Language
+Email
+Trigger
+A ticket arrives in Portuguese.
+Agent
+Sends it to the Portuguese-speaking team.
+Result
+Answered in the customer's language
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Health insurers
+Appeals and grievances have fixed timelines, and members don't use those words.
+Complaint
+Denied claim appeal
+Letter
+Email
+Trigger
+A member asks why a claim was refused.
+Agent
+Tags it an appeal and starts the clock.
+Result
+Decided within the deadline
+Urgent
+Urgent treatment
+Voicemail
+Trigger
+A member needs approval for surgery this week.
+Agent
+Flags it as an urgent appeal.
+Result
+Fast-tracked by the rules
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Investments & pensions
+Complaints and requests about people's savings must be handled exactly right.
+Complaint
+Transfer taking too long
+Email
+Letter
+Trigger
+A customer complains a pension transfer is late.
+Agent
+Tags a complaint, links the transfer, starts the clock.
+Result
+Answered in time
+Vulnerable
+Bereavement
+Email
+Trigger
+A family member writes after a death.
+Agent
+Routes it to the bereavement team.
+Result
+Handled with care
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Public services
+High volumes, strict response times and many departments.
+Route
+Right department
+Web form
+Email
+Trigger
+A resident reports a missed bin collection.
+Agent
+Sends it to waste services with the address.
+Result
+Fixed without a hand-off
+Complaint
+Formal complaint
+Email
+Trigger
+A resident complains about a council decision.
+Agent
+Tags it formal and starts the response clock.
+Result
+Replied within the deadline
+Illustrative workflows, configured around your rules and integrations.
+Contact us
+Categories and deadlines follow your own rules and your regulator's.
+Controls and evals
+Your rules. Your regulator's.
+Nothing missed.
+Controls
+Your complaint rules built in
+Your definitions of a complaint, dispute or vulnerable customer, and your regulator's deadlines.
+Unsure means a person
+If it isn't confident, the ticket goes to a review queue instead of a guess.
+Replies stay with your team
+Drafts are only sent after an agent checks them, unless you choose otherwise.
+Full audit trail
+Every classification, deadline and route is logged, ready for an audit or a regulator.
+Evals
+Tested on your past tickets
+Including the complaints your team missed, to show what would have been caught.
+Re-tested on every change
+A saved test set re-runs whenever tags or teams change.
+Corrections improve it
+When an agent changes a tag, the agent learns from it.
+Measured against your goals
+Missed complaints, missed deadlines and wrong-team rate, reviewed with you weekly.
+Pricing
+Custom built.
+Priced for your requirements.
+No fixed tiers. Every ticket agent is built around your journeys, channels and systems, so we price it the same way: after we understand what you need.
+What shapes the price
+Number of tickets a month
+Helpdesks, brands and clients
+Complaint rules and regulators
+Teams and routing rules
+Languages
+Always included
+Design and build with our team
+Testing on your past tickets before launch
+Accuracy checks after go-live
+Weekly reviews and tuning
+Security: SOC 2 Type II, HIPAA, GDPR
+Tell us what you need.
+Share your journeys, channels and systems. We'll come back with a scope and a
+price.
+Contact us
+Bring a month of tickets.
+We'll find the complaints you missed.
+Share a sample of past tickets. We'll show which ones were complaints, fraud or customers in difficulty, and how many were caught in time.
+Contact us
+Pricing

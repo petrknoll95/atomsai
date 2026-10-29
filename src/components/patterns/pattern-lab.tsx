@@ -103,7 +103,7 @@ export function PatternLab() {
         </section>
 
         <aside className={styles.controls} aria-label="Pattern controls">
-          <div className={styles.controlsHeading}><h2 className={`display ${styles.panelHeading}`}>Your settings</h2><button type="button" className={styles.reset} onClick={reset}>Reset all</button></div>
+          <div className={styles.controlsHeading}><h2 className={`display ${styles.panelHeading}`}>Your settings</h2><button type="button" className={`link-underline ${styles.reset}`} onClick={reset}>Reset all</button></div>
 
           <fieldset className={styles.group}>
             <legend>Structure</legend>

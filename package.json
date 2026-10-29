@@ -20,13 +20,20 @@
     "test:fullscreen-menu": "node scripts/fullscreen-menu-check.mjs",
     "test:smooth-scroll": "node scripts/smooth-scroll-check.mjs",
     "test:pattern-motion": "node scripts/pattern-motion-check.mjs && node scripts/pattern-motion-device-check.mjs",
+    "test:feedback": "node scripts/feedback-check.mjs",
     "test:home-motion": "node scripts/home-motion-check.mjs"
   },
   "dependencies": {
+    "embla-carousel-auto-scroll": "^8.6.0",
     "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-fade": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
+    "firebase": "13.1.0",
     "gsap": "^3.15.0",
+    "html2canvas-pro": "2.5.0",
     "next": "16.4.3",
+    "p5": "^2.3.4",
+    "pindrop.js": "0.1.30",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
@@ -41,6 +48,7 @@
     "postcss": "^8.5.6",
     "sharp": "^0.35.5",
     "tailwindcss": "4.3.3",
+    "tw-easing-gradients": "^1.2.0",
     "typescript": "^5.9.3"
   }
 }

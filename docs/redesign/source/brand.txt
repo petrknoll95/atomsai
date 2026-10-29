@@ -1,0 +1,589 @@
+The system, end to end
+Every swatch, radius, shadow and duration on this page resolves through a CSS custom property. If the guide and tokens.css disagree, this page shows it.
+Logo
+Graphics
+Colour
+Type
+Radius
+Shadow
+Buttons
+Motion
+Voice
+Downloads
+The supplied lockup
+The logo is the client's artwork, not a composition we assemble: a fan/burst symbol, italic serif “atoms”, upright sans “AI”, and a period. It is monochrome, it is outlined, and it ships as ink, white or currentColor. The glass orb is a decorative graphic, shown in its own section below.
+On white
+lockup-primary.svg
+— ink
+#0A0A0A
+. The default, and what a light page uses.
+On ink
+lockup-reversed.svg
+— white. Never place the primary
+on a dark ground; use this.
+On cloud
+Use the primary ink artwork on pale cloud fills. Reserve the reversed artwork
+for dark surfaces.
+Three fills, one artwork.
+Logo.astro
+inlines the paths
+with
+fill="currentColor"
+, so
+tone
+resolves the colour through tokens; the files in
+public/brand/logo/
+are the same paths with the fill baked
+in, for anyone outside this codebase.
+Symbol — primary
+ink, square crop
+Symbol — reversed
+white, for dark grounds
+Symbol — on cloud
+the light-mode alternate: white on the gradient tile
+Symbol — mono
+currentColor, shown at accent-700
+The symbol stands alone only where the name is already on the surface — the
+navbar orb, an avatar, a favicon, an app tile. Everywhere else the logo is the
+full lockup. It is cropped square and centred on its own bounds, so a square
+slot needs no padding of its own.
+Nothing in the logo is a decision of ours.
+scripts/split-logo.mjs
+parses the supplied file, measures
+every path's bounding box, cuts the row at its widest horizontal gap — the leftmost
+cluster is the symbol, the rest is the wordmark — and writes the
+d
+strings and the cropped viewBoxes into
+src/lib/brand-logo.ts
+. The only operations are
+crop and fill. No glyph is redrawn, re-spaced or re-weighted.
+Source
+AtomsAI_Logo-01.svg · viewBox 0 0 1200 1200 · 9 filled shapes
+Lockup bounds
+x 162.889→1022.1 · y 522.5→702.13
+Lockup ratio
+4.176 : 1 (cropped + 2% pad)
+Symbol bounds
+x 162.889→342 · y 522.5→702.13
+Wordmark bounds
+x 366→1022.1 · y 522.6→672
+Symbol → wordmark
+24.0 units — the artwork's own gap
+The lockup's aspect ratio is the artwork's, so there is no gap constant
+and no wordmark ratio to re-measure when a type token moves — the two
+cannot drift, because there is only one of them.
+16px
+20px
+24px
+32px
+40px
+48px
+64px
+96px
+One geometry all the way down. The fan is a set of open rays that thin evenly,
+so there is no size at which it silts up and no second drawing to switch to —
+the dot-family's 40px halftone floor and its 7-dot fallback went with the
+dot-family logo. 16px is still the floor for a *legible* symbol; below that,
+use the plate.
+width="8rem"
+width="12rem"
+width="16rem"
+width="100%"
+width
+fills a slot that has a width rather than a height,
+and any CSS length works —
+px
+,
+rem
+,
+%
+,
+clamp()
+— because the lockup is one
+&lt;svg&gt;
+with a cropped viewBox and scales itself. The
+container-query machinery this used to need existed only to keep a live-text wordmark
+in step with a separate mark.
+size
+still sets the height.
+App icon
+white symbol on ink, r = 25%
+Cloud plate
+the accent alternate, same inset
+Cloud tile
+56 / 40 / 28 — no floor to fall through
+16px
+24px
+32px
+48px
+Favicon ladder
+one artwork, 16 to 48
+The plate is the symbol at
+0.64
+of the side on a
+25%
+-radius square — the fan is an open shape with no
+flat outer edge, so it needs less optical margin than a letterform would; at
+0.72 the ray tips touched the rounded corners at 32px.
+favicon.svg
+and
+app-icon.svg
+bake
+exactly this, and
+scripts/gen-icons.mjs
+rasterises the
+PNGs from them.
+Clear space
+The margin on every side is one
+symbol height
+— the height of
+the fan, which is also the lockup's own box height. Nothing enters it: no type,
+no rule, no other logo. Measured from the artwork's cropped box, which already
+carries a 2% pad of its own, so the two never have to be added by hand.
+Misuse
+Do not rotate
+Do not stretch
+Do not squash
+Do not recolour
+Do not add effects
+Do not slant
+Three fills exist and no others: ink
+#0A0A0A
+,
+white, and
+currentColor
+. Violet is not one of them — the
+supplied artwork is monochrome, and the accent belongs to the page, not to
+the logo. Also: never redraw or re-trace a path, never re-space the symbol
+against the wordmark, never set the wordmark in a substitute typeface, and
+never build a lockup out of the wordmark file plus a symbol placed by eye —
+lockup-primary.svg
+already is that lockup.
+The glass orb
+Near-black glass, deep violet reflections and a softly lit edge. One shared material across our homepage, voice experience and product graphics.
+Black and violet on a dark stage
+The same glass material on a light stage
+Material
+Keep the center near
+black, the reflections deep purple and the edge highlights violet. The orb is
+a decorative graphic; the AtomsAI logo remains our identity.
+Interaction
+Move the pointer over
+the glass to gently reshape it. The surface returns slowly to a circle. During
+a live call, it responds to the caller and agent’s voices.
+Motion
+Reflections move softly
+while visible. Reduced motion keeps the glass still. The opening loading
+animation keeps its own treatment.
+Light-first, one accent
+A warm off-white canvas, the Conicorn grey ramp, and indigo-violet as the accent family. Hue, chroma and lightness define the ramp; semantic ink colors keep labels readable on solid and pale surfaces.
+--canvas
+#F4F4F2
+page ground
+--canvas-raised
+#F9F9F7
+raised panel
+--ink
+#0A0A0A
+body text, mark dots
+grey-01
+#1A1A1A
+darkest surface, primary button
+grey-02
+#292929
+dark tile, dark card
+grey-03
+#525252
+muted ink
+grey-04
+#A6A6A6
+subtle ink
+grey-05
+#B8B8B8
+muted ink on dark
+grey-06
+#CDCDCD
+strong border
+grey-07
+#E6E6E6
+hairline, 1px border
+grey-08
+#F2F2F2
+card fill, sunken canvas
+Derived from
+--brand-h: 282
+,
+--brand-c: 0.21
+and
+--brand-l: 0.52
+. Pale fills use dark ink; the solid
+violet uses white. Dark sections use a brighter accent for readable links and
+focus outlines.
+accent-100
+#F1F2FF
+oklch(0.967 0.0273 282)
+tint wash
+accent-200
+#D5D8FF
+oklch(0.901 0.084 282)
+pale accent surface
+accent-300
+#B9BBFF
+oklch(0.831 0.1449 282)
+halo, cloud stop 2
+accent-400
+#ADACFF
+oklch(0.8 0.1806 282)
+bright decorative accent
+accent-500
+#5D4BDB
+oklch(0.52 0.21 282)
+violet — the light-zone accent
+accent-hover
+#513ACA
+oklch(0.47 0.21 282)
+solid accent hover
+accent-600
+#7B6BFF
+oklch(0.634 0.2331 282)
+illustration highlight
+accent-700
+#5848CF
+oklch(0.5 0.1995 282)
+text and focus on light surfaces
+accent-ink
+#FFFFFF
+oklch(1 0 0)
+labels on solid violet
+--accent-cloud
+Radial. The signature form: spheres, orbs, hero glow, the graphic's
+electron. Utility
+.bg-cloud
+.
+--accent-cloud-linear
+Flat form at 135°: CTA cards, bars, text clips. Utility
+.bg-cloud-linear
+.
+white
+#FFFFFF · 0%
+accent-cloud-1
+#E8EBFF · 30%
+accent-cloud-2
+#B9BBFF · 65%
+accent-cloud-3
+#8B80FF · 100%
+Stops are derived from
+--brand-h
+too, so a hue swap
+carries the cloud with it.
+--gradient-duotone
+— sky → soft. Both stops
+sit in the sky family:
+--brand-duo-shift
+is −4°, not a hue jump.
+--gradient-duotone-soft
+— the same pair at
+24% alpha, for washes behind type.
+--gradient-ring
+— conic sweep for CTA rings.
+Violet, a pale tint, and one neutral break at grey-07.
+--accent-a04 … a64
+a04
+a08
+a16
+a24
+a40
+a64
+--black-a04 … a80
+a04
+a08
+a12
+a16
+a24
+a32
+a48
+a64
+a80
+--white-a04 … a92
+a04
+a08
+a12
+a16
+a24
+a32
+a48
+a64
+a80
+a92
+Geist, tight tracking
+Geist for everything, Geist Mono for numerals. Headings are fluid clamps; tracking tightens as size grows, from −0.01em in body to −0.06em on display.
+h1 · --text-h1 · 3rem → 5rem
+Consultants who ship
+h2 · --text-h2 · 2.25rem → 4rem
+Integration is the product
+h3 · --text-h3 · 1.75rem → 3rem
+This is your moat — not ours
+h4 · --text-h4 · 1.5rem → 2rem
+Agents that work, not just chat
+h5 · --text-h5 · 1.25rem → 1.5rem
+Four to eight weeks to production
+h6 · --text-h6 · 1.125rem
+One workflow, handed over
+title-display · --text-display · 3.5rem → 6.5rem
+Integration is the product
+title-statement · --text-statement · 1.75rem → 3rem
+Integration is the product
+body-lead · --text-lead · 1.0625rem → 1.25rem
+Jane from AP manually fixes invoices that fail OCR on Fridays.
+body-base · --text-body · 1rem
+Jane from AP manually fixes invoices that fail OCR on Fridays.
+body-small · --text-small · 0.9375rem
+Jane from AP manually fixes invoices that fail OCR on Fridays.
+body-caption · --text-caption · 0.8125rem
+Jane from AP manually fixes invoices that fail OCR on Fridays.
+body-eyebrow · --text-eyebrow · 0.8125rem
+Jane from AP manually fixes invoices that fail OCR on Fridays.
+3.5d → 11h · −38% · 4–8 wks · $1.4M · 3×
+Geist Mono via
+--font-numeric
+, tabular figures,
+tracking zeroed. Applied with
+.num
+or
+[data-numeric]
+. Every printed metric uses it, so a
+counting animation never reflows.
+--tracking-display
+−0.06em
+--tracking-heading
+−0.05em
+--tracking-subheading
+−0.03em
+--tracking-body
+−0.01em
+--tracking-eyebrow
++0.02em
+Generous, and it steps down
+The scale tops out at 4rem — halved from the first cut, because the old curves were eating the corners of every card that carried text. Every radius above 2xl still reduces at 991px and again at 767px. Rule of thumb: a card's padding is at least half its corner radius, so a line of copy can never run into the curve.
+r
+0.875rem
+r-m
+1rem
+r-l
+1.25rem
+r-xl
+1.375rem
+r-2xl
+1.5rem
+r-3xl
+1.75rem
+r-4xl
+2rem
+r-5xl
+2.5rem
+r-6xl
+3rem
+r-7xl
+3.5rem
+r-8xl
+4rem
+r-full
+62.5rem
+r-capsule
+7xl/7xl/5xl/5xl
+Inset first, elevation last
+This system bevels rather than lifts. Nearly every recipe is an inset pair — a dark bottom edge and a light rim — so a surface reads as a physical chip instead of a floating card.
+chip
+the bevelled chip — the signature surface
+chip-dark
+same bevel on a dark tile
+nav-btn
+nav pill
+data-card
+metric card
+icon-orb
+round icon well
+btn-halo
+primary CTA ring — sky at 16%
+glow-40
+inner glow, large
+glow-12
+inner glow, button hover
+soft
+elevation, rare
+lift
+elevation, hover
+glass
+frosted pill and panel; blur capped at 16px and never animated
+Four variants, one label
+The primary label is “Contact us” sitewide. The violet ring on the primary variant is the accent's main job on a light page — the fill stays ink.
+Contact us
+See how we work
+Explore capabilities
+Read the Trust Center
+Contact us
+Contact us
+Contact us
+Contact us
+No icon
+Specimens, not controls: none of these has an
+href
+, so none of
+them navigates and none of them opens the contact dialog.
+Contact us
+See how we work
+Explore capabilities
+Read the Trust Center
+The glass variant is the dark-stage default; the white pill is the
+highest-contrast option and is reserved for one action per stage.
+One reveal, one easing family
+Durations and easings are tokens, so reduced motion zeroes them in one place and GSAP reads the same numbers as CSS.
+Duration
+Token
+Value
+Used for
+instant
+0.12s
+colour and opacity flicks
+fast
+0.2s
+button and pill states
+base
+0.35s
+the default transition
+slow
+0.6s
+panel and accordion moves
+reveal
+0.75s
+the blur-reveal
+slower
+1.1s
+hero and stage entrances
+preloader
+0.65s
+preloader wipe
+Easing
+Token
+Curve
+Used for
+out
+cubic-bezier(0.22, 1, 0.36, 1)
+entrances
+in-out
+cubic-bezier(0.65, 0, 0.35, 1)
+both-ends moves
+emphasis
+cubic-bezier(0.16, 1, 0.3, 1)
+reveals, hero
+spring
+cubic-bezier(0.34, 1.4, 0.64, 1)
+the one overshoot
+linear
+linear
+marquees only
+Rhythm and geometry
+Token
+Value
+Used for
+stagger
+0.06s
+card and list batches
+stagger-loose
+0.1s
+section-scale batches
+stagger-chars
+0.02s
+SplitText char rolls
+reveal-blur
+5px
+blur-reveal start
+reveal-y
+2rem
+blur-reveal rise
+marquee-logos
+8s
+logo strip
+marquee-stats
+15s
+stat strip
+Under
+prefers-reduced-motion: reduce
+every duration, stagger
+and marquee token drops to
+0s
+, and the reveal
+geometry drops to zero blur and zero rise. GSAP takes a parallel
+matchMedia
+branch that
+gsap.set()
+s the final state — it never skips a
+reveal, or the content would stay invisible.
+Name the failure mode first
+A senior engineer who has already seen your problem fail three times. Blunt, specific, outcome before mechanism. If a sentence could appear on any AI vendor's site, delete it.
+Verbatim. Never reworded.
+Consultants who ship.
+Integration is the product.
+This is your moat — not ours.
+Agents that work, not just chat.
+Jane from AP manually fixes invoices that fail OCR on Fridays.
+Full list in
+content-draft/voice-guide.md
+§5.
+Hype nouns
+revolutionary · game-changing · cutting-edge · next-generation · world-class · best-in-class · industry-leading · groundbreaking · disruptive · paradigm · synergy · holistic · seamless · frictionless · effortless · magic · secret sauce
+Empty verbs
+leverage · empower · unlock · supercharge · turbocharge · unleash · ideate · delight · reimagine · transform (as a standalone promise)
+Weasel qualifiers
+up to · as much as · potentially · virtually · essentially · arguably · in many cases · some of the world’s
+AI-vendor filler
+AI-powered · AI-driven · powered by AI · harness the power of AI · AI journey · digital transformation · future-proof · hallucination-free · 100% accurate
+Anti-consultant framing (retired)
+“Builders, not consultants” · “not consultants” · “no consultants” · “the opposite of a consultancy” · any line whose joke is that consultants don’t build
+Consulting filler
+solution (use *system*) · offerings · thought leadership · deep dive (noun) · best practices · bandwidth · low-hanging fruit · journey · roadmap-as-metaphor
+Never claim
+guaranteed ROI · zero risk · replaces your team · fully autonomous · no engineering required · fastest in the industry · we are the only
+Punctuation
+exclamation marks in body copy · emoji · ALL-CAPS for emphasis · rhetorical triples · sentences starting with “Imagine”
+Numbers
+Every number carries a denominator, a name, a currency or a unit of time. “−38%” alone is noise.
+Headlines
+Hero ≤ 9 words, section ≤ 10. No architecture nouns: RAG, MCP, vector, embedding, orchestration, pipeline.
+CTA
+One primary label sitewide: “Contact us”, resolving to /company/contact. Secondary labels come from a closed set.
+The approved files
+Every logo file is outlined artwork derived from the client's own SVG — there is no typeface to substitute and nothing to convert before external distribution. Use the supplied logo files for identity; the interactive glass orb is a decorative website component.
+Lockup — primary
+logo/lockup-primary.svg
+ink, cropped to content + 2%. The default logo.
+Lockup — reversed
+logo/lockup-reversed.svg
+white, for ink and photographic grounds
+Lockup — mono
+logo/lockup-mono.svg
+currentColor, for one-colour reproduction
+Symbol — primary
+logo/mark-primary.svg
+the fan alone, square crop, ink
+Symbol — reversed
+logo/mark-reversed.svg
+the fan alone, white
+Symbol — mono
+logo/mark-mono.svg
+currentColor
+Wordmark — primary
+logo/wordmark-primary.svg
+type only, ink. Only where the symbol is already present.
+Wordmark — reversed
+logo/wordmark-reversed.svg
+type only, white
+Favicon
+logo/favicon.svg
+symbol white on ink, 32 grid, r = 25%
+App icon
+logo/app-icon.svg
+512 rounded square, r = 25%
+Supplied artwork
+logo/lockup-source.svg
+the client file, verbatim. The source of every row above.

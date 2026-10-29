@@ -1,0 +1,226 @@
+{
+  "before": [
+    {
+      "url": "http://127.0.0.1:3002/fonts/FoundersGrotesk-Regular.woff2",
+      "transferSize": 31456
+    },
+    {
+      "url": "http://127.0.0.1:3002/assets/figma/footer-Vector.svg",
+      "transferSize": 775
+    },
+    {
+      "url": "http://127.0.0.1:3002/assets/figma/footer-Vector1.svg",
+      "transferSize": 1203
+    },
+    {
+      "url": "http://127.0.0.1:3002/assets/figma/footer-Vector2.svg",
+      "transferSize": 824
+    },
+    {
+      "url": "http://127.0.0.1:3002/assets/figma/footer-Vector3.svg",
+      "transferSize": 941
+    },
+    {
+      "url": "http://127.0.0.1:3002/assets/figma/footer-Vector4.svg",
+      "transferSize": 1125
+    },
+    {
+      "url": "http://127.0.0.1:3002/assets/figma/footer-Vector5.svg",
+      "transferSize": 778
+    },
+    {
+      "url": "http://127.0.0.1:3002/fonts/PPNeueMontreal-Variable.ttf",
+      "transferSize": 199116
+    },
+    {
+      "url": "http://127.0.0.1:3002/assets/figma/footer-Vector6.svg",
+      "transferSize": 639
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/1xzhxmtf6oa8c.css",
+      "transferSize": 5678
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/1devhxmpyrf7g.css",
+      "transferSize": 19954
+    },
+    {
+      "url": "http://127.0.0.1:3002/assets/figma/footer-Vector7.svg",
+      "transferSize": 1260
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/1ckvzn7sfprko.js",
+      "transferSize": 2335
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/1-nqmp1rl8kqt.js",
+      "transferSize": 8951
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/216iyidhmrh3u.js",
+      "transferSize": 72199
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "transferSize": 4240
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/0676eyxzkfkmm.js",
+      "transferSize": 5139
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/3ysx6h2mxw917.js",
+      "transferSize": 7033
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/34goyxc2anvlg.js",
+      "transferSize": 45459
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/3k22vjns2ajr2.js",
+      "transferSize": 33273
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/2yhk9aeug-aqs.js",
+      "transferSize": 27418
+    },
+    {
+      "url": "http://127.0.0.1:3002/assets/figma/hero-Logo.svg",
+      "transferSize": 2441
+    },
+    {
+      "url": "http://127.0.0.1:3002/assets/figma/hero-Vector1.svg",
+      "transferSize": 630
+    },
+    {
+      "url": "http://127.0.0.1:3002/fonts/FoundersGrotesk-Medium.woff2",
+      "transferSize": 32428
+    }
+  ],
+  "immediate": {
+    "menuVisible": true,
+    "servicesVisible": true,
+    "delayMs": 142
+  },
+  "artwork": {
+    "ready": true,
+    "delayMs": 1121,
+    "canvas": {
+      "width": 1334,
+      "height": 1688,
+      "state": "ready"
+    }
+  },
+  "requestsAfterOpen": [
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/13xvo22o71v4f.js",
+      "time": 1793225550522
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/2jcw3z4io2glf.js",
+      "time": 1793225550522
+    },
+    {
+      "url": "http://127.0.0.1:3002/approach",
+      "time": 1793225553632
+    },
+    {
+      "url": "http://127.0.0.1:3002/fonts/FoundersGrotesk-Regular.woff2",
+      "time": 1793225553818
+    },
+    {
+      "url": "http://127.0.0.1:3002/fonts/PPNeueMontreal-Variable.ttf",
+      "time": 1793225553818
+    },
+    {
+      "url": "http://127.0.0.1:3002/assets/figma/footer-Vector.svg",
+      "time": 1793225553818
+    },
+    {
+      "url": "http://127.0.0.1:3002/assets/figma/footer-Vector1.svg",
+      "time": 1793225553818
+    },
+    {
+      "url": "http://127.0.0.1:3002/assets/figma/footer-Vector2.svg",
+      "time": 1793225553818
+    },
+    {
+      "url": "http://127.0.0.1:3002/assets/figma/footer-Vector3.svg",
+      "time": 1793225553818
+    },
+    {
+      "url": "http://127.0.0.1:3002/assets/figma/footer-Vector4.svg",
+      "time": 1793225553818
+    },
+    {
+      "url": "http://127.0.0.1:3002/assets/figma/footer-Vector5.svg",
+      "time": 1793225553818
+    },
+    {
+      "url": "http://127.0.0.1:3002/assets/figma/footer-Vector6.svg",
+      "time": 1793225553818
+    },
+    {
+      "url": "http://127.0.0.1:3002/assets/figma/footer-Vector7.svg",
+      "time": 1793225553818
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/1xzhxmtf6oa8c.css",
+      "time": 1793225553818
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/1devhxmpyrf7g.css",
+      "time": 1793225553818
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/1ckvzn7sfprko.js",
+      "time": 1793225553818
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/1-nqmp1rl8kqt.js",
+      "time": 1793225553818
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/216iyidhmrh3u.js",
+      "time": 1793225553818
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/34goyxc2anvlg.js",
+      "time": 1793225553818
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "time": 1793225553818
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/3ysx6h2mxw917.js",
+      "time": 1793225553818
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/219pmyy8ibs_1.js",
+      "time": 1793225553818
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/3k22vjns2ajr2.js",
+      "time": 1793225553818
+    },
+    {
+      "url": "http://127.0.0.1:3002/_next/static/chunks/2yhk9aeug-aqs.js",
+      "time": 1793225553819
+    },
+    {
+      "url": "http://127.0.0.1:3002/assets/figma/hero-Logo.svg",
+      "time": 1793225554340
+    },
+    {
+      "url": "http://127.0.0.1:3002/assets/figma/hero-Vector1.svg",
+      "time": 1793225554340
+    },
+    {
+      "url": "http://127.0.0.1:3002/fonts/FoundersGrotesk-Medium.woff2",
+      "time": 1793225554340
+    }
+  ],
+  "navigationWorks": true,
+  "errors": []
+}

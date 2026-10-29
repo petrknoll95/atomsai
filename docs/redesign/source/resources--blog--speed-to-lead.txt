@@ -1,0 +1,206 @@
+Home
+/
+Resources
+/
+Blog
+/
+The homeowner asked three companies at lunch
+respond to leads faster
+automate lead follow-up
+AI sales assistant
+The homeowner asked three companies at lunch
+How fast should you answer a new lead?
+Leads arrive by form, ad, chat, text and phone, then wait in a queue. Where the time goes, what it costs, and how to reply on their channel fast.
+Nilesh Tripathi
+23 October 2026
+10 min read
+On this page
+How the work runs today: one lead, three companies
+Why do leads go cold before anyone replies?
+What we’d build: a reply on their channel, within a minute
+What leaving it costs
+How to start
+Questions buyers ask
+Written by
+NT
+Nilesh Tripathi
+GM, AtomsAI
+Writes AtomsAI's teardowns: one workflow, where it breaks, and what we would build to fix it.
+LinkedIn
+Share
+LinkedIn
+X
+Copy link
+The expensive part of a lead is the wait after it arrives. A lead comes in by ad form, website form, chat, text or phone, then sits in an inbox, the CRM and someone’s to-do list. Hours later a rep calls, on a channel the lead never chose, and gets voicemail. Meanwhile the lead asked two other companies, and one replied at once. The fix is an agent that replies within a minute on the channel the lead used, asks your qualifying questions, books into the right calendar, and keeps following up across channels until the lead answers.
+How the work runs today: one lead, three companies
+Picture a homeowner, call her Maria. Her roof is leaking and she wants it looked at before the weekend. On her lunch break, between 12:41 and 12:47pm, she contacts three roofing companies from her phone, each in a different way.
+Time
+Company
+How Maria reached out
+What came back
+12:41pm
+A
+Filled in the “Free estimate” form on a Facebook ad
+Nothing until 4:55pm, then a call while she was in a meeting. Voicemail.
+12:44pm
+B
+Typed into the chat on their website
+“Leave your email and we’ll be in touch within 1 business day.”
+12:47pm
+C
+Texted the number on their Google listing
+A reply within a minute, two questions, and a choice of Thursday 8am or Friday 4pm
+Maria booked Friday 4pm with Company C at 12:52pm, from the same text thread, and went back to her lunch. Company C wasn’t bigger or cheaper. It answered on the channel she used, while she was still looking.
+Here is how that afternoon could look inside Company A, which paid for the ad that brought Maria in first.
+Step
+Who
+Where
+Time since the form
+Form submitted
+Maria
+Facebook lead form
+0
+Notification sent
+(automatic)
+Shared sales inbox
+1 minute
+Someone notices it and copies it into the CRM
+Office manager
+Inbox, then CRM
+1 hour 49 minutes
+Assigned to the estimator for her area
+Office manager
+CRM
+2 hours 10 minutes
+First call
+Estimator, between two jobs
+Mobile phone
+4 hours 14 minutes
+Follow-up email
+Estimator
+Email
+Next morning
+Third attempt
+Nobody
+Never
+Nobody in that table was careless, and every one of them did their job. The lead still waited four hours for a first reply, on a channel she didn’t choose.
+Why do leads go cold before anyone replies?
+1. The lead waits in a queue before anyone talks to it.
+A form fill turns into an email, the email turns into a CRM record, the record gets assigned, and only then does someone reach out. Each handover is reasonable on its own. Together they add hours. When Harvard Business Review researchers studied how companies respond to online leads, their conclusion was blunt: “most companies are not responding nearly fast enough” (
+Oldroyd, McElheran and Elkington, HBR, March 2011
+). Every hour in that queue is an hour in which a competitor can reply first, and the ad money that bought the lead is already spent. You notice this when your CRM shows a first-contact time hours after the lead arrived.
+2. You answer on the wrong channel.
+Maria typed on her phone during lunch. Company A called her at 4:55pm, in a meeting. Someone who chose to message may not be able to take a call right then, and a callback that lands in voicemail resets the clock. Each missed callback means another attempt, more rep time, and another chance for the lead to book elsewhere. The reply should come where the lead asked, and move to a call only when they want one. You notice this when reps say leads “never pick up”.
+3. Follow-up stops at two.
+Company A tried one call and one email, then moved on. Leads go quiet for ordinary reasons: a meeting, a school run, a phone left in the car. Without a follow-up schedule that runs on its own, a lead that went quiet once is a lead that’s gone. You paid for every one of those leads, so a lead dropped after one call is ad spend written off, even when the person still needs the job done. You notice this when your CRM is full of leads marked “contacted, no response”.
+There is a fourth, quieter cost. When Company A’s estimator finally called, he didn’t know which ad Maria had clicked or what the form said about the leak. She would have had to explain everything again. A rep who walks in knowing the leak, the photo and the ad starts the visit as the company that listened, which is a better start to any estimate.
+What we’d build: a reply on their channel, within a minute
+This is the job of AtomsAI’s
+Sales agent
+. It answers new leads on every channel, with one memory, and acts inside your CRM and calendars.
+New lead on any channel
+(ad form, website form, chat, SMS, email or a call) → Sales agent → a reply within a minute on that same channel, which knows the ad they came from and asks the two or three questions you set.
+Lead qualifies
+→ Sales agent → books into the right person’s calendar (by territory, round robin or account owner), confirms by text, and sends the rep a brief.
+Lead goes quiet
+→ Sales agent → follows up on your schedule across channels, and stops the moment they reply or say no.
+Here is Company A again, with the agent in place.
+Time
+Channel
+What the agent did
+12:41pm
+Text, after the Facebook form
+“Hi Maria, thanks for asking about the leak. Can you send a photo, and is water coming in now?”
+12:43pm
+Text
+Maria sends a photo. The agent checks her zip code and offers the estimator who covers her area: Thursday 8am or Friday 4pm.
+12:44pm
+Text
+Maria picks Friday 4pm. The agent books it into his calendar and texts her a confirmation.
+12:44pm
+CRM
+Lead created, tagged with the ad, the photo and her answers. The estimator gets a two-line brief on his phone.
+12:46pm
+Call
+Maria taps to call with a question about getting onto the roof. The agent picks up with her photo and the booked slot in front of it, answers, and adds the note to the estimator’s brief.
+12:47pm
+(none)
+Maria doesn’t contact anyone else. She’s booked.
+One conversation moved from a form to text to a call without Maria repeating herself. You can
+try the chat agent
+yourself.
+What you control.
+Which channels the agent answers and when. The questions it asks and what counts as qualified. Who gets which leads. The follow-up schedule: how many touches, on which channels, how far apart. Your reps can pause the agent for one lead or join any conversation live.
+What it never does on its own.
+Quote a price you haven’t approved, offer a discount, promise a date that isn’t in the calendar, or keep messaging someone who said no. When a lead asks for a person, or a question falls outside its rules, it hands over with a summary, a lead score and the full transcript.
+What we connect during your build.
+Your ad accounts and lead forms, your website forms and chat, your texting number, your phone line, your CRM (for ex. HubSpot, Salesforce or Zoho) and your calendars (Google Calendar or Outlook). If you run JustCall, we connect your JustCall account during the build.
+What leaving it costs
+Here’s a worked example. Swap in your own numbers.
+Take a home-services business that gets
+300 leads a month
+across all its channels, at
+$50 a lead
+in ad spend. That’s
+$15,000 a month
+on ads.
+Say
+20%
+of those leads become a booked estimate today. That’s
+60 estimates
+, or
+$250 of ad spend per booked estimate
+.
+Say
+40%
+of estimates become jobs, at an average of
+$1,500
+. That’s
+24 jobs
+, or
+$36,000
+a month.
+Now look at what each extra point of booking rate is worth. If faster, on-channel replies and steady follow-up moved the booking rate from 20% to
+25%
+, that’s
+75 estimates
+from the same 300 leads. At the same 40% close rate, that’s
+30 jobs
+: 6 more a month, worth about
+$9,000
+, on exactly the same ad spend. Your cost per booked estimate drops from $250 to
+$200
+.
+That 5-point lift is an assumption. Your own numbers will tell you how much is there.
+To find them, take last month’s leads and pull two things for each: how long until the first reply, and on which channel. Then compare the booking rate for leads answered within the hour against the rest.
+How to start
+Leads that arrive after hours have a problem of their own; we covered it in
+the after-hours messages no one sees
+.
+Ask us for a teardown of your lead response. It takes 30 minutes. Bring a list of every place leads come from (ads, forms, chat, texts, calls), where each one lands today, your CRM, and how leads get assigned. If you can, bring last month’s first-reply times. You’ll leave knowing where your leads wait, which steps an agent can take over, and what it would take to connect your ad accounts, CRM and calendars.
+Standard agents go live in days. Custom work across your ad accounts, CRM and calendars takes 4 to 8 weeks.
+Contact us
+Questions buyers ask
+How fast does the agent reply to a new lead?
+Within a minute, on the channel the lead used, day or night. A form fill gets a text or a call, depending on your rules; a text gets a text back; a website chat is answered in the chat.
+Will it call people who filled in a form?
+Only if your rules say so. You can text first and call only when the lead asks for it. The lead can also tap to switch from chat or text to a call, and the agent carries the same conversation over.
+Can it book into the right person’s calendar?
+Yes. It routes by territory, round robin or account owner, books into that person’s calendar, and sends them a short brief: what the lead asked, their answers, any photos, and the ad they came from.
+What happens when a lead goes quiet?
+The agent follows up on the schedule and channels you choose, for ex. a text the next morning, an email two days later and a call on day five, and stops the moment they reply or say no.
+How long does it take to set up?
+Standard agents go live in days. Custom work across your ad accounts, CRM and calendars takes 4 to 8 weeks.
+Company C wasn’t bigger or cheaper. It answered on the channel she used, while she was still looking.
+The homeowner asked three companies at lunch
+Previous post
+The after-hours messages no one sees
+Next post
+The reminder went out. The chair stayed empty.
+Read the blog
+The posts argue it. The studies price it.
+The same workflows from the other end: what the baseline was, what we built, and what moved once it was live.
+Read the case studies
+Three illustrative workflows, with the baseline, the build and the denominator.
+See how we build
+Five steps, four to eight weeks, and you own what comes out.
