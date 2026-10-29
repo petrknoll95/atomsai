@@ -1,5 +1,7 @@
 'use client';
 
+import { assetPath } from '@/lib/base-path';
+
 import { ArrowIcon } from '@/components/arrow-icon';
 import { useEffect, useRef, type CSSProperties } from 'react';
 import { gsap } from 'gsap';
@@ -14,7 +16,7 @@ const slits = Array.from({ length: 8 }, (_, index) => index);
 const portraitSizes = '(max-width: 767px) 100vw, (max-width: 1199px) 40vw, 33vw';
 function PortraitImage({ image }: { image: StoryPortrait }) {
   return <picture>
-    <img draggable={false} src={image.src} srcSet={image.srcSet} sizes={portraitSizes} alt="" width="480" height="640" loading="lazy" />
+    <img draggable={false} src={assetPath(image.src)} srcSet={assetPath(image.srcSet)} sizes={portraitSizes} alt="" width="480" height="640" loading="lazy" />
   </picture>;
 }
 

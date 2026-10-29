@@ -1,5 +1,7 @@
 'use client';
 
+import { assetPath } from '@/lib/base-path';
+
 import { useEffect, useRef, type CSSProperties } from 'react';
 import illustrationBounds from './illustration-bounds.json';
 import styles from './infrastructure-figure.module.css';
@@ -16,7 +18,7 @@ function loadRuntime() {
   return runtime ??= new Promise<HairlineRuntime>((resolve, reject) => {
     if (window.HL) { resolve(window.HL); return; }
     const script = document.createElement('script');
-    script.src = '/assets/hairline/kernel.js';
+    script.src = assetPath('/assets/hairline/kernel.js');
     script.onload = () => window.HL ? resolve(window.HL) : reject(new Error('Hairline did not initialize'));
     script.onerror = () => { script.remove(); runtime = undefined; reject(new Error('Hairline could not load')); };
     document.head.appendChild(script);
@@ -33,7 +35,7 @@ export function InfrastructureFigure({ name, variant = 'panel' }: { name: Figure
     const load = async () => {
       try {
         const engine = await loadRuntime();
-        const { default: figure } = await import(/* webpackIgnore: true */ `/assets/hairline/${name}.mjs`) as { default: Figure };
+        const { default: figure } = await import(/* webpackIgnore: true */ assetPath(`/assets/hairline/${name}.mjs`)) as { default: Figure };
         if (disposed) return;
         engine.inject(document);
         const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -77,13 +79,13 @@ export function InfrastructureFigure({ name, variant = 'panel' }: { name: Figure
     const bounds = illustrationBounds[name];
     return <div ref={hostRef} className={styles.outline} style={{ '--illustration-ink-ratio': bounds.width / 400 } as CSSProperties} aria-hidden="true" data-infrastructure-figure={name}>
       <div className={styles.outlineArt} style={{ aspectRatio: `${bounds.width} / ${bounds.height}` }}>
-        <span className={styles.outlineFallback} style={{ maskImage: `url(/assets/illustrations/${name}-outline.svg)` }} />
+        <span className={styles.outlineFallback} style={{ maskImage: assetPath(`url(/assets/illustrations/${name}-outline.svg)`) }} />
         <div ref={stageRef} className={styles.stage} data-hairline={name} data-hairline-theme="light" />
       </div>
     </div>;
   }
   return <div ref={hostRef} className={styles.figure} aria-hidden="true" data-infrastructure-figure={name}>
-    <img className={styles.fallback} src={`/assets/illustrations/${name}.svg`} alt="" width="400" height="320" />
+    <img className={styles.fallback} src={assetPath(`/assets/illustrations/${name}.svg`)} alt="" width="400" height="320" />
     <div ref={stageRef} className={styles.stage} data-hairline={name} data-hairline-theme="light" />
   </div>;
 }

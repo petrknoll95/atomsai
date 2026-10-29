@@ -1,3 +1,4 @@
+import { withBasePath, assetPath } from '@/lib/base-path';
 import { ButtonLink, Eyebrow } from "../ui";
 import styles from "./lower.module.css";
 import { AskQuestion } from "./ask-question";
@@ -9,7 +10,7 @@ const contactUrl = "/company/contact";
 const questions = [
   {
     question: "How do Applications, PyAI and AI Services fit together?",
-    answer: <>Explore the <a className="link-underline" href="#offerings">three starting points</a> to compare applications, infrastructure and custom engineering.</>,
+    answer: <>Explore the <a className="link-underline" href={withBasePath("#offerings")}>three starting points</a> to compare applications, infrastructure and custom engineering.</>,
   },
   {
     question: "Can I use a product without a custom project?",
@@ -17,23 +18,23 @@ const questions = [
   },
   {
     question: "Which application fits my team?",
-    answer: <>Start with the <a className="link-underline" href="#applications">applications</a> to explore the available products.</>,
+    answer: <>Start with the <a className="link-underline" href={withBasePath("#applications")}>applications</a> to explore the available products.</>,
   },
   {
     question: "Can I build PyAI into my own product?",
-    answer: <>Explore <a className="link-underline" href="https://pyai.com/">PyAI infrastructure</a>, or <a className="link-underline" href={contactUrl}>contact the team</a> about your product.</>,
+    answer: <>Explore <a className="link-underline" href={withBasePath("https://pyai.com/")}>PyAI infrastructure</a>, or <a className="link-underline" href={withBasePath(contactUrl)}>contact the team</a> about your product.</>,
   },
   {
     question: "Can you work with our existing systems?",
-    answer: <><a className="link-underline" href={contactUrl}>Contact the team</a> to discuss your existing systems and the work you have in mind.</>,
+    answer: <><a className="link-underline" href={withBasePath(contactUrl)}>Contact the team</a> to discuss your existing systems and the work you have in mind.</>,
   },
   {
     question: "How do you handle our data requirements?",
-    answer: <><a className="link-underline" href={contactUrl}>Contact the team</a> to discuss the data requirements for your project.</>,
+    answer: <><a className="link-underline" href={withBasePath(contactUrl)}>Contact the team</a> to discuss the data requirements for your project.</>,
   },
   {
     question: "How much can an AI system do on its own?",
-    answer: <><a className="link-underline" href={contactUrl}>Discuss your use case with the team</a> to explore the level of automation you need.</>,
+    answer: <><a className="link-underline" href={withBasePath(contactUrl)}>Discuss your use case with the team</a> to explore the level of automation you need.</>,
   },
 ];
 
@@ -57,8 +58,8 @@ export function Faq() {
               <summary>
                 <span>{question}</span>
                 <span className={styles.questionIcon} aria-hidden="true">
-                  <img className={styles.openIcon} src="/assets/figma/faq-IconArtwork.svg" width="24" height="24" alt="" />
-                  <img className={styles.closeIcon} src="/assets/figma/faq-IconArtwork1.svg" width="24" height="24" alt="" />
+                  <img className={styles.openIcon} src={assetPath("/assets/figma/faq-IconArtwork.svg")} width="24" height="24" alt="" />
+                  <img className={styles.closeIcon} src={assetPath("/assets/figma/faq-IconArtwork1.svg")} width="24" height="24" alt="" />
                 </span>
               </summary>
               <div className={styles.answerClip}>

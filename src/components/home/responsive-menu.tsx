@@ -1,5 +1,7 @@
 'use client';
 
+import { withBasePath } from '@/lib/base-path';
+
 import { useId, useLayoutEffect, useRef, useState, type ReactNode } from 'react';
 import { flushSync } from 'react-dom';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
@@ -147,13 +149,13 @@ export function ResponsiveMenu({ links, items, open, onOpenChange, onOpen }: Pro
                 <div id={sectionId} role="region" aria-labelledby={`${sectionId}-trigger`} hidden={!active} className={styles.sectionContent}>
                   {open && active && items.find(item => item.label === link.label)?.content}
                 </div>
-              </> : <a className={styles.sectionTrigger} href={link.href}>{link.label}</a>}
+              </> : <a className={styles.sectionTrigger} href={withBasePath(link.href)}>{link.label}</a>}
             </li>;
           })}
         </ul>
         <div className={styles.footer}>
           <ButtonLink href="/company/contact" className={styles.contact}>Talk to AtomsAI<ArrowIcon size={18} /></ButtonLink>
-          <div className={styles.legal}><a href="https://atomsai.com/legal/terms">Terms of Service</a><a href="https://atomsai.com/legal/privacy">Privacy Policy</a></div>
+          <div className={styles.legal}><a href={withBasePath("https://atomsai.com/legal/terms")}>Terms of Service</a><a href={withBasePath("https://atomsai.com/legal/privacy")}>Privacy Policy</a></div>
         </div>
       </nav>
     </div>

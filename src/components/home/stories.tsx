@@ -1,5 +1,7 @@
 'use client';
 
+import { assetPath } from '@/lib/base-path';
+
 import { ArrowIcon } from '@/components/arrow-icon';
 import { useMemo, useRef, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
@@ -45,7 +47,7 @@ export function Stories() {
                     </figure>
                   </div>
                   <div className={styles.companyRow}>
-                    <div data-story-reveal>{story.logo ? <img draggable={false} className={styles.companyLogo} src={story.logo} alt={story.company} width="184" height="32" loading="lazy" /> : <span className={carousel.companyName}>{story.company}</span>}</div>
+                    <div data-story-reveal>{story.logo ? <img draggable={false} className={styles.companyLogo} src={assetPath(story.logo)} alt={story.company} width="184" height="32" loading="lazy" /> : <span className={carousel.companyName}>{story.company}</span>}</div>
                     <button data-story-reveal type="button" className="button button-medium button-outline" onClick={(event) => { event.currentTarget.focus(); setDialogStory(story); storyDialog.current?.showModal(); }}>Read Story</button>
                   </div>
                 </div>

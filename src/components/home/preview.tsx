@@ -1,5 +1,7 @@
 'use client';
 
+import { assetPath } from '@/lib/base-path';
+
 import { AnimatedLogo } from '@/components/animated-logo';
 import { ArrowIcon } from '@/components/arrow-icon';
 import { useEffect, useRef, useState, type FormEvent } from 'react';
@@ -96,7 +98,7 @@ function PropertyPreview() {
         <div className={propertyStyles.scene}>
           <div className={propertyStyles.card}>
             <div className={propertyStyles.intro}>
-              <img className={propertyStyles.avatar} src="/assets/nora-avatar.png" alt="" width="40" height="40" />
+              <img className={propertyStyles.avatar} src={assetPath("/assets/nora-avatar.png")} alt="" width="40" height="40" />
               <div className={propertyStyles.identity}>
                 <p className={propertyStyles.name}>Nora</p>
                 <p className={propertyStyles.role}>Property Advisor</p>

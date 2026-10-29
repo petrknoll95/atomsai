@@ -1,3 +1,4 @@
+import { withBasePath, assetPath } from '@/lib/base-path';
 import { ButtonLink, Eyebrow } from '../ui';
 import { HomePattern } from '@/components/patterns/home-pattern';
 import { ApplicationCard } from './application-card';
@@ -46,12 +47,12 @@ export function Applications() {
       <div className={styles.applicationsGrid}>
         {applications.map((application, index) => (
           <ApplicationCard name={application.name} className={styles.application} key={application.name}>
-            <a className={styles.applicationCircle} href={application.href} target="_blank" rel="noopener noreferrer" aria-label={`Explore ${application.name}`}>
+            <a className={styles.applicationCircle} href={withBasePath(application.href)} target="_blank" rel="noopener noreferrer" aria-label={`Explore ${application.name}`}>
               <div className={styles.applicationFigure} aria-hidden="true">
               <div className={styles.applicationPattern} data-application-pattern>
                 <HomePattern application={application.pattern} />
               </div>
-              <span className={styles.applicationIcon} data-application-icon style={{ maskImage: `url('/assets/products/${application.icon}')` }} />
+              <span className={styles.applicationIcon} data-application-icon style={{ maskImage: assetPath(`url('/assets/products/${application.icon}')`) }} />
               </div>
             </a>
             <div className={`${styles.applicationCopy} ${index === 0 ? styles.applicationCopyCompact : ''}`}>

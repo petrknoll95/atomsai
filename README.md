@@ -58,3 +58,14 @@ Read the [homepage integration notes](docs/patterns/homepage/README.md) and [hom
 Read the [application hover decisions and evidence](docs/patterns/application-hover/README.md). Reproduce its pointer, keyboard, reduced-motion, touch and visual checks with `npm run test:application-hover`.
 
 Explore four subtle, palette-preserving loops at `/patterns/motion`. The isolated page includes pause, scrub, intensity, duration and still-comparison controls. See [motion implementation and evidence](docs/patterns/motion/README.md); reproduce with `npm run test:pattern-motion`.
+
+## GitHub Pages
+
+The site is published at https://petrknoll95.github.io/atomsai/ by
+`.github/workflows/pages.yml` on every push to `main` (or manual workflow run).
+The workflow builds a static export with `GITHUB_PAGES=true` and
+`NEXT_PUBLIC_BASE_PATH=/atomsai`, then deploys `out/` using GitHub Pages.
+Local development continues to run at `/`. Public asset references and native
+links use `src/lib/base-path.ts`; CSS assets are bundled from relative paths.
+The pattern render tool reads query parameters in the browser so it also works
+without a Next.js server.

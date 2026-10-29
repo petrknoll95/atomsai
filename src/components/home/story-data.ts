@@ -1,3 +1,4 @@
+import { assetPath } from '@/lib/base-path';
 export interface StoryPortrait {
   src: string;
   srcSet: string;
@@ -14,8 +15,8 @@ export interface CustomerStory {
   metrics: { before?: string; value: string; description: string }[];
 }
 const stockPortrait = (name: string, alt: string): StoryPortrait => ({
-  src: `/assets/stories/${name}-960.webp`,
-  srcSet: `/assets/stories/${name}-480.webp 480w, /assets/stories/${name}-960.webp 960w`,
+  src: assetPath(`/assets/stories/${name}-960.webp`),
+  srcSet: assetPath(`/assets/stories/${name}-480.webp 480w, /assets/stories/${name}-960.webp 960w`),
   alt,
 });
 
@@ -23,10 +24,10 @@ const stockPortrait = (name: string, alt: string): StoryPortrait => ({
 // illustrative demo copy, not customer claims; stock subjects are not endorsers.
 export const customerStories: readonly CustomerStory[] = [
   {
-    id: 'northwind', company: 'Northwind Logistics', logo: '/assets/figma/stories-Company.svg',
+    id: 'northwind', company: 'Northwind Logistics', logo: assetPath('/assets/figma/stories-Company.svg'),
     name: 'Aaron Vasquez', role: 'Global Operations Manager',
     quote: '“The evals are what sold my board. I can show a number for accuracy and a number for cost, per workflow, per month.”',
-    portrait: { src: '/assets/figma/stories-Media.webp', srcSet: '/assets/figma/stories-Media-512.webp 512w, /assets/figma/stories-Media-1024.webp 1024w, /assets/figma/stories-Media.webp 2048w', alt: 'Aaron Vasquez seated beside a plinth' },
+    portrait: { src: assetPath('/assets/figma/stories-Media.webp'), srcSet: assetPath('/assets/figma/stories-Media-512.webp 512w, /assets/figma/stories-Media-1024.webp 1024w, /assets/figma/stories-Media.webp 2048w'), alt: 'Aaron Vasquez seated beside a plinth' },
     metrics: [
       { before: '78%', value: '94%', description: 'Invoice auto-match rate on 40k invoices/quarter' },
       { before: '5 days', value: '4 hours', description: 'Month-end audit prep\nfirst two quarters' },

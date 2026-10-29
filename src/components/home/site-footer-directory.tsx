@@ -1,3 +1,4 @@
+import { withBasePath } from '@/lib/base-path';
 import { AnimatedLogo } from '@/components/animated-logo';
 import Link from 'next/link';
 import { siteHref } from '@/lib/site-links';
@@ -58,7 +59,7 @@ export function SiteFooterDirectory() {
         <nav className={styles.navigation} aria-label="Footer">
           {groups.map(({ title, links }) => <div className={styles.group} key={title}>
             <h3>{title}</h3>
-            <ul>{links.map(({ label, path }) => <li key={label}><a href={siteHref(path)}>{label}<span className={styles.arrow} aria-hidden="true">→</span></a></li>)}</ul>
+            <ul>{links.map(({ label, path }) => <li key={label}><a href={withBasePath(siteHref(path))}>{label}<span className={styles.arrow} aria-hidden="true">→</span></a></li>)}</ul>
           </div>)}
         </nav>
         <p className={styles.copyright}>© 2026 AtomsAI, a brand of SaaS Labs US, Inc.</p>

@@ -1,5 +1,7 @@
 'use client';
 
+import { assetPath, withBasePath } from '@/lib/base-path';
+
 import { ArrowIcon } from '@/components/arrow-icon';
 import { useEffect, useLayoutEffect, useState, type CSSProperties } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
@@ -181,15 +183,15 @@ export function Industries() {
                   <picture>
                     <source
                       media="(max-width: 1199px)"
-                      srcSet={`/assets/figma/industries-${industry.image}-512.webp 512w, /assets/figma/industries-${industry.image}-1024.webp 1024w`}
+                      srcSet={assetPath(`/assets/figma/industries-${industry.image}-512.webp 512w, /assets/figma/industries-${industry.image}-1024.webp 1024w`)}
                       sizes="(max-width: 767px) 80vw, 50vw"
                     />
-                    <img src={`/assets/figma/industries-${industry.image}.webp`} alt="" width="2048" height="2048" loading="lazy" draggable="false" />
+                    <img src={assetPath(`/assets/figma/industries-${industry.image}.webp`)} alt="" width="2048" height="2048" loading="lazy" draggable="false" />
                   </picture>
                   <div className={styles.imageWash} />
                   <a
                     className={styles.industryBadge}
-                    href={industry.href}
+                    href={withBasePath(industry.href)}
                     aria-label={`Learn more about ${industry.name}`}
                     aria-hidden={index !== selectedSnap}
                     tabIndex={index === selectedSnap ? 0 : -1}

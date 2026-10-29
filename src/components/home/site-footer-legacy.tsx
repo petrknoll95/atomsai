@@ -1,3 +1,4 @@
+import { withBasePath, assetPath } from '@/lib/base-path';
 import { siteHref } from "@/lib/site-links";
 import { ButtonLink } from "../ui";
 import styles from "./lower.module.css";
@@ -68,7 +69,7 @@ export function LegacySiteFooter() {
             </div>
             <div className={styles.footerLegal} id="trust-center">
               <div className={styles.badges} aria-label="Trust and compliance topics">
-                {["SOC 2", "HIPAA", "GDPR"].map((badge) => <a className={`display ${styles.badge}`} key={badge} href="/trust#scope" aria-label={`${badge === "SOC 2" ? "SOC 2 Type II" : badge} — review scope and documentation`}>{badge}</a>)}
+                {["SOC 2", "HIPAA", "GDPR"].map((badge) => <a className={`display ${styles.badge}`} key={badge} href={withBasePath("/trust#scope")} aria-label={`${badge === "SOC 2" ? "SOC 2 Type II" : badge} — review scope and documentation`}>{badge}</a>)}
               </div>
               <p>© 2026 AtomsAI, a brand of SaaS Labs US, Inc.</p>
             </div>
@@ -83,7 +84,7 @@ export function LegacySiteFooter() {
                       {links.map(({ label, path }) => (
                         <li key={label}>
                           {path ? (
-                            <a href={siteHref(path)}>
+                            <a href={withBasePath(siteHref(path))}>
                               <span className="display">{label}</span>
                             </a>
                           ) : <span className={styles.unavailableLink} aria-disabled="true" title="This page does not use optional cookies"><span className="display">{label}</span></span>}
@@ -96,11 +97,11 @@ export function LegacySiteFooter() {
             ))}
           </nav>
         </div>
-        <a href="#top" aria-label="AtomsAI — back to top" className={styles.footerLogo}>
+        <a href={withBasePath("#top")} aria-label="AtomsAI — back to top" className={styles.footerLogo}>
           <span className={styles.logoArtwork} aria-hidden="true">
             {logoInsets.map((inset, index) => (
               <span key={index} style={{ inset }}>
-                <img src={`/assets/figma/footer-Vector${index || ""}.svg`} alt="" />
+                <img src={assetPath(`/assets/figma/footer-Vector${index || ""}.svg`)} alt="" />
               </span>
             ))}
           </span>

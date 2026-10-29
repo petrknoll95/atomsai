@@ -1,5 +1,7 @@
 'use client';
 
+import { assetPath } from '@/lib/base-path';
+
 import { useEffect, useRef, useState } from 'react';
 import voiceAudio from './voice-audio.json';
 import { ButtonLink } from '../ui';
@@ -75,7 +77,7 @@ export function VoicePreview() {
   const timeLabel = `${Math.floor(remaining / 60)}:${String(remaining % 60).padStart(2, '0')}`;
 
   return <div className={styles.capsule}>
-    <audio ref={audio} src={voiceAudio.src} preload="none"
+    <audio ref={audio} src={assetPath(voiceAudio.src)} preload="none"
       onEnded={() => { shouldPlay.current = false; setPlaying(false); setElapsed(voiceAudio.duration); }}
       onTimeUpdate={() => setElapsed(audio.current?.currentTime ?? 0)}
       onError={() => { pause(); setError(true); }} />
@@ -85,7 +87,7 @@ export function VoicePreview() {
     </div>
     <div ref={rows} className={styles.rows} aria-hidden="true">
       {voiceAudio.speakers.map((clip, row) => <div className={styles.row} key={row}>
-        <img className={styles.avatar} src={`/assets/pyai/${row ? 'assistant.svg' : 'speaker.png'}`} width="48" height="48" alt="" loading="lazy" />
+        <img className={styles.avatar} src={assetPath(`/assets/pyai/${row ? 'assistant.svg' : 'speaker.png'}`)} width="48" height="48" alt="" loading="lazy" />
         <div className={styles.wave} data-wave>
           {[false, true].map(played => <div key={String(played)} className={played ? styles.playedBars : styles.bars}>
             {clip.heights.map((height, index) => <span key={index} style={{ height }} />)}
@@ -95,7 +97,7 @@ export function VoicePreview() {
     </div>
     <div className={styles.playback}>
       <button type="button" className={styles.play} onClick={toggle} aria-label={playing ? 'Pause PyAI demo' : 'Play PyAI demo'} aria-pressed={playing}>
-        {playing ? <span className={styles.pause} aria-hidden="true" /> : <img src="/assets/pyai/play.svg" width="40" height="40" alt="" />}
+        {playing ? <span className={styles.pause} aria-hidden="true" /> : <img src={assetPath("/assets/pyai/play.svg")} width="40" height="40" alt="" />}
       </button>
       <div className={styles.caption}><span>PyAI Demo</span><span className={styles.duration}>{timeLabel}</span></div>
     </div>

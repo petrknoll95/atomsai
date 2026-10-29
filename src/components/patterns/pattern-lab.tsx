@@ -1,5 +1,7 @@
 'use client';
 
+import { assetPath } from '@/lib/base-path';
+
 import { ArrowIcon } from '@/components/arrow-icon';
 import { useState } from 'react';
 import Link from 'next/link';
@@ -93,7 +95,7 @@ export function PatternLab() {
           <div className={`${styles.canvasViewport} ${nativeSize ? styles.nativeViewport : ''}`}>
             <div className={`${styles.canvasFrame} ${nativeSize ? styles.nativeFrame : ''}`}>
               <Pattern {...settings} className={styles.canvas} label={`${family.name} pattern with ${settings.count} ${unit}, ${settings.mode} palette`} />
-              {showReference && <img key={`${settings.kind}-${settings.count}`} className={styles.reference} src={`/pattern-references/${settings.kind}-${settings.count}.png`} width="800" height="800" alt="" aria-hidden="true" onError={() => setReferenceFailed(true)} />}
+              {showReference && <img key={`${settings.kind}-${settings.count}`} className={styles.reference} src={assetPath(`/pattern-references/${settings.kind}-${settings.count}.png`)} width="800" height="800" alt="" aria-hidden="true" onError={() => setReferenceFailed(true)} />}
             </div>
           </div>
           <div className={styles.previewTools}>

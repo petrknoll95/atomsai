@@ -93,7 +93,7 @@
 .dashboard .live i { background: transparent; border: .0625em solid color-mix(in srgb, currentColor 45%, transparent); }
 .dashboard svg { opacity: .7; }
 
-.avatarPhoto { flex: none; background-image: url("/assets/stories/brauer-480.webp"); background-size: 220% auto; background-position: 50% 18%; background-repeat: no-repeat; }
+.avatarPhoto { flex: none; background-image: url('../../../public/assets/stories/brauer-480.webp'); background-size: 220% auto; background-position: 50% 18%; background-repeat: no-repeat; }
 
 .intro .title { font-weight: var(--font-weight-medium); font-variation-settings: 'wght' var(--font-weight-medium), 'ital' 100; }
 

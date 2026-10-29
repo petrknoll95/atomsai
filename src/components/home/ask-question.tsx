@@ -1,5 +1,7 @@
 'use client';
 
+import { assetPath } from '@/lib/base-path';
+
 import { ArrowIcon } from '@/components/arrow-icon';
 import { useCallback, useLayoutEffect, useRef, useState, type FormEvent } from 'react';
 import { gsap } from 'gsap';
@@ -52,8 +54,8 @@ function GeneratedQuestion({ question, onComplete }: { question: string; onCompl
       <summary>
         <span>{question}</span>
         <span className={styles.questionIcon} aria-hidden="true">
-          <img className={styles.openIcon} src="/assets/figma/faq-IconArtwork.svg" width="24" height="24" alt="" />
-          <img className={styles.closeIcon} src="/assets/figma/faq-IconArtwork1.svg" width="24" height="24" alt="" />
+          <img className={styles.openIcon} src={assetPath("/assets/figma/faq-IconArtwork.svg")} width="24" height="24" alt="" />
+          <img className={styles.closeIcon} src={assetPath("/assets/figma/faq-IconArtwork1.svg")} width="24" height="24" alt="" />
         </span>
       </summary>
       <div className={styles.answerClip} aria-busy={!complete}>

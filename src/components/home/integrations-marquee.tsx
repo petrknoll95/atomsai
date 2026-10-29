@@ -1,5 +1,7 @@
 'use client';
 
+import { assetPath } from '@/lib/base-path';
+
 import { useEffect, useRef, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import AutoScroll from 'embla-carousel-auto-scroll';
@@ -76,7 +78,7 @@ export function IntegrationsMarquee() {
         <div className={styles.track}>
           {tools.map(([slug, name]) => <div className={styles.slide} key={slug}>
             <div className={styles.tile} title={name}>
-              <img src={`/assets/integrations/${slug}.svg`} alt={name} width="44" height="44" decoding="async" draggable="false" />
+              <img src={assetPath(`/assets/integrations/${slug}.svg`)} alt={name} width="44" height="44" decoding="async" draggable="false" />
             </div>
           </div>)}
         </div>

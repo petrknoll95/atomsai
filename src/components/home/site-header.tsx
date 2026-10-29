@@ -1,5 +1,7 @@
 'use client';
 
+import { withBasePath, assetPath } from '@/lib/base-path';
+
 import { ArrowIcon } from '@/components/arrow-icon';
 import Link from 'next/link';
 import { useEffect, useId, useLayoutEffect, useRef, useState } from 'react';
@@ -68,12 +70,12 @@ function ApplicationsMenu() {
     <div className={styles.menuIntroduction}>
       <h2 className={`display ${styles.menuHeading}`}>Built for the work<br />in front of you.</h2>
       <p className={styles.menuDescription}>From the first conversation to the next task. Find the right application for your team.</p>
-      <a className={styles.menuTextLink} href='/capabilities/voice'>Explore Voice AI<ArrowIcon size={14} /></a>
+      <a className={styles.menuTextLink} href={withBasePath('/capabilities/voice')}>Explore Voice AI<ArrowIcon size={14} /></a>
     </div>
     <div>
     <div className={styles.productLinks}>
       <div className={styles.productHighlight} data-product-highlight aria-hidden='true' />
-      {products.map(item => <a key={item.name} href={item.href} className={styles.productLink} data-active={product === item.name} onPointerEnter={() => setProduct(item.name)} onFocus={() => setProduct(item.name)}><span className={styles.productMark} aria-hidden='true' style={{ maskImage: `url('/assets/products/${item.mark}')` }} /><span className={styles.productLinkCopy}><span>{item.name}</span><span>{item.description}</span></span></a>)}
+      {products.map(item => <a key={item.name} href={withBasePath(item.href)} className={styles.productLink} data-active={product === item.name} onPointerEnter={() => setProduct(item.name)} onFocus={() => setProduct(item.name)}><span className={styles.productMark} aria-hidden='true' style={{ maskImage: assetPath(`url('/assets/products/${item.mark}')`) }} /><span className={styles.productLinkCopy}><span>{item.name}</span><span>{item.description}</span></span></a>)}
       <div className={styles.allApplications}><ButtonLink href='/#applications' size='small' variant='outline'>All Applications</ButtonLink></div>
     </div>
     </div>
@@ -189,7 +191,7 @@ export function SiteHeader({ initialTheme = 'light' }: { initialTheme?: 'light' 
           <span className={styles.logoMark} aria-hidden="true" />
         </Link>
         <nav aria-label='Main navigation' className={styles.nav}>
-          {links.map(link => link.children ? <DesktopDropdown key={link.label} label={link.label} className={styles.dropdown} panelId={`${menuId}-${link.label}`} open={openMenu === link.label} onToggle={() => { cancelClose(); setOpenMenu(openMenu === link.label ? null : link.label); }} onOpen={() => { cancelClose(); setOpenMenu(link.label); }} trigger={<span className={styles.navLabel}>{link.label}</span>} /> : <a key={link.label} href={link.href} onPointerEnter={event => { if (event.pointerType !== 'touch') setOpenMenu(null); }} onFocus={() => setOpenMenu(null)}><NavLinkMarker><span className={styles.navLabel}>{link.label}</span></NavLinkMarker></a>)}
+          {links.map(link => link.children ? <DesktopDropdown key={link.label} label={link.label} className={styles.dropdown} panelId={`${menuId}-${link.label}`} open={openMenu === link.label} onToggle={() => { cancelClose(); setOpenMenu(openMenu === link.label ? null : link.label); }} onOpen={() => { cancelClose(); setOpenMenu(link.label); }} trigger={<span className={styles.navLabel}>{link.label}</span>} /> : <a key={link.label} href={withBasePath(link.href)} onPointerEnter={event => { if (event.pointerType !== 'touch') setOpenMenu(null); }} onFocus={() => setOpenMenu(null)}><NavLinkMarker><span className={styles.navLabel}>{link.label}</span></NavLinkMarker></a>)}
         </nav>
         <div className={styles.actions}>
           <ButtonLink href='/company/contact' className={styles.contact}>Talk to AtomsAI</ButtonLink>

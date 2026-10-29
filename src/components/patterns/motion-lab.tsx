@@ -1,5 +1,7 @@
 'use client';
 
+import { assetPath } from '@/lib/base-path';
+
 import { ArrowIcon } from '@/components/arrow-icon';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
@@ -37,7 +39,7 @@ export function MotionLab() {
   const cycle = phase ?? progress;
   return <main className={styles.lab}>
     <header className={styles.header}>
-      <Link href="/" aria-label="AtomsAI home"><img src="/assets/figma/hero-Logo.svg" alt="AtomsAI" width="136" height="24" /></Link>
+      <Link href="/" aria-label="AtomsAI home"><img src={assetPath("/assets/figma/hero-Logo.svg")} alt="AtomsAI" width="136" height="24" /></Link>
       <span>Motion studies <span className={styles.edition}>/ Light & waves</span></span>
       <Link href="/patterns"><span className="link-underline">Still-pattern studio</span> <span aria-hidden="true"><ArrowIcon direction="up-right" /></span></Link>
     </header>

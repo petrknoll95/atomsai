@@ -1,5 +1,7 @@
 'use client';
 
+import { assetPath } from '@/lib/base-path';
+
 import { useEffect, useRef, useState } from 'react';
 import styles from './hero-atoms.module.css';
 
@@ -40,7 +42,7 @@ export function HeroAtoms() {
   // Without its positioning CSS, p5's canvas would grow its own measured host
   // on every resize. Keep this optional artwork hidden until that CSS exists.
   return <div ref={host} className={styles.artwork} style={{ display: 'var(--hero-atoms-display, none)' }} aria-hidden='true' data-hero-atoms data-state='loading'>
-    {failed && <img className={styles.fallback} src='/assets/figma/hero-atoms-fallback.webp' width='1600' height='960' alt='' />}
-    <noscript><img className={styles.fallback} src='/assets/figma/hero-atoms-fallback.webp' width='1600' height='960' alt='' /></noscript>
+    {failed && <img className={styles.fallback} src={assetPath('/assets/figma/hero-atoms-fallback.webp')} width='1600' height='960' alt='' />}
+    <noscript><img className={styles.fallback} src={assetPath('/assets/figma/hero-atoms-fallback.webp')} width='1600' height='960' alt='' /></noscript>
   </div>;
 }

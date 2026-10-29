@@ -1,3 +1,4 @@
+import { withBasePath } from '@/lib/base-path';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -18,6 +19,9 @@ export default async function ArticlePage({ params }: Props) {
   const { slug } = await params;
   const post = posts.find(item => item.slug === slug);
   if (!post) notFound();
+  const body = articleBodies[post.slug as keyof typeof articleBodies].replace(
+    /href="(\/(?!\/)[^"]*)"/g, (_, href: string) => `href="${withBasePath(href)}"`,
+  );
   const otherPosts = posts.filter(item => item.slug !== post.slug);
   const nextPosts = [
     ...otherPosts.filter(item => item.category === post.category),
@@ -35,7 +39,7 @@ export default async function ArticlePage({ params }: Props) {
         <div className={styles.byline}><span>by {post.author}</span><span className={styles.separator} aria-hidden="true">•</span><time dateTime={post.date}>{date}</time></div>
       </header>
       {/* The checked-in importer allowlists markup and strips source scripts/styles. */}
-      <div className={styles.body} dangerouslySetInnerHTML={{ __html: articleBodies[post.slug as keyof typeof articleBodies] }} />
+      <div className={styles.body} dangerouslySetInnerHTML={{ __html: body }} />
     </article>
     <section className={styles.nextUp} aria-labelledby="next-up-title">
       <h2 className="display" id="next-up-title">Next Up</h2>

@@ -1,5 +1,7 @@
 'use client';
 
+import { withBasePath } from '@/lib/base-path';
+
 import { useEffect, useRef, type ReactNode } from 'react';
 import { gsap } from 'gsap';
 
@@ -61,5 +63,5 @@ export function OfferingCard({ name, href, className, children }: {
     return () => context.revert();
   }, []);
 
-  return <a ref={ref} href={href} className={className} data-offering={name} data-active="false">{children}</a>;
+  return <a ref={ref} href={withBasePath(href)} className={className} data-offering={name} data-active="false">{children}</a>;
 }

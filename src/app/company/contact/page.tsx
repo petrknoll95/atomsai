@@ -1,3 +1,4 @@
+import { withBasePath } from '@/lib/base-path';
 import { ArrowIcon } from '@/components/arrow-icon';
 import type { Metadata } from 'next';
 import { PageShell } from '@/components/pages/page-shell';
@@ -38,9 +39,9 @@ export default function ContactPage() {
 
     </section>
     <section className={`page-container ${styles.directory}`} aria-labelledby="directory-heading">
-      <div className={styles.directoryIntro}><div><p className={styles.kicker}>Looking for someone specific?</p><h2 className={`display ${styles.sectionTitle}`} id="directory-heading">The right conversation.<br />The right team.</h2></div><p>Prefer to write directly?<br /><a className="link-underline" href="mailto:hello@atomsai.com">hello@atomsai.com <span aria-hidden="true"><ArrowIcon direction="up-right" /></span></a></p></div>
-      <div className={styles.contacts}>{contacts.map(contact => <div className={styles.contact} key={contact.email}><h3 className={`display ${styles.contactTitle}`}>{contact.title}</h3><p>{contact.text}</p><a className="link-underline" href={`mailto:${contact.email}`}>{contact.email}<span aria-hidden="true"><ArrowIcon direction="up-right" /></span></a></div>)}</div>
+      <div className={styles.directoryIntro}><div><p className={styles.kicker}>Looking for someone specific?</p><h2 className={`display ${styles.sectionTitle}`} id="directory-heading">The right conversation.<br />The right team.</h2></div><p>Prefer to write directly?<br /><a className="link-underline" href={withBasePath("mailto:hello@atomsai.com")}>hello@atomsai.com <span aria-hidden="true"><ArrowIcon direction="up-right" /></span></a></p></div>
+      <div className={styles.contacts}>{contacts.map(contact => <div className={styles.contact} key={contact.email}><h3 className={`display ${styles.contactTitle}`}>{contact.title}</h3><p>{contact.text}</p><a className="link-underline" href={withBasePath(`mailto:${contact.email}`)}>{contact.email}<span aria-hidden="true"><ArrowIcon direction="up-right" /></span></a></div>)}</div>
     </section>
-    <aside className={`page-container ${styles.footnote}`} aria-label="Further information"><p>Still exploring what a build involves?</p><a className="link-underline" href="/approach">See how we work <span aria-hidden="true"><ArrowIcon direction="right" /></span></a><a className="link-underline" href="/trust">Visit the Trust Center <span aria-hidden="true"><ArrowIcon direction="right" /></span></a></aside>
+    <aside className={`page-container ${styles.footnote}`} aria-label="Further information"><p>Still exploring what a build involves?</p><a className="link-underline" href={withBasePath("/approach")}>See how we work <span aria-hidden="true"><ArrowIcon direction="right" /></span></a><a className="link-underline" href={withBasePath("/trust")}>Visit the Trust Center <span aria-hidden="true"><ArrowIcon direction="right" /></span></a></aside>
   </main></PageShell>;
 }

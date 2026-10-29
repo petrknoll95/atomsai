@@ -1,5 +1,7 @@
 'use client';
 
+import { assetPath } from '@/lib/base-path';
+
 import { useCallback, useEffect, useRef, useState, type CSSProperties } from 'react';
 import styles from './integrations.module.css';
 
@@ -103,7 +105,7 @@ export function IntegrationsGrid() {
             left: `${Number((50 + Math.cos(angle) * 50).toFixed(4))}%`, top: `${Number((50 + Math.sin(angle) * 50).toFixed(4))}%`,
           }}>
             <div className={styles.tile}>
-              {mark && <img key={mark.tool} onAnimationEnd={() => relocate(mark.tool)} style={{ animationDuration: `${mark.duration ?? 4800}ms`, animationDelay: `${mark.delay ?? 0}ms` }} src={`/assets/integrations/${mark.tool}.svg`} alt="" width="48" height="48" loading="lazy" decoding="async" draggable="false" />}
+              {mark && <img key={mark.tool} onAnimationEnd={() => relocate(mark.tool)} style={{ animationDuration: `${mark.duration ?? 4800}ms`, animationDelay: `${mark.delay ?? 0}ms` }} src={assetPath(`/assets/integrations/${mark.tool}.svg`)} alt="" width="48" height="48" loading="lazy" decoding="async" draggable="false" />}
             </div>
           </div>;
         })}

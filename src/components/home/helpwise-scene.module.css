@@ -17,13 +17,13 @@
 .header { display: flex; align-items: center; gap: 1em; height: 4em; padding: 0 1.2em; }
 .brand { display: flex; align-items: center; gap: .5em; margin-right: .6em; }
 .brand > span:last-child { font-size: 1.25em; line-height: 1; font-weight: var(--font-weight-medium); text-box: trim-both cap alphabetic; }
-.mark { width: 1.8em; height: 1.8em; background: currentColor; mask: url('/assets/products/helpwise-mark.svg') center / contain no-repeat; }
+.mark { width: 1.8em; height: 1.8em; background: currentColor; mask: url('../../../public/assets/products/helpwise-mark.svg') center / contain no-repeat; }
 .navigation { display: flex; align-items: center; gap: 1.1em; margin-right: auto; }
 .navigation > span { display: flex; align-items: center; gap: .25em; font-size: .875em; line-height: 1; }
 .navigation .icon { width: .75em; height: .75em; }
 .navigation > span > span, .compose span, .tabs > span { text-box: trim-both cap alphabetic; }
 .navigation > span > span { display: block; }
-.avatar { width: 1.9em; height: 1.9em; border-radius: 2em; background: url('/assets/stories/brauer-480.webp') 50% 18% / 220% auto; flex: none; }
+.avatar { width: 1.9em; height: 1.9em; border-radius: 2em; background: url('../../../public/assets/stories/brauer-480.webp') 50% 18% / 220% auto; flex: none; }
 .body { display: grid; grid-template-columns: 12em minmax(0, 1fr); height: calc(100% - 4em); }
 .sidebar { padding: 0 .65em 1em; }
 .compose { display: flex; align-items: center; justify-content: center; gap: .5em; padding: .7em .6em; border-radius: 2em; background: color-mix(in srgb, currentColor 10%, transparent); }

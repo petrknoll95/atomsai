@@ -1,3 +1,4 @@
+import { withBasePath } from '@/lib/base-path';
 import { ArrowIcon } from '@/components/arrow-icon';
 import { ButtonLink } from '@/components/ui';
 import styles from './approach.module.css';
@@ -31,7 +32,7 @@ export function ApproachPage() {
       <div className={styles.journey}>
         <div className={styles.journeyNote}><span>Your business, connected.</span><span>One considered step at a time.</span></div>
         <ol className={styles.journeySteps}>
-          {steps.map((step, index) => <li key={step.short}><a href={`#step-${index + 1}`}><span className={`display ${styles.journeyNumber}`}>0{index + 1}</span><span>{step.short}</span><span className={styles.journeyDot} aria-hidden="true" /></a></li>)}
+          {steps.map((step, index) => <li key={step.short}><a href={withBasePath(`#step-${index + 1}`)}><span className={`display ${styles.journeyNumber}`}>0{index + 1}</span><span>{step.short}</span><span className={styles.journeyDot} aria-hidden="true" /></a></li>)}
         </ol>
         <div className={styles.journeyFoot}><span>Built in your systems.</span><span>Owned by your team. <ArrowIcon size={18} /></span></div>
       </div>
@@ -53,7 +54,7 @@ export function ApproachPage() {
 
     <section className={styles.controlSection} aria-labelledby="control-heading">
       <div className={`page-container ${styles.controlGrid}`}>
-        <div className={styles.controlCopy}><p className={styles.kicker}>Your rules, built in</p><h2 className={`display ${styles.sectionTitle}`} id="control-heading">The next action.<br />On your terms.</h2><p>You decide what the system can do on its own, what needs approval, and when it should hand over.</p><p>Those boundaries are part of the build. Start with a person reviewing every action, then adjust as the evidence earns your confidence.</p><a className={styles.textLink} href="/trust"><span className="link-underline">Explore trust & security</span><ArrowIcon size={18} /></a></div>
+        <div className={styles.controlCopy}><p className={styles.kicker}>Your rules, built in</p><h2 className={`display ${styles.sectionTitle}`} id="control-heading">The next action.<br />On your terms.</h2><p>You decide what the system can do on its own, what needs approval, and when it should hand over.</p><p>Those boundaries are part of the build. Start with a person reviewing every action, then adjust as the evidence earns your confidence.</p><a className={styles.textLink} href={withBasePath("/trust")}><span className="link-underline">Explore trust & security</span><ArrowIcon size={18} /></a></div>
         <figure className={styles.workflow}>
           <div className={styles.workflowHeader}><span>Illustrative approval flow</span><span className={styles.workflowTag}>Your policy</span></div>
           <div className={styles.workflowInput}><span className={styles.smallDot} /><span>New request</span><span className={styles.statusLabel}>Received</span></div>

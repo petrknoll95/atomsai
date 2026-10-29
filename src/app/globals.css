@@ -5,9 +5,9 @@
 @plugin 'tw-easing-gradients';
 /* Browser baseline calibration: +4% ascent, -4% descent; the font's 120% total
    em box is preserved. See docs/visual/README.md for comparison evidence. */
-@font-face { font-family:'PP Neue Montreal'; src:url('/fonts/PPNeueMontreal-Variable.ttf') format('truetype'); font-style:normal; font-weight:200 800; font-display:swap; ascent-override:99.8%; descent-override:20.2%; }
-@font-face { font-family:'Founders Grotesk'; src:url('/fonts/FoundersGrotesk-Regular.woff2') format('woff2'); font-style:normal; font-weight:400; font-display:swap; }
-@font-face { font-family:'Founders Grotesk'; src:url('/fonts/FoundersGrotesk-Medium.woff2') format('woff2'); font-style:normal; font-weight:500; font-display:swap; }
+@font-face { font-family:'PP Neue Montreal'; src:url('../../public/fonts/PPNeueMontreal-Variable.ttf') format('truetype'); font-style:normal; font-weight:200 800; font-display:swap; ascent-override:99.8%; descent-override:20.2%; }
+@font-face { font-family:'Founders Grotesk'; src:url('../../public/fonts/FoundersGrotesk-Regular.woff2') format('woff2'); font-style:normal; font-weight:400; font-display:swap; }
+@font-face { font-family:'Founders Grotesk'; src:url('../../public/fonts/FoundersGrotesk-Medium.woff2') format('woff2'); font-style:normal; font-weight:500; font-display:swap; }
 @layer base {
   html,body { overscroll-behavior:none; }
   html { scroll-behavior:smooth; scroll-padding-top:112px; }

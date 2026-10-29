@@ -13,7 +13,7 @@
 .headerInner { position:relative; display:flex; align-items:center; height:100%; gap:32px; padding-inline:var(--header-padding); }
 .logo { position:relative; flex:none; width:135.84px; height:24px; }
 .logoSymbol { position:absolute; inset:0 auto auto 0; width:26.4px; height:24px; }
-.logoMark { display:block; width:100%; height:100%; background:currentColor; mask:url('/assets/figma/hero-Logo.svg') center / contain no-repeat; clip-path:inset(0 0 0 26.4px); }
+.logoMark { display:block; width:100%; height:100%; background:currentColor; mask:url('../../../public/assets/figma/hero-Logo.svg') center / contain no-repeat; clip-path:inset(0 0 0 26.4px); }
 .nav { display:flex; flex:1; align-items:center; justify-content:center; gap:8px; font-size: var(--text-label); font-weight: var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; }
 .nav>a,.dropdown>summary { display:flex; align-items:center; padding:0; line-height:20px; border-radius: var(--radius-control); list-style:none; }
 .dropdown>summary::-webkit-details-marker { display:none; }

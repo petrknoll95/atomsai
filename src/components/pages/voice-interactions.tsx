@@ -1,5 +1,7 @@
 'use client';
 
+import { assetPath } from '@/lib/base-path';
+
 import { ArrowIcon } from '@/components/arrow-icon';
 import { useEffect, useRef, useState } from 'react';
 import voiceAudio from '@/components/home/voice-audio.json';
@@ -42,7 +44,7 @@ export function VoiceSample() {
           <div className={styles.soundWave}>{voiceAudio.speakers[0].heights.map((height, i) => <span key={i} style={{ height: `${Math.max(height, voiceAudio.speakers[1].heights[i]) * 2 + 8}px`, opacity: i / voiceAudio.speakers[0].heights.length < elapsed / voiceAudio.duration ? 1 : .36 }} />)}</div>
           <span className={`display ${styles.hello}`}>Hello.</span>
         </div>
-        <audio ref={audio} src={voiceAudio.src} preload="none" onTimeUpdate={() => setElapsed(audio.current?.currentTime ?? 0)} onEnded={() => { wantsPlayback.current = false; setPlaying(false); }} onError={() => { pause(); setError(true); }} />
+        <audio ref={audio} src={assetPath(voiceAudio.src)} preload="none" onTimeUpdate={() => setElapsed(audio.current?.currentTime ?? 0)} onEnded={() => { wantsPlayback.current = false; setPlaying(false); }} onError={() => { pause(); setError(true); }} />
         <div className={styles.playerControls}>
           <button onClick={toggle} type="button" className={styles.playButton} aria-label={playing ? 'Pause voice sample' : 'Play voice sample'} aria-pressed={playing}><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">{playing ? <path d="M6 5h4v14H6zm8 0h4v14h-4z" /> : <path d="m8 5 11 7-11 7z" />}</svg></button>
           <div className={styles.playerProgress}><label htmlFor="voice-progress" className="sr-only">Audio position</label><input id="voice-progress" type="range" min="0" max={voiceAudio.duration} step="0.1" value={elapsed} aria-valuetext={`${clock(elapsed)} of 0:28`} onChange={event => { const time = Number(event.target.value); if (audio.current) audio.current.currentTime = time; setElapsed(time); }} /><div><span>{playing ? 'Playing sample' : elapsed > 0 ? 'Resume sample' : 'Listen to the conversation'}</span><span>{clock(elapsed)} / 0:28</span></div></div>

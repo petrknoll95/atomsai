@@ -1,5 +1,7 @@
 'use client';
 
+import { assetPath, withBasePath } from '@/lib/base-path';
+
 import { ArrowIcon } from '@/components/arrow-icon';
 import { useEffect, useRef, useState } from 'react';
 import { Eyebrow } from '../ui';
@@ -40,9 +42,9 @@ export function ApplicationsWorkflow() {
             <h4><button ref={element => { buttons.current[index] = element; }} className={styles.trigger} id={`application-trigger-${index}`} aria-expanded={active === index} aria-controls={`application-detail-${index}`} onClick={() => setActive(index)} onKeyDown={event => {
               const next = event.key === 'ArrowDown' ? (index + 1) % 4 : event.key === 'ArrowUp' ? (index + 3) % 4 : event.key === 'Home' ? 0 : event.key === 'End' ? 3 : null;
               if (next !== null) { event.preventDefault(); buttons.current[next]?.focus(); }
-            }}><span className={styles.productLogo} aria-hidden="true" style={{ maskImage: `url(/assets/products/${application.mark})` }} /><span className={`display ${styles.name}`}>{application.name}</span></button></h4>
+            }}><span className={styles.productLogo} aria-hidden="true" style={{ maskImage: assetPath(`url(/assets/products/${application.mark})`) }} /><span className={`display ${styles.name}`}>{application.name}</span></button></h4>
             <div className={styles.detail} id={`application-detail-${index}`} role="region" aria-labelledby={`application-trigger-${index}`} aria-hidden={active !== index} inert={active !== index}>
-              <div><div className={styles.detailCopy}><p>{application.description}</p><a href={application.href} target="_blank" rel="noopener noreferrer">Explore {application.name}<span aria-hidden="true"><ArrowIcon direction="up-right" /></span></a></div></div>
+              <div><div className={styles.detailCopy}><p>{application.description}</p><a href={withBasePath(application.href)} target="_blank" rel="noopener noreferrer">Explore {application.name}<span aria-hidden="true"><ArrowIcon direction="up-right" /></span></a></div></div>
             </div>
           </div>)}
         </div>
