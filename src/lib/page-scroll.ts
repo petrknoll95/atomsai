@@ -5,7 +5,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 export function scrollToTarget(target: HTMLElement, animate = true) {
   const smoother = ScrollSmoother.get();
   const offset = window.innerWidth < 768 ? 96 : 112;
-  const smooth = animate && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const smooth = animate && !document.documentElement.hasAttribute('data-native-scroll')
+    && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const reveal = target.closest<HTMLElement>('[data-hero-reveal]');
   const heroPin = reveal && ScrollTrigger.getById('hero-prototype');
   if (reveal && heroPin) {

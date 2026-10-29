@@ -1,5 +1,6 @@
 'use client';
 
+import { ArrowIcon } from '@/components/arrow-icon';
 import { useCallback, useLayoutEffect, useRef, useState, type FormEvent } from 'react';
 import { gsap } from 'gsap';
 import { scrollToTarget } from '@/lib/page-scroll';
@@ -105,7 +106,7 @@ export function AskQuestion() {
         <input type="text" name="question" aria-label="Ask a question" maxLength={500} autoComplete="off"
           placeholder="Can’t find your question? Ask it here..." value={draft} onChange={event => setDraft(event.target.value)} />
         <button className={styles.questionSubmit} type="submit" aria-label={busy ? 'Preparing answer' : 'Submit question'} disabled={busy || !draft.trim()}>
-          <img src="/assets/figma/faq-IconArtwork2.svg" width="24" height="24" alt="" aria-hidden="true" />
+          <ArrowIcon direction="up" size={24} />
         </button>
       </div>
     </form>

@@ -1,7 +1,7 @@
 .intro {
   display:grid;
   place-items:center;
-  padding:48px var(--page-gutter) clamp(80px,8vw,120px);
+  padding-block:48px clamp(80px,8vw,120px);
   text-align:center;
 }
 .headline {

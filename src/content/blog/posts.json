@@ -1,0 +1,121 @@
+[
+  {
+    "slug": "quotes-go-quiet",
+    "title": "The quote went out. Then nothing.",
+    "excerpt": "Many unsigned quotes get one email, then silence. Why quotes go quiet, what it costs, and how to follow up across text, email, chat and phone.",
+    "date": "2026-10-26",
+    "author": "Nilesh Tripathi — GM, AtomsAI",
+    "tags": [
+      "follow up on estimates",
+      "automate quote follow-up",
+      "win more quoted jobs"
+    ],
+    "readingTime": "12 min read",
+    "sourceUrl": "https://atomsai.com/resources/blog/quotes-go-quiet",
+    "category": "Insights",
+    "artwork": "/assets/blog/quotes-go-quiet.webp",
+    "artworkAlt": ""
+  },
+  {
+    "slug": "no-shows",
+    "title": "The reminder went out. The chair stayed empty.",
+    "excerpt": "Reminders go out by text and replies come back by email, or not at all. Why seats sit empty, what it costs, and how to confirm and rebook on any channel.",
+    "date": "2026-10-23",
+    "author": "Nilesh Tripathi — GM, AtomsAI",
+    "tags": [
+      "reduce no-shows",
+      "automate appointment reminders",
+      "fill cancelled appointments"
+    ],
+    "readingTime": "11 min read",
+    "sourceUrl": "https://atomsai.com/resources/blog/no-shows",
+    "category": "Insights",
+    "artwork": "/assets/blog/no-shows.webp",
+    "artworkAlt": ""
+  },
+  {
+    "slug": "speed-to-lead",
+    "title": "The homeowner asked three companies at lunch",
+    "excerpt": "Leads arrive by form, ad, chat, text and phone, then wait in a queue. Where the time goes, what it costs, and how to reply on their channel fast.",
+    "date": "2026-10-23",
+    "author": "Nilesh Tripathi — GM, AtomsAI",
+    "tags": [
+      "respond to leads faster",
+      "automate lead follow-up",
+      "AI sales assistant"
+    ],
+    "readingTime": "10 min read",
+    "sourceUrl": "https://atomsai.com/resources/blog/speed-to-lead",
+    "category": "Insights",
+    "artwork": "/assets/blog/speed-to-lead.webp",
+    "artworkAlt": ""
+  },
+  {
+    "slug": "who-answers-at-7pm",
+    "title": "The after-hours messages no one sees",
+    "excerpt": "After closing, customers message on chat, text, email and phone. Most of it waits until morning. What that costs and how one agent answers it all.",
+    "date": "2026-10-20",
+    "author": "Nilesh Tripathi — GM, AtomsAI",
+    "tags": [
+      "answer customers after hours",
+      "automate appointment booking",
+      "AI front desk"
+    ],
+    "readingTime": "9 min read",
+    "sourceUrl": "https://atomsai.com/resources/blog/who-answers-at-7pm",
+    "category": "Insights",
+    "artwork": "/assets/blog/who-answers-at-7pm.webp",
+    "artworkAlt": ""
+  },
+  {
+    "slug": "the-demo-was-never-the-hard-part",
+    "title": "The demo was never the hard part",
+    "excerpt": "Pilots don't fail on model quality. They fail on the systems between the demo and a finished piece of work — and on the exception queue nobody scoped.",
+    "date": "2026-08-19",
+    "author": "AtomsAI editorial",
+    "tags": [
+      "move AI pilots to production",
+      "integrate AI with your systems",
+      "AI implementation"
+    ],
+    "readingTime": "3 min read",
+    "sourceUrl": "https://atomsai.com/resources/blog/the-demo-was-never-the-hard-part",
+    "category": "Technical",
+    "artwork": "/assets/blog/the-demo-was-never-the-hard-part.webp",
+    "artworkAlt": ""
+  },
+  {
+    "slug": "write-the-evals-before-the-prompt",
+    "title": "Write the evals before the prompt",
+    "excerpt": "An eval suite isn't QA you add at the end. It's the specification — and the only thing that lets a CXO answer 'is it working?' with a number instead of an opinion.",
+    "date": "2026-07-08",
+    "author": "AtomsAI editorial",
+    "tags": [
+      "measure AI accuracy",
+      "test AI before launch",
+      "AI evals"
+    ],
+    "readingTime": "3 min read",
+    "sourceUrl": "https://atomsai.com/resources/blog/write-the-evals-before-the-prompt",
+    "category": "Technical",
+    "artwork": "/assets/blog/write-the-evals-before-the-prompt.webp",
+    "artworkAlt": ""
+  },
+  {
+    "slug": "how-much-autonomy-should-an-agent-have",
+    "title": "How much autonomy should an agent have?",
+    "excerpt": "The right answer is a configuration value, not a philosophy. Design the approval gates before the tools, start tight, and let the pass rate buy each loosening.",
+    "date": "2026-05-27",
+    "author": "AtomsAI editorial",
+    "tags": [
+      "set AI approval rules",
+      "control what AI agents can do",
+      "AI agent governance"
+    ],
+    "readingTime": "4 min read",
+    "sourceUrl": "https://atomsai.com/resources/blog/how-much-autonomy-should-an-agent-have",
+    "category": "Technical",
+    "artwork": "/assets/blog/how-much-autonomy-should-an-agent-have.webp",
+    "artworkAlt": ""
+  }
+]

@@ -1,5 +1,6 @@
 'use client';
 
+import { ArrowIcon } from '@/components/arrow-icon';
 import { useState } from 'react';
 import Link from 'next/link';
 import { Pattern } from '@/components/patterns/pattern';
@@ -71,7 +72,7 @@ export function PatternLab() {
   return (
     <main className={styles.lab} id="hero-heading">
       <header className={styles.header}>
-        <Link href="/" className={`display ${styles.brand}`}>AtomsAI<span aria-hidden="true">↗</span></Link>
+        <Link href="/" className={`display ${styles.brand}`}>AtomsAI<span aria-hidden="true"><ArrowIcon direction="up-right" /></span></Link>
         <span className={styles.headerLabel}>Pattern studio</span>
       </header>
 
@@ -160,7 +161,7 @@ export function PatternLab() {
           </section>
         </aside>
       </div>
-      <footer className={styles.footer}><span>AtomsAI · Pattern studio</span><Link href="/">Back to the homepage <span aria-hidden="true">↗</span></Link></footer>
+      <footer className={styles.footer}><span>AtomsAI · Pattern studio</span><Link href="/">Back to the homepage <span aria-hidden="true"><ArrowIcon direction="up-right" /></span></Link></footer>
     </main>
   );
 }

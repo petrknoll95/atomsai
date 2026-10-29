@@ -23,10 +23,10 @@
 .dot[aria-current='true'] { flex-grow: 3.285714; }
 .line { display: block; overflow: hidden; width: 100%; height: 4px; border-radius: var(--radius-control); background: var(--color-border); }
 .fill { display: block; width: 100%; height: 100%; background: var(--color-foreground); transform: scaleX(0); transform-origin: left; }
-.imageControl { position: absolute; z-index: 1; display: grid; place-items: center; width: 36px; height: 36px; padding: 0; border: 0; border-radius: 50%; color: var(--palette-deep-green); background: var(--palette-cream); transition: background-color .2s ease, var(--focus-transition); }
+.imageControl { position: absolute; z-index: 1; display: grid; place-items: center; width: 36px; height: 36px; padding: 0; border: 0; border-radius: 50%; color: var(--palette-deep-green); --button-fill: var(--palette-cream); transition: background-color .2s ease, var(--focus-transition);  --button-clip-radius:999px;}
 /* Preserve a comfortable hit area around the smaller visible control. */
-.imageControl::after { content: ''; position: absolute; inset: -4px; border-radius: inherit; }
-.imageControl:hover { background: var(--palette-paper); }
+.imageControl::after { content: ''; position: absolute; inset: -4px; border-radius: inherit;  --button-clip-radius:inherit;}
+.imageControl:hover { --button-fill: var(--palette-paper); }
 .imageControl svg { width: 18px; height: 18px; }
 .playback { top: 16px; right: 16px; }
 .previous { bottom: 16px; left: 16px; }

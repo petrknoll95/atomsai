@@ -1,46 +1,22 @@
 'use client';
 
+import { ArrowIcon } from '@/components/arrow-icon';
 import Link from 'next/link';
 import { useEffect, useId, useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { ButtonLink } from '@/components/ui';
 import { AnimatedLogo } from '@/components/animated-logo';
 import { DesktopDropdown } from './desktop-dropdown';
 import { DesktopMenuViewport } from './desktop-menu-viewport';
-import { MegaMenu, MenuArrow } from './mega-menu';
+import { MegaMenu } from './mega-menu';
 import { NavLinkMarker } from './nav-link-marker';
-import { FullscreenMenu } from './fullscreen-menu';
+import { ResponsiveMenu } from './responsive-menu';
+import { ResponsiveApplications } from './responsive-applications';
+import { navigationLinks as links, products } from './navigation-data';
 import { JustCallScene, HelpwiseScene, ServiceAgentScene, CallPageScene } from './application-scenes';
 import styles from './hero.module.css';
 
-const products = [
-  { name: 'JustCall', mark: 'justcall-mark.svg', href: 'https://justcall.io/', description: 'Calls, messages and AI for sales and support.' },
-  { name: 'Helpwise', mark: 'helpwise-mark.svg', href: 'https://helpwise.io/', description: 'One shared inbox for customer conversations.' },
-  { name: 'ServiceAgent', mark: 'serviceagent-mark.svg', href: 'https://serviceagent.ai/', description: 'AI for calls, bookings and home-service admin.' },
-  { name: 'CallPage', mark: 'callpage-mark.svg', href: 'https://www.callpage.io/', description: 'Turn website visits into callbacks and meetings.' },
-] as const;
 type Product = typeof products[number]['name'];
-const links = [
-  { label: 'Applications', href: '/#applications', children: products.map(({ name, href }) => [name, href]) },
-  { label: 'Infrastructure', href: 'https://pyai.com/', children: [['Explore PyAI', 'https://pyai.com/'], ['Try the playground', 'https://pyai.com/playground']] },
-  { label: 'AI Services', href: '/approach' },
-  { label: 'Industries', href: '/#industries', children: [['Manufacturing', 'https://atomsai.com/industries/manufacturing'], ['Insurance', 'https://atomsai.com/industries/insurance'], ['Healthcare', '/industries/healthcare'], ['Logistics', 'https://atomsai.com/industries/logistics']] },
-  { label: 'Resources', href: 'https://atomsai.com/resources', children: [
-    ['Case studies', 'https://atomsai.com/resources/case-studies'],
-    ['Blog', 'https://atomsai.com/resources/blog'],
-    ['Help center', '/#faq'],
-    ['Website updates', 'https://atomsai.com/changelog'],
-  ] },
-  { label: 'Company', href: 'https://atomsai.com/company', overviewLabel: 'Company overview', children: [
-    ['About us', 'https://atomsai.com/company/about'],
-    ['Careers', 'https://atomsai.com/company/careers'],
-    ['Contact us', '/company/contact'],
-    ['Trust Center', '/trust'],
-    ['Brand', 'https://atomsai.com/brand'],
-  ] },
-];
 
 const previewScenes = { JustCall: JustCallScene, Helpwise: HelpwiseScene, ServiceAgent: ServiceAgentScene, CallPage: CallPageScene };
 
@@ -92,13 +68,13 @@ function ApplicationsMenu() {
     <div className={styles.menuIntroduction}>
       <h2 className={`display ${styles.menuHeading}`}>Built for the work<br />in front of you.</h2>
       <p className={styles.menuDescription}>From the first conversation to the next task. Find the right application for your team.</p>
-      <a className={styles.menuTextLink} href='/capabilities/voice'>Explore voice AI<MenuArrow /></a>
+      <a className={styles.menuTextLink} href='/capabilities/voice'>Explore Voice AI<ArrowIcon size={14} /></a>
     </div>
     <div>
     <div className={styles.productLinks}>
       <div className={styles.productHighlight} data-product-highlight aria-hidden='true' />
       {products.map(item => <a key={item.name} href={item.href} className={styles.productLink} data-active={product === item.name} onPointerEnter={() => setProduct(item.name)} onFocus={() => setProduct(item.name)}><span className={styles.productMark} aria-hidden='true' style={{ maskImage: `url('/assets/products/${item.mark}')` }} /><span className={styles.productLinkCopy}><span>{item.name}</span><span>{item.description}</span></span></a>)}
-      <div className={styles.allApplications}><ButtonLink href='/#applications' size='small' variant='outline'>All Applications<svg width='16' height='16' viewBox='0 0 16 16' fill='none' stroke='currentColor' strokeWidth='1.33333' aria-hidden='true'><path d='M3.33333 12.6667L9.66667 6.33333M6 3.33333H12.6667V10' /></svg></ButtonLink></div>
+      <div className={styles.allApplications}><ButtonLink href='/#applications' size='small' variant='outline'>All Applications</ButtonLink></div>
     </div>
     </div>
     <div>
@@ -114,6 +90,11 @@ function ApplicationsMenu() {
   </div>;
 }
 
+const responsiveMenus = links.filter(link => link.children).map(link => ({
+  label: link.label,
+  content: <MegaMenu link={link} compact>{link.label === 'Applications' ? <ResponsiveApplications /> : undefined}</MegaMenu>,
+}));
+
 const desktopMenus = links.filter(link => link.children).map(link => ({
   label: link.label,
   content: <MegaMenu link={link}>{link.label === 'Applications' ? <ApplicationsMenu /> : undefined}</MegaMenu>,
@@ -126,33 +107,19 @@ export function SiteHeader({ initialTheme = 'light' }: { initialTheme?: 'light' 
   const cancelClose = () => { clearTimeout(closeTimer.current); };
   useEffect(() => () => clearTimeout(closeTimer.current), []);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
+  const [menuVisible, setMenuVisible] = useState(false);
+  const [responsiveOpen, setResponsiveOpen] = useState(false);
+  useLayoutEffect(() => {
+    if ((openMenu || menuVisible) && headerRef.current) headerRef.current.dataset.theme = 'light';
+  }, [openMenu, menuVisible]);
   useEffect(() => {
     const header = headerRef.current;
     if (!header) return;
-    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    let displayed = 0;
-    let lastWritten = -1;
     // Explicit section themes are the source of truth, not inferred pixel colors.
-    const regions = Array.from(document.querySelectorAll<HTMLElement>('#smooth-content [data-theme]'));
-    const update = (_time: number, delta: number) => {
-      if (header.dataset.siteMenuOpen === 'true') return;
+    const regions = Array.from(document.querySelectorAll<HTMLElement>('#smooth-content [data-theme], #smooth-content [data-header-theme]'));
+    const update = () => {
+      if (header.dataset.responsiveMenuOpen === 'true') { header.dataset.theme = 'light'; return; }
       if (header.dataset.desktopMenuOpen === 'true') { header.dataset.theme = 'light'; return; }
-      // Follow the rendered scroll, including the hero's automatic flight,
-      // rather than the native scroll target ahead of ScrollSmoother.
-      const pin = ScrollTrigger.getById('hero-prototype');
-      const scroll = ScrollSmoother.get()?.scrollTop() ?? window.scrollY;
-      const progress = Math.min(1, Math.max(0,
-        pin ? (scroll - pin.start) / Math.max(1, pin.end - pin.start) : scroll / 800,
-      ));
-      const target = progress * progress * (3 - 2 * progress);
-      // Frame-rate-independent settling also softens wheel reversals and
-      // changes to the pin range after fonts or responsive layout load.
-      displayed += (target - displayed) * (motion.matches ? 1 : 1 - Math.exp(-Math.min(delta, 64) / 280));
-      if (Math.abs(target - displayed) < .0001) displayed = target;
-      if (displayed !== lastWritten) {
-        header.style.setProperty('--header-scroll-progress', String(displayed));
-        lastWritten = displayed;
-      }
       // Read the rendered bounds, so ScrollSmoother and pinned hero movement agree.
       const bounds = header.getBoundingClientRect();
       const sampleY = bounds.top + bounds.height / 2;
@@ -161,7 +128,10 @@ export function SiteHeader({ initialTheme = 'light' }: { initialTheme?: 'light' 
       for (const region of regions) {
         const rect = region.getBoundingClientRect();
         if (rect.top <= sampleY && rect.bottom > sampleY && rect.left <= sampleX && rect.right > sampleX) {
-          theme = region.dataset.theme === 'dark' ? 'dark' : 'light';
+          theme = (region.dataset.headerTheme ?? region.dataset.theme) === 'dark' ? 'dark' : 'light';
+          // Faded sections can become light before their physical bottom edge.
+          const lightAt = Number(region.dataset.headerLightAt);
+          if (Number.isFinite(lightAt) && sampleY >= rect.top + rect.height * lightAt) theme = 'light';
         }
       }
       if (theme !== header.dataset.theme) header.dataset.theme = theme;
@@ -169,7 +139,6 @@ export function SiteHeader({ initialTheme = 'light' }: { initialTheme?: 'light' 
     gsap.ticker.add(update);
     return () => {
       gsap.ticker.remove(update);
-      header.style.removeProperty('--header-scroll-progress');
     };
   }, []);
   useEffect(() => {
@@ -193,7 +162,7 @@ export function SiteHeader({ initialTheme = 'light' }: { initialTheme?: 'light' 
       window.removeEventListener('resize', dismissResize);
     };
   }, [openMenu]);
-  return <header ref={headerRef} data-desktop-menu-open={Boolean(openMenu)} data-theme={initialTheme} className={styles.header}
+  return <header ref={headerRef} role={responsiveOpen ? 'dialog' : undefined} aria-modal={responsiveOpen || undefined} aria-label={responsiveOpen ? 'Site navigation' : undefined} data-responsive-menu-open={responsiveOpen} data-desktop-menu-open={Boolean(openMenu) || menuVisible} data-theme={initialTheme} className={styles.header}
     onPointerEnter={cancelClose}
     onPointerLeave={event => {
       if (event.pointerType === 'touch') return;
@@ -213,13 +182,7 @@ export function SiteHeader({ initialTheme = 'light' }: { initialTheme?: 'light' 
     onClick={event => { if ((event.target as HTMLElement).closest('a')) setOpenMenu(null); }}
     onBlur={event => { if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget)) setOpenMenu(null); }}>
 
-      <div aria-hidden="true" className={styles.headerFade}>
-        <span className={styles.headerBlur} />
-        <span className={styles.headerBlur} />
-        <span className={styles.headerBlur} />
-        <span className={styles.headerBlur} />
-        <span className={styles.headerBlur} />
-      </div>
+      <div aria-hidden="true" className={styles.headerBackdrop} />
       <div className={styles.headerInner}>
         <Link href='/' prefetch={false} aria-label='AtomsAI home' className={styles.logo}>
           <AnimatedLogo className={styles.logoSymbol} playOnHover />
@@ -230,9 +193,9 @@ export function SiteHeader({ initialTheme = 'light' }: { initialTheme?: 'light' 
         </nav>
         <div className={styles.actions}>
           <ButtonLink href='/company/contact' className={styles.contact}>Talk to AtomsAI</ButtonLink>
-          <FullscreenMenu links={links} onOpen={() => setOpenMenu(null)} />
+          <ResponsiveMenu links={links} items={responsiveMenus} open={responsiveOpen} onOpenChange={setResponsiveOpen} onOpen={() => { cancelClose(); setOpenMenu(null); }} />
         </div>
-        <DesktopMenuViewport active={openMenu} items={desktopMenus} idPrefix={menuId} onClose={() => setOpenMenu(null)} />
+        <DesktopMenuViewport active={openMenu} items={desktopMenus} idPrefix={menuId} onClose={() => setOpenMenu(null)} onVisibilityChange={setMenuVisible} />
       </div>
     </header>;
 }

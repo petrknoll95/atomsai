@@ -68,8 +68,8 @@
 .customQuestion input { flex: 1; min-width: 0; width: 100%; padding: 0; border: 0; background: transparent; color: var(--color-foreground); font: inherit; font-variation-settings: inherit; }
 .customQuestion input::placeholder { color: var(--color-muted-foreground); opacity: 1; }
 .customQuestion:hover { border-color: var(--color-border); }
-.questionSubmit { display: grid; place-items: center; flex: none; width: 44px; height: 44px; margin: -10px; padding: 10px; border: 0; border-radius: 50%; background: transparent; color: var(--color-primary); transition: background-color .2s ease, transform .2s ease; }
-.questionSubmit:enabled:hover { background: var(--color-surface); transform: translateY(-2px); }
+.questionSubmit { display: grid; place-items: center; flex: none; width: 44px; height: 44px; margin: -10px; padding: 10px; border: 0; border-radius: 50%; --button-fill: transparent; color: var(--color-primary); transition: background-color .2s ease, transform .2s ease;  --button-clip-radius:999px;}
+.questionSubmit:enabled:hover { --button-fill: var(--color-surface);  }
 .questionSubmit:enabled:active { transform: scale(.92); }
 .questionSubmit:disabled { cursor: default; opacity: .45; }
 .generatedQuestion { display: flow-root; overflow: hidden; overflow-wrap: anywhere; }

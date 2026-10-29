@@ -1,0 +1,24 @@
+.figure {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  --hairline-plate: var(--menu-card-background, #f0f0f0);
+  --hairline-hi: var(--palette-deep-green);
+  --hairline-edge: color-mix(in srgb, var(--palette-deep-green) 75%, transparent);
+  --hairline-mid: color-mix(in srgb, var(--palette-deep-green) 55%, transparent);
+  --hairline-lo: color-mix(in srgb, var(--palette-deep-green) 40%, transparent);
+  --hairline-stroke: 1;
+}
+.fallback, .stage { position: absolute; inset: 0; width: 100%; height: 100%; }
+.fallback { display: block; object-fit: contain; }
+.stage { visibility: hidden; }
+.figure[data-ready='true'] .stage, .outline[data-ready='true'] .stage { visibility: visible; }
+.figure[data-ready='true'] .fallback { visibility: hidden; }
+.stage path, .stage polygon, .stage ellipse, .stage line, .stage circle { vector-effect: none; stroke-width: 1; opacity: 1; stroke-opacity: 1; fill-opacity: 1; transition: fill .3s ease; }
+@media (prefers-reduced-motion: reduce) { .stage * { transition: none; } }
+
+.outline { width: 100%; height: 100%; --hairline-plate:var(--color-surface); --hairline-hi:currentColor; --hairline-edge:color-mix(in srgb,currentColor 75%,transparent); --hairline-mid:color-mix(in srgb,currentColor 55%,transparent); --hairline-lo:color-mix(in srgb,currentColor 40%,transparent); --hairline-stroke:1; }
+.outlineArt{position:relative;display:block;width:calc(min(330px,clamp(150px,30svh,300px))*var(--illustration-ink-ratio));max-width:100%;}
+.outlineFallback{position:absolute;inset:0;background:currentColor;mask-size:100% 100%;mask-repeat:no-repeat;}
+.outline[data-ready="true"] .outlineFallback{visibility:hidden;}
+.outline .stage svg{overflow:visible;}

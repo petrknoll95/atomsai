@@ -1,0 +1,47 @@
+.page { padding-block: 192px 160px; color: var(--color-foreground); }
+.heading { margin: 0 0 96px; font-size: 72px; line-height: 1.05; }
+.featured { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 48px; align-items: start; }
+.featureSticky { position: sticky; top: 104px; min-width: 0; }
+.feature { display: flex; flex-direction: column; gap: 40px; }
+.featureImage, .cardImage { aspect-ratio: 16 / 9; overflow: hidden; border-radius: var(--radius-card); }
+.featureCopy { display: flex; flex-direction: column; gap: 24px; }
+.featureCopy h2 { margin: 0; font-size: var(--text-display-medium); line-height: 1.1; text-wrap: pretty; }
+.featureCopy time, .cardCopy time, .articleRow time { font-size: var(--text-label); line-height: 1.4; color: var(--color-muted-foreground); }
+.latest { display: flex; flex-direction: column; gap: 64px; margin: 0; padding: 0; list-style: none; min-width: 0; }
+.card { display: flex; flex-direction: column; gap: 24px; min-width: 0; }
+.cardCopy { display: flex; flex-direction: column; gap: 16px; }
+.cardCopy h3 { margin: 0; font-size: 24px; line-height: 1.2; text-wrap: pretty; }
+.featureCopy h2, .cardCopy h3 { overflow: visible; }
+.archive { margin-top: 192px; }
+.archiveHeading { font-size: var(--text-display-medium); line-height: 1.1; margin: 0 0 48px; }
+.articleList { margin: 0; padding: 0; list-style: none; }
+.articleList li + li { border-top: 1px solid var(--color-border); }
+.articleRow { display: flex; align-items: center; justify-content: space-between; gap: 32px; min-height: 104px; padding: 40px 16px; font-size: var(--text-body); line-height: 1.5; transition: background-color .2s ease; }
+.articleRow time { flex: none; }
+.seeMore { width: 100%; margin-top: 32px; }
+
+/* Shared with article recommendations. */
+.art { position: relative; width: 100%; height: 100%; overflow: hidden; background: var(--palette-forest-shade); }
+.art img { object-fit: cover; }
+.pattern { transition: transform .6s cubic-bezier(.22, 1, .36, 1); }
+@media (hover: hover) {
+  .feature:hover .pattern, .card:hover .pattern { transform: scale(1.035); }
+  .articleRow:hover { background: var(--color-surface); }
+}
+@media (max-width: 1199px) {
+  .page { padding-top: 160px; }
+  .heading { font-size: var(--text-display-xlarge); }
+}
+@media (max-width: 767px) {
+  .page { padding-block: 144px 96px; }
+  .heading { font-size: var(--text-display-large); margin-bottom: 64px; }
+  .featured { grid-template-columns: 1fr; gap: 64px; }
+  .featureSticky { position: static; }
+  .feature { gap: 24px; }
+  .latest { gap: 48px; }
+  .featureCopy h2 { font-size: var(--text-display-small); }
+  .archive { margin-top: 128px; }
+  .archiveHeading { font-size: var(--text-display-small); }
+  .articleRow { flex-direction: column; align-items: flex-start; gap: 16px; padding: 32px 16px; }
+}
+@media (prefers-reduced-motion: reduce) { .pattern, .articleRow { transition: none; } }

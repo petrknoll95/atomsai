@@ -1,3 +1,4 @@
+import { ArrowIcon } from '@/components/arrow-icon';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { PageShell } from '@/components/pages/page-shell';
@@ -25,7 +26,7 @@ export default function HealthcarePage() {
       <a className={styles.breadcrumb} href="https://atomsai.com/industries">Industries <span aria-hidden="true">/</span> Healthcare</a>
       <div className={styles.heroHeadingRow}>
         <h1 id="hero-heading" className={`display ${styles.heroHeading}`}>A calmer front desk.<br />More room for care.</h1>
-        <div className={styles.heroIntro}><p>Help patients book, reschedule and find the right answer. Give your team more time for the people in front of them.</p><ButtonLink href="/company/contact?topic=healthcare" size="large">Talk about your practice <span aria-hidden="true">↗</span></ButtonLink></div>
+        <div className={styles.heroIntro}><p>Help patients book, reschedule and find the right answer. Give your team more time for the people in front of them.</p><ButtonLink href="/company/contact?topic=healthcare" size="large">Talk about your practice <span aria-hidden="true"><ArrowIcon direction="up-right" /></span></ButtonLink></div>
       </div>
       <div className={styles.heroVisual}>
         <div className={styles.photoWrap}><Image src="/assets/figma/industries-BackgroundImage1-1024.webp" width={1024} height={1024} sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1599px) 55vw, 855px" loading="eager" alt="Healthcare professional working at a desk in a medical practice" fetchPriority="high" className={styles.photo} /><span className={styles.photoCaption}>For medical and dental groups</span></div>
@@ -48,13 +49,13 @@ export default function HealthcarePage() {
     </section>
 
     <section className={`page-container ${styles.connections}`} aria-labelledby="connections-heading">
-      <div className={styles.connectionsCopy}><p className={styles.kicker}>Built around your practice</p><h2 id="connections-heading" className={`display ${styles.sectionHeading}`}>Your systems.<br />Connected to the conversation.</h2><p>Keep your practice software, phone numbers and ways of working. We connect the workflow to the information it needs, with the access you approve.</p><a className={styles.textLink} href="/approach">See how we build <span aria-hidden="true">↗</span></a></div>
-      <div className={styles.systems}><div className={styles.systemsHeader}><span>Your practice systems</span><span aria-hidden="true">↙</span></div><ul><li>athenahealth</li><li>eClinicalWorks</li><li>Epic</li><li>Dentrix</li><li>Open Dental</li><li>Your phone system</li></ul><p className={styles.caption}>Connections are scoped and built for your engagement. Availability depends on your systems and access.</p></div>
+      <div className={styles.connectionsCopy}><p className={styles.kicker}>Built around your practice</p><h2 id="connections-heading" className={`display ${styles.sectionHeading}`}>Your systems.<br />Connected to the conversation.</h2><p>Keep your practice software, phone numbers and ways of working. We connect the workflow to the information it needs, with the access you approve.</p><a className={styles.textLink} href="/approach">See how we build <span aria-hidden="true"><ArrowIcon direction="up-right" /></span></a></div>
+      <div className={styles.systems}><div className={styles.systemsHeader}><span>Your practice systems</span><span aria-hidden="true"><ArrowIcon direction="down-left" /></span></div><ul><li>athenahealth</li><li>eClinicalWorks</li><li>Epic</li><li>Dentrix</li><li>Open Dental</li><li>Your phone system</li></ul><p className={styles.caption}>Connections are scoped and built for your engagement. Availability depends on your systems and access.</p></div>
     </section>
 
     <section className={styles.controls} data-theme="dark" aria-labelledby="controls-heading">
       <div className={`page-container ${styles.controlsInner}`}>
-        <div className={styles.controlsIntro}><p className={styles.kicker}>Human judgment stays central</p><h2 id="controls-heading" className={`display ${styles.sectionHeading}`}>The right boundary<br />is part of the build.</h2><p>Decide what the agent can handle, what needs approval, and when your team takes over. Test those boundaries before the first patient conversation.</p><ButtonLink href="/trust" variant="outline">Explore the Trust Center <span aria-hidden="true">↗</span></ButtonLink></div>
+        <div className={styles.controlsIntro}><p className={styles.kicker}>Human judgment stays central</p><h2 id="controls-heading" className={`display ${styles.sectionHeading}`}>The right boundary<br />is part of the build.</h2><p>Decide what the agent can handle, what needs approval, and when your team takes over. Test those boundaries before the first patient conversation.</p><ButtonLink href="/trust" variant="outline">Explore the Trust Center <span aria-hidden="true"><ArrowIcon direction="up-right" /></span></ButtonLink></div>
         <div className={styles.boundaries}>
           <div className={styles.boundaryRow}><span className={styles.boundaryNumber}>01</span><div><h3 className={`display ${styles.boundaryHeading}`}>Administrative work, clearly scoped.</h3><p>Scheduling, intake and routine questions. Clinical advice stays with your care team.</p></div></div>
           <div className={styles.boundaryRow}><span className={styles.boundaryNumber}>02</span><div><h3 className={`display ${styles.boundaryHeading}`}>Patient information, carefully handled.</h3><p>Agree identity checks, permissions and retention. Review the BAA and deployment scope for covered workloads.</p></div></div>
@@ -66,6 +67,6 @@ export default function HealthcarePage() {
 
     <section className={`page-container ${styles.faq}`} aria-labelledby="questions-heading"><div><p className={styles.kicker}>A few practical questions</p><h2 id="questions-heading" className={`display ${styles.sectionHeading}`}>Before we<br />get started.</h2></div><div className={styles.questions}>{questions.map(([question, answer]) => <details key={question} className={styles.question}><summary>{question}<span aria-hidden="true" className={styles.plus}>+</span></summary><p>{answer}</p></details>)}</div></section>
 
-    <section className={`page-container ${styles.closing}`} aria-labelledby="healthcare-contact-heading"><div className={styles.closingPanel}><div><p className={styles.kicker}>Start with your front desk</p><h2 id="healthcare-contact-heading" className={`display ${styles.sectionHeading}`}>What could your team<br />use a hand with?</h2></div><div className={styles.closingCopy}><p>Bring one workflow and the systems behind it. We’ll look at what a first build could cover.</p><ButtonLink href="/company/contact?topic=healthcare" size="large">Talk to AtomsAI <span aria-hidden="true">↗</span></ButtonLink></div></div></section>
+    <section className={`page-container ${styles.closing}`} aria-labelledby="healthcare-contact-heading"><div className={styles.closingPanel}><div><p className={styles.kicker}>Start with your front desk</p><h2 id="healthcare-contact-heading" className={`display ${styles.sectionHeading}`}>What could your team<br />use a hand with?</h2></div><div className={styles.closingCopy}><p>Bring one workflow and the systems behind it. We’ll look at what a first build could cover.</p><ButtonLink href="/company/contact?topic=healthcare" size="large">Talk to AtomsAI <span aria-hidden="true"><ArrowIcon direction="up-right" /></span></ButtonLink></div></div></section>
   </main></PageShell>;
 }

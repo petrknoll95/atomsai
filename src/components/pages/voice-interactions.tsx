@@ -1,5 +1,6 @@
 'use client';
 
+import { ArrowIcon } from '@/components/arrow-icon';
 import { useEffect, useRef, useState } from 'react';
 import voiceAudio from '@/components/home/voice-audio.json';
 import styles from './voice.module.css';
@@ -52,7 +53,7 @@ export function VoiceSample() {
         <div className={styles.conversationTop}><span className={styles.sectionLabel}>A property enquiry</span><span className={styles.sampleLabel}>Scripted sample</span></div>
         <div className={styles.quote}><span>Caller</span><p className="display">“Is the two-bedroom<br className={styles.desktopBreak} /> still available?”</p></div>
         <div className={`${styles.quote} ${styles.agentQuote}`}><span>Voice agent</span><p className="display">“What sort of budget<br className={styles.desktopBreak} /> did you have in mind?”</p></div>
-        <div className={styles.callOutcome}><span className={styles.outcomeIcon} aria-hidden="true">↗</span><div><p>From enquiry to next step</p><span>Preferences understood. A viewing agreed.</span></div></div>
+        <div className={styles.callOutcome}><span className={styles.outcomeIcon} aria-hidden="true"><ArrowIcon direction="up-right" /></span><div><p>From enquiry to next step</p><span>Preferences understood. A viewing agreed.</span></div></div>
       </div>
     </div>
     <div className={styles.sampleFoot}><p>Illustrative audio. No call is placed and no viewing is booked.</p><details className={styles.transcript}><summary>Read the transcript <span aria-hidden="true">+</span></summary><ol>{voiceAudio.turns.map((turn, i) => <li key={i}><span>{turn.speaker === 0 ? 'Caller' : 'Voice agent'}</span><p>{turn.text}</p></li>)}</ol></details></div>
@@ -69,10 +70,10 @@ export function VoiceJourneys() {
   const [selected, setSelected] = useState(0);
   const journey = journeys[selected];
   return <div className={styles.journeyExplorer}>
-    <div className={styles.journeyTabs} role="tablist" aria-label="Explore a voice workflow">{journeys.map((item, i) => <button key={item.label} type="button" role="tab" id={`journey-tab-${i}`} aria-selected={selected === i} aria-controls={`journey-panel-${i}`} tabIndex={selected === i ? 0 : -1} onClick={() => setSelected(i)} onKeyDown={event => { let next = i; if (event.key === 'ArrowRight') next = (i + 1) % journeys.length; else if (event.key === 'ArrowLeft') next = (i + journeys.length - 1) % journeys.length; else if (event.key === 'Home') next = 0; else if (event.key === 'End') next = journeys.length - 1; else return; event.preventDefault(); setSelected(next); document.getElementById(`journey-tab-${next}`)?.focus(); }}>{item.label}<span aria-hidden="true">↗</span></button>)}</div>
+    <div className={styles.journeyTabs} role="tablist" aria-label="Explore a voice workflow">{journeys.map((item, i) => <button key={item.label} type="button" role="tab" id={`journey-tab-${i}`} aria-selected={selected === i} aria-controls={`journey-panel-${i}`} tabIndex={selected === i ? 0 : -1} onClick={() => setSelected(i)} onKeyDown={event => { let next = i; if (event.key === 'ArrowRight') next = (i + 1) % journeys.length; else if (event.key === 'ArrowLeft') next = (i + journeys.length - 1) % journeys.length; else if (event.key === 'Home') next = 0; else if (event.key === 'End') next = journeys.length - 1; else return; event.preventDefault(); setSelected(next); document.getElementById(`journey-tab-${next}`)?.focus(); }}>{item.label}<span aria-hidden="true"><ArrowIcon direction="up-right" /></span></button>)}</div>
     <div role="tabpanel" id={`journey-panel-${selected}`} aria-labelledby={`journey-tab-${selected}`} tabIndex={0} className={styles.journeyPanel}>
       <div className={styles.journeyStory}><span className={styles.sectionLabel}>{journey.category}</span><p className={`display ${styles.journeyOpener}`}>{journey.opener}</p><h3 className="display">{journey.title}</h3><p>{journey.description}</p></div>
-      <div className={styles.journeyFlow}><p className={styles.flowLabel}>What happens next</p><ol>{journey.steps.map(([title, text], i) => <li key={title}><span className={styles.flowIndex}>0{i + 1}</span><div><h4>{title}</h4><p>{text}</p></div></li>)}</ol><div className={styles.journeyResult}><span aria-hidden="true">↗</span><p className="display">{journey.result}</p></div><p className={styles.connections}>{journey.note}</p></div>
+      <div className={styles.journeyFlow}><p className={styles.flowLabel}>What happens next</p><ol>{journey.steps.map(([title, text], i) => <li key={title}><span className={styles.flowIndex}>0{i + 1}</span><div><h4>{title}</h4><p>{text}</p></div></li>)}</ol><div className={styles.journeyResult}><span aria-hidden="true"><ArrowIcon direction="up-right" /></span><p className="display">{journey.result}</p></div><p className={styles.connections}>{journey.note}</p></div>
     </div>
     <p className={styles.illustrative}>Illustrative workflows. Connections, permissions, and handoff rules are agreed during your build.</p>
   </div>;

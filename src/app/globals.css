@@ -1,6 +1,7 @@
 @import 'tailwindcss' source('../');
 @import '../styles/tokens.css';
 @import '../styles/focus.css';
+@import '../styles/buttons.css';
 @plugin 'tw-easing-gradients';
 /* Browser baseline calibration: +4% ascent, -4% descent; the font's 120% total
    em box is preserved. See docs/visual/README.md for comparison evidence. */
@@ -19,12 +20,12 @@
   @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition:none!important; animation:none!important; } }
 }
 @layer components {
-  .page-container { width:100%; max-width:1600px; margin-inline:auto; padding-inline:var(--page-gutter); }
+  .page-container { width:100%; max-width:var(--page-max-width); margin-inline:auto; padding-inline:var(--content-gutter); }
   .display { font-family:var(--font-display); font-weight:400; font-variation-settings:normal; letter-spacing:-.015em; text-box:trim-both cap alphabetic; }
-  .eyebrow { display:inline-flex; align-items:center; justify-content:center; align-self:flex-start; flex:none; gap:10px; width:fit-content; max-width:100%; min-height:40px; padding:6px 6px 6px 16px; border-radius:var(--radius-control); background:var(--color-secondary); color:var(--color-secondary-foreground); font-size:var(--text-label); font-weight:var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; line-height:20px; transition:background-color .3s ease, color .3s ease, var(--focus-transition); }
+  .eyebrow { display:inline-flex; align-items:center; justify-content:center; align-self:flex-start; flex:none; gap:10px; width:fit-content; max-width:100%; min-height:40px; padding:6px 6px 6px 16px; border-radius:var(--radius-control); --button-fill:var(--color-secondary); color:var(--color-secondary-foreground); font-size:var(--text-label); font-weight:var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; line-height:20px; transition:background-color .3s ease, color .3s ease, var(--focus-transition);  --button-clip-radius:var(--radius-control);}
   .eyebrow-arrow { display:grid; place-items:center; flex:none; width:28px; height:28px; overflow:hidden; border-radius:50%; background:color-mix(in srgb,currentColor 10%,transparent); transition:background-color .3s ease; }
   .eyebrow-arrow svg { transition:transform .4s cubic-bezier(.22,1,.36,1); }
-  .eyebrow:is(:hover,:focus-visible) { background:var(--color-primary); color:var(--color-primary-foreground); }
+  .eyebrow:is(:hover,:focus-visible) { --button-fill:var(--color-primary); color:var(--color-primary-foreground); }
   .eyebrow:is(:hover,:focus-visible) .eyebrow-arrow svg { transform:translateX(2px); }
   .eyebrow:active .eyebrow-arrow svg { transform:translateX(3px) scale(.9); }
   .link-underline { position:relative; display:inline-block; max-width:100%; text-decoration:none; }
@@ -35,16 +36,17 @@
   .button-small { height:32px; line-height:20px; padding-inline:12px; font-size: var(--text-label); gap:6px; }
   .button-medium { height:44px; line-height:20px; padding-inline:20px; font-size: var(--text-label); }
   .button-large { height:56px; line-height:22px; padding-inline:28px; font-size: var(--text-body); }
-  .button-primary { background:var(--color-primary); color:var(--color-primary-foreground); }
-  .button-primary:hover { background:color-mix(in srgb,var(--color-primary),var(--color-primary-foreground) 8%); }
-  .button-secondary { background:var(--color-secondary); color:var(--color-secondary-foreground); }
-  .button-secondary:hover { background:color-mix(in srgb,var(--color-secondary),var(--color-secondary-foreground) 8%); }
-  .button-outline { border-width:1px; border-color:var(--color-control-border); color:var(--color-foreground); transition:background-color .24s ease, color .24s ease, border-color .24s ease, var(--focus-transition); }
-  .button-outline:is(:hover,:focus-visible) { background:var(--color-primary); color:var(--color-primary-foreground); border-color:var(--color-primary); }
+  .button-primary { --button-fill:var(--color-primary); color:var(--color-primary-foreground); }
+  .button-primary:hover { --button-fill:color-mix(in srgb,var(--color-primary),var(--color-primary-foreground) 8%); }
+  .button-secondary { --button-fill:var(--color-secondary); color:var(--color-secondary-foreground); }
+  .button-secondary:hover { --button-fill:color-mix(in srgb,var(--color-secondary),var(--color-secondary-foreground) 8%); }
+  .button-outline { --button-stroke:var(--color-control-border); --button-stroke-width:1px; border-width:1px; border-color:transparent; color:var(--color-foreground); transition:background-color .24s ease, color .24s ease, border-color .24s ease, var(--focus-transition); }
+  .button-outline:is(:hover,:focus-visible) { --button-fill:var(--color-primary); color:var(--color-primary-foreground); --button-stroke:var(--color-primary); }
   @media (prefers-reduced-motion:reduce) { .button-outline { transition:none; } }
   .skip-link { position:fixed; left:20px; top:-80px; z-index:100; padding:12px 20px; background:var(--palette-deep-green); color:var(--palette-cream); border-radius:12px; }
   .skip-link:focus { top:12px; }
 }
 
 html[data-smooth-scroll] { scroll-behavior:auto; }
+html[data-native-scroll], html[data-native-scroll] body { scroll-behavior:auto!important; }
 @media(max-width:767px) { html { scroll-padding-top:96px; } }

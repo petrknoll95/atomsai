@@ -13,10 +13,10 @@ for (const [name, engine] of [['chromium', chromium], ['webkit', webkit]]) {
     await expect.poll(() => section.locator('img:visible').evaluateAll(images => images.every(image => image.complete && image.naturalWidth > 0))).toBe(true);
     await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     await expect(section.getByRole('heading')).toBeVisible();
-    await expect(section.getByRole('link', { name: 'Discuss your workflow' })).toHaveAttribute('href', 'https://atomsai.com/company/contact');
+    await expect(section.getByRole('link', { name: 'Discuss your workflow' })).toHaveAttribute('href', '/company/contact');
     await expect(section.getByRole('button')).toHaveCount(0);
     await section.screenshot({ path: `${dir}/${name}-${width}.png` });
   }
-  console.log(`${name}: static grid, loaded icons, CTA and 320–1600px layouts passed`);
+  console.log(`${name}: concentric rings, loaded icons, CTA and 320–1600px layouts passed`);
   await browser.close();
 }

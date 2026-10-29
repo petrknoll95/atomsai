@@ -3,7 +3,6 @@
 import { useEffect, useRef, type ReactNode } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { ButtonLink } from '@/components/ui';
 import { scrollToTarget } from '@/lib/page-scroll';
 import styles from '../prototype-hero/hero.module.css';
@@ -90,13 +89,13 @@ export function StarfieldHero({ children, interactive = true }: { children: Reac
                 launched = direction;
                 flightDirection = direction;
                 track.dataset.autoFlight = 'true';
-                const smoother = ScrollSmoother.get();
-                const position = { y: smoother ? smoother.scrollTop() : window.scrollY };
+                const position = { y: window.scrollY };
                 flight = gsap.to(position, {
                   y: direction > 0 ? self.end : self.start, duration: 2.2, ease: 'power2.inOut',
                   onUpdate: () => {
-                    if (smoother) smoother.scrollTop(position.y);
-                    else window.scrollTo({ top: position.y, behavior: 'instant' });
+                    // Keep native scroll as the source of truth so the smooth
+                    // scroll proxy remains responsive after the flight ends.
+                    window.scrollTo({ top: position.y, behavior: 'instant' });
                   },
                   onComplete: () => { flight = undefined; flightDirection = 0; launched = 0; delete track.dataset.autoFlight; },
                 });

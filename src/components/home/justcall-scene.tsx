@@ -1,3 +1,4 @@
+import { ArrowIcon } from '@/components/arrow-icon';
 import styles from './justcall-scene.module.css';
 
 function PhoneIcon() {
@@ -17,7 +18,7 @@ export function JustCallScene({ compact = false }: { compact?: boolean } = {}) {
         <div className={styles.metricCard}>
           <div className={styles.metricLabel}>AI Resolution Rate</div>
           <div className={styles.metricValue}><span className={styles.metric}>78%</span></div>
-          <div className={styles.metricChange}><span>↑ 18%</span></div>
+          <div className={styles.metricChange}><span><ArrowIcon direction="up" /> 18%</span></div>
         </div>
       </div>
       <div className={styles.conversation}>
@@ -51,7 +52,7 @@ export function JustCallScene({ compact = false }: { compact?: boolean } = {}) {
         <div className={styles.metricCard}>
           <div className={styles.metricLabel}>AI Resolution Rate</div>
           <div className={styles.metricValue}><span className={styles.metric}>78%</span><span className={styles.muted}>(90 calls)</span></div>
-          <div className={styles.metricChange}><span>↑ 18%</span><span className={styles.muted}>vs last month</span></div>
+          <div className={styles.metricChange}><span><ArrowIcon direction="up" /> 18%</span><span className={styles.muted}>vs last month</span></div>
         </div>
       </div>
   

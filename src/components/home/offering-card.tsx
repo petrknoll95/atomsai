@@ -3,7 +3,7 @@
 import { useEffect, useRef, type ReactNode } from 'react';
 import { gsap } from 'gsap';
 
-/** Inset the rounded clip and zoom its background without resizing the shader. */
+/** Inset the rounded painted background without changing the card's layout. */
 export function OfferingCard({ name, href, className, children }: {
   name: string;
   href: string;

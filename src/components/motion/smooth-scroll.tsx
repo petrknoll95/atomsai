@@ -5,6 +5,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { scrollToTarget } from '@/lib/page-scroll';
+import { observeScrollPreference, type NativeScrollReason } from '@/lib/scroll-preference';
 
 export function SmoothScroll({ children }: { children: ReactNode }) {
   const wrapper = useRef<HTMLDivElement>(null);
@@ -16,7 +17,7 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
       root: document.documentElement.style.scrollBehavior,
       body: document.body.style.scrollBehavior,
     };
-    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let nativeReason: NativeScrollReason = null;
     let smoother: ScrollSmoother | undefined;
     let disposed = false;
     const configure = () => {
@@ -24,7 +25,9 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
       smoother?.kill();
       smoother = undefined;
       delete document.documentElement.dataset.smoothScroll;
-      if (!motion.matches && !document.querySelector('dialog[open]')) {
+      if (nativeReason) document.documentElement.dataset.nativeScroll = nativeReason;
+      else delete document.documentElement.dataset.nativeScroll;
+      if (!nativeReason && !document.querySelector('dialog[open]')) {
         document.documentElement.dataset.smoothScroll = 'true';
         smoother = ScrollSmoother.create({
           wrapper: wrapper.current!, content: content.current!,
@@ -47,7 +50,7 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
     };
     const syncDialogs = () => {
       const modalOpen = !!document.querySelector('dialog[open]');
-      if (!modalOpen && !smoother && !motion.matches) configure();
+      if (!modalOpen && !smoother && !nativeReason) configure();
       else smoother?.paused(modalOpen);
     };
     const dialogs = new MutationObserver(syncDialogs);
@@ -76,23 +79,35 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
       heading.focus({ preventScroll: true });
       scrollToTarget(target);
     };
-    configure();
+    let configured = false;
+    const stopObserving = observeScrollPreference(reason => {
+      if (configured && reason === nativeReason) return;
+      // Switching between native-scroll reasons needs no scroll/layout reset.
+      if (configured && nativeReason && reason) {
+        nativeReason = reason;
+        document.documentElement.dataset.nativeScroll = reason;
+        return;
+      }
+      configured = true;
+      nativeReason = reason;
+      configure();
+    });
     void document.fonts.ready.then(() => {
       if (disposed) return;
       ScrollTrigger.refresh();
       followHash();
     });
-    motion.addEventListener('change', configure);
     document.addEventListener('click', navigate);
     window.addEventListener('hashchange', followHash);
     return () => {
       disposed = true;
       dialogs.disconnect();
-      motion.removeEventListener('change', configure);
+      stopObserving();
       document.removeEventListener('click', navigate);
       window.removeEventListener('hashchange', followHash);
       smoother?.kill();
       delete document.documentElement.dataset.smoothScroll;
+      delete document.documentElement.dataset.nativeScroll;
       document.documentElement.style.scrollBehavior = previousScrollBehavior.root;
       document.body.style.scrollBehavior = previousScrollBehavior.body;
     };

@@ -2,8 +2,8 @@
 .capsule { position:relative; width:min(736px,100%); height:360px; border-radius:9999px; color:var(--palette-cream); }
 .capsule::before { content:''; position:absolute; inset:0; border-radius:inherit; background:#ffffff1a; backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); pointer-events:none; }
 .labels { position:absolute; top:32px; left:50%; transform:translateX(-50%); display:flex; gap:8px; white-space:nowrap; }
-.voiceType { background:#ffffff1a; }
-.voiceType:hover { background:#ffffff26; }
+.voiceType { --button-fill:#ffffff1a; }
+.voiceType:hover { --button-fill:#ffffff26; }
 .rows { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:min(412px,calc(100% - 48px)); display:flex; flex-direction:column; gap:8px; }
 .row { width:calc(100% + 8px); position:relative; display:flex; align-items:center; gap:16px; padding:16px 24px 16px 16px; border-radius:9999px; }
 /* Sibling glass surfaces avoid nesting backdrop roots in WebKit. */
@@ -13,8 +13,7 @@
 .wave { position:relative; display:flex; align-items:center; gap:2px; height:48px; flex:1; min-width:0; overflow:hidden; }
 .wave span { display:block; width:1px; flex:1 0 1px; background:white; transform-origin:center; }
 .playback { position:absolute; bottom:32px; left:50%; transform:translateX(-50%); display:flex; align-items:center; gap:11px; }
-.play { display:grid; place-items:center; width:40px; height:40px; border:0; padding:0; border-radius:50%; background:var(--palette-cream); color:var(--color-primary); cursor:pointer; transition:transform .25s ease,var(--focus-transition); }
-.play:hover { transform:scale(1.06); }
+.play { display:grid; place-items:center; width:40px; height:40px; border:0; padding:0; border-radius:50%; --button-fill:var(--palette-cream); color:var(--color-primary); cursor:pointer; transition:transform .25s ease,var(--focus-transition);  --button-clip-radius:999px;}
 .play:active { transform:scale(.95); }
 .pause { width:12px; height:14px; border-inline:4px solid currentColor; }
 .caption { display:flex; flex-direction:column; width:58px; font-size:var(--text-caption); line-height:1.4; font-weight:var(--font-weight-medium); }

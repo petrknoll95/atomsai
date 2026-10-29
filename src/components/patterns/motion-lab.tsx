@@ -1,5 +1,6 @@
 'use client';
 
+import { ArrowIcon } from '@/components/arrow-icon';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { MotionPattern } from './motion-pattern';
@@ -38,7 +39,7 @@ export function MotionLab() {
     <header className={styles.header}>
       <Link href="/" aria-label="AtomsAI home"><img src="/assets/figma/hero-Logo.svg" alt="AtomsAI" width="136" height="24" /></Link>
       <span>Motion studies <span className={styles.edition}>/ Light & waves</span></span>
-      <Link href="/patterns"><span className="link-underline">Still-pattern studio</span> <span aria-hidden="true">↗</span></Link>
+      <Link href="/patterns"><span className="link-underline">Still-pattern studio</span> <span aria-hidden="true"><ArrowIcon direction="up-right" /></span></Link>
     </header>
     <section className={styles.intro} aria-labelledby="hero-heading">
       <div><p className={styles.eyebrow}>A quiet change in light</p><h1 id="hero-heading" tabIndex={-1} className={`display ${styles.title}`}>Light in motion.<br />Waves without end.</h1></div>
@@ -71,6 +72,6 @@ export function MotionLab() {
         </div>
       </aside>
     </div>
-    <footer className={styles.footer}><span>Fixed palette. Light in motion. Waves without end.</span><span>Playback rests when the preview is off screen.</span><Link href="/">Back to homepage ↗</Link></footer>
+    <footer className={styles.footer}><span>Fixed palette. Light in motion. Waves without end.</span><span>Playback rests when the preview is off screen.</span><Link href="/">Back to homepage <ArrowIcon direction="up-right" /></Link></footer>
   </main>;
 }

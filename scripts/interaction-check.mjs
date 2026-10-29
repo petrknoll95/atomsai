@@ -88,12 +88,14 @@ if (motion !== 'auto') throw new Error('Reduced-motion scrolling is not respecte
 checks.push('All local anchors resolve and reduced-motion mode disables smooth scrolling.');
 
 await page.evaluate(() => window.scrollTo(0, 0));
-const menuToggle = page.getByRole('button', { name: 'Open site menu', exact: true });
+const menuToggle = page.getByRole('button', { name: 'Open navigation', exact: true });
 await menuToggle.press('Enter');
-await expect(page.getByRole('navigation', { name: 'Site menu' })).toBeVisible();
-await page.getByRole('navigation', { name: 'Site menu' }).getByRole('link', { name: 'Applications', exact: true }).click();
-await expect(page.getByRole('navigation', { name: 'Site menu', includeHidden: true })).toBeHidden();
-checks.push('Full-screen menu works by keyboard at 320px and closes after navigation.');
+const responsiveNavigation = page.getByRole('navigation', { name: 'Responsive navigation' });
+await expect(responsiveNavigation).toBeVisible();
+await responsiveNavigation.getByRole('button', { name: 'Applications', exact: true }).press('Enter');
+await responsiveNavigation.getByRole('link', { name: 'All applications', exact: true }).click();
+await expect(page.locator('[data-responsive-panel]')).toBeHidden();
+checks.push('Responsive navigation expands by keyboard at 320px and closes after navigation.');
 
 await browser.close();
 await fs.mkdir('docs/visual', { recursive: true });

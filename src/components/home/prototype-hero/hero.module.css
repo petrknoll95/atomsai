@@ -1,5 +1,5 @@
 /* Concept A prototype values; local so the current header/theme stay unchanged. */
-.hero { --prototype-cream:#f6f1e8; --prototype-green:#27433b; --prototype-gutter-start:calc(max(var(--header-inset), (100vw - 1600px + 2 * var(--page-gutter)) / 2) + var(--header-padding)); --prototype-gutter-end:var(--prototype-gutter-start); position:relative; background:var(--hero-surface,var(--prototype-cream)); color:var(--prototype-green); }
+.hero { --prototype-cream:#f6f1e8; --prototype-green:#27433b; --prototype-gutter-start:var(--content-edge); --prototype-gutter-end:var(--prototype-gutter-start); position:relative; background:var(--hero-surface,var(--prototype-cream)); color:var(--prototype-green); }
 .hero { --hero-scroll-length:520; --hero-particle-length:380; --hero-white-start:350; --hero-white-end:440; }
 .hero[data-enhanced] { height:calc(var(--hero-scroll-length) * 1svh + var(--stage-height,100svh)); }
 .stage { position:relative; min-height:100svh; overflow:hidden; background:var(--hero-surface,var(--prototype-cream)); }
@@ -10,7 +10,7 @@
 .content[data-hidden] { visibility:hidden; }
 .row { position:absolute; top:50%; left:var(--prototype-gutter-start); right:var(--prototype-gutter-end); display:flex; align-items:center; justify-content:space-between; gap:24px; transform:translateY(-50%); }
 .title { font-family:var(--font-display); font-size:60px; font-weight:400; line-height:.95; letter-spacing:-.015em; white-space:nowrap; text-wrap:balance; text-box:trim-both cap alphabetic; }
-.row > a { flex-shrink:0; height:44px; padding-inline:20px; font-size:14px; background:color-mix(in srgb,#c7cdba 40%,var(--prototype-cream)); color:var(--prototype-green); }
+.row > a { flex-shrink:0; height:44px; padding-inline:20px; font-size:14px; --button-fill:color-mix(in srgb,#c7cdba 40%,var(--prototype-cream)); color:var(--prototype-green); }
 .lead { position:absolute; left:var(--prototype-gutter-start); bottom:40px; width:446px; max-width:calc(100% - var(--prototype-gutter-start) - var(--prototype-gutter-end)); color:#42665a; font-size:16px; line-height:1.4; }
 .reveal { position:relative; margin-top:100svh; background:var(--color-background); }
 .nextContent { min-height:100svh; display:flex; flex-direction:column; justify-content:center; padding:calc(var(--header-top) + var(--header-height) + 40px) 0 64px; background:var(--color-background); }

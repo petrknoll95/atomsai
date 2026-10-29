@@ -1,5 +1,6 @@
 'use client';
 
+import { ArrowIcon } from '@/components/arrow-icon';
 import { useEffect, useRef, useState, useSyncExternalStore, type FormEvent } from 'react';
 import styles from './contact.module.css';
 
@@ -73,26 +74,22 @@ export function ContactForm() {
       </div>
       <div className={styles.field}><label htmlFor="contact-email">Business email</label><input id="contact-email" name="email" type="email" autoComplete="email" required maxLength={160} /></div>
       <div className={styles.field}><label htmlFor="contact-message">What would you like to explore?</label><textarea id="contact-message" name="message" rows={4} required maxLength={1800} aria-describedby="contact-message-help" /><p id="contact-message-help" className={styles.fieldHint}>A few lines about the workflow or question are enough.</p></div>
-      <button type="submit" className={`button button-large button-primary ${styles.prepareButton}`}>Prepare email <Arrow /></button>
+      <button type="submit" className={`button button-large button-primary ${styles.prepareButton}`}>Prepare email <ArrowIcon size={18} /></button>
       </fieldset>
       <noscript><p className={styles.formNote}>To get in touch, email <a href="mailto:hello@atomsai.com">hello@atomsai.com</a> directly.</p></noscript>
       <p className={styles.formNote}>Review your message, then send it from your email app. Nothing is sent from this page.</p>
-      <p className={styles.privacy}>All fields required. <a className="link-underline" href="https://atomsai.com/legal/privacy">Privacy policy <span aria-hidden="true">↗</span></a></p>
+      <p className={styles.privacy}>All fields required. <a className="link-underline" href="https://atomsai.com/legal/privacy">Privacy policy <span aria-hidden="true"><ArrowIcon direction="up-right" /></span></a></p>
     </form>
     {draft && <div className={styles.review}>
       <h2 ref={reviewRef} tabIndex={-1} className={`display ${styles.formTitle}`}>Ready for your email app.</h2>
       <p className={styles.reviewIntro}>Nothing has been sent. Review the details, then finish sending in your email app.</p>
       <dl className={styles.envelope}><div><dt>To</dt><dd>{recipient}</dd></div><div><dt>Subject</dt><dd>{subject}</dd></div><div><dt>Reply to</dt><dd>{draft.email}</dd></div></dl>
       <div className={styles.messagePreview}>{body}</div>
-      <a className={`button button-large button-primary ${styles.prepareButton}`} href={mailto}>Open email app <Arrow /></a>
+      <a className={`button button-large button-primary ${styles.prepareButton}`} href={mailto}>Open email app <ArrowIcon size={18} /></a>
       <div className={styles.reviewActions}><button type="button" onClick={copy}>Copy email details</button><button type="button" onClick={() => { setDraft(null); setCopyStatus(''); setManualCopy(false); requestAnimationFrame(() => formRef.current?.querySelector<HTMLInputElement>('input')?.focus()); }}>Edit message</button></div>
       <p className={styles.formNote}>No email app connected? Copy the details and paste them into your preferred email service.</p>
       <p className={styles.copyStatus} role="status">{copyStatus}</p>
       {manualCopy && <div className={styles.field}><label htmlFor="contact-copy">Email details to copy</label><textarea id="contact-copy" ref={fallbackRef} readOnly value={copyText} rows={8} /></div>}
     </div>}
   </div>;
-}
-
-function Arrow() {
-  return <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="M4 12h15M13 5l7 7-7 7" /></svg>;
 }

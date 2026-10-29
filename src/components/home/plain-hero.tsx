@@ -19,40 +19,39 @@ export function PlainHero({ children }: { children: ReactNode }) {
       const range = hero.offsetHeight - (stage?.offsetHeight ?? 0);
       return range > 0 ? -hero.getBoundingClientRect().top / range : 0;
     };
-    let light = scrollRatio() >= .42;
-    const blend = { progress: light ? 1 : 0 };
-    let transition: gsap.core.Tween | undefined;
+    const themeThreshold = .42;
+    let light = scrollRatio() >= themeThreshold;
+    const blend = { progress: 0 };
     const paint = () => {
       surface.style.setProperty('--hero-theme-mix', `${blend.progress * 100}%`);
       surface.dataset.theme = blend.progress < .48 ? 'dark' : 'light';
     };
-    const changeTheme = (nextLight: boolean) => {
-      light = nextLight;
-      transition?.kill();
-      transition = gsap.to(blend, {
-        progress: light ? 1 : 0,
-        duration: reduced.matches ? 0 : 1.1,
-        ease: 'power2.inOut',
-        onUpdate: paint,
-      });
-    };
-    const update = () => {
-      // Scroll selects a destination only. The timed tween finishes even when
-      // scrolling stops; a separate return threshold avoids boundary chatter.
-      const ratio = scrollRatio();
-      if (!light && ratio >= .42) changeTheme(true);
-      else if (light && ratio <= .28) changeTheme(false);
-    };
+    const transition = gsap.to(blend, {
+      progress: 1,
+      duration: 1.1,
+      ease: 'power2.inOut',
+      paused: true,
+      onUpdate: paint,
+    });
     const settleMotion = () => {
-      transition?.kill();
-      blend.progress = light ? 1 : 0;
+      transition.progress(light ? 1 : 0).pause();
       paint();
     };
-    paint();
+    const update = () => {
+      // Both directions cross the same threshold and play the same timed
+      // animation forwards or backwards, including a mid-transition reversal.
+      const nextLight = scrollRatio() >= themeThreshold;
+      if (nextLight === light) return;
+      light = nextLight;
+      if (reduced.matches) settleMotion();
+      else if (light) transition.play();
+      else transition.reverse();
+    };
+    settleMotion();
     gsap.ticker.add(update);
     reduced.addEventListener('change', settleMotion);
     return () => {
-      transition?.kill();
+      transition.kill();
       gsap.ticker.remove(update);
       reduced.removeEventListener('change', settleMotion);
     };

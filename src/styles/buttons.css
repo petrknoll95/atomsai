@@ -1,0 +1,30 @@
+/* Clip only the painted surface. The label, hit target, and focus outline
+   remain fixed, including when the pointer rests on the original outer edge. */
+:where(button, .button, .eyebrow) {
+  position: relative;
+  isolation: isolate;
+}
+:where(.button) { --button-clip-radius: var(--radius-control); }
+:where(button, .button, .eyebrow)::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: calc(-1 * var(--button-stroke-width, 0px));
+  border: var(--button-stroke-width, 0px) solid var(--button-stroke, transparent);
+  border-radius: inherit;
+  background: var(--button-fill, transparent);
+  pointer-events: none;
+  clip-path: inset(0 round var(--button-clip-radius, 0px));
+  transition: clip-path .45s cubic-bezier(.22, 1, .36, 1), background-color .25s ease, border-color .25s ease;
+}
+@media (hover: hover) {
+  :where(button, .button, .eyebrow):not(:disabled):not([aria-disabled='true']):hover::before {
+    clip-path: inset(3px round var(--button-clip-radius, 0px));
+  }
+}
+:where(button, .button, .eyebrow):not(:disabled):not([aria-disabled='true']):focus-visible::before {
+  clip-path: inset(3px round var(--button-clip-radius, 0px));
+}
+@media (prefers-reduced-motion: reduce) {
+  :where(button, .button, .eyebrow)::before { transition: none; }
+}

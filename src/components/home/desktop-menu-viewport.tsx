@@ -6,11 +6,12 @@ import styles from './mega-menu.module.css';
 
 export type DesktopMenuItem = { label: string; content: ReactNode };
 
-export function DesktopMenuViewport({ active, items, idPrefix, onClose }: {
+export function DesktopMenuViewport({ active, items, idPrefix, onClose, onVisibilityChange }: {
   active: string | null;
   items: DesktopMenuItem[];
   idPrefix: string;
   onClose: () => void;
+  onVisibilityChange: (visible: boolean) => void;
 }) {
   const viewportRef = useRef<HTMLDivElement>(null);
   const previousActive = useRef<string | null>(null);
@@ -34,11 +35,11 @@ export function DesktopMenuViewport({ active, items, idPrefix, onClose }: {
     const panes = [...viewport.querySelectorAll<HTMLElement>('[data-dropdown-pane]')];
     const incoming = panes.find(pane => pane.dataset.dropdownPane === active);
     const previous = previousActive.current;
-    previousActive.current = active;
+    if (active) previousActive.current = active;
     const reduced = matchMedia('(prefers-reduced-motion: reduce)');
     let resize: ResizeObserver | undefined;
     const duration = () => reduced.matches ? 0 : .42;
-    const switching = previous !== null && active !== null && previous !== active;
+    const switching = previous !== null && active !== null && previous !== active && Number(getComputedStyle(viewport).opacity) > .001;
     const oldHeight = stage.style.height ? stage.getBoundingClientRect().height : lastHeight.current;
     const measure = () => incoming ? Math.min((incoming.firstElementChild as HTMLElement).offsetHeight, Math.max(0, innerHeight - viewport.getBoundingClientRect().top)) : 0;
     const fit = () => {
@@ -46,12 +47,21 @@ export function DesktopMenuViewport({ active, items, idPrefix, onClose }: {
       if (!incoming || Math.abs(nextHeight - lastHeight.current) < .5) return;
       lastHeight.current = nextHeight;
       // This is only the already-open tab-to-tab resize. Opening and closing
-      // remain intrinsic and are handled by the outer CSS 0fr / 1fr grid.
+      // remain intrinsic and are handled by the outer CSS .9fr / 1fr grid.
       if (switching) gsap.to(stage, { height: nextHeight, duration: duration(), ease: 'power3.out', overwrite: 'auto', clearProps: 'height' });
     };
     const animate = () => {
       gsap.killTweensOf([stage, ...panes]);
-      if (!incoming) return;
+      if (!incoming) {
+        // No transitionend fires when reduced motion removes transitions, or
+        // when an opening is cancelled before its first visible frame.
+        if (reduced.matches || Number(getComputedStyle(viewport).opacity) === 0) {
+          gsap.set(stage, { clearProps: 'height' });
+          onVisibilityChange(false);
+        }
+        return;
+      }
+      onVisibilityChange(true);
       incoming.scrollTop = 0;
       const direction = items.findIndex(item => item.label === active) > items.findIndex(item => item.label === previous) ? 1 : -1;
       if (switching) {
@@ -61,15 +71,22 @@ export function DesktopMenuViewport({ active, items, idPrefix, onClose }: {
       lastHeight.current = measure();
       panes.forEach(pane => {
         if (pane === incoming) {
+          // The surface owns entrance/exit opacity. Starting a second content
+          // fade here makes nested figures flash during interrupted reveals.
+          if (!switching) {
+            gsap.set(pane, { x: 0, opacity: 1, visibility: 'visible', zIndex: 2 });
+            setPresent(current => current.filter(label => label === active));
+            return;
+          }
           if (getComputedStyle(pane).visibility === 'hidden') gsap.set(pane, { x: switching ? direction * 64 : 0, opacity: 0 });
           gsap.set(pane, { visibility: 'visible', zIndex: 2 });
           gsap.to(pane, { x: 0, opacity: 1, duration: duration(), ease: 'power3.out', onComplete: () => {
             setPresent(current => current.filter(label => label === active));
           } });
-        } else {
+        } else if (switching && pane.dataset.dropdownPane === previous) {
           gsap.set(pane, { zIndex: 1 });
           gsap.to(pane, { x: -direction * 64, autoAlpha: 0, duration: reduced.matches ? 0 : .24, ease: 'power2.out' });
-        }
+        } else gsap.set(pane, { autoAlpha: 0 });
       });
     };
     animate();
@@ -83,11 +100,17 @@ export function DesktopMenuViewport({ active, items, idPrefix, onClose }: {
       reduced.removeEventListener('change', animate);
       gsap.killTweensOf([stage, ...panes]);
     };
-  }, [active, items]);
+  }, [active, items, onVisibilityChange]);
 
   return <div ref={viewportRef} className={`theme-light ${styles.viewport}`} data-desktop-menu-viewport data-open={Boolean(active)} inert={!active} aria-hidden={!active}
     onTransitionEnd={event => {
-      if (event.target === event.currentTarget && event.propertyName === 'grid-template-rows' && !active) setPresent([]);
+      if (event.target === event.currentTarget && event.propertyName === 'opacity' && !active) {
+        // Keep the last layout mounted behind the hidden surface. Its natural
+        // size is already available when the next reveal starts.
+        setPresent(current => current.filter(label => label === layoutMenu));
+        gsap.set(stageRef.current, { clearProps: 'height' });
+        onVisibilityChange(false);
+      }
     }}
     onKeyDown={event => {
       if (event.key !== 'Tab') return;

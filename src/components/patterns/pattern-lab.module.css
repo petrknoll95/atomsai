@@ -39,9 +39,9 @@
 .countField input { width: 76px; text-align: center; font-variant-numeric: tabular-nums; }
 .helper { color: var(--color-muted-foreground); font-size: 12px; line-height: 1.5; margin-top: 8px; }
 .presets { display: flex; gap: 8px; margin-top: 16px; }
-.presets button { flex: 1; height: 34px; border: 1px solid var(--color-border); border-radius: 6px; font-size: 13px; font-variant-numeric: tabular-nums; }
-.presets button:hover { border-color: var(--color-control-border); }
-.presets button[aria-pressed='true'] { background: var(--color-primary); color: var(--color-primary-foreground); border-color: var(--color-primary); }
+.presets button { flex: 1; height: 34px; --button-stroke-width:1px; --button-stroke:var(--color-border); border:1px solid transparent; border-radius: 6px; font-size: 13px; font-variant-numeric: tabular-nums;  --button-clip-radius:6px;}
+.presets button:hover { --button-stroke: var(--color-control-border); }
+.presets button[aria-pressed='true'] { --button-fill: var(--color-primary); color: var(--color-primary-foreground); --button-stroke: var(--color-primary); }
 .modeChoices { display: flex; gap: 10px; }
 .modeChoice { display: flex; flex: 1; align-items: center; justify-content: center; gap: 8px; position: relative; border: 1px solid var(--color-border); border-radius: 8px; min-height: 42px; font-size: 13px; cursor: pointer; }
 .modeChoice input { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; }
@@ -60,9 +60,9 @@
 .statusDot { width: 6px; height: 6px; border-radius: 50%; flex: none; background: var(--palette-iris); }
 .statusDot[data-source='true'] { background: var(--palette-deep-green); }
 .comparison p { font-size: 12px; color: var(--color-muted-foreground); line-height: 1.5; margin-top: 10px; }
-.compareButton { width: 100%; min-height: 38px; margin-top: 16px; border: 1px solid var(--color-control-border); border-radius: 9999px; font-size: 12px; padding: 8px 12px; }
-.compareButton[aria-pressed='true'] { background: var(--color-primary); color: var(--color-primary-foreground); }
-.compareButton:disabled { opacity: .45; cursor: not-allowed; border-color: var(--color-border); }
+.compareButton { width: 100%; min-height: 38px; margin-top: 16px; --button-stroke-width:1px; --button-stroke:var(--color-control-border); border:1px solid transparent; border-radius: 9999px; font-size: 12px; padding: 8px 12px;  --button-clip-radius:9999px;}
+.compareButton[aria-pressed='true'] { --button-fill: var(--color-primary); color: var(--color-primary-foreground); }
+.compareButton:disabled { opacity: .45; cursor: not-allowed; --button-stroke: var(--color-border); }
 .referenceError { color: var(--color-foreground); }
 .footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; border-top: 1px solid var(--color-border); margin-top: 64px; padding-top: 24px; font-size: 12px; color: var(--color-muted-foreground); }
 .footer a:hover { color: var(--color-foreground); }

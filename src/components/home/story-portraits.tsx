@@ -1,5 +1,6 @@
 'use client';
 
+import { ArrowIcon } from '@/components/arrow-icon';
 import { useEffect, useRef, type CSSProperties } from 'react';
 import { gsap } from 'gsap';
 import useEmblaCarousel from 'embla-carousel-react';
@@ -183,10 +184,10 @@ export function StoryPortraits({ master, slots, images, paused, onTogglePlayback
         <svg viewBox="0 0 16 16" aria-hidden="true">{paused ? <path d="M4 2 14 8 4 14Z" /> : <path d="M4 2h3v12H4zM9 2h3v12H9z" />}</svg>
       </button>
       <button className={`${carousel.imageControl} ${carousel.previous}`} type="button" aria-label="Previous customer story" aria-controls="customer-story-content" onClick={() => master?.scrollPrev()}>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7" /></svg>
+        <ArrowIcon size={18} direction="left" />
       </button>
       <button className={`${carousel.imageControl} ${carousel.next}`} type="button" aria-label="Next customer story" aria-controls="customer-story-content" onClick={() => master?.scrollNext()}>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7" /></svg>
+        <ArrowIcon size={18} />
       </button>
     </div>
   );

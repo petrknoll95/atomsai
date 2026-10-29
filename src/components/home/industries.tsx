@@ -1,5 +1,6 @@
 'use client';
 
+import { ArrowIcon } from '@/components/arrow-icon';
 import { useEffect, useLayoutEffect, useState, type CSSProperties } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { gsap } from 'gsap';
@@ -203,7 +204,7 @@ export function Industries() {
         <div className={styles.carouselControls}>
           <div className={styles.previous}>
             <button type="button" className={styles.arrowButton} aria-label="Previous industry" aria-controls="industry-gallery" onClick={() => emblaApi?.scrollPrev()}>
-              <img src="/assets/figma/industries-IconArtwork.svg" width="24" height="24" alt="" draggable={false} />
+              <ArrowIcon direction="left" size={24} />
             </button>
           </div>
           <div className={styles.industryDescription}>
@@ -216,7 +217,7 @@ export function Industries() {
           </div>
           <div className={styles.next}>
             <button type="button" className={styles.arrowButton} aria-label="Next industry" aria-controls="industry-gallery" onClick={() => emblaApi?.scrollNext()}>
-              <img src="/assets/figma/industries-IconArtwork1.svg" width="24" height="24" alt="" draggable={false} />
+              <ArrowIcon direction="right" size={24} />
             </button>
           </div>
         </div>

@@ -2,13 +2,13 @@
 .heroArtwork { position:absolute; inset:0 50% 0 0; overflow:hidden; contain:strict; pointer-events:none; background:var(--palette-forest-shade); }
 .heroArtwork::after { content:''; position:absolute; inset:0; background:linear-gradient(180deg,transparent 35%,color-mix(in srgb,var(--palette-forest-shade) 34%,transparent)); }
 .heroArtwork [role='status'] { display:none; }
-.header { --header-scroll-progress:0; --header-offset:calc(var(--header-top) * (1 - var(--header-scroll-progress)) + clamp(4px, .5vw, 8px) * var(--header-scroll-progress)); position:fixed; top:var(--header-offset); left:var(--header-inset); right:var(--header-inset); max-width:calc(1600px - 2 * var(--page-gutter)); margin-inline:auto; z-index:50; height:var(--header-height); animation:headerEnter 1.1s cubic-bezier(.16,1,.3,1) .08s backwards; }
+.header { --header-offset:0px; position:fixed; top:var(--header-offset); left:var(--header-inset); right:var(--header-inset); max-width:calc(var(--page-max-width) - 2 * var(--page-gutter)); margin-inline:auto; z-index:50; height:var(--header-height); animation:headerEnter 1.1s cubic-bezier(.16,1,.3,1) .08s backwards; }
 /* CSS starts before hydration, so the header never flashes at its final position.
    Backwards fill releases the transform after entry, preserving fixed overlays. */
 @keyframes headerEnter { from { transform:translateY(calc(-100% - 32px)); } to { transform:none; } }
 @keyframes heroEnter { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:none; } }
 .header[data-entry-complete] { animation:none; }
-.headerFade { position:absolute; top:calc(-1 * var(--header-offset)); bottom:-64px; left:50%; width:100vw; transform:translateX(-50%); z-index:-1; pointer-events:none; }
+.headerBackdrop { position:absolute; top:calc(-1 * var(--header-offset)); bottom:0; left:50%; width:100vw; transform:translateX(-50%); z-index:-1; pointer-events:none; }
 .header:focus-within { transform:none !important; }
 .headerInner { position:relative; display:flex; align-items:center; height:100%; gap:32px; padding-inline:var(--header-padding); }
 .logo { position:relative; flex:none; width:135.84px; height:24px; }
@@ -90,42 +90,22 @@
 
 /* All application figures share one flat dark-green surface. */
 /* One persistent header: only theme and navigation visibility change. */
-.header[data-site-menu-open='true'] { color:var(--palette-cream); }
-.header[data-site-menu-open='true'] .headerFade { opacity:0; }
-.header[data-site-menu-open='true'] .nav { opacity:0; visibility:hidden; pointer-events:none; }
-.header[data-site-menu-open='true'] :is(.logo,.contact,[data-menu='site']) { position:relative; z-index:2; }
-.header[data-site-menu-open='true'] :is(.contact,[data-menu='site']) { background:var(--palette-cream); color:var(--palette-forest-shade); }
-.headerFade, .nav { transition:opacity .28s ease; }
+.headerBackdrop, .nav { transition:opacity .28s ease; }
 .logo { transition:color .28s ease; }
-@media(prefers-reduced-motion:reduce) { .headerFade,.nav,.logo { transition:none; } }
+@media(prefers-reduced-motion:reduce) { .headerBackdrop,.nav,.logo { transition:none; } }
 
-/* Progressive blur samples the page without a colored overlay. */
-.headerBlur { position:absolute; inset:0; pointer-events:none; }
-.headerBlur {
-  -webkit-backdrop-filter:blur(var(--edge-blur));
-  backdrop-filter:blur(var(--edge-blur));
-  -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 var(--edge-solid),transparent var(--edge-end));
-  mask-image:linear-gradient(to bottom,#000 0%,#000 var(--edge-solid),transparent var(--edge-end));
-}
-.headerBlur:nth-child(1) { --edge-blur:1.5px; --edge-solid:65%; --edge-end:100%; }
-.headerBlur:nth-child(2) { --edge-blur:3px; --edge-solid:45%; --edge-end:90%; }
-.headerBlur:nth-child(3) { --edge-blur:6px; --edge-solid:25%; --edge-end:75%; }
-.headerBlur:nth-child(4) { --edge-blur:12px; --edge-solid:10%; --edge-end:60%; }
-.headerBlur:nth-child(5) { --edge-blur:24px; --edge-solid:0%; --edge-end:45%; }
-/* Three passes on small screens, no persistent will-change or JS rendering. */
-@media(max-width:767px) {
-  .headerBlur:nth-child(2), .headerBlur:nth-child(4) { display:none; }
-  .headerBlur:nth-child(5) { --edge-blur:16px; --edge-end:55%; }
-}
+/* A single uniform blur stays within the compact navigation band. */
+.headerBackdrop { -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px); }
 
 /* Header inherits the explicit section mode while remaining a transparent overlay. */
 .header[data-theme] { background:transparent; color:var(--color-foreground); transition:color .35s ease; }
-.header[data-site-menu-open='true'] { color:var(--palette-cream); }
 .navPill { transition:background-color .35s ease,color .35s ease; }
 @media(prefers-reduced-motion:reduce) { .header[data-theme],.navPill { transition:none; } }
 
 /* An open desktop menu and the navigation form one continuous full-width surface. */
 .header::before { content:''; position:absolute; top:calc(-1 * var(--header-offset)); bottom:0; left:calc(50% - 50vw); width:100vw; background:var(--palette-paper); opacity:0; pointer-events:none; transition:opacity .25s ease; }
-.header[data-desktop-menu-open='true']::before { opacity:1; }
-.header[data-desktop-menu-open='true'] .headerFade { opacity:0; }
+.header[data-desktop-menu-open='true']::before, .header[data-responsive-menu-open='true']::before { opacity:1; }
+.header[data-responsive-menu-open='true'] .headerBackdrop { visibility:hidden; }
+.header[data-responsive-menu-open='true'] { color:var(--palette-deep-green); z-index:10003; }
+/* The opaque menu surface covers the blur without changing its compositing. */
 @media(prefers-reduced-motion:reduce) { .header::before { transition:none; } }

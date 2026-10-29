@@ -1,23 +1,83 @@
 'use client';
 
-import { useRef, useState, type FormEvent } from 'react';
-import { ButtonLink, Eyebrow } from '../ui';
+import { AnimatedLogo } from '@/components/animated-logo';
+import { ArrowIcon } from '@/components/arrow-icon';
+import { useEffect, useRef, useState, type FormEvent } from 'react';
+import { Eyebrow } from '../ui';
 import { HomePattern } from '@/components/patterns/home-pattern';
 import styles from './products.module.css';
+import propertyStyles from './property-preview.module.css';
 import { VoicePreview } from './voice-preview';
 
 const playground = 'https://pyai.com/playground';
+const propertyChoices = ['Buy a house', 'Sell a house', 'Start a new franchise'] as const;
+const propertyReplies: Record<string, string> = {
+  'Buy a house': 'Which area are you looking to buy in?',
+  'Sell a house': 'Where is the property you’d like to sell?',
+  'Start a new franchise': 'Which area are you interested in opening a Havenline franchise in?',
+};
+
+type PropertyMessage = { speaker: string; text: string; phase?: 'thinking' | 'typing' };
 
 function PropertyPreview() {
   const inputRef = useRef<HTMLInputElement>(null);
-  const [started, setStarted] = useState(false);
   const [question, setQuestion] = useState('');
-  const [visitor, setVisitor] = useState('I’m looking for a two-bedroom home near a park.');
-  const [reply, setReply] = useState('');
+  const transcriptRef = useRef<HTMLDivElement>(null);
+  const replyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const pendingRef = useRef(false);
+  const [pending, setPending] = useState(false);
+  const [announcement, setAnnouncement] = useState('');
+  const [messages, setMessages] = useState<PropertyMessage[]>([
+    { speaker: 'Nora', text: "Hi, I'm Nora. I can find the Havenline office that covers your area, walk you through selling privately, or book you a free consultation — what brings you in today?" },
+  ]);
+
+  useEffect(() => {
+    if (messages.length <= 1) return;
+    const transcript = transcriptRef.current;
+    if (transcript) transcript.scrollTop = transcript.scrollHeight;
+  }, [messages]);
+
+  useEffect(() => () => {
+    if (replyTimer.current) clearTimeout(replyTimer.current);
+  }, []);
 
   function startPreview() {
-    setStarted(true);
     inputRef.current?.focus();
+  }
+
+  function appendMessage(value: string) {
+    if (pendingRef.current) return;
+    pendingRef.current = true;
+    setPending(true);
+    setAnnouncement('Nora is thinking.');
+    const reply = propertyReplies[value] ?? 'Which area are you interested in, and are you looking to buy, sell, or start a franchise?';
+    setMessages(previous => [
+      ...previous,
+      { speaker: 'You', text: value },
+      { speaker: 'Nora', text: '', phase: 'thinking' },
+    ]);
+    setQuestion('');
+
+    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const words = reply.match(/\S+\s*/g) ?? [reply];
+    let wordCount = 0;
+    function revealReply() {
+      wordCount = motion.matches ? words.length : wordCount + 1;
+      const complete = wordCount >= words.length;
+      setMessages(previous => [
+        ...previous.slice(0, -1),
+        { speaker: 'Nora', text: words.slice(0, wordCount).join(''), phase: complete ? undefined : 'typing' },
+      ]);
+      if (complete) {
+        pendingRef.current = false;
+        setPending(false);
+        setAnnouncement(`Nora: ${reply}`);
+        replyTimer.current = null;
+      } else {
+        replyTimer.current = setTimeout(revealReply, 85);
+      }
+    }
+    replyTimer.current = setTimeout(revealReply, motion.matches ? 300 : 1000);
   }
 
   function submitQuestion(event: FormEvent<HTMLFormElement>) {
@@ -27,58 +87,57 @@ function PropertyPreview() {
       startPreview();
       return;
     }
-    setStarted(true);
-    setVisitor(value);
-    setReply('Which area would you like to live in, and what matters most to you in a home?');
-    setQuestion('');
+    appendMessage(value);
   }
 
   return (
     <article className={styles.previewColumn}>
-      <svg className={styles.effectDefinitions} aria-hidden="true" focusable="false">
-        <defs>
-          <filter id="property-linear-burn" colorInterpolationFilters="sRGB">
-            <feColorMatrix type="matrix" values="1 0 0 0 -0.2 0 1 0 0 -0.2 0 0 1 0 -0.2 0 0 0 1 0" />
-          </filter>
-        </defs>
-      </svg>
-      <div className={styles.chatWidget} id="property-preview">
-        <HomePattern application="preview-concentric" className={styles.chatPattern} />
-        <div className={`${styles.chatGlass} ${started ? styles.chatStarted : ''}`}>
-          <div className={styles.chatGlassBackdrop} aria-hidden="true">
-            <HomePattern application="preview-concentric" className={styles.chatPattern} />
-          </div>
-          <div className={styles.chatIntro}>
-            <div className={styles.advisorAvatar} aria-hidden="true">
-              <img src="/assets/figma/preview-Image4.png" alt="" loading="lazy" />
+      <div className={propertyStyles.widget} id="property-preview" data-header-theme="light">
+        <div className={propertyStyles.scene}>
+          <div className={propertyStyles.card}>
+            <div className={propertyStyles.intro}>
+              <img className={propertyStyles.avatar} src="/assets/nora-avatar.png" alt="" width="40" height="40" />
+              <div className={propertyStyles.identity}>
+                <p className={propertyStyles.name}>Nora</p>
+                <p className={propertyStyles.role}>Property Advisor</p>
+              </div>
             </div>
-            <p>What are you looking for in your next home?</p>
+            <div ref={transcriptRef} className={propertyStyles.transcript} role="log" aria-label="Conversation with Nora" aria-live="off" tabIndex={0}>
+              {messages.map((message, index) => (
+                <div key={index} className={propertyStyles.message} data-speaker={message.speaker === 'You' ? 'user' : 'advisor'} data-phase={message.phase} data-animated={index > 0 ? '' : undefined}>
+                  <span className="sr-only">{message.speaker}: </span>
+                  {message.phase === 'thinking' ? (
+                    <span className={propertyStyles.thinking} aria-label="Nora is thinking">
+                      <span /><span /><span />
+                    </span>
+                  ) : <p>{message.text}</p>}
+                </div>
+              ))}
+              {messages.length === 1 && (
+                <div className={propertyStyles.choices} role="group" aria-label="What brings you in today?">
+                  {propertyChoices.map(choice => (
+                    <button key={choice} type="button" className={`button ${propertyStyles.choice}`} onClick={() => { appendMessage(choice); startPreview(); }}>{choice}</button>
+                  ))}
+                </div>
+              )}
+            </div>
+            <form className={propertyStyles.form} data-focus-surface onSubmit={submitQuestion}>
+              <label className="sr-only" htmlFor="property-question">Message Nora</label>
+              <input ref={inputRef} id="property-question" type="text" value={question} onChange={(event) => setQuestion(event.target.value)} placeholder="Start typing..." maxLength={200} autoComplete="off" />
+              <button className={`button ${propertyStyles.send}`} type="submit" aria-label="Send message" disabled={pending}>
+                <ArrowIcon direction="up" size={20} />
+              </button>
+            </form>
           </div>
-          <div className={`${styles.messageGroup} ${styles.visitorGroup}`}>
-            <p className={styles.messageLabel}>Visitor</p>
-            <p className={styles.messageBubble}>{visitor}</p>
-          </div>
-          <div className={styles.messageGroup}>
-            <p className={styles.messageLabel}>AI Property Advisor</p>
-            <p className={`${styles.messageBubble} ${reply ? '' : styles.initialReply}`} aria-live="polite" aria-atomic="true">
-              {reply || <>What’s your budget, and when would<br className={styles.advisorBreak} /> you like to move?</>}
-            </p>
-          </div>
-          <form className={styles.questionForm} data-focus-surface onSubmit={submitQuestion}>
-            <label className="sr-only" htmlFor="property-question">Message the property advisor</label>
-            <input ref={inputRef} id="property-question" type="text" value={question} onChange={(event) => setQuestion(event.target.value)} onFocus={() => setStarted(true)} placeholder="Start typing..." maxLength={200} autoComplete="off" />
-            <button type="submit" aria-label="Send message">
-              <img src="/assets/figma/preview-IconArtwork.svg" alt="" width="24" height="24" />
-            </button>
-          </form>
+          <p className={propertyStyles.credit}><AnimatedLogo className={propertyStyles.creditMark} playOnHover /><span>Powered by AtomsAI</span></p>
+          <span className="sr-only" role="status" aria-live="polite">{announcement}</span>
         </div>
       </div>
-      <Eyebrow href={playground}>Property Advisor</Eyebrow>
       <div className={styles.previewCopy}>
         <h3 className={`display ${styles.productTitle}`}>Find a home. &nbsp;Start with a chat.</h3>
         <p>Tell the property advisor what you’re looking for. Find your next home through a conversation.</p>
       </div>
-      <button className="button button-small button-primary" type="button" onClick={startPreview}>Try the property advisor</button>
+      <Eyebrow href={playground}>Property Advisor</Eyebrow>
     </article>
   );
 }
@@ -92,16 +151,15 @@ export function Preview() {
       </div>
       <div className={styles.previewGrid}>
         <article className={styles.previewColumn}>
-          <div className={styles.voiceWidget}>
+          <div className={styles.voiceWidget} data-header-theme="dark">
             <HomePattern id="voice-preview-pattern" application="preview-drift" className={styles.voicePattern} />
             <VoicePreview />
           </div>
-          <Eyebrow href="https://pyai.com/">PyAI</Eyebrow>
           <div className={styles.previewCopy}>
             <h3 className={`display ${styles.productTitle}`}>Hear what PyAI can do.</h3>
             <p>Ask a question and hear PyAI respond.<br />Try a voice conversation for yourself.</p>
           </div>
-          <ButtonLink href={playground} target="_blank" rel="noopener noreferrer" size="small">Learn more about PyAI</ButtonLink>
+          <Eyebrow href="https://pyai.com/">PyAI</Eyebrow>
         </article>
         <PropertyPreview />
       </div>

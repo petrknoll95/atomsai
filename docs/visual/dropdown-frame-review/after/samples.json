@@ -1,0 +1,8094 @@
+{
+  "errors": [],
+  "captures": [
+    {
+      "file": "frame-0000.jpg",
+      "time": 1793272800.591974
+    },
+    {
+      "file": "frame-0001.jpg",
+      "time": 1793272800.630431
+    },
+    {
+      "file": "frame-0002.jpg",
+      "time": 1793272800.663763
+    },
+    {
+      "file": "frame-0003.jpg",
+      "time": 1793272800.680429
+    },
+    {
+      "file": "frame-0004.jpg",
+      "time": 1793272800.713761
+    },
+    {
+      "file": "frame-0005.jpg",
+      "time": 1793272800.747093
+    },
+    {
+      "file": "frame-0006.jpg",
+      "time": 1793272800.763759
+    },
+    {
+      "file": "frame-0007.jpg",
+      "time": 1793272800.797092
+    },
+    {
+      "file": "frame-0008.jpg",
+      "time": 1793272800.847088
+    },
+    {
+      "file": "frame-0009.jpg",
+      "time": 1793272800.863755
+    },
+    {
+      "file": "frame-0010.jpg",
+      "time": 1793272800.897087
+    },
+    {
+      "file": "frame-0011.jpg",
+      "time": 1793272800.93042
+    },
+    {
+      "file": "frame-0012.jpg",
+      "time": 1793272800.947086
+    },
+    {
+      "file": "frame-0013.jpg",
+      "time": 1793272800.980418
+    },
+    {
+      "file": "frame-0014.jpg",
+      "time": 1793272801.01375
+    },
+    {
+      "file": "frame-0015.jpg",
+      "time": 1793272801.047082
+    },
+    {
+      "file": "frame-0016.jpg",
+      "time": 1793272801.080415
+    },
+    {
+      "file": "frame-0017.jpg",
+      "time": 1793272801.113747
+    },
+    {
+      "file": "frame-0018.jpg",
+      "time": 1793272801.147079
+    },
+    {
+      "file": "frame-0019.jpg",
+      "time": 1793272801.163745
+    },
+    {
+      "file": "frame-0020.jpg",
+      "time": 1793272801.197077
+    },
+    {
+      "file": "frame-0021.jpg",
+      "time": 1793272801.23041
+    },
+    {
+      "file": "frame-0022.jpg",
+      "time": 1793272801.247075
+    },
+    {
+      "file": "frame-0023.jpg",
+      "time": 1793272801.263741
+    },
+    {
+      "file": "frame-0024.jpg",
+      "time": 1793272801.280407
+    },
+    {
+      "file": "frame-0025.jpg",
+      "time": 1793272801.297073
+    },
+    {
+      "file": "frame-0026.jpg",
+      "time": 1793272801.313739
+    },
+    {
+      "file": "frame-0027.jpg",
+      "time": 1793272801.330405
+    },
+    {
+      "file": "frame-0028.jpg",
+      "time": 1793272801.347072
+    },
+    {
+      "file": "frame-0029.jpg",
+      "time": 1793272801.363738
+    },
+    {
+      "file": "frame-0030.jpg",
+      "time": 1793272801.380404
+    },
+    {
+      "file": "frame-0031.jpg",
+      "time": 1793272801.39707
+    },
+    {
+      "file": "frame-0032.jpg",
+      "time": 1793272801.413736
+    },
+    {
+      "file": "frame-0033.jpg",
+      "time": 1793272801.430402
+    },
+    {
+      "file": "frame-0034.jpg",
+      "time": 1793272801.447068
+    },
+    {
+      "file": "frame-0035.jpg",
+      "time": 1793272801.463734
+    },
+    {
+      "file": "frame-0036.jpg",
+      "time": 1793272801.4804
+    },
+    {
+      "file": "frame-0037.jpg",
+      "time": 1793272801.497066
+    },
+    {
+      "file": "frame-0038.jpg",
+      "time": 1793272801.513732
+    },
+    {
+      "file": "frame-0039.jpg",
+      "time": 1793272801.530399
+    },
+    {
+      "file": "frame-0040.jpg",
+      "time": 1793272801.547064
+    },
+    {
+      "file": "frame-0041.jpg",
+      "time": 1793272801.56373
+    },
+    {
+      "file": "frame-0042.jpg",
+      "time": 1793272801.580397
+    },
+    {
+      "file": "frame-0043.jpg",
+      "time": 1793272801.597062
+    },
+    {
+      "file": "frame-0044.jpg",
+      "time": 1793272801.613729
+    },
+    {
+      "file": "frame-0045.jpg",
+      "time": 1793272801.630395
+    },
+    {
+      "file": "frame-0046.jpg",
+      "time": 1793272801.647061
+    },
+    {
+      "file": "frame-0047.jpg",
+      "time": 1793272801.663728
+    },
+    {
+      "file": "frame-0048.jpg",
+      "time": 1793272801.680392
+    },
+    {
+      "file": "frame-0049.jpg",
+      "time": 1793272801.69706
+    },
+    {
+      "file": "frame-0050.jpg",
+      "time": 1793272801.713725
+    },
+    {
+      "file": "frame-0051.jpg",
+      "time": 1793272801.730392
+    },
+    {
+      "file": "frame-0052.jpg",
+      "time": 1793272801.747058
+    },
+    {
+      "file": "frame-0053.jpg",
+      "time": 1793272801.763723
+    },
+    {
+      "file": "frame-0054.jpg",
+      "time": 1793272801.78039
+    },
+    {
+      "file": "frame-0055.jpg",
+      "time": 1793272801.797056
+    },
+    {
+      "file": "frame-0056.jpg",
+      "time": 1793272801.813722
+    },
+    {
+      "file": "frame-0057.jpg",
+      "time": 1793272801.830388
+    },
+    {
+      "file": "frame-0058.jpg",
+      "time": 1793272801.847054
+    },
+    {
+      "file": "frame-0059.jpg",
+      "time": 1793272801.86372
+    },
+    {
+      "file": "frame-0060.jpg",
+      "time": 1793272801.880386
+    },
+    {
+      "file": "frame-0061.jpg",
+      "time": 1793272801.897052
+    },
+    {
+      "file": "frame-0062.jpg",
+      "time": 1793272801.930385
+    },
+    {
+      "file": "frame-0063.jpg",
+      "time": 1793272801.963717
+    },
+    {
+      "file": "frame-0064.jpg",
+      "time": 1793272801.980383
+    },
+    {
+      "file": "frame-0065.jpg",
+      "time": 1793272802.013714
+    },
+    {
+      "file": "frame-0066.jpg",
+      "time": 1793272802.047047
+    },
+    {
+      "file": "frame-0067.jpg",
+      "time": 1793272802.063712
+    },
+    {
+      "file": "frame-0068.jpg",
+      "time": 1793272802.097046
+    },
+    {
+      "file": "frame-0069.jpg",
+      "time": 1793272802.130377
+    },
+    {
+      "file": "frame-0070.jpg",
+      "time": 1793272802.147044
+    },
+    {
+      "file": "frame-0071.jpg",
+      "time": 1793272802.180376
+    },
+    {
+      "file": "frame-0072.jpg",
+      "time": 1793272802.213708
+    },
+    {
+      "file": "frame-0073.jpg",
+      "time": 1793272802.230374
+    },
+    {
+      "file": "frame-0074.jpg",
+      "time": 1793272802.263706
+    },
+    {
+      "file": "frame-0075.jpg",
+      "time": 1793272802.297038
+    },
+    {
+      "file": "frame-0076.jpg",
+      "time": 1793272802.313703
+    },
+    {
+      "file": "frame-0077.jpg",
+      "time": 1793272802.347036
+    },
+    {
+      "file": "frame-0078.jpg",
+      "time": 1793272802.380369
+    },
+    {
+      "file": "frame-0079.jpg",
+      "time": 1793272802.397035
+    },
+    {
+      "file": "frame-0080.jpg",
+      "time": 1793272802.430366
+    },
+    {
+      "file": "frame-0081.jpg",
+      "time": 1793272802.463699
+    },
+    {
+      "file": "frame-0082.jpg",
+      "time": 1793272802.497031
+    },
+    {
+      "file": "frame-0083.jpg",
+      "time": 1793272802.530363
+    },
+    {
+      "file": "frame-0084.jpg",
+      "time": 1793272802.563695
+    },
+    {
+      "file": "frame-0085.jpg",
+      "time": 1793272802.597028
+    },
+    {
+      "file": "frame-0086.jpg",
+      "time": 1793272802.613694
+    },
+    {
+      "file": "frame-0087.jpg",
+      "time": 1793272802.647026
+    },
+    {
+      "file": "frame-0088.jpg",
+      "time": 1793272802.680358
+    },
+    {
+      "file": "frame-0089.jpg",
+      "time": 1793272802.71369
+    },
+    {
+      "file": "frame-0090.jpg",
+      "time": 1793272802.730356
+    },
+    {
+      "file": "frame-0091.jpg",
+      "time": 1793272802.747022
+    },
+    {
+      "file": "frame-0092.jpg",
+      "time": 1793272802.763688
+    },
+    {
+      "file": "frame-0093.jpg",
+      "time": 1793272802.780354
+    },
+    {
+      "file": "frame-0094.jpg",
+      "time": 1793272802.79702
+    },
+    {
+      "file": "frame-0095.jpg",
+      "time": 1793272802.813687
+    },
+    {
+      "file": "frame-0096.jpg",
+      "time": 1793272802.830352
+    },
+    {
+      "file": "frame-0097.jpg",
+      "time": 1793272802.847018
+    },
+    {
+      "file": "frame-0098.jpg",
+      "time": 1793272802.863685
+    },
+    {
+      "file": "frame-0099.jpg",
+      "time": 1793272802.880351
+    },
+    {
+      "file": "frame-0100.jpg",
+      "time": 1793272802.897017
+    },
+    {
+      "file": "frame-0101.jpg",
+      "time": 1793272802.913683
+    },
+    {
+      "file": "frame-0102.jpg",
+      "time": 1793272802.930349
+    },
+    {
+      "file": "frame-0103.jpg",
+      "time": 1793272802.947015
+    },
+    {
+      "file": "frame-0104.jpg",
+      "time": 1793272802.963681
+    },
+    {
+      "file": "frame-0105.jpg",
+      "time": 1793272802.980348
+    },
+    {
+      "file": "frame-0106.jpg",
+      "time": 1793272802.997012
+    },
+    {
+      "file": "frame-0107.jpg",
+      "time": 1793272803.013679
+    },
+    {
+      "file": "frame-0108.jpg",
+      "time": 1793272803.030346
+    },
+    {
+      "file": "frame-0109.jpg",
+      "time": 1793272803.047012
+    },
+    {
+      "file": "frame-0110.jpg",
+      "time": 1793272803.063678
+    },
+    {
+      "file": "frame-0111.jpg",
+      "time": 1793272803.080344
+    },
+    {
+      "file": "frame-0112.jpg",
+      "time": 1793272803.097009
+    },
+    {
+      "file": "frame-0113.jpg",
+      "time": 1793272803.113675
+    },
+    {
+      "file": "frame-0114.jpg",
+      "time": 1793272803.130341
+    },
+    {
+      "file": "frame-0115.jpg",
+      "time": 1793272803.147008
+    },
+    {
+      "file": "frame-0116.jpg",
+      "time": 1793272803.163673
+    },
+    {
+      "file": "frame-0117.jpg",
+      "time": 1793272803.18034
+    },
+    {
+      "file": "frame-0118.jpg",
+      "time": 1793272803.197006
+    },
+    {
+      "file": "frame-0119.jpg",
+      "time": 1793272803.213672
+    },
+    {
+      "file": "frame-0120.jpg",
+      "time": 1793272803.230338
+    },
+    {
+      "file": "frame-0121.jpg",
+      "time": 1793272803.247005
+    },
+    {
+      "file": "frame-0122.jpg",
+      "time": 1793272803.263671
+    },
+    {
+      "file": "frame-0123.jpg",
+      "time": 1793272803.280336
+    },
+    {
+      "file": "frame-0124.jpg",
+      "time": 1793272803.297002
+    },
+    {
+      "file": "frame-0125.jpg",
+      "time": 1793272803.313668
+    },
+    {
+      "file": "frame-0126.jpg",
+      "time": 1793272803.330333
+    },
+    {
+      "file": "frame-0127.jpg",
+      "time": 1793272803.347001
+    },
+    {
+      "file": "frame-0128.jpg",
+      "time": 1793272803.363667
+    },
+    {
+      "file": "frame-0129.jpg",
+      "time": 1793272803.380333
+    },
+    {
+      "file": "frame-0130.jpg",
+      "time": 1793272803.397
+    },
+    {
+      "file": "frame-0131.jpg",
+      "time": 1793272803.413665
+    },
+    {
+      "file": "frame-0132.jpg",
+      "time": 1793272803.430331
+    },
+    {
+      "file": "frame-0133.jpg",
+      "time": 1793272803.446997
+    },
+    {
+      "file": "frame-0134.jpg",
+      "time": 1793272803.463664
+    },
+    {
+      "file": "frame-0135.jpg",
+      "time": 1793272803.48033
+    },
+    {
+      "file": "frame-0136.jpg",
+      "time": 1793272803.496996
+    },
+    {
+      "file": "frame-0137.jpg",
+      "time": 1793272803.513662
+    },
+    {
+      "file": "frame-0138.jpg",
+      "time": 1793272803.530327
+    },
+    {
+      "file": "frame-0139.jpg",
+      "time": 1793272803.546994
+    },
+    {
+      "file": "frame-0140.jpg",
+      "time": 1793272803.56366
+    },
+    {
+      "file": "frame-0141.jpg",
+      "time": 1793272803.580326
+    },
+    {
+      "file": "frame-0142.jpg",
+      "time": 1793272803.596992
+    },
+    {
+      "file": "frame-0143.jpg",
+      "time": 1793272803.613658
+    },
+    {
+      "file": "frame-0144.jpg",
+      "time": 1793272803.630325
+    },
+    {
+      "file": "frame-0145.jpg",
+      "time": 1793272803.64699
+    },
+    {
+      "file": "frame-0146.jpg",
+      "time": 1793272803.663656
+    },
+    {
+      "file": "frame-0147.jpg",
+      "time": 1793272803.680323
+    },
+    {
+      "file": "frame-0148.jpg",
+      "time": 1793272803.696988
+    },
+    {
+      "file": "frame-0149.jpg",
+      "time": 1793272803.713654
+    },
+    {
+      "file": "frame-0150.jpg",
+      "time": 1793272803.73032
+    },
+    {
+      "file": "frame-0151.jpg",
+      "time": 1793272803.746987
+    },
+    {
+      "file": "frame-0152.jpg",
+      "time": 1793272803.763652
+    },
+    {
+      "file": "frame-0153.jpg",
+      "time": 1793272803.780319
+    },
+    {
+      "file": "frame-0154.jpg",
+      "time": 1793272803.796984
+    },
+    {
+      "file": "frame-0155.jpg",
+      "time": 1793272803.813651
+    },
+    {
+      "file": "frame-0156.jpg",
+      "time": 1793272803.830317
+    },
+    {
+      "file": "frame-0157.jpg",
+      "time": 1793272803.846983
+    },
+    {
+      "file": "frame-0158.jpg",
+      "time": 1793272803.863649
+    },
+    {
+      "file": "frame-0159.jpg",
+      "time": 1793272803.880315
+    },
+    {
+      "file": "frame-0160.jpg",
+      "time": 1793272803.896982
+    },
+    {
+      "file": "frame-0161.jpg",
+      "time": 1793272803.913648
+    },
+    {
+      "file": "frame-0162.jpg",
+      "time": 1793272803.930314
+    },
+    {
+      "file": "frame-0163.jpg",
+      "time": 1793272803.94698
+    },
+    {
+      "file": "frame-0164.jpg",
+      "time": 1793272803.963646
+    },
+    {
+      "file": "frame-0165.jpg",
+      "time": 1793272803.980312
+    },
+    {
+      "file": "frame-0166.jpg",
+      "time": 1793272803.996978
+    },
+    {
+      "file": "frame-0167.jpg",
+      "time": 1793272804.013644
+    },
+    {
+      "file": "frame-0168.jpg",
+      "time": 1793272804.03031
+    },
+    {
+      "file": "frame-0169.jpg",
+      "time": 1793272804.046976
+    },
+    {
+      "file": "frame-0170.jpg",
+      "time": 1793272804.063642
+    },
+    {
+      "file": "frame-0171.jpg",
+      "time": 1793272804.080309
+    },
+    {
+      "file": "frame-0172.jpg",
+      "time": 1793272804.096974
+    },
+    {
+      "file": "frame-0173.jpg",
+      "time": 1793272804.113641
+    },
+    {
+      "file": "frame-0174.jpg",
+      "time": 1793272804.130306
+    },
+    {
+      "file": "frame-0175.jpg",
+      "time": 1793272804.146972
+    },
+    {
+      "file": "frame-0176.jpg",
+      "time": 1793272804.163639
+    },
+    {
+      "file": "frame-0177.jpg",
+      "time": 1793272804.180304
+    },
+    {
+      "file": "frame-0178.jpg",
+      "time": 1793272804.19697
+    },
+    {
+      "file": "frame-0179.jpg",
+      "time": 1793272804.230303
+    },
+    {
+      "file": "frame-0180.jpg",
+      "time": 1793272804.263636
+    },
+    {
+      "file": "frame-0181.jpg",
+      "time": 1793272804.280301
+    },
+    {
+      "file": "frame-0182.jpg",
+      "time": 1793272804.313634
+    },
+    {
+      "file": "frame-0183.jpg",
+      "time": 1793272804.330298
+    },
+    {
+      "file": "frame-0184.jpg",
+      "time": 1793272804.363632
+    },
+    {
+      "file": "frame-0185.jpg",
+      "time": 1793272804.396964
+    },
+    {
+      "file": "frame-0186.jpg",
+      "time": 1793272804.41363
+    },
+    {
+      "file": "frame-0187.jpg",
+      "time": 1793272804.446962
+    },
+    {
+      "file": "frame-0188.jpg",
+      "time": 1793272804.480294
+    },
+    {
+      "file": "frame-0189.jpg",
+      "time": 1793272804.496961
+    },
+    {
+      "file": "frame-0190.jpg",
+      "time": 1793272804.530293
+    },
+    {
+      "file": "frame-0191.jpg",
+      "time": 1793272804.563625
+    },
+    {
+      "file": "frame-0192.jpg",
+      "time": 1793272804.580289
+    },
+    {
+      "file": "frame-0193.jpg",
+      "time": 1793272804.613623
+    },
+    {
+      "file": "frame-0194.jpg",
+      "time": 1793272804.646954
+    },
+    {
+      "file": "frame-0195.jpg",
+      "time": 1793272804.680288
+    },
+    {
+      "file": "frame-0196.jpg",
+      "time": 1793272804.696953
+    },
+    {
+      "file": "frame-0197.jpg",
+      "time": 1793272804.730286
+    },
+    {
+      "file": "frame-0198.jpg",
+      "time": 1793272804.763618
+    },
+    {
+      "file": "frame-0199.jpg",
+      "time": 1793272804.79695
+    },
+    {
+      "file": "frame-0200.jpg",
+      "time": 1793272804.830281
+    },
+    {
+      "file": "frame-0201.jpg",
+      "time": 1793272804.863614
+    },
+    {
+      "file": "frame-0202.jpg",
+      "time": 1793272804.896947
+    },
+    {
+      "file": "frame-0203.jpg",
+      "time": 1793272804.930278
+    },
+    {
+      "file": "frame-0204.jpg",
+      "time": 1793272804.963611
+    },
+    {
+      "file": "frame-0205.jpg",
+      "time": 1793272804.980276
+    },
+    {
+      "file": "frame-0206.jpg",
+      "time": 1793272804.996942
+    },
+    {
+      "file": "frame-0207.jpg",
+      "time": 1793272805.013608
+    },
+    {
+      "file": "frame-0208.jpg",
+      "time": 1793272805.030274
+    },
+    {
+      "file": "frame-0209.jpg",
+      "time": 1793272805.046941
+    },
+    {
+      "file": "frame-0210.jpg",
+      "time": 1793272805.063606
+    },
+    {
+      "file": "frame-0211.jpg",
+      "time": 1793272805.080273
+    },
+    {
+      "file": "frame-0212.jpg",
+      "time": 1793272805.096939
+    },
+    {
+      "file": "frame-0213.jpg",
+      "time": 1793272805.113605
+    },
+    {
+      "file": "frame-0214.jpg",
+      "time": 1793272805.130271
+    },
+    {
+      "file": "frame-0215.jpg",
+      "time": 1793272805.146936
+    },
+    {
+      "file": "frame-0216.jpg",
+      "time": 1793272805.163604
+    },
+    {
+      "file": "frame-0217.jpg",
+      "time": 1793272805.180269
+    },
+    {
+      "file": "frame-0218.jpg",
+      "time": 1793272805.196935
+    },
+    {
+      "file": "frame-0219.jpg",
+      "time": 1793272805.213601
+    },
+    {
+      "file": "frame-0220.jpg",
+      "time": 1793272805.230267
+    },
+    {
+      "file": "frame-0221.jpg",
+      "time": 1793272805.246934
+    },
+    {
+      "file": "frame-0222.jpg",
+      "time": 1793272805.263599
+    },
+    {
+      "file": "frame-0223.jpg",
+      "time": 1793272805.280266
+    },
+    {
+      "file": "frame-0224.jpg",
+      "time": 1793272805.296932
+    },
+    {
+      "file": "frame-0225.jpg",
+      "time": 1793272805.313598
+    },
+    {
+      "file": "frame-0226.jpg",
+      "time": 1793272805.330263
+    },
+    {
+      "file": "frame-0227.jpg",
+      "time": 1793272805.346929
+    },
+    {
+      "file": "frame-0228.jpg",
+      "time": 1793272805.363596
+    },
+    {
+      "file": "frame-0229.jpg",
+      "time": 1793272805.380262
+    },
+    {
+      "file": "frame-0230.jpg",
+      "time": 1793272805.396928
+    },
+    {
+      "file": "frame-0231.jpg",
+      "time": 1793272805.413594
+    },
+    {
+      "file": "frame-0232.jpg",
+      "time": 1793272805.43026
+    },
+    {
+      "file": "frame-0233.jpg",
+      "time": 1793272805.446927
+    },
+    {
+      "file": "frame-0234.jpg",
+      "time": 1793272805.463593
+    },
+    {
+      "file": "frame-0235.jpg",
+      "time": 1793272805.480258
+    },
+    {
+      "file": "frame-0236.jpg",
+      "time": 1793272805.496925
+    },
+    {
+      "file": "frame-0237.jpg",
+      "time": 1793272805.513591
+    },
+    {
+      "file": "frame-0238.jpg",
+      "time": 1793272805.530257
+    },
+    {
+      "file": "frame-0239.jpg",
+      "time": 1793272805.546923
+    },
+    {
+      "file": "frame-0240.jpg",
+      "time": 1793272805.563589
+    },
+    {
+      "file": "frame-0241.jpg",
+      "time": 1793272805.580255
+    },
+    {
+      "file": "frame-0242.jpg",
+      "time": 1793272805.596922
+    },
+    {
+      "file": "frame-0243.jpg",
+      "time": 1793272805.613587
+    },
+    {
+      "file": "frame-0244.jpg",
+      "time": 1793272805.630253
+    },
+    {
+      "file": "frame-0245.jpg",
+      "time": 1793272805.646918
+    },
+    {
+      "file": "frame-0246.jpg",
+      "time": 1793272805.663586
+    },
+    {
+      "file": "frame-0247.jpg",
+      "time": 1793272805.680251
+    },
+    {
+      "file": "frame-0248.jpg",
+      "time": 1793272805.696918
+    },
+    {
+      "file": "frame-0249.jpg",
+      "time": 1793272805.713582
+    },
+    {
+      "file": "frame-0250.jpg",
+      "time": 1793272805.73025
+    },
+    {
+      "file": "frame-0251.jpg",
+      "time": 1793272805.746916
+    },
+    {
+      "file": "frame-0252.jpg",
+      "time": 1793272805.763581
+    },
+    {
+      "file": "frame-0253.jpg",
+      "time": 1793272805.780248
+    },
+    {
+      "file": "frame-0254.jpg",
+      "time": 1793272805.796914
+    },
+    {
+      "file": "frame-0255.jpg",
+      "time": 1793272805.81358
+    },
+    {
+      "file": "frame-0256.jpg",
+      "time": 1793272805.830246
+    },
+    {
+      "file": "frame-0257.jpg",
+      "time": 1793272805.846913
+    },
+    {
+      "file": "frame-0258.jpg",
+      "time": 1793272805.863578
+    },
+    {
+      "file": "frame-0259.jpg",
+      "time": 1793272805.880245
+    },
+    {
+      "file": "frame-0260.jpg",
+      "time": 1793272805.89691
+    },
+    {
+      "file": "frame-0261.jpg",
+      "time": 1793272805.913576
+    },
+    {
+      "file": "frame-0262.jpg",
+      "time": 1793272805.930242
+    },
+    {
+      "file": "frame-0263.jpg",
+      "time": 1793272805.946909
+    },
+    {
+      "file": "frame-0264.jpg",
+      "time": 1793272805.963575
+    },
+    {
+      "file": "frame-0265.jpg",
+      "time": 1793272805.98024
+    },
+    {
+      "file": "frame-0266.jpg",
+      "time": 1793272805.996907
+    },
+    {
+      "file": "frame-0267.jpg",
+      "time": 1793272806.013573
+    },
+    {
+      "file": "frame-0268.jpg",
+      "time": 1793272806.030239
+    },
+    {
+      "file": "frame-0269.jpg",
+      "time": 1793272806.046905
+    },
+    {
+      "file": "frame-0270.jpg",
+      "time": 1793272806.063571
+    },
+    {
+      "file": "frame-0271.jpg",
+      "time": 1793272806.080237
+    },
+    {
+      "file": "frame-0272.jpg",
+      "time": 1793272806.096904
+    },
+    {
+      "file": "frame-0273.jpg",
+      "time": 1793272806.11357
+    },
+    {
+      "file": "frame-0274.jpg",
+      "time": 1793272806.130236
+    },
+    {
+      "file": "frame-0275.jpg",
+      "time": 1793272806.146902
+    },
+    {
+      "file": "frame-0276.jpg",
+      "time": 1793272806.163568
+    },
+    {
+      "file": "frame-0277.jpg",
+      "time": 1793272806.180232
+    },
+    {
+      "file": "frame-0278.jpg",
+      "time": 1793272806.1969
+    },
+    {
+      "file": "frame-0279.jpg",
+      "time": 1793272806.213566
+    },
+    {
+      "file": "frame-0280.jpg",
+      "time": 1793272806.230233
+    },
+    {
+      "file": "frame-0281.jpg",
+      "time": 1793272806.246898
+    },
+    {
+      "file": "frame-0282.jpg",
+      "time": 1793272806.263563
+    },
+    {
+      "file": "frame-0283.jpg",
+      "time": 1793272806.28023
+    },
+    {
+      "file": "frame-0284.jpg",
+      "time": 1793272806.296897
+    },
+    {
+      "file": "frame-0285.jpg",
+      "time": 1793272806.313562
+    },
+    {
+      "file": "frame-0286.jpg",
+      "time": 1793272806.330229
+    },
+    {
+      "file": "frame-0287.jpg",
+      "time": 1793272806.346894
+    },
+    {
+      "file": "frame-0288.jpg",
+      "time": 1793272806.363561
+    },
+    {
+      "file": "frame-0289.jpg",
+      "time": 1793272806.380226
+    },
+    {
+      "file": "frame-0290.jpg",
+      "time": 1793272806.396893
+    },
+    {
+      "file": "frame-0291.jpg",
+      "time": 1793272806.413559
+    },
+    {
+      "file": "frame-0292.jpg",
+      "time": 1793272806.430224
+    },
+    {
+      "file": "frame-0293.jpg",
+      "time": 1793272806.446891
+    },
+    {
+      "file": "frame-0294.jpg",
+      "time": 1793272806.463557
+    },
+    {
+      "file": "frame-0295.jpg",
+      "time": 1793272806.480224
+    },
+    {
+      "file": "frame-0296.jpg",
+      "time": 1793272806.496889
+    },
+    {
+      "file": "frame-0297.jpg",
+      "time": 1793272806.513555
+    },
+    {
+      "file": "frame-0298.jpg",
+      "time": 1793272806.530221
+    },
+    {
+      "file": "frame-0299.jpg",
+      "time": 1793272806.546888
+    },
+    {
+      "file": "frame-0300.jpg",
+      "time": 1793272806.563554
+    },
+    {
+      "file": "frame-0301.jpg",
+      "time": 1793272806.580219
+    },
+    {
+      "file": "frame-0302.jpg",
+      "time": 1793272806.596885
+    },
+    {
+      "file": "frame-0303.jpg",
+      "time": 1793272806.613552
+    },
+    {
+      "file": "frame-0304.jpg",
+      "time": 1793272806.630218
+    },
+    {
+      "file": "frame-0305.jpg",
+      "time": 1793272806.646883
+    }
+  ],
+  "samples": [
+    {
+      "time": 1.0000000953673407,
+      "phase": "closed",
+      "open": "false",
+      "height": 0,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": []
+    },
+    {
+      "time": 34.30000009536752,
+      "phase": "closed",
+      "open": "false",
+      "height": 0,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": []
+    },
+    {
+      "time": 67.60000009536725,
+      "phase": "closed",
+      "open": "false",
+      "height": 0,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": []
+    },
+    {
+      "time": 84.30000009536752,
+      "phase": "closed",
+      "open": "false",
+      "height": 0,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": []
+    },
+    {
+      "time": 117.60000009536725,
+      "phase": "closed",
+      "open": "false",
+      "height": 0,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": []
+    },
+    {
+      "time": 150.90000009536743,
+      "phase": "closed",
+      "open": "false",
+      "height": 0,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": []
+    },
+    {
+      "time": 167.60000009536725,
+      "phase": "open",
+      "open": "false",
+      "height": 0,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": []
+    },
+    {
+      "time": 200.90000009536743,
+      "phase": "open",
+      "open": "false",
+      "height": 0,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": []
+    },
+    {
+      "time": 250.90000009536743,
+      "phase": "open",
+      "open": "false",
+      "height": 0,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": []
+    },
+    {
+      "time": 267.60000009536725,
+      "phase": "open",
+      "open": "true",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 300.90000009536743,
+      "phase": "open",
+      "open": "true",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 334.3000000953675,
+      "phase": "open",
+      "open": "true",
+      "height": 431.265625,
+      "opacity": 0.220757,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.152482",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 351.00000009536734,
+      "phase": "open",
+      "open": "true",
+      "height": 438.0625,
+      "opacity": 0.408963,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.295619",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 384.3000000953675,
+      "phase": "open",
+      "open": "true",
+      "height": 447.765625,
+      "opacity": 0.705663,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.575917",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 417.60000009536725,
+      "phase": "open",
+      "open": "true",
+      "height": 453.453125,
+      "opacity": 0.873446,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.767036",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 451.00000009536734,
+      "phase": "open",
+      "open": "true",
+      "height": 456.625,
+      "opacity": 0.96053,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.885341",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 484.3000000953675,
+      "phase": "open",
+      "open": "true",
+      "height": 458.34375,
+      "opacity": 0.9961,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.954437",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 517.6000000953672,
+      "phase": "open",
+      "open": "true",
+      "height": 459.25,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.989649",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 550.9000000953674,
+      "phase": "open",
+      "open": "true",
+      "height": 459.703125,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 567.6000000953672,
+      "phase": "open",
+      "open": "true",
+      "height": 459.828125,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 601.0000000953673,
+      "phase": "open",
+      "open": "true",
+      "height": 459.953125,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 634.2000000953676,
+      "phase": "open",
+      "open": "true",
+      "height": 459.984375,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 650.9000000953674,
+      "phase": "open",
+      "open": "true",
+      "height": 459.984375,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 667.6000000953672,
+      "phase": "open",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 684.2000000953676,
+      "phase": "open",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 700.9000000953674,
+      "phase": "open",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 717.6000000953672,
+      "phase": "open",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 734.3000000953675,
+      "phase": "open",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 751.0000000953673,
+      "phase": "open",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 767.6000000953672,
+      "phase": "open",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 784.2000000953676,
+      "phase": "open",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 801.0000000953673,
+      "phase": "open",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 817.6000000953672,
+      "phase": "open",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 834.2000000953676,
+      "phase": "open",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 850.9000000953674,
+      "phase": "open",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 867.6000000953672,
+      "phase": "open",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 884.3000000953675,
+      "phase": "open",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 900.9000000953674,
+      "phase": "open",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 917.6000000953672,
+      "phase": "open",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 934.3000000953675,
+      "phase": "open",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 950.9000000953674,
+      "phase": "close",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 967.6000000953672,
+      "phase": "close",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 984.3000000953675,
+      "phase": "close",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 1000.9000000953674,
+      "phase": "close",
+      "open": "false",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1017.6000000953672,
+      "phase": "close",
+      "open": "false",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1034.3000000953675,
+      "phase": "close",
+      "open": "false",
+      "height": 450.765625,
+      "opacity": 0.928951,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1050.9000000953674,
+      "phase": "close",
+      "open": "false",
+      "height": 442.734375,
+      "opacity": 0.779655,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1067.6000000953672,
+      "phase": "close",
+      "open": "false",
+      "height": 435.9375,
+      "opacity": 0.591456,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1084.3000000953675,
+      "phase": "close",
+      "open": "false",
+      "height": 430.46875,
+      "opacity": 0.423814,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1100.9000000953674,
+      "phase": "close",
+      "open": "false",
+      "height": 426.21875,
+      "opacity": 0.294593,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1117.6000000953672,
+      "phase": "close",
+      "open": "false",
+      "height": 422.96875,
+      "opacity": 0.197582,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1134.2000000953676,
+      "phase": "close",
+      "open": "false",
+      "height": 420.546875,
+      "opacity": 0.126692,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1150.9000000953674,
+      "phase": "close",
+      "open": "false",
+      "height": 418.71875,
+      "opacity": 0.075254,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1167.6000000953672,
+      "phase": "close",
+      "open": "false",
+      "height": 417.359375,
+      "opacity": 0.0395358,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1184.3000000953675,
+      "phase": "close",
+      "open": "false",
+      "height": 416.375,
+      "opacity": 0.0164877,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1201.0000000953673,
+      "phase": "close",
+      "open": "false",
+      "height": 415.640625,
+      "opacity": 0.0038703,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1217.6000000953672,
+      "phase": "close",
+      "open": "false",
+      "height": 415.109375,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1234.2000000953676,
+      "phase": "close",
+      "open": "false",
+      "height": 414.734375,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "dark",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1250.9000000953674,
+      "phase": "close",
+      "open": "false",
+      "height": 414.46875,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "dark",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1267.6000000953672,
+      "phase": "close",
+      "open": "false",
+      "height": 414.28125,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "dark",
+      "headerSurface": "0.949745",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1284.2000000953676,
+      "phase": "close",
+      "open": "false",
+      "height": 414.15625,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "dark",
+      "headerSurface": "0.84799",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1300.9000000953674,
+      "phase": "close",
+      "open": "false",
+      "height": 414.078125,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "dark",
+      "headerSurface": "0.704947",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1334.2000000953676,
+      "phase": "close",
+      "open": "false",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "dark",
+      "headerSurface": "0.424525",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1367.6000000953672,
+      "phase": "close",
+      "open": "false",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "dark",
+      "headerSurface": "0.232793",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1384.2000000953676,
+      "phase": "close",
+      "open": "false",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0.16662",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1417.6000000953672,
+      "phase": "close",
+      "open": "false",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0.0751506",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1450.9000000953674,
+      "phase": "close",
+      "open": "false",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0.0243966",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1467.6000000953672,
+      "phase": "close",
+      "open": "false",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0.0103259",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1501.0000000953673,
+      "phase": "close",
+      "open": "false",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1534.3000000953675,
+      "phase": "close",
+      "open": "false",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1550.9000000953674,
+      "phase": "close",
+      "open": "false",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1584.2000000953676,
+      "phase": "close",
+      "open": "false",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1617.6000000953672,
+      "phase": "close",
+      "open": "false",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1634.3000000953675,
+      "phase": "reopen",
+      "open": "false",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1667.5000000953673,
+      "phase": "reopen",
+      "open": "false",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1700.9000000953674,
+      "phase": "reopen",
+      "open": "false",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1717.5000000953673,
+      "phase": "reopen",
+      "open": "false",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 1750.9000000953674,
+      "phase": "reopen",
+      "open": "true",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 1784.2000000953676,
+      "phase": "reopen",
+      "open": "true",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 1800.9000000953674,
+      "phase": "reopen",
+      "open": "true",
+      "height": 423.1875,
+      "opacity": 0.0708081,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.0502005",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 1834.2000000953676,
+      "phase": "reopen",
+      "open": "true",
+      "height": 438.03125,
+      "opacity": 0.408146,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.294943",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 1867.6000000953672,
+      "phase": "reopen",
+      "open": "true",
+      "height": 447.78125,
+      "opacity": 0.705837,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.576102",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 1900.9000000953674,
+      "phase": "reopen",
+      "open": "true",
+      "height": 453.453125,
+      "opacity": 0.87354,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.767153",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 1934.2000000953676,
+      "phase": "reopen",
+      "open": "true",
+      "height": 456.625,
+      "opacity": 0.960402,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.88514",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 1967.6000000953672,
+      "phase": "reopen",
+      "open": "true",
+      "height": 458.34375,
+      "opacity": 0.996112,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.954476",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2000.9000000953674,
+      "phase": "reopen",
+      "open": "true",
+      "height": 459.25,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.989666",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2017.6000000953672,
+      "phase": "reopen",
+      "open": "true",
+      "height": 459.515625,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.997539",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2050.9000000953674,
+      "phase": "reopen",
+      "open": "true",
+      "height": 459.828125,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2084.300000095367,
+      "phase": "reopen",
+      "open": "true",
+      "height": 459.953125,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2117.6000000953672,
+      "phase": "reopen",
+      "open": "true",
+      "height": 459.984375,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2134.2000000953676,
+      "phase": "reopen",
+      "open": "true",
+      "height": 459.984375,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2150.800000095367,
+      "phase": "reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2167.500000095368,
+      "phase": "reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2184.2000000953676,
+      "phase": "reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2200.9000000953674,
+      "phase": "reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2217.6000000953672,
+      "phase": "reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2234.2000000953676,
+      "phase": "reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2250.9000000953674,
+      "phase": "reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2267.6000000953672,
+      "phase": "reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2284.2000000953676,
+      "phase": "reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2300.9000000953674,
+      "phase": "reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2317.6000000953672,
+      "phase": "reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2334.2000000953676,
+      "phase": "reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2350.800000095367,
+      "phase": "reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2367.6000000953672,
+      "phase": "reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2384.2000000953676,
+      "phase": "reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2400.9000000953674,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2417.6000000953672,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2434.2000000953676,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2450.9000000953674,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 451,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.8022,
+          "visible": "visible",
+          "x": -12.6594,
+          "height": 451,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.1523,
+          "visible": "visible",
+          "x": 54.2504,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2467.500000095368,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 443,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.6416,
+          "visible": "visible",
+          "x": -22.9364,
+          "height": 443,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.2791,
+          "visible": "visible",
+          "x": 46.1346,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2484.2000000953676,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 437,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.504,
+          "visible": "visible",
+          "x": -31.7413,
+          "height": 437,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.3912,
+          "visible": "visible",
+          "x": 38.9653,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2500.9000000953674,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 430,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.3811,
+          "visible": "visible",
+          "x": -39.611,
+          "height": 430,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.4953,
+          "visible": "visible",
+          "x": 32.2995,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2517.500000095368,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 425,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.2799,
+          "visible": "visible",
+          "x": -46.0838,
+          "height": 425,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.5855,
+          "visible": "visible",
+          "x": 26.5279,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2534.2000000953676,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 420,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.2028,
+          "visible": "visible",
+          "x": -51.0221,
+          "height": 420,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.6588,
+          "visible": "visible",
+          "x": 21.8375,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2550.800000095367,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 416,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.1379,
+          "visible": "visible",
+          "x": -55.173,
+          "height": 416,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.7255,
+          "visible": "visible",
+          "x": 17.5662,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2567.500000095368,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 413,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.0886,
+          "visible": "visible",
+          "x": -58.3285,
+          "height": 413,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.782,
+          "visible": "visible",
+          "x": 13.9544,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2584.2000000953676,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 410,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.0545,
+          "visible": "visible",
+          "x": -60.5112,
+          "height": 410,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.8267,
+          "visible": "visible",
+          "x": 11.0933,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2600.9000000953674,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 408,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.0293,
+          "visible": "visible",
+          "x": -62.124,
+          "height": 408,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.8662,
+          "visible": "visible",
+          "x": 8.5609,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2617.500000095368,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 406,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.0134,
+          "visible": "visible",
+          "x": -63.1426,
+          "height": 406,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.8986,
+          "visible": "visible",
+          "x": 6.489,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2634.2000000953676,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 405,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.005,
+          "visible": "visible",
+          "x": -63.6809,
+          "height": 405,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.9233,
+          "visible": "visible",
+          "x": 4.9063,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2650.9000000953674,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 403,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.001,
+          "visible": "visible",
+          "x": -63.936,
+          "height": 403,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.9443,
+          "visible": "visible",
+          "x": 3.5621,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2667.6000000953672,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 402,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "visible",
+          "x": -63.9984,
+          "height": 402,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.9607,
+          "visible": "visible",
+          "x": 2.5151,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2684.2000000953676,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 402,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -64,
+          "height": 402,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.9725,
+          "visible": "visible",
+          "x": 1.7586,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2700.9000000953674,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 401,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -64,
+          "height": 401,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.9819,
+          "visible": "visible",
+          "x": 1.1568,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2717.6000000953672,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 401,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -64,
+          "height": 401,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.9887,
+          "visible": "visible",
+          "x": 0.7245,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2734.2000000953676,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -64,
+          "height": 400,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.9931,
+          "visible": "visible",
+          "x": 0.4409,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2750.9000000953674,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -64,
+          "height": 400,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.9962,
+          "visible": "visible",
+          "x": 0.2406,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2767.500000095368,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -64,
+          "height": 400,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.9982,
+          "visible": "visible",
+          "x": 0.1178,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2784.2000000953676,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -64,
+          "height": 400,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.9992,
+          "visible": "visible",
+          "x": 0.0523,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2800.800000095367,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -64,
+          "height": 400,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.9997,
+          "visible": "visible",
+          "x": 0.0175,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2817.6000000953672,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -64,
+          "height": 400,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.9999,
+          "visible": "visible",
+          "x": 0.0039,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2834.2000000953676,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -64,
+          "height": 400,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0.0004,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2850.9000000953674,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -64,
+          "height": 400,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2867.6000000953672,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -64,
+          "height": 400,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2884.2000000953676,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2900.800000095367,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2917.500000095368,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2934.2000000953676,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2950.800000095367,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2967.500000095368,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 2984.1000000953672,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 3000.9000000953674,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 3017.6000000953672,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 3034.2000000953676,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 3050.9000000953674,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 3067.500000095368,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 3084.2000000953676,
+      "phase": "switch-company",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 3100.800000095367,
+      "phase": "leave",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 3117.500000095368,
+      "phase": "leave",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 3134.1000000953672,
+      "phase": "leave",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 3150.800000095367,
+      "phase": "leave",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 3167.500000095368,
+      "phase": "leave",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 3184.2000000953676,
+      "phase": "leave",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 3200.9000000953674,
+      "phase": "leave",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 3217.500000095368,
+      "phase": "leave",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 3234.2000000953676,
+      "phase": "leave",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 3250.800000095367,
+      "phase": "leave",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 3267.500000095368,
+      "phase": "leave",
+      "open": "true",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 3284.1000000953672,
+      "phase": "leave",
+      "open": "false",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3300.800000095367,
+      "phase": "leave",
+      "open": "false",
+      "height": 400,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3317.500000095368,
+      "phase": "leave",
+      "open": "false",
+      "height": 392,
+      "opacity": 0.929232,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3334.2000000953676,
+      "phase": "leave",
+      "open": "false",
+      "height": 384.953125,
+      "opacity": 0.779026,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3350.800000095367,
+      "phase": "leave",
+      "open": "false",
+      "height": 379.09375,
+      "opacity": 0.59192,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3367.500000095368,
+      "phase": "leave",
+      "open": "false",
+      "height": 374.328125,
+      "opacity": 0.424188,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3384.2000000953676,
+      "phase": "leave",
+      "open": "false",
+      "height": 370.609375,
+      "opacity": 0.294203,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3400.800000095367,
+      "phase": "leave",
+      "open": "false",
+      "height": 367.8125,
+      "opacity": 0.197791,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3417.500000095368,
+      "phase": "leave",
+      "open": "false",
+      "height": 365.671875,
+      "opacity": 0.126481,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3434.2000000953676,
+      "phase": "leave",
+      "open": "false",
+      "height": 364.09375,
+      "opacity": 0.0751048,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3450.800000095367,
+      "phase": "leave",
+      "open": "false",
+      "height": 362.921875,
+      "opacity": 0.0396087,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3467.500000095368,
+      "phase": "leave",
+      "open": "false",
+      "height": 362.0625,
+      "opacity": 0.0165318,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3484.2000000953676,
+      "phase": "leave",
+      "open": "false",
+      "height": 361.421875,
+      "opacity": 0.00389044,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3500.800000095367,
+      "phase": "leave",
+      "open": "false",
+      "height": 360.96875,
+      "opacity": 2.02825e-8,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3517.500000095368,
+      "phase": "leave",
+      "open": "false",
+      "height": 360.640625,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3534.2000000953676,
+      "phase": "leave",
+      "open": "false",
+      "height": 360.40625,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "dark",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3550.800000095367,
+      "phase": "leave",
+      "open": "false",
+      "height": 360.234375,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "dark",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3567.500000095368,
+      "phase": "leave",
+      "open": "false",
+      "height": 360.125,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "dark",
+      "headerSurface": "0.949781",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3584.1000000953672,
+      "phase": "leave",
+      "open": "false",
+      "height": 360.0625,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "dark",
+      "headerSurface": "0.848051",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3600.9000000953674,
+      "phase": "leave",
+      "open": "false",
+      "height": 360.03125,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "dark",
+      "headerSurface": "0.704108",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3634.2000000953676,
+      "phase": "leave",
+      "open": "false",
+      "height": 360,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "dark",
+      "headerSurface": "0.423869",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3667.4000000953674,
+      "phase": "leave",
+      "open": "false",
+      "height": 360,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0.233279",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3684.1000000953672,
+      "phase": "leave",
+      "open": "false",
+      "height": 360,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0.166648",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3717.500000095368,
+      "phase": "leave",
+      "open": "false",
+      "height": 360,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0.0751671",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3734.1000000953672,
+      "phase": "leave",
+      "open": "false",
+      "height": 360,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0.0456692",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3767.4000000953674,
+      "phase": "leave",
+      "open": "false",
+      "height": 360,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0.010396",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3800.800000095367,
+      "phase": "leave",
+      "open": "false",
+      "height": 360,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "7.17707e-09",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3817.500000095368,
+      "phase": "leave",
+      "open": "false",
+      "height": 360,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3850.800000095367,
+      "phase": "leave",
+      "open": "false",
+      "height": 360,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3884.1000000953672,
+      "phase": "leave",
+      "open": "false",
+      "height": 360,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3900.800000095367,
+      "phase": "leave",
+      "open": "false",
+      "height": 360,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3934.2000000953676,
+      "phase": "leave",
+      "open": "false",
+      "height": 360,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3967.500000095368,
+      "phase": "interrupted-open",
+      "open": "false",
+      "height": 360,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 3984.1000000953672,
+      "phase": "interrupted-open",
+      "open": "false",
+      "height": 360,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 4017.500000095368,
+      "phase": "interrupted-open",
+      "open": "false",
+      "height": 360,
+      "opacity": 0,
+      "visibility": "hidden",
+      "theme": "dark",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Company",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 400,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 4050.800000095367,
+      "phase": "interrupted-open",
+      "open": "true",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4084.1000000953672,
+      "phase": "interrupted-open",
+      "open": "true",
+      "height": 414,
+      "opacity": 0,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4100.800000095367,
+      "phase": "interrupted-open",
+      "open": "true",
+      "height": 423.1875,
+      "opacity": 0.0707546,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.0501641",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4134.100000095367,
+      "phase": "interrupted-open",
+      "open": "true",
+      "height": 438.03125,
+      "opacity": 0.408058,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.29487",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4167.400000095367,
+      "phase": "interrupted-close",
+      "open": "true",
+      "height": 447.75,
+      "opacity": 0.705111,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.575332",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4200.800000095367,
+      "phase": "interrupted-close",
+      "open": "true",
+      "height": 453.453125,
+      "opacity": 0.873511,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.767117",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4234.100000095367,
+      "phase": "interrupted-close",
+      "open": "true",
+      "height": 456.625,
+      "opacity": 0.960388,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.885118",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4267.400000095367,
+      "phase": "interrupted-close",
+      "open": "false",
+      "height": 456.625,
+      "opacity": 0.734393,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.954313",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 4300.800000095367,
+      "phase": "interrupted-close",
+      "open": "false",
+      "height": 439.5,
+      "opacity": 0.384023,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "0.989661",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 4334.100000095367,
+      "phase": "interrupted-close",
+      "open": "false",
+      "height": 427.890625,
+      "opacity": 0.170813,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 4367.400000095367,
+      "phase": "interrupted-reopen",
+      "open": "false",
+      "height": 421.15625,
+      "opacity": 0.0594816,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 4384.100000095367,
+      "phase": "interrupted-reopen",
+      "open": "false",
+      "height": 419.046875,
+      "opacity": 0.028483,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 4400.800000095367,
+      "phase": "interrupted-reopen",
+      "open": "false",
+      "height": 417.53125,
+      "opacity": 0.00973687,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 4417.500000095368,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 417.53125,
+      "opacity": 0.0811681,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4434.100000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 426.65625,
+      "opacity": 0.231423,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4450.800000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 434.59375,
+      "opacity": 0.419633,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4467.500000095368,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 441.109375,
+      "opacity": 0.586042,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4484.200000095368,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 446.203125,
+      "opacity": 0.714332,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4500.800000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 450.046875,
+      "opacity": 0.809124,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4517.500000095368,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 452.90625,
+      "opacity": 0.878959,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4534.100000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 454.984375,
+      "opacity": 0.928765,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4550.800000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 456.5,
+      "opacity": 0.963328,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4567.400000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 457.59375,
+      "opacity": 0.985224,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4584.200000095368,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 458.375,
+      "opacity": 0.996972,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4600.800000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 458.921875,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4617.400000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 459.3125,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4634.100000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 459.578125,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4650.800000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 459.75,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4667.400000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 459.859375,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4684.100000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 459.9375,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4700.800000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 459.96875,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4717.500000095368,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 459.984375,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4734.100000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 459.984375,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4750.800000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4767.500000095368,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4784.100000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4800.800000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4817.400000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4834.100000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4850.800000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4867.500000095368,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4884.100000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4900.700000095368,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4917.500000095368,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4934.200000095368,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4950.800000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4967.400000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 4984.100000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5000.800000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5017.400000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5034.100000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5050.800000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5067.400000095367,
+      "phase": "interrupted-reopen",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5084.100000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5100.800000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5117.500000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5134.100000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 457,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.7915,
+          "visible": "visible",
+          "x": -13.347,
+          "height": 457,
+          "inert": true
+        },
+        {
+          "name": "Resources",
+          "opacity": 0.1607,
+          "visible": "visible",
+          "x": 53.7139,
+          "height": 440.9375,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5150.800000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 455,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.6324,
+          "visible": "visible",
+          "x": -23.5286,
+          "height": 455,
+          "inert": true
+        },
+        {
+          "name": "Resources",
+          "opacity": 0.2866,
+          "visible": "visible",
+          "x": 45.6596,
+          "height": 440.9375,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5167.400000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 452,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.4962,
+          "visible": "visible",
+          "x": -32.2454,
+          "height": 452,
+          "inert": true
+        },
+        {
+          "name": "Resources",
+          "opacity": 0.3977,
+          "visible": "visible",
+          "x": 38.5469,
+          "height": 440.9375,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5184.100000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 450,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.3745,
+          "visible": "visible",
+          "x": -40.0291,
+          "height": 450,
+          "inert": true
+        },
+        {
+          "name": "Resources",
+          "opacity": 0.501,
+          "visible": "visible",
+          "x": 31.9361,
+          "height": 440.9375,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5200.700000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 449,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.2746,
+          "visible": "visible",
+          "x": -46.424,
+          "height": 449,
+          "inert": true
+        },
+        {
+          "name": "Resources",
+          "opacity": 0.5904,
+          "visible": "visible",
+          "x": 26.2144,
+          "height": 440.9375,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5217.500000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 447,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.1985,
+          "visible": "visible",
+          "x": -51.2963,
+          "height": 447,
+          "inert": true
+        },
+        {
+          "name": "Resources",
+          "opacity": 0.663,
+          "visible": "visible",
+          "x": 21.5667,
+          "height": 440.9375,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5234.100000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 446,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.1346,
+          "visible": "visible",
+          "x": -55.3849,
+          "height": 446,
+          "inert": true
+        },
+        {
+          "name": "Resources",
+          "opacity": 0.7291,
+          "visible": "visible",
+          "x": 17.3362,
+          "height": 440.9375,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5250.700000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 445,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.0862,
+          "visible": "visible",
+          "x": -58.486,
+          "height": 445,
+          "inert": true
+        },
+        {
+          "name": "Resources",
+          "opacity": 0.785,
+          "visible": "visible",
+          "x": 13.7609,
+          "height": 440.9375,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5267.500000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 444,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.0527,
+          "visible": "visible",
+          "x": -60.625,
+          "height": 444,
+          "inert": true
+        },
+        {
+          "name": "Resources",
+          "opacity": 0.8292,
+          "visible": "visible",
+          "x": 10.9304,
+          "height": 440.9375,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5284.100000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 437,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -60.625,
+          "height": 437,
+          "inert": true
+        },
+        {
+          "name": "Resources",
+          "opacity": 0.6563,
+          "visible": "visible",
+          "x": -4.6961,
+          "height": 437,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.1607,
+          "visible": "visible",
+          "x": 53.7139,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5300.800000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 431,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -60.625,
+          "height": 431,
+          "inert": true
+        },
+        {
+          "name": "Resources",
+          "opacity": 0.5244,
+          "visible": "visible",
+          "x": -16.6166,
+          "height": 431,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.2866,
+          "visible": "visible",
+          "x": 45.6596,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5317.400000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 427,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -60.625,
+          "height": 427,
+          "inert": true
+        },
+        {
+          "name": "Resources",
+          "opacity": 0.4114,
+          "visible": "visible",
+          "x": -26.8221,
+          "height": 427,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.3977,
+          "visible": "visible",
+          "x": 38.5469,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5334.100000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 422,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -60.625,
+          "height": 422,
+          "inert": true
+        },
+        {
+          "name": "Resources",
+          "opacity": 0.3106,
+          "visible": "visible",
+          "x": -35.9352,
+          "height": 422,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.501,
+          "visible": "visible",
+          "x": 31.9361,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5350.800000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 418,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -60.625,
+          "height": 418,
+          "inert": true
+        },
+        {
+          "name": "Resources",
+          "opacity": 0.2321,
+          "visible": "visible",
+          "x": -43.024,
+          "height": 418,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.5855,
+          "visible": "visible",
+          "x": 26.5279,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5367.500000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 414,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -60.625,
+          "height": 414,
+          "inert": true
+        },
+        {
+          "name": "Resources",
+          "opacity": 0.1542,
+          "visible": "visible",
+          "x": -50.0625,
+          "height": 414,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.6755,
+          "visible": "visible",
+          "x": 20.7692,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5384.100000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 412,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -60.625,
+          "height": 412,
+          "inert": true
+        },
+        {
+          "name": "Resources",
+          "opacity": 0.1089,
+          "visible": "visible",
+          "x": -54.1575,
+          "height": 412,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.7327,
+          "visible": "visible",
+          "x": 17.1084,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5400.700000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 409,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -60.625,
+          "height": 409,
+          "inert": true
+        },
+        {
+          "name": "Resources",
+          "opacity": 0.0694,
+          "visible": "visible",
+          "x": -57.7253,
+          "height": 409,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.788,
+          "visible": "visible",
+          "x": 13.5695,
+          "height": 400,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5417.400000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 416,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.1439,
+          "visible": "visible",
+          "x": -54.7909,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 416,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.6407,
+          "visible": "visible",
+          "x": 22.9981,
+          "height": 416,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5434.100000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 423,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.2717,
+          "visible": "visible",
+          "x": -46.6133,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 423,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.513,
+          "visible": "visible",
+          "x": 31.1716,
+          "height": 423,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5450.800000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 429,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.3912,
+          "visible": "visible",
+          "x": -38.9653,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 429,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.3972,
+          "visible": "visible",
+          "x": 38.5809,
+          "height": 429,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5467.500000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 434,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.4953,
+          "visible": "visible",
+          "x": -32.2995,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 434,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.3003,
+          "visible": "visible",
+          "x": 44.782,
+          "height": 434,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5484.100000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 439,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.5806,
+          "visible": "visible",
+          "x": -26.8441,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 439,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.2248,
+          "visible": "visible",
+          "x": 49.611,
+          "height": 439,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5500.800000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 443,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.6588,
+          "visible": "visible",
+          "x": -21.8375,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 443,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.1598,
+          "visible": "visible",
+          "x": 53.7737,
+          "height": 443,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5517.400000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 446,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.7255,
+          "visible": "visible",
+          "x": -17.5662,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 446,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.1087,
+          "visible": "visible",
+          "x": 57.0446,
+          "height": 446,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5534.000000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 449,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.7789,
+          "visible": "visible",
+          "x": -14.1499,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 449,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.0718,
+          "visible": "visible",
+          "x": 59.4045,
+          "height": 449,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5550.700000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 451,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.8267,
+          "visible": "visible",
+          "x": -11.0933,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 451,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.043,
+          "visible": "visible",
+          "x": 61.2509,
+          "height": 451,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5567.500000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 453,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.8641,
+          "visible": "visible",
+          "x": -8.6965,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 453,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.024,
+          "visible": "visible",
+          "x": 62.461,
+          "height": 453,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5584.000000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 455,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.8969,
+          "visible": "visible",
+          "x": -6.5992,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 455,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.0111,
+          "visible": "visible",
+          "x": 63.2882,
+          "height": 455,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5600.700000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 456,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.9233,
+          "visible": "visible",
+          "x": -4.9063,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 456,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.0039,
+          "visible": "visible",
+          "x": 63.7486,
+          "height": 456,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5617.400000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 457,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.9443,
+          "visible": "visible",
+          "x": -3.5621,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 457,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0.0008,
+          "visible": "visible",
+          "x": 63.9496,
+          "height": 457,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5634.100000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 458,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.9599,
+          "visible": "visible",
+          "x": -2.5693,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 458,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0,
+          "visible": "visible",
+          "x": 63.9981,
+          "height": 458,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5650.800000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 459,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.9725,
+          "visible": "visible",
+          "x": -1.7586,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 459,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": 64,
+          "height": 459,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5667.500000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 459,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.9819,
+          "visible": "visible",
+          "x": -1.1568,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 459,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": 64,
+          "height": 459,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5684.100000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 459,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.9883,
+          "visible": "visible",
+          "x": -0.7459,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 459,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": 64,
+          "height": 459,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5700.700000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.9931,
+          "visible": "visible",
+          "x": -0.4409,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 460,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": 64,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5717.400000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.9961,
+          "visible": "visible",
+          "x": -0.25,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 460,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": 64,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5734.100000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.9981,
+          "visible": "visible",
+          "x": -0.1233,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 460,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": 64,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5750.700000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.9992,
+          "visible": "visible",
+          "x": -0.0523,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 460,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": 64,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5767.400000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.9997,
+          "visible": "visible",
+          "x": -0.0175,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 460,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": 64,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5784.100000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 0.9999,
+          "visible": "visible",
+          "x": -0.0043,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 460,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": 64,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5800.700000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": -0.0004,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 460,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": 64,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5817.400000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 460,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": 64,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5834.100000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        },
+        {
+          "name": "Resources",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": -57.7253,
+          "height": 460,
+          "inert": true
+        },
+        {
+          "name": "Company",
+          "opacity": 0,
+          "visible": "hidden",
+          "x": 64,
+          "height": 460,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "time": 5850.800000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5867.400000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5884.000000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5900.700000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5917.400000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5934.100000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5950.700000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5967.400000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 5984.100000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 6000.700000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 6017.400000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 6034.100000095368,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "time": 6050.800000095367,
+      "phase": "rapid-switch",
+      "open": "true",
+      "height": 460,
+      "opacity": 1,
+      "visibility": "visible",
+      "theme": "light",
+      "headerSurface": "1",
+      "panes": [
+        {
+          "name": "Applications",
+          "opacity": 1,
+          "visible": "visible",
+          "x": 0,
+          "height": 460,
+          "inert": false
+        }
+      ]
+    }
+  ]
+}

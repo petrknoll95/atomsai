@@ -1,0 +1,22 @@
+.fade {
+  --slit-track: calc((min(100vw, var(--page-max-width)) - 2 * var(--content-gutter)) / var(--slit-columns));
+  position: relative;
+  height: clamp(260px, 30vw, 480px);
+  margin-top: calc(-1 * clamp(32px, 4vw, 64px));
+  overflow: hidden;
+  pointer-events: none;
+  /* Expose the footer's own paint across the join, including fractional
+     scroll positions, instead of compositing another colored edge there. */
+  mask-image: linear-gradient(to bottom, transparent 16px, #000 64px);
+}
+.pattern {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: calc(var(--slit-track) * var(--slit-count) * 800 / 840);
+  height: 100%;
+  transform: translateX(-50%);
+}
+.pattern::after { content: ''; position: absolute; inset: 0; background: color-mix(in display-p3, var(--palette-forest-shade) 38%, transparent); }
+.pattern [role='alert'] { display: none; }
+.slit { position: absolute; top: 0; width: var(--slit-track); }

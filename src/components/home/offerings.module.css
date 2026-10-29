@@ -2,15 +2,13 @@
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}
 .card{position:relative;isolation:isolate;display:flex;flex-direction:column;gap:128px;padding:40px;border-radius:var(--radius-card);background:transparent;overflow:visible;height:553px;}
 .backgroundClip{--offering-inset:0px;position:absolute;inset:0;z-index:-1;pointer-events:none;clip-path:inset(var(--offering-inset) round 12px);}
-.backgroundLayer{position:absolute;inset:0;isolation:isolate;background:var(--palette-forest-shade);transform-origin:center;}
-.pattern{position:absolute;inset:0;max-width:none;width:100%;height:100%;z-index:-3;}
-.concentric{width:100%;height:100%;left:0;}
-.colorBurn{position:absolute;left:0;right:-6px;top:-30px;bottom:0;background:var(--palette-forest-shade);mask:url('/assets/figma/offerings-Mask.svg') 0 0/100% 100%;mask-mode:luminance;mix-blend-mode:color-burn;z-index:-2;}
-.lightBurn{background:var(--palette-cream);top:-34px;right:0;mask-image:url('/assets/figma/offerings-Mask1.svg');}
-.screen{position:absolute;inset:0;background:var(--palette-forest-shade);mix-blend-mode:screen;opacity:.75;z-index:-1;}
-.icon{flex:none;width:80px;height:80px;}
+.backgroundLayer{position:absolute;inset:0;isolation:isolate;background:var(--color-surface);transform-origin:center;}
+.card[data-offering]:has(.illustration){gap:24px;}
+.illustration{flex:none;width:100%;height:clamp(120px,24svh,240px);}
+.card .copy{margin-top:auto;}
+.card .link{margin-top:auto;}
 .copy{display:flex;flex-direction:column;align-items:flex-start;gap:24px;}
-.tag{font-size: var(--text-label);line-height:20px;font-weight: var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100;background:color-mix(in display-p3, var(--palette-cream) 10%, transparent);backdrop-filter:blur(6px);padding:6px 12px;border-radius: var(--radius-control);}
+.tag{font-size: var(--text-label);line-height:20px;font-weight: var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100;background:color-mix(in display-p3, var(--color-foreground) 8%, transparent);padding:6px 12px;border-radius: var(--radius-control);}
 .title{font-size: var(--text-display-medium);line-height:1;}
 .link{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size: var(--text-body);line-height:22px;font-weight: var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100;}
 .card:focus-visible{--color-ring:var(--palette-deep-green);}

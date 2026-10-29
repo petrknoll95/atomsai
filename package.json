@@ -17,7 +17,7 @@
     "visual:home-patterns": "node scripts/home-pattern-visual-check.mjs",
     "test:home-patterns": "node scripts/home-pattern-check.mjs",
     "test:application-hover": "node scripts/application-hover-check.mjs",
-    "test:fullscreen-menu": "node scripts/fullscreen-menu-check.mjs",
+    "test:responsive-navigation": "node scripts/responsive-navigation-check.mjs",
     "test:smooth-scroll": "node scripts/smooth-scroll-check.mjs",
     "test:pattern-motion": "node scripts/pattern-motion-check.mjs && node scripts/pattern-motion-device-check.mjs",
     "test:feedback": "node scripts/feedback-check.mjs",

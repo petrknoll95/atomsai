@@ -1,11 +1,12 @@
 .surface {
   --hero-theme-mix: 0%;
-  --hero-dot-color: var(--palette-deep-green);
-  --hero-dot-opacity: .65;
+  --hero-dot-color: var(--palette-iris);
+  --hero-dot-opacity: .85;
+  --hero-dot-radius: 1.5;
   transition: color .24s ease;
   background: color-mix(in srgb, var(--palette-paper) var(--hero-theme-mix), var(--palette-forest-shade));
 }
-.surface [data-variant='stars'] {
+.surface :is([data-variant='stars'], [data-variant='menu']) {
   --hero-surface: transparent;
   color: inherit;
 }

@@ -42,12 +42,13 @@ export function mountHeroField({ track, stage, content, next, onReady, interacti
   let nextLabelSelection = 0;
   const pointer = { x: 0, y: 0, active: false };
   let labelFont = '';
-  let dotColor = '#27433b', dotOpacity = 1;
+  let dotColor = '#27433b', dotOpacity = 1, dotRadius = 0;
   const readTimeline = () => {
     const css = getComputedStyle(track), total = Number(css.getPropertyValue('--hero-scroll-length'));
     labelFont = getComputedStyle(content).fontFamily;
     dotColor = css.getPropertyValue('--hero-dot-color').trim() || '#27433b';
     dotOpacity = Number(css.getPropertyValue('--hero-dot-opacity').trim() || 1);
+    dotRadius = Number(css.getPropertyValue('--hero-dot-radius').trim() || 0);
     particleEnd = Number(css.getPropertyValue('--hero-particle-length')) / total;
     revealStart = Number(css.getPropertyValue('--hero-reveal-start')) / total;
     revealEnd = Number(css.getPropertyValue('--hero-reveal-end')) / total;
@@ -185,7 +186,7 @@ export function mountHeroField({ track, stage, content, next, onReady, interacti
         }
         const x = baseX + star.pullX;
         const y = baseY + star.pullY;
-        const r = Math.max(.85, star.radius / z);
+        const r = dotRadius || Math.max(.85, star.radius / z);
         const margin = r * 1.35 + 32;
         if (x + margin < 0 || y + margin < 0 || x - margin > w || y - margin > h) {
           // Recycle only after the entire dot (and its trail) is offscreen,

@@ -1,3 +1,4 @@
+import { ArrowIcon } from '@/components/arrow-icon';
 import { ButtonLink } from '@/components/ui';
 import styles from './approach.module.css';
 
@@ -24,7 +25,7 @@ export function ApproachPage() {
         <h1 className={`display ${styles.title}`} id="hero-heading">From workflow.<br />To working system.</h1>
         <div className={styles.heroAside}>
           <p>We help you find the right starting point, build around your business, and put your team in control.</p>
-          <ButtonLink href="/company/contact?topic=services" size="large">Find your starting point <Arrow /></ButtonLink>
+          <ButtonLink href="/company/contact?topic=services" size="large">Find your starting point <ArrowIcon size={18} /></ButtonLink>
         </div>
       </div>
       <div className={styles.journey}>
@@ -32,7 +33,7 @@ export function ApproachPage() {
         <ol className={styles.journeySteps}>
           {steps.map((step, index) => <li key={step.short}><a href={`#step-${index + 1}`}><span className={`display ${styles.journeyNumber}`}>0{index + 1}</span><span>{step.short}</span><span className={styles.journeyDot} aria-hidden="true" /></a></li>)}
         </ol>
-        <div className={styles.journeyFoot}><span>Built in your systems.</span><span>Owned by your team. <Arrow /></span></div>
+        <div className={styles.journeyFoot}><span>Built in your systems.</span><span>Owned by your team. <ArrowIcon size={18} /></span></div>
       </div>
     </section>
 
@@ -52,7 +53,7 @@ export function ApproachPage() {
 
     <section className={styles.controlSection} aria-labelledby="control-heading">
       <div className={`page-container ${styles.controlGrid}`}>
-        <div className={styles.controlCopy}><p className={styles.kicker}>Your rules, built in</p><h2 className={`display ${styles.sectionTitle}`} id="control-heading">The next action.<br />On your terms.</h2><p>You decide what the system can do on its own, what needs approval, and when it should hand over.</p><p>Those boundaries are part of the build. Start with a person reviewing every action, then adjust as the evidence earns your confidence.</p><a className={styles.textLink} href="/trust"><span className="link-underline">Explore trust & security</span><Arrow /></a></div>
+        <div className={styles.controlCopy}><p className={styles.kicker}>Your rules, built in</p><h2 className={`display ${styles.sectionTitle}`} id="control-heading">The next action.<br />On your terms.</h2><p>You decide what the system can do on its own, what needs approval, and when it should hand over.</p><p>Those boundaries are part of the build. Start with a person reviewing every action, then adjust as the evidence earns your confidence.</p><a className={styles.textLink} href="/trust"><span className="link-underline">Explore trust & security</span><ArrowIcon size={18} /></a></div>
         <figure className={styles.workflow}>
           <div className={styles.workflowHeader}><span>Illustrative approval flow</span><span className={styles.workflowTag}>Your policy</span></div>
           <div className={styles.workflowInput}><span className={styles.smallDot} /><span>New request</span><span className={styles.statusLabel}>Received</span></div>
@@ -88,11 +89,7 @@ export function ApproachPage() {
     </section>
 
     <section className={`page-container ${styles.closing}`} aria-labelledby="approach-closing-heading">
-      <div className={styles.closingInner}><div><p className={styles.kicker}>Start with one workflow</p><h2 className={`display ${styles.sectionTitle}`} id="approach-closing-heading">Show us where<br />work gets stuck.</h2></div><div><p>A conversation about your process.<br />A clearer idea of what comes next.</p><ButtonLink href="/company/contact?topic=services" size="large">Talk to AtomsAI <Arrow /></ButtonLink></div></div>
+      <div className={styles.closingInner}><div><p className={styles.kicker}>Start with one workflow</p><h2 className={`display ${styles.sectionTitle}`} id="approach-closing-heading">Show us where<br />work gets stuck.</h2></div><div><p>A conversation about your process.<br />A clearer idea of what comes next.</p><ButtonLink href="/company/contact?topic=services" size="large">Talk to AtomsAI <ArrowIcon size={18} /></ButtonLink></div></div>
     </section>
   </main>;
-}
-
-function Arrow() {
-  return <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="M4 12h15M13 5l7 7-7 7" /></svg>;
 }

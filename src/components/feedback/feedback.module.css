@@ -21,13 +21,13 @@
   .feedback button {
     min-height: 44px;
     padding: 0.65rem 1rem;
-    border: 1px solid var(--palette-deep-green);
+    --button-stroke-width:1px; --button-stroke:var(--palette-deep-green); border:1px solid transparent;
     border-radius: 999px;
-    background: var(--palette-deep-green);
+    --button-fill: var(--palette-deep-green);
     color: var(--palette-cream);
     font: inherit;
     cursor: pointer;
-  }
+   --button-clip-radius:999px;}
   .feedback button:disabled { cursor: wait; opacity: 0.6; }
   .feedback [data-feedback-toggle] {
     order: 1;

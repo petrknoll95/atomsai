@@ -1,6 +1,6 @@
 import { ButtonLink } from "../ui";
 import { HomePattern } from "@/components/patterns/home-pattern";
-import { SiteFooter } from "./site-footer";
+import { LegacySiteFooter } from "./site-footer-legacy";
 import styles from "./lower.module.css";
 export { SiteFooter } from "./site-footer";
 
@@ -23,7 +23,7 @@ export function Closing() {
           </div>
         </div>
       </section>
-      <SiteFooter />
+      <LegacySiteFooter />
     </div>
   );
 }

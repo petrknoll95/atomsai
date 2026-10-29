@@ -1,5 +1,6 @@
 'use client';
 
+import { ArrowIcon } from '@/components/arrow-icon';
 import { useMemo, useRef, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Fade from 'embla-carousel-fade';
@@ -55,7 +56,7 @@ export function Stories() {
                     <div className={styles.metricValues}>
                       {metric.before ? <>
                         <span className={`display ${styles.previousValue}`}>{metric.before}</span>
-                        <div className={styles.metricResult}><span className={styles.metricArrow} role="img" aria-label="to" /><span className="display">{metric.value}</span></div>
+                        <div className={styles.metricResult}><ArrowIcon className={styles.metricArrow} size={20} aria-label="to" /><span className="display">{metric.value}</span></div>
                       </> : <span className="display">{metric.value}</span>}
                     </div>
                     <p style={{ whiteSpace: 'pre-line' }}>{metric.description}</p>
@@ -83,7 +84,7 @@ export function Stories() {
         <blockquote>{dialogStory.quote}</blockquote>
         <p>{dialogStory.name} · {dialogStory.role}</p>
         <dl>
-          {dialogStory.metrics.map(metric => <div key={metric.description}><dt>{metric.description}</dt><dd>{metric.before ? `${metric.before} → ` : ''}{metric.value}</dd></div>)}
+          {dialogStory.metrics.map(metric => <div key={metric.description}><dt>{metric.description}</dt><dd>{metric.before ? <>{metric.before} <ArrowIcon aria-label="to" /> </> : null}{metric.value}</dd></div>)}
         </dl>
       </dialog>
     </section>

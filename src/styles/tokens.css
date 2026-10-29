@@ -11,7 +11,11 @@
   --palette-iris: color(display-p3 0.549019635 0.470588237 0.690196097);
   --palette-iris-shade: color(display-p3 0.286274523 0.247058824 0.345098048);
   --palette-iris-tint: color(display-p3 0.941176474 0.921568632 0.960784316);
+  --page-max-width: 1600px;
   --page-gutter: 48px;
+  /* Shared content rails match the header logo and outer action edge. */
+  --content-gutter: calc(var(--page-gutter) + var(--header-padding));
+  --content-edge: max(var(--content-gutter), calc((100vw - var(--page-max-width)) / 2 + var(--content-gutter)));
   --header-inset: var(--page-gutter);
   --header-top: 24px;
   --header-height: 72px;
@@ -89,7 +93,7 @@
   background: var(--color-background);
   color: var(--color-foreground);
 }
-@media(max-width:1199px) { :root { --page-gutter:32px; } }
+@media(max-width:1199px) { :root { --page-gutter:32px; --header-padding:0px; } }
 @media(max-width:767px) { :root { --page-gutter:20px; --section-space:64px; --grid-gap:24px; } }
 
-@media(max-width:767px) { :root { --header-inset:16px; --header-top:12px; --header-height:64px; --header-padding:12px; } }
+@media(max-width:767px) { :root { --header-inset:var(--page-gutter); --header-top:12px; --header-height:64px; --header-padding:0px; } }

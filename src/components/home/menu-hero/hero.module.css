@@ -1,0 +1,69 @@
+/* Only the hero stage is dark; shared wrappers also contain the light follow-up.
+   A dark backing here bleeds through its fractional edge during smooth scroll. */
+.surface, .hero[data-variant='menu'] { background: var(--palette-paper); }
+.hero .stage { background: var(--palette-forest-shade); }
+.hero .stage:has([data-hero-pattern-state='open']) { background: var(--palette-paper); }
+.hero[data-variant='menu'] { color: var(--color-foreground); }
+.hero { position: relative; }
+/* The copy stays in the first viewport; the pattern and fades continue below. */
+.stage { position: relative; height: 135svh; }
+.stage .field { height: 100%; }
+.backdrop {
+  --menu-track: calc((min(100vw, var(--page-max-width)) - 2 * var(--content-gutter)) / var(--menu-columns));
+  background: var(--palette-forest-shade);
+}
+/* Decorative rendering may fail independently of the readable hero. */
+.backdrop [role='status'] { display: none; }
+
+.backdrop[data-hero-pattern-state='open'] { -webkit-mask-image: none; mask-image: none; }
+@media (prefers-reduced-motion: reduce) { .backdrop { -webkit-mask-image: none; mask-image: none; } }
+
+.source { opacity: 0; }
+.slit { position: absolute; top: 0; width: var(--menu-track); height: 100%; overflow: hidden; }
+.slitStrip { display: flex; width: 200%; height: 100%; }
+.slitCell { flex: 0 0 50%; height: 100%; overflow: hidden; }
+.slitContent { display: block; width: 100%; height: 100%; transform: scale(1.2); transform-origin: center; }
+.slitFade {
+  position: absolute;
+  inset-inline: 0;
+  bottom: -24px;
+  height: calc(var(--hero-fade-height, 42%) + 24px + var(--hero-fade-scroll, 0px) * var(--hero-fade-growth, .12));
+  z-index: 1;
+  pointer-events: none;
+  /* Keep each fade's bottom aligned to the section during pattern parallax. */
+  transform: translateY(calc(-1 * var(--hero-field-offset, 0px)));
+}
+.backdrop[data-hero-pattern-state='open'] .source { opacity: 1; }
+.backdrop[data-hero-pattern-state='open'] .slitStrip { visibility: hidden; }
+
+/* Both surfaces share viewport-aligned slit coordinates and reveal timing. */
+.backdrop, .maskedCopy {
+  --menu-track: calc((min(100vw, var(--page-max-width)) - 2 * var(--content-gutter)) / var(--menu-columns));
+  -webkit-mask-image: var(--hero-slit-masks);
+  mask-image: var(--hero-slit-masks);
+  -webkit-mask-size: var(--menu-track) 100%;
+  mask-size: var(--menu-track) 100%;
+  -webkit-mask-position: var(--hero-slit-positions);
+  mask-position: var(--hero-slit-positions);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+.hero .maskedCopy > div > * { opacity: 1; transform: none; transition: none; }
+.maskedCopy[data-hero-copy-state='open'], .maskedCopy:focus-within { -webkit-mask-image: none; mask-image: none; }
+@media (prefers-reduced-motion: reduce) { .maskedCopy { -webkit-mask-image: none; mask-image: none; } }
+.backdrop[data-hero-pattern-state='open'] { -webkit-mask-image: none; mask-image: none; }
+
+@media (scripting: enabled) { .maskedCopy:not([data-hero-copy-state]) { visibility: hidden; } }
+
+/* Normal document flow makes the next section rise directly with scrolling. */
+.sectionReveal {
+  position: relative;
+  background: var(--palette-paper);
+  color: var(--color-foreground);
+}
+/* The extended fade supplies the transition space above the intro. */
+.sectionReveal .nextContent {
+  min-height: 0;
+  justify-content: flex-start;
+  padding-top: 0;
+}
