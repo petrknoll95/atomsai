@@ -23,6 +23,8 @@ jobs:
           node-version: 24
           cache: npm
       - uses: actions/configure-pages@v5
+      # Match the npm version used to generate and validate the lockfile.
+      - run: npm install --global npm@11.6.2
       - run: npm ci
       - run: npm run build
         env:
