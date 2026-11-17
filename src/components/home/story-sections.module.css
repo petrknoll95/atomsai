@@ -1,9 +1,8 @@
 .section{padding-block:var(--section-space);}
 .heading{max-width:850px;font-size:var(--text-display-large);line-height:.95;text-wrap:balance;}
 .statement{display:flex;flex-direction:column;align-items:center;gap:32px;text-align:center;}
-/* Centred: eyebrow, a small display kicker, then the statement as the main headline. */
+/* Centred: the statement as the main headline, with the eyebrow link below it. */
 .statementEyebrow{align-self:center;}
-.statementKicker{font-size:clamp(22px,2vw,30px);line-height:1.1;color:var(--color-muted-foreground);}
 .statementHeadline{width:100%;font-size:clamp(40px,5vw,80px);line-height:1;letter-spacing:-.02em;text-wrap:balance;}
 .header{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;margin-bottom:56px;}
 .header>a{flex:none;}
