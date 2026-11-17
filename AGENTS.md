@@ -23,3 +23,7 @@ all workflow UI visuals: Neue Montreal interface text, pale rounded wrappers,
 white inset panels, restrained pills, and faint dashboard outlines on dark green.
 Use normal interface labels and operational states. Do not add “Illustrative
 workflow”, “Example only”, or similar disclaimer labels to these visuals.
+
+Use one neutral surface family within each visual context or component group.
+Never mix cream with mist or cool stone backgrounds in the same group, including
+adjacent service cards. Sibling cards should share the same neutral background.
