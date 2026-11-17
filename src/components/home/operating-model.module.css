@@ -64,10 +64,10 @@
 .section[data-model-pin="visual"] { align-items:start; }
 .section[data-model-pin="visual"] .accordion { align-self:start; }
 .visual { --diagram-fill:var(--palette-forest-shade); --diagram-ink:var(--palette-cream); background:var(--diagram-surface); border-radius:var(--model-outer-radius) var(--model-inner-radius) var(--model-inner-radius) var(--model-outer-radius); overflow:hidden; }
-/* Even rhythm: the stats section above ends with 72px of padding, so the intro sits 72px
-   below the product logos and 72px above the diagram panel. */
+/* Even rhythm: the stats section above ends with 72px of padding; 40px more here puts the
+   intro 112px below the product logos and 112px above the diagram panel. */
 @media(min-width:1200px) and (min-height:700px) {
-  .section { gap:72px; padding-block:0 48px; }
+  .section { gap:112px; padding-block:40px 48px; }
 }
 
 /* Tablet pins the headline with the diagram: leave room for it so the whole stage fits on screen. */
