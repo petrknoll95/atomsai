@@ -93,3 +93,12 @@
   .header { padding-right: 0; }
   .nextCard h3 { font-size: var(--text-display-small); }
 }
+
+/* Preserve the illustration's stroke proportions without editing its geometry. */
+@media (min-width: 1101px) {
+  .nextImage:has([data-illustration]) { aspect-ratio: 4 / 3; }
+}
+@media (max-width: 767px) {
+  .cover:has([data-illustration]),
+  .nextImage:has([data-illustration]) { aspect-ratio: 1; }
+}

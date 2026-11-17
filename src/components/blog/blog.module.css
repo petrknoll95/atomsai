@@ -91,3 +91,10 @@
   .articleRow { flex-direction: column; align-items: flex-start; gap: 16px; padding: 32px 16px; }
 }
 @media (prefers-reduced-motion: reduce) { .pattern { transition: none; } }
+
+/* Give fine illustration outlines enough height in smaller editorial frames. */
+.moreImage:has([data-illustration]) { aspect-ratio: 4 / 3; }
+@media (max-width: 767px) {
+  .featuredImage:has([data-illustration]),
+  .moreImage:has([data-illustration]) { aspect-ratio: 1; }
+}
