@@ -44,10 +44,15 @@ export function ApproachPage() {
         </div>
         <DeliveryWorkflow blocks={sourceSection('workflow').blocks} />
       </div>
-      <div id="workflow" className={styles.workflowIntro}>
-        <div><p className={styles.kicker}>{sourceSection('workflow').label}</p><h2 className={`display ${styles.smallHeading}`}>{sourceSection('workflow').title}</h2></div>
-        <p>{sourceSection('workflow').intro.join(' ')}</p>
       </div>
+    </section>
+
+    <section id="workflow" className={styles.workflowSection} aria-labelledby="workflow-heading" data-theme="dark">
+      <div className="page-container">
+        <div className={styles.workflowIntro}>
+          <div><p className={styles.kicker}>{sourceSection('workflow').label}</p><h2 id="workflow-heading" className={`display ${styles.smallHeading}`}>{sourceSection('workflow').title}</h2></div>
+          <p>{sourceSection('workflow').intro.join(' ')}</p>
+        </div>
       </div>
     </section>
 
