@@ -2,13 +2,13 @@ import { ButtonLink } from '@/components/ui';
 import { assetPath } from '@/lib/base-path';
 import styles from './trust-summary.module.css';
 
-// Each band picks a palette pair; the line art is tinted with the band's text colour.
+// Every card shares the mist palette; the line art is tinted with the card's text colour.
 // ink is each line SVG's ink box (width / height), printed by scripts/trust-line-art.mjs.
 const trust = [
-  { image: 'integrations', ink: '254.45 / 195.604', tone: 'deep', label: 'Integrations', title: 'Fits into your current stack', text: 'Connect AI to existing tools and workflows through integrations, APIs, and custom engineering.' },
-  { image: 'safeguards', ink: '236.062 / 165.912', tone: 'apricot', label: 'Safeguards', title: 'Guardrails where they matter', text: 'Set boundaries for AI actions, with oversight and escalation for sensitive situations.' },
-  { image: 'reliability', ink: '219.734 / 208.608', tone: 'stone', label: 'Reliability', title: 'Engineered for real conditions', text: 'Built with years of experience handling live calls, interruptions, and unpredictable networks.' },
-  { image: 'security', ink: '138.71 / 219.734', tone: 'iris', label: 'Security', title: 'Data privacy & security you can verify', text: 'Explore product-specific security controls, privacy practices, and compliance documentation.' },
+  { image: 'integrations', ink: '254.45 / 195.604', label: 'Integrations', title: 'Fits into your current stack', text: 'Connect AI to existing tools and workflows through integrations, APIs, and custom engineering.' },
+  { image: 'safeguards', ink: '236.062 / 165.912', label: 'Safeguards', title: 'Guardrails where they matter', text: 'Set boundaries for AI actions, with oversight and escalation for sensitive situations.' },
+  { image: 'reliability', ink: '219.734 / 208.608', label: 'Reliability', title: 'Engineered for real conditions', text: 'Built with years of experience handling live calls, interruptions, and unpredictable networks.' },
+  { image: 'security', ink: '138.71 / 219.734', label: 'Security', title: 'Data privacy & security you can verify', text: 'Explore product-specific security controls, privacy practices, and compliance documentation.' },
 ];
 
 export function TrustSummary() {
@@ -19,7 +19,7 @@ export function TrustSummary() {
       <ButtonLink className={styles.cta} href="/trust" variant="outline">Visit the Trust Center</ButtonLink>
     </header>
     <ul className={styles.list}>
-      {trust.map(item => <li key={item.label} className={styles.card} data-tone={item.tone}>
+      {trust.map(item => <li key={item.label} className={styles.card}>
         <p className={styles.label}>{item.label}</p>
         <h3 className={`display ${styles.title}`}>{item.title}</h3>
         <p className={styles.text}>{item.text}</p>
