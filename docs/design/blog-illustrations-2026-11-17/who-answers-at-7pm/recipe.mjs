@@ -13,7 +13,7 @@ export default function ({ scene, tube, box, circlePoints, X, Z }) {
   for (const [dx, dz] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) {
     const mid = R + length / 2 - 1, far = R + length + msg / 2 - 1;
     box(s, [dx * mid, h / 2, dz * mid], dx ? [length, rod, rod] : [rod, rod, length]);
-    box(s, [dx * far, h / 2, dz * far], [msg, msg, msg]);
+    box(s, [dx * far, msg / 2, dz * far], [msg, msg, msg]); // rests on the ring's ground plane
   }
   return s;
 }
@@ -21,4 +21,7 @@ export function verify(s, api, assert) {
   assert.equal(s.cylinders.length, 1);
   assert.equal(s.primitiveCounts.box, 8);
   assert.equal(s.highlights.length, 1);
+  // Everything stands on y = 0: ring base, rods and message cubes.
+  const low = Math.min(...s.faces.flatMap(f => f.points.map(p => p[1])));
+  assert(Math.abs(low) < 1e-9, `lowest point ${low}`);
 }
