@@ -10,7 +10,7 @@
 
 .companyProof{padding-block:24px 72px;scroll-margin-top:120px;}
 /* Sits above the stat cards on the same 4-column grid: label in the first column, logos across the other three. */
-.productFamily{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:center;gap:8px;margin-bottom:32px;}
+.productFamily{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:center;gap:8px;margin-bottom:56px;}
 .productFamily>.label{max-width:32ch;line-height:1.5;color:var(--color-surface-muted-foreground);text-wrap:balance;}
 .productFamily>div{grid-column:2 / -1;display:flex;align-items:center;justify-content:space-between;gap:24px;}
 .productFamily a{display:flex;align-items:center;gap:12px;font-size:24px;white-space:nowrap;}
@@ -29,7 +29,7 @@ span.productIcon{background:currentColor;mask-position:center;mask-repeat:no-rep
 @media(max-width:991px){.proofFacts{grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media(max-width:767px){
   .companyProof{padding-bottom:48px;}
-  .productFamily{gap:20px;margin-bottom:24px;}
+  .productFamily{gap:20px;margin-bottom:40px;}
   .productFamily>div{display:grid;grid-template-columns:1fr 1fr;gap:20px 16px;}
   .productFamily a{font-size:18px;gap:10px;}
   .productIcon{width:24px;height:24px;}
