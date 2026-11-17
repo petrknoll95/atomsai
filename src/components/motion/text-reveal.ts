@@ -19,25 +19,6 @@ export const textReveal = {
   maskBleed: { top: .3, side: .3, bottom: .16 },
 } as const;
 
-/** The shared recipe for stat tickers: digits roll into place like a slot reel. */
-export const statTicker = {
-  duration: 1.7,
-  ease: 'power4.inOut',
-  /** Delay between digit reels, left to right, within one stat. */
-  digitStagger: .07,
-  /** Delay between stats in the same list. */
-  stagger: .12,
-  /** Full 0–9 turns before landing; reels further right spin more. */
-  turns: 1,
-  /** Reel cell pitch in em: room for the digits' ink at tight line-heights. */
-  pitch: 1.3,
-  /** The reel window is the cap height plus this margin in em, above and below. */
-  window: .12,
-} as const;
-
-/** Stat values in definition lists, plus anything opted in. */
-export const statTickerSelector = 'dl dd.display, [data-ticker]';
-
 export const headlineSelector = 'h1.display, h2.display, [data-text-reveal]';
 // Slides move on their own; a carousel's section heading still reveals.
 const excludedSelector = 'dialog, [aria-roledescription="slide"], [data-text-reveal="off"]';
@@ -200,182 +181,14 @@ class HeadlineReveal implements Reveal {
 }
 
 /**
- * One stat whose digits roll up into place on vertical reels, slot-machine
- * style. Separators, units and symbols stay put. Each reel is exactly as wide
- * as its final digit, so the figure never shifts and the last frame matches the
- * authored text.
- */
-class StatTicker implements Reveal {
-  /** Glyph positions are measured, so build only once the display font is in. */
-  readonly needsFonts = true;
-  private entered = false;
-  state: State = 'pending';
-  private readonly authored: string;
-  private reels: HTMLElement[] = [];
-  private tween?: gsap.core.Tween;
-  private trigger?: ScrollTrigger;
-
-  constructor(readonly element: HTMLElement, private readonly delay: number) {
-    this.authored = element.innerHTML;
-  }
-
-  static from(element: HTMLElement, delay: number) {
-    const text = (element.textContent ?? '').trim();
-    // A bare year (2016) is a date, not a quantity; text without digits has nothing to roll.
-    if (!/\d/.test(text) || /^(19|20)\d\d$/.test(text)) return;
-    return new StatTicker(element, delay);
-  }
-
-  hold() {
-    this.set('pending');
-    gsap.set(this.element, { opacity: 0 });
-    this.trigger = ScrollTrigger.create({
-      trigger: this.element.closest('dl') ?? this.element,
-      start: textReveal.start,
-      once: true,
-      onEnter: () => { this.entered = true; this.play(); },
-    });
-  }
-
-  /** Build the reels from the authored figure. Safe to call again after a width change. */
-  prepare() {
-    if (this.state !== 'pending') return;
-    this.restore();
-    this.build();
-    gsap.set(this.element, { opacity: 1 });
-    if (this.entered) this.play();
-  }
-
-  private build() {
-    const { element } = this;
-    const text = element.textContent ?? '';
-    // Screen readers get the final figure; the reels are decorative.
-    const label = document.createElement('span');
-    Object.assign(label.style, { position: 'absolute', width: '1px', height: '1px', overflow: 'hidden', clipPath: 'inset(50%)', whiteSpace: 'nowrap' });
-    label.textContent = text;
-    // The authored figure stays in the flow as one transparent text node, so
-    // spacing and kerning are exact. Every glyph is redrawn in an overlay at its
-    // measured position: symbols stand still and each digit becomes a reel.
-    const figure = document.createElement('span');
-    figure.setAttribute('aria-hidden', 'true');
-    figure.style.position = 'relative';
-    const source = document.createTextNode(text);
-    const glyphs = document.createElement('span');
-    figure.append(source, glyphs);
-    element.replaceChildren(label, figure);
-    const color = getComputedStyle(element).color;
-    figure.style.color = 'transparent';
-    const origin = figure.getBoundingClientRect();
-    const baselineOf = (host: HTMLElement) => {
-      const marker = document.createElement('span');
-      Object.assign(marker.style, { display: 'inline-block', width: '0', height: '0', verticalAlign: 'baseline' });
-      host.append(marker);
-      const y = marker.getBoundingClientRect().top;
-      marker.remove();
-      return y;
-    };
-    const baseline = baselineOf(figure) - origin.top;
-    const range = document.createRange();
-    let column = 0;
-    [...text].forEach((char, index) => {
-      if (!char.trim()) return;
-      range.setStart(source, index);
-      range.setEnd(source, index + 1);
-      const box = range.getBoundingClientRect();
-      const left = box.left - origin.left;
-      const glyph = document.createElement('span');
-      Object.assign(glyph.style, { position: 'absolute', left: `${left}px`, top: '0', display: 'block', whiteSpace: 'pre', color });
-      glyph.textContent = char;
-      glyphs.append(glyph);
-      if (!/\d/.test(char)) {
-        glyph.style.top = `${baseline - (baselineOf(glyph) - glyph.getBoundingClientRect().top)}px`;
-        return;
-      }
-      // A window over the cap band: digits roll in from below and out above.
-      glyph.textContent = '';
-      Object.assign(glyph.style, {
-        left: `calc(${left}px - .5em)`, width: `calc(${box.width}px + 1em)`, overflow: 'hidden', whiteSpace: 'normal',
-        top: `calc(${baseline}px - 1cap - ${statTicker.window}em)`, height: `calc(1cap + ${2 * statTicker.window}em)`,
-      });
-      const strip = document.createElement('span');
-      Object.assign(strip.style, {
-        position: 'absolute', left: '.5em', top: '0', display: 'flex', flexDirection: 'column', alignItems: 'flex-start',
-        lineHeight: `${statTicker.pitch}em`,
-      });
-      const turns = statTicker.turns + column++;
-      const sequence = [...Array.from({ length: turns * 10 }, (_, i) => i % 10), ...Array.from({ length: Number(char) + 1 }, (_, i) => i)];
-      sequence.forEach(value => {
-        const cell = document.createElement('span');
-        cell.textContent = String(value);
-        cell.style.display = 'block';
-        strip.append(cell);
-      });
-      glyph.append(strip);
-      // Align the cell baseline with the text baseline inside the window.
-      const stripTop = strip.getBoundingClientRect().top;
-      const cellBaseline = baselineOf(strip.firstElementChild as HTMLElement) - stripTop;
-      const windowBaseline = baseline - (glyph.getBoundingClientRect().top - origin.top);
-      strip.style.top = `${windowBaseline - cellBaseline}px`;
-      // Land on the measured offset: percentages accumulate WebKit's line rounding.
-      strip.dataset.landing = String((strip.firstElementChild as HTMLElement).getBoundingClientRect().top - (strip.lastElementChild as HTMLElement).getBoundingClientRect().top);
-      gsap.set(strip, { y: 0 });
-      this.reels.push(strip);
-    });
-    range.detach();
-  }
-
-  private play() {
-    if (this.state !== 'pending' || !this.reels.length) return;
-    this.set('revealing');
-    this.tween = gsap.to(this.reels, {
-      y: (_index: number, strip: HTMLElement) => Number(strip.dataset.landing),
-      duration: statTicker.duration, ease: statTicker.ease,
-      delay: this.delay, stagger: statTicker.digitStagger,
-      onComplete: () => this.finish(),
-    });
-  }
-
-  finish() {
-    this.trigger?.kill();
-    this.trigger = undefined;
-    this.tween?.kill();
-    this.tween = undefined;
-    this.restore();
-    gsap.set(this.element, { clearProps: 'opacity' });
-    this.set('visible');
-  }
-
-  destroy() {
-    this.trigger?.kill();
-    this.tween?.kill();
-    this.restore();
-    gsap.set(this.element, { clearProps: 'opacity' });
-    delete this.element.dataset.textRevealState;
-  }
-
-  private restore() {
-    if (this.element.innerHTML === this.authored) return;
-    this.reels = [];
-    this.element.innerHTML = this.authored;
-  }
-
-  private set(state: State) {
-    this.state = state;
-    setState(this.element, state);
-  }
-}
-
-/**
- * Line-by-line headline reveals and stat tickers for everything inside `root`.
+ * Line-by-line headline reveals for everything inside `root`.
  * Server HTML stays readable; motion is an enhancement that never hides text
  * for reduced motion, slow fonts, keyboard focus or deep links.
  */
 export function mountHeadlineReveals(root: HTMLElement) {
   gsap.registerPlugin(ScrollTrigger, SplitText);
-  const included = (element: HTMLElement) => !element.closest(excludedSelector) && element.dataset.ticker !== 'off';
-  const headings = [...root.querySelectorAll<HTMLElement>(headlineSelector)].filter(included);
-  const stats = [...root.querySelectorAll<HTMLElement>(statTickerSelector)].filter(element => included(element) && !headings.includes(element));
-  // Survives reduced-motion toggles: each element plays once per page view.
+  const headings = [...root.querySelectorAll<HTMLElement>(headlineSelector)].filter(heading => !heading.closest(excludedSelector));
+  // Survives reduced-motion toggles: each headline plays once per page view.
   const seen = new Set<HTMLElement>();
   const media = gsap.matchMedia();
 
@@ -384,15 +197,8 @@ export function mountHeadlineReveals(root: HTMLElement) {
     let fontsReady = false;
     let resizeFrame = 0;
     const fresh = (element: HTMLElement) => !seen.has(element) && element.getBoundingClientRect().bottom > 0;
-    const reveals: Reveal[] = [
-      ...headings.filter(fresh).map(heading => new HeadlineReveal(heading)),
-      ...stats.filter(fresh).map(stat => {
-        const group = stat.closest('dl');
-        const index = group ? [...group.querySelectorAll(statTickerSelector)].indexOf(stat) : 0;
-        return StatTicker.from(stat, index * statTicker.stagger);
-      }).filter(reveal => reveal !== undefined),
-    ];
-    [...headings, ...stats].forEach(element => { if (!reveals.some(reveal => reveal.element === element)) setState(element, 'visible'); });
+    const reveals: Reveal[] = headings.filter(fresh).map(heading => new HeadlineReveal(heading));
+    headings.forEach(element => { if (!reveals.some(reveal => reveal.element === element)) setState(element, 'visible'); });
     reveals.forEach(reveal => { seen.add(reveal.element); reveal.hold(); });
 
     const finishWithin = (target: Element | null) => {
