@@ -4,16 +4,17 @@ import type { ReactNode } from 'react';
 import type { MenuLink } from './navigation-data';
 import styles from './mega-menu.module.css';
 import { InfrastructureFigure, type FigureName } from './infrastructure-figure';
-import { offeringIllustrations } from './offering-illustrations';
 
-type Feature = { title: string; description: string; href: string; image?: string; mark?: string; illustration?: FigureName; theme?: 'dark' };
+type Feature = { title: string; description: string; href: string; image?: string; mark?: string; illustration?: FigureName; plane?: string; theme?: 'dark' };
+/** Single planes of the operating model diagram, rendered by scripts/render-menu-planes.mjs. */
+const plane = (name: string) => assetPath(`/assets/menu/plane-${name}.webp`);
 const artwork = (name: string) => assetPath(`/assets/figma/menu-${name}.webp`);
 const photo = (name: string) => assetPath(`/assets/figma/industries-${name}-512.webp`);
 const features: Record<string, { label: string; cards: Feature[] }> = {
   Infrastructure: { label: 'From exploration to production', cards: [
-    { title: 'Models & infrastructure', description: 'Explore the platform behind your next AI application.', href: 'https://pyai.com/', illustration: offeringIllustrations.infrastructure },
-    { title: 'Start in the playground', description: 'Try the technology and find what works for your use case.', href: 'https://pyai.com/playground', illustration: offeringIllustrations.applications },
-    { title: 'Build with our engineers', description: 'Take a workflow from an early idea to a working system.', href: '/approach', illustration: offeringIllustrations.services },
+    { title: 'Models & infrastructure', description: 'Explore the platform behind your next AI application.', href: 'https://pyai.com/', plane: plane('models') },
+    { title: 'Start in the playground', description: 'Try the technology and find what works for your use case.', href: 'https://pyai.com/playground', plane: plane('applications') },
+    { title: 'Build with our engineers', description: 'Take a workflow from an early idea to a working system.', href: '/approach', plane: plane('workflows') },
   ] },
   Industries: { label: 'By role', cards: [
     { title: 'Operations leaders', description: 'Reduce manual handoffs with AI workflows built around your systems, processes and approval rules.', href: '/approach#step-1', image: photo('BackgroundImage3') },
@@ -48,13 +49,13 @@ export function MegaMenu({ link, children, compact = false }: { link: MenuLink; 
         <div className={styles.features}>
           {link.label === 'Industries' && <h2 className={styles.groupLabel}>{feature.label}</h2>}
           <div className={styles.cards}>
-            {feature.cards.map(card => <a className={`${styles.card} ${!card.image ? styles.surfaceCard : ''} ${card.illustration ? styles.illustratedCard : !card.image ? styles.textCard : ''} ${card.theme === 'dark' ? styles.darkCard : ''}`} href={withBasePath(card.href)} key={card.title}>
-              {(card.image || card.illustration) && <div className={styles.image}>
-                {card.illustration ? <InfrastructureFigure name={card.illustration} /> : <img src={assetPath(card.image)} alt="" width="512" height="400" decoding="async" />}
+            {feature.cards.map(card => <a className={`${styles.card} ${!card.image ? styles.surfaceCard : ''} ${card.illustration || card.plane ? styles.illustratedCard : !card.image ? styles.textCard : ''} ${card.theme === 'dark' ? styles.darkCard : ''}`} href={withBasePath(card.href)} key={card.title}>
+              {(card.image || card.illustration || card.plane) && <div className={styles.image}>
+                {card.plane ? <img className={styles.plane} src={card.plane} alt="" width="1040" height="800" decoding="async" /> : card.illustration ? <InfrastructureFigure name={card.illustration} /> : <img src={assetPath(card.image)} alt="" width="512" height="400" decoding="async" />}
                 {card.mark && <img className={styles.mark} src={assetPath(`/assets/figma/offerings-${card.mark}.svg`)} alt="" width="80" height="80" />}
-                {!card.illustration && <span className={styles.imageArrow}><ArrowIcon size={20} /></span>}
+                {!card.illustration && !card.plane && <span className={styles.imageArrow}><ArrowIcon size={20} /></span>}
               </div>}
-              {card.illustration && <span className={styles.imageArrow}><ArrowIcon size={20} /></span>}
+              {(card.illustration || card.plane) && <span className={styles.imageArrow}><ArrowIcon size={20} /></span>}
               <span className={`display ${styles.title}`}>{card.title}</span>
               <span className={styles.description}>{card.description}</span>
             </a>)}

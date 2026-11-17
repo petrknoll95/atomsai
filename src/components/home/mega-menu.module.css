@@ -33,6 +33,9 @@
 .card { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
 .image { position: relative; width: 100%; aspect-ratio: 1.3; overflow: hidden; border-radius: 8px; margin-bottom: 20px; background: var(--palette-forest-shade); }
 .image:has([data-infrastructure-figure]) { background: transparent; }
+/* Operating model planes: transparent stills, shown whole rather than cropped. */
+.image:has(> .plane) { background: transparent; }
+.image > .plane:first-child { object-fit: contain; }
 .image > img:first-child { width: 100%; height: 100%; object-fit: cover; transition: transform .7s cubic-bezier(.22,1,.36,1); }
 .image .mark { position: absolute; width: 24%; height: 30%; inset: 35% 38%; object-fit: contain; }
 .imageArrow { position: absolute; right: 16px; bottom: 16px; width: 36px; height: 36px; display: grid; place-items: center; border-radius: 50%; background: var(--palette-paper); color: var(--palette-deep-green); opacity: 0; transform: translateY(6px); transition: opacity .3s ease, transform .4s ease; }

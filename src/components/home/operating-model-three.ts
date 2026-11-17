@@ -33,6 +33,10 @@ type DiagramOptions = {
   scroll?: boolean;
   /** Extra pinned scroll after the last layer, in viewport heights, for exit transitions. */
   tail?: number;
+  /** Show one plane only (0 dots, 1 flows, 2 interface, 3 logo), fully opened and tightly framed. For still renders. */
+  isolate?: number;
+  /** Keep the drawing buffer so the canvas can be exported (toDataURL). */
+  capture?: boolean;
   onHighlight?: (index: number) => void;
 };
 
@@ -48,7 +52,8 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const scrollLinked = !reducedMotion && options.scroll !== false;
   let disposed = false;
-  const renderer = new WebGLRenderer({ alpha: true, antialias: true });
+  const isolate = options.isolate;
+  const renderer = new WebGLRenderer({ alpha: true, antialias: true, preserveDrawingBuffer: !!options.capture });
   // Supersample the thin contours instead of dithering overlapping line caps.
   renderer.setPixelRatio(Math.min(window.devicePixelRatio * 2, 4));
   element.appendChild(renderer.domElement);
@@ -325,7 +330,7 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
     camera.position.set(0, 0, cameraDistance).applyQuaternion(camera.quaternion);
     const spacing = thickness + 1.25 * scrollState.spread;
     outlines.forEach(({ surface, line, fade }, index) => {
-      surface.position.y = line.position.y = (index - 1.5) * spacing + fade.lift;
+      surface.position.y = line.position.y = isolate === index ? 0 : (index - 1.5) * spacing + fade.lift;
       line.material.color.copy(paperTone).lerp(inkTone, fade.opacity).convertSRGBToLinear();
     });
     dotGrid.visible = scrollState.designs > 0;
@@ -365,9 +370,11 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
     // camera space so tilting, lifted layers, and narrow canvases stay safe.
     const extent = halfSize + .18;
     const perimeterTop = 1.5 * (thickness + 1.25 * scrollState.spread) + thickness / 2 + .16;
-    const lower = Math.min(-perimeterTop, ...outlines.map(({ surface }) => surface.position.y - thickness / 2));
-    const upper = Math.max(perimeterTop, ...outlines.map(({ surface }, index) =>
-      surface.position.y + thickness / 2 + (index === 2 ? .38 * scrollState.spread + .005 : 0)));
+    const lower = isolate !== undefined ? -thickness / 2
+      : Math.min(-perimeterTop, ...outlines.map(({ surface }) => surface.position.y - thickness / 2));
+    const upper = isolate !== undefined ? thickness / 2 + (isolate === 2 ? .38 * scrollState.spread + .005 : 0)
+      : Math.max(perimeterTop, ...outlines.map(({ surface }, index) =>
+        surface.position.y + thickness / 2 + (index === 2 ? .38 * scrollState.spread + .005 : 0)));
     camera.updateMatrixWorld();
     const point = new Vector3();
     let projectedX = 0, projectedY = 0;
@@ -378,7 +385,7 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
     }
     const padding = Math.min(24, width * .08, height * .08);
     const halfHeight = Math.max(
-      2.8 + .45 * scrollState.perimeter,
+      isolate !== undefined ? 0 : 2.8 + .45 * scrollState.perimeter,
       projectedY / (1 - 2 * padding / height),
       projectedX / (aspect * (1 - 2 * padding / width)),
     );
@@ -480,7 +487,18 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
     if (scrollLinked && options.tail) timeline.to({}, { duration: options.tail * 3.9 / 4.5 });
   }, options.trigger);
   const tailDuration = scrollLinked && options.tail ? options.tail * 3.9 / 4.5 : 0;
-  if (reducedMotion) timeline!.progress(1);
+  if (isolate !== undefined) {
+    // Still render of one plane: no scroll story, every design element shown.
+    timeline!.kill();
+    Object.assign(scrollState, { tilt: 1, spread: 1, designs: 1, perimeter: 0, shadow: 0 });
+    outlines.forEach((outline, index) => {
+      outline.fade.opacity = index === isolate ? 1 : 0;
+      outline.fade.lift = 0;
+      outline.surface.visible = outline.line.visible = index === isolate;
+    });
+    applyScrollState();
+  }
+  else if (reducedMotion) timeline!.progress(1);
   // Without scroll, open on the first layer to match the first open tab.
   else if (!scrollLinked) timeline!.time(timeline!.labels[highlightLabels[0]] + .35);
   element.dataset.ready = 'true';
