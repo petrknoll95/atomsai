@@ -31,11 +31,42 @@ export function IntegrationsGrid() {
     const mobile = matchMedia('(max-width: 767px)');
     const reduced = matchMedia('(prefers-reduced-motion: reduce)');
     let visible = false;
+    // Orbits move their slots with upright translations rather than rotating whole rings:
+    // Chrome rasterises large rotating layers at reduced resolution, which blurred the logos
+    // and the 1px circles. Each ring keeps its own clock and only advances while running.
+    const orbits = Array.from(root.querySelectorAll<HTMLElement>('[data-orbit]')).map(orbit => {
+      const ring = Number(orbit.dataset.orbit), count = rings[ring];
+      return {
+        orbit, ring, radius: 0, speed: (ring % 2 ? -1 : 1) * Math.PI * 2 / ((480 + ring * 90) * 1000),
+        slots: Array.from(orbit.querySelectorAll<HTMLElement>('[data-orbit-slot]')).map((slot, index) => ({ slot, angle: (index / count * 360 - 90) * Math.PI / 180 })),
+      };
+    });
+    let elapsed = 0, last = 0, tick = 0;
+    const place = () => {
+      const pixel = 1 / devicePixelRatio;
+      for (const { radius, speed, slots } of orbits) for (const { slot, angle } of slots) {
+        const turn = angle + elapsed * speed;
+        const dx = Math.round(radius * (Math.cos(turn) - Math.cos(angle)) / pixel) * pixel;
+        const dy = Math.round(radius * (Math.sin(turn) - Math.sin(angle)) / pixel) * pixel;
+        slot.style.transform = `translate(-50%, -50%) translate(${dx}px, ${dy}px)`;
+      }
+    };
+    const measure = () => { for (const item of orbits) item.radius = item.orbit.offsetWidth / 2; place(); };
+    const loop = (now: number) => {
+      if (last) elapsed += Math.min(now - last, 100);
+      last = now;
+      place();
+      tick = requestAnimationFrame(loop);
+    };
     const update = () => {
-      // CSS pauses each independent clock without resetting its progress.
-      root.dataset.running = String(visible && !document.hidden && !reduced.matches);
+      const running = visible && !document.hidden && !reduced.matches;
+      root.dataset.running = String(running);
+      cancelAnimationFrame(tick);
+      last = 0;
+      if (running) tick = requestAnimationFrame(loop);
     };
     const layout = () => {
+      measure();
       const positions = visiblePositions(root);
       const count = Math.min(mobile.matches ? 7 : 10, positions.length);
       const preferred = Array.from({ length: count }, (_, index) => positions[Math.floor(index * positions.length / count)]);
@@ -63,6 +94,7 @@ export function IntegrationsGrid() {
     document.addEventListener('visibilitychange', update);
     return () => {
       cancelAnimationFrame(frame);
+      cancelAnimationFrame(tick);
       observer.disconnect();
       resize.disconnect();
       mobile.removeEventListener('change', layout);
@@ -94,9 +126,7 @@ export function IntegrationsGrid() {
   return <div ref={grid} className={styles.grid} aria-hidden="true" data-integration-orbits>
     {rings.map((count, ring) => {
       const start = rings.slice(0, ring).reduce((total, size) => total + size, 0);
-      return <div className={styles.orbit} key={ring} data-orbit={ring} style={{
-        '--ring': ring, '--orbit-duration': `${480 + ring * 90}s`,
-      } as CSSProperties}>
+      return <div className={styles.orbit} key={ring} data-orbit={ring} style={{ '--ring': ring } as CSSProperties}>
         {Array.from({ length: count }, (_, slot) => {
           const index = start + slot;
           const angle = (slot / count * 360 - 90) * Math.PI / 180;

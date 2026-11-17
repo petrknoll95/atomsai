@@ -13,29 +13,24 @@
   width: calc(var(--orbit-base) + var(--ring) * var(--orbit-step) * 2);
   aspect-ratio: 1;
   translate: -50% -50%;
-  animation: orbit-turn var(--orbit-duration) linear infinite;
-  animation-play-state: paused;
 }
-.orbit:nth-child(even) { animation-direction: reverse; }
+/* IntegrationsGrid moves each slot along its ring with an upright translation. */
 .slot {
   position: absolute; width: var(--tile-size); aspect-ratio: 1;
   transform: translate(-50%, -50%);
+  will-change: transform;
 }
 .tile {
   width: 100%; height: 100%; display: grid; place-items: center;
   border-radius: 50%; background: transparent;
   border: 1px solid var(--color-border-subtle);
-  animation: orbit-turn var(--orbit-duration) linear infinite reverse;
-  animation-play-state: paused;
 }
-.orbit:nth-child(even) .tile { animation-direction: normal; }
 .tile img {
   width: 46%; height: 46%; object-fit: contain;
   animation: icon-lifetime 4.8s cubic-bezier(.4, 0, .2, 1) both;
   animation-play-state: paused;
 }
-.grid[data-running="true"] :is(.orbit, .tile, img) { animation-play-state: running; }
-@keyframes orbit-turn { to { transform: rotate(360deg); } }
+.grid[data-running="true"] img { animation-play-state: running; }
 @keyframes icon-lifetime {
   0% { opacity: 0; transform: scale(.82); filter: blur(4px); }
   12%, 76% { opacity: 1; transform: scale(1); filter: blur(0); }
@@ -55,5 +50,5 @@
   .title { font-size: clamp(30px, 8vw, 42px); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .orbit, .tile, .tile img { animation: none; }
+  .tile img { animation: none; }
 }
