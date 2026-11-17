@@ -17,7 +17,6 @@ export function BlogPage() {
   return <main className={`page-container ${styles.page}`} id="main">
     <header className={styles.intro}>
       <h1 className={`display ${styles.heading}`} id="hero-heading">{content.title}</h1>
-      <p className={styles.description}>{content.intro[0]}</p>
     </header>
 
     <article className={styles.featured} aria-labelledby="featured-title">
