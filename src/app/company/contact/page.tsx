@@ -1,4 +1,4 @@
-import { withBasePath } from '@/lib/base-path';
+import { assetPath, withBasePath } from '@/lib/base-path';
 import { ArrowIcon } from '@/components/arrow-icon';
 import type { Metadata } from 'next';
 import { PageShell } from '@/components/pages/page-shell';
@@ -11,11 +11,14 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://atomsai.com/company/contact' },
 };
 
+// art is the line SVG in /assets/illustrations; ink is its ink box (width, height), printed by
+// scripts/contact-line-art.mjs. Every scene was fitted to the same 219.734 longest side, so
+// scaling height by ink[1] / 219.734 keeps the four drawings at one shared scale.
 const contacts = [
-  { title: 'Security & compliance', text: 'Reports, questionnaires and data agreements.', email: 'security@atomsai.com' },
-  { title: 'Partnerships', text: 'Technology, cloud and model providers.', email: 'partners@atomsai.com' },
-  { title: 'Press', text: 'Interviews, briefings and brand assets.', email: 'press@atomsai.com' },
-  { title: 'Careers', text: 'Role questions and introductions.', email: 'careers@atomsai.com' },
+  { title: 'Security & compliance', text: 'Reports, questionnaires and data agreements.', email: 'security@atomsai.com', art: 'security', ink: [219.734, 151.174] },
+  { title: 'Partnerships', text: 'Technology, cloud and model providers.', email: 'partners@atomsai.com', art: 'partnerships', ink: [219.732, 178.074] },
+  { title: 'Press', text: 'Interviews, briefings and brand assets.', email: 'press@atomsai.com', art: 'press', ink: [114.44, 219.732] },
+  { title: 'Careers', text: 'Role questions and introductions.', email: 'careers@atomsai.com', art: 'careers', ink: [185.488, 219.734] },
 ];
 
 export default function ContactPage() {
@@ -37,6 +40,7 @@ export default function ContactPage() {
         <p className={styles.direct}>Prefer to write directly?<a className={styles.directLink} href={withBasePath("mailto:hello@atomsai.com")}><span className="link-underline">hello@atomsai.com</span><span className={styles.arrow} aria-hidden="true"><ArrowIcon direction="up-right" /></span></a></p>
       </div>
       <ul className={styles.contacts}>{contacts.map(contact => <li key={contact.email}><a className={styles.contact} href={withBasePath(`mailto:${contact.email}`)}>
+        <span className={styles.contactArt} aria-hidden="true"><span style={{ aspectRatio: `${contact.ink[0]} / ${contact.ink[1]}`, height: `calc(100% * ${contact.ink[1]} / 219.734)`, maskImage: `url("${assetPath(`/assets/illustrations/contact-${contact.art}-line.svg`)}")` }} /></span>
         <h3 className={`display ${styles.contactTitle}`}>{contact.title}</h3>
         <p>{contact.text}</p>
         <span className={styles.contactEmail}><span className="link-underline">{contact.email}</span><span className={styles.arrow} aria-hidden="true"><ArrowIcon direction="up-right" /></span></span>
