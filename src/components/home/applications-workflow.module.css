@@ -24,13 +24,18 @@
 .item[data-active='true'] .detail { grid-template-rows: 1fr; opacity: 1; }
 .detailCopy { padding: 12px 0 10px 54px; font-size: var(--text-body); line-height: 1.5; }
 .detailCopy p { color: color-mix(in display-p3, var(--palette-cream) 72%, transparent); max-width: 34ch; }
-.detailCopy a { display: flex; align-items: center; gap: 10px; width: fit-content; min-height: 44px; margin-top: 10px; color: var(--palette-cream); font-size: var(--text-label); }
+/* Ghost buttons hang their padding outside the text column so labels align with the copy. */
+.detailCopy a { display: flex; align-items: center; gap: 10px; width: fit-content; min-height: 36px; margin-top: 16px; margin-left: -12px; color: var(--palette-cream); font-size: var(--text-label); }
+.detailCopy a + a { margin-top: 6px; }
+@media(pointer:coarse) { .detailCopy a { min-height: 44px; } }
 .detailCopy a span { transition: transform .3s ease; }
-.detailCopy a:hover span { transform: translate(2px,-2px); }
-.visual { --visual-radius: 10px; container-type: inline-size; position: relative; min-width: 0; min-height: 690px; aspect-ratio: 680 / 720; border-radius: var(--visual-radius); overflow: clip; clip-path: inset(0 round var(--visual-radius)); isolation: isolate; background: color-mix(in display-p3, var(--palette-cream) 4%, var(--palette-forest-shade)); }
-.scenes { position: absolute; inset: 24px 0; }
+.detailCopy a:is(:hover,:focus-visible) span { transform: translateX(2px); }
+.visual { --visual-radius: 10px; container-type: inline-size; position: relative; display:flex; flex-direction:column; width:100%; min-width: 0; min-height: 690px; padding:24px; gap:16px; border-radius: var(--visual-radius); overflow: clip; isolation: isolate; background: color-mix(in display-p3, var(--palette-cream) 4%, var(--palette-forest-shade)); }
+.scenes { position:relative; display:grid; align-items:center; flex:1; min-height:320px; }
 .scene { position: absolute; inset: 0; display: grid; place-items: center; visibility: hidden; opacity: 0; transition: opacity .16s ease, visibility 0s .16s; }
 .scene[data-active='true'] { visibility: visible; opacity: 1; transition: none; }
+.scene[data-application-scene='1'][data-active='true'] { position:relative; inset:auto; }
+.scene[data-application-scene='1'] .justCallComposition { width:100%; padding-block:24px; }
 .sceneComposition {
   --color-foreground: var(--scene-ink);
   --color-muted-foreground: var(--scene-muted);
@@ -64,7 +69,6 @@
   .visual { order: 1; min-height: 600px; aspect-ratio: auto; }
   .accordion { order: 2; padding: 0 16px 20px; gap: 14px; }
   .name { font-size: 30px; }
-  .scenes { inset: 24px 0; }
   .sceneComposition { width: 88%; max-width: 400px; }
 }
 @media (max-width: 359px) {
@@ -78,7 +82,21 @@
 }
 
 /* Only the host sets the size: the complete JustCall system uses em units. */
-.justCallComposition { font-size: min(14px, 1.94cqw); }
+.justCallComposition { font-size:var(--scene-font-size,8px); }
 
 .scene:has(> .helpwiseComposition) { inset: -24px 0; }
 .helpwiseComposition { position: absolute; top: 3em; left: 3em; font-size: max(14px, 2.4cqw); }
+
+svg.productLogo{background:transparent;}
+
+.exampleControls{position:relative;z-index:1;flex:none;}
+.choices{display:flex;gap:6px;flex-wrap:wrap;}
+.choices button{--button-fill:var(--color-secondary);--button-clip-radius:var(--radius-control);display:inline-flex;align-items:center;justify-content:center;min-height:32px;padding:6px 16px;border:0;border-radius:var(--radius-control);font-size:var(--text-label);font-weight:var(--font-weight-medium);font-variation-settings:'wght' var(--font-weight-medium),'ital' 100;line-height:20px;color:var(--color-secondary-foreground);cursor:pointer;transition:background-color .3s ease,color .3s ease,var(--focus-transition);}
+.choices button:is(:hover,:focus-visible),.choices button[aria-pressed='true']{--button-fill:var(--color-primary);color:var(--color-primary-foreground);}
+.choices button:focus-visible{outline:2px solid var(--palette-iris-light);outline-offset:3px;}
+.copy{gap:32px;}
+@media(max-width:767px){.visual{min-height:440px;padding:16px;}.accordion{order:1;}.visual{order:2;}}
+
+.sectionHeading{margin-bottom:24px;}
+.sectionLead{max-width:720px;margin-bottom:clamp(28px,3vw,48px);font-size:clamp(18px,2vw,24px);line-height:1.5;color:var(--color-muted-foreground);}
+.productTitle{font-size:clamp(24px,2vw,30px);line-height:1.12;text-wrap:balance;margin-bottom:20px;color:var(--palette-cream);}
