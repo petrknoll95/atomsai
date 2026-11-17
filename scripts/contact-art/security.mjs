@@ -1,7 +1,7 @@
 // Recipe for a contact directory card: render with the AtomsAI illustration kit
 // (skills/atomsai-illustrations/scripts/render.mjs), copy neutral-light.svg to
-// public/assets/illustrations/contact-security.svg, then run scripts/contact-line-art.mjs.
-// The kit requires one focal highlight; contact-line-art.mjs strips its Iris fill, so the
+// public/assets/illustrations/contact-security.svg, then run scripts/contact-motion.mjs (stills and loops).
+// The kit requires one focal highlight; contact-motion.mjs never draws it, so the
 // delivered art is line only.
 export const title = 'Signed document stack';
 export const reference = 'modular';

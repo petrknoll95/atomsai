@@ -10,6 +10,7 @@ import * as geometry from '../skills/atomsai-illustrations/runtime/geometry.mjs'
 import * as primitives from '../skills/atomsai-illustrations/runtime/primitives.mjs';
 import { fitToReference } from '../skills/atomsai-illustrations/runtime/models.mjs';
 import { projectScene, frameToSvg } from '../skills/atomsai-illustrations/runtime/render.mjs';
+import { joinFrame } from './lib/join-strokes.mjs';
 
 const STAGES = ['understand', 'design', 'build', 'validate', 'handover'];
 const api = { ...geometry, ...primitives };
@@ -19,7 +20,8 @@ for (const stage of STAGES) {
   const s = recipe.default(api);
   recipe.verify?.(s, api, assert);
   fitToReference(s, recipe.reference);
-  const frame = projectScene(s, { yaw: 0, pitch: 0, white: true });
+  // Chain edges at shared vertices so corners miter instead of notching.
+  const frame = joinFrame(projectScene(s, { yaw: 0, pitch: 0, white: true }));
   assert.equal(frame.rear.length, 0, `${stage}: opaque art exposes hidden lines`);
   const points = [...frame.front, ...frame.accent].flatMap(line => line.points);
   rendered.push({ stage, svg: frameToSvg(frame), points });

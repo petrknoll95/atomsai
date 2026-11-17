@@ -1,9 +1,11 @@
-// Renders the contact directory hover loops through the AtomsAI illustration kit, one real
-// projection per frame, and writes public/assets/illustrations/contact-motion/<name>.json:
-// { viewBox, duration, fps, frames: [path d, ...] }. Line only: highlights are never drawn.
+// Renders the contact directory art through the AtomsAI illustration kit, one real projection per
+// frame, with strokes joined at shared vertices (scripts/lib/join-strokes.mjs). Writes:
+// - public/assets/illustrations/contact-<name>-line.svg: the still, frame 0, used as the CSS mask;
+// - public/assets/illustrations/contact-motion/<name>.json: { viewBox, duration, fps, frames }.
+// Line only: highlights are never drawn. The viewBox is the still's existing ink box.
 //
 // Every frame reuses the still's reference fit and camera extent, so the motion is not
-// re-centred or rescaled. Frame 0 must reproduce the still line art exactly.
+// re-centred or rescaled. The still is written from frame 0, so the swap is seamless.
 // Usage: node scripts/contact-motion.mjs [--sheet /absolute/dir]   (sheet = review PNGs)
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
@@ -13,6 +15,7 @@ import * as geometry from '../skills/atomsai-illustrations/runtime/geometry.mjs'
 import * as primitives from '../skills/atomsai-illustrations/runtime/primitives.mjs';
 import { fitToReference } from '../skills/atomsai-illustrations/runtime/models.mjs';
 import { projectScene, sceneExtent, viewTransform } from '../skills/atomsai-illustrations/runtime/render.mjs';
+import { joinFrame } from './lib/join-strokes.mjs';
 
 const FPS = 30, NAMES = ['security', 'partnerships', 'press', 'careers'];
 const api = { ...geometry, ...primitives };
@@ -48,19 +51,20 @@ for (const name of NAMES) {
     transformScene(s, p => mul(sub(p, origin), scale), p => p, scale);
     for (const group of [s.lines, s.contours, s.cylinders]) group.forEach(item => item.width = 1.28);
     s.frameAspect = still.frameAspect;
-    const frame = projectScene(s, view, { extent });
+    const frame = joinFrame(projectScene(s, view, { extent }));
     assert.equal(frame.rear.length, 0, `${name}: opaque art exposes hidden lines at t=${t}`);
     return frame;
   };
 
-  // Seam check: frame 0 is the still, path for path, at the still's own precision.
-  const lineSvg = await fs.readFile(`public/assets/illustrations/contact-${name}-line.svg`, 'utf8');
-  const stillD = [...lineSvg.matchAll(/ d="([^"]+)"/g)].map(m => m[1]).join('');
-  assert.equal(toD(linesOf(render(0)), v => Number(v.toFixed(3))), stillD, `${name}: frame 0 differs from the still`);
+  // The still: frame 0, unsimplified, in the existing ink box, one path per joined stroke.
+  const linePath = `public/assets/illustrations/contact-${name}-line.svg`;
+  const viewBox = (await fs.readFile(linePath, 'utf8')).match(/viewBox="([^"]+)"/)[1].split(' ').map(Number);
+  const n3 = v => Number(v.toFixed(3));
+  const stillPaths = linesOf(render(0)).map(l => `<path d="${toD([l], n3)}" stroke-width="1.28"/>`).join('');
+  await fs.writeFile(linePath, `<svg xmlns="http://www.w3.org/2000/svg" width="${viewBox[2]}" height="${viewBox[3]}" viewBox="${viewBox.join(' ')}"><g fill="none" stroke="#000" stroke-linejoin="miter" stroke-linecap="butt">${stillPaths}</g></svg>`);
 
   const count = Math.round(recipe.motion.duration * FPS);
   const frames = Array.from({ length: count }, (_, i) => toD(lean(linesOf(render(i / count))), n1));
-  const viewBox = lineSvg.match(/viewBox="([^"]+)"/)[1].split(' ').map(Number);
   const json = JSON.stringify({ viewBox, duration: recipe.motion.duration, fps: FPS, frames });
   await fs.writeFile(`public/assets/illustrations/contact-motion/${name}.json`, json);
   console.log(`${name}: ${count} frames, ${(json.length / 1024).toFixed(0)} KB`);

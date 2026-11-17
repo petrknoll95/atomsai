@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://atomsai.com/company/contact' },
 };
 
-// art is the line SVG in /assets/illustrations; ink is its ink box (width, height), printed by
-// scripts/contact-line-art.mjs. Every scene was fitted to the same 219.734 longest side, so
+// art is the line SVG in /assets/illustrations; ink is its ink box (width, height), taken from
+// the viewBox of each contact-*-line.svg (scripts/contact-motion.mjs keeps it). Every scene was fitted to the same 219.734 longest side, so
 // scaling height by ink[1] / 219.734 keeps the four drawings at one shared scale.
 const contacts = [
   { title: 'Security & compliance', text: 'Reports, questionnaires and data agreements.', email: 'security@atomsai.com', art: 'security', ink: [219.734, 151.174] as [number, number] },
