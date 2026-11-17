@@ -22,7 +22,7 @@ const artwork: Record<string, string> = {
 
 const stories: Story[] = notes
   .filter(note => note.title !== featured.title)
-  .map(note => ({ title: note.title, excerpt: note.body[0], category: note.category, artwork: artwork[note.title] ?? '/assets/field-notes/voice-signal.webp' }));
+  .map(note => ({ title: note.title, excerpt: note.body[0], category: note.category || 'Notes', artwork: artwork[note.title] ?? '/assets/field-notes/voice-signal.webp' }));
 const featuredCategory = notes.find(note => note.title === featured.title)?.category;
 
 export function BlogPage() {
