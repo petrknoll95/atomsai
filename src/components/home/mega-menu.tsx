@@ -7,7 +7,6 @@ import { InfrastructureFigure, type FigureName } from './infrastructure-figure';
 import { offeringIllustrations } from './offering-illustrations';
 
 type Feature = { title: string; description: string; href: string; image?: string; mark?: string; illustration?: FigureName; theme?: 'dark' };
-const artwork = (name: string) => assetPath(`/assets/figma/menu-${name}.webp`);
 const photo = (name: string) => assetPath(`/assets/figma/industries-${name}-512.webp`);
 const features: Record<string, { label: string; cards: Feature[] }> = {
   Infrastructure: { label: 'From exploration to production', cards: [
@@ -22,8 +21,8 @@ const features: Record<string, { label: string; cards: Feature[] }> = {
   ] },
   Resources: { label: 'Ideas, examples and practical next steps', cards: [
     { title: 'Customer stories', description: 'See how teams put our technology to work.', href: 'https://atomsai.com/resources/case-studies', image: assetPath('/assets/figma/stories-Media-512.webp') },
-    { title: 'Explore Voice AI', description: 'Listen to a sample conversation and follow the workflow.', href: '/capabilities/voice', image: artwork('drift'), mark: 'EveryThreadToOneCentre11' },
-    { title: 'How we build', description: 'From a focused first workflow to an owned, working system.', href: '/approach', image: artwork('concentric'), mark: 'RisingOffABase11' },
+    { title: 'Explore Voice AI', description: 'Listen to a sample conversation and follow the workflow.', href: '/capabilities/voice' },
+    { title: 'How we build', description: 'From a focused first workflow to an owned, working system.', href: '/approach' },
   ] },
   Company: { label: 'Get to know AtomsAI', cards: [
     { title: 'Our approach', description: 'Small, focused teams. Clear decisions. Systems you own.', href: '/approach' },
