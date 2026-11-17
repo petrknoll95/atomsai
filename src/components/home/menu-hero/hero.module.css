@@ -36,8 +36,8 @@
 .backdrop[data-hero-pattern-state='open'] .source { opacity: 1; }
 .backdrop[data-hero-pattern-state='open'] .slitStrip { visibility: hidden; }
 
-/* Both surfaces share viewport-aligned slit coordinates and reveal timing. */
-.backdrop, .maskedCopy {
+/* The backdrop enters through viewport-aligned slits; the copy is not masked. */
+.backdrop {
   --menu-track: calc((min(100vw, var(--page-max-width)) - 2 * var(--content-gutter)) / var(--menu-columns));
   -webkit-mask-image: var(--hero-slit-masks);
   mask-image: var(--hero-slit-masks);
@@ -49,11 +49,8 @@
   mask-repeat: no-repeat;
 }
 .hero .maskedCopy > div > * { opacity: 1; transform: none; transition: none; }
-.maskedCopy[data-hero-copy-state='open'], .maskedCopy:focus-within { -webkit-mask-image: none; mask-image: none; }
-@media (prefers-reduced-motion: reduce) { .maskedCopy { -webkit-mask-image: none; mask-image: none; } }
 .backdrop[data-hero-pattern-state='open'] { -webkit-mask-image: none; mask-image: none; }
 
-@media (scripting: enabled) { .maskedCopy:not([data-hero-copy-state]) { visibility: hidden; } }
 
 /* Normal document flow makes the next section rise directly with scrolling. */
 .sectionReveal {
@@ -67,3 +64,5 @@
   justify-content: flex-start;
   padding-top: 0;
 }
+
+.hero .announcement{display:flex;align-items:center;gap:16px;font-size:var(--text-label);line-height:1.4;padding:8px 14px;border:1px solid color-mix(in srgb,var(--palette-cream) 24%,transparent);border-radius:999px;color:var(--palette-cream);height:auto;}

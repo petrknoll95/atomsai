@@ -18,8 +18,8 @@ export function MenuPatternHero({ children }: { children: ReactNode }) {
     const track = trackRef.current!, stage = stageRef.current!;
     let disposed = false;
     const copy = contentRef.current!;
-    // Reveal the authored layout only after its fonts have settled. The
-    // background and copy then enter through their aligned slit masks.
+    // Mark the copy ready once its fonts have settled. The background enters
+    // through its slit masks; the copy itself is not masked.
     void document.fonts.ready.then(() => {
       if (!disposed) copy.dataset.copyReady = 'true';
     });
@@ -37,9 +37,10 @@ export function MenuPatternHero({ children }: { children: ReactNode }) {
       <div ref={fieldRef} className={`${styles.field} ${menuHero.field}`} aria-hidden='true' data-menu-hero-field><MenuHeroBackdrop /></div>
       <div ref={contentRef} className={`${styles.content} ${stars.content} ${menuHero.maskedCopy}`} data-hero-copy>
         <div className={stars.group}>
-          <h1 id='hero-heading' tabIndex={-1} className={`display ${stars.title}`}>Powerful AI.<br/>Built for real use.</h1>
-          <p className={stars.lead}>Applications for everyday work. Models and infrastructure to build on. Custom engineering for the problems that need more.</p>
-          <ButtonLink href='#applications' variant='primary' size='large'>Explore applications</ButtonLink>
+          <a href="#company-story" className={menuHero.announcement}>SaaS Labs is now AtomsAI <span aria-hidden="true">↗</span></a>
+          <h1 id='hero-heading' tabIndex={-1} className={`display ${stars.title}`}>AI that works today.<br/>Built to get better tomorrow.</h1>
+          <p className={stars.lead}>At AtomsAI, models power products. Products inform better technology. And solving new business problems gives both more to build on. Together, they make possible what no single product could.</p>
+          <ButtonLink href='/company/contact' variant='primary' size='large'>Talk to AtomsAI</ButtonLink>
         </div>
       </div>
     </div>
