@@ -30,7 +30,7 @@
 .label{grid-area:label;justify-self:start;padding:5px 12px;border-radius:var(--radius-control);background:var(--palette-paper);color:var(--palette-deep-green);font-size:var(--text-label);line-height:1.2;}
 .title{grid-area:title;max-width:16ch;margin-top:32px;font-size:clamp(30px,2.6vw,44px);line-height:1.05;text-wrap:balance;}
 /* Trimmed like the .display title, so the gap between them is measured glyph to glyph. */
-.text{grid-area:text;max-width:44ch;margin-top:32px;font-size:clamp(16px,1.2vw,19px);line-height:1.45;text-wrap:pretty;text-box:trim-both cap alphabetic;}
+.text{grid-area:text;max-width:44ch;margin-top:32px;font-size:clamp(15px,1.05vw,17px);line-height:1.45;text-wrap:pretty;text-box:trim-both cap alphabetic;}
 /* The line-only SVG is a mask, so the strokes take the card's text colour. Its viewBox is cropped
    to the ink and the box takes the ink's proportions (inline aspect-ratio), so every drawing's
    ink meets the top, bottom and right padding exactly. */
@@ -46,5 +46,5 @@
   .card{min-height:0;padding:16px 20px 24px;}
   .art{height:96px;}
   .title{margin-top:48px;font-size:28px;}
-  .text{margin-top:24px;font-size:16px;}
+  .text{margin-top:24px;font-size:15px;}
 }
