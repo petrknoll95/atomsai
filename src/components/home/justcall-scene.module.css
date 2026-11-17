@@ -82,6 +82,40 @@
 .avatar { background: var(--ui-surface); display: grid; place-items: center; width: 2.7em; height: 2.7em; border: .0625em solid var(--ui-line); border-radius: 2em; }
 .hangup { display: grid; place-items: center; width: 2.5em; height: 2.5em; margin-left: auto; border-radius: 2em; background: #e5484d; color: #fff; border: 0; }
 .hangup svg { width: 1.5em; height: 1.5em; }
+.callTabs button { padding: .5em .75em; border-radius: 2em; color: var(--ui-ink); font-size: inherit; line-height: 1; --button-fill: color-mix(in srgb, var(--ui-ink) 10%, transparent); }
+.callTabs button:disabled { opacity: .4; cursor: default; }
+.callTabs button:not(:disabled):hover { --button-fill: color-mix(in srgb, var(--ui-ink) 18%, transparent); }
+.demoTranscript { height: 17em; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }
+.callInfo { flex: 1; min-width: 0; }
+.play { flex: none; background: var(--ui-ink); color: var(--ui-paper); }
+.replay { display: grid; place-items: center; flex: none; width: 2.5em; height: 2.5em; border-radius: 50%; color: var(--ui-ink); }
+.replay svg { width: 1.5em; height: 1.5em; }
+.system .demoStatus { padding: .75em 1.15em; min-height: 3.9em; font-size: .95em; color: var(--ui-ink); }
+.system button:focus-visible, .demoTranscript:focus-visible { outline: 2px solid var(--palette-iris); outline-offset: 3px; }
+@media (pointer: coarse) {
+  .play, .replay { position: relative; }
+  .play::after, .replay::after { content: ''; position: absolute; inset: -8px; }
+}
+
+/* Keep the conversation usable when the full illustration would shrink its controls. */
+@container (max-width: 440px) {
+  .interactive.system { width: 100%; height: auto; font-size: var(--text-label); }
+  .interactive .dashboard, .interactive .analytics { display: none; }
+  .interactive .foreground { position: relative; inset: auto; transform: none; width: 100%; grid-template-columns: minmax(0, 1fr); }
+  .interactive .conversation { width: 100%; margin: 0; }
+  .interactive .callTabs button { min-height: 32px; }
+  .interactive .play, .interactive .replay { width: 36px; height: 36px; }
+}
+/* Phones too: the visual is only 440px tall there, so a 500–767px wide container
+   would still shrink the full illustration (and its play controls) by height. */
+@media (max-width: 767px) {
+  .interactive.system { width: 100%; height: auto; font-size: var(--text-label); }
+  .interactive .dashboard, .interactive .analytics { display: none; }
+  .interactive .foreground { position: relative; inset: auto; transform: none; width: 100%; grid-template-columns: minmax(0, 1fr); }
+  .interactive .conversation { width: 100%; margin: 0; }
+  .interactive .callTabs button { min-height: 32px; }
+  .interactive .play, .interactive .replay { width: 36px; height: 36px; }
+}
 
 /* Stencil text stays clearer than its borders and decorative linework. */
 .dashboard { background: transparent; }
