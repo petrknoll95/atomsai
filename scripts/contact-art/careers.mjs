@@ -5,15 +5,15 @@
 // delivered art is line only.
 export const title = 'Next step';
 export const reference = 'modular';
-// Three equal-tread steps rising away from the viewer (toward −X) in equal increments; a user figure (the house user,
+// Three equal-tread steps rising away from the viewer (toward −Z, so the flight climbs to the left) in equal increments; a user figure (the house user,
 // at half scale) stands on the top tread.
 export default function ({ scene, box, ellipsoid, add, mul, circlePoints, X, Y, Z }) {
   const s = scene();
   s.hiddenLines = 'omit';
   const tread = 56, rise = 34, depth = 84;
-  for (let i = 0; i < 3; i++) box(s, [(1 - i) * tread, (i + 1) * rise / 2, 0], [tread, (i + 1) * rise, depth]);
+  for (let i = 0; i < 3; i++) box(s, [0, (i + 1) * rise / 2, (1 - i) * tread], [depth, (i + 1) * rise, tread]);
   // House user proportions (shoulders 70 × 60, head r 35) at 0.5.
-  const k = .5, base = [-tread, 3 * rise, 0], r = 70 * k, h = 60 * k, head = 35 * k;
+  const k = .5, base = [0, 3 * rise, -tread], r = 70 * k, h = 60 * k, head = 35 * k;
   const shoulders = ellipsoid(s, base, [mul(X, r), mul(Z, r), mul(Y, -h)], { half: true });
   s.faces.push({ points: circlePoints(base, r, X, Z, 96), owner: shoulders });
   ellipsoid(s, add(base, mul(Y, h + head)), [mul(X, head), mul(Z, head), mul(Y, head)], { highlight: true });
