@@ -23,7 +23,8 @@
 .tile {
   width: 100%; height: 100%; display: grid; place-items: center;
   border-radius: 50%; background: transparent;
-  border: 1px solid var(--color-border-subtle);
+  /* Stronger than the subtle border token so the empty rings read on paper. */
+  border: 1px solid color-mix(in display-p3, var(--color-foreground) 15%, transparent);
 }
 .tile img {
   width: 46%; height: 46%; object-fit: contain;
