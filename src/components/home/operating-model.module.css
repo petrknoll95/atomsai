@@ -6,8 +6,8 @@
 .diagramRow { --diagram-surface:#1a2b26; --model-inset:8px; --model-outer-radius:calc(var(--radius-panel) - var(--model-inset)); --model-inner-radius:var(--radius-card); display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:var(--model-inset); align-items:stretch; width:100%; padding:var(--model-inset); position:relative; z-index:1; isolation:isolate; }
 /* The panel surface is its own layer so it can grow to the viewport while the row is pinned (operating-model-expand.ts). */
 .rowBackdrop { position:absolute; inset:0; z-index:-1; background:var(--palette-forest-shade); border-radius:var(--radius-panel); pointer-events:none; }
-.heading { font-size:clamp(38px,3.35vw,54px); line-height:1; text-wrap:balance; max-width:24ch; margin-inline:auto; }
-.description { max-width:56ch; margin:24px auto 0; font-size:var(--text-body); line-height:1.5; color:var(--color-muted-foreground); }
+.heading { font-size:clamp(44px,4.4vw,72px); line-height:1; text-wrap:balance; max-width:24ch; margin-inline:auto; }
+.description { max-width:52ch; margin:28px auto 0; font-size:clamp(18px,1.45vw,22px); line-height:1.5; color:var(--color-muted-foreground); }
 .visual { position:relative; min-width:0; padding-block:28px; }
 .art { width:100%; height:min(660px,calc(100svh - 216px)); min-height:340px; }
 /* Canvas and labels share one measured surface. */
