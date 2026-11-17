@@ -70,7 +70,13 @@
 .contactTitle { font-size:30px; line-height:1.1; }
 /* Line art sits on a shared baseline above each title; the SVG is a mask, so it takes the text colour. */
 .contactArt { display:flex; align-items:end; height:132px; margin-bottom:36px; }
-.contactArt > span { display:block; background:currentColor; mask-size:100% 100%; mask-repeat:no-repeat; }
+.artInk { position:relative; display:block; }
+.artStill, .artMotion { position:absolute; inset:0; width:100%; height:100%; }
+.artStill { background:currentColor; mask-size:100% 100%; mask-repeat:no-repeat; }
+/* Hover loops: frames can travel past the still's crop (a hop, a spread), so never clip. */
+.artMotion { overflow:visible; visibility:hidden; }
+.artInk[data-playing] .artMotion { visibility:visible; }
+.artInk[data-playing] .artStill { visibility:hidden; }
 .contact p { color:var(--color-surface-muted-foreground); font-size:15px; line-height:1.45; margin-top:16px; max-width:260px; }
 .contactEmail { display:inline-flex; align-items:center; gap:8px; align-self:end; width:fit-content; font-size:15px; margin-top:32px; min-height:32px; }
 .contact:is(:hover,:focus-visible) .link-underline::after { clip-path:inset(0 0 0 0); }
