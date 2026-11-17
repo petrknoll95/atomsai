@@ -3,12 +3,12 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 /** Scroll distance, in viewport heights, spent opening and closing the panel. */
 const TRANSITION = .35;
-/** Gap kept between the expanded panel and the viewport's sides and bottom. */
+/** Gap kept between the expanded panel and the header, the viewport's sides and its bottom. */
 const MARGIN = 16;
 
 /**
  * While the diagram row is pinned, grow its backdrop from the content width to the
- * visible viewport (below the site header, inset by MARGIN at the sides and bottom),
+ * visible viewport, inset by MARGIN from the site header, the sides and the bottom,
  * then shrink it back before the pin ends. The panel keeps its rounded corners.
  * Only the backdrop moves: the canvas and accordion keep their size, so nothing reflows.
  */
@@ -25,7 +25,8 @@ export function expandPinnedRow({ row, backdrop, pin, pinnedTop }: {
     const bounds = row.getBoundingClientRect();
     const top = pinnedTop();
     return {
-      top: -Math.max(0, top - (header?.getBoundingClientRect().bottom ?? 0)),
+      // Clear the header's backdrop blur so the rounded top edge stays visible.
+      top: -Math.max(0, top - (header?.getBoundingClientRect().bottom ?? 0) - MARGIN),
       left: -Math.max(0, bounds.left - MARGIN),
       right: -Math.max(0, document.documentElement.clientWidth - bounds.right - MARGIN),
       bottom: -Math.max(0, window.innerHeight - MARGIN - top - row.offsetHeight),
