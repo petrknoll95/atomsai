@@ -1,65 +1,31 @@
-export const title = 'A homeowner gets an immediate reply';
+export const title = 'One response reaches farther ahead';
 export const reference = 'modular';
-const left=-68,right=32,floor=-60,eaves=30,ridgeX=-18,ridgeY=82,front=42.5,back=-42.5;
-const messageCenter=[110,78,0],messageSize=[52,36,5];
-export default function ({scene,box,stroke,curve,arrow,unit}) {
+const width=24,thickness=18,start=74;
+const inclination=25*Math.PI/180;
+const lanes=[{x:-58,end:-18},{x:0,end:-18},{x:58,end:-96}];
+export default function({scene,box,transformScene,around,X}) {
   const s=scene();s.hiddenLines='omit';
-  const A=[left,floor,front],B=[right,floor,front],C=[right,eaves,front],D=[ridgeX,ridgeY,front],E=[left,eaves,front];
-  const a=[left,floor,back],b=[right,floor,back],c=[right,eaves,back],d=[ridgeX,ridgeY,back],e=[left,eaves,back];
-  const roofRise=ridgeY-eaves,halfWidth=(right-left)/2;
-  const faces=[
-    {points:[A,B,C,D,E],normal:[0,0,1]},
-    {points:[b,a,e,d,c],normal:[0,0,-1]},
-    {points:[a,A,E,e],normal:[-1,0,0]},
-    {points:[B,b,c,C],normal:[1,0,0]},
-    {points:[E,D,d,e],normal:unit([-roofRise,halfWidth,0])},
-    {points:[D,C,c,d],normal:unit([roofRise,halfWidth,0])},
-    {points:[a,b,B,A],normal:[0,-1,0]},
-  ];
-  const owner='gabled-house',edges=new Map();
-  for(const face of faces) {
-    s.faces.push({points:face.points,owner});
-    for(let i=0;i<face.points.length;i++) {
-      const p=face.points[i],q=face.points[(i+1)%face.points.length];
-      const key=[p.join(','),q.join(',')].sort().join('|');
-      if(!edges.has(key)) edges.set(key,{points:[p,q],normals:[]});
-      edges.get(key).normals.push(face.normal);
-    }
+  for(const lane of lanes) {
+    box(s,[lane.x,0,(start+lane.end)/2],[width,thickness,start-lane.end]);
   }
-  for(const edge of edges.values()) stroke(s,edge.points,{owner,normals:edge.normals});
-  // A real shallow door panel attaches to the front wall and meets the floor.
-  box(s,[ridgeX,floor+23,front+1],[27,46,2]);
-  const envelope=box(s,messageCenter,messageSize);
-  const face=envelope.faces.find(f=>f.normal[2]>.99);
-  s.highlights.push({points:face.points,normal:face.normal,kind:'diamond',gradient:[]});
-  const x=messageCenter[0],y=messageCenter[1],z=messageSize[2]/2;
-  stroke(s,[[x-26,y+18,z],[x,y-2,z],[x+26,y+18,z]],{normals:[[0,0,1]],owner:envelope.owner});
-  // The reply leaves the envelope and connects directly to the home's side wall.
-  const start=[x-26,y-18,z],end=[44,10,15];
-  curve(s,start,[72,31,z],[60,10,15],end);
-  arrow(s,end,[right,10,15],8,[0,0,1]);
+  const lead=lanes[2];
+  s.highlights.push({points:[[lead.x-width/2,thickness/2,lead.end],[lead.x+width/2,thickness/2,lead.end],[lead.x+width/2,thickness/2,-42],[lead.x-width/2,thickness/2,-42]],normal:[0,1,0],kind:'diamond',gradient:[]});
+  // One rigid model pose makes the shared paths legible within a square frame.
+  transformScene(s,p=>around(p,X,inclination),v=>around(v,X,inclination));
   return s;
 }
-export function verify(s,{sub,dot},assert) {
-  assert.equal(s.hiddenLines,'omit');assert.equal(s.highlights.length,1);
-  const house=s.faces.filter(f=>f.owner==='gabled-house');
-  assert.equal(house.length,7,'A complete pentagonal prism has two gables, two walls, two roof slopes and a floor');
-  assert.equal(ridgeX,(left+right)/2,'Ridge is centered between side walls');
-  assert(ridgeY>eaves && eaves>floor && front>back);
-  assert(house.every(f=>f.points.length>=4));
-  // Every shell edge belongs to exactly two surfaces: no open seams or loose roof.
-  const uses=new Map();
-  for(const face of house) for(let i=0;i<face.points.length;i++) {
-    const key=[face.points[i].join(','),face.points[(i+1)%face.points.length].join(',')].sort().join('|');
-    uses.set(key,(uses.get(key)??0)+1);
+export function verify(s,{sub,around,X},assert) {
+  assert.equal(s.hiddenLines,'omit');assert.equal(s.primitiveCounts.box,3);
+  assert.equal(s.faces.length,18);assert.equal(s.highlights.length,1);
+  const parts=Array.from({length:3},(_,i)=>s.faces.slice(i*6,i*6+6).flatMap(f=>f.points).map(p=>around(p,X,-inclination)));
+  for(const points of parts) {
+    assert(Math.abs(Math.max(...points.map(p=>p[2]))-start)<1e-7,'All three paths share the true departure baseline');
+    assert(Math.abs(Math.max(...points.map(p=>p[0]))-Math.min(...points.map(p=>p[0]))-width)<1e-7);
+    assert(Math.abs(Math.max(...points.map(p=>p[1]))-Math.min(...points.map(p=>p[1]))-thickness)<1e-7);
+    assert(Math.abs(Math.min(...points.map(p=>p[1]))+thickness/2)<1e-7,'All paths share one support plane');
   }
-  assert([...uses.values()].every(n=>n===2));
-  const door=s.faces.slice(7,13).flatMap(f=>f.points);
-  assert.equal(Math.min(...door.map(p=>p[1])),floor);
-  assert.equal(Math.min(...door.map(p=>p[2])),front,'Door is attached to front wall');
-  assert(messageCenter[0]-messageSize[0]/2>right,'Message is separate from the house');
-  const connector=s.lines.find(l=>l.points.length===81);
-  assert.deepEqual(connector.points[0],[84,60,2.5]);
-  assert.deepEqual(connector.points.at(-1),[44,10,15]);
-  assert(s.lines.some(l=>l.points.length===2 && l.points[0].every((v,i)=>v===[44,10,15][i]) && l.points[1].every((v,i)=>v===[right,10,15][i])),'Arrow meets the receiving wall');
+  assert.equal(lanes[0].end,lanes[1].end,'Two responses stop together');
+  assert(lanes[2].end<lanes[0].end-width*3,'The leading response advances decisively');
+  for(let i=1;i<lanes.length;i++) assert(lanes[i].x-lanes[i-1].x-width>=34,'Parallel paths retain a broad real gap');
+  assert(s.highlights[0].points.map(p=>around(p,X,-inclination)).every(p=>Math.abs(p[1]-thickness/2)<1e-7 && p[0]>=lanes[2].x-width/2 && p[0]<=lanes[2].x+width/2 && p[2]<lanes[0].end),'Only the genuinely advanced part carries the highlight');
 }
