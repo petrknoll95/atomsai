@@ -52,3 +52,6 @@
 
 /* Announcement uses the shared eyebrow styles; only centre it and undo the hero CTA's link sizing. */
 .hero .announcement{align-self:center;height:auto;margin-top:0;}
+
+/* Desktop: give the headline room for one sentence per line; the lead keeps its own measure. */
+@media (min-width: 1200px) { .hero .maskedCopy > div { width: min(100%, 1400px); } }
