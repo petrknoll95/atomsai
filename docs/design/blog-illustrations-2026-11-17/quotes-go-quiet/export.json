@@ -1,14 +1,27 @@
 {
   "article": "quotes-go-quiet",
   "skill": "https://petrknoll95.github.io/atoms-ai-brand/skills/atomsai-illustrations/SKILL.md",
+  "revision": "User-directed four backgrounds, Paper outlines, Cream highlights, 4:3 frames with square-contained art.",
   "recipe": "docs/design/blog-illustrations-2026-11-17/quotes-go-quiet/recipe.mjs",
   "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
-  "transparentMaster": "public/assets/blog/illustrations/quotes-go-quiet.svg",
-  "svgSha256": "5e3b7ba8f28ce38e94782c95299d9c0c3c467f091ba6e259632e016bbe341d7a",
+  "transparentMaster": "public/assets/blog/illustrations/quotes-go-quiet-art.svg",
+  "svgSha256": "c6202b8cff5cf5eb3a176752f845cf5f57007c4272935b7f84adb5f629890cb7",
+  "displayVector": "/assets/blog/illustrations/quotes-go-quiet.svg",
   "cover": "/assets/blog/illustrations/quotes-go-quiet.webp",
-  "width": 1600,
-  "height": 900,
-  "background": "#10231E",
-  "encoding": "lossless WebP, sRGB",
-  "geometry": "Unmodified renderer output, uniform 1080px viewport centered in the cover."
+  "width": 3072,
+  "height": 2304,
+  "aspectRatio": "4:3",
+  "squareArtViewport": [
+    64,
+    0,
+    384,
+    384
+  ],
+  "background": "#43695B",
+  "outline": "#FAFAFA",
+  "highlight": "#F6F1E8",
+  "stroke": 1.9,
+  "neutralBoundsExtent": 105.984,
+  "encoding": "SVG on the page; lossless 3072 × 2304 sRGB WebP for social metadata.",
+  "checks": "Runtime hashes, recipe assertions, vector-only export and padded square bounds passed."
 }

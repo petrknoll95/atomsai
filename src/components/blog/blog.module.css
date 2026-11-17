@@ -16,7 +16,7 @@
 .featuredText { display: flex; flex-direction: column; gap: 16px; max-width: 440px; }
 .featuredTitle { margin: 0; font-size: var(--text-display-large); line-height: 1.05; text-wrap: balance; }
 .featuredText .excerpt { font-size: var(--text-lead); }
-.featuredImage { aspect-ratio: 16 / 9; overflow: hidden; border-radius: var(--radius-card); }
+.featuredImage { aspect-ratio: 4 / 3; overflow: hidden; border-radius: var(--radius-card); }
 
 /* Topic filter */
 .stories { margin-top: 96px; scroll-margin-top: 120px; }
@@ -25,12 +25,12 @@
 /* Story grid */
 .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 64px var(--grid-gap); margin: 0; padding: 0; list-style: none; }
 .card { display: flex; flex-direction: column; gap: 24px; min-width: 0; }
-.cardImage { position: relative; aspect-ratio: 1; overflow: hidden; border-radius: var(--radius-card); }
+.cardImage { position: relative; aspect-ratio: 4 / 3; overflow: hidden; border-radius: var(--radius-card); }
 .tag { position: absolute; left: 16px; bottom: 16px; padding: 4px 12px; border-radius: var(--radius-control); background: color-mix(in srgb, var(--palette-paper) 85%, transparent); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); color: var(--palette-deep-green); font-size: var(--text-caption); line-height: 16px; font-weight: var(--font-weight-medium); font-variation-settings: 'wght' var(--font-weight-medium); }
 .cardCopy { display: flex; flex-direction: column; gap: 12px; padding-right: 24px; }
 .cardTitle { margin: 0; font-size: 24px; line-height: 1.2; text-wrap: pretty; }
 
-/* More stories: sticky label column, rows with copy and a 16:9 image. */
+/* More stories: sticky label column, rows with copy and a 4:3 image. */
 .more { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: var(--grid-gap); margin-top: 160px; }
 .moreLabel { position: sticky; top: 120px; align-self: start; margin: 0; padding-top: 24px; border-top: 1px solid var(--color-border); font-size: var(--text-label); line-height: 20px; font-weight: var(--font-weight-medium); font-variation-settings: 'wght' var(--font-weight-medium); }
 .moreList { margin: 0; padding: 0; list-style: none; }
@@ -38,7 +38,7 @@
 .moreCopy { display: flex; flex-direction: column; justify-content: space-between; gap: 32px; min-width: 0; }
 .moreText { display: flex; flex-direction: column; gap: 12px; padding-right: 24px; }
 .moreTitle { margin: 0; font-size: 24px; line-height: 1.2; text-wrap: pretty; }
-.moreImage { aspect-ratio: 16 / 9; overflow: hidden; border-radius: var(--radius-card); }
+.moreImage { aspect-ratio: 4 / 3; overflow: hidden; border-radius: var(--radius-card); }
 
 /* Each story's title link stretches over its whole card, so the image and copy open the article too. */
 .featured, .card, .moreRow { position: relative; }
@@ -58,6 +58,7 @@
 /* Shared with article recommendations. */
 .art { position: relative; width: 100%; height: 100%; overflow: hidden; background: var(--palette-forest-shade); }
 .art img { object-fit: cover; }
+.art[data-illustration] img { object-fit: contain; }
 .pattern { transition: transform .6s cubic-bezier(.22, 1, .36, 1); }
 @media (hover: hover) {
   .featured:hover .pattern, .card:hover .pattern, .moreRow:hover .pattern { transform: scale(1.035); }
@@ -91,10 +92,3 @@
   .articleRow { flex-direction: column; align-items: flex-start; gap: 16px; padding: 32px 16px; }
 }
 @media (prefers-reduced-motion: reduce) { .pattern { transition: none; } }
-
-/* Give fine illustration outlines enough height in smaller editorial frames. */
-.moreImage:has([data-illustration]) { aspect-ratio: 4 / 3; }
-@media (max-width: 767px) {
-  .featuredImage:has([data-illustration]),
-  .moreImage:has([data-illustration]) { aspect-ratio: 1; }
-}

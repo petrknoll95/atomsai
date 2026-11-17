@@ -33,6 +33,12 @@
   line-height: 1.4;
 }
 .separator { margin-inline: 8px; }
+.cover {
+  aspect-ratio: 4 / 3;
+  margin-top: 48px;
+  overflow: hidden;
+  border-radius: var(--radius-card);
+}
 .body {
   margin-top: 80px;
   font-size: var(--text-lead);
@@ -79,7 +85,7 @@
 .nextUp h2 { margin: 0 0 32px; font-size: var(--text-display-medium); line-height: 1.05; }
 .nextGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px 16px; }
 .nextCard { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
-.nextImage { aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; }
+.nextImage { aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden; }
 .nextCard h3 { font-size: var(--text-display-small); line-height: 1.4; margin: 0 16px 0 0; text-wrap: pretty; }
 @media (max-width: 1100px) {
   .page { padding-top: 144px; padding-bottom: 112px; }
@@ -92,13 +98,4 @@
 @media (max-width: 639px) {
   .header { padding-right: 0; }
   .nextCard h3 { font-size: var(--text-display-small); }
-}
-
-/* Preserve the illustration's stroke proportions without editing its geometry. */
-@media (min-width: 1101px) {
-  .nextImage:has([data-illustration]) { aspect-ratio: 4 / 3; }
-}
-@media (max-width: 767px) {
-  .cover:has([data-illustration]),
-  .nextImage:has([data-illustration]) { aspect-ratio: 1; }
 }
