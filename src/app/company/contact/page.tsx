@@ -3,7 +3,6 @@ import { ArrowIcon } from '@/components/arrow-icon';
 import type { Metadata } from 'next';
 import { PageShell } from '@/components/pages/page-shell';
 import { ContactForm } from '@/components/pages/contact-form';
-import { ContactBackdrop } from '@/components/pages/contact-backdrop';
 import styles from '@/components/pages/contact.module.css';
 
 export const metadata: Metadata = {
@@ -23,7 +22,6 @@ export default function ContactPage() {
   return <PageShell><main id="main" className={styles.page} data-theme="light">
     <section className={styles.hero} aria-labelledby="hero-heading">
       <div className={styles.panel} data-theme="dark">
-        <ContactBackdrop />
         <div className={styles.panelInner}>
           <div className={styles.introduction}>
             <p className={styles.kicker}><span />Contact AtomsAI</p>
