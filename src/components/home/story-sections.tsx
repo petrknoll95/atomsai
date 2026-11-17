@@ -17,7 +17,7 @@ export function CompanyProof() {
       ['PyAI', 'pyai', 'https://pyai.com/'],
       ['Helpwise', 'helpwise', 'https://helpwise.io/'],
     ].map(([name, mark, href]) => <a key={name} href={href}>{mark === 'pyai'
-      ? <svg className={styles.productIcon} viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" strokeOpacity=".3" strokeWidth="3.5"/><circle cx="32" cy="32" r="13" fill="currentColor"/></svg>
+      ? <svg className={styles.productIcon} viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" strokeWidth="3.5"/><circle cx="32" cy="32" r="13" fill="currentColor"/></svg>
       : <span className={styles.productIcon} aria-hidden="true" style={{ maskImage: `url("${assetPath(`/assets/products/${mark}-mark.svg`)}")` }}/>}<span>{name}</span></a>)}</div></div>
   </section>;
 }
