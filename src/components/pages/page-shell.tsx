@@ -6,6 +6,6 @@ import { SmoothScroll } from '@/components/motion/smooth-scroll';
 import { interiorNavigation } from './page-navigation';
 
 /** Shared identity and the site-wide smooth scroll; each page owns its content, composition and closing action. */
-export function PageShell({ children, className = '' }: { children: ReactNode; className?: string }) {
-  return <><SiteHeader links={interiorNavigation} /><SmoothScroll><HeadlineRevealScope className={className}><div id="top" data-theme="light">{children}</div><SiteFooter /></HeadlineRevealScope></SmoothScroll></>;
+export function PageShell({ children, className = '', initialTheme = 'light' }: { children: ReactNode; className?: string; initialTheme?: 'light' | 'dark' }) {
+  return <><SiteHeader links={interiorNavigation} initialTheme={initialTheme} /><SmoothScroll><HeadlineRevealScope className={className}><div id="top" data-theme="light">{children}</div><SiteFooter /></HeadlineRevealScope></SmoothScroll></>;
 }

@@ -32,7 +32,8 @@ const questions = [
 
 export function ApproachPage() {
   return <main id="main" className={styles.page} data-theme="light">
-    <section className={`page-container ${styles.hero}`} aria-labelledby="hero-heading">
+    <section className={styles.hero} aria-labelledby="hero-heading" data-theme="dark">
+      <div className="page-container">
       <div className={styles.heroGrid}>
         <div className={styles.heroCopy}>
           <p className={styles.kicker}><span className={styles.dot} />AI Services <span className={styles.kickerDivider}>/</span> How we work</p>
@@ -46,6 +47,7 @@ export function ApproachPage() {
       <div id="workflow" className={styles.workflowIntro}>
         <div><p className={styles.kicker}>{sourceSection('workflow').label}</p><h2 className={`display ${styles.smallHeading}`}>{sourceSection('workflow').title}</h2></div>
         <p>{sourceSection('workflow').intro.join(' ')}</p>
+      </div>
       </div>
     </section>
 

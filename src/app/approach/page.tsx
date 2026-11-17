@@ -9,5 +9,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <PageShell><ApproachPage /></PageShell>;
+  return <PageShell initialTheme="dark"><ApproachPage /></PageShell>;
 }

@@ -37,7 +37,8 @@
 .inlineLink { display:inline-flex; align-items:center; gap:12px; min-height:44px; font-size:14px; }
 .inlineLink svg { transition:transform .2s ease; }
 .inlineLink:hover svg { transform:translateY(3px); }
-.hero { padding-top:156px; padding-bottom:88px; }
+.hero { --color-surface-muted-foreground:color-mix(in srgb,var(--palette-cream) 75%,transparent); padding-top:156px; padding-bottom:88px; }
+.hero .dot { background:var(--palette-sage-tint); }
 .heroGrid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:64px; align-items:center; }
 .heroCopy { min-width:0; }
 .title { max-width:13ch; font-size:clamp(56px,5vw,76px); line-height:.99; margin-top:32px; text-wrap:balance; }
