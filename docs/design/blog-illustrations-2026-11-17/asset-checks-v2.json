@@ -1,0 +1,139 @@
+{
+  "checks": "passed",
+  "frames": "All live thumbnails 4:3; square master can be contained in alternate aspect ratios.",
+  "assets": [
+    {
+      "slug": "quotes-go-quiet",
+      "background": "#43695B",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 105.984,
+      "strokeAt280pxCover": 1.0390625
+    },
+    {
+      "slug": "no-shows",
+      "background": "#A77BCA",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 126.5847631480053,
+      "strokeAt280pxCover": 1.0390625
+    },
+    {
+      "slug": "speed-to-lead",
+      "background": "#FF671F",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 106.66666666666666,
+      "strokeAt280pxCover": 1.0390625
+    },
+    {
+      "slug": "who-answers-at-7pm",
+      "background": "#1D3C34",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 109.22646857142861,
+      "strokeAt280pxCover": 1.0390625
+    },
+    {
+      "slug": "the-demo-was-never-the-hard-part",
+      "background": "#43695B",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 126.21023776223777,
+      "strokeAt280pxCover": 1.0390625
+    },
+    {
+      "slug": "write-the-evals-before-the-prompt",
+      "background": "#1D3C34",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 106.66666666666669,
+      "strokeAt280pxCover": 1.0390625
+    },
+    {
+      "slug": "how-much-autonomy-should-an-agent-have",
+      "background": "#A77BCA",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 109.22651428571427,
+      "strokeAt280pxCover": 1.0390625
+    }
+  ]
+}

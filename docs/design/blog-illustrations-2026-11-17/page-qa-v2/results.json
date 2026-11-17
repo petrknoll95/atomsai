@@ -1,0 +1,2433 @@
+{
+  "timestamp": "2026-11-17T18:53:47.078Z",
+  "errors": [],
+  "results": [
+    {
+      "route": "/blog",
+      "width": 1440,
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "title": "Notes from the field",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 524,
+          "y": 418.359375,
+          "width": 848,
+          "height": 636
+        },
+        {
+          "asset": "/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.333383739099753,
+          "x": 68,
+          "y": 1214.359375,
+          "width": 413.328125,
+          "height": 309.984375
+        },
+        {
+          "asset": "/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.333383739099753,
+          "x": 513.328125,
+          "y": 1214.359375,
+          "width": 413.328125,
+          "height": 309.984375
+        },
+        {
+          "asset": "/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333669354838709,
+          "x": 958.65625,
+          "y": 1214.359375,
+          "width": 413.34375,
+          "height": 310
+        },
+        {
+          "asset": "/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.333383739099753,
+          "x": 68,
+          "y": 1740.265625,
+          "width": 413.328125,
+          "height": 309.984375
+        },
+        {
+          "asset": "/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.333383739099753,
+          "x": 513.328125,
+          "y": 1740.265625,
+          "width": 413.328125,
+          "height": 309.984375
+        },
+        {
+          "asset": "/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333669354838709,
+          "x": 958.65625,
+          "y": 1740.265625,
+          "width": 413.34375,
+          "height": 310
+        }
+      ],
+      "links": [
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        },
+        {
+          "text": "The reminder went out. The chair stayed empty.",
+          "href": "/blog/no-shows"
+        },
+        {
+          "text": "The homeowner asked three companies at lunch",
+          "href": "/blog/speed-to-lead"
+        },
+        {
+          "text": "The after-hours messages no one sees",
+          "href": "/blog/who-answers-at-7pm"
+        },
+        {
+          "text": "The demo was never the hard part",
+          "href": "/blog/the-demo-was-never-the-hard-part"
+        },
+        {
+          "text": "Write the evals before the prompt",
+          "href": "/blog/write-the-evals-before-the-prompt"
+        },
+        {
+          "text": "How much autonomy should an agent have?",
+          "href": "/blog/how-much-autonomy-should-an-agent-have"
+        }
+      ],
+      "overflow": [],
+      "filters": {
+        "Technical": {
+          "titles": [
+            "The demo was never the hard part",
+            "Write the evals before the prompt",
+            "How much autonomy should an agent have?"
+          ],
+          "images": [
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+              "loaded": true
+            }
+          ]
+        },
+        "Insights": {
+          "titles": [
+            "The reminder went out. The chair stayed empty.",
+            "The homeowner asked three companies at lunch",
+            "The after-hours messages no one sees"
+          ],
+          "images": [
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+              "loaded": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "route": "/blog/quotes-go-quiet",
+      "width": 1440,
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "title": "The quote went out. Then nothing.",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 382.5,
+          "y": 424.546875,
+          "width": 675,
+          "height": 506.25
+        },
+        {
+          "asset": "/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 68,
+          "y": 8462.046875,
+          "width": 424,
+          "height": 318
+        },
+        {
+          "asset": "/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 508,
+          "y": 8462.046875,
+          "width": 424,
+          "height": 318
+        },
+        {
+          "asset": "/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 948,
+          "y": 8462.046875,
+          "width": 424,
+          "height": 318
+        }
+      ],
+      "links": [
+        {
+          "text": "speed to lead",
+          "href": "/blog/speed-to-lead"
+        },
+        {
+          "text": "The reminder went out. The chair stayed empty.",
+          "href": "/blog/no-shows"
+        },
+        {
+          "text": "The homeowner asked three companies at lunch",
+          "href": "/blog/speed-to-lead"
+        },
+        {
+          "text": "The after-hours messages no one sees",
+          "href": "/blog/who-answers-at-7pm"
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/no-shows",
+      "width": 1440,
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "title": "The reminder went out. The chair stayed empty.",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 382.5,
+          "y": 496.546875,
+          "width": 675,
+          "height": 506.25
+        },
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 68,
+          "y": 7990.65625,
+          "width": 424,
+          "height": 318
+        },
+        {
+          "asset": "/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 508,
+          "y": 7990.65625,
+          "width": 424,
+          "height": 318
+        },
+        {
+          "asset": "/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 948,
+          "y": 7990.65625,
+          "width": 424,
+          "height": 318
+        }
+      ],
+      "links": [
+        {
+          "text": "the after-hours messages no one sees",
+          "href": "/blog/who-answers-at-7pm"
+        },
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        },
+        {
+          "text": "The homeowner asked three companies at lunch",
+          "href": "/blog/speed-to-lead"
+        },
+        {
+          "text": "The after-hours messages no one sees",
+          "href": "/blog/who-answers-at-7pm"
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/speed-to-lead",
+      "width": 1440,
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "title": "The homeowner asked three companies at lunch",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 382.5,
+          "y": 496.546875,
+          "width": 675,
+          "height": 506.25
+        },
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 68,
+          "y": 7202.859375,
+          "width": 424,
+          "height": 318
+        },
+        {
+          "asset": "/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 508,
+          "y": 7202.859375,
+          "width": 424,
+          "height": 318
+        },
+        {
+          "asset": "/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 948,
+          "y": 7202.859375,
+          "width": 424,
+          "height": 318
+        }
+      ],
+      "links": [
+        {
+          "text": "the after-hours messages no one sees",
+          "href": "/blog/who-answers-at-7pm"
+        },
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        },
+        {
+          "text": "The reminder went out. The chair stayed empty.",
+          "href": "/blog/no-shows"
+        },
+        {
+          "text": "The after-hours messages no one sees",
+          "href": "/blog/who-answers-at-7pm"
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/who-answers-at-7pm",
+      "width": 1440,
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "title": "The after-hours messages no one sees",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 382.5,
+          "y": 424.546875,
+          "width": 675,
+          "height": 506.25
+        },
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 68,
+          "y": 6562.09375,
+          "width": 424,
+          "height": 318
+        },
+        {
+          "asset": "/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 508,
+          "y": 6562.09375,
+          "width": 424,
+          "height": 318
+        },
+        {
+          "asset": "/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 948,
+          "y": 6562.09375,
+          "width": 424,
+          "height": 318
+        }
+      ],
+      "links": [
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        },
+        {
+          "text": "The reminder went out. The chair stayed empty.",
+          "href": "/blog/no-shows"
+        },
+        {
+          "text": "The homeowner asked three companies at lunch",
+          "href": "/blog/speed-to-lead"
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/the-demo-was-never-the-hard-part",
+      "width": 1440,
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "title": "The demo was never the hard part",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 382.5,
+          "y": 424.546875,
+          "width": 675,
+          "height": 506.25
+        },
+        {
+          "asset": "/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 68,
+          "y": 2954.5,
+          "width": 424,
+          "height": 318
+        },
+        {
+          "asset": "/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 508,
+          "y": 2954.5,
+          "width": 424,
+          "height": 318
+        },
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 948,
+          "y": 2954.5,
+          "width": 424,
+          "height": 318
+        }
+      ],
+      "links": [
+        {
+          "text": "more on evals here",
+          "href": "/blog/write-the-evals-before-the-prompt"
+        },
+        {
+          "text": "Write the evals before the prompt",
+          "href": "/blog/write-the-evals-before-the-prompt"
+        },
+        {
+          "text": "How much autonomy should an agent have?",
+          "href": "/blog/how-much-autonomy-should-an-agent-have"
+        },
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/write-the-evals-before-the-prompt",
+      "width": 1440,
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "title": "Write the evals before the prompt",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 382.5,
+          "y": 424.546875,
+          "width": 675,
+          "height": 506.25
+        },
+        {
+          "asset": "/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 68,
+          "y": 2925.703125,
+          "width": 424,
+          "height": 318
+        },
+        {
+          "asset": "/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 508,
+          "y": 2925.703125,
+          "width": 424,
+          "height": 318
+        },
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 948,
+          "y": 2925.703125,
+          "width": 424,
+          "height": 318
+        }
+      ],
+      "links": [
+        {
+          "text": "how much autonomy an agent should have",
+          "href": "/blog/how-much-autonomy-should-an-agent-have"
+        },
+        {
+          "text": "The demo was never the hard part",
+          "href": "/blog/the-demo-was-never-the-hard-part"
+        },
+        {
+          "text": "How much autonomy should an agent have?",
+          "href": "/blog/how-much-autonomy-should-an-agent-have"
+        },
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/how-much-autonomy-should-an-agent-have",
+      "width": 1440,
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "title": "How much autonomy should an agent have?",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 382.5,
+          "y": 424.546875,
+          "width": 675,
+          "height": 506.25
+        },
+        {
+          "asset": "/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 68,
+          "y": 3091.46875,
+          "width": 424,
+          "height": 318
+        },
+        {
+          "asset": "/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 508,
+          "y": 3091.46875,
+          "width": 424,
+          "height": 318
+        },
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 948,
+          "y": 3091.46875,
+          "width": 424,
+          "height": 318
+        }
+      ],
+      "links": [
+        {
+          "text": "write the evals before the prompt",
+          "href": "/blog/write-the-evals-before-the-prompt"
+        },
+        {
+          "text": "The demo was never the hard part",
+          "href": "/blog/the-demo-was-never-the-hard-part"
+        },
+        {
+          "text": "Write the evals before the prompt",
+          "href": "/blog/write-the-evals-before-the-prompt"
+        },
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog",
+      "width": 390,
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "title": "Notes from the field",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 377.625,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 1046.53125,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 1508.953125,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 1971.375,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 2433.796875,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 2891.421875,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 3349.046875,
+          "width": 350,
+          "height": 262.5
+        }
+      ],
+      "links": [
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        },
+        {
+          "text": "The reminder went out. The chair stayed empty.",
+          "href": "/blog/no-shows"
+        },
+        {
+          "text": "The homeowner asked three companies at lunch",
+          "href": "/blog/speed-to-lead"
+        },
+        {
+          "text": "The after-hours messages no one sees",
+          "href": "/blog/who-answers-at-7pm"
+        },
+        {
+          "text": "The demo was never the hard part",
+          "href": "/blog/the-demo-was-never-the-hard-part"
+        },
+        {
+          "text": "Write the evals before the prompt",
+          "href": "/blog/write-the-evals-before-the-prompt"
+        },
+        {
+          "text": "How much autonomy should an agent have?",
+          "href": "/blog/how-much-autonomy-should-an-agent-have"
+        }
+      ],
+      "overflow": [],
+      "filters": {
+        "Technical": {
+          "titles": [
+            "The demo was never the hard part",
+            "Write the evals before the prompt",
+            "How much autonomy should an agent have?"
+          ],
+          "images": [
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+              "loaded": true
+            }
+          ]
+        },
+        "Insights": {
+          "titles": [
+            "The reminder went out. The chair stayed empty.",
+            "The homeowner asked three companies at lunch",
+            "The after-hours messages no one sees"
+          ],
+          "images": [
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+              "loaded": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "route": "/blog/quotes-go-quiet",
+      "width": 390,
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "title": "The quote went out. Then nothing.",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 358.90625,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 11086.15625,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 11473.5625,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 11860.96875,
+          "width": 350,
+          "height": 262.5
+        }
+      ],
+      "links": [
+        {
+          "text": "speed to lead",
+          "href": "/blog/speed-to-lead"
+        },
+        {
+          "text": "The reminder went out. The chair stayed empty.",
+          "href": "/blog/no-shows"
+        },
+        {
+          "text": "The homeowner asked three companies at lunch",
+          "href": "/blog/speed-to-lead"
+        },
+        {
+          "text": "The after-hours messages no one sees",
+          "href": "/blog/who-answers-at-7pm"
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/no-shows",
+      "width": 390,
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "title": "The reminder went out. The chair stayed empty.",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 402.90625,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 10512.96875,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 10900.375,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 11287.78125,
+          "width": 350,
+          "height": 262.5
+        }
+      ],
+      "links": [
+        {
+          "text": "the after-hours messages no one sees",
+          "href": "/blog/who-answers-at-7pm"
+        },
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        },
+        {
+          "text": "The homeowner asked three companies at lunch",
+          "href": "/blog/speed-to-lead"
+        },
+        {
+          "text": "The after-hours messages no one sees",
+          "href": "/blog/who-answers-at-7pm"
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/speed-to-lead",
+      "width": 390,
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "title": "The homeowner asked three companies at lunch",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 402.90625,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 9480.390625,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 9867.796875,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 10255.203125,
+          "width": 350,
+          "height": 262.5
+        }
+      ],
+      "links": [
+        {
+          "text": "the after-hours messages no one sees",
+          "href": "/blog/who-answers-at-7pm"
+        },
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        },
+        {
+          "text": "The reminder went out. The chair stayed empty.",
+          "href": "/blog/no-shows"
+        },
+        {
+          "text": "The after-hours messages no one sees",
+          "href": "/blog/who-answers-at-7pm"
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/who-answers-at-7pm",
+      "width": 390,
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "title": "The after-hours messages no one sees",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 402.90625,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 8804.234375,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 9191.640625,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 9579.046875,
+          "width": 350,
+          "height": 262.5
+        }
+      ],
+      "links": [
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        },
+        {
+          "text": "The reminder went out. The chair stayed empty.",
+          "href": "/blog/no-shows"
+        },
+        {
+          "text": "The homeowner asked three companies at lunch",
+          "href": "/blog/speed-to-lead"
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/the-demo-was-never-the-hard-part",
+      "width": 390,
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "title": "The demo was never the hard part",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 358.90625,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 3743.390625,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 4130.796875,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 4518.203125,
+          "width": 350,
+          "height": 262.5
+        }
+      ],
+      "links": [
+        {
+          "text": "more on evals here",
+          "href": "/blog/write-the-evals-before-the-prompt"
+        },
+        {
+          "text": "Write the evals before the prompt",
+          "href": "/blog/write-the-evals-before-the-prompt"
+        },
+        {
+          "text": "How much autonomy should an agent have?",
+          "href": "/blog/how-much-autonomy-should-an-agent-have"
+        },
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/write-the-evals-before-the-prompt",
+      "width": 390,
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "title": "Write the evals before the prompt",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 358.90625,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 3800.984375,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 4188.390625,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 4575.796875,
+          "width": 350,
+          "height": 262.5
+        }
+      ],
+      "links": [
+        {
+          "text": "how much autonomy an agent should have",
+          "href": "/blog/how-much-autonomy-should-an-agent-have"
+        },
+        {
+          "text": "The demo was never the hard part",
+          "href": "/blog/the-demo-was-never-the-hard-part"
+        },
+        {
+          "text": "How much autonomy should an agent have?",
+          "href": "/blog/how-much-autonomy-should-an-agent-have"
+        },
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/how-much-autonomy-should-an-agent-have",
+      "width": 390,
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "title": "How much autonomy should an agent have?",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 402.90625,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 3911.765625,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 4299.171875,
+          "width": 350,
+          "height": 262.5
+        },
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 4686.578125,
+          "width": 350,
+          "height": 262.5
+        }
+      ],
+      "links": [
+        {
+          "text": "write the evals before the prompt",
+          "href": "/blog/write-the-evals-before-the-prompt"
+        },
+        {
+          "text": "The demo was never the hard part",
+          "href": "/blog/the-demo-was-never-the-hard-part"
+        },
+        {
+          "text": "Write the evals before the prompt",
+          "href": "/blog/write-the-evals-before-the-prompt"
+        },
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog",
+      "width": 320,
+      "status": 200,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "title": "Notes from the field",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 404.625,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 1048.03125,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 1481.953125,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 1915.875,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 2349.796875,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 2783.71875,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 3217.640625,
+          "width": 280,
+          "height": 210
+        }
+      ],
+      "links": [
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        },
+        {
+          "text": "The reminder went out. The chair stayed empty.",
+          "href": "/blog/no-shows"
+        },
+        {
+          "text": "The homeowner asked three companies at lunch",
+          "href": "/blog/speed-to-lead"
+        },
+        {
+          "text": "The after-hours messages no one sees",
+          "href": "/blog/who-answers-at-7pm"
+        },
+        {
+          "text": "The demo was never the hard part",
+          "href": "/blog/the-demo-was-never-the-hard-part"
+        },
+        {
+          "text": "Write the evals before the prompt",
+          "href": "/blog/write-the-evals-before-the-prompt"
+        },
+        {
+          "text": "How much autonomy should an agent have?",
+          "href": "/blog/how-much-autonomy-should-an-agent-have"
+        }
+      ],
+      "overflow": [],
+      "filters": {
+        "Technical": {
+          "titles": [
+            "The demo was never the hard part",
+            "Write the evals before the prompt",
+            "How much autonomy should an agent have?"
+          ],
+          "images": [
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+              "loaded": true
+            }
+          ]
+        },
+        "Insights": {
+          "titles": [
+            "The reminder went out. The chair stayed empty.",
+            "The homeowner asked three companies at lunch",
+            "The after-hours messages no one sees"
+          ],
+          "images": [
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+              "loaded": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "route": "/blog/quotes-go-quiet",
+      "width": 320,
+      "status": 200,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "title": "The quote went out. Then nothing.",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 426.5,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 12578.875,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 12955.78125,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 13332.6875,
+          "width": 280,
+          "height": 210
+        }
+      ],
+      "links": [
+        {
+          "text": "speed to lead",
+          "href": "/blog/speed-to-lead"
+        },
+        {
+          "text": "The reminder went out. The chair stayed empty.",
+          "href": "/blog/no-shows"
+        },
+        {
+          "text": "The homeowner asked three companies at lunch",
+          "href": "/blog/speed-to-lead"
+        },
+        {
+          "text": "The after-hours messages no one sees",
+          "href": "/blog/who-answers-at-7pm"
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/no-shows",
+      "width": 320,
+      "status": 200,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "title": "The reminder went out. The chair stayed empty.",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 470.5,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 12075.875,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 12410.78125,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 12787.6875,
+          "width": 280,
+          "height": 210
+        }
+      ],
+      "links": [
+        {
+          "text": "the after-hours messages no one sees",
+          "href": "/blog/who-answers-at-7pm"
+        },
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        },
+        {
+          "text": "The homeowner asked three companies at lunch",
+          "href": "/blog/speed-to-lead"
+        },
+        {
+          "text": "The after-hours messages no one sees",
+          "href": "/blog/who-answers-at-7pm"
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/speed-to-lead",
+      "width": 320,
+      "status": 200,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "title": "The homeowner asked three companies at lunch",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 470.5,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 11030.703125,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 11365.609375,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 11742.515625,
+          "width": 280,
+          "height": 210
+        }
+      ],
+      "links": [
+        {
+          "text": "the after-hours messages no one sees",
+          "href": "/blog/who-answers-at-7pm"
+        },
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        },
+        {
+          "text": "The reminder went out. The chair stayed empty.",
+          "href": "/blog/no-shows"
+        },
+        {
+          "text": "The after-hours messages no one sees",
+          "href": "/blog/who-answers-at-7pm"
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/who-answers-at-7pm",
+      "width": 320,
+      "status": 200,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "title": "The after-hours messages no one sees",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 426.5,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 10022.578125,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 10357.484375,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 10734.390625,
+          "width": 280,
+          "height": 210
+        }
+      ],
+      "links": [
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        },
+        {
+          "text": "The reminder went out. The chair stayed empty.",
+          "href": "/blog/no-shows"
+        },
+        {
+          "text": "The homeowner asked three companies at lunch",
+          "href": "/blog/speed-to-lead"
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/the-demo-was-never-the-hard-part",
+      "width": 320,
+      "status": 200,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "title": "The demo was never the hard part",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 402.90625,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 4422.40625,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 4757.3125,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 5092.21875,
+          "width": 280,
+          "height": 210
+        }
+      ],
+      "links": [
+        {
+          "text": "more on evals here",
+          "href": "/blog/write-the-evals-before-the-prompt"
+        },
+        {
+          "text": "Write the evals before the prompt",
+          "href": "/blog/write-the-evals-before-the-prompt"
+        },
+        {
+          "text": "How much autonomy should an agent have?",
+          "href": "/blog/how-much-autonomy-should-an-agent-have"
+        },
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/write-the-evals-before-the-prompt",
+      "width": 320,
+      "status": 200,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "title": "Write the evals before the prompt",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 402.90625,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 4406.203125,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 4741.109375,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 5076.015625,
+          "width": 280,
+          "height": 210
+        }
+      ],
+      "links": [
+        {
+          "text": "how much autonomy an agent should have",
+          "href": "/blog/how-much-autonomy-should-an-agent-have"
+        },
+        {
+          "text": "The demo was never the hard part",
+          "href": "/blog/the-demo-was-never-the-hard-part"
+        },
+        {
+          "text": "How much autonomy should an agent have?",
+          "href": "/blog/how-much-autonomy-should-an-agent-have"
+        },
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/how-much-autonomy-should-an-agent-have",
+      "width": 320,
+      "status": 200,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "title": "How much autonomy should an agent have?",
+      "images": [
+        {
+          "asset": "/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 446.90625,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 4648.375,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 4983.28125,
+          "width": 280,
+          "height": 210
+        },
+        {
+          "asset": "/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "currentSrc": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "srcset": "",
+          "background": "rgb(16, 35, 30)",
+          "aspectRatio": 1.3333333333333333,
+          "x": 20,
+          "y": 5318.1875,
+          "width": 280,
+          "height": 210
+        }
+      ],
+      "links": [
+        {
+          "text": "write the evals before the prompt",
+          "href": "/blog/write-the-evals-before-the-prompt"
+        },
+        {
+          "text": "The demo was never the hard part",
+          "href": "/blog/the-demo-was-never-the-hard-part"
+        },
+        {
+          "text": "Write the evals before the prompt",
+          "href": "/blog/write-the-evals-before-the-prompt"
+        },
+        {
+          "text": "The quote went out. Then nothing.",
+          "href": "/blog/quotes-go-quiet"
+        }
+      ],
+      "overflow": []
+    }
+  ]
+}
