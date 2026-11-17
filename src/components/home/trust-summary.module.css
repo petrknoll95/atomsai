@@ -6,7 +6,8 @@
 .description{max-width:44ch;margin-top:28px;font-size:clamp(18px,1.45vw,22px);line-height:1.5;color:var(--color-muted-foreground);text-wrap:pretty;}
 .cta{margin-top:40px;}
 
-.list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:64px 0 0;padding:0;list-style:none;}
+.list>li{min-width:0;}
+.list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:1fr;gap:8px;margin:64px 0 0;padding:0;list-style:none;}
 /* 2x2 grid of cards: label top left, line art pinned to the top and right padding,
    title and copy stacked at the bottom. */
 .card{
@@ -20,6 +21,8 @@
   border-radius:var(--radius-card);
   position:relative;
   isolation:isolate;
+  height:100%;
+  --clip-amount:12;
   color:var(--palette-deep-green);
   text-decoration:none;
 }
@@ -38,11 +41,13 @@
 .art{grid-area:art;align-self:start;justify-self:end;height:clamp(140px,13vw,210px);background:currentColor;mask-size:100% 100%;mask-repeat:no-repeat;}
 
 @media(max-width:991px){
+  .card{--clip-amount:8;}
   .card{min-height:320px;padding:20px 24px 24px;}
   .art{height:clamp(110px,15vw,150px);}
   .title{font-size:30px;}
 }
 @media(max-width:767px){
+  .card{--clip-amount:6;}
   .list{grid-template-columns:minmax(0,1fr);margin-top:40px;}
   .card{min-height:0;padding:16px 20px 24px;}
   .art{height:96px;}
