@@ -33,7 +33,7 @@
 .question summary::-webkit-details-marker { display: none; }
 .question summary > span { flex: 1; min-width: 0; }
 .question summary img, .customQuestion img { flex: none; width: 24px; height: 24px; }
-.question[open] { margin-block: 16px; padding-block: 28px; background: var(--color-surface); }
+.question[open] { margin-block: 16px; padding-block: 28px; background: color-mix(in srgb, var(--palette-mist) 45%, var(--palette-paper)); }
 .question summary > .questionIcon { display: grid; flex: 0 0 24px; width: 24px; height: 24px; }
 .questionIcon img { grid-area: 1 / 1; transition: transform var(--faq-duration) var(--faq-ease), opacity 240ms ease; }
 .openIcon { opacity: 1; transform: rotate(0deg); }
