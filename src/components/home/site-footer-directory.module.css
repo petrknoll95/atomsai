@@ -2,11 +2,16 @@
 .container { padding-block: 64px; }
 /* Headline left, copy + action right. The 4fr/3fr split and the gap put the right
    column on the same line as the directory's Company column (2fr/5fr, 32px + 20px gaps). */
-.cta { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 3fr); column-gap: calc(152px / 3); align-items: start; padding-bottom: 64px; border-bottom: 1px solid var(--color-border); }
-.heading { max-width: 14ch; font-size: clamp(40px, 4.4vw, 72px); line-height: 1; text-wrap: balance; }
-.ctaAside { display: flex; flex-direction: column; align-items: flex-start; gap: 32px; }
-.ctaButton { flex: none; min-height: 48px; }
-.directory { display: grid; grid-template-columns: minmax(200px, 2fr) minmax(0, 5fr); grid-template-rows: 1fr auto; column-gap: 32px; row-gap: 48px; margin-top: 64px; min-height: 396px; }
+/* Full-bleed band: a bordered centre panel between two dotted gutters, about three quarters of the viewport. */
+.cta { display: grid; grid-template-columns: minmax(0, 1fr) min(72%, 1240px) minmax(0, 1fr); border-bottom: 1px solid var(--color-border); }
+.ctaPanel { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 56px; min-height: clamp(440px, 38vw, 720px); padding: 96px 32px; border-inline: 1px solid var(--color-border); text-align: center; }
+.heading { max-width: 15ch; font-size: clamp(44px, 5.6vw, 96px); line-height: 1; letter-spacing: -.03em; text-wrap: balance; }
+.headingMuted { color: var(--color-muted-foreground); }
+.ctaActions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+/* Sparse dot field, clustered by a few soft masks so it reads as texture rather than a grid. */
+.ctaSide { min-width: 0; background-image: radial-gradient(circle, color-mix(in oklab, var(--color-foreground) 22%, transparent) 1.3px, transparent 1.6px); background-size: 9px 9px; background-position: center; mask-image: radial-gradient(38% 22% at 30% 22%, #000 40%, transparent), radial-gradient(42% 26% at 70% 58%, #000 35%, transparent), radial-gradient(30% 14% at 40% 88%, #000 30%, transparent); }
+.ctaSide:last-child { mask-image: radial-gradient(40% 20% at 62% 12%, #000 40%, transparent), radial-gradient(36% 24% at 34% 48%, #000 35%, transparent), radial-gradient(44% 18% at 66% 82%, #000 30%, transparent); }
+.directory { display: grid; grid-template-columns: minmax(200px, 2fr) minmax(0, 5fr); grid-template-rows: 1fr auto; column-gap: 32px; row-gap: 48px; min-height: 396px; }
 .logo { grid-column: 1; grid-row: 1; display: block; align-self: start; width: 44px; height: 40px; }
 .logo svg { display: block; width: 100%; height: 100%; }
 .navigation { grid-column: 2; grid-row: 1 / 3; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px; align-items: start; }
@@ -20,14 +25,12 @@
 .copyright { grid-column: 1; grid-row: 2; align-self: end; max-width: 224px; color: var(--color-muted-foreground); font-size: var(--text-label); line-height: 1.4; text-wrap: balance; }
 @media (min-width: 1600px) {
   .container { padding-block: 80px; }
-  .cta { padding-bottom: 80px; }
-  .directory { margin-top: 80px; }
 }
 @media (max-width: 1199px) {
   .container { padding-block: 56px; }
-  .cta { grid-template-columns: minmax(0, 1fr); row-gap: 28px; padding-bottom: 56px; }
-  .ctaAside { gap: 28px; }
-  .directory { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto; gap: 56px; margin-top: 56px; min-height: 0; }
+  .cta { grid-template-columns: minmax(0, 1fr) calc(100% - 2 * var(--content-gutter)) minmax(0, 1fr); }
+  .ctaPanel { gap: 40px; padding-block: 80px; }
+  .directory { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto; gap: 56px; min-height: 0; }
   .logo, .navigation, .copyright { grid-column: 1; grid-row: auto; }
   .navigation { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 28px; }
   .group h3 { margin-bottom: 14px; }
@@ -35,11 +38,11 @@
   .arrow { display: none; }
 }
 @media (max-width: 639px) {
+  .ctaPanel { min-height: 0; padding: 72px 20px; }
+  .ctaActions { flex-direction: column; align-items: stretch; width: 100%; max-width: 320px; }
   .navigation { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .heading { max-width: 20ch; }
 }
 @media (prefers-reduced-motion: reduce) { .group a, .arrow { transition: none; } }
-
-.ctaDescription{max-width:600px;font-size:var(--text-lead);line-height:1.5;color:var(--color-muted-foreground);text-wrap:pretty;text-box:trim-both cap alphabetic;}
 
 .tagline { display: block; margin-bottom: 20px; }

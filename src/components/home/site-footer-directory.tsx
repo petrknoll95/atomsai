@@ -90,14 +90,20 @@ const homepageGroups = [
 /** Current footer, shared by every site page through SiteFooter. */
 export function SiteFooterDirectory({ homepage = false }: { homepage?: boolean }) {
   return <footer className={`theme-dark ${styles.footer}`} data-theme="dark" data-footer-variant="directory">
-    <div className={`page-container ${styles.container}`}>
-      <section className={styles.cta} aria-labelledby="footer-directory-heading">
-        <h2 id="footer-directory-heading" className={`display ${styles.heading}`}>{homepage ? 'The next build starts with your business' : 'Put AI to work in your business.'}</h2>
-        <div className={styles.ctaAside}>
-          {homepage && <p className={styles.ctaDescription}>Whether there’s a product for it or something new to build, we start with what you need to achieve.</p>}
-          <ButtonLink href="/company/contact" className={styles.ctaButton}>Talk to AtomsAI</ButtonLink>
+    <section className={styles.cta} aria-labelledby="footer-directory-heading">
+      <div className={styles.ctaSide} aria-hidden="true" />
+      <div className={styles.ctaPanel}>
+        <h2 id="footer-directory-heading" className={`display ${styles.heading}`}>{homepage
+          ? <>The next build starts <span className={styles.headingMuted}>with your business.</span></>
+          : <>Put AI to work <span className={styles.headingMuted}>in your business.</span></>}</h2>
+        <div className={styles.ctaActions}>
+          <ButtonLink href="/company/contact" size="large">Talk to AtomsAI</ButtonLink>
+          <ButtonLink href="/#applications" size="large" variant="outline">Explore applications</ButtonLink>
         </div>
-      </section>
+      </div>
+      <div className={styles.ctaSide} aria-hidden="true" />
+    </section>
+    <div className={`page-container ${styles.container}`}>
       <div className={styles.directory}>
         <Link href="/#top" prefetch={false} className={styles.logo} aria-label="AtomsAI — back to top"><AnimatedLogo playOnHover /></Link>
         <nav className={styles.navigation} aria-label="Footer">
