@@ -9,12 +9,17 @@
 .list{display:flex;flex-direction:column;gap:8px;margin:64px 0 0;padding:0;list-style:none;}
 .card{
   display:grid;
-  grid-template-columns:minmax(0,1fr) minmax(0,1fr) clamp(140px,12vw,200px);
+  --card-height:clamp(220px,17vw,280px);
+  --pad-top:24px;
+  --pad-bottom:32px;
+  --art-height:calc(var(--card-height) - var(--pad-top) - var(--pad-bottom));
+  /* Fixed to the widest drawing (safeguards, 1.43:1) so the copy columns line up across cards. */
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) calc(var(--art-height) * 1.43);
   grid-template-rows:auto 1fr;
   grid-template-areas:'label . art' 'title text art';
   column-gap:40px;
-  min-height:clamp(220px,17vw,280px);
-  padding:24px 32px 32px;
+  min-height:var(--card-height);
+  padding:var(--pad-top) 32px var(--pad-bottom);
   border-radius:var(--radius-card);
   background:var(--card-bg);
   color:var(--card-fg);
@@ -27,15 +32,18 @@
 .label{grid-area:label;justify-self:start;padding:5px 12px;border-radius:var(--radius-control);background:var(--palette-paper);color:var(--palette-deep-green);font-size:var(--text-label);line-height:1.2;}
 .title{grid-area:title;align-self:end;max-width:16ch;font-size:clamp(32px,3vw,48px);line-height:1.05;text-wrap:balance;}
 .text{grid-area:text;align-self:end;max-width:44ch;font-size:clamp(17px,1.35vw,21px);line-height:1.45;text-wrap:pretty;}
-/* The line-only SVG is a mask, so the strokes take the band's text colour. */
-.art{grid-area:art;align-self:center;justify-self:end;width:100%;aspect-ratio:1;background:currentColor;mask-size:contain;mask-repeat:no-repeat;mask-position:center;}
+/* The line-only SVG is a mask, so the strokes take the band's text colour. Its viewBox is cropped
+   to the ink, so the drawing spans the padded height: ink meets the top, bottom and right padding. */
+.art{grid-area:art;align-self:start;justify-self:end;height:var(--art-height);aspect-ratio:var(--art-ratio);background:currentColor;mask-size:100% 100%;mask-repeat:no-repeat;}
 
 @media(max-width:991px){
-  .card{grid-template-columns:minmax(0,1fr) clamp(120px,22vw,180px);grid-template-areas:'label art' 'title art' 'text text';row-gap:20px;padding:20px 24px 24px;}
+  .card{--pad-top:20px;--pad-bottom:24px;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:'label art' 'title art' 'text text';row-gap:20px;min-height:0;padding:var(--pad-top) 24px var(--pad-bottom);}
+  .art{height:clamp(120px,18vw,170px);}
 }
 @media(max-width:767px){
   .list{margin-top:40px;gap:8px;}
-  .card{grid-template-columns:minmax(0,1fr) 112px;min-height:0;row-gap:16px;padding:16px 20px 24px;}
+  .card{--pad-top:16px;row-gap:16px;padding-inline:20px;}
+  .art{height:96px;}
   .title{font-size:28px;}
   .text{font-size:16px;}
 }

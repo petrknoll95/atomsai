@@ -1,13 +1,15 @@
+import type { CSSProperties } from 'react';
 import { ButtonLink } from '@/components/ui';
 import { assetPath } from '@/lib/base-path';
 import styles from './trust-summary.module.css';
 
 // Each band picks a palette pair; the line art is tinted with the band's text colour.
+// ratio is the ink box of each line SVG, from scripts/trust-line-art.mjs.
 const trust = [
-  { image: 'integrations', tone: 'deep', label: 'Integrations', title: 'Fits into your current stack', text: 'Connect AI to existing tools and workflows through integrations, APIs, and custom engineering.' },
-  { image: 'safeguards', tone: 'apricot', label: 'Safeguards', title: 'Guardrails where they matter', text: 'Set boundaries for AI actions, with oversight and escalation for sensitive situations.' },
-  { image: 'reliability', tone: 'stone', label: 'Reliability', title: 'Engineered for real conditions', text: 'Built with years of experience handling live calls, interruptions, and unpredictable networks.' },
-  { image: 'security', tone: 'iris', label: 'Security', title: 'Data privacy & security you can verify', text: 'Explore product-specific security controls, privacy practices, and compliance documentation.' },
+  { image: 'integrations', ratio: '254.45 / 195.604', tone: 'deep', label: 'Integrations', title: 'Fits into your current stack', text: 'Connect AI to existing tools and workflows through integrations, APIs, and custom engineering.' },
+  { image: 'safeguards', ratio: '236.062 / 165.912', tone: 'apricot', label: 'Safeguards', title: 'Guardrails where they matter', text: 'Set boundaries for AI actions, with oversight and escalation for sensitive situations.' },
+  { image: 'reliability', ratio: '166.74 / 214.614', tone: 'stone', label: 'Reliability', title: 'Engineered for real conditions', text: 'Built with years of experience handling live calls, interruptions, and unpredictable networks.' },
+  { image: 'security', ratio: '196.208 / 218.112', tone: 'iris', label: 'Security', title: 'Data privacy & security you can verify', text: 'Explore product-specific security controls, privacy practices, and compliance documentation.' },
 ];
 
 export function TrustSummary() {
@@ -22,7 +24,7 @@ export function TrustSummary() {
         <p className={styles.label}>{item.label}</p>
         <h3 className={`display ${styles.title}`}>{item.title}</h3>
         <p className={styles.text}>{item.text}</p>
-        <span className={styles.art} aria-hidden="true" style={{ maskImage: `url("${assetPath(`/assets/illustrations/trust-${item.image}-line.svg`)}")` }} />
+        <span className={styles.art} aria-hidden="true" style={{ '--art-ratio': item.ratio, maskImage: `url("${assetPath(`/assets/illustrations/trust-${item.image}-line.svg`)}")` } as CSSProperties} />
       </li>)}
     </ul>
   </section>;
