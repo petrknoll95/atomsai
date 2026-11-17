@@ -1,0 +1,14 @@
+{
+  "article": "quotes-go-quiet",
+  "skill": "https://petrknoll95.github.io/atoms-ai-brand/skills/atomsai-illustrations/SKILL.md",
+  "recipe": "docs/design/blog-illustrations-2026-11-17/quotes-go-quiet/recipe.mjs",
+  "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
+  "transparentMaster": "public/assets/blog/illustrations/quotes-go-quiet.svg",
+  "svgSha256": "5e3b7ba8f28ce38e94782c95299d9c0c3c467f091ba6e259632e016bbe341d7a",
+  "cover": "/assets/blog/illustrations/quotes-go-quiet.webp",
+  "width": 1600,
+  "height": 900,
+  "background": "#10231E",
+  "encoding": "lossless WebP, sRGB",
+  "geometry": "Unmodified renderer output, uniform 1080px viewport centered in the cover."
+}
