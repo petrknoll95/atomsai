@@ -44,8 +44,11 @@ span.productIcon{background:currentColor;mask-position:center;mask-repeat:no-rep
 @media(max-width:767px){.header{align-items:flex-start;flex-direction:column;margin-bottom:40px;}.heading{font-size:var(--text-display-medium);line-height:1;}}
 .notesGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;list-style:none;margin:0;padding:0;}
 .notesGrid>li{min-width:0;}
-.noteCard{display:flex;flex-direction:column;align-items:flex-start;gap:16px;height:100%;}
-.noteArt{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius-card);background:var(--palette-cream);margin-bottom:8px;}
+.noteCard{display:flex;flex-direction:column;align-items:flex-start;gap:16px;height:100%;color:inherit;text-decoration:none;}
+.noteCard:focus-visible{outline:2px solid var(--palette-deep-green);outline-offset:4px;border-radius:var(--radius-card);}
+/* ClipCard insets this frame 12px on hover and zooms the image inside it. */
+.noteArt{--clip-inset:0px;position:relative;display:block;width:100%;aspect-ratio:4/5;overflow:hidden;clip-path:inset(var(--clip-inset) round var(--radius-card));background:var(--palette-cream);margin-bottom:8px;}
+.noteArt img{object-fit:cover;}
 .noteCard h3{font-size:clamp(24px,2.1vw,32px);line-height:1.15;text-wrap:pretty;}
 .noteDescription{font-size:var(--text-body);line-height:1.5;color:var(--color-muted-foreground);text-wrap:pretty;}
 @media(max-width:767px){.notesGrid{grid-template-columns:minmax(0,1fr);gap:40px;}.noteCard h3{font-size:26px;}}

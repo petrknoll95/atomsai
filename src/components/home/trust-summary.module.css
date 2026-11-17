@@ -23,9 +23,9 @@
   color:var(--palette-deep-green);
   text-decoration:none;
 }
-/* The whole card is the link. TrustCard insets this painted layer 12px on hover or focus
+/* The whole card is the link. ClipCard insets this painted layer 12px on hover or focus
    (the homepage offering-card interaction); the content never moves. */
-.background{--trust-inset:0px;position:absolute;inset:0;z-index:-1;pointer-events:none;background:var(--palette-mist);clip-path:inset(var(--trust-inset) round var(--radius-card));}
+.background{--clip-inset:0px;position:absolute;inset:0;z-index:-1;pointer-events:none;background:var(--palette-mist);clip-path:inset(var(--clip-inset) round var(--radius-card));}
 .card:focus-visible{outline:2px solid var(--palette-deep-green);outline-offset:3px;}
 
 .label{grid-area:label;justify-self:start;padding:5px 12px;border-radius:var(--radius-control);background:var(--palette-paper);color:var(--palette-deep-green);font-size:var(--text-label);line-height:1.2;}

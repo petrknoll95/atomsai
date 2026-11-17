@@ -4,28 +4,34 @@ import Link from 'next/link';
 import { useEffect, useRef, type ReactNode } from 'react';
 import { gsap } from 'gsap';
 
-/** The homepage card hover from OfferingCard: the painted background insets 12px, the layout stays put. */
-export function TrustCard({ href, className, clipClassName, children }: {
-  href: string;
-  className: string;
-  clipClassName: string;
-  children: ReactNode;
-}) {
+/**
+ * The homepage card hover from OfferingCard, as a whole-card link. On hover or keyboard focus the
+ * child marked data-clip-inset insets 12px through its --clip-inset clip-path, and an optional
+ * child marked data-clip-zoom scales to 1.06 inside it. The layout never moves.
+ */
+export function ClipCard({ href, className, children }: { href: string; className: string; children: ReactNode }) {
   const ref = useRef<HTMLAnchorElement>(null);
   useEffect(() => {
     const card = ref.current;
-    const clip = card?.querySelector<HTMLElement>('[data-trust-clip]');
+    const clip = card?.querySelector<HTMLElement>('[data-clip-inset]');
     if (!card || !clip) return;
+    const zoomTarget = card.querySelector<HTMLElement>('[data-clip-zoom]');
     const reduced = matchMedia('(prefers-reduced-motion: reduce)');
     const hover = matchMedia('(any-hover: hover)');
     let inside = hover.matches && card.matches(':hover');
     const context = gsap.context(() => {
-      const inset = gsap.quickTo(clip, '--trust-inset', { duration: 1.2, ease: 'power2.out' });
+      const ease = { duration: 1.2, ease: 'power2.out' };
+      const inset = gsap.quickTo(clip, '--clip-inset', ease);
+      const zoom = zoomTarget ? ['scaleX', 'scaleY'].map(axis => gsap.quickTo(zoomTarget, axis, ease)) : [];
       const update = () => {
         const active = inside || card.matches(':focus-visible');
         card.dataset.active = String(active);
         inset(active ? 12 : 0);
         if (reduced.matches) inset.tween.progress(1).pause();
+        zoom.forEach(setScale => {
+          setScale(active && !reduced.matches ? 1.06 : 1);
+          if (reduced.matches) setScale.tween.progress(1).pause();
+        });
       };
       const enter = (event: PointerEvent) => {
         if (!hover.matches || event.pointerType === 'touch') return;
@@ -55,8 +61,5 @@ export function TrustCard({ href, className, clipClassName, children }: {
     return () => context.revert();
   }, []);
 
-  return <Link ref={ref} href={href} className={className} data-active="false">
-    <span className={clipClassName} data-trust-clip aria-hidden="true" />
-    {children}
-  </Link>;
+  return <Link ref={ref} href={href} className={className} data-active="false">{children}</Link>;
 }

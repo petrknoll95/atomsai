@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { ButtonLink, Eyebrow } from '@/components/ui';
 import { assetPath } from '@/lib/base-path';
+import { posts } from '@/components/blog/blog-data';
+import { ClipCard } from './clip-card';
 import styles from './story-sections.module.css';
 
 export function CompanyProof() {
@@ -22,21 +24,21 @@ export function CompanyProof() {
   </section>;
 }
 
-// Client titles with short card teasers; article destinations are not supplied.
-const fieldNotes = [
-  { image: 'voice-signal', title: 'Why 8 kHz audio is still the hardest problem in voice AI', description: 'The engineering challenges behind understanding speech on real-world phone lines.' },
-  { image: 'last-mile', title: 'The last mile: fitting frontier models to real workflows', description: 'Connecting frontier models to the tools, data, and decisions inside a business.' },
-  { image: 'conversation', title: 'What a billion conversations taught us about interruptions', description: 'Real conversations change direction. Voice AI needs to know when to listen, when to respond, and how to pick up the thread.' },
-];
+// The three newest blog posts; each whole column links to its article.
+const latestPosts = [...posts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
 
 export function FieldNotes() {
   return <section className={`page-container ${styles.section}`} aria-labelledby="field-notes-title">
     <header className={styles.header}><div><p className={styles.label}>Insights</p><h2 id="field-notes-title" className={`display ${styles.heading}`}>Notes from the field</h2></div><ButtonLink href="/blog" variant="outline">View all notes</ButtonLink></header>
-    <ul className={styles.notesGrid}>{fieldNotes.map(post => <li key={post.title}><article className={styles.noteCard}>
-      <Image className={styles.noteArt} src={assetPath(`/assets/field-notes/${post.image}.webp`)} width={1000} height={1250} sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1600px) 31vw, 470px" alt="" />
-      <h3 className="display">{post.title}</h3>
-      <p className={styles.noteDescription}>{post.description}</p>
-    </article></li>)}</ul>
+    <ul className={styles.notesGrid}>{latestPosts.map(post => <li key={post.slug}>
+      <ClipCard className={styles.noteCard} href={`/blog/${post.slug}`}>
+        <span className={styles.noteArt} data-clip-inset>
+          <Image data-clip-zoom src={assetPath(post.artwork)} fill sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1600px) 31vw, 470px" alt="" />
+        </span>
+        <h3 className="display">{post.title}</h3>
+        <p className={styles.noteDescription}>{post.excerpt}</p>
+      </ClipCard>
+    </li>)}</ul>
   </section>;
 }
 

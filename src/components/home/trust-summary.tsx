@@ -1,7 +1,7 @@
 import { ButtonLink } from '@/components/ui';
 import { assetPath } from '@/lib/base-path';
 import { siteHref } from '@/lib/site-links';
-import { TrustCard } from './trust-card';
+import { ClipCard } from './clip-card';
 import styles from './trust-summary.module.css';
 
 // Every card shares the mist palette; the line art is tinted with the card's text colour.
@@ -22,12 +22,13 @@ export function TrustSummary() {
     </header>
     <ul className={styles.list}>
       {trust.map(item => <li key={item.label}>
-        <TrustCard className={styles.card} clipClassName={styles.background} href={item.href}>
+        <ClipCard className={styles.card} href={item.href}>
+          <span className={styles.background} data-clip-inset aria-hidden="true" />
           <span className={styles.label}>{item.label}</span>
           <h3 className={`display ${styles.title}`}>{item.title}</h3>
           <p className={styles.text}>{item.text}</p>
           <span className={styles.art} aria-hidden="true" style={{ aspectRatio: item.ink, maskImage: `url("${assetPath(`/assets/illustrations/trust-${item.image}-line.svg`)}")` }} />
-        </TrustCard>
+        </ClipCard>
       </li>)}
     </ul>
   </section>;
