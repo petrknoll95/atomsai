@@ -1,5 +1,5 @@
 {
-  "title": "The empty appointment chair",
+  "title": "A reserved place remains empty",
   "reference": "modular",
   "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
   "palette": {
@@ -12,7 +12,7 @@
   "visualReview": "required; inspect contact sheet and record findings before delivery",
   "hiddenMode": "omit",
   "primitiveCounts": {
-    "box": 6
+    "box": 3
   },
   "views": [
     {
@@ -21,39 +21,39 @@
       "pitch": 0,
       "boundsExtent": 109.22651428571429,
       "hiddenRuns": 0,
-      "visibleRuns": 46,
+      "visibleRuns": 25,
       "accentRuns": 0,
-      "projectionMs": 3.75
+      "projectionMs": 3.21
     },
     {
       "file": "oblique-dark.svg",
       "yaw": 0.65,
       "pitch": -0.35,
-      "boundsExtent": 108.72744036840633,
+      "boundsExtent": 106.88268645434151,
       "hiddenRuns": 0,
-      "visibleRuns": 46,
+      "visibleRuns": 25,
       "accentRuns": 0,
-      "projectionMs": 0.69
+      "projectionMs": 0.48
     },
     {
       "file": "back-dark.svg",
       "yaw": 3.141592653589793,
       "pitch": 0,
-      "boundsExtent": 97.50535397003208,
+      "boundsExtent": 109.22651428571427,
       "hiddenRuns": 0,
-      "visibleRuns": 47,
+      "visibleRuns": 25,
       "accentRuns": 0,
-      "projectionMs": 0.72
+      "projectionMs": 0.43
     },
     {
       "file": "underside-dark.svg",
       "yaw": 0.55,
       "pitch": -1.1,
-      "boundsExtent": 105.90818053810854,
+      "boundsExtent": 98.74585475448092,
       "hiddenRuns": 0,
-      "visibleRuns": 61,
+      "visibleRuns": 20,
       "accentRuns": 0,
-      "projectionMs": 0.63
+      "projectionMs": 0.47
     },
     {
       "file": "neutral-light.svg",
@@ -61,39 +61,39 @@
       "pitch": 0,
       "boundsExtent": 109.22651428571429,
       "hiddenRuns": 0,
-      "visibleRuns": 46,
+      "visibleRuns": 25,
       "accentRuns": 0,
-      "projectionMs": 0.65
+      "projectionMs": 0.53
     },
     {
       "file": "oblique-light.svg",
       "yaw": 0.65,
       "pitch": -0.35,
-      "boundsExtent": 108.72744036840633,
+      "boundsExtent": 106.88268645434151,
       "hiddenRuns": 0,
-      "visibleRuns": 46,
+      "visibleRuns": 25,
       "accentRuns": 0,
-      "projectionMs": 0.69
+      "projectionMs": 0.35
     },
     {
       "file": "back-light.svg",
       "yaw": 3.141592653589793,
       "pitch": 0,
-      "boundsExtent": 97.50535397003208,
+      "boundsExtent": 109.22651428571427,
       "hiddenRuns": 0,
-      "visibleRuns": 47,
+      "visibleRuns": 25,
       "accentRuns": 0,
-      "projectionMs": 0.52
+      "projectionMs": 0.39
     },
     {
       "file": "underside-light.svg",
       "yaw": 0.55,
       "pitch": -1.1,
-      "boundsExtent": 105.90818053810854,
+      "boundsExtent": 98.74585475448092,
       "hiddenRuns": 0,
-      "visibleRuns": 61,
+      "visibleRuns": 20,
       "accentRuns": 0,
-      "projectionMs": 0.82
+      "projectionMs": 0.35
     }
   ],
   "png": "generated with sharp",

@@ -1,11 +1,11 @@
 {
   "article": "no-shows",
   "skill": "https://petrknoll95.github.io/atoms-ai-brand/skills/atomsai-illustrations/SKILL.md",
-  "revision": "Clearer recognizable 3D objects; four approved backgrounds, thinner Paper outlines, Cream highlights, 4:3 frames with square-contained art.",
+  "revision": "Abstract 3D relationships with coherent solids, gaps and boundaries; approved backgrounds, 1.6-unit Paper outlines, Cream highlights and square-contained 4:3 framing.",
   "recipe": "docs/design/blog-illustrations-2026-11-17/no-shows/recipe.mjs",
   "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
   "transparentMaster": "public/assets/blog/illustrations/no-shows-art.svg",
-  "svgSha256": "639ce86a331bcb23b9ebd6a4ba697587f051298f36a7255661a84b859eb34c03",
+  "svgSha256": "752fbcc650eb391d7fb457c084806686f69b4d7b8a02b93d2c1fe7e77e18b010",
   "displayVector": "/assets/blog/illustrations/no-shows.svg",
   "cover": "/assets/blog/illustrations/no-shows.webp",
   "width": 3072,
