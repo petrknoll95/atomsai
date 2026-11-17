@@ -5,7 +5,7 @@
 .hero[data-variant='menu'] { color: var(--color-foreground); }
 .hero { position: relative; }
 /* The copy stays in the first viewport; the pattern and fades continue below. */
-.stage { position: relative; height: 135svh; }
+.stage { position: relative; height: 110svh; }
 .stage .field { height: 100%; }
 .backdrop {
   --menu-track: calc((min(100vw, var(--page-max-width)) - 2 * var(--content-gutter)) / var(--menu-columns));
