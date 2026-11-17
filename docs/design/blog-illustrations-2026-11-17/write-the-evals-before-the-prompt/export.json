@@ -5,7 +5,7 @@
   "recipe": "docs/design/blog-illustrations-2026-11-17/write-the-evals-before-the-prompt/recipe.mjs",
   "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
   "transparentMaster": "public/assets/blog/illustrations/write-the-evals-before-the-prompt-art.svg",
-  "svgSha256": "71923250424a0969949b872773eac80943a33578da3c6c8770fd17efbf8c13e3",
+  "svgSha256": "ad6f08684993ab7d2b9e8853c78404a01852944c1fde5da30b29192bbb988afb",
   "displayVector": "/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
   "cover": "/assets/blog/illustrations/write-the-evals-before-the-prompt.webp",
   "width": 3072,
@@ -21,7 +21,7 @@
   "outline": "#FAFAFA",
   "highlight": "#F6F1E8",
   "stroke": 1.6,
-  "neutralBoundsExtent": 126.21023776223777,
+  "neutralBoundsExtent": 109.22651428571429,
   "encoding": "SVG on the page; lossless 3072 × 2304 sRGB WebP for social metadata.",
   "checks": "Runtime hashes, recipe assertions, vector-only export and padded square bounds passed."
 }
