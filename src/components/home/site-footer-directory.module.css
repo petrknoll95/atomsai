@@ -8,9 +8,9 @@
 .heading { max-width: 15ch; font-size: clamp(44px, 5.6vw, 96px); line-height: 1; letter-spacing: -.015em; text-wrap: balance; }
 .headingMuted { color: var(--color-muted-foreground); }
 .ctaActions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
-/* Drift interference pattern fills both gutters; the right one is mirrored for symmetry. */
-.ctaSide { position: relative; min-width: 0; }
-.ctaSideMirrored { transform: scaleX(-1); }
+/* Outline logo mark split across the gutters: the three left slits on the left, their mirror on the right. */
+.ctaSide { display: flex; align-items: center; justify-content: center; min-width: 0; padding: 96px 24px; color: color-mix(in display-p3, var(--palette-cream) 40%, transparent); }
+.ctaSide svg { display: block; width: 100%; height: 100%; overflow: visible; }
 .directory { display: grid; grid-template-columns: minmax(200px, 2fr) minmax(0, 5fr); grid-template-rows: 1fr auto; column-gap: 32px; row-gap: 48px; min-height: 396px; }
 .logo { grid-column: 1; grid-row: 1; display: block; align-self: start; width: 44px; height: 40px; }
 .logo svg { display: block; width: 100%; height: 100%; }
@@ -30,6 +30,7 @@
   .container { padding-block: 56px; }
   .cta { grid-template-columns: minmax(0, 1fr) calc(100% - 2 * var(--content-gutter)) minmax(0, 1fr); }
   .ctaPanel { gap: 40px; padding-block: 80px; }
+  .ctaSide { display: none; }
   .directory { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto; gap: 56px; min-height: 0; }
   .logo, .navigation, .copyright { grid-column: 1; grid-row: auto; }
   .navigation { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 28px; }
