@@ -34,7 +34,7 @@ export function OperatingModel() {
     triggers.current[next]?.focus({ preventScroll: true });
   }
 
-  return <section ref={root} id="offerings" className={`page-container ${styles.section}`} aria-labelledby="operating-model-title" data-text-reveal="off">
+  return <section ref={root} id="offerings" className={`page-container ${styles.section}`} aria-labelledby="operating-model-title">
     <div className={styles.stage} data-model-stage>
     <header className={styles.intro}>
       <h2 className={`display ${styles.heading}`} id="operating-model-title">The problem decides the pieces</h2>

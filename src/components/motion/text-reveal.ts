@@ -39,7 +39,8 @@ export const statTicker = {
 export const statTickerSelector = 'dl dd.display, [data-ticker]';
 
 export const headlineSelector = 'h1.display, h2.display, [data-text-reveal]';
-const excludedSelector = 'dialog, [aria-roledescription="carousel"], [data-text-reveal="off"]';
+// Slides move on their own; a carousel's section heading still reveals.
+const excludedSelector = 'dialog, [aria-roledescription="slide"], [data-text-reveal="off"]';
 
 type State = 'pending' | 'revealing' | 'visible';
 
