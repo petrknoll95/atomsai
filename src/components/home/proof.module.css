@@ -53,7 +53,7 @@
 .companyRow { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
 .companyLogo { width: 183.7723px; height: 32px; flex: 0 1 auto; min-width: 0; object-fit: contain; object-position: left center; }
 .metrics { display: flex; flex-direction: column; gap: 8px; color: var(--color-foreground); }
-.metric { display: flex; flex: 1; flex-direction: column; justify-content: space-between; gap: 32px; padding: 32px 24px 24px; min-height: 0; border-radius: var(--radius-card); background: var(--color-surface); }
+.metric { display: flex; flex: 1; flex-direction: column; justify-content: space-between; gap: 32px; padding: 32px 24px 24px; min-height: 0; border-radius: var(--radius-card); background: color-mix(in srgb, var(--palette-mist) 45%, var(--palette-paper)); }
 .metricValues { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
 .metricValues > span,
 .metricResult > span { font-size: var(--text-display-small); line-height: 1; white-space: nowrap; }
@@ -110,3 +110,11 @@
   .storyDialog { padding: 24px; }
   .dialogHeader h2 { font-size: var(--text-display-small); }
 }
+
+/* Client proof introduction, using the existing section and display scale. */
+.storyHeader { max-width: 960px; display:flex; flex-direction:column; align-items:flex-start; gap:24px; margin-bottom:80px; }
+.storyHeader > p:last-child { max-width:650px; font-size:var(--text-body); line-height:1.5; color:var(--color-muted-foreground); }
+@media(max-width:767px) { .storyHeader { gap:20px; margin-bottom:40px; } }
+
+.industries { position:relative; }
+.industryAnchor { position:absolute; top:0; scroll-margin-top:120px; }
