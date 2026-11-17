@@ -25,7 +25,9 @@
 .trigger:hover,.trigger:focus-visible,.item[data-active='true'] .trigger { color:var(--color-foreground); }
 /* A closed card is one big trigger: the button's hit area stretches over the whole card.
    The open card keeps its own links clickable, so it doesn't stretch. */
-.item[data-active='false'] .trigger::after { content:''; position:absolute; inset:0; border-radius:inherit; }
+/* Static so the pseudo-element anchors to the card (.item), not the button (buttons.css makes buttons relative). */
+.item[data-active='false'] .trigger { position:static; }
+.item[data-active='false'] .trigger::after { content:''; position:absolute; inset:0; border-radius:var(--radius-card); }
 .item[data-active='false']:hover .trigger { color:var(--color-foreground); }
 .name { flex:1; font-size:clamp(24px,2vw,32px); line-height:1.08; }
 .indicator { flex:none; opacity:0; transform:translate(-4px,4px); transition:opacity .3s ease, transform .3s ease; }
