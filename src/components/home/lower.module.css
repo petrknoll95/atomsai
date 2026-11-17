@@ -66,7 +66,9 @@
 .customQuestionWrap { padding-block: 16px; }
 .customQuestion { display: flex; align-items: center; gap: 16px; padding: 15px 23px; border: 1px solid var(--color-border-subtle); border-radius: 12px; font-size: var(--text-lead); font-weight: var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; line-height: 25px; color: var(--color-muted-foreground); transition: border-color 240ms ease, var(--focus-transition); }
 .customQuestion input { flex: 1; min-width: 0; width: 100%; padding: 0; border: 0; background: transparent; color: var(--color-foreground); font: inherit; font-variation-settings: inherit; }
-.customQuestion input::placeholder { color: var(--color-muted-foreground); opacity: 1; }
+.customQuestion input { text-overflow: ellipsis; }
+/* Narrow phones and the two-column tablet FAQ cannot fit the full prompt. */
+.customQuestion input::placeholder { color: var(--color-muted-foreground); opacity: 1; text-overflow: ellipsis; }
 .customQuestion:hover { border-color: var(--color-border); }
 .questionSubmit { display: grid; place-items: center; flex: none; width: 44px; height: 44px; margin: -10px; padding: 10px; border: 0; border-radius: 50%; --button-fill: transparent; color: var(--color-primary); transition: background-color .2s ease, transform .2s ease;  --button-clip-radius:999px;}
 .questionSubmit:enabled:hover { --button-fill: var(--color-surface);  }
