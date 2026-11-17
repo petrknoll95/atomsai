@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { ButtonLink, Eyebrow } from '@/components/ui';
 import { assetPath } from '@/lib/base-path';
 import { formatDate, posts } from '@/components/blog/blog-data';
+import { blogArtSource } from '@/components/blog/blog-art';
 import { ClipCard } from './clip-card';
 import styles from './story-sections.module.css';
 
@@ -25,7 +26,8 @@ export function CompanyProof() {
 }
 
 // The three newest blog posts; each whole column links to its article.
-const latestPosts = [...posts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
+const latestPosts = [...posts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3)
+  .map(post => ({ ...post, art: blogArtSource(post.artwork) }));
 
 export function FieldNotes() {
   return <section className={`page-container ${styles.section}`} aria-labelledby="field-notes-title">
@@ -33,7 +35,7 @@ export function FieldNotes() {
     <ul className={styles.notesGrid}>{latestPosts.map(post => <li key={post.slug}>
       <ClipCard className={styles.noteCard} href={`/blog/${post.slug}`}>
         <span className={styles.noteArt} data-clip-inset>
-          <Image data-clip-zoom src={assetPath(post.artwork)} fill sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1600px) 31vw, 470px" alt="" />
+          <Image data-clip-zoom src={assetPath(post.art.src)} unoptimized={post.art.isIllustration} fill sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1600px) 31vw, 470px" alt="" />
         </span>
         <h3 className="display">{post.title}</h3>
         <p className={styles.noteMeta}><time dateTime={post.date}>{formatDate(post.date)}</time><span aria-hidden="true">·</span>{post.readingTime}</p>
