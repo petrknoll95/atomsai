@@ -6,7 +6,6 @@
 .diagramRow { --diagram-surface:#1a2b26; --model-inset:8px; --model-outer-radius:calc(var(--radius-panel) - var(--model-inset)); --model-inner-radius:var(--radius-card); display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:var(--model-inset); align-items:stretch; width:100%; padding:var(--model-inset); position:relative; z-index:1; isolation:isolate; }
 /* The panel surface is its own layer so it can grow to the viewport while the row is pinned (operating-model-expand.ts). */
 .rowBackdrop { position:absolute; inset:0; z-index:-1; background:var(--palette-forest-shade); border-radius:var(--radius-panel); pointer-events:none; }
-.eyebrow { margin-bottom:28px; font-size:var(--text-label); line-height:1.4; color:var(--color-muted-foreground); }
 .heading { font-size:clamp(38px,3.35vw,54px); line-height:1; text-wrap:balance; max-width:24ch; margin-inline:auto; }
 .description { max-width:56ch; margin:24px auto 0; font-size:var(--text-body); line-height:1.5; color:var(--color-muted-foreground); }
 .visual { position:relative; min-width:0; padding-block:28px; }
@@ -50,7 +49,7 @@
 @media(max-width:767px) {
   .section { grid-template-columns:minmax(0,1fr); gap:32px; padding-top:32px; scroll-margin-top:96px; }
   .diagramRow { grid-template-columns:minmax(0,1fr); }
-  .heading { font-size:var(--text-display-large); max-width:14ch; }.eyebrow { margin-bottom:24px; }.description { margin-top:24px; max-width:36ch; }
+  .heading { font-size:var(--text-display-large); max-width:14ch; }.description { margin-top:24px; max-width:36ch; }
   .visual { width:100%; max-width:420px; justify-self:center; padding-block:16px; }
   .art { height:min(560px,calc(100svh - 200px)); min-height:260px; }
   .name { font-size:28px; }.trigger { min-height:76px; padding-block:20px; }
