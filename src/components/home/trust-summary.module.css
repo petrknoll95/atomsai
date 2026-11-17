@@ -7,14 +7,15 @@
 .cta{margin-top:40px;}
 
 .list{display:flex;flex-direction:column;gap:8px;margin:64px 0 0;padding:0;list-style:none;}
+/* Every illustration shares one ink box (1.1:1); each drawing is fitted inside it and centred. */
+.list{--art-ratio:1.1;}
 .card{
   display:grid;
   --card-height:clamp(220px,17vw,280px);
   --pad-top:24px;
   --pad-bottom:32px;
   --art-height:calc(var(--card-height) - var(--pad-top) - var(--pad-bottom));
-  /* Fixed to the widest drawing (safeguards, 1.43:1) so the copy columns line up across cards. */
-  grid-template-columns:minmax(0,1fr) minmax(0,1fr) calc(var(--art-height) * 1.43);
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) calc(var(--art-height) * var(--art-ratio));
   grid-template-rows:auto 1fr;
   grid-template-areas:'label . art' 'title text art';
   column-gap:40px;
@@ -33,8 +34,8 @@
 .title{grid-area:title;align-self:end;max-width:16ch;font-size:clamp(32px,3vw,48px);line-height:1.05;text-wrap:balance;}
 .text{grid-area:text;align-self:end;max-width:44ch;font-size:clamp(17px,1.35vw,21px);line-height:1.45;text-wrap:pretty;}
 /* The line-only SVG is a mask, so the strokes take the band's text colour. Its viewBox is cropped
-   to the ink, so the drawing spans the padded height: ink meets the top, bottom and right padding. */
-.art{grid-area:art;align-self:start;justify-self:end;height:var(--art-height);aspect-ratio:var(--art-ratio);background:currentColor;mask-size:100% 100%;mask-repeat:no-repeat;}
+   to the ink, so the shared box sits on the top, bottom and right padding. */
+.art{grid-area:art;align-self:start;justify-self:end;height:var(--art-height);aspect-ratio:var(--art-ratio);background:currentColor;mask-size:contain;mask-position:center;mask-repeat:no-repeat;}
 
 @media(max-width:991px){
   .card{--pad-top:20px;--pad-bottom:24px;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:'label art' 'title art' 'text text';row-gap:20px;min-height:0;padding:var(--pad-top) 24px var(--pad-bottom);}
