@@ -1,0 +1,14 @@
+{
+  "article": "speed-to-lead",
+  "skill": "https://petrknoll95.github.io/atoms-ai-brand/skills/atomsai-illustrations/SKILL.md",
+  "recipe": "docs/design/blog-illustrations-2026-11-17/speed-to-lead/recipe.mjs",
+  "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
+  "transparentMaster": "public/assets/blog/illustrations/speed-to-lead.svg",
+  "svgSha256": "0ad943ae80627ac36220b722b98b8a8b2e3b0d0737e2e20c5ad5942188452c12",
+  "cover": "/assets/blog/illustrations/speed-to-lead.webp",
+  "width": 1600,
+  "height": 900,
+  "background": "#10231E",
+  "encoding": "lossless WebP, sRGB",
+  "geometry": "Unmodified renderer output, uniform 1080px viewport centered in the cover."
+}
