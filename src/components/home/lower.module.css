@@ -1,7 +1,7 @@
 .faq {
   --faq-duration: 480ms;
   --faq-ease: cubic-bezier(.4, 0, .2, 1);
-  padding-block: 64px 160px;
+  padding-block: var(--faq-padding-block, 64px 160px);
   background: var(--color-background);
 }
 .faqGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--grid-gap); }
@@ -144,7 +144,7 @@
   .footerTop { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); }
 }
 @media (max-width: 767px) {
-  .faq { padding-block: 64px 80px; }
+  .faq { padding-block: var(--faq-padding-block, 64px 80px); }
   .faqGrid { grid-template-columns: 1fr; gap: 48px; }
   .faqIntro { padding-right: 0; gap: 32px; }
   .faqHeader { gap: 20px; }
