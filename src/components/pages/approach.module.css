@@ -35,7 +35,7 @@
 .sectionTitle { font-size:clamp(40px,4.25vw,64px); line-height:1.02; text-wrap:balance; max-width:19ch; }
 .smallHeading { font-size:clamp(30px,2.8vw,42px); line-height:1.05; text-wrap:balance; }
 .inlineLink { margin-left:-12px; min-height:44px; }
-.hero,.workflowSection { --color-surface-muted-foreground:color-mix(in srgb,var(--palette-cream) 75%,transparent); }
+.hero { --color-surface-muted-foreground:color-mix(in srgb,var(--palette-cream) 75%,transparent); }
 .hero { padding-block:calc(var(--header-height) + var(--section-space)) var(--section-space); }
 .hero .dot { background:var(--palette-sage-tint); }
 .heroGrid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:64px; align-items:center; min-height:calc(100svh - var(--header-height) - 2 * var(--section-space)); }
@@ -44,10 +44,6 @@
 .heroIntro { max-width:39ch; margin-top:32px; font-size:18px; line-height:1.5; color:var(--color-surface-muted-foreground); }
 .heroActions { display:flex; flex-wrap:wrap; gap:16px 24px; align-items:center; margin-top:32px; }
 .heroNote { margin-top:40px; color:var(--color-muted-foreground); font-size:12px; }
-.workflowSection { padding-bottom:var(--section-space); }
-.workflowIntro { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:center; gap:64px; padding-top:48px; border-top:1px solid var(--color-border); }
-.workflowIntro h2 { margin-top:16px; max-width:18ch; }
-.workflowIntro>p { max-width:56ch; font-size:16px; line-height:1.6; color:var(--color-surface-muted-foreground); }
 .services { padding-block:var(--section-space); }
 .sectionHead { margin-bottom:64px; }
 .sectionHead .sectionTitle { margin-top:24px; font-size:clamp(36px,3.2vw,48px); line-height:1; max-width:24ch; }
@@ -142,7 +138,6 @@
   .stepCopy { padding:28px; }
   .deliverableBody { padding:20px; }
   .controlGrid,.ownership,.proofIntro { gap:48px; }
-  .workflowIntro { gap:48px; }
 }
 @media(max-width:767px) {
   .page { --section-space:88px; --section-half-space:44px; --faq-padding-block:88px 96px; }
@@ -152,8 +147,6 @@
   .heroIntro { font-size:17px; margin-top:24px; max-width:43ch; }
   .heroActions { margin-top:24px; gap:12px 20px; }
   .heroNote { margin-top:24px; }
-  .workflowIntro { grid-template-columns:1fr; gap:20px; padding-top:32px; }
-  .workflowIntro>p { font-size:15px; }
   .smallHeading { font-size:32px; }
   .sectionTitle { font-size:40px; }
   .sectionHead { margin-bottom:40px; }
