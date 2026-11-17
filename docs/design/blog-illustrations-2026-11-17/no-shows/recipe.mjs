@@ -8,7 +8,8 @@ export default function ({ scene, box, plane, X, Z }) {
   s.hiddenLines = 'omit';
   box(s, [0, rail[1] / 2, 0], rail);
   for (let k = -2; k <= 2; k++) {
-    if (k === 0) plane(s, [0, rail[1] + .5, 0], X, Z, size, size, true, [4, 4]);
+    // The footprint's fade faces up only, so it cannot show through the rail from below.
+    if (k === 0) { plane(s, [0, rail[1] + .5, 0], X, Z, size, size, true, [4, 4]); s.highlights.at(-1).normal = [0, 1, 0]; }
     else box(s, [k * pitch, rail[1] + size / 2, 0], [size, size, size]);
   }
   return s;
@@ -16,4 +17,5 @@ export default function ({ scene, box, plane, X, Z }) {
 export function verify(s, api, assert) {
   assert.equal(s.primitiveCounts.box, 5);
   assert.equal(s.highlights.length, 1);
+  assert.deepEqual(s.highlights[0].normal, [0, 1, 0]);
 }
