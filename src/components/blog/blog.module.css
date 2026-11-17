@@ -40,6 +40,13 @@
 .moreTitle { margin: 0; font-size: 24px; line-height: 1.2; text-wrap: pretty; }
 .moreImage { aspect-ratio: 16 / 9; overflow: hidden; border-radius: var(--radius-card); }
 
+/* Each story's title link stretches over its whole card, so the image and copy open the article too. */
+.featured, .card, .moreRow { position: relative; }
+.storyLink { color: inherit; text-decoration: none; }
+.storyLink::after { content: ''; position: absolute; inset: 0; z-index: 1; }
+.storyLink:focus-visible { outline: none; box-shadow: none; }
+.storyLink:focus-visible::after { outline: 2px solid var(--palette-deep-green); outline-offset: 4px; border-radius: var(--radius-card); }
+
 /* Legacy list (blog-list.tsx). */
 .archive { margin-top: 192px; }
 .archiveHeading { font-size: var(--text-display-medium); line-height: 1.1; margin: 0 0 48px; }

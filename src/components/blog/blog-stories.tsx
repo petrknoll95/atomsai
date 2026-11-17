@@ -1,10 +1,11 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
 import { BlogArt } from './blog-art';
 import styles from './blog.module.css';
 
-export type Story = { title: string; excerpt: string; category: string; artwork: string };
+export type Story = { title: string; excerpt: string; category: string; artwork: string; href: string };
 
 const GRID_COUNT = 6;
 
@@ -31,7 +32,7 @@ export function BlogStories({ stories }: { stories: Story[] }) {
           <span className={styles.tag}>{story.category}</span>
         </div>
         <div className={styles.cardCopy}>
-          <h3 className={`display ${styles.cardTitle}`}>{story.title}</h3>
+          <h3 className={`display ${styles.cardTitle}`}><Link className={styles.storyLink} href={story.href}>{story.title}</Link></h3>
           <p className={styles.excerpt}>{story.excerpt}</p>
         </div>
       </article></li>)}
@@ -44,7 +45,7 @@ export function BlogStories({ stories }: { stories: Story[] }) {
           <div className={styles.moreCopy}>
             <p className={styles.meta}>{story.category}</p>
             <div className={styles.moreText}>
-              <h3 className={`display ${styles.moreTitle}`}>{story.title}</h3>
+              <h3 className={`display ${styles.moreTitle}`}><Link className={styles.storyLink} href={story.href}>{story.title}</Link></h3>
               <p className={styles.excerpt}>{story.excerpt}</p>
             </div>
           </div>
