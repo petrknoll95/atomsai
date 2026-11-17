@@ -32,7 +32,7 @@
 .card:focus-visible{outline:2px solid var(--palette-deep-green);outline-offset:3px;}
 
 .label{grid-area:label;justify-self:start;padding:5px 12px;border-radius:var(--radius-control);background:var(--palette-paper);color:var(--palette-deep-green);font-size:var(--text-label);line-height:1.2;}
-.title{grid-area:title;max-width:16ch;margin-top:32px;font-size:clamp(30px,2.6vw,44px);line-height:1.05;text-wrap:balance;}
+.title{grid-area:title;max-width:16ch;margin-top:32px;font-size:clamp(26px,2.2vw,36px);line-height:1.05;text-wrap:balance;}
 /* Trimmed like the .display title, so the gap between them is measured glyph to glyph. */
 .text{grid-area:text;max-width:44ch;margin-top:32px;font-size:clamp(15px,1.05vw,17px);line-height:1.45;text-wrap:pretty;text-box:trim-both cap alphabetic;}
 /* The line-only SVG is a mask, so the strokes take the card's text colour. Its viewBox is cropped
@@ -44,13 +44,13 @@
   .card{--clip-amount:8;}
   .card{min-height:320px;padding:20px 24px 24px;}
   .art{height:clamp(110px,15vw,150px);}
-  .title{font-size:30px;}
+  .title{font-size:26px;}
 }
 @media(max-width:767px){
   .card{--clip-amount:6;}
   .list{grid-template-columns:minmax(0,1fr);margin-top:40px;}
   .card{min-height:0;padding:16px 20px 24px;}
   .art{height:96px;}
-  .title{margin-top:48px;font-size:28px;}
+  .title{margin-top:48px;font-size:24px;}
   .text{margin-top:24px;font-size:15px;}
 }
