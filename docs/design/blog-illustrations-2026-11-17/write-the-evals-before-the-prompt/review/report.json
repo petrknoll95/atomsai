@@ -1,5 +1,5 @@
 {
-  "title": "Define the checklist first",
+  "title": "Agreement and deviation",
   "reference": "built-in-your-stack",
   "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
   "palette": {
@@ -12,90 +12,88 @@
   "visualReview": "required; inspect contact sheet and record findings before delivery",
   "hiddenMode": "omit",
   "primitiveCounts": {
-    "box": 5,
-    "bezier-curve": 1,
-    "plane": 3
+    "box": 4
   },
   "views": [
     {
       "file": "neutral-dark.svg",
       "yaw": 0,
       "pitch": 0,
-      "boundsExtent": 126.21023776223772,
+      "boundsExtent": 126.21023776223777,
       "hiddenRuns": 0,
-      "visibleRuns": 56,
-      "accentRuns": 1,
-      "projectionMs": 5.77
+      "visibleRuns": 37,
+      "accentRuns": 0,
+      "projectionMs": 3.76
     },
     {
       "file": "oblique-dark.svg",
       "yaw": 0.65,
       "pitch": -0.35,
-      "boundsExtent": 129.54867093594154,
+      "boundsExtent": 170,
       "hiddenRuns": 0,
-      "visibleRuns": 56,
-      "accentRuns": 1,
-      "projectionMs": 0.99
+      "visibleRuns": 39,
+      "accentRuns": 0,
+      "projectionMs": 0.79
     },
     {
       "file": "back-dark.svg",
       "yaw": 3.141592653589793,
       "pitch": 0,
-      "boundsExtent": 126.21023776223774,
+      "boundsExtent": 128.92832713924585,
       "hiddenRuns": 0,
-      "visibleRuns": 18,
+      "visibleRuns": 37,
       "accentRuns": 0,
-      "projectionMs": 0.78
+      "projectionMs": 0.74
     },
     {
       "file": "underside-dark.svg",
       "yaw": 0.55,
       "pitch": -1.1,
-      "boundsExtent": 145.87508477031412,
+      "boundsExtent": 170,
       "hiddenRuns": 0,
-      "visibleRuns": 50,
-      "accentRuns": 1,
-      "projectionMs": 1.06
+      "visibleRuns": 26,
+      "accentRuns": 0,
+      "projectionMs": 0.81
     },
     {
       "file": "neutral-light.svg",
       "yaw": 0,
       "pitch": 0,
-      "boundsExtent": 126.21023776223772,
+      "boundsExtent": 126.21023776223777,
       "hiddenRuns": 0,
-      "visibleRuns": 56,
-      "accentRuns": 1,
-      "projectionMs": 1.01
+      "visibleRuns": 37,
+      "accentRuns": 0,
+      "projectionMs": 0.67
     },
     {
       "file": "oblique-light.svg",
       "yaw": 0.65,
       "pitch": -0.35,
-      "boundsExtent": 129.54867093594154,
+      "boundsExtent": 170,
       "hiddenRuns": 0,
-      "visibleRuns": 56,
-      "accentRuns": 1,
-      "projectionMs": 1.04
+      "visibleRuns": 39,
+      "accentRuns": 0,
+      "projectionMs": 0.72
     },
     {
       "file": "back-light.svg",
       "yaw": 3.141592653589793,
       "pitch": 0,
-      "boundsExtent": 126.21023776223774,
+      "boundsExtent": 128.92832713924585,
       "hiddenRuns": 0,
-      "visibleRuns": 18,
+      "visibleRuns": 37,
       "accentRuns": 0,
-      "projectionMs": 0.94
+      "projectionMs": 0.58
     },
     {
       "file": "underside-light.svg",
       "yaw": 0.55,
       "pitch": -1.1,
-      "boundsExtent": 145.87508477031412,
+      "boundsExtent": 170,
       "hiddenRuns": 0,
-      "visibleRuns": 50,
-      "accentRuns": 1,
-      "projectionMs": 1.02
+      "visibleRuns": 26,
+      "accentRuns": 0,
+      "projectionMs": 0.64
     }
   ],
   "png": "generated with sharp",
