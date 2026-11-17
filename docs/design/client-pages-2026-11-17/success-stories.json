@@ -1,0 +1,148 @@
+{
+  "html": "\n<!-- HERO -->\n<section aria-labelledby=\"h1\" class=\"ph\">\n<span class=\"ey\"><i></i>Customers <span class=\"ey-s\">/</span> Success stories</span>\n<h1 id=\"h1\">What changed, with the numbers</h1>\n<div class=\"ph-l\"><p>The problem each business brought, what it ran on AtomsAI, and what happened after. Every figure comes from a published story.</p>\n<div class=\"ph-b\"><a class=\"btn\" href=\"#index\">Browse the stories </a><a class=\"btn soft\" href=\"testimonials.html\">Read the testimonials</a></div></div>\n</section>\n<!-- FEATURED TIER -->\n<section aria-labelledby=\"ftH\" class=\"ss-feat\" id=\"featured\">\n<div class=\"ss-feat-in\">\n<header class=\"ss-feat-h\"><span class=\"ey on-cream\"><i></i>Start here</span><h2 id=\"ftH\">Featured stories</h2></header>\n<div class=\"sf-g\"><article class=\"sf pop\"><div class=\"sf-top\"><b>Yellowstone Local</b><span class=\"tg\">Recruiting</span></div><div class=\"sf-fig\"><strong>3×</strong><span>connect rate</span></div><p>A skilled-trades hiring agency rebuilt outbound on JustCall, with HubSpot for the record. Connect rate tripled and meetings doubled.</p><div class=\"sf-ft\"><a href=\"https://justcall.io/customer-stories/yellowstone/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div></article><article class=\"sf pop\"><div class=\"sf-top\"><b>Pinnacle Career Institute</b><span class=\"tg\">Education</span></div><div class=\"sf-fig\"><strong>52%</strong><span>more enrollments</span></div><p>Agents click to dial students straight from HubSpot. Enrollments rose 52%.</p><div class=\"sf-ft\"><a href=\"https://justcall.io/customer-stories/pinnacle-career-institute/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div></article><article class=\"sf pop\"><div class=\"sf-top\"><b>Cirrus Systems</b><span class=\"tg\">Manufacturing</span></div><div class=\"sf-fig\"><strong>$70K</strong><span>extra monthly revenue</span></div><p>Reps stay in the HubSpot task view and save 30 minutes a day each. An extra $70K a month followed.</p><div class=\"sf-ft\"><a href=\"https://justcall.io/customer-stories/cirrusled/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div></article></div>\n</div>\n</section>\n<!-- PROOF STRIP -->\n<section aria-label=\"More numbers from the stories\" class=\"rail ss-proof\">\n<div class=\"strip\">\n<div class=\"cell\"><strong>30,000+</strong><span>calls a quarter at Claro Insurance</span></div>\n<div class=\"cell\"><strong>10+ hours</strong><span>saved per rep a week at GoStudent</span></div>\n<div class=\"cell\"><strong>1,200</strong><span>families on one number at Game‑U</span></div>\n<div class=\"cell\"><strong>10 hires</strong><span>for the outbound reach of 100 agents at Sunup Solar</span></div>\n</div>\n</section>\n<!-- INDEX -->\n<section aria-labelledby=\"idxH\" class=\"rail ss-idx\" id=\"index\">\n<header class=\"sec-h\">\n<span class=\"ey\"><i></i>All stories</span>\n<h2 id=\"idxH\">Find one that looks like you</h2>\n<p>Filter by industry, then by product.</p>\n</header>\n<div class=\"ss-flt\">\n<div aria-label=\"Filter by industry\" class=\"ss-flt-g\" role=\"group\"><button aria-pressed=\"true\" class=\"on\" data-f=\"all\" type=\"button\">All industries</button><button aria-pressed=\"false\" data-f=\"energy\" type=\"button\">Solar and energy</button><button aria-pressed=\"false\" data-f=\"edu\" type=\"button\">Education</button><button aria-pressed=\"false\" data-f=\"fin\" type=\"button\">Insurance and finance</button><button aria-pressed=\"false\" data-f=\"health\" type=\"button\">Healthcare</button><button aria-pressed=\"false\" data-f=\"biz\" type=\"button\">Business services</button><button aria-pressed=\"false\" data-f=\"home\" type=\"button\">Home services</button><button aria-pressed=\"false\" data-f=\"goods\" type=\"button\">Retail, auto, and manufacturing</button><button aria-pressed=\"false\" data-f=\"logistics\" type=\"button\">Logistics</button></div>\n<div class=\"ss-flt-b\"><label class=\"ss-sel\"><span class=\"tg\">Product</span><select aria-label=\"Filter by product\" id=\"ssProd\"><option value=\"all\">All products</option><option value=\"justcall\">JustCall</option><option value=\"serviceagent\">ServiceAgent</option><option value=\"pyai\">PyAI</option></select></label><span aria-live=\"polite\" class=\"tm-cnt\" id=\"ssCount\">Showing 9 of 25</span></div>\n</div>\n<div class=\"ss-grid\" id=\"ssGrid\">\n<article class=\"ss-c has-fig\" data-ind=\"biz\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">YL</span><b>Yellowstone Local</b></div>\n<div class=\"ss-fig\"><strong>3×</strong><span>connect rate</span></div>\n<h3>Tripled its connect rate and doubled meetings booked</h3>\n<span class=\"tg\">Recruiting</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/yellowstone/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c has-fig\" data-ind=\"energy\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">SS</span><b>Sunup Solar</b></div>\n<div class=\"ss-fig\"><strong>20</strong><span>warm-lead appointments a day</span></div>\n<h3>Added about 20 warm-lead appointments a day</h3>\n<span class=\"tg\">Solar and energy</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/sunup-solar/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c has-fig\" data-ind=\"energy\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">SS</span><b>SCSP Solar</b></div>\n<div class=\"ss-fig\"><strong>50%</strong><span>of inbound leads booked, up from 30%</span></div>\n<h3>Took appointment conversion from 30% to 50%</h3>\n<span class=\"tg\">Solar and energy</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/scsp-solar/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c has-fig\" data-ind=\"goods\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">CS</span><b>Cirrus Systems</b></div>\n<div class=\"ss-fig\"><strong>$70K</strong><span>extra monthly revenue</span></div>\n<h3>Saved 30 minutes per rep a day and added $70K a month</h3>\n<span class=\"tg\">Manufacturing</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/cirrusled/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c smp has-fig\" data-ind=\"home\" data-prod=\"serviceagent\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">BP</span><b>Brightline Plumbing</b><span class=\"tm-smp\">Sample</span></div>\n<div class=\"ss-fig\"><strong>27%</strong><span>more jobs booked</span></div>\n<h3>Books after-hours emergencies before the techs are awake</h3>\n<span class=\"tg\">Home services</span>\n<div class=\"ss-ft\"><span class=\"ss-na\">Story in review</span></div>\n</article><article class=\"ss-c has-fig\" data-ind=\"edu\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">G</span><b>GoStudent</b></div>\n<div class=\"ss-fig\"><strong>12%</strong><span>faster lead response</span></div>\n<h3>Leads answered 12% faster, 10+ hours saved per rep a week</h3>\n<span class=\"tg\">Education</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/gostudent/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c has-fig\" data-ind=\"edu\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">PC</span><b>Pinnacle Career Institute</b></div>\n<div class=\"ss-fig\"><strong>52%</strong><span>more enrollments</span></div>\n<h3>Lifted enrollments by 52% with calling inside HubSpot</h3>\n<span class=\"tg\">Education</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/pinnacle-career-institute/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c has-fig\" data-ind=\"edu\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">NU</span><b>Nexford University</b></div>\n<div class=\"ss-fig\"><strong>50%</strong><span>more outbound calls</span></div>\n<h3>Raised outbound calls 50% and now answers leads within hours</h3>\n<span class=\"tg\">Education</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/nexford/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c has-fig\" data-ind=\"biz\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">G</span><b>GetMovers</b></div>\n<div class=\"ss-fig\"><strong>30–40%</strong><span>more sales conversions</span></div>\n<h3>Increased sales conversions by 30 to 40%</h3>\n<span class=\"tg\">Business services</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/getmovers/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c has-fig hide\" data-ind=\"fin\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">CI</span><b>Claro Insurance</b></div>\n<div class=\"ss-fig\"><strong>70%+</strong><span>connection rate</span></div>\n<h3>70%+ connect rate across 30,000+ calls a quarter</h3>\n<span class=\"tg\">Insurance</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/claro-insurance/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c smp has-fig hide\" data-ind=\"biz\" data-prod=\"serviceagent\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">PR</span><b>Pinegrove Realty</b><span class=\"tm-smp\">Sample</span></div>\n<div class=\"ss-fig\"><strong>38%</strong><span>faster lead response</span></div>\n<h3>Lead callbacks within a minute, in English or Spanish</h3>\n<span class=\"tg\">Business services</span>\n<div class=\"ss-ft\"><span class=\"ss-na\">Story in review</span></div>\n</article><article class=\"ss-c has-fig hide\" data-ind=\"goods\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">E</span><b>EZ-BDC</b></div>\n<div class=\"ss-fig\"><strong>70%</strong><span>of intro texts start a conversation</span></div>\n<h3>70% of automated intro texts start a real conversation</h3>\n<span class=\"tg\">Automotive</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/ez-bdc/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c has-fig hide\" data-ind=\"goods\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">FD</span><b>Front Door Fashion</b></div>\n<div class=\"ss-fig\"><strong>2×</strong><span>order rate from campaigns</span></div>\n<h3>Doubled the order rate from marketing campaigns</h3>\n<span class=\"tg\">Retail</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/frontdoor-fashion/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c has-fig hide\" data-ind=\"health\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">AP</span><b>Avalon Pharmacy</b></div>\n<div class=\"ss-fig\"><strong>40%</strong><span>fewer call queries</span></div>\n<h3>Cut call queries by 40% and lifted patient engagement by 20%</h3>\n<span class=\"tg\">Healthcare</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/avalon-pharmacy/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c has-fig hide\" data-ind=\"fin\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">C</span><b>CrowdStreet</b></div>\n<div class=\"ss-fig\"><strong>2×</strong><span>faster client response</span></div>\n<h3>Doubled the speed of client responses</h3>\n<span class=\"tg\">Financial services</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/crowdstreet/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c has-fig hide\" data-ind=\"biz\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">NP</span><b>Nextwave Partners</b></div>\n<div class=\"ss-fig\"><strong>10 min</strong><span>saved per task</span></div>\n<h3>Saved up to 10 minutes per task on call tracking</h3>\n<span class=\"tg\">Recruiting</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/nextwave-partners/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c smp has-fig hide\" data-ind=\"logistics\" data-prod=\"pyai\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">KF</span><b>Kestrel Freight</b><span class=\"tm-smp\">Sample</span></div>\n<div class=\"ss-fig\"><strong>52%</strong><span>of calls handled by AI</span></div>\n<h3>A voice workflow on its own dispatch stack in six weeks</h3>\n<span class=\"tg\">Logistics</span>\n<div class=\"ss-ft\"><span class=\"lg txt\">PyAI</span><span class=\"ss-na\">Story in review</span></div>\n</article><article class=\"ss-c hide\" data-ind=\"fin\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">AI</span><b>APOLLO Insurance</b></div>\n<h3>Routes leads to the agents most likely to convert them</h3>\n<span class=\"tg\">Insurance</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/apollo-insurance/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c hide\" data-ind=\"fin\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">L</span><b>LoanOptions.ai</b></div>\n<h3>Dials every form lead automatically and logs it in the CRM</h3>\n<span class=\"tg\">Financial services</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/loanoptions-ai/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c hide\" data-ind=\"energy\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">SC</span><b>Smart Charge America</b></div>\n<h3>Live transcription for a rep who is hard of hearing</h3>\n<span class=\"tg\">Solar and energy</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/smart-charge-america/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c hide\" data-ind=\"biz\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">HD</span><b>Hometown Design Studio</b></div>\n<h3>Lets clients text from the road and always get an answer</h3>\n<span class=\"tg\">Business services</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/hometown-design-studio/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c hide\" data-ind=\"biz\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">B</span><b>Betr</b></div>\n<h3>Customer operations 24/7, remote and compliant</h3>\n<span class=\"tg\">Business services</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/betr/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c hide\" data-ind=\"biz\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">AM</span><b>Ability Mentor Solutions</b></div>\n<h3>One report for every call, text, and voicemail per client</h3>\n<span class=\"tg\">Business services</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/ability-mentor-solutions/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c hide\" data-ind=\"edu\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">G</span><b>Game-U</b></div>\n<h3>1,200 families, one number that reaches the right person</h3>\n<span class=\"tg\">Education</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/gameu/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article><article class=\"ss-c hide\" data-ind=\"goods\" data-prod=\"justcall\">\n<div class=\"ss-top\"><span aria-hidden=\"true\" class=\"ss-mono\">AI</span><b>Ava Industries</b></div>\n<h3>Keeps support professional from a fully remote office</h3>\n<span class=\"tg\">Manufacturing</span>\n<div class=\"ss-ft\"><a href=\"https://justcall.io/customer-stories/ava-industries/\" rel=\"noopener\" target=\"_blank\">Read the story </a></div>\n</article>\n<a class=\"ss-you wide\" href=\"index.html#talk\" style=\"grid-column: span 3;\"><span class=\"tg\">Your company</span><h3>Start your story</h3><p>Tell us what you measure today. We’ll show you which application or API moves it.</p><span class=\"ss-you-l\">Talk to AtomsAI </span></a>\n</div>\n<div class=\"tm-more\"><button class=\"btn soft\" id=\"ssMore\" type=\"button\">Load 9 more</button><p class=\"tm-empty\" hidden=\"\" id=\"ssEmpty\">No story matches that combination yet. <button id=\"ssReset\" type=\"button\">Clear the filters</button></p></div>\n<p class=\"fn tm-fn\">JustCall stories link to the published write-up. ServiceAgent and PyAI stories are samples; replace before launch.</p>\n</section>\n<!-- CLOSE -->\n<section aria-labelledby=\"ctH\" class=\"ct-f\" id=\"talk\">\n<div aria-hidden=\"true\" class=\"ct-bars\"><i style=\"--h:64%;--d:0.00s\"></i><i style=\"--h:52%;--d:0.37s\"></i><i style=\"--h:70%;--d:0.74s\"></i><i style=\"--h:46%;--d:1.11s\"></i><i style=\"--h:58%;--d:1.48s\"></i><i style=\"--h:48%;--d:1.85s\"></i><i style=\"--h:36%;--d:2.22s\"></i><i style=\"--h:22%;--d:2.59s\"></i><i style=\"--h:26%;--d:2.96s\"></i><i style=\"--h:38%;--d:0.33s\"></i><i style=\"--h:54%;--d:0.70s\"></i><i style=\"--h:60%;--d:1.07s\"></i><i style=\"--h:44%;--d:1.44s\"></i><i style=\"--h:68%;--d:1.81s\"></i><i style=\"--h:50%;--d:2.18s\"></i><i style=\"--h:66%;--d:2.55s\"></i></div>\n<div class=\"ct-in\">\n<span class=\"ct-ey\"><i></i>Customers</span>\n<h2 id=\"ctH\">Bring us<br/>your numbers</h2>\n<p>Tell us what you measure today, and we’ll show you which application or API moves it, and what it moved for teams like yours.</p>\n<div class=\"ct-b\"><a class=\"ct-btn pri\" href=\"index.html#talk\">Talk to AtomsAI</a><a class=\"ct-btn\" href=\"testimonials.html\">Read the testimonials</a></div>\n</div>\n</section>\n",
+  "links": [
+    {
+      "href": "#index",
+      "text": "BROWSE THE STORIES"
+    },
+    {
+      "href": "testimonials.html",
+      "text": "READ THE TESTIMONIALS"
+    },
+    {
+      "href": "https://justcall.io/customer-stories/yellowstone/",
+      "text": "Read the story"
+    },
+    {
+      "href": "https://justcall.io/customer-stories/pinnacle-career-institute/",
+      "text": "Read the story"
+    },
+    {
+      "href": "https://justcall.io/customer-stories/cirrusled/",
+      "text": "Read the story"
+    },
+    {
+      "href": "https://justcall.io/customer-stories/yellowstone/",
+      "text": "Read the story"
+    },
+    {
+      "href": "https://justcall.io/customer-stories/sunup-solar/",
+      "text": "Read the story"
+    },
+    {
+      "href": "https://justcall.io/customer-stories/scsp-solar/",
+      "text": "Read the story"
+    },
+    {
+      "href": "https://justcall.io/customer-stories/cirrusled/",
+      "text": "Read the story"
+    },
+    {
+      "href": "https://justcall.io/customer-stories/gostudent/",
+      "text": "Read the story"
+    },
+    {
+      "href": "https://justcall.io/customer-stories/pinnacle-career-institute/",
+      "text": "Read the story"
+    },
+    {
+      "href": "https://justcall.io/customer-stories/nexford/",
+      "text": "Read the story"
+    },
+    {
+      "href": "https://justcall.io/customer-stories/getmovers/",
+      "text": "Read the story"
+    },
+    {
+      "href": "https://justcall.io/customer-stories/claro-insurance/",
+      "text": "Read the story "
+    },
+    {
+      "href": "https://justcall.io/customer-stories/ez-bdc/",
+      "text": "Read the story "
+    },
+    {
+      "href": "https://justcall.io/customer-stories/frontdoor-fashion/",
+      "text": "Read the story "
+    },
+    {
+      "href": "https://justcall.io/customer-stories/avalon-pharmacy/",
+      "text": "Read the story "
+    },
+    {
+      "href": "https://justcall.io/customer-stories/crowdstreet/",
+      "text": "Read the story "
+    },
+    {
+      "href": "https://justcall.io/customer-stories/nextwave-partners/",
+      "text": "Read the story "
+    },
+    {
+      "href": "https://justcall.io/customer-stories/apollo-insurance/",
+      "text": "Read the story "
+    },
+    {
+      "href": "https://justcall.io/customer-stories/loanoptions-ai/",
+      "text": "Read the story "
+    },
+    {
+      "href": "https://justcall.io/customer-stories/smart-charge-america/",
+      "text": "Read the story "
+    },
+    {
+      "href": "https://justcall.io/customer-stories/hometown-design-studio/",
+      "text": "Read the story "
+    },
+    {
+      "href": "https://justcall.io/customer-stories/betr/",
+      "text": "Read the story "
+    },
+    {
+      "href": "https://justcall.io/customer-stories/ability-mentor-solutions/",
+      "text": "Read the story "
+    },
+    {
+      "href": "https://justcall.io/customer-stories/gameu/",
+      "text": "Read the story "
+    },
+    {
+      "href": "https://justcall.io/customer-stories/ava-industries/",
+      "text": "Read the story "
+    },
+    {
+      "href": "index.html#talk",
+      "text": "YOUR COMPANY\nStart your story\n\nTell us what you measure today. We’ll show you which application or API moves it.\n\nTalk to AtomsAI"
+    },
+    {
+      "href": "index.html#talk",
+      "text": "Talk to AtomsAI"
+    },
+    {
+      "href": "testimonials.html",
+      "text": "Read the testimonials"
+    }
+  ],
+  "sections": [
+    {
+      "id": "",
+      "text": "Customers\n/\nSuccess stories\nWhat changed, with the numbers\n\nThe problem each business brought, what it ran on AtomsAI, and what happened after. Every figure comes from a published story.\n\nBROWSE THE STORIES\nREAD THE TESTIMONIALS"
+    },
+    {
+      "id": "featured",
+      "text": "Start here\nFeatured stories\nYellowstone Local\nRECRUITING\n3×\nconnect rate\n\nA skilled-trades hiring agency rebuilt outbound on JustCall, with HubSpot for the record. Connect rate tripled and meetings doubled.\n\nRead the story\nPinnacle Career Institute\nEDUCATION\n52%\nmore enrollments\n\nAgents click to dial students straight from HubSpot. Enrollments rose 52%.\n\nRead the story\nCirrus Systems\nMANUFACTURING\n$70K\nextra monthly revenue\n\nReps stay in the HubSpot task view and save 30 minutes a day each. An extra $70K a month followed.\n\nRead the story"
+    },
+    {
+      "id": "",
+      "text": "30,000+\ncalls a quarter at Claro Insurance\n10+ hours\nsaved per rep a week at GoStudent\n1,200\nfamilies on one number at Game‑U\n10 hires\nfor the outbound reach of 100 agents at Sunup Solar"
+    },
+    {
+      "id": "index",
+      "text": "All stories\nFind one that looks like you\n\nFilter by industry, then by product.\n\nAll industries\nSolar and energy\nEducation\nInsurance and finance\nHealthcare\nBusiness services\nHome services\nRetail, auto, and manufacturing\nLogistics\nPRODUCT\nAll products\nJustCall\nServiceAgent\nPyAI\nSHOWING 9 OF 25\nYL\nYellowstone Local\n3×\nconnect rate\nTripled its connect rate and doubled meetings booked\nRECRUITING\nRead the story\nSS\nSunup Solar\n20\nwarm-lead appointments a day\nAdded about 20 warm-lead appointments a day\nSOLAR AND ENERGY\nRead the story\nSS\nSCSP Solar\n50%\nof inbound leads booked, up from 30%\nTook appointment conversion from 30% to 50%\nSOLAR AND ENERGY\nRead the story\nCS\nCirrus Systems\n$70K\nextra monthly revenue\nSaved 30 minutes per rep a day and added $70K a month\nMANUFACTURING\nRead the story\nBP\nBrightline Plumbing\nSAMPLE\n27%\nmore jobs booked\nBooks after-hours emergencies before the techs are awake\nHOME SERVICES\nStory in review\nG\nGoStudent\n12%\nfaster lead response\nLeads answered 12% faster, 10+ hours saved per rep a week\nEDUCATION\nRead the story\nPC\nPinnacle Career Institute\n52%\nmore enrollments\nLifted enrollments by 52% with calling inside HubSpot\nEDUCATION\nRead the story\nNU\nNexford University\n50%\nmore outbound calls\nRaised outbound calls 50% and now answers leads within hours\nEDUCATION\nRead the story\nG\nGetMovers\n30–40%\nmore sales conversions\nIncreased sales conversions by 30 to 40%\nBUSINESS SERVICES\nRead the story\nYOUR COMPANY\nStart your story\n\nTell us what you measure today. We’ll show you which application or API moves it.\n\nTalk to AtomsAI\nLOAD 9 MORE\n\nJustCall stories link to the published write-up. ServiceAgent and PyAI stories are samples; replace before launch."
+    },
+    {
+      "id": "talk",
+      "text": "CUSTOMERS\nBring us\nyour numbers\n\nTell us what you measure today, and we’ll show you which application or API moves it, and what it moved for teams like yours.\n\nTalk to AtomsAI\nRead the testimonials"
+    }
+  ],
+  "text": "Customers\n/\nSuccess stories\nWhat changed, with the numbers\n\nThe problem each business brought, what it ran on AtomsAI, and what happened after. Every figure comes from a published story.\n\nBROWSE THE STORIES\nREAD THE TESTIMONIALS\nStart here\nFeatured stories\nYellowstone Local\nRECRUITING\n3×\nconnect rate\n\nA skilled-trades hiring agency rebuilt outbound on JustCall, with HubSpot for the record. Connect rate tripled and meetings doubled.\n\nRead the story\nPinnacle Career Institute\nEDUCATION\n52%\nmore enrollments\n\nAgents click to dial students straight from HubSpot. Enrollments rose 52%.\n\nRead the story\nCirrus Systems\nMANUFACTURING\n$70K\nextra monthly revenue\n\nReps stay in the HubSpot task view and save 30 minutes a day each. An extra $70K a month followed.\n\nRead the story\n30,000+\ncalls a quarter at Claro Insurance\n10+ hours\nsaved per rep a week at GoStudent\n1,200\nfamilies on one number at Game‑U\n10 hires\nfor the outbound reach of 100 agents at Sunup Solar\nAll stories\nFind one that looks like you\n\nFilter by industry, then by product.\n\nAll industries\nSolar and energy\nEducation\nInsurance and finance\nHealthcare\nBusiness services\nHome services\nRetail, auto, and manufacturing\nLogistics\nPRODUCT\nAll products\nJustCall\nServiceAgent\nPyAI\nSHOWING 9 OF 25\nYL\nYellowstone Local\n3×\nconnect rate\nTripled its connect rate and doubled meetings booked\nRECRUITING\nRead the story\nSS\nSunup Solar\n20\nwarm-lead appointments a day\nAdded about 20 warm-lead appointments a day\nSOLAR AND ENERGY\nRead the story\nSS\nSCSP Solar\n50%\nof inbound leads booked, up from 30%\nTook appointment conversion from 30% to 50%\nSOLAR AND ENERGY\nRead the story\nCS\nCirrus Systems\n$70K\nextra monthly revenue\nSaved 30 minutes per rep a day and added $70K a month\nMANUFACTURING\nRead the story\nBP\nBrightline Plumbing\nSAMPLE\n27%\nmore jobs booked\nBooks after-hours emergencies before the techs are awake\nHOME SERVICES\nStory in review\nG\nGoStudent\n12%\nfaster lead response\nLeads answered 12% faster, 10+ hours saved per rep a week\nEDUCATION\nRead the story\nPC\nPinnacle Career Institute\n52%\nmore enrollments\nLifted enrollments by 52% with calling inside HubSpot\nEDUCATION\nRead the story\nNU\nNexford University\n50%\nmore outbound calls\nRaised outbound calls 50% and now answers leads within hours\nEDUCATION\nRead the story\nG\nGetMovers\n30–40%\nmore sales conversions\nIncreased sales conversions by 30 to 40%\nBUSINESS SERVICES\nRead the story\nYOUR COMPANY\nStart your story\n\nTell us what you measure today. We’ll show you which application or API moves it.\n\nTalk to AtomsAI\nLOAD 9 MORE\n\nJustCall stories link to the published write-up. ServiceAgent and PyAI stories are samples; replace before launch.\n\nCUSTOMERS\nBring us\nyour numbers\n\nTell us what you measure today, and we’ll show you which application or API moves it, and what it moved for teams like yours.\n\nTalk to AtomsAI\nRead the testimonials"
+}

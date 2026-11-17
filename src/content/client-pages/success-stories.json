@@ -1,0 +1,539 @@
+{
+  "label": "Success stories",
+  "route": "/customers/success-stories",
+  "title": "What changed, with the numbers",
+  "intro": [
+    "The problem each business brought, what it ran on AtomsAI, and what happened after."
+  ],
+  "actions": [
+    {
+      "label": "Browse the stories",
+      "href": "#index"
+    },
+    {
+      "label": "Read the testimonials",
+      "href": "/customers/testimonials"
+    }
+  ],
+  "sections": [
+    {
+      "id": "featured",
+      "title": "Featured stories",
+      "label": "Start here",
+      "intro": [],
+      "blocks": [
+        {
+          "title": "Yellowstone Local",
+          "body": [
+            "A skilled-trades hiring agency rebuilt outbound on JustCall, with HubSpot for the record. Connect rate tripled and meetings doubled."
+          ],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/yellowstone/"
+            }
+          ],
+          "list": [],
+          "label": "Recruiting",
+          "category": "",
+          "tags": [],
+          "metric": "3× connect rate",
+          "attribution": ""
+        },
+        {
+          "title": "Pinnacle Career Institute",
+          "body": [
+            "Agents click to dial students straight from HubSpot. Enrollments rose 52%."
+          ],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/pinnacle-career-institute/"
+            }
+          ],
+          "list": [],
+          "label": "Education",
+          "category": "",
+          "tags": [],
+          "metric": "52% more enrollments",
+          "attribution": ""
+        },
+        {
+          "title": "Cirrus Systems",
+          "body": [
+            "Reps stay in the HubSpot task view and save 30 minutes a day each. An extra $70K a month followed."
+          ],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/cirrusled/"
+            }
+          ],
+          "list": [],
+          "label": "Manufacturing",
+          "category": "",
+          "tags": [],
+          "metric": "$70K extra monthly revenue",
+          "attribution": ""
+        }
+      ],
+      "links": [],
+      "kind": "cards"
+    },
+    {
+      "id": "index",
+      "title": "Find one that looks like you",
+      "label": "All stories",
+      "intro": [
+        "Filter by industry, then by product."
+      ],
+      "blocks": [
+        {
+          "title": "Tripled its connect rate and doubled meetings booked",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/yellowstone/"
+            }
+          ],
+          "list": [],
+          "label": "Recruiting",
+          "category": "justcall",
+          "tags": [],
+          "metric": "3× connect rate",
+          "attribution": "",
+          "company": "Yellowstone Local",
+          "industry": "Business services"
+        },
+        {
+          "title": "Added about 20 warm-lead appointments a day",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/sunup-solar/"
+            }
+          ],
+          "list": [],
+          "label": "Solar and energy",
+          "category": "justcall",
+          "tags": [],
+          "metric": "20 warm-lead appointments a day",
+          "attribution": "",
+          "company": "Sunup Solar",
+          "industry": "Solar and energy"
+        },
+        {
+          "title": "Took appointment conversion from 30% to 50%",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/scsp-solar/"
+            }
+          ],
+          "list": [],
+          "label": "Solar and energy",
+          "category": "justcall",
+          "tags": [],
+          "metric": "50% of inbound leads booked, up from 30%",
+          "attribution": "",
+          "company": "SCSP Solar",
+          "industry": "Solar and energy"
+        },
+        {
+          "title": "Saved 30 minutes per rep a day and added $70K a month",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/cirrusled/"
+            }
+          ],
+          "list": [],
+          "label": "Manufacturing",
+          "category": "justcall",
+          "tags": [],
+          "metric": "$70K extra monthly revenue",
+          "attribution": "",
+          "company": "Cirrus Systems",
+          "industry": "Retail, auto, and manufacturing"
+        },
+        {
+          "title": "Books after-hours emergencies before the techs are awake",
+          "body": [],
+          "links": [],
+          "list": [],
+          "label": "Home services",
+          "category": "serviceagent",
+          "tags": [],
+          "metric": "27% more jobs booked",
+          "attribution": "",
+          "company": "Brightline Plumbing",
+          "industry": "Home services"
+        },
+        {
+          "title": "Leads answered 12% faster, 10+ hours saved per rep a week",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/gostudent/"
+            }
+          ],
+          "list": [],
+          "label": "Education",
+          "category": "justcall",
+          "tags": [],
+          "metric": "12% faster lead response",
+          "attribution": "",
+          "company": "GoStudent",
+          "industry": "Education"
+        },
+        {
+          "title": "Lifted enrollments by 52% with calling inside HubSpot",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/pinnacle-career-institute/"
+            }
+          ],
+          "list": [],
+          "label": "Education",
+          "category": "justcall",
+          "tags": [],
+          "metric": "52% more enrollments",
+          "attribution": "",
+          "company": "Pinnacle Career Institute",
+          "industry": "Education"
+        },
+        {
+          "title": "Raised outbound calls 50% and now answers leads within hours",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/nexford/"
+            }
+          ],
+          "list": [],
+          "label": "Education",
+          "category": "justcall",
+          "tags": [],
+          "metric": "50% more outbound calls",
+          "attribution": "",
+          "company": "Nexford University",
+          "industry": "Education"
+        },
+        {
+          "title": "Increased sales conversions by 30 to 40%",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/getmovers/"
+            }
+          ],
+          "list": [],
+          "label": "Business services",
+          "category": "justcall",
+          "tags": [],
+          "metric": "30–40% more sales conversions",
+          "attribution": "",
+          "company": "GetMovers",
+          "industry": "Business services"
+        },
+        {
+          "title": "70%+ connect rate across 30,000+ calls a quarter",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/claro-insurance/"
+            }
+          ],
+          "list": [],
+          "label": "Insurance",
+          "category": "justcall",
+          "tags": [],
+          "metric": "70%+ connection rate",
+          "attribution": "",
+          "company": "Claro Insurance",
+          "industry": "Insurance and finance"
+        },
+        {
+          "title": "Lead callbacks within a minute, in English or Spanish",
+          "body": [],
+          "links": [],
+          "list": [],
+          "label": "Business services",
+          "category": "serviceagent",
+          "tags": [],
+          "metric": "38% faster lead response",
+          "attribution": "",
+          "company": "Pinegrove Realty",
+          "industry": "Business services"
+        },
+        {
+          "title": "70% of automated intro texts start a real conversation",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/ez-bdc/"
+            }
+          ],
+          "list": [],
+          "label": "Automotive",
+          "category": "justcall",
+          "tags": [],
+          "metric": "70% of intro texts start a conversation",
+          "attribution": "",
+          "company": "EZ-BDC",
+          "industry": "Retail, auto, and manufacturing"
+        },
+        {
+          "title": "Doubled the order rate from marketing campaigns",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/frontdoor-fashion/"
+            }
+          ],
+          "list": [],
+          "label": "Retail",
+          "category": "justcall",
+          "tags": [],
+          "metric": "2× order rate from campaigns",
+          "attribution": "",
+          "company": "Front Door Fashion",
+          "industry": "Retail, auto, and manufacturing"
+        },
+        {
+          "title": "Cut call queries by 40% and lifted patient engagement by 20%",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/avalon-pharmacy/"
+            }
+          ],
+          "list": [],
+          "label": "Healthcare",
+          "category": "justcall",
+          "tags": [],
+          "metric": "40% fewer call queries",
+          "attribution": "",
+          "company": "Avalon Pharmacy",
+          "industry": "Healthcare"
+        },
+        {
+          "title": "Doubled the speed of client responses",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/crowdstreet/"
+            }
+          ],
+          "list": [],
+          "label": "Financial services",
+          "category": "justcall",
+          "tags": [],
+          "metric": "2× faster client response",
+          "attribution": "",
+          "company": "CrowdStreet",
+          "industry": "Insurance and finance"
+        },
+        {
+          "title": "Saved up to 10 minutes per task on call tracking",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/nextwave-partners/"
+            }
+          ],
+          "list": [],
+          "label": "Recruiting",
+          "category": "justcall",
+          "tags": [],
+          "metric": "10 min saved per task",
+          "attribution": "",
+          "company": "Nextwave Partners",
+          "industry": "Business services"
+        },
+        {
+          "title": "A voice workflow on its own dispatch stack in six weeks",
+          "body": [],
+          "links": [],
+          "list": [],
+          "label": "Logistics",
+          "category": "pyai",
+          "tags": [],
+          "metric": "52% of calls handled by AI",
+          "attribution": "",
+          "company": "Kestrel Freight",
+          "industry": "Logistics"
+        },
+        {
+          "title": "Routes leads to the agents most likely to convert them",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/apollo-insurance/"
+            }
+          ],
+          "list": [],
+          "label": "Insurance",
+          "category": "justcall",
+          "tags": [],
+          "attribution": "",
+          "company": "APOLLO Insurance",
+          "industry": "Insurance and finance"
+        },
+        {
+          "title": "Dials every form lead automatically and logs it in the CRM",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/loanoptions-ai/"
+            }
+          ],
+          "list": [],
+          "label": "Financial services",
+          "category": "justcall",
+          "tags": [],
+          "attribution": "",
+          "company": "LoanOptions.ai",
+          "industry": "Insurance and finance"
+        },
+        {
+          "title": "Live transcription for a rep who is hard of hearing",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/smart-charge-america/"
+            }
+          ],
+          "list": [],
+          "label": "Solar and energy",
+          "category": "justcall",
+          "tags": [],
+          "attribution": "",
+          "company": "Smart Charge America",
+          "industry": "Solar and energy"
+        },
+        {
+          "title": "Lets clients text from the road and always get an answer",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/hometown-design-studio/"
+            }
+          ],
+          "list": [],
+          "label": "Business services",
+          "category": "justcall",
+          "tags": [],
+          "attribution": "",
+          "company": "Hometown Design Studio",
+          "industry": "Business services"
+        },
+        {
+          "title": "Customer operations 24/7, remote and compliant",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/betr/"
+            }
+          ],
+          "list": [],
+          "label": "Business services",
+          "category": "justcall",
+          "tags": [],
+          "attribution": "",
+          "company": "Betr",
+          "industry": "Business services"
+        },
+        {
+          "title": "One report for every call, text, and voicemail per client",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/ability-mentor-solutions/"
+            }
+          ],
+          "list": [],
+          "label": "Business services",
+          "category": "justcall",
+          "tags": [],
+          "attribution": "",
+          "company": "Ability Mentor Solutions",
+          "industry": "Business services"
+        },
+        {
+          "title": "1,200 families, one number that reaches the right person",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/gameu/"
+            }
+          ],
+          "list": [],
+          "label": "Education",
+          "category": "justcall",
+          "tags": [],
+          "attribution": "",
+          "company": "Game-U",
+          "industry": "Education"
+        },
+        {
+          "title": "Keeps support professional from a fully remote office",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/ava-industries/"
+            }
+          ],
+          "list": [],
+          "label": "Manufacturing",
+          "category": "justcall",
+          "tags": [],
+          "attribution": "",
+          "company": "Ava Industries",
+          "industry": "Retail, auto, and manufacturing"
+        }
+      ],
+      "links": [],
+      "kind": "catalog"
+    }
+  ],
+  "closing": {
+    "title": "Bring us your numbers",
+    "body": [
+      "Tell us what you measure today, and we’ll show you which application or API moves it, and what it moved for teams like yours."
+    ],
+    "links": [
+      {
+        "label": "Talk to AtomsAI",
+        "href": "/company/contact"
+      },
+      {
+        "label": "Read the testimonials",
+        "href": "/customers/testimonials"
+      }
+    ]
+  }
+}

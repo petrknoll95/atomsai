@@ -10,7 +10,7 @@ const contactUrl = "/company/contact";
 const questions = [
   {
     question: "How do Applications, PyAI and AI Services fit together?",
-    answer: <>Explore the <a className="link-underline" href={withBasePath("#offerings")}>three starting points</a> to compare applications, infrastructure and custom engineering.</>,
+    answer: <>Explore the <a className="link-underline" href={withBasePath("#offerings")}>four connected layers</a>: models and infrastructure, orchestration and workflows, applications, and custom engineering. Together, they connect AI capability to the work your business needs to do.</>,
   },
   {
     question: "Can I use a product without a custom project?",

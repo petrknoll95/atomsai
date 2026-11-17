@@ -7,8 +7,8 @@ export function Integrations() {
     <div className={styles.stage}>
       <IntegrationsGrid />
       <div className={styles.copy}>
-        <h2 id="integrations-title" className={`display ${styles.title}`}>Ready-made or custom.<br />Fits your workflow.</h2>
-        <Eyebrow href="/company/contact">Discuss your workflow</Eyebrow>
+        <h2 id="integrations-title" className={`display ${styles.title}`}>Integrates with<br />all your apps</h2>
+        <Eyebrow href="https://justcall.io/integration/">Browse all integrations</Eyebrow>
       </div>
     </div>
     <p className="sr-only">Connect your tools, including Notion, Microsoft Teams, HubSpot, Google Drive, Shopify, Jira, Asana, Zendesk, GitHub, Airtable, Slack, Salesforce and Intercom.</p>

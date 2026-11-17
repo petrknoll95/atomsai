@@ -31,11 +31,13 @@ const groups = [
     { label: 'Careers', path: '/company/careers' },
     { label: 'Contact us', path: '/company/contact' },
     { label: 'Trust Center', path: '/trust' },
+    { label: 'Press & media', path: '/company/press' },
     { label: 'Brand', path: '/brand' },
   ] },
   { title: 'Resources', links: [
     { label: 'Blog', path: '/blog' },
     { label: 'Customer stories', path: '#customer-stories' },
+    { label: 'Testimonials', path: '/customers/testimonials' },
     { label: 'Help center', path: '#faq' },
     { label: 'Website updates', path: '/changelog' },
   ] },
@@ -90,6 +92,7 @@ const homepageGroups = [
 
 /** Current footer, shared by every site page through SiteFooter. */
 export function SiteFooterDirectory({ homepage = false }: { homepage?: boolean }) {
+  const interiorPaths: Record<string, string> = { '#applications': '/applications', 'https://pyai.com/': '/infrastructure', '/company/about': '/company/about', '/company/careers': '/company/careers', '/company/press': '/company/press', '#customer-stories': '/customers/success-stories', '/customers/testimonials': '/customers/testimonials', '#faq': '/help' };
   return <footer className={`theme-dark ${styles.footer}`} data-theme="dark" data-footer-variant="directory">
     <section className={styles.cta} aria-labelledby="footer-directory-heading">
       <FooterMarkHalf side="start" className={styles.ctaSide} />
@@ -99,7 +102,7 @@ export function SiteFooterDirectory({ homepage = false }: { homepage?: boolean }
           : <>Put AI to work <span className={styles.headingMuted}>in your business.</span></>}</h2>
         <div className={styles.ctaActions}>
           <ButtonLink href="/company/contact" size="large">Talk to AtomsAI</ButtonLink>
-          <ButtonLink href="/#applications" size="large" variant="outline">Explore applications</ButtonLink>
+          <ButtonLink href={homepage ? '/#applications' : '/applications'} size="large" variant="outline">Explore applications</ButtonLink>
         </div>
       </div>
       <FooterMarkHalf side="end" className={styles.ctaSide} />
@@ -110,7 +113,7 @@ export function SiteFooterDirectory({ homepage = false }: { homepage?: boolean }
         <nav className={styles.navigation} aria-label="Footer">
           {(homepage ? homepageGroups : groups).map(({ title, links }) => <div className={styles.group} key={title}>
             <h3>{title}</h3>
-            <ul>{links.map(({ label, path }) => <li key={label}><a href={withBasePath(siteHref(path))}>{label}<span className={styles.arrow} aria-hidden="true">→</span></a></li>)}</ul>
+            <ul>{links.map(({ label, path }) => <li key={label}><a href={withBasePath(!homepage && interiorPaths[path] ? interiorPaths[path] : siteHref(path))}>{label}<span className={styles.arrow} aria-hidden="true">→</span></a></li>)}</ul>
           </div>)}
         </nav>
         <p className={styles.copyright}>{homepage && <span className={styles.tagline}>Frontier AI, engineered for the way your business works.</span>}{homepage ? '© 2026 AtomsAI. SaaS Labs is now AtomsAI.' : '© 2026 AtomsAI, a brand of SaaS Labs US, Inc.'}</p>

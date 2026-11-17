@@ -1,0 +1,145 @@
+{
+  "desktop": [
+    {
+      "heading": "It started with a phone call. It didn't stop there.",
+      "missingHashes": [],
+      "overflow": false,
+      "path": "/company/about",
+      "placeholderText": false
+    },
+    {
+      "heading": "Building the next global AI company from India",
+      "missingHashes": [],
+      "overflow": false,
+      "path": "/company/careers",
+      "placeholderText": false
+    },
+    {
+      "heading": "Hello.",
+      "missingHashes": [],
+      "overflow": false,
+      "path": "/applications",
+      "placeholderText": false
+    },
+    {
+      "heading": "The voice AI behind a billion phone calls a year. Now yours",
+      "missingHashes": [],
+      "overflow": false,
+      "path": "/infrastructure",
+      "placeholderText": false
+    },
+    {
+      "heading": "Put AI where the work actually happens.",
+      "missingHashes": [],
+      "overflow": false,
+      "path": "/approach",
+      "placeholderText": false
+    },
+    {
+      "heading": "In their words",
+      "missingHashes": [],
+      "overflow": false,
+      "path": "/customers/testimonials",
+      "placeholderText": false
+    },
+    {
+      "heading": "What changed, with the numbers",
+      "missingHashes": [],
+      "overflow": false,
+      "path": "/customers/success-stories",
+      "placeholderText": false
+    },
+    {
+      "heading": "Notes from the field",
+      "missingHashes": [],
+      "overflow": false,
+      "path": "/blog",
+      "placeholderText": false
+    },
+    {
+      "heading": "On the record",
+      "missingHashes": [],
+      "overflow": false,
+      "path": "/company/press",
+      "placeholderText": false
+    },
+    {
+      "heading": "Trust and Security",
+      "missingHashes": [],
+      "overflow": false,
+      "path": "/trust",
+      "placeholderText": false
+    },
+    {
+      "heading": "What do you need to do?",
+      "missingHashes": [],
+      "overflow": false,
+      "path": "/help",
+      "placeholderText": false
+    }
+  ],
+  "mobile": [
+    {
+      "offscreen": [],
+      "overflow": false,
+      "path": "/company/about"
+    },
+    {
+      "offscreen": [],
+      "overflow": false,
+      "path": "/company/careers"
+    },
+    {
+      "offscreen": [],
+      "overflow": false,
+      "path": "/applications"
+    },
+    {
+      "offscreen": [],
+      "overflow": false,
+      "path": "/infrastructure"
+    },
+    {
+      "offscreen": [],
+      "overflow": false,
+      "path": "/approach"
+    },
+    {
+      "offscreen": [],
+      "overflow": false,
+      "path": "/customers/testimonials"
+    },
+    {
+      "offscreen": [],
+      "overflow": false,
+      "path": "/customers/success-stories"
+    },
+    {
+      "offscreen": [],
+      "overflow": false,
+      "path": "/blog"
+    },
+    {
+      "offscreen": [],
+      "overflow": false,
+      "path": "/company/press"
+    },
+    {
+      "offscreen": [],
+      "overflow": false,
+      "path": "/trust"
+    },
+    {
+      "offscreen": [],
+      "overflow": false,
+      "path": "/help"
+    }
+  ],
+  "checks": [
+    "Help search finds retention topics",
+    "Customer product and industry filters, empty results, and reset",
+    "API language switcher",
+    "FAQ expands",
+    "Mobile Company menu navigates to local Careers page"
+  ]
+}

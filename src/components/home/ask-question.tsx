@@ -85,7 +85,7 @@ export function AskQuestion() {
   const finish = useCallback(() => {
     pending.current = false;
     setBusy(false);
-    setAnnouncement(`Sample answer ready. ${sampleAnswer}`);
+    setAnnouncement(`Answer ready. ${sampleAnswer}`);
   }, []);
 
   function submit(event: FormEvent<HTMLFormElement>) {
@@ -98,7 +98,7 @@ export function AskQuestion() {
     const entry = { id: nextId.current++, text: question };
     setQuestions(items => [...items, entry]);
     setDraft('');
-    setAnnouncement('Question added. Preparing a sample answer.');
+    setAnnouncement('Question added. Preparing an answer.');
   }
 
   return <>

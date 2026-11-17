@@ -1,0 +1,385 @@
+{
+  "label": "Applications",
+  "route": "/applications",
+  "title": "Hello.",
+  "intro": [
+    "One small word. A lot riding on it. A prospect to reach, a customer to help, a service request that can't wait. AtomsAI applications handle those conversations and what follows."
+  ],
+  "actions": [
+    {
+      "label": "Explore our applications",
+      "href": "#next"
+    },
+    {
+      "label": "See customer results",
+      "href": "#proof"
+    }
+  ],
+  "sections": [
+    {
+      "id": "next",
+      "title": "Every hello sets work in motion",
+      "label": "",
+      "intro": [
+        "For a service business, it's a job to assess, book, and finish. For a sales or support team, it's the next step with that customer. We build applications around what each business needs to happen next."
+      ],
+      "blocks": [
+        {
+          "title": "A job to schedule and manage",
+          "body": [
+            "AI front and back office for HVAC, plumbing, electrical, and other home-service businesses."
+          ],
+          "links": [
+            {
+              "label": "See ServiceAgent",
+              "href": "#serviceagent"
+            }
+          ],
+          "list": [
+            "Call answered, any hour",
+            "Job details and urgency captured",
+            "Visit booked around the crew",
+            "Customer kept posted to payment"
+          ],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "The next step in a customer relationship",
+          "body": [
+            "The CRM-friendly business phone system for calls, texts, and AI voice agents."
+          ],
+          "links": [
+            {
+              "label": "See JustCall",
+              "href": "#justcall"
+            }
+          ],
+          "list": [
+            "Callback placed in under a minute",
+            "Call and text logged to the CRM",
+            "Follow-up text sent on the outcome",
+            "Summary on the record for the next rep"
+          ],
+          "label": "",
+          "category": "",
+          "tags": []
+        }
+      ],
+      "links": [],
+      "kind": "cards"
+    },
+    {
+      "id": "serviceagent",
+      "title": "\"Can someone come today?\"",
+      "label": "ServiceAgent",
+      "intro": [
+        "For a homeowner, it's one question. For a service business, there's a job to assess, a technician to schedule, and a customer to look after.",
+        "ServiceAgent brings AI into the day-to-day running of HVAC, plumbing, electrical, and other home-service businesses, handling the office work around every job."
+      ],
+      "blocks": [
+        {
+          "title": "Know what the job needs",
+          "body": [
+            "Answer calls around the clock, ask trade-specific questions, capture job details, and identify requests that need urgent attention."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Get the right visit booked",
+          "body": [
+            "Turn service requests into appointments, coordinate technician availability, and handle schedule changes as the day unfolds."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Keep customers in the loop",
+          "body": [
+            "Send confirmations, reminders, and updates, with the details of each job available when customers call back."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "See the job through to payment",
+          "body": [
+            "Keep estimates, invoices, payments, and follow-ups connected to the work, with less office administration between jobs."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Make today's customers tomorrow's business",
+          "body": [
+            "Stay in touch after the job with timely follow-ups, review requests, and opportunities to bring customers back."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        }
+      ],
+      "links": [
+        {
+          "label": "Explore ServiceAgent",
+          "href": "https://serviceagent.ai/"
+        }
+      ],
+      "kind": "rows"
+    },
+    {
+      "id": "justcall",
+      "title": "\"You have my details, right?\"",
+      "label": "JustCall",
+      "intro": [
+        "Your CRM holds the context. JustCall puts it to work through calls, texts, and AI, then brings the outcomes back to inform what happens next."
+      ],
+      "blocks": [
+        {
+          "title": "Make the calling hour count",
+          "body": [
+            "Reach more prospects with Power, Dynamic, or Predictive dialing, using CRM context and call outcomes to guide your next attempt."
+          ],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/yellowstone/"
+            }
+          ],
+          "list": [],
+          "quote": "“You can only make so many dials a day. When your connect rate triples, it changes everything.”",
+          "attribution": "Warren Lentz · Founder and CEO, Yellowstone Local",
+          "label": "",
+          "category": "",
+          "tags": [],
+          "metric": "Connect rate 4.5% to 12%"
+        },
+        {
+          "title": "Be there when customers call",
+          "body": [
+            "Route callers by need and availability, with AI answering the calls you choose and your team ready to step in."
+          ],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/crowdstreet/"
+            }
+          ],
+          "list": [],
+          "quote": "“In 12 months, JustCall helped customer response times go from a couple of days to within a day.”",
+          "attribution": "Reed Lewallen · Manager of Investor Care, CrowdStreet",
+          "label": "",
+          "category": "",
+          "tags": [],
+          "metric": "Replies within 24 hours"
+        },
+        {
+          "title": "Carry the conversation into SMS",
+          "body": [
+            "Trigger timely texts from CRM activity or call outcomes, with two-way replies and follow-ups connected to the customer record."
+          ],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/scsp-solar/"
+            }
+          ],
+          "list": [],
+          "quote": "“We were converting about 30% of inbound leads to appointments. … We brought that appointment-conversion rate up to 50%.”",
+          "attribution": "Brian Mason · Chief Financial Officer, SCSP Solar",
+          "label": "",
+          "category": "",
+          "tags": [],
+          "metric": "A text within seconds of the form fill"
+        },
+        {
+          "title": "Give AI a job and a goal",
+          "body": [
+            "Shape voice agents around your business knowledge, qualification criteria, and desired outcomes, with clear rules for human handoffs."
+          ],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/its-technologies/"
+            }
+          ],
+          "list": [],
+          "quote": "“The AI is great at handling clear-cut policy questions like warranty timelines in a calm, consistent way. That means our agents can spend their time on the conversations that really need a human touch.”",
+          "attribution": "Elisheva · Operations Lead, ITS Technologies",
+          "label": "",
+          "category": "",
+          "tags": [],
+          "metric": "80% of calls answered within 30 seconds"
+        },
+        {
+          "title": "Make the next conversation better",
+          "body": [
+            "Turn calls into summaries, AI scores, and coaching insights that help managers spot gaps and reps improve their next conversation."
+          ],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/yellowstone/"
+            }
+          ],
+          "list": [],
+          "quote": "“Everything gets logged: recordings, call details, even transcripts. It’s a huge time-saver for the team and gives managers real-time insights.”",
+          "attribution": "Warren Lentz · Founder and CEO, Yellowstone Local",
+          "label": "",
+          "category": "",
+          "tags": [],
+          "metric": "SDRs book 2x more meetings"
+        }
+      ],
+      "links": [
+        {
+          "label": "Explore JustCall",
+          "href": "https://justcall.io/"
+        }
+      ],
+      "kind": "rows"
+    },
+    {
+      "id": "proof",
+      "title": "Trusted by 7,000+ businesses globally",
+      "label": "Customer results",
+      "intro": [],
+      "blocks": [
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/yellowstone/"
+            }
+          ],
+          "list": [],
+          "quote": "“Through the variety of businesses I’ve scaled, JustCall has been a go-to. It’s reliable, easy to set up, and integrates deeply with all the tools we use.”",
+          "label": "",
+          "category": "",
+          "tags": [],
+          "attribution": "Warren Lentz · Founder and CEO, Yellowstone Local"
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/gostudent/"
+            }
+          ],
+          "list": [],
+          "quote": "“Click-to-dial from HubSpot, instant call logging, and real-time reporting. JustCall was exactly what we needed to scale efficiently.”",
+          "label": "",
+          "category": "",
+          "tags": [],
+          "attribution": "Giordano Faccani · Global Operations Manager, GoStudent"
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/its-technologies/"
+            }
+          ],
+          "list": [],
+          "quote": "“We switched to JustCall for the AI, but just as much for how little downtime you have.”",
+          "label": "",
+          "category": "",
+          "tags": [],
+          "attribution": "Elisheva · Operations Lead, ITS Technologies"
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/avalon-pharmacy/"
+            }
+          ],
+          "list": [],
+          "quote": "“Don’t waste your time or try anything else. When I saw JustCall, I said, ‘Oh wow. I wish I had done this five years ago.’”",
+          "label": "",
+          "category": "",
+          "tags": [],
+          "attribution": "Amit Kakar · CEO and Pharmacist, Avalon Pharmacy"
+        }
+      ],
+      "links": [
+        {
+          "label": "All customer stories",
+          "href": "https://justcall.io/customer-stories/"
+        }
+      ],
+      "kind": "quotes",
+      "stats": [
+        {
+          "value": "3×",
+          "label": "Connect rate, from 4.5% to 12% · Yellowstone Local"
+        },
+        {
+          "value": "12%",
+          "label": "Faster response to inbound leads · GoStudent"
+        },
+        {
+          "value": "80%",
+          "label": "Of calls answered within 30 seconds · ITS Technologies"
+        },
+        {
+          "value": "50%",
+          "label": "Of inbound leads booked, up from 30% · SCSP Solar"
+        }
+      ]
+    },
+    {
+      "id": "engineering",
+      "title": "All that engineering. Made simple to use",
+      "label": "",
+      "intro": [
+        "A service business needs software that understands the job.",
+        "A sales or support team needs communication that works with its CRM.",
+        "AtomsAI builds models, infrastructure, and workflows into complete applications that fit how each business works, with the hard engineering already built in."
+      ],
+      "blocks": [],
+      "links": [],
+      "kind": "dark"
+    }
+  ],
+  "closing": {
+    "title": "There's a lot riding on the next hello.",
+    "body": [
+      "Find an application built for the work your business needs done, with the engineering already in place."
+    ],
+    "links": [
+      {
+        "label": "Explore JustCall",
+        "href": "#justcall"
+      },
+      {
+        "label": "Explore ServiceAgent",
+        "href": "#serviceagent"
+      }
+    ]
+  }
+}

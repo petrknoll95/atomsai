@@ -45,3 +45,10 @@
   .articleRow { flex-direction: column; align-items: flex-start; gap: 16px; padding: 32px 16px; }
 }
 @media (prefers-reduced-motion: reduce) { .pattern, .articleRow { transition: none; } }
+.contentHeading { margin-bottom:24px; }
+.description { max-width:640px; margin-bottom:72px; font-size:20px; line-height:1.5; color:var(--color-surface-muted-foreground); }
+.excerpt { font-size:18px; line-height:1.5; color:var(--color-surface-muted-foreground); }
+.noteRow { display:grid; grid-template-columns:1fr 1fr; gap:48px; padding-inline:0; }
+.noteRow h3 { font-size:30px; line-height:1.15; max-width:540px; }
+.noteRow p { max-width:560px; color:var(--color-surface-muted-foreground); font-size:18px; line-height:1.5; }
+@media(max-width:767px) { .description { font-size:18px; margin-bottom:48px; } .noteRow { grid-template-columns:1fr; gap:16px; } .noteRow h3 { font-size:26px; } .noteRow p,.excerpt { font-size:17px; } }

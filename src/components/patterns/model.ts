@@ -1,3 +1,4 @@
+import { brandPatternColor } from './brand-colors';
 import { patternGradients, patternSources, patternThemes, type SourceNode } from './source-data';
 import type { GradientData, MaskData, PatternColor, PatternModel, PatternOptions } from './types';
 import { buildConcentricModel } from './concentric';
@@ -50,6 +51,6 @@ export function buildPatternModel(options: PatternOptions): PatternModel {
     const value = patternThemes[options.mode ?? 'light'][paint.colorRole];
     if (!value) throw new Error(`Missing theme role ${paint.colorRole}.`);
     return value.slice(0, 3) as unknown as PatternColor;
-  })).map((value, index) => options.colors?.[customRoles[index]] ?? value);
+  })).map((value, index) => brandPatternColor(options.colors?.[customRoles[index]] ?? value));
   return { gradients, masks, colors, kind: options.kind, count, ringPitch: variant?.ringPitch ?? fallback?.ringPitch ?? 0 };
 }

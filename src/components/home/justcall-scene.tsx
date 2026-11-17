@@ -10,7 +10,7 @@ function ChevronIcon({ direction = 'down' }: { direction?: 'down' | 'left' | 'ri
 }
 
 // Decorative product illustration. Its entire coordinate system inherits one em.
-export function JustCallScene({ compact = false }: { compact?: boolean } = {}) {
+export function JustCallScene({ compact = false, example }: { compact?: boolean; example?: { caller: string; reply: string; followUp: string } } = {}) {
   if (compact) return <div className={`${styles.system} ${styles.compact}`} data-justcall-system aria-hidden="true">
     <div className={styles.foreground}>
       <div className={styles.analytics}>
@@ -60,9 +60,9 @@ export function JustCallScene({ compact = false }: { compact?: boolean } = {}) {
         <div className={styles.intro}><p className={styles.title}>Talk to Steven Carter</p><p>Receive a call on your phone or talk via web</p></div>
         <div className={styles.callTabs}><span>Web Call</span><span>Phone Call</span></div>
         <div className={styles.transcript}>
-          <div><p className={styles.speaker}>You:</p><p>Hi John, can we schedule the sink installation?</p></div>
-          <div><p className={styles.speaker}>Steven Carter:</p><p>Of course! Saturday at 9 AM works.</p></div>
-          <div><p className={styles.speaker}>You:</p><p>Great, I’ll have everything ready.</p></div>
+          <div><p className={styles.speaker}>You:</p><p>{example?.caller ?? 'Hi John, can we schedule the sink installation?'}</p></div>
+          <div><p className={styles.speaker}>Steven Carter:</p><p>{example?.reply ?? 'Of course! Saturday at 9 AM works.'}</p></div>
+          <div><p className={styles.speaker}>You:</p><p>{example?.followUp ?? 'Great, I’ll have everything ready.'}</p></div>
         </div>
         <div className={styles.callBar}><span className={`${styles.avatar} ${styles.avatarPhoto}`} /><div><p className={styles.speaker}>Steven Carter</p><p className={styles.muted}>01:16</p></div><span className={styles.hangup}><PhoneIcon /></span></div>
       </div>

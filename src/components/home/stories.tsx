@@ -26,7 +26,10 @@ export function Stories() {
 
   return (
     <section ref={root} aria-roledescription="carousel" className={`page-container ${styles.stories}`} id="customer-stories" aria-labelledby="customer-stories-title">
-      <h2 id="customer-stories-title" className="sr-only">Customer stories</h2>
+      <header className={styles.storyHeader}>
+        <h2 id="customer-stories-title" className={`display ${styles.heading}`}>Proven on a billion conversations a year</h2>
+        <p>Sales teams, service businesses, and enterprises run AtomsAI on real calls, every day.</p>
+      </header>
       <div className={carousel.stage}>
       <StoryPortraits master={embla} slots={storySlots} images={storyPortraits} paused={paused} onTogglePlayback={togglePlayback} />
       <div id="customer-story-content" className={`${carousel.viewport} ${carousel.contentViewport}`} ref={emblaRef} onDragStart={event => event.preventDefault()}>
@@ -37,7 +40,7 @@ export function Stories() {
                 <div className={styles.portrait} data-portrait-slot aria-hidden="true" />
                 <div className={styles.storyContent}>
                   <div className={styles.quoteBlock}>
-                    <Eyebrow href="https://atomsai.com/resources/case-studies">Customer Stories</Eyebrow>
+                    <Eyebrow href={story.productHref}>with {story.product}</Eyebrow>
                     <figure className={styles.testimonial}>
                       <blockquote data-story-reveal className={`display ${styles.quote}`}>{story.quote}</blockquote>
                       <figcaption data-story-reveal className={styles.person}>

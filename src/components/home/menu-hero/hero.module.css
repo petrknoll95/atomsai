@@ -9,17 +9,14 @@
 .stage .field { height: 100%; }
 .backdrop {
   --menu-track: calc((min(100vw, var(--page-max-width)) - 2 * var(--content-gutter)) / var(--menu-columns));
-  background: var(--palette-forest-shade);
+  background: linear-gradient(to bottom, var(--palette-forest-shade) 42%, var(--palette-paper));
 }
 /* Decorative rendering may fail independently of the readable hero. */
 .backdrop [role='status'] { display: none; }
 
 
-.source { opacity: 0; }
+.backdrop .patternEntrance { position: absolute; inset: 0; opacity: 0; background: var(--palette-forest-shade); }
 .slit { position: absolute; top: 0; width: var(--menu-track); height: 100%; overflow: hidden; }
-.slitStrip { display: flex; width: 200%; height: 100%; }
-.slitCell { flex: 0 0 50%; height: 100%; overflow: hidden; }
-.slitContent { display: block; width: 100%; height: 100%; transform: scale(1.2); transform-origin: center; }
 .slitFade {
   position: absolute;
   inset-inline: 0;
@@ -30,11 +27,26 @@
   /* Keep each fade's bottom aligned to the section during pattern parallax. */
   transform: translateY(calc(-1 * var(--hero-field-offset, 0px)));
 }
-/* No intro reveal: the live shader shows from the first paint; the reveal strips stay hidden. */
-.backdrop .source { opacity: 1; }
-.backdrop .slitStrip { visibility: hidden; }
-
+/* Server CSS gates the first paint; the controller opens it only after fonts and
+   a real shader frame are ready. A simple green gradient remains as a fallback. */
 .hero .maskedCopy > div > * { opacity: 1; transform: none; transition: none; }
+.stage:not([data-hero-entry='pending'])[data-hero-pattern-state='ready'] .patternEntrance { opacity: 1; }
+@media (scripting: enabled) {
+  .hero .copyEntrance { opacity: 0; visibility: hidden; transform: translateY(-10px); animation: copyFailOpen 0s 6s forwards; }
+  .hero .stage[data-hero-controlled] .copyEntrance { animation: none; }
+  .hero .stage[data-hero-entry='ready'] .copyEntrance { opacity: 1; visibility: visible; transform: none; }
+}
+/* Even a failed main JavaScript download leaves useful server-rendered content. */
+@keyframes copyFailOpen { to { opacity: 1; visibility: visible; transform: none; } }
+/* Focus and print must not depend on animation or a decorative GPU renderer. */
+.hero .copyEntrance:focus-within { opacity: 1 !important; visibility: visible !important; transform: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  .hero .copyEntrance, .patternEntrance { transform: none !important; }
+  .stage[data-hero-entry='revealing'] .copyEntrance { opacity: 1 !important; visibility: visible !important; }
+}
+@media print {
+  .hero .copyEntrance { opacity: 1 !important; visibility: visible !important; transform: none !important; }
+}
 
 
 /* Normal document flow makes the next section rise directly with scrolling. */

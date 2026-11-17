@@ -2,14 +2,24 @@ import { withBasePath } from '@/lib/base-path';
 import { ArrowIcon } from '@/components/arrow-icon';
 import { ButtonLink } from '@/components/ui';
 import styles from './approach.module.css';
+import { clientPages } from './client-content';
+import { ContentSectionView } from './content-page';
 
-const steps = [
+const content = clientPages.services;
+const sourceSection = (id: string) => content.sections.find(section => section.id === id)!;
+
+const originalSteps = [
   { name: 'Understand the work', short: 'Discover', label: 'Teardown', description: 'We sit with the people doing the work. Follow the handoffs, look at the exceptions, and find the workflow worth changing first.', output: 'A ranked starting point', detail: 'Workflows compared by volume, effort, payback and risk. A recommendation for what goes first—and what can wait.', need: 'A process owner, a few practitioners, and examples of the work.' },
   { name: 'Make the plan concrete', short: 'Map', label: 'Blueprint', description: 'Map the chosen workflow from first input to final action. Agree what good looks like, where a person steps in, and how the system will connect.', output: 'An agreed blueprint', detail: 'The workflow, integrations, approval rules and data flows. Baselines and success criteria your team can measure.', need: 'Your process, engineering and security owners.' },
   { name: 'Build where you work', short: 'Build', label: 'Build & integrate', description: 'Our engineers work in your repository, with your team. Connect the real systems and compare outputs alongside the existing process before switching over.', output: 'A working system to test', detail: 'Code, prompts and integrations in your repository. A side-by-side comparison with the way your team works today.', need: 'Repository access, scoped credentials and your code review.' },
   { name: 'Test the difficult parts', short: 'Test', label: 'Evals & hardening', description: 'Test the edge cases as carefully as the happy path. Check accuracy, cost and response time against the thresholds you agreed.', output: 'Evidence for the go-live decision', detail: 'An evaluation suite, monitoring and documented recovery. Known failure modes, named owners and a rollback plan.', need: 'Your acceptance criteria and a team to review the results.' },
   { name: 'Put your team in control', short: 'Handover', label: 'Handover & scale', description: 'Your team takes over with training, runbooks and a supervised operating period. Then we return to the workflow list and decide what is worth doing next.', output: 'A system your team can run', detail: 'The code, prompts, tests, infrastructure and operating instructions. Ownership that continues after the engagement.', need: 'Operators, an engineering owner and an agreed support plan.' },
 ];
+
+const steps = originalSteps.map((step, index) => {
+  const copy = sourceSection('approach').blocks[index];
+  return { ...step, name: copy.title, description: copy.body.join(' '), short: ['Understand', 'Design', 'Build', 'Validate', 'Hand over'][index], label: ['Understand', 'Design', 'Build', 'Validate', 'Hand over'][index], output: copy.list.join(' · ') };
+});
 
 const questions = [
   ['What should we bring to the first conversation?', 'One workflow and a person who knows it well. A few examples of where it slows down or goes wrong are more useful than a presentation. We will work out what else is needed together.'],
@@ -23,10 +33,10 @@ export function ApproachPage() {
     <section className={`page-container ${styles.hero}`} aria-labelledby="hero-heading">
       <p className={styles.kicker}><span className={styles.dot} />AI Services <span className={styles.kickerDivider}>/</span> How we work</p>
       <div className={styles.heroCopy}>
-        <h1 className={`display ${styles.title}`} id="hero-heading">From workflow.<br />To working system.</h1>
+        <h1 className={`display ${styles.title}`} id="hero-heading">{content.title}</h1>
         <div className={styles.heroAside}>
-          <p>We help you find the right starting point, build around your business, and put your team in control.</p>
-          <ButtonLink href="/company/contact?topic=services" size="large">Find your starting point <ArrowIcon size={18} /></ButtonLink>
+          <p>{content.intro[0]}</p>
+          <ButtonLink href="/company/contact?topic=services" size="large">Talk to our team <ArrowIcon direction="right" size={18} /></ButtonLink>
         </div>
       </div>
       <div className={styles.journey}>
@@ -38,10 +48,12 @@ export function ApproachPage() {
       </div>
     </section>
 
-    <section className={`page-container ${styles.process}`} aria-labelledby="process-heading">
+    {['workflow', 'services', 'areas'].map(id => <ContentSectionView key={id} section={sourceSection(id)} />)}
+
+    <section id="approach" className={`page-container ${styles.process}`} aria-labelledby="process-heading">
       <div className={styles.sectionHead}>
         <p className={styles.kicker}>The process</p>
-        <div><h2 className={`display ${styles.sectionTitle}`} id="process-heading">Five steps.<br />Something real at each one.</h2><p className={styles.sectionIntro}>Every stage ends in work you can inspect.<br className={styles.desktopBreak} /> From the first recommendation to the final handover.</p></div>
+        <div><h2 className={`display ${styles.sectionTitle}`} id="process-heading">{sourceSection('approach').title}</h2><p className={styles.sectionIntro}>{sourceSection('approach').intro[0]}</p></div>
       </div>
       <ol className={styles.processList}>
         {steps.map((step, index) => <li key={step.name} id={`step-${index + 1}`} className={styles.processRow}>
@@ -54,9 +66,9 @@ export function ApproachPage() {
 
     <section className={styles.controlSection} aria-labelledby="control-heading">
       <div className={`page-container ${styles.controlGrid}`}>
-        <div className={styles.controlCopy}><p className={styles.kicker}>Your rules, built in</p><h2 className={`display ${styles.sectionTitle}`} id="control-heading">The next action.<br />On your terms.</h2><p>You decide what the system can do on its own, what needs approval, and when it should hand over.</p><p>Those boundaries are part of the build. Start with a person reviewing every action, then adjust as the evidence earns your confidence.</p><a className={styles.textLink} href={withBasePath("/trust")}><span className="link-underline">Explore trust & security</span><ArrowIcon size={18} /></a></div>
+        <div className={styles.controlCopy}><p className={styles.kicker}>Your rules, built in</p><h2 className={`display ${styles.sectionTitle}`} id="control-heading">{sourceSection('integration').title}</h2><p>{sourceSection('integration').intro[0]}</p><p>Those boundaries are part of the build. Start with a person reviewing every action, then adjust as the evidence earns your confidence.</p><a className={styles.textLink} href={withBasePath("/trust")}><span className="link-underline">Explore trust & security</span><ArrowIcon size={18} /></a></div>
         <figure className={styles.workflow}>
-          <div className={styles.workflowHeader}><span>Illustrative approval flow</span><span className={styles.workflowTag}>Your policy</span></div>
+          <div className={styles.workflowHeader}><span>Approval flow</span><span className={styles.workflowTag}>Your policy</span></div>
           <div className={styles.workflowInput}><span className={styles.smallDot} /><span>New request</span><span className={styles.statusLabel}>Received</span></div>
           <div className={styles.connector} aria-hidden="true" />
           <div className={styles.policy}><span className={styles.policyIcon} aria-hidden="true">···</span><div><p>Check the rules</p><span>Scope · permissions · confidence</span></div></div>
@@ -70,8 +82,9 @@ export function ApproachPage() {
       </div>
     </section>
 
+    <ContentSectionView section={sourceSection('proven-in-production-at-scale')} />
     <section className={`page-container ${styles.ownership}`} aria-labelledby="ownership-heading">
-      <div><p className={styles.kicker}>Built to be yours</p><h2 className={`display ${styles.sectionTitle}`} id="ownership-heading">The work stays.<br />Even when we leave.</h2><p className={styles.ownershipIntro}>Your repository from the first merge. Your team at the handover. Everything needed to keep the system running, in your hands.</p></div>
+      <div><p className={styles.kicker}>Built to be yours</p><h2 className={`display ${styles.sectionTitle}`} id="ownership-heading">{sourceSection('ownership').title}</h2><p className={styles.ownershipIntro}>{sourceSection('ownership').blocks.map(block => block.body.join(' ')).join(' ')}</p></div>
       <div className={styles.handover}>
         <div className={styles.handoverHead}><span className={styles.folderIcon} aria-hidden="true" /><p>Your working system</p><span className={styles.owned}>Yours</span></div>
         {[
@@ -90,7 +103,7 @@ export function ApproachPage() {
     </section>
 
     <section className={`page-container ${styles.closing}`} aria-labelledby="approach-closing-heading">
-      <div className={styles.closingInner}><div><p className={styles.kicker}>Start with one workflow</p><h2 className={`display ${styles.sectionTitle}`} id="approach-closing-heading">Show us where<br />work gets stuck.</h2></div><div><p>A conversation about your process.<br />A clearer idea of what comes next.</p><ButtonLink href="/company/contact?topic=services" size="large">Talk to AtomsAI <ArrowIcon size={18} /></ButtonLink></div></div>
+      <div className={styles.closingInner}><div><p className={styles.kicker}>Start with one workflow</p><h2 className={`display ${styles.sectionTitle}`} id="approach-closing-heading">{content.closing.title}</h2></div><div><p>{content.closing.body[0]}</p><ButtonLink href="/company/contact?topic=services" size="large">Talk to AtomsAI <ArrowIcon size={18} /></ButtonLink></div></div>
     </section>
   </main>;
 }

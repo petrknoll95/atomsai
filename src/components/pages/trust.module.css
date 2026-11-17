@@ -117,3 +117,5 @@
 
 .documentNumber { font-size:12px; font-variant-numeric:tabular-nums; color:var(--color-surface-muted-foreground); flex-shrink:0; align-self:flex-start; padding-top:3px; }
 .documentName { flex:1; }
+.controlList { padding-left:20px; color:var(--color-surface-muted-foreground); line-height:1.6; }
+.controlList li+li { margin-top:12px; }

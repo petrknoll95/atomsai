@@ -1,0 +1,149 @@
+{
+  "label": "Press & media",
+  "route": "/company/press",
+  "title": "On the record",
+  "intro": [
+    "Announcements, product news, and the facts and files to write about us accurately."
+  ],
+  "actions": [
+    {
+      "label": "Open the press kit",
+      "href": "#kit"
+    },
+    {
+      "label": "Media inquiries",
+      "href": "/company/contact?topic=media"
+    }
+  ],
+  "sections": [
+    {
+      "id": "kit",
+      "title": "What you need to tell the story",
+      "label": "Press kit",
+      "intro": [
+        "Founded in 2016 as SaaS Labs, AtomsAI is a global AI technology company from India.",
+        "We build business applications including JustCall and ServiceAgent, models and infrastructure through PyAI, and custom AI systems for complex business problems. Our technology powers more than a billion conversations annually."
+      ],
+      "blocks": [
+        {
+          "title": "Company name",
+          "body": [
+            "AtomsAI (one word, capital A and AI)"
+          ],
+          "links": [],
+          "list": [],
+          "label": ""
+        },
+        {
+          "title": "Formerly",
+          "body": [
+            "SaaS Labs"
+          ],
+          "links": [],
+          "list": [],
+          "label": ""
+        },
+        {
+          "title": "Products",
+          "body": [
+            "JustCall, ServiceAgent, PyAI"
+          ],
+          "links": [],
+          "list": [],
+          "label": ""
+        },
+        {
+          "title": "Describe us as",
+          "body": [
+            "A global AI technology company from India"
+          ],
+          "links": [],
+          "list": [],
+          "label": ""
+        },
+        {
+          "title": "Headquarters",
+          "body": [
+            "India"
+          ],
+          "links": [],
+          "list": []
+        },
+        {
+          "title": "Applications",
+          "body": [
+            "JustCall, ServiceAgent"
+          ],
+          "links": [],
+          "list": []
+        },
+        {
+          "title": "Models and infrastructure",
+          "body": [
+            "PyAI"
+          ],
+          "links": [],
+          "list": []
+        },
+        {
+          "title": "Custom engineering",
+          "body": [
+            "AI Services"
+          ],
+          "links": [],
+          "list": []
+        }
+      ],
+      "links": [],
+      "kind": "statement"
+    },
+    {
+      "id": "assets",
+      "title": "Logos & assets",
+      "label": "Brand",
+      "intro": [],
+      "blocks": [],
+      "links": [
+        {
+          "label": "Brand guidelines",
+          "href": "https://atomsai.com/brand"
+        }
+      ],
+      "kind": "statement"
+    }
+  ],
+  "closing": {
+    "title": "Writing about AtomsAI?",
+    "body": [
+      "Our team can confirm facts, set up interviews, and send approved assets, usually within a working day."
+    ],
+    "links": [
+      {
+        "label": "Media inquiries",
+        "href": "/company/contact?topic=media"
+      },
+      {
+        "label": "Open the press kit",
+        "href": "#kit"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "value": "2016",
+      "label": "Founded as SaaS Labs"
+    },
+    {
+      "value": "1B+",
+      "label": "Conversations powered annually"
+    },
+    {
+      "value": "7,000+",
+      "label": "Businesses on JustCall"
+    },
+    {
+      "value": "20+",
+      "label": "Countries served"
+    }
+  ]
+}

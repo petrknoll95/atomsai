@@ -11,7 +11,7 @@ import styles from './responsive-applications.module.css';
 
 const scenes = { JustCall: JustCallScene, Helpwise: HelpwiseScene, ServiceAgent: ServiceAgentScene, CallPage: CallPageScene };
 
-export function ResponsiveApplications() {
+export function ResponsiveApplications({ overviewHref = '/#applications' }: { overviewHref?: string }) {
   const id = useId();
   const [active, setActive] = useState<string | null>(null);
   return <div className={styles.applications}>
@@ -35,7 +35,7 @@ export function ResponsiveApplications() {
           </div>
         </div>;
       })}
-      <Link className={styles.all} href="/#applications" prefetch={false}>All applications<ArrowIcon size={18} /></Link>
+      <Link className={styles.all} href={overviewHref} prefetch={false}>All applications<ArrowIcon size={18} /></Link>
     </div>
   </div>;
 }
