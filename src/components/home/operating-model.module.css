@@ -3,7 +3,7 @@
 .stage { display:grid; grid-template-columns:minmax(0,1fr); gap:inherit; align-items:inherit; min-width:0; }
 .intro { min-width:0; text-align:center; }
 /* sRGB equivalent of the application panels' 4% cream / forest-shade mix, shared with Three.js surfaces. */
-.diagramRow { --diagram-surface:#1a2b26; --model-inset:8px; display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:var(--model-inset); align-items:stretch; width:100%; padding:var(--model-inset); position:relative; z-index:1; isolation:isolate; }
+.diagramRow { --diagram-surface:#1a2b26; --model-inset:8px; --model-outer-radius:calc(var(--radius-panel) - var(--model-inset)); --model-inner-radius:var(--radius-card); display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:var(--model-inset); align-items:stretch; width:100%; padding:var(--model-inset); position:relative; z-index:1; isolation:isolate; }
 /* The panel surface is its own layer so it can grow to the viewport while the row is pinned (operating-model-expand.ts). */
 .rowBackdrop { position:absolute; inset:0; z-index:-1; background:var(--palette-forest-shade); border-radius:var(--radius-panel); pointer-events:none; }
 .eyebrow { margin-bottom:28px; font-size:var(--text-label); line-height:1.4; color:var(--color-muted-foreground); }
@@ -57,7 +57,7 @@
 /* A pinned visual stays within the viewport on narrow and short screens. */
 .section[data-model-pin="visual"] { align-items:start; }
 .section[data-model-pin="visual"] .accordion { align-self:start; }
-.visual { --diagram-fill:var(--palette-forest-shade); --diagram-ink:var(--palette-cream); background:var(--diagram-surface); border-radius:24px; overflow:hidden; }
+.visual { --diagram-fill:var(--palette-forest-shade); --diagram-ink:var(--palette-cream); background:var(--diagram-surface); border-radius:var(--model-outer-radius) var(--model-inner-radius) var(--model-inner-radius) var(--model-outer-radius); overflow:hidden; }
 @media(min-width:1200px) and (min-height:700px) {
   .section { padding-block:24px 48px; }
 }
@@ -65,4 +65,15 @@
 /* Tablet pins the headline with the diagram: leave room for it so the whole stage fits on screen. */
 @media(min-width:768px) and (max-width:1199px) and (min-height:700px) {
   .section[data-model-pin="stage"] .art { height:min(560px,calc(100svh - 420px)); min-height:280px; }
+}
+
+/* Concentric corners: anything touching the panel edge uses panel radius minus the inset;
+   corners between cards keep the card radius. Two columns: visual left, cards right. */
+.item:first-child { border-top-right-radius:var(--model-outer-radius); }
+.item:last-child { border-bottom-right-radius:var(--model-outer-radius); }
+/* Stacked: visual on top, cards below. */
+@media(max-width:767px), (min-width:768px) and (max-width:1199px) and (max-height:699px) {
+  .visual { border-radius:var(--model-outer-radius) var(--model-outer-radius) var(--model-inner-radius) var(--model-inner-radius); }
+  .item:first-child { border-top-right-radius:var(--model-inner-radius); }
+  .item:last-child { border-bottom-left-radius:var(--model-outer-radius); }
 }
