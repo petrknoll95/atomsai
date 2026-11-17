@@ -19,10 +19,14 @@
 .art[data-ready='true'] .sceneFallback { visibility:hidden; }
 .art[data-active='0'] .sceneFallback i:nth-child(3), .art[data-active='1'] .sceneFallback i:nth-child(2), .art[data-active='2'] .sceneFallback i:nth-child(1), .art[data-active='3'] .sceneFallback i { border-color:var(--palette-iris-light); background:var(--diagram-fill,var(--diagram-surface)); }
 .accordion { --color-foreground:var(--palette-cream); --color-muted-foreground:color-mix(in srgb,var(--palette-cream) 65%,var(--diagram-surface)); --color-secondary:color-mix(in srgb,var(--palette-cream) 10%,transparent); --color-secondary-foreground:var(--palette-cream); --color-ring:var(--palette-cream); display:grid; gap:8px; min-width:0; color:var(--color-foreground); }
-.item { display:flex; flex-direction:column; border-radius:var(--radius-card); background:var(--diagram-surface); opacity:.5; transition:opacity .45s cubic-bezier(.22,1,.36,1); }
+.item { position:relative; display:flex; flex-direction:column; border-radius:var(--radius-card); background:var(--diagram-surface); opacity:.5; transition:opacity .45s cubic-bezier(.22,1,.36,1); }
 .item[data-active='true'] { opacity:1; }
 .trigger { display:flex; align-items:baseline; gap:16px; width:100%; min-height:76px; padding:20px; border-radius:var(--radius-card); text-align:left; color:var(--color-muted-foreground); transition:color .3s ease; }
 .trigger:hover,.trigger:focus-visible,.item[data-active='true'] .trigger { color:var(--color-foreground); }
+/* A closed card is one big trigger: the button's hit area stretches over the whole card.
+   The open card keeps its own links clickable, so it doesn't stretch. */
+.item[data-active='false'] .trigger::after { content:''; position:absolute; inset:0; border-radius:inherit; }
+.item[data-active='false']:hover .trigger { color:var(--color-foreground); }
 .name { flex:1; font-size:clamp(24px,2vw,32px); line-height:1.08; }
 .indicator { flex:none; opacity:0; transform:translate(-4px,4px); transition:opacity .3s ease, transform .3s ease; }
 .item[data-active='true'] .indicator { opacity:1; transform:none; }
