@@ -8,7 +8,7 @@ const trust = [
   { image: 'integrations', ink: '254.45 / 195.604', tone: 'deep', label: 'Integrations', title: 'Fits into your current stack', text: 'Connect AI to existing tools and workflows through integrations, APIs, and custom engineering.' },
   { image: 'safeguards', ink: '236.062 / 165.912', tone: 'apricot', label: 'Safeguards', title: 'Guardrails where they matter', text: 'Set boundaries for AI actions, with oversight and escalation for sensitive situations.' },
   { image: 'reliability', ink: '219.734 / 208.608', tone: 'stone', label: 'Reliability', title: 'Engineered for real conditions', text: 'Built with years of experience handling live calls, interruptions, and unpredictable networks.' },
-  { image: 'security', ink: '139.46 / 219.734', tone: 'iris', label: 'Security', title: 'Data privacy & security you can verify', text: 'Explore product-specific security controls, privacy practices, and compliance documentation.' },
+  { image: 'security', ink: '138.71 / 219.734', tone: 'iris', label: 'Security', title: 'Data privacy & security you can verify', text: 'Explore product-specific security controls, privacy practices, and compliance documentation.' },
 ];
 
 export function TrustSummary() {
