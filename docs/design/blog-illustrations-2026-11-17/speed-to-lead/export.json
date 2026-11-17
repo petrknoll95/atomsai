@@ -1,11 +1,11 @@
 {
   "article": "speed-to-lead",
   "skill": "https://petrknoll95.github.io/atoms-ai-brand/skills/atomsai-illustrations/SKILL.md",
-  "revision": "User-directed four backgrounds, Paper outlines, Cream highlights, 4:3 frames with square-contained art.",
+  "revision": "Clearer recognizable 3D objects; four approved backgrounds, thinner Paper outlines, Cream highlights, 4:3 frames with square-contained art.",
   "recipe": "docs/design/blog-illustrations-2026-11-17/speed-to-lead/recipe.mjs",
   "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
   "transparentMaster": "public/assets/blog/illustrations/speed-to-lead-art.svg",
-  "svgSha256": "f72fcac44dd35d2f65b2ddd4ed9d4db7743739a396da93e646e91c4a7114db44",
+  "svgSha256": "9f54ad251dcb1aacbc5c0cb62cff69afc35d08576d84e752ab676f8de52e5923",
   "displayVector": "/assets/blog/illustrations/speed-to-lead.svg",
   "cover": "/assets/blog/illustrations/speed-to-lead.webp",
   "width": 3072,
@@ -20,8 +20,8 @@
   "background": "#FF671F",
   "outline": "#FAFAFA",
   "highlight": "#F6F1E8",
-  "stroke": 1.9,
-  "neutralBoundsExtent": 106.66666666666666,
+  "stroke": 1.6,
+  "neutralBoundsExtent": 109.2265142857143,
   "encoding": "SVG on the page; lossless 3072 × 2304 sRGB WebP for social metadata.",
   "checks": "Runtime hashes, recipe assertions, vector-only export and padded square bounds passed."
 }

@@ -1,6 +1,6 @@
 {
-  "title": "First response on a shared track",
-  "reference": "orbit",
+  "title": "A homeowner gets an immediate reply",
+  "reference": "modular",
   "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
   "palette": {
     "iris": "#A77BCA",
@@ -12,89 +12,90 @@
   "visualReview": "required; inspect contact sheet and record findings before delivery",
   "hiddenMode": "omit",
   "primitiveCounts": {
-    "arrow": 1,
-    "sphere": 3
+    "box": 2,
+    "bezier-curve": 1,
+    "arrow": 1
   },
   "views": [
     {
       "file": "neutral-dark.svg",
       "yaw": 0,
       "pitch": 0,
-      "boundsExtent": 106.66666666666666,
+      "boundsExtent": 109.2265142857143,
       "hiddenRuns": 0,
-      "visibleRuns": 8,
-      "accentRuns": 1,
-      "projectionMs": 17.79
+      "visibleRuns": 33,
+      "accentRuns": 0,
+      "projectionMs": 2.89
     },
     {
       "file": "oblique-dark.svg",
       "yaw": 0.65,
       "pitch": -0.35,
-      "boundsExtent": 113.41683883688438,
+      "boundsExtent": 169.40793562659897,
       "hiddenRuns": 0,
-      "visibleRuns": 8,
-      "accentRuns": 1,
-      "projectionMs": 3.54
+      "visibleRuns": 35,
+      "accentRuns": 0,
+      "projectionMs": 0.84
     },
     {
       "file": "back-dark.svg",
       "yaw": 3.141592653589793,
       "pitch": 0,
-      "boundsExtent": 106.66666666666666,
+      "boundsExtent": 140.64927782638978,
       "hiddenRuns": 0,
-      "visibleRuns": 8,
-      "accentRuns": 1,
-      "projectionMs": 4.12
+      "visibleRuns": 20,
+      "accentRuns": 0,
+      "projectionMs": 0.67
     },
     {
       "file": "underside-dark.svg",
       "yaw": 0.55,
       "pitch": -1.1,
-      "boundsExtent": 118.08629135243939,
+      "boundsExtent": 170,
       "hiddenRuns": 0,
-      "visibleRuns": 8,
-      "accentRuns": 1,
-      "projectionMs": 3.13
+      "visibleRuns": 32,
+      "accentRuns": 0,
+      "projectionMs": 0.43
     },
     {
       "file": "neutral-light.svg",
       "yaw": 0,
       "pitch": 0,
-      "boundsExtent": 106.66666666666666,
+      "boundsExtent": 109.2265142857143,
       "hiddenRuns": 0,
-      "visibleRuns": 8,
-      "accentRuns": 1,
-      "projectionMs": 7.34
+      "visibleRuns": 33,
+      "accentRuns": 0,
+      "projectionMs": 0.51
     },
     {
       "file": "oblique-light.svg",
       "yaw": 0.65,
       "pitch": -0.35,
-      "boundsExtent": 113.41683883688438,
+      "boundsExtent": 169.40793562659897,
       "hiddenRuns": 0,
-      "visibleRuns": 8,
-      "accentRuns": 1,
-      "projectionMs": 3.97
+      "visibleRuns": 35,
+      "accentRuns": 0,
+      "projectionMs": 0.47
     },
     {
       "file": "back-light.svg",
       "yaw": 3.141592653589793,
       "pitch": 0,
-      "boundsExtent": 106.66666666666666,
+      "boundsExtent": 140.64927782638978,
       "hiddenRuns": 0,
-      "visibleRuns": 8,
-      "accentRuns": 1,
-      "projectionMs": 3.75
+      "visibleRuns": 20,
+      "accentRuns": 0,
+      "projectionMs": 0.56
     },
     {
       "file": "underside-light.svg",
       "yaw": 0.55,
       "pitch": -1.1,
-      "boundsExtent": 118.08629135243939,
+      "boundsExtent": 170,
       "hiddenRuns": 0,
-      "visibleRuns": 8,
-      "accentRuns": 1,
-      "projectionMs": 3.29
+      "visibleRuns": 32,
+      "accentRuns": 0,
+      "projectionMs": 0.55
     }
   ],
   "png": "generated with sharp",
