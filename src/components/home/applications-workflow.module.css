@@ -26,7 +26,7 @@
 .detailCopy p { color: color-mix(in display-p3, var(--palette-cream) 72%, transparent); max-width: 34ch; }
 /* Ghost buttons hang their padding outside the text column so labels align with the copy. */
 .detailCopy a { display: flex; align-items: center; gap: 10px; width: fit-content; min-height: 36px; margin-top: 16px; margin-left: -12px; color: var(--palette-cream); font-size: var(--text-label); }
-.detailCopy a + a { margin-top: 6px; }
+.detailCopy a + a { margin-top: 0; }
 @media(pointer:coarse) { .detailCopy a { min-height: 44px; } }
 .detailCopy a span { transition: transform .3s ease; }
 .detailCopy a:is(:hover,:focus-visible) span { transform: translateX(2px); }

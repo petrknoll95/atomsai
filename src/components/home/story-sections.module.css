@@ -2,7 +2,7 @@
 .heading{max-width:850px;font-size:var(--text-display-large);line-height:.95;text-wrap:balance;}
 .statement{display:flex;flex-direction:column;align-items:center;gap:32px;text-align:center;}
 /* Centred: the statement as the main headline, with the eyebrow link below it. */
-.statementEyebrow{align-self:center;}
+.statementEyebrow{align-self:center;margin-top:16px;}
 .statementHeadline{width:100%;font-size:clamp(40px,5vw,80px);line-height:1;letter-spacing:-.02em;text-wrap:balance;}
 .header{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;margin-bottom:56px;}
 .header>a{flex:none;}
