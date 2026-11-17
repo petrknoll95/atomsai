@@ -8,7 +8,8 @@ import styles from './approach.module.css';
 import ui from './workflow-visuals.module.css';
 
 type Step = { name: string; short: string; description: string; output: string; detail: string; need: string; items: string[] };
-const illustrations = ['layered-planes', 'nested-cube', 'modular-cube', 'test-bench', 'server-modules'];
+// One series from scripts/approach-art.mjs: same grid footprint, scale and viewBox for every stage.
+const illustrations = ['understand', 'design', 'build', 'validate', 'handover'];
 
 export function ApproachProcess({ steps }: { steps: Step[] }) {
   const [active, setActive] = useState(0);
@@ -56,7 +57,7 @@ export function ApproachProcess({ steps }: { steps: Step[] }) {
       </div>
       <div className={`${ui.tokens} ${ui.card} ${styles.deliverable}`} data-theme="light">
         <div className={styles.deliverableHeader}><span className={styles.folderIcon} aria-hidden="true"/><span>What you take away</span><span>0{index+1}</span></div>
-        <div className={styles.deliverableBody}><div className={styles.deliverableArt} aria-hidden="true"><img src={assetPath(`/assets/illustrations/${illustrations[index]}-outline.svg`)} alt="" width="400" height="320" /></div>
+        <div className={styles.deliverableBody}><div className={styles.deliverableArt} aria-hidden="true"><img src={assetPath(`/assets/illustrations/approach-${illustrations[index]}.svg`)} alt="" width="254" height="231" /></div>
         <ul className={styles.deliverableItems}>{step.items.map(item=><li key={item}><span aria-hidden="true">✓</span>{item}</li>)}</ul>
         <p>{step.detail}</p></div>
       </div>
