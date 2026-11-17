@@ -4,7 +4,9 @@
    column on the same line as the directory's Company column (2fr/5fr, 32px + 20px gaps). */
 /* Full-bleed band: a bordered centre panel between two dotted gutters, about three quarters of the viewport. */
 .cta { display: grid; grid-template-columns: minmax(0, 1fr) min(72%, 1240px) minmax(0, 1fr); border-bottom: 1px solid var(--color-border); }
-.ctaPanel { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 48px; min-height: clamp(360px, 31vw, 580px); padding: 64px 32px; text-align: center; }
+/* Pinned to the centre track: below 1200px the side marks are hidden and the
+   panel would otherwise auto-place into the narrow first gutter. */
+.ctaPanel { grid-column: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 48px; min-height: clamp(360px, 31vw, 580px); padding: 64px 32px; text-align: center; }
 .heading { max-width: 15ch; font-size: clamp(40px, 4.9vw, 84px); line-height: .92; letter-spacing: -.015em; text-wrap: balance; }
 .headingMuted { color: var(--color-muted-foreground); }
 .ctaActions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
@@ -47,6 +49,8 @@
 @media (max-width: 639px) {
   .ctaPanel { min-height: 0; padding: 56px 20px; }
   .ctaActions { flex-direction: column; align-items: stretch; width: 100%; max-width: 320px; }
+  /* .button is fit-content, so stretch alone leaves the stack left-aligned. */
+  .ctaActions > * { width: 100%; }
   .navigation { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .heading { max-width: 20ch; }
 }
