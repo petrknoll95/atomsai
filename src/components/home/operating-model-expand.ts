@@ -2,7 +2,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 /** Scroll distance, in viewport heights, spent opening and closing the panel. */
-const TRANSITION = .35;
+const TRANSITION = .6;
 /** Gap kept between the expanded panel and the header, the viewport's sides and its bottom. */
 const MARGIN = 16;
 
@@ -36,13 +36,14 @@ export function expandPinnedRow({ row, backdrop, pin, pinnedTop }: {
   // Pin length scales with the viewport height, so this share stays constant on resize.
   const share = Math.min(.45, TRANSITION * window.innerHeight / Math.max(1, pin.end - pin.start));
   const resting = { top: 0, left: 0, right: 0, bottom: 0 };
-  const ease = 'power2.inOut';
+  // Gentle in/out over a longer stretch, with extra scrub smoothing, so the panel glides.
+  const ease = 'sine.inOut';
 
   const timeline = gsap.timeline({
     scrollTrigger: {
       start: () => pin.start,
       end: () => pin.end,
-      scrub: .6,
+      scrub: 1.2,
       invalidateOnRefresh: true,
       onRefreshInit: () => { current = edges(); },
     },
