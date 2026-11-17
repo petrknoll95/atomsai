@@ -1,0 +1,181 @@
+{
+  "checks": "passed",
+  "scope": "Clearer physical objects; preserved v2 style and 4:3 layout; outlines reduced from1.9 to1.6.",
+  "assets": [
+    {
+      "slug": "quotes-go-quiet",
+      "concept": "Open envelope and quote document",
+      "background": "#43695B",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "stroke": 1.6,
+      "thinnerPercent": 15.78947368421052,
+      "aspectRatio": "4:3",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 109.22651428571429,
+      "geometryViews": 8,
+      "conceptChecks": "recipe assertions passed",
+      "svgSha256": "39e2bdab976619b0f0524826da53c3b7e1b6bbce2a2e36794109d59b4a40ef14"
+    },
+    {
+      "slug": "no-shows",
+      "concept": "Empty appointment chair",
+      "background": "#A77BCA",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "stroke": 1.6,
+      "thinnerPercent": 15.78947368421052,
+      "aspectRatio": "4:3",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 109.22651428571429,
+      "geometryViews": 8,
+      "conceptChecks": "recipe assertions passed",
+      "svgSha256": "639ce86a331bcb23b9ebd6a4ba697587f051298f36a7255661a84b859eb34c03"
+    },
+    {
+      "slug": "speed-to-lead",
+      "concept": "House receiving a message",
+      "background": "#FF671F",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "stroke": 1.6,
+      "thinnerPercent": 15.78947368421052,
+      "aspectRatio": "4:3",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 109.2265142857143,
+      "geometryViews": 8,
+      "conceptChecks": "recipe assertions passed",
+      "svgSha256": "9f54ad251dcb1aacbc5c0cb62cff69afc35d08576d84e752ab676f8de52e5923"
+    },
+    {
+      "slug": "who-answers-at-7pm",
+      "concept": "Clock at seven and an envelope",
+      "background": "#1D3C34",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "stroke": 1.6,
+      "thinnerPercent": 15.78947368421052,
+      "aspectRatio": "4:3",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 109.2265142857143,
+      "geometryViews": 8,
+      "conceptChecks": "recipe assertions passed",
+      "svgSha256": "e612022307968db596be97772a0266e2a05dfe33282fa20366df9f66525e4b2d"
+    },
+    {
+      "slug": "the-demo-was-never-the-hard-part",
+      "concept": "Fitted plug and socket",
+      "background": "#43695B",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "stroke": 1.6,
+      "thinnerPercent": 15.78947368421052,
+      "aspectRatio": "4:3",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 109.22651428571429,
+      "geometryViews": 8,
+      "conceptChecks": "recipe assertions passed",
+      "svgSha256": "01712f5294a343b0c9e1a443a7641a67dea34f7802391c0187fb4deafdc65326"
+    },
+    {
+      "slug": "write-the-evals-before-the-prompt",
+      "concept": "Clipboard with evaluation checklist",
+      "background": "#1D3C34",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "stroke": 1.6,
+      "thinnerPercent": 15.78947368421052,
+      "aspectRatio": "4:3",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 126.21023776223772,
+      "geometryViews": 8,
+      "conceptChecks": "recipe assertions passed",
+      "svgSha256": "2d302dd765d3659c121de8f30dd70e06a53ef8b76068558cabc3a2ccfeb5cee2"
+    },
+    {
+      "slug": "how-much-autonomy-should-an-agent-have",
+      "concept": "Adjustable dial with physical limits",
+      "background": "#A77BCA",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "stroke": 1.6,
+      "thinnerPercent": 15.78947368421052,
+      "aspectRatio": "4:3",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 109.2265142857143,
+      "geometryViews": 8,
+      "conceptChecks": "recipe assertions passed",
+      "svgSha256": "f44531f5b0a0a113c6983294c4d19f73fc677c4decbbc332f4afa6fc20cac1df"
+    }
+  ]
+}

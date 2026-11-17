@@ -1,0 +1,1651 @@
+{
+  "timestamp": "2026-11-17T19:02:20.583Z",
+  "preliminary": false,
+  "errors": [],
+  "results": [
+    {
+      "route": "/blog",
+      "width": 1440,
+      "dpr": 2,
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "title": "Notes from the field",
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 524,
+          "y": 334.359375,
+          "width": 848,
+          "height": 636,
+          "right": 1372,
+          "bottom": 970.359375,
+          "contentType": "image/svg+xml",
+          "svgHash": "a595646233638e826cdbb5720eb8daea25a9afb40f903df78cb7c8d1d1f40568",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            2.6500000000000004
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.333383739099753,
+          "srcset": "",
+          "x": 68,
+          "y": 1130.359375,
+          "width": 413.328125,
+          "height": 309.984375,
+          "right": 481.328125,
+          "bottom": 1440.34375,
+          "contentType": "image/svg+xml",
+          "svgHash": "faa2a2cbf565363a3614aadb9841ab622fab5ac45edbf5b157b60aeb9e8c3823",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.291650390625
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.333383739099753,
+          "srcset": "",
+          "x": 513.328125,
+          "y": 1130.359375,
+          "width": 413.328125,
+          "height": 309.984375,
+          "right": 926.65625,
+          "bottom": 1440.34375,
+          "contentType": "image/svg+xml",
+          "svgHash": "133a1e846cd4fe53b715c0d54429c25ec5d4eb83084b3c03bcd90b672b3a8517",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.291650390625
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333669354838709,
+          "srcset": "",
+          "x": 958.65625,
+          "y": 1130.359375,
+          "width": 413.34375,
+          "height": 310,
+          "right": 1372,
+          "bottom": 1440.359375,
+          "contentType": "image/svg+xml",
+          "svgHash": "204b9cbf260d242da51ae2a249858929b864d0b086532f712873f52b77278615",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.29169921875
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.333383739099753,
+          "srcset": "",
+          "x": 68,
+          "y": 1656.265625,
+          "width": 413.328125,
+          "height": 309.984375,
+          "right": 481.328125,
+          "bottom": 1966.25,
+          "contentType": "image/svg+xml",
+          "svgHash": "4266b52aa28736d7a85500deed82ffd9787bb49b7ddccea55c2bc9ba6f420b08",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.291650390625
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.333383739099753,
+          "srcset": "",
+          "x": 513.328125,
+          "y": 1656.265625,
+          "width": 413.328125,
+          "height": 309.984375,
+          "right": 926.65625,
+          "bottom": 1966.25,
+          "contentType": "image/svg+xml",
+          "svgHash": "4f26b8eae544cf8c33b41a85e75f22255729357a524930a18140eae09fe66a15",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.291650390625
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333669354838709,
+          "srcset": "",
+          "x": 958.65625,
+          "y": 1656.265625,
+          "width": 413.34375,
+          "height": 310,
+          "right": 1372,
+          "bottom": 1966.265625,
+          "contentType": "image/svg+xml",
+          "svgHash": "d64af3c41985c99e1b8e4a5e9a99c5208faea6a6c11d99b3f1ae7a869988f16f",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.29169921875
+          ]
+        }
+      ],
+      "overflow": [],
+      "filters": {
+        "Technical": {
+          "titles": [
+            "The demo was never the hard part",
+            "Write the evals before the prompt",
+            "How much autonomy should an agent have?"
+          ],
+          "images": [
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+              "loaded": true
+            }
+          ]
+        },
+        "Insights": {
+          "titles": [
+            "The reminder went out. The chair stayed empty.",
+            "The homeowner asked three companies at lunch",
+            "The after-hours messages no one sees"
+          ],
+          "images": [
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+              "loaded": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "route": "/blog/the-demo-was-never-the-hard-part",
+      "width": 1440,
+      "dpr": 2,
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "title": "The demo was never the hard part",
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 382.5,
+          "y": 424.546875,
+          "width": 675,
+          "height": 506.25,
+          "right": 1057.5,
+          "bottom": 930.796875,
+          "contentType": "image/svg+xml",
+          "svgHash": "4266b52aa28736d7a85500deed82ffd9787bb49b7ddccea55c2bc9ba6f420b08",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            2.109375
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 68,
+          "y": 2954.5,
+          "width": 424,
+          "height": 318,
+          "right": 492,
+          "bottom": 3272.5,
+          "contentType": "image/svg+xml",
+          "svgHash": "4f26b8eae544cf8c33b41a85e75f22255729357a524930a18140eae09fe66a15",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.3250000000000002
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 508,
+          "y": 2954.5,
+          "width": 424,
+          "height": 318,
+          "right": 932,
+          "bottom": 3272.5,
+          "contentType": "image/svg+xml",
+          "svgHash": "d64af3c41985c99e1b8e4a5e9a99c5208faea6a6c11d99b3f1ae7a869988f16f",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.3250000000000002
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 948,
+          "y": 2954.5,
+          "width": 424,
+          "height": 318,
+          "right": 1372,
+          "bottom": 3272.5,
+          "contentType": "image/svg+xml",
+          "svgHash": "a595646233638e826cdbb5720eb8daea25a9afb40f903df78cb7c8d1d1f40568",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.3250000000000002
+          ]
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/write-the-evals-before-the-prompt",
+      "width": 1440,
+      "dpr": 2,
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "title": "Write the evals before the prompt",
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 382.5,
+          "y": 424.546875,
+          "width": 675,
+          "height": 506.25,
+          "right": 1057.5,
+          "bottom": 930.796875,
+          "contentType": "image/svg+xml",
+          "svgHash": "4f26b8eae544cf8c33b41a85e75f22255729357a524930a18140eae09fe66a15",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            2.109375
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 68,
+          "y": 2925.703125,
+          "width": 424,
+          "height": 318,
+          "right": 492,
+          "bottom": 3243.703125,
+          "contentType": "image/svg+xml",
+          "svgHash": "4266b52aa28736d7a85500deed82ffd9787bb49b7ddccea55c2bc9ba6f420b08",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.3250000000000002
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 508,
+          "y": 2925.703125,
+          "width": 424,
+          "height": 318,
+          "right": 932,
+          "bottom": 3243.703125,
+          "contentType": "image/svg+xml",
+          "svgHash": "d64af3c41985c99e1b8e4a5e9a99c5208faea6a6c11d99b3f1ae7a869988f16f",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.3250000000000002
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 948,
+          "y": 2925.703125,
+          "width": 424,
+          "height": 318,
+          "right": 1372,
+          "bottom": 3243.703125,
+          "contentType": "image/svg+xml",
+          "svgHash": "a595646233638e826cdbb5720eb8daea25a9afb40f903df78cb7c8d1d1f40568",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.3250000000000002
+          ]
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/who-answers-at-7pm",
+      "width": 1440,
+      "dpr": 2,
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "title": "The after-hours messages no one sees",
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 382.5,
+          "y": 424.546875,
+          "width": 675,
+          "height": 506.25,
+          "right": 1057.5,
+          "bottom": 930.796875,
+          "contentType": "image/svg+xml",
+          "svgHash": "204b9cbf260d242da51ae2a249858929b864d0b086532f712873f52b77278615",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            2.109375
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 68,
+          "y": 6562.09375,
+          "width": 424,
+          "height": 318,
+          "right": 492,
+          "bottom": 6880.09375,
+          "contentType": "image/svg+xml",
+          "svgHash": "a595646233638e826cdbb5720eb8daea25a9afb40f903df78cb7c8d1d1f40568",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.3250000000000002
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 508,
+          "y": 6562.09375,
+          "width": 424,
+          "height": 318,
+          "right": 932,
+          "bottom": 6880.09375,
+          "contentType": "image/svg+xml",
+          "svgHash": "faa2a2cbf565363a3614aadb9841ab622fab5ac45edbf5b157b60aeb9e8c3823",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.3250000000000002
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 948,
+          "y": 6562.09375,
+          "width": 424,
+          "height": 318,
+          "right": 1372,
+          "bottom": 6880.09375,
+          "contentType": "image/svg+xml",
+          "svgHash": "133a1e846cd4fe53b715c0d54429c25ec5d4eb83084b3c03bcd90b672b3a8517",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.3250000000000002
+          ]
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog",
+      "width": 390,
+      "dpr": 1,
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "title": "Notes from the field",
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 272.625,
+          "width": 350,
+          "height": 262.5,
+          "right": 370,
+          "bottom": 535.125,
+          "contentType": "image/svg+xml",
+          "svgHash": "a595646233638e826cdbb5720eb8daea25a9afb40f903df78cb7c8d1d1f40568",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.09375
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 941.53125,
+          "width": 350,
+          "height": 262.5,
+          "right": 370,
+          "bottom": 1204.03125,
+          "contentType": "image/svg+xml",
+          "svgHash": "faa2a2cbf565363a3614aadb9841ab622fab5ac45edbf5b157b60aeb9e8c3823",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.09375
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 1403.953125,
+          "width": 350,
+          "height": 262.5,
+          "right": 370,
+          "bottom": 1666.453125,
+          "contentType": "image/svg+xml",
+          "svgHash": "133a1e846cd4fe53b715c0d54429c25ec5d4eb83084b3c03bcd90b672b3a8517",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.09375
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 1866.375,
+          "width": 350,
+          "height": 262.5,
+          "right": 370,
+          "bottom": 2128.875,
+          "contentType": "image/svg+xml",
+          "svgHash": "204b9cbf260d242da51ae2a249858929b864d0b086532f712873f52b77278615",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.09375
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 2328.796875,
+          "width": 350,
+          "height": 262.5,
+          "right": 370,
+          "bottom": 2591.296875,
+          "contentType": "image/svg+xml",
+          "svgHash": "4266b52aa28736d7a85500deed82ffd9787bb49b7ddccea55c2bc9ba6f420b08",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.09375
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 2786.421875,
+          "width": 350,
+          "height": 262.5,
+          "right": 370,
+          "bottom": 3048.921875,
+          "contentType": "image/svg+xml",
+          "svgHash": "4f26b8eae544cf8c33b41a85e75f22255729357a524930a18140eae09fe66a15",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.09375
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 3244.046875,
+          "width": 350,
+          "height": 262.5,
+          "right": 370,
+          "bottom": 3506.546875,
+          "contentType": "image/svg+xml",
+          "svgHash": "d64af3c41985c99e1b8e4a5e9a99c5208faea6a6c11d99b3f1ae7a869988f16f",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.09375
+          ]
+        }
+      ],
+      "overflow": [],
+      "filters": {
+        "Technical": {
+          "titles": [
+            "The demo was never the hard part",
+            "Write the evals before the prompt",
+            "How much autonomy should an agent have?"
+          ],
+          "images": [
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+              "loaded": true
+            }
+          ]
+        },
+        "Insights": {
+          "titles": [
+            "The reminder went out. The chair stayed empty.",
+            "The homeowner asked three companies at lunch",
+            "The after-hours messages no one sees"
+          ],
+          "images": [
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+              "loaded": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "route": "/blog/the-demo-was-never-the-hard-part",
+      "width": 390,
+      "dpr": 1,
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "title": "The demo was never the hard part",
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 358.90625,
+          "width": 350,
+          "height": 262.5,
+          "right": 370,
+          "bottom": 621.40625,
+          "contentType": "image/svg+xml",
+          "svgHash": "4266b52aa28736d7a85500deed82ffd9787bb49b7ddccea55c2bc9ba6f420b08",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.09375
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 3743.390625,
+          "width": 350,
+          "height": 262.5,
+          "right": 370,
+          "bottom": 4005.890625,
+          "contentType": "image/svg+xml",
+          "svgHash": "4f26b8eae544cf8c33b41a85e75f22255729357a524930a18140eae09fe66a15",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.09375
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 4130.796875,
+          "width": 350,
+          "height": 262.5,
+          "right": 370,
+          "bottom": 4393.296875,
+          "contentType": "image/svg+xml",
+          "svgHash": "d64af3c41985c99e1b8e4a5e9a99c5208faea6a6c11d99b3f1ae7a869988f16f",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.09375
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 4518.203125,
+          "width": 350,
+          "height": 262.5,
+          "right": 370,
+          "bottom": 4780.703125,
+          "contentType": "image/svg+xml",
+          "svgHash": "a595646233638e826cdbb5720eb8daea25a9afb40f903df78cb7c8d1d1f40568",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.09375
+          ]
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/write-the-evals-before-the-prompt",
+      "width": 390,
+      "dpr": 1,
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "title": "Write the evals before the prompt",
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 358.90625,
+          "width": 350,
+          "height": 262.5,
+          "right": 370,
+          "bottom": 621.40625,
+          "contentType": "image/svg+xml",
+          "svgHash": "4f26b8eae544cf8c33b41a85e75f22255729357a524930a18140eae09fe66a15",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.09375
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 3800.984375,
+          "width": 350,
+          "height": 262.5,
+          "right": 370,
+          "bottom": 4063.484375,
+          "contentType": "image/svg+xml",
+          "svgHash": "4266b52aa28736d7a85500deed82ffd9787bb49b7ddccea55c2bc9ba6f420b08",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.09375
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 4188.390625,
+          "width": 350,
+          "height": 262.5,
+          "right": 370,
+          "bottom": 4450.890625,
+          "contentType": "image/svg+xml",
+          "svgHash": "d64af3c41985c99e1b8e4a5e9a99c5208faea6a6c11d99b3f1ae7a869988f16f",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.09375
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 4575.796875,
+          "width": 350,
+          "height": 262.5,
+          "right": 370,
+          "bottom": 4838.296875,
+          "contentType": "image/svg+xml",
+          "svgHash": "a595646233638e826cdbb5720eb8daea25a9afb40f903df78cb7c8d1d1f40568",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.09375
+          ]
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/who-answers-at-7pm",
+      "width": 390,
+      "dpr": 1,
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "title": "The after-hours messages no one sees",
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 402.90625,
+          "width": 350,
+          "height": 262.5,
+          "right": 370,
+          "bottom": 665.40625,
+          "contentType": "image/svg+xml",
+          "svgHash": "204b9cbf260d242da51ae2a249858929b864d0b086532f712873f52b77278615",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.09375
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 8804.234375,
+          "width": 350,
+          "height": 262.5,
+          "right": 370,
+          "bottom": 9066.734375,
+          "contentType": "image/svg+xml",
+          "svgHash": "a595646233638e826cdbb5720eb8daea25a9afb40f903df78cb7c8d1d1f40568",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.09375
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 9191.640625,
+          "width": 350,
+          "height": 262.5,
+          "right": 370,
+          "bottom": 9454.140625,
+          "contentType": "image/svg+xml",
+          "svgHash": "faa2a2cbf565363a3614aadb9841ab622fab5ac45edbf5b157b60aeb9e8c3823",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.09375
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 9579.046875,
+          "width": 350,
+          "height": 262.5,
+          "right": 370,
+          "bottom": 9841.546875,
+          "contentType": "image/svg+xml",
+          "svgHash": "133a1e846cd4fe53b715c0d54429c25ec5d4eb83084b3c03bcd90b672b3a8517",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            1.09375
+          ]
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog",
+      "width": 320,
+      "dpr": 1,
+      "status": 200,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "title": "Notes from the field",
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 272.625,
+          "width": 280,
+          "height": 210,
+          "right": 300,
+          "bottom": 482.625,
+          "contentType": "image/svg+xml",
+          "svgHash": "a595646233638e826cdbb5720eb8daea25a9afb40f903df78cb7c8d1d1f40568",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            0.875
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 916.03125,
+          "width": 280,
+          "height": 210,
+          "right": 300,
+          "bottom": 1126.03125,
+          "contentType": "image/svg+xml",
+          "svgHash": "faa2a2cbf565363a3614aadb9841ab622fab5ac45edbf5b157b60aeb9e8c3823",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            0.875
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 1349.953125,
+          "width": 280,
+          "height": 210,
+          "right": 300,
+          "bottom": 1559.953125,
+          "contentType": "image/svg+xml",
+          "svgHash": "133a1e846cd4fe53b715c0d54429c25ec5d4eb83084b3c03bcd90b672b3a8517",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            0.875
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 1783.875,
+          "width": 280,
+          "height": 210,
+          "right": 300,
+          "bottom": 1993.875,
+          "contentType": "image/svg+xml",
+          "svgHash": "204b9cbf260d242da51ae2a249858929b864d0b086532f712873f52b77278615",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            0.875
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 2217.796875,
+          "width": 280,
+          "height": 210,
+          "right": 300,
+          "bottom": 2427.796875,
+          "contentType": "image/svg+xml",
+          "svgHash": "4266b52aa28736d7a85500deed82ffd9787bb49b7ddccea55c2bc9ba6f420b08",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            0.875
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 2651.71875,
+          "width": 280,
+          "height": 210,
+          "right": 300,
+          "bottom": 2861.71875,
+          "contentType": "image/svg+xml",
+          "svgHash": "4f26b8eae544cf8c33b41a85e75f22255729357a524930a18140eae09fe66a15",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            0.875
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 3085.640625,
+          "width": 280,
+          "height": 210,
+          "right": 300,
+          "bottom": 3295.640625,
+          "contentType": "image/svg+xml",
+          "svgHash": "d64af3c41985c99e1b8e4a5e9a99c5208faea6a6c11d99b3f1ae7a869988f16f",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            0.875
+          ]
+        }
+      ],
+      "overflow": [],
+      "filters": {
+        "Technical": {
+          "titles": [
+            "The demo was never the hard part",
+            "Write the evals before the prompt",
+            "How much autonomy should an agent have?"
+          ],
+          "images": [
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+              "loaded": true
+            }
+          ]
+        },
+        "Insights": {
+          "titles": [
+            "The reminder went out. The chair stayed empty.",
+            "The homeowner asked three companies at lunch",
+            "The after-hours messages no one sees"
+          ],
+          "images": [
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+              "loaded": true
+            },
+            {
+              "src": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+              "loaded": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "route": "/blog/the-demo-was-never-the-hard-part",
+      "width": 320,
+      "dpr": 1,
+      "status": 200,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "title": "The demo was never the hard part",
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 402.90625,
+          "width": 280,
+          "height": 210,
+          "right": 300,
+          "bottom": 612.90625,
+          "contentType": "image/svg+xml",
+          "svgHash": "4266b52aa28736d7a85500deed82ffd9787bb49b7ddccea55c2bc9ba6f420b08",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            0.875
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 4422.40625,
+          "width": 280,
+          "height": 210,
+          "right": 300,
+          "bottom": 4632.40625,
+          "contentType": "image/svg+xml",
+          "svgHash": "4f26b8eae544cf8c33b41a85e75f22255729357a524930a18140eae09fe66a15",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            0.875
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 4757.3125,
+          "width": 280,
+          "height": 210,
+          "right": 300,
+          "bottom": 4967.3125,
+          "contentType": "image/svg+xml",
+          "svgHash": "d64af3c41985c99e1b8e4a5e9a99c5208faea6a6c11d99b3f1ae7a869988f16f",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            0.875
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 5092.21875,
+          "width": 280,
+          "height": 210,
+          "right": 300,
+          "bottom": 5302.21875,
+          "contentType": "image/svg+xml",
+          "svgHash": "a595646233638e826cdbb5720eb8daea25a9afb40f903df78cb7c8d1d1f40568",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            0.875
+          ]
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/write-the-evals-before-the-prompt",
+      "width": 320,
+      "dpr": 1,
+      "status": 200,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "title": "Write the evals before the prompt",
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 402.90625,
+          "width": 280,
+          "height": 210,
+          "right": 300,
+          "bottom": 612.90625,
+          "contentType": "image/svg+xml",
+          "svgHash": "4f26b8eae544cf8c33b41a85e75f22255729357a524930a18140eae09fe66a15",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            0.875
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 4406.203125,
+          "width": 280,
+          "height": 210,
+          "right": 300,
+          "bottom": 4616.203125,
+          "contentType": "image/svg+xml",
+          "svgHash": "4266b52aa28736d7a85500deed82ffd9787bb49b7ddccea55c2bc9ba6f420b08",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            0.875
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 4741.109375,
+          "width": 280,
+          "height": 210,
+          "right": 300,
+          "bottom": 4951.109375,
+          "contentType": "image/svg+xml",
+          "svgHash": "d64af3c41985c99e1b8e4a5e9a99c5208faea6a6c11d99b3f1ae7a869988f16f",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            0.875
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 5076.015625,
+          "width": 280,
+          "height": 210,
+          "right": 300,
+          "bottom": 5286.015625,
+          "contentType": "image/svg+xml",
+          "svgHash": "a595646233638e826cdbb5720eb8daea25a9afb40f903df78cb7c8d1d1f40568",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            0.875
+          ]
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/blog/who-answers-at-7pm",
+      "width": 320,
+      "dpr": 1,
+      "status": 200,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "title": "The after-hours messages no one sees",
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/who-answers-at-7pm.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 426.5,
+          "width": 280,
+          "height": 210,
+          "right": 300,
+          "bottom": 636.5,
+          "contentType": "image/svg+xml",
+          "svgHash": "204b9cbf260d242da51ae2a249858929b864d0b086532f712873f52b77278615",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            0.875
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/quotes-go-quiet.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 10022.578125,
+          "width": 280,
+          "height": 210,
+          "right": 300,
+          "bottom": 10232.578125,
+          "contentType": "image/svg+xml",
+          "svgHash": "a595646233638e826cdbb5720eb8daea25a9afb40f903df78cb7c8d1d1f40568",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            0.875
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/no-shows.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 10357.484375,
+          "width": 280,
+          "height": 210,
+          "right": 300,
+          "bottom": 10567.484375,
+          "contentType": "image/svg+xml",
+          "svgHash": "faa2a2cbf565363a3614aadb9841ab622fab5ac45edbf5b157b60aeb9e8c3823",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            0.875
+          ]
+        },
+        {
+          "src": "http://127.0.0.1:3001/assets/blog/illustrations/speed-to-lead.svg",
+          "loaded": true,
+          "naturalWidth": 3072,
+          "naturalHeight": 2304,
+          "objectFit": "contain",
+          "ratio": 1.3333333333333333,
+          "srcset": "",
+          "x": 20,
+          "y": 10734.390625,
+          "width": 280,
+          "height": 210,
+          "right": 300,
+          "bottom": 10944.390625,
+          "contentType": "image/svg+xml",
+          "svgHash": "133a1e846cd4fe53b715c0d54429c25ec5d4eb83084b3c03bcd90b672b3a8517",
+          "vectorOnly": true,
+          "strokes": [
+            1.6
+          ],
+          "effectiveStrokeCssPx": [
+            0.875
+          ]
+        }
+      ],
+      "overflow": []
+    }
+  ]
+}
