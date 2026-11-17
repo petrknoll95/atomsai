@@ -25,7 +25,7 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
     let stickyPins: { pin: ScrollTrigger; element: HTMLElement }[] = [];
     const unpinSticky = () => {
       // Kill first so GSAP restores its inline styles, then drop the position override.
-      stickyPins.forEach(({ pin, element }) => { pin.kill(); element.style.removeProperty('position'); });
+      stickyPins.forEach(({ pin, element }) => { pin.kill(); element.style.removeProperty('position'); element.style.removeProperty('top'); });
       stickyPins = [];
     };
     const pinSticky = () => {
@@ -36,8 +36,9 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
         if (style.position !== 'sticky' || !element.parentElement) return;
         const top = parseFloat(style.top) || 0;
         const parent = element.parentElement;
-        // A leftover sticky offset would add to the pin's own offset.
+        // Lay it out in flow: a relative element would still be shifted by its sticky top.
         element.style.position = 'relative';
+        element.style.top = 'auto';
         stickyPins.push({ element, pin: ScrollTrigger.create({
           trigger: element, pin: true, pinSpacing: false,
           start: `top ${top}px`, endTrigger: parent,
