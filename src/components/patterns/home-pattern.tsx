@@ -51,7 +51,7 @@ export const homePatternPlacements = {
   'preview-concentric': { options: { kind: 'concentric', count: 15, colors: legacyIris }, viewport: [480, 640], instance: [-160, -80, 800, 800], radius: 32 },
   'cta-pattern': { options: { kind: 'offset', count: 20, colors: irisOffset, rotation: -90 }, viewport: [720, 368], instance: [0, -176, 720, 720], radius: 16 },
   /** Footer CTA gutters: theme-dark Offset, tall crop; the right gutter mirrors it. */
-  'footer-offset': { options: { kind: 'offset', count: 10, mode: 'dark' }, viewport: [300, 760], instance: [0, 0, 300, 760], radius: 0 },
+  'footer-offset': { options: { kind: 'offset', count: 5, mode: 'dark' }, viewport: [300, 760], instance: [0, 0, 300, 760], radius: 0 },
 } as const satisfies Record<string, Placement>;
 
 export type HomePatternApplication = keyof typeof homePatternPlacements;
