@@ -5,7 +5,7 @@
   "recipe": "docs/design/blog-illustrations-2026-11-17/no-shows/recipe.mjs",
   "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
   "transparentMaster": "public/assets/blog/illustrations/no-shows-art.svg",
-  "svgSha256": "752fbcc650eb391d7fb457c084806686f69b4d7b8a02b93d2c1fe7e77e18b010",
+  "svgSha256": "6238beedbb9c90540b55b2c525751147dd9587d41d0f603b555930d2bef5192f",
   "displayVector": "/assets/blog/illustrations/no-shows.svg",
   "cover": "/assets/blog/illustrations/no-shows.webp",
   "width": 3072,
@@ -21,7 +21,7 @@
   "outline": "#FAFAFA",
   "highlight": "#F6F1E8",
   "stroke": 1.6,
-  "neutralBoundsExtent": 109.22651428571429,
+  "neutralBoundsExtent": 109.2265142857143,
   "encoding": "SVG on the page; lossless 3072 × 2304 sRGB WebP for social metadata.",
   "checks": "Runtime hashes, recipe assertions, vector-only export and padded square bounds passed."
 }

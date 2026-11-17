@@ -1,5 +1,5 @@
 {
-  "title": "A reserved place remains empty",
+  "title": "The missing place in a complete pattern",
   "reference": "modular",
   "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
   "palette": {
@@ -12,88 +12,88 @@
   "visualReview": "required; inspect contact sheet and record findings before delivery",
   "hiddenMode": "omit",
   "primitiveCounts": {
-    "box": 3
+    "box": 9
   },
   "views": [
     {
       "file": "neutral-dark.svg",
       "yaw": 0,
       "pitch": 0,
-      "boundsExtent": 109.22651428571429,
+      "boundsExtent": 109.2265142857143,
       "hiddenRuns": 0,
-      "visibleRuns": 25,
+      "visibleRuns": 81,
       "accentRuns": 0,
-      "projectionMs": 3.21
+      "projectionMs": 3.59
     },
     {
       "file": "oblique-dark.svg",
       "yaw": 0.65,
       "pitch": -0.35,
-      "boundsExtent": 106.88268645434151,
+      "boundsExtent": 137.8183037782377,
       "hiddenRuns": 0,
-      "visibleRuns": 25,
+      "visibleRuns": 81,
       "accentRuns": 0,
-      "projectionMs": 0.48
+      "projectionMs": 0.71
     },
     {
       "file": "back-dark.svg",
       "yaw": 3.141592653589793,
       "pitch": 0,
-      "boundsExtent": 109.22651428571427,
+      "boundsExtent": 109.22651428571429,
       "hiddenRuns": 0,
-      "visibleRuns": 25,
+      "visibleRuns": 81,
       "accentRuns": 0,
-      "projectionMs": 0.43
+      "projectionMs": 0.52
     },
     {
       "file": "underside-dark.svg",
       "yaw": 0.55,
       "pitch": -1.1,
-      "boundsExtent": 98.74585475448092,
+      "boundsExtent": 115.07936576120353,
       "hiddenRuns": 0,
-      "visibleRuns": 20,
+      "visibleRuns": 81,
       "accentRuns": 0,
-      "projectionMs": 0.47
+      "projectionMs": 0.61
     },
     {
       "file": "neutral-light.svg",
       "yaw": 0,
       "pitch": 0,
-      "boundsExtent": 109.22651428571429,
+      "boundsExtent": 109.2265142857143,
       "hiddenRuns": 0,
-      "visibleRuns": 25,
+      "visibleRuns": 81,
       "accentRuns": 0,
-      "projectionMs": 0.53
+      "projectionMs": 0.54
     },
     {
       "file": "oblique-light.svg",
       "yaw": 0.65,
       "pitch": -0.35,
-      "boundsExtent": 106.88268645434151,
+      "boundsExtent": 137.8183037782377,
       "hiddenRuns": 0,
-      "visibleRuns": 25,
+      "visibleRuns": 81,
       "accentRuns": 0,
-      "projectionMs": 0.35
+      "projectionMs": 0.47
     },
     {
       "file": "back-light.svg",
       "yaw": 3.141592653589793,
       "pitch": 0,
-      "boundsExtent": 109.22651428571427,
+      "boundsExtent": 109.22651428571429,
       "hiddenRuns": 0,
-      "visibleRuns": 25,
+      "visibleRuns": 81,
       "accentRuns": 0,
-      "projectionMs": 0.39
+      "projectionMs": 0.61
     },
     {
       "file": "underside-light.svg",
       "yaw": 0.55,
       "pitch": -1.1,
-      "boundsExtent": 98.74585475448092,
+      "boundsExtent": 115.07936576120353,
       "hiddenRuns": 0,
-      "visibleRuns": 20,
+      "visibleRuns": 81,
       "accentRuns": 0,
-      "projectionMs": 0.35
+      "projectionMs": 0.68
     }
   ],
   "png": "generated with sharp",
