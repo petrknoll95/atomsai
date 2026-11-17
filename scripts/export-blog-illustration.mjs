@@ -9,6 +9,7 @@ import * as primitives from '../skills/atomsai-illustrations/runtime/primitives.
 import { fitToReference } from '../skills/atomsai-illustrations/runtime/models.mjs';
 import { projectScene, frameToSvg } from '../skills/atomsai-illustrations/runtime/render.mjs';
 import { colors } from '../skills/atomsai-illustrations/runtime/colors.mjs';
+import { joinFrame } from './lib/join-strokes.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const slug = process.argv[2];
@@ -36,6 +37,8 @@ geometry.CAMERA.iris = colors.cream.hex;
 const frame = projectScene(scene, { yaw: 0, pitch: 0, white: false });
 const linework = [...frame.front, ...frame.rear, ...frame.accent];
 for (const line of linework) line.width = 1.6;
+// Chain edges that share a vertex so corners get real miters instead of butt-cap notches.
+joinFrame(frame);
 const points = [...linework.flatMap(line => line.points), ...frame.highlights.flatMap(h => h.points)];
 const extent = Math.max(...points.flatMap(p => [Math.abs(p[0]), Math.abs(p[1])]));
 assert(extent < 154, 'Keep the whole illustration inside its padded square.');
