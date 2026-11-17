@@ -8,9 +8,9 @@
 .heading { max-width: 15ch; font-size: clamp(44px, 5.6vw, 96px); line-height: 1; letter-spacing: -.03em; text-wrap: balance; }
 .headingMuted { color: var(--color-muted-foreground); }
 .ctaActions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
-/* Sparse dot field, clustered by a few soft masks so it reads as texture rather than a grid. */
-.ctaSide { min-width: 0; background-image: radial-gradient(circle, color-mix(in oklab, var(--color-foreground) 22%, transparent) 1.3px, transparent 1.6px); background-size: 9px 9px; background-position: center; mask-image: radial-gradient(38% 22% at 30% 22%, #000 40%, transparent), radial-gradient(42% 26% at 70% 58%, #000 35%, transparent), radial-gradient(30% 14% at 40% 88%, #000 30%, transparent); }
-.ctaSide:last-child { mask-image: radial-gradient(40% 20% at 62% 12%, #000 40%, transparent), radial-gradient(36% 24% at 34% 48%, #000 35%, transparent), radial-gradient(44% 18% at 66% 82%, #000 30%, transparent); }
+/* Offset interference pattern fills both gutters; the right one is mirrored for symmetry. */
+.ctaSide { position: relative; min-width: 0; }
+.ctaSideMirrored { transform: scaleX(-1); }
 .directory { display: grid; grid-template-columns: minmax(200px, 2fr) minmax(0, 5fr); grid-template-rows: 1fr auto; column-gap: 32px; row-gap: 48px; min-height: 396px; }
 .logo { grid-column: 1; grid-row: 1; display: block; align-self: start; width: 44px; height: 40px; }
 .logo svg { display: block; width: 100%; height: 100%; }

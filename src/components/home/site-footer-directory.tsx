@@ -5,6 +5,7 @@ import { siteHref } from '@/lib/site-links';
 import { ButtonLink } from '../ui';
 import { products } from './navigation-data';
 import { FooterSlitFade } from './footer-slit-fade';
+import { HomePattern } from '@/components/patterns/home-pattern';
 import styles from './site-footer-directory.module.css';
 
 const groups = [
@@ -91,7 +92,7 @@ const homepageGroups = [
 export function SiteFooterDirectory({ homepage = false }: { homepage?: boolean }) {
   return <footer className={`theme-dark ${styles.footer}`} data-theme="dark" data-footer-variant="directory">
     <section className={styles.cta} aria-labelledby="footer-directory-heading">
-      <div className={styles.ctaSide} aria-hidden="true" />
+      <HomePattern application="footer-offset" className={styles.ctaSide} />
       <div className={styles.ctaPanel}>
         <h2 id="footer-directory-heading" className={`display ${styles.heading}`}>{homepage
           ? <>The next build starts <span className={styles.headingMuted}>with your business.</span></>
@@ -101,7 +102,7 @@ export function SiteFooterDirectory({ homepage = false }: { homepage?: boolean }
           <ButtonLink href="/#applications" size="large" variant="outline">Explore applications</ButtonLink>
         </div>
       </div>
-      <div className={styles.ctaSide} aria-hidden="true" />
+      <HomePattern application="footer-offset" className={`${styles.ctaSide} ${styles.ctaSideMirrored}`} />
     </section>
     <div className={`page-container ${styles.container}`}>
       <div className={styles.directory}>
