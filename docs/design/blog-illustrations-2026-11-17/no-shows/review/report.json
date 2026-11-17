@@ -1,6 +1,6 @@
 {
-  "title": "A vacant appointment has a matching place",
-  "reference": "layers",
+  "title": "The empty appointment chair",
+  "reference": "modular",
   "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
   "palette": {
     "iris": "#A77BCA",
@@ -10,90 +10,90 @@
   "mechanicalChecks": "passed",
   "conceptChecks": "recipe assertions passed",
   "visualReview": "required; inspect contact sheet and record findings before delivery",
-  "hiddenMode": "35%",
+  "hiddenMode": "omit",
   "primitiveCounts": {
-    "plane": 2
+    "box": 6
   },
   "views": [
     {
       "file": "neutral-dark.svg",
       "yaw": 0,
       "pitch": 0,
-      "boundsExtent": 126.5847631480053,
+      "boundsExtent": 109.22651428571429,
       "hiddenRuns": 0,
-      "visibleRuns": 2,
-      "accentRuns": 1,
-      "projectionMs": 1.45
+      "visibleRuns": 46,
+      "accentRuns": 0,
+      "projectionMs": 3.75
     },
     {
       "file": "oblique-dark.svg",
       "yaw": 0.65,
       "pitch": -0.35,
-      "boundsExtent": 97.81522743952564,
+      "boundsExtent": 108.72744036840633,
       "hiddenRuns": 0,
-      "visibleRuns": 2,
-      "accentRuns": 1,
-      "projectionMs": 0.22
+      "visibleRuns": 46,
+      "accentRuns": 0,
+      "projectionMs": 0.69
     },
     {
       "file": "back-dark.svg",
       "yaw": 3.141592653589793,
       "pitch": 0,
-      "boundsExtent": 126.5847631480053,
+      "boundsExtent": 97.50535397003208,
       "hiddenRuns": 0,
-      "visibleRuns": 2,
-      "accentRuns": 1,
-      "projectionMs": 0.19
+      "visibleRuns": 47,
+      "accentRuns": 0,
+      "projectionMs": 0.72
     },
     {
       "file": "underside-dark.svg",
       "yaw": 0.55,
       "pitch": -1.1,
-      "boundsExtent": 103.78712391058185,
+      "boundsExtent": 105.90818053810854,
       "hiddenRuns": 0,
-      "visibleRuns": 2,
-      "accentRuns": 1,
-      "projectionMs": 0.13
+      "visibleRuns": 61,
+      "accentRuns": 0,
+      "projectionMs": 0.63
     },
     {
       "file": "neutral-light.svg",
       "yaw": 0,
       "pitch": 0,
-      "boundsExtent": 126.5847631480053,
+      "boundsExtent": 109.22651428571429,
       "hiddenRuns": 0,
-      "visibleRuns": 2,
-      "accentRuns": 1,
-      "projectionMs": 0.16
+      "visibleRuns": 46,
+      "accentRuns": 0,
+      "projectionMs": 0.65
     },
     {
       "file": "oblique-light.svg",
       "yaw": 0.65,
       "pitch": -0.35,
-      "boundsExtent": 97.81522743952564,
+      "boundsExtent": 108.72744036840633,
       "hiddenRuns": 0,
-      "visibleRuns": 2,
-      "accentRuns": 1,
-      "projectionMs": 0.13
+      "visibleRuns": 46,
+      "accentRuns": 0,
+      "projectionMs": 0.69
     },
     {
       "file": "back-light.svg",
       "yaw": 3.141592653589793,
       "pitch": 0,
-      "boundsExtent": 126.5847631480053,
+      "boundsExtent": 97.50535397003208,
       "hiddenRuns": 0,
-      "visibleRuns": 2,
-      "accentRuns": 1,
-      "projectionMs": 0.15
+      "visibleRuns": 47,
+      "accentRuns": 0,
+      "projectionMs": 0.52
     },
     {
       "file": "underside-light.svg",
       "yaw": 0.55,
       "pitch": -1.1,
-      "boundsExtent": 103.78712391058185,
+      "boundsExtent": 105.90818053810854,
       "hiddenRuns": 0,
-      "visibleRuns": 2,
-      "accentRuns": 1,
-      "projectionMs": 0.12
+      "visibleRuns": 61,
+      "accentRuns": 0,
+      "projectionMs": 0.82
     }
   ],
   "png": "generated with sharp",
