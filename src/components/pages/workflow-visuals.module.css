@@ -61,7 +61,6 @@
 .ruleOutcomes h3 { font-size:16px; margin-top:12px; font-weight:var(--font-weight-medium); }
 .ruleOutcomes p { font-size:12px; line-height:1.6; margin-top:10px; color:var(--ui-muted); }
 .cardFooter { display:flex; align-items:center; gap:8px; padding:14px 16px 12px; font-size:12px; color:var(--ui-muted); }
-.approval figcaption { position:relative; margin-top:24px; font-size:12px; line-height:1.6; color:color-mix(in srgb,var(--palette-cream) 65%,transparent); }
 .fileList>div { display:flex; align-items:center; gap:12px; padding-block:17px; }
 .fileList>div:first-child { padding-top:2px; }
 .fileList>div:last-child { padding-bottom:2px; }

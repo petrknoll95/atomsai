@@ -33,7 +33,7 @@ export function DeliveryWorkflow({ blocks }: { blocks: ContentBlock[] }) {
 }
 
 export function ApprovalWorkflow() {
-  return <figure className={`${ui.visual} ${ui.approval}`} aria-label="Approval rules and escalation">
+  return <figure className={ui.visual} aria-label="Approval rules and escalation">
     <ActivityBackdrop label="Workflow activity" />
     <div className={ui.sceneLabel}><span>Workflow controls</span><span>Settings</span></div>
     <div className={`${ui.card} ${ui.approvalCard}`}>
@@ -48,7 +48,6 @@ export function ApprovalWorkflow() {
       </div>
       <div className={ui.cardFooter}><span className={ui.statusDot}/><span>Changes saved</span></div>
     </div>
-    <figcaption>Every outcome has a record.<br/>Every exception has an owner.</figcaption>
   </figure>;
 }
 
