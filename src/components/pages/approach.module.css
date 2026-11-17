@@ -115,7 +115,6 @@
 .deliverableItems li { display:flex; align-items:center; gap:7px; border:1px solid var(--color-border); padding:7px 10px; border-radius:6px; font-size:12px; }
 .deliverableItems li>span { color:var(--palette-forest-green); }
 .deliverableBody>p { margin-top:auto; padding-top:20px; border-top:1px solid var(--color-border); font-size:14px; line-height:1.6; color:var(--color-surface-muted-foreground); }
-.processFoot { display:flex; justify-content:space-between; gap:24px; padding-top:28px; color:var(--color-muted-foreground); font-size:12px; }
 .controlSection { background:var(--palette-cream-tint); padding-block:96px; }
 .controlGrid { gap:72px; }
 .controlCopy>.sectionTitle { max-width:14ch; font-size:clamp(40px,4vw,60px); }
@@ -204,7 +203,6 @@
   .deliverableArt { height:160px; }
   .deliverableItems { gap:6px; }
   .deliverableItems li { font-size:11px; padding:6px 8px; }
-  .processFoot { flex-direction:column; gap:6px; padding-top:24px; }
   .controlSection { padding-block:56px; }
   .controlGrid,.ownership,.questions,.proofIntro { grid-template-columns:1fr; gap:32px; }
   .controlCopy>.sectionTitle { font-size:40px; }

@@ -67,7 +67,6 @@ export function ApproachPage() {
       <div className="page-container">
         <header className={styles.processHead}><div><p className={styles.kicker}>One considered step at a time</p><h2 className={`display ${styles.sectionTitle}`} id="process-heading">{sourceSection('approach').title}</h2></div><p>{sourceSection('approach').intro[0]}</p></header>
         <ApproachProcess steps={steps.map((step,index)=>({...step, items:sourceSection('approach').blocks[index].list}))}/>
-        <div className={styles.processFoot}><span>Your business, connected.</span><span>Built in your systems. Owned by your team.</span></div>
       </div>
     </section>
 
