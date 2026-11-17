@@ -39,7 +39,7 @@ export function MenuHeroBackdrop({ onAvailabilityChange }: { onAvailabilityChang
     } as CSSProperties;
   };
   const left = (index: number) => `calc((100vw - var(--menu-track) * var(--menu-columns)) / 2 + var(--menu-track) * ${index - 1})`;
-  return <div className={styles.backdrop} data-menu-hero-background
+  return <div className={`${styles.backdrop} bg-ease-in-out-to-b from-(--palette-forest-shade) to-(--palette-paper)`} data-menu-hero-background
     style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', '--menu-columns': columns, '--menu-pattern-count': slitCount } as CSSProperties}>
     <div className={`${menu.patternBackdrop} ${styles.patternEntrance}`} data-hero-pattern-entrance>
       <div className={menu.patternField} data-hero-pattern-source>

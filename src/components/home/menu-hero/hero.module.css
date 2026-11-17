@@ -9,7 +9,13 @@
 .stage .field { height: 100%; }
 .backdrop {
   --menu-track: calc((min(100vw, var(--page-max-width)) - 2 * var(--content-gutter)) / var(--menu-columns));
-  background: linear-gradient(to bottom, var(--palette-forest-shade) 42%, var(--palette-paper));
+  /* Solid forest to 42%, then an eased fade to paper (tw-easing-gradients
+     ease-in-out on the element). The plugin's stops span the whole image, so
+     the image covers only the fading part. */
+  background-color: var(--palette-forest-shade);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 58%;
 }
 /* Decorative rendering may fail independently of the readable hero. */
 .backdrop [role='status'] { display: none; }
