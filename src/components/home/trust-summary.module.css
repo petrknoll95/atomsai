@@ -31,7 +31,8 @@
 
 .label{grid-area:label;justify-self:start;padding:5px 12px;border-radius:var(--radius-control);background:var(--palette-paper);color:var(--palette-deep-green);font-size:var(--text-label);line-height:1.2;}
 .title{grid-area:title;align-self:end;max-width:16ch;font-size:clamp(32px,3vw,48px);line-height:1.05;text-wrap:balance;}
-.text{grid-area:text;align-self:end;max-width:44ch;font-size:clamp(17px,1.35vw,21px);line-height:1.45;text-wrap:pretty;}
+/* Trimmed like the .display title, so both bottom-aligned blocks share the last baseline. */
+.text{grid-area:text;align-self:end;max-width:44ch;font-size:clamp(17px,1.35vw,21px);line-height:1.45;text-wrap:pretty;text-box:trim-both cap alphabetic;}
 /* The line-only SVG is a mask, so the strokes take the band's text colour. Its viewBox is cropped
    to the ink and the box takes the ink's proportions (inline aspect-ratio), so every drawing's
    ink meets the top, bottom and right padding exactly. */
