@@ -24,7 +24,6 @@ export default function ContactPage() {
       <div className={styles.panel} data-theme="dark">
         <div className={styles.panelInner}>
           <div className={styles.introduction}>
-            <p className={styles.kicker}><span />Contact AtomsAI</p>
             <h1 className={`display ${styles.title}`} id="hero-heading">Let’s find your<br />starting point.</h1>
             <p className={styles.lead}>Tell us a little about your team and the workflow you want to improve. We’ll work out the next step together.</p>
           </div>
@@ -34,7 +33,7 @@ export default function ContactPage() {
     </section>
     <section className={`page-container ${styles.directory}`} aria-labelledby="directory-heading">
       <div className={styles.directoryIntro}>
-        <div><p className={styles.kicker}><span />Looking for someone specific?</p><h2 className={`display ${styles.sectionTitle}`} id="directory-heading">The right conversation.<br />The right team.</h2></div>
+        <div><h2 className={`display ${styles.sectionTitle}`} id="directory-heading">The right conversation.<br />The right team.</h2></div>
         <p className={styles.direct}>Prefer to write directly?<a className={styles.directLink} href={withBasePath("mailto:hello@atomsai.com")}><span className="link-underline">hello@atomsai.com</span><span className={styles.arrow} aria-hidden="true"><ArrowIcon direction="up-right" /></span></a></p>
       </div>
       <ul className={styles.contacts}>{contacts.map(contact => <li key={contact.email}><a className={styles.contact} href={withBasePath(`mailto:${contact.email}`)}>
