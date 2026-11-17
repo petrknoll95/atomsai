@@ -17,7 +17,7 @@
 .viewport:active{cursor:grabbing;}
 .track{display:flex;gap:24px;margin:0;padding:0;list-style:none;touch-action:pan-y pinch-zoom;}
 .card:last-child{margin-right:var(--content-gutter);}
-.card{display:flex;flex-direction:column;justify-content:space-between;flex:none;width:clamp(300px,36vw,620px);aspect-ratio:20/21;padding:40px;border-radius:var(--radius-card);background:var(--color-surface);user-select:none;}
+.card{display:flex;flex-direction:column;justify-content:space-between;flex:none;width:clamp(300px,36vw,620px);aspect-ratio:20/21;padding:40px;border-radius:var(--radius-card);background:color-mix(in srgb,var(--palette-mist) 45%,var(--palette-paper));user-select:none;}
 .art{-webkit-user-drag:none;}
 .art{display:block;width:min(64%,320px);height:auto;margin:auto auto 24px;}
 .label{font-size:var(--text-label);color:var(--color-surface-muted-foreground);}
