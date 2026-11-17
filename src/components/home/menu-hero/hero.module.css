@@ -65,4 +65,5 @@
   padding-top: 0;
 }
 
-.hero .announcement{display:flex;align-items:center;gap:16px;font-size:var(--text-label);line-height:1.4;padding:8px 14px;border:1px solid color-mix(in srgb,var(--palette-cream) 24%,transparent);border-radius:999px;color:var(--palette-cream);height:auto;}
+/* Announcement uses the shared eyebrow styles; only centre it and undo the hero CTA's link sizing. */
+.hero .announcement{align-self:center;height:auto;margin-top:0;}
