@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { ButtonLink, Eyebrow } from '@/components/ui';
 import { assetPath } from '@/lib/base-path';
-import { posts } from '@/components/blog/blog-data';
+import { formatDate, posts } from '@/components/blog/blog-data';
 import { ClipCard } from './clip-card';
 import styles from './story-sections.module.css';
 
@@ -36,7 +36,7 @@ export function FieldNotes() {
           <Image data-clip-zoom src={assetPath(post.artwork)} fill sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1600px) 31vw, 470px" alt="" />
         </span>
         <h3 className="display">{post.title}</h3>
-        <p className={styles.noteDescription}>{post.excerpt}</p>
+        <p className={styles.noteMeta}><time dateTime={post.date}>{formatDate(post.date)}</time><span aria-hidden="true">·</span>{post.readingTime}</p>
       </ClipCard>
     </li>)}</ul>
   </section>;
