@@ -5,7 +5,7 @@
   "recipe": "docs/design/blog-illustrations-2026-11-17/quotes-go-quiet/recipe.mjs",
   "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
   "transparentMaster": "public/assets/blog/illustrations/quotes-go-quiet-art.svg",
-  "svgSha256": "43e8c8ecafeae52d404bb606c8a90ee5a170ba637c471a072066dc341a9df90a",
+  "svgSha256": "c1d104ce5c1ca6c1a1aa7cc5432a761ff2e543b854cbd0b2e4397d81fbf4711c",
   "displayVector": "/assets/blog/illustrations/quotes-go-quiet.svg",
   "cover": "/assets/blog/illustrations/quotes-go-quiet.webp",
   "width": 3072,
@@ -21,7 +21,7 @@
   "outline": "#FAFAFA",
   "highlight": "#F6F1E8",
   "stroke": 1.6,
-  "neutralBoundsExtent": 109.22651428571429,
+  "neutralBoundsExtent": 109.2265142857143,
   "encoding": "SVG on the page; lossless 3072 × 2304 sRGB WebP for social metadata.",
   "checks": "Runtime hashes, recipe assertions, vector-only export and padded square bounds passed."
 }
