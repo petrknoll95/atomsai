@@ -6,15 +6,15 @@
 .description{max-width:44ch;margin-top:28px;font-size:clamp(18px,1.45vw,22px);line-height:1.5;color:var(--color-muted-foreground);text-wrap:pretty;}
 .cta{margin-top:40px;}
 
-.list{display:flex;flex-direction:column;gap:16px;margin:64px 0 0;padding:0;list-style:none;}
+.list{display:flex;flex-direction:column;gap:8px;margin:64px 0 0;padding:0;list-style:none;}
 .card{
   display:grid;
-  grid-template-columns:minmax(0,1fr) minmax(0,1fr) clamp(160px,15vw,240px);
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) clamp(140px,12vw,200px);
   grid-template-rows:auto 1fr;
   grid-template-areas:'label . art' 'title text art';
   column-gap:40px;
-  min-height:clamp(300px,24vw,380px);
-  padding:32px 40px 40px;
+  min-height:clamp(220px,17vw,280px);
+  padding:24px 32px 32px;
   border-radius:var(--radius-card);
   background:var(--card-bg);
   color:var(--card-fg);
@@ -31,11 +31,11 @@
 .art{grid-area:art;align-self:center;justify-self:end;width:100%;aspect-ratio:1;background:currentColor;mask-size:contain;mask-repeat:no-repeat;mask-position:center;}
 
 @media(max-width:991px){
-  .card{grid-template-columns:minmax(0,1fr) clamp(120px,22vw,180px);grid-template-areas:'label art' 'title art' 'text text';row-gap:24px;padding:24px 24px 32px;}
+  .card{grid-template-columns:minmax(0,1fr) clamp(120px,22vw,180px);grid-template-areas:'label art' 'title art' 'text text';row-gap:20px;padding:20px 24px 24px;}
 }
 @media(max-width:767px){
-  .list{margin-top:40px;gap:12px;}
-  .card{grid-template-columns:minmax(0,1fr) 112px;min-height:0;row-gap:20px;padding:20px 20px 28px;}
+  .list{margin-top:40px;gap:8px;}
+  .card{grid-template-columns:minmax(0,1fr) 112px;min-height:0;row-gap:16px;padding:16px 20px 24px;}
   .title{font-size:28px;}
   .text{font-size:16px;}
 }
