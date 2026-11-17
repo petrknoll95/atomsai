@@ -35,6 +35,7 @@ export function OperatingModel() {
   }
 
   return <section ref={root} id="offerings" className={`page-container ${styles.section}`} aria-labelledby="operating-model-title" data-text-reveal="off">
+    <div className={styles.stage} data-model-stage>
     <header className={styles.intro}>
       <p className={styles.eyebrow}>AtomsAI operating model</p>
       <h2 className={`display ${styles.heading}`} id="operating-model-title">The problem decides the pieces</h2>
@@ -56,6 +57,7 @@ export function OperatingModel() {
           <div><div className={styles.detailCopy}><p>{layer.description}</p><ButtonLink href={layer.href} variant="secondary"><span>{layer.action}</span><ArrowIcon direction="up-right" size={16}/></ButtonLink></div></div>
         </div>
       </div>)}
+    </div>
     </div>
     </div>
   </section>;

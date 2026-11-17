@@ -1,4 +1,6 @@
 .section { position:relative; display:grid; grid-template-columns:minmax(0,1fr); gap:48px; align-items:center; padding-block:48px var(--section-space); scroll-margin-top:112px; }
+/* Intro + diagram row: one block so tablet can pin the headline with the diagram. */
+.stage { display:grid; grid-template-columns:minmax(0,1fr); gap:inherit; align-items:inherit; min-width:0; }
 .intro { min-width:0; text-align:center; }
 /* sRGB equivalent of the application panels' 4% cream / forest-shade mix, shared with Three.js surfaces. */
 .diagramRow { --diagram-surface:#1a2b26; --model-inset:8px; display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:var(--model-inset); align-items:stretch; width:100%; padding:var(--model-inset); position:relative; z-index:1; isolation:isolate; }
@@ -58,4 +60,9 @@
 .visual { --diagram-fill:var(--palette-forest-shade); --diagram-ink:var(--palette-cream); background:var(--diagram-surface); border-radius:24px; overflow:hidden; }
 @media(min-width:1200px) and (min-height:700px) {
   .section { padding-block:24px 48px; }
+}
+
+/* Tablet pins the headline with the diagram: leave room for it so the whole stage fits on screen. */
+@media(min-width:768px) and (max-width:1199px) and (min-height:700px) {
+  .section[data-model-pin="stage"] .art { height:min(560px,calc(100svh - 420px)); min-height:280px; }
 }

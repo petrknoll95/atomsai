@@ -22,6 +22,7 @@ export function OperatingModelScene({ active, selection, onHighlight }: {
     const section = element.closest<HTMLElement>('#offerings')!;
     const visual = element.closest<HTMLElement>('[data-model-visual]')!;
     const row = element.closest<HTMLElement>('[data-model-row]')!;
+    const stage = element.closest<HTMLElement>('[data-model-stage]') ?? row;
     const wide = matchMedia('(min-width: 768px) and (min-height: 700px)');
     const reduced = matchMedia('(prefers-reduced-motion: reduce)');
     const desktop = matchMedia('(min-width: 1200px) and (min-height: 700px)');
@@ -34,8 +35,11 @@ export function OperatingModelScene({ active, selection, onHighlight }: {
       collapse?.();
       collapse = undefined;
       controller.current?.destroy();
-      const pin = wide.matches ? row : visual;
-      section.dataset.modelPin = wide.matches ? 'row' : 'visual';
+      // Desktop pins the diagram row (it expands to the viewport); tablet pins the
+      // headline with it so the section reads as one unit; small or short screens pin the visual.
+      const mode = !wide.matches ? 'visual' : desktop.matches ? 'row' : 'stage';
+      const pin = mode === 'visual' ? visual : mode === 'row' ? row : stage;
+      section.dataset.modelPin = mode;
       const pinnedTop = () => {
         const headerSpace = 96;
         return Math.max(headerSpace, headerSpace + (window.innerHeight - headerSpace - pin.offsetHeight) / 2);
