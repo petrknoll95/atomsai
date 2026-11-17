@@ -18,13 +18,14 @@
   min-height:clamp(320px,25vw,400px);
   padding:24px 32px 32px;
   border-radius:var(--radius-card);
-  background:var(--palette-mist);
+  position:relative;
+  isolation:isolate;
   color:var(--palette-deep-green);
   text-decoration:none;
-  transition:background-color .2s ease;
 }
-/* The whole card is the link: hover deepens the mist slightly; no underline anywhere. */
-@media(hover:hover){.card:hover{background:color-mix(in display-p3,var(--palette-mist),var(--palette-deep-green) 6%);}}
+/* The whole card is the link. TrustCard insets this painted layer 12px on hover or focus
+   (the homepage offering-card interaction); the content never moves. */
+.background{--trust-inset:0px;position:absolute;inset:0;z-index:-1;pointer-events:none;background:var(--palette-mist);clip-path:inset(var(--trust-inset) round var(--radius-card));}
 .card:focus-visible{outline:2px solid var(--palette-deep-green);outline-offset:3px;}
 
 .label{grid-area:label;justify-self:start;padding:5px 12px;border-radius:var(--radius-control);background:var(--palette-paper);color:var(--palette-deep-green);font-size:var(--text-label);line-height:1.2;}
