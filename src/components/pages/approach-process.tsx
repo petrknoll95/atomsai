@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, type KeyboardEvent } from 'react';
 import { ArrowIcon } from '@/components/arrow-icon';
+import { Button } from '@/components/ui';
 import { assetPath } from '@/lib/base-path';
 import styles from './approach.module.css';
 import ui from './workflow-visuals.module.css';
@@ -43,7 +44,7 @@ export function ApproachProcess({ steps }: { steps: Step[] }) {
 
   return <div className={styles.processExplorer}>
     <div className={styles.processTabs} role="tablist" aria-label="Explore the five stages">
-      {steps.map((step, index) => <button key={step.short} type="button" role="tab" id={`step-${index+1}`} ref={element => { tabs.current[index] = element; }} aria-selected={active === index} aria-controls={`process-panel-${index}`} tabIndex={active === index ? 0 : -1} onClick={() => select(index)} onKeyDown={event => navigate(event,index)}><span>0{index+1}</span>{step.short}<span className={styles.tabDot} aria-hidden="true" /></button>)}
+      {steps.map((step, index) => <Button key={step.short} variant={active === index ? 'primary' : 'secondary'} role="tab" id={`step-${index+1}`} ref={element => { tabs.current[index] = element; }} aria-selected={active === index} aria-controls={`process-panel-${index}`} tabIndex={active === index ? 0 : -1} onClick={() => select(index)} onKeyDown={event => navigate(event,index)}><span>0{index+1}</span>{step.short}<span className={styles.tabDot} aria-hidden="true" /></Button>)}
     </div>
     {steps.map((step, index) => <div key={step.short} id={`process-panel-${index}`} role="tabpanel" aria-labelledby={`step-${index+1}`} tabIndex={0} hidden={active !== index} className={styles.processPanel}>
       <div className={styles.stepCopy}>
@@ -51,7 +52,7 @@ export function ApproachProcess({ steps }: { steps: Step[] }) {
         <h3 className={`display ${styles.stepTitle}`}>{step.name}</h3>
         <p>{step.description}</p>
         <details className={styles.need}><summary>What we need from you <span aria-hidden="true">+</span></summary><p>{step.need}</p></details>
-        <div className={styles.stepNavigation}><span>{index+1} of {steps.length}</span><button type="button" aria-label="Previous stage" disabled={index===0} onClick={()=>select(index-1,true)}><ArrowIcon direction="left" size={20}/></button><button type="button" aria-label="Next stage" disabled={index===steps.length-1} onClick={()=>select(index+1,true)}><ArrowIcon size={20}/></button></div>
+        <div className={styles.stepNavigation}><span>{index+1} of {steps.length}</span><Button variant="outline" aria-label="Previous stage" disabled={index===0} onClick={()=>select(index-1,true)}><ArrowIcon direction="left" size={20}/></Button><Button variant="outline" aria-label="Next stage" disabled={index===steps.length-1} onClick={()=>select(index+1,true)}><ArrowIcon size={20}/></Button></div>
       </div>
       <div className={`${ui.tokens} ${ui.card} ${styles.deliverable}`} data-theme="light">
         <div className={styles.deliverableHeader}><span className={styles.folderIcon} aria-hidden="true"/><span>What you take away</span><span>0{index+1}</span></div>

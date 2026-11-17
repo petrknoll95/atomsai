@@ -3,7 +3,7 @@
 .controlCopy { max-width:490px; }
 .controlCopy .sectionTitle { margin-top:30px; margin-bottom:28px; }
 .controlCopy > p:not(.kicker) { max-width:410px; color:var(--color-surface-muted-foreground); font-size:18px; margin-top:18px; }
-.textLink { display:inline-flex; align-items:center; gap:16px; margin-top:32px; font-size:14px; min-height:44px; }
+.textLink { margin-top:32px; }
 .ownership { display:grid; grid-template-columns:1fr 1fr; gap:96px; align-items:center; padding-block:var(--section-space); }
 .ownership .sectionTitle { margin-top:30px; }
 .ownershipIntro { max-width:390px; margin-top:28px; font-size:18px; color:var(--color-surface-muted-foreground); }
@@ -34,9 +34,7 @@
 .kickerDivider { color:var(--color-muted-foreground); margin-inline:4px; }
 .sectionTitle { font-size:clamp(40px,4.25vw,64px); line-height:1.02; text-wrap:balance; max-width:19ch; }
 .smallHeading { font-size:clamp(30px,2.8vw,42px); line-height:1.05; text-wrap:balance; }
-.inlineLink { display:inline-flex; align-items:center; gap:12px; min-height:44px; font-size:14px; }
-.inlineLink svg { transition:transform .2s ease; }
-.inlineLink:hover svg { transform:translateY(3px); }
+.inlineLink { margin-left:-12px; min-height:44px; }
 .hero { --color-surface-muted-foreground:color-mix(in srgb,var(--palette-cream) 75%,transparent); padding-top:156px; padding-bottom:88px; }
 .hero .dot { background:var(--palette-sage-tint); }
 .heroGrid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:64px; align-items:center; }
@@ -74,10 +72,8 @@
 .processHead .sectionTitle { margin-top:24px; line-height:.95; }
 .processHead>p { font-size:18px; line-height:1.5; max-width:38ch; color:var(--color-muted-foreground); }
 .processTabs { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:8px; margin-bottom:16px; }
-.processTabs>button { display:flex; align-items:center; gap:14px; min-height:64px; padding:16px 20px; border-radius:12px; background:color-mix(in srgb,var(--palette-cream) 6%,transparent); color:var(--color-muted-foreground); text-align:left; font-size:16px; transition:color .2s,background .2s; white-space:nowrap; }
+.processTabs>button { --button-clip-radius:12px; width:100%; height:auto; justify-content:flex-start; gap:14px; min-height:64px; padding:16px 20px; border-radius:12px; text-align:left; font-size:16px; }
 .processTabs>button>span:first-child { font-size:12px; }
-.processTabs>button:hover { background:color-mix(in srgb,var(--palette-cream) 12%,transparent); color:var(--palette-cream); }
-.processTabs>button[aria-selected='true'] { background:var(--palette-cream); color:var(--palette-deep-green); }
 .tabDot { width:6px; height:6px; border-radius:50%; background:currentColor; margin-left:auto; opacity:0; }
 .processTabs>button[aria-selected='true'] .tabDot { opacity:1; }
 .processPanel { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:8px; padding:8px; border-radius:24px; background:color-mix(in srgb,var(--palette-cream) 6%,transparent); }
@@ -94,8 +90,7 @@
 .need>p { font-size:14px; line-height:1.5; color:var(--color-muted-foreground); padding:0 24px 12px 0; }
 .stepNavigation { display:flex; align-items:center; gap:8px; margin-top:auto; padding-top:12px; }
 .stepNavigation>span { font-size:12px; margin-right:auto; color:var(--color-muted-foreground); }
-.stepNavigation button { display:grid; place-items:center; width:44px; height:44px; border-radius:50%; border:1px solid var(--color-border); color:var(--palette-cream); transition:background .2s; }
-.stepNavigation button:enabled:hover { background:var(--color-surface); }
+.stepNavigation button { width:44px; height:44px; padding:0; }
 .stepNavigation button:disabled { opacity:.3; cursor:default; }
 .deliverable { display:flex; flex-direction:column; padding:4px; border-radius:20px; background:var(--ui-wrapper); min-width:0; }
 .deliverableBody { display:flex; flex:1; flex-direction:column; padding:20px 24px 24px; border-radius:16px; background:var(--palette-paper); }
@@ -178,7 +173,7 @@
   .processHead { grid-template-columns:1fr; gap:24px; margin-bottom:48px; }
   .processHead>p { font-size:16px; }
   .processTabs { display:flex; gap:6px; overflow-x:auto; scrollbar-width:thin; padding-bottom:10px; margin-bottom:8px; }
-  .processTabs>button { flex:0 0 auto; gap:10px; min-height:52px; padding:14px 16px; }
+  .processTabs>button { flex:0 0 auto; width:auto; gap:10px; min-height:52px; padding:14px 16px; }
   .tabDot { display:none; }
   .processPanel { grid-template-columns:1fr; border-radius:20px; }
   .stepCopy { min-height:0; padding:24px 16px; }

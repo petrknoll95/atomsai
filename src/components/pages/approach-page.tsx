@@ -1,4 +1,4 @@
-import { assetPath, withBasePath } from '@/lib/base-path';
+import { assetPath } from '@/lib/base-path';
 import { ArrowIcon } from '@/components/arrow-icon';
 import { ButtonLink } from '@/components/ui';
 import styles from './approach.module.css';
@@ -39,7 +39,7 @@ export function ApproachPage() {
           <p className={styles.kicker}><span className={styles.dot} />AI Services <span className={styles.kickerDivider}>/</span> How we work</p>
           <h1 className={`display ${styles.title}`} id="hero-heading">{content.title}</h1>
           <p className={styles.heroIntro}>{content.intro[0]}</p>
-          <div className={styles.heroActions}><ButtonLink href="/company/contact?topic=services" size="large">Talk to our team <ArrowIcon size={18} /></ButtonLink><a href="#approach" className={styles.inlineLink}>See our approach <ArrowIcon direction="down" size={16} /></a></div>
+          <div className={styles.heroActions}><ButtonLink href="/company/contact?topic=services" size="large">Talk to our team <ArrowIcon size={18} /></ButtonLink><ButtonLink href="#approach" size="small" variant="ghost" className={styles.inlineLink}>See our approach <ArrowIcon direction="down" size={16} /></ButtonLink></div>
           <p className={styles.heroNote}>Built in your systems. Owned by your team.</p>
         </div>
         <DeliveryWorkflow blocks={sourceSection('workflow').blocks} />
@@ -55,7 +55,7 @@ export function ApproachPage() {
       <header className={styles.sectionHead}><div><p className={styles.kicker}>Two services. One working system.</p><h2 className={`display ${styles.sectionTitle}`} id="services-heading">{sourceSection('services').title}</h2></div></header>
       <div className={styles.serviceGrid}>{sourceSection('services').blocks.map((block,index)=><article key={block.title} className={styles.serviceCard}>
         <div className={styles.serviceArt}><img src={assetPath(`/assets/illustrations/${index===0 ? 'layered-planes' : 'modular-cube'}-outline.svg`)} alt="" width="400" height="320" loading="lazy" /><span className={styles.serviceIndex}>0{index+1}</span></div>
-        <div className={styles.serviceCopy}><p className={styles.serviceLabel}>{block.title}</p><h3 className={`display ${styles.serviceTitle}`}>{block.body[0]}</h3><p>{block.body.slice(1).join(' ')}</p><a href="#approach" className={styles.inlineLink}>{index===0 ? 'Find the starting point' : 'See how we build'}<ArrowIcon direction="down" size={18}/></a></div>
+        <div className={styles.serviceCopy}><p className={styles.serviceLabel}>{block.title}</p><h3 className={`display ${styles.serviceTitle}`}>{block.body[0]}</h3><p>{block.body.slice(1).join(' ')}</p><ButtonLink href="#approach" size="small" variant="ghost" className={styles.inlineLink}>{index===0 ? 'Find the starting point' : 'See how we build'}<ArrowIcon direction="down" size={18}/></ButtonLink></div>
       </article>)}</div>
     </section>
 
@@ -75,7 +75,7 @@ export function ApproachPage() {
 
     <section className={styles.controlSection} aria-labelledby="control-heading">
       <div className={`page-container ${styles.controlGrid}`}>
-        <div className={styles.controlCopy}><p className={styles.kicker}>Your rules, built in</p><h2 className={`display ${styles.sectionTitle}`} id="control-heading">{sourceSection('integration').title}</h2><p>{sourceSection('integration').intro[0]}</p><p>Those boundaries are part of the build. Start with a person reviewing every action, then adjust as the evidence earns your confidence.</p><a className={styles.textLink} href={withBasePath("/trust")}><span className="link-underline">Explore trust & security</span><ArrowIcon size={18} /></a></div>
+        <div className={styles.controlCopy}><p className={styles.kicker}>Your rules, built in</p><h2 className={`display ${styles.sectionTitle}`} id="control-heading">{sourceSection('integration').title}</h2><p>{sourceSection('integration').intro[0]}</p><p>Those boundaries are part of the build. Start with a person reviewing every action, then adjust as the evidence earns your confidence.</p><ButtonLink className={styles.textLink} href="/trust" variant="outline">Explore trust & security<ArrowIcon size={18} /></ButtonLink></div>
         <ApprovalWorkflow />
       </div>
     </section>
