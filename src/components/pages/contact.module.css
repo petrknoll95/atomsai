@@ -1,9 +1,9 @@
 .page { overflow:clip; }
 
 /* Hero: one rounded dark panel under the header, form card left, copy right. */
-/* One even gap on every side: below the header, left, right and to the viewport's bottom edge. */
-.hero { --hero-gap:var(--header-top); padding:calc(var(--header-height) + var(--hero-gap)) var(--hero-gap) var(--hero-gap); }
-.panel { position:relative; isolation:isolate; overflow:hidden; border-radius:var(--radius-panel); min-height:calc(100svh - var(--header-height) - 2 * var(--hero-gap)); display:flex; align-items:center; justify-content:center; padding:64px 40px;
+/* Panel starts at the header's bottom edge; even gap left, right and to the viewport's bottom. */
+.hero { --hero-gap:var(--header-top); padding:var(--header-height) var(--hero-gap) var(--hero-gap); }
+.panel { position:relative; isolation:isolate; overflow:hidden; border-radius:var(--radius-panel); min-height:calc(100svh - var(--header-height) - var(--hero-gap)); display:flex; align-items:center; justify-content:center; padding:64px 40px;
   background:var(--palette-forest-shade); }
 /* Blurred colour field after the reference, greens only: forest light top-left, sage glow bottom-right. */
 .panel::before { content:''; position:absolute; inset:-10%; z-index:-1; pointer-events:none; filter:blur(48px);
