@@ -42,10 +42,10 @@ export function MenuPatternHero({ children }: { children: ReactNode }) {
   return <section ref={trackRef} className={`theme-dark ${menuHero.hero}`} data-variant='menu' data-section='hero' aria-labelledby='hero-heading'>
     <div ref={stageRef} className={menuHero.stage} data-hero-stage data-hero-entry="pending" data-theme='dark' data-header-light-at='0.6'>
       <div ref={fieldRef} className={`${styles.field} ${menuHero.field}`} aria-hidden='true' data-menu-hero-field><MenuHeroBackdrop onAvailabilityChange={onAvailabilityChange} /></div>
-      <div ref={contentRef} className={`${styles.content} ${stars.content} ${menuHero.maskedCopy}`} data-hero-copy data-text-reveal='off'>
+      <div ref={contentRef} className={`${styles.content} ${stars.content} ${menuHero.maskedCopy}`} data-hero-copy>
         <div className={`${stars.group} ${menuHero.copyEntrance}`} data-hero-copy-entrance>
           <Announcement href="#company-story" className={menuHero.announcement}>SaaS Labs is now AtomsAI</Announcement>
-          <h1 id='hero-heading' tabIndex={-1} className={`display ${stars.title}`}>AI that works today.<br/>Built to get better tomorrow.</h1>
+          <h1 id='hero-heading' tabIndex={-1} className={`display ${stars.title}`} data-text-reveal='manual'>AI that works today.<br/>Built to get better tomorrow.</h1>
           <p className={stars.lead}>At AtomsAI, models power products. Products inform better technology. And solving new business problems gives both more to build on. Together, they make possible what no single product could.</p>
           <ButtonLink href='/company/contact' variant='primary' size='large'>Talk to AtomsAI</ButtonLink>
         </div>

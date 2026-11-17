@@ -1,4 +1,5 @@
 import { gsap } from 'gsap';
+import { cueTextReveal } from '@/components/motion/text-reveal';
 
 type Mount = { stage: HTMLElement; copy: HTMLElement; pattern: HTMLElement; available: boolean | null };
 
@@ -15,7 +16,10 @@ export function mountHeroEntrance({ stage, copy, pattern, available }: Mount) {
   const setAvailability = () => {
     stage.dataset.heroPatternState = patternAvailable === null ? 'pending' : patternAvailable ? 'ready' : 'unavailable';
   };
+  // The headline reveals line by line as the copy enters (shared engine).
+  const headline = copy.querySelector<HTMLElement>('[data-text-reveal="manual"]');
   const finishCopy = () => {
+    if (headline && headline.dataset.textRevealCue !== 'play') cueTextReveal(headline, 'finish');
     stage.dataset.heroEntry = 'ready';
     gsap.set(copy, { clearProps: 'opacity,visibility,transform,willChange' });
   };
@@ -45,9 +49,11 @@ export function mountHeroEntrance({ stage, copy, pattern, available }: Mount) {
         opacity: 1, y: 0, duration: 1.45, ease: 'power3.out',
       }, 0);
     }
+    const copyAt = patternAvailable ? .24 : 0;
     entry.fromTo(copy, { autoAlpha: 0, y: -10, willChange: 'opacity,transform' }, {
       autoAlpha: 1, y: 0, duration: .9, ease: 'power3.out',
-    }, patternAvailable ? .24 : 0);
+    }, copyAt);
+    if (headline) entry.call(() => cueTextReveal(headline, 'play'), undefined, copyAt);
   };
   const tryEnter = () => {
     if (disposed || started || queuedFrame || !fontsReady || patternAvailable === null) return;

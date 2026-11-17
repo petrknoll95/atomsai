@@ -44,6 +44,19 @@ const excludedSelector = 'dialog, [aria-roledescription="slide"], [data-text-rev
 
 type State = 'pending' | 'revealing' | 'visible';
 
+/**
+ * Headlines marked `data-text-reveal="manual"` are split and held like any
+ * other, but play on their owner's cue instead of on scroll (the hero plays
+ * its headline as part of its entrance). The cue is also kept as an attribute,
+ * so one sent before the engine mounts is not lost.
+ */
+export type TextRevealCue = 'play' | 'finish';
+const cueEvent = 'text-reveal-cue';
+export function cueTextReveal(element: HTMLElement, cue: TextRevealCue) {
+  element.dataset.textRevealCue = cue;
+  element.dispatchEvent(new CustomEvent(cueEvent));
+}
+
 /** Anything the engine can reveal: held until ScrollTrigger plays it. */
 interface Reveal {
   readonly element: HTMLElement;
@@ -78,6 +91,11 @@ class HeadlineReveal implements Reveal {
   hold() {
     this.set('pending');
     gsap.set(this.heading, { opacity: 0 });
+    if (this.heading.dataset.textReveal === 'manual') {
+      this.heading.addEventListener(cueEvent, this.cue);
+      this.cue();
+      return;
+    }
     this.trigger = ScrollTrigger.create({
       trigger: this.heading,
       start: textReveal.start,
@@ -85,6 +103,12 @@ class HeadlineReveal implements Reveal {
       onEnter: () => { this.entered = true; this.play(); },
     });
   }
+
+  private readonly cue = () => {
+    const cue = this.heading.dataset.textRevealCue;
+    if (cue === 'finish') this.finish();
+    else if (cue === 'play') { this.entered = true; this.play(); }
+  };
 
   /** Split into masked lines. Safe to call again after a width change. */
   prepare() {
@@ -135,6 +159,7 @@ class HeadlineReveal implements Reveal {
 
   /** Skip the motion: focus, deep links, headlines already scrolled past, slow fonts. */
   finish() {
+    this.heading.removeEventListener(cueEvent, this.cue);
     this.trigger?.kill();
     this.trigger = undefined;
     this.timeline?.kill();
@@ -145,6 +170,7 @@ class HeadlineReveal implements Reveal {
   }
 
   destroy() {
+    this.heading.removeEventListener(cueEvent, this.cue);
     this.trigger?.kill();
     this.timeline?.kill();
     this.unsplit();
