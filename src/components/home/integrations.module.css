@@ -47,7 +47,10 @@
 .copy > :global(.eyebrow) { align-self: center; }
 @media (max-width: 767px) {
   .stage { height: 660px; }
-  .grid { --orbit-base: 598px; --orbit-step: 117px; --tile-size: 83px; }
+  /* The copy spans the full width here, so the rings must arc above and below it inside the
+     stage: at the desktop scale only the very edges of ring 0 reached the crop and no slot
+     qualified for a logo. These radii put the top and bottom arcs of rings 0 and 1 in view. */
+  .grid { --orbit-base: clamp(380px, 84vw, 640px); --orbit-step: 84px; --tile-size: 64px; }
   .copy { width: 100%; gap: 40px; }
   .title { font-size: clamp(30px, 8vw, 42px); }
 }
