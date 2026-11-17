@@ -22,13 +22,16 @@ export function expandPinnedRow({ row, backdrop, pin, pinnedTop, collapseShare }
   pinnedTop: () => number;
 }) {
   gsap.registerPlugin(ScrollTrigger);
-  const header = document.querySelector<HTMLElement>('header');
+  const header = document.querySelector<HTMLElement>('header[data-desktop-menu-open]');
+  // The header's resting bottom edge. It slides out of view on load and while scrolling, so its
+  // on-screen rect can sit above the viewport; offsetTop/offsetHeight ignore that transform.
+  const headerBottom = () => header ? header.offsetTop + header.offsetHeight : 0;
   const edges = () => {
     const bounds = row.getBoundingClientRect();
     const top = pinnedTop();
     return {
       // Clear the header's backdrop blur so the rounded top edge stays visible.
-      top: -Math.max(0, top - (header?.getBoundingClientRect().bottom ?? 0) - MARGIN),
+      top: -Math.max(0, top - headerBottom() - MARGIN),
       left: -Math.max(0, bounds.left - MARGIN),
       right: -Math.max(0, document.documentElement.clientWidth - bounds.right - MARGIN),
       bottom: -Math.max(0, window.innerHeight - MARGIN - top - row.offsetHeight),
