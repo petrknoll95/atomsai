@@ -1,11 +1,11 @@
 {
   "article": "who-answers-at-7pm",
   "skill": "https://petrknoll95.github.io/atoms-ai-brand/skills/atomsai-illustrations/SKILL.md",
-  "revision": "User-directed four backgrounds, Paper outlines, Cream highlights, 4:3 frames with square-contained art.",
+  "revision": "Clearer recognizable 3D objects; four approved backgrounds, thinner Paper outlines, Cream highlights, 4:3 frames with square-contained art.",
   "recipe": "docs/design/blog-illustrations-2026-11-17/who-answers-at-7pm/recipe.mjs",
   "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
   "transparentMaster": "public/assets/blog/illustrations/who-answers-at-7pm-art.svg",
-  "svgSha256": "c16c0e11732e5c828180bfdd8c93d17f1d02d65695f9a3b5256f5822ba88cffa",
+  "svgSha256": "e612022307968db596be97772a0266e2a05dfe33282fa20366df9f66525e4b2d",
   "displayVector": "/assets/blog/illustrations/who-answers-at-7pm.svg",
   "cover": "/assets/blog/illustrations/who-answers-at-7pm.webp",
   "width": 3072,
@@ -20,8 +20,8 @@
   "background": "#1D3C34",
   "outline": "#FAFAFA",
   "highlight": "#F6F1E8",
-  "stroke": 1.9,
-  "neutralBoundsExtent": 109.22646857142861,
+  "stroke": 1.6,
+  "neutralBoundsExtent": 109.2265142857143,
   "encoding": "SVG on the page; lossless 3072 × 2304 sRGB WebP for social metadata.",
   "checks": "Runtime hashes, recipe assertions, vector-only export and padded square bounds passed."
 }
