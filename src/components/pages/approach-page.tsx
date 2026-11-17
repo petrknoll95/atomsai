@@ -66,8 +66,8 @@ export function ApproachPage() {
       </article>)}</div>
     </section>
 
-    <section id="approach" className={styles.process} aria-labelledby="process-heading" data-theme="dark">
-      <div className="page-container">
+    <section id="approach" className={`page-container ${styles.processSection}`} aria-labelledby="process-heading">
+      <div className={styles.process} data-theme="dark">
         <header className={styles.processHead}><div><p className={styles.kicker}>One considered step at a time</p><h2 className={`display ${styles.sectionTitle}`} id="process-heading">{sourceSection('approach').title}</h2></div><p>{sourceSection('approach').intro[0]}</p></header>
         <ApproachProcess steps={steps.map((step,index)=>({...step, items:sourceSection('approach').blocks[index].list}))}/>
       </div>
