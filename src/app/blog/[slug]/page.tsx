@@ -38,6 +38,7 @@ export default async function ArticlePage({ params }: Props) {
         <h1 className="display">{post.title}</h1>
         <div className={styles.byline}><span>by {post.author}</span><span className={styles.separator} aria-hidden="true">•</span><time dateTime={post.date}>{date}</time></div>
       </header>
+      <div className={styles.cover}><BlogArt artwork={post.artwork} priority sizes="(max-width: 767px) 100vw, 675px" /></div>
       {/* The checked-in importer allowlists markup and strips source scripts/styles. */}
       <div className={styles.body} dangerouslySetInnerHTML={{ __html: body }} />
     </article>

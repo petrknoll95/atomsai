@@ -3,8 +3,8 @@ import { PageShell } from '@/components/pages/page-shell';
 import { BlogPage } from '@/components/blog/blog-page';
 
 export const metadata: Metadata = {
-  title: 'Blog | AtomsAI',
-  description: 'Notes on AI workflows, evaluation, and the work between a demo and production, from AtomsAI.',
+  title: 'Notes from the field | AtomsAI',
+  description: 'Working notes from the teams building AtomsAI, on phone audio, voice agents, and the software that has to hold up around a call.',
   alternates: { canonical: 'https://atomsai.com/blog' },
 };
 

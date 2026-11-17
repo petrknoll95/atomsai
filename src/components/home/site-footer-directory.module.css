@@ -1,9 +1,25 @@
 .footer { background: var(--palette-forest-shade); color: var(--color-foreground); }
 .container { padding-block: 64px; }
-.cta { display: flex; align-items: center; justify-content: space-between; gap: 40px; padding-bottom: 64px; border-bottom: 1px solid var(--color-border); }
-.heading { font-size: clamp(28px, 2.5vw, 40px); line-height: 1.1; text-wrap: balance; }
-.ctaButton { flex: none; min-height: 48px; }
-.directory { display: grid; grid-template-columns: minmax(200px, 2fr) minmax(0, 5fr); grid-template-rows: 1fr auto; column-gap: 32px; row-gap: 48px; margin-top: 64px; min-height: 396px; }
+/* Headline left, copy + action right. The 4fr/3fr split and the gap put the right
+   column on the same line as the directory's Company column (2fr/5fr, 32px + 20px gaps). */
+/* Full-bleed band: a bordered centre panel between two dotted gutters, about three quarters of the viewport. */
+.cta { display: grid; grid-template-columns: minmax(0, 1fr) min(72%, 1240px) minmax(0, 1fr); border-bottom: 1px solid var(--color-border); }
+/* Pinned to the centre track: below 1200px the side marks are hidden and the
+   panel would otherwise auto-place into the narrow first gutter. */
+.ctaPanel { grid-column: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 48px; min-height: clamp(360px, 31vw, 580px); padding: 64px 32px; text-align: center; }
+.heading { max-width: 15ch; font-size: clamp(40px, 4.9vw, 84px); line-height: .92; letter-spacing: -.015em; text-wrap: balance; }
+.headingMuted { color: var(--color-muted-foreground); }
+.ctaActions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+/* Outline logo mark split across the gutters: the three left slits on the left, their mirror on the right. */
+/* Each half spans the band's full height and starts at the viewport edge, so it runs a little past
+   its gutter toward the centre. The 1 px stroke is centred on the path, so a half-pixel inset puts
+   the ink on the band's top and bottom. The outermost slit is open at the viewport edge.
+   Lines use the bottom border's cream, a little stronger (16% against its 10%). */
+.ctaSide { position: relative; min-width: 0; color: color-mix(in display-p3, var(--palette-cream) 16%, transparent); pointer-events: none; }
+.ctaSide svg { position: absolute; inset-block: .5px; height: calc(100% - 1px); width: auto; aspect-ratio: 43 / 80; overflow: visible; }
+.ctaSide[data-side='start'] svg { left: 0; }
+.ctaSide[data-side='end'] svg { right: 0; }
+.directory { display: grid; grid-template-columns: minmax(200px, 2fr) minmax(0, 5fr); grid-template-rows: 1fr auto; column-gap: 32px; row-gap: 48px; min-height: 396px; }
 .logo { grid-column: 1; grid-row: 1; display: block; align-self: start; width: 44px; height: 40px; }
 .logo svg { display: block; width: 100%; height: 100%; }
 .navigation { grid-column: 2; grid-row: 1 / 3; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px; align-items: start; }
@@ -17,13 +33,13 @@
 .copyright { grid-column: 1; grid-row: 2; align-self: end; max-width: 224px; color: var(--color-muted-foreground); font-size: var(--text-label); line-height: 1.4; text-wrap: balance; }
 @media (min-width: 1600px) {
   .container { padding-block: 80px; }
-  .cta { padding-bottom: 80px; }
-  .directory { margin-top: 80px; }
 }
 @media (max-width: 1199px) {
   .container { padding-block: 56px; }
-  .cta { flex-direction: column; align-items: flex-start; gap: 28px; padding-bottom: 56px; }
-  .directory { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto; gap: 56px; margin-top: 56px; min-height: 0; }
+  .cta { grid-template-columns: minmax(0, 1fr) calc(100% - 2 * var(--content-gutter)) minmax(0, 1fr); }
+  .ctaPanel { gap: 40px; padding-block: 64px; }
+  .ctaSide { display: none; }
+  .directory { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto; gap: 56px; min-height: 0; }
   .logo, .navigation, .copyright { grid-column: 1; grid-row: auto; }
   .navigation { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 28px; }
   .group h3 { margin-bottom: 14px; }
@@ -31,7 +47,13 @@
   .arrow { display: none; }
 }
 @media (max-width: 639px) {
+  .ctaPanel { min-height: 0; padding: 56px 20px; }
+  .ctaActions { flex-direction: column; align-items: stretch; width: 100%; max-width: 320px; }
+  /* .button is fit-content, so stretch alone leaves the stack left-aligned. */
+  .ctaActions > * { width: 100%; }
   .navigation { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .heading { max-width: 20ch; }
 }
 @media (prefers-reduced-motion: reduce) { .group a, .arrow { transition: none; } }
+
+.tagline { display: block; margin-bottom: 20px; }

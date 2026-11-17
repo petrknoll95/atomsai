@@ -1,35 +1,38 @@
 import Link from 'next/link';
 import { BlogArt } from './blog-art';
-import { ArticleList } from './blog-list';
-import { featuredPost, formatDate, posts } from './blog-data';
+import { BlogStories, type Story } from './blog-stories';
+import { posts } from './blog-data';
+import { clientPages } from '@/components/pages/client-content';
 import styles from './blog.module.css';
 
+const content = clientPages.blog;
+
+// The index lists the published articles, newest first, so every story opens its /blog/[slug] page.
+const [featured, ...rest] = [...posts].sort((a, b) => b.date.localeCompare(a.date));
+const stories: Story[] = rest.map(post => ({
+  title: post.title, excerpt: post.excerpt, category: post.category, artwork: post.artwork, href: `/blog/${post.slug}`,
+}));
+
 export function BlogPage() {
-  const latestPosts = posts.filter(post => post.slug !== featuredPost.slug).slice(0, 7);
-  return <main className={`page-container ${styles.page}`} id="blog">
-    <h1 className={`display ${styles.heading}`} id="hero-heading">Blog</h1>
-    <section className={styles.featured} aria-label="Featured articles">
-      <div className={styles.featureSticky}>
-        <Link href={`/blog/${featuredPost.slug}`} className={styles.feature}>
-          <div className={styles.featureImage}><BlogArt artwork={featuredPost.artwork} priority sizes="(max-width: 767px) 100vw, (max-width: 1599px) 66vw, 1000px" /></div>
-          <div className={styles.featureCopy}>
-            <h2 className="display">{featuredPost.title}</h2>
-            <time dateTime={featuredPost.date}>{formatDate(featuredPost.date)}</time>
-          </div>
-        </Link>
+  return <main className={`page-container ${styles.page}`} id="main">
+    <header className={styles.intro}>
+      <h1 className={`display ${styles.heading}`} id="hero-heading">{content.title}</h1>
+    </header>
+
+    <article className={styles.featured} aria-labelledby="featured-title">
+      <div className={styles.featuredCopy}>
+        <p className={styles.eyebrowText}>Featured</p>
+        <div className={styles.featuredText}>
+          <p className={styles.meta}>{featured.category}</p>
+          <h2 className={`display ${styles.featuredTitle}`} id="featured-title">
+            <Link className={styles.storyLink} href={`/blog/${featured.slug}`}>{featured.title}</Link>
+          </h2>
+          <p className={styles.excerpt}>{featured.excerpt}</p>
+        </div>
       </div>
-      <ul className={styles.latest}>
-        {latestPosts.map(post => <li key={post.slug}>
-          <Link href={`/blog/${post.slug}`} className={styles.card}>
-            <div className={styles.cardImage}><BlogArt artwork={post.artwork} sizes="(max-width: 767px) 100vw, (max-width: 1599px) 33vw, 500px" /></div>
-            <div className={styles.cardCopy}>
-              <h3 className="display">{post.title}</h3>
-              <time dateTime={post.date}>{formatDate(post.date)}</time>
-            </div>
-          </Link>
-        </li>)}
-      </ul>
-    </section>
-    <ArticleList />
+      <div className={styles.featuredImage}><BlogArt artwork={featured.artwork} priority sizes="(max-width: 767px) 100vw, 66vw" /></div>
+    </article>
+
+    <BlogStories stories={stories} />
   </main>;
 }

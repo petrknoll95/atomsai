@@ -1,5 +1,22 @@
+'use client';
+
 import { ArrowIcon } from '@/components/arrow-icon';
+import { useEffect, useRef } from 'react';
+import type { CallLine, CallPlayback } from '@/lib/scripted-call-player';
+import { callTime } from './use-scripted-call';
 import styles from './justcall-scene.module.css';
+
+type JustCallDemo = {
+  playback: CallPlayback;
+  lines: CallLine[];
+  status: string;
+  handedOff: boolean;
+  smsSent: boolean;
+  onToggle: () => void;
+  onReplay: () => void;
+  onHandoff: () => void;
+  onSms: () => void;
+};
 
 function PhoneIcon() {
   return <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 15v-3c4-4 10-4 14 0v3l-4-1v-2a10 10 0 0 0-6 0v2l-4 1Z" fill="currentColor" /></svg>;
@@ -9,8 +26,14 @@ function ChevronIcon({ direction = 'down' }: { direction?: 'down' | 'left' | 'ri
   return <svg className={styles.chevron} data-direction={direction} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>;
 }
 
-// Decorative product illustration. Its entire coordinate system inherits one em.
-export function JustCallScene({ compact = false }: { compact?: boolean } = {}) {
+// Shared geometry: only the homepage supplies interactive demo controls.
+export function JustCallScene({ compact = false, example, demo }: { compact?: boolean; example?: { caller: string; reply: string; followUp: string }; demo?: JustCallDemo } = {}) {
+  const transcript = useRef<HTMLDivElement>(null);
+  const lineIndex = demo?.playback.line;
+  useEffect(() => {
+    const element = transcript.current;
+    if (element) element.scrollTo({ top: element.scrollHeight, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+  }, [lineIndex]);
   if (compact) return <div className={`${styles.system} ${styles.compact}`} data-justcall-system aria-hidden="true">
     <div className={styles.foreground}>
       <div className={styles.analytics}>
@@ -31,8 +54,8 @@ export function JustCallScene({ compact = false }: { compact?: boolean } = {}) {
       </div>
     </div>
   </div>;
-  return <div className={styles.system} data-justcall-system aria-hidden="true">
-    <div className={styles.dashboard}>
+  return <div className={`${styles.system} ${demo ? styles.interactive : ''}`} data-justcall-system data-justcall-demo={demo ? '' : undefined} aria-hidden={demo ? undefined : true}>
+    <div className={styles.dashboard} aria-hidden="true">
       <div className={styles.dashboardHeader}><span className={styles.title}>AI Voice Agent</span><span className={styles.live}><i /><span className={styles.dashboardLabel}>Live Calls</span></span></div>
       <div className={styles.dashboardTools}>
         <div className={styles.dashboardNav}><span><span className={styles.dashboardLabel}>Agents</span><span className={styles.agentCount}><span className={styles.dashboardLabel}>4</span></span></span><span className={styles.dashboardLabel}>Call history</span></div>
@@ -47,7 +70,7 @@ export function JustCallScene({ compact = false }: { compact?: boolean } = {}) {
     </div>
 
     <div className={styles.foreground}>
-      <div className={styles.analytics}>
+      <div className={styles.analytics} aria-hidden="true">
         <div className={styles.tabsWrapper}><div className={styles.tabs}><span>Inbound Calls</span><span>Outbound Calls</span></div></div>
         <div className={styles.metricCard}>
           <div className={styles.metricLabel}>AI Resolution Rate</div>
@@ -58,13 +81,22 @@ export function JustCallScene({ compact = false }: { compact?: boolean } = {}) {
   
       <div className={styles.conversation}>
         <div className={styles.intro}><p className={styles.title}>Talk to Steven Carter</p><p>Receive a call on your phone or talk via web</p></div>
-        <div className={styles.callTabs}><span>Web Call</span><span>Phone Call</span></div>
-        <div className={styles.transcript}>
-          <div><p className={styles.speaker}>You:</p><p>Hi John, can we schedule the sink installation?</p></div>
-          <div><p className={styles.speaker}>Steven Carter:</p><p>Of course! Saturday at 9 AM works.</p></div>
-          <div><p className={styles.speaker}>You:</p><p>Great, I’ll have everything ready.</p></div>
+        <div className={styles.callTabs}>{demo ? <>
+          <button type="button" onClick={demo.onHandoff} disabled={demo.handedOff || demo.playback.phase === 'idle' || demo.playback.phase === 'complete'}>{demo.handedOff ? 'Handed off' : 'Hand to human'}</button>
+          <button type="button" onClick={demo.onSms} disabled={demo.playback.phase !== 'complete' || demo.handedOff || demo.smsSent}>{demo.smsSent ? 'SMS sent' : 'Send SMS'}</button>
+        </> : <><span>Web Call</span><span>Phone Call</span></>}</div>
+        <div ref={transcript} className={`${styles.transcript} ${demo ? styles.demoTranscript : ''}`} role={demo ? 'log' : undefined} aria-label={demo ? 'JustCall conversation' : undefined} aria-live="polite" tabIndex={demo ? 0 : undefined}>
+          {demo ? demo.lines.slice(0, Math.max(1, demo.playback.line + 1)).map((line, index) => <div key={`${index}-${line.text}`}><p className={styles.speaker}>{line.speaker === 'caller' ? 'You' : line.speaker === 'human' ? 'Maya' : 'Steven Carter'}:</p><p>{line.text}</p></div>) : <>
+          <div><p className={styles.speaker}>You:</p><p>{example?.caller ?? 'Hi John, can we schedule the sink installation?'}</p></div>
+          <div><p className={styles.speaker}>Steven Carter:</p><p>{example?.reply ?? 'Of course! Saturday at 9 AM works.'}</p></div>
+          <div><p className={styles.speaker}>You:</p><p>{example?.followUp ?? 'Great, I’ll have everything ready.'}</p></div>
+          </>}
         </div>
-        <div className={styles.callBar}><span className={`${styles.avatar} ${styles.avatarPhoto}`} /><div><p className={styles.speaker}>Steven Carter</p><p className={styles.muted}>01:16</p></div><span className={styles.hangup}><PhoneIcon /></span></div>
+        <div className={styles.callBar}><span className={`${styles.avatar} ${styles.avatarPhoto}`} /><div className={styles.callInfo}><p className={styles.speaker}>{demo?.handedOff ? 'Maya' : 'Steven Carter'}</p><p className={styles.muted}>{demo ? callTime(demo.playback.elapsed) : '01:16'}</p></div>{demo ? <>
+          <button type="button" data-justcall-play className={`${styles.hangup} ${styles.play}`} onClick={demo.onToggle} aria-label={demo.playback.phase === 'playing' ? 'Pause JustCall conversation' : demo.playback.phase === 'paused' ? 'Resume JustCall conversation' : 'Play JustCall conversation'}><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">{demo.playback.phase === 'playing' ? <path d="M6 5h4v14H6zm8 0h4v14h-4z" /> : <path d="m8 5 11 7-11 7z" />}</svg></button>
+          <button type="button" className={styles.replay} onClick={demo.onReplay} aria-label="Replay JustCall conversation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6" /></svg></button>
+        </> : <span className={styles.hangup}><PhoneIcon /></span>}</div>
+        {demo && <p className={styles.demoStatus} role="status">{demo.playback.phase === 'idle' ? 'Ready to call' : demo.playback.phase === 'paused' ? 'Paused' : demo.status}</p>}
       </div>
     </div>
   </div>;

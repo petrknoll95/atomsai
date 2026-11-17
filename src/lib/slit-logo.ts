@@ -130,3 +130,36 @@ export function markBounds() {
   const half = Math.max(...slits.map((s) => Math.sqrt(s.r ** 2 - (s.x - s.cx) ** 2)));
   return { x: left, y: 50 - half, width: 100 - 2 * left, height: 2 * half };
 }
+
+/**
+ * The AI identity "Listening" state, from atoms-ai-brand src/data/aiIdentity.ts
+ * (signalMotion.states.listening) and src/scripts/signal-engine.ts: a 2.4 s
+ * receptive loop travelling from the outer blades toward the center.
+ */
+export const listeningMotion = {
+  duration: 2400,
+  /** [phase, retreat as a fraction of the slit width], eased between frames. */
+  frames: [[0, .3], [.42, .04], [.76, .3], [1, .3]] as const,
+  /** Delay per pair, outermost first. */
+  stagger: 120,
+  /** Blend in and out of the state, as the Signal engine does. */
+  transitionMs: 600,
+};
+
+/** Quintic smootherstep: zero velocity and acceleration at both ends. */
+export const smootherstep = (value: number) => {
+  const t = Math.max(0, Math.min(1, value));
+  return t * t * t * (t * (t * 6 - 15) + 10);
+};
+
+/** Retreat of a blade pair (fraction of its slit width) after `elapsed` ms of Listening. */
+export function listeningRetreat(elapsed: number, n: number, copies = slitDefaults.copies) {
+  const { duration, frames, stagger } = listeningMotion;
+  const rank = copies - n;
+  const phase = (Math.max(0, elapsed - rank * stagger) % duration) / duration;
+  for (let i = 1; i < frames.length; i++) {
+    const [end, to] = frames[i], [start, from] = frames[i - 1];
+    if (phase <= end) return from + (to - from) * ease((phase - start) / (end - start));
+  }
+  return frames[frames.length - 1][1];
+}

@@ -1,7 +1,7 @@
 .faq {
   --faq-duration: 480ms;
   --faq-ease: cubic-bezier(.4, 0, .2, 1);
-  padding-block: 64px 160px;
+  padding-block: var(--faq-padding-block, 64px 160px);
   background: var(--color-background);
 }
 .faqGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--grid-gap); }
@@ -33,7 +33,7 @@
 .question summary::-webkit-details-marker { display: none; }
 .question summary > span { flex: 1; min-width: 0; }
 .question summary img, .customQuestion img { flex: none; width: 24px; height: 24px; }
-.question[open] { margin-block: 16px; padding-block: 28px; background: var(--color-surface); }
+.question[open] { margin-block: 16px; padding-block: 28px; background: color-mix(in srgb, var(--palette-mist) 45%, var(--palette-paper)); }
 .question summary > .questionIcon { display: grid; flex: 0 0 24px; width: 24px; height: 24px; }
 .questionIcon img { grid-area: 1 / 1; transition: transform var(--faq-duration) var(--faq-ease), opacity 240ms ease; }
 .openIcon { opacity: 1; transform: rotate(0deg); }
@@ -66,7 +66,9 @@
 .customQuestionWrap { padding-block: 16px; }
 .customQuestion { display: flex; align-items: center; gap: 16px; padding: 15px 23px; border: 1px solid var(--color-border-subtle); border-radius: 12px; font-size: var(--text-lead); font-weight: var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; line-height: 25px; color: var(--color-muted-foreground); transition: border-color 240ms ease, var(--focus-transition); }
 .customQuestion input { flex: 1; min-width: 0; width: 100%; padding: 0; border: 0; background: transparent; color: var(--color-foreground); font: inherit; font-variation-settings: inherit; }
-.customQuestion input::placeholder { color: var(--color-muted-foreground); opacity: 1; }
+.customQuestion input { text-overflow: ellipsis; }
+/* Narrow phones and the two-column tablet FAQ cannot fit the full prompt. */
+.customQuestion input::placeholder { color: var(--color-muted-foreground); opacity: 1; text-overflow: ellipsis; }
 .customQuestion:hover { border-color: var(--color-border); }
 .questionSubmit { display: grid; place-items: center; flex: none; width: 44px; height: 44px; margin: -10px; padding: 10px; border: 0; border-radius: 50%; --button-fill: transparent; color: var(--color-primary); transition: background-color .2s ease, transform .2s ease;  --button-clip-radius:999px;}
 .questionSubmit:enabled:hover { --button-fill: var(--color-surface);  }
@@ -78,7 +80,7 @@
 .generatedAnswer { text-wrap: wrap; }
 .generatedAnswer [data-answer-word] { display: inline-block; }
 .thinking { display: flex; align-items: center; gap: 10px; height: 24px; margin-top: 20px; overflow: hidden; color: var(--color-muted-foreground); font-size: 14px; }
-.thinkingLogo { display: block; flex: none; width: 20px; height: 18px; color: var(--color-primary); }
+.thinkingLogo { display: block; flex: none; width: 21px; height: 20px; color: var(--color-primary); }
 @media (prefers-reduced-motion: reduce) {
   .question, .question::details-content, .questionIcon img, .customQuestion { transition: none; }
   .questionSubmit { transition: none; transform: none !important; }
@@ -142,7 +144,7 @@
   .footerTop { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); }
 }
 @media (max-width: 767px) {
-  .faq { padding-block: 64px 80px; }
+  .faq { padding-block: var(--faq-padding-block, 64px 80px); }
   .faqGrid { grid-template-columns: 1fr; gap: 48px; }
   .faqIntro { padding-right: 0; gap: 32px; }
   .faqHeader { gap: 20px; }

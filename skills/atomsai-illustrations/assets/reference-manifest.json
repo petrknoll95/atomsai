@@ -1,0 +1,63 @@
+{
+  "version": 2,
+  "source": "Current local gallery renderer; historical SVG masters are not visual baselines.",
+  "gallery": [
+    "full-visibility",
+    "built-in-your-stack",
+    "compounding-outcomes",
+    "stack",
+    "input",
+    "orbit",
+    "stack-2",
+    "focus",
+    "modular",
+    "always-on",
+    "momentum",
+    "layers",
+    "states",
+    "unfolding",
+    "nested",
+    "filtering",
+    "precision",
+    "versatility",
+    "one-user",
+    "two-users",
+    "three-users"
+  ],
+  "references": [
+    "layers",
+    "modular",
+    "orbit",
+    "always-on",
+    "filtering",
+    "versatility"
+  ],
+  "inputs": {
+    "src/scripts/illustration-3d/data/reference-metrics.json": "af1e13e45fff559e26556cb774a2c557526bfe5179d1c477643ba6d558cee65b",
+    "src/pages/illustration.astro": "5d652ff3cd2730e0cf183b396f7771ab9db8d68a5f5f710691eb736a348ac90a",
+    "src/data/colors.ts": "007bd260bb45644798b0ca60fb34470b047758849a9145e9c8fa8055d0b44d06",
+    "src/scripts/illustration-3d/geometry.ts": "8936fae688a14a870a4bb9d81f9fc0d923a96a5ac9f9b2091c99f1c7a05f1325",
+    "src/scripts/illustration-3d/primitives.ts": "b743ed8d7bd918ed27acab2166457ac67d55216782b6dd4de8a87aca0ac3cdb6",
+    "src/scripts/illustration-3d/models.ts": "aef58ffd1e57db82d039c31d5b1ae52465699fe00ea2028ec3dab1eea641d706",
+    "src/scripts/illustration-3d/render.ts": "6b2caf0b198f52ce773aedf96e45bf3868a227ca087f89553298c6eab4ee8d80"
+  },
+  "runtime": {
+    "runtime/colors.mjs": "0f191911dd96363fdc3848f2c9fdb2faa461ea3c0d7c1b2895fe6c9a0eba38bb",
+    "runtime/geometry.mjs": "30035210b6138a6fef5dbbfeb93fc54ce490ecf483ed3ccf2c23bc0526616816",
+    "runtime/primitives.mjs": "f0e915276992374385ac16266543431f16104ab78265c11900e73eb23f9dc039",
+    "runtime/models.mjs": "ba8e11b0eb0af67734f9c54ef50f7558786ae14e304e11721cf11e685bd7a1c7",
+    "runtime/render.mjs": "26526560379516ced642c84038f4175a3e42f36534f16e4da8e7f7bb1b52ad4b"
+  },
+  "palette": {
+    "iris": "#A77BCA",
+    "dark": "#10231E",
+    "light": "#FAFAFA"
+  },
+  "projection": {
+    "size": 384,
+    "yawDegrees": 45,
+    "pitchDegrees": 30,
+    "stroke": 1.28,
+    "hiddenOpacity": 0.35
+  }
+}

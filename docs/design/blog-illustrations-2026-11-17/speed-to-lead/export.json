@@ -1,0 +1,27 @@
+{
+  "article": "speed-to-lead",
+  "skill": "https://petrknoll95.github.io/atoms-ai-brand/skills/atomsai-illustrations/SKILL.md",
+  "revision": "Abstract 3D relationships with coherent solids, gaps and boundaries; approved backgrounds, 1.6-unit Paper outlines, Cream highlights and square-contained 4:3 framing.",
+  "recipe": "docs/design/blog-illustrations-2026-11-17/speed-to-lead/recipe.mjs",
+  "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
+  "transparentMaster": "public/assets/blog/illustrations/speed-to-lead-art.svg",
+  "svgSha256": "1fdf9e8ea8b9157b26e2f3b2d7006dd4851bf5f0d538df4063b17193bc8b1e0f",
+  "displayVector": "/assets/blog/illustrations/speed-to-lead.svg",
+  "cover": "/assets/blog/illustrations/speed-to-lead.webp",
+  "width": 3072,
+  "height": 2304,
+  "aspectRatio": "4:3",
+  "squareArtViewport": [
+    64,
+    0,
+    384,
+    384
+  ],
+  "background": "#FF671F",
+  "outline": "#FAFAFA",
+  "highlight": "#F6F1E8",
+  "stroke": 1.6,
+  "neutralBoundsExtent": 109.22651428571427,
+  "encoding": "SVG on the page; lossless 3072 × 2304 sRGB WebP for social metadata.",
+  "checks": "Runtime hashes, recipe assertions, vector-only export and padded square bounds passed."
+}

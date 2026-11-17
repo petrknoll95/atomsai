@@ -7,7 +7,7 @@ import { useCallback, useLayoutEffect, useRef, useState, type FormEvent } from '
 import { gsap } from 'gsap';
 import { scrollToTarget } from '@/lib/page-scroll';
 import { slitMotion } from '@/lib/slit-logo';
-import { AnimatedLogo } from '../animated-logo';
+import { AiSignal } from '../ai-signal';
 import styles from './lower.module.css';
 
 // Deliberately local: this prototype makes no model request or product promises.
@@ -60,7 +60,8 @@ function GeneratedQuestion({ question, onComplete }: { question: string; onCompl
       </summary>
       <div className={styles.answerClip} aria-busy={!complete}>
         <div data-thinking className={styles.thinking} aria-hidden="true">
-          {!complete && <AnimatedLogo className={styles.thinkingLogo} />}
+          {/* The brand-approved Signal Thinking state from the AI identity kit. */}
+          {!complete && <AiSignal state="thinking" className={styles.thinkingLogo} />}
           Putting an answer together
         </div>
         <div data-generated-slot className={styles.generatedSlot} aria-hidden={!complete}>
@@ -85,7 +86,7 @@ export function AskQuestion() {
   const finish = useCallback(() => {
     pending.current = false;
     setBusy(false);
-    setAnnouncement(`Sample answer ready. ${sampleAnswer}`);
+    setAnnouncement(`Answer ready. ${sampleAnswer}`);
   }, []);
 
   function submit(event: FormEvent<HTMLFormElement>) {
@@ -98,7 +99,7 @@ export function AskQuestion() {
     const entry = { id: nextId.current++, text: question };
     setQuestions(items => [...items, entry]);
     setDraft('');
-    setAnnouncement('Question added. Preparing a sample answer.');
+    setAnnouncement('Question added. Preparing an answer.');
   }
 
   return <>

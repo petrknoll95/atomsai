@@ -1,0 +1,256 @@
+{
+  "label": "About AtomsAI",
+  "route": "/company/about",
+  "title": "It started with a phone call. It didn't stop there.",
+  "intro": [
+    "We started SaaS Labs in 2016 to make business communication simpler. Today our technology powers over a billion conversations a year. Each one showed us more to build."
+  ],
+  "actions": [],
+  "sections": [
+    {
+      "id": "story",
+      "title": "",
+      "label": "",
+      "intro": [],
+      "blocks": [
+        {
+          "title": "A simpler way to talk",
+          "body": [
+            "SaaS Labs began with one product: a simpler phone system for sales and support teams."
+          ],
+          "links": [],
+          "list": [],
+          "label": "How it started",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "The whole stack",
+          "body": [
+            "Applications, speech models, real-time infrastructure, and custom engineering, each one strengthening the others."
+          ],
+          "links": [],
+          "list": [],
+          "label": "What we build",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Bigger problems",
+          "body": [
+            "A decade in, we're taking on harder problems with the same belief that got us started."
+          ],
+          "links": [],
+          "list": [],
+          "label": "What's next",
+          "category": "",
+          "tags": []
+        }
+      ],
+      "links": [],
+      "kind": "cards"
+    },
+    {
+      "id": "the-real-world-had-more-to-say",
+      "title": "The real world had more to say",
+      "label": "What the calls taught us",
+      "intro": [
+        "Three things kept coming up in the calls. Solving them took us beyond business software, into speech models, real-time infrastructure, and the intelligence that turns conversations into action."
+      ],
+      "blocks": [
+        {
+          "title": "People interrupt",
+          "body": [
+            "Real conversations overlap, pause, and change direction mid-sentence."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Phone lines distort voices",
+          "body": [
+            "Narrow audio, noise, and accents break models trained on clean speech."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Questions expect action",
+          "body": [
+            "Customers ask the unexpected and expect something to happen next."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        }
+      ],
+      "links": [],
+      "kind": "rows"
+    },
+    {
+      "id": "loop",
+      "title": "One breakthrough made the next possible",
+      "label": "",
+      "intro": [
+        "What we learn building one strengthens the others.",
+        "That’s how SaaS Labs grew into AtomsAI."
+      ],
+      "blocks": [
+        {
+          "title": "Applications",
+          "body": [
+            "Show us what businesses need."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Models & infrastructure",
+          "body": [
+            "Help us solve it."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Custom engineering",
+          "body": [
+            "Takes us into problems no product covers."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        }
+      ],
+      "links": [],
+      "kind": "dark"
+    },
+    {
+      "id": "people",
+      "title": "Four kinds of work, one problem",
+      "label": "The people",
+      "intro": [
+        "Research, engineering, go-to-market, and support work on the same conversations, from the model to the customer who depends on it."
+      ],
+      "blocks": [
+        {
+          "title": "Research",
+          "body": [
+            "Speech and language models built for phone-quality audio, accents, and interruptions."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Engineering",
+          "body": [
+            "Real-time infrastructure and the applications that put it to work."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Go-to-market",
+          "body": [
+            "Helping businesses find, adopt, and get results from what we build."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Support",
+          "body": [
+            "With customers around the clock, in every time zone we serve."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        }
+      ],
+      "links": [
+        {
+          "label": "Explore careers",
+          "href": "/company/careers"
+        }
+      ],
+      "kind": "cards"
+    },
+    {
+      "id": "india",
+      "title": "Built in India. Put to work around the world",
+      "label": "Where we work",
+      "intro": [
+        "Headquartered in Bengaluru, with customers in more than 20 countries."
+      ],
+      "blocks": [],
+      "links": [
+        {
+          "label": "Explore what we build",
+          "href": "/applications"
+        },
+        {
+          "label": "Join the team",
+          "href": "/company/careers"
+        }
+      ],
+      "kind": "statement"
+    }
+  ],
+  "closing": {
+    "title": "Ten years in. The best problems are still ahead",
+    "body": [
+      "Explore what we build, or come build it with us."
+    ],
+    "links": [
+      {
+        "label": "Explore what we build",
+        "href": "/applications"
+      },
+      {
+        "label": "Explore careers",
+        "href": "/company/careers"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "value": "2016",
+      "label": "Founded"
+    },
+    {
+      "value": "1B+",
+      "label": "Conversations a year"
+    },
+    {
+      "value": "20+",
+      "label": "Countries"
+    }
+  ]
+}

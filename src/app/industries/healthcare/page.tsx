@@ -39,7 +39,6 @@ export default function HealthcarePage() {
             <li><span>07:44</span><div><strong>A new time is confirmed.</strong><p>Same provider. Tuesday at four.</p></div></li>
             <li><span>08:09</span><div><strong>The freed slot is filled.</strong><p>A waitlisted patient says yes.</p></div></li>
           </ol>
-          <p className={styles.caption}>Illustrative workflow · configured with your team</p>
         </div>
       </div>
     </section>

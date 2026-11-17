@@ -10,33 +10,17 @@ import { ButtonLink, Eyebrow } from '@/components/ui';
 import { attachKineticCircles } from './kinetic-circles';
 import styles from './proof.module.css';
 
-// Descriptions and destinations from atomsai.com's industry cards, checked
-// against the corresponding industry pages on 26 October 2026.
+// Approved client copy in the original circular gallery. Retain the existing
+// art direction and image assets pending photography for the new categories.
 const industries = [
-  {
-    name: 'Manufacturing',
-    image: 'BackgroundImage',
-    description: 'Connect the supplier, the shop floor and the office.',
-    href: 'https://atomsai.com/industries/manufacturing',
-  },
-  {
-    name: 'Healthcare',
-    image: 'BackgroundImage1',
-    description: 'More time for people. Less time finding answers.',
-    href: '/industries/healthcare',
-  },
-  {
-    name: 'Insurance',
-    image: 'BackgroundImage2',
-    description: 'Less chasing. More informed underwriting.',
-    href: 'https://atomsai.com/industries/insurance',
-  },
-  {
-    name: 'Logistics',
-    image: 'BackgroundImage3',
-    description: 'Keep freight, documents and exceptions moving.',
-    href: 'https://atomsai.com/industries/logistics',
-  },
+  { name: 'Home services', slug: 'home-services', image: 'BackgroundImage3',
+    description: 'Capture job inquiries, fill the calendar, and keep the office organized.', href: '/company/contact' },
+  { name: 'Healthcare', slug: 'healthcare', image: 'BackgroundImage1',
+    description: 'Handle routine patient inquiries, coordinate appointments, and route requests to staff.', href: '/industries/healthcare' },
+  { name: 'Financial services', slug: 'financial-services', image: 'BackgroundImage2',
+    description: 'Reach customers with context and manage timely, traceable follow-ups.', href: '/company/contact' },
+  { name: 'Education', slug: 'education', image: 'BackgroundImage',
+    description: 'Respond to admission inquiries and connect prospective students with advisors.', href: '/company/contact' },
 ];
 
 // Two cycles provide the five visible circles plus offscreen space for seamless
@@ -165,13 +149,25 @@ export function Industries() {
     };
   }, [emblaApi]);
 
+  useEffect(() => {
+    if (!emblaApi) return;
+    const selectLinkedIndustry = () => {
+      const index = industries.findIndex(industry => `#industry-${industry.slug}` === window.location.hash);
+      if (index >= 0) emblaApi.scrollTo(index, true);
+    };
+    selectLinkedIndustry();
+    window.addEventListener('hashchange', selectLinkedIndustry);
+    return () => window.removeEventListener('hashchange', selectLinkedIndustry);
+  }, [emblaApi]);
+
   const current = industries[active];
 
   return (
     <section className={`page-container ${styles.industries}`} id="industries" aria-labelledby="industries-title">
+      {industries.map(industry => <span key={industry.slug} id={`industry-${industry.slug}`} className={styles.industryAnchor} aria-hidden="true" />)}
       <header className={styles.industryHeader}>
         <Eyebrow href="https://atomsai.com/industries">Industries</Eyebrow>
-        <h2 className={`display ${styles.heading}`} id="industries-title">AI products and services for your industry.</h2>
+        <h2 className={`display ${styles.heading}`} id="industries-title">Every industry has its own version of success</h2>
       </header>
 
       <div className={styles.carousel} role="group" aria-roledescription="carousel" aria-label="Industries">
@@ -215,7 +211,7 @@ export function Industries() {
               <h3>{current.name}</h3>
               <p>{current.description}</p>
             </div>
-            <ButtonLink href={current.href} size="small" variant="outline">Learn More</ButtonLink>
+            <ButtonLink href={current.href} size="small" variant="outline">{current.href === '/company/contact' ? 'Discuss your workflow' : 'Learn More'}</ButtonLink>
           </div>
           <div className={styles.next}>
             <button type="button" className={styles.arrowButton} aria-label="Next industry" aria-controls="industry-gallery" onClick={() => emblaApi?.scrollNext()}>

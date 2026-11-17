@@ -1,0 +1,88 @@
+.section { --stage-gap:48px; position:relative; display:grid; grid-template-columns:minmax(0,1fr); gap:var(--stage-gap); align-items:center; padding-block:48px var(--section-space); scroll-margin-top:112px; }
+/* Intro + diagram row: one block so tablet can pin the headline with the diagram. */
+/* Custom property, not gap:inherit: on tablet the stage is pinned inside GSAP's pin-spacer. */
+.stage { display:grid; grid-template-columns:minmax(0,1fr); gap:var(--stage-gap); align-items:inherit; min-width:0; }
+.intro { min-width:0; text-align:center; }
+/* sRGB equivalent of the application panels' 4% cream / forest-shade mix, shared with Three.js surfaces. */
+.diagramRow { --diagram-surface:#1a2b26; --model-inset:8px; --model-outer-radius:calc(var(--radius-panel) - var(--model-inset)); --model-inner-radius:var(--radius-card); display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:var(--model-inset); align-items:stretch; width:100%; padding:var(--model-inset); position:relative; z-index:1; isolation:isolate; }
+/* The panel surface is its own layer so it can grow to the viewport while the row is pinned (operating-model-expand.ts). */
+.rowBackdrop { position:absolute; inset:0; z-index:-1; background:var(--palette-forest-shade); border-radius:var(--radius-panel); pointer-events:none; }
+.heading { font-size:clamp(44px,4.4vw,72px); line-height:1; text-wrap:balance; max-width:24ch; margin-inline:auto; }
+.description { max-width:52ch; margin:28px auto 0; font-size:clamp(18px,1.45vw,22px); line-height:1.5; color:var(--color-muted-foreground); }
+.visual { position:relative; min-width:0; padding-block:28px; }
+.art { width:100%; height:min(660px,calc(100svh - 216px)); min-height:340px; }
+/* Canvas and labels share one measured surface. */
+.art { position:relative; }
+.art > canvas { display:block; position:absolute; inset:0; width:100%; height:100%; touch-action:pan-y; }
+.sceneFallback { position:absolute; inset:12% 16%; display:flex; flex-direction:column; justify-content:space-around; }
+.sceneFallback i { display:block; width:100%; height:22%; border:1px solid var(--diagram-ink); border-radius:12%; background:var(--diagram-fill,var(--diagram-surface)); transform:rotate(-30deg) skewX(30deg) scaleY(.65); }
+.art[data-ready='true'] .sceneFallback { visibility:hidden; }
+.art[data-active='0'] .sceneFallback i:nth-child(3), .art[data-active='1'] .sceneFallback i:nth-child(2), .art[data-active='2'] .sceneFallback i:nth-child(1), .art[data-active='3'] .sceneFallback i { border-color:var(--palette-iris-light); background:var(--diagram-fill,var(--diagram-surface)); }
+.accordion { --color-foreground:var(--palette-cream); --color-muted-foreground:color-mix(in srgb,var(--palette-cream) 65%,var(--diagram-surface)); --color-secondary:color-mix(in srgb,var(--palette-cream) 10%,transparent); --color-secondary-foreground:var(--palette-cream); --color-ring:var(--palette-cream); display:grid; gap:8px; min-width:0; color:var(--color-foreground); }
+.item { position:relative; display:flex; flex-direction:column; border-radius:var(--radius-card); background:var(--diagram-surface); opacity:.5; transition:opacity .45s cubic-bezier(.22,1,.36,1); }
+.item[data-active='true'] { opacity:1; }
+.trigger { display:flex; align-items:baseline; gap:16px; width:100%; min-height:76px; padding:20px; border-radius:var(--radius-card); text-align:left; color:var(--color-muted-foreground); transition:color .3s ease; }
+.trigger:hover,.trigger:focus-visible,.item[data-active='true'] .trigger { color:var(--color-foreground); }
+/* A closed card is one big trigger: the button's hit area stretches over the whole card.
+   The open card keeps its own links clickable, so it doesn't stretch. */
+/* Static so the pseudo-element anchors to the card (.item), not the button (buttons.css makes buttons relative). */
+.item[data-active='false'] .trigger { position:static; }
+.item[data-active='false'] .trigger::after { content:''; position:absolute; inset:0; border-radius:var(--radius-card); }
+.item[data-active='false']:hover .trigger { color:var(--color-foreground); }
+.name { flex:1; font-size:clamp(24px,2vw,32px); line-height:1.08; }
+.indicator { flex:none; opacity:0; transform:translate(-4px,4px); transition:opacity .3s ease, transform .3s ease; }
+.item[data-active='true'] .indicator { opacity:1; transform:none; }
+.detail { display:grid; flex:0 1 auto; grid-template-rows:0fr; opacity:0; transition:grid-template-rows .5s cubic-bezier(.22,1,.36,1), flex-grow .5s cubic-bezier(.22,1,.36,1), opacity .15s ease; }
+.detail > div { display:flex; min-height:0; overflow:hidden; }
+.item[data-active='true'] .detail { flex-grow:1; grid-template-rows:1fr; opacity:1; transition: grid-template-rows .5s cubic-bezier(.22,1,.36,1), flex-grow .5s cubic-bezier(.22,1,.36,1), opacity .3s ease .12s; }
+.detailCopy { display:flex; flex:1; flex-direction:column; gap:12px; padding:0 20px 20px; font-size:var(--text-body); line-height:1.5; }
+.detailCopy > p { max-width:31ch; color:var(--color-muted-foreground); }
+.detailCopy a { margin-top:auto; }
+@media(min-width:768px) and (max-width:1199px) {
+  .section { grid-template-columns:minmax(0,1fr); --stage-gap:64px; }
+  .diagramRow { grid-template-columns:minmax(0,1fr) minmax(0,1fr); }
+  .visual { padding-block:0; }.art { height:min(560px,calc(100svh - 160px)); min-height:0; }.name { font-size:28px; }
+}
+@media(min-width:768px) and (max-width:1199px) and (max-height:699px) {
+  .diagramRow { grid-template-columns:minmax(0,1fr); }
+  .visual { width:min(100%,520px); justify-self:center; }
+}
+@media(max-width:767px) {
+  .section { grid-template-columns:minmax(0,1fr); --stage-gap:32px; padding-top:32px; scroll-margin-top:96px; }
+  .diagramRow { grid-template-columns:minmax(0,1fr); }
+  .heading { font-size:var(--text-display-large); max-width:14ch; }.description { margin-top:24px; max-width:36ch; }
+  .visual { width:100%; max-width:420px; justify-self:center; padding-block:16px; }
+  .art { height:min(560px,calc(100svh - 200px)); min-height:260px; }
+  .name { font-size:28px; }.trigger { min-height:76px; padding-block:20px; }
+  .detailCopy { padding-bottom:20px; }.detailCopy>p { max-width:36ch; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .section *, .section *::before { animation:none!important; transition:none!important; }
+}
+
+/* A pinned visual stays within the viewport on narrow and short screens. */
+.section[data-model-pin="visual"] { align-items:start; }
+.section[data-model-pin="visual"] .accordion { align-self:start; }
+.visual { --diagram-fill:var(--palette-forest-shade); --diagram-ink:var(--palette-cream); background:var(--diagram-surface); border-radius:var(--model-outer-radius) var(--model-inner-radius) var(--model-inner-radius) var(--model-outer-radius); overflow:hidden; }
+/* Even rhythm: the stats section above ends with 72px of padding; 40px more here puts the
+   intro 112px below the product logos and 112px above the diagram panel. */
+@media(min-width:1200px) and (min-height:700px) {
+  .section { --stage-gap:112px; padding-block:40px 48px; }
+  .description { margin-top:40px; }
+}
+
+/* Tablet pins the headline with the diagram: leave room for it so the whole stage fits on screen. */
+@media(min-width:768px) and (max-width:1199px) and (min-height:700px) {
+  .section[data-model-pin="stage"] .art { height:min(560px,calc(100svh - 420px)); min-height:280px; }
+}
+
+/* Concentric corners: anything touching the panel edge uses panel radius minus the inset;
+   corners between cards keep the card radius. Two columns: visual left, cards right. */
+.item:first-child { border-top-right-radius:var(--model-outer-radius); }
+.item:last-child { border-bottom-right-radius:var(--model-outer-radius); }
+/* Stacked: visual on top, cards below. */
+@media(max-width:767px), (min-width:768px) and (max-width:1199px) and (max-height:699px) {
+  .visual { border-radius:var(--model-outer-radius) var(--model-outer-radius) var(--model-inner-radius) var(--model-inner-radius); }
+  .item:first-child { border-top-right-radius:var(--model-inner-radius); }
+  .item:last-child { border-bottom-left-radius:var(--model-outer-radius); }
+}

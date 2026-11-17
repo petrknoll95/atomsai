@@ -1,0 +1,451 @@
+{
+  "label": "Infrastructure / PyAI",
+  "route": "/infrastructure",
+  "title": "The voice AI behind a billion phone calls a year. Now yours",
+  "intro": [
+    "The stack behind JustCall, ServiceAgent, and Helpwise, as one OpenAI-compatible API. Point your SDK at it, get a free key, and have an agent on a real number this week."
+  ],
+  "actions": [
+    {
+      "label": "Get a free API key",
+      "href": "https://console.pyai.com"
+    },
+    {
+      "label": "Explore the docs",
+      "href": "https://docs.pyai.com"
+    }
+  ],
+  "sections": [
+    {
+      "id": "demo",
+      "title": "You've heard the claim. Have a conversation",
+      "label": "Hear it yourself",
+      "intro": [
+        "Call the agent and take it somewhere a script wouldn't cover. Ask a follow-up, correct a detail, or interrupt an answer. Then try your own instructions in the Playground."
+      ],
+      "blocks": [],
+      "links": [
+        {
+          "label": "Talk to the agent",
+          "href": "https://pyai.com/omni"
+        },
+        {
+          "label": "Open the Playground",
+          "href": "https://pyai.com/playground"
+        }
+      ],
+      "kind": "dark"
+    },
+    {
+      "id": "box",
+      "title": "Six things you can have running in an afternoon",
+      "label": "What's in the box",
+      "intro": [
+        "Build a voice agent or plug speech into your existing stack, with APIs for the conversation, call controls, and what happens afterward."
+      ],
+      "blocks": [
+        {
+          "title": "Your agent gets a phone number",
+          "body": [
+            "Connect a managed number or your own carrier, with transfers, hold, and keypad input built in. On outbound calls, AMD tells you who picked up: a person, a voicemail, or a screening assistant.",
+            "Build an inbound support line, a callback flow, or routing based on who answers."
+          ],
+          "links": [
+            {
+              "label": "Telephony docs",
+              "href": "https://pyai.com/telephony"
+            }
+          ],
+          "list": [],
+          "label": "Telephony · AMD",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "You see the words as they're spoken",
+          "body": [
+            "Hear gives your app a live view of the call, updating the transcript as the caller speaks and marking each utterance final. About 200 ms to the first partial, measured in-region.",
+            "Build live captions, or index recorded calls for search."
+          ],
+          "links": [
+            {
+              "label": "Hear docs",
+              "href": "https://pyai.com/hear"
+            }
+          ],
+          "list": [],
+          "label": "Hear",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Build the agent around your own functions",
+          "body": [
+            "Connect your instructions, knowledge, and application tools, so the agent can check an order, find an appointment, and respond with the result during the call.",
+            "Configure and test it in Agents, or build directly with the Omni SDK."
+          ],
+          "links": [
+            {
+              "label": "Omni docs",
+              "href": "https://pyai.com/omni"
+            }
+          ],
+          "list": [],
+          "label": "Omni · Agents",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Your text becomes the voice they hear",
+          "body": [
+            "Choose a stock, cloned, or designed voice, then stream spoken responses in the audio format your app needs. Speech starts within about 53 ms, measured in-region.",
+            "Add spoken replies to your app, generate phone prompts, or feed your existing pipeline."
+          ],
+          "links": [
+            {
+              "label": "Speak docs",
+              "href": "https://pyai.com/speak"
+            }
+          ],
+          "list": [],
+          "label": "Speak",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "The call ends with data your app can use",
+          "body": [
+            "Receive a summary, a disposition, the next step, and structured fields you define. Deliver the result through a webhook or a supported integration when the call ends.",
+            "Capture booking details, create a CRM note, or pass a summary into your workflow."
+          ],
+          "links": [
+            {
+              "label": "Recap docs",
+              "href": "https://pyai.com/recap"
+            }
+          ],
+          "list": [],
+          "label": "Recap",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Review each finding alongside its rule",
+          "body": [
+            "Submit calls against your rule packs and retrieve scorecards with cited findings, redactions, and a tamper-evident audit hash. Works on calls from any stack.",
+            "Build a review queue, flag specific findings, or bring evaluations into your dashboard."
+          ],
+          "links": [
+            {
+              "label": "Trace docs",
+              "href": "https://pyai.com/trace"
+            }
+          ],
+          "list": [],
+          "label": "Trace · Beta",
+          "category": "",
+          "tags": []
+        }
+      ],
+      "links": [
+        {
+          "label": "Explore the APIs",
+          "href": "https://docs.pyai.com/api-reference"
+        }
+      ],
+      "kind": "rows"
+    },
+    {
+      "id": "lessons",
+      "title": "Three lessons from a billion calls",
+      "label": "Our point of view",
+      "intro": [],
+      "blocks": [
+        {
+          "title": "Phone audio needs its own training data",
+          "body": [
+            "Accents, noise, and compression come with the call. Hear is tuned for 8 kHz narrowband audio, so it transcribes what your phone line delivers."
+          ],
+          "links": [],
+          "list": [],
+          "label": "Hear",
+          "category": "",
+          "tags": [],
+          "metric": "4.76% word error rate on phone audio with accents"
+        },
+        {
+          "title": "Turn-taking has to be built into the model",
+          "body": [
+            "Hearing, thinking, and speaking operate as a single model, so it stops when the caller does and replies at a human pace."
+          ],
+          "links": [],
+          "list": [],
+          "label": "Omni",
+          "category": "",
+          "tags": [],
+          "metric": "About 390 ms from the caller stopping to the reply starting"
+        },
+        {
+          "title": "One system has to run the whole call",
+          "body": [
+            "The line, the conversation, and the notes run together, so there is one place to debug and one bill to read."
+          ],
+          "links": [],
+          "list": [],
+          "label": "Telephony · Omni · Recap",
+          "category": "",
+          "tags": [],
+          "metric": "One account one key, one bill"
+        }
+      ],
+      "links": [],
+      "kind": "cards"
+    },
+    {
+      "id": "build",
+      "title": "Use it, build on it, or have us build it",
+      "label": "Build or buy",
+      "intro": [],
+      "blocks": [
+        {
+          "title": "Buy a finished product",
+          "body": [
+            "If one of ours already does the job, use it. JustCall, ServiceAgent, and Helpwise run on this layer."
+          ],
+          "links": [
+            {
+              "label": "Applications",
+              "href": "/applications"
+            }
+          ],
+          "list": [],
+          "label": "Applications",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Build on the API",
+          "body": [
+            "You write the behavior, and we run the calls. Point your OpenAI SDK at it, and you're running in an afternoon."
+          ],
+          "links": [
+            {
+              "label": "Get a free key",
+              "href": "https://console.pyai.com"
+            }
+          ],
+          "list": [],
+          "label": "PyAI",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Build it with us",
+          "body": [
+            "When the workflow needs more than an API, our engineers scope and ship it with you on the same layer."
+          ],
+          "links": [
+            {
+              "label": "AI Services",
+              "href": "/approach"
+            }
+          ],
+          "list": [],
+          "label": "AI Services",
+          "category": "",
+          "tags": []
+        }
+      ],
+      "links": [],
+      "kind": "cards"
+    },
+    {
+      "id": "your-stack",
+      "title": "Keep your stack. Nothing you run today has to go",
+      "label": "Integrations",
+      "intro": [],
+      "blocks": [],
+      "links": [],
+      "kind": "code",
+      "items": [
+        "On the OpenAI SDK? Change the base URL and the key. Speech and transcription work the same.",
+        "On Twilio, Plivo, or your own carrier? Keep it. Or take a managed number in the US or India.",
+        "On LiveKit or Pipecat? PyAI drops in as the voice, and your loop stays yours.",
+        "On HubSpot, Salesforce, or Zendesk? The call notes write into them."
+      ],
+      "examples": [
+        {
+          "label": "Python",
+          "code": "# before\nclient = OpenAI()\n\n# after\nclient = OpenAI(\n  base_url=\"https://api.pyai.com/v1\",\n  api_key=os.environ[\"PYAI_API_KEY\"])\n\n# everything else stays\nclient.audio.speech.create(\n  model=\"pyai-speak\", voice=\"stock_ava_en_us\",\n  input=\"Hi, thanks for calling.\")"
+        },
+        {
+          "label": "TypeScript",
+          "code": "// before\nconst client = new OpenAI();\n\n// after\nconst client = new OpenAI({\n  baseURL: \"https://api.pyai.com/v1\",\n  apiKey: process.env.PYAI_API_KEY });\n\n// everything else stays\nawait client.audio.speech.create({\n  model: \"pyai-speak\", voice: \"stock_ava_en_us\",\n  input: \"Hi, thanks for calling.\" });"
+        },
+        {
+          "label": "cURL",
+          "code": "# same request shape as OpenAI's\ncurl https://api.pyai.com/v1/audio/speech \\\n  -H \"Authorization: Bearer $PYAI_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"pyai-speak\",\n       \"voice\":\"stock_ava_en_us\",\n       \"input\":\"Hi, thanks for calling.\"}' \\\n  -o speech.mp3"
+        }
+      ]
+    },
+    {
+      "id": "trust",
+      "title": "For the people who have to sign it off",
+      "label": "Security and compliance",
+      "intro": [],
+      "blocks": [
+        {
+          "title": "Your data stays on your servers",
+          "body": [
+            "Your knowledge base never moves. PyAI reads what each answer needs, at the moment it needs it."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Keys never reach the browser",
+          "body": [
+            "Each key is scoped to one project and lives on your server. Browsers get short-lived tokens."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Recording stays off until you turn it on",
+          "body": [
+            "Recording is off by default. You set the consent line, retention period, and regional rules per call."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Every reviewed call keeps its evidence",
+          "body": [
+            "Trace stores the rule, the finding, and a tamper-evident hash together, ready for an audit."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        }
+      ],
+      "links": [
+        {
+          "label": "Trust & security",
+          "href": "/trust"
+        }
+      ],
+      "kind": "cards"
+    },
+    {
+      "id": "faq",
+      "title": "Before you get a key",
+      "label": "",
+      "intro": [
+        "Anything else, write to us. A person reads it, usually the same day."
+      ],
+      "blocks": [
+        {
+          "title": "Is this AtomsAI or PyAI?",
+          "body": [
+            "PyAI is the infrastructure layer of AtomsAI, with its own console, docs, and pricing. You build on the same layer our products do."
+          ],
+          "links": [],
+          "list": [],
+          "label": ""
+        },
+        {
+          "title": "Do I need your products to use it?",
+          "body": [
+            "No. Bring your own app, carrier, and CRM."
+          ],
+          "links": [],
+          "list": [],
+          "label": ""
+        },
+        {
+          "title": "How fast is it on a real call?",
+          "body": [
+            "About 390 ms from the caller finishing a sentence to hearing the reply, measured in-region. Not an SLA."
+          ],
+          "links": [],
+          "list": [],
+          "label": ""
+        },
+        {
+          "title": "Does my OpenAI code work?",
+          "body": [
+            "For speech and transcription, yes, after changing the base URL and the key. Real-time agents use PyAI's own connection, which the SDKs handle."
+          ],
+          "links": [],
+          "list": [],
+          "label": ""
+        },
+        {
+          "title": "Which languages?",
+          "body": [
+            "Twenty in all. Twelve have voice agents, nineteen have text-to-speech, eleven have speech-to-text."
+          ],
+          "links": [],
+          "list": [],
+          "label": ""
+        },
+        {
+          "title": "Where do I start?",
+          "body": [
+            "Get a free sandbox key, or tell us what you're building and we'll start there."
+          ],
+          "links": [],
+          "list": [],
+          "label": ""
+        }
+      ],
+      "links": [],
+      "kind": "faq"
+    }
+  ],
+  "closing": {
+    "title": "Get a key, or get in touch",
+    "body": [
+      "A free key needs no card and no sales call. If the workflow needs more than an API, tell us, and we'll build it with you."
+    ],
+    "links": [
+      {
+        "label": "Get a free API key",
+        "href": "https://console.pyai.com"
+      },
+      {
+        "label": "Talk to AtomsAI",
+        "href": "/company/contact"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "value": "1B+",
+      "label": "Phone calls a year"
+    },
+    {
+      "value": "7,000+",
+      "label": "Businesses on it"
+    },
+    {
+      "value": "20+",
+      "label": "Countries"
+    },
+    {
+      "value": "200",
+      "label": "Voices, 20 languages"
+    }
+  ]
+}

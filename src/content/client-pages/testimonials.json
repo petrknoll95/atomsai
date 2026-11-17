@@ -1,0 +1,483 @@
+{
+  "label": "Testimonials",
+  "route": "/customers/testimonials",
+  "title": "In their words",
+  "intro": [
+    "Sales teams, service businesses, and developers run AtomsAI on real calls every day. This is what they say about it."
+  ],
+  "actions": [
+    {
+      "label": "Read the success stories",
+      "href": "/customers/success-stories"
+    },
+    {
+      "label": "Browse the quotes",
+      "href": "#wall"
+    }
+  ],
+  "sections": [
+    {
+      "id": "wall",
+      "title": "Wall of love",
+      "label": "Customers on AtomsAI",
+      "intro": [
+        "Filter by the problem you want solved, or by product."
+      ],
+      "blocks": [
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/scsp-solar/"
+            }
+          ],
+          "list": [],
+          "quote": "“We were converting about 30% of inbound leads to appointments. But after we rolled out JustCall, integrated it with Pipedrive and Zapier, and starting sending out automated texts right after a lead came in, we brought that appointment-conversion rate up to 50%.”",
+          "attribution": "Brian Mason Chief Financial Officer, SCSP Solar",
+          "label": "Solar and energy",
+          "category": "justcall",
+          "tags": [
+            "results",
+            "speed",
+            "integrations"
+          ]
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/cirrusled/"
+            }
+          ],
+          "list": [],
+          "quote": "“If you’re doing 50 to 100 calls a day, the time wasted switching between platforms adds up fast.”",
+          "attribution": "Dan Kerluke Chief Growth Officer, Cirrus Systems",
+          "label": "Manufacturing",
+          "category": "justcall",
+          "tags": [
+            "integrations"
+          ]
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/gostudent/"
+            }
+          ],
+          "list": [],
+          "quote": "“Click-to-dial from HubSpot, instant call logging, and real-time reporting — JustCall was exactly what we needed to scale efficiently.”",
+          "attribution": "Giordano Faccani Global Operations Manager, GoStudent",
+          "label": "Education",
+          "category": "justcall",
+          "tags": [
+            "integrations"
+          ]
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/pinnacle-career-institute/"
+            }
+          ],
+          "list": [],
+          "quote": "“Thanks to the JustCall HubSpot integration, our agents can now click to dial a student right from their HubSpot environment, which saves our agents significant time throughout the day and means we can connect with more customers and potential customers than ever.”",
+          "attribution": "Matthew Beer Vice President of Enrollment Management, Pinnacle Career Institute",
+          "label": "Education",
+          "category": "justcall",
+          "tags": [
+            "integrations",
+            "results"
+          ]
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/nexford/"
+            }
+          ],
+          "list": [],
+          "quote": "“More calls are being made, which leads to more application submissions and higher enrollments. This wouldn’t have been possible with our previous provider. JustCall allowed us to improve the productivity of each agent.”",
+          "attribution": "Barney Woodbridge Head of Growth, Nexford University",
+          "label": "Education",
+          "category": "justcall",
+          "tags": [
+            "results"
+          ]
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [],
+          "list": [],
+          "quote": "“After-hours calls used to hit voicemail. Now emergencies are booked and dispatched before my techs are even awake.”",
+          "attribution": "Dana Whitfield Operations manager, Brightline Plumbing",
+          "label": "Home services",
+          "category": "serviceagent",
+          "tags": [
+            "coverage"
+          ]
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/getmovers/"
+            }
+          ],
+          "list": [],
+          "quote": "“Thanks to JustCall, we can have those calls ring simultaneously to several agents around the world — so there’s always an expert available to speak with our customers.”",
+          "attribution": "Victor Kerr Marketing Director, GetMovers",
+          "label": "Business services",
+          "category": "justcall",
+          "tags": [
+            "coverage"
+          ]
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/claro-insurance/"
+            }
+          ],
+          "list": [],
+          "quote": "“JustCall’s real-time analytics are super useful. We can now track everything from how customers navigate our bilingual IVR to how our agents handle each interaction.”",
+          "attribution": "Cristian Alarcon IT Support Leader, Claro Insurance",
+          "label": "Insurance",
+          "category": "justcall",
+          "tags": [
+            "insight"
+          ]
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/frontdoor-fashion/"
+            }
+          ],
+          "list": [],
+          "quote": "“Thanks to the SMS automations, the ability to send images to the right client segments in bulk, and our JustCall integrations with Zapier and Copper, we’ve seen our marketing campaigns lead to marketing orders at a 100% higher rate than before we rolled out JustCall.”",
+          "attribution": "Lauren Craig Director of Marketing, Front Door Fashion",
+          "label": "Retail",
+          "category": "justcall",
+          "tags": [
+            "integrations",
+            "results"
+          ]
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/avalon-pharmacy/"
+            }
+          ],
+          "list": [],
+          "quote": "“Our phone calls have decreased dramatically, but our engagement has increased.”",
+          "attribution": "Amit Kakar CEO and Pharmacist, Avalon Pharmacy",
+          "label": "Healthcare",
+          "category": "justcall",
+          "tags": [
+            "results"
+          ]
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [],
+          "list": [],
+          "quote": "“Every new lead gets a call back in under a minute, in English or Spanish. We stopped losing weekend inquiries to whoever picked up first.”",
+          "attribution": "Marco Bellini Owner, Pinegrove Realty",
+          "label": "Business services",
+          "category": "serviceagent",
+          "tags": [
+            "speed"
+          ]
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/crowdstreet/"
+            }
+          ],
+          "list": [],
+          "quote": "“When a call comes in, the support person has already looked through the appropriate account and is ready to discuss it. This has changed the way we communicate with customers over the phone.”",
+          "attribution": "Reed Lewallen Manager of Investor Care, CrowdStreet",
+          "label": "Financial services",
+          "category": "justcall",
+          "tags": [
+            "integrations",
+            "speed"
+          ]
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/nextwave-partners/"
+            }
+          ],
+          "list": [],
+          "quote": "“We now effortlessly track crucial metrics like call durations, giving us valuable insights into our communication patterns.”",
+          "attribution": "Jermer Cruz Systems Administrator, Nextwave Partners",
+          "label": "Recruiting",
+          "category": "justcall",
+          "tags": [
+            "insight"
+          ]
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/apollo-insurance/"
+            }
+          ],
+          "list": [],
+          "quote": "“Using the analytics in JustCall IQ has given us valuable insights into what’s happening with our calls and texts. We’ve been able to leverage those insights to route leads to the agents most likely to convert them to sales — which has helped increase our conversions significantly.”",
+          "attribution": "Klaus Salchner Chief Technology Officer, APOLLO Insurance",
+          "label": "Insurance",
+          "category": "justcall",
+          "tags": [
+            "insight"
+          ]
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/loanoptions-ai/"
+            }
+          ],
+          "list": [],
+          "quote": "“The SMS automations, the dynamic dialer, the call queues, and the API connection to our CRM are all working together to help us increase our efficiency and create a better customer experience.”",
+          "attribution": "Julian Fayad Founder and CEO, LoanOptions.ai",
+          "label": "Financial services",
+          "category": "justcall",
+          "tags": [
+            "integrations",
+            "speed"
+          ]
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/smart-charge-america/"
+            }
+          ],
+          "list": [],
+          "quote": "“With JustCall IQ’s call transcription, she can have her phone conversations transcribed in real-time. That gives her confidence on customer calls”",
+          "attribution": "David Laderberg Vice President, Smart Charge America",
+          "label": "Solar and energy",
+          "category": "justcall",
+          "tags": [
+            "insight"
+          ]
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/hometown-design-studio/"
+            }
+          ],
+          "list": [],
+          "quote": "“Thanks to the JustCall texting feature, our clients can text us when they’re on the move — and because JustCall lets us centralize those SMS messages for our whole team, we always know that one of us will be able to answer quickly.”",
+          "attribution": "Jason Holicky Co-founder and Creative Director, Hometown Design Studio",
+          "label": "Business services",
+          "category": "justcall",
+          "tags": [
+            "coverage"
+          ]
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [],
+          "list": [],
+          "quote": "“AtomsAI built a voice workflow on top of our own dispatch stack. It went to production in six weeks, not six months.”",
+          "attribution": "Theo Marchetti Engineering lead, Kestrel Freight",
+          "label": "Logistics",
+          "category": "pyai",
+          "tags": [
+            "integrations"
+          ]
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/betr/"
+            }
+          ],
+          "list": [],
+          "quote": "“JustCall enables our team to effectively manage their customers, 24/7 remotely and compliantly.”",
+          "attribution": "Caitlin Bird Head of Customer Operations, Betr",
+          "label": "Business services",
+          "category": "justcall",
+          "tags": [
+            "coverage"
+          ]
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/ability-mentor-solutions/"
+            }
+          ],
+          "list": [],
+          "quote": "“The Call Analytics reporting is so flexible that I can view all communications by each employee or see how many contacts we’ve had — by calls, texts, voicemails — with a specific client.”",
+          "attribution": "Paul Chalker CEO and Owner, Ability Mentor Solutions",
+          "label": "Business services",
+          "category": "justcall",
+          "tags": [
+            "insight"
+          ]
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/gameu/"
+            }
+          ],
+          "list": [],
+          "quote": "“It solved the problem of call routing and call centers for us.”",
+          "attribution": "Brad Cohen Partner and Senior Director, Game-U",
+          "label": "Education",
+          "category": "justcall",
+          "tags": [
+            "coverage"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Add yours",
+          "href": "/company/contact?topic=stories"
+        }
+      ],
+      "kind": "catalog"
+    },
+    {
+      "id": "featured",
+      "title": "What changed for our customers",
+      "label": "Featured",
+      "intro": [],
+      "blocks": [
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/yellowstone/"
+            }
+          ],
+          "list": [],
+          "quote": "“You can only make so many dials a day. When your connect rate triples, it changes everything — from rep training to results.”",
+          "attribution": "Warren Lentz · Founder and CEO, Yellowstone Local",
+          "label": "Recruiting",
+          "category": "",
+          "tags": [],
+          "metric": "3× connect rate"
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/sunup-solar/"
+            }
+          ],
+          "list": [],
+          "quote": "“When we take these workflow improvements together — the 10x dialer and the automated SMS messaging — JustCall is directly responsible for bringing us about 20 warm-lead appointments every day.”",
+          "attribution": "Ray Polanco · Founder and CEO, Sunup Solar",
+          "label": "Solar and energy",
+          "category": "",
+          "tags": [],
+          "metric": "20 warm-lead appointments a day"
+        },
+        {
+          "title": "",
+          "body": [],
+          "links": [
+            {
+              "label": "Read the story",
+              "href": "https://justcall.io/customer-stories/ez-bdc/"
+            }
+          ],
+          "list": [],
+          "quote": "“When ActiveCampaign tells JustCall to send out an automated intro text to someone responding to an ad, those texts kick off a real conversation 70% of the time.”",
+          "attribution": "Scott Stewart · Director of Operations, EZ-BDC",
+          "label": "Automotive",
+          "category": "",
+          "tags": [],
+          "metric": "70% of intro texts start a conversation"
+        }
+      ],
+      "links": [],
+      "kind": "quotes"
+    }
+  ],
+  "closing": {
+    "title": "Find out what it does for your team",
+    "body": [
+      "Tell us about the calls your business takes, and we’ll show you the application or the API that fits."
+    ],
+    "links": [
+      {
+        "label": "Talk to AtomsAI",
+        "href": "/company/contact"
+      },
+      {
+        "label": "Read the success stories",
+        "href": "/customers/success-stories"
+      }
+    ]
+  }
+}

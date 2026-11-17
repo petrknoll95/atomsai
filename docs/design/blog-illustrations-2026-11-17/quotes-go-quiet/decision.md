@@ -1,0 +1,15 @@
+# The quote went out. Then nothing.
+
+Selected concept: one substantial signal ribbon settles into silence. A large initial pulse is followed by strictly diminishing alternating pulses and a clear flat tail. The first rising face is the single highlighted region, using the native four-sided diamond fade. All outlines remain fully opaque; the fading is expressed entirely through decreasing amplitude, not transparency. This replaces the rejected hairpin, retained in `recipe.hairpin-rejected.mjs`.
+
+Source: https://atomsai.com/resources/blog/quotes-go-quiet; the article describes a quote sent out, then a conversation that goes quiet. The signal-to-silence relationship is recognizable without an envelope, text, generic bars or isolated decorative objects.
+
+Construction: one closed extruded polygon in a physical vertical plane, with orthogonal width, height and depth axes. The angular waveform is deliberately folded rather than a smooth sweep, so every emitted edge is a genuine structural boundary supported by the supplied renderer. The 22-unit depth and 22-unit front-band separation give the pulse real volume. The monotonically increasing horizontal coordinate prevents self-crossing. Pulse amplitudes decrease from 56 to 35, 21, 11 and 4 units; the last 46 units are a flat quiet tail. Front and back are each one coherent face, joined by the actual fold walls. The four-sided highlight follows the actual first rising front-face segment, stays on the foremost physical plane and culls correctly when that face turns away.
+
+Visual refinement: widened the first candidate's front band from 14 to 22 units and reduced depth from 26 to 22, improving highlight readability and separating parallel outlines at thumbnail size. Then confined the highlight to the first rising four-sided face with the native diamond fade. Regenerated and inspected every view after both refinements.
+
+Validation: all eight Dark/Light neutral, oblique, back and underside exports pass. The neutral visibly reads as a large pulse that dwindles to a straight tail; oblique and underside views show its actual folded depth. The back view reverses the same intact shape and removes the front highlight. No broken silhouette, detached join, internal mesh seam, self-intersection or highlight bleed was visible. Assertions verify orthogonal axes, decreasing pulse amplitudes, a substantial flat tail, one closed manifold shell, and exactly the real boundary edges.
+
+Also inspected `review/final-color-280.png` in the exact final Forest/Paper/Cream palette, 1.6 line weight and 4:3 frame. At 280 px wide the large pulse, diminishing middle and flat tail remain recognizable. `review/final-color-large.png` and `review/final-color-preview.svg` retain the same preview at larger size. These review-only files do not replace production exports.
+
+Parent handles production export and preserves the approved Forest field, Paper/Cream treatment, 1.6 stroke, direct SVG and 4:3 framing. The skill's diagnostic palette remains in review exports. Selected geometric master: `review/neutral-dark.svg`.

@@ -1,0 +1,105 @@
+{
+  "articleCount": 7,
+  "checks": "passed",
+  "scope": "Seven published articles confirmed against source subscribe feed. No changes to SaaS Labs cover.",
+  "assets": [
+    {
+      "slug": "quotes-go-quiet",
+      "cover": "/assets/blog/illustrations/quotes-go-quiet.webp",
+      "width": 1600,
+      "height": 900,
+      "opaque": true,
+      "bytes": 8562,
+      "bounds": {
+        "minX": 498,
+        "maxX": 1101,
+        "minY": 243,
+        "maxY": 656
+      }
+    },
+    {
+      "slug": "no-shows",
+      "cover": "/assets/blog/illustrations/no-shows.webp",
+      "width": 1600,
+      "height": 900,
+      "opaque": true,
+      "bytes": 5778,
+      "bounds": {
+        "minX": 440,
+        "maxX": 1159,
+        "minY": 199,
+        "maxY": 701
+      }
+    },
+    {
+      "slug": "speed-to-lead",
+      "cover": "/assets/blog/illustrations/speed-to-lead.webp",
+      "width": 1600,
+      "height": 900,
+      "opaque": true,
+      "bytes": 29266,
+      "bounds": {
+        "minX": 495,
+        "maxX": 1104,
+        "minY": 141,
+        "maxY": 758
+      }
+    },
+    {
+      "slug": "who-answers-at-7pm",
+      "cover": "/assets/blog/illustrations/who-answers-at-7pm.webp",
+      "width": 1600,
+      "height": 900,
+      "opaque": true,
+      "bytes": 49476,
+      "bounds": {
+        "minX": 522,
+        "maxX": 1077,
+        "minY": 141,
+        "maxY": 758
+      }
+    },
+    {
+      "slug": "the-demo-was-never-the-hard-part",
+      "cover": "/assets/blog/illustrations/the-demo-was-never-the-hard-part.webp",
+      "width": 1600,
+      "height": 900,
+      "opaque": true,
+      "bytes": 7264,
+      "bounds": {
+        "minX": 443,
+        "maxX": 1156,
+        "minY": 135,
+        "maxY": 764
+      }
+    },
+    {
+      "slug": "write-the-evals-before-the-prompt",
+      "cover": "/assets/blog/illustrations/write-the-evals-before-the-prompt.webp",
+      "width": 1600,
+      "height": 900,
+      "opaque": true,
+      "bytes": 6422,
+      "bounds": {
+        "minX": 440,
+        "maxX": 1159,
+        "minY": 270,
+        "maxY": 629
+      }
+    },
+    {
+      "slug": "how-much-autonomy-should-an-agent-have",
+      "cover": "/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.webp",
+      "width": 1600,
+      "height": 900,
+      "opaque": true,
+      "bytes": 12354,
+      "bounds": {
+        "minX": 562,
+        "maxX": 1037,
+        "minY": 140,
+        "maxY": 759
+      }
+    }
+  ]
+}

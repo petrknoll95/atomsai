@@ -2,15 +2,16 @@ import { withBasePath, assetPath } from '@/lib/base-path';
 import { ButtonLink, Eyebrow } from "../ui";
 import styles from "./lower.module.css";
 import { AskQuestion } from "./ask-question";
+import type { ReactNode } from 'react';
 
 const contactUrl = "/company/contact";
 
 // Only the second answer is supplied in Figma. The other expanded states offer
 // navigation to the page or the verified contact destination, without new claims.
-const questions = [
+const homeQuestions = [
   {
     question: "How do Applications, PyAI and AI Services fit together?",
-    answer: <>Explore the <a className="link-underline" href={withBasePath("#offerings")}>three starting points</a> to compare applications, infrastructure and custom engineering.</>,
+    answer: <>Explore the <a className="link-underline" href={withBasePath("#offerings")}>four connected layers</a>: models and infrastructure, orchestration and workflows, applications, and custom engineering. Together, they connect AI capability to the work your business needs to do.</>,
   },
   {
     question: "Can I use a product without a custom project?",
@@ -38,23 +39,36 @@ const questions = [
   },
 ];
 
-export function Faq() {
+type FaqProps = {
+  id?: string;
+  label?: string;
+  heading?: ReactNode;
+  questions?: readonly { question: string; answer: ReactNode }[];
+  showAskQuestion?: boolean;
+};
+
+export function Faq({
+  id = 'faq',
+  label = 'FAQ',
+  heading = <><span>A few things to know first.</span><span>Choose a starting point with a clearer picture of what comes next.</span></>,
+  questions = homeQuestions,
+  showAskQuestion = true,
+}: FaqProps = {}) {
   return (
-    <section className={styles.faq} id="faq" aria-labelledby="faq-heading">
+    <section className={styles.faq} id={id} aria-labelledby={`${id}-heading`}>
       <div className={`page-container ${styles.faqGrid}`}>
         <div className={styles.faqIntro}>
           <div className={styles.faqHeader}>
-            <Eyebrow href={contactUrl}>FAQ</Eyebrow>
-            <h2 className={`display ${styles.faqHeading}`} id="faq-heading">
-              <span>A few things to know first.</span>
-              <span>Choose a starting point with a clearer picture of what comes next.</span>
+            <Eyebrow href={contactUrl}>{label}</Eyebrow>
+            <h2 className={`display ${styles.faqHeading}`} id={`${id}-heading`}>
+              {heading}
             </h2>
           </div>
           <ButtonLink href="/trust">Visit the Trust Center</ButtonLink>
         </div>
         <div className={styles.questions}>
           {questions.map(({ question, answer }, index) => (
-            <details className={styles.question} key={question} name="home-faq" open={index === 1}>
+            <details className={styles.question} key={question} name={id === 'faq' ? 'home-faq' : `${id}-faq`} open={index === 1}>
               <summary>
                 <span>{question}</span>
                 <span className={styles.questionIcon} aria-hidden="true">
@@ -67,7 +81,7 @@ export function Faq() {
               </div>
             </details>
           ))}
-          <AskQuestion />
+          {showAskQuestion && <AskQuestion />}
         </div>
       </div>
     </section>

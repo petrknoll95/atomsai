@@ -3,6 +3,7 @@
 import { assetPath } from '@/lib/base-path';
 
 import { useCallback, useEffect, useRef, useState, type CSSProperties } from 'react';
+import { gsap } from 'gsap';
 import styles from './integrations.module.css';
 
 const tools = ['notion', 'microsoft_teams', 'hubspot', 'googledrive', 'shopify', 'jira', 'asana', 'zendesk', 'github', 'airtable', 'slack', 'salesforce', 'intercom'];
@@ -31,11 +32,46 @@ export function IntegrationsGrid() {
     const mobile = matchMedia('(max-width: 767px)');
     const reduced = matchMedia('(prefers-reduced-motion: reduce)');
     let visible = false;
+    // Orbits move their slots with upright translations rather than rotating whole rings:
+    // Chrome rasterises large rotating layers at reduced resolution, which blurred the logos
+    // and the 1px circles. GSAP's ticker drives one shared clock and quick setters write
+    // sub-pixel 3D translations, so each composited slot glides instead of stepping a whole
+    // device pixel at a time. Each ring keeps its own speed and only advances while running.
+    const orbits = Array.from(root.querySelectorAll<HTMLElement>('[data-orbit]')).map(orbit => {
+      const ring = Number(orbit.dataset.orbit), count = rings[ring];
+      return {
+        orbit, ring, radius: 0, speed: (ring % 2 ? -1 : 1) * Math.PI * 2 / ((480 + ring * 90) * 1000),
+        slots: Array.from(orbit.querySelectorAll<HTMLElement>('[data-orbit-slot]')).map((slot, index) => {
+          gsap.set(slot, { xPercent: -50, yPercent: -50, x: 0, y: 0, force3D: true });
+          return {
+            angle: (index / count * 360 - 90) * Math.PI / 180,
+            setX: gsap.quickSetter(slot, 'x', 'px') as (value: number) => void,
+            setY: gsap.quickSetter(slot, 'y', 'px') as (value: number) => void,
+          };
+        }),
+      };
+    });
+    let elapsed = 0, running = false;
+    const place = () => {
+      for (const { radius, speed, slots } of orbits) for (const { angle, setX, setY } of slots) {
+        const turn = angle + elapsed * speed;
+        setX(radius * (Math.cos(turn) - Math.cos(angle)));
+        setY(radius * (Math.sin(turn) - Math.sin(angle)));
+      }
+    };
+    const measure = () => { for (const item of orbits) item.radius = item.orbit.offsetWidth / 2; place(); };
+    // deltaTime is in milliseconds; cap it so a stalled frame never jumps the rings.
+    const tick = (_time: number, deltaTime: number) => { elapsed += Math.min(deltaTime, 100); place(); };
     const update = () => {
-      // CSS pauses each independent clock without resetting its progress.
-      root.dataset.running = String(visible && !document.hidden && !reduced.matches);
+      const next = visible && !document.hidden && !reduced.matches;
+      root.dataset.running = String(next);
+      if (next === running) return;
+      running = next;
+      if (running) gsap.ticker.add(tick);
+      else gsap.ticker.remove(tick);
     };
     const layout = () => {
+      measure();
       const positions = visiblePositions(root);
       const count = Math.min(mobile.matches ? 7 : 10, positions.length);
       const preferred = Array.from({ length: count }, (_, index) => positions[Math.floor(index * positions.length / count)]);
@@ -63,6 +99,7 @@ export function IntegrationsGrid() {
     document.addEventListener('visibilitychange', update);
     return () => {
       cancelAnimationFrame(frame);
+      gsap.ticker.remove(tick);
       observer.disconnect();
       resize.disconnect();
       mobile.removeEventListener('change', layout);
@@ -94,9 +131,7 @@ export function IntegrationsGrid() {
   return <div ref={grid} className={styles.grid} aria-hidden="true" data-integration-orbits>
     {rings.map((count, ring) => {
       const start = rings.slice(0, ring).reduce((total, size) => total + size, 0);
-      return <div className={styles.orbit} key={ring} data-orbit={ring} style={{
-        '--ring': ring, '--orbit-duration': `${480 + ring * 90}s`,
-      } as CSSProperties}>
+      return <div className={styles.orbit} key={ring} data-orbit={ring} style={{ '--ring': ring } as CSSProperties}>
         {Array.from({ length: count }, (_, slot) => {
           const index = start + slot;
           const angle = (slot / count * 360 - 90) * Math.PI / 180;

@@ -1,0 +1,17 @@
+import { mkdir } from 'node:fs/promises';
+import { createRequire } from 'node:module';
+import path from 'node:path';
+const require = createRequire(path.resolve('package.json'));
+const sharp = require('sharp');
+const [source, destination] = process.argv.slice(2);
+if (!source || !destination) throw new Error('Usage: node prepare-cover.mjs source.png output-stem');
+const meta = await sharp(source).metadata();
+if (!['png','jpeg','webp'].includes(meta.format)) throw new Error('Expected image-generated raster master, not vector art');
+if (meta.width < 1600 || meta.height < 900) throw new Error('Master too small for 1600x900 export');
+if (!(await sharp(source).stats()).isOpaque) throw new Error('Cover must be opaque');
+await mkdir(path.dirname(destination), { recursive:true });
+const rendered = await sharp(source).rotate().resize(1600,900,{fit:'cover',position:'centre'}).toColourspace('srgb').png().toBuffer();
+await sharp(rendered).webp({quality:90,effort:6}).toFile(destination+'.webp');
+await sharp(rendered).resize(320,180).png().toFile(destination+'-thumb.png');
+await sharp(rendered).resize(256,256,{fit:'cover',position:'centre'}).png().toFile(destination+'-square.png');
+console.log(JSON.stringify({source,destination,width:1600,height:900,sourceWidth:meta.width,sourceHeight:meta.height,creativeEdits:false}));

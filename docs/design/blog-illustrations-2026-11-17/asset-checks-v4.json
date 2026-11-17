@@ -1,0 +1,195 @@
+{
+  "checks": "passed",
+  "scope": "All seven concepts abstract; coherent geometry; approved background, outline and highlight colors preserved; 4:3 vector covers and 1.6-unit strokes.",
+  "assets": [
+    {
+      "slug": "quotes-go-quiet",
+      "concept": "Continuous return path",
+      "background": "#43695B",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "stroke": 1.6,
+      "thinnerPercent": 15.78947368421052,
+      "aspectRatio": "4:3",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 109.22651428571427,
+      "geometryViews": 8,
+      "conceptChecks": "recipe assertions passed",
+      "svgSha256": "859b956a2e6f696f0bccd8fb79e75279f42dce2042157a523a41910f258f3ea0",
+      "displaySvgSha256": "e7e6757600467b93de07c772d759375cf5c21d486603f29b64dcf01b66b6e62c",
+      "webpSha256": "3b20247f05dc8219f0d070c35574cccc2fa40318179248cad2b795e75710764b"
+    },
+    {
+      "slug": "no-shows",
+      "concept": "Reserved empty bay",
+      "background": "#A77BCA",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "stroke": 1.6,
+      "thinnerPercent": 15.78947368421052,
+      "aspectRatio": "4:3",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 109.22651428571429,
+      "geometryViews": 8,
+      "conceptChecks": "recipe assertions passed",
+      "svgSha256": "752fbcc650eb391d7fb457c084806686f69b4d7b8a02b93d2c1fe7e77e18b010",
+      "displaySvgSha256": "7c409b82f310aa18c92bc049ccc646ece94e8340727b915148b020a2f126c368",
+      "webpSha256": "6a408483dcb100012f3c6a5e52a4bf918c98aa3ee0aef78bcf08c756e80ce619"
+    },
+    {
+      "slug": "speed-to-lead",
+      "concept": "One path advances farther",
+      "background": "#FF671F",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "stroke": 1.6,
+      "thinnerPercent": 15.78947368421052,
+      "aspectRatio": "4:3",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 109.22651428571427,
+      "geometryViews": 8,
+      "conceptChecks": "recipe assertions passed",
+      "svgSha256": "ab5dc64d27979290ed9e90e7735330bb9ab2457b32501f09f45d8508a9092152",
+      "displaySvgSha256": "a3ed478289817cca5834df450fb8646429a9bc94f469c85381d90b728b884eee",
+      "webpSha256": "adc38ef6059d6c71aa5d15650663c8d2a3eb51367e218125a3434e9261d3ecf1"
+    },
+    {
+      "slug": "who-answers-at-7pm",
+      "concept": "Continuity through a boundary",
+      "background": "#1D3C34",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "stroke": 1.6,
+      "thinnerPercent": 15.78947368421052,
+      "aspectRatio": "4:3",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 109.22651428571429,
+      "geometryViews": 8,
+      "conceptChecks": "recipe assertions passed",
+      "svgSha256": "622f27b376ee6a8f4b306881e8770989ab86650f4ceeaf5f623194b991d60b51",
+      "displaySvgSha256": "1d93903dc9fbdc1dad1ce5864878ec0625117dc86f8cd931ab6d5f822dcbeac7",
+      "webpSha256": "1dd97bed86a8a70f7aeaf86d66a1e79102faf080485bb8dba268e408ace772f3"
+    },
+    {
+      "slug": "the-demo-was-never-the-hard-part",
+      "concept": "Complementary interlocking forms",
+      "background": "#43695B",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "stroke": 1.6,
+      "thinnerPercent": 15.78947368421052,
+      "aspectRatio": "4:3",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 109.2265142857143,
+      "geometryViews": 8,
+      "conceptChecks": "recipe assertions passed",
+      "svgSha256": "07d5c493fc21ee0ca927dae1446a21671d5b7ac920048d210dfe090c78f3986f",
+      "displaySvgSha256": "ba3c21ee0697d59955723b773283f0f45125a70fbdccee6dbe0de511a637ad7f",
+      "webpSha256": "4069aa6bf90c06faf5e28625e26c92decb2542677d77328e4c660cf0e2984a71"
+    },
+    {
+      "slug": "write-the-evals-before-the-prompt",
+      "concept": "Reference and deviation",
+      "background": "#1D3C34",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "stroke": 1.6,
+      "thinnerPercent": 15.78947368421052,
+      "aspectRatio": "4:3",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 126.21023776223777,
+      "geometryViews": 8,
+      "conceptChecks": "recipe assertions passed",
+      "svgSha256": "71923250424a0969949b872773eac80943a33578da3c6c8770fd17efbf8c13e3",
+      "displaySvgSha256": "71e1b96265e13ad88efbc897ecddee2e02045a89237ad6fddcf21e6ef5cff722",
+      "webpSha256": "c27e898355f3433da94852c69bbe48e5802ee7ff5618639deb5e601711ab04c7"
+    },
+    {
+      "slug": "how-much-autonomy-should-an-agent-have",
+      "concept": "Freedom within a defined volume",
+      "background": "#A77BCA",
+      "outline": "#FAFAFA",
+      "highlight": "#F6F1E8",
+      "stroke": 1.6,
+      "thinnerPercent": 15.78947368421052,
+      "aspectRatio": "4:3",
+      "display": "direct SVG",
+      "webp": [
+        3072,
+        2304
+      ],
+      "squareArtViewport": [
+        64,
+        0,
+        384,
+        384
+      ],
+      "boundsExtent": 109.22651428571429,
+      "geometryViews": 8,
+      "conceptChecks": "recipe assertions passed",
+      "svgSha256": "7b0b45d58dc3cc41eb63d004dff005e55f2b869c4540b8b9539ae6023c4af723",
+      "displaySvgSha256": "b3cdf004a241089cf333098ae8168e213f3dab452bd7e2a05e1e66b4a3463680",
+      "webpSha256": "b3fd529d14d2454a0612008f6228497d7de4b85ef6b326e852341e0766899285"
+    }
+  ]
+}

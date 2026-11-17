@@ -1,0 +1,124 @@
+{
+  "html": "\n<!-- HERO -->\n<section aria-labelledby=\"prH\" class=\"ph pr-h\">\n<span class=\"ey\"><i></i>Press &amp; media</span>\n<h1 id=\"prH\">On the record</h1>\n<div class=\"ph-l\">\n<p>Announcements, product news, and the facts and files to write about us accurately.</p>\n<div class=\"ph-b\"><a class=\"btn\" href=\"#kit\">Open the press kit </a><a class=\"btn soft\" href=\"#contact\">Media inquiries</a></div>\n</div>\n<div aria-hidden=\"true\" class=\"pr-ticker\"><span>Founded 2016 as SaaS Labs</span><i></i><span>1B+ conversations a year</span><i></i><span>JustCall · ServiceAgent · PyAI</span><i></i><span>Built in India, used in 20+ countries</span></div>\n</section>\n<!-- LATEST: one release, one screen -->\n<section aria-labelledby=\"prL\" class=\"rail pr-lt\" id=\"latest\">\n<div class=\"pr-lt-in\">\n<div class=\"pr-lt-m\">\n<span class=\"ey\"><i></i>Latest</span>\n<span class=\"pr-lt-tag\"><b>Company</b><i></i><time datetime=\"2026-11-04\">04 Nov 2026</time></span>\n<span class=\"pr-ph\">Placeholder</span>\n</div>\n<div class=\"pr-lt-b\">\n<h2 id=\"prL\"><a href=\"#top\">SaaS Labs becomes AtomsAI</a></h2>\n<p>The company behind JustCall, ServiceAgent, and PyAI takes a new name for a wider mission, from applications to the models underneath them.</p>\n<a class=\"lk\" href=\"#top\">Read the release </a>\n</div>\n</div>\n</section>\n<!-- ALL RELEASES: dated list -->\n<section aria-labelledby=\"prN\" class=\"rail pr-new\" id=\"news\">\n<header class=\"sec-h\">\n<span class=\"ey\"><i></i>All releases</span>\n<h2 id=\"prN\">Everything we’ve announced</h2>\n<p>Filter by what you’re covering. Each release carries the date it went out and a contact for follow-up.</p>\n</header>\n<div class=\"pr-bar\">\n<div aria-label=\"Filter announcements\" class=\"pr-filt\" role=\"tablist\">\n<button aria-selected=\"true\" class=\"pr-chip on\" data-f=\"all\" role=\"tab\" tabindex=\"0\">All</button>\n<button aria-selected=\"false\" class=\"pr-chip\" data-f=\"company\" role=\"tab\" tabindex=\"-1\">Company</button>\n<button aria-selected=\"false\" class=\"pr-chip\" data-f=\"products\" role=\"tab\" tabindex=\"-1\">Products</button>\n<button aria-selected=\"false\" class=\"pr-chip\" data-f=\"partnerships\" role=\"tab\" tabindex=\"-1\">Partnerships</button>\n<button aria-selected=\"false\" class=\"pr-chip\" data-f=\"news\" role=\"tab\" tabindex=\"-1\">In the news</button>\n</div>\n<span aria-live=\"polite\" class=\"pr-count\" id=\"prCount\">6 releases</span>\n</div>\n<div aria-hidden=\"true\" class=\"pr-th\"><span>Date</span><span>Category</span><span>Title</span><span></span></div>\n<ol class=\"pr-list\" id=\"prList\">\n<li class=\"pr-row pop\" data-c=\"company\"><time datetime=\"2026-11-04\">04 Nov 2026</time><span class=\"pr-cat\">Company</span><div><h3><a href=\"#top\">SaaS Labs becomes AtomsAI</a></h3><p>A new name for a wider mission, from applications to the models underneath them.</p></div><span class=\"pr-ph\">Placeholder</span></li>\n<li class=\"pr-row pop\" data-c=\"products\"><time datetime=\"2026-10-14\">14 Oct 2026</time><span class=\"pr-cat\">Products</span><div><h3><a href=\"#top\">PyAI opens Agents to every developer in live beta</a></h3><p>Voice agents on a real phone number, configured and tested from the PyAI console with a free sandbox key.</p></div><span class=\"pr-ph\">Placeholder</span></li>\n<li class=\"pr-row pop\" data-c=\"products\"><time datetime=\"2026-09-09\">09 Sep 2026</time><span class=\"pr-cat\">Products</span><div><h3><a href=\"#top\">ServiceAgent adds after-hours dispatch for home-service businesses</a></h3><p>Emergency calls are assessed, booked, and routed to an on-call technician while the office is closed.</p></div><span class=\"pr-ph\">Placeholder</span></li>\n<li class=\"pr-row pop\" data-c=\"partnerships\"><time datetime=\"2026-08-20\">20 Aug 2026</time><span class=\"pr-cat\">Partnerships</span><div><h3><a href=\"#top\">AtomsAI and [Partner] bring voice agents to [industry]</a></h3><p>A joint offering for [industry] teams, combining [Partner]'s platform with JustCall's AI voice agents.</p></div><span class=\"pr-ph\">Placeholder</span></li>\n<li class=\"pr-row pop\" data-c=\"news\"><time datetime=\"2026-07-30\">30 Jul 2026</time><span class=\"pr-cat\">In the news</span><div><h3><a href=\"#top\">[Publication]: How a billion phone calls trained a speech model</a></h3><p>A feature on the data, the narrowband audio problem, and the engineers behind PyAI's Hear model.</p></div><span class=\"pr-ph\">Placeholder</span></li>\n<li class=\"pr-row pop\" data-c=\"company\"><time datetime=\"2026-06-12\">12 Jun 2026</time><span class=\"pr-cat\">Company</span><div><h3><a href=\"#top\">AtomsAI opens a new engineering office in [City]</a></h3><p>The team working on speech models and real-time infrastructure grows into a second site.</p></div><span class=\"pr-ph\">Placeholder</span></li>\n</ol>\n<p class=\"pr-empty\" hidden=\"\" id=\"prEmpty\">Nothing in this category yet.</p>\n<p class=\"fn pr-fn\">Release titles and dates are placeholders until the approved announcements are supplied.</p>\n</section>\n<!-- PRESS KIT: tabbed -->\n<section aria-labelledby=\"prK\" class=\"pr-kit\" id=\"kit\">\n<div class=\"pr-kit-in rail\">\n<header class=\"sec-h\">\n<span class=\"ey on-cream\"><i></i>Press kit</span>\n<h2 id=\"prK\">What you need to tell the story</h2>\n<p>Approved copy, facts, people, and files, kept current. If something you need is missing, ask and we’ll send it.</p>\n</header>\n<div aria-label=\"Press kit sections\" class=\"pr-tabs\" role=\"tablist\">\n<button aria-controls=\"tpBoil\" aria-selected=\"true\" class=\"pr-tab on\" id=\"tbBoil\" role=\"tab\" tabindex=\"0\"><span>01</span>Boilerplate</button>\n<button aria-controls=\"tpFact\" aria-selected=\"false\" class=\"pr-tab\" id=\"tbFact\" role=\"tab\" tabindex=\"-1\"><span>02</span>Fast facts</button>\n<button aria-controls=\"tpLead\" aria-selected=\"false\" class=\"pr-tab\" id=\"tbLead\" role=\"tab\" tabindex=\"-1\"><span>03</span>Leadership</button>\n<button aria-controls=\"tpLogo\" aria-selected=\"false\" class=\"pr-tab\" id=\"tbLogo\" role=\"tab\" tabindex=\"-1\"><span>04</span>Logos &amp; assets</button>\n</div>\n<div aria-labelledby=\"tbBoil\" class=\"pr-pan on\" id=\"tpBoil\" role=\"tabpanel\" tabindex=\"0\">\n<div class=\"pr-boil\">\n<div class=\"pr-boil-t\" id=\"prBoilTxt\">\n<p class=\"pr-boil-st\">Founded in 2016 as SaaS Labs, AtomsAI is a global AI technology company from India.</p>\n<p>We build business applications including JustCall and ServiceAgent, models and infrastructure through PyAI, and custom AI systems for complex business problems. Our technology powers more than a billion conversations annually.</p>\n</div>\n<div class=\"pr-boil-s\">\n<dl>\n<div><dt>Company name</dt><dd>AtomsAI (one word, capital A and AI)</dd></div>\n<div><dt>Formerly</dt><dd>SaaS Labs</dd></div>\n<div><dt>Products</dt><dd>JustCall, ServiceAgent, PyAI</dd></div>\n<div><dt>Describe us as</dt><dd>A global AI technology company from India</dd></div>\n</dl>\n<button class=\"btn soft pr-copy\" data-for=\"prBoilTxt\" id=\"prCopy\" type=\"button\">Copy boilerplate</button>\n</div>\n</div>\n</div>\n<div aria-labelledby=\"tbFact\" class=\"pr-pan\" hidden=\"\" id=\"tpFact\" role=\"tabpanel\" tabindex=\"0\">\n<div class=\"strip pr-strip\">\n<div class=\"cell\"><strong>2016</strong><span>Founded as SaaS Labs</span></div>\n<div class=\"cell\"><strong><b data-count=\"1\" data-suffix=\"B+\">1B+</b></strong><span>Conversations powered annually</span></div>\n<div class=\"cell\"><strong><b data-count=\"7000\" data-suffix=\"+\">7,000+</b></strong><span>Businesses on JustCall</span></div>\n<div class=\"cell\"><strong><b data-count=\"20\" data-suffix=\"+\">20+</b></strong><span>Countries served</span></div>\n</div>\n<dl class=\"pr-facts\">\n<div><dt>Headquarters</dt><dd>India</dd></div>\n<div><dt>Applications</dt><dd>JustCall, ServiceAgent</dd></div>\n<div><dt>Models and infrastructure</dt><dd>PyAI</dd></div>\n<div><dt>Custom engineering</dt><dd>AI Services</dd></div>\n<div><dt>Certifications</dt><dd>SOC 2 Type 2, ISO/IEC 27001:2022, PCI DSS v4.0.0, HIPAA, GDPR <a class=\"pr-in\" href=\"trust.html\">Trust &amp; security</a></dd></div>\n</dl>\n<p class=\"fn\">The business count is the JustCall figure. Headquarters city, headcount, and funding to be confirmed before publication.</p>\n</div>\n<div aria-labelledby=\"tbLead\" class=\"pr-pan\" hidden=\"\" id=\"tpLead\" role=\"tabpanel\" tabindex=\"0\">\n<ul class=\"pr-lead\">\n<li><div aria-hidden=\"true\" class=\"pr-face\"><span>—</span></div><h3>[Name]</h3><p>Co-founder and CEO</p><a class=\"pr-in\" href=\"#top\">Bio and headshot </a></li>\n<li><div aria-hidden=\"true\" class=\"pr-face\"><span>—</span></div><h3>[Name]</h3><p>Co-founder and [Role]</p><a class=\"pr-in\" href=\"#top\">Bio and headshot </a></li>\n<li><div aria-hidden=\"true\" class=\"pr-face\"><span>—</span></div><h3>[Name]</h3><p>[Role], PyAI</p><a class=\"pr-in\" href=\"#top\">Bio and headshot </a></li>\n<li><div aria-hidden=\"true\" class=\"pr-face\"><span>—</span></div><h3>[Name]</h3><p>[Role], Applications</p><a class=\"pr-in\" href=\"#top\">Bio and headshot </a></li>\n</ul>\n<p class=\"fn\">Names, titles, and approved photography to be supplied. Spokespeople are available for interviews through the media contact below.</p>\n</div>\n<div aria-labelledby=\"tbLogo\" class=\"pr-pan\" hidden=\"\" id=\"tpLogo\" role=\"tabpanel\" tabindex=\"0\">\n<div class=\"pr-cells\">\n<a class=\"pr-cell\" href=\"#top\"><div aria-hidden=\"true\" class=\"pr-swatch pr-sw-a\"><b>Atoms<i>AI</i></b></div><h3>Primary logo</h3><p>Wordmark and mark, light and dark.</p><span class=\"pr-go\">SVG, PNG </span></a>\n<a class=\"pr-cell\" href=\"#top\"><div aria-hidden=\"true\" class=\"pr-swatch pr-sw-b\"></div><h3>Mark only</h3><p>For avatars, favicons, and tight spaces.</p><span class=\"pr-go\">SVG, PNG </span></a>\n<a class=\"pr-cell\" href=\"#top\"><div aria-hidden=\"true\" class=\"pr-swatch pr-sw-c\"><span>JustCall</span><span>ServiceAgent</span><span>PyAI</span></div><h3>Product logos</h3><p>JustCall, ServiceAgent, and PyAI.</p><span class=\"pr-go\">ZIP </span></a>\n<a class=\"pr-cell\" href=\"#top\"><div aria-hidden=\"true\" class=\"pr-swatch pr-sw-d\"><i style=\"background:#27433B\"></i><i style=\"background:#10231E\"></i><i style=\"background:#F6F1E8\"></i><i style=\"background:#8C7BC9\"></i><i style=\"background:#D8CDE5\"></i></div><h3>Brand guidelines</h3><p>Color, type, clear space, and what not to do.</p><span class=\"pr-go\">PDF </span></a>\n</div>\n<p class=\"fn\">Download links are placeholders until the asset bundle is hosted. Please do not alter, recolor, or rotate the logo.</p>\n</div>\n</div>\n</section>\n<!-- CONTACT: two routes -->\n<section aria-label=\"Press contact\" class=\"rail pr-ct\" id=\"contact\">\n<div class=\"pr-ct-row\"><span class=\"pr-ct-k\">Media inquiries</span><a class=\"pr-ct-v\" href=\"mailto:press@atomsai.com\">press@atomsai.com</a><span class=\"pr-ct-n\">Interviews, statements, fact checks. Usually within a working day. <em>Address is a placeholder.</em></span></div>\n<div class=\"pr-ct-row\"><span class=\"pr-ct-k\">Everything else</span><a class=\"pr-ct-v\" href=\"help.html\">Help center</a><span class=\"pr-ct-n\">Product support, account questions, and security requests have their own routes.</span></div>\n</section>\n<!-- CLOSE -->\n<section aria-labelledby=\"ctH\" class=\"ct-f\" id=\"talk\">\n<div aria-hidden=\"true\" class=\"ct-bars\"><i style=\"--h:64%;--d:0.00s\"></i><i style=\"--h:52%;--d:0.37s\"></i><i style=\"--h:70%;--d:0.74s\"></i><i style=\"--h:46%;--d:1.11s\"></i><i style=\"--h:58%;--d:1.48s\"></i><i style=\"--h:48%;--d:1.85s\"></i><i style=\"--h:36%;--d:2.22s\"></i><i style=\"--h:22%;--d:2.59s\"></i><i style=\"--h:26%;--d:2.96s\"></i><i style=\"--h:38%;--d:0.33s\"></i><i style=\"--h:54%;--d:0.70s\"></i><i style=\"--h:60%;--d:1.07s\"></i><i style=\"--h:44%;--d:1.44s\"></i><i style=\"--h:68%;--d:1.81s\"></i><i style=\"--h:50%;--d:2.18s\"></i><i style=\"--h:66%;--d:2.55s\"></i></div>\n<div class=\"ct-in\">\n<span class=\"ct-ey\"><i></i>Press &amp; media</span>\n<h2 id=\"ctH\">Writing about AtomsAI?</h2>\n<p>Our team can confirm facts, set up interviews, and send approved assets, usually within a working day.</p>\n<div class=\"ct-b\"><a class=\"ct-btn pri\" href=\"mailto:press@atomsai.com\">Email press@atomsai.com</a><a class=\"ct-btn\" href=\"#kit\">Open the press kit</a></div>\n</div>\n</section>\n",
+  "links": [
+    {
+      "href": "#kit",
+      "text": "OPEN THE PRESS KIT"
+    },
+    {
+      "href": "#contact",
+      "text": "MEDIA INQUIRIES"
+    },
+    {
+      "href": "#top",
+      "text": "SaaS Labs becomes AtomsAI"
+    },
+    {
+      "href": "#top",
+      "text": "Read the release"
+    },
+    {
+      "href": "#top",
+      "text": "SaaS Labs becomes AtomsAI"
+    },
+    {
+      "href": "#top",
+      "text": "PyAI opens Agents to every developer in live beta"
+    },
+    {
+      "href": "#top",
+      "text": "ServiceAgent adds after-hours dispatch for home-service businesses"
+    },
+    {
+      "href": "#top",
+      "text": "AtomsAI and [Partner] bring voice agents to [industry]"
+    },
+    {
+      "href": "#top",
+      "text": "[Publication]: How a billion phone calls trained a speech model"
+    },
+    {
+      "href": "#top",
+      "text": "AtomsAI opens a new engineering office in [City]"
+    },
+    {
+      "href": "trust.html",
+      "text": "Trust & security"
+    },
+    {
+      "href": "#top",
+      "text": "Bio and headshot "
+    },
+    {
+      "href": "#top",
+      "text": "Bio and headshot "
+    },
+    {
+      "href": "#top",
+      "text": "Bio and headshot "
+    },
+    {
+      "href": "#top",
+      "text": "Bio and headshot "
+    },
+    {
+      "href": "#top",
+      "text": "AtomsAIPrimary logoWordmark and mark, light and dark.SVG, PNG "
+    },
+    {
+      "href": "#top",
+      "text": "Mark onlyFor avatars, favicons, and tight spaces.SVG, PNG "
+    },
+    {
+      "href": "#top",
+      "text": "JustCallServiceAgentPyAIProduct logosJustCall, ServiceAgent, and PyAI.ZIP "
+    },
+    {
+      "href": "#top",
+      "text": "Brand guidelinesColor, type, clear space, and what not to do.PDF "
+    },
+    {
+      "href": "mailto:press@atomsai.com",
+      "text": "press@atomsai.com"
+    },
+    {
+      "href": "help.html",
+      "text": "Help center"
+    },
+    {
+      "href": "mailto:press@atomsai.com",
+      "text": "Email press@atomsai.com"
+    },
+    {
+      "href": "#kit",
+      "text": "Open the press kit"
+    }
+  ],
+  "sections": [
+    {
+      "id": "",
+      "text": "Press & media\nOn the record\n\nAnnouncements, product news, and the facts and files to write about us accurately.\n\nOPEN THE PRESS KIT\nMEDIA INQUIRIES\nFOUNDED 2016 AS SAAS LABS\n1B+ CONVERSATIONS A YEAR\nJUSTCALL · SERVICEAGENT · PYAI\nBUILT IN INDIA, USED IN 20+ COUNTRIES"
+    },
+    {
+      "id": "latest",
+      "text": "Latest\nCOMPANY\n04 NOV 2026\nPLACEHOLDER\nSaaS Labs becomes AtomsAI\n\nThe company behind JustCall, ServiceAgent, and PyAI takes a new name for a wider mission, from applications to the models underneath them.\n\nRead the release"
+    },
+    {
+      "id": "news",
+      "text": "All releases\nEverything we’ve announced\n\nFilter by what you’re covering. Each release carries the date it went out and a contact for follow-up.\n\nAll\nCompany\nProducts\nPartnerships\nIn the news\n6 RELEASES\nDATE\nCATEGORY\nTITLE\n04 Nov 2026\nCOMPANY\nSaaS Labs becomes AtomsAI\n\nA new name for a wider mission, from applications to the models underneath them.\n\nPLACEHOLDER\n14 Oct 2026\nPRODUCTS\nPyAI opens Agents to every developer in live beta\n\nVoice agents on a real phone number, configured and tested from the PyAI console with a free sandbox key.\n\nPLACEHOLDER\n09 Sep 2026\nPRODUCTS\nServiceAgent adds after-hours dispatch for home-service businesses\n\nEmergency calls are assessed, booked, and routed to an on-call technician while the office is closed.\n\nPLACEHOLDER\n20 Aug 2026\nPARTNERSHIPS\nAtomsAI and [Partner] bring voice agents to [industry]\n\nA joint offering for [industry] teams, combining [Partner]'s platform with JustCall's AI voice agents.\n\nPLACEHOLDER\n30 Jul 2026\nIN THE NEWS\n[Publication]: How a billion phone calls trained a speech model\n\nA feature on the data, the narrowband audio problem, and the engineers behind PyAI's Hear model.\n\nPLACEHOLDER\n12 Jun 2026\nCOMPANY\nAtomsAI opens a new engineering office in [City]\n\nThe team working on speech models and real-time infrastructure grows into a second site.\n\nPLACEHOLDER\n\nRelease titles and dates are placeholders until the approved announcements are supplied."
+    },
+    {
+      "id": "kit",
+      "text": "Press kit\nWhat you need to tell the story\n\nApproved copy, facts, people, and files, kept current. If something you need is missing, ask and we’ll send it.\n\n01\nBoilerplate\n02\nFast facts\n03\nLeadership\n04\nLogos & assets\n\nFounded in 2016 as SaaS Labs, AtomsAI is a global AI technology company from India.\n\nWe build business applications including JustCall and ServiceAgent, models and infrastructure through PyAI, and custom AI systems for complex business problems. Our technology powers more than a billion conversations annually.\n\nCOMPANY NAME\nAtomsAI (one word, capital A and AI)\nFORMERLY\nSaaS Labs\nPRODUCTS\nJustCall, ServiceAgent, PyAI\nDESCRIBE US AS\nA global AI technology company from India\nCOPY BOILERPLATE"
+    },
+    {
+      "id": "contact",
+      "text": "MEDIA INQUIRIES\npress@atomsai.com\nInterviews, statements, fact checks. Usually within a working day. Address is a placeholder.\nEVERYTHING ELSE\nHelp center\nProduct support, account questions, and security requests have their own routes."
+    },
+    {
+      "id": "talk",
+      "text": "PRESS & MEDIA\nWriting about AtomsAI?\n\nOur team can confirm facts, set up interviews, and send approved assets, usually within a working day.\n\nEmail press@atomsai.com\nOpen the press kit"
+    }
+  ],
+  "text": "Press & media\nOn the record\n\nAnnouncements, product news, and the facts and files to write about us accurately.\n\nOPEN THE PRESS KIT\nMEDIA INQUIRIES\nFOUNDED 2016 AS SAAS LABS\n1B+ CONVERSATIONS A YEAR\nJUSTCALL · SERVICEAGENT · PYAI\nBUILT IN INDIA, USED IN 20+ COUNTRIES\nLatest\nCOMPANY\n04 NOV 2026\nPLACEHOLDER\nSaaS Labs becomes AtomsAI\n\nThe company behind JustCall, ServiceAgent, and PyAI takes a new name for a wider mission, from applications to the models underneath them.\n\nRead the release\nAll releases\nEverything we’ve announced\n\nFilter by what you’re covering. Each release carries the date it went out and a contact for follow-up.\n\nAll\nCompany\nProducts\nPartnerships\nIn the news\n6 RELEASES\nDATE\nCATEGORY\nTITLE\n04 Nov 2026\nCOMPANY\nSaaS Labs becomes AtomsAI\n\nA new name for a wider mission, from applications to the models underneath them.\n\nPLACEHOLDER\n14 Oct 2026\nPRODUCTS\nPyAI opens Agents to every developer in live beta\n\nVoice agents on a real phone number, configured and tested from the PyAI console with a free sandbox key.\n\nPLACEHOLDER\n09 Sep 2026\nPRODUCTS\nServiceAgent adds after-hours dispatch for home-service businesses\n\nEmergency calls are assessed, booked, and routed to an on-call technician while the office is closed.\n\nPLACEHOLDER\n20 Aug 2026\nPARTNERSHIPS\nAtomsAI and [Partner] bring voice agents to [industry]\n\nA joint offering for [industry] teams, combining [Partner]'s platform with JustCall's AI voice agents.\n\nPLACEHOLDER\n30 Jul 2026\nIN THE NEWS\n[Publication]: How a billion phone calls trained a speech model\n\nA feature on the data, the narrowband audio problem, and the engineers behind PyAI's Hear model.\n\nPLACEHOLDER\n12 Jun 2026\nCOMPANY\nAtomsAI opens a new engineering office in [City]\n\nThe team working on speech models and real-time infrastructure grows into a second site.\n\nPLACEHOLDER\n\nRelease titles and dates are placeholders until the approved announcements are supplied.\n\nPress kit\nWhat you need to tell the story\n\nApproved copy, facts, people, and files, kept current. If something you need is missing, ask and we’ll send it.\n\n01\nBoilerplate\n02\nFast facts\n03\nLeadership\n04\nLogos & assets\n\nFounded in 2016 as SaaS Labs, AtomsAI is a global AI technology company from India.\n\nWe build business applications including JustCall and ServiceAgent, models and infrastructure through PyAI, and custom AI systems for complex business problems. Our technology powers more than a billion conversations annually.\n\nCOMPANY NAME\nAtomsAI (one word, capital A and AI)\nFORMERLY\nSaaS Labs\nPRODUCTS\nJustCall, ServiceAgent, PyAI\nDESCRIBE US AS\nA global AI technology company from India\nCOPY BOILERPLATE\nMEDIA INQUIRIES\npress@atomsai.com\nInterviews, statements, fact checks. Usually within a working day. Address is a placeholder.\nEVERYTHING ELSE\nHelp center\nProduct support, account questions, and security requests have their own routes.\nPRESS & MEDIA\nWriting about AtomsAI?\n\nOur team can confirm facts, set up interviews, and send approved assets, usually within a working day.\n\nEmail press@atomsai.com\nOpen the press kit"
+}

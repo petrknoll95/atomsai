@@ -1,0 +1,184 @@
+{
+  "html": "\n<!-- HERO + SEARCH -->\n<section aria-labelledby=\"hcH\" class=\"hc-hero\">\n<div class=\"hc-hero-in\">\n<span class=\"ey\"><i></i>Help center</span>\n<h1 id=\"hcH\">What do you need to do?</h1>\n<p class=\"hc-lead\">Search across every AtomsAI product, or go straight to the help center for yours.</p>\n<form autocomplete=\"off\" class=\"hc-search\" id=\"hcSearch\" role=\"search\">\n<input aria-controls=\"hcRes\" aria-expanded=\"false\" aria-label=\"Search help articles\" id=\"hcQ\" placeholder=\"Search help articles\" type=\"search\"/>\n<span aria-hidden=\"true\" class=\"hc-keys\"><kbd>⌘K</kbd><kbd>/</kbd></span>\n</form>\n<div class=\"hc-res\" hidden=\"\" id=\"hcRes\">\n<ul id=\"hcResL\"></ul>\n<p class=\"hc-res-none\" hidden=\"\" id=\"hcNone\">No article matches that yet. Try a product name, or open the help center for your product.</p>\n</div>\n<div aria-label=\"Open a help center\" class=\"hc-quick\"><span>Go straight to</span><a href=\"https://help.justcall.io/en/\" rel=\"noopener\" target=\"_blank\">JustCall</a><a href=\"https://help.serviceagent.ai/\" rel=\"noopener\" target=\"_blank\">ServiceAgent</a><a href=\"https://pyai.com/\" rel=\"noopener\" target=\"_blank\">PyAI</a><a href=\"https://status.justcall.io/\" rel=\"noopener\" target=\"_blank\">Status</a></div>\n</div>\n</section>\n<!-- POPULAR: four tasks -->\n<section aria-labelledby=\"popH\" class=\"rail hc-pop-w\" id=\"popular\">\n<header class=\"sec-h hc-sec\">\n<span class=\"ey\"><i></i>Popular</span>\n<h2 id=\"popH\">Start here</h2>\n<p>Four tasks that account for most support questions. Each opens the step-by-step article.</p>\n</header>\n<div class=\"hc-pops\">\n<a class=\"hc-pop pop hc-lk\" data-k=\"recording access links secure call recordings share\" data-p=\"JustCall\" data-t=\"Secure recordings\" href=\"https://help.justcall.io/en/articles/16040754-secure-recording-links\" rel=\"noopener\" target=\"_blank\"><span class=\"hc-n\">01</span><h3>Secure recordings</h3><p>Control who can open a recording link</p></a>\n<a class=\"hc-pop pop hc-lk\" data-k=\"recording retention delete call recordings automatically set time\" data-p=\"JustCall\" data-t=\"Set retention\" href=\"https://help.justcall.io/en/articles/9306203-how-to-automatically-delete-call-recordings-after-a-set-time\" rel=\"noopener\" target=\"_blank\"><span class=\"hc-n\">02</span><h3>Set retention</h3><p>Delete recordings automatically after a set time</p></a>\n<a class=\"hc-pop pop hc-lk\" data-k=\"transcription privacy redaction sensitive data payment information personal data pause\" data-p=\"JustCall\" data-t=\"Redact transcripts\" href=\"https://help.justcall.io/en/articles/9841378-managing-privacy-settings-in-justcall-ai-transcription-and-redaction-options\" rel=\"noopener\" target=\"_blank\"><span class=\"hc-n\">03</span><h3>Redact transcripts</h3><p>Pause transcription and redact card or personal data</p></a>\n<a class=\"hc-pop pop hc-lk\" data-k=\"account access permissions team roles authentication two-factor 2fa sso data control gdpr export delete\" data-p=\"JustCall\" data-t=\"Control data access\" href=\"https://help.justcall.io/en/articles/1929254-data-control-tools-for-gdpr-compliance\" rel=\"noopener\" target=\"_blank\"><span class=\"hc-n\">04</span><h3>Control data access</h3><p>Roles, exports, and deletion tools for GDPR</p></a>\n</div>\n</section>\n<!-- COLLECTIONS: one per product, plus security -->\n<section aria-labelledby=\"prH\" class=\"rail pd\" id=\"products\">\n<header class=\"sec-h\">\n<span class=\"ey\"><i></i>Collections</span>\n<h2 id=\"prH\">Browse by product</h2>\n<p>Each product has its own help center, written for the way it is set up and used. Article counts are placeholders until the final centers are linked.</p>\n</header>\n<div class=\"hc-cols\">\n<article class=\"hc-col pop\">\n<header><span class=\"hc-cnt\">180+ articles <i>placeholder</i></span></header>\n<h3>JustCall</h3>\n<p>Calling, SMS, dialers, AI Voice Agents, and CRM integrations</p>\n<ul>\n<li><a class=\"hc-lk\" data-k=\"calling sms text messaging phone numbers dialer\" data-p=\"JustCall\" data-t=\"Calling and SMS\" href=\"https://help.justcall.io/en/\" rel=\"noopener\" target=\"_blank\">Calling and SMS</a></li>\n<li><a class=\"hc-lk\" data-k=\"ai voice agents setup inbound outbound\" data-p=\"JustCall\" data-t=\"AI Voice Agents\" href=\"https://help.justcall.io/en/\" rel=\"noopener\" target=\"_blank\">AI Voice Agents</a></li>\n<li><a class=\"hc-lk\" data-k=\"crm integrations hubspot salesforce billing account settings\" data-p=\"JustCall\" data-t=\"Integrations and billing\" href=\"https://help.justcall.io/en/\" rel=\"noopener\" target=\"_blank\">Integrations and billing</a></li>\n</ul>\n<a class=\"hc-go\" href=\"https://help.justcall.io/en/\" rel=\"noopener\" target=\"_blank\">Open JustCall Help Center </a>\n</article>\n<article class=\"hc-col pop\">\n<header><span class=\"hc-cnt\">60+ articles <i>placeholder</i></span></header>\n<h3>ServiceAgent</h3>\n<p>Agent setup, business knowledge, and integrations for home services</p>\n<ul>\n<li><a class=\"hc-lk\" data-k=\"agent setup business knowledge greeting hours\" data-p=\"ServiceAgent\" data-t=\"Agent setup\" href=\"https://help.serviceagent.ai/\" rel=\"noopener\" target=\"_blank\">Agent setup</a></li>\n<li><a class=\"hc-lk\" data-k=\"crm integrations servicetitan housecall jobber webhooks\" data-p=\"ServiceAgent\" data-t=\"CRM integrations\" href=\"https://help.serviceagent.ai/\" rel=\"noopener\" target=\"_blank\">CRM integrations</a></li>\n<li><a class=\"hc-lk\" data-k=\"number porting phone webhooks forwarding\" data-p=\"ServiceAgent\" data-t=\"Number porting and webhooks\" href=\"https://help.serviceagent.ai/\" rel=\"noopener\" target=\"_blank\">Number porting and webhooks</a></li>\n</ul>\n<a class=\"hc-go\" href=\"https://help.serviceagent.ai/\" rel=\"noopener\" target=\"_blank\">Open ServiceAgent Help Center </a>\n</article>\n<article class=\"hc-col pop\">\n<header><b class=\"hc-py\">PyAI</b><span class=\"hc-cnt\">40+ guides <i>placeholder</i></span></header>\n<h3>PyAI</h3>\n<p>Speech and voice APIs, real-time agents, SDKs, and keys</p>\n<ul>\n<li><a class=\"hc-lk\" data-k=\"api keys scopes developer authentication\" data-p=\"PyAI\" data-t=\"API keys and scopes\" href=\"https://docs.pyai.com\" rel=\"noopener\" target=\"_blank\">API keys and scopes</a></li>\n<li><a class=\"hc-lk\" data-k=\"realtime voice agents speech telephony sdk\" data-p=\"PyAI\" data-t=\"Real-time voice agents\" href=\"https://docs.pyai.com\" rel=\"noopener\" target=\"_blank\">Real-time voice agents</a></li>\n<li><a class=\"hc-lk\" data-k=\"recording controls trace audit trail\" data-p=\"PyAI\" data-t=\"Recording controls and Trace\" href=\"https://docs.pyai.com\" rel=\"noopener\" target=\"_blank\">Recording controls and Trace</a></li>\n</ul>\n<a class=\"hc-go\" href=\"https://pyai.com/\" rel=\"noopener\" target=\"_blank\">Explore PyAI developer resources </a>\n</article>\n<article class=\"hc-col pop hc-col-sec\">\n<header><span class=\"hc-cnt\">7 topics</span></header>\n<h3>Security &amp; privacy</h3>\n<p>Certifications, access, retention, GDPR, and incident reporting</p>\n<ul>\n<li><a class=\"hc-lk\" data-k=\"soc 2 iso 27001 pci dss hipaa csa star certifications security reports compliance trust center\" data-p=\"Security\" data-t=\"Certifications and reports\" href=\"https://trust.justcall.io/\" rel=\"noopener\" target=\"_blank\">Certifications and reports</a></li>\n<li><a class=\"hc-lk\" data-k=\"privacy gdpr data requests data processing transfer safeguards data rights legal dpa\" data-p=\"Security\" data-t=\"GDPR and data requests\" href=\"https://justcall.io/gdpr-compliance/\" rel=\"noopener\" target=\"_blank\">GDPR and data requests</a></li>\n<li><a class=\"hc-lk\" data-k=\"service status availability uptime incidents outage\" data-p=\"Security\" data-t=\"Service status\" href=\"https://status.justcall.io/\" rel=\"noopener\" target=\"_blank\">Service status</a></li>\n</ul>\n<a class=\"hc-go\" href=\"#security\">All seven topics </a>\n</article>\n</div>\n</section>\n<div aria-hidden=\"true\" class=\"gsep\"><i class=\"pl l\"></i><i class=\"pl r\"></i></div>\n<!-- SECURITY, PRIVACY & COMPLIANCE: seven rows -->\n<section aria-labelledby=\"scH\" class=\"rail\" id=\"security\">\n<header class=\"sec-h\">\n<span class=\"ey\"><i></i>Security &amp; privacy</span>\n<h2 id=\"scH\">Work securely, by topic</h2>\n<p>Seven topics, each with the article or page that answers it.</p>\n<a class=\"lk\" href=\"trust.html\">Trust &amp; security overview </a>\n</header>\n<ol class=\"hc-list\">\n<li class=\"hc-row pop\"><span class=\"hc-n\">01</span><div><h3>Reports and certifications</h3><p>SOC 2 Type 2, ISO 27001, PCI DSS, HIPAA, and CSA STAR documentation</p></div><div class=\"hc-links\"><a class=\"hc-lk\" data-k=\"soc 2 iso 27001 pci dss hipaa csa star certifications security reports compliance\" data-p=\"JustCall\" data-t=\"Open Trust Center\" href=\"https://trust.justcall.io/\" rel=\"noopener\" target=\"_blank\">Open Trust Center </a></div></li>\n<li class=\"hc-row pop\"><span class=\"hc-n\">02</span><div><h3>Access and permissions</h3><p>Team roles, authentication, two-factor verification, and SSO</p></div><div class=\"hc-links\"><a class=\"hc-lk\" data-k=\"account access permissions team roles authentication two-factor 2fa sso data control\" data-p=\"JustCall\" data-t=\"Manage data access\" href=\"https://help.justcall.io/en/articles/1929254-data-control-tools-for-gdpr-compliance\" rel=\"noopener\" target=\"_blank\">Manage data access </a></div></li>\n<li class=\"hc-row pop\"><span class=\"hc-n\">03</span><div><h3>Recording access and retention</h3><p>Who can open a recording, and when it is deleted</p></div><div class=\"hc-links\"><a class=\"hc-lk\" data-k=\"recording access links secure call recordings\" data-p=\"JustCall\" data-t=\"Secure recording links\" href=\"https://help.justcall.io/en/articles/16040754-secure-recording-links\" rel=\"noopener\" target=\"_blank\">Secure recording links </a><a class=\"hc-lk\" data-k=\"recording retention delete call recordings automatically set time\" data-p=\"JustCall\" data-t=\"Manage recording retention\" href=\"https://help.justcall.io/en/articles/9306203-how-to-automatically-delete-call-recordings-after-a-set-time\" rel=\"noopener\" target=\"_blank\">Manage recording retention </a></div></li>\n<li class=\"hc-row pop\"><span class=\"hc-n\">04</span><div><h3>Transcription and sensitive data</h3><p>Pause transcription and redact payment or personal information</p></div><div class=\"hc-links\"><a class=\"hc-lk\" data-k=\"transcription privacy redaction sensitive data payment information personal data pause\" data-p=\"JustCall\" data-t=\"Manage transcription privacy\" href=\"https://help.justcall.io/en/articles/9841378-managing-privacy-settings-in-justcall-ai-transcription-and-redaction-options\" rel=\"noopener\" target=\"_blank\">Manage transcription privacy </a></div></li>\n<li class=\"hc-row pop\"><span class=\"hc-n\">05</span><div><h3>Privacy, GDPR, and data requests</h3><p>Processing responsibilities, transfer safeguards, and data rights</p></div><div class=\"hc-links\"><a class=\"hc-lk\" data-k=\"privacy gdpr data requests data processing transfer safeguards data rights legal dpa\" data-p=\"JustCall\" data-t=\"Read GDPR guidance\" href=\"https://justcall.io/gdpr-compliance/\" rel=\"noopener\" target=\"_blank\">Read GDPR guidance </a></div></li>\n<li class=\"hc-row pop\"><span class=\"hc-n\">06</span><div><h3>AI data and security policies</h3><p>Training-data practices, data access, and safeguards by product</p></div><div class=\"hc-links\"><a class=\"hc-lk\" data-k=\"ai data security policies training data practices data access safeguards\" data-p=\"JustCall\" data-t=\"Review AI security information\" href=\"https://trust.justcall.io/\" rel=\"noopener\" target=\"_blank\">Review AI security information </a></div></li>\n<li class=\"hc-row pop\"><span class=\"hc-n\">07</span><div><h3>Incidents and service status</h3><p>Availability, published incidents, and how to report a vulnerability</p></div><div class=\"hc-links\"><a class=\"hc-lk\" data-k=\"service status availability uptime incidents outage\" data-p=\"JustCall\" data-t=\"JustCall service status\" href=\"https://status.justcall.io/\" rel=\"noopener\" target=\"_blank\">JustCall service status </a><a class=\"hc-lk\" data-k=\"incident reporting security vulnerability report guidance\" data-p=\"JustCall\" data-t=\"Security reporting guidance\" href=\"https://justcall.io/security-and-compliance/\" rel=\"noopener\" target=\"_blank\">Security reporting guidance </a></div></li>\n</ol>\n</section>\n<!-- NEED A PERSON: two routes -->\n<section aria-labelledby=\"rtH\" class=\"hc-route-w\" id=\"person\">\n<div class=\"rail\">\n<header class=\"sec-h\">\n<span class=\"ey on-cream\"><i></i>Need a person?</span>\n<h2 id=\"rtH\">Reach the right team</h2>\n<p>Product questions go to support inside your product. Anything about a new deployment, pricing, or custom work goes to the AtomsAI team.</p>\n</header>\n<div class=\"hc-routes\">\n<a class=\"hc-route pop\" href=\"https://help.justcall.io/en/\" rel=\"noopener\" target=\"_blank\">\n<span class=\"tg\">Support</span>\n<h3>Already a customer</h3>\n<p>Open a conversation from inside JustCall, ServiceAgent, or the PyAI console. Logged-in requests arrive with your account attached.</p>\n<span class=\"hc-go\">Contact support </span>\n</a>\n<a class=\"hc-route pop\" href=\"#talk\">\n<span class=\"tg\">Sales &amp; services</span>\n<h3>Evaluating, or building something custom</h3>\n<p>Deployments, pricing, security reviews, and custom AI engineering. One message reaches the right team.</p>\n<span class=\"hc-go\">Talk to AtomsAI </span>\n</a>\n</div>\n</div>\n</section>\n<!-- CLOSE -->\n<section aria-labelledby=\"ctH\" class=\"ct-f\" id=\"talk\">\n<div aria-hidden=\"true\" class=\"ct-bars\"><i style=\"--h:64%;--d:0.00s\"></i><i style=\"--h:52%;--d:0.37s\"></i><i style=\"--h:70%;--d:0.74s\"></i><i style=\"--h:46%;--d:1.11s\"></i><i style=\"--h:58%;--d:1.48s\"></i><i style=\"--h:48%;--d:1.85s\"></i><i style=\"--h:36%;--d:2.22s\"></i><i style=\"--h:22%;--d:2.59s\"></i><i style=\"--h:26%;--d:2.96s\"></i><i style=\"--h:38%;--d:0.33s\"></i><i style=\"--h:54%;--d:0.70s\"></i><i style=\"--h:60%;--d:1.07s\"></i><i style=\"--h:44%;--d:1.44s\"></i><i style=\"--h:68%;--d:1.81s\"></i><i style=\"--h:50%;--d:2.18s\"></i><i style=\"--h:66%;--d:2.55s\"></i></div>\n<div class=\"ct-in\">\n<span class=\"ct-ey\"><i></i>Talk to AtomsAI</span>\n<h2 id=\"ctH\">Something the articles don't cover?</h2>\n<p>Tell us what you're setting up. We’ll route it to support, security, or engineering.</p>\n<div class=\"ct-b\"><a class=\"ct-btn pri\" href=\"mailto:support@atomsai.com\">Send a message</a><a class=\"ct-btn\" href=\"trust.html#documents\">Request security documentation</a></div>\n</div>\n</section>\n",
+  "links": [
+    {
+      "href": "https://help.justcall.io/en/",
+      "text": "JustCall"
+    },
+    {
+      "href": "https://help.serviceagent.ai/",
+      "text": "ServiceAgent"
+    },
+    {
+      "href": "https://pyai.com/",
+      "text": "PyAI"
+    },
+    {
+      "href": "https://status.justcall.io/",
+      "text": "Status"
+    },
+    {
+      "href": "https://help.justcall.io/en/articles/16040754-secure-recording-links",
+      "text": "01\nSecure recordings\n\nControl who can open a recording link"
+    },
+    {
+      "href": "https://help.justcall.io/en/articles/9306203-how-to-automatically-delete-call-recordings-after-a-set-time",
+      "text": "02\nSet retention\n\nDelete recordings automatically after a set time"
+    },
+    {
+      "href": "https://help.justcall.io/en/articles/9841378-managing-privacy-settings-in-justcall-ai-transcription-and-redaction-options",
+      "text": "03\nRedact transcripts\n\nPause transcription and redact card or personal data"
+    },
+    {
+      "href": "https://help.justcall.io/en/articles/1929254-data-control-tools-for-gdpr-compliance",
+      "text": "04\nControl data access\n\nRoles, exports, and deletion tools for GDPR"
+    },
+    {
+      "href": "https://help.justcall.io/en/",
+      "text": "Calling and SMS"
+    },
+    {
+      "href": "https://help.justcall.io/en/",
+      "text": "AI Voice Agents"
+    },
+    {
+      "href": "https://help.justcall.io/en/",
+      "text": "Integrations and billing"
+    },
+    {
+      "href": "https://help.justcall.io/en/",
+      "text": "Open JustCall Help Center"
+    },
+    {
+      "href": "https://help.serviceagent.ai/",
+      "text": "Agent setup"
+    },
+    {
+      "href": "https://help.serviceagent.ai/",
+      "text": "CRM integrations"
+    },
+    {
+      "href": "https://help.serviceagent.ai/",
+      "text": "Number porting and webhooks"
+    },
+    {
+      "href": "https://help.serviceagent.ai/",
+      "text": "Open ServiceAgent Help Center"
+    },
+    {
+      "href": "https://docs.pyai.com",
+      "text": "API keys and scopes"
+    },
+    {
+      "href": "https://docs.pyai.com",
+      "text": "Real-time voice agents"
+    },
+    {
+      "href": "https://docs.pyai.com",
+      "text": "Recording controls and Trace"
+    },
+    {
+      "href": "https://pyai.com/",
+      "text": "Explore PyAI developer resources"
+    },
+    {
+      "href": "https://trust.justcall.io/",
+      "text": "Certifications and reports"
+    },
+    {
+      "href": "https://justcall.io/gdpr-compliance/",
+      "text": "GDPR and data requests"
+    },
+    {
+      "href": "https://status.justcall.io/",
+      "text": "Service status"
+    },
+    {
+      "href": "#security",
+      "text": "All seven topics"
+    },
+    {
+      "href": "trust.html",
+      "text": "Trust & security overview"
+    },
+    {
+      "href": "https://trust.justcall.io/",
+      "text": "Open Trust Center"
+    },
+    {
+      "href": "https://help.justcall.io/en/articles/1929254-data-control-tools-for-gdpr-compliance",
+      "text": "Manage data access"
+    },
+    {
+      "href": "https://help.justcall.io/en/articles/16040754-secure-recording-links",
+      "text": "Secure recording links"
+    },
+    {
+      "href": "https://help.justcall.io/en/articles/9306203-how-to-automatically-delete-call-recordings-after-a-set-time",
+      "text": "Manage recording retention"
+    },
+    {
+      "href": "https://help.justcall.io/en/articles/9841378-managing-privacy-settings-in-justcall-ai-transcription-and-redaction-options",
+      "text": "Manage transcription privacy"
+    },
+    {
+      "href": "https://justcall.io/gdpr-compliance/",
+      "text": "Read GDPR guidance"
+    },
+    {
+      "href": "https://trust.justcall.io/",
+      "text": "Review AI security information"
+    },
+    {
+      "href": "https://status.justcall.io/",
+      "text": "JustCall service status"
+    },
+    {
+      "href": "https://justcall.io/security-and-compliance/",
+      "text": "Security reporting guidance"
+    },
+    {
+      "href": "https://help.justcall.io/en/",
+      "text": "SUPPORT\nAlready a customer\n\nOpen a conversation from inside JustCall, ServiceAgent, or the PyAI console. Logged-in requests arrive with your account attached.\n\nContact support"
+    },
+    {
+      "href": "#talk",
+      "text": "SALES & SERVICES\nEvaluating, or building something custom\n\nDeployments, pricing, security reviews, and custom AI engineering. One message reaches the right team.\n\nTalk to AtomsAI"
+    },
+    {
+      "href": "mailto:support@atomsai.com",
+      "text": "Send a message"
+    },
+    {
+      "href": "trust.html#documents",
+      "text": "Request security documentation"
+    }
+  ],
+  "sections": [
+    {
+      "id": "",
+      "text": "Help center\nWhat do you need to do?\n\nSearch across every AtomsAI product, or go straight to the help center for yours.\n\n⌘K\n/\nGo straight to\nJustCall\nServiceAgent\nPyAI\nStatus"
+    },
+    {
+      "id": "popular",
+      "text": "Popular\nStart here\n\nFour tasks that account for most support questions. Each opens the step-by-step article.\n\n01\nSecure recordings\n\nControl who can open a recording link\n\n02\nSet retention\n\nDelete recordings automatically after a set time\n\n03\nRedact transcripts\n\nPause transcription and redact card or personal data\n\n04\nControl data access\n\nRoles, exports, and deletion tools for GDPR"
+    },
+    {
+      "id": "products",
+      "text": "Collections\nBrowse by product\n\nEach product has its own help center, written for the way it is set up and used. Article counts are placeholders until the final centers are linked.\n\n180+ ARTICLES PLACEHOLDER\nJustCall\n\nCalling, SMS, dialers, AI Voice Agents, and CRM integrations\n\nCalling and SMS\nAI Voice Agents\nIntegrations and billing\nOpen JustCall Help Center\n60+ ARTICLES PLACEHOLDER\nServiceAgent\n\nAgent setup, business knowledge, and integrations for home services\n\nAgent setup\nCRM integrations\nNumber porting and webhooks\nOpen ServiceAgent Help Center\nPyAI\n40+ GUIDES PLACEHOLDER\nPyAI\n\nSpeech and voice APIs, real-time agents, SDKs, and keys\n\nAPI keys and scopes\nReal-time voice agents\nRecording controls and Trace\nExplore PyAI developer resources\n7 TOPICS\nSecurity & privacy\n\nCertifications, access, retention, GDPR, and incident reporting\n\nCertifications and reports\nGDPR and data requests\nService status\nAll seven topics"
+    },
+    {
+      "id": "security",
+      "text": "Security & privacy\nWork securely, by topic\n\nSeven topics, each with the article or page that answers it.\n\nTrust & security overview\n01\nReports and certifications\n\nSOC 2 Type 2, ISO 27001, PCI DSS, HIPAA, and CSA STAR documentation\n\nOpen Trust Center\n02\nAccess and permissions\n\nTeam roles, authentication, two-factor verification, and SSO\n\nManage data access\n03\nRecording access and retention\n\nWho can open a recording, and when it is deleted\n\nSecure recording links\nManage recording retention\n04\nTranscription and sensitive data\n\nPause transcription and redact payment or personal information\n\nManage transcription privacy\n05\nPrivacy, GDPR, and data requests\n\nProcessing responsibilities, transfer safeguards, and data rights\n\nRead GDPR guidance\n06\nAI data and security policies\n\nTraining-data practices, data access, and safeguards by product\n\nReview AI security information\n07\nIncidents and service status\n\nAvailability, published incidents, and how to report a vulnerability\n\nJustCall service status\nSecurity reporting guidance"
+    },
+    {
+      "id": "person",
+      "text": "Need a person?\nReach the right team\n\nProduct questions go to support inside your product. Anything about a new deployment, pricing, or custom work goes to the AtomsAI team.\n\nSUPPORT\nAlready a customer\n\nOpen a conversation from inside JustCall, ServiceAgent, or the PyAI console. Logged-in requests arrive with your account attached.\n\nContact support\nSALES & SERVICES\nEvaluating, or building something custom\n\nDeployments, pricing, security reviews, and custom AI engineering. One message reaches the right team.\n\nTalk to AtomsAI"
+    },
+    {
+      "id": "talk",
+      "text": "TALK TO ATOMSAI\nSomething the articles don't cover?\n\nTell us what you're setting up. We’ll route it to support, security, or engineering.\n\nSend a message\nRequest security documentation"
+    }
+  ],
+  "text": "Help center\nWhat do you need to do?\n\nSearch across every AtomsAI product, or go straight to the help center for yours.\n\n⌘K\n/\nGo straight to\nJustCall\nServiceAgent\nPyAI\nStatus\nPopular\nStart here\n\nFour tasks that account for most support questions. Each opens the step-by-step article.\n\n01\nSecure recordings\n\nControl who can open a recording link\n\n02\nSet retention\n\nDelete recordings automatically after a set time\n\n03\nRedact transcripts\n\nPause transcription and redact card or personal data\n\n04\nControl data access\n\nRoles, exports, and deletion tools for GDPR\n\nCollections\nBrowse by product\n\nEach product has its own help center, written for the way it is set up and used. Article counts are placeholders until the final centers are linked.\n\n180+ ARTICLES PLACEHOLDER\nJustCall\n\nCalling, SMS, dialers, AI Voice Agents, and CRM integrations\n\nCalling and SMS\nAI Voice Agents\nIntegrations and billing\nOpen JustCall Help Center\n60+ ARTICLES PLACEHOLDER\nServiceAgent\n\nAgent setup, business knowledge, and integrations for home services\n\nAgent setup\nCRM integrations\nNumber porting and webhooks\nOpen ServiceAgent Help Center\nPyAI\n40+ GUIDES PLACEHOLDER\nPyAI\n\nSpeech and voice APIs, real-time agents, SDKs, and keys\n\nAPI keys and scopes\nReal-time voice agents\nRecording controls and Trace\nExplore PyAI developer resources\n7 TOPICS\nSecurity & privacy\n\nCertifications, access, retention, GDPR, and incident reporting\n\nCertifications and reports\nGDPR and data requests\nService status\nAll seven topics\nSecurity & privacy\nWork securely, by topic\n\nSeven topics, each with the article or page that answers it.\n\nTrust & security overview\n01\nReports and certifications\n\nSOC 2 Type 2, ISO 27001, PCI DSS, HIPAA, and CSA STAR documentation\n\nOpen Trust Center\n02\nAccess and permissions\n\nTeam roles, authentication, two-factor verification, and SSO\n\nManage data access\n03\nRecording access and retention\n\nWho can open a recording, and when it is deleted\n\nSecure recording links\nManage recording retention\n04\nTranscription and sensitive data\n\nPause transcription and redact payment or personal information\n\nManage transcription privacy\n05\nPrivacy, GDPR, and data requests\n\nProcessing responsibilities, transfer safeguards, and data rights\n\nRead GDPR guidance\n06\nAI data and security policies\n\nTraining-data practices, data access, and safeguards by product\n\nReview AI security information\n07\nIncidents and service status\n\nAvailability, published incidents, and how to report a vulnerability\n\nJustCall service status\nSecurity reporting guidance\nNeed a person?\nReach the right team\n\nProduct questions go to support inside your product. Anything about a new deployment, pricing, or custom work goes to the AtomsAI team.\n\nSUPPORT\nAlready a customer\n\nOpen a conversation from inside JustCall, ServiceAgent, or the PyAI console. Logged-in requests arrive with your account attached.\n\nContact support\nSALES & SERVICES\nEvaluating, or building something custom\n\nDeployments, pricing, security reviews, and custom AI engineering. One message reaches the right team.\n\nTalk to AtomsAI\nTALK TO ATOMSAI\nSomething the articles don't cover?\n\nTell us what you're setting up. We’ll route it to support, security, or engineering.\n\nSend a message\nRequest security documentation"
+}

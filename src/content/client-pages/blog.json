@@ -1,0 +1,201 @@
+{
+  "label": "Blog",
+  "route": "/blog",
+  "title": "Notes from the field",
+  "intro": [
+    "Working notes from the teams building AtomsAI, on phone audio, voice agents, and the software that has to hold up around a call."
+  ],
+  "actions": [],
+  "sections": [
+    {
+      "id": "start",
+      "title": "Three notes most people read first",
+      "label": "Start here",
+      "intro": [
+        "One on the audio, one on the agent, one on the record it leaves behind. Together they explain most of what we build."
+      ],
+      "blocks": [
+        {
+          "title": "What a phone line does to a voice, and why it matters to your model",
+          "body": [
+            "Narrowband audio removes most of what speech models were trained on. Here is what is left to work with."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Why we stopped treating turn-taking as a timer setting",
+          "body": [
+            "An agent that waits a fixed 700 ms sounds slow and still interrupts. What it took to let the model decide."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "The call is over. Is the record right?",
+          "body": [
+            "Summaries, dispositions, and next steps only help if they land in the CRM without a human retyping them."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        }
+      ],
+      "links": [],
+      "kind": "cards"
+    },
+    {
+      "id": "all",
+      "title": "All notes",
+      "label": "By date",
+      "intro": [
+        "Filter by topic."
+      ],
+      "blocks": [
+        {
+          "title": "Why SaaS Labs became AtomsAI",
+          "body": [
+            "A decade of business communication, and what the conversations asked us to build next."
+          ],
+          "links": [],
+          "list": [],
+          "label": "Company",
+          "category": "Company",
+          "tags": []
+        },
+        {
+          "title": "What a phone line does to a voice, and why it matters to your model",
+          "body": [
+            "Narrowband audio removes most of what speech models were trained on. Here is what is left to work with."
+          ],
+          "links": [],
+          "list": [],
+          "label": "Phone audio",
+          "category": "Phone audio",
+          "tags": []
+        },
+        {
+          "title": "Why we stopped treating turn-taking as a timer setting",
+          "body": [
+            "An agent that waits a fixed 700 ms sounds slow and still interrupts. What it took to let the model decide."
+          ],
+          "links": [],
+          "list": [],
+          "label": "Voice agents",
+          "category": "Voice agents",
+          "tags": []
+        },
+        {
+          "title": "11:48 pm, no cool, and nobody at the desk",
+          "body": [
+            "How a service business books an emergency call when the office is closed, and what has to be true in the back office for it to hold."
+          ],
+          "links": [],
+          "list": [],
+          "label": "Home services",
+          "category": "Home services",
+          "tags": []
+        },
+        {
+          "title": "The call is over. Is the record right?",
+          "body": [
+            "Summaries, dispositions, and next steps only help if they land in the CRM without a human retyping them."
+          ],
+          "links": [],
+          "list": [],
+          "label": "Calling and CRM",
+          "category": "Calling and CRM",
+          "tags": []
+        },
+        {
+          "title": "From an OpenAI base URL to a phone number in an afternoon",
+          "body": [
+            "A walkthrough of the smallest agent you can put on a real line, and where you would extend it from there."
+          ],
+          "links": [],
+          "list": [],
+          "label": "Building on PyAI",
+          "category": "Building on PyAI",
+          "tags": []
+        },
+        {
+          "title": "Measuring word error rate on accented 8 kHz audio",
+          "body": [
+            "How we built the test set, what 4.76% does and does not mean, and how to run the same check on your own calls."
+          ],
+          "links": [],
+          "list": [],
+          "label": "Phone audio",
+          "category": "Phone audio",
+          "tags": []
+        },
+        {
+          "title": "Guardrails that hold on a live call",
+          "body": [
+            "Where an agent should stop, hand off, or ask, and how to test those boundaries before customers find them."
+          ],
+          "links": [],
+          "list": [],
+          "label": "Voice agents",
+          "category": "Voice agents",
+          "tags": []
+        },
+        {
+          "title": "Speed to lead, measured honestly",
+          "body": [
+            "What changes when a callback goes out in 58 seconds instead of the next morning, with the numbers teams have shared."
+          ],
+          "links": [],
+          "list": [],
+          "label": "Calling and CRM",
+          "category": "Calling and CRM",
+          "tags": []
+        },
+        {
+          "title": "Keeping your LiveKit loop and swapping in the voice",
+          "body": [
+            "Where PyAI drops into an existing pipeline, what stays yours, and what you stop maintaining."
+          ],
+          "links": [],
+          "list": [],
+          "label": "Building on PyAI",
+          "category": "Building on PyAI",
+          "tags": []
+        }
+      ],
+      "links": [],
+      "kind": "catalog"
+    }
+  ],
+  "closing": {
+    "title": "Written by the people doing the work",
+    "body": [
+      "What a billion conversations a year keep teaching us about speech, voice agents, and the software around a call."
+    ],
+    "links": [
+      {
+        "label": "Browse all notes",
+        "href": "#all"
+      }
+    ]
+  },
+  "featured": {
+    "title": "Why SaaS Labs became AtomsAI",
+    "body": [
+      "A decade of business communication, and what the conversations asked us to build next."
+    ],
+    "links": [],
+    "list": [],
+    "label": "",
+    "category": "",
+    "tags": []
+  }
+}

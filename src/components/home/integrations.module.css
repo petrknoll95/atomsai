@@ -1,9 +1,12 @@
 .section { padding-block: var(--section-space); color: var(--color-foreground); }
 .stage { position: relative; height: clamp(660px, 52vw, 820px); overflow: clip; }
 .grid {
-  --orbit-base: clamp(680px, 48vw, 780px);
-  --orbit-step: clamp(112px, 8.8vw, 140px);
-  --tile-size: clamp(88px, 6.6vw, 104px);
+  /* Scales with the viewport so the rings keep their desktop proportions at every width.
+     The minimums only stop the circles getting too small at the tablet end; larger minimums
+     pushed ring 0 past the viewport between 768px and ~1400px, leaving no circles or logos. */
+  --orbit-base: clamp(480px, 62.4vw, 1014px);
+  --orbit-step: clamp(88px, 11.44vw, 182px);
+  --tile-size: clamp(68px, 8.58vw, 135px);
   position: absolute; inset: 0; pointer-events: none;
   mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent), linear-gradient(180deg, transparent, #000 12%, #000 88%, transparent);
   mask-composite: intersect;
@@ -13,29 +16,25 @@
   width: calc(var(--orbit-base) + var(--ring) * var(--orbit-step) * 2);
   aspect-ratio: 1;
   translate: -50% -50%;
-  animation: orbit-turn var(--orbit-duration) linear infinite;
-  animation-play-state: paused;
 }
-.orbit:nth-child(even) { animation-direction: reverse; }
+/* IntegrationsGrid moves each slot along its ring with an upright translation. */
 .slot {
   position: absolute; width: var(--tile-size); aspect-ratio: 1;
   transform: translate(-50%, -50%);
+  will-change: transform;
 }
 .tile {
   width: 100%; height: 100%; display: grid; place-items: center;
   border-radius: 50%; background: transparent;
-  border: 1px solid var(--color-border-subtle);
-  animation: orbit-turn var(--orbit-duration) linear infinite reverse;
-  animation-play-state: paused;
+  /* Stronger than the subtle border token so the empty rings read on paper. */
+  border: 1px solid color-mix(in display-p3, var(--color-foreground) 15%, transparent);
 }
-.orbit:nth-child(even) .tile { animation-direction: normal; }
 .tile img {
   width: 46%; height: 46%; object-fit: contain;
   animation: icon-lifetime 4.8s cubic-bezier(.4, 0, .2, 1) both;
   animation-play-state: paused;
 }
-.grid[data-running="true"] :is(.orbit, .tile, img) { animation-play-state: running; }
-@keyframes orbit-turn { to { transform: rotate(360deg); } }
+.grid[data-running="true"] img { animation-play-state: running; }
 @keyframes icon-lifetime {
   0% { opacity: 0; transform: scale(.82); filter: blur(4px); }
   12%, 76% { opacity: 1; transform: scale(1); filter: blur(0); }
@@ -50,10 +49,13 @@
 .copy > :global(.eyebrow) { align-self: center; }
 @media (max-width: 767px) {
   .stage { height: 660px; }
-  .grid { --orbit-base: 460px; --orbit-step: 90px; --tile-size: 64px; }
+  /* The copy spans the full width here, so the rings must arc above and below it inside the
+     stage: at the desktop scale only the very edges of ring 0 reached the crop and no slot
+     qualified for a logo. These radii put the top and bottom arcs of rings 0 and 1 in view. */
+  .grid { --orbit-base: clamp(380px, 84vw, 640px); --orbit-step: 84px; --tile-size: 64px; }
   .copy { width: 100%; gap: 40px; }
   .title { font-size: clamp(30px, 8vw, 42px); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .orbit, .tile, .tile img { animation: none; }
+  .tile img { animation: none; }
 }

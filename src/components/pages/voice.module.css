@@ -70,19 +70,19 @@
 .journeyOpener { font-size:48px; line-height:.98; max-width:500px; margin-top:32px; min-height:98px; }
 .journeyStory h3 { font-size:28px; line-height:1.1; margin:36px 0 16px; }
 .journeyStory > p:last-child { max-width:440px; font-size:16px; line-height:1.55; color:var(--palette-forest-green); }
-.journeyFlow { padding:32px; border-radius:16px; background:var(--palette-cream-tint); }
+.journeyFlow { align-self:start; }
 .flowLabel { font-size:12px; margin-bottom:24px; }
-.journeyFlow ol { list-style:none; }
+.journeyFlow ol { list-style:none; padding:0; margin:0; }
 .journeyFlow li { display:flex; gap:20px; padding-bottom:26px; position:relative; }
-.journeyFlow li:not(:last-child)::before { content:''; position:absolute; width:1px; top:29px; bottom:1px; left:13px; background:var(--color-border); }
+
 .flowIndex { display:grid; place-items:center; width:28px; height:28px; border:1px solid var(--color-border); border-radius:50%; font-size:var(--text-caption); flex:none; }
 .journeyFlow h4 { font-size:14px; font-weight:475; margin-bottom:4px; }
 .journeyFlow li p { font-size:14px; color:var(--palette-forest-green); }
 .journeyResult { display:flex; align-items:center; gap:16px; border-top:1px solid var(--color-border); padding-top:24px; }
 .journeyResult > span { display:grid; place-items:center; width:36px; height:36px; border-radius:50%; background:var(--palette-deep-green); color:var(--palette-cream); flex:none; }
-.journeyResult p { font-size:28px; line-height:1; }
+.journeyResult p { font-size:16px; line-height:1.4; }
 .connections { margin-top:24px; font-size:12px; color:var(--palette-forest-green); }
-.illustrative { font-size:12px; color:var(--palette-forest-green); }
+
 .contextSection { background:var(--palette-cream-tint); padding-block:var(--section-space); }
 .contextGrid { display:grid; grid-template-columns:1fr 1fr; gap:96px; }
 .contextIntro .sectionHeading { margin-top:36px; }
@@ -187,7 +187,7 @@
   .journeyOpener { font-size:40px; min-height:0; margin-top:24px; }
   .journeyStory h3 { font-size:28px; margin-top:28px; }
   .journeyFlow { padding:24px; }
-  .journeyResult p { font-size:26px; }
+
   .contextGrid { grid-template-columns:1fr; gap:48px; }
   .contextIntro .sectionHeading { margin-top:28px; }
   .contextRows article { grid-template-columns:24px 1fr; gap:16px; }

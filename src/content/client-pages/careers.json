@@ -1,0 +1,279 @@
+{
+  "label": "Careers at AtomsAI",
+  "route": "/company/careers",
+  "title": "Building the next global AI company from India",
+  "intro": [
+    "Come solve hard problems in speech, real-time infrastructure, and the products thousands of businesses open every morning. Work that reaches real people on real phone lines, at a scale few teams see."
+  ],
+  "actions": [
+    {
+      "label": "Explore the teams",
+      "href": "#tracks"
+    },
+    {
+      "label": "Get in touch",
+      "href": "/company/contact?topic=careers"
+    }
+  ],
+  "sections": [
+    {
+      "id": "the-scale-is-real-so-are-the-problems",
+      "title": "The scale is real. So are the problems",
+      "label": "",
+      "intro": [
+        "More than a billion conversations a year run through what we build. Every one crosses a live phone network, reaches a person who won’t wait, and matters to a business counting on the outcome.",
+        "If that sounds like the interesting part, read on."
+      ],
+      "blocks": [],
+      "links": [],
+      "kind": "statement"
+    },
+    {
+      "id": "tracks",
+      "title": "What you’d be working on",
+      "label": "Four teams",
+      "intro": [],
+      "blocks": [
+        {
+          "title": "Make AI better at conversation",
+          "body": [
+            "Build speech models and conversational intelligence that handle accents, interruptions, and phone-quality audio. Your training data is a billion real calls a year."
+          ],
+          "links": [],
+          "list": [
+            "Speech recognition",
+            "Text-to-speech",
+            "Real-time agents"
+          ],
+          "label": "Speech & conversational AI",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Make it work at scale",
+          "body": [
+            "Run the real-time infrastructure under every call. Milliseconds matter when a person is waiting on the line."
+          ],
+          "links": [],
+          "list": [
+            "Telephony",
+            "Streaming media",
+            "Reliability"
+          ],
+          "label": "Infrastructure",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Make it useful to people",
+          "body": [
+            "Turn the models into products people open every morning. Thousands of businesses already do."
+          ],
+          "links": [],
+          "list": [
+            "JustCall",
+            "ServiceAgent",
+            "Product design"
+          ],
+          "label": "Applications",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Take it to the world",
+          "body": [
+            "Take what we build to the businesses that need it. Customers in 20+ countries, and far more who haven’t heard of us yet."
+          ],
+          "links": [],
+          "list": [
+            "Sales",
+            "Customer success",
+            "Developer relations"
+          ],
+          "label": "Go-to-market",
+          "category": "",
+          "tags": []
+        }
+      ],
+      "links": [],
+      "kind": "cards"
+    },
+    {
+      "id": "principles",
+      "title": "Your work should go further than your desk",
+      "label": "How we work",
+      "intro": [
+        "Six things we hold to. They're how we decide what to build and who to build it with."
+      ],
+      "blocks": [
+        {
+          "title": "Own meaningful problems",
+          "body": [
+            "You get a problem, not a ticket, and the room to solve it."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Work across disciplines",
+          "body": [
+            "Researchers, engineers, and designers sit on the same problem, not in separate queues."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Ship, then learn",
+          "body": [
+            "Production is the test. What you learn there decides what you build next."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Think independently",
+          "body": [
+            "A good argument beats seniority. Bring one."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Move with purpose",
+          "body": [
+            "We pick the few things that matter and move quickly on them."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Care about the outcome",
+          "body": [
+            "The job is done when the customer's problem is, not when the task closes."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        }
+      ],
+      "links": [],
+      "kind": "cards"
+    },
+    {
+      "id": "hiring",
+      "title": "Five steps, no surprises",
+      "label": "How we hire",
+      "intro": [
+        "Every step is a real conversation about the work. You'll always know where you are and what comes next."
+      ],
+      "blocks": [
+        {
+          "title": "Apply",
+          "body": [
+            "Send what you've built or shipped. A person reads every application."
+          ],
+          "links": [],
+          "list": [],
+          "label": "Step 1",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Intro call",
+          "body": [
+            "What you're looking for, what the team needs, and whether it's worth both our time."
+          ],
+          "links": [],
+          "list": [],
+          "label": "Step 2",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Craft conversation",
+          "body": [
+            "A deep dive on your work with the people you'd work with."
+          ],
+          "links": [],
+          "list": [],
+          "label": "Step 3",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Work session",
+          "body": [
+            "A real problem from the team, solved together. Take-home work is paid."
+          ],
+          "links": [],
+          "list": [],
+          "label": "Step 4",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Team and offer",
+          "body": [
+            "Meet the wider team, ask anything, and get a decision quickly."
+          ],
+          "links": [],
+          "list": [],
+          "label": "Step 5",
+          "category": "",
+          "tags": []
+        }
+      ],
+      "links": [],
+      "kind": "rows"
+    },
+    {
+      "id": "roles",
+      "title": "Where you could start",
+      "label": "Careers",
+      "intro": [
+        "We hire in Bengaluru, our headquarters, and remotely across India and the US."
+      ],
+      "blocks": [],
+      "links": [
+        {
+          "label": "Contact the team",
+          "href": "/company/contact?topic=careers"
+        }
+      ],
+      "kind": "statement"
+    }
+  ],
+  "closing": {
+    "title": "Come build what's next",
+    "body": [
+      "There’s a lot left to build. Come shape it."
+    ],
+    "links": [
+      {
+        "label": "Get in touch",
+        "href": "/company/contact?topic=careers"
+      },
+      {
+        "label": "About AtomsAI",
+        "href": "/company/about"
+      }
+    ]
+  }
+}

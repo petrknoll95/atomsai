@@ -19,9 +19,45 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
     };
     let nativeReason: NativeScrollReason = null;
     let smoother: ScrollSmoother | undefined;
+    // ScrollSmoother moves the content inside a fixed wrapper, so CSS position: sticky
+    // never engages. Pin each element that is currently sticky with ScrollTrigger instead,
+    // holding it at its CSS top until the bottom of its parent arrives.
+    let stickyPins: { pin: ScrollTrigger; element: HTMLElement }[] = [];
+    const unpinSticky = () => {
+      // Kill first so GSAP restores its inline styles, then drop the position override.
+      stickyPins.forEach(({ pin, element }) => { pin.kill(); element.style.removeProperty('position'); element.style.removeProperty('top'); });
+      stickyPins = [];
+    };
+    const pinSticky = () => {
+      unpinSticky();
+      if (!smoother) return;
+      content.current!.querySelectorAll<HTMLElement>('*').forEach(element => {
+        const style = getComputedStyle(element);
+        if (style.position !== 'sticky' || !element.parentElement) return;
+        const top = parseFloat(style.top) || 0;
+        const parent = element.parentElement;
+        // Lay it out in flow: a relative element would still be shifted by its sticky top.
+        element.style.position = 'relative';
+        element.style.top = 'auto';
+        stickyPins.push({ element, pin: ScrollTrigger.create({
+          trigger: element, pin: true, pinSpacing: false,
+          start: `top ${top}px`, endTrigger: parent,
+          end: () => `bottom ${top + element.offsetHeight}px`, invalidateOnRefresh: true,
+        }) });
+      });
+    };
+    let resizeFrame = 0;
+    let stickyWidth = innerWidth;
+    const onResize = () => {
+      if (innerWidth === stickyWidth) return;
+      stickyWidth = innerWidth;
+      cancelAnimationFrame(resizeFrame);
+      resizeFrame = requestAnimationFrame(pinSticky);
+    };
     let disposed = false;
     const configure = () => {
       const position = smoother?.scrollTop() ?? window.scrollY;
+      unpinSticky();
       smoother?.kill();
       smoother = undefined;
       delete document.documentElement.dataset.smoothScroll;
@@ -44,6 +80,7 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
             return false;
           },
         });
+        pinSticky();
         smoother.scrollTop(position);
         if (document.querySelector('dialog[open]')) smoother.paused(true);
       } else window.scrollTo({ top: position, behavior: 'instant' });
@@ -99,12 +136,16 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
     });
     document.addEventListener('click', navigate);
     window.addEventListener('hashchange', followHash);
+    window.addEventListener('resize', onResize);
     return () => {
       disposed = true;
       dialogs.disconnect();
       stopObserving();
       document.removeEventListener('click', navigate);
       window.removeEventListener('hashchange', followHash);
+      window.removeEventListener('resize', onResize);
+      cancelAnimationFrame(resizeFrame);
+      unpinSticky();
       smoother?.kill();
       delete document.documentElement.dataset.smoothScroll;
       delete document.documentElement.dataset.nativeScroll;
