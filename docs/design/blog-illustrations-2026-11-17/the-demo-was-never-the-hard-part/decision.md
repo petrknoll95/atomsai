@@ -1,13 +1,17 @@
-# The demo was never the hard part
+# The demo was never the hard part — abstract integration
 
-The article says that integration is the product: producing model output is only useful when it connects to the systems where work finishes. A recognizable cable plug and matching recessed socket replace the earlier abstract bridge.
+The latest user direction favors abstract work throughout the series. Two substantial complementary stepped prisms express integration: neither is a finished system alone, and their shared profile makes their relationship explicit. This replaces the literal plug and cable. It also avoids the earlier bridge between generic cubes.
 
-The two assemblies share a single X-axis. The male tongue is 28 × 24 × 36 units. The socket opening is 32 × 44, with a real 30-unit-deep cavity formed by four interior walls and a recessed back. The 24 × 36 tongue therefore fits with 4 units of total clearance per cross-section dimension and 2 units at the rear when fully inserted. The front face contains a real rectangular hole; there is no fake opening drawn over a solid face. A strain relief meets the plug housing's rear face exactly, and the cable curve begins at the relief's center and leaves along the connector axis.
+Read the actual article, including its conclusion that integration is the product. The design uses one common stepped boundary to partition a complete 152 × 80 cross-section, then extrudes each half through 68 units of true depth. Moving the two halves 14 units apart in opposite directions reveals their mating profile. Only the right half's exposed outer rectangular face is highlighted.
 
-## Review
+## Geometry audit
 
-Read the complete article in `src/content/blog/bodies.json`. Used the requested current illustration renderer and construction primitives; `modular` supplies framing only. The user requested recognizable, physically coherent objects and slightly finer linework while retaining the approved theme system. The root agent applies the final Paper/Cream colors and 1.6-unit presentation line weight.
+Both solids are closed manifolds constructed from shared cap and side vertices. Each structural edge belongs to exactly two faces and is emitted as one line; there are no tessellation edges or overlapping coplanar pieces. The two profile areas sum to the complete assembly area. Every mating-profile coordinate differs only by the intended 28-unit separation. The closest X extents retain an 8-unit clear gap, so no parts touch or intersect while separated. Reversing the translation restores the original complementary partition.
 
-Inspected all eight Dark/Light, neutral/oblique/back/underside exports. Selected the neutral Dark geometry. The socket has complete outer walls and a readable opening, with interior edges revealed only through the hole. The plug's tongue points into the matching aperture, the two assemblies remain separate, and the cable is visibly attached. Back and underside views confirm the solid housing, recessed cavity, tongue attachment and strain relief. The top housing face is the single highlighted part; it correctly disappears from underneath.
+The one highlighted surface is an actual outward rectangular face at the assembly's far-right extent. The other half cannot cover it in the selected neutral view. It has a real outward normal, so the fill disappears when that side turns away; no fake cavity or fill overlay is used.
 
-Assertions verify the cavity opening and depth, tongue clearance, exact face contact at the housing and relief, cable endpoint, and insertion travel with rear clearance. All eight mechanical checks pass. No text, decorative pins, floating cable endpoint, impossible intersections, duplicate linework or mesh tessellation was observed. The original-renderer Iris exports approve geometry only; final theme and page crops are handled by the parent. Static illustration only; no motion testing was required.
+## Visual review
+
+Rendered and inspected neutral, oblique, back and underside views on both Dark and Light using the unchanged current illustration renderer. The stepped edges remain complete and physically consistent, and the neutral view retains a clear relationship between the two substantial forms. Back and underside reveal true depth and the complementary joint rather than an invented front-only opening. No duplicate seams, tangencies, protruding hidden edges or highlight bleed was observed. All eight mechanical checks and the recipe's manifold, planar-face, matching-profile and separation assertions pass.
+
+The original-renderer Iris review approves geometry. The root agent applies the user's approved four backgrounds, Paper/Cream treatment, direct SVG delivery, 4:3 frame and 1.6-unit outlines, then reviews final page placement. Earlier plug screenshots and v3 page QA document the superseded literal direction, not this revision. No interactive motion was requested or tested.
