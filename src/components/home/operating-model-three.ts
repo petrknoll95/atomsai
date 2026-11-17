@@ -23,6 +23,8 @@ type DiagramOptions = {
   pin: HTMLElement;
   start?: string | (() => string);
   interactive?: boolean;
+  /** Drive the diagram from scroll (pinned). When false, only selections change its state. */
+  scroll?: boolean;
   onHighlight?: (index: number) => void;
 };
 
@@ -36,6 +38,7 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
     ink: appearance.getPropertyValue('--diagram-ink').trim() || '#303030',
   };
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const scrollLinked = !reducedMotion && options.scroll !== false;
   let disposed = false;
   const renderer = new WebGLRenderer({ alpha: true, antialias: true });
   // Supersample the thin contours instead of dithering overlapping line caps.
@@ -401,6 +404,8 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
   let selectionTween: gsap.core.Tween | undefined;
   let pendingHighlight: number | null = null;
   const interruptSelection = () => {
+    // Scrolling only competes with a selection when scroll drives the timeline.
+    if (!scrollLinked) return;
     pendingHighlight = null;
     selectionTween?.kill();
   };
@@ -411,7 +416,7 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
   let highlighted = -1;
   const animation = gsap.context(() => {
     timeline = gsap.timeline({
-      paused: reducedMotion,
+      paused: !scrollLinked,
       onUpdate: () => {
         applyScrollState();
         let current = 0;
@@ -428,7 +433,7 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
           options.onHighlight?.(current);
         }
       },
-      scrollTrigger: reducedMotion ? undefined : {
+      scrollTrigger: !scrollLinked ? undefined : {
         trigger: options.trigger,
         start: options.start ?? 'top top',
         end: () => `+=${Math.round(window.innerHeight * (4.5 * (timeline?.duration() || 3.9) / 3.9))}`,
@@ -465,6 +470,8 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
     }
   }, options.trigger);
   if (reducedMotion) timeline!.progress(1);
+  // Without scroll, open on the first layer to match the first open tab.
+  else if (!scrollLinked) timeline!.time(timeline!.labels[highlightLabels[0]] + .35);
   element.dataset.ready = 'true';
   ScrollTrigger.refresh();
   function select(index: number) {
@@ -474,7 +481,9 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
       const time = timeline.labels[highlightLabels[index]] + (index === 3 ? .7 : .35);
       const trigger = timeline.scrollTrigger;
       if (!trigger) {
-        timeline.time(time);
+        selectionTween?.kill();
+        if (reducedMotion) timeline.time(time);
+        else selectionTween = gsap.to(timeline, { time, duration: .6, ease: 'power2.inOut', overwrite: 'auto' });
         return;
       }
       const top = trigger.start + time / timeline.duration() * (trigger.end - trigger.start);

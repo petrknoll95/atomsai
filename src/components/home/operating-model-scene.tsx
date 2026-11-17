@@ -26,6 +26,7 @@ export function OperatingModelScene({ active, selection, onHighlight }: {
     const wide = matchMedia('(min-width: 768px) and (min-height: 700px)');
     const reduced = matchMedia('(prefers-reduced-motion: reduce)');
     const desktop = matchMedia('(min-width: 1200px) and (min-height: 700px)');
+    const mobile = matchMedia('(max-width: 767px)');
     const backdrop = row.querySelector<HTMLElement>('[data-model-backdrop]');
     let collapse: (() => void) | undefined;
     let disposed = false;
@@ -36,9 +37,10 @@ export function OperatingModelScene({ active, selection, onHighlight }: {
       collapse = undefined;
       controller.current?.destroy();
       // Desktop pins the diagram row (it expands to the viewport); tablet pins the
-      // headline with it so the section reads as one unit; small or short screens pin the visual.
-      const mode = !wide.matches ? 'visual' : desktop.matches ? 'row' : 'stage';
-      const pin = mode === 'visual' ? visual : mode === 'row' ? row : stage;
+      // headline with it so the section reads as one unit; short screens pin the visual.
+      // Mobile doesn't pin or scroll-animate: the tabs alone drive the diagram.
+      const mode = mobile.matches ? 'none' : !wide.matches ? 'visual' : desktop.matches ? 'row' : 'stage';
+      const pin = mode === 'visual' || mode === 'none' ? visual : mode === 'row' ? row : stage;
       section.dataset.modelPin = mode;
       const pinnedTop = () => {
         const headerSpace = 96;
@@ -48,6 +50,7 @@ export function OperatingModelScene({ active, selection, onHighlight }: {
         trigger: pin,
         pin,
         start: () => `top ${pinnedTop()}px`,
+        scroll: mode !== 'none',
         onHighlight,
       });
       const pinTrigger = controller.current.pin;
@@ -67,12 +70,14 @@ export function OperatingModelScene({ active, selection, onHighlight }: {
     observer.observe(element);
     wide.addEventListener('change', configure);
     desktop.addEventListener('change', configure);
+    mobile.addEventListener('change', configure);
     reduced.addEventListener('change', configure);
     return () => {
       disposed = true;
       observer.disconnect();
       wide.removeEventListener('change', configure);
       desktop.removeEventListener('change', configure);
+      mobile.removeEventListener('change', configure);
       reduced.removeEventListener('change', configure);
       collapse?.();
       controller.current?.destroy();
