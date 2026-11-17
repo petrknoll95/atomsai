@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import type { OperatingModelController } from './operating-model-three';
 import { expandPinnedRow, TRANSITION } from './operating-model-expand';
 import styles from './operating-model.module.css';
@@ -33,6 +34,10 @@ export function OperatingModelScene({ active, selection, onHighlight }: {
     let mount: typeof import('./operating-model-three').mountOperatingModel | undefined;
     const configure = () => {
       if (!mount || disposed) return;
+      // Adding or removing the pin changes the page height above anyone already past the
+      // section; keep what they are looking at in place instead of letting the page jump.
+      const heightBefore = document.documentElement.scrollHeight;
+      const viewerBelow = section.getBoundingClientRect().bottom <= 0;
       collapse?.();
       collapse = undefined;
       controller.current?.destroy();
@@ -59,17 +64,33 @@ export function OperatingModelScene({ active, selection, onHighlight }: {
       if (desktop.matches && pin === row && backdrop && pinTrigger) {
         collapse = expandPinnedRow({ row, backdrop, pin: pinTrigger, pinnedTop, collapseShare: controller.current.tailShare });
       }
+      const delta = document.documentElement.scrollHeight - heightBefore;
+      if (viewerBelow && delta) {
+        const smoother = ScrollSmoother.get();
+        if (smoother) smoother.scrollTo(smoother.scrollTop() + delta, false);
+        else window.scrollTo({ top: window.scrollY + delta, behavior: 'instant' });
+      }
     };
-    const observer = new IntersectionObserver(entries => {
-      if (!entries.some(entry => entry.isIntersecting)) return;
+    // Mount soon after load rather than on approach: the pin adds several viewport heights
+    // of scroll, which must exist before a visitor (e.g. after a reload near the bottom)
+    // scrolls back up into the section. Approaching it still mounts immediately.
+    let loading = false;
+    const load = () => {
+      if (loading || disposed) return;
+      loading = true;
       observer.disconnect();
       void import('./operating-model-three').then(module => {
         if (disposed) return;
         mount = module.mountOperatingModel;
         configure();
       }).catch(() => { /* Keep the static stack and accessible descriptions available. */ });
+    };
+    const observer = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting)) load();
     }, { rootMargin: '500px' });
     observer.observe(element);
+    const hasIdle = typeof window.requestIdleCallback === 'function';
+    const idle = hasIdle ? window.requestIdleCallback(load, { timeout: 2000 }) : setTimeout(load, 800);
     wide.addEventListener('change', configure);
     desktop.addEventListener('change', configure);
     mobile.addEventListener('change', configure);
@@ -77,6 +98,8 @@ export function OperatingModelScene({ active, selection, onHighlight }: {
     return () => {
       disposed = true;
       observer.disconnect();
+      if (hasIdle) window.cancelIdleCallback(idle as number);
+      else clearTimeout(idle);
       wide.removeEventListener('change', configure);
       desktop.removeEventListener('change', configure);
       mobile.removeEventListener('change', configure);
