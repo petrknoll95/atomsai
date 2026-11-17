@@ -1,17 +1,17 @@
 # Write the evals before the prompt
 
-The article is about defining a measurable acceptance standard before building an AI system. A fixed measuring fixture touches a spherical specimen at two opposite poles: the measure exists first, and the result is tested against it.
-
-Read the complete article at `src/content/blog/bodies.json`, key `write-the-evals-before-the-prompt`, along with the title and summary. The user's revision requested a clearer, more varied silhouette; this recipe replaces the earlier pair of flat sheets, which was too similar to other covers. It is custom world-space geometry built with the requested AtomsAI Illustration Skill v2. `orbit` supplies only framing, not geometry.
+The article explains that the evaluation checklist is the specification, established before the system is built. A recognizable clipboard carries three check boxes, two checkmarks and three blank rules. It contains no words or fabricated measurements. This replaces the earlier sphere and gauge with an immediately recognizable object.
 
 ## Construction
 
-The sample is a real sphere of radius 44, with three equal orthogonal axes. Its measuring fixture is a physical planar outline: opposite contact points 88 units apart, equal 21-unit jaws, equal 64-unit arms, and a 130-unit crossbar. The fixture's plane faces the neutral camera so the contacts read clearly, while all parts retain world coordinates and rotate together. The fixture is a measuring diagram, not a traced cylinder or camera-facing replacement for the sphere.
+The board is a complete 108 × 156 × 8 solid. A 92 × 134 × 0.8 sheet rests exactly on its front face, inset around all edges. The top clamp's back contacts the paper; two mounting feet attach to exposed board above the paper and share the clamp's upper edge. A wire handle terminates on the clamp's front face. The whole object is rigidly posed by 20 degrees around its vertical axis, retaining a consistent orthographic perspective and visible board thickness.
+
+Only the first printed checkbox is highlighted. It is separated from the clamp by 16 units and carries an outward face normal. This avoids painting a broad paper highlight over the clip in oblique views, and the highlight disappears on rear views. All marks occupy the paper's physical front plane with tiny rendering offsets.
 
 ## Review
 
-Selected the neutral Dark export. Inspected the new eight-view contact sheet beside the current Dark and Light reference at 300 px viewports. The compact circle-and-gauge silhouette is distinct from the other sheets, apertures and cube-based covers. One sphere carries the shared radial fade. Its two physical contact points meet the jaw endpoints exactly. In oblique, back and underside views, true depth occlusion hides or reveals the fixture as the geometry turns; the sphere remains a real spherical surface. No gaps at contacts, duplicate strokes, mesh edges or external/raster content were observed.
+Read the complete original article in `src/content/blog/bodies.json`. Used the requested current scene renderer and geometry primitives; `built-in-your-stack` provides framing only. The root agent applies the retained background palette, Paper/Cream gradient and thinner 1.6-unit final linework.
 
-Concept assertions verify equal sphere radii, exact contact distances, symmetric arms and jaws, and the crossbar span. All eight shared-renderer mechanical checks pass. Hidden segments are omitted. This review approves the geometry using the unmodified reference renderer; the root agent will apply the user's Paper/Cream line and highlight colors on Deep Green and deliver responsive vector art. That user-directed palette revision supersedes the original Iris-only guideline. Final recolored exports and page crops are reviewed by the parent.
+Inspected all eight original-renderer views in Dark and Light. The neutral view reads clearly as a clipboard with a checklist, rather than a flat icon. Oblique and underside views show the board and sheet thickness, connected clamp and handle, and markings that remain on the sheet. The back view correctly shows the bare rear board, with no checks or highlight bleeding through. The selected region stays clear of clip geometry. Three boxes and exactly two checkmarks remain visible on the front; no duplicate strokes, exposed mesh, impossible overlaps, detached clip pieces or text were observed.
 
-No interactive animation or live p5 integration was requested or tested.
+Concept assertions check board front/back, paper contact, clamp contact, mounting-foot attachment, handle endpoints, row spacing, checkmark count and the highlight's separation from the clip. All eight renderer checks pass. Parent integration handles final recoloring and page review. No animation or interactive gallery testing was requested.
