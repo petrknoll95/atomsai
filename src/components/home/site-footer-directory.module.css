@@ -40,6 +40,6 @@
 }
 @media (prefers-reduced-motion: reduce) { .group a, .arrow { transition: none; } }
 
-.ctaDescription{max-width:600px;font-size:var(--text-lead);line-height:1.5;color:var(--color-muted-foreground);text-wrap:pretty;}
+.ctaDescription{max-width:600px;font-size:var(--text-lead);line-height:1.5;color:var(--color-muted-foreground);text-wrap:pretty;text-box:trim-both cap alphabetic;}
 
 .tagline { display: block; margin-bottom: 20px; }
