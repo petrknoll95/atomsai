@@ -83,6 +83,8 @@
 
 /* Only the host sets the size: the complete JustCall system uses em units. */
 .justCallComposition { font-size:var(--scene-font-size,8px); }
+/* JustCall and PyAI compositions leave room in the frame; draw them a little larger. */
+.scene:is([data-application-scene='0'], [data-application-scene='2']) .justCallComposition { font-size:calc(var(--scene-font-size,8px) * 1.12); }
 
 .scene:has(> .helpwiseComposition) { inset: -24px 0; }
 .helpwiseComposition { position: absolute; top: 3em; left: 3em; font-size: max(14px, 2.4cqw); }
