@@ -35,7 +35,7 @@ fitToReference(scene, recipe.reference);
 geometry.CAMERA.iris = colors.cream.hex;
 const frame = projectScene(scene, { yaw: 0, pitch: 0, white: false });
 const linework = [...frame.front, ...frame.rear, ...frame.accent];
-for (const line of linework) line.width = 1.9;
+for (const line of linework) line.width = 1.6;
 const points = [...linework.flatMap(line => line.points), ...frame.highlights.flatMap(h => h.points)];
 const extent = Math.max(...points.flatMap(p => [Math.abs(p[0]), Math.abs(p[1])]));
 assert(extent < 154, 'Keep the whole illustration inside its padded square.');
@@ -53,14 +53,14 @@ await sharp(Buffer.from(cover)).toColourspace('srgb').webp({ lossless: true }).t
 await writeFile(path.join(root, source, 'export.json'), JSON.stringify({
   article: slug,
   skill: 'https://petrknoll95.github.io/atoms-ai-brand/skills/atomsai-illustrations/SKILL.md',
-  revision: 'User-directed four backgrounds, Paper outlines, Cream highlights, 4:3 frames with square-contained art.',
+  revision: 'Clearer recognizable 3D objects; four approved backgrounds, thinner Paper outlines, Cream highlights, 4:3 frames with square-contained art.',
   recipe: `${source}/recipe.mjs`, rendererFingerprint: hash(JSON.stringify(manifest.runtime)),
   transparentMaster: `${target}-art.svg`, svgSha256: hash(art),
   displayVector: `/${target.replace(/^public\//, '')}.svg`,
   cover: `/${target.replace(/^public\//, '')}.webp`,
   width: 3072, height: 2304, aspectRatio: '4:3', squareArtViewport: [64, 0, 384, 384],
   background, outline: colors.paper.hex, highlight: colors.cream.hex,
-  stroke: 1.9, neutralBoundsExtent: extent,
+  stroke: 1.6, neutralBoundsExtent: extent,
   encoding: 'SVG on the page; lossless 3072 × 2304 sRGB WebP for social metadata.',
   checks: 'Runtime hashes, recipe assertions, vector-only export and padded square bounds passed.',
 }, null, 2) + '\n');
