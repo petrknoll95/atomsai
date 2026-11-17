@@ -5,6 +5,7 @@ import styles from './approach.module.css';
 import { clientPages } from './client-content';
 import { ApproachProcess } from './approach-process';
 import { ApprovalWorkflow, DeliveryWorkflow, HandoverVisual } from './workflow-visuals';
+import { Faq } from '@/components/home/faq';
 
 const content = clientPages.services;
 const sourceSection = (id: string) => content.sections.find(section => section.id === id)!;
@@ -86,10 +87,7 @@ export function ApproachPage() {
       <HandoverVisual />
     </section>
 
-    <section className={`page-container ${styles.questions}`} aria-labelledby="questions-heading">
-      <div><p className={styles.kicker}>Before we begin</p><h2 className={`display ${styles.questionsTitle}`} id="questions-heading">A few things<br />you might ask.</h2></div>
-      <div className={styles.questionList}>{questions.map(([question, answer]) => <details key={question} name="approach-questions"><summary>{question}<span aria-hidden="true">+</span></summary><p>{answer}</p></details>)}</div>
-    </section>
+    <Faq id="questions" label="Before we begin" heading={<><span>A few things</span><span>you might ask.</span></>} questions={questions.map(([question, answer]) => ({ question, answer }))} showAskQuestion={false} />
 
     <section className={`page-container ${styles.closing}`} aria-labelledby="approach-closing-heading">
       <div className={styles.closingInner}><div><p className={styles.kicker}>Start with one workflow</p><h2 className={`display ${styles.sectionTitle}`} id="approach-closing-heading">{content.closing.title}</h2></div><div><p>{content.closing.body[0]}</p><ButtonLink href="/company/contact?topic=services" size="large">Talk to AtomsAI <ArrowIcon size={18} /></ButtonLink></div></div>
