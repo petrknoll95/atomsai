@@ -19,13 +19,42 @@ export const textReveal = {
   maskBleed: { top: .3, side: .3, bottom: .16 },
 } as const;
 
+/** The shared recipe for stat count-ups. Same trigger as headlines. */
+export const countUp = {
+  duration: 1.8,
+  /** Long, soft landing: the last digits settle instead of stopping dead. */
+  ease: 'power3.out',
+  /** Delay between stats in the same list. */
+  stagger: .12,
+} as const;
+
+/** Stat values in definition lists, plus anything opted in. */
+export const countUpSelector = 'dl dd.display, [data-count-up]';
+
 export const headlineSelector = 'h1.display, h2.display, [data-text-reveal]';
 const excludedSelector = 'dialog, [aria-roledescription="carousel"], [data-text-reveal="off"]';
 
 type State = 'pending' | 'revealing' | 'visible';
 
+/** Anything the engine can reveal: held until ScrollTrigger plays it. */
+interface Reveal {
+  readonly element: HTMLElement;
+  /** Prepare only after the display font loads (line measurement). */
+  readonly needsFonts: boolean;
+  state: State;
+  hold(): void;
+  prepare(): void;
+  finish(): void;
+  destroy(): void;
+}
+
+function setState(element: HTMLElement, state: State) {
+  element.dataset.textRevealState = state;
+}
+
 /** One headline: owns its split, its scroll trigger and its timeline. */
-class HeadlineReveal {
+class HeadlineReveal implements Reveal {
+  readonly needsFonts = true;
   state: State = 'pending';
   private split?: SplitText;
   private timeline?: gsap.core.Timeline;
@@ -33,7 +62,9 @@ class HeadlineReveal {
   private entered = false;
   private locks = new Map<HTMLElement, string>();
 
-  constructor(readonly heading: HTMLElement) {}
+  constructor(readonly element: HTMLElement) {}
+
+  private get heading() { return this.element; }
 
   /** Hide until the display font has loaded and the lines can be measured. */
   hold() {
@@ -130,20 +161,143 @@ class HeadlineReveal {
 
   private set(state: State) {
     this.state = state;
-    this.heading.dataset.textRevealState = state;
+    setState(this.heading, state);
+  }
+}
+
+/** A parsed stat such as `7,000+`, `~$56M` or `99.9%`. */
+interface Figure { prefix: string; value: number; decimals: number; grouped: boolean; unit: string; suffix: string }
+const units = ['', 'K', 'M', 'B', 'T'];
+
+function parseFigure(text: string): Figure | undefined {
+  const match = /^([^\d]*?)(\d[\d,]*(?:\.\d+)?)([KMBT]?)([^\d]*)$/.exec(text.trim());
+  if (!match) return;
+  const [, prefix, digits, unit, suffix] = match;
+  const value = Number(digits.replace(/,/g, ''));
+  // A bare year (2016) is a date, not a quantity.
+  if (!prefix && !unit && !suffix && /^(19|20)\d\d$/.test(digits)) return;
+  return { prefix, value, decimals: digits.split('.')[1]?.length ?? 0, grouped: digits.includes(','), unit, suffix };
+}
+
+/**
+ * One stat that counts up from zero. Single-digit values with a unit count in
+ * the unit below and roll over (0M … 999M → 1B), so every frame changes.
+ */
+class CountUp implements Reveal {
+  readonly needsFonts = false;
+  state: State = 'pending';
+  private readonly authored: string;
+  private readonly figure: Figure;
+  private tween?: gsap.core.Tween;
+  private trigger?: ScrollTrigger;
+  private live?: HTMLElement;
+
+  constructor(readonly element: HTMLElement, figure: Figure, private readonly delay: number) {
+    this.authored = element.innerHTML;
+    this.figure = figure;
+  }
+
+  static from(element: HTMLElement, delay: number) {
+    const figure = parseFigure(element.textContent ?? '');
+    return figure && figure.value > 0 ? new CountUp(element, figure, delay) : undefined;
+  }
+
+  hold() {
+    this.set('pending');
+    const { element } = this;
+    const text = element.textContent ?? '';
+    // Screen readers get the final figure; the counting copy is decorative.
+    // Lock the final width so neighbours never move while digits change.
+    const width = element.getBoundingClientRect().width;
+    element.innerHTML = '';
+    const label = document.createElement('span');
+    Object.assign(label.style, { position: 'absolute', width: '1px', height: '1px', overflow: 'hidden', clipPath: 'inset(50%)', whiteSpace: 'nowrap' });
+    label.textContent = text;
+    this.live = document.createElement('span');
+    this.live.setAttribute('aria-hidden', 'true');
+    element.append(label, this.live);
+    element.style.minWidth = `${width}px`;
+    this.render(0);
+    this.trigger = ScrollTrigger.create({
+      trigger: element.closest('dl') ?? element,
+      start: textReveal.start,
+      once: true,
+      onEnter: () => this.play(),
+    });
+  }
+
+  prepare() {}
+
+  private play() {
+    if (this.state !== 'pending') return;
+    this.set('revealing');
+    const counter = { progress: 0 };
+    this.tween = gsap.to(counter, {
+      progress: 1, duration: countUp.duration, ease: countUp.ease, delay: this.delay,
+      onUpdate: () => this.render(counter.progress),
+      onComplete: () => this.finish(),
+    });
+  }
+
+  private render(progress: number) {
+    if (!this.live) return;
+    const { prefix, value, decimals, grouped, unit, suffix } = this.figure;
+    const unitIndex = units.indexOf(unit);
+    const rollover = unitIndex > 0 && value < 10 && decimals === 0;
+    let shown = value * progress;
+    let shownUnit = unit;
+    let places = decimals;
+    if (rollover && progress < 1) {
+      // Count the unit below, e.g. 1B as 0M → 999M.
+      shown = Math.round(value * 1000 * progress);
+      shownUnit = units[unitIndex - 1];
+      if (shown >= 1000) { shown = value; shownUnit = unit; }
+      places = 0;
+    } else shown = progress < 1 ? Math.round(shown * 10 ** places) / 10 ** places : value;
+    const digits = shown.toLocaleString('en-US', { useGrouping: grouped, minimumFractionDigits: places, maximumFractionDigits: places });
+    this.live.textContent = `${prefix}${digits}${shownUnit}${suffix}`;
+  }
+
+  finish() {
+    this.trigger?.kill();
+    this.trigger = undefined;
+    this.tween?.kill();
+    this.tween = undefined;
+    this.restore();
+    this.set('visible');
+  }
+
+  destroy() {
+    this.trigger?.kill();
+    this.tween?.kill();
+    this.restore();
+    delete this.element.dataset.textRevealState;
+  }
+
+  private restore() {
+    if (!this.live) return;
+    this.live = undefined;
+    this.element.innerHTML = this.authored;
+    this.element.style.minWidth = '';
+  }
+
+  private set(state: State) {
+    this.state = state;
+    setState(this.element, state);
   }
 }
 
 /**
- * Line-by-line headline reveals for everything inside `root`.
+ * Line-by-line headline reveals and stat count-ups for everything inside `root`.
  * Server HTML stays readable; motion is an enhancement that never hides text
  * for reduced motion, slow fonts, keyboard focus or deep links.
  */
 export function mountHeadlineReveals(root: HTMLElement) {
   gsap.registerPlugin(ScrollTrigger, SplitText);
-  const headings = [...root.querySelectorAll<HTMLElement>(headlineSelector)]
-    .filter(heading => !heading.closest(excludedSelector));
-  // Survives reduced-motion toggles: a headline plays once per page view.
+  const included = (element: HTMLElement) => !element.closest(excludedSelector) && element.dataset.countUp !== 'off';
+  const headings = [...root.querySelectorAll<HTMLElement>(headlineSelector)].filter(included);
+  const stats = [...root.querySelectorAll<HTMLElement>(countUpSelector)].filter(element => included(element) && !headings.includes(element));
+  // Survives reduced-motion toggles: each element plays once per page view.
   const seen = new Set<HTMLElement>();
   const media = gsap.matchMedia();
 
@@ -151,20 +305,28 @@ export function mountHeadlineReveals(root: HTMLElement) {
     let disposed = false;
     let fontsReady = false;
     let resizeFrame = 0;
-    const reveals = headings.filter(heading => !seen.has(heading) && heading.getBoundingClientRect().bottom > 0)
-      .map(heading => new HeadlineReveal(heading));
-    headings.forEach(heading => { if (!reveals.some(reveal => reveal.heading === heading)) heading.dataset.textRevealState = 'visible'; });
-    reveals.forEach(reveal => { seen.add(reveal.heading); reveal.hold(); });
+    const fresh = (element: HTMLElement) => !seen.has(element) && element.getBoundingClientRect().bottom > 0;
+    const reveals: Reveal[] = [
+      ...headings.filter(fresh).map(heading => new HeadlineReveal(heading)),
+      ...stats.filter(fresh).map(stat => {
+        const group = stat.closest('dl');
+        const index = group ? [...group.querySelectorAll(countUpSelector)].indexOf(stat) : 0;
+        return CountUp.from(stat, index * countUp.stagger);
+      }).filter(reveal => reveal !== undefined),
+    ];
+    [...headings, ...stats].forEach(element => { if (!reveals.some(reveal => reveal.element === element)) setState(element, 'visible'); });
+    reveals.forEach(reveal => { seen.add(reveal.element); reveal.hold(); });
 
     const finishWithin = (target: Element | null) => {
       if (!target || target === document.body) return;
-      reveals.filter(reveal => reveal.heading === target || target.contains(reveal.heading)).forEach(reveal => reveal.finish());
+      reveals.filter(reveal => reveal.element === target || target.contains(reveal.element)).forEach(reveal => reveal.finish());
     };
     const focus = (event: FocusEvent) => { if (event.target instanceof Element) finishWithin(event.target); };
     const hash = () => {
       try { if (location.hash) finishWithin(document.getElementById(decodeURIComponent(location.hash.slice(1)))); }
       catch { /* Ignore invalid URL fragments. */ }
     };
+    const typeset = reveals.filter(reveal => reveal.needsFonts);
     // Lines depend on width. Re-split headlines that have not played yet.
     let rootWidth = root.getBoundingClientRect().width;
     const layout = new ResizeObserver(() => {
@@ -172,7 +334,7 @@ export function mountHeadlineReveals(root: HTMLElement) {
       if (width === rootWidth || !fontsReady) return;
       rootWidth = width;
       cancelAnimationFrame(resizeFrame);
-      resizeFrame = requestAnimationFrame(() => reveals.forEach(reveal => { if (reveal.state === 'pending') reveal.prepare(); }));
+      resizeFrame = requestAnimationFrame(() => typeset.forEach(reveal => { if (reveal.state === 'pending') reveal.prepare(); }));
     });
     layout.observe(root);
     root.addEventListener('focusin', focus);
@@ -180,12 +342,12 @@ export function mountHeadlineReveals(root: HTMLElement) {
     hash();
 
     // Never leave text hidden because a font request stalled.
-    const timeout = window.setTimeout(() => { if (!disposed) reveals.forEach(reveal => reveal.finish()); }, textReveal.fontWaitLimit);
+    const timeout = window.setTimeout(() => { if (!disposed) typeset.forEach(reveal => reveal.finish()); }, textReveal.fontWaitLimit);
     void document.fonts.ready.then(() => {
       if (disposed) return;
       clearTimeout(timeout);
       fontsReady = true;
-      reveals.forEach(reveal => reveal.prepare());
+      typeset.forEach(reveal => reveal.prepare());
       ScrollTrigger.refresh();
     });
 
