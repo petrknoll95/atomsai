@@ -41,11 +41,9 @@ export function MenuHeroBackdrop() {
       '--hero-fade-growth': .12 + .45 * distance ** 2,
     } as CSSProperties;
   };
-  const masks = Array.from({ length: slitCount }, (_, index) => `linear-gradient(to ${index < slitCount / 2 ? 'left' : 'right'}, #000 0%, #000 var(--hero-slit-${index}, 0%), transparent var(--hero-slit-${index}, 0%))`).join(', ');
   const left = (index: number) => `calc((100vw - var(--menu-track) * var(--menu-columns)) / 2 + var(--menu-track) * ${index - 1})`;
-  const positions = Array.from({ length: slitCount }, (_, index) => `${left(index)} 0`).join(', ');
   return <div ref={backdropRef} className={`${menu.patternBackdrop} ${styles.backdrop}`} data-menu-hero-background
-    style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', '--menu-columns': columns, '--menu-pattern-count': slitCount, '--hero-slit-masks': masks, '--hero-slit-positions': positions } as CSSProperties}>
+    style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', '--menu-columns': columns, '--menu-pattern-count': slitCount } as CSSProperties}>
     <div className={`${menu.patternField} ${styles.source}`} data-hero-pattern-source>
       <MotionPattern kind="offset" count={slitCount} mode="dark" fit="stretch" motion="tide" duration={12} intensity={0.7} resolution="display" playing />
     </div>
