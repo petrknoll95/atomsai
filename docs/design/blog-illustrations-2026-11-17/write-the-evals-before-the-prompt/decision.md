@@ -1,13 +1,17 @@
 # Write the evals before the prompt
 
-The article is about establishing known correct answers before building and measuring a system. Two identical sheets express that comparison: the Iris reference is already defined, and the outlined result must match its unchanged dimensions.
+The article is about defining a measurable acceptance standard before building an AI system. A fixed measuring fixture touches a spherical specimen at two opposite poles: the measure exists first, and the result is tested against it.
 
-Read the complete article at `src/content/blog/bodies.json`, key `write-the-evals-before-the-prompt`, along with the title and summary. This is custom geometry for that article, built with the user-requested AtomsAI Illustration Skill v2 and current gallery renderer. `layers` supplies framing only. The paired coplanar sheets have equal 120 × 120 dimensions and a fixed 26-unit gap; they are not copied from the reference's vertically stacked geometry.
+Read the complete article at `src/content/blog/bodies.json`, key `write-the-evals-before-the-prompt`, along with the title and summary. The user's revision requested a clearer, more varied silhouette; this recipe replaces the earlier pair of flat sheets, which was too similar to other covers. It is custom world-space geometry built with the requested AtomsAI Illustration Skill v2. `orbit` supplies only framing, not geometry.
+
+## Construction
+
+The sample is a real sphere of radius 44, with three equal orthogonal axes. Its measuring fixture is a physical planar outline: opposite contact points 88 units apart, equal 21-unit jaws, equal 64-unit arms, and a 130-unit crossbar. The fixture's plane faces the neutral camera so the contacts read clearly, while all parts retain world coordinates and rotate together. The fixture is a measuring diagram, not a traced cylinder or camera-facing replacement for the sphere.
 
 ## Review
 
-Selected the neutral Dark export. Inspected all eight generated views in Dark and Light beside the current reference, at the supplied 300 px viewports. The match between the two shapes is clear without marks, numbers or fabricated data. One sheet carries the four-edge diamond Iris fade; the other remains a fine outline. Both are actual world-space planes and remain equal through oblique, back and underside views. The gap remains open, corners stay square in world space, and there are no stray line segments, halos, external images or overlapping outlines.
+Selected the neutral Dark export. Inspected the new eight-view contact sheet beside the current Dark and Light reference at 300 px viewports. The compact circle-and-gauge silhouette is distinct from the other sheets, apertures and cube-based covers. One sphere carries the shared radial fade. Its two physical contact points meet the jaw endpoints exactly. In oblique, back and underside views, true depth occlusion hides or reveals the fixture as the geometry turns; the sphere remains a real spherical surface. No gaps at contacts, duplicate strokes, mesh edges or external/raster content were observed.
 
-Recipe assertions verify equal width and depth, right-angle axes, common plane, constant translation and the exact gap. Renderer mechanical checks pass in all eight views. Density is intentionally lower than the three-layer reference, preserving a simple two-way comparison at thumbnail size. No aperture/slot motif is used, keeping this distinct from the no-shows article.
+Concept assertions verify equal sphere radii, exact contact distances, symmetric arms and jaws, and the crossbar span. All eight shared-renderer mechanical checks pass. Hidden segments are omitted. This review approves the geometry using the unmodified reference renderer; the root agent will apply the user's Paper/Cream line and highlight colors on Deep Green and deliver responsive vector art. That user-directed palette revision supersedes the original Iris-only guideline. Final recolored exports and page crops are reviewed by the parent.
 
-The supplied renderer applies reference framing once. Transparent SVGs and the editable recipe are ready for integration; parent review checks the final editorial field, wide and square crops. No interactive gallery integration or motion testing was performed for these static thumbnails.
+No interactive animation or live p5 integration was requested or tested.

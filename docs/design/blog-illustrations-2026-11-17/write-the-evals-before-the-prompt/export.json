@@ -1,14 +1,27 @@
 {
   "article": "write-the-evals-before-the-prompt",
   "skill": "https://petrknoll95.github.io/atoms-ai-brand/skills/atomsai-illustrations/SKILL.md",
+  "revision": "User-directed four backgrounds, Paper outlines, Cream highlights, 4:3 frames with square-contained art.",
   "recipe": "docs/design/blog-illustrations-2026-11-17/write-the-evals-before-the-prompt/recipe.mjs",
   "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
-  "transparentMaster": "public/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
-  "svgSha256": "030a164631ebb18d9a4a1f42934a8b4ac73ff408cf38987bd72ba5b27e895753",
+  "transparentMaster": "public/assets/blog/illustrations/write-the-evals-before-the-prompt-art.svg",
+  "svgSha256": "5218e60390066655e22d7fb8293bf6f87429b5912b1ee3268353dbced368e0a0",
+  "displayVector": "/assets/blog/illustrations/write-the-evals-before-the-prompt.svg",
   "cover": "/assets/blog/illustrations/write-the-evals-before-the-prompt.webp",
-  "width": 1600,
-  "height": 900,
-  "background": "#10231E",
-  "encoding": "lossless WebP, sRGB",
-  "geometry": "Unmodified renderer output, uniform 1080px viewport centered in the cover."
+  "width": 3072,
+  "height": 2304,
+  "aspectRatio": "4:3",
+  "squareArtViewport": [
+    64,
+    0,
+    384,
+    384
+  ],
+  "background": "#1D3C34",
+  "outline": "#FAFAFA",
+  "highlight": "#F6F1E8",
+  "stroke": 1.9,
+  "neutralBoundsExtent": 106.66666666666669,
+  "encoding": "SVG on the page; lossless 3072 × 2304 sRGB WebP for social metadata.",
+  "checks": "Runtime hashes, recipe assertions, vector-only export and padded square bounds passed."
 }
