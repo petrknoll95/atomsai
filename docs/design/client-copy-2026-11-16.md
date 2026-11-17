@@ -20,8 +20,8 @@ Updated POV, product headings/descriptions, four trust pillars, proof intro, int
 ## Content and functional exceptions
 
 - User confirmed use of the supplied testimonials and article titles on 16 November. Homepage now shows Pinegrove Realty, Brightline Plumbing and Kestrel Freight, with the supplied quotes, attribution and metrics. Notes from the field uses the three supplied article titles, categories, dates and reading times. Article cards have no links until actual article destinations/bodies are provided; existing blog pages remain unchanged. No customer film or article bodies were fabricated.
-- “Have the agent call me” leads to the contact form and clearly says it is a request requiring consent; it does not initiate a call.
-- No ServiceAgent recordings were supplied, so the existing labeled scenario examples and Explore ServiceAgent link remain. A nonfunctional “Listen to the calls” button was not added.
+- Superseded 17 November: at the user’s request, “Have the agent call me” starts the artifact’s scripted JustCall conversation inside the existing card, with pause/replay, language switching, handoff and SMS outcomes.
+- Superseded 17 November: ServiceAgent’s three supplied call scripts now play with ElevenLabs recordings, synchronized to the existing workflow cards. See `scripted-demos-2026-11-17.md` for sources and verification.
 - PyAI’s playground and API links use actual product destinations. Browse all integrations opens the published JustCall integration directory; the artifact’s placeholder #talk destination was not used.
 - Existing navigation architecture is retained. Homepage footer uses Products / Platform / Industries / Company / Legal with working existing destinations. No unconnected newsletter form, nonexistent newsroom page, or unsupported status link was added.
 

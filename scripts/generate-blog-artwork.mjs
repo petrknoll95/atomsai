@@ -5,6 +5,9 @@ import fontkit from 'next/dist/compiled/@next/font/dist/fontkit/index.js';
 import sharp from 'sharp';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
+if (!process.argv.includes('--legacy')) {
+  throw new Error('This generator creates the archived typographic series. Current covers use skills/atoms-blog-art. Pass --legacy to regenerate archived assets without changing the live artwork map.');
+}
 const out = path.join(root, 'public/assets/blog/editorial');
 await mkdir(out, { recursive: true });
 const display = fontkit.default(await readFile(path.join(root, 'public/fonts/FoundersGrotesk-Regular.woff2')));
@@ -72,4 +75,4 @@ for(const cover of covers){
  await sharp(Buffer.from(svg)).resize(1920,1080).webp({quality:94}).toFile(path.join(out,`${cover.slug}-borderless.webp`));
  console.log(cover.slug);
 }
-await writeFile(path.join(root, 'src/content/blog/editorial-artwork.json'), JSON.stringify(Object.fromEntries(covers.map(({ slug }) => [slug, `/assets/blog/editorial/${slug}-borderless.webp`])), null, 2) + '\n');
+await writeFile(path.join(out, 'legacy-artwork-map.json'), JSON.stringify(Object.fromEntries(covers.map(({ slug }) => [slug, `/assets/blog/editorial/${slug}-borderless.webp`])), null, 2) + '\n');
