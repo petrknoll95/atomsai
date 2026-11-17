@@ -1,0 +1,14 @@
+{
+  "article": "the-demo-was-never-the-hard-part",
+  "skill": "https://petrknoll95.github.io/atoms-ai-brand/skills/atomsai-illustrations/SKILL.md",
+  "recipe": "docs/design/blog-illustrations-2026-11-17/the-demo-was-never-the-hard-part/recipe.mjs",
+  "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
+  "transparentMaster": "public/assets/blog/illustrations/the-demo-was-never-the-hard-part.svg",
+  "svgSha256": "b4a9c044b81eb6cf39bb3d8d405117454e0bce4a29a2df025bc61a59c42f53f6",
+  "cover": "/assets/blog/illustrations/the-demo-was-never-the-hard-part.webp",
+  "width": 1600,
+  "height": 900,
+  "background": "#10231E",
+  "encoding": "lossless WebP, sRGB",
+  "geometry": "Unmodified renderer output, uniform 1080px viewport centered in the cover."
+}

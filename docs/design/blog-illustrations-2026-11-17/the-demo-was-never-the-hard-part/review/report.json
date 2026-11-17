@@ -1,0 +1,101 @@
+{
+  "title": "The work between systems",
+  "reference": "built-in-your-stack",
+  "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
+  "palette": {
+    "iris": "#A77BCA",
+    "dark": "#10231E",
+    "light": "#FAFAFA"
+  },
+  "mechanicalChecks": "passed",
+  "conceptChecks": "recipe assertions passed",
+  "visualReview": "required; inspect contact sheet and record findings before delivery",
+  "hiddenMode": "omit",
+  "primitiveCounts": {
+    "box": 3
+  },
+  "views": [
+    {
+      "file": "neutral-dark.svg",
+      "yaw": 0,
+      "pitch": 0,
+      "boundsExtent": 126.21023776223777,
+      "hiddenRuns": 0,
+      "visibleRuns": 24,
+      "accentRuns": 0,
+      "projectionMs": 3.42
+    },
+    {
+      "file": "oblique-dark.svg",
+      "yaw": 0.65,
+      "pitch": -0.35,
+      "boundsExtent": 146.59450634782078,
+      "hiddenRuns": 0,
+      "visibleRuns": 25,
+      "accentRuns": 0,
+      "projectionMs": 0.71
+    },
+    {
+      "file": "back-dark.svg",
+      "yaw": 3.141592653589793,
+      "pitch": 0,
+      "boundsExtent": 126.21023776223774,
+      "hiddenRuns": 0,
+      "visibleRuns": 24,
+      "accentRuns": 0,
+      "projectionMs": 0.56
+    },
+    {
+      "file": "underside-dark.svg",
+      "yaw": 0.55,
+      "pitch": -1.1,
+      "boundsExtent": 142.0428441612752,
+      "hiddenRuns": 0,
+      "visibleRuns": 23,
+      "accentRuns": 0,
+      "projectionMs": 0.45
+    },
+    {
+      "file": "neutral-light.svg",
+      "yaw": 0,
+      "pitch": 0,
+      "boundsExtent": 126.21023776223777,
+      "hiddenRuns": 0,
+      "visibleRuns": 24,
+      "accentRuns": 0,
+      "projectionMs": 0.47
+    },
+    {
+      "file": "oblique-light.svg",
+      "yaw": 0.65,
+      "pitch": -0.35,
+      "boundsExtent": 146.59450634782078,
+      "hiddenRuns": 0,
+      "visibleRuns": 25,
+      "accentRuns": 0,
+      "projectionMs": 0.41
+    },
+    {
+      "file": "back-light.svg",
+      "yaw": 3.141592653589793,
+      "pitch": 0,
+      "boundsExtent": 126.21023776223774,
+      "hiddenRuns": 0,
+      "visibleRuns": 24,
+      "accentRuns": 0,
+      "projectionMs": 0.43
+    },
+    {
+      "file": "underside-light.svg",
+      "yaw": 0.55,
+      "pitch": -1.1,
+      "boundsExtent": 142.0428441612752,
+      "hiddenRuns": 0,
+      "visibleRuns": 23,
+      "accentRuns": 0,
+      "projectionMs": 0.58
+    }
+  ],
+  "png": "generated with sharp",
+  "timingNote": "Projection CPU time only; not p5 interaction frame rate."
+}
