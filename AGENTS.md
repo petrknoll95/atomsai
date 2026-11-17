@@ -15,3 +15,11 @@ Use `npm run dev -- --port 3001` for the editing preview. It writes to
 while a `next start` process is serving it: missing CSS chunks previously let
 a decorative shader cover the whole page. Stop production preview processes
 before rebuilding; keep the development preview running for the user.
+
+## Product UI visuals
+
+Use the homepage “Now it’s your turn” product scenes as the style reference for
+all workflow UI visuals: Neue Montreal interface text, pale rounded wrappers,
+white inset panels, restrained pills, and faint dashboard outlines on dark green.
+Use normal interface labels and operational states. Do not add “Illustrative
+workflow”, “Example only”, or similar disclaimer labels to these visuals.

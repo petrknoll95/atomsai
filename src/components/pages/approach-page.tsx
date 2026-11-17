@@ -1,9 +1,10 @@
-import { withBasePath } from '@/lib/base-path';
+import { assetPath, withBasePath } from '@/lib/base-path';
 import { ArrowIcon } from '@/components/arrow-icon';
 import { ButtonLink } from '@/components/ui';
 import styles from './approach.module.css';
 import { clientPages } from './client-content';
-import { ContentSectionView } from './content-page';
+import { ApproachProcess } from './approach-process';
+import { ApprovalWorkflow, DeliveryWorkflow, HandoverVisual } from './workflow-visuals';
 
 const content = clientPages.services;
 const sourceSection = (id: string) => content.sections.find(section => section.id === id)!;
@@ -31,75 +32,64 @@ const questions = [
 export function ApproachPage() {
   return <main id="main" className={styles.page} data-theme="light">
     <section className={`page-container ${styles.hero}`} aria-labelledby="hero-heading">
-      <p className={styles.kicker}><span className={styles.dot} />AI Services <span className={styles.kickerDivider}>/</span> How we work</p>
-      <div className={styles.heroCopy}>
-        <h1 className={`display ${styles.title}`} id="hero-heading">{content.title}</h1>
-        <div className={styles.heroAside}>
-          <p>{content.intro[0]}</p>
-          <ButtonLink href="/company/contact?topic=services" size="large">Talk to our team <ArrowIcon direction="right" size={18} /></ButtonLink>
+      <div className={styles.heroGrid}>
+        <div className={styles.heroCopy}>
+          <p className={styles.kicker}><span className={styles.dot} />AI Services <span className={styles.kickerDivider}>/</span> How we work</p>
+          <h1 className={`display ${styles.title}`} id="hero-heading">{content.title}</h1>
+          <p className={styles.heroIntro}>{content.intro[0]}</p>
+          <div className={styles.heroActions}><ButtonLink href="/company/contact?topic=services" size="large">Talk to our team <ArrowIcon size={18} /></ButtonLink><a href="#approach" className={styles.inlineLink}>See our approach <ArrowIcon direction="down" size={16} /></a></div>
+          <p className={styles.heroNote}>Built in your systems. Owned by your team.</p>
         </div>
+        <DeliveryWorkflow blocks={sourceSection('workflow').blocks} />
       </div>
-      <div className={styles.journey}>
-        <div className={styles.journeyNote}><span>Your business, connected.</span><span>One considered step at a time.</span></div>
-        <ol className={styles.journeySteps}>
-          {steps.map((step, index) => <li key={step.short}><a href={withBasePath(`#step-${index + 1}`)}><span className={`display ${styles.journeyNumber}`}>0{index + 1}</span><span>{step.short}</span><span className={styles.journeyDot} aria-hidden="true" /></a></li>)}
-        </ol>
-        <div className={styles.journeyFoot}><span>Built in your systems.</span><span>Owned by your team. <ArrowIcon size={18} /></span></div>
+      <div id="workflow" className={styles.workflowIntro}>
+        <div><p className={styles.kicker}>{sourceSection('workflow').label}</p><h2 className={`display ${styles.smallHeading}`}>{sourceSection('workflow').title}</h2></div>
+        <p>{sourceSection('workflow').intro.join(' ')}</p>
       </div>
     </section>
 
-    {['workflow', 'services', 'areas'].map(id => <ContentSectionView key={id} section={sourceSection(id)} />)}
+    <section id="services" className={`page-container ${styles.services}`} aria-labelledby="services-heading">
+      <header className={styles.sectionHead}><div><p className={styles.kicker}>Two services. One working system.</p><h2 className={`display ${styles.sectionTitle}`} id="services-heading">{sourceSection('services').title}</h2></div></header>
+      <div className={styles.serviceGrid}>{sourceSection('services').blocks.map((block,index)=><article key={block.title} className={styles.serviceCard}>
+        <div className={styles.serviceArt}><img src={assetPath(`/assets/illustrations/${index===0 ? 'layered-planes' : 'modular-cube'}-outline.svg`)} alt="" width="400" height="320" loading="lazy" /><span className={styles.serviceIndex}>0{index+1}</span></div>
+        <div className={styles.serviceCopy}><p className={styles.serviceLabel}>{block.title}</p><h3 className={`display ${styles.serviceTitle}`}>{block.body[0]}</h3><p>{block.body.slice(1).join(' ')}</p><a href="#approach" className={styles.inlineLink}>{index===0 ? 'Find the starting point' : 'See how we build'}<ArrowIcon direction="down" size={18}/></a></div>
+      </article>)}</div>
+    </section>
 
-    <section id="approach" className={`page-container ${styles.process}`} aria-labelledby="process-heading">
-      <div className={styles.sectionHead}>
-        <p className={styles.kicker}>The process</p>
-        <div><h2 className={`display ${styles.sectionTitle}`} id="process-heading">{sourceSection('approach').title}</h2><p className={styles.sectionIntro}>{sourceSection('approach').intro[0]}</p></div>
+    <section id="areas" className={`page-container ${styles.areas}`} aria-labelledby="areas-heading">
+      <div className={styles.areasIntro}><p className={styles.kicker}>{sourceSection('areas').label}</p><h2 className={`display ${styles.smallHeading}`} id="areas-heading">{sourceSection('areas').title}</h2></div>
+      <div className={styles.areaGrid}>{sourceSection('areas').blocks.map((block,index)=><article key={block.title} className={styles.areaCard}>
+        <span className={styles.areaIndex}>0{index+1}</span><h3 className="display">{block.title}</h3><p>{block.body.join(' ')}</p>
+      </article>)}</div>
+    </section>
+
+    <section id="approach" className={styles.process} aria-labelledby="process-heading" data-theme="dark">
+      <div className="page-container">
+        <header className={styles.processHead}><div><p className={styles.kicker}>One considered step at a time</p><h2 className={`display ${styles.sectionTitle}`} id="process-heading">{sourceSection('approach').title}</h2></div><p>{sourceSection('approach').intro[0]}</p></header>
+        <ApproachProcess steps={steps.map((step,index)=>({...step, items:sourceSection('approach').blocks[index].list}))}/>
+        <div className={styles.processFoot}><span>Your business, connected.</span><span>Built in your systems. Owned by your team.</span></div>
       </div>
-      <ol className={styles.processList}>
-        {steps.map((step, index) => <li key={step.name} id={`step-${index + 1}`} className={styles.processRow}>
-          <div className={styles.stepIdentity}><span className={`display ${styles.stepNumber}`}>0{index + 1}</span><span>{step.label}</span></div>
-          <div className={styles.stepCopy}><h3 className={`display ${styles.stepTitle}`}>{step.name}</h3><p>{step.description}</p><details className={styles.need}><summary>What we need from you <span aria-hidden="true">+</span></summary><p>{step.need}</p></details></div>
-          <div className={styles.output}><span className={styles.outputLabel}><span aria-hidden="true">↳</span> What you take away</span><h4 className={`display ${styles.outputTitle}`}>{step.output}</h4><p>{step.detail}</p></div>
-        </li>)}
-      </ol>
     </section>
 
     <section className={styles.controlSection} aria-labelledby="control-heading">
       <div className={`page-container ${styles.controlGrid}`}>
         <div className={styles.controlCopy}><p className={styles.kicker}>Your rules, built in</p><h2 className={`display ${styles.sectionTitle}`} id="control-heading">{sourceSection('integration').title}</h2><p>{sourceSection('integration').intro[0]}</p><p>Those boundaries are part of the build. Start with a person reviewing every action, then adjust as the evidence earns your confidence.</p><a className={styles.textLink} href={withBasePath("/trust")}><span className="link-underline">Explore trust & security</span><ArrowIcon size={18} /></a></div>
-        <figure className={styles.workflow}>
-          <div className={styles.workflowHeader}><span>Approval flow</span><span className={styles.workflowTag}>Your policy</span></div>
-          <div className={styles.workflowInput}><span className={styles.smallDot} /><span>New request</span><span className={styles.statusLabel}>Received</span></div>
-          <div className={styles.connector} aria-hidden="true" />
-          <div className={styles.policy}><span className={styles.policyIcon} aria-hidden="true">···</span><div><p>Check the rules</p><span>Scope · permissions · confidence</span></div></div>
-          <div className={styles.branch} aria-hidden="true"><span /><span /></div>
-          <div className={styles.outcomes}>
-            <div><span className={styles.outcomeLabel}>Within agreed policy</span><p className="display">Take action</p><span className={styles.outcomeDetail}>Update the system.<br />Log what happened.</span></div>
-            <div><span className={styles.outcomeLabel}>Needs a decision</span><p className="display">Ask your team</p><span className={styles.outcomeDetail}>Share the context.<br />Wait for approval.</span></div>
-          </div>
-          <figcaption>Every outcome has a record. Every exception has an owner.</figcaption>
-        </figure>
+        <ApprovalWorkflow />
       </div>
     </section>
 
-    <ContentSectionView section={sourceSection('proven-in-production-at-scale')} />
+    <section id="proven-in-production-at-scale" className={`page-container ${styles.proof}`} aria-labelledby="proof-heading">
+      <div className={styles.proofIntro}><div><p className={styles.kicker}>Track record</p><h2 id="proof-heading" className={`display ${styles.smallHeading}`}>{sourceSection('proven-in-production-at-scale').title}</h2></div><p>{sourceSection('proven-in-production-at-scale').intro[0]}</p></div>
+      <dl className={styles.stats}>{sourceSection('proven-in-production-at-scale').stats?.map(stat=><div key={stat.label}><dt>{stat.label}</dt><dd className="display">{stat.value}</dd></div>)}</dl>
+    </section>
     <section className={`page-container ${styles.ownership}`} aria-labelledby="ownership-heading">
       <div><p className={styles.kicker}>Built to be yours</p><h2 className={`display ${styles.sectionTitle}`} id="ownership-heading">{sourceSection('ownership').title}</h2><p className={styles.ownershipIntro}>{sourceSection('ownership').blocks.map(block => block.body.join(' ')).join(' ')}</p></div>
-      <div className={styles.handover}>
-        <div className={styles.handoverHead}><span className={styles.folderIcon} aria-hidden="true" /><p>Your working system</p><span className={styles.owned}>Yours</span></div>
-        {[
-          ['The build', 'Code, prompts and integrations'],
-          ['The checks', 'Evaluations and monitoring'],
-          ['The operation', 'Infrastructure and runbooks'],
-          ['The knowledge', 'Training and handover'],
-        ].map(([label, value], index) => <div key={label} className={styles.handoverRow}><span className={styles.fileNumber}>0{index + 1}</span><div><p>{label}</p><span>{value}</span></div><span className={styles.check} aria-label="Included">✓</span></div>)}
-        <p className={styles.handoverFoot}>In your repository. Under your license.</p>
-      </div>
+      <HandoverVisual />
     </section>
 
     <section className={`page-container ${styles.questions}`} aria-labelledby="questions-heading">
       <div><p className={styles.kicker}>Before we begin</p><h2 className={`display ${styles.questionsTitle}`} id="questions-heading">A few things<br />you might ask.</h2></div>
-      <div className={styles.questionList}>{questions.map(([question, answer]) => <details key={question}><summary>{question}<span aria-hidden="true">+</span></summary><p>{answer}</p></details>)}</div>
+      <div className={styles.questionList}>{questions.map(([question, answer]) => <details key={question} name="approach-questions"><summary>{question}<span aria-hidden="true">+</span></summary><p>{answer}</p></details>)}</div>
     </section>
 
     <section className={`page-container ${styles.closing}`} aria-labelledby="approach-closing-heading">
