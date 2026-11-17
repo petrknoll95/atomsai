@@ -1,10 +1,12 @@
 .section { padding-block: var(--section-space); color: var(--color-foreground); }
 .stage { position: relative; height: clamp(660px, 52vw, 820px); overflow: clip; }
 .grid {
-  /* 1.3× the original layout; the stage height (the crop) is unchanged. */
-  --orbit-base: clamp(884px, 62.4vw, 1014px);
-  --orbit-step: clamp(146px, 11.44vw, 182px);
-  --tile-size: clamp(114px, 8.58vw, 135px);
+  /* Scales with the viewport so the rings keep their desktop proportions at every width.
+     The minimums only stop the circles getting too small at the tablet end; larger minimums
+     pushed ring 0 past the viewport between 768px and ~1400px, leaving no circles or logos. */
+  --orbit-base: clamp(480px, 62.4vw, 1014px);
+  --orbit-step: clamp(88px, 11.44vw, 182px);
+  --tile-size: clamp(68px, 8.58vw, 135px);
   position: absolute; inset: 0; pointer-events: none;
   mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent), linear-gradient(180deg, transparent, #000 12%, #000 88%, transparent);
   mask-composite: intersect;
