@@ -19,17 +19,24 @@ export const textReveal = {
   maskBleed: { top: .3, side: .3, bottom: .16 },
 } as const;
 
-/** The shared recipe for stat count-ups. Same trigger as headlines. */
-export const countUp = {
-  duration: 1.8,
-  /** Long, soft landing: the last digits settle instead of stopping dead. */
-  ease: 'power3.out',
+/** The shared recipe for stat tickers: digits roll into place like a slot reel. */
+export const statTicker = {
+  duration: 1.7,
+  ease: 'power4.inOut',
+  /** Delay between digit reels, left to right, within one stat. */
+  digitStagger: .07,
   /** Delay between stats in the same list. */
   stagger: .12,
+  /** Full 0–9 turns before landing; reels further right spin more. */
+  turns: 1,
+  /** Reel cell pitch in em: room for the digits' ink at tight line-heights. */
+  pitch: 1.3,
+  /** The reel window is the cap height plus this margin in em, above and below. */
+  window: .12,
 } as const;
 
 /** Stat values in definition lists, plus anything opted in. */
-export const countUpSelector = 'dl dd.display, [data-count-up]';
+export const statTickerSelector = 'dl dd.display, [data-ticker]';
 
 export const headlineSelector = 'h1.display, h2.display, [data-text-reveal]';
 const excludedSelector = 'dialog, [aria-roledescription="carousel"], [data-text-reveal="off"]';
@@ -165,97 +172,140 @@ class HeadlineReveal implements Reveal {
   }
 }
 
-/** A parsed stat such as `7,000+`, `~$56M` or `99.9%`. */
-interface Figure { prefix: string; value: number; decimals: number; grouped: boolean; unit: string; suffix: string }
-const units = ['', 'K', 'M', 'B', 'T'];
-
-function parseFigure(text: string): Figure | undefined {
-  const match = /^([^\d]*?)(\d[\d,]*(?:\.\d+)?)([KMBT]?)([^\d]*)$/.exec(text.trim());
-  if (!match) return;
-  const [, prefix, digits, unit, suffix] = match;
-  const value = Number(digits.replace(/,/g, ''));
-  // A bare year (2016) is a date, not a quantity.
-  if (!prefix && !unit && !suffix && /^(19|20)\d\d$/.test(digits)) return;
-  return { prefix, value, decimals: digits.split('.')[1]?.length ?? 0, grouped: digits.includes(','), unit, suffix };
-}
-
 /**
- * One stat that counts up from zero. Single-digit values with a unit count in
- * the unit below and roll over (0M … 999M → 1B), so every frame changes.
+ * One stat whose digits roll up into place on vertical reels, slot-machine
+ * style. Separators, units and symbols stay put. Each reel is exactly as wide
+ * as its final digit, so the figure never shifts and the last frame matches the
+ * authored text.
  */
-class CountUp implements Reveal {
-  readonly needsFonts = false;
+class StatTicker implements Reveal {
+  /** Glyph positions are measured, so build only once the display font is in. */
+  readonly needsFonts = true;
+  private entered = false;
   state: State = 'pending';
   private readonly authored: string;
-  private readonly figure: Figure;
+  private reels: HTMLElement[] = [];
   private tween?: gsap.core.Tween;
   private trigger?: ScrollTrigger;
-  private live?: HTMLElement;
 
-  constructor(readonly element: HTMLElement, figure: Figure, private readonly delay: number) {
+  constructor(readonly element: HTMLElement, private readonly delay: number) {
     this.authored = element.innerHTML;
-    this.figure = figure;
   }
 
   static from(element: HTMLElement, delay: number) {
-    const figure = parseFigure(element.textContent ?? '');
-    return figure && figure.value > 0 ? new CountUp(element, figure, delay) : undefined;
+    const text = (element.textContent ?? '').trim();
+    // A bare year (2016) is a date, not a quantity; text without digits has nothing to roll.
+    if (!/\d/.test(text) || /^(19|20)\d\d$/.test(text)) return;
+    return new StatTicker(element, delay);
   }
 
   hold() {
     this.set('pending');
+    gsap.set(this.element, { opacity: 0 });
+    this.trigger = ScrollTrigger.create({
+      trigger: this.element.closest('dl') ?? this.element,
+      start: textReveal.start,
+      once: true,
+      onEnter: () => { this.entered = true; this.play(); },
+    });
+  }
+
+  /** Build the reels from the authored figure. Safe to call again after a width change. */
+  prepare() {
+    if (this.state !== 'pending') return;
+    this.restore();
+    this.build();
+    gsap.set(this.element, { opacity: 1 });
+    if (this.entered) this.play();
+  }
+
+  private build() {
     const { element } = this;
     const text = element.textContent ?? '';
-    // Screen readers get the final figure; the counting copy is decorative.
-    // Lock the final width so neighbours never move while digits change.
-    const width = element.getBoundingClientRect().width;
-    element.innerHTML = '';
+    // Screen readers get the final figure; the reels are decorative.
     const label = document.createElement('span');
     Object.assign(label.style, { position: 'absolute', width: '1px', height: '1px', overflow: 'hidden', clipPath: 'inset(50%)', whiteSpace: 'nowrap' });
     label.textContent = text;
-    this.live = document.createElement('span');
-    this.live.setAttribute('aria-hidden', 'true');
-    element.append(label, this.live);
-    element.style.minWidth = `${width}px`;
-    this.render(0);
-    this.trigger = ScrollTrigger.create({
-      trigger: element.closest('dl') ?? element,
-      start: textReveal.start,
-      once: true,
-      onEnter: () => this.play(),
+    // The authored figure stays in the flow as one transparent text node, so
+    // spacing and kerning are exact. Every glyph is redrawn in an overlay at its
+    // measured position: symbols stand still and each digit becomes a reel.
+    const figure = document.createElement('span');
+    figure.setAttribute('aria-hidden', 'true');
+    figure.style.position = 'relative';
+    const source = document.createTextNode(text);
+    const glyphs = document.createElement('span');
+    figure.append(source, glyphs);
+    element.replaceChildren(label, figure);
+    const color = getComputedStyle(element).color;
+    figure.style.color = 'transparent';
+    const origin = figure.getBoundingClientRect();
+    const baselineOf = (host: HTMLElement) => {
+      const marker = document.createElement('span');
+      Object.assign(marker.style, { display: 'inline-block', width: '0', height: '0', verticalAlign: 'baseline' });
+      host.append(marker);
+      const y = marker.getBoundingClientRect().top;
+      marker.remove();
+      return y;
+    };
+    const baseline = baselineOf(figure) - origin.top;
+    const range = document.createRange();
+    let column = 0;
+    [...text].forEach((char, index) => {
+      if (!char.trim()) return;
+      range.setStart(source, index);
+      range.setEnd(source, index + 1);
+      const box = range.getBoundingClientRect();
+      const left = box.left - origin.left;
+      const glyph = document.createElement('span');
+      Object.assign(glyph.style, { position: 'absolute', left: `${left}px`, top: '0', display: 'block', whiteSpace: 'pre', color });
+      glyph.textContent = char;
+      glyphs.append(glyph);
+      if (!/\d/.test(char)) {
+        glyph.style.top = `${baseline - (baselineOf(glyph) - glyph.getBoundingClientRect().top)}px`;
+        return;
+      }
+      // A window over the cap band: digits roll in from below and out above.
+      glyph.textContent = '';
+      Object.assign(glyph.style, {
+        left: `calc(${left}px - .5em)`, width: `calc(${box.width}px + 1em)`, overflow: 'hidden', whiteSpace: 'normal',
+        top: `calc(${baseline}px - 1cap - ${statTicker.window}em)`, height: `calc(1cap + ${2 * statTicker.window}em)`,
+      });
+      const strip = document.createElement('span');
+      Object.assign(strip.style, {
+        position: 'absolute', left: '.5em', top: '0', display: 'flex', flexDirection: 'column', alignItems: 'flex-start',
+        lineHeight: `${statTicker.pitch}em`,
+      });
+      const turns = statTicker.turns + column++;
+      const sequence = [...Array.from({ length: turns * 10 }, (_, i) => i % 10), ...Array.from({ length: Number(char) + 1 }, (_, i) => i)];
+      sequence.forEach(value => {
+        const cell = document.createElement('span');
+        cell.textContent = String(value);
+        cell.style.display = 'block';
+        strip.append(cell);
+      });
+      glyph.append(strip);
+      // Align the cell baseline with the text baseline inside the window.
+      const stripTop = strip.getBoundingClientRect().top;
+      const cellBaseline = baselineOf(strip.firstElementChild as HTMLElement) - stripTop;
+      const windowBaseline = baseline - (glyph.getBoundingClientRect().top - origin.top);
+      strip.style.top = `${windowBaseline - cellBaseline}px`;
+      // Land on the measured offset: percentages accumulate WebKit's line rounding.
+      strip.dataset.landing = String((strip.firstElementChild as HTMLElement).getBoundingClientRect().top - (strip.lastElementChild as HTMLElement).getBoundingClientRect().top);
+      gsap.set(strip, { y: 0 });
+      this.reels.push(strip);
     });
+    range.detach();
   }
-
-  prepare() {}
 
   private play() {
-    if (this.state !== 'pending') return;
+    if (this.state !== 'pending' || !this.reels.length) return;
     this.set('revealing');
-    const counter = { progress: 0 };
-    this.tween = gsap.to(counter, {
-      progress: 1, duration: countUp.duration, ease: countUp.ease, delay: this.delay,
-      onUpdate: () => this.render(counter.progress),
+    this.tween = gsap.to(this.reels, {
+      y: (_index: number, strip: HTMLElement) => Number(strip.dataset.landing),
+      duration: statTicker.duration, ease: statTicker.ease,
+      delay: this.delay, stagger: statTicker.digitStagger,
       onComplete: () => this.finish(),
     });
-  }
-
-  private render(progress: number) {
-    if (!this.live) return;
-    const { prefix, value, decimals, grouped, unit, suffix } = this.figure;
-    const unitIndex = units.indexOf(unit);
-    const rollover = unitIndex > 0 && value < 10 && decimals === 0;
-    let shown = value * progress;
-    let shownUnit = unit;
-    let places = decimals;
-    if (rollover && progress < 1) {
-      // Count the unit below, e.g. 1B as 0M → 999M.
-      shown = Math.round(value * 1000 * progress);
-      shownUnit = units[unitIndex - 1];
-      if (shown >= 1000) { shown = value; shownUnit = unit; }
-      places = 0;
-    } else shown = progress < 1 ? Math.round(shown * 10 ** places) / 10 ** places : value;
-    const digits = shown.toLocaleString('en-US', { useGrouping: grouped, minimumFractionDigits: places, maximumFractionDigits: places });
-    this.live.textContent = `${prefix}${digits}${shownUnit}${suffix}`;
   }
 
   finish() {
@@ -264,6 +314,7 @@ class CountUp implements Reveal {
     this.tween?.kill();
     this.tween = undefined;
     this.restore();
+    gsap.set(this.element, { clearProps: 'opacity' });
     this.set('visible');
   }
 
@@ -271,14 +322,14 @@ class CountUp implements Reveal {
     this.trigger?.kill();
     this.tween?.kill();
     this.restore();
+    gsap.set(this.element, { clearProps: 'opacity' });
     delete this.element.dataset.textRevealState;
   }
 
   private restore() {
-    if (!this.live) return;
-    this.live = undefined;
+    if (this.element.innerHTML === this.authored) return;
+    this.reels = [];
     this.element.innerHTML = this.authored;
-    this.element.style.minWidth = '';
   }
 
   private set(state: State) {
@@ -288,15 +339,15 @@ class CountUp implements Reveal {
 }
 
 /**
- * Line-by-line headline reveals and stat count-ups for everything inside `root`.
+ * Line-by-line headline reveals and stat tickers for everything inside `root`.
  * Server HTML stays readable; motion is an enhancement that never hides text
  * for reduced motion, slow fonts, keyboard focus or deep links.
  */
 export function mountHeadlineReveals(root: HTMLElement) {
   gsap.registerPlugin(ScrollTrigger, SplitText);
-  const included = (element: HTMLElement) => !element.closest(excludedSelector) && element.dataset.countUp !== 'off';
+  const included = (element: HTMLElement) => !element.closest(excludedSelector) && element.dataset.ticker !== 'off';
   const headings = [...root.querySelectorAll<HTMLElement>(headlineSelector)].filter(included);
-  const stats = [...root.querySelectorAll<HTMLElement>(countUpSelector)].filter(element => included(element) && !headings.includes(element));
+  const stats = [...root.querySelectorAll<HTMLElement>(statTickerSelector)].filter(element => included(element) && !headings.includes(element));
   // Survives reduced-motion toggles: each element plays once per page view.
   const seen = new Set<HTMLElement>();
   const media = gsap.matchMedia();
@@ -310,8 +361,8 @@ export function mountHeadlineReveals(root: HTMLElement) {
       ...headings.filter(fresh).map(heading => new HeadlineReveal(heading)),
       ...stats.filter(fresh).map(stat => {
         const group = stat.closest('dl');
-        const index = group ? [...group.querySelectorAll(countUpSelector)].indexOf(stat) : 0;
-        return CountUp.from(stat, index * countUp.stagger);
+        const index = group ? [...group.querySelectorAll(statTickerSelector)].indexOf(stat) : 0;
+        return StatTicker.from(stat, index * statTicker.stagger);
       }).filter(reveal => reveal !== undefined),
     ];
     [...headings, ...stats].forEach(element => { if (!reveals.some(reveal => reveal.element === element)) setState(element, 'visible'); });
@@ -327,7 +378,7 @@ export function mountHeadlineReveals(root: HTMLElement) {
       catch { /* Ignore invalid URL fragments. */ }
     };
     const typeset = reveals.filter(reveal => reveal.needsFonts);
-    // Lines depend on width. Re-split headlines that have not played yet.
+    // Lines and glyph positions depend on width. Rebuild what has not played yet.
     let rootWidth = root.getBoundingClientRect().width;
     const layout = new ResizeObserver(() => {
       const width = root.getBoundingClientRect().width;
@@ -343,7 +394,14 @@ export function mountHeadlineReveals(root: HTMLElement) {
 
     // Never leave text hidden because a font request stalled.
     const timeout = window.setTimeout(() => { if (!disposed) typeset.forEach(reveal => reveal.finish()); }, textReveal.fontWaitLimit);
-    void document.fonts.ready.then(() => {
+    // fonts.ready can resolve before a preloaded face starts loading, so ask
+    // for the exact faces the revealed text uses.
+    const faces = new Set(typeset.map(reveal => {
+      const style = getComputedStyle(reveal.element);
+      return `${style.fontStyle} ${style.fontWeight} 1em ${style.fontFamily}`;
+    }));
+    void Promise.all([...faces].map(face => document.fonts.load(face).catch(() => [])))
+      .then(() => document.fonts.ready).then(() => {
       if (disposed) return;
       clearTimeout(timeout);
       fontsReady = true;
