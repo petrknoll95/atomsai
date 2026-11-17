@@ -1,0 +1,102 @@
+{
+  "title": "An adjustable boundary for action",
+  "reference": "modular",
+  "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
+  "palette": {
+    "iris": "#A77BCA",
+    "dark": "#10231E",
+    "light": "#FAFAFA"
+  },
+  "mechanicalChecks": "passed",
+  "conceptChecks": "recipe assertions passed",
+  "visualReview": "required; inspect contact sheet and record findings before delivery",
+  "hiddenMode": "35%",
+  "primitiveCounts": {
+    "plane": 2,
+    "box": 1
+  },
+  "views": [
+    {
+      "file": "neutral-dark.svg",
+      "yaw": 0,
+      "pitch": 0,
+      "boundsExtent": 109.22651428571427,
+      "hiddenRuns": 5,
+      "visibleRuns": 14,
+      "accentRuns": 1,
+      "projectionMs": 3.24
+    },
+    {
+      "file": "oblique-dark.svg",
+      "yaw": 0.65,
+      "pitch": -0.35,
+      "boundsExtent": 108.11966428074892,
+      "hiddenRuns": 1,
+      "visibleRuns": 12,
+      "accentRuns": 1,
+      "projectionMs": 0.57
+    },
+    {
+      "file": "back-dark.svg",
+      "yaw": 3.141592653589793,
+      "pitch": 0,
+      "boundsExtent": 109.22651428571429,
+      "hiddenRuns": 4,
+      "visibleRuns": 13,
+      "accentRuns": 1,
+      "projectionMs": 0.34
+    },
+    {
+      "file": "underside-dark.svg",
+      "yaw": 0.55,
+      "pitch": -1.1,
+      "boundsExtent": 120.79276307249698,
+      "hiddenRuns": 1,
+      "visibleRuns": 12,
+      "accentRuns": 1,
+      "projectionMs": 0.49
+    },
+    {
+      "file": "neutral-light.svg",
+      "yaw": 0,
+      "pitch": 0,
+      "boundsExtent": 109.22651428571427,
+      "hiddenRuns": 5,
+      "visibleRuns": 14,
+      "accentRuns": 1,
+      "projectionMs": 0.35
+    },
+    {
+      "file": "oblique-light.svg",
+      "yaw": 0.65,
+      "pitch": -0.35,
+      "boundsExtent": 108.11966428074892,
+      "hiddenRuns": 1,
+      "visibleRuns": 12,
+      "accentRuns": 1,
+      "projectionMs": 0.32
+    },
+    {
+      "file": "back-light.svg",
+      "yaw": 3.141592653589793,
+      "pitch": 0,
+      "boundsExtent": 109.22651428571429,
+      "hiddenRuns": 4,
+      "visibleRuns": 13,
+      "accentRuns": 1,
+      "projectionMs": 0.3
+    },
+    {
+      "file": "underside-light.svg",
+      "yaw": 0.55,
+      "pitch": -1.1,
+      "boundsExtent": 120.79276307249698,
+      "hiddenRuns": 1,
+      "visibleRuns": 12,
+      "accentRuns": 1,
+      "projectionMs": 0.35
+    }
+  ],
+  "png": "generated with sharp",
+  "timingNote": "Projection CPU time only; not p5 interaction frame rate."
+}
