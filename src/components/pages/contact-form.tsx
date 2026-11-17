@@ -7,7 +7,7 @@ import { useEffect, useRef, useState, useSyncExternalStore, type FormEvent } fro
 import styles from './contact.module.css';
 
 type Draft = { name: string; company: string; email: string; message: string };
-const topics: Record<string, string> = { voice: 'Voice', healthcare: 'Healthcare', security: 'Security & compliance', services: 'AI Services', approach: 'AI Services', 'custom-build': 'A custom build', trust: 'Security & compliance' };
+const topics: Record<string, string> = { voice: 'Voice', healthcare: 'Healthcare', security: 'Security & compliance', services: 'AI Services', approach: 'AI Services', 'custom-build': 'A custom build', trust: 'Security & compliance', careers: 'Careers', media: 'Press & media', support: 'Product support', stories: 'Your story' };
 
 function subscribeToLocation(callback: () => void) {
   window.addEventListener('popstate', callback);
@@ -65,22 +65,20 @@ export function ContactForm() {
   }
 
   return <div className={styles.formPanel}>
-    <div className={styles.formProgress} aria-label={draft ? 'Step 2 of 2: Review email' : 'Step 1 of 2: Your message'}><span data-active={!draft}>01 · Your message</span><span className={styles.progressLine} /><span data-active={!!draft}>02 · Review email</span></div>
     <form ref={formRef} onSubmit={prepare} hidden={!!draft} className={styles.form} onInput={event => { const input = event.target; if (input instanceof HTMLInputElement || input instanceof HTMLTextAreaElement) input.setCustomValidity(''); }}>
       <h2 className={`display ${styles.formTitle}`}>What’s on your mind?</h2>
       {topic && <p className={styles.topic}>Let’s talk about {topic === 'AI Services' ? topic : topic.toLowerCase()}.</p>}
-      <fieldset disabled={!ready}>
+      <fieldset disabled={!ready} className={styles.fields}>
       <div className={styles.fieldPair}>
-        <div className={styles.field}><label htmlFor="contact-name">Your name</label><input id="contact-name" name="name" autoComplete="name" required maxLength={80} /></div>
-        <div className={styles.field}><label htmlFor="contact-company">Company</label><input id="contact-company" name="company" autoComplete="organization" required maxLength={120} /></div>
+        <div className={styles.field}><input id="contact-name" name="name" autoComplete="name" required maxLength={80} placeholder=" " /><label htmlFor="contact-name">Your name</label></div>
+        <div className={styles.field}><input id="contact-company" name="company" autoComplete="organization" required maxLength={120} placeholder=" " /><label htmlFor="contact-company">Company</label></div>
       </div>
-      <div className={styles.field}><label htmlFor="contact-email">Business email</label><input id="contact-email" name="email" type="email" autoComplete="email" required maxLength={160} /></div>
-      <div className={styles.field}><label htmlFor="contact-message">What would you like to explore?</label><textarea id="contact-message" name="message" rows={4} required maxLength={1800} aria-describedby="contact-message-help" /><p id="contact-message-help" className={styles.fieldHint}>A few lines about the workflow or question are enough.</p></div>
-      <button type="submit" className={`button button-large button-primary ${styles.prepareButton}`}>Prepare email <ArrowIcon size={18} /></button>
+      <div className={styles.field}><input id="contact-email" name="email" type="email" autoComplete="email" required maxLength={160} placeholder=" " /><label htmlFor="contact-email">Business email</label></div>
+      <div className={styles.field}><textarea id="contact-message" name="message" rows={4} required maxLength={1800} placeholder=" " /><label htmlFor="contact-message">What would you like to explore?</label></div>
+      <button type="submit" className={`button button-large button-primary ${styles.prepareButton}`}>Prepare email</button>
       </fieldset>
       <noscript><p className={styles.formNote}>To get in touch, email <a href={withBasePath("mailto:hello@atomsai.com")}>hello@atomsai.com</a> directly.</p></noscript>
-      <p className={styles.formNote}>Review your message, then send it from your email app. Nothing is sent from this page.</p>
-      <p className={styles.privacy}>All fields required. <a className="link-underline" href={withBasePath("https://atomsai.com/legal/privacy")}>Privacy policy <span aria-hidden="true"><ArrowIcon direction="up-right" /></span></a></p>
+      <p className={styles.formNote}>Nothing is sent from this page: you review the message, then send it from your email app. All fields are required. Read our <a href={withBasePath("https://atomsai.com/legal/privacy")}>Privacy Policy</a>.</p>
     </form>
     {draft && <div className={styles.review}>
       <h2 ref={reviewRef} tabIndex={-1} className={`display ${styles.formTitle}`}>Ready for your email app.</h2>
