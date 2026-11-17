@@ -1,5 +1,5 @@
 {
-  "title": "An open quote awaits a reply",
+  "title": "The follow-up returns to its starting point",
   "reference": "modular",
   "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
   "palette": {
@@ -11,89 +11,87 @@
   "conceptChecks": "recipe assertions passed",
   "visualReview": "required; inspect contact sheet and record findings before delivery",
   "hiddenMode": "omit",
-  "primitiveCounts": {
-    "plane": 1
-  },
+  "primitiveCounts": {},
   "views": [
     {
       "file": "neutral-dark.svg",
       "yaw": 0,
       "pitch": 0,
-      "boundsExtent": 109.22651428571429,
+      "boundsExtent": 109.22651428571427,
       "hiddenRuns": 0,
-      "visibleRuns": 12,
+      "visibleRuns": 19,
       "accentRuns": 0,
-      "projectionMs": 2.74
+      "projectionMs": 2.49
     },
     {
       "file": "oblique-dark.svg",
       "yaw": 0.65,
       "pitch": -0.35,
-      "boundsExtent": 110.75233544801662,
+      "boundsExtent": 83.11219155067919,
       "hiddenRuns": 0,
-      "visibleRuns": 12,
+      "visibleRuns": 19,
       "accentRuns": 0,
-      "projectionMs": 1.14
+      "projectionMs": 0.35
     },
     {
       "file": "back-dark.svg",
       "yaw": 3.141592653589793,
       "pitch": 0,
-      "boundsExtent": 114.84312799307922,
+      "boundsExtent": 109.22651428571427,
       "hiddenRuns": 0,
-      "visibleRuns": 9,
+      "visibleRuns": 15,
       "accentRuns": 0,
-      "projectionMs": 0.28
+      "projectionMs": 0.41
     },
     {
       "file": "underside-dark.svg",
       "yaw": 0.55,
       "pitch": -1.1,
-      "boundsExtent": 119.53405493693421,
+      "boundsExtent": 82.24210216256525,
       "hiddenRuns": 0,
-      "visibleRuns": 13,
+      "visibleRuns": 19,
       "accentRuns": 0,
-      "projectionMs": 0.52
+      "projectionMs": 0.33
     },
     {
       "file": "neutral-light.svg",
       "yaw": 0,
       "pitch": 0,
-      "boundsExtent": 109.22651428571429,
+      "boundsExtent": 109.22651428571427,
       "hiddenRuns": 0,
-      "visibleRuns": 12,
+      "visibleRuns": 19,
       "accentRuns": 0,
-      "projectionMs": 0.36
+      "projectionMs": 0.32
     },
     {
       "file": "oblique-light.svg",
       "yaw": 0.65,
       "pitch": -0.35,
-      "boundsExtent": 110.75233544801662,
+      "boundsExtent": 83.11219155067919,
       "hiddenRuns": 0,
-      "visibleRuns": 12,
+      "visibleRuns": 19,
       "accentRuns": 0,
-      "projectionMs": 0.5
+      "projectionMs": 0.24
     },
     {
       "file": "back-light.svg",
       "yaw": 3.141592653589793,
       "pitch": 0,
-      "boundsExtent": 114.84312799307922,
+      "boundsExtent": 109.22651428571427,
       "hiddenRuns": 0,
-      "visibleRuns": 9,
+      "visibleRuns": 15,
       "accentRuns": 0,
-      "projectionMs": 0.25
+      "projectionMs": 0.31
     },
     {
       "file": "underside-light.svg",
       "yaw": 0.55,
       "pitch": -1.1,
-      "boundsExtent": 119.53405493693421,
+      "boundsExtent": 82.24210216256525,
       "hiddenRuns": 0,
-      "visibleRuns": 13,
+      "visibleRuns": 19,
       "accentRuns": 0,
-      "projectionMs": 0.41
+      "projectionMs": 0.22
     }
   ],
   "png": "generated with sharp",

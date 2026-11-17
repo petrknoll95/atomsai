@@ -53,7 +53,7 @@ await sharp(Buffer.from(cover)).toColourspace('srgb').webp({ lossless: true }).t
 await writeFile(path.join(root, source, 'export.json'), JSON.stringify({
   article: slug,
   skill: 'https://petrknoll95.github.io/atoms-ai-brand/skills/atomsai-illustrations/SKILL.md',
-  revision: 'Clearer recognizable 3D objects; four approved backgrounds, thinner Paper outlines, Cream highlights, 4:3 frames with square-contained art.',
+  revision: 'Abstract 3D relationships with coherent solids, gaps and boundaries; approved backgrounds, 1.6-unit Paper outlines, Cream highlights and square-contained 4:3 framing.',
   recipe: `${source}/recipe.mjs`, rendererFingerprint: hash(JSON.stringify(manifest.runtime)),
   transparentMaster: `${target}-art.svg`, svgSha256: hash(art),
   displayVector: `/${target.replace(/^public\//, '')}.svg`,

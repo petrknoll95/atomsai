@@ -1,11 +1,11 @@
 {
   "article": "quotes-go-quiet",
   "skill": "https://petrknoll95.github.io/atoms-ai-brand/skills/atomsai-illustrations/SKILL.md",
-  "revision": "Clearer recognizable 3D objects; four approved backgrounds, thinner Paper outlines, Cream highlights, 4:3 frames with square-contained art.",
+  "revision": "Abstract 3D relationships with coherent solids, gaps and boundaries; approved backgrounds, 1.6-unit Paper outlines, Cream highlights and square-contained 4:3 framing.",
   "recipe": "docs/design/blog-illustrations-2026-11-17/quotes-go-quiet/recipe.mjs",
   "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
   "transparentMaster": "public/assets/blog/illustrations/quotes-go-quiet-art.svg",
-  "svgSha256": "39e2bdab976619b0f0524826da53c3b7e1b6bbce2a2e36794109d59b4a40ef14",
+  "svgSha256": "859b956a2e6f696f0bccd8fb79e75279f42dce2042157a523a41910f258f3ea0",
   "displayVector": "/assets/blog/illustrations/quotes-go-quiet.svg",
   "cover": "/assets/blog/illustrations/quotes-go-quiet.webp",
   "width": 3072,
@@ -21,7 +21,7 @@
   "outline": "#FAFAFA",
   "highlight": "#F6F1E8",
   "stroke": 1.6,
-  "neutralBoundsExtent": 109.22651428571429,
+  "neutralBoundsExtent": 109.22651428571427,
   "encoding": "SVG on the page; lossless 3072 × 2304 sRGB WebP for social metadata.",
   "checks": "Runtime hashes, recipe assertions, vector-only export and padded square bounds passed."
 }
