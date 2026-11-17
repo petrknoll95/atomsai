@@ -42,9 +42,9 @@ export function FieldNotes() {
 
 export function PointOfView() {
   return <section className={`page-container ${styles.section} ${styles.statement}`} aria-labelledby="point-of-view-title">
-    <Eyebrow href="/approach">Our point of view</Eyebrow>
-    <h2 id="point-of-view-title" className={`display ${styles.heading}`}>The real world gets a vote</h2>
-    <p>Frontier AI is easy to get. Making it hold up is the last mile.<br />We build for that mile, on a billion conversations a year.</p>
+    <Eyebrow href="/approach" className={styles.statementEyebrow}>Our point of view</Eyebrow>
+    <p className={`display ${styles.statementKicker}`}>The real world gets a vote</p>
+    <h2 id="point-of-view-title" className={`display ${styles.statementHeadline}`}>Frontier AI is easy to get. Making it hold up is the last mile. We build for that mile, on a billion conversations a year.</h2>
   </section>;
 }
 
