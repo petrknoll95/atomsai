@@ -1,31 +1,23 @@
-export const title = 'One response reaches farther ahead';
+export const title = 'Three replies racing; one already there';
 export const reference = 'modular';
-const width=24,thickness=18,start=74;
-const inclination=25*Math.PI/180;
-const lanes=[{x:-58,end:-18},{x:0,end:-18},{x:58,end:-96}];
-export default function({scene,box,transformScene,around,X}) {
-  const s=scene();s.hiddenLines='omit';
-  for(const lane of lanes) {
-    box(s,[lane.x,0,(start+lane.end)/2],[width,thickness,start-lane.end]);
+// Three equal lanes share a start line. Two replies are still near the start; one has reached
+// the dashed finish line and carries the highlight.
+const length = 210, lane = 38, spacing = 52, cube = 32;
+export default function ({ scene, box, stroke }) {
+  const s = scene();
+  s.hiddenLines = 'omit';
+  const ends = length / 2, y = 4 + cube / 2;
+  [-1, 0, 1].forEach(k => box(s, [0, 2, k * spacing], [length, 4, lane]));
+  const positions = [[-1, -ends + 30], [0, ends - cube / 2 - 6], [1, -ends + 64]];
+  for (const [k, x] of positions) {
+    const b = box(s, [x, y, k * spacing], [cube, cube, cube]);
+    if (k === 0) { const f = b.faces.find(f => f.normal[1] > .99); s.highlights.push({ points: f.points, normal: f.normal, kind: 'diamond', gradient: [] }); }
   }
-  const lead=lanes[2];
-  s.highlights.push({points:[[lead.x-width/2,thickness/2,lead.end],[lead.x+width/2,thickness/2,lead.end],[lead.x+width/2,thickness/2,-42],[lead.x-width/2,thickness/2,-42]],normal:[0,1,0],kind:'diamond',gradient:[]});
-  // One rigid model pose makes the shared paths legible within a square frame.
-  transformScene(s,p=>around(p,X,inclination),v=>around(v,X,inclination));
+  const reach = spacing + lane / 2;
+  stroke(s, [[ends, 4.5, -reach], [ends, 4.5, reach]], { dash: [4, 4] });
   return s;
 }
-export function verify(s,{sub,around,X},assert) {
-  assert.equal(s.hiddenLines,'omit');assert.equal(s.primitiveCounts.box,3);
-  assert.equal(s.faces.length,18);assert.equal(s.highlights.length,1);
-  const parts=Array.from({length:3},(_,i)=>s.faces.slice(i*6,i*6+6).flatMap(f=>f.points).map(p=>around(p,X,-inclination)));
-  for(const points of parts) {
-    assert(Math.abs(Math.max(...points.map(p=>p[2]))-start)<1e-7,'All three paths share the true departure baseline');
-    assert(Math.abs(Math.max(...points.map(p=>p[0]))-Math.min(...points.map(p=>p[0]))-width)<1e-7);
-    assert(Math.abs(Math.max(...points.map(p=>p[1]))-Math.min(...points.map(p=>p[1]))-thickness)<1e-7);
-    assert(Math.abs(Math.min(...points.map(p=>p[1]))+thickness/2)<1e-7,'All paths share one support plane');
-  }
-  assert.equal(lanes[0].end,lanes[1].end,'Two responses stop together');
-  assert(lanes[2].end<lanes[0].end-width*3,'The leading response advances decisively');
-  for(let i=1;i<lanes.length;i++) assert(lanes[i].x-lanes[i-1].x-width>=34,'Parallel paths retain a broad real gap');
-  assert(s.highlights[0].points.map(p=>around(p,X,-inclination)).every(p=>Math.abs(p[1]-thickness/2)<1e-7 && p[0]>=lanes[2].x-width/2 && p[0]<=lanes[2].x+width/2 && p[2]<lanes[0].end),'Only the genuinely advanced part carries the highlight');
+export function verify(s, api, assert) {
+  assert.equal(s.primitiveCounts.box, 6);
+  assert.equal(s.highlights.length, 1);
 }

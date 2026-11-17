@@ -5,7 +5,7 @@
   "recipe": "docs/design/blog-illustrations-2026-11-17/speed-to-lead/recipe.mjs",
   "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
   "transparentMaster": "public/assets/blog/illustrations/speed-to-lead-art.svg",
-  "svgSha256": "ab5dc64d27979290ed9e90e7735330bb9ab2457b32501f09f45d8508a9092152",
+  "svgSha256": "297df419c110e9383330328eac7f7d470f6deab7755a5950daffa16af5515155",
   "displayVector": "/assets/blog/illustrations/speed-to-lead.svg",
   "cover": "/assets/blog/illustrations/speed-to-lead.webp",
   "width": 3072,
@@ -21,7 +21,7 @@
   "outline": "#FAFAFA",
   "highlight": "#F6F1E8",
   "stroke": 1.6,
-  "neutralBoundsExtent": 109.22651428571427,
+  "neutralBoundsExtent": 109.22651428571429,
   "encoding": "SVG on the page; lossless 3072 × 2304 sRGB WebP for social metadata.",
   "checks": "Runtime hashes, recipe assertions, vector-only export and padded square bounds passed."
 }
