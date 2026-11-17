@@ -68,7 +68,7 @@
 .areaIndex { display:block; font-size:12px; color:var(--color-muted-foreground); margin-bottom:28px; }
 .areaCard h3 { font-size:26px; line-height:1.1; max-width:16ch; }
 .areaCard p { color:var(--color-surface-muted-foreground); font-size:14px; line-height:1.6; margin-top:16px; max-width:29ch; }
-.process { padding-block:88px 40px; }
+.process { padding-block:88px; }
 .processHead { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr); gap:96px; align-items:end; margin-bottom:48px; }
 .processHead .sectionTitle { margin-top:24px; line-height:.95; }
 .processHead>p { font-size:18px; line-height:1.5; max-width:38ch; color:var(--color-muted-foreground); }
@@ -172,7 +172,7 @@
   .areaIndex { margin-bottom:20px; }
   .areaCard h3 { font-size:25px; }
   .areaCard p { font-size:13px; margin-top:12px; }
-  .process { padding-block:56px 32px; }
+  .process { padding-block:56px; }
   .processHead { grid-template-columns:1fr; gap:24px; margin-bottom:32px; }
   .processHead>p { font-size:16px; }
   .processTabs { display:flex; gap:6px; overflow-x:auto; scrollbar-width:thin; padding-bottom:10px; margin-bottom:8px; }
