@@ -1,11 +1,11 @@
 {
   "article": "how-much-autonomy-should-an-agent-have",
   "skill": "https://petrknoll95.github.io/atoms-ai-brand/skills/atomsai-illustrations/SKILL.md",
-  "revision": "User-directed four backgrounds, Paper outlines, Cream highlights, 4:3 frames with square-contained art.",
+  "revision": "Clearer recognizable 3D objects; four approved backgrounds, thinner Paper outlines, Cream highlights, 4:3 frames with square-contained art.",
   "recipe": "docs/design/blog-illustrations-2026-11-17/how-much-autonomy-should-an-agent-have/recipe.mjs",
   "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
   "transparentMaster": "public/assets/blog/illustrations/how-much-autonomy-should-an-agent-have-art.svg",
-  "svgSha256": "38e004c4476c3da660045efae6b16d5580e47ea62cb3a8405ba7a2d522f96a0e",
+  "svgSha256": "f44531f5b0a0a113c6983294c4d19f73fc677c4decbbc332f4afa6fc20cac1df",
   "displayVector": "/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.svg",
   "cover": "/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.webp",
   "width": 3072,
@@ -20,8 +20,8 @@
   "background": "#A77BCA",
   "outline": "#FAFAFA",
   "highlight": "#F6F1E8",
-  "stroke": 1.9,
-  "neutralBoundsExtent": 109.22651428571427,
+  "stroke": 1.6,
+  "neutralBoundsExtent": 109.2265142857143,
   "encoding": "SVG on the page; lossless 3072 × 2304 sRGB WebP for social metadata.",
   "checks": "Runtime hashes, recipe assertions, vector-only export and padded square bounds passed."
 }
