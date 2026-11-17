@@ -1,7 +1,10 @@
 .footer { background: var(--palette-forest-shade); color: var(--color-foreground); }
 .container { padding-block: 64px; }
-.cta { display: flex; align-items: center; justify-content: space-between; gap: 40px; padding-bottom: 64px; border-bottom: 1px solid var(--color-border); }
-.heading { font-size: clamp(28px, 2.5vw, 40px); line-height: 1.1; text-wrap: balance; }
+/* Headline left, copy + action right. The 4fr/3fr split and the gap put the right
+   column on the same line as the directory's Company column (2fr/5fr, 32px + 20px gaps). */
+.cta { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 3fr); column-gap: calc(152px / 3); align-items: start; padding-bottom: 64px; border-bottom: 1px solid var(--color-border); }
+.heading { max-width: 14ch; font-size: clamp(40px, 4.4vw, 72px); line-height: 1; text-wrap: balance; }
+.ctaAside { display: flex; flex-direction: column; align-items: flex-start; gap: 32px; }
 .ctaButton { flex: none; min-height: 48px; }
 .directory { display: grid; grid-template-columns: minmax(200px, 2fr) minmax(0, 5fr); grid-template-rows: 1fr auto; column-gap: 32px; row-gap: 48px; margin-top: 64px; min-height: 396px; }
 .logo { grid-column: 1; grid-row: 1; display: block; align-self: start; width: 44px; height: 40px; }
@@ -22,7 +25,8 @@
 }
 @media (max-width: 1199px) {
   .container { padding-block: 56px; }
-  .cta { flex-direction: column; align-items: flex-start; gap: 28px; padding-bottom: 56px; }
+  .cta { grid-template-columns: minmax(0, 1fr); row-gap: 28px; padding-bottom: 56px; }
+  .ctaAside { gap: 28px; }
   .directory { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto; gap: 56px; margin-top: 56px; min-height: 0; }
   .logo, .navigation, .copyright { grid-column: 1; grid-row: auto; }
   .navigation { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 28px; }
@@ -35,3 +39,7 @@
   .heading { max-width: 20ch; }
 }
 @media (prefers-reduced-motion: reduce) { .group a, .arrow { transition: none; } }
+
+.ctaDescription{max-width:600px;font-size:var(--text-lead);line-height:1.5;color:var(--color-muted-foreground);text-wrap:pretty;}
+
+.tagline { display: block; margin-bottom: 20px; }
