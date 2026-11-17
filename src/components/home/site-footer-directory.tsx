@@ -116,7 +116,7 @@ export function SiteFooterDirectory({ homepage = false }: { homepage?: boolean }
             <ul>{links.map(({ label, path }) => <li key={label}><a href={withBasePath(!homepage && interiorPaths[path] ? interiorPaths[path] : siteHref(path))}>{label}<span className={styles.arrow} aria-hidden="true">→</span></a></li>)}</ul>
           </div>)}
         </nav>
-        <p className={styles.copyright}>{homepage && <span className={styles.tagline}>Frontier AI, engineered for the way your business works.</span>}{homepage ? '© 2026 AtomsAI. SaaS Labs is now AtomsAI.' : '© 2026 AtomsAI, a brand of SaaS Labs US, Inc.'}</p>
+        <p className={styles.copyright}>{homepage && <span className={styles.tagline}>Frontier AI, engineered for the way your business works.</span>}{homepage ? '© 2026 AtomsAI. SaaS\u00A0Labs is now AtomsAI.' : '© 2026 AtomsAI, a brand of SaaS\u00A0Labs US, Inc.'}</p>
       </div>
     </div>
     <FooterSlitFade />
