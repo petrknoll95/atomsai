@@ -1,5 +1,6 @@
 .section { padding-block: var(--section-space); }
-.sectionHeading { margin-bottom: clamp(28px, 3vw, 48px); max-width: 960px; font-size: clamp(32px, 3.4vw, 52px); line-height: 1.08; text-align: left; text-wrap: balance; color: var(--color-foreground); }
+/* Header matches the customer stories header that follows (proof.module.css .storyHeader). */
+.sectionHeading { margin-bottom: 24px; max-width: 960px; font-size: var(--text-display-large); line-height: .95; text-align: left; text-wrap: balance; color: var(--color-foreground); }
 .panel {
   --scene-cream: var(--palette-cream);
   --scene-paper: var(--palette-paper);
@@ -17,6 +18,8 @@
 .accordion { display: flex; flex-direction: column; gap: 18px; }
 .trigger { display: flex; width: 100%; align-items: center; gap: 24px; min-height: 44px; text-align: left; color: color-mix(in display-p3, var(--palette-cream) 42%, transparent); transition: color .35s ease; }
 .trigger:is(:hover,:focus-visible), .item[data-active='true'] .trigger { color: var(--palette-cream); }
+/* Keyboard focus is shown by the cream label colour; no ring around the trigger. */
+html .trigger:focus-visible { outline-color: transparent; box-shadow: none; }
 .productLogo { width: 30px; height: 30px; flex: none; background: currentColor; mask-position: center; mask-repeat: no-repeat; mask-size: contain; }
 .name { font-size: 32px; line-height: 1; }
 .detail { display: grid; grid-template-rows: 0fr; opacity: 0; transition: grid-template-rows .4s cubic-bezier(.25,.46,.45,.94), opacity .25s ease; }
@@ -99,6 +102,6 @@ svg.productLogo{background:transparent;}
 .copy{gap:32px;}
 @media(max-width:767px){.visual{min-height:440px;padding:16px;}.accordion{order:1;}.visual{order:2;}}
 
-.sectionHeading{margin-bottom:24px;}
-.sectionLead{max-width:720px;margin-bottom:clamp(28px,3vw,48px);font-size:clamp(18px,2vw,24px);line-height:1.5;color:var(--color-muted-foreground);}
+.sectionLead{max-width:650px;margin-bottom:80px;font-size:var(--text-body);line-height:1.5;color:var(--color-muted-foreground);}
+@media(max-width:767px){.sectionHeading{margin-bottom:20px;font-size:var(--text-display-medium);line-height:1;}.sectionLead{margin-bottom:40px;}}
 .productTitle{font-size:clamp(24px,2vw,30px);line-height:1.12;text-wrap:balance;margin-bottom:20px;color:var(--palette-cream);}
