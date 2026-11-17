@@ -50,8 +50,8 @@ export const homePatternPlacements = {
   'preview-drift': { options: { kind: 'drift', count: 1, mode: 'dark', fit: 'stretch' }, viewport: [992, 640], instance: [0, 0, 992, 640], radius: 32 },
   'preview-concentric': { options: { kind: 'concentric', count: 15, colors: legacyIris }, viewport: [480, 640], instance: [-160, -80, 800, 800], radius: 32 },
   'cta-pattern': { options: { kind: 'offset', count: 20, colors: irisOffset, rotation: -90 }, viewport: [720, 368], instance: [0, -176, 720, 720], radius: 16 },
-  /** Footer CTA gutters: theme-dark Offset, tall crop; the right gutter mirrors it. */
-  'footer-offset': { options: { kind: 'offset', count: 5, mode: 'dark' }, viewport: [300, 760], instance: [0, 0, 300, 760], radius: 0 },
+  /** Footer CTA gutters: theme-dark Drift, tall crop; the right gutter mirrors it. */
+  'footer-pattern': { options: { kind: 'drift', count: 5, mode: 'dark' }, viewport: [300, 760], instance: [0, 0, 300, 760], radius: 0 },
 } as const satisfies Record<string, Placement>;
 
 export type HomePatternApplication = keyof typeof homePatternPlacements;

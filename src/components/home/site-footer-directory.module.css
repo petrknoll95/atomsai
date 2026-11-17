@@ -8,7 +8,7 @@
 .heading { max-width: 15ch; font-size: clamp(44px, 5.6vw, 96px); line-height: 1; letter-spacing: -.015em; text-wrap: balance; }
 .headingMuted { color: var(--color-muted-foreground); }
 .ctaActions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
-/* Offset interference pattern fills both gutters; the right one is mirrored for symmetry. */
+/* Drift interference pattern fills both gutters; the right one is mirrored for symmetry. */
 .ctaSide { position: relative; min-width: 0; }
 .ctaSideMirrored { transform: scaleX(-1); }
 .directory { display: grid; grid-template-columns: minmax(200px, 2fr) minmax(0, 5fr); grid-template-rows: 1fr auto; column-gap: 32px; row-gap: 48px; min-height: 396px; }
