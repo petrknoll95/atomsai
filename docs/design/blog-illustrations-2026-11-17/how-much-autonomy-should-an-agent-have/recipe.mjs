@@ -1,6 +1,6 @@
 export const title = 'Freedom inside a defined volume';
 export const reference = 'modular';
-const half = [75, 80, 70], center = [-20, 4, 14], radius = 34;
+const half = [75, 80, 70], center = [-28, -10, 23], radius = 27;
 
 export default function ({ scene, stroke, ellipsoid }) {
   const s = scene();
@@ -17,7 +17,7 @@ export default function ({ scene, stroke, ellipsoid }) {
   return s;
 }
 
-export function verify(s, { sub, dot }, assert) {
+export function verify(s, { sub, dot, project, rotate }, assert) {
   assert.equal(s.hiddenLines, 'omit');
   assert.equal(s.primitiveCounts['open-volume'], 1);
   assert.equal(s.primitiveCounts.sphere, 1);
@@ -48,4 +48,22 @@ export function verify(s, { sub, dot }, assert) {
     for (let other = axis + 1; other < 3; other++) assert.equal(dot(sphere.axes[axis], sphere.axes[other]), 0);
   }
   assert(Math.hypot(...sub(center, [0, 0, 0])) > 20, 'Off-center placement visibly leaves room for movement');
+  // World-space clearance is not enough: the sphere must also read as separate
+  // from foreground frame edges in every prescribed review orientation.
+  for (const view of [{ yaw: 0, pitch: 0 }, { yaw: .65, pitch: -.35 }, { yaw: Math.PI, pitch: 0 }, { yaw: .55, pitch: -1.1 }]) {
+    const transform = p => project(rotate(p, view.yaw, view.pitch));
+    const c = transform(center);
+    for (const edge of edges) {
+      const [a, b] = edge.points.map(transform);
+      if (a[2] < c[2] && b[2] < c[2]) continue; // Rear edges are correctly hidden by the solid sphere.
+      const dz = b[2] - a[2];
+      let low = 0, high = 1;
+      if (a[2] < c[2]) low = (c[2] - a[2]) / dz;
+      else if (b[2] < c[2]) high = (c[2] - a[2]) / dz;
+      const dx = b[0] - a[0], dy = b[1] - a[1];
+      const nearest = Math.max(low, Math.min(high, ((c[0] - a[0]) * dx + (c[1] - a[1]) * dy) / (dx * dx + dy * dy)));
+      const clearance = Math.hypot(a[0] + nearest * dx - c[0], a[1] + nearest * dy - c[1]) - radius;
+      assert(clearance > 5, 'No projected foreground edge touches or crosses the sphere.');
+    }
+  }
 }
