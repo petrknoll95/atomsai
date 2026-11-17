@@ -3,6 +3,7 @@
 import { assetPath } from '@/lib/base-path';
 
 import { useCallback, useEffect, useRef, useState, type CSSProperties } from 'react';
+import { gsap } from 'gsap';
 import styles from './integrations.module.css';
 
 const tools = ['notion', 'microsoft_teams', 'hubspot', 'googledrive', 'shopify', 'jira', 'asana', 'zendesk', 'github', 'airtable', 'slack', 'salesforce', 'intercom'];
@@ -33,37 +34,41 @@ export function IntegrationsGrid() {
     let visible = false;
     // Orbits move their slots with upright translations rather than rotating whole rings:
     // Chrome rasterises large rotating layers at reduced resolution, which blurred the logos
-    // and the 1px circles. Each ring keeps its own clock and only advances while running.
+    // and the 1px circles. GSAP's ticker drives one shared clock and quick setters write
+    // sub-pixel 3D translations, so each composited slot glides instead of stepping a whole
+    // device pixel at a time. Each ring keeps its own speed and only advances while running.
     const orbits = Array.from(root.querySelectorAll<HTMLElement>('[data-orbit]')).map(orbit => {
       const ring = Number(orbit.dataset.orbit), count = rings[ring];
       return {
         orbit, ring, radius: 0, speed: (ring % 2 ? -1 : 1) * Math.PI * 2 / ((480 + ring * 90) * 1000),
-        slots: Array.from(orbit.querySelectorAll<HTMLElement>('[data-orbit-slot]')).map((slot, index) => ({ slot, angle: (index / count * 360 - 90) * Math.PI / 180 })),
+        slots: Array.from(orbit.querySelectorAll<HTMLElement>('[data-orbit-slot]')).map((slot, index) => {
+          gsap.set(slot, { xPercent: -50, yPercent: -50, x: 0, y: 0, force3D: true });
+          return {
+            angle: (index / count * 360 - 90) * Math.PI / 180,
+            setX: gsap.quickSetter(slot, 'x', 'px') as (value: number) => void,
+            setY: gsap.quickSetter(slot, 'y', 'px') as (value: number) => void,
+          };
+        }),
       };
     });
-    let elapsed = 0, last = 0, tick = 0;
+    let elapsed = 0, running = false;
     const place = () => {
-      const pixel = 1 / devicePixelRatio;
-      for (const { radius, speed, slots } of orbits) for (const { slot, angle } of slots) {
+      for (const { radius, speed, slots } of orbits) for (const { angle, setX, setY } of slots) {
         const turn = angle + elapsed * speed;
-        const dx = Math.round(radius * (Math.cos(turn) - Math.cos(angle)) / pixel) * pixel;
-        const dy = Math.round(radius * (Math.sin(turn) - Math.sin(angle)) / pixel) * pixel;
-        slot.style.transform = `translate(-50%, -50%) translate(${dx}px, ${dy}px)`;
+        setX(radius * (Math.cos(turn) - Math.cos(angle)));
+        setY(radius * (Math.sin(turn) - Math.sin(angle)));
       }
     };
     const measure = () => { for (const item of orbits) item.radius = item.orbit.offsetWidth / 2; place(); };
-    const loop = (now: number) => {
-      if (last) elapsed += Math.min(now - last, 100);
-      last = now;
-      place();
-      tick = requestAnimationFrame(loop);
-    };
+    // deltaTime is in milliseconds; cap it so a stalled frame never jumps the rings.
+    const tick = (_time: number, deltaTime: number) => { elapsed += Math.min(deltaTime, 100); place(); };
     const update = () => {
-      const running = visible && !document.hidden && !reduced.matches;
-      root.dataset.running = String(running);
-      cancelAnimationFrame(tick);
-      last = 0;
-      if (running) tick = requestAnimationFrame(loop);
+      const next = visible && !document.hidden && !reduced.matches;
+      root.dataset.running = String(next);
+      if (next === running) return;
+      running = next;
+      if (running) gsap.ticker.add(tick);
+      else gsap.ticker.remove(tick);
     };
     const layout = () => {
       measure();
@@ -94,7 +99,7 @@ export function IntegrationsGrid() {
     document.addEventListener('visibilitychange', update);
     return () => {
       cancelAnimationFrame(frame);
-      cancelAnimationFrame(tick);
+      gsap.ticker.remove(tick);
       observer.disconnect();
       resize.disconnect();
       mobile.removeEventListener('change', layout);

@@ -1,9 +1,10 @@
 .section { padding-block: var(--section-space); color: var(--color-foreground); }
 .stage { position: relative; height: clamp(660px, 52vw, 820px); overflow: clip; }
 .grid {
-  --orbit-base: clamp(680px, 48vw, 780px);
-  --orbit-step: clamp(112px, 8.8vw, 140px);
-  --tile-size: clamp(88px, 6.6vw, 104px);
+  /* 1.3× the original layout; the stage height (the crop) is unchanged. */
+  --orbit-base: clamp(884px, 62.4vw, 1014px);
+  --orbit-step: clamp(146px, 11.44vw, 182px);
+  --tile-size: clamp(114px, 8.58vw, 135px);
   position: absolute; inset: 0; pointer-events: none;
   mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent), linear-gradient(180deg, transparent, #000 12%, #000 88%, transparent);
   mask-composite: intersect;
@@ -46,7 +47,7 @@
 .copy > :global(.eyebrow) { align-self: center; }
 @media (max-width: 767px) {
   .stage { height: 660px; }
-  .grid { --orbit-base: 460px; --orbit-step: 90px; --tile-size: 64px; }
+  .grid { --orbit-base: 598px; --orbit-step: 117px; --tile-size: 83px; }
   .copy { width: 100%; gap: 40px; }
   .title { font-size: clamp(30px, 8vw, 42px); }
 }
