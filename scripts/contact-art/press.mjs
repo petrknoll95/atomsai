@@ -6,7 +6,17 @@
 export const title = 'Desk microphone';
 export const reference = 'always-on';
 // A round base, a slim stem, a collar and a spherical head with an equatorial grille band.
-export default function ({ scene, ellipsoid, ring, stroke, add, mul, circlePoints, X, Y, Z }) {
+// Hover loop, a desk-lamp hop: crouch, spring up with a lean, land with a squash, rest.
+export const motion = { duration: 2.2 };
+const bump = (t, a, b) => t > a && t < b ? Math.sin(Math.PI * (t - a) / (b - a)) ** 2 : 0;
+export function pose(t) {
+  const crouch = bump(t, 0, .22) + .7 * bump(t, .55, .72);
+  const s = t > .2 && t < .55 ? (t - .2) / .35 : 0;
+  return { crouch, lift: 44 * 4 * s * (1 - s), lean: 9 * Math.PI / 180 * Math.sin(Math.PI * s) };
+}
+// t is the loop phase in [0, 1); t = 0 is the approved still.
+export default function ({ scene, ellipsoid, ring, stroke, add, mul, unit, around, transformScene, circlePoints, X, Y, Z }, t = 0) {
+  const { crouch, lift, lean } = pose(t);
   const s = scene();
   s.hiddenLines = 'omit';
   let owner = 7000;
@@ -18,12 +28,15 @@ export default function ({ scene, ellipsoid, ring, stroke, add, mul, circlePoint
     stroke(s, lo, { closed: true, owner: id }); stroke(s, hi, { closed: true, owner: id });
     s.cylinders.push({ top: [0, y0, 0], axis: [0, y1 - y0, 0], u: X, v: Z, r, inner: 0, owner: id, width: 1 });
   };
-  const head = 36, hy = 168;
+  const head = 36, drop = 14 * crouch, top = 112 - drop, hy = 168 - drop; // the stem shortens in a crouch
   cylinder(54, 0, 10);         // base
-  cylinder(5, 10, 112);        // stem
-  cylinder(14, 112, hy - head + 4); // collar, tucked just under the head
+  cylinder(5, 10, top);        // stem
+  cylinder(14, top, hy - head + 4); // collar, tucked just under the head
   ellipsoid(s, [0, hy, 0], [mul(X, head), mul(Z, head), mul(Y, head)], { highlight: true });
   ring(s, [0, hy, 0], head + .01, X, Z); // grille band on the equator
+  // Lean about the base's ground point on the screen-horizontal tilt axis, then lift.
+  const axis = unit([1, 0, 1]);
+  if (lean || lift) transformScene(s, p => add(around(p, axis, lean), [0, lift, 0]), v => around(v, axis, lean));
   return s;
 }
 export function verify(s, api, assert) {

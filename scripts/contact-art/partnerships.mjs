@@ -7,12 +7,19 @@ export const title = 'Linked rings';
 export const reference = 'always-on';
 // Two equal rings, one upright and one flat, each passing through the other's hole.
 // Offset a = mid radius / 2 centres each band in the other ring's opening.
-export default function ({ scene, tube, X, Y, Z }) {
+// Hover loop: each ring swings about the shared X axis through its own centre, in counterphase.
+// Each band crosses the other ring exactly at that ring's centre, so the link holds at any angle;
+// ±25° keeps the planes at least 40° apart, which clears the bands (needs > 22°).
+export const motion = { duration: 3.2 };
+// t is the loop phase in [0, 1); t = 0 is the approved still.
+export default function ({ scene, tube, around, cross, sub, mul, X, Y, Z }, t = 0) {
   const s = scene();
   s.hiddenLines = 'omit';
-  const r = 58, inner = 44, t = 12, a = (r + inner) / 4;
-  tube(s, [-a, 0, -t / 2], r, inner, t, X, Y, true); // cross(X,Y)=+Z: spans z -t/2..t/2
-  tube(s, [a, t / 2, 0], r, inner, t, X, Z);   // cross(X,Z)=-Y: spans y t/2..-t/2
+  const r = 58, inner = 44, th = 12, a = (r + inner) / 4, swing = 25 * Math.PI / 180 * Math.sin(2 * Math.PI * t);
+  // tube() takes its first cap as centre; offset by half the thickness so each ring is centred.
+  const ringAt = (c, v, highlight) => { const n = cross(X, v); tube(s, sub(c, mul(n, th / 2)), r, inner, th, X, v, highlight); };
+  ringAt([-a, 0, 0], around(Y, X, swing), true);  // upright: spans z ±th/2 at rest
+  ringAt([a, 0, 0], around(Z, X, -swing), false); // flat: spans y ±th/2 at rest
   return s;
 }
 export function verify(s, api, assert) {
