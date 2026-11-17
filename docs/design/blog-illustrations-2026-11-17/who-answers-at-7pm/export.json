@@ -1,0 +1,14 @@
+{
+  "article": "who-answers-at-7pm",
+  "skill": "https://petrknoll95.github.io/atoms-ai-brand/skills/atomsai-illustrations/SKILL.md",
+  "recipe": "docs/design/blog-illustrations-2026-11-17/who-answers-at-7pm/recipe.mjs",
+  "rendererFingerprint": "35adff07731896ac37a07e10398e6328fc29cf3a431d43c63064d47ea7bec8de",
+  "transparentMaster": "public/assets/blog/illustrations/who-answers-at-7pm.svg",
+  "svgSha256": "1e7acde09fdccce59b8019cbced16ce1b9681c77b3429a5ad814b8fb68ab3cc4",
+  "cover": "/assets/blog/illustrations/who-answers-at-7pm.webp",
+  "width": 1600,
+  "height": 900,
+  "background": "#10231E",
+  "encoding": "lossless WebP, sRGB",
+  "geometry": "Unmodified renderer output, uniform 1080px viewport centered in the cover."
+}
