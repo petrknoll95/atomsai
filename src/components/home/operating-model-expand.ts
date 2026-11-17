@@ -2,7 +2,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 /** Scroll distance, in viewport heights, spent opening and closing the panel. */
-const TRANSITION = .6;
+export const TRANSITION = .6;
 /** Gap kept between the expanded panel and the header, the viewport's sides and its bottom. */
 const MARGIN = 16;
 
@@ -12,10 +12,12 @@ const MARGIN = 16;
  * then shrink it back before the pin ends. The panel keeps its rounded corners.
  * Only the backdrop moves: the canvas and accordion keep their size, so nothing reflows.
  */
-export function expandPinnedRow({ row, backdrop, pin, pinnedTop }: {
+export function expandPinnedRow({ row, backdrop, pin, pinnedTop, collapseShare }: {
   row: HTMLElement;
   backdrop: HTMLElement;
   pin: ScrollTrigger;
+  /** Share of the pin reserved after the diagram's last layer; the collapse runs inside it. */
+  collapseShare: number;
   /** Viewport top of the row while pinned. */
   pinnedTop: () => number;
 }) {
@@ -52,7 +54,8 @@ export function expandPinnedRow({ row, backdrop, pin, pinnedTop }: {
       top: () => current.top, left: () => current.left, right: () => current.right, bottom: () => current.bottom,
       duration: share, ease, immediateRender: false,
     })
-    .to(backdrop, { ...resting, duration: share, ease }, 1 - share);
+    // Collapse only in the trailing hold, after the last tab has fully played.
+    .to(backdrop, { ...resting, duration: collapseShare, ease }, 1 - collapseShare);
 
   return () => {
     timeline.scrollTrigger?.kill();

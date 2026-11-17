@@ -17,7 +17,13 @@ import { createFlowPaths } from './operating-model-diagram/flow-paths';
 import { createUiDiagram } from './operating-model-diagram/ui-diagram';
 import { createOutlineShadow } from './operating-model-diagram/outline-shadow';
 
-export type OperatingModelController = { select(index: number): void; destroy(): void; readonly pin?: ScrollTrigger };
+export type OperatingModelController = {
+  select(index: number): void;
+  destroy(): void;
+  readonly pin?: ScrollTrigger;
+  /** Share of the pin's scroll spent in the trailing hold after the diagram finishes. */
+  readonly tailShare: number;
+};
 type DiagramOptions = {
   trigger: HTMLElement;
   pin: HTMLElement;
@@ -25,6 +31,8 @@ type DiagramOptions = {
   interactive?: boolean;
   /** Drive the diagram from scroll (pinned). When false, only selections change its state. */
   scroll?: boolean;
+  /** Extra pinned scroll after the last layer, in viewport heights, for exit transitions. */
+  tail?: number;
   onHighlight?: (index: number) => void;
 };
 
@@ -468,7 +476,10 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
       }
       timeline.to(scrollState, { duration: .4 });
     }
+    // Pin length is 4.5 viewport heights per 3.9s of timeline; convert the tail to timeline time.
+    if (scrollLinked && options.tail) timeline.to({}, { duration: options.tail * 3.9 / 4.5 });
   }, options.trigger);
+  const tailDuration = scrollLinked && options.tail ? options.tail * 3.9 / 4.5 : 0;
   if (reducedMotion) timeline!.progress(1);
   // Without scroll, open on the first layer to match the first open tab.
   else if (!scrollLinked) timeline!.time(timeline!.labels[highlightLabels[0]] + .35);
@@ -537,6 +548,7 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
   return {
     select,
     get pin() { return timeline.scrollTrigger; },
+    get tailShare() { return tailDuration / timeline.duration(); },
     destroy() {
     disposed = true;
     selectionTween?.kill();

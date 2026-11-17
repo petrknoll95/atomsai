@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import type { OperatingModelController } from './operating-model-three';
-import { expandPinnedRow } from './operating-model-expand';
+import { expandPinnedRow, TRANSITION } from './operating-model-expand';
 import styles from './operating-model.module.css';
 
 export function OperatingModelScene({ active, selection, onHighlight }: {
@@ -51,11 +51,13 @@ export function OperatingModelScene({ active, selection, onHighlight }: {
         pin,
         start: () => `top ${pinnedTop()}px`,
         scroll: mode !== 'none',
+        // Desktop: room after the last layer for the panel to shrink back.
+        tail: mode === 'row' && backdrop ? TRANSITION : 0,
         onHighlight,
       });
       const pinTrigger = controller.current.pin;
       if (desktop.matches && pin === row && backdrop && pinTrigger) {
-        collapse = expandPinnedRow({ row, backdrop, pin: pinTrigger, pinnedTop });
+        collapse = expandPinnedRow({ row, backdrop, pin: pinTrigger, pinnedTop, collapseShare: controller.current.tailShare });
       }
     };
     const observer = new IntersectionObserver(entries => {
