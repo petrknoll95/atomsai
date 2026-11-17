@@ -11,7 +11,7 @@ export function CompanyProof() {
       <div><dt>Conversations powered a year</dt><dd className="display">1B+</dd></div>
       <div><dt>Raised from Peak XV, Eight Roads, Base10</dt><dd className="display">~$56M</dd></div>
     </dl>
-    <div className={styles.productFamily}><p className={styles.label}>Each of these products is built and run by AtomsAI.</p><div>{[
+    <div className={styles.productFamily}><p className={styles.label}>One company behind every product here, from the apps to the models that power them.</p><div>{[
       ['JustCall', 'justcall', 'https://justcall.io/'],
       ['ServiceAgent', 'serviceagent', 'https://serviceagent.ai/'],
       ['PyAI', 'pyai', 'https://pyai.com/'],
