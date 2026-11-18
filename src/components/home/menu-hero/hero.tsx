@@ -9,7 +9,7 @@ import menuHero from './hero.module.css';
 import { mountHeroScroll } from './transition';
 import { mountHeroEntrance } from './entrance';
 
-export function MenuPatternHero({ children }: { children: ReactNode }) {
+export function MenuPatternHero({ children, productFamily }: { children: ReactNode; productFamily: ReactNode }) {
   const trackRef = useRef<HTMLElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
   const fieldRef = useRef<HTMLDivElement>(null);
@@ -49,6 +49,10 @@ export function MenuPatternHero({ children }: { children: ReactNode }) {
           <p className={stars.lead}>At AtomsAI, models power products. Products inform better technology. And solving new business problems gives both more to build on. Together, they make possible what no single product could.</p>
           <ButtonLink href='/company/contact' variant='primary' size='large'>Talk to AtomsAI</ButtonLink>
         </div>
+      </div>
+      <div className={`theme-light ${menuHero.productFooter}`} data-theme="light" data-hero-products>
+        <div aria-hidden="true" className={`${menuHero.productFade} bg-ease-in-out-to-b from-transparent to-(--palette-paper)`} />
+        <div className="page-container">{productFamily}</div>
       </div>
     </div>
     <div className={`theme-light ${menuHero.sectionReveal}`} data-hero-reveal data-theme="light">
