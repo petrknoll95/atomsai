@@ -1,10 +1,10 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { Shader, CustomShader, FlutedGlass } from 'shaders/react';
-import { AtomsLightField, AtomsGlassSurface } from './glass-material';
-import { useGlassPointer } from './use-glass-pointer';
+import { Shader, ImageTexture, ChromaFlow, FlutedGlass, FilmGrain } from 'shaders/react';
 import { MotionPattern } from '@/components/patterns/motion-pattern';
+import { usePatternTexture } from './use-pattern-texture';
+import { useGlassPointer } from './use-glass-pointer';
 
 export type FlutedPatternProps = {
   count: number;
@@ -17,8 +17,9 @@ export function FlutedPattern({ count, onAvailabilityChange }: FlutedPatternProp
   const [frequency, setFrequency] = useState(count);
   const [reduced, setReduced] = useState(true);
   const [failed, setFailed] = useState(false);
-  const light = useGlassPointer(host, reduced || failed);
-  const cursor = { x: light.x, y: light.y };
+  const { texture, failed: textureFailed } = usePatternTexture(host, count);
+  const unavailable = failed || textureFailed;
+  const light = useGlassPointer(host, reduced || unavailable);
 
   useEffect(() => {
     const element = host.current!;
@@ -27,26 +28,33 @@ export function FlutedPattern({ count, onAvailabilityChange }: FlutedPatternProp
     updateMotion();
     motion.addEventListener('change', updateMotion);
     // Shaders 4 uses height-normalized coordinates (uv.x * width / height).
-    // Convert the horizontal column count so flute seams match the fade columns.
+    // The original pattern crops an 840-unit field to 800 units. Match its
+    // visible count so glass seams stay aligned with the existing column fades.
     const observer = new ResizeObserver(([entry]) => {
       const { width, height } = entry.contentRect;
-      if (width) setFrequency(count * height / width);
+      if (width) setFrequency(count * (800 / 840) * height / width);
     });
     observer.observe(element);
     return () => { observer.disconnect(); motion.removeEventListener('change', updateMotion); };
   }, [count]);
 
-  return <div ref={host} style={{ width: '100%', height: '100%' }} data-fluted-hero={failed ? 'fallback' : 'webgpu'}>
-    {failed ? <MotionPattern kind="offset" count={count} mode="dark" fit="stretch" motion="tide" duration={12} intensity={0.7} resolution="display" onAvailabilityChange={onAvailabilityChange} /> :
-      <Shader style={{ width: '100%', height: '100%' }} colorSpace="srgb" disableTelemetry
+  return <div ref={host} style={{ width: '100%', height: '100%' }} data-fluted-hero={unavailable ? 'fallback' : 'webgpu'}>
+    {unavailable ? <MotionPattern kind="offset" count={count} mode="dark" fit="stretch" motion="tide" duration={12} intensity={0.7} resolution="display" onAvailabilityChange={onAvailabilityChange} /> : texture &&
+      <Shader key={reduced ? 'still' : 'interactive'} style={{ width: '100%', height: '100%' }} colorSpace="srgb" disableTelemetry
         onReady={() => onAvailabilityChange(true)} onUnavailable={() => setFailed(true)}>
-        <CustomShader src={AtomsGlassSurface} count={count} cursor={cursor} presence={light.presence} speed={reduced ? 0 : 1}>
-          <FlutedGlass angle={0} frequency={frequency} shape="rounded" softness={0.7}
-            refraction={1.35} aberration={0} highlight={0.12} highlightSoftness={0.65}
-            highlightColor="#668477" lightAngle={38} speed={0}>
-            <CustomShader src={AtomsLightField} cursor={cursor} presence={light.presence} speed={reduced ? 0 : 1} />
+        <FilmGrain strength={0.025}>
+          <FlutedGlass angle={0} frequency={frequency} shape="rounded" softness={1}
+            refraction={0.08} aberration={0.025} highlight={0.9} highlightSoftness={0.28}
+            highlightColor="#cae3d9" lightAngle={-55 + (light.x - 0.5) * 58 * light.presence} speed={0}>
+            <ImageTexture url={texture} objectFit="fill" />
           </FlutedGlass>
-        </CustomShader>
+          {/* Strong refraction on the light preserves the original pattern's geometry. */}
+          {!reduced && <FlutedGlass angle={0} frequency={frequency} shape="rounded" softness={1}
+            refraction={4} aberration={0.12} highlight={0} speed={0}>
+            <ChromaFlow baseColor="#bcead8" upColor="#7ec9a7" downColor="#328465"
+              leftColor="#3fae8b" rightColor="#8cdbb5" intensity={1.5} radius={2.5} momentum={13} />
+          </FlutedGlass>}
+        </FilmGrain>
       </Shader>}
   </div>;
 }
