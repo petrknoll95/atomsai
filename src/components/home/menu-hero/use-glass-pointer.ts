@@ -15,8 +15,8 @@ export function useGlassPointer(host: RefObject<HTMLDivElement | null>, reduced:
     const tick = (now: number) => {
       const dt = Math.min(64, last ? now - last : 16);
       last = now;
-      const follow = 1 - Math.exp(-dt / 150);
-      const fade = 1 - Math.exp(-dt / (target.presence ? 240 : 650));
+      const follow = 1 - Math.exp(-dt / 230);
+      const fade = 1 - Math.exp(-dt / (target.presence ? 320 : 900));
       current.x += (target.x - current.x) * follow;
       current.y += (target.y - current.y) * follow;
       current.presence += (target.presence - current.presence) * fade;

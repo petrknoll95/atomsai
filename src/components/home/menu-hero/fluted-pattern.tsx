@@ -1,10 +1,11 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { Shader, ImageTexture, ChromaFlow, FlutedGlass, FilmGrain } from 'shaders/react';
+import { Shader, CustomShader, ImageTexture, ChromaFlow, FlutedGlass, FilmGrain } from 'shaders/react';
 import { MotionPattern } from '@/components/patterns/motion-pattern';
 import { usePatternTexture } from './use-pattern-texture';
 import { useGlassPointer } from './use-glass-pointer';
+import { GlassLight } from './glass-light';
 
 export type FlutedPatternProps = {
   count: number;
@@ -49,11 +50,13 @@ export function FlutedPattern({ count, onAvailabilityChange }: FlutedPatternProp
             <ImageTexture url={texture} objectFit="fill" />
           </FlutedGlass>
           {/* Strong refraction on the light preserves the original pattern's geometry. */}
-          {!reduced && <FlutedGlass angle={0} frequency={frequency} shape="rounded" softness={1}
-            refraction={4} aberration={0.12} highlight={0} speed={0}>
-            <ChromaFlow baseColor="#bcead8" upColor="#7ec9a7" downColor="#328465"
-              leftColor="#3fae8b" rightColor="#8cdbb5" intensity={1.5} radius={2.5} momentum={13} />
-          </FlutedGlass>}
+          {!reduced && <CustomShader src={GlassLight}>
+            <FlutedGlass angle={0} frequency={frequency} shape="rounded" softness={1}
+              refraction={4} aberration={0.12} highlight={0} speed={0}>
+              <ChromaFlow baseColor="#bcead8" upColor="#7ec9a7" downColor="#328465"
+                leftColor="#3fae8b" rightColor="#8cdbb5" intensity={1.5} radius={2.5} momentum={20} />
+            </FlutedGlass>
+          </CustomShader>}
         </FilmGrain>
       </Shader>}
   </div>;
