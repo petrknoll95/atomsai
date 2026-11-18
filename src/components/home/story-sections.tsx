@@ -6,16 +6,20 @@ import { blogArtSource } from '@/components/blog/blog-art';
 import { ClipCard } from './clip-card';
 import styles from './story-sections.module.css';
 
-export function CompanyProof() {
-  return <section id="company-story" className={`page-container ${styles.companyProof}`} aria-label="One company behind the products">
-    <div className={styles.productFamily}><p className={styles.label}>One company behind every product here, from the apps to the models that power them.</p><div>{[
+export function ProductFamily({ className = '' }: { className?: string }) {
+  return <div className={`${styles.productFamily} ${className}`}><p className={styles.label}>One company behind every product here, from the apps to the models that power them.</p><div>{[
       ['JustCall', 'justcall', 'https://justcall.io/'],
       ['ServiceAgent', 'serviceagent', 'https://serviceagent.ai/'],
       ['PyAI', 'pyai', 'https://pyai.com/'],
       ['Helpwise', 'helpwise', 'https://helpwise.io/'],
     ].map(([name, mark, href]) => <a key={name} href={href}>{mark === 'pyai'
       ? <svg className={styles.productIcon} viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" strokeWidth="3.5"/><circle cx="32" cy="32" r="13" fill="currentColor"/></svg>
-      : <span className={styles.productIcon} aria-hidden="true" style={{ maskImage: `url("${assetPath(`/assets/products/${mark}-mark.svg`)}")` }}/>}<span>{name}</span></a>)}</div></div>
+      : <span className={styles.productIcon} aria-hidden="true" style={{ maskImage: `url("${assetPath(`/assets/products/${mark}-mark.svg`)}")` }}/>}<span>{name}</span></a>)}</div></div>;
+}
+
+export function CompanyProof({ showProducts = true }: { showProducts?: boolean }) {
+  return <section id="company-story" className={`page-container ${styles.companyProof}`} aria-label="One company behind the products">
+    {showProducts && <ProductFamily />}
     <dl className={styles.proofFacts} aria-label="AtomsAI in numbers">
       <div><dt>Customers worldwide</dt><dd className="display">7,000+</dd></div>
       <div><dt>Countries served</dt><dd className="display">20+</dd></div>
