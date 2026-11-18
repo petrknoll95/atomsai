@@ -77,3 +77,6 @@
   /* About 10% below the shared title size (6.2vw, 104px max). */
   .hero .maskedCopy h1 { font-size: clamp(52px, 5.6vw, 92px); }
 }
+
+/* One flute per grid column, including one overflow column on each side. */
+.glassField { position:absolute; left:50%; top:0; width:calc(var(--menu-track) * var(--menu-pattern-count)); height:100%; transform:translateX(-50%); }
