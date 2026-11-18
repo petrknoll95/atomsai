@@ -1,7 +1,9 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { Shader, RadialGradient, LinearGradient, Swirl, ChromaFlow, FlutedGlass } from 'shaders/react';
+import { Shader, CustomShader, FlutedGlass } from 'shaders/react';
+import { AtomsLightField, AtomsGlassSurface } from './glass-material';
+import { useGlassPointer } from './use-glass-pointer';
 import { MotionPattern } from '@/components/patterns/motion-pattern';
 
 export type FlutedPatternProps = {
@@ -15,6 +17,8 @@ export function FlutedPattern({ count, onAvailabilityChange }: FlutedPatternProp
   const [frequency, setFrequency] = useState(count);
   const [reduced, setReduced] = useState(true);
   const [failed, setFailed] = useState(false);
+  const light = useGlassPointer(host, reduced || failed);
+  const cursor = { x: light.x, y: light.y };
 
   useEffect(() => {
     const element = host.current!;
@@ -36,17 +40,13 @@ export function FlutedPattern({ count, onAvailabilityChange }: FlutedPatternProp
     {failed ? <MotionPattern kind="offset" count={count} mode="dark" fit="stretch" motion="tide" duration={12} intensity={0.7} resolution="display" onAvailabilityChange={onAvailabilityChange} /> :
       <Shader style={{ width: '100%', height: '100%' }} colorSpace="srgb" disableTelemetry
         onReady={() => onAvailabilityChange(true)} onUnavailable={() => setFailed(true)}>
-        <FlutedGlass angle={0} frequency={frequency} shape="rounded" softness={0.5}
-          refraction={4} aberration={0} highlight={0.45} highlightSoftness={0.55}
-          highlightColor="#78968a" lightAngle={65} speed={0}>
-          <LinearGradient colorA="#213a30" colorB="#10231e" start={{ x: 0.5, y: 0 }} end={{ x: 0.5, y: 0.7 }} />
-          <Swirl opacity={0.25} colorA="#10231e" colorB="#304d42" colorSpace="oklab" blend={35} detail={0.7} speed={reduced ? 0 : 0.12} />
-          <RadialGradient colorA="#628471" colorB="#10231e00" center={{ x: 0.5, y: -0.15 }} radius={0.85} opacity={0.35} />
-          {!reduced && <RadialGradient colorA="#8ca58b" colorB="#10231e00" radius={0.42} opacity={0.5}
-            center={{ type: 'mouse-position', smoothing: 0.2, momentum: 0.2 }} />}
-          {!reduced && <ChromaFlow baseColor="#3e6856" upColor="#6d8e73" downColor="#27483d"
-            leftColor="#477361" rightColor="#8b9e80" intensity={0.65} radius={2.4} momentum={25} opacity={0.3} />}
-        </FlutedGlass>
+        <CustomShader src={AtomsGlassSurface} count={count} cursor={cursor} presence={light.presence} speed={reduced ? 0 : 1}>
+          <FlutedGlass angle={0} frequency={frequency} shape="rounded" softness={0.7}
+            refraction={1.35} aberration={0} highlight={0.12} highlightSoftness={0.65}
+            highlightColor="#668477" lightAngle={38} speed={0}>
+            <CustomShader src={AtomsLightField} cursor={cursor} presence={light.presence} speed={reduced ? 0 : 1} />
+          </FlutedGlass>
+        </CustomShader>
       </Shader>}
   </div>;
 }

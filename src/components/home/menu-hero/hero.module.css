@@ -80,3 +80,7 @@
 
 /* One flute per grid column, including one overflow column on each side. */
 .glassField { position:absolute; left:50%; top:0; width:calc(var(--menu-track) * var(--menu-pattern-count)); height:100%; transform:translateX(-50%); }
+/* The glass material owns its palette and exposure. The legacy flat tint
+   would flatten its highlights and obscure the local pointer reflections. */
+.backdrop .patternEntrance::after { content:none; }
+.backdrop .patternEntrance:has([data-fluted-hero='fallback'])::after { content:''; }
