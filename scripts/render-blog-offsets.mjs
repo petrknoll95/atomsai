@@ -1,5 +1,5 @@
 // Usage: node scripts/render-blog-offsets.mjs
-// Generates stills from Offsets 1 (1e9048cd-ad7e-4452-807b-64dbc06dfe07).
+// Bake the default seed for browsers that cannot generate new stills with WebGPU.
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -10,16 +10,17 @@ import config from '../src/app/blog-art-playground/offsets.json' with { type: 'j
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const output = path.join(root, 'public/assets/blog/offsets');
+const source = path.join(root, 'src/app/blog-art-playground');
 const css = await fs.readFile(path.join(root, 'src/styles/tokens.css'), 'utf8');
 const swatches = new Map(Array.from(css.matchAll(/--palette-([\w-]+):\s*(#[\da-f]{6});/gi), match => [match[1], match[2]]));
 const palettes = config.palettes.map(palette => {
-  assert(palette.gradient.every(token => palette.tokens.includes(token)));
   assert(palette.tokens.every(token => swatches.has(token)));
-  return { id: palette.id, colors: palette.tokens.map(token => swatches.get(token)), gradient: palette.gradient.map(token => swatches.get(token)) };
+  return { id: palette.id, colors: palette.tokens.map(token => swatches.get(token)) };
 });
 
-const corePath = fileURLToPath(import.meta.resolve('shaders/core'));
-const moduleRoot = path.dirname(corePath);
+const shaderModules = ['shaders/core', 'shaders/core/BarShift', 'shaders/core/BlueNoise', 'shaders/core/GridDistortion', 'shaders/core/SimplexNoise', 'shaders/std'];
+const moduleRoot = path.dirname(fileURLToPath(import.meta.resolve('shaders/core')));
+const imports = Object.fromEntries(shaderModules.map(specifier => [specifier, '/shaders/' + path.relative(moduleRoot, fileURLToPath(import.meta.resolve(specifier)))]));
 const origin = 'http://localhost:3219';
 const browser = await chromium.launch({ channel: 'chrome', args: ['--enable-unsafe-webgpu'] });
 
@@ -29,61 +30,32 @@ try {
   await page.addInitScript(() => { globalThis.process = { env: { NODE_ENV: 'production' } }; });
   await page.route(`${origin}/**`, async route => {
     const url = new URL(route.request().url());
-    if (url.pathname === '/') return route.fulfill({ contentType: 'text/html', body: '<!doctype html><title>Render Offsets</title>' });
-    const file = path.join(moduleRoot, url.pathname);
-    if (!file.startsWith(moduleRoot + path.sep) || !file.endsWith('.js')) return route.abort();
+    if (url.pathname === '/') {
+      return route.fulfill({ contentType: 'text/html', body: `<!doctype html><title>Render Offsets</title><script type="importmap">${JSON.stringify({ imports })}</script>` });
+    }
+    if (url.pathname === '/render-offsets.mjs' || url.pathname === '/seed.mjs') {
+      return route.fulfill({ contentType: 'text/javascript', path: path.join(source, url.pathname) });
+    }
+    const file = path.join(moduleRoot, url.pathname.slice('/shaders/'.length));
+    if (!url.pathname.startsWith('/shaders/') || !file.startsWith(moduleRoot + path.sep) || !file.endsWith('.js')) return route.abort();
     return route.fulfill({ contentType: 'text/javascript', path: file });
   });
   await page.goto(origin);
-  const frames = await page.evaluate(async ({ width, height, variants }) => {
-    const { shaderRendererGPU, rootPassthrough, createGpuUniformsMap } = await import('/index.js');
-    const { default: FlowingGradient } = await import('/shaders/FlowingGradient/index.js');
-    const { default: BarShift } = await import('/shaders/BarShift/index.js');
-    const { default: GridDistortion } = await import('/shaders/GridDistortion/index.js');
-    const { default: BlueNoise } = await import('/shaders/BlueNoise/index.js');
-    const canvas = document.createElement('canvas');
-    canvas.width = width;
-    canvas.height = height;
-    const snapshot = document.createElement('canvas');
-    snapshot.width = width;
-    snapshot.height = height;
-    const context = snapshot.getContext('2d', { alpha: false });
-    const renderer = shaderRendererGPU();
+  const frames = await page.evaluate(async ({ width, height, defaultSeed, palettes }) => {
+    const { createOffsetsRenderer } = await import('/render-offsets.mjs');
+    const renderer = await createOffsetsRenderer({ width, height });
+    if (!renderer) throw new Error('WebGPU is required to render the Offsets stills.');
     try {
-      renderer.setFrameLocked(true);
-      await renderer.initialize({ canvas, toneMapping: 'neutral', observeElement: false });
-      if (!renderer.isInitialized()) throw new Error('WebGPU is required to render the Offsets stills.');
-      renderer.beginRecordingResolution(width, height, 1);
-      renderer.registerNode('root', rootPassthrough.fragment, null, null, {}, rootPassthrough);
-      const layers = [
-        { definition: FlowingGradient, props: { colorSpace: 'oklab', distortion: 0, speed: 3.5 } },
-        { definition: BarShift, props: {} },
-        { definition: GridDistortion, props: { decay: 8.3, gridSize: 6, intensity: 1.5, radius: 3 } },
-        { definition: BlueNoise, props: {}, blendMode: 'overlay', opacity: .25 },
-      ];
-      layers.forEach(({ definition, props, blendMode = 'normal', opacity = 1 }, renderOrder) => {
-        const defaults = Object.fromEntries(Object.entries(definition.props).map(([key, prop]) => [key, prop.default]));
-        const uniforms = createGpuUniformsMap(definition, { ...defaults, ...props }, definition.name);
-        renderer.registerNode(definition.name, definition.fragment, 'root', { blendMode, opacity, renderOrder }, uniforms, definition);
-      });
-
       const frames = [];
-      for (const { colors, gradient } of variants) {
-        ['colorA', 'colorB', 'colorC', 'colorD'].forEach((prop, index) => renderer.updateUniformValue('FlowingGradient', prop, gradient[index]));
-        renderer.updateUniformValue('BlueNoise', 'stops', [
-          { color: colors.at(-1), position: 0 }, { color: colors[0], position: 1 },
-        ]);
-        // Every palette uses the same single point on the preset's timeline.
-        await renderer.renderSyntheticFrame(frames.length ? 0 : .65);
-        await renderer.renderSyntheticFrame(0, { waitForGpu: false });
-        context.drawImage(canvas, 0, 0);
-        frames.push(snapshot.toDataURL('image/png').split(',')[1]);
+      for (const { colors } of palettes) {
+        const canvas = await renderer.render(defaultSeed, colors);
+        frames.push(canvas.toDataURL('image/png').split(',')[1]);
       }
       return frames;
     } finally {
-      renderer.cleanup();
+      renderer.dispose();
     }
-  }, { ...config, variants: palettes });
+  }, { ...config, palettes });
 
   await fs.mkdir(output, { recursive: true });
   for (const [index, frame] of frames.entries()) {

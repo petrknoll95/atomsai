@@ -1,24 +1,38 @@
 {
   "width": 1600,
   "height": 900,
+  "defaultSeed": 9,
+  "maxSeed": 9999,
   "palettes": [
     {
       "id": "forest-cream",
       "name": "Forest & cream",
-      "tokens": ["forest-shade", "deep-green", "forest-green", "sage", "sage-tint", "stone", "cream"],
-      "gradient": ["cream", "deep-green", "sage-tint", "forest-green"]
+      "tokens": ["forest-shade", "forest-green", "sage-tint", "cream"]
     },
     {
-      "id": "forest-iris",
-      "name": "Forest & iris",
-      "tokens": ["forest-shade", "deep-green", "forest-green", "iris", "iris-light", "cream"],
-      "gradient": ["cream", "deep-green", "iris-light", "iris"]
+      "id": "forest-sage",
+      "name": "Forest & sage",
+      "tokens": ["forest-shade", "deep-green", "sage", "stone"]
     },
     {
       "id": "iris-cream",
       "name": "Iris & cream",
-      "tokens": ["forest-shade", "iris-dark", "iris", "iris-light", "cream"],
-      "gradient": ["cream", "iris-dark", "iris-light", "iris"]
+      "tokens": ["iris-dark", "iris", "iris-light", "cream"]
+    },
+    {
+      "id": "deep-iris",
+      "name": "Deep iris",
+      "tokens": ["grey-5", "iris-dark", "iris", "iris-light"]
+    },
+    {
+      "id": "orange-cream",
+      "name": "Orange & cream",
+      "tokens": ["crimson", "orange", "apricot", "cream"]
+    },
+    {
+      "id": "crimson-apricot",
+      "name": "Crimson & apricot",
+      "tokens": ["grey-5", "crimson", "orange", "apricot"]
     }
   ]
 }
