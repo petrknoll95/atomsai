@@ -32,7 +32,7 @@ export const serviceAgentExamples = [
   { label: 'Repair request', request: 'There’s water dripping through my kitchen ceiling.', steps: [
     { title: 'Capture the request', detail: 'Water leak · Emergency repair requested' },
     { title: 'Make it safe', detail: 'Guide the caller to turn off the main water valve' },
-    { title: 'Dispatch a technician', detail: 'Rafael · ETA 07:40 · Text confirmation' },
+    { title: 'Technician dispatched', detail: 'Rafael · ETA 07:40 · Text confirmation' },
   ], lines: recordedLines('repair',
     ['caller', 'Hi, sorry to call so early. There’s water dripping through my kitchen ceiling, and I’m not sure what to do.'],
     ['agent', 'No problem at all, we’ll get this sorted. First, can you turn off the main water valve? It’s usually under the sink.'],
@@ -42,7 +42,7 @@ export const serviceAgentExamples = [
   { label: 'Reschedule', request: 'Can we move Thursday’s AC service to Friday?', steps: [
     { title: 'Find the visit', detail: 'Match the caller to the existing booking' },
     { title: 'Check availability', detail: 'Friday · 09:00 or 13:00' },
-    { title: 'Update the booking', detail: 'Friday · 13:00 · Same technician · Confirmation sent' },
+    { title: 'Booking updated', detail: 'Friday · 13:00 · Same technician · Confirmation sent' },
   ], lines: recordedLines('reschedule',
     ['caller', 'Hi there. Something came up at work, so I can’t make Thursday’s AC service. Is Friday possible?'],
     ['agent', 'Of course, happy to move it. On Friday I have nine in the morning or one in the afternoon.'],
@@ -52,7 +52,7 @@ export const serviceAgentExamples = [
   { label: 'Billing question', request: 'I have a question about the charge on my invoice.', steps: [
     { title: 'Identify the invoice', detail: 'Invoice #1186 · Charge higher than the quote' },
     { title: 'Explain the charge', detail: '$40 · Replacement breaker' },
-    { title: 'Send the details', detail: 'Itemized invoice and payment link sent by text' },
+    { title: 'Invoice sent', detail: 'Itemized invoice and payment link sent by text' },
   ], lines: recordedLines('billing',
     ['caller', 'Hi, I just got my invoice, and it’s a little higher than the quote. Could you help me understand why?'],
     ['agent', 'Of course. The extra forty dollars is for a breaker the electrician replaced while he was there.'],

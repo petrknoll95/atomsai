@@ -14,6 +14,7 @@
 .pane { position: absolute; inset: 0; width: 100%; max-height: calc(100dvh - var(--header-offset) - var(--header-height)); overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; visibility: hidden; opacity: 0; }
 .pane[data-dropdown-layout='true'] { position: relative; }
 .pane[aria-hidden='true'] { pointer-events: none; }
+@media (prefers-reduced-motion: no-preference) { .viewport[data-open='true'] { transition-duration: .36s, .12s, 0s; } }
 @media (prefers-reduced-motion: reduce) { .viewport { transition-duration: 1ms, 1ms, 0s; transition-delay: 0s, 0s, 1ms; } .viewport[data-open='true'] { transition-delay: 0s; } }
 .panel {
   position: relative; width: 100%;

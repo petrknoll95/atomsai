@@ -68,14 +68,14 @@
 .menuTextLink { display:flex; align-items:center; gap:12px; width:fit-content; padding-block:12px; margin-top:20px; }
 .productLinks { position:relative; width:100%; min-width:0; min-height:360px; display:flex; flex-direction:column; }
 
-.productHighlight { position:absolute; inset:0 0 auto; height:76px; border-radius:var(--radius-card); background:#f0f0f0; pointer-events:none; opacity:0; }
+.productHighlight { position:absolute; inset:0 0 auto; height:76px; border-radius:var(--radius-card); background:color-mix(in srgb,var(--palette-iris-light) 28%,#f0f0f0); pointer-events:none; opacity:0; }
 .productLink { position:relative; display:flex; align-items:center; gap:12px; padding:16px; height:76px; flex:none; border-radius: var(--radius-card); }
 .productMark { width:32px; height:32px; flex:none; background:currentColor; mask-position:center; mask-size:contain; mask-repeat:no-repeat; }
 .productLinkCopy { display:flex; flex-direction:column; gap:4px; min-width:0; }
 .productLinkCopy>span:last-child { color:var(--color-muted-foreground); font-weight: var(--font-weight-normal); font-variation-settings:'wght' var(--font-weight-normal), 'ital' 100; line-height:1.4; }
 .allApplications { flex:1; display:flex; align-items:flex-end; padding:16px; }
 /* Render the full homepage scenes on a scaled canvas, clipping to the menu frame. */
-.productPreviewFrame { position:relative; container-type:inline-size; width:100%; height:380px; flex:none; overflow:clip; clip-path:inset(0 round var(--radius-card)); border-radius:var(--radius-card); background:var(--palette-forest-shade); }
+.productPreviewFrame { position:relative; container-type:inline-size; width:100%; height:380px; flex:none; overflow:clip; clip-path:inset(0 round var(--radius-card)); border-radius:var(--radius-card); background:var(--palette-forest-shade); box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--palette-iris-light) 35%,transparent); }
 .productPreview { position:absolute; inset:0; display:grid; place-items:center; visibility:hidden; opacity:0; isolation:isolate; }
 .previewScene { position:relative; width:100%; height:100%; }
 .previewCanvas { position:absolute; left:50%; top:50%; width:48em; font-size:14px; transform:translate(-50%, -50%) scale(calc(100cqw / 760px)); }
@@ -107,6 +107,7 @@
 /* An open desktop menu and the navigation form one continuous full-width surface. */
 .header::before { content:''; position:absolute; top:calc(-1 * var(--header-offset)); bottom:0; left:calc(50% - 50vw); width:100vw; background:var(--palette-paper); opacity:0; pointer-events:none; transition:opacity .25s ease; }
 .header[data-desktop-menu-open='true']::before, .header[data-responsive-menu-open='true']::before { opacity:1; }
+.header[data-desktop-menu-open='true']::before { transition-duration:.12s; }
 .header[data-responsive-menu-open='true'] .headerBackdrop { visibility:hidden; }
 .header[data-responsive-menu-open='true'] { color:var(--palette-deep-green); z-index:10003; }
 /* The opaque menu surface covers the blur without changing its compositing. */
