@@ -20,8 +20,8 @@ const features: Record<string, { label: string; cards: Feature[] }> = {
     { title: 'Technology leaders', description: 'Build with our engineers in your repository. Keep the code, evaluations and runbooks to operate it.', href: '/approach#ownership-heading', image: photo('BackgroundImage') },
   ] },
   Resources: { label: 'Ideas, examples and practical next steps', cards: [
-    { title: 'Customer stories', description: 'See how teams put our technology to work.', href: 'https://atomsai.com/resources/case-studies', image: assetPath('/assets/figma/stories-Media-512.webp') },
-    { title: 'Explore Voice AI', description: 'Listen to a sample conversation and follow the workflow.', href: '/capabilities/voice' },
+    { title: 'Customer stories', description: 'See how teams put our technology to work.', href: 'https://atomsai.com/resources/case-studies' },
+    { title: 'Blog', description: 'Working notes on voice agents, phone audio, and the software behind them.', href: '/blog' },
     { title: 'How we build', description: 'From a focused first workflow to an owned, working system.', href: '/approach' },
   ] },
   Company: { label: 'Get to know AtomsAI', cards: [
