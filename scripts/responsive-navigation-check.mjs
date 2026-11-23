@@ -44,10 +44,15 @@ for (const [engineName, engine] of Object.entries({chromium,webkit})) {
      assert.equal(await panel.locator('[data-section-trigger][aria-expanded="true"]').count(),1);
      await checkBounds(panel);
      if(group==='Industries')for(const industry of industries)await expect(panel.getByRole('link',{name:industry,exact:true})).toBeVisible();
-     if(group==='Applications')for(const name of ['JustCall','Helpwise','ServiceAgent','CallPage']){
-      await panel.getByRole('button',{name:new RegExp(`^${name} `)}).click();
-      await expect(panel.locator(`[data-responsive-preview="${name}"]`)).toBeVisible();
-      await expect(panel.getByRole('link',{name:`Explore ${name}`,exact:true})).toBeVisible();await checkBounds(panel);
+     if(group==='Applications'){
+      const applications=panel.getByRole('region',{name:'Applications',exact:true});
+      await expect(applications.getByRole('button')).toHaveCount(0);
+      await expect(applications.locator('[data-responsive-preview]')).toHaveCount(0);
+      for(const [name,href] of [['JustCall','https://justcall.io/'],['Helpwise','https://helpwise.io/'],['ServiceAgent','https://serviceagent.ai/'],['CallPage','https://www.callpage.io/']]){
+       const link=applications.getByRole('link',{name:new RegExp(`^${name} `)});
+       await expect(link).toBeVisible();await expect(link).toHaveAttribute('href',href);
+      }
+      await expect(applications.getByRole('link',{name:'All applications',exact:true})).toBeVisible();
      }
      if([320,390,768,1024,1199].includes(width)&&['Industries','Company','Infrastructure'].includes(group)){
       await panel.evaluate(el=>{const row=el.querySelector('[data-section-trigger][aria-expanded="true"]');el.scrollTop+=row.getBoundingClientRect().top-el.getBoundingClientRect().top;});
