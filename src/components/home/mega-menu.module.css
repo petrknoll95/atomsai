@@ -17,6 +17,7 @@
 @media (prefers-reduced-motion: no-preference) { .viewport[data-open='true'] { transition-duration: .36s, .12s, 0s; } }
 @media (prefers-reduced-motion: reduce) { .viewport { transition-duration: 1ms, 1ms, 0s; transition-delay: 0s, 0s, 1ms; } .viewport[data-open='true'] { transition-delay: 0s; } }
 .panel {
+  --menu-highlight-background: color-mix(in srgb, var(--palette-iris-light) 28%, #f0f0f0);
   position: relative; width: 100%;
   background: transparent; color: var(--color-foreground);
   font-size: var(--text-body); font-weight: var(--font-weight-normal);
@@ -48,19 +49,18 @@
 @media (prefers-reduced-motion: reduce) { .panel * { transition: none !important; } }
 
 .surfaceCard {
-  --menu-card-background: #f0f0f0;
+  --menu-card-background: var(--menu-highlight-background);
   min-height: clamp(240px, 20vw, 320px);
   padding: 28px;
   justify-content: space-between;
   gap: 40px;
   border-radius: 20px;
   background: var(--menu-card-background);
-  box-shadow: inset 0 0 0 1px color-mix(in srgb,currentColor 17%,transparent);
   text-align: left;
   transition: background-color .3s ease;
 }
 .textCard .title { margin-bottom: 0; }
-.surfaceCard:is(:hover, :focus-visible) { --menu-card-background: #e8e8e8; }
+.surfaceCard:is(:hover, :focus-visible) { --menu-card-background: color-mix(in srgb, var(--menu-highlight-background) 78%, var(--palette-iris-light)); }
 .darkCard {
   --menu-card-background: var(--palette-forest-shade);
   --color-muted-foreground: color-mix(in srgb, var(--palette-cream) 72%, var(--palette-forest-shade));
