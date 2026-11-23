@@ -4,7 +4,7 @@
 .intro { display: flex; flex-direction: column; gap: 24px; margin-bottom: 72px; }
 .heading, .featuredTitle, .cardTitle, .moreTitle {
   font-family: var(--font-sans);
-  font-weight: 500;
+  font-weight: var(--font-weight-normal);
   text-box: normal;
 }
 .heading, .featuredTitle {
@@ -17,7 +17,7 @@
 
 /* Shared text */
 .meta, .eyebrowText { margin: 0; font-size: 0.75rem; line-height: 1.5; letter-spacing: 0.002em; color: var(--color-surface-muted-foreground); }
-.eyebrowText { font-weight: 500; }
+.eyebrowText { font-weight: var(--font-weight-medium); }
 .excerpt { margin: 0; font-size: 0.875rem; line-height: 1.6; color: var(--color-surface-muted-foreground); text-wrap: pretty; }
 
 /* Featured story: copy column (label top, text bottom) beside a wide image. */
