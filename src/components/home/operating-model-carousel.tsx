@@ -19,14 +19,14 @@ const plates = [
     ))}
   </g>,
   <g key="workflows">
-    <path d="M144 160H176M224 160H235Q244 160 244 151V134M224 160H235Q244 160 244 169V186"
+    <path d="M160 116V141M160 179V194M110 212V203Q110 194 119 194H201Q210 194 210 203V212"
       strokeWidth="1.35" opacity=".74" />
-    <rect x="76" y="141" width="68" height="38" rx="8" />
-    <rect x="176" y="141" width="48" height="38" rx="8" />
-    <rect x="222" y="103" width="44" height="31" rx="7" />
-    <rect x="222" y="186" width="44" height="31" rx="7" />
-    <path d="M94 155H126M94 164H116M190 160L197 166L210 153M235 118H253M235 202H253" />
-    <circle cx="160" cy="160" r="3" fill="var(--palette-iris)" stroke="none" />
+    <rect x="112" y="76" width="96" height="40" rx="8" />
+    <rect x="136" y="141" width="48" height="38" rx="8" />
+    <rect x="86" y="212" width="48" height="32" rx="7" />
+    <rect x="186" y="212" width="48" height="32" rx="7" />
+    <path d="M138 92H182M138 102H169M150 160L157 166L170 153M100 228H120M200 228H220" />
+    <circle cx="160" cy="128.5" r="3" fill="var(--palette-iris)" stroke="none" />
   </g>,
   <g key="applications" strokeWidth="1.1" opacity=".85">
     <rect x="66" y="86" width="188" height="148" rx="11" />
