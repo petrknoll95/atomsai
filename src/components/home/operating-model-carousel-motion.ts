@@ -27,6 +27,7 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
     ...kineticCircleOptions,
     loop: true,
     containScroll: false,
+    watchDrag: false,
     startIndex: start,
   });
   // Two laps give every plate two neighboring slices on either side.
@@ -206,7 +207,7 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
     const syncCarousel = (trigger: ScrollTrigger) => {
       const progress = (trigger.progress * pinHeight - lead) / viewportsPerStep;
       const snap = Math.min(lastSnap, firstSnap + Math.max(0, Math.round(progress)));
-      if (aligningPage || snap === scrollSnap || api.internalEngine().dragHandler.pointerDown()) return;
+      if (aligningPage || snap === scrollSnap) return;
       scrollSnap = snap;
       showStop(snap);
     };

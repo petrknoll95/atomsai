@@ -29,14 +29,10 @@
   container-type:size;
   overflow:hidden;
   color:var(--diagram-ink);
-  cursor:grab;
-  touch-action:pan-y pinch-zoom;
 }
-.carouselViewport[data-pressed='true'] { cursor:grabbing; }
 .carouselTrack {
   display:flex;
   height:var(--circle-size);
-  touch-action:pan-y pinch-zoom;
 }
 .carouselSlide {
   --cut-left:calc(var(--mask-left) * 100%);
