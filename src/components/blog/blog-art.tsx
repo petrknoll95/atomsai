@@ -6,12 +6,16 @@ import styles from './blog.module.css';
 // Shared with the homepage so both always show the same, current artwork.
 export function blogArtSource(artwork: string) {
   const isIllustration = artwork.startsWith('/assets/blog/illustrations/');
-  return { isIllustration, src: isIllustration ? artwork.replace(/\.webp$/, '.svg') : artwork };
+  return {
+    isIllustration,
+    src: isIllustration ? artwork.replace(/\.webp$/, '.svg') : artwork,
+    unoptimized: isIllustration || artwork.startsWith('/assets/blog/offsets/articles/'),
+  };
 }
 
 export function BlogArt({ artwork, priority = false, sizes = '(max-width: 700px) 100vw, 50vw' }: { artwork: string; priority?: boolean; sizes?: string }) {
-  const { isIllustration, src: source } = blogArtSource(artwork);
+  const { isIllustration, src: source, unoptimized } = blogArtSource(artwork);
   return <div className={styles.art} data-illustration={isIllustration || undefined}>
-    <Image className={styles.pattern} src={assetPath(source)} alt="" fill sizes={sizes} preload={priority} unoptimized={isIllustration} />
+    <Image className={styles.pattern} src={assetPath(source)} alt="" fill sizes={sizes} preload={priority} unoptimized={unoptimized} />
   </div>;
 }

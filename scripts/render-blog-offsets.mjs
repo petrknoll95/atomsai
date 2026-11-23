@@ -94,7 +94,7 @@ try {
     assert(new Set(data).size > 40, `Unexpectedly flat Offsets render for ${id}`);
     const image = sharp(data, { raw: { width: info.width, height: info.height, channels: 3 } });
     if (articles) {
-      await image.webp({ quality: 92 }).toFile(path.join(output, `${id}.webp`));
+      await image.webp({ lossless: true, effort: 6 }).toFile(path.join(output, `${id}.webp`));
     } else {
       await image.png({ compressionLevel: 9 }).toFile(path.join(output, `${id}.png`));
     }
