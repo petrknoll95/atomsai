@@ -60,9 +60,9 @@
   fill:color-mix(in srgb,var(--model-plate-fill) calc(var(--plate-opening) * 100%),var(--diagram-ink));
 }
 .carouselArtwork {
-  opacity:clamp(0,calc((var(--plate-opening) - .45) * 2.6),1);
+  opacity:max(0,calc(1 - var(--image-wash,0) * 2));
 }
-.carouselArtwork [data-model-plate-art] { opacity:calc(1 - var(--image-wash,0) * .32); transform-origin:160px 160px; }
+.carouselArtwork [data-model-plate-art] { transform-origin:160px 160px; }
 @media(max-width:767px) {
   .carouselViewport { --circle-size:min(calc((100cqw - 16px) * .8), 100cqh); --near-circle:.125; --far-circle:0; }
 }
