@@ -49,10 +49,11 @@
   transform:translateX(calc((100cqw - var(--circle-size)) / 2 + (var(--circle-travel) - var(--slide-index)) * var(--circle-size) + var(--circle-gap) * 1px));
   clip-path:inset(0 var(--cut-right) 0 var(--cut-left));
 }
-.carouselSlide[data-model-reveal-plate] { --plate-opening:1; }
 .carouselPlate {
   --model-plate-inset:0px;
-  --model-outline:color-mix(in srgb,var(--diagram-ink) calc((1 - var(--image-wash,0) * .82) * 100%),transparent);
+  /* Bring the side outlines up to the active stroke as the mark closes. */
+  --outline-wash:calc(var(--image-wash,0) * .82 * min(1, var(--plate-opening) * 4));
+  --model-outline:color-mix(in srgb,var(--diagram-ink) calc((1 - var(--outline-wash)) * 100%),transparent);
   position:relative;
   width:100%;
   height:100%;
@@ -60,7 +61,7 @@
 }
 .carouselDrawing { display:block; width:100%; height:100%; }
 .carouselProfile {
-  fill:color-mix(in srgb,var(--diagram-fill) calc(var(--plate-opening) * 100%),var(--diagram-ink));
+  fill:var(--diagram-fill);
 }
 /* Before hydration, draw the outline from the initial CSS crops. */
 .carouselViewport:not([data-model-geometry]) .carouselPlate::after {

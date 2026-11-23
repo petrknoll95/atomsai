@@ -59,7 +59,7 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
     if (shape === 'mark') {
       path.setAttribute('d', logoMarkPath);
       path.setAttribute('transform', carouselLogoTransform);
-      path.style.strokeOpacity = '0';
+      path.style.removeProperty('stroke-opacity');
       return;
     }
 
@@ -67,7 +67,7 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
     const radius = Math.max(.01, .5 - insets[index] / shape.diameter);
     if ('profile' in shape) {
       path.setAttribute('d', shape.profile.morph(shape.opening, shape.crop, radius));
-      path.style.strokeOpacity = String(shape.opening);
+      path.style.removeProperty('stroke-opacity');
       return;
     }
 
@@ -109,7 +109,6 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
       const centeredPlate = morphing && slot === 0;
       const geometry = circleGeometry(slot, diameter, compact);
       const visible = collapsed ? centeredPlate : morphing ? Boolean(profile || centeredPlate) : geometry.visible;
-      slide.toggleAttribute('data-model-reveal-plate', centeredPlate && !collapsed);
       if (!centeredPlate || collapsed) slide.style.removeProperty('opacity');
       slide.style.visibility = visible ? 'visible' : 'hidden';
       if (!visible) {
@@ -248,7 +247,6 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
       slides.forEach((slide, index) => {
         slide.style.removeProperty('clip-path');
         slide.style.removeProperty('opacity');
-        slide.removeAttribute('data-model-reveal-plate');
         paths[index].removeAttribute('transform');
         paths[index].style.removeProperty('stroke-opacity');
       });
