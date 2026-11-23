@@ -4,6 +4,7 @@ import accessibility from 'p5/accessibility';
 P5.registerAddon(accessibility);
 
 export const carouselOutlineWidth = 1.5;
+const ringRadiusRatio = .59;
 
 type PlateDrawing = {
   path: Path2D;
@@ -16,10 +17,11 @@ type PlateDrawing = {
 
 type CarouselDrawing = {
   diameter: number;
+  opening: number;
   plates: (PlateDrawing | undefined)[];
 };
 
-export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[]) {
+export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[], reducedMotion: boolean) {
   const viewport = host.parentElement!;
   const colors = getComputedStyle(viewport);
   const ink = colors.getPropertyValue('--diagram-ink').trim();
@@ -44,7 +46,13 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[]) {
   let ready = false;
   let disposed = false;
   let pending = 0;
+  let ringStart = 0;
+  let visible = false;
   const resize = new ResizeObserver(schedule);
+  const intersection = new IntersectionObserver(([entry]) => {
+    visible = entry.isIntersecting;
+    animateRing();
+  });
   const sketch = new P5(p => {
     p.setup = () => {
       if (disposed) { void p.remove(); return; }
@@ -54,13 +62,24 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[]) {
       p.noLoop();
       ready = true;
       resize.observe(host);
+      if (!reducedMotion) {
+        intersection.observe(host);
+        document.addEventListener('visibilitychange', animateRing);
+      }
       schedule();
     };
 
     p.draw = () => {
       if (!artworkReady || !frame || disposed) return;
       const ctx = p.drawingContext as CanvasRenderingContext2D;
-      const { diameter, plates } = frame;
+      const { opening, plates } = frame;
+      // Ease the mark down on short viewports so the ring can surround it with clearance.
+      const room = Math.max(1, Math.min(p.width, p.height) - 16);
+      const fit = Math.min(1, room / (2 * ringRadiusRatio * frame.diameter));
+      const closing = Math.max(0, 1 - opening * 4);
+      const scale = 1 + (fit - 1) * closing * closing * (3 - 2 * closing);
+      const diameter = frame.diameter * scale;
+      const xInset = p.width * (1 - scale) / 2;
       const y = (p.height - diameter) / 2;
       ctx.clearRect(0, 0, p.width, p.height);
       ctx.strokeStyle = ink;
@@ -73,7 +92,7 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[]) {
       for (const plate of plates) {
         if (!plate) continue;
         ctx.save();
-        ctx.translate(plate.x, y);
+        ctx.translate(plate.x * scale + xInset, y);
         ctx.scale(diameter, diameter);
         ctx.globalAlpha = plate.outline * plate.opacity;
         ctx.stroke(plate.path);
@@ -82,7 +101,7 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[]) {
       plates.forEach((plate, index) => {
         if (!plate) return;
         ctx.save();
-        ctx.translate(plate.x, y);
+        ctx.translate(plate.x * scale + xInset, y);
         ctx.scale(diameter, diameter);
         ctx.globalAlpha = plate.opacity;
         ctx.fill(plate.path);
@@ -95,7 +114,24 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[]) {
         }
         ctx.restore();
       });
-      viewport.dataset.modelCanvas = 'true';
+      if (opening === 0) {
+        const radius = diameter * ringRadiusRatio;
+        const circumference = 2 * Math.PI * radius;
+        const spacing = circumference / Math.max(1, Math.round(circumference / 14));
+        const seconds = reducedMotion ? 0 : (performance.now() - ringStart) / 1000;
+        ctx.save();
+        ctx.globalAlpha = .5 * (reducedMotion ? 1 : Math.min(1, seconds * 5));
+        ctx.lineWidth = 1;
+        ctx.lineCap = 'round';
+        ctx.setLineDash([spacing * .55, spacing * .45]);
+        ctx.lineDashOffset = -(seconds * 20) % spacing;
+        ctx.beginPath();
+        ctx.arc(p.width / 2, p.height / 2, radius, 0, 2 * Math.PI);
+        ctx.stroke();
+        ctx.restore();
+        animateRing();
+      }
+      if (!viewport.hasAttribute('data-model-canvas')) viewport.dataset.modelCanvas = 'true';
     };
   }, host);
 
@@ -103,6 +139,10 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[]) {
     artworkReady = true;
     schedule();
   });
+
+  function animateRing() {
+    if (!reducedMotion && visible && !document.hidden && frame?.opening === 0) schedule();
+  }
 
   function schedule() {
     if (!ready || !artworkReady || disposed || pending) return;
@@ -116,6 +156,7 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[]) {
 
   return {
     render(drawing: CarouselDrawing) {
+      if (drawing.opening === 0 && frame?.opening !== 0) ringStart = performance.now();
       frame = drawing;
       schedule();
     },
@@ -124,6 +165,8 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[]) {
       disposed = true;
       cancelAnimationFrame(pending);
       resize.disconnect();
+      intersection.disconnect();
+      document.removeEventListener('visibilitychange', animateRing);
       delete viewport.dataset.modelCanvas;
       void sketch.remove();
     },

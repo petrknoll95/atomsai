@@ -51,7 +51,7 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
   let closing: { origin: number; span: number } | undefined;
 
   const slides = api.slideNodes();
-  const sketch = mountCarouselSketch(viewport.querySelector<HTMLElement>('[data-model-canvas-host]')!, slides);
+  const sketch = mountCarouselSketch(viewport.querySelector<HTMLElement>('[data-model-canvas-host]')!, slides, reduced);
   const mark = createCarouselLogoPath();
   const insets = slides.map(() => 0);
   const shapes: (PlateShape | undefined)[] = [];
@@ -165,7 +165,7 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
       slide.style.setProperty('--image-wash', String(geometry.wash));
       paint(index);
     });
-    sketch.render({ diameter, plates: drawings });
+    sketch.render({ diameter, opening: collapsed ? 0 : opening, plates: drawings });
     return true;
   }
 
