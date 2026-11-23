@@ -27,12 +27,20 @@ export function circleGeometry(distance: number, diameter: number, compact: bool
   };
 }
 
+export type KineticCircleFrame = {
+  position: number;
+  width: number;
+  diameter: number;
+  origins: number[];
+  compact: boolean;
+};
+
 /**
  * Embla owns dragging, snapping, looping and timing. Only its linear track
  * translation is replaced: each actual slide is one independently clipped circle.
  * Do not resize the slides during a drag; that changes Embla's measured snaps.
  */
-export function attachKineticCircles(api: EmblaCarouselType, onPosition?: (position: number) => void) {
+export function attachKineticCircles(api: EmblaCarouselType, renderCustom?: (frame: KineticCircleFrame) => boolean) {
   const slides = api.slideNodes();
   const reducedMotion = matchMedia(reducedMotionQuery);
   let width = 0;
@@ -59,6 +67,7 @@ export function attachKineticCircles(api: EmblaCarouselType, onPosition?: (posit
       }
     }
     if (settledPosition !== undefined) position = settledPosition;
+    if (renderCustom?.({ position, width, diameter, origins, compact })) return;
     slides.forEach((slide, index) => {
       const distance = loop
         ? ((index - position + slides.length * 1.5) % slides.length) - slides.length / 2
@@ -70,7 +79,6 @@ export function attachKineticCircles(api: EmblaCarouselType, onPosition?: (posit
       slide.style.visibility = geometry.visible ? 'visible' : 'hidden';
       slide.style.setProperty('--image-wash', String(geometry.wash));
     });
-    onPosition?.(position);
   };
 
   const render = () => renderAt();

@@ -1,8 +1,9 @@
 'use client';
 
-import { useId } from 'react';
+import { useId, type CSSProperties } from 'react';
 import { OperatingModel } from './operating-model';
 import { useOperatingModelScene, type OperatingModelSceneProps } from './operating-model-scene';
+import { carouselCirclePath, carouselLogoProfiles } from './operating-model-diagram/carousel-profile';
 import { logoMarkPath } from './operating-model-diagram/logo-mark';
 import styles from './operating-model.module.css';
 
@@ -48,33 +49,32 @@ function CarouselScene(props: OperatingModelSceneProps) {
 
   return (
     <div ref={host} className={styles.art} data-model-carousel aria-hidden="true">
-      <div className={styles.carouselViewport} data-model-viewport>
+      <div className={styles.carouselViewport} data-model-viewport data-model-morph="">
         <div className={styles.carouselTrack}>
-          {circleSlides.map((plate, index) => (
-            <div key={index} className={styles.carouselSlide} data-model-plate={plate.key}>
+          {circleSlides.map((plate, index) => {
+            // First paint uses the same five paths as the live deck at the mark.
+            const slot = (index + 1) % circleSlides.length;
+            const profile = carouselLogoProfiles[slot];
+            const pathId = `${id}-profile-${index}`;
+            const clipId = `${id}-clip-${index}`;
+            return <div key={index} className={styles.carouselSlide} data-model-plate={plate.key}
+              data-model-logo-slot={profile ? slot : undefined}
+              style={profile ? { '--model-logo-x': profile.offset - index } as CSSProperties : undefined}>
               <div className={styles.carouselPlate} data-model-plate-surface>
-                <div className={styles.carouselArtwork} data-model-plate-art>
-                  <svg viewBox="0 0 320 320" fill="none" stroke="currentColor"
-                    strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                    {plate}
-                  </svg>
-                </div>
+                <svg className={styles.carouselDrawing} viewBox="0 0 1 1" overflow="visible">
+                  <path id={pathId} className={styles.carouselProfile} data-model-profile
+                    d={profile?.path ?? carouselCirclePath} vectorEffect="non-scaling-stroke" />
+                  <clipPath id={clipId}><use href={`#${pathId}`} /></clipPath>
+                  <g clipPath={`url(#${clipId})`} className={styles.carouselArtwork}
+                    fill="none" stroke="currentColor" strokeWidth="1.7"
+                    strokeLinecap="round" strokeLinejoin="round">
+                    <g transform="scale(.003125)"><g data-model-plate-art>{plate}</g></g>
+                  </g>
+                </svg>
               </div>
-            </div>
-          ))}
+            </div>;
+          })}
         </div>
-        <svg className={styles.carouselLogo} viewBox="0 0 440 400" fill="currentColor">
-          <defs>
-            <path id={`${id}-mark`} d={logoMarkPath} />
-            <clipPath id={`${id}-left`}><rect width="220.5" height="400" /></clipPath>
-            <clipPath id={`${id}-right`}><rect x="219.5" width="220.5" height="400" /></clipPath>
-          </defs>
-          {['left', 'right'].map(side => (
-            <g key={side} data-model-logo-half={side}>
-              <use href={`#${id}-mark`} clipPath={`url(#${id}-${side})`} />
-            </g>
-          ))}
-        </svg>
       </div>
     </div>
   );

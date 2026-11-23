@@ -2,8 +2,9 @@ import EmblaCarousel from 'embla-carousel';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
-import { attachKineticCircles, kineticCircleOptions } from './kinetic-circles';
+import { attachKineticCircles, circleGeometry, kineticCircleOptions, type KineticCircleFrame } from './kinetic-circles';
 import { attachKineticCircleInteraction } from './kinetic-circle-interaction';
+import { carouselCirclePath, carouselLogoProfiles } from './operating-model-diagram/carousel-profile';
 import type { OperatingModelMount } from './operating-model-scene';
 
 const storyHeight = 4.4;
@@ -33,11 +34,48 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
   let activeStop = start;
   let requestedStop: number | undefined;
 
-  const detachCircles = attachKineticCircles(api, position => {
+  const slides = api.slideNodes();
+  const paths = slides.map(slide => slide.querySelector<SVGPathElement>('[data-model-profile]')!);
+  let morphing = true;
+
+  function renderMorph({ position, width, diameter, origins, compact }: KineticCircleFrame) {
     const lap = position % lastSnap;
-    const opening = Math.min(lap, lastSnap - lap, 1);
+    const distance = Math.min(lap, lastSnap - lap, 1);
+    const opening = distance * distance * (3 - 2 * distance);
     viewport.style.setProperty('--plate-opening', String(opening));
-  });
+    if (distance >= 1) {
+      if (morphing) {
+        paths.forEach(path => path.setAttribute('d', carouselCirclePath));
+        viewport.removeAttribute('data-model-morph');
+        morphing = false;
+      }
+      return false;
+    }
+
+    // The nearest plate becomes the body of the mark. Each neighboring plate
+    // becomes one lobe and moves between that lobe and its carousel position.
+    morphing = true;
+    viewport.setAttribute('data-model-morph', '');
+    const centered = lap < 1 ? Math.floor(position) + 1 : Math.floor(position);
+    const left = (width - diameter) / 2;
+    slides.forEach((slide, index) => {
+      const slot = (index - centered + snapCount * 1.5) % snapCount - snapCount / 2;
+      const profile = carouselLogoProfiles[slot + 2];
+      slide.style.visibility = profile ? 'visible' : 'hidden';
+      if (!profile) return;
+      const geometry = circleGeometry(slot, diameter, compact);
+      const crop = diameter ? Math.max(geometry.left, geometry.right) / diameter : 0;
+      const closedX = profile.offset * diameter;
+      const x = left - origins[index] + closedX + (geometry.x - closedX) * opening;
+      slide.style.transform = `translate3d(${x}px, 0, 0)`;
+      slide.style.clipPath = 'none';
+      slide.style.setProperty('--image-wash', String(geometry.wash));
+      paths[index].setAttribute('d', profile.morph(opening, crop));
+    });
+    return true;
+  }
+
+  const detachCircles = attachKineticCircles(api, renderMorph);
   const detachInteraction = attachKineticCircleInteraction(api, {
     surfaceSelector: '[data-model-plate-surface]',
     artSelector: '[data-model-plate-art]',
@@ -131,6 +169,7 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
       detachCircles();
       api.destroy();
       viewport.style.removeProperty('--plate-opening');
+      viewport.setAttribute('data-model-morph', '');
     },
   };
 };

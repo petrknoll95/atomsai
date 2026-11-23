@@ -33,40 +33,46 @@
   display:flex;
   height:var(--circle-size);
   touch-action:pan-y pinch-zoom;
-  opacity:var(--plate-opening);
-  clip-path:inset(0 calc((1 - var(--plate-opening)) * 36%));
 }
-.carouselSlide { position:relative; flex:0 0 var(--circle-size); min-width:0; height:100%; will-change:transform,clip-path; }
+.carouselSlide {
+  position:relative;
+  flex:0 0 var(--circle-size);
+  min-width:0;
+  height:100%;
+  will-change:transform,clip-path;
+  transform:translateX(calc((100cqw - var(--circle-size)) / 2 + var(--model-logo-x,0) * var(--circle-size)));
+}
+.carouselSlide:not([data-model-logo-slot]) { visibility:hidden; }
 .carouselPlate {
   --model-plate-inset:0px;
+  --model-plate-fill:color-mix(in srgb,var(--diagram-fill),var(--diagram-ink) calc(var(--image-wash,0) * 17%));
+  --model-plate-rim:color-mix(in srgb,var(--diagram-ink) calc(100% - var(--image-wash,0) * 68%),transparent);
   position:relative;
   width:100%;
   height:100%;
-  border-radius:50%;
-  clip-path:inset(var(--model-plate-inset) round 50%);
-  background:color-mix(in srgb,var(--diagram-fill),var(--diagram-ink) calc(var(--image-wash, 0) * 17%));
+  clip-path:inset(calc(var(--model-plate-inset) * var(--plate-opening)) round calc(50% * var(--plate-opening)));
 }
-.carouselPlate::after {
+.carouselDrawing { display:block; width:100%; height:100%; }
+.carouselProfile {
+  fill:color-mix(in srgb,var(--model-plate-fill) calc(var(--plate-opening) * 100%),var(--diagram-ink));
+}
+[data-model-morph] .carouselProfile {
+  stroke:var(--model-plate-rim);
+  stroke-opacity:clamp(0,calc(var(--plate-opening) * 3 - 2),1);
+  stroke-width:1px;
+}
+.carouselViewport:not([data-model-morph]) .carouselPlate::after {
   content:'';
   position:absolute;
   inset:var(--model-plate-inset);
   border-radius:50%;
-  border:1px solid color-mix(in srgb,var(--diagram-ink) calc(100% - var(--image-wash, 0) * 68%),transparent);
+  border:1px solid var(--model-plate-rim);
   pointer-events:none;
 }
-.carouselArtwork { width:100%; height:100%; }
-.carouselArtwork svg { display:block; width:100%; height:100%; opacity:calc(1 - var(--image-wash, 0) * .55); }
-.carouselLogo {
-  position:absolute;
-  inset:0;
-  margin:auto;
-  width:calc(var(--circle-size) * .94);
-  overflow:visible;
-  opacity:max(0,calc(1 - var(--plate-opening) * 1.35));
-  pointer-events:none;
+.carouselArtwork {
+  opacity:clamp(0,calc((var(--plate-opening) - .45) * 2.6),1);
 }
-.carouselLogo [data-model-logo-half='left'] { transform:translateX(calc(var(--plate-opening) * -75%)); }
-.carouselLogo [data-model-logo-half='right'] { transform:translateX(calc(var(--plate-opening) * 75%)); }
+.carouselArtwork [data-model-plate-art] { opacity:calc(1 - var(--image-wash,0) * .55); transform-origin:160px 160px; }
 @media(max-width:767px) {
   .carouselViewport { --circle-size:min(calc((100cqw - 16px) * .8), 100cqh); }
 }
