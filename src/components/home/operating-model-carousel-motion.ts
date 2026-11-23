@@ -4,11 +4,16 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { attachKineticCircles, circleGeometry, kineticCircleOptions, type KineticCircleFrame } from './kinetic-circles';
 import { attachKineticCircleInteraction } from './kinetic-circle-interaction';
-import { carouselCirclePath, carouselLogoCenter, carouselLogoProfiles } from './operating-model-diagram/carousel-profile';
+import { carouselLogoCenter, carouselLogoProfiles, maskedCirclePath } from './operating-model-diagram/carousel-profile';
 import type { OperatingModelMount } from './operating-model-scene';
 
 const firstSnap = 1;
 const viewportsPerStep = .88;
+const outlineInset = .75;
+
+type PlateShape =
+  | { diameter: number; left: number; right: number; fadeAtSeam?: boolean }
+  | { diameter: number; profile: NonNullable<(typeof carouselLogoProfiles)[number]>; crop: number; opening: number };
 
 export const mountOperatingModelCarousel: OperatingModelMount = (element, options) => {
   const viewport = element.querySelector<HTMLElement>('[data-model-viewport]')!;
@@ -41,10 +46,29 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
 
   const slides = api.slideNodes();
   const paths = slides.map(slide => slide.querySelector<SVGPathElement>('[data-model-profile]')!);
-  const apertures = slides.map(slide => slide.querySelector<SVGRectElement>('[data-model-aperture]')!);
-  let morphing = true;
+  const insets = slides.map(() => 0);
+  const shapes: (PlateShape | undefined)[] = [];
 
-  function renderMorph({ position, width, diameter, origins, compact }: KineticCircleFrame) {
+  function paint(index: number) {
+    const shape = shapes[index];
+    if (!shape) return;
+
+    const path = paths[index];
+    const radius = Math.max(.01, .5 - insets[index] / shape.diameter);
+    if ('profile' in shape) {
+      path.setAttribute('d', shape.profile.morph(shape.opening, shape.crop, radius));
+      path.style.strokeOpacity = String(shape.opening);
+      return;
+    }
+
+    const span = (Math.min(shape.right, .5 + radius) - Math.max(shape.left, .5 - radius)) * shape.diameter;
+    path.setAttribute('d', span > .5 ? maskedCirclePath(radius, shape.left, shape.right) : '');
+    path.style.strokeOpacity = String(Math.min(1, Math.max(0, (span - 1) / 14)));
+    if (shape.fadeAtSeam) slides[index].style.opacity = String(Math.min(1, Math.max(0, (span - .5) / 22)));
+  }
+
+  function render({ position, width, diameter, origins, compact, loop }: KineticCircleFrame) {
+    if (!diameter) return false;
     renderedPosition = position;
     const lap = position % lastSnap;
     let distance = Math.min(lap, lastSnap - lap, 1);
@@ -54,61 +78,68 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
       const traveled = ((position - closing.origin + snapCount * 1.5) % snapCount) - snapCount / 2;
       distance = Math.max(0, Math.min(1, 1 - traveled / closing.span));
       centered = closing.origin;
-      if (distance < .00001) closing = undefined;
+      if (distance < .00001 || traveled / closing.span < 0) closing = undefined;
     }
     const opening = distance * distance * (3 - 2 * distance);
+    const morphing = distance < 1;
     viewport.style.setProperty('--plate-opening', String(opening));
-    viewport.toggleAttribute('data-model-morph', distance < 1);
-    if (distance >= 1) {
-      if (morphing) {
-        paths.forEach(path => path.setAttribute('d', carouselCirclePath));
-        slides.forEach(slide => slide.removeAttribute('data-model-reveal-plate'));
-        morphing = false;
-      }
-      return false;
-    }
+    viewport.toggleAttribute('data-model-geometry', true);
+    viewport.toggleAttribute('data-model-morph', morphing);
 
-    // Keep the plate in place and match its mask to the gap between the slits.
-    morphing = true;
     const left = (width - diameter) / 2;
     const nearEdge = circleGeometry(1, diameter, compact).x - diameter / 2;
-    const aperture = diameter ? Math.min(1, 2 * nearEdge * opening / diameter) : 0;
+    const aperture = Math.min(1, 2 * nearEdge * opening / diameter);
     slides.forEach((slide, index) => {
-      const slot = (index - centered + snapCount * 1.5) % snapCount - snapCount / 2;
-      const profile = carouselLogoProfiles[slot + carouselLogoCenter];
-      slide.toggleAttribute('data-model-reveal-plate', slot === 0);
-      if (slot === 0) {
-        const inset = String((1 - aperture) / 2);
-        slide.style.visibility = 'visible';
-        slide.style.transform = `translate3d(${left - origins[index]}px, 0, 0)`;
-        slide.style.clipPath = 'none';
-        slide.style.setProperty('--mask-left', inset);
-        slide.style.setProperty('--mask-right', inset);
-        slide.style.setProperty('--image-wash', '0');
-        paths[index].setAttribute('d', carouselCirclePath);
-        apertures[index].setAttribute('x', inset);
-        apertures[index].setAttribute('width', String(aperture));
+      const offset = index - (morphing ? centered : position);
+      const slot = loop ? ((offset + snapCount * 1.5) % snapCount) - snapCount / 2 : offset;
+      const profile = morphing ? carouselLogoProfiles[slot + carouselLogoCenter] : null;
+      const centeredPlate = morphing && slot === 0;
+      const geometry = circleGeometry(slot, diameter, compact);
+      const visible = morphing ? Boolean(profile || centeredPlate) : geometry.visible;
+      slide.toggleAttribute('data-model-reveal-plate', centeredPlate);
+      if (!centeredPlate) slide.style.removeProperty('opacity');
+      slide.style.visibility = visible ? 'visible' : 'hidden';
+      if (!visible) {
+        shapes[index] = undefined;
         return;
       }
-      slide.style.visibility = profile ? 'visible' : 'hidden';
-      if (!profile) return;
-      const geometry = circleGeometry(slot, diameter, compact);
-      const crop = diameter ? Math.max(geometry.left, geometry.right) / diameter : 0;
-      const closedX = profile.offset * diameter;
-      const x = left - origins[index] + closedX + (geometry.x - closedX) * opening;
-      slide.style.transform = `translate3d(${x}px, 0, 0)`;
-      slide.style.clipPath = 'none';
+
+      const openX = left + geometry.x;
+      let x = openX;
+      if (profile) {
+        const closedX = left + profile.offset * diameter;
+        x = closedX + (openX - closedX) * opening;
+        const viewportCut = slot < 0 ? outlineInset - openX : openX + diameter + outlineInset - width;
+        const crop = Math.max(geometry.left, geometry.right, viewportCut) / diameter;
+        shapes[index] = { diameter, profile, crop, opening };
+      } else {
+        const inset = centeredPlate ? (1 - aperture) / 2 : 0;
+        shapes[index] = {
+          diameter,
+          left: Math.max(inset, geometry.left / diameter, (outlineInset - x) / diameter),
+          right: Math.min(1 - inset, 1 - geometry.right / diameter, (width - outlineInset - x) / diameter),
+          fadeAtSeam: centeredPlate,
+        };
+      }
+      slide.style.transform = `translate3d(${x - origins[index]}px, 0, 0)`;
+      // Keep the carousel's hit area stable while the outlined SVG shrinks.
+      slide.style.clipPath = morphing ? 'none'
+        : `inset(-1px ${geometry.right - outlineInset}px -1px ${geometry.left - outlineInset}px)`;
       slide.style.setProperty('--image-wash', String(geometry.wash));
-      paths[index].setAttribute('d', profile.morph(opening, crop));
+      paint(index);
     });
     return true;
   }
 
-  const detachCircles = attachKineticCircles(api, renderMorph);
+  const detachCircles = attachKineticCircles(api, render);
   const detachInteraction = attachKineticCircleInteraction(api, {
     surfaceSelector: '[data-model-plate-surface]',
     artSelector: '[data-model-plate-art]',
     insetProperty: '--model-plate-inset',
+    onInsetChange(index, inset) {
+      insets[index] = inset;
+      paint(index);
+    },
   });
 
   function alignPage(snap: number) {
@@ -130,22 +161,31 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
   function showStop(stop: number) {
     if (stop === activeStop) return;
     const origin = api.selectedScrollSnap();
-    const lapStart = origin - activeStop;
-    const span = stop - activeStop;
-    closing = stop === lastSnap && span > 1 && Math.abs(origin - renderedPosition) < .02
-      ? { origin, span }
-      : undefined;
-    api.scrollTo((lapStart + stop + snapCount) % snapCount);
+    let target = origin - activeStop + stop;
+    closing = undefined;
+    if (stop === lastSnap) {
+      // In-flight tab changes should close at the nearest seam on screen.
+      target = Math.round(renderedPosition / lastSnap) * lastSnap;
+      const paintedStop = Math.round(renderedPosition);
+      const span = target - paintedStop;
+      if (Math.abs(span) > 1 && Math.abs(paintedStop - renderedPosition) < .02) {
+        closing = { origin: paintedStop % snapCount, span };
+      }
+    } else if (activeStop === lastSnap && stop === firstSnap) {
+      target = origin + 1;
+    }
+    api.scrollTo((target + snapCount) % snapCount);
   }
 
   function syncTabs() {
     const slide = api.selectedScrollSnap() % lastSnap;
     activeStop = slide || lastSnap;
+    if (activeStop !== lastSnap) closing = undefined;
     if (pin?.isActive && activeStop !== scrollSnap) alignPage(activeStop);
     options.onHighlight?.(activeStop - firstSnap);
   }
 
-  api.on('select', syncTabs).on('pointerDown', () => { closing = undefined; });
+  api.on('select', syncTabs);
 
   if (scrollLinked) {
     gsap.registerPlugin(ScrollTrigger);
@@ -188,6 +228,13 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
       api.destroy();
       viewport.style.removeProperty('--plate-opening');
       viewport.removeAttribute('data-model-morph');
+      viewport.removeAttribute('data-model-geometry');
+      slides.forEach((slide, index) => {
+        slide.style.removeProperty('clip-path');
+        slide.style.removeProperty('opacity');
+        slide.removeAttribute('data-model-reveal-plate');
+        paths[index].style.removeProperty('stroke-opacity');
+      });
     },
   };
 };

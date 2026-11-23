@@ -1,6 +1,6 @@
 'use client';
 
-import { useId, type CSSProperties } from 'react';
+import { useId } from 'react';
 import { OperatingModel } from './operating-model';
 import { useOperatingModelScene, type OperatingModelSceneProps } from './operating-model-scene';
 import { carouselCirclePath } from './operating-model-diagram/carousel-profile';
@@ -52,20 +52,16 @@ function CarouselScene(props: OperatingModelSceneProps) {
           {circleSlides.map((plate, index) => {
             const pathId = `${id}-profile-${index}`;
             const clipId = `${id}-clip-${index}`;
-            const revealId = `${id}-reveal-${index}`;
             return <div key={index} className={styles.carouselSlide} data-model-plate={plate.key}
               style={initialKineticCircleStyle(index, 1, circleSlides.length)}>
               <div className={styles.carouselPlate} data-model-plate-surface>
                 <svg className={styles.carouselDrawing} viewBox="0 0 1 1" overflow="visible">
-                  <clipPath id={revealId}><rect data-model-aperture x=".5" width="0" height="1" /></clipPath>
                   <clipPath id={clipId}><use href={`#${pathId}`} /></clipPath>
-                  <g className={styles.carouselPainting} style={{ '--model-reveal-mask': `url(#${revealId})` } as CSSProperties}>
-                    <path id={pathId} className={styles.carouselProfile} data-model-profile d={carouselCirclePath} vectorEffect="non-scaling-stroke" />
-                    <g clipPath={`url(#${clipId})`} className={styles.carouselArtwork}
-                      fill="none" stroke="currentColor" strokeWidth="1.7"
-                      strokeLinecap="round" strokeLinejoin="round">
-                      <g transform="scale(.003125)"><g data-model-plate-art>{plate}</g></g>
-                    </g>
+                  <path id={pathId} className={styles.carouselProfile} data-model-profile d={carouselCirclePath} vectorEffect="non-scaling-stroke" />
+                  <g clipPath={`url(#${clipId})`} className={styles.carouselArtwork}
+                    fill="none" stroke="currentColor" strokeWidth="1.7"
+                    strokeLinecap="round" strokeLinejoin="round">
+                    <g transform="scale(.003125)"><g data-model-plate-art>{plate}</g></g>
                   </g>
                 </svg>
               </div>

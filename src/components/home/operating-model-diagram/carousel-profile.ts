@@ -31,22 +31,37 @@ function slitPath(points: number[]) {
 }
 
 // Two tangent cubic arcs describe a circle segment to the right of its chord.
-function circleSegment(cut: number, side: number) {
-  const angle = Math.acos(Math.min(1, Math.max(-1, cut * 2 - 1)));
-  const handle = (2 / 3) * Math.tan(angle / 4);
-  const y = .5 * Math.sin(angle);
+function circleSegment(crop: number, side: number, radius: number) {
+  const cut = Math.max(.5 - radius, Math.min(.5 + radius, crop));
+  const angle = Math.acos(Math.min(1, Math.max(-1, (cut - .5) / radius)));
+  const handle = (4 * radius / 3) * Math.tan(angle / 4);
+  const tip = .5 + radius;
+  const y = radius * Math.sin(angle);
   const dx = handle * Math.sin(angle);
   const dy = handle * Math.cos(angle);
   const points = [
     cut, .5 - y,
-    cut + dx, .5 - y + dy, 1, .5 - handle, 1, .5,
-    1, .5,
-    1, .5 + handle, cut + dx, .5 + y - dy, cut, .5 + y,
+    cut + dx, .5 - y + dy, tip, .5 - handle, tip, .5,
+    tip, .5,
+    tip, .5 + handle, cut + dx, .5 + y - dy, cut, .5 + y,
   ];
   return side < 0 ? points : points.map((value, i) => i % 2 ? value : 1 - value);
 }
 
 export const carouselCirclePath = 'M0 .5A.5 .5 0 1 1 1 .5A.5 .5 0 1 1 0 .5Z';
+
+/** Trace the two circular arcs and the straight edges of the masked disc. */
+export function maskedCirclePath(radius: number, maskLeft: number, maskRight: number) {
+  const left = Math.max(.5 - radius, maskLeft);
+  const right = Math.min(.5 + radius, maskRight);
+  if (left >= right) return '';
+
+  const depth = (x: number) => Math.sqrt(Math.max(0, radius * radius - (x - .5) ** 2));
+  const [lt, lb, rt, rb] = [.5 - depth(left), .5 + depth(left), .5 - depth(right), .5 + depth(right)];
+  const fmt = (value: number) => Number(value.toFixed(5));
+  const arc = `A${fmt(radius)} ${fmt(radius)} 0 0 1`;
+  return `M${fmt(left)} ${fmt(lt)}${arc} ${fmt(right)} ${fmt(rt)}L${fmt(right)} ${fmt(rb)}${arc} ${fmt(left)} ${fmt(lb)}Z`;
+}
 
 export const carouselLogoCenter = 3;
 export const carouselLogoProfiles = [20, 87.5, 172.5, 220, 267.5, 352.5, 420].map((anchor, index) => {
@@ -58,8 +73,8 @@ export const carouselLogoProfiles = [20, 87.5, 172.5, 220, 267.5, 352.5, 420].ma
   const points = normalize(source, side > 0 ? 440 - anchor : anchor, side > 0 ? -1 : 1);
   return {
     offset: (anchor - 220) * markScale,
-    morph(progress: number, crop: number) {
-      const target = circleSegment(crop, side);
+    morph(progress: number, crop: number, radius: number) {
+      const target = circleSegment(crop, side, radius);
       return slitPath(points.map((value, i) => value + (target[i] - value) * progress));
     },
   };

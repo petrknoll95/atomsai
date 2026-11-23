@@ -5,22 +5,27 @@ type CircleInteraction = {
   surfaceSelector: string;
   artSelector: string;
   insetProperty: string;
+  onInsetChange?: (index: number, inset: number) => void;
 };
 
 export function attachKineticCircleInteraction(emblaApi: EmblaCarouselType, {
-  surfaceSelector, artSelector, insetProperty,
+  surfaceSelector, artSelector, insetProperty, onInsetChange,
 }: CircleInteraction) {
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const hover = matchMedia('(any-hover: hover)');
   const context = gsap.context(() => {
     let pressed = false;
     const updates: (() => void)[] = [];
-    const cleanups = emblaApi.slideNodes().map(slide => {
+    const cleanups = emblaApi.slideNodes().map((slide, index) => {
       const circle = slide.querySelector<HTMLElement>(surfaceSelector);
       const artwork = circle?.querySelector<HTMLElement>(artSelector);
       if (!circle || !artwork) return () => {};
       let inside = hover.matches && slide.matches(':hover');
       const inset = gsap.quickTo(circle, insetProperty, { duration: 1.2, ease: 'power2.out' });
+      if (onInsetChange) {
+        inset.tween.eventCallback('onUpdate', () =>
+          onInsetChange(index, parseFloat(circle.style.getPropertyValue(insetProperty)) || 0));
+      }
       const zoom = ['scaleX', 'scaleY'].map(axis =>
         gsap.quickTo(artwork, axis, { duration: 1.2, ease: 'power2.out' }));
       const update = () => {
