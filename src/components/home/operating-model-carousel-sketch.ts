@@ -5,6 +5,7 @@ P5.registerAddon(accessibility);
 
 export const carouselOutlineWidth = 1.5;
 const ringRadiusRatio = .59;
+const closedLogoScale = .76;
 const ringLabels = ['Build', 'Learn'];
 const ringLabelGap = 8;
 const ringLabelSize = 14;
@@ -133,7 +134,7 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[], re
       ));
       const fit = Math.min(1, room / (2 * ringRadiusRatio * frame.diameter));
       const closing = Math.max(0, 1 - opening * 4);
-      const scale = 1 + (fit - 1) * closing * closing * (3 - 2 * closing);
+      const scale = 1 + (fit * closedLogoScale - 1) * closing * closing * (3 - 2 * closing);
       const diameter = frame.diameter * scale;
       const xInset = p.width * (1 - scale) / 2;
       const y = (p.height - diameter) / 2;
@@ -173,7 +174,8 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[], re
       if (opening === 0) {
         const seconds = reducedMotion ? 0 : (performance.now() - ringStart) / 1000;
         const opacity = reducedMotion ? 1 : Math.min(1, seconds * 5);
-        drawLogoRing(ctx, p.width / 2, p.height / 2, diameter * ringRadiusRatio, seconds, opacity, labelWidths);
+        const radius = frame.diameter * fit * ringRadiusRatio;
+        drawLogoRing(ctx, p.width / 2, p.height / 2, radius, seconds, opacity, labelWidths);
         animateRing();
       }
       if (!viewport.hasAttribute('data-model-canvas')) viewport.dataset.modelCanvas = 'true';
