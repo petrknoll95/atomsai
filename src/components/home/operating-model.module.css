@@ -21,6 +21,7 @@
   --plate-opening:1;
   position:absolute;
   inset:0;
+  inset-inline:clamp(16px, 4%, 32px);
   display:grid;
   align-items:center;
   grid-template-columns:minmax(0,1fr);
