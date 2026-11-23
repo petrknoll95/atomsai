@@ -84,7 +84,7 @@
   line-height: 1.45;
 }
 .body blockquote > :last-child { margin-block-end: 0; }
-.body :is(pre, th) { background: var(--palette-mist); }
+.body :is(pre, th) { background: color-mix(in srgb, var(--palette-mist) 20%, var(--palette-paper)); }
 .body pre { overflow-x: auto; padding: 20px; border-radius: 12px; font-size: var(--text-body); }
 .body :global(.article-table-scroll) {
   width: 100%;
