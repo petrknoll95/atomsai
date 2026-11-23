@@ -6,12 +6,10 @@ import { useOperatingModelScene, type OperatingModelSceneProps } from './operati
 import { logoMarkPath } from './operating-model-diagram/logo-mark';
 import styles from './operating-model.module.css';
 
-const plateDiameter = 320;
-const viewBox = { width: 720, height: 560 };
-
 const loadCarousel = () => import('./operating-model-carousel-motion').then(module => module.mountOperatingModelCarousel);
 const dotCoordinates = Array.from({ length: 13 }, (_, index) => 82 + 13 * index);
 const plates = [
+  <g key="mark" />,
   <g key="models" fill="currentColor" stroke="none">
     {dotCoordinates.flatMap((cy, row) => dotCoordinates.map((cx, column) => (
       <circle key={`${cx}-${cy}`} cx={cx} cy={cy}
@@ -42,51 +40,42 @@ const plates = [
     <path d={logoMarkPath} strokeWidth="4.6" />
   </g>,
 ];
+const circleSlides = [...plates, ...plates];
 
 function CarouselScene(props: OperatingModelSceneProps) {
   const host = useOperatingModelScene(props, loadCarousel);
   const id = useId();
-  const x = viewBox.width / 2;
-  const y = viewBox.height / 2;
-  const radius = plateDiameter / 2;
-  const centerTransform = `translate(${x - radius} ${y - radius})`;
 
   return (
     <div ref={host} className={styles.art} data-model-carousel aria-hidden="true">
-      <svg className={styles.carouselArt} viewBox={`0 0 ${viewBox.width} ${viewBox.height}`}>
-        <defs>
-          <path id={`${id}-mark`} d={logoMarkPath} />
-          <clipPath id={`${id}-left`}><rect width="220.5" height="400" /></clipPath>
-          <clipPath id={`${id}-right`}><rect x="219.5" width="220.5" height="400" /></clipPath>
-          <clipPath id={`${id}-opening`}>
-            <rect data-model-reveal x={x} width="0" height={viewBox.height} />
-          </clipPath>
-          {plates.map((plate, index) => (
-            <clipPath key={plate.key} id={`${id}-plate-${index}`}>
-              <rect data-model-plate-clip width={plateDiameter} height={plateDiameter} />
-            </clipPath>
+      <div className={styles.carouselViewport} data-model-viewport>
+        <div className={styles.carouselTrack}>
+          {circleSlides.map((plate, index) => (
+            <div key={index} className={styles.carouselSlide} data-model-plate={plate.key}>
+              <div className={styles.carouselPlate} data-model-plate-surface>
+                <div className={styles.carouselArtwork} data-model-plate-art>
+                  <svg viewBox="0 0 320 320" fill="none" stroke="currentColor"
+                    strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                    {plate}
+                  </svg>
+                </div>
+              </div>
+            </div>
           ))}
-        </defs>
-
-        <g data-model-plates clipPath={`url(#${id}-opening)`} opacity="0">
-          {plates.map((plate, index) => (
-            <g key={plate.key} data-model-plate transform={centerTransform}>
-              <g clipPath={`url(#${id}-plate-${index})`} fill="none" stroke="currentColor"
-                strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx={radius} cy={radius} r={radius - 1} fill="var(--diagram-fill)" />
-                {plate}
-              </g>
+        </div>
+        <svg className={styles.carouselLogo} viewBox="0 0 440 400" fill="currentColor">
+          <defs>
+            <path id={`${id}-mark`} d={logoMarkPath} />
+            <clipPath id={`${id}-left`}><rect width="220.5" height="400" /></clipPath>
+            <clipPath id={`${id}-right`}><rect x="219.5" width="220.5" height="400" /></clipPath>
+          </defs>
+          {['left', 'right'].map(side => (
+            <g key={side} data-model-logo-half={side}>
+              <use href={`#${id}-mark`} clipPath={`url(#${id}-${side})`} />
             </g>
           ))}
-        </g>
-
-        {['left', 'right'].map(side => (
-          <g key={side} data-model-logo-half>
-            <use href={`#${id}-mark`} fill="currentColor" transform="translate(201.6 136) scale(.72)"
-              clipPath={`url(#${id}-${side})`} />
-          </g>
-        ))}
-      </svg>
+        </svg>
+      </div>
     </div>
   );
 }

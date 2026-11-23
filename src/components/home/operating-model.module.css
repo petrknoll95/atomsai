@@ -14,7 +14,62 @@
 /* Canvas and labels share one measured surface. */
 .art { position:relative; }
 .art > canvas { display:block; position:absolute; inset:0; width:100%; height:100%; touch-action:pan-y; }
-.art > .carouselArt { display:block; position:absolute; inset:0; width:100%; height:100%; color:var(--diagram-ink); touch-action:pan-y; }
+.carouselViewport {
+  --circle-size: min(calc((100cqw - 32px) * 5 / 11), 100cqh);
+  --plate-opening: 0;
+  position:absolute;
+  inset:0;
+  display:grid;
+  align-items:center;
+  grid-template-columns:minmax(0,1fr);
+  container-type:size;
+  overflow:hidden;
+  color:var(--diagram-ink);
+  cursor:grab;
+  touch-action:pan-y pinch-zoom;
+}
+.carouselViewport[data-pressed='true'] { cursor:grabbing; }
+.carouselTrack {
+  display:flex;
+  height:var(--circle-size);
+  touch-action:pan-y pinch-zoom;
+  opacity:var(--plate-opening);
+  clip-path:inset(0 calc((1 - var(--plate-opening)) * 36%));
+}
+.carouselSlide { position:relative; flex:0 0 var(--circle-size); min-width:0; height:100%; will-change:transform,clip-path; }
+.carouselPlate {
+  --model-plate-inset:0px;
+  position:relative;
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  clip-path:inset(var(--model-plate-inset) round 50%);
+  background:color-mix(in srgb,var(--diagram-fill),var(--diagram-ink) calc(var(--image-wash, 0) * 17%));
+}
+.carouselPlate::after {
+  content:'';
+  position:absolute;
+  inset:var(--model-plate-inset);
+  border-radius:50%;
+  border:1px solid color-mix(in srgb,var(--diagram-ink) calc(100% - var(--image-wash, 0) * 68%),transparent);
+  pointer-events:none;
+}
+.carouselArtwork { width:100%; height:100%; }
+.carouselArtwork svg { display:block; width:100%; height:100%; opacity:calc(1 - var(--image-wash, 0) * .55); }
+.carouselLogo {
+  position:absolute;
+  inset:0;
+  margin:auto;
+  width:calc(var(--circle-size) * .94);
+  overflow:visible;
+  opacity:max(0,calc(1 - var(--plate-opening) * 1.35));
+  pointer-events:none;
+}
+.carouselLogo [data-model-logo-half='left'] { transform:translateX(calc(var(--plate-opening) * -75%)); }
+.carouselLogo [data-model-logo-half='right'] { transform:translateX(calc(var(--plate-opening) * 75%)); }
+@media(max-width:767px) {
+  .carouselViewport { --circle-size:min(calc((100cqw - 16px) * .8), 100cqh); }
+}
 .sceneFallback { position:absolute; inset:12% 16%; display:flex; flex-direction:column; justify-content:space-around; }
 .sceneFallback i { display:block; width:100%; height:22%; border:1px solid var(--diagram-ink); border-radius:50%; background:var(--diagram-fill,var(--diagram-surface)); }
 .art[data-ready='true'] .sceneFallback { visibility:hidden; }
