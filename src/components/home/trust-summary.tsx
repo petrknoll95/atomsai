@@ -4,7 +4,6 @@ import { siteHref } from '@/lib/site-links';
 import { ClipCard } from './clip-card';
 import styles from './trust-summary.module.css';
 
-// Every card shares the mist palette and the same line-art treatment.
 // ink is each line SVG's ink box (width / height), printed by scripts/trust-line-art.mjs.
 const trust = [
   { image: 'integrations', href: siteHref('/integrations'), ink: '254.45 / 195.604', label: 'Integrations', title: 'Fits into your current stack', text: 'See which tools can connect to the systems your team already uses for calls and follow-ups.' },
@@ -21,7 +20,7 @@ export function TrustSummary() {
       <ButtonLink className={styles.cta} href="/trust" variant="outline">Visit the Trust Center</ButtonLink>
     </header>
     <ul className={styles.list}>
-      {trust.map(item => <li key={item.label}>
+      {trust.map(item => <li key={item.label} data-trust-card={item.image}>
         <ClipCard className={styles.card} href={item.href}>
           <span className={styles.background} data-clip-inset aria-hidden="true" />
           <span className={styles.label}>{item.label}</span>
