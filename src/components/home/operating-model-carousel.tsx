@@ -49,7 +49,7 @@ function CarouselScene(props: OperatingModelSceneProps) {
 
   return (
     <div ref={host} className={styles.art} data-model-carousel aria-hidden="true">
-      <div className={styles.carouselViewport} data-model-viewport data-model-morph="">
+      <div className={styles.carouselViewport} data-model-viewport>
         <div className={styles.carouselTrack}>
           {circleSlides.map((plate, index) => {
             // Start with the mark's slits framing a fully masked first plate.
@@ -58,18 +58,22 @@ function CarouselScene(props: OperatingModelSceneProps) {
             const centered = slot === carouselLogoCenter;
             const pathId = `${id}-profile-${index}`;
             const clipId = `${id}-clip-${index}`;
+            const revealId = `${id}-reveal-${index}`;
             return <div key={index} className={styles.carouselSlide} data-model-plate={plate.key}
               data-model-logo-slot={profile || centered ? slot : undefined} data-model-reveal-plate={centered ? '' : undefined}
               style={profile || centered ? { '--model-logo-x': (profile?.offset ?? 0) - index } as CSSProperties : undefined}>
               <div className={styles.carouselPlate} data-model-plate-surface>
                 <svg className={styles.carouselDrawing} viewBox="0 0 1 1" overflow="visible">
-                  <path id={pathId} className={styles.carouselProfile} data-model-profile
-                    d={profile?.path ?? carouselCirclePath} vectorEffect="non-scaling-stroke" />
+                  <clipPath id={revealId}><rect data-model-aperture x=".5" width="0" height="1" /></clipPath>
                   <clipPath id={clipId}><use href={`#${pathId}`} /></clipPath>
-                  <g clipPath={`url(#${clipId})`} className={styles.carouselArtwork}
-                    fill="none" stroke="currentColor" strokeWidth="1.7"
-                    strokeLinecap="round" strokeLinejoin="round">
-                    <g transform="scale(.003125)"><g data-model-plate-art>{plate}</g></g>
+                  <g className={styles.carouselPainting} style={{ '--model-reveal-mask': `url(#${revealId})` } as CSSProperties}>
+                    <path id={pathId} className={styles.carouselProfile} data-model-profile
+                      d={profile?.path ?? carouselCirclePath} />
+                    <g clipPath={`url(#${clipId})`} className={styles.carouselArtwork}
+                      fill="none" stroke="currentColor" strokeWidth="1.7"
+                      strokeLinecap="round" strokeLinejoin="round">
+                      <g transform="scale(.003125)"><g data-model-plate-art>{plate}</g></g>
+                    </g>
                   </g>
                 </svg>
               </div>

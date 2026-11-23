@@ -24,7 +24,7 @@
   grid-template-columns:minmax(0,1fr);
   container-type:size;
   overflow:hidden;
-  color:var(--diagram-ink);
+  color:var(--diagram-fill);
   cursor:grab;
   touch-action:pan-y pinch-zoom;
 }
@@ -43,14 +43,11 @@
   transform:translateX(calc((100cqw - var(--circle-size)) / 2 + var(--model-logo-x,0) * var(--circle-size)));
 }
 .carouselSlide:not([data-model-logo-slot]) { visibility:hidden; }
-.carouselSlide[data-model-reveal-plate] {
-  --plate-opening:1;
-  clip-path:inset(0 50%);
-}
+.carouselSlide[data-model-reveal-plate] { --plate-opening:1; }
+.carouselSlide[data-model-reveal-plate] .carouselPainting { clip-path:var(--model-reveal-mask); }
 .carouselPlate {
   --model-plate-inset:0px;
-  --model-plate-fill:color-mix(in srgb,var(--diagram-fill),var(--diagram-ink) calc(var(--image-wash,0) * 17%));
-  --model-plate-rim:color-mix(in srgb,var(--diagram-ink) calc(100% - var(--image-wash,0) * 68%),transparent);
+  --model-plate-fill:color-mix(in srgb,var(--diagram-ink),var(--diagram-fill) calc(var(--image-wash,0) * 16%));
   position:relative;
   width:100%;
   height:100%;
@@ -60,24 +57,10 @@
 .carouselProfile {
   fill:color-mix(in srgb,var(--model-plate-fill) calc(var(--plate-opening) * 100%),var(--diagram-ink));
 }
-[data-model-morph] .carouselSlide:not([data-model-reveal-plate]) .carouselProfile {
-  stroke:var(--model-plate-rim);
-  stroke-opacity:clamp(0,calc(var(--plate-opening) * 3 - 2),1);
-  stroke-width:1px;
-}
-.carouselViewport:not([data-model-morph]) .carouselPlate::after,
-.carouselSlide[data-model-reveal-plate] .carouselPlate::after {
-  content:'';
-  position:absolute;
-  inset:var(--model-plate-inset);
-  border-radius:50%;
-  border:1px solid var(--model-plate-rim);
-  pointer-events:none;
-}
 .carouselArtwork {
   opacity:clamp(0,calc((var(--plate-opening) - .45) * 2.6),1);
 }
-.carouselArtwork [data-model-plate-art] { opacity:calc(1 - var(--image-wash,0) * .55); transform-origin:160px 160px; }
+.carouselArtwork [data-model-plate-art] { opacity:calc(1 - var(--image-wash,0) * .32); transform-origin:160px 160px; }
 @media(max-width:767px) {
   .carouselViewport { --circle-size:min(calc((100cqw - 16px) * .8), 100cqh); }
 }
