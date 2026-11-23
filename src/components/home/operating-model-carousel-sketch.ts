@@ -21,6 +21,46 @@ type CarouselDrawing = {
   plates: (PlateDrawing | undefined)[];
 };
 
+function drawLogoRing(ctx: CanvasRenderingContext2D, x: number, y: number, radius: number, seconds: number, opacity: number) {
+  const halfTurn = Math.PI;
+  const step = halfTurn / Math.max(1, Math.round(halfTurn * radius / 14));
+  const spacing = step * radius;
+  const rotation = (seconds * 20 / radius) % (2 * halfTurn);
+  const halves = [rotation, rotation + halfTurn];
+  ctx.save();
+  ctx.lineWidth = 1;
+  ctx.lineCap = 'round';
+  ctx.globalAlpha = .5 * opacity;
+  ctx.setLineDash([spacing * .55, spacing * .45]);
+  for (const start of halves) {
+    // Leave one dash slot in each half for an arrow moving with the ring.
+    ctx.beginPath();
+    ctx.arc(x, y, radius, start + step, start + halfTurn);
+    ctx.stroke();
+  }
+
+  ctx.globalAlpha = .72 * opacity;
+  ctx.lineWidth = 1.25;
+  ctx.setLineDash([]);
+  for (const start of halves) {
+    const tip = start + step * .64;
+    ctx.beginPath();
+    ctx.arc(x, y, radius, start, tip);
+    ctx.stroke();
+
+    ctx.save();
+    ctx.translate(x + Math.cos(tip) * radius, y + Math.sin(tip) * radius);
+    ctx.rotate(tip + halfTurn / 2);
+    ctx.beginPath();
+    ctx.moveTo(-5, -3.5);
+    ctx.lineTo(0, 0);
+    ctx.lineTo(-5, 3.5);
+    ctx.stroke();
+    ctx.restore();
+  }
+  ctx.restore();
+}
+
 export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[], reducedMotion: boolean) {
   const viewport = host.parentElement!;
   const colors = getComputedStyle(viewport);
@@ -115,20 +155,9 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[], re
         ctx.restore();
       });
       if (opening === 0) {
-        const radius = diameter * ringRadiusRatio;
-        const circumference = 2 * Math.PI * radius;
-        const spacing = circumference / Math.max(1, Math.round(circumference / 14));
         const seconds = reducedMotion ? 0 : (performance.now() - ringStart) / 1000;
-        ctx.save();
-        ctx.globalAlpha = .5 * (reducedMotion ? 1 : Math.min(1, seconds * 5));
-        ctx.lineWidth = 1;
-        ctx.lineCap = 'round';
-        ctx.setLineDash([spacing * .55, spacing * .45]);
-        ctx.lineDashOffset = -(seconds * 20) % spacing;
-        ctx.beginPath();
-        ctx.arc(p.width / 2, p.height / 2, radius, 0, 2 * Math.PI);
-        ctx.stroke();
-        ctx.restore();
+        const opacity = reducedMotion ? 1 : Math.min(1, seconds * 5);
+        drawLogoRing(ctx, p.width / 2, p.height / 2, diameter * ringRadiusRatio, seconds, opacity);
         animateRing();
       }
       if (!viewport.hasAttribute('data-model-canvas')) viewport.dataset.modelCanvas = 'true';
