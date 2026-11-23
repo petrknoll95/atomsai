@@ -5,6 +5,9 @@ P5.registerAddon(accessibility);
 
 export const carouselOutlineWidth = 1.5;
 const ringRadiusRatio = .59;
+const ringLabels = ['Build', 'Learn'];
+const ringLabelGap = 8;
+const ringLabelSize = 14;
 
 type PlateDrawing = {
   path: Path2D;
@@ -21,7 +24,7 @@ type CarouselDrawing = {
   plates: (PlateDrawing | undefined)[];
 };
 
-function drawLogoRing(ctx: CanvasRenderingContext2D, x: number, y: number, radius: number, seconds: number, opacity: number) {
+function drawLogoRing(ctx: CanvasRenderingContext2D, x: number, y: number, radius: number, seconds: number, opacity: number, labelWidths: number[]) {
   const halfTurn = Math.PI;
   const step = halfTurn / Math.max(1, Math.round(halfTurn * radius / 14));
   const spacing = step * radius;
@@ -39,11 +42,14 @@ function drawLogoRing(ctx: CanvasRenderingContext2D, x: number, y: number, radiu
     ctx.stroke();
   }
 
-  ctx.globalAlpha = .72 * opacity;
   ctx.fillStyle = ctx.strokeStyle;
-  for (const start of halves) {
+  ctx.globalAlpha = .86 * opacity;
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  for (const [index, start] of halves.entries()) {
     const tip = start + step * .64;
     ctx.save();
+    ctx.globalAlpha = .72 * opacity;
     ctx.translate(x + Math.cos(tip) * radius, y + Math.sin(tip) * radius);
     ctx.rotate(tip + halfTurn / 2);
     ctx.beginPath();
@@ -53,6 +59,12 @@ function drawLogoRing(ctx: CanvasRenderingContext2D, x: number, y: number, radiu
     ctx.closePath();
     ctx.fill();
     ctx.restore();
+
+    const labelAngle = tip - 4 / radius;
+    const nx = Math.cos(labelAngle);
+    const ny = Math.sin(labelAngle);
+    const labelRadius = radius + ringLabelGap + (Math.abs(nx) * labelWidths[index] + Math.abs(ny) * ringLabelSize) / 2;
+    ctx.fillText(ringLabels[index], x + nx * labelRadius, y + ny * labelRadius);
   }
   ctx.restore();
 }
@@ -63,6 +75,7 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[], re
   const ink = colors.getPropertyValue('--diagram-ink').trim();
   const fill = colors.getPropertyValue('--diagram-fill').trim();
   const iris = colors.getPropertyValue('--palette-iris').trim();
+  const labelFont = `${colors.getPropertyValue('--font-weight-medium').trim()} ${ringLabelSize}px ${colors.fontFamily}`;
   const images = new Map<string, HTMLImageElement>();
   const artworks = slides.map(slide => {
     const key = slide.dataset.modelPlate!;
@@ -109,8 +122,15 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[], re
       if (!artworkReady || !frame || disposed) return;
       const ctx = p.drawingContext as CanvasRenderingContext2D;
       const { opening, plates } = frame;
-      // Ease the mark down on short viewports so the ring can surround it with clearance.
-      const room = Math.max(1, Math.min(p.width, p.height) - 16);
+      ctx.font = labelFont;
+      const labelWidths = ringLabels.map(label => ctx.measureText(label).width);
+      const labelWidth = Math.max(...labelWidths);
+      // Reserve space for the upright labels as they pass the sides and ends.
+      const padding = 6 + ringLabelGap;
+      const room = Math.max(1, 2 * Math.min(
+        p.width / 2 - padding - labelWidth - ringLabelSize / 4,
+        p.height / 2 - padding - ringLabelSize - labelWidth / 4,
+      ));
       const fit = Math.min(1, room / (2 * ringRadiusRatio * frame.diameter));
       const closing = Math.max(0, 1 - opening * 4);
       const scale = 1 + (fit - 1) * closing * closing * (3 - 2 * closing);
@@ -153,7 +173,7 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[], re
       if (opening === 0) {
         const seconds = reducedMotion ? 0 : (performance.now() - ringStart) / 1000;
         const opacity = reducedMotion ? 1 : Math.min(1, seconds * 5);
-        drawLogoRing(ctx, p.width / 2, p.height / 2, diameter * ringRadiusRatio, seconds, opacity);
+        drawLogoRing(ctx, p.width / 2, p.height / 2, diameter * ringRadiusRatio, seconds, opacity, labelWidths);
         animateRing();
       }
       if (!viewport.hasAttribute('data-model-canvas')) viewport.dataset.modelCanvas = 'true';
@@ -164,6 +184,7 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[], re
     artworkReady = true;
     schedule();
   });
+  void document.fonts.load(labelFont).then(schedule, schedule);
 
   function animateRing() {
     if (!reducedMotion && visible && !document.hidden && frame?.opening === 0) schedule();
