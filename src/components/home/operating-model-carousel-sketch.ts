@@ -40,22 +40,18 @@ function drawLogoRing(ctx: CanvasRenderingContext2D, x: number, y: number, radiu
   }
 
   ctx.globalAlpha = .72 * opacity;
-  ctx.lineWidth = 1.25;
-  ctx.setLineDash([]);
+  ctx.fillStyle = ctx.strokeStyle;
   for (const start of halves) {
     const tip = start + step * .64;
-    ctx.beginPath();
-    ctx.arc(x, y, radius, start, tip);
-    ctx.stroke();
-
     ctx.save();
     ctx.translate(x + Math.cos(tip) * radius, y + Math.sin(tip) * radius);
     ctx.rotate(tip + halfTurn / 2);
     ctx.beginPath();
-    ctx.moveTo(-5, -3.5);
+    ctx.moveTo(-8, -4);
     ctx.lineTo(0, 0);
-    ctx.lineTo(-5, 3.5);
-    ctx.stroke();
+    ctx.lineTo(-8, 4);
+    ctx.closePath();
+    ctx.fill();
     ctx.restore();
   }
   ctx.restore();
