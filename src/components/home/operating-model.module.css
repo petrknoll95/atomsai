@@ -19,7 +19,6 @@
   --circle-size:min(calc((100cqw - 32px) * 5 / 11), var(--circle-max-height));
   --near-circle:.4;
   --far-circle:.2;
-  --plate-opening:1;
   position:absolute;
   inset:0;
   inset-inline:clamp(16px, 4%, 32px);
@@ -34,6 +33,8 @@
   display:flex;
   height:var(--circle-size);
 }
+.carouselCanvas { position:absolute; inset:0; pointer-events:none; }
+.carouselCanvas canvas { display:block; }
 .carouselSlide {
   --cut-left:calc(var(--mask-left) * 100%);
   --cut-right:calc(var(--mask-right) * 100%);
@@ -47,20 +48,18 @@
 }
 .carouselPlate {
   --model-plate-inset:0px;
-  /* Bring the side outlines up to the active stroke as the mark closes. */
-  --outline-wash:calc(var(--image-wash,0) * .82 * min(1, var(--plate-opening) * 4));
-  --model-outline:color-mix(in srgb,var(--diagram-ink) calc((1 - var(--outline-wash)) * 100%),transparent);
+  --model-outline:color-mix(in srgb,var(--diagram-ink) calc((1 - var(--image-wash,0) * .82) * 100%),transparent);
   position:relative;
   width:100%;
   height:100%;
-  clip-path:inset(calc(var(--model-plate-inset) * var(--plate-opening)) round calc(50% * var(--plate-opening)));
+  clip-path:inset(var(--model-plate-inset) round 50%);
 }
 .carouselDrawing { display:block; width:100%; height:100%; }
 .carouselProfile {
   fill:var(--diagram-fill);
 }
-/* Before hydration, draw the outline from the initial CSS crops. */
-.carouselViewport:not([data-model-geometry]) .carouselPlate::after {
+/* The static SVG shows the first slide while the sketch loads. */
+.carouselPlate::after {
   --outline-width:1.5px;
   --inner-radius:calc(100% - var(--model-plate-inset) - var(--outline-width));
   --inner-left:calc(var(--cut-left) + var(--outline-width));
@@ -74,16 +73,10 @@
     linear-gradient(to right, #000 var(--inner-left), transparent var(--inner-left) var(--inner-right), #000 var(--inner-right));
   pointer-events:none;
 }
-.carouselViewport[data-model-geometry] .carouselPlate { clip-path:none; }
-.carouselViewport[data-model-geometry] .carouselProfile {
-  stroke:var(--model-outline);
-  stroke-width:1.5px;
-  stroke-linejoin:round;
-}
+.carouselViewport[data-model-canvas] .carouselPlate { opacity:0; }
 .carouselArtwork {
   opacity:max(0,calc(1 - var(--image-wash,0) * 2));
 }
-.carouselViewport[data-model-collapsed] .carouselArtwork { visibility:hidden; }
 .carouselArtwork [data-model-plate-art] { transform-origin:160px 160px; }
 @media(max-width:767px) {
   .carouselViewport { --circle-size:min(calc((100cqw - 16px) * .8), var(--circle-max-height)); --near-circle:.125; --far-circle:0; }

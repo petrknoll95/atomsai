@@ -57,7 +57,7 @@ function CarouselScene(props: OperatingModelSceneProps) {
               <div className={styles.carouselPlate} data-model-plate-surface>
                 <svg className={styles.carouselDrawing} viewBox="0 0 1 1" overflow="visible">
                   <clipPath id={clipId}><use href={`#${pathId}`} /></clipPath>
-                  <path id={pathId} className={styles.carouselProfile} data-model-profile d={carouselCirclePath} vectorEffect="non-scaling-stroke" />
+                  <path id={pathId} className={styles.carouselProfile} d={carouselCirclePath} />
                   <g clipPath={`url(#${clipId})`} className={styles.carouselArtwork}
                     fill="none" stroke="currentColor" strokeWidth="1.7"
                     strokeLinecap="round" strokeLinejoin="round">
@@ -68,6 +68,7 @@ function CarouselScene(props: OperatingModelSceneProps) {
             </div>;
           })}
         </div>
+        <div className={styles.carouselCanvas} data-model-canvas-host />
       </div>
     </div>
   );

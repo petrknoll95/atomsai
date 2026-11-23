@@ -4,18 +4,19 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { attachKineticCircles, circleGeometry, kineticCircleOptions, type KineticCircleFrame } from './kinetic-circles';
 import { attachKineticCircleInteraction } from './kinetic-circle-interaction';
-import { carouselLogoCenter, carouselLogoProfiles, carouselLogoTransform, maskedCirclePath } from './operating-model-diagram/carousel-profile';
-import { logoMarkPath } from './operating-model-diagram/logo-mark';
+import { mountCarouselSketch, type PlateDrawing } from './operating-model-carousel-sketch';
+import { carouselLogoCenter, carouselLogoProfiles, createCarouselLogoPath, maskedCirclePath } from './operating-model-diagram/carousel-profile';
 import type { OperatingModelMount } from './operating-model-scene';
 
 const firstSnap = 1;
 const viewportsPerStep = .88;
 const outlineInset = .75;
 
-type PlateShape =
-  | 'mark'
-  | { diameter: number; left: number; right: number; fadeAtSeam?: boolean }
-  | { diameter: number; profile: NonNullable<(typeof carouselLogoProfiles)[number]>; crop: number; opening: number };
+type PlateShape = { x: number; diameter: number; wash: number } & (
+  | { mark: true }
+  | { left: number; right: number; fadeAtSeam: boolean }
+  | { profile: NonNullable<(typeof carouselLogoProfiles)[number]>; crop: number; opening: number; joinBow: number }
+);
 
 export const mountOperatingModelCarousel: OperatingModelMount = (element, options) => {
   const viewport = element.querySelector<HTMLElement>('[data-model-viewport]')!;
@@ -48,34 +49,44 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
   let closing: { origin: number; span: number } | undefined;
 
   const slides = api.slideNodes();
-  const paths = slides.map(slide => slide.querySelector<SVGPathElement>('[data-model-profile]')!);
+  const sketch = mountCarouselSketch(viewport.querySelector<HTMLElement>('[data-model-canvas-host]')!, slides);
+  const mark = createCarouselLogoPath();
   const insets = slides.map(() => 0);
   const shapes: (PlateShape | undefined)[] = [];
+  const drawings: (PlateDrawing | undefined)[] = [];
 
   function paint(index: number) {
     const shape = shapes[index];
-    if (!shape) return;
-
-    const path = paths[index];
-    if (shape === 'mark') {
-      path.setAttribute('d', logoMarkPath);
-      path.setAttribute('transform', carouselLogoTransform);
-      path.style.removeProperty('stroke-opacity');
+    if (!shape) {
+      drawings[index] = undefined;
       return;
     }
 
-    path.removeAttribute('transform');
-    const radius = Math.max(.01, .5 - insets[index] / shape.diameter);
+    const { x, diameter, wash } = shape;
+    if ('mark' in shape) {
+      drawings[index] = { path: mark, x, opacity: 1, outline: 1, artwork: 0, zoom: 1 };
+      return;
+    }
+
+    const radius = Math.max(.01, .5 - insets[index] / diameter);
     if ('profile' in shape) {
-      path.setAttribute('d', shape.profile.morph(shape.opening, shape.crop, radius));
-      path.style.removeProperty('stroke-opacity');
+      drawings[index] = {
+        path: shape.profile.morph(shape.opening, shape.crop, radius, shape.joinBow),
+        x, opacity: 1, outline: 1 - wash * .82 * Math.min(1, shape.opening * 4), artwork: 0, zoom: 1,
+      };
       return;
     }
 
-    const span = (Math.min(shape.right, .5 + radius) - Math.max(shape.left, .5 - radius)) * shape.diameter;
-    path.setAttribute('d', span > .5 ? maskedCirclePath(radius, shape.left, shape.right) : '');
-    path.style.strokeOpacity = String(Math.min(1, Math.max(0, (span - 1) / 14)));
-    if (shape.fadeAtSeam) slides[index].style.opacity = String(Math.min(1, Math.max(0, (span - .5) / 22)));
+    const span = (Math.min(shape.right, .5 + radius) - Math.max(shape.left, .5 - radius)) * diameter;
+    const clamp = (value: number) => Math.min(1, Math.max(0, value));
+    drawings[index] = span > .5 ? {
+      path: new Path2D(maskedCirclePath(radius, shape.left, shape.right)),
+      x,
+      opacity: shape.fadeAtSeam ? clamp((span - .5) / 22) : 1,
+      outline: clamp((span - 1) / 14) * (1 - wash * .82),
+      artwork: Math.max(0, 1 - wash * 2),
+      zoom: reduced ? 1 : 1 + insets[index] * .005,
+    } : undefined;
   }
 
   function render({ position, width, diameter, origins, compact, loop }: KineticCircleFrame) {
@@ -93,10 +104,12 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
     }
     const opening = distance * distance * (3 - 2 * distance);
     const morphing = distance < 1;
-    // Switch to the continuous brand silhouette once slit motion is subpixel.
-    const collapsed = opening * diameter < .15;
-    viewport.style.setProperty('--plate-opening', String(collapsed ? 0 : opening));
-    viewport.toggleAttribute('data-model-geometry', true);
+    const remaining = opening * diameter;
+    const collapsed = remaining < .15;
+    // Bow the mating edges toward each other before contact. The joined area
+    // widens from the middle to the tips as the residual gap closes.
+    const approach = Math.max(0, 1 - remaining / 14);
+    const joinBow = Math.min(remaining, 6) * approach * approach * (3 - 2 * approach) / diameter;
     viewport.toggleAttribute('data-model-morph', morphing);
     viewport.toggleAttribute('data-model-collapsed', collapsed);
 
@@ -110,27 +123,27 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
       const centeredPlate = morphing && slot === 0;
       const geometry = circleGeometry(slot, diameter, compact);
       const visible = collapsed ? centeredPlate : morphing ? Boolean(profile || centeredPlate) : geometry.visible;
-      if (!centeredPlate || collapsed) slide.style.removeProperty('opacity');
       slide.style.visibility = visible ? 'visible' : 'hidden';
       if (!visible) {
         shapes[index] = undefined;
+        drawings[index] = undefined;
         return;
       }
 
       const openX = left + geometry.x;
       let x = openX;
       if (collapsed) {
-        shapes[index] = 'mark';
+        shapes[index] = { x, diameter, wash: 0, mark: true };
       } else if (profile) {
         const closedX = left + profile.offset * diameter;
         x = closedX + (openX - closedX) * opening;
         const viewportCut = slot < 0 ? outlineInset - openX : openX + diameter + outlineInset - width;
         const crop = Math.max(geometry.left, geometry.right, viewportCut) / diameter;
-        shapes[index] = { diameter, profile, crop, opening };
+        shapes[index] = { x, diameter, wash: geometry.wash, profile, crop, opening, joinBow };
       } else {
         const inset = centeredPlate ? (1 - aperture) / 2 : 0;
         shapes[index] = {
-          diameter,
+          x, diameter, wash: geometry.wash,
           left: Math.max(inset, geometry.left / diameter, (outlineInset - x) / diameter),
           right: Math.min(1 - inset, 1 - geometry.right / diameter, (width - outlineInset - x) / diameter),
           fadeAtSeam: centeredPlate,
@@ -143,6 +156,7 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
       slide.style.setProperty('--image-wash', String(geometry.wash));
       paint(index);
     });
+    sketch.render({ diameter, plates: drawings });
     return true;
   }
 
@@ -154,6 +168,7 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
     onInsetChange(index, inset) {
       insets[index] = inset;
       paint(index);
+      sketch.redraw();
     },
   });
 
@@ -241,16 +256,10 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
       detachInteraction();
       detachCircles();
       api.destroy();
-      viewport.style.removeProperty('--plate-opening');
+      sketch.destroy();
       viewport.removeAttribute('data-model-collapsed');
       viewport.removeAttribute('data-model-morph');
-      viewport.removeAttribute('data-model-geometry');
-      slides.forEach((slide, index) => {
-        slide.style.removeProperty('clip-path');
-        slide.style.removeProperty('opacity');
-        paths[index].removeAttribute('transform');
-        paths[index].style.removeProperty('stroke-opacity');
-      });
+      slides.forEach(slide => { slide.style.removeProperty('clip-path'); });
     },
   };
 };

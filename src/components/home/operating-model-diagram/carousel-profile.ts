@@ -1,7 +1,14 @@
+import { logoMarkPath } from './logo-mark';
+
 // The three left slits of the official mark, with their joins cut along the
 // existing vertical edges. Reflect them to make the right side.
 const markScale = .94 / 440;
-export const carouselLogoTransform = `translate(${.5 - 220 * markScale} ${.5 - 200 * markScale}) scale(${markScale})`;
+export function createCarouselLogoPath() {
+  const path = new Path2D();
+  path.addPath(new Path2D(logoMarkPath), new DOMMatrix([markScale, 0, 0, markScale,
+    .5 - 220 * markScale, .5 - 200 * markScale]));
+  return path;
+}
 const centerSlit = [
   125, 0,
   173.035, 36.0783, 207.632, 89.0586, 220.5, 150.107,
@@ -25,10 +32,28 @@ function normalize(points: number[], anchor: number, side: number) {
   return points.map((value, i) => .5 + (i % 2 ? value - 200 : (value - anchor) * side) * markScale);
 }
 
-function slitPath(points: number[]) {
-  const coords = (start: number, size: number) =>
-    points.slice(start, start + size).map(value => Number(value.toFixed(5))).join(' ');
-  return `M${coords(0, 2)}C${coords(2, 6)}L${coords(8, 2)}C${coords(10, 6)}Z`;
+function drawSlitEdge(path: Path2D, x: number, fromY: number, toY: number, bow: number) {
+  if (!bow) {
+    path.lineTo(x, toY);
+    return;
+  }
+  const middle = (fromY + toY) / 2;
+  // Taper the approach to a point so the contact starts small.
+  path.quadraticCurveTo(x, (fromY + middle) / 2, x + bow, middle);
+  path.quadraticCurveTo(x, (middle + toY) / 2, x, toY);
+}
+
+function slitPath(points: number[], tipBow: number, chordBow: number) {
+  const [chordX, topY, upperX1, upperY1, upperX2, upperY2, tipX, tipTop, , tipBottom,
+    lowerX1, lowerY1, lowerX2, lowerY2, , bottomY] = points;
+  const path = new Path2D();
+  path.moveTo(chordX, topY);
+  path.bezierCurveTo(upperX1, upperY1, upperX2, upperY2, tipX, tipTop);
+  drawSlitEdge(path, tipX, tipTop, tipBottom, tipBow);
+  path.bezierCurveTo(lowerX1, lowerY1, lowerX2, lowerY2, chordX, bottomY);
+  drawSlitEdge(path, chordX, bottomY, topY, chordBow);
+  path.closePath();
+  return path;
 }
 
 // Two tangent cubic arcs describe a circle segment to the right of its chord.
@@ -74,9 +99,13 @@ export const carouselLogoProfiles = [20, 87.5, 172.5, 220, 267.5, 352.5, 420].ma
   const points = normalize(source, side > 0 ? 440 - anchor : anchor, side > 0 ? -1 : 1);
   return {
     offset: (anchor - 220) * markScale,
-    morph(progress: number, crop: number, radius: number) {
+    morph(progress: number, crop: number, radius: number, joinBow: number) {
       const target = circleSegment(crop, side, radius);
-      return slitPath(points.map((value, i) => value + (target[i] - value) * progress));
+      return slitPath(
+        points.map((value, i) => value + (target[i] - value) * progress),
+        Math.abs(slot) < 3 ? -side * joinBow : 0,
+        Math.abs(slot) === 1 ? side * joinBow : 0,
+      );
     },
   };
 });
