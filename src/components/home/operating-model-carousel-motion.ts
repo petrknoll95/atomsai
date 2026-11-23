@@ -94,6 +94,7 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
       opacity: shape.fadeAtSeam ? clamp((span - .5) / 22) : 1,
       outline: clamp((span - 1) / 14) * (1 - wash * .82),
       artwork: Math.max(0, 1 - wash * 2),
+      radius,
       zoom: reduced ? 1 : 1 + insets[index] * .005,
     } : undefined;
   }

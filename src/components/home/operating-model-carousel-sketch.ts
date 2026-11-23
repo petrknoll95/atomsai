@@ -1,5 +1,6 @@
 import P5 from 'p5/core';
 import accessibility from 'p5/accessibility';
+import { modelDotRadius, modelDotRings } from './operating-model-diagram/model-dots';
 
 P5.registerAddon(accessibility);
 
@@ -16,6 +17,7 @@ type PlateDrawing = {
   opacity: number;
   outline: number;
   artwork: number;
+  radius?: number;
   zoom: number;
 };
 
@@ -24,6 +26,29 @@ type CarouselDrawing = {
   opening: number;
   plates: (PlateDrawing | undefined)[];
 };
+
+const modelDots = [{ x: 0, y: 0, radius: 0 }, ...modelDotRings.flatMap(({ radius, count, stagger }) =>
+  Array.from({ length: count }, (_, index) => {
+    const angle = 2 * Math.PI * (index + stagger) / count;
+    return { x: Math.cos(angle) * radius, y: Math.sin(angle) * radius, radius };
+  }),
+)];
+
+function drawModelWave(ctx: CanvasRenderingContext2D, plateRadius: number, seconds: number | null) {
+  // Match the original outward ripple's 2.7-second sweep and short pause.
+  const front = seconds === null ? Infinity : -.125 + .725 * Math.min(1, (seconds % 3) / 2.7);
+  const scale = 2 * plateRadius;
+  ctx.beginPath();
+  for (const dot of modelDots) {
+    const pulse = Math.exp(-(((dot.radius - front) / .053) ** 2));
+    const radius = modelDotRadius * (1 + 1.5 * pulse) * scale;
+    const x = .5 + dot.x * scale;
+    const y = .5 + dot.y * scale;
+    ctx.moveTo(x + radius, y);
+    ctx.arc(x, y, radius, 0, 2 * Math.PI);
+  }
+  ctx.fill();
+}
 
 function drawLogoRing(ctx: CanvasRenderingContext2D, x: number, y: number, radius: number, seconds: number, opacity: number, labelWidths: number[]) {
   const halfTurn = Math.PI;
@@ -77,9 +102,11 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[], re
   const fill = colors.getPropertyValue('--diagram-fill').trim();
   const iris = colors.getPropertyValue('--palette-iris').trim();
   const labelFont = `${colors.getPropertyValue('--font-weight-medium').trim()} ${ringLabelSize}px ${colors.fontFamily}`;
+  const modelSlides = slides.map(slide => slide.dataset.modelPlate === 'models');
   const images = new Map<string, HTMLImageElement>();
   const artworks = slides.map(slide => {
     const key = slide.dataset.modelPlate!;
+    if (key === 'models') return undefined;
     const artwork = slide.querySelector('[data-model-plate-art]')!;
     if (!artwork.firstElementChild?.firstElementChild) return undefined;
     if (!images.has(key)) {
@@ -96,12 +123,13 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[], re
   let ready = false;
   let disposed = false;
   let pending = 0;
+  const waveStart = performance.now();
   let ringStart = 0;
   let visible = false;
   const resize = new ResizeObserver(schedule);
   const intersection = new IntersectionObserver(([entry]) => {
     visible = entry.isIntersecting;
-    animateRing();
+    animateArtwork();
   });
   const sketch = new P5(p => {
     p.setup = () => {
@@ -114,7 +142,7 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[], re
       resize.observe(host);
       if (!reducedMotion) {
         intersection.observe(host);
-        document.addEventListener('visibilitychange', animateRing);
+        document.addEventListener('visibilitychange', animateArtwork);
       }
       schedule();
     };
@@ -163,11 +191,18 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[], re
         ctx.globalAlpha = plate.opacity;
         ctx.fill(plate.path);
         const art = artworks[index];
-        if (art?.naturalWidth && plate.artwork > 0) {
-          const inset = (1 - plate.zoom) / 2;
+        const model = modelSlides[index];
+        if (plate.artwork > 0 && (model || art?.naturalWidth)) {
           ctx.clip(plate.path);
           ctx.globalAlpha *= plate.artwork;
-          ctx.drawImage(art, inset, inset, plate.zoom, plate.zoom);
+          if (model) {
+            ctx.fillStyle = ink;
+            const seconds = reducedMotion ? null : (performance.now() - waveStart) / 1000;
+            drawModelWave(ctx, plate.radius ?? .5, seconds);
+          } else if (art) {
+            const inset = (1 - plate.zoom) / 2;
+            ctx.drawImage(art, inset, inset, plate.zoom, plate.zoom);
+          }
         }
         ctx.restore();
       });
@@ -176,9 +211,9 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[], re
         const opacity = reducedMotion ? 1 : Math.min(1, seconds * 5);
         const radius = frame.diameter * fit * ringRadiusRatio;
         drawLogoRing(ctx, p.width / 2, p.height / 2, radius, seconds, opacity, labelWidths);
-        animateRing();
       }
       if (!viewport.hasAttribute('data-model-canvas')) viewport.dataset.modelCanvas = 'true';
+      animateArtwork();
     };
   }, host);
 
@@ -188,8 +223,9 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[], re
   });
   void document.fonts.load(labelFont).then(schedule, schedule);
 
-  function animateRing() {
-    if (!reducedMotion && visible && !document.hidden && frame?.opening === 0) schedule();
+  function animateArtwork() {
+    if (reducedMotion || !visible || document.hidden || !frame) return;
+    if (frame.opening === 0 || frame.plates.some((plate, index) => modelSlides[index] && plate && plate.artwork > 0)) schedule();
   }
 
   function schedule() {
@@ -214,7 +250,7 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[], re
       cancelAnimationFrame(pending);
       resize.disconnect();
       intersection.disconnect();
-      document.removeEventListener('visibilitychange', animateRing);
+      document.removeEventListener('visibilitychange', animateArtwork);
       delete viewport.dataset.modelCanvas;
       void sketch.remove();
     },

@@ -4,18 +4,19 @@ import { useId } from 'react';
 import { OperatingModel } from './operating-model';
 import { useOperatingModelScene, type OperatingModelSceneProps } from './operating-model-scene';
 import { carouselCirclePath } from './operating-model-diagram/carousel-profile';
+import { modelDotRadius, modelDotRings } from './operating-model-diagram/model-dots';
 import { initialKineticCircleStyle } from './kinetic-circles';
 import styles from './operating-model.module.css';
 
 const loadCarousel = () => import('./operating-model-carousel-motion').then(module => module.mountOperatingModelCarousel);
-const dotCoordinates = Array.from({ length: 13 }, (_, index) => 82 + 13 * index);
 const plates = [
   <g key="mark" />,
-  <g key="models" fill="currentColor" stroke="none">
-    {dotCoordinates.flatMap((cy, row) => dotCoordinates.map((cx, column) => (
-      <circle key={`${cx}-${cy}`} cx={cx} cy={cy}
-        r={(1.05 + 1.65 * Math.max(0, 1 - Math.hypot((column - 6) / 4, (row - 6) / 7))).toFixed(2)} />
-    )))}
+  <g key="models">
+    <circle cx="160" cy="160" r={modelDotRadius * 320} fill="currentColor" stroke="none" />
+    {modelDotRings.map(({ radius, count, stagger }) => (
+      <circle key={count} cx="160" cy="160" r={radius * 320} strokeWidth={2 * modelDotRadius * 320}
+        pathLength={count} strokeDasharray="0.001 0.999" strokeDashoffset={-stagger} />
+    ))}
   </g>,
   <g key="workflows">
     <path d="M144 160H176M224 160H235Q244 160 244 151V134M224 160H235Q244 160 244 169V186"
