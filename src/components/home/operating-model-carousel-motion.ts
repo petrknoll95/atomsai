@@ -26,15 +26,18 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
   // The scroll sequence runs from the first plate to the closing mark.
   const snapCount = api.scrollSnapList().length;
   const lastSnap = snapCount / 2;
-  const lastPlate = lastSnap - 1;
   const steps = lastSnap - firstSnap;
   const storyHeight = steps * viewportsPerStep;
-  const tailShare = tail / (storyHeight + tail);
+  // The backdrop opens during the lead-in and closes during the tail.
+  const lead = tail;
+  const pinHeight = lead + storyHeight + tail;
+  const tailShare = tail / pinHeight;
   let pin: ScrollTrigger | undefined;
-  let finale: ReturnType<typeof setTimeout> | undefined;
   let scrollSnap = start;
   let activeStop = start;
-  let requestedStop: number | undefined;
+  let renderedPosition = start;
+  let aligningPage = false;
+  let closing: { origin: number; span: number } | undefined;
 
   const slides = api.slideNodes();
   const paths = slides.map(slide => slide.querySelector<SVGPathElement>('[data-model-profile]')!);
@@ -42,8 +45,17 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
   let morphing = true;
 
   function renderMorph({ position, width, diameter, origins, compact }: KineticCircleFrame) {
+    renderedPosition = position;
     const lap = position % lastSnap;
-    const distance = Math.min(lap, lastSnap - lap, 1);
+    let distance = Math.min(lap, lastSnap - lap, 1);
+    let centered = lap < 1 ? Math.floor(position) + 1 : Math.floor(position);
+    if (closing) {
+      // Collapse the currently centered plate when a jump skips earlier tabs.
+      const traveled = ((position - closing.origin + snapCount * 1.5) % snapCount) - snapCount / 2;
+      distance = Math.max(0, Math.min(1, 1 - traveled / closing.span));
+      centered = closing.origin;
+      if (distance < .00001) closing = undefined;
+    }
     const opening = distance * distance * (3 - 2 * distance);
     viewport.style.setProperty('--plate-opening', String(opening));
     if (distance >= 1) {
@@ -55,10 +67,8 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
       return false;
     }
 
-    // Keep the plate in place. Its mask opens at the same rate as the gap
-    // between the two slits that move into the nearest carousel positions.
+    // Keep the plate in place and match its mask to the gap between the slits.
     morphing = true;
-    const centered = lap < 1 ? Math.floor(position) + 1 : Math.floor(position);
     const left = (width - diameter) / 2;
     const nearEdge = circleGeometry(1, diameter, compact).x - diameter / 2;
     const aperture = diameter ? Math.min(1, 2 * nearEdge * opening / diameter) : 0;
@@ -100,53 +110,52 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
   function alignPage(snap: number) {
     if (!pin) return;
     scrollSnap = snap;
-    const top = pin.start + (pin.end - pin.start) * (1 - tailShare) * (snap - firstSnap) / steps;
+    const progress = (lead + (snap - firstSnap) * viewportsPerStep) / pinHeight;
+    const top = pin.start + (pin.end - pin.start) * progress;
     const smoother = ScrollSmoother.get();
-    if (smoother) smoother.scrollTo(top, false);
-    else window.scrollTo({ top, behavior: 'instant' });
-  }
-
-  function scheduleFinale() {
-    clearTimeout(finale);
-    const { dragHandler, scrollBody } = api.internalEngine();
-    if (!scrollLinked && activeStop === lastPlate && !dragHandler.pointerDown() && scrollBody.settled()) {
-      finale = setTimeout(() => showStop(lastSnap), 1400);
+    aligningPage = true;
+    try {
+      smoother?.scrollTo(top, false);
+      // A native smooth scroll would select intervening tabs on the way.
+      window.scrollTo({ top, behavior: 'instant' });
+    } finally {
+      aligningPage = false;
     }
   }
 
   function showStop(stop: number) {
-    const lapStart = api.selectedScrollSnap() - activeStop;
-    requestedStop = stop;
+    if (stop === activeStop) return;
+    const origin = api.selectedScrollSnap();
+    const lapStart = origin - activeStop;
+    const span = stop - activeStop;
+    closing = stop === lastSnap && span > 1 && Math.abs(origin - renderedPosition) < .02
+      ? { origin, span }
+      : undefined;
     api.scrollTo((lapStart + stop + snapCount) % snapCount);
-    requestedStop = undefined;
   }
 
   function syncTabs() {
     const slide = api.selectedScrollSnap() % lastSnap;
-    activeStop = requestedStop ?? (slide || lastSnap);
+    activeStop = slide || lastSnap;
     if (pin?.isActive && activeStop !== scrollSnap) alignPage(activeStop);
-    options.onHighlight?.(Math.max(0, Math.min(activeStop, lastPlate) - 1));
-    scheduleFinale();
+    options.onHighlight?.(activeStop - firstSnap);
   }
 
-  function cancelFinale() {
-    clearTimeout(finale);
-  }
-
-  api.on('select', syncTabs).on('settle', scheduleFinale).on('pointerDown', cancelFinale).on('pointerUp', scheduleFinale);
+  api.on('select', syncTabs).on('pointerDown', () => { closing = undefined; });
 
   if (scrollLinked) {
     gsap.registerPlugin(ScrollTrigger);
     const syncCarousel = (trigger: ScrollTrigger) => {
-      const snap = Math.min(lastSnap, firstSnap + Math.round(trigger.progress * steps / (1 - tailShare)));
-      if (snap === scrollSnap || api.internalEngine().dragHandler.pointerDown()) return;
+      const progress = (trigger.progress * pinHeight - lead) / viewportsPerStep;
+      const snap = Math.min(lastSnap, firstSnap + Math.max(0, Math.round(progress)));
+      if (aligningPage || snap === scrollSnap || api.internalEngine().dragHandler.pointerDown()) return;
       scrollSnap = snap;
       showStop(snap);
     };
     pin = ScrollTrigger.create({
       trigger: options.trigger,
       start: options.start,
-      end: () => '+=' + Math.round(innerHeight * (storyHeight + tail)),
+      end: () => '+=' + Math.round(innerHeight * pinHeight),
       pin: options.pin,
       pinSpacing: true,
       anticipatePin: 1,
@@ -160,17 +169,15 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
 
   return {
     select(index) {
-      cancelFinale();
       const snap = index + firstSnap;
-      alignPage(snap);
+      scrollSnap = snap;
       showStop(snap);
-      scheduleFinale();
+      alignPage(snap);
     },
     pin,
     tailShare,
     destroy() {
       delete element.dataset.ready;
-      cancelFinale();
       pin?.kill();
       detachInteraction();
       detachCircles();

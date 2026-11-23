@@ -4,7 +4,6 @@ import { useId, type CSSProperties } from 'react';
 import { OperatingModel } from './operating-model';
 import { useOperatingModelScene, type OperatingModelSceneProps } from './operating-model-scene';
 import { carouselCirclePath } from './operating-model-diagram/carousel-profile';
-import { logoMarkPath } from './operating-model-diagram/logo-mark';
 import { initialKineticCircleStyle } from './kinetic-circles';
 import styles from './operating-model.module.css';
 
@@ -37,9 +36,6 @@ const plates = [
       <circle cx="156" cy={y - 2} r="4" />
       <path d={`M168 ${y - 5}H223m-55 6h38`} />
     </g>)}
-  </g>,
-  <g key="engineering" transform="translate(74.2 82) scale(.39)">
-    <path d={logoMarkPath} strokeWidth="4.6" />
   </g>,
 ];
 const circleSlides = [...plates, ...plates];
