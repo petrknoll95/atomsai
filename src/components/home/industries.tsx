@@ -3,10 +3,10 @@
 import { assetPath, withBasePath } from '@/lib/base-path';
 
 import { ArrowIcon } from '@/components/arrow-icon';
-import { useEffect, useLayoutEffect, useState, type CSSProperties } from 'react';
+import { useEffect, useLayoutEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { ButtonLink } from '@/components/ui';
-import { attachKineticCircles, kineticCircleOptions } from './kinetic-circles';
+import { attachKineticCircles, initialKineticCircleStyle, kineticCircleOptions } from './kinetic-circles';
 import { attachKineticCircleInteraction } from './kinetic-circle-interaction';
 import { homepageIndustries as industries } from './navigation-data';
 import styles from './proof.module.css';
@@ -14,23 +14,6 @@ import styles from './proof.module.css';
 // Two cycles provide the five visible circles plus offscreen space for seamless
 // looping. Each Embla slide contains exactly one circle, never a whole gallery.
 const circleSlides = [...industries, ...industries];
-
-function initialCircleStyle(index: number): CSSProperties {
-  const distance = ((index - 2 + circleSlides.length * 1.5) % circleSlides.length) - circleSlides.length / 2;
-  const side = Math.sign(distance);
-  const depth = Math.abs(distance);
-  const travel = depth === 0 ? '0' : depth === 1 ? String(side) : `calc(${side} * (1 + var(--near-circle)))`;
-  const mask = depth === 0 ? '0' : depth === 1 ? 'calc(1 - var(--near-circle))' : 'calc(1 - var(--far-circle))';
-  return {
-    '--slide-index': index,
-    '--circle-travel': travel,
-    '--circle-gap': distance * 8,
-    '--mask-left': side < 0 ? mask : '0',
-    '--mask-right': side > 0 ? mask : '0',
-    '--image-wash': Math.min(1, depth),
-    visibility: depth > 2 ? 'hidden' : 'visible',
-  } as CSSProperties;
-}
 
 export function Industries() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -86,7 +69,7 @@ export function Industries() {
         <div id="industry-gallery" className={styles.carouselViewport} ref={emblaRef}>
           <div className={styles.carouselTrack}>
             {circleSlides.map((industry, index) => (
-              <div key={`${industry.name}-${index}`} className={styles.carouselSlide} data-industry-circle={industry.name} style={initialCircleStyle(index)}>
+              <div key={`${industry.name}-${index}`} className={styles.carouselSlide} data-industry-circle={industry.name} style={initialKineticCircleStyle(index, 2, circleSlides.length)}>
                 <div className={styles.circle} data-industry-image>
                   <picture>
                     <source

@@ -1,10 +1,28 @@
 import type { EmblaCarouselType, EmblaOptionsType } from 'embla-carousel';
+import type { CSSProperties } from 'react';
 
 const reducedMotionQuery = '(prefers-reduced-motion: reduce)';
 export const kineticCircleOptions = {
   duration: 32,
   breakpoints: { [reducedMotionQuery]: { duration: 0 } },
 } satisfies EmblaOptionsType;
+
+export function initialKineticCircleStyle(index: number, center: number, count: number): CSSProperties {
+  const distance = ((index - center + count * 1.5) % count) - count / 2;
+  const side = Math.sign(distance);
+  const depth = Math.abs(distance);
+  const travel = depth === 0 ? '0' : depth === 1 ? String(side) : `calc(${side} * (1 + var(--near-circle)))`;
+  const mask = depth === 0 ? '0' : depth === 1 ? 'calc(1 - var(--near-circle))' : 'calc(1 - var(--far-circle))';
+  return {
+    '--slide-index': index,
+    '--circle-travel': travel,
+    '--circle-gap': distance * 8,
+    '--mask-left': side < 0 ? mask : '0',
+    '--mask-right': side > 0 ? mask : '0',
+    '--image-wash': Math.min(1, depth),
+    visibility: depth > 2 ? 'hidden' : 'visible',
+  } as CSSProperties;
+}
 
 /** Figma 186:4407: fixed circles behind 1:2:5:2:1 clipping windows. */
 export function circleGeometry(distance: number, diameter: number, compact: boolean) {

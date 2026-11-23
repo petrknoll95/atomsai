@@ -7,15 +7,15 @@ import { attachKineticCircleInteraction } from './kinetic-circle-interaction';
 import { carouselCirclePath, carouselLogoCenter, carouselLogoProfiles } from './operating-model-diagram/carousel-profile';
 import type { OperatingModelMount } from './operating-model-scene';
 
-const storyHeight = 4.4;
+const firstSnap = 1;
+const viewportsPerStep = .88;
 
 export const mountOperatingModelCarousel: OperatingModelMount = (element, options) => {
   const viewport = element.querySelector<HTMLElement>('[data-model-viewport]')!;
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const scrollLinked = options.scroll && !reduced;
-  const start = reduced || options.initialIndex > 0 ? options.initialIndex + 1 : 0;
+  const start = options.initialIndex + firstSnap;
   const tail = options.tail ?? 0;
-  const tailShare = tail / (storyHeight + tail);
   const api = EmblaCarousel(viewport, {
     ...kineticCircleOptions,
     loop: true,
@@ -23,12 +23,14 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
     startIndex: start,
   });
   // Two laps give every plate two neighboring slices on either side.
-  // The scroll sequence runs from the first mark to the next.
+  // The scroll sequence runs from the first plate to the closing mark.
   const snapCount = api.scrollSnapList().length;
   const lastSnap = snapCount / 2;
   const lastPlate = lastSnap - 1;
+  const steps = lastSnap - firstSnap;
+  const storyHeight = steps * viewportsPerStep;
+  const tailShare = tail / (storyHeight + tail);
   let pin: ScrollTrigger | undefined;
-  let enter: IntersectionObserver | undefined;
   let finale: ReturnType<typeof setTimeout> | undefined;
   let scrollSnap = start;
   let activeStop = start;
@@ -98,7 +100,7 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
   function alignPage(snap: number) {
     if (!pin) return;
     scrollSnap = snap;
-    const top = pin.start + (pin.end - pin.start) * (1 - tailShare) * snap / lastSnap;
+    const top = pin.start + (pin.end - pin.start) * (1 - tailShare) * (snap - firstSnap) / steps;
     const smoother = ScrollSmoother.get();
     if (smoother) smoother.scrollTo(top, false);
     else window.scrollTo({ top, behavior: 'instant' });
@@ -121,23 +123,22 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
 
   function syncTabs() {
     const slide = api.selectedScrollSnap() % lastSnap;
-    activeStop = requestedStop ?? (slide || (activeStop >= lastPlate ? lastSnap : 0));
+    activeStop = requestedStop ?? (slide || lastSnap);
     if (pin?.isActive && activeStop !== scrollSnap) alignPage(activeStop);
     options.onHighlight?.(Math.max(0, Math.min(activeStop, lastPlate) - 1));
     scheduleFinale();
   }
 
-  function stopIntro() {
-    enter?.disconnect();
+  function cancelFinale() {
     clearTimeout(finale);
   }
 
-  api.on('select', syncTabs).on('settle', scheduleFinale).on('pointerDown', stopIntro).on('pointerUp', scheduleFinale);
+  api.on('select', syncTabs).on('settle', scheduleFinale).on('pointerDown', cancelFinale).on('pointerUp', scheduleFinale);
 
   if (scrollLinked) {
     gsap.registerPlugin(ScrollTrigger);
     const syncCarousel = (trigger: ScrollTrigger) => {
-      const snap = Math.min(lastSnap, Math.round(trigger.progress * lastSnap / (1 - tailShare)));
+      const snap = Math.min(lastSnap, firstSnap + Math.round(trigger.progress * steps / (1 - tailShare)));
       if (snap === scrollSnap || api.internalEngine().dragHandler.pointerDown()) return;
       scrollSnap = snap;
       showStop(snap);
@@ -153,21 +154,14 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
     });
     syncCarousel(pin);
     ScrollTrigger.refresh();
-  } else if (api.selectedScrollSnap() === 0) {
-    enter = new IntersectionObserver(entries => {
-      if (!entries.some(entry => entry.isIntersecting)) return;
-      enter?.disconnect();
-      showStop(1);
-    }, { threshold: .35 });
-    enter.observe(viewport);
   }
 
   element.dataset.ready = 'true';
 
   return {
     select(index) {
-      stopIntro();
-      const snap = index + 1;
+      cancelFinale();
+      const snap = index + firstSnap;
       alignPage(snap);
       showStop(snap);
       scheduleFinale();
@@ -176,7 +170,7 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
     tailShare,
     destroy() {
       delete element.dataset.ready;
-      stopIntro();
+      cancelFinale();
       pin?.kill();
       detachInteraction();
       detachCircles();

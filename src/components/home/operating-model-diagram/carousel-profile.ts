@@ -58,7 +58,6 @@ export const carouselLogoProfiles = [20, 87.5, 172.5, 220, 267.5, 352.5, 420].ma
   const points = normalize(source, side > 0 ? 440 - anchor : anchor, side > 0 ? -1 : 1);
   return {
     offset: (anchor - 220) * markScale,
-    path: slitPath(points),
     morph(progress: number, crop: number) {
       const target = circleSegment(crop, side);
       return slitPath(points.map((value, i) => value + (target[i] - value) * progress));
