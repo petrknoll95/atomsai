@@ -18,15 +18,16 @@ const plates = [
     )))}
   </g>,
   <g key="workflows">
-    <path d="M144 160H176M224 160H235Q244 160 244 151V134M224 160H235Q244 160 244 169V186" />
+    <path d="M144 160H176M224 160H235Q244 160 244 151V134M224 160H235Q244 160 244 169V186"
+      strokeWidth="1.35" opacity=".74" />
     <rect x="76" y="141" width="68" height="38" rx="8" />
     <rect x="176" y="141" width="48" height="38" rx="8" />
     <rect x="222" y="103" width="44" height="31" rx="7" />
     <rect x="222" y="186" width="44" height="31" rx="7" />
     <path d="M94 155H126M94 164H116M190 160L197 166L210 153M235 118H253M235 202H253" />
-    <circle cx="160" cy="160" r="3" fill="currentColor" />
+    <circle cx="160" cy="160" r="3" fill="var(--palette-iris)" stroke="none" />
   </g>,
-  <g key="applications">
+  <g key="applications" strokeWidth="1.1" opacity=".85">
     <rect x="66" y="86" width="188" height="148" rx="11" />
     <path d="M66 112H254M140 112V234" />
     <path d="M81 99H82M91 99H92M101 99H102" strokeWidth="3" />
@@ -59,7 +60,7 @@ function CarouselScene(props: OperatingModelSceneProps) {
                   <clipPath id={revealId}><rect data-model-aperture x=".5" width="0" height="1" /></clipPath>
                   <clipPath id={clipId}><use href={`#${pathId}`} /></clipPath>
                   <g className={styles.carouselPainting} style={{ '--model-reveal-mask': `url(#${revealId})` } as CSSProperties}>
-                    <path id={pathId} className={styles.carouselProfile} data-model-profile d={carouselCirclePath} />
+                    <path id={pathId} className={styles.carouselProfile} data-model-profile d={carouselCirclePath} vectorEffect="non-scaling-stroke" />
                     <g clipPath={`url(#${clipId})`} className={styles.carouselArtwork}
                       fill="none" stroke="currentColor" strokeWidth="1.7"
                       strokeLinecap="round" strokeLinejoin="round">

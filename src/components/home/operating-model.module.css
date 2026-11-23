@@ -26,7 +26,7 @@
   grid-template-columns:minmax(0,1fr);
   container-type:size;
   overflow:hidden;
-  color:var(--diagram-fill);
+  color:var(--diagram-ink);
   cursor:grab;
   touch-action:pan-y pinch-zoom;
 }
@@ -49,7 +49,7 @@
 .carouselSlide[data-model-reveal-plate] .carouselPainting { clip-path:var(--model-reveal-mask); }
 .carouselPlate {
   --model-plate-inset:0px;
-  --model-plate-fill:color-mix(in srgb,var(--diagram-ink),var(--diagram-fill) calc(var(--image-wash,0) * 16%));
+  --model-outline:color-mix(in srgb,var(--diagram-ink) calc((1 - var(--image-wash,0) * .82) * 100%),transparent);
   position:relative;
   width:100%;
   height:100%;
@@ -57,7 +57,20 @@
 }
 .carouselDrawing { display:block; width:100%; height:100%; }
 .carouselProfile {
-  fill:color-mix(in srgb,var(--model-plate-fill) calc(var(--plate-opening) * 100%),var(--diagram-ink));
+  fill:color-mix(in srgb,var(--diagram-fill) calc(var(--plate-opening) * 100%),var(--diagram-ink));
+}
+.carouselViewport:not([data-model-morph]) .carouselPlate::after {
+  content:'';
+  position:absolute;
+  inset:var(--model-plate-inset);
+  border-radius:50%;
+  box-shadow:inset 0 0 0 1.5px var(--model-outline);
+  pointer-events:none;
+}
+.carouselViewport[data-model-morph] .carouselProfile {
+  stroke:var(--model-outline);
+  stroke-opacity:var(--plate-opening);
+  stroke-width:1.5px;
 }
 .carouselArtwork {
   opacity:max(0,calc(1 - var(--image-wash,0) * 2));

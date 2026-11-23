@@ -58,6 +58,7 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
     }
     const opening = distance * distance * (3 - 2 * distance);
     viewport.style.setProperty('--plate-opening', String(opening));
+    viewport.toggleAttribute('data-model-morph', distance < 1);
     if (distance >= 1) {
       if (morphing) {
         paths.forEach(path => path.setAttribute('d', carouselCirclePath));
@@ -183,6 +184,7 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
       detachCircles();
       api.destroy();
       viewport.style.removeProperty('--plate-opening');
+      viewport.removeAttribute('data-model-morph');
     },
   };
 };
