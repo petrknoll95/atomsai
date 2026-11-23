@@ -21,15 +21,15 @@ const palettes = config.palettes.map(palette => {
 });
 const articleLayouts = {
   'quotes-go-quiet': ['forest-sage', 9],
-  'no-shows': ['iris-cream', 56],
-  'speed-to-lead': ['orange-cream', 23],
-  'who-answers-at-7pm': ['deep-iris', 14],
+  'no-shows': ['gray-mist', 56],
+  'speed-to-lead': ['iris-light', 23],
+  'who-answers-at-7pm': ['iris-light', 14],
   'the-demo-was-never-the-hard-part': ['forest-sage', 4],
   'write-the-evals-before-the-prompt': ['orange-cream', 101],
-  'how-much-autonomy-should-an-agent-have': ['deep-iris', 121],
+  'how-much-autonomy-should-an-agent-have': ['iris-light', 121],
 };
 // Bias lighter ramps toward their dark stops to keep the white titles readable.
-const articleBalance = { 'iris-cream': 0.56, 'orange-cream': 0.75 };
+const articleBalance = { 'iris-light': 0.20, 'orange-cream': 0.75 };
 const jobs = articles ? posts.map(({ slug, title }) => {
   assert(Object.hasOwn(articleLayouts, slug), `Missing Offsets layout for ${slug}`);
   const [paletteId, seed] = articleLayouts[slug];
