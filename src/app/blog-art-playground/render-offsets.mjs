@@ -106,9 +106,10 @@ export async function createOffsetsRenderer({ width, height }) {
   }
 
   return {
-    /** @param {number} seed @param {string[]} colors */
-    async render(seed, colors) {
+    /** @param {number} seed @param {string[]} colors @param {number} [balance] */
+    async render(seed, colors, balance = 0) {
       renderer.updateUniformValue('SimplexNoise', 'seed', seed);
+      renderer.updateUniformValue('SimplexNoise', 'balance', balance);
       renderer.updateUniformValue('SimplexNoise', 'stops', colors.map((color, index) => ({
         color, position: index / (colors.length - 1),
       })));

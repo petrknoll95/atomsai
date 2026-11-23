@@ -83,7 +83,7 @@
 .controls fieldset { min-width: 0; }
 .controls legend { padding: 0; margin-bottom: 10px; font-size: 18px; font-weight: var(--font-weight-medium); }
 .select { display: grid; min-width: 0; gap: 6px; font-size: 14px; }
-.select select, .select input, .select textarea {
+.select select, .select input {
   width: 100%;
   min-height: 40px;
   padding: 0 10px;
@@ -91,7 +91,6 @@
   border-radius: 8px;
   color: inherit;
 }
-.select textarea { padding: 8px 10px; resize: vertical; }
 .seedControl { display: grid; gap: 10px; }
 .seedActions { display: flex; flex-wrap: wrap; gap: 8px; }
 .seedActions button {

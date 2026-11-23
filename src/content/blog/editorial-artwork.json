@@ -1,9 +1,9 @@
 {
-  "quotes-go-quiet": "/assets/blog/illustrations/quotes-go-quiet.webp",
-  "no-shows": "/assets/blog/illustrations/no-shows.webp",
-  "speed-to-lead": "/assets/blog/illustrations/speed-to-lead.webp",
-  "who-answers-at-7pm": "/assets/blog/illustrations/who-answers-at-7pm.webp",
-  "the-demo-was-never-the-hard-part": "/assets/blog/illustrations/the-demo-was-never-the-hard-part.webp",
-  "write-the-evals-before-the-prompt": "/assets/blog/illustrations/write-the-evals-before-the-prompt.webp",
-  "how-much-autonomy-should-an-agent-have": "/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.webp"
+  "quotes-go-quiet": "/assets/blog/offsets/articles/quotes-go-quiet.webp",
+  "no-shows": "/assets/blog/offsets/articles/no-shows.webp",
+  "speed-to-lead": "/assets/blog/offsets/articles/speed-to-lead.webp",
+  "who-answers-at-7pm": "/assets/blog/offsets/articles/who-answers-at-7pm.webp",
+  "the-demo-was-never-the-hard-part": "/assets/blog/offsets/articles/the-demo-was-never-the-hard-part.webp",
+  "write-the-evals-before-the-prompt": "/assets/blog/offsets/articles/write-the-evals-before-the-prompt.webp",
+  "how-much-autonomy-should-an-agent-have": "/assets/blog/offsets/articles/how-much-autonomy-should-an-agent-have.webp"
 }

@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, type CSSProperties, type FormEvent } from 'react';
 import Image from 'next/image';
 import { assetPath } from '@/lib/base-path';
+import { drawCoverText, loadCoverFont } from './cover-text.mjs';
 import config from './offsets.json';
 import { offsetCount } from './seed.mjs';
 import styles from './playground.module.css';
@@ -11,49 +12,10 @@ type Article = { slug: string; title: string };
 type Renderer = Awaited<ReturnType<typeof import('./render-offsets.mjs').createOffsetsRenderer>>;
 type RenderResult = { key: string; url: string } | { key: string; error: string };
 
-const coverFontSize = 128;
-const coverFont = (size: number) => `500 ${size}px "Founders Grotesk"`;
-
 function encodePng(canvas: HTMLCanvasElement) {
   return new Promise<Blob>((resolve, reject) => {
     canvas.toBlob(blob => blob ? resolve(blob) : reject(new Error('PNG encoding failed.')), 'image/png');
   });
-}
-
-function drawCoverText(context: CanvasRenderingContext2D, text: string) {
-  const { width, height } = context.canvas;
-  const maxWidth = width * 0.76;
-  const paragraphs = text.split(/\r?\n/).map(line => line.trim().split(/\s+/));
-  context.font = coverFont(coverFontSize);
-  const widestWord = paragraphs.flat().reduce((widest, word) => Math.max(widest, context.measureText(word).width), 0);
-  let fontSize = Math.min(coverFontSize, coverFontSize * maxWidth / Math.max(widestWord, 1));
-  context.font = coverFont(fontSize);
-
-  const lines = paragraphs.flatMap(words => {
-    const wrapped: string[] = [];
-    let line = '';
-    for (const word of words) {
-      const next = line ? `${line} ${word}` : word;
-      if (line && context.measureText(next).width > maxWidth) {
-        wrapped.push(line);
-        line = word;
-      } else {
-        line = next;
-      }
-    }
-    return [...wrapped, line];
-  });
-
-  fontSize = Math.min(fontSize, height * 0.54 / lines.length);
-  context.font = coverFont(fontSize);
-  context.fillStyle = '#fff';
-  context.textAlign = 'center';
-  context.textBaseline = 'alphabetic';
-  const lineHeight = fontSize * 1.04;
-  const ascent = context.measureText(lines[0]).actualBoundingBoxAscent;
-  const descent = context.measureText(lines[lines.length - 1]).actualBoundingBoxDescent;
-  const firstBaseline = (height - (lines.length - 1) * lineHeight + ascent - descent) / 2;
-  lines.forEach((line, index) => context.fillText(line, width / 2, firstBaseline + index * lineHeight));
 }
 
 export function Playground({ articles }: { articles: Article[] }) {
@@ -85,7 +47,7 @@ export function Playground({ articles }: { articles: Article[] }) {
     let stale = false;
     context.clearRect(0, 0, config.width, config.height);
     if (coverText) {
-      void document.fonts.load(coverFont(coverFontSize), coverText).then(() => {
+      void loadCoverFont(coverText).then(() => {
         if (!stale) drawCoverText(context, coverText);
       }, () => undefined);
     }
@@ -151,7 +113,7 @@ export function Playground({ articles }: { articles: Article[] }) {
     try {
       const image = new window.Image();
       image.src = source;
-      await Promise.all([image.decode(), document.fonts.load(coverFont(coverFontSize), coverText)]);
+      await Promise.all([image.decode(), loadCoverFont(coverText)]);
       const canvas = document.createElement('canvas');
       canvas.width = config.width;
       canvas.height = config.height;
@@ -210,7 +172,7 @@ export function Playground({ articles }: { articles: Article[] }) {
         <aside className={styles.controls} aria-label="Cover controls">
           <label className={styles.select}>
             <span>Cover text</span>
-            <textarea rows={2} value={title} onChange={event => setTitle(event.currentTarget.value)} />
+            <input type="text" value={title} onChange={event => setTitle(event.currentTarget.value)} />
           </label>
 
           <form className={styles.seedControl} onSubmit={applySeed}>
