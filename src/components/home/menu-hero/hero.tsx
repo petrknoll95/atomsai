@@ -46,7 +46,7 @@ export function MenuPatternHero({ children, productFamily }: { children: ReactNo
         <div className={`${stars.group} ${menuHero.copyEntrance}`} data-hero-copy-entrance>
           <Announcement href="#company-story" className={menuHero.announcement}>SaaS Labs is now AtomsAI</Announcement>
           <h1 id='hero-heading' tabIndex={-1} className={`display ${stars.title}`} data-text-reveal='manual'>AI that works today.<br/>Built to get better tomorrow.</h1>
-          <p className={stars.lead}>At AtomsAI, models power products. Products inform better technology. And solving new business problems gives both more to build on. Together, they make possible what no single product could.</p>
+          <p className={`${stars.lead} ${menuHero.lead}`}>At AtomsAI, models power products. Products inform better technology. And solving new business problems gives both more to build on. Together, they make possible what no single product could.</p>
           <ButtonLink href='/company/contact' variant='primary' size='large'>Talk to AtomsAI</ButtonLink>
         </div>
       </div>
