@@ -5,11 +5,6 @@
   "maxSeed": 9999,
   "palettes": [
     {
-      "id": "forest-cream",
-      "name": "Forest & cream",
-      "tokens": ["forest-shade", "forest-green", "sage-tint", "cream"]
-    },
-    {
       "id": "forest-sage",
       "name": "Forest & sage",
       "tokens": ["forest-shade", "deep-green", "sage", "stone"]
@@ -28,11 +23,6 @@
       "id": "orange-cream",
       "name": "Orange & cream",
       "tokens": ["crimson", "orange", "apricot", "cream"]
-    },
-    {
-      "id": "crimson-apricot",
-      "name": "Crimson & apricot",
-      "tokens": ["grey-5", "crimson", "orange", "apricot"]
     }
   ]
 }

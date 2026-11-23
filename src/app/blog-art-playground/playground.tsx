@@ -11,19 +11,61 @@ type Article = { slug: string; title: string };
 type Renderer = Awaited<ReturnType<typeof import('./render-offsets.mjs').createOffsetsRenderer>>;
 type RenderResult = { key: string; url: string } | { key: string; error: string };
 
+const coverFontSize = 128;
+const coverFont = (size: number) => `500 ${size}px "Founders Grotesk"`;
+
 function encodePng(canvas: HTMLCanvasElement) {
   return new Promise<Blob>((resolve, reject) => {
     canvas.toBlob(blob => blob ? resolve(blob) : reject(new Error('PNG encoding failed.')), 'image/png');
   });
 }
 
+function drawCoverText(context: CanvasRenderingContext2D, text: string) {
+  const { width, height } = context.canvas;
+  const maxWidth = width * 0.76;
+  const paragraphs = text.split(/\r?\n/).map(line => line.trim().split(/\s+/));
+  context.font = coverFont(coverFontSize);
+  const widestWord = paragraphs.flat().reduce((widest, word) => Math.max(widest, context.measureText(word).width), 0);
+  let fontSize = Math.min(coverFontSize, coverFontSize * maxWidth / Math.max(widestWord, 1));
+  context.font = coverFont(fontSize);
+
+  const lines = paragraphs.flatMap(words => {
+    const wrapped: string[] = [];
+    let line = '';
+    for (const word of words) {
+      const next = line ? `${line} ${word}` : word;
+      if (line && context.measureText(next).width > maxWidth) {
+        wrapped.push(line);
+        line = word;
+      } else {
+        line = next;
+      }
+    }
+    return [...wrapped, line];
+  });
+
+  fontSize = Math.min(fontSize, height * 0.54 / lines.length);
+  context.font = coverFont(fontSize);
+  context.fillStyle = '#fff';
+  context.textAlign = 'center';
+  context.textBaseline = 'alphabetic';
+  const lineHeight = fontSize * 1.04;
+  const ascent = context.measureText(lines[0]).actualBoundingBoxAscent;
+  const descent = context.measureText(lines[lines.length - 1]).actualBoundingBoxDescent;
+  const firstBaseline = (height - (lines.length - 1) * lineHeight + ascent - descent) / 2;
+  lines.forEach((line, index) => context.fillText(line, width / 2, firstBaseline + index * lineHeight));
+}
+
 export function Playground({ articles }: { articles: Article[] }) {
   const [palette, setPalette] = useState(config.palettes[0]);
   const [article, setArticle] = useState('');
-  const [square, setSquare] = useState(false);
+  const [title, setTitle] = useState('');
+  const [exporting, setExporting] = useState(false);
+  const [exportError, setExportError] = useState(false);
   const [draft, setDraft] = useState(String(config.defaultSeed));
   const [seed, setSeed] = useState(config.defaultSeed);
   const [result, setResult] = useState<RenderResult | null>(null);
+  const caption = useRef<HTMLCanvasElement>(null);
   const renderer = useRef<Promise<Renderer> | null>(null);
   const queue = useRef(Promise.resolve());
   const key = `${palette.id}:${seed}`;
@@ -35,6 +77,20 @@ export function Playground({ articles }: { articles: Article[] }) {
   const previewSeed = renderUrl ? seed : config.defaultSeed;
   const seedSuffix = renderUrl ? `-${seed}` : '';
   const filename = `${article || `offsets-${palette.id}${seedSuffix}`}-cover.png`;
+  const coverText = title.trim();
+
+  useEffect(() => {
+    const context = caption.current?.getContext('2d');
+    if (!context) return;
+    let stale = false;
+    context.clearRect(0, 0, config.width, config.height);
+    if (coverText) {
+      void document.fonts.load(coverFont(coverFontSize), coverText).then(() => {
+        if (!stale) drawCoverText(context, coverText);
+      }, () => undefined);
+    }
+    return () => { stale = true; };
+  }, [coverText]);
 
   useEffect(() => {
     if (seed === config.defaultSeed) return;
@@ -89,6 +145,33 @@ export function Playground({ articles }: { articles: Article[] }) {
     setSeed(next);
   }
 
+  async function downloadWithText() {
+    setExporting(true);
+    setExportError(false);
+    try {
+      const image = new window.Image();
+      image.src = source;
+      await Promise.all([image.decode(), document.fonts.load(coverFont(coverFontSize), coverText)]);
+      const canvas = document.createElement('canvas');
+      canvas.width = config.width;
+      canvas.height = config.height;
+      const context = canvas.getContext('2d', { alpha: false });
+      if (!context) throw new Error('The export canvas could not be opened.');
+      context.drawImage(image, 0, 0, canvas.width, canvas.height);
+      drawCoverText(context, coverText);
+      const url = URL.createObjectURL(await encodePng(canvas));
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = filename;
+      link.click();
+      window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+    } catch {
+      setExportError(true);
+    } finally {
+      setExporting(false);
+    }
+  }
+
   return (
     <main className={styles.page}>
       <header className={styles.header}>
@@ -96,31 +179,40 @@ export function Playground({ articles }: { articles: Article[] }) {
           <h1 id="hero-heading" className="display">Blog art playground</h1>
           <p>Seeded Offsets stills in the AtomsAI palette.</p>
         </div>
-        <a href={pending ? undefined : source} role={pending ? 'link' : undefined} download={filename}
-          className={styles.download} aria-disabled={pending}>Download PNG</a>
+        {coverText ? (
+          <button type="button" className={styles.download} disabled={pending || exporting} onClick={downloadWithText}>
+            {exporting ? 'Preparing PNG…' : 'Download PNG'}
+          </button>
+        ) : (
+          <a href={pending ? undefined : source} role={pending ? 'link' : undefined} download={filename}
+            className={styles.download} aria-disabled={pending}>Download PNG</a>
+        )}
       </header>
 
       <div className={styles.workspace}>
         <section className={styles.stage} aria-labelledby="preview-heading">
           <div className={styles.stageHeader}>
             <h2 id="preview-heading">Preview</h2>
-            <div className={styles.viewSwitch} role="group" aria-label="Preview crop">
-              <button type="button" aria-pressed={!square} onClick={() => setSquare(false)}>Wide cover</button>
-              <button type="button" aria-pressed={square} onClick={() => setSquare(true)}>Square crop</button>
-            </div>
           </div>
-          <div className={styles.preview} data-square={square || undefined} aria-busy={pending}>
+          <div className={styles.preview} aria-busy={pending}>
             <Image src={source} alt={`Offsets in ${palette.name}`} fill unoptimized
               sizes="(max-width: 820px) 90vw, 65vw" />
+            <canvas ref={caption} className={styles.caption} width={config.width} height={config.height} aria-hidden="true" />
           </div>
           <div className={styles.stageFooter}>
             <p aria-live="polite">{pending ? 'Rendering still…' : `Seed ${previewSeed} · ${offsetCount(previewSeed)} offsets`}</p>
             <p>{config.width} × {config.height} PNG</p>
           </div>
           {message && <p className={styles.message} role="status">{message}</p>}
+          {exportError && <p className={styles.message} role="status">The PNG could not be exported. Try downloading it again.</p>}
         </section>
 
         <aside className={styles.controls} aria-label="Cover controls">
+          <label className={styles.select}>
+            <span>Cover text</span>
+            <textarea rows={2} value={title} onChange={event => setTitle(event.currentTarget.value)} />
+          </label>
+
           <form className={styles.seedControl} onSubmit={applySeed}>
             <label className={styles.select}>
               <span>Noise seed</span>
