@@ -22,8 +22,7 @@ export function mountHeroScroll({ stage, field, content }: Mount) {
       moveCopy(copyOffset);
       moveField(offset * .45);
       field.style.setProperty('--hero-field-offset', `${offset * .45}px`);
-      // Shorten the fades by the same amount so their top follows the copy.
-      stage.style.setProperty('--hero-copy-offset', `${copyOffset}px`);
+      field.style.setProperty('--hero-fade-scroll', `${offset}px`);
       previousOffset = offset;
       previousCopyOffset = copyOffset;
     }
@@ -37,7 +36,7 @@ export function mountHeroScroll({ stage, field, content }: Mount) {
       reduced.removeEventListener('change', update);
       gsap.set([field, content], { clearProps: 'transform' });
       field.style.removeProperty('--hero-field-offset');
-      stage.style.removeProperty('--hero-copy-offset');
+      field.style.removeProperty('--hero-fade-scroll');
     },
   };
 }

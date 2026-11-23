@@ -7,6 +7,7 @@
 /* The logo row closes the first viewport, with the stats continuing below it. */
 .stage {
   --product-fade-height: clamp(80px, 18svh, 200px);
+  --copy-bottom-inset: calc(var(--product-fade-height) * .7);
   position: relative;
   display: grid;
   grid-template-rows: 1fr auto;
@@ -23,7 +24,7 @@
 .productFade {
   position: absolute;
   inset: auto 0 100%;
-  height: max(32px, calc(var(--product-fade-height) - var(--hero-copy-offset, 0px)));
+  height: var(--product-fade-height);
   z-index: -1;
   pointer-events: none;
 }
@@ -42,10 +43,11 @@
   .productFooter .foldProducts a > :first-child { width: clamp(28px, 7.5vw, 32px); height: clamp(28px, 7.5vw, 32px); }
 }
 @media (max-height: 740px) {
-  .stage { --product-fade-height: 64px; }
-  .backdrop { --hero-fade-scale: .9; }
+  /* Keep the compact optical alignment as the fade extends behind the copy. */
+  .stage { --copy-bottom-inset: 44.8px; }
 }
 @media (max-width: 767px) and (max-height: 740px) {
+  .stage { --product-fade-height: 80px; }
   .hero .copyEntrance { gap: 16px; }
 }
 /* Short landscape screens need room for both the copy and the complete logo row. */
@@ -70,7 +72,7 @@
   position: absolute;
   inset-inline: 0;
   bottom: -24px;
-  height: calc(var(--hero-fade-height, 42%) * var(--hero-fade-scale, 1) + 24px - var(--hero-copy-offset, 0px));
+  height: calc(var(--hero-fade-height, 42%) + 24px + var(--hero-fade-scroll, 0px) * var(--hero-fade-growth, .12));
   z-index: 1;
   pointer-events: none;
   /* Keep each fade's bottom aligned to the section during pattern parallax. */
@@ -119,7 +121,7 @@
   position: relative;
   inset: auto;
   height: auto;
-  padding-block: calc(var(--header-height) + 12px) calc(var(--product-fade-height) * .7);
+  padding-block: calc(var(--header-height) + 12px) var(--copy-bottom-inset);
   z-index: 1;
   pointer-events: none;
 }

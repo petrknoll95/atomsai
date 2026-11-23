@@ -34,7 +34,8 @@ export function MenuHeroBackdrop({ onAvailabilityChange }: { onAvailabilityChang
     // A symmetric parabola keeps the central pair low and lifts both edges.
     return {
       backgroundImage: slitFade,
-      '--hero-fade-height': `${42 + 24 * distance ** 2}%`,
+      '--hero-fade-height': `${42 + 36 * distance ** 2}%`,
+      '--hero-fade-growth': .12 + .45 * distance ** 2,
     } as CSSProperties;
   };
   const left = (index: number) => `calc((100vw - var(--menu-track) * var(--menu-columns)) / 2 + var(--menu-track) * ${index - 1})`;
