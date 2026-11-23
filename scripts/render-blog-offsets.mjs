@@ -18,7 +18,7 @@ const palettes = config.palettes.map(palette => {
   return { id: palette.id, colors: palette.tokens.map(token => swatches.get(token)) };
 });
 
-const shaderModules = ['shaders/core', 'shaders/core/BarShift', 'shaders/core/BlueNoise', 'shaders/core/GridDistortion', 'shaders/core/SimplexNoise', 'shaders/std'];
+const shaderModules = ['shaders/core', 'shaders/core/BarShift', 'shaders/core/BlueNoise', 'shaders/core/SimplexNoise', 'shaders/std'];
 const moduleRoot = path.dirname(fileURLToPath(import.meta.resolve('shaders/core')));
 const imports = Object.fromEntries(shaderModules.map(specifier => [specifier, '/shaders/' + path.relative(moduleRoot, fileURLToPath(import.meta.resolve(specifier)))]));
 const origin = 'http://localhost:3219';

@@ -1,9 +1,8 @@
 import { createGpuUniformsMap, rootPassthrough, shaderRendererGPU } from 'shaders/core';
 import barShift from 'shaders/core/BarShift';
 import blueNoise from 'shaders/core/BlueNoise';
-import gridDistortion from 'shaders/core/GridDistortion';
 import simplexNoise from 'shaders/core/SimplexNoise';
-import { defineShader, math, p, uniformOf, warps } from 'shaders/std';
+import { defineShader, math, p, uniformOf, warps, wgsl } from 'shaders/std';
 import { offsetCount } from './seed.mjs';
 
 const shiftIntensity = 0.15;
@@ -25,6 +24,36 @@ const offsetBars = defineShader({
       },
     };
   },
+});
+
+const horizontalOffsets = defineShader({
+  name: 'HorizontalOffsets',
+  props: {
+    gridSeed: { default: 0 },
+    coverSpan: { default: 1 },
+  },
+  effect: wgsl`
+    let columns = 6.0;
+    let rows = 4.0;
+    let coverY = (uv.y - 0.5) / coverSpan + 0.5;
+    let row = u32(clamp(floor(coverY * rows), 0.0, rows - 1.0));
+    let cell = uv.x * columns;
+    let column = floor(cell);
+    let anchors = vec2f(column, column + 1.0);
+
+    // Hash the adjacent grid anchors independently for each seed and row.
+    var hash = vec2u(u32(gridSeed) * 747796405u + row * 2891336453u);
+    hash += vec2u(anchors) * 277803737u;
+    hash = (hash ^ (hash >> vec2u(16u))) * 2246822519u;
+    hash = hash ^ (hash >> vec2u(13u));
+    let offsets = (vec2f(hash & vec2u(65535u)) / 65535.0 * 2.0 - 1.0) * 0.052;
+
+    // Fix both edges. Interpolation keeps each row in bounds and preserves every bar.
+    let interior = select(offsets, vec2f(0.0), anchors <= vec2f(0.0));
+    let anchored = select(interior, vec2f(0.0), anchors >= vec2f(columns));
+    let offset = mix(anchored.x, anchored.y, fract(cell));
+    return textureSample(childTexture, childSampler, vec2f(uv.x + offset, uv.y));
+  `,
 });
 
 /** @param {{ width: number, height: number }} dimensions */
@@ -60,7 +89,7 @@ export async function createOffsetsRenderer({ width, height }) {
     const layers = [
       { definition: simplexNoise, props: { colorSpace: 'oklab', scale: noiseScale + Math.log(heightRatio), contrast: -.18, speed: 0 } },
       { definition: offsetBars, props: { intensity: shiftIntensity / heightRatio, edges: 'stretch' } },
-      { definition: gridDistortion, props: { decay: 8.3, gridSize: 6, intensity: 1.5, radius: 3 } },
+      { definition: horizontalOffsets, props: { coverSpan: 1 / heightRatio } },
       { definition: blueNoise, props: {}, blendMode: 'overlay', opacity: .12 },
     ];
     layers.forEach(({ definition, props, blendMode = 'normal', opacity = 1 }, renderOrder) => {
@@ -81,6 +110,7 @@ export async function createOffsetsRenderer({ width, height }) {
         color, position: index / (colors.length - 1),
       })));
       renderer.updateUniformValue(offsetBars.name, 'count', offsetCount(seed));
+      renderer.updateUniformValue(horizontalOffsets.name, 'gridSeed', seed);
       renderer.updateUniformValue('BlueNoise', 'stops', [
         { color: colors[colors.length - 1], position: 0 }, { color: colors[0], position: 1 },
       ]);
