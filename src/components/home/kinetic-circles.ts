@@ -86,6 +86,7 @@ export function attachKineticCircles(api: EmblaCarouselType, renderCustom?: (fra
     }
     if (settledPosition !== undefined) position = settledPosition;
     if (renderCustom?.({ position, width, diameter, origins, compact })) return;
+    const maskScale = diameter ? 1 / diameter : 0;
     slides.forEach((slide, index) => {
       const distance = loop
         ? ((index - position + slides.length * 1.5) % slides.length) - slides.length / 2
@@ -94,6 +95,8 @@ export function attachKineticCircles(api: EmblaCarouselType, renderCustom?: (fra
       const x = (width - diameter) / 2 + geometry.x - origins[index];
       slide.style.transform = `translate3d(${x}px, 0, 0)`;
       slide.style.clipPath = `inset(0 ${geometry.right}px 0 ${geometry.left}px)`;
+      slide.style.setProperty('--mask-left', String(geometry.left * maskScale));
+      slide.style.setProperty('--mask-right', String(geometry.right * maskScale));
       slide.style.visibility = geometry.visible ? 'visible' : 'hidden';
       slide.style.setProperty('--image-wash', String(geometry.wash));
     });

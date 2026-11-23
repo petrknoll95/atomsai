@@ -78,12 +78,15 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
       const profile = carouselLogoProfiles[slot + carouselLogoCenter];
       slide.toggleAttribute('data-model-reveal-plate', slot === 0);
       if (slot === 0) {
+        const inset = String((1 - aperture) / 2);
         slide.style.visibility = 'visible';
         slide.style.transform = `translate3d(${left - origins[index]}px, 0, 0)`;
         slide.style.clipPath = 'none';
+        slide.style.setProperty('--mask-left', inset);
+        slide.style.setProperty('--mask-right', inset);
         slide.style.setProperty('--image-wash', '0');
         paths[index].setAttribute('d', carouselCirclePath);
-        apertures[index].setAttribute('x', String((1 - aperture) / 2));
+        apertures[index].setAttribute('x', inset);
         apertures[index].setAttribute('width', String(aperture));
         return;
       }

@@ -27,7 +27,7 @@ function normalize(points: number[], anchor: number, side: number) {
 function slitPath(points: number[]) {
   const coords = (start: number, size: number) =>
     points.slice(start, start + size).map(value => Number(value.toFixed(5))).join(' ');
-  return `M${coords(0, 2)}C${coords(2, 6)}L${coords(8, 2)}C${coords(10, 6)}`;
+  return `M${coords(0, 2)}C${coords(2, 6)}L${coords(8, 2)}C${coords(10, 6)}Z`;
 }
 
 // Two tangent cubic arcs describe a circle segment to the right of its chord.

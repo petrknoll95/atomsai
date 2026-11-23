@@ -37,13 +37,15 @@
   touch-action:pan-y pinch-zoom;
 }
 .carouselSlide {
+  --cut-left:calc(var(--mask-left) * 100%);
+  --cut-right:calc(var(--mask-right) * 100%);
   position:relative;
   flex:0 0 var(--circle-size);
   min-width:0;
   height:100%;
   will-change:transform,clip-path;
   transform:translateX(calc((100cqw - var(--circle-size)) / 2 + (var(--circle-travel) - var(--slide-index)) * var(--circle-size) + var(--circle-gap) * 1px));
-  clip-path:inset(0 calc(var(--mask-right) * 100%) 0 calc(var(--mask-left) * 100%));
+  clip-path:inset(0 var(--cut-right) 0 var(--cut-left));
 }
 .carouselSlide[data-model-reveal-plate] { --plate-opening:1; }
 .carouselSlide[data-model-reveal-plate] .carouselPainting { clip-path:var(--model-reveal-mask); }
@@ -59,15 +61,24 @@
 .carouselProfile {
   fill:color-mix(in srgb,var(--diagram-fill) calc(var(--plate-opening) * 100%),var(--diagram-ink));
 }
-.carouselViewport:not([data-model-morph]) .carouselPlate::after {
+/* Color only the inner edge of the intersection between the disc and its crop. */
+.carouselViewport:not([data-model-morph]) .carouselPlate::after,
+.carouselSlide[data-model-reveal-plate] .carouselPlate::after {
+  --outline-width:1.5px;
+  --inner-radius:calc(100% - var(--model-plate-inset) - var(--outline-width));
+  --inner-left:calc(var(--cut-left) + var(--outline-width));
+  --inner-right:calc(100% - var(--cut-right) - var(--outline-width));
   content:'';
   position:absolute;
-  inset:var(--model-plate-inset);
-  border-radius:50%;
-  box-shadow:inset 0 0 0 1.5px var(--model-outline);
+  inset:0;
+  background:var(--model-outline);
+  mask-image:
+    radial-gradient(circle closest-side, transparent calc(var(--inner-radius) - .25px), #000 calc(var(--inner-radius) + .25px)),
+    linear-gradient(to right, #000 var(--inner-left), transparent var(--inner-left) var(--inner-right), #000 var(--inner-right));
   pointer-events:none;
 }
-.carouselViewport[data-model-morph] .carouselProfile {
+.carouselSlide[data-model-reveal-plate] .carouselPlate::after { clip-path:inset(0 var(--cut-right) 0 var(--cut-left)); }
+.carouselViewport[data-model-morph] .carouselSlide:not([data-model-reveal-plate]) .carouselProfile {
   stroke:var(--model-outline);
   stroke-opacity:var(--plate-opening);
   stroke-width:1.5px;
