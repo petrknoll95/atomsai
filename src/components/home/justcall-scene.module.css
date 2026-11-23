@@ -7,11 +7,11 @@
   --ui-wrapper-radius: 1.25rem;
   --ui-wrapper-padding: .25em;
   --ui-inner-radius: max(0em, calc(var(--ui-wrapper-radius) - var(--ui-wrapper-padding)));
-  --ui-surface: var(--palette-cream);
+  --ui-surface: var(--scene-soft, var(--palette-cream));
   --ui-ink: var(--palette-deep-green);
   --ui-muted: color-mix(in display-p3, var(--palette-deep-green) 58%, transparent);
   --ui-line: color-mix(in display-p3, var(--palette-deep-green) 10%, transparent);
-  --ui-tint: var(--palette-cream);
+  --ui-tint: var(--scene-soft, var(--palette-cream));
   --ui-soft: var(--palette-cream);
   position: relative; width: 48em; height: 45em;
   font-family: var(--font-sans); font-size: inherit; line-height: 1.45;
@@ -58,7 +58,7 @@
 .pagination { display: flex; align-items: center; gap: .75em; }
 .pagination > span { display: grid; place-items: center; width: 2em; height: 2em; border: .0625em solid; border-radius: .4em; }
 .foreground { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: grid; grid-template-columns: 19em 26em; gap: 4em; align-items: start; width: 49em; }
-.analytics, .conversation { padding: var(--ui-wrapper-padding); background: color-mix(in srgb, var(--palette-cream-tint) 95%, transparent); backdrop-filter: blur(1.25em); border: 0; border-radius: var(--ui-wrapper-radius); }
+.analytics, .conversation { padding: var(--ui-wrapper-padding); background: var(--scene-shell, color-mix(in srgb, var(--palette-cream-tint) 95%, transparent)); backdrop-filter: blur(1.25em); border: 0; border-radius: var(--ui-wrapper-radius); }
 .analytics { width: 19em; }
 .tabsWrapper { padding: calc(var(--ui-content-inset) - .75em) calc(var(--ui-content-inset) - .75em) 0; }
 .tabs, .callTabs { display: flex; align-items: center; justify-content: flex-start; gap: .35em; white-space: nowrap; color: var(--ui-muted); }
@@ -120,7 +120,7 @@
 /* Stencil text stays clearer than its borders and decorative linework. */
 .dashboard { background: transparent; }
 .dashboard, .dashboard * {
-  color: color-mix(in display-p3, var(--palette-cream) 24%, var(--palette-forest-shade));
+  color: var(--scene-outline, color-mix(in display-p3, var(--palette-cream) 24%, var(--palette-forest-shade)));
   border-color: color-mix(in srgb, currentColor 45%, transparent);
 }
 .dashboard .live { height: 2.25em; background: transparent; }

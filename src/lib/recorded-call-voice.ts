@@ -14,15 +14,18 @@ export function recordedCallVoice(audio: HTMLAudioElement): CallVoice {
     });
   };
   return {
-    speak(line, ended, onError) {
+    speak(line, ended, onError, progress) {
       request++;
-      audio.onended = audio.onerror = null;
+      audio.onended = audio.onerror = audio.ontimeupdate = null;
       audio.pause();
       failed = onError;
       paused = finished = false;
       if (!line.audio) { onError(); return; }
       audio.src = line.audio;
-      audio.onended = () => { finished = true; ended(); };
+      const source = audio.src;
+      const reportProgress = () => { if (audio.currentSrc === source) progress?.(audio.currentTime); };
+      audio.ontimeupdate = reportProgress;
+      audio.onended = () => { finished = true; reportProgress(); ended(); };
       audio.onerror = onError;
       play();
     },
@@ -32,7 +35,7 @@ export function recordedCallVoice(audio: HTMLAudioElement): CallVoice {
       request++;
       paused = true;
       failed = undefined;
-      audio.onended = audio.onerror = null;
+      audio.onended = audio.onerror = audio.ontimeupdate = null;
       audio.pause();
       audio.removeAttribute('src');
       audio.load();

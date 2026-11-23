@@ -3,6 +3,7 @@
 import { ArrowIcon } from '@/components/arrow-icon';
 import { useEffect, useRef } from 'react';
 import type { CallLine, CallPlayback } from '@/lib/scripted-call-player';
+import { justCallExamples } from './application-examples';
 import { callTime } from './use-scripted-call';
 import styles from './justcall-scene.module.css';
 
@@ -30,6 +31,13 @@ function ChevronIcon({ direction = 'down' }: { direction?: 'down' | 'left' | 'ri
 export function JustCallScene({ compact = false, example, demo }: { compact?: boolean; example?: { caller: string; reply: string; followUp: string }; demo?: JustCallDemo } = {}) {
   const transcript = useRef<HTMLDivElement>(null);
   const lineIndex = demo?.playback.line;
+  const callExample = justCallExamples[0];
+  const previewLines: CallLine[] = example ? [
+    { speaker: 'caller', text: example.caller },
+    { speaker: 'agent', text: example.reply },
+    { speaker: 'caller', text: example.followUp },
+  ] : callExample.lines;
+  const visibleLines = demo ? demo.lines.slice(0, Math.max(1, demo.playback.line + 1)) : previewLines;
   useEffect(() => {
     const element = transcript.current;
     if (element) element.scrollTo({ top: element.scrollHeight, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
@@ -84,19 +92,15 @@ export function JustCallScene({ compact = false, example, demo }: { compact?: bo
         <div className={styles.callTabs}>{demo ? <>
           <button type="button" onClick={demo.onHandoff} disabled={demo.handedOff || demo.playback.phase === 'idle' || demo.playback.phase === 'complete'}>{demo.handedOff ? 'Handed off' : 'Hand to human'}</button>
           <button type="button" onClick={demo.onSms} disabled={demo.playback.phase !== 'complete' || demo.handedOff || demo.smsSent}>{demo.smsSent ? 'SMS sent' : 'Send SMS'}</button>
-        </> : <><span>Web Call</span><span>Phone Call</span></>}</div>
+        </> : <><span>Hand to human</span><span>Send SMS</span></>}</div>
         <div ref={transcript} className={`${styles.transcript} ${demo ? styles.demoTranscript : ''}`} role={demo ? 'log' : undefined} aria-label={demo ? 'JustCall conversation' : undefined} aria-live="polite" tabIndex={demo ? 0 : undefined}>
-          {demo ? demo.lines.slice(0, Math.max(1, demo.playback.line + 1)).map((line, index) => <div key={`${index}-${line.text}`}><p className={styles.speaker}>{line.speaker === 'caller' ? 'You' : line.speaker === 'human' ? 'Maya' : 'Steven Carter'}:</p><p>{line.text}</p></div>) : <>
-          <div><p className={styles.speaker}>You:</p><p>{example?.caller ?? 'Hi John, can we schedule the sink installation?'}</p></div>
-          <div><p className={styles.speaker}>Steven Carter:</p><p>{example?.reply ?? 'Of course! Saturday at 9 AM works.'}</p></div>
-          <div><p className={styles.speaker}>You:</p><p>{example?.followUp ?? 'Great, I’ll have everything ready.'}</p></div>
-          </>}
+          {visibleLines.map((line, index) => <div key={`${index}-${line.text}`}><p className={styles.speaker}>{line.speaker === 'caller' ? 'You' : line.speaker === 'human' ? 'Maya' : 'Steven Carter'}:</p><p>{line.text}</p></div>)}
         </div>
-        <div className={styles.callBar}><span className={`${styles.avatar} ${styles.avatarPhoto}`} /><div className={styles.callInfo}><p className={styles.speaker}>{demo?.handedOff ? 'Maya' : 'Steven Carter'}</p><p className={styles.muted}>{demo ? callTime(demo.playback.elapsed) : '01:16'}</p></div>{demo ? <>
+        <div className={styles.callBar}><span className={`${styles.avatar} ${styles.avatarPhoto}`} /><div className={styles.callInfo}><p className={styles.speaker}>{demo?.handedOff ? 'Maya' : 'Steven Carter'}</p><p className={styles.muted}>{demo ? callTime(demo.playback.elapsed) : 'Call complete'}</p></div>{demo ? <>
           <button type="button" data-justcall-play className={`${styles.hangup} ${styles.play}`} onClick={demo.onToggle} aria-label={demo.playback.phase === 'playing' ? 'Pause JustCall conversation' : demo.playback.phase === 'paused' ? 'Resume JustCall conversation' : 'Play JustCall conversation'}><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">{demo.playback.phase === 'playing' ? <path d="M6 5h4v14H6zm8 0h4v14h-4z" /> : <path d="m8 5 11 7-11 7z" />}</svg></button>
           <button type="button" className={styles.replay} onClick={demo.onReplay} aria-label="Replay JustCall conversation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6" /></svg></button>
-        </> : <span className={styles.hangup}><PhoneIcon /></span>}</div>
-        {demo && <p className={styles.demoStatus} role="status">{demo.playback.phase === 'idle' ? 'Ready to call' : demo.playback.phase === 'paused' ? 'Paused' : demo.status}</p>}
+        </> : <span className={`${styles.hangup} ${styles.play}`}><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m8 5 11 7-11 7z" /></svg></span>}</div>
+        <p className={styles.demoStatus} role={demo ? 'status' : undefined}>{demo ? demo.playback.phase === 'idle' ? 'Ready to call' : demo.playback.phase === 'paused' ? 'Paused' : demo.status : callExample.outcome}</p>
       </div>
     </div>
   </div>;

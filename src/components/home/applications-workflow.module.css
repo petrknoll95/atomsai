@@ -2,13 +2,7 @@
 /* Header matches the customer stories header that follows (proof.module.css .storyHeader). */
 .sectionHeading { margin-bottom: 24px; max-width: 960px; font-size: var(--text-display-large); line-height: .95; text-align: left; text-wrap: balance; color: var(--color-foreground); }
 .panel {
-  --scene-cream: var(--palette-cream);
-  --scene-paper: var(--palette-paper);
-  --scene-ink: var(--palette-deep-green);
-  --scene-muted: color-mix(in display-p3, var(--palette-deep-green) 58%, transparent);
-  --scene-line: color-mix(in display-p3, var(--palette-deep-green) 10%, transparent);
-  --scene-soft: var(--palette-cream-tint);
-  --scene-success: color-mix(in display-p3, var(--palette-forest-green) 16%, var(--palette-paper));
+  composes: palette from './application-scene-theme.module.css';
   display: grid; grid-template-columns: minmax(0, .88fr) minmax(0, 1fr); gap: 24px;
   padding: 12px; border-radius: 16px; overflow: hidden; background: var(--palette-forest-shade);
 }
@@ -33,8 +27,7 @@ html .trigger:focus-visible { outline-color: transparent; box-shadow: none; }
 @media(pointer:coarse) { .detailCopy :is(a,button) { min-height: 44px; } }
 .detailCopy :is(a,button) span { transition: transform .3s ease; }
 .detailCopy :is(a,button):is(:hover,:focus-visible) span { transform: translateX(2px); }
-.audioError { margin-top: 12px; color: var(--palette-cream); font-size: var(--text-caption); }
-.visual { --visual-radius: 10px; container-type: inline-size; position: relative; display:flex; flex-direction:column; width:100%; min-width: 0; min-height: 690px; padding:24px; gap:16px; border-radius: var(--visual-radius); overflow: clip; isolation: isolate; background: color-mix(in display-p3, var(--palette-cream) 4%, var(--palette-forest-shade)); }
+.visual { --visual-radius: 10px; container-type: inline-size; position: relative; display:flex; flex-direction:column; width:100%; min-width: 0; min-height: 690px; padding:24px; gap:16px; border-radius: var(--visual-radius); overflow: clip; isolation: isolate; background: var(--scene-frame); }
 .scenes { position:relative; display:grid; align-items:center; flex:1; min-height:320px; }
 .scene { position: absolute; inset: 0; display: grid; place-items: center; visibility: hidden; opacity: 0; transition: opacity .16s ease, visibility 0s .16s; }
 .scene[data-active='true'] { visibility: visible; opacity: 1; transition: none; }
@@ -93,10 +86,8 @@ html .trigger:focus-visible { outline-color: transparent; box-shadow: none; }
   .section *, .section *::before { animation: none !important; transition: none !important; }
 }
 
-/* Only the host sets the size: the complete JustCall system uses em units. */
-.justCallComposition { font-size:var(--scene-font-size,8px); }
-/* JustCall and PyAI compositions leave room in the frame; draw them a little larger. */
-.scene:is([data-application-scene='0'], [data-application-scene='2']) .justCallComposition { font-size:calc(var(--scene-font-size,8px) * 1.12); }
+/* All three scenes scale from the same type and spacing. */
+.justCallComposition { font-size:calc(var(--scene-font-size,8px) * 1.12); }
 
 .scene:has(> .helpwiseComposition) { inset: -24px 0; }
 .helpwiseComposition { position: absolute; top: 3em; left: 3em; font-size: max(14px, 2.4cqw); }
@@ -105,8 +96,8 @@ svg.productLogo{background:transparent;}
 
 .exampleControls{position:relative;z-index:1;flex:none;}
 .choices{display:flex;gap:6px;flex-wrap:wrap;}
-.choices button{--button-fill:var(--color-secondary);--button-clip-radius:var(--radius-control);display:inline-flex;align-items:center;justify-content:center;min-height:32px;padding:6px 16px;border:0;border-radius:var(--radius-control);font-size:var(--text-label);font-weight:var(--font-weight-medium);font-variation-settings:'wght' var(--font-weight-medium),'ital' 100;line-height:20px;color:var(--color-secondary-foreground);cursor:pointer;transition:background-color .3s ease,color .3s ease,var(--focus-transition);}
-.choices button:is(:hover,:focus-visible),.choices button[aria-pressed='true']{--button-fill:var(--color-primary);color:var(--color-primary-foreground);}
+.choices button{--button-fill:color-mix(in display-p3,var(--scene-paper) 10%,transparent);--button-clip-radius:var(--radius-control);display:inline-flex;align-items:center;justify-content:center;min-height:32px;padding:6px 16px;border:0;border-radius:var(--radius-control);font-size:var(--text-label);font-weight:var(--font-weight-medium);font-variation-settings:'wght' var(--font-weight-medium),'ital' 100;line-height:20px;color:var(--scene-paper);cursor:pointer;transition:background-color .3s ease,color .3s ease,var(--focus-transition);}
+.choices button:is(:hover,:focus-visible),.choices button[aria-pressed='true']{--button-fill:var(--scene-paper);color:var(--scene-ink);}
 .choices button:focus-visible{outline:2px solid var(--palette-iris-light);outline-offset:3px;}
 .copy{gap:32px;}
 @media(max-width:767px){.visual{min-height:440px;padding:16px;}.accordion{order:1;}.visual{order:2;}}

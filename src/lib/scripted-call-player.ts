@@ -2,15 +2,16 @@ export type CallLine = { speaker: 'agent' | 'caller' | 'human'; text: string; au
 export type CallPlayback = {
   phase: 'idle' | 'playing' | 'paused' | 'complete' | 'error';
   line: number;
+  lineElapsed: number;
   elapsed: number;
 };
 export interface CallVoice {
-  speak(line: CallLine, ended: () => void, failed: () => void): void;
+  speak(line: CallLine, ended: () => void, failed: () => void, progress?: (seconds: number) => void): void;
   pause(): void;
   resume(): void;
   cancel(): void;
 }
-export const idleCall: CallPlayback = { phase: 'idle', line: -1, elapsed: 0 };
+export const idleCall: CallPlayback = { phase: 'idle', line: -1, lineElapsed: 0, elapsed: 0 };
 
 /** A single cancellable sequence, shared by the timed conversation and spoken calls. */
 export class ScriptedCallPlayer {
@@ -75,7 +76,7 @@ export class ScriptedCallPlayer {
     this.lines = lines;
     this.voice = voice;
     this.elapsed = 0;
-    this.publish({ phase: 'playing', line: startAt, elapsed: 0 });
+    this.publish({ phase: 'playing', line: startAt, lineElapsed: 0, elapsed: 0 });
     this.clock();
     this.playLine();
   }
@@ -88,7 +89,7 @@ export class ScriptedCallPlayer {
     const next = () => {
       if (!current()) return;
       if (this.state.line === this.lines.length - 1) this.finish();
-      else { this.publish({ line: this.state.line + 1 }); this.playLine(); }
+      else { this.publish({ line: this.state.line + 1, lineElapsed: 0 }); this.playLine(); }
     };
     if (!this.voice) { this.schedule(1900, next); return; }
     const failed = () => {
@@ -99,7 +100,11 @@ export class ScriptedCallPlayer {
     // Recover if a recording cannot load or playback stalls indefinitely.
     this.schedule(Math.max(12000, line.text.length * 200), failed);
     try {
-      this.voice.speak(line, () => { if (current()) this.schedule(260, next); }, failed);
+      this.voice.speak(line, () => { if (current()) this.schedule(260, next); }, failed, seconds => {
+        if (current() && this.state.phase === 'playing' && Number.isFinite(seconds) && seconds > this.state.lineElapsed) {
+          this.publish({ lineElapsed: seconds });
+        }
+      });
     } catch { failed(); }
   }
 

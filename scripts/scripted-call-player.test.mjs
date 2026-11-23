@@ -16,7 +16,7 @@ function setup(t) {
   t.after(() => player.dispose());
   const spoken = [];
   const voice = {
-    speak: (line, ended, failed) => spoken.push({ line, ended, failed }),
+    speak: (line, ended, failed, progress) => spoken.push({ line, ended, failed, progress }),
     pause: t.mock.fn(), resume: t.mock.fn(), cancel: t.mock.fn(),
   };
   return { player, changes, spoken, voice, tick: ms => t.mock.timers.tick(ms) };
@@ -51,6 +51,29 @@ test('switching scenarios ignores old speech completion and error events', t => 
   assert.equal(spoken.length, 2);
   spoken[1].ended(); tick(260);
   assert.equal(player.state.phase, 'complete');
+});
+
+test('recording progress holds when paused and resets for each turn or replay', t => {
+  const { player, voice, spoken, tick } = setup(t);
+  player.start(script, voice);
+  spoken[0].progress(1.5);
+  player.pause();
+  spoken[0].progress(2);
+  assert.equal(player.state.lineElapsed, 1.5);
+
+  player.resume();
+  spoken[0].progress(2.5);
+  assert.equal(player.state.lineElapsed, 2.5);
+  spoken[0].ended(); tick(260);
+  assert.equal(player.state.line, 1);
+  spoken[0].progress(4);
+  assert.equal(player.state.lineElapsed, 0);
+
+  spoken[1].progress(1);
+  player.start(script, voice);
+  spoken[1].progress(2);
+  assert.equal(player.state.line, 0);
+  assert.equal(player.state.lineElapsed, 0);
 });
 
 test('an utterance ending during pause cannot start another voice until resumed', t => {

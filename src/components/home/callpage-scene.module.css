@@ -6,7 +6,7 @@
   --radius: 1.25rem;
   --inset: .25em;
   width: 44em; padding: var(--inset); border-radius: var(--radius);
-  background: color-mix(in srgb, var(--palette-cream-tint) 95%, transparent);
+  background: var(--scene-shell, var(--palette-paper));
   backdrop-filter: blur(1.25em); color: var(--ink);
   font-family: var(--font-sans); font-size: inherit; line-height: 1.5;
   font-weight: var(--font-weight-normal);
@@ -31,7 +31,7 @@
 
 .stage { position: relative; display: grid; place-items: center; width: 48em; height: 48em; isolation: isolate; }
 .device {
-  --device-ink: color-mix(in display-p3, var(--palette-cream) 24%, var(--palette-forest-shade));
+  --device-ink: var(--scene-outline, color-mix(in display-p3, var(--palette-paper) 24%, var(--palette-forest-shade)));
   --device-line: color-mix(in srgb, var(--device-ink) 45%, transparent);
   position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
   width: 24em; height: 48em; border: .1em solid var(--device-line); border-radius: 3.2em;

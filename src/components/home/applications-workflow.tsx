@@ -7,7 +7,8 @@ import { PyAIScene } from './pyai-scene';
 import { ArrowIcon } from '@/components/arrow-icon';
 import { useEffect, useRef, useState } from 'react';
 import { ButtonLink, Eyebrow } from '../ui';
-import { JustCallScene, ServiceAgentScene } from './application-scenes';
+import { JustCallScene } from './application-scenes';
+import { ServiceAgentDemo } from './serviceagent-scene';
 import styles from './applications-workflow.module.css';
 import { useApplicationReveal } from './use-application-reveal';
 import { callTime, useScriptedCall } from './use-scripted-call';
@@ -124,14 +125,13 @@ export function ApplicationsWorkflow() {
               justCall.player.start(next, undefined, previous.length);
             },
             onSms: () => setSmsSent(true),
-          }} /> : index === 1 ? <>
-            <ServiceAgentScene responsive example={serviceExample} playback={serviceCall.playback} controls={<>
+          }} /> : index === 1 ?
+            <ServiceAgentDemo example={serviceExample} playback={serviceCall.playback} controls={<>
               <button type="button" onClick={toggleServiceCall} aria-label={`${serviceCall.playback.phase === 'playing' ? 'Pause' : serviceCall.playback.phase === 'paused' ? 'Resume' : 'Play'} ${serviceExample.label.toLowerCase()} call`}><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">{serviceCall.playback.phase === 'playing' ? <path d="M6 5h4v14H6zm8 0h4v14h-4z" /> : <path d="m8 5 11 7-11 7z" />}</svg></button>
               <span>{callTime(serviceCall.playback.elapsed)}</span>
               <button type="button" aria-label="Replay ServiceAgent call" onClick={() => startServiceCall()}><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6" /></svg></button>
             </>} />
-            {serviceCall.playback.phase === 'error' && <p className={styles.audioError} role="status">Audio couldn’t play. Try again or read the transcript.</p>}
-          </> : <PyAIScene field={pyaiFields[selected[2]].field} audioRef={pyaiAudio} />}</div></div>)}
+          : <PyAIScene field={pyaiFields[selected[2]].field} audioRef={pyaiAudio} />}</div></div>)}
         </div>
       </div>
     </div>

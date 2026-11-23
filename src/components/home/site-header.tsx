@@ -15,12 +15,10 @@ import { NavLinkMarker } from './nav-link-marker';
 import { ResponsiveMenu } from './responsive-menu';
 import { ResponsiveApplications } from './responsive-applications';
 import { navigationLinks, products, type MenuLink } from './navigation-data';
-import { JustCallScene, HelpwiseScene, ServiceAgentScene, CallPageScene } from './application-scenes';
+import { ApplicationPreview } from './application-scenes';
 import styles from './hero.module.css';
 
 type Product = typeof products[number]['name'];
-
-const previewScenes = { JustCall: JustCallScene, Helpwise: HelpwiseScene, ServiceAgent: ServiceAgentScene, CallPage: CallPageScene };
 
 function ApplicationsMenu({ overviewHref = '/#applications' }: { overviewHref?: string }) {
   const [product, setProduct] = useState<Product>('ServiceAgent');
@@ -81,12 +79,9 @@ function ApplicationsMenu({ overviewHref = '/#applications' }: { overviewHref?: 
     </div>
     <div>
     <div className={`theme-dark ${styles.productPreviewFrame}`} aria-hidden='true'>
-      {products.map(item => {
-        const Scene = previewScenes[item.name];
-        return <div key={item.name} className={styles.productPreview} data-product-preview={item.name}>
-          <div className={styles.previewScene} data-preview-object><div className={styles.previewCanvas}><Scene /></div></div>
-        </div>;
-      })}
+      {products.map(item => <div key={item.name} className={styles.productPreview} data-product-preview={item.name}>
+        <div className={styles.previewScene} data-preview-object><ApplicationPreview product={item.name} /></div>
+      </div>)}
     </div>
     </div>
   </div>;

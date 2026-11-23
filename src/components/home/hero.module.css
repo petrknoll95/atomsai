@@ -74,13 +74,10 @@
 .productLinkCopy { display:flex; flex-direction:column; gap:4px; min-width:0; }
 .productLinkCopy>span:last-child { color:var(--color-muted-foreground); font-weight: var(--font-weight-normal); font-variation-settings:'wght' var(--font-weight-normal), 'ital' 100; line-height:1.4; }
 .allApplications { flex:1; display:flex; align-items:flex-end; padding:16px; }
-/* Render the full homepage scenes on a scaled canvas, clipping to the menu frame. */
-.productPreviewFrame { position:relative; container-type:inline-size; width:100%; height:380px; flex:none; overflow:clip; clip-path:inset(0 round var(--radius-card)); border-radius:var(--radius-card); background:var(--palette-forest-shade); box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--palette-iris-light) 35%,transparent); }
+/* Desktop and mobile fit the same previews inside their frames. */
+.productPreviewFrame { composes: palette from './application-scene-theme.module.css'; position:relative; container-type:size; width:100%; height:380px; flex:none; overflow:clip; border-radius:var(--radius-card); background:var(--scene-frame); }
 .productPreview { position:absolute; inset:0; display:grid; place-items:center; visibility:hidden; opacity:0; isolation:isolate; }
 .previewScene { position:relative; width:100%; height:100%; }
-.previewCanvas { position:absolute; left:50%; top:50%; width:48em; font-size:14px; transform:translate(-50%, -50%) scale(calc(100cqw / 760px)); }
-.productPreview[data-product-preview='ServiceAgent'] .previewCanvas { width:44em; }
-.productPreview[data-product-preview='Helpwise'] .previewCanvas { left:24px; top:24px; width:80em; transform:scale(calc(100cqw / 760px)); transform-origin:top left; }
 
 /* Measured navigation label boxes prevent cumulative browser glyph rounding. */
 .nav > :nth-child(1) .navLabel { width:75px; }
