@@ -75,12 +75,7 @@
 .questionSubmit:enabled:active { transform: scale(.92); }
 .questionSubmit:disabled { cursor: default; opacity: .45; }
 .generatedQuestion { display: flow-root; overflow: hidden; overflow-wrap: anywhere; }
-.generatedSlot { overflow: hidden; }
-.generatedBody { display: flow-root; }
 .generatedAnswer { text-wrap: wrap; }
-.generatedAnswer [data-answer-word] { display: inline-block; }
-.thinking { display: flex; align-items: center; gap: 10px; height: 24px; margin-top: 20px; overflow: hidden; color: var(--color-muted-foreground); font-size: 14px; }
-.thinkingLogo { display: block; flex: none; width: 21px; height: 20px; color: var(--color-primary); }
 @media (prefers-reduced-motion: reduce) {
   .question, .question::details-content, .questionIcon img, .customQuestion { transition: none; }
   .questionSubmit { transition: none; transform: none !important; }
