@@ -36,14 +36,15 @@
 .carouselCanvas { position:absolute; inset:0; pointer-events:none; }
 .carouselCanvas canvas { display:block; }
 .carouselSlide {
-  --cut-left:calc(var(--mask-left) * 100%);
-  --cut-right:calc(var(--mask-right) * 100%);
+  --slide-left:calc((100cqw - var(--circle-size)) / 2 + var(--circle-travel) * var(--circle-size) + var(--circle-gap) * 1px);
+  --cut-left:max(calc(var(--mask-left) * 100%),calc(2.5px - var(--slide-left)));
+  --cut-right:max(calc(var(--mask-right) * 100%),calc(var(--slide-left) + var(--circle-size) + 2.5px - 100cqw));
   position:relative;
   flex:0 0 var(--circle-size);
   min-width:0;
   height:100%;
   will-change:transform,clip-path;
-  transform:translateX(calc((100cqw - var(--circle-size)) / 2 + (var(--circle-travel) - var(--slide-index)) * var(--circle-size) + var(--circle-gap) * 1px));
+  transform:translateX(calc(var(--slide-left) - var(--slide-index) * var(--circle-size)));
   clip-path:inset(0 var(--cut-right) 0 var(--cut-left));
 }
 .carouselPlate {

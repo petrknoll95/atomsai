@@ -3,6 +3,8 @@ import accessibility from 'p5/accessibility';
 
 P5.registerAddon(accessibility);
 
+export const carouselOutlineWidth = 1.5;
+
 type PlateDrawing = {
   path: Path2D;
   x: number;
@@ -64,7 +66,7 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[]) {
       ctx.strokeStyle = ink;
       ctx.fillStyle = fill;
       ctx.lineJoin = 'round';
-      ctx.lineWidth = 3 / diameter;
+      ctx.lineWidth = 2 * carouselOutlineWidth / diameter;
 
       // Paint outlines first, then cover their inner halves with the combined fill.
       // Where slits overlap, only the outside contour survives.

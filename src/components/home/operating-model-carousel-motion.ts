@@ -4,18 +4,20 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { attachKineticCircles, circleGeometry, kineticCircleOptions, type KineticCircleFrame } from './kinetic-circles';
 import { attachKineticCircleInteraction } from './kinetic-circle-interaction';
-import { mountCarouselSketch, type PlateDrawing } from './operating-model-carousel-sketch';
+import { carouselOutlineWidth, mountCarouselSketch, type PlateDrawing } from './operating-model-carousel-sketch';
 import { carouselLogoCenter, carouselLogoProfiles, createCarouselLogoPath, maskedCirclePath } from './operating-model-diagram/carousel-profile';
 import type { OperatingModelMount } from './operating-model-scene';
 
 const firstSnap = 1;
 const viewportsPerStep = .88;
-const outlineInset = .75;
+// The visible stroke sits outside the fill. Allow for the whole stroke plus canvas rounding.
+const canvasEdgeInset = carouselOutlineWidth + 1;
+const hitAreaInset = carouselOutlineWidth / 2;
 
 type PlateShape = { x: number; diameter: number; wash: number } & (
   | { mark: true }
   | { left: number; right: number; fadeAtSeam: boolean }
-  | { profile: NonNullable<(typeof carouselLogoProfiles)[number]>; crop: number; opening: number; joinBow: number }
+  | { profile: NonNullable<(typeof carouselLogoProfiles)[number]>; crop: number; opening: number; joinBow: number; openX: number; width: number }
 );
 
 export const mountOperatingModelCarousel: OperatingModelMount = (element, options) => {
@@ -70,9 +72,16 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
 
     const radius = Math.max(.01, .5 - insets[index] / diameter);
     if ('profile' in shape) {
+      // A slit that vanishes should fold down to the crop edge, even if its
+      // fully open circle would end outside the canvas.
+      const leftSide = shape.profile.offset < 0;
+      const tipAtOpen = shape.openX + (.5 + (leftSide ? radius : -radius)) * diameter;
+      const correction = leftSide ? Math.max(0, canvasEdgeInset - tipAtOpen)
+        : Math.min(0, shape.width - canvasEdgeInset - tipAtOpen);
       drawings[index] = {
         path: shape.profile.morph(shape.opening, shape.crop, radius, shape.joinBow),
-        x, opacity: 1, outline: 1 - wash * .82 * Math.min(1, shape.opening * 4), artwork: 0, zoom: 1,
+        x: x + correction * shape.opening,
+        opacity: 1, outline: 1 - wash * .82 * Math.min(1, shape.opening * 4), artwork: 0, zoom: 1,
       };
       return;
     }
@@ -137,22 +146,22 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
       } else if (profile) {
         const closedX = left + profile.offset * diameter;
         x = closedX + (openX - closedX) * opening;
-        const viewportCut = slot < 0 ? outlineInset - openX : openX + diameter + outlineInset - width;
+        const viewportCut = slot < 0 ? canvasEdgeInset - openX : openX + diameter + canvasEdgeInset - width;
         const crop = Math.max(geometry.left, geometry.right, viewportCut) / diameter;
-        shapes[index] = { x, diameter, wash: geometry.wash, profile, crop, opening, joinBow };
+        shapes[index] = { x, diameter, wash: geometry.wash, profile, crop, opening, joinBow, openX, width };
       } else {
         const inset = centeredPlate ? (1 - aperture) / 2 : 0;
         shapes[index] = {
           x, diameter, wash: geometry.wash,
-          left: Math.max(inset, geometry.left / diameter, (outlineInset - x) / diameter),
-          right: Math.min(1 - inset, 1 - geometry.right / diameter, (width - outlineInset - x) / diameter),
+          left: Math.max(inset, geometry.left / diameter, (canvasEdgeInset - x) / diameter),
+          right: Math.min(1 - inset, 1 - geometry.right / diameter, (width - canvasEdgeInset - x) / diameter),
           fadeAtSeam: centeredPlate,
         };
       }
       slide.style.transform = `translate3d(${x - origins[index]}px, 0, 0)`;
       // Keep the carousel's hit area stable while the outlined SVG shrinks.
       slide.style.clipPath = morphing ? 'none'
-        : `inset(-1px ${geometry.right - outlineInset}px -1px ${geometry.left - outlineInset}px)`;
+        : `inset(-1px ${geometry.right - hitAreaInset}px -1px ${geometry.left - hitAreaInset}px)`;
       slide.style.setProperty('--image-wash', String(geometry.wash));
       paint(index);
     });
