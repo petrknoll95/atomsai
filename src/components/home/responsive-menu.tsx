@@ -84,8 +84,10 @@ export function ResponsiveMenu({ links, items, open, onOpenChange, onOpen }: Pro
       if (target) event.preventDefault();
       flushSync(() => onOpenChange(false));
       if (target) {
+        const oldURL = location.href;
         history.pushState(null, '', url.hash);
-        const heading = target.querySelector<HTMLElement>('h1, h2') ?? target;
+        const focusTarget = target.matches('[aria-hidden="true"]') ? target.closest('section') ?? target : target;
+        const heading = focusTarget.querySelector<HTMLElement>('h1, h2') ?? focusTarget;
         const tabIndex = heading.getAttribute('tabindex');
         heading.setAttribute('tabindex', '-1');
         heading.addEventListener('blur', () => {
@@ -93,6 +95,7 @@ export function ResponsiveMenu({ links, items, open, onOpenChange, onOpen }: Pro
           else heading.setAttribute('tabindex', tabIndex);
         }, { once: true });
         heading.focus({ preventScroll: true });
+        window.dispatchEvent(new HashChangeEvent('hashchange', { oldURL, newURL: location.href }));
         scrollToTarget(target);
       }
     };

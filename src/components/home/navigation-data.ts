@@ -1,5 +1,19 @@
 export type MenuLink = { label: string; href: string; children?: readonly (readonly string[])[]; overviewLabel?: string };
 
+const workflowContact = '/company/contact?topic=services';
+
+// The approved launch content can stand on its own without dedicated industry pages.
+export const homepageIndustries = [
+  { name: 'Home services', slug: 'home-services', image: 'BackgroundImage3',
+    description: 'Capture job inquiries, fill the calendar, and keep the office organized.', href: workflowContact, action: 'Discuss your workflow' },
+  { name: 'Healthcare', slug: 'healthcare', image: 'BackgroundImage1',
+    description: 'Handle routine patient inquiries, coordinate appointments, and route requests to staff.', href: '/industries/healthcare', action: 'Explore Healthcare' },
+  { name: 'Financial services', slug: 'financial-services', image: 'BackgroundImage2',
+    description: 'Reach customers with context and manage timely, traceable follow-ups.', href: workflowContact, action: 'Discuss your workflow' },
+  { name: 'Education', slug: 'education', image: 'BackgroundImage',
+    description: 'Respond to admission inquiries and connect prospective students with advisors.', href: workflowContact, action: 'Discuss your workflow' },
+] as const;
+
 export const products = [
   { name: 'JustCall', mark: 'justcall-mark.svg', href: 'https://justcall.io/', description: 'Calls, messages and AI for sales and support.' },
   { name: 'Helpwise', mark: 'helpwise-mark.svg', href: 'https://helpwise.io/', description: 'One shared inbox for customer conversations.' },
@@ -34,4 +48,8 @@ export const navigationLinks = [
     ['Brand', 'https://atomsai.com/brand'],
   ] },
 ];
+
+export const homepageNavigation: MenuLink[] = navigationLinks.map(link => link.label === 'Industries'
+  ? { ...link, children: homepageIndustries.map(({ name, slug }) => [name, `/#industry-${slug}`]) }
+  : link);
 

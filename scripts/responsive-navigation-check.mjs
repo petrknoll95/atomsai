@@ -5,7 +5,7 @@ const output = process.env.NAV_CHECK_OUTPUT || '/tmp/atoms-responsive-nav';
 const base = process.env.BASE_URL || 'http://localhost:3001';
 await fs.mkdir(output, { recursive: true });
 const groups = ['Applications', 'Infrastructure', 'Industries', 'Resources', 'Company'];
-const industries = ['Manufacturing', 'Insurance', 'Healthcare', 'Logistics', 'Lending', 'Real estate', 'Auto dealers', 'Retail & e-commerce'];
+const industries = ['Home services', 'Healthcare', 'Financial services', 'Education'];
 const sizes = [[320,568],[360,800],[375,812],[390,844],[430,932],[599,850],[600,850],[767,900],[768,1024],[899,900],[900,900],[1024,768],[1199,900],[1200,900],[1440,900],[1920,1080],[844,390],[667,375]];
 const results = [];
 const label = (panel, name) => panel.locator('[data-section-trigger]').filter({hasText:name});
@@ -81,6 +81,13 @@ for (const [engineName, engine] of Object.entries({chromium,webkit})) {
   await expect(panel).toBeHidden();await expect(page).toHaveURL(/#industries$/);
   assert(await page.evaluate(()=>document.getElementById('industries').contains(document.activeElement)));
   const anchorTop=await page.locator('#industries').evaluate(el=>el.getBoundingClientRect().top);assert(anchorTop>=0&&anchorTop<200,`Anchor offset ${anchorTop}`);
+  await page.getByRole('button',{name:'Open navigation',exact:true}).click();
+  await label(panel,'Industries').click();
+  await panel.getByRole('link',{name:'Education',exact:true}).click();
+  await expect(panel).toBeHidden();
+  await expect(page).toHaveURL(/#industry-education$/);
+  await expect(page.locator('#industries h3')).toHaveText('Education');
+  await expect(page.locator('#industries').getByRole('link',{name:'Discuss your workflow',exact:true})).toHaveAttribute('href','/company/contact?topic=services');
   // Reopening and closing from a scrolled page must preserve scroll position.
   const position=await page.evaluate(()=>window.scrollY);await page.getByRole('button',{name:'Open navigation',exact:true}).click();await page.keyboard.press('Escape');
   assert(Math.abs(await page.evaluate(()=>window.scrollY)-position)<2);

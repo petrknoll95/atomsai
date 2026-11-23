@@ -6,22 +6,10 @@ import { ArrowIcon } from '@/components/arrow-icon';
 import { useEffect, useLayoutEffect, useState, type CSSProperties } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { gsap } from 'gsap';
-import { ButtonLink, Eyebrow } from '@/components/ui';
+import { ButtonLink } from '@/components/ui';
 import { attachKineticCircles } from './kinetic-circles';
+import { homepageIndustries as industries } from './navigation-data';
 import styles from './proof.module.css';
-
-// Approved client copy in the original circular gallery. Retain the existing
-// art direction and image assets pending photography for the new categories.
-const industries = [
-  { name: 'Home services', slug: 'home-services', image: 'BackgroundImage3',
-    description: 'Capture job inquiries, fill the calendar, and keep the office organized.', href: '/company/contact' },
-  { name: 'Healthcare', slug: 'healthcare', image: 'BackgroundImage1',
-    description: 'Handle routine patient inquiries, coordinate appointments, and route requests to staff.', href: '/industries/healthcare' },
-  { name: 'Financial services', slug: 'financial-services', image: 'BackgroundImage2',
-    description: 'Reach customers with context and manage timely, traceable follow-ups.', href: '/company/contact' },
-  { name: 'Education', slug: 'education', image: 'BackgroundImage',
-    description: 'Respond to admission inquiries and connect prospective students with advisors.', href: '/company/contact' },
-];
 
 // Two cycles provide the five visible circles plus offscreen space for seamless
 // looping. Each Embla slide contains exactly one circle, never a whole gallery.
@@ -166,7 +154,7 @@ export function Industries() {
     <section className={`page-container ${styles.industries}`} id="industries" aria-labelledby="industries-title">
       {industries.map(industry => <span key={industry.slug} id={`industry-${industry.slug}`} className={styles.industryAnchor} aria-hidden="true" />)}
       <header className={styles.industryHeader}>
-        <Eyebrow href="https://atomsai.com/industries">Industries</Eyebrow>
+        <p className={styles.industryLabel}>Industries</p>
         <h2 className={`display ${styles.heading}`} id="industries-title">Every industry has its own version of success</h2>
       </header>
 
@@ -188,7 +176,7 @@ export function Industries() {
                   <a
                     className={styles.industryBadge}
                     href={withBasePath(industry.href)}
-                    aria-label={`Learn more about ${industry.name}`}
+                    aria-label={industry.action === 'Discuss your workflow' ? `Discuss ${industry.name.toLowerCase()} workflows` : industry.action}
                     aria-hidden={index !== selectedSnap}
                     tabIndex={index === selectedSnap ? 0 : -1}
                     draggable={false}
@@ -211,7 +199,7 @@ export function Industries() {
               <h3>{current.name}</h3>
               <p>{current.description}</p>
             </div>
-            <ButtonLink href={current.href} size="small" variant="outline">{current.href === '/company/contact' ? 'Discuss your workflow' : 'Learn More'}</ButtonLink>
+            <ButtonLink href={current.href} size="small" variant="outline">{current.action}</ButtonLink>
           </div>
           <div className={styles.next}>
             <button type="button" className={styles.arrowButton} aria-label="Next industry" aria-controls="industry-gallery" onClick={() => emblaApi?.scrollNext()}>
