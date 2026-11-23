@@ -61,7 +61,7 @@
 }
 /* The static SVG shows the first slide while the sketch loads. */
 .carouselPlate::after {
-  --outline-width:1.5px;
+  --outline-width:1px;
   --inner-radius:calc(100% - var(--model-plate-inset) - var(--outline-width));
   --inner-left:calc(var(--cut-left) + var(--outline-width));
   --inner-right:calc(100% - var(--cut-right) - var(--outline-width));

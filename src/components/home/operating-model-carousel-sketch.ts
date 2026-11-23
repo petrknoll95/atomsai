@@ -4,7 +4,7 @@ import { modelDotRadius, modelDotRings } from './operating-model-diagram/model-d
 
 P5.registerAddon(accessibility);
 
-export const carouselOutlineWidth = 1.5;
+export const carouselOutlineWidth = 1;
 const ringRadiusRatio = .59;
 const closedLogoScale = .76;
 const ringLabels = ['Build', 'Learn'];
