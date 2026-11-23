@@ -8,7 +8,7 @@ import styles from './blog.module.css';
 export function ArticleList() {
   const [limit, setLimit] = useState(8);
   return <section className={styles.archive} aria-labelledby="all-articles-title">
-    <h2 className={styles.sectionHeading} id="all-articles-title">All Articles</h2>
+    <h2 className={`display ${styles.archiveHeading}`} id="all-articles-title">All Articles</h2>
     <ul className={styles.articleList}>
       {posts.slice(0, limit).map(post => <li key={post.slug}>
         <Link href={`/blog/${post.slug}`} className={styles.articleRow}>

@@ -7,7 +7,6 @@ import { BlogArt } from '@/components/blog/blog-art';
 import articleBodies from '@/content/blog/bodies.json';
 import { posts } from '@/components/blog/blog-data';
 import styles from '@/components/blog/article.module.css';
-import blogStyles from '@/components/blog/blog.module.css';
 
 type Props = { params: Promise<{ slug: string }> };
 export function generateStaticParams() { return posts.map(({ slug }) => ({ slug })); }
@@ -36,17 +35,17 @@ export default async function ArticlePage({ params }: Props) {
     <article className={styles.article}>
       <header className={styles.header}>
         <Link href="/blog" className={styles.category}>{post.category}</Link>
-        <h1>{post.title}</h1>
+        <h1 className="display">{post.title}</h1>
         <div className={styles.byline}><span>by {post.author}</span><span className={styles.separator} aria-hidden="true">•</span><time dateTime={post.date}>{date}</time></div>
       </header>
       {/* The checked-in importer allowlists markup and strips source scripts/styles. */}
       <div className={styles.body} dangerouslySetInnerHTML={{ __html: body }} />
     </article>
     <section className={styles.nextUp} aria-labelledby="next-up-title">
-      <h2 className={blogStyles.sectionHeading} id="next-up-title">Next Up</h2>
+      <h2 className="display" id="next-up-title">Next Up</h2>
       <div className={styles.nextGrid}>{nextPosts.map(nextPost => <Link key={nextPost.slug} href={`/blog/${nextPost.slug}`} className={styles.nextCard}>
         <div className={styles.nextImage}><BlogArt artwork={nextPost.artwork} /></div>
-        <h3 className={blogStyles.cardTitle}>{nextPost.title}</h3>
+        <h3 className="display">{nextPost.title}</h3>
       </Link>)}</div>
     </section>
   </main></PageShell>;
