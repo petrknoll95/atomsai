@@ -11,11 +11,14 @@ export default function DiagramStudy() {
   useEffect(() => {
     // ?plane=0|1|2|3 renders one plane as a still in the light menu palette, for
     // scripts/render-menu-planes.mjs. Without it, this is the interactive study.
-    const plane = new URLSearchParams(location.search).get('plane');
+    const params = new URLSearchParams(location.search);
+    const plane = params.get('plane');
     const isolate = plane === null ? undefined : Number(plane);
     if (isolate !== undefined) {
       root.current!.dataset.capture = 'true';
-      host.current!.style.setProperty('--diagram-fill', 'var(--palette-paper)');
+      const matte = params.get('matte');
+      const fill = matte === 'black' ? '#000' : matte === 'white' ? '#fff' : 'var(--palette-paper)';
+      host.current!.style.setProperty('--diagram-fill', fill);
       host.current!.style.setProperty('--diagram-ink', 'var(--palette-forest-shade)');
     }
     const diagram = mountOperatingModel(host.current!, {

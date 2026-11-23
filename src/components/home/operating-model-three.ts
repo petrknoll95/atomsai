@@ -291,7 +291,7 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
     syncDashMotion();
   });
   const syncDashMotion = () => {
-    const paused = document.hidden || !inView || reducedMotion;
+    const paused = isolate !== undefined || document.hidden || !inView || reducedMotion;
     marchingDashes.paused(scrollState.perimeter <= 0 || paused);
     dotWave.paused(scrollState.spread <= 0 || paused);
     flowLoop.paused(scrollState.spread <= 0 || paused);
@@ -465,6 +465,9 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
       outline.fade.lift = 0;
       outline.surface.visible = outline.line.visible = index === isolate;
     });
+    // Both export mattes need the same dot and signal positions.
+    dotWave.progress(.2);
+    flowLoop.progress(.2);
     applyScrollState();
   }
   else if (reducedMotion) timeline!.progress(1);
