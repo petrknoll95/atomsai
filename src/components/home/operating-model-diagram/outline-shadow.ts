@@ -1,6 +1,8 @@
-import { Color, Mesh, Quaternion, ShaderMaterial, Shape, ShapeGeometry, Vector2, Vector3 } from 'three';
+import { BufferGeometry, Color, Float32BufferAttribute, Mesh, Quaternion, ShaderMaterial, Vector2, Vector3 } from 'three';
 
-/** A soft inset wash, clipped to the same rounded silhouette as the dashes. */
+const shadowDepth = .5;
+
+/** A soft inset wash following the projected rim of the stack. */
 export function createOutlineShadow(color: string) {
   const material = new ShaderMaterial({
     transparent: true,
@@ -9,55 +11,59 @@ export function createOutlineShadow(color: string) {
     uniforms: {
       iris: { value: new Color(color) },
       strength: { value: 0 },
-      edgeCount: { value: 0 },
-      starts: { value: Array.from({ length: 8 }, () => new Vector2()) },
-      ends: { value: Array.from({ length: 8 }, () => new Vector2()) },
     },
     vertexShader: `
-      varying vec2 localPoint;
+      attribute float edgeDistance;
+      varying float distanceToEdge;
       void main() {
-        localPoint = position.xy;
+        distanceToEdge = edgeDistance;
         gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
       }
     `,
     fragmentShader: `
       uniform vec3 iris;
       uniform float strength;
-      uniform int edgeCount;
-      uniform vec2 starts[8];
-      uniform vec2 ends[8];
-      varying vec2 localPoint;
+      varying float distanceToEdge;
       void main() {
-        float distanceToEdge = 100.0;
-        for (int i = 0; i < 8; i++) {
-          if (i >= edgeCount) break;
-          vec2 edge = ends[i] - starts[i];
-          vec2 offset = localPoint - starts[i];
-          float along = clamp(dot(offset, edge) / dot(edge, edge), 0.0, 1.0);
-          distanceToEdge = min(distanceToEdge, length(offset - edge * along));
-        }
         float shadow = exp(-pow(distanceToEdge / 0.17, 1.5));
         gl_FragColor = vec4(iris, shadow * strength * 0.22);
         #include <colorspace_fragment>
       }
     `,
   });
-  const mesh = new Mesh(new ShapeGeometry(), material);
+  const mesh = new Mesh(new BufferGeometry(), material);
   mesh.renderOrder = 3;
   mesh.visible = false;
 
   return {
     mesh,
-    update(points: Vector2[], corners: Vector3[], rotation: Quaternion) {
-      mesh.geometry.dispose();
-      mesh.geometry = new ShapeGeometry(new Shape(points));
-      mesh.quaternion.copy(rotation);
-      material.uniforms.edgeCount.value = corners.length;
-      corners.forEach((point, index) => {
-        const next = corners[(index + 1) % corners.length];
-        material.uniforms.starts.value[index].set(point.x, point.y);
-        material.uniforms.ends.value[index].set(next.x, next.y);
+    update(rim: Vector3[], rotation: Quaternion) {
+      const positions: number[] = [];
+      const distances: number[] = [];
+      const indices: number[] = [];
+      // Inward normals form a strip on the clockwise rim, so the wash stays
+      // inside the curve without evaluating every edge for every pixel.
+      rim.forEach((point, index) => {
+        const previous = rim[(index + rim.length - 1) % rim.length];
+        const nextIndex = (index + 1) % rim.length;
+        const next = rim[nextIndex];
+        const incoming = new Vector2(point.y - previous.y, previous.x - point.x).normalize();
+        const outgoing = new Vector2(next.y - point.y, point.x - next.x).normalize();
+        const inset = incoming.clone().add(outgoing).multiplyScalar(shadowDepth / (1 + incoming.dot(outgoing)));
+        positions.push(point.x, point.y, 0, point.x + inset.x, point.y + inset.y, 0);
+        distances.push(0, shadowDepth);
+        const outer = index * 2;
+        const nextOuter = nextIndex * 2;
+        indices.push(outer, outer + 1, nextOuter, nextOuter, outer + 1, nextOuter + 1);
       });
+
+      const geometry = new BufferGeometry();
+      geometry.setAttribute('position', new Float32BufferAttribute(positions, 3));
+      geometry.setAttribute('edgeDistance', new Float32BufferAttribute(distances, 1));
+      geometry.setIndex(indices);
+      mesh.geometry.dispose();
+      mesh.geometry = geometry;
+      mesh.quaternion.copy(rotation);
     },
     setStrength(strength: number) {
       material.uniforms.strength.value = strength;

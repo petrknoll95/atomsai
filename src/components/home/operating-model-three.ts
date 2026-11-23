@@ -2,8 +2,8 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import {
-  Color, DynamicDrawUsage, ExtrudeGeometry, InstancedMesh, Matrix4, Mesh, MeshBasicMaterial, OrthographicCamera,
-  Path, Raycaster, Scene, Shape, ShapeGeometry, Vector2, Vector3, WebGLRenderer,
+  CircleGeometry, Color, DynamicDrawUsage, ExtrudeGeometry, InstancedMesh, Matrix4, Mesh, MeshBasicMaterial, OrthographicCamera,
+  Path, Raycaster, Scene, Shape, Vector2, Vector3, WebGLRenderer,
 } from 'three';
 import { Line2 } from 'three/addons/lines/Line2.js';
 import { LineGeometry } from 'three/addons/lines/LineGeometry.js';
@@ -33,7 +33,7 @@ type DiagramOptions = {
   scroll?: boolean;
   /** Extra pinned scroll after the last layer, in viewport heights, for exit transitions. */
   tail?: number;
-  /** Show one plane only (0 waveform, 1 workflow, 2 interface, 3 logo) for still renders. */
+  /** Show one plane only (0 dots, 1 workflow, 2 interface, 3 logo) for still renders. */
   isolate?: number;
   /** Keep the drawing buffer so the canvas can be exported (toDataURL). */
   capture?: boolean;
@@ -63,8 +63,8 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
   camera.position.set(6, 6, 6);
   camera.lookAt(0, 0, 0);
 
-  const halfSize = 1.32;
-  const fillet = .22;
+  const planeRadius = 1.68;
+  const perimeterRadius = planeRadius + .18;
   const thickness = .06;
   const material = new LineMaterial({ color: colors.ink, linewidth: 1.5, depthTest: true, depthWrite: true, alphaToCoverage: false, transparent: false });
   const fill = new MeshBasicMaterial({
@@ -74,23 +74,15 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
     polygonOffset: true, polygonOffsetFactor: 4, polygonOffsetUnits: 4,
   });
   const shape = new Shape();
-  const s = halfSize, r = fillet;
-  shape.moveTo(-s + r, -s);
-  shape.lineTo(s - r, -s);
-  shape.absarc(s - r, -s + r, r, -Math.PI / 2, 0, false);
-  shape.lineTo(s, s - r);
-  shape.absarc(s - r, s - r, r, 0, Math.PI / 2, false);
-  shape.lineTo(-s + r, s);
-  shape.absarc(-s + r, s - r, r, Math.PI / 2, Math.PI, false);
-  shape.lineTo(-s, -s + r);
-  shape.absarc(-s + r, -s + r, r, Math.PI, Math.PI * 1.5, false);
+  shape.absarc(0, 0, planeRadius, 0, Math.PI * 2, false);
   shape.closePath();
 
-  const solid = new ExtrudeGeometry(shape, { depth: thickness, bevelEnabled: false, curveSegments: 24 });
+  const extrusion = { depth: thickness, bevelEnabled: false, curveSegments: 48 };
+  const solid = new ExtrudeGeometry(shape, extrusion);
   solid.rotateX(-Math.PI / 2);
   solid.translate(0, -thickness / 2, 0);
   const cutoutShape = shape.clone();
-  const logoScale = halfSize * 2 * .8 / 440;
+  const logoScale = planeRadius * 1.25 / 440;
   const logoContours = new SVGLoader().parse(logoMarkSvg).paths
     .flatMap(path => SVGLoader.createShapes(path))
     .map(mark => mark.getPoints(48).map(point => ({
@@ -108,7 +100,7 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
     hole.closePath();
     cutoutShape.holes.push(hole);
   });
-  const cutoutSolid = new ExtrudeGeometry(cutoutShape, { depth: thickness, bevelEnabled: false, curveSegments: 24 });
+  const cutoutSolid = new ExtrudeGeometry(cutoutShape, extrusion);
   cutoutSolid.rotateX(-Math.PI / 2);
   cutoutSolid.translate(0, -thickness / 2, 0);
 
@@ -152,36 +144,28 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
     outlines.push({ line, kind, surface, fade: { opacity: index === 3 ? 1 : .18, lift: 0 } });
   }
 
-  const iris = getComputedStyle(element).getPropertyValue('--palette-iris').trim() || '#A77BCA';
-  // A voice waveform on the infrastructure layer uses the same visual cue as the PyAI demo.
-  const barShape = new Shape();
-  barShape.absarc(0, -.29, .21, Math.PI, 2 * Math.PI, false);
-  barShape.absarc(0, .29, .21, 0, Math.PI, false);
-  barShape.closePath();
-  const waveGeometry = new ShapeGeometry(barShape, 8);
-  waveGeometry.rotateX(-Math.PI / 2);
-  const waveMaterial = new MeshBasicMaterial({ color: colors.ink, depthTest: true, depthWrite: true });
-  const amplitudes = [.09, .17, .28, .21, .38, .63, .90, .53, .33, .46, .68, .86, 1, .58, .35, .63, .82, .44, .29, .51, .66, .32, .21, .13, .07];
-  const waveform = new InstancedMesh(waveGeometry, waveMaterial, amplitudes.length);
-  const barTransform = new Matrix4();
-  waveform.visible = false;
-  waveform.position.set(.15, 0, .23);
-  waveform.instanceMatrix.setUsage(DynamicDrawUsage);
-  waveform.renderOrder = 1;
-  outlines[0].surface.add(waveform);
-
-  function updateWaveform(pulse = -1) {
-    amplitudes.forEach((height, index) => {
-      const progress = index / (amplitudes.length - 1);
-      const lift = 1 + .24 * Math.exp(-(((progress - pulse) / .13) ** 2));
-      barTransform.makeScale(.13, 1, height * 1.22 * lift);
-      barTransform.setPosition((progress - .5) * 1.96, thickness / 2 + .003, 0);
-      waveform.setMatrixAt(index, barTransform);
-    });
-    waveform.instanceMatrix.needsUpdate = true;
+  // Surface-mounted dots share the bottom slab's transform and depth occlusion.
+  const dotGeometry = new CircleGeometry(.012, 20);
+  dotGeometry.rotateX(-Math.PI / 2);
+  const dotMaterial = new MeshBasicMaterial({ color: colors.ink, depthTest: true, depthWrite: true });
+  const dotGrid = new InstancedMesh(dotGeometry, dotMaterial, 13 * 13);
+  dotGrid.visible = false;
+  dotGrid.instanceMatrix.setUsage(DynamicDrawUsage);
+  const dotTransform = new Matrix4();
+  const dotPositions: { x: number; z: number; radius: number }[] = [];
+  for (let row = 0; row < 13; row++) {
+    for (let column = 0; column < 13; column++) {
+      const x = (column - 6) * .175, z = (row - 6) * .175;
+      dotPositions.push({ x, z, radius: Math.hypot(x, z) });
+      dotTransform.makeTranslation(x, thickness / 2 + .001, z);
+      dotGrid.setMatrixAt(row * 13 + column, dotTransform);
+    }
   }
-  updateWaveform();
+  dotGrid.instanceMatrix.needsUpdate = true;
+  dotGrid.renderOrder = 1;
+  outlines[0].surface.add(dotGrid);
 
+  const iris = getComputedStyle(element).getPropertyValue('--palette-iris').trim() || '#A77BCA';
   const flowPaths = createFlowPaths(outlines[1].surface, thickness, iris, colors);
   const uiDiagram = createUiDiagram(outlines[2].surface, thickness, colors);
 
@@ -204,14 +188,16 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
   perimeter.visible = false;
   scene.add(perimeter);
   let perimeterLength = 0;
+  const rimSegments = 96;
+  const perimeterRim = Array.from({ length: rimSegments }, (_, index) => {
+    const angle = index * 2 * Math.PI / rimSegments;
+    return new Vector2(perimeterRadius * Math.cos(angle), perimeterRadius * Math.sin(angle));
+  });
   function updatePerimeter() {
     camera.updateMatrixWorld();
-    const extent = halfSize + .18;
     const top = 1.5 * (thickness + 1.25 * scrollState.spread) + thickness / 2 + .16;
-    const projected: Vector3[] = [];
-    for (const x of [-extent, extent]) for (const y of [-top, top]) for (const z of [-extent, extent]) {
-      projected.push(new Vector3(x, y, z).applyMatrix4(camera.matrixWorldInverse));
-    }
+    const projected = [-top, top].flatMap(y => perimeterRim.map(({ x, y: z }) =>
+      new Vector3(x, y, z).applyMatrix4(camera.matrixWorldInverse)));
     projected.sort((a, b) => a.x - b.x || a.y - b.y);
     const cross = (a: Vector3, b: Vector3, c: Vector3) => (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);
     const halfHull = (points: Vector3[]) => {
@@ -225,34 +211,14 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
     const hull = [...halfHull(projected), ...halfHull([...projected].reverse())].reverse();
     const start = hull.reduce((best, point, index) => point.y > hull[best].y ? index : best, 0);
     const ordered = [...hull.slice(start), ...hull.slice(0, start)];
-    const corners = ordered.map((point, index) => {
-      const previous = ordered[(index + ordered.length - 1) % ordered.length];
-      const next = ordered[(index + 1) % ordered.length];
-      const before = Math.hypot(previous.x - point.x, previous.y - point.y);
-      const after = Math.hypot(next.x - point.x, next.y - point.y);
-      const inset = Math.min(.24, before / 3, after / 3);
-      return {
-        point,
-        entry: point.clone().lerp(previous, inset / before),
-        exit: point.clone().lerp(next, inset / after),
-      };
-    });
-    const roundedPath = new Path();
-    const last = corners[corners.length - 1].exit;
-    roundedPath.moveTo(last.x, last.y);
-    for (const { point, entry, exit } of corners) {
-      roundedPath.lineTo(entry.x, entry.y);
-      roundedPath.quadraticCurveTo(point.x, point.y, exit.x, exit.y);
-    }
-    roundedPath.closePath();
-    const roundedPoints = roundedPath.getPoints(24);
+    const closed = [...ordered, ordered[0]];
     perimeter.geometry.dispose();
-    perimeter.geometry = new LineGeometry().setPositions(roundedPoints.flatMap(point => [point.x, point.y, 0]));
+    perimeter.geometry = new LineGeometry().setPositions(closed.flatMap(point => [point.x, point.y, 0]));
     perimeter.quaternion.copy(camera.quaternion);
-    if (scrollState.shadow > 0) outlineShadow.update(roundedPoints, ordered, camera.quaternion);
+    if (scrollState.shadow > 0) outlineShadow.update(ordered, camera.quaternion);
     perimeter.computeLineDistances();
-    perimeterLength = roundedPoints.slice(1).reduce((length, point, index) =>
-      length + point.distanceTo(roundedPoints[index]), 0);
+    perimeterLength = closed.slice(1).reduce((length, point, index) =>
+      length + Math.hypot(point.x - closed[index].x, point.y - closed[index].y), 0);
     drawDistance.value = perimeterLength * scrollState.perimeter;
   }
 
@@ -292,12 +258,20 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
   const marchingDashes = gsap.to(perimeterMaterial, {
     dashOffset: -.14, duration: 1.2, repeat: -1, ease: 'none', paused: true, onUpdate: render,
   });
-  const ripple = { progress: -.25 };
-  const voiceWave = gsap.to(ripple, {
-    progress: 1.25, duration: 2.7, repeat: -1, repeatDelay: .3, ease: 'none', paused: true,
+  const ripple = { radius: -.4 };
+  const dotWave = gsap.to(ripple, {
+    radius: 1.9, duration: 2.7, repeat: -1, repeatDelay: .3, ease: 'none', paused: true,
     onUpdate: () => {
       if (disposed) return;
-      updateWaveform(ripple.progress);
+      dotPositions.forEach(({ x, z, radius }, index) => {
+        const pulse = Math.exp(-(((radius - ripple.radius) / .17) ** 2));
+        const scale = 1 + 1.5 * pulse;
+        dotTransform.makeScale(scale, 1, scale);
+        dotTransform.setPosition(x, thickness / 2 + .001, z);
+        dotGrid.setMatrixAt(index, dotTransform);
+      });
+      dotGrid.instanceMatrix.needsUpdate = true;
+      stageElement.dataset.dotWave = ripple.radius.toFixed(3);
       render();
     },
   });
@@ -319,7 +293,7 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
   const syncDashMotion = () => {
     const paused = document.hidden || !inView || reducedMotion;
     marchingDashes.paused(scrollState.perimeter <= 0 || paused);
-    voiceWave.paused(scrollState.spread <= 0 || paused);
+    dotWave.paused(scrollState.spread <= 0 || paused);
     flowLoop.paused(scrollState.spread <= 0 || paused);
   };
   document.addEventListener('visibilitychange', syncDashMotion);
@@ -333,8 +307,8 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
       surface.position.y = line.position.y = isolate === index ? 0 : (index - 1.5) * spacing + fade.lift;
       line.material.color.copy(paperTone).lerp(inkTone, fade.opacity).convertSRGBToLinear();
     });
-    waveform.visible = scrollState.designs > 0;
-    waveMaterial.color.copy(paperTone).lerp(inkTone, outlines[0].fade.opacity * scrollState.designs).convertSRGBToLinear();
+    dotGrid.visible = scrollState.designs > 0;
+    dotMaterial.color.copy(paperTone).lerp(inkTone, outlines[0].fade.opacity * scrollState.designs).convertSRGBToLinear();
     flowPaths.setOpacity(outlines[1].fade.opacity * scrollState.designs);
     uiDiagram.setOpacity(outlines[2].fade.opacity * scrollState.designs);
     uiDiagram.setExpansion(scrollState.spread);
@@ -368,7 +342,6 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
     const aspect = width / height;
     // Reserve the complete perimeter before its first dash is drawn. Fit in
     // camera space so tilting, lifted layers, and narrow canvases stay safe.
-    const extent = halfSize + .18;
     const perimeterTop = 1.5 * (thickness + 1.25 * scrollState.spread) + thickness / 2 + .16;
     const lower = isolate !== undefined ? -thickness / 2
       : Math.min(-perimeterTop, ...outlines.map(({ surface }) => surface.position.y - thickness / 2));
@@ -376,13 +349,9 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
       : Math.max(perimeterTop, ...outlines.map(({ surface }, index) =>
         surface.position.y + thickness / 2 + (index === 2 ? .38 * scrollState.spread + .005 : 0)));
     camera.updateMatrixWorld();
-    const point = new Vector3();
-    let projectedX = 0, projectedY = 0;
-    for (const x of [-extent, extent]) for (const y of [lower, upper]) for (const z of [-extent, extent]) {
-      point.set(x, y, z).applyMatrix4(camera.matrixWorldInverse);
-      projectedX = Math.max(projectedX, Math.abs(point.x));
-      projectedY = Math.max(projectedY, Math.abs(point.y));
-    }
+    const view = camera.matrixWorldInverse.elements;
+    const projectedX = perimeterRadius * Math.hypot(view[0], view[8]) + Math.max(Math.abs(view[4] * lower + view[12]), Math.abs(view[4] * upper + view[12]));
+    const projectedY = perimeterRadius * Math.hypot(view[1], view[9]) + Math.max(Math.abs(view[5] * lower + view[13]), Math.abs(view[5] * upper + view[13]));
     const padding = Math.min(24, width * .08, height * .08);
     const halfHeight = Math.max(
       isolate !== undefined ? 0 : 2.8 + .45 * scrollState.perimeter,
@@ -579,7 +548,7 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
     canvas.removeEventListener('pointerleave', cancelPointer);
     animation.revert();
     marchingDashes.kill();
-    voiceWave.kill();
+    dotWave.kill();
     flowLoop.kill(); flowPaths.dispose();
     uiDiagram.dispose();
     document.removeEventListener('visibilitychange', syncDashMotion);
@@ -592,7 +561,7 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
     controls.dispose();
     renderer.domElement.removeEventListener('dblclick', resetView);
     outlines.forEach(({ line }) => { line.geometry.dispose(); line.material.dispose(); });
-    waveform.dispose(); waveGeometry.dispose(); waveMaterial.dispose();
+    dotGrid.dispose(); dotGeometry.dispose(); dotMaterial.dispose();
     solid.dispose(); cutoutSolid.dispose(); material.dispose(); fill.dispose();
     renderer.dispose(); renderer.forceContextLoss(); renderer.domElement.remove();
     },

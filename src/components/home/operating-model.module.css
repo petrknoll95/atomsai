@@ -15,7 +15,7 @@
 .art { position:relative; }
 .art > canvas { display:block; position:absolute; inset:0; width:100%; height:100%; touch-action:pan-y; }
 .sceneFallback { position:absolute; inset:12% 16%; display:flex; flex-direction:column; justify-content:space-around; }
-.sceneFallback i { display:block; width:100%; height:22%; border:1px solid var(--diagram-ink); border-radius:12%; background:var(--diagram-fill,var(--diagram-surface)); transform:rotate(-30deg) skewX(30deg) scaleY(.65); }
+.sceneFallback i { display:block; width:100%; height:22%; border:1px solid var(--diagram-ink); border-radius:50%; background:var(--diagram-fill,var(--diagram-surface)); }
 .art[data-ready='true'] .sceneFallback { visibility:hidden; }
 .art[data-active='0'] .sceneFallback i:nth-child(3), .art[data-active='1'] .sceneFallback i:nth-child(2), .art[data-active='2'] .sceneFallback i:nth-child(1), .art[data-active='3'] .sceneFallback i { border-color:var(--palette-iris-light); background:var(--diagram-fill,var(--diagram-surface)); }
 .accordion { --color-foreground:var(--palette-cream); --color-muted-foreground:color-mix(in srgb,var(--palette-cream) 65%,var(--diagram-surface)); --color-secondary:color-mix(in srgb,var(--palette-cream) 10%,transparent); --color-secondary-foreground:var(--palette-cream); --color-ring:var(--palette-cream); display:grid; gap:8px; min-width:0; color:var(--color-foreground); }
