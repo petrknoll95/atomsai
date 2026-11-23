@@ -1,9 +1,9 @@
 'use client';
 
-import { useRef, useState, type KeyboardEvent } from 'react';
+import { useRef, useState, type ComponentType, type KeyboardEvent } from 'react';
 import { ArrowIcon } from '@/components/arrow-icon';
 import { ButtonLink } from '@/components/ui';
-import { OperatingModelScene } from './operating-model-scene';
+import { OperatingModelScene, type OperatingModelSceneProps } from './operating-model-scene';
 import styles from './operating-model.module.css';
 
 const layers = [
@@ -13,7 +13,7 @@ const layers = [
   { title: 'Custom AI engineering', description: 'Tailored AI systems for workflows that need more than ready-made software.', action: 'Discuss your project', href: '/company/contact' },
 ];
 
-export function OperatingModel() {
+export function OperatingModel({ Scene = OperatingModelScene }: { Scene?: ComponentType<OperatingModelSceneProps> } = {}) {
   const [active, setActive] = useState(0);
   const [selection, setSelection] = useState<{ index: number } | null>(null);
   const root = useRef<HTMLElement>(null);
@@ -44,7 +44,7 @@ export function OperatingModel() {
     <div className={styles.diagramRow} data-model-row>
     <div className={styles.rowBackdrop} data-model-backdrop aria-hidden="true" />
     <div className={styles.visual} data-model-visual data-active={active} aria-hidden="true">
-      <OperatingModelScene active={active} selection={selection} onHighlight={setActive} />
+      <Scene active={active} selection={selection} onHighlight={setActive} />
     </div>
 
     <div className={styles.accordion} aria-label="Explore the operating model">
