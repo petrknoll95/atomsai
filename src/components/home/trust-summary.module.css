@@ -28,17 +28,17 @@
 }
 /* The whole card is the link. ClipCard insets this painted layer 12px on hover or focus
    (the homepage offering-card interaction); the content never moves. */
-.background{--clip-inset:0px;position:absolute;inset:0;z-index:-1;pointer-events:none;background:var(--palette-mist);clip-path:inset(var(--clip-inset) round var(--radius-card));}
+.background{--clip-inset:0px;position:absolute;inset:0;z-index:-1;pointer-events:none;background:color-mix(in srgb,var(--palette-mist) 74%,var(--palette-paper));clip-path:inset(var(--clip-inset) round var(--radius-card));}
 .card:focus-visible{outline:2px solid var(--palette-deep-green);outline-offset:3px;}
 
 .label{grid-area:label;justify-self:start;padding:5px 12px;border-radius:var(--radius-control);background:var(--palette-paper);color:var(--palette-deep-green);font-size:var(--text-label);line-height:1.2;}
 .title{grid-area:title;max-width:16ch;margin-top:32px;font-size:clamp(26px,2.2vw,36px);line-height:1.05;text-wrap:balance;}
 /* Trimmed like the .display title, so the gap between them is measured glyph to glyph. */
 .text{grid-area:text;max-width:44ch;margin-top:32px;font-size:clamp(15px,1.05vw,17px);line-height:1.45;text-wrap:pretty;text-box:trim-both cap alphabetic;}
-/* The line-only SVG is a mask, so the strokes take the card's text colour. Its viewBox is cropped
+/* The line-only SVG is a mask for the green and iris strokes. Its viewBox is cropped
    to the ink and the box takes the ink's proportions (inline aspect-ratio), so every drawing's
    ink meets the top, bottom and right padding exactly. */
-.art{grid-area:art;align-self:start;justify-self:end;height:clamp(140px,13vw,210px);background:currentColor;mask-size:100% 100%;mask-repeat:no-repeat;}
+.art{grid-area:art;align-self:start;justify-self:end;height:clamp(140px,13vw,210px);background:linear-gradient(150deg,currentColor 42%,var(--palette-iris-dark));mask-size:100% 100%;mask-repeat:no-repeat;}
 
 @media(max-width:991px){
   .card{--clip-amount:8;}

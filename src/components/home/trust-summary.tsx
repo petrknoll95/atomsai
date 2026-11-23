@@ -4,13 +4,13 @@ import { siteHref } from '@/lib/site-links';
 import { ClipCard } from './clip-card';
 import styles from './trust-summary.module.css';
 
-// Every card shares the mist palette; the line art is tinted with the card's text colour.
+// Every card shares the mist palette and the same line-art treatment.
 // ink is each line SVG's ink box (width / height), printed by scripts/trust-line-art.mjs.
 const trust = [
-  { image: 'integrations', href: siteHref('/integrations'), ink: '254.45 / 195.604', label: 'Integrations', title: 'Fits into your current stack', text: 'Connect AI to existing tools and workflows through integrations, APIs, and custom engineering.' },
-  { image: 'safeguards', href: '/trust#controls', ink: '236.062 / 165.912', label: 'Safeguards', title: 'Guardrails where they matter', text: 'Set boundaries for AI actions, with oversight and escalation for sensitive situations.' },
-  { image: 'reliability', href: '/trust#certifications', ink: '219.734 / 208.608', label: 'Reliability', title: 'Engineered for real conditions', text: 'Built with years of experience handling live calls, interruptions, and unpredictable networks.' },
-  { image: 'security', href: '/trust#documents', ink: '138.71 / 219.734', label: 'Security', title: 'Data privacy & security you can verify', text: 'Explore product-specific security controls, privacy practices, and compliance documentation.' },
+  { image: 'integrations', href: siteHref('/integrations'), ink: '254.45 / 195.604', label: 'Integrations', title: 'Fits into your current stack', text: 'See which tools can connect to the systems your team already uses for calls and follow-ups.' },
+  { image: 'safeguards', href: '/trust#controls', ink: '236.062 / 165.912', label: 'Safeguards', title: 'Guardrails where they matter', text: 'See how role-based permissions and access logs help control who can reach sensitive data.' },
+  { image: 'reliability', href: '/trust#certifications', ink: '219.734 / 208.608', label: 'Reliability', title: 'Engineered for real conditions', text: 'Review the independent audit of JustCall’s availability, security, and confidentiality controls.' },
+  { image: 'security', href: '/trust#documents', ink: '138.71 / 219.734', label: 'Security', title: 'Data privacy & security you can verify', text: 'Find product-specific security documentation and request the reports your team needs.' },
 ];
 
 export function TrustSummary() {

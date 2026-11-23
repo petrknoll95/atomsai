@@ -15,7 +15,7 @@ import { recordedCallVoice } from '@/lib/recorded-call-voice';
 import type { CallLine } from '@/lib/scripted-call-player';
 
 const applications = [
-  { name: 'JustCall', mark: 'justcall-mark.svg', title: 'Go off script. See what follows.', description: 'Interrupt it, switch languages, or ask for details by text. Plus, the conversation stays in sync with the tools your team already uses.', action: 'Have the agent call me', href: '/company/contact', secondaryAction: 'Explore JustCall', secondaryHref: 'https://justcall.io/' },
+  { name: 'JustCall', mark: 'justcall-mark.svg', title: 'Go off script. See what follows.', description: 'Interrupt it, switch languages, or ask for details by text. Plus, the conversation stays in sync with the tools your team already uses.', action: 'Play a demo call', href: '/company/contact', secondaryAction: 'Explore JustCall', secondaryHref: 'https://justcall.io/' },
   { name: 'ServiceAgent', mark: 'serviceagent-mark.svg', title: 'Listen in on a busy front desk', description: 'An emergency repair. A last-minute reschedule. A billing question. Pick a call and follow what ServiceAgent does next, from the conversation to the work that follows.', action: 'Explore ServiceAgent', href: 'https://serviceagent.ai/', secondaryAction: null, secondaryHref: null },
   { name: 'PyAI', mark: 'pyai-mark.svg', title: 'Get under the hood of our voice stack', description: 'Test PyAI on phone-quality audio, inspect the output, and take the APIs into your own build.', action: 'Open the Playground', href: 'https://pyai.com/playground', secondaryAction: 'Explore the APIs', secondaryHref: 'https://docs.pyai.com/api-reference' },
 ];
@@ -28,6 +28,7 @@ export function ApplicationsWorkflow() {
   const justCall = useScriptedCall();
   const serviceCall = useScriptedCall();
   const serviceAudio = useRef<HTMLAudioElement>(null);
+  const pyaiAudio = useRef<HTMLAudioElement>(null);
   const [handoff, setHandoff] = useState<CallLine[] | null>(null);
   const [smsSent, setSmsSent] = useState(false);
   const callExample = justCallExamples[selected[0]];
@@ -45,6 +46,7 @@ export function ApplicationsWorkflow() {
     if (index === active) return;
     justCall.player.pause();
     serviceCall.player.pause();
+    pyaiAudio.current?.pause();
     setActive(index);
   };
   const selectExample = (index: number) => {
@@ -72,7 +74,7 @@ export function ApplicationsWorkflow() {
   useEffect(() => {
     const element = root.current;
     if (!element) return;
-    const pause = () => { justCall.player.pause(); serviceCall.player.pause(); };
+    const pause = () => { justCall.player.pause(); serviceCall.player.pause(); pyaiAudio.current?.pause(); };
     const observer = new IntersectionObserver(([entry]) => { if (!entry.isIntersecting) pause(); });
     observer.observe(element);
     const onHidden = () => { if (document.hidden) pause(); };
@@ -83,7 +85,7 @@ export function ApplicationsWorkflow() {
   return <section ref={root} id="applications" className={`page-container ${styles.section}`} aria-labelledby="applications-title" data-application-workflow>
     <audio ref={serviceAudio} preload="none" hidden />
     <h2 id="applications-title" className={`display ${styles.sectionHeading}`}>Now it’s your turn</h2>
-    <p className={styles.sectionLead}>A live sales call to challenge. A busy front desk to listen in on. A voice stack to test for yourself.</p>
+    <p className={styles.sectionLead}>A sales call to challenge. A busy front desk to listen in on. A voice stack to test for yourself.</p>
     <div className={`theme-dark ${styles.panel}`} data-theme="dark">
       <div className={styles.copy}>
         <Eyebrow className={styles.eyebrow} href="#applications">Experience AtomsAI</Eyebrow>
@@ -129,7 +131,7 @@ export function ApplicationsWorkflow() {
               <button type="button" aria-label="Replay ServiceAgent call" onClick={() => startServiceCall()}><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6" /></svg></button>
             </>} />
             {serviceCall.playback.phase === 'error' && <p className={styles.audioError} role="status">Audio couldn’t play. Try again or read the transcript.</p>}
-          </> : <PyAIScene field={pyaiFields[selected[2]].field} />}</div></div>)}
+          </> : <PyAIScene field={pyaiFields[selected[2]].field} audioRef={pyaiAudio} />}</div></div>)}
         </div>
       </div>
     </div>

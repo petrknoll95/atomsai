@@ -171,7 +171,7 @@ export function StoryPortraits({ master, slots, images, paused, onTogglePlayback
   return (
     <div ref={frameRef} data-story-portraits
       className={`${carousel.viewport} ${styles.portrait} ${styles.portraitCarousel}`} onDragStart={event => event.preventDefault()}>
-      <div ref={ref} className={carousel.portraitViewport} role="img" aria-label="Portrait accompanying the customer story">
+      <div ref={ref} className={carousel.portraitViewport} role="img" aria-label={images[0].alt}>
       <div className={carousel.portraitTrack} aria-hidden="true">
         {slots.map((slot, index) => <div key={slot} className={carousel.portraitSlide} data-portrait-slide={index} />)}
       </div>

@@ -8,7 +8,7 @@ import sharp from 'sharp';
 
 const base = process.env.VISUAL_URL || 'http://127.0.0.1:3001';
 const output = path.resolve('public/assets/menu');
-// Plane indexes follow operating-model-three.ts: 0 dots, 1 flows, 2 interface, 3 logo.
+// Plane indexes follow operating-model-three.ts: 0 waveform, 1 workflow, 2 interface, 3 logo.
 const planes = [
   { index: 0, name: 'plane-models' },
   { index: 2, name: 'plane-applications' },

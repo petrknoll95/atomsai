@@ -20,7 +20,7 @@
 .art[data-active='0'] .sceneFallback i:nth-child(3), .art[data-active='1'] .sceneFallback i:nth-child(2), .art[data-active='2'] .sceneFallback i:nth-child(1), .art[data-active='3'] .sceneFallback i { border-color:var(--palette-iris-light); background:var(--diagram-fill,var(--diagram-surface)); }
 .accordion { --color-foreground:var(--palette-cream); --color-muted-foreground:color-mix(in srgb,var(--palette-cream) 65%,var(--diagram-surface)); --color-secondary:color-mix(in srgb,var(--palette-cream) 10%,transparent); --color-secondary-foreground:var(--palette-cream); --color-ring:var(--palette-cream); display:grid; gap:8px; min-width:0; color:var(--color-foreground); }
 .item { position:relative; display:flex; flex-direction:column; border-radius:var(--radius-card); background:var(--diagram-surface); opacity:.5; transition:opacity .45s cubic-bezier(.22,1,.36,1); }
-.item[data-active='true'] { opacity:1; }
+.item[data-active='true'] { opacity:1; box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--palette-iris-light) 32%,transparent); }
 .trigger { display:flex; align-items:baseline; gap:16px; width:100%; min-height:76px; padding:20px; border-radius:var(--radius-card); text-align:left; color:var(--color-muted-foreground); transition:color .3s ease; }
 .trigger:hover,.trigger:focus-visible,.item[data-active='true'] .trigger { color:var(--color-foreground); }
 /* A closed card is one big trigger: the button's hit area stretches over the whole card.
@@ -30,8 +30,8 @@
 .item[data-active='false'] .trigger::after { content:''; position:absolute; inset:0; border-radius:var(--radius-card); }
 .item[data-active='false']:hover .trigger { color:var(--color-foreground); }
 .name { flex:1; font-size:clamp(24px,2vw,32px); line-height:1.08; }
-.indicator { flex:none; opacity:0; transform:translate(-4px,4px); transition:opacity .3s ease, transform .3s ease; }
-.item[data-active='true'] .indicator { opacity:1; transform:none; }
+.indicator { flex:none; opacity:.55; transform:translate(-4px,4px); transition:opacity .3s ease, transform .3s ease; }
+.item[data-active='true'] .indicator { opacity:1; transform:none; color:var(--palette-iris-light); }
 .detail { display:grid; flex:0 1 auto; grid-template-rows:0fr; opacity:0; transition:grid-template-rows .5s cubic-bezier(.22,1,.36,1), flex-grow .5s cubic-bezier(.22,1,.36,1), opacity .15s ease; }
 .detail > div { display:flex; min-height:0; overflow:hidden; }
 .item[data-active='true'] .detail { flex-grow:1; grid-template-rows:1fr; opacity:1; transition: grid-template-rows .5s cubic-bezier(.22,1,.36,1), flex-grow .5s cubic-bezier(.22,1,.36,1), opacity .3s ease .12s; }

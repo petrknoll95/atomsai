@@ -20,6 +20,7 @@
 .label { font-weight: var(--font-weight-medium); font-variation-settings: 'wght' var(--font-weight-medium), 'ital' 100; }
 .card { transition: box-shadow .3s ease; }
 .card[data-current='true'] { box-shadow: inset 0 0 0 2px var(--palette-iris-light); }
+.card[data-outcome='true'] .header { color: var(--palette-iris-dark); }
 .player { gap: 8px; font-size: var(--text-caption); font-variant-numeric: tabular-nums; }
 .player button { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; color: var(--ink); --button-fill: color-mix(in srgb, var(--ink) 8%, transparent); }
 .player button:focus-visible { outline: 2px solid var(--palette-iris); outline-offset: 3px; }

@@ -2,8 +2,8 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import {
-  CircleGeometry, Color, DynamicDrawUsage, ExtrudeGeometry, InstancedMesh, Matrix4, Mesh, MeshBasicMaterial, OrthographicCamera,
-  Path, Raycaster, Scene, Shape, Vector2, Vector3, WebGLRenderer,
+  Color, DynamicDrawUsage, ExtrudeGeometry, InstancedMesh, Matrix4, Mesh, MeshBasicMaterial, OrthographicCamera,
+  Path, Raycaster, Scene, Shape, ShapeGeometry, Vector2, Vector3, WebGLRenderer,
 } from 'three';
 import { Line2 } from 'three/addons/lines/Line2.js';
 import { LineGeometry } from 'three/addons/lines/LineGeometry.js';
@@ -33,7 +33,7 @@ type DiagramOptions = {
   scroll?: boolean;
   /** Extra pinned scroll after the last layer, in viewport heights, for exit transitions. */
   tail?: number;
-  /** Show one plane only (0 dots, 1 flows, 2 interface, 3 logo), fully opened and tightly framed. For still renders. */
+  /** Show one plane only (0 waveform, 1 workflow, 2 interface, 3 logo) for still renders. */
   isolate?: number;
   /** Keep the drawing buffer so the canvas can be exported (toDataURL). */
   capture?: boolean;
@@ -65,7 +65,7 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
 
   const halfSize = 1.32;
   const fillet = .22;
-  const thickness = .10;
+  const thickness = .06;
   const material = new LineMaterial({ color: colors.ink, linewidth: 1.5, depthTest: true, depthWrite: true, alphaToCoverage: false, transparent: false });
   const fill = new MeshBasicMaterial({
     color: colors.surface,
@@ -152,28 +152,36 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
     outlines.push({ line, kind, surface, fade: { opacity: index === 3 ? 1 : .18, lift: 0 } });
   }
 
-  // Surface-mounted dots share the bottom slab's transform and depth occlusion.
-  const dotGeometry = new CircleGeometry(.012, 20);
-  dotGeometry.rotateX(-Math.PI / 2);
-  const dotMaterial = new MeshBasicMaterial({ color: colors.ink, depthTest: true, depthWrite: true });
-  const dotGrid = new InstancedMesh(dotGeometry, dotMaterial, 13 * 13);
-  dotGrid.visible = false;
-  dotGrid.instanceMatrix.setUsage(DynamicDrawUsage);
-  const dotTransform = new Matrix4();
-  const dotPositions: { x: number; z: number; radius: number }[] = [];
-  for (let row = 0; row < 13; row++) {
-    for (let column = 0; column < 13; column++) {
-      const x = (column - 6) * .175, z = (row - 6) * .175;
-      dotPositions.push({ x, z, radius: Math.hypot(x, z) });
-      dotTransform.makeTranslation(x, thickness / 2 + .001, z);
-      dotGrid.setMatrixAt(row * 13 + column, dotTransform);
-    }
-  }
-  dotGrid.instanceMatrix.needsUpdate = true;
-  dotGrid.renderOrder = 1;
-  outlines[0].surface.add(dotGrid);
-
   const iris = getComputedStyle(element).getPropertyValue('--palette-iris').trim() || '#A77BCA';
+  // A voice waveform on the infrastructure layer uses the same visual cue as the PyAI demo.
+  const barShape = new Shape();
+  barShape.absarc(0, -.29, .21, Math.PI, 2 * Math.PI, false);
+  barShape.absarc(0, .29, .21, 0, Math.PI, false);
+  barShape.closePath();
+  const waveGeometry = new ShapeGeometry(barShape, 8);
+  waveGeometry.rotateX(-Math.PI / 2);
+  const waveMaterial = new MeshBasicMaterial({ color: colors.ink, depthTest: true, depthWrite: true });
+  const amplitudes = [.09, .17, .28, .21, .38, .63, .90, .53, .33, .46, .68, .86, 1, .58, .35, .63, .82, .44, .29, .51, .66, .32, .21, .13, .07];
+  const waveform = new InstancedMesh(waveGeometry, waveMaterial, amplitudes.length);
+  const barTransform = new Matrix4();
+  waveform.visible = false;
+  waveform.position.set(.15, 0, .23);
+  waveform.instanceMatrix.setUsage(DynamicDrawUsage);
+  waveform.renderOrder = 1;
+  outlines[0].surface.add(waveform);
+
+  function updateWaveform(pulse = -1) {
+    amplitudes.forEach((height, index) => {
+      const progress = index / (amplitudes.length - 1);
+      const lift = 1 + .24 * Math.exp(-(((progress - pulse) / .13) ** 2));
+      barTransform.makeScale(.13, 1, height * 1.22 * lift);
+      barTransform.setPosition((progress - .5) * 1.96, thickness / 2 + .003, 0);
+      waveform.setMatrixAt(index, barTransform);
+    });
+    waveform.instanceMatrix.needsUpdate = true;
+  }
+  updateWaveform();
+
   const flowPaths = createFlowPaths(outlines[1].surface, thickness, iris, colors);
   const uiDiagram = createUiDiagram(outlines[2].surface, thickness, colors);
 
@@ -284,20 +292,12 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
   const marchingDashes = gsap.to(perimeterMaterial, {
     dashOffset: -.14, duration: 1.2, repeat: -1, ease: 'none', paused: true, onUpdate: render,
   });
-  const ripple = { radius: -.4 };
-  const dotWave = gsap.to(ripple, {
-    radius: 1.9, duration: 2.7, repeat: -1, repeatDelay: .3, ease: 'none', paused: true,
+  const ripple = { progress: -.25 };
+  const voiceWave = gsap.to(ripple, {
+    progress: 1.25, duration: 2.7, repeat: -1, repeatDelay: .3, ease: 'none', paused: true,
     onUpdate: () => {
       if (disposed) return;
-      dotPositions.forEach(({ x, z, radius }, index) => {
-        const pulse = Math.exp(-(((radius - ripple.radius) / .17) ** 2));
-        const scale = 1 + 1.5 * pulse;
-        dotTransform.makeScale(scale, 1, scale);
-        dotTransform.setPosition(x, thickness / 2 + .001, z);
-        dotGrid.setMatrixAt(index, dotTransform);
-      });
-      dotGrid.instanceMatrix.needsUpdate = true;
-      stageElement.dataset.dotWave = ripple.radius.toFixed(3);
+      updateWaveform(ripple.progress);
       render();
     },
   });
@@ -319,7 +319,7 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
   const syncDashMotion = () => {
     const paused = document.hidden || !inView || reducedMotion;
     marchingDashes.paused(scrollState.perimeter <= 0 || paused);
-    dotWave.paused(scrollState.spread <= 0 || paused);
+    voiceWave.paused(scrollState.spread <= 0 || paused);
     flowLoop.paused(scrollState.spread <= 0 || paused);
   };
   document.addEventListener('visibilitychange', syncDashMotion);
@@ -333,8 +333,8 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
       surface.position.y = line.position.y = isolate === index ? 0 : (index - 1.5) * spacing + fade.lift;
       line.material.color.copy(paperTone).lerp(inkTone, fade.opacity).convertSRGBToLinear();
     });
-    dotGrid.visible = scrollState.designs > 0;
-    dotMaterial.color.copy(paperTone).lerp(inkTone, outlines[0].fade.opacity * scrollState.designs).convertSRGBToLinear();
+    waveform.visible = scrollState.designs > 0;
+    waveMaterial.color.copy(paperTone).lerp(inkTone, outlines[0].fade.opacity * scrollState.designs).convertSRGBToLinear();
     flowPaths.setOpacity(outlines[1].fade.opacity * scrollState.designs);
     uiDiagram.setOpacity(outlines[2].fade.opacity * scrollState.designs);
     uiDiagram.setExpansion(scrollState.spread);
@@ -579,7 +579,7 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
     canvas.removeEventListener('pointerleave', cancelPointer);
     animation.revert();
     marchingDashes.kill();
-    dotWave.kill();
+    voiceWave.kill();
     flowLoop.kill(); flowPaths.dispose();
     uiDiagram.dispose();
     document.removeEventListener('visibilitychange', syncDashMotion);
@@ -592,7 +592,7 @@ export function mountOperatingModel(element: HTMLElement, options: DiagramOption
     controls.dispose();
     renderer.domElement.removeEventListener('dblclick', resetView);
     outlines.forEach(({ line }) => { line.geometry.dispose(); line.material.dispose(); });
-    dotGrid.dispose(); dotGeometry.dispose(); dotMaterial.dispose();
+    waveform.dispose(); waveGeometry.dispose(); waveMaterial.dispose();
     solid.dispose(); cutoutSolid.dispose(); material.dispose(); fill.dispose();
     renderer.dispose(); renderer.forceContextLoss(); renderer.domElement.remove();
     },

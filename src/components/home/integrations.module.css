@@ -43,17 +43,16 @@
 .copy {
   position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
   width: min(800px, 80%); display: flex; flex-direction: column; align-items: center;
-  gap: clamp(40px, 4vw, 64px); text-align: center;
+  text-align: center;
 }
 .title { font-size: clamp(32px, 4vw, 64px); line-height: 1.05; text-wrap: balance; }
-.copy > :global(.eyebrow) { align-self: center; }
 @media (max-width: 767px) {
   .stage { height: 660px; }
   /* The copy spans the full width here, so the rings must arc above and below it inside the
      stage: at the desktop scale only the very edges of ring 0 reached the crop and no slot
      qualified for a logo. These radii put the top and bottom arcs of rings 0 and 1 in view. */
   .grid { --orbit-base: clamp(380px, 84vw, 640px); --orbit-step: 84px; --tile-size: 64px; }
-  .copy { width: 100%; gap: 40px; }
+  .copy { width: 100%; }
   .title { font-size: clamp(30px, 8vw, 42px); }
 }
 @media (prefers-reduced-motion: reduce) {

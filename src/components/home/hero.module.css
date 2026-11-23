@@ -21,6 +21,8 @@
 .navMarker { position:relative; display:block; isolation:isolate; }
 .navInk { display:flex; align-items:center; gap:8px; padding:6px 12px 6px 18px; }
 .navPill { position:absolute; inset:0; color:var(--color-primary-foreground); background:var(--color-primary); border-radius:999px; pointer-events:none; clip-path:inset(calc(50% - 3px) calc(100% - 6px) calc(50% - 3px) 0 round 999px); }
+.dropdown[data-expanded='true'] .navPill { background:var(--palette-iris-light); color:var(--palette-deep-green); }
+.nav>a:focus-visible,.dropdown>summary:focus-visible { outline:2px solid currentColor; outline-offset:2px; }
 .nav>a { transition:var(--focus-transition); }
 /* The GSAP endpoint restores the exact source position and opacity. */
 @media (prefers-reduced-motion:reduce) { .nav>a { transition:none; } }

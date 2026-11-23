@@ -1,6 +1,20 @@
-# Customer story demo portraits
+# Customer story imagery
 
-Selected 28 October 2026 from free Unsplash photo pages under the [Unsplash License](https://unsplash.com/license). These seated studio portraits use simple backgrounds and relaxed poses to complement the original Northwind image. The first story and its Figma portrait remain unchanged.
+## Homepage carousel
+
+The current homepage uses generated editorial photography to illustrate each customer's industry. The images depict generic work settings and are stored as 480×640 and 960×1280 WebP files.
+
+| Local asset prefix | Image generation subject |
+| --- | --- |
+| `pinegrove-property` | A cream-painted house with a dark sage door, seen through leafy garden shadows |
+| `brightline-plumbing` | A plumber's hands and a small wrench beside copper pipes below a utility sink |
+| `kestrel-freight` | An unbranded white freight tractor and trailer at a quiet distribution yard |
+
+Each image was generated with the built-in image tool using a portrait editorial composition, natural daylight, warm neutrals and restrained forest greens, subtle analog grain, and realistic materials. The scenes avoid lettering, logos, and identifiable faces.
+
+## Earlier demo portraits
+
+Selected 28 October 2026 from free Unsplash photo pages under the [Unsplash License](https://unsplash.com/license). These seated studio portraits were used in an earlier demo carousel.
 
 | Local asset prefix | Photographer / contributor | Original photo |
 | --- | --- | --- |
@@ -12,4 +26,4 @@ All three are cropped to 3:4 and encoded as WebP at quality 83, in 480×640 and 
 
 The carousel preloads the local responsive files within 600px of the viewport and decodes the next portrait before its eight-column reveal. No Unsplash requests occur at runtime.
 
-Additional story names, companies, quotes and results remain fictional demo content; stock subjects do not represent customer endorsements. These selections replace the initial Christina / Shipman / Brooke set.
+The older demo paired these photographs with fictional quotes and results. The subjects did not represent customer endorsements.
