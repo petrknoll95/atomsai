@@ -3,7 +3,7 @@
 import { useId, type CSSProperties } from 'react';
 import { OperatingModel } from './operating-model';
 import { useOperatingModelScene, type OperatingModelSceneProps } from './operating-model-scene';
-import { carouselCirclePath, carouselLogoProfiles } from './operating-model-diagram/carousel-profile';
+import { carouselCirclePath, carouselLogoCenter, carouselLogoProfiles } from './operating-model-diagram/carousel-profile';
 import { logoMarkPath } from './operating-model-diagram/logo-mark';
 import styles from './operating-model.module.css';
 
@@ -52,14 +52,15 @@ function CarouselScene(props: OperatingModelSceneProps) {
       <div className={styles.carouselViewport} data-model-viewport data-model-morph="">
         <div className={styles.carouselTrack}>
           {circleSlides.map((plate, index) => {
-            // First paint uses the same five paths as the live deck at the mark.
-            const slot = (index + 1) % circleSlides.length;
+            // Start with the mark's slits framing a fully masked first plate.
+            const slot = (index - 1 + carouselLogoCenter) % circleSlides.length;
             const profile = carouselLogoProfiles[slot];
+            const centered = slot === carouselLogoCenter;
             const pathId = `${id}-profile-${index}`;
             const clipId = `${id}-clip-${index}`;
             return <div key={index} className={styles.carouselSlide} data-model-plate={plate.key}
-              data-model-logo-slot={profile ? slot : undefined}
-              style={profile ? { '--model-logo-x': profile.offset - index } as CSSProperties : undefined}>
+              data-model-logo-slot={profile || centered ? slot : undefined} data-model-reveal-plate={centered ? '' : undefined}
+              style={profile || centered ? { '--model-logo-x': (profile?.offset ?? 0) - index } as CSSProperties : undefined}>
               <div className={styles.carouselPlate} data-model-plate-surface>
                 <svg className={styles.carouselDrawing} viewBox="0 0 1 1" overflow="visible">
                   <path id={pathId} className={styles.carouselProfile} data-model-profile

@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { attachKineticCircles, circleGeometry, kineticCircleOptions, type KineticCircleFrame } from './kinetic-circles';
 import { attachKineticCircleInteraction } from './kinetic-circle-interaction';
-import { carouselCirclePath, carouselLogoProfiles } from './operating-model-diagram/carousel-profile';
+import { carouselCirclePath, carouselLogoCenter, carouselLogoProfiles } from './operating-model-diagram/carousel-profile';
 import type { OperatingModelMount } from './operating-model-scene';
 
 const storyHeight = 4.4;
@@ -46,21 +46,33 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
     if (distance >= 1) {
       if (morphing) {
         paths.forEach(path => path.setAttribute('d', carouselCirclePath));
+        slides.forEach(slide => slide.removeAttribute('data-model-reveal-plate'));
         viewport.removeAttribute('data-model-morph');
         morphing = false;
       }
       return false;
     }
 
-    // The nearest plate becomes the body of the mark. Each neighboring plate
-    // becomes one lobe and moves between that lobe and its carousel position.
+    // Keep the plate in place. Its mask opens at the same rate as the gap
+    // between the two slits that move into the nearest carousel positions.
     morphing = true;
     viewport.setAttribute('data-model-morph', '');
     const centered = lap < 1 ? Math.floor(position) + 1 : Math.floor(position);
     const left = (width - diameter) / 2;
+    const nearEdge = circleGeometry(1, diameter, compact).x - diameter / 2;
+    const inset = Math.max(0, diameter / 2 - nearEdge * opening);
     slides.forEach((slide, index) => {
       const slot = (index - centered + snapCount * 1.5) % snapCount - snapCount / 2;
-      const profile = carouselLogoProfiles[slot + 2];
+      const profile = carouselLogoProfiles[slot + carouselLogoCenter];
+      slide.toggleAttribute('data-model-reveal-plate', slot === 0);
+      if (slot === 0) {
+        slide.style.visibility = 'visible';
+        slide.style.transform = `translate3d(${left - origins[index]}px, 0, 0)`;
+        slide.style.clipPath = `inset(0 ${inset}px)`;
+        slide.style.setProperty('--image-wash', '0');
+        paths[index].setAttribute('d', carouselCirclePath);
+        return;
+      }
       slide.style.visibility = profile ? 'visible' : 'hidden';
       if (!profile) return;
       const geometry = circleGeometry(slot, diameter, compact);

@@ -1,12 +1,10 @@
-// The official mark's middle contour and its two left lobes, with their joins
-// cut along the existing vertical edges. Reflect the lobes to get the right side.
+// The three left slits of the official mark, with their joins cut along the
+// existing vertical edges. Reflect them to make the right side.
 const markScale = .94 / 440;
-const center = [
+const centerSlit = [
   125, 0,
-  173.035, 36.0783, 207.632, 89.0586, 220, 150.107,
-  232.368, 89.0586, 266.965, 36.0783, 315, 0,
-  315, 400,
-  266.963, 363.92, 232.366, 310.935, 220, 249.883,
+  173.035, 36.0783, 207.632, 89.0586, 220.5, 150.107,
+  220.5, 249.883,
   207.634, 310.935, 173.037, 363.92, 125, 400,
 ];
 const innerLobe = [
@@ -26,22 +24,10 @@ function normalize(points: number[], anchor: number, side: number) {
   return points.map((value, i) => .5 + (i % 2 ? value - 200 : (value - anchor) * side) * markScale);
 }
 
-const k = (Math.sqrt(2) - 1) * 2 / 3;
-const circle = [
-  0, .5,
-  0, .5 - k, .5 - k, 0, .5, 0,
-  .5 + k, 0, 1, .5 - k, 1, .5,
-  1, .5,
-  1, .5 + k, .5 + k, 1, .5, 1,
-  .5 - k, 1, 0, .5 + k, 0, .5,
-];
-
-function profilePath(points: number[], middle: boolean) {
+function slitPath(points: number[]) {
   const coords = (start: number, size: number) =>
     points.slice(start, start + size).map(value => Number(value.toFixed(5))).join(' ');
-  return middle
-    ? `M${coords(0, 2)}C${coords(2, 12)}L${coords(14, 2)}C${coords(16, 12)}`
-    : `M${coords(0, 2)}C${coords(2, 6)}L${coords(8, 2)}C${coords(10, 6)}`;
+  return `M${coords(0, 2)}C${coords(2, 6)}L${coords(8, 2)}C${coords(10, 6)}`;
 }
 
 // Two tangent cubic arcs describe a circle segment to the right of its chord.
@@ -60,20 +46,22 @@ function circleSegment(cut: number, side: number) {
   return side < 0 ? points : points.map((value, i) => i % 2 ? value : 1 - value);
 }
 
-export const carouselCirclePath = profilePath(circle, true);
+export const carouselCirclePath = 'M0 .5A.5 .5 0 1 1 1 .5A.5 .5 0 1 1 0 .5Z';
 
-export const carouselLogoProfiles = [20, 87.5, 220, 352.5, 420].map((anchor, index) => {
-  const slot = index - 2;
+export const carouselLogoCenter = 3;
+export const carouselLogoProfiles = [20, 87.5, 172.5, 220, 267.5, 352.5, 420].map((anchor, index) => {
+  const slot = index - carouselLogoCenter;
+  if (slot === 0) return null;
+
   const side = Math.sign(slot);
-  const middle = slot === 0;
-  const source = middle ? center : Math.abs(slot) === 1 ? innerLobe : outerLobe;
+  const source = [centerSlit, innerLobe, outerLobe][Math.abs(slot) - 1];
   const points = normalize(source, side > 0 ? 440 - anchor : anchor, side > 0 ? -1 : 1);
   return {
     offset: (anchor - 220) * markScale,
-    path: profilePath(points, middle),
+    path: slitPath(points),
     morph(progress: number, crop: number) {
-      const target = middle ? circle : circleSegment(crop, side);
-      return profilePath(points.map((value, i) => value + (target[i] - value) * progress), middle);
+      const target = circleSegment(crop, side);
+      return slitPath(points.map((value, i) => value + (target[i] - value) * progress));
     },
   };
 });
