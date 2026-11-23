@@ -1,6 +1,7 @@
 // The three left slits of the official mark, with their joins cut along the
 // existing vertical edges. Reflect them to make the right side.
 const markScale = .94 / 440;
+export const carouselLogoTransform = `translate(${.5 - 220 * markScale} ${.5 - 200 * markScale}) scale(${markScale})`;
 const centerSlit = [
   125, 0,
   173.035, 36.0783, 207.632, 89.0586, 220.5, 150.107,

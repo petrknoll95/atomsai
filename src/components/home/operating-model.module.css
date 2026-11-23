@@ -86,6 +86,7 @@
 .carouselArtwork {
   opacity:max(0,calc(1 - var(--image-wash,0) * 2));
 }
+.carouselViewport[data-model-collapsed] .carouselArtwork { visibility:hidden; }
 .carouselArtwork [data-model-plate-art] { transform-origin:160px 160px; }
 @media(max-width:767px) {
   .carouselViewport { --circle-size:min(calc((100cqw - 16px) * .8), var(--circle-max-height)); --near-circle:.125; --far-circle:0; }
