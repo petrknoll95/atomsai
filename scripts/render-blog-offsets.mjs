@@ -23,41 +23,6 @@ const moduleRoot = path.dirname(corePath);
 const origin = 'http://localhost:3219';
 const browser = await chromium.launch({ channel: 'chrome', args: ['--enable-unsafe-webgpu'] });
 
-function indexArt(data, colors, width) {
-  const bayer = [0, 8, 2, 10, 12, 4, 14, 6, 3, 11, 1, 9, 15, 7, 13, 5];
-  const rgb = colors.map(hex => Buffer.from(hex.slice(1), 'hex'));
-  const pairs = rgb.flatMap((from, i) => rgb.slice(i + 1).map(to => {
-    const direction = Array.from(from, (value, channel) => to[channel] - value);
-    return { from, to, direction, length: direction.reduce((sum, value) => sum + value ** 2, 0) };
-  }));
-  const cache = new Map();
-
-  for (let offset = 0, pixel = 0; offset < data.length; offset += 3, pixel++) {
-    const red = data[offset] >> 3;
-    const green = data[offset + 1] >> 3;
-    const blue = data[offset + 2] >> 3;
-    const key = (red << 10) | (green << 5) | blue;
-    let nearest = cache.get(key);
-    if (!nearest) {
-      const target = [red * 8 + 4, green * 8 + 4, blue * 8 + 4];
-      let bestDistance = Infinity;
-      for (const pair of pairs) {
-        const offset = target.map((sample, channel) => sample - pair.from[channel]);
-        const mix = Math.max(0, Math.min(1, offset.reduce((sum, value, channel) => sum + value * pair.direction[channel], 0) / pair.length));
-        const distance = offset.reduce((sum, value, channel) => sum + (value - pair.direction[channel] * mix) ** 2, 0) + pair.length * .007;
-        if (distance < bestDistance) {
-          nearest = { from: pair.from, to: pair.to, mix };
-          bestDistance = distance;
-        }
-      }
-      cache.set(key, nearest);
-    }
-    const threshold = bayer[((Math.floor(pixel / width) & 3) << 2) + ((pixel % width) & 3)];
-    const color = nearest.mix * 16 > threshold + .5 ? nearest.to : nearest.from;
-    data.set(color, offset);
-  }
-}
-
 try {
   const page = await browser.newPage({ viewport: { width: config.width, height: config.height }, deviceScaleFactor: 1 });
   // The browser loads the installed ESM directly, without a bundler to inline this flag.
@@ -122,11 +87,10 @@ try {
 
   await fs.mkdir(output, { recursive: true });
   for (const [index, frame] of frames.entries()) {
-    const { id, colors } = palettes[index];
+    const { id } = palettes[index];
     const { data, info } = await sharp(Buffer.from(frame, 'base64')).removeAlpha().raw().toBuffer({ resolveWithObject: true });
     assert.deepEqual([info.width, info.height], [config.width, config.height]);
     assert(new Set(data).size > 40, `Unexpectedly flat Offsets render for ${id}`);
-    indexArt(data, colors, info.width);
     await sharp(data, { raw: { width: info.width, height: info.height, channels: 3 } })
       .png({ compressionLevel: 9 })
       .toFile(path.join(output, `${id}.png`));
