@@ -57,6 +57,8 @@
 /* Short landscape screens need room for both the copy and the complete logo row. */
 @media (max-height: 600px) { .stage { min-height: 680px; } }
 .backdrop {
+  --menu-columns: 8;
+  --menu-pattern-count: 10;
   --menu-track: calc((min(100vw, var(--page-max-width)) - 2 * var(--content-gutter)) / var(--menu-columns));
   /* Solid forest to 42%, then an eased fade to paper (tw-easing-gradients
      ease-in-out on the element). The plugin's stops span the whole image, so
@@ -70,11 +72,14 @@
 .backdrop [role='status'] { display: none; }
 
 
-.backdrop .patternEntrance { position: absolute; inset: 0; opacity: 0; background: var(--palette-forest-shade); }
+.backdrop .patternEntrance { position: absolute; inset: 0; background: var(--palette-forest-shade); }
 .slit { position: absolute; top: 0; width: var(--menu-track); height: 100%; overflow: hidden; }
 .slitFade {
   position: absolute;
   inset-inline: 0;
+  background-image: var(--slit-fade);
+  --hero-fade-height: var(--wide-height);
+  --hero-fade-growth: var(--wide-growth);
   bottom: -24px;
   height: calc(var(--hero-fade-height, 42%) + 24px + var(--hero-fade-scroll, 0px) * var(--hero-fade-growth, .12));
   z-index: 1;
@@ -84,10 +89,19 @@
 }
 /* Copy paints with the document. Only the decorative layer waits for a frame. */
 .hero .maskedCopy > div > * { opacity: 1; transform: none; transition: none; }
-.backdrop .patternEntrance[data-ready='true'] { opacity: 1; }
+.slitPoster img { width:100%; height:100%; display:block; }
+.slitPoster { opacity:.55; }
+.patternEntrance[data-ready='true'] .slitPoster { opacity:0; }
+.patternEntrance[data-ready='false'] .glassField { opacity:0; }
+@media(max-width:767px){
+  .backdrop { --menu-columns:4; --menu-pattern-count:6; }
+  .slit[data-hero-slit='6'],
+  .slit[data-hero-slit='7'],.slit[data-hero-slit='8'],.slit[data-hero-slit='9'] { display:none; }
+  .slitFade { --hero-fade-height:var(--narrow-height); --hero-fade-growth:var(--narrow-growth); }
+}
 @media screen and (prefers-reduced-motion: no-preference) {
   .hero .copyEntrance { animation: heroCopyIn 360ms cubic-bezier(.22,1,.36,1); }
-  .backdrop .patternEntrance { transition: opacity 650ms ease-out; }
+  .glassField, .slitPoster { transition: opacity 180ms ease-out; }
 }
 @keyframes heroCopyIn { from { transform: translateY(6px); } to { transform: none; } }
 
@@ -133,8 +147,8 @@
 }
 
 /* One flute per grid column, including one overflow column on each side. */
-.glassField { position:absolute; left:50%; top:0; width:calc(var(--menu-track) * var(--menu-pattern-count) * 800 / 840); height:100%; transform:translateX(-50%); }
+.glassField, .slitPoster { position:absolute; left:50%; top:0; width:calc(var(--menu-track) * var(--menu-pattern-count) * 800 / 840); height:100%; transform:translateX(-50%); }
 /* Tone the live reflections against the forest backing before the paper fades. */
-.glassField:has(> [data-fluted-hero='webgpu']) { opacity: .55; }
+.patternEntrance[data-ready='true'] .glassField:has(> [data-fluted-hero='webgpu']) { opacity: .55; }
 .backdrop .patternEntrance::after { content:none; }
 .backdrop .patternEntrance:has([data-fluted-hero='fallback'])::after { content:''; }

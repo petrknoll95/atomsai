@@ -4,6 +4,7 @@ import { useEffect, useState, type CSSProperties } from 'react';
 import { getCoordinates } from 'tw-easing-gradients';
 import dynamic from 'next/dynamic';
 import type { FlutedPatternProps } from './fluted-pattern';
+import { assetPath } from '@/lib/base-path';
 import menu from '../fullscreen-menu.module.css';
 import styles from './hero.module.css';
 
@@ -20,16 +21,8 @@ const slitFade = `linear-gradient(to bottom, ${getCoordinates('ease-in-out').map
 
 /** One live shader behind the hero's column fades. */
 export function MenuHeroBackdrop() {
-  const [loadPattern, setLoadPattern] = useState(false);
   const [patternReady, setPatternReady] = useState(false);
-  useEffect(() => {
-    // Give the browser a paint opportunity before requesting the GPU renderer.
-    let frame = requestAnimationFrame(() => {
-      frame = requestAnimationFrame(() => setLoadPattern(true));
-    });
-    return () => cancelAnimationFrame(frame);
-  }, []);
-  const [columns, setColumns] = useState(8);
+  const [columns, setColumns] = useState<number>();
   useEffect(() => {
     const narrow = matchMedia('(max-width: 767px)');
     const update = () => setColumns(narrow.matches ? 4 : 8);
@@ -37,24 +30,25 @@ export function MenuHeroBackdrop() {
     narrow.addEventListener('change', update);
     return () => narrow.removeEventListener('change', update);
   }, []);
-  const slitCount = columns + 2;
   const fadeStyle = (index: number): CSSProperties => {
-    const distance = (Math.abs(index - (slitCount - 1) / 2) - .5) / (slitCount / 2 - 1);
-    // A symmetric parabola keeps the central pair low and lifts both edges.
+    const distance = (count: number) => ((Math.abs(index - (count - 1) / 2) - .5) / (count / 2 - 1)) ** 2;
     return {
-      backgroundImage: slitFade,
-      '--hero-fade-height': `${42 + 36 * distance ** 2}%`,
-      '--hero-fade-growth': .12 + .45 * distance ** 2,
+      '--wide-height': `${42 + 36 * distance(10)}%`, '--wide-growth': .12 + .45 * distance(10),
+      '--narrow-height': `${42 + 36 * distance(6)}%`, '--narrow-growth': .12 + .45 * distance(6),
     } as CSSProperties;
   };
   const left = (index: number) => `calc((100vw - var(--menu-track) * var(--menu-columns)) / 2 + var(--menu-track) * ${index - 1})`;
   return <div className={`${styles.backdrop} bg-ease-in-out-to-b from-(--palette-forest-shade) to-(--palette-paper)`} data-menu-hero-background
-    style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', '--menu-columns': columns, '--menu-pattern-count': slitCount } as CSSProperties}>
+    style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', '--slit-fade': slitFade } as CSSProperties}>
     <div className={`${menu.patternBackdrop} ${styles.patternEntrance}`} data-hero-pattern-entrance data-ready={patternReady}>
+      <picture className={styles.slitPoster}>
+        <source media="(max-width: 767px)" srcSet={assetPath('/assets/figma/hero-slits-mobile.webp')} />
+        <img src={assetPath('/assets/figma/hero-slits-desktop.webp')} alt="" fetchPriority="high" />
+      </picture>
       <div className={styles.glassField} data-hero-pattern-source>
-        {loadPattern && <FlutedPattern count={slitCount} onAvailabilityChange={setPatternReady} />}
+        {columns && <FlutedPattern count={columns + 2} onAvailabilityChange={setPatternReady} />}
       </div>
-      {Array.from({ length: slitCount }, (_, index) => <div key={index} className={styles.slit} style={{ left: left(index) }} data-hero-slit={index}>
+      {Array.from({ length: 10 }, (_, index) => <div key={index} className={styles.slit} style={{ left: left(index) }} data-hero-slit={index}>
         <span aria-hidden="true" data-hero-slit-fade className={styles.slitFade} style={fadeStyle(index)} />
       </div>)}
     </div>

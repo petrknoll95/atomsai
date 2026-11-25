@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Shader, CustomShader, ImageTexture, ChromaFlow, FlutedGlass, FilmGrain } from 'shaders/react';
 import { FlutedFallback, type FlutedPatternProps } from './fluted-pattern';
-import { usePatternTexture } from './use-pattern-texture';
+import { assetPath } from '@/lib/base-path';
 import { useGlassPointer } from './use-glass-pointer';
 import { GlassLight } from './glass-light';
 
@@ -13,9 +13,8 @@ export default function FlutedGlassHero({ count, onAvailabilityChange }: FlutedP
   const [frequency, setFrequency] = useState(count);
   const [reduced, setReduced] = useState(true);
   const [failed, setFailed] = useState(false);
-  const { texture, failed: textureFailed } = usePatternTexture(host, count);
-  const unavailable = failed || textureFailed;
-  const light = useGlassPointer(host, reduced || unavailable);
+  const texture = assetPath(`/assets/figma/hero-slits-${count === 6 ? 'mobile' : 'desktop'}.webp`);
+  const light = useGlassPointer(host, reduced || failed);
 
   useEffect(() => {
     const element = host.current!;
@@ -34,8 +33,8 @@ export default function FlutedGlassHero({ count, onAvailabilityChange }: FlutedP
     return () => { observer.disconnect(); motion.removeEventListener('change', updateMotion); };
   }, [count]);
 
-  return <div ref={host} style={{ width: '100%', height: '100%' }} data-fluted-hero={unavailable ? 'fallback' : 'webgpu'}>
-    {unavailable ? <FlutedFallback count={count} onAvailabilityChange={onAvailabilityChange} /> : texture &&
+  return <div ref={host} style={{ width: '100%', height: '100%' }} data-fluted-hero={failed ? 'fallback' : 'webgpu'}>
+    {failed ? <FlutedFallback count={count} onAvailabilityChange={onAvailabilityChange} /> :
       <Shader key={reduced ? 'still' : 'interactive'} style={{ width: '100%', height: '100%' }} colorSpace="srgb" disableTelemetry
         onReady={() => onAvailabilityChange(true)} onUnavailable={() => setFailed(true)}>
         <FilmGrain strength={0.025}>
