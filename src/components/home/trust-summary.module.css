@@ -4,7 +4,7 @@
 .description{max-width:44ch;margin-top:28px;font-size:clamp(18px,1.45vw,22px);line-height:1.5;color:var(--color-muted-foreground);text-wrap:pretty;}
 .cta{margin-top:40px;}
 
-.carousel{position:relative;min-width:0;}
+.carousel{--art-height:clamp(140px,13vw,210px);--card-top:24px;--card-side:32px;position:relative;min-width:0;}
 .viewport{overflow:hidden;border-radius:var(--radius-card);}
 .list{display:flex;margin:0;padding:0;list-style:none;touch-action:pan-y pinch-zoom;}
 .list>li{flex:0 0 100%;min-width:0;}
@@ -23,7 +23,7 @@
   grid-template-areas:'label art' '. art' 'title title' 'text text';
   column-gap:32px;
   min-height:clamp(320px,25vw,400px);
-  padding:24px 32px 32px;
+  padding:var(--card-top) var(--card-side) 32px;
   border-radius:var(--radius-card);
   position:relative;
   isolation:isolate;
@@ -41,10 +41,8 @@
 .title{grid-area:title;max-width:16ch;margin-top:32px;font-size:clamp(26px,2.2vw,36px);line-height:1.05;text-wrap:balance;}
 /* Trimmed like the .display title, so the gap between them is measured glyph to glyph. */
 .text{grid-area:text;margin-right:60px;max-width:44ch;margin-top:32px;font-size:clamp(15px,1.05vw,17px);line-height:1.45;text-wrap:pretty;text-box:trim-both cap alphabetic;}
-/* The line-only SVG is a mask for the green strokes. Its viewBox is cropped
-   to the ink and the box takes the ink's proportions (inline aspect-ratio), so every drawing's
-   ink meets the top, bottom and right padding exactly. */
-.art{grid-area:art;align-self:start;justify-self:end;height:clamp(140px,13vw,210px);background:currentColor;mask-size:100% 100%;mask-repeat:no-repeat;}
+.art{grid-area:art;height:var(--art-height);}
+.illustration{position:absolute;top:var(--card-top);right:var(--card-side);height:var(--art-height);width:auto;aspect-ratio:3/2;pointer-events:none;color:var(--palette-deep-green);}
 
 @media(min-width:768px){
   .intro{align-self:stretch;padding-block:clamp(20px,2vw,32px);}
@@ -53,16 +51,16 @@
 }
 @media(max-width:991px){
   .card{--clip-amount:8;}
-  .card{min-height:320px;padding:20px 24px 24px;}
-  .art{height:clamp(110px,15vw,150px);}
+  .card{min-height:320px;padding:var(--card-top) var(--card-side) 24px;}
+  .carousel{--art-height:clamp(110px,15vw,150px);--card-top:20px;--card-side:24px;}
   .title{font-size:26px;}
 }
 @media(max-width:767px){
   .card{--clip-amount:6;}
   .section{grid-template-columns:minmax(0,1fr);gap:32px;}
   .next{right:16px;bottom:16px;}
-  .card{min-height:0;padding:16px 20px 24px;}
-  .art{height:96px;}
+  .card{min-height:0;}
+  .carousel{--art-height:96px;--card-top:16px;--card-side:20px;}
   .title{margin-top:48px;font-size:24px;}
   .text{margin-top:24px;font-size:15px;}
 }

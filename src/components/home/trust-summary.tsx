@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { ArrowIcon } from '@/components/arrow-icon';
 import { ButtonLink } from '@/components/ui';
-import { assetPath } from '@/lib/base-path';
+import { TrustIllustration } from './trust-illustration';
 import { siteHref } from '@/lib/site-links';
 import { ClipCard } from './clip-card';
 import styles from './trust-summary.module.css';
@@ -15,7 +15,7 @@ const trust = [
   { image: 'safeguards', href: '/trust#controls', ink: '236.062 / 165.912', label: 'Safeguards', title: 'Guardrails where they matter', text: 'See how role-based permissions and access logs help control who can reach sensitive data.' },
   { image: 'reliability', href: '/trust#certifications', ink: '219.734 / 208.608', label: 'Reliability', title: 'Engineered for real conditions', text: 'Review the independent audit of JustCall’s availability, security, and confidentiality controls.' },
   { image: 'security', href: '/trust#documents', ink: '138.71 / 219.734', label: 'Security', title: 'Data privacy & security you can verify', text: 'Find product-specific security documentation and request the reports your team needs.' },
-];
+] as const;
 
 export function TrustSummary() {
   const [viewport, carousel] = useEmblaCarousel({
@@ -46,11 +46,12 @@ export function TrustSummary() {
               <span className={styles.label}>{item.label}</span>
               <h3 className={`display ${styles.title}`}>{item.title}</h3>
               <p className={styles.text}>{item.text}</p>
-              <span className={styles.art} aria-hidden="true" style={{ aspectRatio: item.ink, maskImage: `url("${assetPath(`/assets/illustrations/trust-${item.image}-line.svg`)}")` }} />
+              <span className={styles.art} aria-hidden="true" style={{ aspectRatio: item.ink }} />
             </ClipCard>
           </li>)}
         </ul>
       </div>
+      <TrustIllustration topic={trust[active].image} />
       <button type="button" className={styles.next} aria-label="Next trust topic" onClick={() => carousel?.scrollNext()}>
         <ArrowIcon size={22} />
       </button>
