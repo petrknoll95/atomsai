@@ -11,7 +11,7 @@
 .list{display:flex;margin:0;padding:0;list-style:none;touch-action:pan-y pinch-zoom;}
 .list>li{flex:0 0 100%;min-width:0;}
 .arrows{display:flex;align-items:center;align-self:center;gap:12px;}
-.arrows>button{position:relative;}
+.arrows>button{position:relative;--button-fill:var(--palette-mist);}
 .viewport[data-topic='integrations']{--trust-card-fill:var(--palette-stone);}
 .viewport[data-topic='safeguards']{--trust-card-fill:var(--palette-iris-light);}
 .viewport[data-topic='reliability']{--trust-card-fill:color-mix(in srgb,var(--palette-mist) 74%,var(--palette-paper));}
