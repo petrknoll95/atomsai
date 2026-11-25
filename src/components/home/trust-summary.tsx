@@ -55,19 +55,19 @@ export function TrustSummary() {
       </div>
       <TrustIllustration topic={trust[active].image} />
       <span className="sr-only" role="status">{trust[active].label}, {active + 1} of {trust.length}</span>
-    </div>
-    <div className={`${tracks.pagination} ${styles.pagination}`} role="group" aria-label="Choose trust topic">
-      {trust.map((item, index) => {
-        const current = index === active;
-        return <button type="button" key={item.image} className={tracks.dot}
-          aria-current={current || undefined}
-          aria-label={current ? `${item.label}, ${paused ? 'resume' : 'pause'} autoplay` : `Show ${item.label}`}
-          onClick={() => current ? togglePlayback() : carousel?.scrollTo(index)}>
-          <span className={tracks.line} aria-hidden="true">
-            <span className={tracks.fill} ref={bar => { bars.current[index] = bar; }} />
-          </span>
-        </button>;
-      })}
+      <div className={`${tracks.pagination} ${styles.pagination}`} role="group" aria-label="Choose trust topic">
+        {trust.map((item, index) => {
+          const current = index === active;
+          return <button type="button" key={item.image} className={tracks.dot}
+            aria-current={current || undefined}
+            aria-label={current ? `${item.label}, ${paused ? 'resume' : 'pause'} autoplay` : `Show ${item.label}`}
+            onClick={() => current ? togglePlayback() : carousel?.scrollTo(index)}>
+            <span className={tracks.line} aria-hidden="true">
+              <span className={tracks.fill} ref={bar => { bars.current[index] = bar; }} />
+            </span>
+          </button>;
+        })}
+      </div>
     </div>
   </section>;
 }

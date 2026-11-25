@@ -25,7 +25,7 @@
   grid-template-areas:'label art' '. art' 'title title' 'text text';
   column-gap:32px;
   min-height:clamp(320px,25vw,400px);
-  padding:var(--card-top) var(--card-side) 32px;
+  padding:var(--card-top) var(--card-side) calc(var(--card-side) + 32px);
   border-radius:var(--radius-card);
   position:relative;
   isolation:isolate;
@@ -55,7 +55,7 @@
 }
 @media(max-width:991px){
   .viewport{--clip-amount:8px;}
-  .card{min-height:320px;padding:var(--card-top) var(--card-side) 24px;}
+  .card{min-height:320px;}
   .carousel{--art-height:clamp(110px,15vw,150px);--card-top:20px;--card-side:24px;}
   .title{font-size:26px;}
 }
@@ -84,12 +84,7 @@
   .viewport::before{transition:none;}
 }
 
-.section>.pagination{margin-top:8px;gap:calc(var(--grid-gap) / 2);}
-.pagination>button{align-items:flex-start;margin-block:0;margin-top:-8px;padding-top:8px;}
-@media(min-width:768px){
-  .section{row-gap:0;}
-  .pagination{grid-column:2;}
-}
+.carousel>.pagination{position:absolute;inset-inline:var(--card-side);bottom:var(--card-side);margin:0;gap:calc(var(--grid-gap) / 2);}
 @media(max-width:767px){
-  .section>.pagination{gap:6px;}
+  .carousel>.pagination{gap:6px;}
 }
