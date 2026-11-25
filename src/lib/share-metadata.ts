@@ -16,7 +16,7 @@ export function shareMetadata({ path, title, description, article }: SharePage):
     url: publicUrl(article.artwork),
     alt: article.artworkAlt || `Cover artwork for ${title}`,
   } : {
-    url: publicUrl('/assets/brand/atomsai-share.jpg'),
+    url: publicUrl('/assets/brand/atomsai-share.jpg?v=2'),
     width: 1200,
     height: 630,
     type: 'image/jpeg',
