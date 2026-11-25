@@ -53,3 +53,8 @@
 html[data-smooth-scroll] { scroll-behavior:auto; }
 html[data-native-scroll], html[data-native-scroll] body { scroll-behavior:auto!important; }
 @media(max-width:767px) { html { scroll-padding-top:96px; } }
+
+/* Preserve the homepage palette while keeping secondary copy legible on paper. */
+main[data-homepage][data-theme='light'], main[data-homepage] [data-theme='light'] {
+  --color-muted-foreground: color-mix(in display-p3, var(--palette-deep-green) 74%, transparent);
+}

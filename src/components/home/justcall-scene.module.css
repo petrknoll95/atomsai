@@ -9,7 +9,7 @@
   --ui-inner-radius: max(0em, calc(var(--ui-wrapper-radius) - var(--ui-wrapper-padding)));
   --ui-surface: var(--scene-soft, var(--palette-cream));
   --ui-ink: var(--palette-deep-green);
-  --ui-muted: color-mix(in display-p3, var(--palette-deep-green) 58%, transparent);
+  --ui-muted: color-mix(in display-p3, var(--palette-deep-green) 76%, transparent);
   --ui-line: color-mix(in display-p3, var(--palette-deep-green) 10%, transparent);
   --ui-tint: var(--scene-soft, var(--palette-cream));
   --ui-soft: var(--palette-cream);
@@ -76,7 +76,7 @@
 .callTabs { margin-top: .5em; padding-inline: calc(var(--ui-content-inset) - .75em); }
 .transcript { display: flex; flex-direction: column; gap: 1.25em; margin-top: 1.5em; padding: 1.15em; background: var(--palette-paper); border: 0; border-radius: var(--ui-inner-radius); }
 .transcript > div { display: flex; flex-direction: column; gap: .4em; }
-.transcript .speaker { color: color-mix(in srgb, var(--ui-ink) 60%, #fff); font-weight: 530; font-variation-settings: 'wght' 530, 'ital' 100; }
+.transcript .speaker { color: var(--ui-muted); font-weight: 530; font-variation-settings: 'wght' 530, 'ital' 100; }
 .speaker { font-weight: var(--font-weight-medium); font-variation-settings: 'wght' var(--font-weight-medium), 'ital' 100; }
 .callBar { background: var(--palette-paper); display: flex; align-items: center; gap: .85em; margin-top: 1.5em; padding: .9em; border: 0; border-radius: var(--ui-inner-radius); }
 .avatar { background: var(--ui-surface); display: grid; place-items: center; width: 2.7em; height: 2.7em; border: .0625em solid var(--ui-line); border-radius: 2em; }
