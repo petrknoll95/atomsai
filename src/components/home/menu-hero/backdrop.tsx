@@ -19,7 +19,16 @@ const slitFade = `linear-gradient(to bottom, ${getCoordinates('ease-in-out').map
   `color-mix(in oklab, var(--palette-paper) ${y * 100}%, transparent) ${x * 90}%`).join(', ')})`;
 
 /** One live shader behind the hero's column fades. */
-export function MenuHeroBackdrop({ onAvailabilityChange }: { onAvailabilityChange: (available: boolean) => void }) {
+export function MenuHeroBackdrop() {
+  const [loadPattern, setLoadPattern] = useState(false);
+  const [patternReady, setPatternReady] = useState(false);
+  useEffect(() => {
+    // Give the browser a paint opportunity before requesting the GPU renderer.
+    let frame = requestAnimationFrame(() => {
+      frame = requestAnimationFrame(() => setLoadPattern(true));
+    });
+    return () => cancelAnimationFrame(frame);
+  }, []);
   const [columns, setColumns] = useState(8);
   useEffect(() => {
     const narrow = matchMedia('(max-width: 767px)');
@@ -41,9 +50,9 @@ export function MenuHeroBackdrop({ onAvailabilityChange }: { onAvailabilityChang
   const left = (index: number) => `calc((100vw - var(--menu-track) * var(--menu-columns)) / 2 + var(--menu-track) * ${index - 1})`;
   return <div className={`${styles.backdrop} bg-ease-in-out-to-b from-(--palette-forest-shade) to-(--palette-paper)`} data-menu-hero-background
     style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', '--menu-columns': columns, '--menu-pattern-count': slitCount } as CSSProperties}>
-    <div className={`${menu.patternBackdrop} ${styles.patternEntrance}`} data-hero-pattern-entrance>
+    <div className={`${menu.patternBackdrop} ${styles.patternEntrance}`} data-hero-pattern-entrance data-ready={patternReady}>
       <div className={styles.glassField} data-hero-pattern-source>
-        <FlutedPattern count={slitCount} onAvailabilityChange={onAvailabilityChange} />
+        {loadPattern && <FlutedPattern count={slitCount} onAvailabilityChange={setPatternReady} />}
       </div>
       {Array.from({ length: slitCount }, (_, index) => <div key={index} className={styles.slit} style={{ left: left(index) }} data-hero-slit={index}>
         <span aria-hidden="true" data-hero-slit-fade className={styles.slitFade} style={fadeStyle(index)} />

@@ -78,27 +78,14 @@
   /* Keep each fade's bottom aligned to the section during pattern parallax. */
   transform: translateY(calc(-1 * var(--hero-field-offset, 0px)));
 }
-/* Server CSS gates the first paint; the controller opens it only after fonts and
-   a real shader frame are ready. A simple green gradient remains as a fallback. */
+/* Copy paints with the document. Only the decorative layer waits for a frame. */
 .hero .maskedCopy > div > * { opacity: 1; transform: none; transition: none; }
-.stage:not([data-hero-entry='pending'])[data-hero-pattern-state='ready'] .patternEntrance { opacity: 1; }
-@media (scripting: enabled) {
-  .hero .copyEntrance { opacity: 0; visibility: hidden; transform: translateY(-10px); animation: copyFailOpen 0s 6s forwards; }
-  .hero .stage[data-hero-controlled] .copyEntrance { animation: none; }
-  .hero .stage[data-hero-entry='ready'] .copyEntrance { opacity: 1; visibility: visible; transform: none; }
+.backdrop .patternEntrance[data-ready='true'] { opacity: 1; }
+@media screen and (prefers-reduced-motion: no-preference) {
+  .hero .copyEntrance { animation: heroCopyIn 360ms cubic-bezier(.22,1,.36,1); }
+  .backdrop .patternEntrance { transition: opacity 650ms ease-out; }
 }
-/* Even a failed main JavaScript download leaves useful server-rendered content. */
-@keyframes copyFailOpen { to { opacity: 1; visibility: visible; transform: none; } }
-/* Focus and print must not depend on animation or a decorative GPU renderer. */
-.hero .copyEntrance:focus-within { opacity: 1 !important; visibility: visible !important; transform: none !important; }
-@media (prefers-reduced-motion: reduce) {
-  .hero .copyEntrance, .patternEntrance { transform: none !important; }
-  .stage[data-hero-entry='revealing'] .copyEntrance { opacity: 1 !important; visibility: visible !important; }
-}
-@media print {
-  .hero .copyEntrance { opacity: 1 !important; visibility: visible !important; transform: none !important; }
-}
-
+@keyframes heroCopyIn { from { transform: translateY(6px); } to { transform: none; } }
 
 /* Normal document flow makes the next section rise directly with scrolling. */
 .sectionReveal {
