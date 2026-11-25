@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { ArrowIcon } from '@/components/arrow-icon';
 import { Eyebrow } from '@/components/ui';
@@ -9,6 +9,8 @@ import { siteHref } from '@/lib/site-links';
 import Fade from 'embla-carousel-fade';
 import Link from 'next/link';
 import styles from './trust-summary.module.css';
+import tracks from './stories-carousel.module.css';
+import { createStoryAutoplay, useStoryAutoplay } from './use-story-autoplay';
 
 // ink is each line SVG's ink box (width / height), printed by scripts/trust-line-art.mjs.
 const trust = [
@@ -19,19 +21,13 @@ const trust = [
 ] as const;
 
 export function TrustSummary() {
+  const autoplay = useMemo(createStoryAutoplay, []);
   const fade = useMemo(() => Fade(), []);
   const [viewport, carousel] = useEmblaCarousel({
     loop: true,
     breakpoints: { '(prefers-reduced-motion: reduce)': { duration: 0 } },
-  }, [fade]);
-  const [active, setActive] = useState(0);
-  useEffect(() => {
-    if (!carousel) return;
-    const sync = () => setActive(carousel.selectedScrollSnap());
-    sync();
-    carousel.on('select', sync).on('reInit', sync);
-    return () => { carousel.off('select', sync).off('reInit', sync); };
-  }, [carousel]);
+  }, [fade, autoplay]);
+  const { active, bars, paused, togglePlayback } = useStoryAutoplay(carousel);
 
   return <section id="trust-summary" className={`page-container ${styles.section}`} aria-labelledby="trust-summary-title">
     <header className={styles.intro}>
@@ -57,6 +53,19 @@ export function TrustSummary() {
         <ArrowIcon size={22} />
       </button>
       <span className="sr-only" role="status">{trust[active].label}, {active + 1} of {trust.length}</span>
+    </div>
+    <div className={`${tracks.pagination} ${styles.pagination}`} role="group" aria-label="Choose trust topic">
+      {trust.map((item, index) => {
+        const current = index === active;
+        return <button type="button" key={item.image} className={tracks.dot}
+          aria-current={current || undefined}
+          aria-label={current ? `${item.label}, ${paused ? 'resume' : 'pause'} autoplay` : `Show ${item.label}`}
+          onClick={() => current ? togglePlayback() : carousel?.scrollTo(index)}>
+          <span className={tracks.line} aria-hidden="true">
+            <span className={tracks.fill} ref={bar => { bars.current[index] = bar; }} />
+          </span>
+        </button>;
+      })}
     </div>
   </section>;
 }

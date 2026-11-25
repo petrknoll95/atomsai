@@ -81,3 +81,11 @@
 @media(prefers-reduced-motion:reduce){
   .viewport::before{transition:none;}
 }
+
+@media(min-width:768px){
+  .section{row-gap:0;}
+  .pagination{grid-column:2;}
+}
+@media(max-width:767px){
+  .section>.pagination{margin-top:0;}
+}
