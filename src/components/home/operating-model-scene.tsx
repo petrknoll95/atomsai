@@ -105,10 +105,12 @@ export function useOperatingModelScene({ selection, onHighlight }: OperatingMode
       if (entries.some(entry => entry.isIntersecting)) load();
     }, { rootMargin: '500px' });
     observer.observe(element);
+    const loadPinnedLayout = () => { if (!mobile.matches) load(); };
     const hasIdle = typeof window.requestIdleCallback === 'function';
-    const idle = hasIdle ? window.requestIdleCallback(load, { timeout: 2000 }) : setTimeout(load, 800);
+    const idle = hasIdle ? window.requestIdleCallback(loadPinnedLayout, { timeout: 2000 }) : setTimeout(loadPinnedLayout, 800);
     wide.addEventListener('change', configure);
     desktop.addEventListener('change', configure);
+    mobile.addEventListener('change', loadPinnedLayout);
     mobile.addEventListener('change', configure);
     reduced.addEventListener('change', configure);
     return () => {
@@ -118,6 +120,7 @@ export function useOperatingModelScene({ selection, onHighlight }: OperatingMode
       else clearTimeout(idle);
       wide.removeEventListener('change', configure);
       desktop.removeEventListener('change', configure);
+      mobile.removeEventListener('change', loadPinnedLayout);
       mobile.removeEventListener('change', configure);
       reduced.removeEventListener('change', configure);
       collapse?.();

@@ -1,10 +1,11 @@
+import { carouselOutlineWidth } from './operating-model-diagram/carousel-profile';
 import P5 from 'p5/core';
 import accessibility from 'p5/accessibility';
 import { modelDotRadius, modelDotRings } from './operating-model-diagram/model-dots';
 
 P5.registerAddon(accessibility);
 
-export const carouselOutlineWidth = 1;
+
 const ringRadiusRatio = .59;
 const closedLogoScale = .76;
 const ringLabels = ['Build', 'Learn'];
@@ -257,4 +258,4 @@ export function mountCarouselSketch(host: HTMLElement, slides: HTMLElement[], re
   };
 }
 
-export type { PlateDrawing };
+export type { PlateDrawing, CarouselDrawing };

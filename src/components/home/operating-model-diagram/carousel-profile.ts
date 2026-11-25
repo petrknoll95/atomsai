@@ -1,5 +1,7 @@
 import { logoMarkPath } from './logo-mark';
 
+export const carouselOutlineWidth = 1;
+
 // The three left slits of the official mark, with their joins cut along the
 // existing vertical edges. Reflect them to make the right side.
 const markScale = .94 / 440;

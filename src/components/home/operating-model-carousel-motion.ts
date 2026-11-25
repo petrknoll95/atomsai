@@ -4,8 +4,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { attachKineticCircles, circleGeometry, kineticCircleOptions, type KineticCircleFrame } from './kinetic-circles';
 import { attachKineticCircleInteraction } from './kinetic-circle-interaction';
-import { carouselOutlineWidth, mountCarouselSketch, type PlateDrawing } from './operating-model-carousel-sketch';
-import { carouselLogoCenter, carouselLogoProfiles, createCarouselLogoPath, maskedCirclePath } from './operating-model-diagram/carousel-profile';
+import type { mountCarouselSketch, PlateDrawing, CarouselDrawing } from './operating-model-carousel-sketch';
+import { carouselOutlineWidth, carouselLogoCenter, carouselLogoProfiles, createCarouselLogoPath, maskedCirclePath } from './operating-model-diagram/carousel-profile';
 import type { OperatingModelMount } from './operating-model-scene';
 
 const firstSnap = 1;
@@ -51,7 +51,19 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
   let closing: { origin: number; span: number } | undefined;
 
   const slides = api.slideNodes();
-  const sketch = mountCarouselSketch(viewport.querySelector<HTMLElement>('[data-model-canvas-host]')!, slides, reduced);
+  let sketch: ReturnType<typeof mountCarouselSketch> | undefined;
+  let lastDrawing: CarouselDrawing | undefined;
+  let disposed = false;
+  const approach = new IntersectionObserver(entries => {
+    if (!entries.some(entry => entry.isIntersecting)) return;
+    approach.disconnect();
+    void import('./operating-model-carousel-sketch').then(({ mountCarouselSketch }) => {
+      if (disposed) return;
+      sketch = mountCarouselSketch(viewport.querySelector<HTMLElement>('[data-model-canvas-host]')!, slides, reduced);
+      if (lastDrawing) sketch.render(lastDrawing);
+    }).catch(() => { /* The accessible DOM plates remain visible. */ });
+  }, { rootMargin: '500px' });
+  approach.observe(viewport);
   const mark = createCarouselLogoPath();
   const insets = slides.map(() => 0);
   const shapes: (PlateShape | undefined)[] = [];
@@ -166,7 +178,8 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
       slide.style.setProperty('--image-wash', String(geometry.wash));
       paint(index);
     });
-    sketch.render({ diameter, opening: collapsed ? 0 : opening, plates: drawings });
+    lastDrawing = { diameter, opening: collapsed ? 0 : opening, plates: drawings };
+    sketch?.render(lastDrawing);
     return true;
   }
 
@@ -178,7 +191,7 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
     onInsetChange(index, inset) {
       insets[index] = inset;
       paint(index);
-      sketch.redraw();
+      sketch?.redraw();
     },
   });
 
@@ -266,7 +279,9 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
       detachInteraction();
       detachCircles();
       api.destroy();
-      sketch.destroy();
+      disposed = true;
+      approach.disconnect();
+      sketch?.destroy();
       viewport.removeAttribute('data-model-collapsed');
       viewport.removeAttribute('data-model-morph');
       slides.forEach(slide => { slide.style.removeProperty('clip-path'); });
