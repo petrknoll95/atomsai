@@ -32,7 +32,10 @@ span.productIcon{background:currentColor;mask-position:center;mask-repeat:no-rep
   min-width: 0;
 }
 .proofFacts dd { grid-row: 1; font-size: clamp(36px, 4.2vw, 68px); line-height: 1; letter-spacing: -.035em; white-space: nowrap; }
-.proofFacts dt { grid-row: 2; align-self: start; max-width: 27ch; font-size: var(--text-label); line-height: 1.4; color: var(--color-surface-muted-foreground); text-wrap: pretty; }
+.proofFacts dt { grid-row: 2; align-self: start; font-size: var(--text-label); line-height: 1.4; color: var(--color-surface-muted-foreground); text-wrap: pretty; }
+@media(min-width:768px){
+  .proofFacts dt { text-box: trim-end cap alphabetic; }
+}
 @media(max-width:1199px){
   .productFamily{grid-template-columns:1fr;gap:24px;}
   .productFamily>div{grid-column:auto;}
