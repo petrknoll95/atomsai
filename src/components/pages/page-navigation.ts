@@ -5,7 +5,7 @@ export const interiorNavigation: MenuLink[] = [
   { label: 'Applications', href: '/applications', children: products.map(({ name, href }) => [name, href]) },
   { label: 'Infrastructure', href: '/infrastructure', children: [['Explore PyAI', '/infrastructure'], ['Try the playground', 'https://pyai.com/playground'], ['Documentation', 'https://docs.pyai.com']] },
   { label: 'AI Services', href: '/approach' },
-  navigationLinks.find(link => link.label === 'Industries')!,
+  navigationLinks.find(link => link.label === 'Use cases')!,
   { label: 'Resources', href: '/blog', overviewLabel: 'Notes from the field', children: [
     ['Success stories', '/customers/success-stories'], ['Testimonials', '/customers/testimonials'],
     ['Blog', '/blog'], ['Help center', '/help'],

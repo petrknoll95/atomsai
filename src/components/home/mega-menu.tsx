@@ -14,7 +14,7 @@ const features: Record<string, { label: string; cards: Feature[] }> = {
     { title: 'Start in the playground', description: 'Try the technology and find what works for your use case.', href: 'https://pyai.com/playground', plane: 'applications' },
     { title: 'Build with our engineers', description: 'Take a workflow from an early idea to a working system.', href: '/approach', plane: 'workflows' },
   ] },
-  Industries: { label: 'By role', cards: [
+  'Use cases': { label: 'By role', cards: [
     { title: 'Operations leaders', description: 'Reduce manual handoffs with AI workflows built around your systems, processes and approval rules.', href: '/approach#step-1', image: photo('BackgroundImage3') },
     { title: 'Sales & support leaders', description: 'Connect customer conversations to follow-ups, bookings and answers, with your team in control.', href: '/capabilities/voice', image: photo('BackgroundImage2') },
     { title: 'Technology leaders', description: 'Build with our engineers in your repository. Keep the code, evaluations and runbooks to operate it.', href: '/approach#ownership-heading', image: photo('BackgroundImage') },
@@ -38,14 +38,14 @@ export function MegaMenu({ link, children, compact = false }: { link: MenuLink; 
     <div className={styles.inner}>
       {children ?? <div className={styles.layout}>
         <div className={styles.directory}>
-          {link.label === 'Industries' && <h2 className={styles.groupLabel}>By industry</h2>}
+          {link.label === 'Use cases' && <h2 className={styles.groupLabel}>By workflow</h2>}
           <div className={styles.links}>
             {link.children?.map(([label, href]) => <a key={label} href={withBasePath(href)}><span>{label}</span><ArrowIcon size={20} /></a>)}
           </div>
           {compact && !link.children?.some(([, href]) => href === link.href) && <a className={styles.overview} href={withBasePath(link.href)}>{link.overviewLabel ?? `All ${link.label.toLowerCase()}`}<ArrowIcon size={18} /></a>}
         </div>
         <div className={styles.features}>
-          {link.label === 'Industries' && <h2 className={styles.groupLabel}>{feature.label}</h2>}
+          {link.label === 'Use cases' && <h2 className={styles.groupLabel}>{feature.label}</h2>}
           <div className={styles.cards}>
             {feature.cards.map(card => <a className={`${styles.card} ${!card.image ? styles.surfaceCard : ''} ${card.illustration || card.plane ? styles.illustratedCard : !card.image ? styles.textCard : ''} ${card.theme === 'dark' ? styles.darkCard : ''}`} href={withBasePath(card.href)} key={card.title}>
               {(card.image || card.illustration || card.plane) && <div className={styles.image}>

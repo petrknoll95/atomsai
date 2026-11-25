@@ -5,25 +5,48 @@
 
 .industryHeader { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; margin-bottom: 80px; }
 .industryLabel { display:inline-flex; align-items:center; min-height:40px; padding-inline:16px; border-radius:var(--radius-control); background:var(--color-secondary); font-size:var(--text-label); }
+.useCaseHint { color: var(--color-surface-muted-foreground); font-size: var(--text-label); }
 .heading { flex: 1; min-width: 0; font-size: var(--text-display-large); line-height: .95; text-wrap: balance; }
-.carousel { display: flex; flex-direction: column; gap: 48px; -webkit-user-select: none; user-select: none; }
+.carousel { display: flex; flex-direction: column; gap: 36px; }
 .carousel img { -webkit-user-drag: none; }
 .carouselViewport { position: relative; overflow: hidden; container-type: inline-size; cursor:grab; }
 .carouselViewport[data-pressed="true"] { cursor:grabbing; }
-.carouselTrack { --circle-size: calc((100cqw - 32px) * 5 / 11); --near-circle: .4; --far-circle: .2; display: flex; height: var(--circle-size); touch-action: pan-y pinch-zoom; }
+.carouselTrack { --circle-size: calc((100cqw - 32px) * 5 / 11); --near-circle: .4; --far-circle: .2; --atom-cue-inset: 14%; display: flex; height: var(--circle-size); touch-action: pan-y pinch-zoom; -webkit-user-select: none; user-select: none; }
 .carouselSlide { position: relative; flex: 0 0 var(--circle-size); min-width: 0; height: 100%; will-change: transform, clip-path; transform: translateX(calc((100cqw - var(--circle-size)) / 2 + (var(--circle-travel) - var(--slide-index)) * var(--circle-size) + var(--circle-gap) * 1px)); clip-path: inset(0 calc(var(--mask-right) * 100%) 0 calc(var(--mask-left) * 100%)); }
-.circle { --industry-inset:0px; position: relative; width: 100%; height: 100%; border-radius: 50%; overflow: hidden; clip-path:inset(var(--industry-inset) round 50%); background: var(--color-secondary); display: flex; align-items: center; justify-content: center; }
+.circle { --industry-inset:0px; position: relative; width: 100%; height: 100%; border-radius: 50%; overflow: hidden; clip-path:inset(var(--industry-inset) round 50%); background: var(--color-secondary); }
 .circle > picture { position:absolute; inset:0; }
 .circle img { position: absolute; width: 101.03261%; max-width: none; height: 101.03261%; left: -.516305%; top: -.516305%; object-fit: cover; }
 .imageWash { position: absolute; inset: 0; opacity: var(--image-wash); background: color-mix(in display-p3, var(--palette-cream-tint) 20%, transparent); }
-.industryBadge { position: relative; display: flex; align-items: center; justify-content: center; flex: none; width: 200px; height: 200px; white-space: nowrap; color: #fff; font-size: var(--text-label); font-weight: 475; font-variation-settings:'wght' 475, 'ital' 100; border-radius: var(--radius-control); cursor: pointer; text-decoration: none; }
-/* Grow the glass independently so the label stays crisp and the hit area stable. */
-.industryBadge::before { content:''; position:absolute; inset:0; border-radius:inherit; background:color-mix(in display-p3, var(--palette-cream-tint) 10%, transparent); -webkit-backdrop-filter:blur(18px); backdrop-filter:blur(18px); transform:scale(1); transition:transform .65s cubic-bezier(.22,1,.36,1); pointer-events:none; }
-.industryBadge > span { position:relative; pointer-events:none; }
-.industryBadge:focus-visible::before { transform:scale(1.16); }
-@media (hover:hover) and (pointer:fine) { .industryBadge:hover::before { transform:scale(1.16); } }
-@media (prefers-reduced-motion:reduce) { .industryBadge::before { transition:none; } }
-.carouselControls { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: var(--grid-gap); min-height: 112px; }
+.atomButton {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  clip-path: circle(50%);
+  border: 0;
+  background: transparent;
+  color: var(--palette-paper);
+  font-size: var(--text-label);
+  cursor: pointer;
+}
+.atomLabel, .atomCue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-control);
+  background: color-mix(in srgb, var(--palette-forest-shade) 88%, transparent);
+  pointer-events: none;
+}
+.atomLabel { visibility: hidden; max-width: 82%; gap: 8px; min-height: 44px; padding: 8px 14px 8px 18px; line-height: 1.25; text-wrap: balance; }
+.atomCue { position: absolute; top: 50%; width: 32px; height: 32px; }
+.atomCueStart { left: var(--atom-cue-inset); transform: translate(-50%, -50%); }
+.atomCueEnd { right: var(--atom-cue-inset); transform: translate(50%, -50%); }
+.atomButton[aria-pressed='true'] .atomLabel { visibility: visible; }
+.atomButton[aria-pressed='true'] .atomCue { visibility: hidden; }
+.atomButton:focus-visible :is(.atomLabel, .atomCue) { outline: 2px solid var(--palette-paper); outline-offset: 3px; }
+@media (hover:hover) { .atomButton:hover :is(.atomLabel, .atomCue) { background: var(--palette-forest-shade); } }
+.carouselViewport[data-pressed='true'] .atomButton { cursor: grabbing; }
+.carouselControls { display: grid; grid-template-columns: 44px minmax(0,464px) 44px; justify-content: center; align-items: start; gap: clamp(12px, 4vw, 56px); }
 .previous,
 .next { display: flex; align-items: center; }
 .previous { justify-content: flex-end; }
@@ -33,10 +56,10 @@
 .arrowButton:active { transform: scale(.94); transition-duration: .1s; }
 @media (prefers-reduced-motion: reduce) { .arrowButton, .arrowButton:hover, .arrowButton:active { transform: none; transition: none; } }
 .arrowButton svg { width: 24px; height: 24px; }
-.industryDescription { display: flex; flex-direction: column; align-items: center; gap: 12px; min-width: 0; }
-.descriptionCopy { display: flex; flex-direction: column; gap: 4px; width: 100%; padding-inline: 64px; text-align: center; font-size: var(--text-label); line-height: 20px; }
-.descriptionCopy h3 { font-size: inherit; font-weight: 475; font-variation-settings:'wght' 475, 'ital' 100; }
-.descriptionCopy p { color: var(--color-muted-foreground); text-wrap: pretty; }
+.industryDescription { display: flex; flex-direction: column; align-items: center; gap: 16px; min-width: 0; }
+.descriptionCopy { display: flex; flex-direction: column; gap: 8px; width: 100%; text-align: center; font-size: var(--text-label); line-height: 1.4; }
+.descriptionCopy h3 { font-size: clamp(18px, 2vw, 26px); line-height: 1.1; font-weight: 475; font-variation-settings:'wght' 475, 'ital' 100; text-wrap: balance; }
+.descriptionCopy p { color: var(--color-surface-muted-foreground); text-wrap: pretty; }
 
 .storyGrid { display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: var(--grid-gap); }
 .portrait { position: relative; grid-column: span 2; border-radius: var(--radius-card); overflow: hidden; background: var(--color-secondary); }
@@ -76,7 +99,6 @@
 
 /* No responsive homepage was supplied; retain hierarchy and readable controls. */
 @media (max-width: 1199px) {
-  .descriptionCopy { padding-inline: 24px; }
   .storyGrid { grid-template-columns: repeat(5,minmax(0,1fr)); }
   .portraitCarousel { width: calc(40% - .6 * var(--grid-gap)); height: 560px; }
   .storyContent { height: 560px; padding-inline: 0; }
@@ -88,11 +110,16 @@
 @media (max-width: 767px) {
   .industryHeader { gap: 20px; margin-bottom: 40px; }
   .heading { font-size: var(--text-display-medium); line-height: 1; }
-  .carouselTrack { --circle-size: calc((100cqw - 16px) * .8); --near-circle: .125; --far-circle: 0; }
-  .industryBadge { width: 112px; height: 112px; font-size: var(--text-caption); }
-  .carousel { gap: 32px; }
-  .carouselControls { grid-template-columns: 44px minmax(0,1fr) 44px; gap: 12px; }
-  .descriptionCopy { padding-inline: 0; min-height: 0; }
+  .carouselTrack { --circle-size: calc((100cqw - 16px) * .8); --near-circle: .125; --far-circle: 0; --atom-cue-inset: 6.25%; }
+  .atomCue { width: 22px; height: 22px; }
+  .atomCue svg { width: 14px; height: 14px; }
+  .carousel { gap: 24px; }
+  .carouselControls { display: block; position: relative; }
+  .previous, .next { position: absolute; top: 0; }
+  .previous { left: 0; }
+  .next { right: 0; }
+  .descriptionCopy h3 { min-height: 44px; padding-inline: 50px; display: grid; place-content: center; }
+  .descriptionCopy p { margin-inline: auto; max-width: 38ch; }
   .storyGrid { display: flex; flex-direction: column; gap: 32px; }
   .portrait { aspect-ratio: 3 / 4; width: 100%; max-height: 600px; }
   /* Explicit height prevents Safari's absolute aspect-ratio box shrinking its

@@ -1,8 +1,7 @@
 import { Stories } from './stories';
-import { Industries } from './industries';
+import { UseCases } from './use-cases';
 import { Hero as NebulaHero } from '@/components/home/hero';
 import { SiteHeader } from '@/components/home/site-header';
-import { homepageNavigation } from './navigation-data';
 import { MenuHero } from '@/components/home/menu-hero';
 import { PlainHero } from '@/components/home/plain-hero';
 import { OperatingModel } from './operating-model';
@@ -31,5 +30,5 @@ export function HomePage({
 }) {
   const Hero = heroVariant === 'menu' ? MenuHero : heroVariant === 'plain' ? PlainHero : heroVariant === 'nebula' ? NebulaHero : StarfieldHero;
   const ModelSection = operatingModelVariant === 'carousel' ? OperatingModelCarousel : OperatingModel;
-  return <><SiteHeader links={homepageNavigation} initialTheme={heroVariant === 'plain' || heroVariant === 'menu' ? 'dark' : 'light'}/><SmoothScroll><SectionReveals id='top'><main id='main' className="bg-background" data-theme="light"><Hero><CompanyProof showProducts={heroVariant !== 'menu'}/><ModelSection/></Hero><PointOfView/>{applicationsVariant === 'original' ? <Applications/> : <ApplicationsWorkflow/>}<Stories/><TrustSummary/><Industries/>{integrationsVariant === 'marquee' ? <IntegrationsMarquee/> : <Integrations/>}<FieldNotes/><Faq/></main><SiteFooter homepage/></SectionReveals></SmoothScroll></>;
+  return <><SiteHeader initialTheme={heroVariant === 'plain' || heroVariant === 'menu' ? 'dark' : 'light'}/><SmoothScroll><SectionReveals id='top'><main id='main' className="bg-background" data-theme="light"><Hero><CompanyProof showProducts={heroVariant !== 'menu'}/><ModelSection/></Hero><PointOfView/>{applicationsVariant === 'original' ? <Applications/> : <ApplicationsWorkflow/>}<Stories/><TrustSummary/><UseCases/>{integrationsVariant === 'marquee' ? <IntegrationsMarquee/> : <Integrations/>}<FieldNotes/><Faq/></main><SiteFooter homepage/></SectionReveals></SmoothScroll></>;
 }

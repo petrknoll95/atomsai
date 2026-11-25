@@ -3,7 +3,7 @@ import { AnimatedLogo } from '@/components/animated-logo';
 import Link from 'next/link';
 import { siteHref } from '@/lib/site-links';
 import { ButtonLink } from '../ui';
-import { products } from './navigation-data';
+import { products, useCaseLinks } from './navigation-data';
 import { FooterSlitFade } from './footer-slit-fade';
 import { FooterMarkHalf } from './footer-mark-half';
 import styles from './site-footer-directory.module.css';
@@ -20,10 +20,7 @@ const groups = [
     { label: 'Voice AI', path: '/capabilities/voice' },
     { label: 'Chat', path: '/capabilities/chat' },
     { label: 'Custom agents', path: '/agents' },
-    { label: 'Healthcare', path: '/industries/healthcare' },
-    { label: 'Home services', path: '#industry-home-services' },
-    { label: 'Financial services', path: '#industry-financial-services' },
-    { label: 'Education', path: '#industry-education' },
+    ...useCaseLinks.map(([label, path]) => ({ label, path })),
   ] },
   { title: 'Company', links: [
     { label: 'About AtomsAI', path: '/company/about' },
@@ -64,10 +61,7 @@ const homepageGroups = [
     { label: 'Voice AI', path: '/capabilities/voice' },
     { label: 'Chat', path: '/capabilities/chat' },
     { label: 'Custom agents', path: '/agents' },
-    { label: 'Home services', path: '#industry-home-services' },
-    { label: 'Healthcare', path: '/industries/healthcare' },
-    { label: 'Financial services', path: '#industry-financial-services' },
-    { label: 'Education', path: '#industry-education' },
+    ...useCaseLinks.map(([label, path]) => ({ label, path })),
   ] },
   { title: 'Company', links: [
     { label: 'About', path: '/company/about' },
