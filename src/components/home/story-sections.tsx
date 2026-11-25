@@ -62,7 +62,7 @@ function noteSources(src: string) {
 
 export function FieldNotes() {
   return <section className={`page-container ${styles.section}`} aria-labelledby="field-notes-title">
-    <header className={styles.header}><div><p className={styles.label}>Insights</p><h2 id="field-notes-title" className={`display ${styles.heading}`}>Notes from the field</h2></div><ButtonLink href="/blog" variant="outline">View all notes</ButtonLink></header>
+    <header className={styles.header}><h2 id="field-notes-title" className={`display ${styles.heading}`}>Notes from the field</h2><ButtonLink href="/blog" variant="outline">View all notes</ButtonLink></header>
     <ul className={styles.notesGrid}>{latestPosts.map(post => <li key={post.slug}>
       <ClipCard className={styles.noteCard} href={`/blog/${post.slug}`}>
         <span className={styles.noteArt} data-clip-inset>
