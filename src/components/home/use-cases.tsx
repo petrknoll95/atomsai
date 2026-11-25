@@ -94,59 +94,50 @@ export function UseCases() {
       </header>
 
       <div className={styles.carousel} role="group" aria-roledescription="carousel" aria-label="Use cases">
-        <div id="industry-gallery" className={styles.carouselViewport} ref={emblaRef}>
-          <div className={styles.carouselTrack}>
-            {circleSlides.map((useCase, index) => (
-              <div key={`${useCase.slug}-${index}`} className={styles.carouselSlide} data-industry-circle={useCase.name} style={initialKineticCircleStyle(index, initialIndex, circleSlides.length)}>
-                <div className={styles.circle} data-industry-image>
-                  <picture>
-                    <source
-                      media="(max-width: 1199px)"
-                      srcSet={assetPath(`/assets/figma/industries-${useCase.image}-512.webp 512w, /assets/figma/industries-${useCase.image}-1024.webp 1024w`)}
-                      sizes="(max-width: 767px) 80vw, 50vw"
-                    />
-                    <img src={assetPath(`/assets/figma/industries-${useCase.image}.webp`)} alt="" width="2048" height="2048" loading="lazy" draggable="false" />
-                  </picture>
-                  <div className={styles.imageWash} />
+        <div className={styles.carouselStage}>
+          <div id="industry-gallery" className={styles.carouselViewport} ref={emblaRef}>
+            <div className={styles.carouselTrack}>
+              {circleSlides.map((useCase, index) => (
+                <div key={`${useCase.slug}-${index}`} className={styles.carouselSlide} data-industry-circle={useCase.name} style={initialKineticCircleStyle(index, initialIndex, circleSlides.length)}>
+                  <div className={styles.circle} data-industry-image>
+                    <picture>
+                      <source
+                        media="(max-width: 1199px)"
+                        srcSet={assetPath(`/assets/figma/industries-${useCase.image}-512.webp 512w, /assets/figma/industries-${useCase.image}-1024.webp 1024w`)}
+                        sizes="(max-width: 767px) 80vw, 50vw"
+                      />
+                      <img src={assetPath(`/assets/figma/industries-${useCase.image}.webp`)} alt="" width="2048" height="2048" loading="lazy" draggable="false" />
+                    </picture>
+                    <div className={styles.imageWash} />
+                  </div>
+                  <button
+                    type="button"
+                    className={styles.atomButton}
+                    aria-label={useCase.name}
+                    aria-controls="use-case-details"
+                    aria-pressed={index === selectedSnap}
+                    tabIndex={index === selectedSnap ? 0 : -1}
+                    onClick={() => selectAtom(index)}
+                    onKeyDown={event => moveAtomFocus(event, index)}
+                  />
                 </div>
-                <button
-                  type="button"
-                  className={styles.atomButton}
-                  aria-label={useCase.name}
-                  aria-controls="use-case-details"
-                  aria-pressed={index === selectedSnap}
-                  tabIndex={index === selectedSnap ? 0 : -1}
-                  onClick={() => selectAtom(index)}
-                  onKeyDown={event => moveAtomFocus(event, index)}
-                >
-                  <span className={styles.atomLabel} aria-hidden="true">{useCase.name}<ArrowIcon direction="down" size={18} /></span>
-                  <span className={`${styles.atomCue} ${styles.atomCueStart}`} aria-hidden="true"><ArrowIcon direction="right" size={16} /></span>
-                  <span className={`${styles.atomCue} ${styles.atomCueEnd}`} aria-hidden="true"><ArrowIcon direction="left" size={16} /></span>
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className={styles.carouselControls}>
-          <div className={styles.previous}>
-            <button type="button" className={styles.arrowButton} aria-label="Previous use case" aria-controls="industry-gallery" onClick={() => emblaApi?.scrollPrev()}>
-              <ArrowIcon direction="left" size={24} />
-            </button>
-          </div>
-          <div ref={details} id="use-case-details" role="region" aria-labelledby="use-case-title" tabIndex={-1} className={styles.industryDescription}>
-            <div className={styles.descriptionCopy} aria-live="polite" aria-atomic="true">
-              <span className="sr-only">{active + 1} of {useCases.length}</span>
-              <h3 id="use-case-title">{current.name}</h3>
-              <p>{current.description}</p>
+              ))}
             </div>
-            <ButtonLink href="/company/contact?topic=services" variant="outline">Discuss your workflow</ButtonLink>
           </div>
-          <div className={styles.next}>
-            <button type="button" className={styles.arrowButton} aria-label="Next use case" aria-controls="industry-gallery" onClick={() => emblaApi?.scrollNext()}>
-              <ArrowIcon direction="right" size={24} />
-            </button>
+          <button type="button" className={`${styles.arrowButton} ${styles.previous}`} aria-label="Previous use case" aria-controls="industry-gallery" onClick={() => emblaApi?.scrollPrev()}>
+            <ArrowIcon direction="left" size={24} />
+          </button>
+          <button type="button" className={`${styles.arrowButton} ${styles.next}`} aria-label="Next use case" aria-controls="industry-gallery" onClick={() => emblaApi?.scrollNext()}>
+            <ArrowIcon direction="right" size={24} />
+          </button>
+        </div>
+        <div ref={details} id="use-case-details" role="region" aria-labelledby="use-case-title" tabIndex={-1} className={styles.industryDescription}>
+          <div className={styles.descriptionCopy} aria-live="polite" aria-atomic="true">
+            <span className="sr-only">{active + 1} of {useCases.length}</span>
+            <h3 id="use-case-title">{current.name}</h3>
+            <p>{current.description}</p>
           </div>
+          <ButtonLink href="/company/contact?topic=services" variant="outline">Discuss your workflow</ButtonLink>
         </div>
       </div>
     </section>

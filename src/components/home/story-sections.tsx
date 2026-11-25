@@ -21,7 +21,7 @@ export function CompanyProof({ showProducts = true }: { showProducts?: boolean }
   return <section id="company-story" className={`page-container ${styles.companyProof}`} aria-label="One company behind the products">
     {showProducts && <ProductFamily />}
     <dl className={styles.proofFacts} aria-label="AtomsAI in numbers">
-      <div className={styles.proofLead}><dt>Conversations powered a year</dt><dd className="display">1B+</dd></div>
+      <div><dt>Conversations powered a year</dt><dd className="display">1B+</dd></div>
       <div><dt>Customers worldwide</dt><dd className="display">7,000+</dd></div>
       <div><dt>Countries served</dt><dd className="display">20+</dd></div>
       <div><dt>Raised from Peak XV, Eight Roads, Base10</dt><dd className="display">~$56M</dd></div>
