@@ -31,7 +31,6 @@ export function CompanyProof({ showProducts = true }: { showProducts?: boolean }
     {showProducts && <ProductFamily />}
     <div className={styles.proofRow}>
       <header className={styles.proofIntro}>
-        <p className={styles.label}>AtomsAI in numbers</p>
         <h2 className="display">See how teams put AI to work in everyday conversations.</h2>
         <ButtonLink href="#customer-stories">See customer stories</ButtonLink>
       </header>
