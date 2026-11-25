@@ -1,3 +1,8 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
+import { ArrowIcon } from '@/components/arrow-icon';
 import { ButtonLink } from '@/components/ui';
 import { assetPath } from '@/lib/base-path';
 import { siteHref } from '@/lib/site-links';
@@ -13,22 +18,43 @@ const trust = [
 ];
 
 export function TrustSummary() {
-  return <section className={`page-container ${styles.section}`} aria-labelledby="trust-summary-title">
+  const [viewport, carousel] = useEmblaCarousel({
+    loop: true,
+    breakpoints: { '(prefers-reduced-motion: reduce)': { duration: 0 } },
+  });
+  const [active, setActive] = useState(0);
+  useEffect(() => {
+    if (!carousel) return;
+    const sync = () => setActive(carousel.selectedScrollSnap());
+    sync();
+    carousel.on('select', sync).on('reInit', sync);
+    return () => { carousel.off('select', sync).off('reInit', sync); };
+  }, [carousel]);
+
+  return <section id="trust-summary" className={`page-container ${styles.section}`} aria-labelledby="trust-summary-title">
     <header className={styles.intro}>
       <h2 id="trust-summary-title" className={`display ${styles.heading}`}>However, confidence takes more than just capability</h2>
       <p className={styles.description}>Dependable systems, responsible safeguards, and security you can verify. All part of the engineering.</p>
       <ButtonLink className={styles.cta} href="/trust" variant="outline">Visit the Trust Center</ButtonLink>
     </header>
-    <ul className={styles.list}>
-      {trust.map(item => <li key={item.label} data-trust-card={item.image}>
-        <ClipCard className={styles.card} href={item.href}>
-          <span className={styles.background} data-clip-inset aria-hidden="true" />
-          <span className={styles.label}>{item.label}</span>
-          <h3 className={`display ${styles.title}`}>{item.title}</h3>
-          <p className={styles.text}>{item.text}</p>
-          <span className={styles.art} aria-hidden="true" style={{ aspectRatio: item.ink, maskImage: `url("${assetPath(`/assets/illustrations/trust-${item.image}-line.svg`)}")` }} />
-        </ClipCard>
-      </li>)}
-    </ul>
+    <div className={styles.carousel} role="group" aria-roledescription="carousel" aria-label="Trust topics">
+      <div ref={viewport} className={styles.viewport}>
+        <ul className={styles.list}>
+          {trust.map((item, index) => <li key={item.label} inert={active !== index} aria-hidden={active !== index} data-trust-card={item.image}>
+            <ClipCard className={styles.card} href={item.href}>
+              <span className={styles.background} data-clip-inset aria-hidden="true" />
+              <span className={styles.label}>{item.label}</span>
+              <h3 className={`display ${styles.title}`}>{item.title}</h3>
+              <p className={styles.text}>{item.text}</p>
+              <span className={styles.art} aria-hidden="true" style={{ aspectRatio: item.ink, maskImage: `url("${assetPath(`/assets/illustrations/trust-${item.image}-line.svg`)}")` }} />
+            </ClipCard>
+          </li>)}
+        </ul>
+      </div>
+      <button type="button" className={styles.next} aria-label="Next trust topic" onClick={() => carousel?.scrollNext()}>
+        <ArrowIcon size={22} />
+      </button>
+      <span className="sr-only" role="status">{trust[active].label}, {active + 1} of {trust.length}</span>
+    </div>
   </section>;
 }
