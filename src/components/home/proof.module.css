@@ -112,8 +112,14 @@
   .testimonial { gap: 24px; }
   .companyRow { gap: 16px; }
   .companyLogo { width: 160px; height: auto; }
-  .metrics { flex-direction: column; }
-  .metric { min-height: 160px; }
+  .metrics {
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+  }
+  .metric { flex: 0 0 86%; min-width: 0; min-height: 160px; scroll-snap-align: start; }
+  .metric:only-child { flex-basis: 100%; }
   .storyPagination { gap: 12px; margin-top: 32px; }
   .storyDialog { padding: 24px; }
   .dialogHeader h2 { font-size: var(--text-display-small); }

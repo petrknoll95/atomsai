@@ -18,7 +18,10 @@ import { customerStories, storyPortraits, storySlots } from './story-data';
 export function Stories() {
   const autoplay = useMemo(() => createStoryAutoplay(), []);
   const fade = useMemo(() => Fade(), []);
-  const [emblaRef, embla] = useEmblaCarousel({ loop: true, startIndex: 0, duration: 32, breakpoints: { '(prefers-reduced-motion: reduce)': { duration: 0 } } }, [autoplay, fade]);
+  const [emblaRef, embla] = useEmblaCarousel({ loop: true, startIndex: 0, duration: 32,
+    watchDrag: (_, event) => !(matchMedia('(max-width: 767px)').matches &&
+      event.target instanceof Element && event.target.closest('[data-story-stats]')),
+    breakpoints: { '(prefers-reduced-motion: reduce)': { duration: 0 } } }, [autoplay, fade]);
   const { root, bars, active, paused, togglePlayback } = useStoryAutoplay(embla);
   useStoryReveal(embla);
   const [dialogStory, setDialogStory] = useState(customerStories[0]);
@@ -56,7 +59,7 @@ export function Stories() {
                 </div>
         
                 {/* Use the surrounding light theme so results remain readable on paper. */}
-                <div className={styles.metrics} aria-label="Customer results">
+                <div className={styles.metrics} data-story-stats role="group" aria-label={`${story.company} results`}>
                   {story.metrics.map(metric => <div key={metric.description} data-story-reveal className={styles.metric}>
                     <div className={styles.metricValues}>
                       {metric.before ? <>

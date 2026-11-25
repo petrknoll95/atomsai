@@ -45,6 +45,8 @@ export function useStoryAutoplay(embla: EmblaCarouselType | undefined) {
     if (!embla) return;
     const autoplay = embla.plugins().autoplay;
     const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const content = embla.rootNode();
+    let browsingStats = false;
     let manuallyPaused = false;
     let animation: Animation | undefined;
 
@@ -63,8 +65,19 @@ export function useStoryAutoplay(embla: EmblaCarouselType | undefined) {
       }
     };
     const updatePlayback = () => {
-      if (manuallyPaused || document.hidden || motion.matches) autoplay.stop();
+      if (browsingStats || manuallyPaused || document.hidden || motion.matches) autoplay.stop();
       else if (!autoplay.isPlaying()) autoplay.play();
+    };
+    const startStatsGesture = (event: TouchEvent) => {
+      if (!(event.target instanceof Element) || !event.target.closest('[data-story-stats]') ||
+        !matchMedia('(max-width: 767px)').matches) return;
+      browsingStats = true;
+      updatePlayback();
+    };
+    const endStatsGesture = (event: TouchEvent) => {
+      if (!browsingStats || event.touches.length) return;
+      browsingStats = false;
+      updatePlayback();
     };
     const select = () => {
       setActive(embla.selectedScrollSnap());
@@ -81,6 +94,9 @@ export function useStoryAutoplay(embla: EmblaCarouselType | undefined) {
     const reInit = () => { select(); updatePlayback(); };
     embla.on('select', select).on('reInit', reInit)
       .on('autoplay:timerset', startProgress).on('autoplay:timerstopped', freezeProgress);
+    content.addEventListener('touchstart', startStatsGesture, { passive: true });
+    content.addEventListener('touchend', endStatsGesture);
+    content.addEventListener('touchcancel', endStatsGesture);
     document.addEventListener('visibilitychange', updatePlayback);
     motion.addEventListener('change', updatePlayback);
     updatePlayback();
@@ -89,6 +105,9 @@ export function useStoryAutoplay(embla: EmblaCarouselType | undefined) {
       animation?.cancel();
       embla.off('select', select).off('reInit', reInit)
         .off('autoplay:timerset', startProgress).off('autoplay:timerstopped', freezeProgress);
+      content.removeEventListener('touchstart', startStatsGesture);
+      content.removeEventListener('touchend', endStatsGesture);
+      content.removeEventListener('touchcancel', endStatsGesture);
       document.removeEventListener('visibilitychange', updatePlayback);
       motion.removeEventListener('change', updatePlayback);
       toggle.current = () => {};
