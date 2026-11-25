@@ -46,6 +46,7 @@ export function useStoryAutoplay(embla: EmblaCarouselType | undefined) {
     const autoplay = embla.plugins().autoplay;
     const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
     const content = embla.rootNode();
+    const mobile = matchMedia('(max-width: 767px)');
     let browsingStats = false;
     let manuallyPaused = false;
     let animation: Animation | undefined;
@@ -70,13 +71,20 @@ export function useStoryAutoplay(embla: EmblaCarouselType | undefined) {
     };
     const startStatsGesture = (event: TouchEvent) => {
       if (!(event.target instanceof Element) || !event.target.closest('[data-story-stats]') ||
-        !matchMedia('(max-width: 767px)').matches) return;
+        !mobile.matches) return;
       browsingStats = true;
       updatePlayback();
     };
     const endStatsGesture = (event: TouchEvent) => {
       if (!browsingStats || event.touches.length) return;
       browsingStats = false;
+      updatePlayback();
+    };
+    const resetStatsLayout = () => {
+      browsingStats = false;
+      content.querySelectorAll('[data-story-stats]').forEach(row => {
+        row.scrollTo({ left: 0, behavior: 'instant' });
+      });
       updatePlayback();
     };
     const select = () => {
@@ -99,6 +107,7 @@ export function useStoryAutoplay(embla: EmblaCarouselType | undefined) {
     content.addEventListener('touchcancel', endStatsGesture);
     document.addEventListener('visibilitychange', updatePlayback);
     motion.addEventListener('change', updatePlayback);
+    mobile.addEventListener('change', resetStatsLayout);
     updatePlayback();
     return () => {
       autoplay.stop();
@@ -110,6 +119,7 @@ export function useStoryAutoplay(embla: EmblaCarouselType | undefined) {
       content.removeEventListener('touchcancel', endStatsGesture);
       document.removeEventListener('visibilitychange', updatePlayback);
       motion.removeEventListener('change', updatePlayback);
+      mobile.removeEventListener('change', resetStatsLayout);
       toggle.current = () => {};
     };
   }, [embla]);

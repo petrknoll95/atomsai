@@ -20,7 +20,7 @@ export function ProductLogoMarquee({ children }: { children: ReactNode }) {
       const [{ default: Embla }, { default: AutoScroll }] = await Promise.all([
         import('embla-carousel'), import('embla-carousel-auto-scroll'),
       ]);
-      if (current !== version) return;
+      if (current !== version || !mobile.matches) return;
       const motion = AutoScroll({
         speed: .6, startDelay: 350, playOnInit: false, stopOnInteraction: false, stopOnMouseEnter: true,
         breakpoints: { '(prefers-reduced-motion: reduce)': { active: false } },
@@ -30,7 +30,7 @@ export function ProductLogoMarquee({ children }: { children: ReactNode }) {
       const carousel = Embla(node, { loop: true, align: 'start', dragFree: true }, [motion]);
       let visible = false;
       const updatePlayback = () => {
-        if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        if (current !== version || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
         if (visible && !document.hidden && !node.contains(document.activeElement)) motion.play();
         else motion.stop();
       };
@@ -47,6 +47,7 @@ export function ProductLogoMarquee({ children }: { children: ReactNode }) {
         carousel.off('reInit', updatePlayback);
         carousel.destroy();
         delete node.dataset.enhanced;
+        node.scrollLeft = 0;
       };
     }
 
