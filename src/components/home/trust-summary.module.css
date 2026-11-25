@@ -45,7 +45,7 @@
 .illustration{position:absolute;top:var(--card-top);right:var(--card-side);height:var(--art-height);width:auto;aspect-ratio:3/2;pointer-events:none;color:var(--palette-deep-green);}
 
 @media(min-width:768px){
-  .intro{align-self:stretch;padding-block:clamp(20px,2vw,32px);}
+  .intro{align-self:stretch;}
   .description{margin-bottom:28px;}
   .cta{margin-top:auto;}
 }
