@@ -21,7 +21,6 @@
 .navMarker { position:relative; display:block; isolation:isolate; }
 .navInk { display:flex; align-items:center; gap:8px; padding:6px 12px 6px 18px; }
 .navPill { position:absolute; inset:0; color:var(--color-primary-foreground); background:var(--color-primary); border-radius:999px; pointer-events:none; clip-path:inset(calc(50% - 3px) calc(100% - 6px) calc(50% - 3px) 0 round 999px); }
-.dropdown[data-expanded='true'] .navPill { background:var(--palette-iris-light); color:var(--palette-deep-green); }
 .nav>a:focus-visible,.dropdown>summary:focus-visible { outline:2px solid currentColor; outline-offset:2px; }
 .nav>a { transition:var(--focus-transition); }
 /* The GSAP endpoint restores the exact source position and opacity. */
@@ -79,13 +78,7 @@
 .productPreview { position:absolute; inset:0; display:grid; place-items:center; visibility:hidden; opacity:0; isolation:isolate; }
 .previewScene { position:relative; width:100%; height:100%; }
 
-/* Measured navigation label boxes prevent cumulative browser glyph rounding. */
-.nav > :nth-child(1) .navLabel { width:75px; }
-.nav > :nth-child(2) .navLabel { width:81px; }
-.nav > :nth-child(3) .navLabel { width:68px; }
-.nav > :nth-child(4) .navLabel { width:60px; }
-.nav > :nth-child(5) .navLabel { width:59px; }
-
+.navLabel { white-space:nowrap; }
 
 /* All application figures share one flat dark-green surface. */
 /* One persistent header: only theme and navigation visibility change. */
