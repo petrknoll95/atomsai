@@ -3,18 +3,19 @@
 import { useEffect, useRef, useState } from 'react';
 import { Shader, CustomShader, ImageTexture, ChromaFlow, FlutedGlass, FilmGrain } from 'shaders/react';
 import { FlutedFallback, type FlutedPatternProps } from './fluted-pattern';
-import { assetPath } from '@/lib/base-path';
+import { usePatternTexture } from './use-pattern-texture';
 import { useGlassPointer } from './use-glass-pointer';
 import { GlassLight } from './glass-light';
 
 /** The glass stays vertical; only the light behind it responds to the pointer. */
 export default function FlutedGlassHero({ count, onAvailabilityChange }: FlutedPatternProps) {
   const host = useRef<HTMLDivElement>(null);
-  const [frequency, setFrequency] = useState(count);
+  const [frequency, setFrequency] = useState<number>();
   const [reduced, setReduced] = useState(true);
   const [failed, setFailed] = useState(false);
-  const texture = assetPath(`/assets/figma/hero-slits-${count === 6 ? 'mobile' : 'desktop'}.webp`);
-  const light = useGlassPointer(host, reduced || failed);
+  const { texture, failed: textureFailed } = usePatternTexture(host, count);
+  const unavailable = failed || textureFailed;
+  const light = useGlassPointer(host, reduced || unavailable);
 
   useEffect(() => {
     const element = host.current!;
@@ -33,8 +34,8 @@ export default function FlutedGlassHero({ count, onAvailabilityChange }: FlutedP
     return () => { observer.disconnect(); motion.removeEventListener('change', updateMotion); };
   }, [count]);
 
-  return <div ref={host} style={{ width: '100%', height: '100%' }} data-fluted-hero={failed ? 'fallback' : 'webgpu'}>
-    {failed ? <FlutedFallback count={count} onAvailabilityChange={onAvailabilityChange} /> :
+  return <div ref={host} style={{ width: '100%', height: '100%' }} data-fluted-hero={unavailable ? 'fallback' : 'webgpu'}>
+    {unavailable ? <FlutedFallback count={count} onAvailabilityChange={onAvailabilityChange} /> : texture && frequency !== undefined &&
       <Shader key={reduced ? 'still' : 'interactive'} style={{ width: '100%', height: '100%' }} colorSpace="srgb" disableTelemetry
         onReady={() => onAvailabilityChange(true)} onUnavailable={() => setFailed(true)}>
         <FilmGrain strength={0.025}>
