@@ -1,14 +1,16 @@
 .section{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:center;gap:clamp(32px,5vw,80px);padding-block:var(--section-space);scroll-margin-top:var(--header-height);}
 .intro{display:flex;flex-direction:column;align-items:flex-start;}
 .heading{max-width:18ch;font-size:clamp(36px,3.5vw,56px);line-height:.94;letter-spacing:-.015em;text-wrap:balance;}
-.description{max-width:44ch;margin-top:28px;font-size:clamp(18px,1.45vw,22px);line-height:1.5;color:var(--color-muted-foreground);text-wrap:pretty;}
-.cta{margin-top:40px;}
+.description,.actions{width:min(100%,44ch);font-size:clamp(18px,1.45vw,22px);}
+.description{margin-top:28px;line-height:1.5;color:var(--color-muted-foreground);text-wrap:pretty;}
+.actions{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-top:40px;}
+.actions>a{align-self:flex-end;}
 
 .carousel{--art-height:clamp(140px,13vw,210px);--card-top:24px;--card-side:32px;position:relative;min-width:0;}
 .viewport{--clip-amount:12px;position:relative;isolation:isolate;overflow:hidden;border-radius:var(--radius-card);}
 .list{display:flex;margin:0;padding:0;list-style:none;touch-action:pan-y pinch-zoom;}
 .list>li{flex:0 0 100%;min-width:0;}
-.next{position:absolute;right:24px;bottom:24px;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--palette-deep-green);color:var(--palette-paper);}
+.next{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--palette-deep-green);color:var(--palette-paper);}
 .next:focus-visible{outline:2px solid var(--palette-deep-green);outline-offset:3px;}
 .viewport[data-topic='integrations']{--trust-card-fill:var(--palette-stone);}
 .viewport[data-topic='safeguards']{--trust-card-fill:var(--palette-iris-light);}
@@ -42,14 +44,14 @@
 .label{grid-area:label;align-self:start;justify-self:start;padding:5px 12px;border-radius:var(--radius-control);background:var(--palette-paper);color:var(--palette-deep-green);font-size:var(--text-label);line-height:1.2;}
 .title{grid-area:title;max-width:16ch;margin-top:32px;font-size:clamp(26px,2.2vw,36px);line-height:1.05;text-wrap:balance;}
 /* Trimmed like the .display title, so the gap between them is measured glyph to glyph. */
-.text{grid-area:text;margin-right:60px;max-width:44ch;margin-top:32px;font-size:clamp(15px,1.05vw,17px);line-height:1.45;text-wrap:pretty;text-box:trim-both cap alphabetic;}
+.text{grid-area:text;max-width:44ch;margin-top:32px;font-size:clamp(15px,1.05vw,17px);line-height:1.45;text-wrap:pretty;text-box:trim-both cap alphabetic;}
 .art{grid-area:art;height:var(--art-height);}
 .illustration{position:absolute;top:var(--card-top);right:var(--card-side);height:var(--art-height);width:auto;aspect-ratio:3/2;pointer-events:none;color:var(--palette-deep-green);}
 
 @media(min-width:768px){
   .intro{align-self:stretch;}
   .description{margin-bottom:28px;}
-  .cta{margin-top:auto;}
+  .actions{margin-top:auto;}
 }
 @media(max-width:991px){
   .viewport{--clip-amount:8px;}
@@ -61,7 +63,6 @@
   .viewport{--clip-amount:6px;}
   .section{grid-template-columns:minmax(0,1fr);gap:0;}
   .intro{margin-bottom:32px;}
-  .next{right:16px;bottom:16px;}
   .card{min-height:0;}
   .carousel{--art-height:96px;--card-top:16px;--card-side:20px;}
   .title{margin-top:48px;font-size:24px;}

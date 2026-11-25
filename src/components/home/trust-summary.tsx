@@ -33,10 +33,15 @@ export function TrustSummary() {
     <header className={styles.intro}>
       <h2 id="trust-summary-title" className={`display ${styles.heading}`}>However, confidence takes more than just capability</h2>
       <p className={styles.description}>Dependable systems, responsible safeguards, and security you can verify. All part of the engineering.</p>
-      <Eyebrow className={styles.cta} href="/trust">Trust Center</Eyebrow>
+      <div className={styles.actions}>
+        <Eyebrow href="/trust">Trust Center</Eyebrow>
+        <button type="button" className={styles.next} aria-controls="trust-topic-cards" aria-label="Next trust topic" onClick={() => carousel?.scrollNext()}>
+          <ArrowIcon size={22} />
+        </button>
+      </div>
     </header>
     <div className={styles.carousel} role="group" aria-roledescription="carousel" aria-label="Trust topics">
-      <div ref={viewport} className={styles.viewport} data-topic={trust[active].image}>
+      <div id="trust-topic-cards" ref={viewport} className={styles.viewport} data-topic={trust[active].image}>
         <ul className={styles.list}>
           {trust.map((item, index) => <li key={item.label} inert={active !== index} aria-hidden={active !== index} data-trust-card={item.image}>
             <Link className={styles.card} href={item.href}>
@@ -49,9 +54,6 @@ export function TrustSummary() {
         </ul>
       </div>
       <TrustIllustration topic={trust[active].image} />
-      <button type="button" className={styles.next} aria-label="Next trust topic" onClick={() => carousel?.scrollNext()}>
-        <ArrowIcon size={22} />
-      </button>
       <span className="sr-only" role="status">{trust[active].label}, {active + 1} of {trust.length}</span>
     </div>
     <div className={`${tracks.pagination} ${styles.pagination}`} role="group" aria-label="Choose trust topic">
