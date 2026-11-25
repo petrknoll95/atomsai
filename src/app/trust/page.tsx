@@ -1,3 +1,4 @@
+import { shareMetadata } from '@/lib/share-metadata';
 import { withBasePath } from '@/lib/base-path';
 import { ArrowIcon } from '@/components/arrow-icon';
 import type { Metadata } from 'next';
@@ -9,11 +10,11 @@ import styles from '@/components/pages/trust.module.css';
 
 const content = clientPages.trust;
 const section = (id: string) => content.sections.find(item => item.id === id)!;
-export const metadata: Metadata = {
+export const metadata: Metadata = shareMetadata({
   title: 'Trust & Security — AtomsAI',
   description: content.intro[0],
-  alternates: { canonical: 'https://atomsai.com/trust' },
-};
+  path: '/trust',
+});
 
 export default function TrustPage() {
   const certifications = section('certifications');

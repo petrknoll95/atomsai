@@ -1,3 +1,4 @@
+import { shareMetadata } from '@/lib/share-metadata';
 import { withBasePath } from '@/lib/base-path';
 import { ArrowIcon } from '@/components/arrow-icon';
 import type { Metadata } from 'next';
@@ -6,11 +7,11 @@ import { ContactForm } from '@/components/pages/contact-form';
 import { ContactArt } from '@/components/pages/contact-art';
 import styles from '@/components/pages/contact.module.css';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = shareMetadata({
   title: 'Contact — Find your starting point | AtomsAI',
   description: 'Tell AtomsAI about the workflow you want to improve. Start a conversation about AI applications, infrastructure, or a custom build.',
-  alternates: { canonical: 'https://atomsai.com/company/contact' },
-};
+  path: '/company/contact',
+});
 
 // art is the line SVG in /assets/illustrations; ink is its ink box (width, height), taken from
 // the viewBox of each contact-*-line.svg (scripts/contact-motion.mjs keeps it). Every scene was fitted to the same 219.734 longest side, so

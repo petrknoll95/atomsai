@@ -25,6 +25,7 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
+          SITE_ORIGIN: https://petrknoll95.github.io
           GITHUB_PAGES: 'true'
           NEXT_PUBLIC_BASE_PATH: /atomsai
       - uses: actions/upload-pages-artifact@v5

@@ -1,3 +1,4 @@
+import { shareMetadata } from '@/lib/share-metadata';
 import { withBasePath, assetPath } from '@/lib/base-path';
 import { ArrowIcon } from '@/components/arrow-icon';
 import type { Metadata } from 'next';
@@ -7,11 +8,11 @@ import { HealthcareWorkflow } from '@/components/pages/healthcare-workflow';
 import { ButtonLink } from '@/components/ui';
 import styles from '@/components/pages/healthcare.module.css';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = shareMetadata({
   title: 'AI for healthcare teams — AtomsAI',
   description: 'Connect patient enquiries, scheduling and front-office follow-ups. AI workflows built around your practice systems, with your clinical team in control.',
-  alternates: { canonical: 'https://atomsai.com/industries/healthcare' },
-};
+  path: '/industries/healthcare',
+});
 
 const questions = [
   ['Which practice systems can you connect?', 'We scope connections around the systems you use, including platforms such as athenahealth, eClinicalWorks, Epic, Dentrix and Open Dental. Availability depends on access, APIs and the workflow. We confirm those requirements before building.'],
