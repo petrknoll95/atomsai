@@ -1,12 +1,13 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { ArrowIcon } from '@/components/arrow-icon';
 import { Eyebrow } from '@/components/ui';
 import { TrustIllustration } from './trust-illustration';
 import { siteHref } from '@/lib/site-links';
-import { ClipCard } from './clip-card';
+import Fade from 'embla-carousel-fade';
+import Link from 'next/link';
 import styles from './trust-summary.module.css';
 
 // ink is each line SVG's ink box (width / height), printed by scripts/trust-line-art.mjs.
@@ -18,10 +19,11 @@ const trust = [
 ] as const;
 
 export function TrustSummary() {
+  const fade = useMemo(() => Fade(), []);
   const [viewport, carousel] = useEmblaCarousel({
     loop: true,
     breakpoints: { '(prefers-reduced-motion: reduce)': { duration: 0 } },
-  });
+  }, [fade]);
   const [active, setActive] = useState(0);
   useEffect(() => {
     if (!carousel) return;
@@ -38,16 +40,15 @@ export function TrustSummary() {
       <Eyebrow className={styles.cta} href="/trust">Trust Center</Eyebrow>
     </header>
     <div className={styles.carousel} role="group" aria-roledescription="carousel" aria-label="Trust topics">
-      <div ref={viewport} className={styles.viewport}>
+      <div ref={viewport} className={styles.viewport} data-topic={trust[active].image}>
         <ul className={styles.list}>
           {trust.map((item, index) => <li key={item.label} inert={active !== index} aria-hidden={active !== index} data-trust-card={item.image}>
-            <ClipCard className={styles.card} href={item.href}>
-              <span className={styles.background} data-clip-inset aria-hidden="true" />
+            <Link className={styles.card} href={item.href}>
               <span className={styles.label}>{item.label}</span>
               <h3 className={`display ${styles.title}`}>{item.title}</h3>
               <p className={styles.text}>{item.text}</p>
               <span className={styles.art} aria-hidden="true" style={{ aspectRatio: item.ink }} />
-            </ClipCard>
+            </Link>
           </li>)}
         </ul>
       </div>

@@ -5,15 +5,15 @@
 .cta{margin-top:40px;}
 
 .carousel{--art-height:clamp(140px,13vw,210px);--card-top:24px;--card-side:32px;position:relative;min-width:0;}
-.viewport{overflow:hidden;border-radius:var(--radius-card);}
+.viewport{--clip-amount:12px;position:relative;isolation:isolate;overflow:hidden;border-radius:var(--radius-card);}
 .list{display:flex;margin:0;padding:0;list-style:none;touch-action:pan-y pinch-zoom;}
 .list>li{flex:0 0 100%;min-width:0;}
 .next{position:absolute;right:24px;bottom:24px;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--palette-deep-green);color:var(--palette-paper);}
 .next:focus-visible{outline:2px solid var(--palette-deep-green);outline-offset:3px;}
-.list [data-trust-card='integrations']{--trust-card-fill:var(--palette-stone);}
-.list [data-trust-card='safeguards']{--trust-card-fill:var(--palette-iris-light);}
-.list [data-trust-card='reliability']{--trust-card-fill:color-mix(in srgb,var(--palette-mist) 74%,var(--palette-paper));}
-.list [data-trust-card='security']{--trust-card-fill:var(--palette-sage-tint);}
+.viewport[data-topic='integrations']{--trust-card-fill:var(--palette-stone);}
+.viewport[data-topic='safeguards']{--trust-card-fill:var(--palette-iris-light);}
+.viewport[data-topic='reliability']{--trust-card-fill:color-mix(in srgb,var(--palette-mist) 74%,var(--palette-paper));}
+.viewport[data-topic='security']{--trust-card-fill:var(--palette-sage-tint);}
 /* Card layout: label top left, line art pinned to the top and right padding,
    title and copy stacked at the bottom. */
 .card{
@@ -28,13 +28,15 @@
   position:relative;
   isolation:isolate;
   height:100%;
-  --clip-amount:12;
+
   color:var(--palette-deep-green);
   text-decoration:none;
 }
-/* The whole card is the link. ClipCard insets this painted layer 12px on hover or focus
-   (the homepage offering-card interaction); the content never moves. */
-.background{--clip-inset:0px;position:absolute;inset:0;z-index:-1;pointer-events:none;background:var(--trust-card-fill);clip-path:inset(var(--clip-inset) round var(--radius-card));}
+.viewport::before{content:'';position:absolute;inset:0;z-index:-1;background-color:var(--trust-card-fill);clip-path:inset(0 round var(--radius-card));transition:background-color 560ms ease-in-out,clip-path 1.2s cubic-bezier(.22,1,.36,1);}
+.viewport:has(.card:focus-visible)::before{clip-path:inset(var(--clip-amount) round var(--radius-card));}
+@media(hover:hover){
+  .viewport:has(.card:hover)::before{clip-path:inset(var(--clip-amount) round var(--radius-card));}
+}
 .card:focus-visible{outline:2px solid var(--palette-deep-green);outline-offset:-4px;}
 
 .label{grid-area:label;align-self:start;justify-self:start;padding:5px 12px;border-radius:var(--radius-control);background:var(--palette-paper);color:var(--palette-deep-green);font-size:var(--text-label);line-height:1.2;}
@@ -50,13 +52,13 @@
   .cta{margin-top:auto;}
 }
 @media(max-width:991px){
-  .card{--clip-amount:8;}
+  .viewport{--clip-amount:8px;}
   .card{min-height:320px;padding:var(--card-top) var(--card-side) 24px;}
   .carousel{--art-height:clamp(110px,15vw,150px);--card-top:20px;--card-side:24px;}
   .title{font-size:26px;}
 }
 @media(max-width:767px){
-  .card{--clip-amount:6;}
+  .viewport{--clip-amount:6px;}
   .section{grid-template-columns:minmax(0,1fr);gap:32px;}
   .next{right:16px;bottom:16px;}
   .card{min-height:0;}
@@ -68,3 +70,14 @@
 .illustration>canvas,.illustration>span{position:absolute;inset:0;width:100%;height:100%;}
 .illustration>span{background:currentColor;mask-size:auto 100%;mask-repeat:no-repeat;mask-position:right;}
 .illustration>canvas[data-ready]+span{display:none;}
+
+@media(prefers-reduced-motion:no-preference){
+  .card :is(.label,.title,.text){opacity:0;transform:translateY(6px);transition:opacity 140ms ease-in,transform 160ms ease-in;}
+  .list>li[aria-hidden='false'] :is(.label,.title,.text){opacity:1;transform:translateY(0);transition:opacity 300ms ease-out var(--enter-delay),transform 360ms ease-out var(--enter-delay);}
+  .label{--enter-delay:140ms;}
+  .title{--enter-delay:175ms;}
+  .text{--enter-delay:210ms;}
+}
+@media(prefers-reduced-motion:reduce){
+  .viewport::before{transition:none;}
+}
