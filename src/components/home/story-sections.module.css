@@ -43,7 +43,7 @@ span.productIcon{background:currentColor;mask-position:center;mask-repeat:no-rep
 .proofFacts dd {
   order: -1;
   padding: .12em .14em;
-  background: var(--palette-iris);
+  background: var(--palette-iris-light);
   color: var(--palette-deep-green);
   font-size: clamp(32px, 3.7vw, 64px);
   line-height: 1;
