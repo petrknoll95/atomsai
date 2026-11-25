@@ -67,6 +67,7 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
         document.documentElement.dataset.smoothScroll = 'true';
         smoother = ScrollSmoother.create({
           wrapper: wrapper.current!, content: content.current!,
+          onUpdate: () => window.dispatchEvent(new Event('atoms:smooth-scroll')),
           smooth: 0.8, smoothTouch: false, effects: false,
           onFocusIn: (_self, event) => {
             if (!(event.target instanceof Element) || !content.current?.contains(event.target) || event.target.closest('dialog')) return false;

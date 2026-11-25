@@ -1,3 +1,4 @@
+import { observeScrollLayout } from '@/lib/observe-scroll-layout';
 import { gsap } from 'gsap';
 
 type Mount = { stage: HTMLElement; field: HTMLElement; content: HTMLElement };
@@ -28,11 +29,18 @@ export function mountHeroScroll({ stage, field, content }: Mount) {
     }
   };
   update();
-  gsap.ticker.add(update);
+  let stop: (() => void) | undefined;
+  const visibility = new IntersectionObserver(([entry]) => {
+    stop?.();
+    update();
+    stop = entry.isIntersecting ? observeScrollLayout(update, [stage]) : undefined;
+  });
+  visibility.observe(stage);
   reduced.addEventListener('change', update);
   return {
     destroy: () => {
-      gsap.ticker.remove(update);
+      visibility.disconnect();
+      stop?.();
       reduced.removeEventListener('change', update);
       gsap.set([field, content], { clearProps: 'transform' });
       field.style.removeProperty('--hero-field-offset');

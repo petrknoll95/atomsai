@@ -4,6 +4,7 @@ import { withBasePath, assetPath } from '@/lib/base-path';
 
 import { ArrowIcon } from '@/components/arrow-icon';
 import Link from 'next/link';
+import { observeScrollLayout } from '@/lib/observe-scroll-layout';
 import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ButtonLink } from '@/components/ui';
@@ -133,9 +134,12 @@ const desktopMenus = useMemo(() => links.filter(link => link.children).map(link 
       }
       if (theme !== header.dataset.theme) header.dataset.theme = theme;
     };
-    gsap.ticker.add(update);
+    const stop = observeScrollLayout(update, [header, ...regions]);
+    const menu = new MutationObserver(update);
+    menu.observe(header, { attributes: true, attributeFilter: ['data-responsive-menu-open', 'data-desktop-menu-open'] });
     return () => {
-      gsap.ticker.remove(update);
+      stop();
+      menu.disconnect();
     };
   }, []);
   useEffect(() => {
