@@ -35,9 +35,14 @@ export function TrustSummary() {
       <p className={styles.description}>Dependable systems, responsible safeguards, and security you can verify. All part of the engineering.</p>
       <div className={styles.actions}>
         <Eyebrow href="/trust">Trust Center</Eyebrow>
-        <button type="button" className={styles.next} aria-controls="trust-topic-cards" aria-label="Next trust topic" onClick={() => carousel?.scrollNext()}>
-          <ArrowIcon size={22} />
-        </button>
+        <div className={styles.arrows} role="group" aria-label="Trust carousel navigation">
+          <button type="button" className={tracks.imageControl} aria-controls="trust-topic-cards" aria-label="Previous trust topic" onClick={() => carousel?.scrollPrev()}>
+            <ArrowIcon size={18} direction="left" />
+          </button>
+          <button type="button" className={tracks.imageControl} aria-controls="trust-topic-cards" aria-label="Next trust topic" onClick={() => carousel?.scrollNext()}>
+            <ArrowIcon size={18} />
+          </button>
+        </div>
       </div>
     </header>
     <div className={styles.carousel} role="group" aria-roledescription="carousel" aria-label="Trust topics">

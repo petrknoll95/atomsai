@@ -10,8 +10,8 @@
 .viewport{--clip-amount:12px;position:relative;isolation:isolate;overflow:hidden;border-radius:var(--radius-card);}
 .list{display:flex;margin:0;padding:0;list-style:none;touch-action:pan-y pinch-zoom;}
 .list>li{flex:0 0 100%;min-width:0;}
-.next{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--palette-deep-green);color:var(--palette-paper);}
-.next:focus-visible{outline:2px solid var(--palette-deep-green);outline-offset:3px;}
+.arrows{display:flex;align-items:center;align-self:center;gap:12px;}
+.arrows>button{position:relative;}
 .viewport[data-topic='integrations']{--trust-card-fill:var(--palette-stone);}
 .viewport[data-topic='safeguards']{--trust-card-fill:var(--palette-iris-light);}
 .viewport[data-topic='reliability']{--trust-card-fill:color-mix(in srgb,var(--palette-mist) 74%,var(--palette-paper));}
