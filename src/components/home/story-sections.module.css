@@ -24,7 +24,7 @@ span.productIcon{background:currentColor;mask-position:center;mask-repeat:no-rep
   border-block: 1px solid var(--color-border);
 }
 .proofIntro { display:flex; flex-direction:column; align-items:flex-start; padding-inline-end:var(--stat-gutter); }
-.proofIntro h2 { max-width:22ch; margin:14px 0 28px; font-size:clamp(24px,2vw,34px); line-height:1.1; text-wrap:pretty; }
+.proofIntro h2 { max-width:22ch; margin:14px 0 28px; font-size:clamp(24px,2vw,34px); line-height:1; text-wrap:pretty; }
 .proofIntro a { margin-top:auto; }
 .proofFacts { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); }
 .proofFacts > div {
