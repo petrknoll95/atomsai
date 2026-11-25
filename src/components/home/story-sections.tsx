@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { ButtonLink, Eyebrow } from '@/components/ui';
 import { assetPath } from '@/lib/base-path';
 import { formatDate, posts } from '@/components/blog/blog-data';
@@ -43,13 +42,24 @@ export function CompanyProof({ showProducts = true }: { showProducts?: boolean }
 const latestPosts = [...posts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3)
   .map(post => ({ ...post, art: blogArtSource(post.artwork) }));
 
+const thumbnailMasters = new Set(['quotes-go-quiet', 'no-shows', 'speed-to-lead']);
+
+function noteSources(src: string) {
+  const match = src.match(/^(.+\/offsets\/articles)\/([^/]+)\.webp$/);
+  if (!match || !thumbnailMasters.has(match[2])) return undefined;
+  const [, directory, name] = match;
+  return [...[480, 800, 1200].map(width =>
+    `${assetPath(directory)}/thumbnails/${name}-${width}.webp ${width}w`
+  ), `${assetPath(src)} 1600w`].join(', ');
+}
+
 export function FieldNotes() {
   return <section className={`page-container ${styles.section}`} aria-labelledby="field-notes-title">
     <header className={styles.header}><div><p className={styles.label}>Insights</p><h2 id="field-notes-title" className={`display ${styles.heading}`}>Notes from the field</h2></div><ButtonLink href="/blog" variant="outline">View all notes</ButtonLink></header>
     <ul className={styles.notesGrid}>{latestPosts.map(post => <li key={post.slug}>
       <ClipCard className={styles.noteCard} href={`/blog/${post.slug}`}>
         <span className={styles.noteArt} data-clip-inset>
-          <Image data-clip-zoom src={assetPath(post.art.src)} unoptimized={post.art.unoptimized} fill sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1600px) 31vw, 470px" alt="" />
+          <img data-clip-zoom src={assetPath(post.art.src)} srcSet={noteSources(post.art.src)} loading="lazy" decoding="async" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1600px) 31vw, 470px" alt="" />
         </span>
         <h3 className="display">{post.title}</h3>
         <p className={styles.noteMeta}><time dateTime={post.date}>{formatDate(post.date)}</time><span aria-hidden="true">·</span>{post.readingTime}</p>
