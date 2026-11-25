@@ -59,7 +59,7 @@ export function Stories() {
                 </div>
         
                 {/* Use the surrounding light theme so results remain readable on paper. */}
-                <div className={styles.metrics} data-story-stats role="group" aria-label={`${story.company} results`}>
+                <div className={styles.metrics} data-story-stats tabIndex={active === index ? 0 : -1} role="group" aria-label={`${story.company} results`}>
                   {story.metrics.map(metric => <div key={metric.description} data-story-reveal className={styles.metric}>
                     <div className={styles.metricValues}>
                       {metric.before ? <>

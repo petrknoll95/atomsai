@@ -67,7 +67,7 @@ export function useStoryAutoplay(embla: EmblaCarouselType | undefined) {
       }
     };
     const updatePlayback = () => {
-      if (!visible || browsingStats || manuallyPaused || document.hidden || motion.matches) autoplay.stop();
+      if (!visible || content.querySelector('[data-story-stats]:focus-visible') || browsingStats || manuallyPaused || document.hidden || motion.matches) autoplay.stop();
       else if (!autoplay.isPlaying()) autoplay.play();
     };
     const visibility = new IntersectionObserver(([entry]) => {
@@ -108,6 +108,9 @@ export function useStoryAutoplay(embla: EmblaCarouselType | undefined) {
     const reInit = () => { select(); updatePlayback(); };
     embla.on('select', select).on('reInit', reInit)
       .on('autoplay:timerset', startProgress).on('autoplay:timerstopped', freezeProgress);
+    const focusChanged = () => queueMicrotask(updatePlayback);
+    content.addEventListener('focusin', focusChanged);
+    content.addEventListener('focusout', focusChanged);
     content.addEventListener('touchstart', startStatsGesture, { passive: true });
     content.addEventListener('touchend', endStatsGesture);
     content.addEventListener('touchcancel', endStatsGesture);
@@ -121,6 +124,8 @@ export function useStoryAutoplay(embla: EmblaCarouselType | undefined) {
       animation?.cancel();
       embla.off('select', select).off('reInit', reInit)
         .off('autoplay:timerset', startProgress).off('autoplay:timerstopped', freezeProgress);
+      content.removeEventListener('focusin', focusChanged);
+      content.removeEventListener('focusout', focusChanged);
       content.removeEventListener('touchstart', startStatsGesture);
       content.removeEventListener('touchend', endStatsGesture);
       content.removeEventListener('touchcancel', endStatsGesture);
