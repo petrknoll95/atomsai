@@ -1,4 +1,4 @@
-import { patternGradients, patternSources, patternThemes, type SourceNode } from './source-data';
+import { type PatternData, patternThemes, type SourceNode } from './source-data';
 import type { GradientData, MaskData, PatternColor, PatternModel, PatternOptions } from './types';
 
 const layers = ['Upper field', 'Lower field', 'Highlight', 'Reflection'] as const;
@@ -19,10 +19,10 @@ function descendants(node: SourceNode): SourceNode[] {
  * Keep original Float32 matrices, stop positions, RGBA and paint order verbatim.
  * Reflection is an ALPHA mask: its grayscale RGB must not reduce its opacity.
  */
-function originalGeometry(count: 15 | 29): Geometry {
+function originalGeometry(count: 15 | 29, data: PatternData): Geometry {
   const cached = originals.get(count);
   if (cached) return cached;
-  const variant = Object.values(patternSources.concentric.variants).find(source => source.slitCount === count);
+  const variant = Object.values(data.source.variants).find(source => source.slitCount === count);
   if (!variant?.root || !variant.ringPitch) throw new Error(`Missing original Concentric source for ${count} rings.`);
   const nodes = descendants(variant.root);
   const gradients: GradientData[] = [];
@@ -40,7 +40,7 @@ function originalGeometry(count: 15 | 29): Geometry {
         inner: shape.bounds[2] / 2 * (shape.arc?.innerRadius ?? 0),
         gradients: shape.paints.filter(paint => paint.visible && 'gradient' in paint).map(paint => {
           if (!('gradient' in paint)) throw new Error('Expected a Concentric gradient paint.');
-          const original = patternGradients[paint.gradient];
+          const original = data.gradients[paint.gradient];
           if (!original || original.type !== 'radial') throw new Error(`Missing radial source ${paint.gradient}.`);
           const index = gradients.length;
           gradients.push({ matrix: original.matrix, stops: original.stops, opacity: paint.opacity });
@@ -83,9 +83,9 @@ function profileAlpha(source: Geometry, layer: number, profile: number, radius: 
  * pitch linearly; outside that pitch interval clamp to the nearest source.
  * No image, SVG mask, animation, or unverified opacity equation is used.
  */
-function extendedGeometry(count: number): Geometry {
-  const coarse = originalGeometry(15);
-  const fine = originalGeometry(29);
+function extendedGeometry(count: number, data: PatternData): Geometry {
+  const coarse = originalGeometry(15, data);
+  const fine = originalGeometry(29, data);
   const pitch = count === 1 ? 600 : 588 / (count - 1);
   const pitchMix = clamp((42 - pitch) / 21, 0, 1);
   const gradients: GradientData[] = [];
@@ -141,9 +141,9 @@ function extendedGeometry(count: number): Geometry {
   return { gradients, masks, ringPitch: pitch };
 }
 
-export function buildConcentricModel(options: PatternOptions): PatternModel {
+export function buildConcentricModel(options: PatternOptions, data: PatternData): PatternModel {
   const count = clamp(Math.round(options.count) || 1, 1, 80);
-  const geometry = count === 15 || count === 29 ? originalGeometry(count) : extendedGeometry(count);
+  const geometry = count === 15 || count === 29 ? originalGeometry(count, data) : extendedGeometry(count, data);
   const theme = patternThemes[options.mode ?? 'light'];
   // Source reflection-base is black in both modes: the additive identity. It is
   // not a sixth color carrier and must not displace the actual reflection role.

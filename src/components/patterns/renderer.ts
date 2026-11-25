@@ -1,3 +1,4 @@
+import type { PatternData } from './source-data';
 import { buildPatternModel } from './model';
 import { blurShader, compositeShader, maskShader, vertexShader } from './shaders';
 import type { PatternOptions, PatternResolution } from './types';
@@ -5,7 +6,7 @@ import type { PatternOptions, PatternResolution } from './types';
 type Target = { framebuffer: WebGLFramebuffer; textures: WebGLTexture[] };
 
 /** Source masks are prepared once; optional motion changes only the final composite. */
-export function createPatternRenderer(canvas: HTMLCanvasElement) {
+export function createPatternRenderer(canvas: HTMLCanvasElement, data: PatternData) {
   const gl = canvas.getContext('webgl2', { alpha: false, antialias: false, depth: false, stencil: false, preserveDrawingBuffer: true });
   if (!gl) throw new Error('WebGL2 is unavailable in this browser.');
   // Blend the original encoded P3 channels in the shader, then explicitly
@@ -104,7 +105,7 @@ export function createPatternRenderer(canvas: HTMLCanvasElement) {
     prepared = false;
     let retained: WebGLTexture[] = [];
     try {
-      const model = buildPatternModel(options);
+      const model = buildPatternModel(options, data);
       const maxTexture = gl!.getParameter(gl!.MAX_TEXTURE_SIZE) as number;
       const display = retain && resolution === 'display';
       const maxBuffer = gl!.getParameter(gl!.MAX_RENDERBUFFER_SIZE) as number;

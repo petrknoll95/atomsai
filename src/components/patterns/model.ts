@@ -1,5 +1,5 @@
 import { brandPatternColor } from './brand-colors';
-import { patternGradients, patternSources, patternThemes, type SourceNode } from './source-data';
+import { type PatternData, patternThemes, type SourceNode } from './source-data';
 import type { GradientData, MaskData, PatternColor, PatternModel, PatternOptions } from './types';
 import { buildConcentricModel } from './concentric';
 
@@ -8,10 +8,10 @@ function descendants(node: SourceNode): SourceNode[] {
 }
 
 /** Translate the inspected source into numeric shader tables. No image textures. */
-export function buildPatternModel(options: PatternOptions): PatternModel {
-  if (options.kind === 'concentric') return buildConcentricModel(options);
+export function buildPatternModel(options: PatternOptions, data: PatternData): PatternModel {
+  if (options.kind === 'concentric') return buildConcentricModel(options, data);
   const count = Math.max(1, Math.min(80, Math.round(options.count) || 1));
-  const source = patternSources[options.kind];
+  const source = data.source;
   const variant = Object.values(source.variants).find(value => value.slitCount === count);
   const fallback = source.variants[count > 15 ? '2' : '1'];
   const root = source.template ?? variant?.root ?? fallback?.root;
@@ -32,7 +32,7 @@ export function buildPatternModel(options: PatternOptions): PatternModel {
         const key = `${paint.gradient}:${paint.opacity}`;
         const existing = sourceIds.get(key);
         if (existing !== undefined) return existing;
-        const original = patternGradients[paint.gradient];
+        const original = data.gradients[paint.gradient];
         if (original.type !== 'radial') throw new Error('Unexpected source gradient type.');
         const id = gradients.length;
         gradients.push({ matrix: original.matrix, stops: original.stops, opacity: paint.opacity });

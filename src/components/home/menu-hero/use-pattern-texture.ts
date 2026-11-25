@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState, type RefObject } from 'react';
+import offsetData from '@/components/patterns/sources/offset';
 import { createPatternRenderer } from '@/components/patterns/renderer';
 
 /** Capture the original Figma-derived offset pattern once per size, not per frame. */
@@ -22,7 +23,7 @@ export function usePatternTexture(host: RefObject<HTMLDivElement | null>, count:
       const next = `${Math.round(width)}:${Math.round(height)}:${devicePixelRatio}`;
       if (next === signature) return;
       try {
-        renderer ??= createPatternRenderer(source);
+        renderer ??= createPatternRenderer(source, offsetData);
         renderer.render({ kind: 'offset', count, mode: 'dark', fit: 'stretch' }, width, height, Math.min(devicePixelRatio, 1.5));
         setTexture(source.toDataURL('image/png'));
         signature = next;

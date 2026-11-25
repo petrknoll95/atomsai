@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState, type CSSProperties } from 'react';
+import { usePatternData } from './use-pattern-data';
 import { createPatternRenderer } from './renderer';
 import { motionPresets, type PatternMotion } from './motion-presets';
 import type { PatternOptions, PatternResolution } from './types';
@@ -25,12 +26,13 @@ export interface MotionPatternProps extends PatternOptions {
 export function MotionPattern({ motion: requestedMotion, duration = 12, intensity = 0.7, playing = true, resolution = 'balanced', phase, syncWith, onProgress, onAvailabilityChange, className, style, ...options }: MotionPatternProps) {
   const motion = requestedMotion ?? (options.kind === 'concentric' ? 'ripple' : 'tide');
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const data = usePatternData(options.kind, canvasRef, '0px');
   const latest = useRef({ options, motion, duration, intensity, playing, resolution, phase, syncWith, onProgress, onAvailabilityChange });
   const update = useRef<() => void>(() => {});
   const [error, setError] = useState(false);
   useEffect(() => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    if (!canvas || !data) return;
     const reduced = matchMedia('(prefers-reduced-motion: reduce)');
     let reduceMotion = reduced.matches;
     let renderer: ReturnType<typeof createPatternRenderer> | null = null;
@@ -75,7 +77,7 @@ export function MotionPattern({ motion: requestedMotion, duration = 12, intensit
       const next = JSON.stringify([latest.current.options, latest.current.resolution, width, height, devicePixelRatio]);
       try {
         if (next !== signature) {
-          renderer ??= createPatternRenderer(canvas);
+          renderer ??= createPatternRenderer(canvas, data);
           renderer.prepare(latest.current.options, width, height, devicePixelRatio, latest.current.resolution);
           signature = next; latest.current.onAvailabilityChange?.(true);
         }
@@ -112,7 +114,7 @@ export function MotionPattern({ motion: requestedMotion, duration = 12, intensit
       window.removeEventListener('resize', refresh);
       renderer?.dispose(); update.current = () => {};
     };
-  }, []);
+  }, [data]);
   useEffect(() => {
     latest.current = { options, motion, duration, intensity, playing, resolution, phase, syncWith, onProgress, onAvailabilityChange };
     update.current();
