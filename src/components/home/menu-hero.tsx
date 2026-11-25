@@ -6,6 +6,6 @@ import styles from './menu-hero/hero.module.css';
 /** The dark hero and light follow-up retain their own themes in normal flow. */
 export function MenuHero({ children }: { children: ReactNode }) {
   return <div className={styles.surface} data-theme="dark" data-hero-theme-surface>
-    <MenuPatternHero productFamily={<ProductFamily className={styles.foldProducts} />}>{children}</MenuPatternHero>
+    <MenuPatternHero productFamily={<ProductFamily marquee className={styles.foldProducts} />}>{children}</MenuPatternHero>
   </div>;
 }

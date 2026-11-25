@@ -3,18 +3,28 @@ import { ButtonLink, Eyebrow } from '@/components/ui';
 import { assetPath } from '@/lib/base-path';
 import { formatDate, posts } from '@/components/blog/blog-data';
 import { blogArtSource } from '@/components/blog/blog-art';
+import { ProductLogoMarquee } from './product-logo-marquee';
 import { ClipCard } from './clip-card';
 import styles from './story-sections.module.css';
 
-export function ProductFamily({ className = '' }: { className?: string }) {
-  return <div className={`${styles.productFamily} ${className}`}><p className={styles.label}>One company behind every product here, from the apps to the models that power them.</p><div>{[
-      ['JustCall', 'justcall', 'https://justcall.io/'],
-      ['ServiceAgent', 'serviceagent', 'https://serviceagent.ai/'],
-      ['PyAI', 'pyai', 'https://pyai.com/'],
-      ['Helpwise', 'helpwise', 'https://helpwise.io/'],
-    ].map(([name, mark, href]) => <a key={name} href={href}>{mark === 'pyai'
+const productLogos = [
+  ['JustCall', 'justcall', 'https://justcall.io/'],
+  ['ServiceAgent', 'serviceagent', 'https://serviceagent.ai/'],
+  ['PyAI', 'pyai', 'https://pyai.com/'],
+  ['Helpwise', 'helpwise', 'https://helpwise.io/'],
+];
+
+export function ProductFamily({ className = '', marquee = false }: { className?: string; marquee?: boolean }) {
+  const logos = (marquee ? [...productLogos, ...productLogos] : productLogos).map(([name, mark, href], index) => {
+    const duplicate = index >= productLogos.length;
+    return <a key={index} href={href} aria-hidden={duplicate || undefined} tabIndex={duplicate ? -1 : undefined}>{mark === 'pyai'
       ? <svg className={styles.productIcon} viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" strokeWidth="3.5"/><circle cx="32" cy="32" r="13" fill="currentColor"/></svg>
-      : <span className={styles.productIcon} aria-hidden="true" style={{ maskImage: `url("${assetPath(`/assets/products/${mark}-mark.svg`)}")` }}/>}<span>{name}</span></a>)}</div></div>;
+      : <span className={styles.productIcon} aria-hidden="true" style={{ maskImage: `url("${assetPath(`/assets/products/${mark}-mark.svg`)}")` }}/>}<span>{name}</span></a>;
+  });
+  return <div className={`${styles.productFamily} ${className}`}>
+    <p className={styles.label}>One company behind every product here, from the apps to the models that power them.</p>
+    {marquee ? <ProductLogoMarquee>{logos}</ProductLogoMarquee> : <div>{logos}</div>}
+  </div>;
 }
 
 export function CompanyProof({ showProducts = true }: { showProducts?: boolean }) {
