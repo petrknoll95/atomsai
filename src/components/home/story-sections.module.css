@@ -16,13 +16,17 @@
 .productFamily a{display:flex;align-items:center;gap:12px;font-size:24px;white-space:nowrap;}
 .productIcon{width:32px;height:32px;flex:none;}
 span.productIcon{background:currentColor;mask-position:center;mask-repeat:no-repeat;mask-size:contain;}
-.proofFacts {
+.proofRow {
   --stat-gutter: clamp(16px, 2vw, 32px);
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 4fr);
   padding-block: clamp(28px, 4vw, 60px);
   border-block: 1px solid var(--color-border);
 }
+.proofIntro { display:flex; flex-direction:column; align-items:flex-start; padding-inline-end:var(--stat-gutter); }
+.proofIntro h2 { max-width:22ch; margin:14px 0 28px; font-size:clamp(24px,2vw,34px); line-height:1.1; text-wrap:pretty; }
+.proofIntro a { margin-top:auto; }
+.proofFacts { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); }
 .proofFacts > div {
   display: flex;
   flex-direction: column;
@@ -31,7 +35,7 @@ span.productIcon{background:currentColor;mask-position:center;mask-repeat:no-rep
   gap: clamp(32px, 4.5vw, 72px);
   padding-inline-end: var(--stat-gutter);
 }
-.proofFacts > div + div {
+.proofFacts > div {
   border-inline-start: 1px solid var(--color-border);
   padding-inline-start: var(--stat-gutter);
 }
@@ -41,7 +45,7 @@ span.productIcon{background:currentColor;mask-position:center;mask-repeat:no-rep
   padding: .12em .14em;
   background: var(--palette-iris);
   color: var(--palette-deep-green);
-  font-size: clamp(32px, 4.8vw, 80px);
+  font-size: clamp(32px, 3.7vw, 64px);
   line-height: 1;
   letter-spacing: -.035em;
   white-space: nowrap;
@@ -56,6 +60,10 @@ span.productIcon{background:currentColor;mask-position:center;mask-repeat:no-rep
 @media(max-width:1199px){
   .productFamily{grid-template-columns:1fr;gap:24px;}
   .productFamily>div{grid-column:auto;}
+}
+@media(max-width:1023px){
+  .proofRow { grid-template-columns:1fr; gap:32px; }
+  .proofFacts > div:first-child { border-inline-start:0; padding-inline-start:0; }
 }
 @media(max-width:767px){
   .companyProof{padding-bottom:48px;}

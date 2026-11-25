@@ -29,12 +29,19 @@ export function ProductFamily({ className = '', marquee = false }: { className?:
 export function CompanyProof({ showProducts = true }: { showProducts?: boolean }) {
   return <section id="company-story" className={`page-container ${styles.companyProof}`} aria-label="One company behind the products">
     {showProducts && <ProductFamily />}
-    <dl className={styles.proofFacts} aria-label="AtomsAI in numbers">
-      <div><dt>Conversations powered a year</dt><dd className="display">1B+</dd></div>
-      <div><dt>Customers worldwide</dt><dd className="display">7,000+</dd></div>
-      <div><dt>Countries served</dt><dd className="display">20+</dd></div>
-      <div><dt>Raised from Peak XV, Eight Roads, Base10</dt><dd className="display">~$56M</dd></div>
-    </dl>
+    <div className={styles.proofRow}>
+      <header className={styles.proofIntro}>
+        <p className={styles.label}>AtomsAI in numbers</p>
+        <h2 className="display">See how teams put AI to work in everyday conversations.</h2>
+        <ButtonLink href="#customer-stories">See customer stories</ButtonLink>
+      </header>
+      <dl className={styles.proofFacts} aria-label="AtomsAI in numbers">
+        <div><dt>Conversations powered a year</dt><dd className="display">1B+</dd></div>
+        <div><dt>Customers worldwide</dt><dd className="display">7,000+</dd></div>
+        <div><dt>Countries served</dt><dd className="display">20+</dd></div>
+        <div><dt>Raised from Peak XV, Eight Roads, Base10</dt><dd className="display">~$56M</dd></div>
+      </dl>
+    </div>
   </section>;
 }
 
