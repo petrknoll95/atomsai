@@ -14,7 +14,6 @@
   .sectionTrigger::before { content: none; }
   .sectionTrigger::after { content: ''; position: absolute; inset: -4px -12px; z-index: -1; pointer-events: none; border-radius: inherit; background: transparent; clip-path: inset(0 round 8px); transition: background-color .25s ease, clip-path .45s cubic-bezier(.22,1,.36,1); }
   .sectionTrigger:is(:hover,:focus-visible)::after { background: var(--color-surface); clip-path: inset(3px round 8px); }
-  .sectionTrigger[aria-expanded='true']::after { background:color-mix(in srgb,var(--palette-iris-light) 48%,var(--palette-paper)); clip-path:inset(3px round 8px); }
   .sectionTrigger > svg { flex: none; }
   .chevron { transition: transform .25s ease; }
   .sectionTrigger[aria-expanded='true'] .chevron { transform: rotate(180deg); }

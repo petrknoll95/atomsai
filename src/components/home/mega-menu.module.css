@@ -18,6 +18,7 @@
 @media (prefers-reduced-motion: reduce) { .viewport { transition-duration: 1ms, 1ms, 0s; transition-delay: 0s, 0s, 1ms; } .viewport[data-open='true'] { transition-delay: 0s; } }
 .panel {
   --menu-highlight-background: color-mix(in srgb, var(--palette-iris-light) 28%, #f0f0f0);
+  --menu-card-hover-background: color-mix(in srgb, var(--menu-highlight-background) 78%, var(--palette-iris-light));
   position: relative; width: 100%;
   background: transparent; color: var(--color-foreground);
   font-size: var(--text-body); font-weight: var(--font-weight-normal);
@@ -59,7 +60,7 @@
   transition: background-color .3s ease;
 }
 .textCard .title { margin-bottom: 0; }
-.surfaceCard:is(:hover, :focus-visible) { --menu-card-background: color-mix(in srgb, var(--menu-highlight-background) 78%, var(--palette-iris-light)); }
+.surfaceCard:is(:hover, :focus-visible) { --menu-card-background: var(--menu-card-hover-background); }
 .darkCard {
   --menu-card-background: var(--palette-forest-shade);
   --color-muted-foreground: color-mix(in srgb, var(--palette-cream) 72%, var(--palette-forest-shade));
