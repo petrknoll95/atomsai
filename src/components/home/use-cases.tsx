@@ -88,9 +88,7 @@ export function UseCases() {
     <section className={`page-container ${styles.industries}`} id="industries" aria-labelledby="industries-title">
       {useCases.map(useCase => <span key={useCase.slug} id={`industry-${useCase.slug}`} className={styles.industryAnchor} aria-hidden="true" />)}
       <header className={styles.industryHeader}>
-        <p className={styles.industryLabel}>Use cases</p>
         <h2 className={`display ${styles.heading}`} id="industries-title">How teams put AI to work</h2>
-        <p className={styles.useCaseHint}>Select a circle to explore a workflow.</p>
       </header>
 
       <div className={styles.carousel} role="group" aria-roledescription="carousel" aria-label="Use cases">
