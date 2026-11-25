@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { ArrowIcon } from '@/components/arrow-icon';
-import { ButtonLink } from '@/components/ui';
+import { Eyebrow } from '@/components/ui';
 import { TrustIllustration } from './trust-illustration';
 import { siteHref } from '@/lib/site-links';
 import { ClipCard } from './clip-card';
@@ -35,7 +35,7 @@ export function TrustSummary() {
     <header className={styles.intro}>
       <h2 id="trust-summary-title" className={`display ${styles.heading}`}>However, confidence takes more than just capability</h2>
       <p className={styles.description}>Dependable systems, responsible safeguards, and security you can verify. All part of the engineering.</p>
-      <ButtonLink className={styles.cta} href="/trust" variant="outline">Visit the Trust Center</ButtonLink>
+      <Eyebrow className={styles.cta} href="/trust">Trust Center</Eyebrow>
     </header>
     <div className={styles.carousel} role="group" aria-roledescription="carousel" aria-label="Trust topics">
       <div ref={viewport} className={styles.viewport}>
