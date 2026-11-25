@@ -2,60 +2,64 @@
 
 import { useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import { MorphSVGPlugin } from 'gsap/MorphSVGPlugin';
-import poses from './trust-poses.json';
+import { assetPath } from '@/lib/base-path';
+import { drawModel, models, type TrustTopic } from './trust-model';
 import styles from './trust-summary.module.css';
 
-gsap.registerPlugin(MorphSVGPlugin);
-
-type Topic = keyof typeof poses;
-type MotionState =
-  | { phase: 'settled'; topic: Topic }
-  | { phase: 'morphing'; topic: Topic; tween: gsap.core.Tween };
-
-export function TrustIllustration({ topic }: { topic: Topic }) {
-  const path = useRef<SVGPathElement>(null);
-  const state = useRef<MotionState>({ phase: 'settled', topic: 'integrations' });
+export function TrustIllustration({ topic }: { topic: TrustTopic }) {
+  const canvas = useRef<HTMLCanvasElement>(null);
+  const live = useRef({ ...models.integrations });
+  const previous = useRef<TrustTopic>('integrations');
+  const render = useRef(() => {});
 
   useLayoutEffect(() => {
-    const node = path.current!;
-    const motion = matchMedia('(prefers-reduced-motion: reduce)');
-    const pose = poses[topic];
-    function settle() {
-      node.setAttribute('d', pose.d);
-      node.setAttribute('stroke-width', String(pose.strokeWidth));
-      state.current = { phase: 'settled', topic };
+    const node = canvas.current!;
+    if (!node.getContext('2d')) return;
+    const ink = getComputedStyle(node).color;
+    render.current = () => drawModel(node, live.current, ink);
+    function resize() {
+      const bounds = node.getBoundingClientRect();
+      node.width = Math.round(bounds.width * devicePixelRatio);
+      node.height = Math.round(bounds.height * devicePixelRatio);
+      render.current();
     }
-    function stop() {
-      if (state.current.phase === 'morphing') state.current.tween.kill();
-    }
-    function onPreferenceChange() {
-      if (motion.matches) {
-        stop();
-        settle();
-      }
-    }
+    resize();
+    node.dataset.ready = 'true';
+    const observer = new ResizeObserver(resize);
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
 
-    if (motion.matches) settle();
-    else if (state.current.phase !== 'settled' || state.current.topic !== topic) {
-      // On interruption, the previous tween leaves its current outline on the node.
-      const tween = gsap.to(node, {
-        morphSVG: { shape: pose.d, map: 'position', shapeIndex: 0 },
-        attr: { 'stroke-width': pose.strokeWidth },
-        duration: 0.65,
-        ease: 'power2.inOut',
-        onComplete: settle,
-      });
-      state.current = { phase: 'morphing', topic, tween };
+  useLayoutEffect(() => {
+    const pose = live.current, target = models[topic];
+    const motion = matchMedia('(prefers-reduced-motion: reduce)');
+    const topics = Object.keys(models);
+    const delta = (topics.indexOf(topic)-topics.indexOf(previous.current)+topics.length)%topics.length;
+    previous.current = topic;
+    let tween: gsap.core.Tween | undefined;
+    function settle() {
+      tween?.kill();
+      Object.assign(pose,target);
+      render.current();
     }
-    motion.addEventListener('change', onPreferenceChange);
-    return () => {
-      stop();
-      motion.removeEventListener('change', onPreferenceChange);
-    };
+    if (!delta || motion.matches) settle();
+    else {
+      const start = { ...pose }, clock = { t: 0 };
+      const keys = Object.keys(target) as (keyof typeof target)[];
+      const orbit = delta === topics.length-1 ? -.22 : .22;
+      tween = gsap.to(clock, { t: 1, duration: .88, ease: 'power2.inOut', onUpdate() {
+        for (const key of keys) pose[key] = start[key]+(target[key]-start[key])*clock.t;
+        pose.yaw += orbit*Math.sin(Math.PI*clock.t)**2;
+        render.current();
+      } });
+    }
+    const preference = () => { if (motion.matches) settle(); };
+    motion.addEventListener('change', preference);
+    return () => { tween?.kill(); motion.removeEventListener('change', preference); };
   }, [topic]);
 
-  return <svg className={styles.illustration} viewBox="0 0 300 200" aria-hidden="true" fill="none" stroke="currentColor">
-    <path ref={path} d={poses.integrations.d} strokeWidth={poses.integrations.strokeWidth} />
-  </svg>;
+  return <span className={styles.illustration} aria-hidden="true">
+    <canvas ref={canvas} />
+    <span style={{ maskImage: `url("${assetPath(`/assets/illustrations/trust-${topic}-line.svg`)}")` }} />
+  </span>;
 }
