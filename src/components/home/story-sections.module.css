@@ -43,13 +43,34 @@ span.productIcon{background:currentColor;mask-position:center;mask-repeat:no-rep
 .proofFacts dd {
   order: -1;
   padding: .12em .14em;
-  background: var(--palette-iris-light);
+  position: relative;
+  isolation: isolate;
   color: var(--palette-deep-green);
   font-size: clamp(32px, 3.7vw, 64px);
   line-height: 1;
   letter-spacing: -.035em;
   white-space: nowrap;
 }
+.proofFacts dd::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--palette-iris-light);
+  transform-origin: left center;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .proofFacts [data-highlight='pending']::before { transform: scaleX(0); }
+  .proofFacts [data-highlight='visible']::before {
+    animation: highlightIn 500ms cubic-bezier(.22,1,.36,1) var(--highlight-delay, 0ms) backwards;
+  }
+  .proofFacts > div:nth-child(even) { --highlight-delay: 80ms; }
+  @media (min-width: 768px) {
+    .proofFacts > div:nth-child(3) { --highlight-delay: 160ms; }
+    .proofFacts > div:nth-child(4) { --highlight-delay: 240ms; }
+  }
+}
+@keyframes highlightIn { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 .proofFacts dt {
   max-width: 24ch;
   font-size: clamp(16px, 1.35vw, 22px);

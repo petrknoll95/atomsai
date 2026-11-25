@@ -2,6 +2,7 @@ import { ButtonLink, Eyebrow } from '@/components/ui';
 import { assetPath } from '@/lib/base-path';
 import { formatDate, posts } from '@/components/blog/blog-data';
 import { blogArtSource } from '@/components/blog/blog-art';
+import { StatHighlights } from './stat-highlights';
 import { ProductLogoMarquee } from './product-logo-marquee';
 import { ClipCard } from './clip-card';
 import styles from './story-sections.module.css';
@@ -34,12 +35,12 @@ export function CompanyProof({ showProducts = true }: { showProducts?: boolean }
         <h2 className="display">See how teams put AI to work in everyday conversations.</h2>
         <ButtonLink href="#customer-stories">See customer stories</ButtonLink>
       </header>
-      <dl className={styles.proofFacts} aria-label="AtomsAI in numbers">
+      <StatHighlights>
         <div><dt>Conversations powered a year</dt><dd className="display">1B+</dd></div>
         <div><dt>Customers worldwide</dt><dd className="display">7,000+</dd></div>
         <div><dt>Countries served</dt><dd className="display">20+</dd></div>
         <div><dt>Raised from Peak XV, Eight Roads, Base10</dt><dd className="display">~$56M</dd></div>
-      </dl>
+      </StatHighlights>
     </div>
   </section>;
 }
