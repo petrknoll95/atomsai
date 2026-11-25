@@ -30,7 +30,7 @@ export const mountOperatingModelCarousel: OperatingModelMount = (element, option
     ...kineticCircleOptions,
     loop: true,
     containScroll: false,
-    watchDrag: false,
+    watchDrag: (_, event) => event.type === 'touchstart',
     startIndex: start,
   });
   // Two laps give every plate two neighboring slices on either side.
