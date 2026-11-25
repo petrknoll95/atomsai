@@ -1,6 +1,6 @@
 .section{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:center;gap:clamp(32px,5vw,80px);padding-block:var(--section-space);scroll-margin-top:var(--header-height);}
 .intro{display:flex;flex-direction:column;align-items:flex-start;}
-.heading{max-width:18ch;font-size:clamp(44px,4.4vw,72px);line-height:1;letter-spacing:-.015em;text-wrap:balance;}
+.heading{max-width:18ch;font-size:clamp(36px,3.5vw,56px);line-height:.94;letter-spacing:-.015em;text-wrap:balance;}
 .description{max-width:44ch;margin-top:28px;font-size:clamp(18px,1.45vw,22px);line-height:1.5;color:var(--color-muted-foreground);text-wrap:pretty;}
 .cta{margin-top:40px;}
 
@@ -46,6 +46,11 @@
    ink meets the top, bottom and right padding exactly. */
 .art{grid-area:art;align-self:start;justify-self:end;height:clamp(140px,13vw,210px);background:currentColor;mask-size:100% 100%;mask-repeat:no-repeat;}
 
+@media(min-width:768px){
+  .intro{align-self:stretch;padding-block:clamp(20px,2vw,32px);}
+  .description{margin-bottom:28px;}
+  .cta{margin-top:auto;}
+}
 @media(max-width:991px){
   .card{--clip-amount:8;}
   .card{min-height:320px;padding:20px 24px 24px;}
