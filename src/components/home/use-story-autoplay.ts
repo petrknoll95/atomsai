@@ -47,6 +47,7 @@ export function useStoryAutoplay(embla: EmblaCarouselType | undefined) {
     const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
     const content = embla.rootNode();
     const mobile = matchMedia('(max-width: 767px)');
+    let visible = false;
     let browsingStats = false;
     let manuallyPaused = false;
     let animation: Animation | undefined;
@@ -66,9 +67,14 @@ export function useStoryAutoplay(embla: EmblaCarouselType | undefined) {
       }
     };
     const updatePlayback = () => {
-      if (browsingStats || manuallyPaused || document.hidden || motion.matches) autoplay.stop();
+      if (!visible || browsingStats || manuallyPaused || document.hidden || motion.matches) autoplay.stop();
       else if (!autoplay.isPlaying()) autoplay.play();
     };
+    const visibility = new IntersectionObserver(([entry]) => {
+      visible = entry.isIntersecting;
+      updatePlayback();
+    });
+    visibility.observe(root.current ?? content);
     const startStatsGesture = (event: TouchEvent) => {
       if (!(event.target instanceof Element) || !event.target.closest('[data-story-stats]') ||
         !mobile.matches) return;
@@ -110,6 +116,7 @@ export function useStoryAutoplay(embla: EmblaCarouselType | undefined) {
     mobile.addEventListener('change', resetStatsLayout);
     updatePlayback();
     return () => {
+      visibility.disconnect();
       autoplay.stop();
       animation?.cancel();
       embla.off('select', select).off('reInit', reInit)

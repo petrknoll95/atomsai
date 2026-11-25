@@ -85,13 +85,12 @@ export function StoryPortraits({ master, slots, images, paused, onTogglePlayback
       container.querySelectorAll('img').forEach(image => {
         image.srcset = images[index].srcSet;
         image.src = images[index].src;
-        image.loading = 'eager';
       });
     };
     // Warm the local responsive assets near the carousel, not at page startup.
     const preload = new IntersectionObserver(entries => {
       if (!entries.some(entry => entry.isIntersecting)) return;
-      images.forEach((_, index) => { void load(index).catch(() => {}); });
+      void load(master.selectedScrollSnap()).catch(() => {});
       preload.disconnect();
     }, { rootMargin: '600px' });
     preload.observe(frame);
