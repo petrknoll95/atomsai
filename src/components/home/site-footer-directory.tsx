@@ -3,16 +3,16 @@ import { AnimatedLogo } from '@/components/animated-logo';
 import Link from 'next/link';
 import { siteHref } from '@/lib/site-links';
 import { ButtonLink } from '../ui';
-import { products, useCaseLinks } from './navigation-data';
+import { applicationsPath, infrastructurePath, productNavHref, products, useCaseLinks } from './navigation-data';
 import { FooterSlitFade } from './footer-slit-fade';
 import { FooterMarkHalf } from './footer-mark-half';
 import styles from './site-footer-directory.module.css';
 
 const groups = [
   { title: 'Applications', links: [
-    { label: 'All applications', path: '#applications' },
-    ...products.map(({ name, href }) => ({ label: name, path: href })),
-    { label: 'Models & infrastructure', path: 'https://pyai.com/' },
+    { label: 'All applications', path: applicationsPath },
+    ...products.map(product => ({ label: product.name, path: productNavHref(product) })),
+    { label: 'Models & infrastructure', path: infrastructurePath },
     { label: 'Try the playground', path: 'https://pyai.com/playground' },
   ] },
   { title: 'Solutions', links: [
@@ -47,12 +47,10 @@ const groups = [
 // Keep the original directory columns; fit the client wording into their slots.
 const homepageGroups = [
   { title: 'Applications', links: [
-    { label: 'Explore products', path: '#applications' },
-    { label: 'JustCall', path: 'https://justcall.io/' },
-    { label: 'ServiceAgent', path: 'https://serviceagent.ai/' },
-    { label: 'Helpwise', path: 'https://helpwise.io/' },
-    { label: 'PyAI', path: 'https://pyai.com/' },
-    { label: 'Models & infrastructure', path: '#offerings' },
+    { label: 'Explore products', path: applicationsPath },
+    ...(['JustCall', 'ServiceAgent', 'Helpwise'] as const).map(name => ({ label: name, path: productNavHref(products.find(product => product.name === name)!) })),
+    { label: 'PyAI', path: infrastructurePath },
+    { label: 'Models & infrastructure', path: infrastructurePath },
     { label: 'Try the playground', path: 'https://pyai.com/playground' },
   ] },
   { title: 'Solutions', links: [
@@ -86,7 +84,7 @@ const homepageGroups = [
 
 /** Current footer, shared by every site page through SiteFooter. */
 export function SiteFooterDirectory({ homepage = false }: { homepage?: boolean }) {
-  const interiorPaths: Record<string, string> = { '#applications': '/applications', 'https://pyai.com/': '/infrastructure', '/company/about': '/company/about', '/company/careers': '/company/careers', '/company/press': '/company/press', '#customer-stories': '/customers/success-stories', '/customers/testimonials': '/customers/testimonials', '#faq': '/help' };
+  const interiorPaths: Record<string, string> = { '/company/about': '/company/about', '/company/careers': '/company/careers', '/company/press': '/company/press', '#customer-stories': '/customers/success-stories', '/customers/testimonials': '/customers/testimonials', '#faq': '/help' };
   return <footer className={`theme-dark ${styles.footer}`} data-theme="dark" data-footer-variant="directory">
     <section className={styles.cta} aria-labelledby="footer-directory-heading">
       <FooterMarkHalf side="start" className={styles.ctaSide} />
@@ -96,7 +94,7 @@ export function SiteFooterDirectory({ homepage = false }: { homepage?: boolean }
           : <>Put AI to work <span className={styles.headingMuted}>in your business.</span></>}</h2>
         <div className={styles.ctaActions}>
           <ButtonLink href="/company/contact" size="large">Talk to AtomsAI</ButtonLink>
-          <ButtonLink href={homepage ? '/#applications' : '/applications'} size="large" variant="outline">Explore applications</ButtonLink>
+          <ButtonLink href={applicationsPath} size="large" variant="outline">Explore applications</ButtonLink>
         </div>
       </div>
       <FooterMarkHalf side="end" className={styles.ctaSide} />

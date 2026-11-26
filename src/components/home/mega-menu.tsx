@@ -10,7 +10,7 @@ type Feature = { title: string; description: string; href: string; image?: strin
 const photo = (name: string) => assetPath(`/assets/figma/industries-${name}-512.webp`);
 const features: Record<string, { label: string; cards: Feature[] }> = {
   Infrastructure: { label: 'From exploration to production', cards: [
-    { title: 'Models & infrastructure', description: 'Explore the platform behind your next AI application.', href: 'https://pyai.com/', plane: 'models' },
+    { title: 'Models & infrastructure', description: 'Explore the platform behind your next AI application.', href: '/infrastructure', plane: 'models' },
     { title: 'Start in the playground', description: 'Try the technology and find what works for your use case.', href: 'https://pyai.com/playground', plane: 'applications' },
     { title: 'Build with our engineers', description: 'Take a workflow from an early idea to a working system.', href: '/approach', plane: 'workflows' },
   ] },

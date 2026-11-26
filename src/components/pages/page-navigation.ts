@@ -1,9 +1,9 @@
-import { navigationLinks, products, type MenuLink } from '@/components/home/navigation-data';
+import { applicationsPath, infrastructurePath, navigationLinks, productNavHref, products, type MenuLink } from '@/components/home/navigation-data';
 
 // Interior routes are local; the homepage keeps its existing navigation.
 export const interiorNavigation: MenuLink[] = [
-  { label: 'Applications', href: '/applications', children: products.map(({ name, href }) => [name, href]) },
-  { label: 'Infrastructure', href: '/infrastructure', children: [['Explore PyAI', '/infrastructure'], ['Try the playground', 'https://pyai.com/playground'], ['Documentation', 'https://docs.pyai.com']] },
+  { label: 'Applications', href: applicationsPath, children: products.map(product => [product.name, productNavHref(product)]) },
+  { label: 'Infrastructure', href: infrastructurePath, children: [['Explore PyAI', infrastructurePath], ['Try the playground', 'https://pyai.com/playground'], ['Documentation', 'https://docs.pyai.com']] },
   { label: 'AI Services', href: '/approach' },
   navigationLinks.find(link => link.label === 'Use cases')!,
   { label: 'Resources', href: '/blog', overviewLabel: 'Notes from the field', children: [
