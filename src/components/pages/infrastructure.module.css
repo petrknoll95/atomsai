@@ -1,4 +1,6 @@
 .page { --section-space:128px; --section-half-space:64px; --faq-padding-block:96px 160px; overflow:clip; }
+/* As on the homepage: secondary copy on paper stays at AA contrast. Dark sections reset the role. */
+.page[data-theme='light'] { --color-muted-foreground:color-mix(in display-p3,var(--palette-deep-green) 74%,transparent); }
 .page :is(h1,h2,h3) { text-box:trim-both cap alphabetic; }
 .page section[id] { scroll-margin-top:112px; }
 .line { display:block; }
