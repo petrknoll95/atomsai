@@ -6,7 +6,7 @@ import content from '@/content/client-pages/applications.json';
 
 export const metadata: Metadata = shareMetadata({
   title: 'Applications — JustCall and ServiceAgent | AtomsAI',
-  description: content.intro.join(' '),
+  description: content.intro[1],
   path: content.route,
 });
 
