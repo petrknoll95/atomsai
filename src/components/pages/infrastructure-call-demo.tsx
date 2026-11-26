@@ -182,6 +182,7 @@ const wave = Array.from({ length: 44 }, (_, index) => Math.round(30 + 70 * Math.
  */
 export function InfrastructureCallDemo({ content }: { content: CallDemoContent }) {
   const rootRef = useRef<HTMLElement>(null);
+  const transcriptRef = useRef<HTMLOListElement>(null);
   const visible = useRef(false);
   const heldByUser = useRef(false);
   const [view, setView] = useState(() => completedView(content, content.defaultScenario));
@@ -224,8 +225,10 @@ export function InfrastructureCallDemo({ content }: { content: CallDemoContent }
   function choose(scenario: number) {
     setChosen(true);
     heldByUser.current = false;
-    if (reduced) simulation.show(scenario);
-    else simulation.start(scenario);
+    if (reduced) {
+      simulation.show(scenario);
+      transcriptRef.current?.scrollTo({ top: 0 });
+    } else simulation.start(scenario);
   }
 
   function togglePlayback() {
@@ -263,7 +266,8 @@ export function InfrastructureCallDemo({ content }: { content: CallDemoContent }
         <div className={styles.wave} data-speaking={view.speaking ?? 'none'} data-moving={!reduced && view.phase === 'playing'} aria-hidden="true">
           {wave.map((height, index) => <i key={index} style={{ height: `${height}%`, animationDelay: `${-(index * 97) % 900}ms` }} />)}
         </div>
-        <ol className={styles.transcript} aria-label="Call transcript" aria-live={chosen ? 'polite' : 'off'}>
+        {/* With reduced motion the whole exchange scrolls, so the list takes keyboard focus. */}
+        <ol ref={transcriptRef} className={styles.transcript} aria-label="Call transcript" aria-live={chosen ? 'polite' : 'off'} tabIndex={reduced ? 0 : undefined}>
           {view.messages.map(message => message.speaker
             ? <li key={message.key} className={styles.message} data-speaker={message.speaker}>
               <span className={styles.speaker}>{message.speaker === 'agent' ? `${content.speakers.agent} · ${content.agent}` : content.speakers.caller}</span>

@@ -82,4 +82,6 @@
 }
 @media (prefers-reduced-motion:reduce) {
   .liveDot, .wave>i, .message, .event, .interrupt::after { animation:none; }
+  /* Nothing plays: the finished exchange reads from its first line and scrolls, at the card's usual height. */
+  .transcript { justify-content:flex-start; overflow-y:auto; overscroll-behavior:contain; -webkit-mask-image:none; mask-image:none; }
 }
