@@ -3,7 +3,8 @@
   "route": "/applications",
   "title": "Hello.",
   "intro": [
-    "One small word. A lot riding on it. A prospect to reach, a customer to help, a service request that can't wait. AtomsAI applications handle those conversations and what follows."
+    "One small word. A lot riding on it.",
+    "A prospect to reach, a customer to help, a service request that can't wait. AtomsAI applications handle those conversations and what follows."
   ],
   "actions": [
     {
@@ -15,6 +16,43 @@
       "href": "#proof"
     }
   ],
+  "hero": {
+    "kicker": ["AtomsAI", "Applications"],
+    "label": "Three conversations, live: a prospect called back, a service request booked, a customer call summarized",
+    "source": {
+      "label": "Hello",
+      "time": "09:12:04"
+    },
+    "events": [
+      {
+        "product": "JustCall",
+        "mark": "justcall",
+        "kind": "Prospect",
+        "text": "Callback placed 58 seconds after the form came in",
+        "time": "09:12",
+        "meta": "en-US · es-MX",
+        "state": "Connected"
+      },
+      {
+        "product": "ServiceAgent",
+        "mark": "serviceagent",
+        "kind": "Service request",
+        "text": "\"Can someone come today?\" Booked for 7:30 am, tech notified",
+        "time": "11:48 pm",
+        "meta": "HVAC · no-cool",
+        "state": "Booked"
+      },
+      {
+        "product": "JustCall",
+        "mark": "justcall",
+        "kind": "Customer",
+        "text": "Summary and next step on the record before hang-up",
+        "time": "14:05",
+        "meta": "Disposition · resolved",
+        "state": "Logged"
+      }
+    ]
+  },
   "sections": [
     {
       "id": "next",
@@ -41,8 +79,8 @@
             "Visit booked around the crew",
             "Customer kept posted to payment"
           ],
-          "label": "",
-          "category": "",
+          "label": "ServiceAgent",
+          "category": "Home services",
           "tags": []
         },
         {
@@ -62,8 +100,8 @@
             "Follow-up text sent on the outcome",
             "Summary on the record for the next rep"
           ],
-          "label": "",
-          "category": "",
+          "label": "JustCall",
+          "category": "Sales and support teams",
           "tags": []
         }
       ],
@@ -74,6 +112,7 @@
       "id": "serviceagent",
       "title": "\"Can someone come today?\"",
       "label": "ServiceAgent",
+      "descriptor": "AI front & back office for home-service businesses",
       "intro": [
         "For a homeowner, it's one question. For a service business, there's a job to assess, a technician to schedule, and a customer to look after.",
         "ServiceAgent brings AI into the day-to-day running of HVAC, plumbing, electrical, and other home-service businesses, handling the office work around every job."
@@ -135,10 +174,20 @@
           "tags": []
         }
       ],
+      "footer": {
+        "title": "Built for the trade, down to the details.",
+        "body": [
+          "An emergency plumbing repair, an AC breakdown, and a roof inspection each come with different questions, urgency, and scheduling needs. ServiceAgent accounts for the differences."
+        ]
+      },
       "links": [
         {
-          "label": "Explore ServiceAgent",
+          "label": "Visit ServiceAgent",
           "href": "https://serviceagent.ai/"
+        },
+        {
+          "label": "See it in action",
+          "href": "/#applications"
         }
       ],
       "kind": "rows"
@@ -147,6 +196,7 @@
       "id": "justcall",
       "title": "\"You have my details, right?\"",
       "label": "JustCall",
+      "descriptor": "The CRM-friendly business phone system",
       "intro": [
         "Your CRM holds the context. JustCall puts it to work through calls, texts, and AI, then brings the outcomes back to inform what happens next."
       ],
@@ -164,7 +214,9 @@
           ],
           "list": [],
           "quote": "“You can only make so many dials a day. When your connect rate triples, it changes everything.”",
-          "attribution": "Warren Lentz · Founder and CEO, Yellowstone Local",
+          "attribution": "Warren Lentz",
+          "role": "Founder and CEO, Yellowstone Local",
+          "company": "Yellowstone Local",
           "label": "",
           "category": "",
           "tags": [],
@@ -183,7 +235,9 @@
           ],
           "list": [],
           "quote": "“In 12 months, JustCall helped customer response times go from a couple of days to within a day.”",
-          "attribution": "Reed Lewallen · Manager of Investor Care, CrowdStreet",
+          "attribution": "Reed Lewallen",
+          "role": "Manager of Investor Care, CrowdStreet",
+          "company": "CrowdStreet",
           "label": "",
           "category": "",
           "tags": [],
@@ -202,7 +256,9 @@
           ],
           "list": [],
           "quote": "“We were converting about 30% of inbound leads to appointments. … We brought that appointment-conversion rate up to 50%.”",
-          "attribution": "Brian Mason · Chief Financial Officer, SCSP Solar",
+          "attribution": "Brian Mason",
+          "role": "Chief Financial Officer, SCSP Solar",
+          "company": "SCSP Solar",
           "label": "",
           "category": "",
           "tags": [],
@@ -221,7 +277,9 @@
           ],
           "list": [],
           "quote": "“The AI is great at handling clear-cut policy questions like warranty timelines in a calm, consistent way. That means our agents can spend their time on the conversations that really need a human touch.”",
-          "attribution": "Elisheva · Operations Lead, ITS Technologies",
+          "attribution": "Elisheva",
+          "role": "Operations Lead, ITS Technologies",
+          "company": "ITS Technologies",
           "label": "",
           "category": "",
           "tags": [],
@@ -240,7 +298,9 @@
           ],
           "list": [],
           "quote": "“Everything gets logged: recordings, call details, even transcripts. It’s a huge time-saver for the team and gives managers real-time insights.”",
-          "attribution": "Warren Lentz · Founder and CEO, Yellowstone Local",
+          "attribution": "Warren Lentz",
+          "role": "Founder and CEO, Yellowstone Local",
+          "company": "Yellowstone Local",
           "label": "",
           "category": "",
           "tags": [],
@@ -249,8 +309,12 @@
       ],
       "links": [
         {
-          "label": "Explore JustCall",
+          "label": "Visit JustCall",
           "href": "https://justcall.io/"
+        },
+        {
+          "label": "See it in action",
+          "href": "/#applications"
         }
       ],
       "kind": "rows"
@@ -272,10 +336,12 @@
           ],
           "list": [],
           "quote": "“Through the variety of businesses I’ve scaled, JustCall has been a go-to. It’s reliable, easy to set up, and integrates deeply with all the tools we use.”",
-          "label": "",
+          "label": "JustCall",
           "category": "",
           "tags": [],
-          "attribution": "Warren Lentz · Founder and CEO, Yellowstone Local"
+          "attribution": "Warren Lentz",
+          "role": "Founder and CEO, Yellowstone Local",
+          "company": "Yellowstone Local"
         },
         {
           "title": "",
@@ -288,10 +354,12 @@
           ],
           "list": [],
           "quote": "“Click-to-dial from HubSpot, instant call logging, and real-time reporting. JustCall was exactly what we needed to scale efficiently.”",
-          "label": "",
+          "label": "JustCall",
           "category": "",
           "tags": [],
-          "attribution": "Giordano Faccani · Global Operations Manager, GoStudent"
+          "attribution": "Giordano Faccani",
+          "role": "Global Operations Manager, GoStudent",
+          "company": "GoStudent"
         },
         {
           "title": "",
@@ -304,10 +372,12 @@
           ],
           "list": [],
           "quote": "“We switched to JustCall for the AI, but just as much for how little downtime you have.”",
-          "label": "",
+          "label": "JustCall",
           "category": "",
           "tags": [],
-          "attribution": "Elisheva · Operations Lead, ITS Technologies"
+          "attribution": "Elisheva",
+          "role": "Operations Lead, ITS Technologies",
+          "company": "ITS Technologies"
         },
         {
           "title": "",
@@ -320,10 +390,12 @@
           ],
           "list": [],
           "quote": "“Don’t waste your time or try anything else. When I saw JustCall, I said, ‘Oh wow. I wish I had done this five years ago.’”",
-          "label": "",
+          "label": "JustCall",
           "category": "",
           "tags": [],
-          "attribution": "Amit Kakar · CEO and Pharmacist, Avalon Pharmacy"
+          "attribution": "Amit Kakar",
+          "role": "CEO and Pharmacist, Avalon Pharmacy",
+          "company": "Avalon Pharmacy"
         }
       ],
       "links": [
@@ -336,37 +408,64 @@
       "stats": [
         {
           "value": "3×",
-          "label": "Connect rate, from 4.5% to 12% · Yellowstone Local"
+          "label": "Connect rate, from 4.5% to 12%",
+          "company": "Yellowstone Local"
         },
         {
           "value": "12%",
-          "label": "Faster response to inbound leads · GoStudent"
+          "label": "Faster response to inbound leads",
+          "company": "GoStudent"
         },
         {
           "value": "80%",
-          "label": "Of calls answered within 30 seconds · ITS Technologies"
+          "label": "Of calls answered within 30 seconds",
+          "company": "ITS Technologies"
         },
         {
           "value": "50%",
-          "label": "Of inbound leads booked, up from 30% · SCSP Solar"
+          "label": "Of inbound leads booked, up from 30%",
+          "company": "SCSP Solar"
         }
       ]
     },
     {
       "id": "engineering",
       "title": "All that engineering. Made simple to use",
-      "label": "",
+      "label": "Applications",
       "intro": [
-        "A service business needs software that understands the job.",
-        "A sales or support team needs communication that works with its CRM.",
         "AtomsAI builds models, infrastructure, and workflows into complete applications that fit how each business works, with the hard engineering already built in."
       ],
-      "blocks": [],
+      "emphasis": "already built in.",
+      "blocks": [
+        {
+          "title": "Service",
+          "body": [
+            "A service business needs software that understands the job."
+          ],
+          "links": [],
+          "list": [],
+          "label": "01",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Sales and support",
+          "body": [
+            "A sales or support team needs communication that works with its CRM."
+          ],
+          "links": [],
+          "list": [],
+          "label": "02",
+          "category": "",
+          "tags": []
+        }
+      ],
       "links": [],
       "kind": "dark"
     }
   ],
   "closing": {
+    "label": "Applications",
     "title": "There's a lot riding on the next hello.",
     "body": [
       "Find an application built for the work your business needs done, with the engineering already in place."
