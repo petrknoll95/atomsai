@@ -92,6 +92,7 @@ export function ApplicationsProduct({ section }: { section: ApplicationsSection 
     </header>
     <FeatureTabs label={`What ${section.label} does`} className={styles.steps}
       stageClassName={`theme-dark ${styles.stepStage}`}
+      stageProps={{ 'data-header-backdrop': '' }}
       items={section.blocks.map((step, index) => ({ id: slug(step.title), title: step.title, panel: <StepPanel step={step} index={index} product={product} /> }))} />
     <div className={`${styles.productFoot} ${section.footer ? '' : styles.productFootActionsOnly}`}>
       {section.footer && <div>

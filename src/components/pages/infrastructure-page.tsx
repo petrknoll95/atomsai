@@ -120,7 +120,7 @@ export function InfrastructurePage() {
     <section id="demo" className={`page-container ${styles.demo}`} aria-labelledby="demo-heading">
       <SectionHead id="demo" label={demo.label} title={<Lines text={demo.title} after="claim." />} intro={demo.intro[0]} />
       <div className={styles.demoGrid}>
-        <div className={styles.demoLine} data-theme="dark">
+        <div className={styles.demoLine} data-theme="dark" data-header-backdrop>
           <p className={styles.demoLabel}>{demoLine.label}</p>
           <a className={`display ${styles.demoNumber}`} href={demoLine.href}>{demoLine.number}</a>
           <p className={styles.demoNote}>{demoLine.note}</p>
@@ -146,7 +146,7 @@ export function InfrastructurePage() {
         <div className={styles.boxPattern} aria-hidden="true">
           <Pattern kind="drift" count={16} mode="dark" fit="stretch" loading="lazy" label="" />
         </div>
-        <FeatureTabs label={box.label} className={styles.boxTabs} stageClassName={styles.boxStage}
+        <FeatureTabs label={box.label} className={styles.boxTabs} stageClassName={`theme-dark ${styles.boxStage}`} stageProps={{ 'data-header-backdrop': '' }}
           items={box.blocks.map((block, index) => ({
             id: boxIcons[index], title: block.title, meta: block.label,
             panel: <div className={styles.boxPanel} data-theme="dark" data-header-theme="light">
@@ -199,7 +199,7 @@ export function InfrastructurePage() {
           const link = block.links[0];
           const external = isOutbound(link.href);
           const dark = buildTones[index] === 'dark';
-          return <li key={block.title} className={styles.buildCard} data-tone={buildTones[index]} data-theme={dark ? 'dark' : undefined} data-header-theme={dark ? 'light' : undefined}>
+          return <li key={block.title} className={styles.buildCard} data-tone={buildTones[index]} data-theme={dark ? 'dark' : undefined} data-header-theme={dark ? 'light' : undefined} data-header-backdrop={dark || undefined}>
             {dark && <HeaderZone />}
             <LineArt name={buildArt[index]} className={styles.buildArt} />
             <p className={styles.buildMeta}>{block.label}</p>
@@ -220,7 +220,7 @@ export function InfrastructurePage() {
             return <li key={item}><b>{item.slice(0, split)}</b>{item.slice(split)}</li>;
           })}</ul>
         </div>
-        <div className={styles.stackCode}>
+        <div className={styles.stackCode} data-header-backdrop>
           <CodeExamples examples={need(stack.examples, 'stack.examples')} />
           <HeaderZone />
         </div>
