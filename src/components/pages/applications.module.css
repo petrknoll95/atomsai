@@ -91,13 +91,14 @@
 .pill { padding:5px 10px; border-radius:999px; box-shadow:inset 0 0 0 1px color-mix(in srgb, currentColor 22%, transparent); font-size:12px; line-height:16px; white-space:nowrap; }
 .productCardTitle { max-width:20ch; font-size:clamp(28px,2.3vw,34px); line-height:1.08; text-wrap:balance; }
 .productCardBody { max-width:44ch; font-size:16px; line-height:1.5; color:var(--color-surface-muted-foreground); }
-/* What happens after the hello: revealed with the card's hover or focus, always shown on touch. */
-.productCardMore { display:grid; grid-template-rows:0fr; opacity:0; transition:grid-template-rows .5s cubic-bezier(.22,1,.36,1), opacity .4s ease; }
-.productCardMore > ul { display:grid; gap:8px; min-height:0; overflow:hidden; margin:0; padding:0; list-style:none; }
+/* What happens after the hello: its space is always reserved (no layout shift); the list
+   fades in with the card's hover or focus, and is always shown on touch. */
+.productCardMore { opacity:0; transform:translateY(6px); transition:opacity .4s ease, transform .5s cubic-bezier(.22,1,.36,1); }
+.productCardMore > ul { display:grid; gap:8px; margin:0; padding:0; list-style:none; }
 .productCardMore li { display:flex; align-items:baseline; gap:10px; font-size:15px; line-height:1.4; }
 .productCardMore li > svg { flex:none; color:var(--color-surface-muted-foreground); }
-.productCard:is(:hover,:focus-within) .productCardMore { grid-template-rows:1fr; opacity:1; }
-@media (hover:none) { .productCardMore { grid-template-rows:1fr; opacity:1; } }
+.productCard:is(:hover,:focus-within) .productCardMore { opacity:1; transform:none; }
+@media (hover:none) { .productCardMore { opacity:1; transform:none; } }
 .productCardLink { margin-top:auto; display:inline-flex; align-items:center; gap:8px; width:fit-content; padding-top:8px; font-size:16px; line-height:20px; color:var(--color-foreground);
   font-weight:var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium),'ital' 100; transition:color .24s ease; }
 .productCardLink::after { content:''; position:absolute; inset:0; border-radius:inherit; }
