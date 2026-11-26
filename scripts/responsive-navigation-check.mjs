@@ -48,10 +48,12 @@ for (const [engineName, engine] of Object.entries({chromium,webkit})) {
       const applications=panel.getByRole('region',{name:'Applications',exact:true});
       await expect(applications.getByRole('button')).toHaveCount(0);
       await expect(applications.locator('[data-responsive-preview]')).toHaveCount(0);
-      for(const [name,href] of [['JustCall','https://justcall.io/'],['Helpwise','https://helpwise.io/'],['ServiceAgent','https://serviceagent.ai/'],['CallPage','https://www.callpage.io/']]){
+      // Products with a section on the Applications overview stay on the site; the others are outbound.
+      for(const [name,href] of [['JustCall','/applications#justcall'],['Helpwise','https://helpwise.io/'],['ServiceAgent','/applications#serviceagent'],['CallPage','https://www.callpage.io/']]){
        const link=applications.getByRole('link',{name:new RegExp(`^${name} `)});
-       await expect(link).toBeVisible();await expect(link).toHaveAttribute('href',href);
+       await expect(link).toBeVisible();await expect(link).toHaveAttribute('href',new RegExp(`${href.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}$`));
       }
+      await expect(applications.getByRole('link',{name:'All applications',exact:true})).toHaveAttribute('href',/\/applications$/);
       await expect(applications.getByRole('link',{name:'All applications',exact:true})).toBeVisible();
      }
      if([320,390,768,1024,1199].includes(width)&&['Use cases','Company','Infrastructure'].includes(group)){
