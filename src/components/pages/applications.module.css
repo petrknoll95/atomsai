@@ -146,7 +146,7 @@
 .productFoot { display:grid; grid-template-columns:minmax(0,7fr) minmax(0,5fr); gap:32px 64px; align-items:end; margin-top:48px; }
 .productFootActionsOnly { grid-template-columns:minmax(0,1fr); }
 .productFootTitle { font-size:clamp(24px,2vw,30px); line-height:1.1; }
-.productFootCopy > p { margin-top:18px; max-width:52ch; font-size:16px; line-height:1.55; color:var(--color-muted-foreground); }
+.productFootBody { margin-top:18px; max-width:52ch; font-size:16px; line-height:1.55; color:var(--color-muted-foreground); }
 .productActions { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:12px; }
 .productFootActionsOnly .productActions { justify-content:flex-start; }
 

@@ -93,9 +93,9 @@ export function ApplicationsProduct({ section }: { section: ProductSection }) {
       stageClassName={`theme-dark ${styles.stepStage}`}
       items={section.blocks.map((step, index) => ({ id: slug(step.title), title: step.title, panel: <StepPanel step={step} index={index} product={product} /> }))} />
     <div className={`${styles.productFoot} ${section.footer ? '' : styles.productFootActionsOnly}`}>
-      {section.footer && <div className={styles.productFootCopy}>
-        <h3 className={`display ${styles.productFootTitle}`}>{section.footer.title}</h3>
-        {section.footer.body.map(paragraph => <p key={paragraph}>{paragraph}</p>)}
+      {section.footer && <div>
+        <p className={`display ${styles.productFootTitle}`}>{section.footer.title}</p>
+        {section.footer.body.map(paragraph => <p key={paragraph} className={styles.productFootBody}>{paragraph}</p>)}
       </div>}
       <div className={styles.productActions}>{section.links.map((link, index) => <Action key={link.label} link={link} primary={index === 0} />)}</div>
     </div>
