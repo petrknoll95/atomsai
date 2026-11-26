@@ -100,7 +100,8 @@
 .productCardLink { margin-top:auto; display:inline-flex; align-items:center; gap:8px; width:fit-content; padding-top:8px; font-size:16px; line-height:20px; color:var(--color-foreground);
   font-weight:var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium),'ital' 100; transition:color .24s ease; }
 .productCardLink::after { content:''; position:absolute; inset:0; border-radius:inherit; }
-.productCardLink:focus-visible { outline-color:transparent; }
+/* The card carries the ring; out-ranks the global focus rule in focus.css (0,2,2). */
+.productCard .productCardLink:focus-visible { outline-color:transparent; }
 .productCardLink > svg { transition:transform .35s cubic-bezier(.22,1,.36,1); }
 .productCard:hover .productCardLink { color:var(--color-surface-muted-foreground); }
 .productCard:is(:hover,:focus-within) .productCardLink > svg { transform:translateY(2px); }
