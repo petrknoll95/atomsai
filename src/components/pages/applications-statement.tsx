@@ -18,8 +18,10 @@ function Words({ text, emphasis = '' }: { text: string; emphasis?: string }) {
 
 /**
  * "All that engineering": the statement reads in as the section scrolls
- * through the viewport, word by word from muted to full colour. Server HTML,
- * reduced motion and print show every word at full colour.
+ * through the viewport, word by word from muted to full colour, and is fully
+ * lit by the time all of it is on screen (it is not pinned, so no word should
+ * stay muted while readable in view). Server HTML, reduced motion and print
+ * show every word at full colour.
  */
 export function ApplicationsStatement({ id, title, needs, statement, emphasis, kicker }: {
   id: string; title: string; needs: Need[]; statement: string; emphasis?: string; kicker: ReactNode;
@@ -47,7 +49,7 @@ export function ApplicationsStatement({ id, title, needs, statement, emphasis, k
       const trigger = ScrollTrigger.create({
         trigger: element,
         start: 'top 78%',
-        end: 'bottom 52%',
+        end: 'bottom bottom',
         onUpdate: self => light(self.progress),
         onRefresh: self => light(self.progress),
       });
