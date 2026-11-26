@@ -75,6 +75,12 @@ type FaqProps = {
   heading?: ReactNode;
   questions?: readonly FaqEntry[];
   showAskQuestion?: boolean;
+  /** Optional line under the heading. */
+  intro?: ReactNode;
+  /** The intro's action; defaults to the Trust Center link, null hides it. */
+  action?: ReactNode | null;
+  /** Index of the question that starts open. */
+  defaultOpen?: number;
 };
 
 export function Faq({
@@ -83,6 +89,9 @@ export function Faq({
   heading = <><span>A few things to know first.</span><span>Choose a starting point with a clearer picture of what comes next.</span></>,
   questions = homeQuestions,
   showAskQuestion = true,
+  intro,
+  action = <ButtonLink href="/trust">Visit the Trust Center</ButtonLink>,
+  defaultOpen = 1,
 }: FaqProps = {}) {
   const group = `${id}-questions`;
   return (
@@ -94,12 +103,13 @@ export function Faq({
             <h2 className={`display ${styles.faqHeading}`} id={`${id}-heading`}>
               {heading}
             </h2>
+            {intro && <p className={styles.faqLead}>{intro}</p>}
           </div>
-          <ButtonLink href="/trust">Visit the Trust Center</ButtonLink>
+          {action}
         </div>
         <div className={styles.questions}>
           {questions.map(({ question, answer }, index) => (
-            <details className={styles.question} key={question} name={group} open={index === 1}>
+            <details className={styles.question} key={question} name={group} open={index === defaultOpen}>
               <summary>
                 <span>{question}</span>
                 <span className={styles.questionIcon} aria-hidden="true">

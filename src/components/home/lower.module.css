@@ -10,6 +10,9 @@
 .faqHeading { min-height: 95px; font-size: var(--text-display-medium); line-height: 1; text-wrap: balance; }
 .faqHeading span { display: block; text-wrap: balance; }
 .faqHeading span:last-child { color: var(--color-muted-foreground); }
+.faqLead { max-width: 32ch; color: var(--color-muted-foreground); font-size: var(--text-body); line-height: 1.5; }
+/* With an intro line, the heading no longer reserves two lines of height. */
+.faqHeader:has(.faqLead) .faqHeading { min-height: 0; }
 .questions { min-width: 0; }
 .question {
   margin-block: 0;
