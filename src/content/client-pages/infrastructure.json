@@ -259,6 +259,7 @@
         "label": "Try it",
         "title": "What a phone line does to a voice",
         "body": "Drag from a studio microphone to a phone line. The band above 3.4 kHz disappears. Hear was trained on what's left.",
+        "control": "Audio bandwidth",
         "from": "Studio mic",
         "to": "Phone line",
         "kept": "Bandwidth kept",

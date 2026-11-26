@@ -4,7 +4,7 @@ import { useId, useState, type CSSProperties } from 'react';
 import styles from './infrastructure.module.css';
 
 export type BandwidthContent = {
-  label: string; title: string; body: string; from: string; to: string;
+  label: string; title: string; body: string; control: string; from: string; to: string;
   kept: string; transcriptLabel: string; transcript: string;
 };
 
@@ -32,7 +32,10 @@ export function InfrastructureBandwidth({ content }: { content: BandwidthContent
       <h3 className={`display ${styles.tryTitle}`}>{content.title}</h3>
       <p className={styles.tryBody}>{content.body}</p>
       <div className={styles.rangeField}>
-        <label htmlFor={id} className={styles.rangeLabels}><span>{content.from}</span><span>{content.to}</span></label>
+        {/* Named for what it adjusts; the visible ends stay part of the name. */}
+        <label htmlFor={id} className={styles.rangeLabels}>
+          <span className={styles.srOnly}>{content.control}, from </span><span>{content.from}</span><span className={styles.srOnly}> to </span><span>{content.to}</span>
+        </label>
         <input id={id} className={styles.range} type="range" min={0} max={100} step={1} value={value}
           onChange={event => setValue(Number(event.target.value))}
           aria-valuetext={`${end}${keptLabel} ${content.kept.toLowerCase()}`}
