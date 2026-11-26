@@ -94,7 +94,7 @@
 /* Inline text links inside running copy, not buttons. */
 .textLink { color:var(--color-foreground); text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px; transition:color .2s ease; }
 .textLink>svg { margin-left:2px; }
-@media (hover:hover) { .textLink:hover { color:var(--color-surface-muted-foreground); } }
+@media (hover:hover) { .textLink:hover { color:var(--color-muted-foreground); } }
 
 .lessons { padding-block:var(--section-space); background:var(--palette-cream-tint); }
 .lessonsHead { display:flex; flex-direction:column; align-items:flex-start; gap:24px; margin-bottom:56px; }
