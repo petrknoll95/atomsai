@@ -210,7 +210,9 @@ export function InfrastructurePage() {
             return <li key={item}><b>{item.slice(0, split)}</b>{item.slice(split)}</li>;
           })}</ul>
         </div>
-        <CodeExamples examples={need(stack.examples, 'stack.examples')} />
+        <div className={styles.stackCode}>
+          <CodeExamples examples={need(stack.examples, 'stack.examples')} />
+        </div>
       </div>
     </section>
 

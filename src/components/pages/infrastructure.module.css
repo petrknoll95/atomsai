@@ -136,12 +136,13 @@
 .footnote { margin-top:32px; font-size:13px; color:var(--color-surface-muted-foreground); }
 
 .build { padding-block:var(--section-space); }
-.buildGrid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; margin:0; padding:0; list-style:none; }
+/* The page's ring, resolved here so the dark card's own theme can't recolour the ring drawn on paper around it. */
+.buildGrid { --card-ring:var(--color-ring); display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; margin:0; padding:0; list-style:none; }
 .buildCard { --icon-accent:var(--palette-iris); position:relative; display:flex; flex-direction:column; align-items:flex-start; gap:14px; min-width:0; min-height:400px; padding:32px; border-radius:var(--radius-card); background:var(--color-surface); color:var(--color-foreground); transition:transform .3s ease; }
 .buildCard[data-tone='dark'] { --icon-accent:var(--palette-sage-tint); background:var(--palette-deep-green); }
 .buildCard[data-tone='dark'] :is(.buildMeta,.cardBody) { color:color-mix(in srgb,var(--color-foreground) 75%,transparent); }
 @media (hover:hover) { .buildCard:hover { transform:translateY(-3px); } }
-.buildCard:has(.buildLink:focus-visible) { outline:var(--focus-ring-width) solid color-mix(in srgb,var(--color-ring) var(--focus-ring-opacity),transparent); }
+.buildCard:has(.buildLink:focus-visible) { outline:var(--focus-ring-width) solid color-mix(in srgb,var(--card-ring) var(--focus-ring-opacity),transparent); }
 .buildArt { width:auto; max-width:100%; height:110px; margin-bottom:24px; }
 .buildLink { display:inline-flex; align-items:center; gap:8px; margin-top:auto; padding-top:16px; font-size:15px; color:var(--color-foreground); }
 /* The card carries the focus ring for its stretched link. */
@@ -153,6 +154,8 @@
 
 .stack { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:64px; align-items:center; margin-top:var(--section-space); }
 .stackCopy { min-width:0; }
+/* The shared code card is dark without a dark theme: give its pills and code a cream focus ring. */
+.stackCode { --color-ring:var(--palette-cream); position:relative; min-width:0; }
 .stackTitle { font-size:clamp(30px,2.8vw,40px); line-height:1.08; text-wrap:balance; }
 .stackList { margin:40px 0 0; padding:0; border-bottom:1px solid var(--color-border); list-style:none; }
 .stackList>li { padding:14px 0; border-top:1px solid var(--color-border); font-size:15px; line-height:1.55; color:var(--color-muted-foreground); }

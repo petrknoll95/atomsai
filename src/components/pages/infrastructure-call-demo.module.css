@@ -19,7 +19,8 @@
 .demo p { margin:0; }
 .backdrop { position:absolute; z-index:-1; top:84px; bottom:112px; left:20px; width:58%; display:flex; flex-direction:column; justify-content:space-evenly; border:1px solid var(--outline); border-radius:16px; }
 .backdrop>span { display:block; height:1px; background:var(--outline); }
-.card { position:relative; width:calc(100% - 32px); margin-left:auto; padding:var(--ui-inset); border-radius:var(--ui-radius); background:var(--ui-wrapper); color:var(--ui-ink); backdrop-filter:blur(20px); }
+/* A light product card inside the dark hero: its controls take the ink focus ring, not the hero's cream one. */
+.card { --color-ring:var(--ui-ink); position:relative; width:calc(100% - 32px); margin-left:auto; padding:var(--ui-inset); border-radius:var(--ui-radius); background:var(--ui-wrapper); color:var(--ui-ink); backdrop-filter:blur(20px); }
 .header { display:flex; align-items:center; gap:12px; min-height:56px; padding:8px 10px 8px 16px; }
 .live { display:inline-flex; align-items:center; gap:8px; min-width:0; font-size:14px; }
 .live b { font-weight:var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium),'ital' 100; }
