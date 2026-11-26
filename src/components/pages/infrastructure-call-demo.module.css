@@ -42,7 +42,11 @@
 .wave[data-moving='true']:not([data-speaking='none'])>i { animation:talk .9s ease-in-out infinite alternate; }
 @keyframes talk { from { transform:scaleY(.25); } to { transform:scaleY(1); } }
 /* Newest lines sit at the bottom; older ones fade out of the top edge. */
-.transcript { display:flex; flex-direction:column; justify-content:flex-end; gap:12px; height:292px; margin:0; padding:0; overflow:hidden; list-style:none; -webkit-mask-image:linear-gradient(to bottom,transparent,#000 56px); mask-image:linear-gradient(to bottom,transparent,#000 56px); }
+.transcript { --transcript-height:292px; display:flex; flex-direction:column; justify-content:flex-end; gap:12px; height:var(--transcript-height); margin:0; padding:0; overflow:hidden; list-style:none; -webkit-mask-image:linear-gradient(to bottom,transparent,#000 56px); mask-image:linear-gradient(to bottom,transparent,#000 56px); }
+/* An ended call hides the interrupt control (36px + 14px gap) and gives its space to the
+   transcript, which scrolls back from the newest line so the whole exchange stays reachable. */
+.demo[data-phase='complete'] .transcript { justify-content:flex-start; height:calc(var(--transcript-height) + 50px); overflow-y:auto; overscroll-behavior:contain; }
+.demo[data-phase='complete'] .transcript > :first-child { margin-top:auto; }
 .message { display:flex; flex-direction:column; align-items:flex-start; gap:4px; max-width:84%; animation:enter .35s ease both; }
 .message[data-speaker='caller'] { align-self:flex-end; align-items:flex-end; text-align:right; }
 .speaker { font-size:11px; line-height:16px; color:var(--ui-muted); }
@@ -69,14 +73,14 @@
   .demo { padding:28px 24px 24px; }
   .card { width:100%; }
   .backdrop { display:none; }
-  .transcript { height:272px; }
+  .transcript { --transcript-height:272px; }
 }
 @media (max-width:767px) {
   .demo { gap:16px; padding:16px; }
   .header { padding-left:12px; }
   .live { font-size:13px; }
   .surface { padding:14px; }
-  .transcript { height:268px; }
+  .transcript { --transcript-height:268px; }
   .message { max-width:90%; }
   .metrics { padding-inline:12px; gap:8px; }
   .metrics dd { font-size:19px; }

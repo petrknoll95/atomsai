@@ -186,6 +186,8 @@ const wave = Array.from({ length: 44 }, (_, index) => Math.round(30 + 70 * Math.
 export function InfrastructureCallDemo({ content }: { content: CallDemoContent }) {
   const rootRef = useRef<HTMLElement>(null);
   const transcriptRef = useRef<HTMLOListElement>(null);
+  const playbackRef = useRef<HTMLButtonElement>(null);
+  const interruptRef = useRef<HTMLButtonElement>(null);
   const visible = useRef(false);
   const heldByUser = useRef(false);
   const [view, setView] = useState(() => completedView(content, content.defaultScenario));
@@ -247,6 +249,16 @@ export function InfrastructureCallDemo({ content }: { content: CallDemoContent }
     simulation.interrupt();
   }
 
+  const complete = view.phase === 'complete';
+  useEffect(() => {
+    if (!complete || reduced) return;
+    // The interrupt control leaves with the call; keep keyboard focus in the card.
+    if (document.activeElement === interruptRef.current) playbackRef.current?.focus({ preventScroll: true });
+    // The ended call can be scrolled back, starting from its newest line.
+    const transcript = transcriptRef.current;
+    if (transcript) transcript.scrollTop = transcript.scrollHeight;
+  }, [complete, reduced, view.scenario]);
+
   const canInterrupt = interruptible(view);
   const playbackLabel = view.phase === 'playing' ? 'Pause the call' : view.phase === 'paused' ? 'Resume the call' : 'Replay the call';
   const { metrics } = view;
@@ -257,7 +269,7 @@ export function InfrastructureCallDemo({ content }: { content: CallDemoContent }
       <div className={styles.header}>
         <span className={styles.live}><i className={styles.liveDot} data-active={view.phase === 'playing'} aria-hidden="true" />{content.status} · <b>{content.business}</b></span>
         <span className={styles.timer} aria-hidden="true">{time(view.elapsed)}</span>
-        <button type="button" className={styles.playback} onClick={togglePlayback} aria-label={playbackLabel} hidden={reduced}>
+        <button ref={playbackRef} type="button" className={styles.playback} onClick={togglePlayback} aria-label={playbackLabel} hidden={reduced}>
           <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">{view.phase === 'playing'
             ? <path d="M5 3.5h2v9H5zm4 0h2v9H9z" fill="currentColor" />
             : view.phase === 'paused' ? <path d="M5 3.5 12 8l-7 4.5Z" fill="currentColor" />
@@ -268,8 +280,8 @@ export function InfrastructureCallDemo({ content }: { content: CallDemoContent }
         <div className={styles.wave} data-speaking={view.speaking ?? 'none'} data-moving={!reduced && view.phase === 'playing'} aria-hidden="true">
           {wave.map((height, index) => <i key={index} style={{ height: `${height}%`, animationDelay: `${-(index * 97) % 900}ms` }} />)}
         </div>
-        {/* With reduced motion the whole exchange scrolls, so the list takes keyboard focus. */}
-        <ol ref={transcriptRef} className={styles.transcript} aria-label="Call transcript" aria-live={chosen ? 'polite' : 'off'} tabIndex={reduced ? 0 : undefined}>
+        {/* Once the exchange is finished (always, with reduced motion) it scrolls, so the list takes keyboard focus. */}
+        <ol ref={transcriptRef} className={styles.transcript} aria-label="Call transcript" aria-live={chosen ? 'polite' : 'off'} tabIndex={reduced || complete ? 0 : undefined}>
           {view.messages.map(message => message.speaker
             ? <li key={message.key} className={styles.message} data-speaker={message.speaker}>
               <span className={styles.speaker}>{message.speaker === 'agent' ? `${content.speakers.agent} · ${content.agent}` : content.speakers.caller}</span>
@@ -277,7 +289,7 @@ export function InfrastructureCallDemo({ content }: { content: CallDemoContent }
             </li>
             : <li key={message.key} className={styles.event}><p>{message.text}</p></li>)}
         </ol>
-        <button type="button" className={styles.interrupt} onClick={interrupt} aria-label={content.interruptName} aria-disabled={!canInterrupt} data-ready={canInterrupt} hidden={reduced}>{content.interrupt}</button>
+        <button ref={interruptRef} type="button" className={styles.interrupt} onClick={interrupt} aria-label={content.interruptName} aria-disabled={!canInterrupt} data-ready={canInterrupt} hidden={reduced || complete}>{content.interrupt}</button>
       </div>
       <dl className={styles.metrics}>
         <div><dt>{content.metrics.first}</dt><dd>{metrics.first ? `${metrics.first} ms` : '—'}</dd></div>
