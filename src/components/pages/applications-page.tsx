@@ -43,12 +43,12 @@ function Kicker({ children, className = '' }: { children: ReactNode; className?:
 
 export function ApplicationsPage() {
   return <main id="main" className={styles.page} data-theme="light">
-    <section id="hero" className={styles.hero} aria-labelledby="applications-hero-heading">
+    <section id="hero" className={styles.hero} aria-labelledby="hero-heading">
       <span className={styles.heroGrid} aria-hidden="true" />
       <div className={`page-container ${styles.heroLayout}`}>
         <div className={styles.heroCopy}>
           <Kicker>{hero.kicker[0]}<span className={styles.kickerRule} aria-hidden="true" />{hero.kicker[1]}</Kicker>
-          <h1 id="applications-hero-heading" className={`display ${styles.heroTitle}`}>{content.title}</h1>
+          <h1 id="hero-heading" className={`display ${styles.heroTitle}`}>{content.title}</h1>
           <p className={`display ${styles.heroLead}`}>{content.intro[0]}</p>
           <p className={styles.heroIntro}>{content.intro[1]}</p>
           <div className={styles.heroActions}>
