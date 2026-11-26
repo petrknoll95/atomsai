@@ -18,7 +18,6 @@
   ],
   "hero": {
     "kicker": ["AtomsAI", "Applications"],
-    "label": "Three conversations, live: a prospect called back, a service request booked, a customer call summarized",
     "source": {
       "label": "Hello",
       "time": "09:12:04"
