@@ -23,18 +23,44 @@
       "intro": [
         "Call the agent and take it somewhere a script wouldn't cover. Ask a follow-up, correct a detail, or interrupt an answer. Then try your own instructions in the Playground."
       ],
-      "blocks": [],
+      "blocks": [
+        {
+          "title": "Ask a follow-up",
+          "body": [],
+          "links": [],
+          "list": []
+        },
+        {
+          "title": "Correct a detail",
+          "body": [],
+          "links": [],
+          "list": []
+        },
+        {
+          "title": "Interrupt an answer",
+          "body": [],
+          "links": [],
+          "list": []
+        }
+      ],
       "links": [
         {
           "label": "Talk to the agent",
           "href": "https://pyai.com/omni"
         },
         {
-          "label": "Open the Playground",
+          "label": "Try your own instructions",
           "href": "https://pyai.com/playground"
         }
       ],
-      "kind": "dark"
+      "kind": "dark",
+      "line": {
+        "label": "Live demo line",
+        "number": "+1 (252) 888-7924",
+        "href": "tel:+12528887924",
+        "note": "An AI agent answers. Calls may be recorded."
+      },
+      "note": "The Playground runs the live Omni agent with your instructions, voice, and tools."
     },
     {
       "id": "box",
@@ -153,7 +179,33 @@
           "href": "https://docs.pyai.com/api-reference"
         }
       ],
-      "kind": "rows"
+      "kind": "rows",
+      "more": {
+        "lead": "Working with longer recordings?",
+        "parts": [
+          {
+            "text": "Generate directed narration with "
+          },
+          {
+            "label": "Cast",
+            "href": "https://pyai.com/cast"
+          },
+          {
+            "text": ", or translate and dub existing recordings into supported languages with "
+          },
+          {
+            "label": "Dub",
+            "href": "https://pyai.com/dub"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "link": {
+          "label": "Open starter examples",
+          "href": "https://pyai.com/sdks"
+        }
+      }
     },
     {
       "id": "lessons",
@@ -171,7 +223,8 @@
           "label": "Hear",
           "category": "",
           "tags": [],
-          "metric": "4.76% word error rate on phone audio with accents"
+          "metric": "4.76% word error rate",
+          "metricNote": "on phone audio with accents"
         },
         {
           "title": "Turn-taking has to be built into the model",
@@ -183,7 +236,8 @@
           "label": "Omni",
           "category": "",
           "tags": [],
-          "metric": "About 390 ms from the caller stopping to the reply starting"
+          "metric": "About 390 ms",
+          "metricNote": "from the caller stopping to the reply starting"
         },
         {
           "title": "One system has to run the whole call",
@@ -195,11 +249,23 @@
           "label": "Telephony · Omni · Recap",
           "category": "",
           "tags": [],
-          "metric": "One account one key, one bill"
+          "metric": "One account",
+          "metricNote": "one key, one bill"
         }
       ],
       "links": [],
-      "kind": "cards"
+      "kind": "cards",
+      "tryIt": {
+        "label": "Try it",
+        "title": "What a phone line does to a voice",
+        "body": "Drag from a studio microphone to a phone line. The band above 3.4 kHz disappears. Hear was trained on what's left.",
+        "from": "Studio mic",
+        "to": "Phone line",
+        "kept": "Bandwidth kept",
+        "transcriptLabel": "Transcript",
+        "transcript": "\"Move my appointment to Monday.\""
+      },
+      "note": "Measured in-region and published with the method. Not an SLA."
     },
     {
       "id": "build",
@@ -260,9 +326,9 @@
       "kind": "cards"
     },
     {
-      "id": "your-stack",
+      "id": "stack",
       "title": "Keep your stack. Nothing you run today has to go",
-      "label": "Integrations",
+      "label": "",
       "intro": [],
       "blocks": [],
       "links": [],
@@ -289,7 +355,7 @@
       ]
     },
     {
-      "id": "trust",
+      "id": "security",
       "title": "For the people who have to sign it off",
       "label": "Security and compliance",
       "intro": [],
@@ -350,7 +416,7 @@
     {
       "id": "faq",
       "title": "Before you get a key",
-      "label": "",
+      "label": "FAQs",
       "intro": [
         "Anything else, write to us. A person reads it, usually the same day."
       ],
@@ -428,7 +494,8 @@
         "label": "Talk to AtomsAI",
         "href": "/company/contact"
       }
-    ]
+    ],
+    "label": "Start"
   },
   "stats": [
     {
@@ -447,5 +514,189 @@
       "value": "200",
       "label": "Voices, 20 languages"
     }
-  ]
+  ],
+  "kicker": [
+    "Infrastructure",
+    "PyAI"
+  ],
+  "note": [
+    "Free sandbox key, no card.",
+    "Live usage needs available credit."
+  ],
+  "callDemo": {
+    "label": "A call in progress, simulated with PyAI's published timings",
+    "status": "Live call",
+    "business": "Elm Street Dental",
+    "agent": "Ava",
+    "speakers": {
+      "agent": "Agent",
+      "caller": "Caller"
+    },
+    "scenarioLabel": "Pick a scenario",
+    "interrupt": "Interrupt it",
+    "metrics": {
+      "first": "First transcript",
+      "reply": "Reply started",
+      "barge": "Interrupted"
+    },
+    "interruption": {
+      "event": "Barge-in · agent stopped in 190 ms",
+      "barge": 190,
+      "steps": [
+        {
+          "speaker": "caller",
+          "text": "Sorry, one more thing first.",
+          "delay": 150
+        },
+        {
+          "speaker": "agent",
+          "text": "Of course, go ahead.",
+          "delay": 380,
+          "reply": 380
+        }
+      ]
+    },
+    "defaultScenario": 0,
+    "scenarios": [
+      {
+        "label": "Interrupt it",
+        "steps": [
+          {
+            "speaker": "agent",
+            "text": "Elm Street Dental, this is Ava. How can I help?",
+            "delay": 400
+          },
+          {
+            "speaker": "caller",
+            "text": "Do you have anything tomorrow?",
+            "delay": 1200,
+            "first": 205
+          },
+          {
+            "speaker": "agent",
+            "text": "Tomorrow we have 9:15, 11:40 and 2:00. The earliest is nine fif",
+            "delay": 390,
+            "reply": 390,
+            "cut": true
+          },
+          {
+            "speaker": "caller",
+            "text": "Actually, the 2:00 one.",
+            "delay": 200,
+            "barge": 190
+          },
+          {
+            "event": "Barge-in · agent stopped in 190 ms",
+            "delay": 300
+          },
+          {
+            "speaker": "agent",
+            "text": "2:00 it is. Shall I book that under your name?",
+            "delay": 380,
+            "reply": 380
+          },
+          {
+            "speaker": "caller",
+            "text": "Yes please.",
+            "delay": 1000
+          },
+          {
+            "speaker": "agent",
+            "text": "Done. Tomorrow at 2:00. See you then.",
+            "delay": 360,
+            "reply": 360
+          },
+          {
+            "event": "Recap · booked · next step: confirm by SMS",
+            "delay": 900
+          }
+        ]
+      },
+      {
+        "label": "Move an appointment",
+        "steps": [
+          {
+            "speaker": "agent",
+            "text": "Elm Street Dental, this is Ava. How can I help?",
+            "delay": 400
+          },
+          {
+            "speaker": "caller",
+            "text": "Hi, I need to move my appointment on Thursday.",
+            "delay": 1400,
+            "first": 212
+          },
+          {
+            "speaker": "agent",
+            "text": "Sure. Would Friday morning or Monday afternoon work better?",
+            "delay": 390,
+            "reply": 390
+          },
+          {
+            "speaker": "caller",
+            "text": "Monday afternoon.",
+            "delay": 1300
+          },
+          {
+            "speaker": "agent",
+            "text": "You're booked for Monday at 3:10 pm. I've sent a confirmation to your phone. Anything else?",
+            "delay": 380,
+            "reply": 380
+          },
+          {
+            "speaker": "caller",
+            "text": "No, that's all. Thanks.",
+            "delay": 1100
+          },
+          {
+            "speaker": "agent",
+            "text": "Thanks for calling. See you Monday.",
+            "delay": 360,
+            "reply": 360
+          },
+          {
+            "event": "Recap · rescheduled · next step: confirm by SMS",
+            "delay": 900
+          }
+        ]
+      },
+      {
+        "label": "Correct a detail",
+        "steps": [
+          {
+            "speaker": "agent",
+            "text": "Elm Street Dental, this is Ava. How can I help?",
+            "delay": 400
+          },
+          {
+            "speaker": "caller",
+            "text": "I want to confirm my appointment. It's under Jordan Lee, Tuesday at ten.",
+            "delay": 1600,
+            "first": 218
+          },
+          {
+            "speaker": "agent",
+            "text": "I see Jordan Lee on Tuesday at 10:30, not ten. Shall I keep 10:30?",
+            "delay": 400,
+            "reply": 400
+          },
+          {
+            "speaker": "caller",
+            "text": "Oh, sorry, I meant 10:30. Yes, keep it.",
+            "delay": 1500
+          },
+          {
+            "speaker": "agent",
+            "text": "Confirmed, Tuesday at 10:30. See you then.",
+            "delay": 370,
+            "reply": 370
+          },
+          {
+            "event": "Recap · confirmed · field: appointment_time = Tue 10:30",
+            "delay": 900
+          }
+        ]
+      }
+    ]
+  }
 }
