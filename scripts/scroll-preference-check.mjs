@@ -29,7 +29,8 @@ for (const [name, engine] of Object.entries({ chromium, webkit })) {
       await page.emulateMedia({ reducedMotion: 'no-preference' });
       if (batteryMode === 'available') {
         await expect(html).toHaveAttribute('data-native-scroll', 'low-battery');
-        await page.getByRole('link', { name: 'Explore applications', exact: true }).click();
+        // An in-page section link; the footer's "Explore applications" now opens /applications.
+        await page.locator('main a[href="#applications"]').filter({ hasText: 'Experience AtomsAI' }).click();
         await expect.poll(() => page.evaluate(() => window.testScrollBehavior)).toBe('instant');
         await page.evaluate(() => {
           const { battery } = window.testScrollPreferences;
