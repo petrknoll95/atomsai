@@ -239,7 +239,8 @@ export function InfrastructurePage() {
       </ul>
     </section>
 
-    <Faq id="faq" label={faq.label} heading={faq.title} showAskQuestion={false}
+    {/* As in the prototype: its intro line, no Trust Center button (security links it above), first question open. */}
+    <Faq id="faq" label={faq.label} heading={faq.title} showAskQuestion={false} intro={faq.intro[0]} action={null} defaultOpen={0}
       questions={faq.blocks.map(block => ({ question: block.title, answer: block.body[0] }))} />
 
     <section id="talk" className={`page-container ${styles.closing}`} aria-labelledby="talk-heading">
