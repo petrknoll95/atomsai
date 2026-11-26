@@ -100,13 +100,20 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
     const followHash = () => { const target = hashTarget(); if (target) scrollToTarget(target, false); };
     const navigate = (event: MouseEvent) => {
       if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-      const link = event.target instanceof Element ? event.target.closest<HTMLAnchorElement>('a[href^="#"]') : null;
+      const link = event.target instanceof Element ? event.target.closest<HTMLAnchorElement>('a[href]') : null;
       if (!link || link.hasAttribute('download') || link.target) return;
+      // Section links may carry this page's path too (/applications#justcall in the
+      // site navigation). Native fragment scrolling would desync ScrollSmoother.
+      const url = new URL(link.href, location.href);
+      const path = (pathname: string) => pathname.replace(/\/$/, '');
+      const samePage = link.getAttribute('href')!.startsWith('#')
+        || (url.origin === location.origin && path(url.pathname) === path(location.pathname) && url.search === location.search);
+      if (!samePage || !url.hash) return;
       let target: HTMLElement | null;
-      try { target = document.getElementById(decodeURIComponent(link.hash.slice(1))); } catch { return; }
+      try { target = document.getElementById(decodeURIComponent(url.hash.slice(1))); } catch { return; }
       if (!target) return;
       event.preventDefault();
-      history.pushState(null, '', link.hash);
+      history.pushState(null, '', url.hash);
       const heading = target.querySelector<HTMLElement>('h1,h2') ?? target;
       const previous = heading.getAttribute('tabindex');
       heading.setAttribute('tabindex', '-1');
