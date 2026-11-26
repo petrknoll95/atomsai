@@ -1,11 +1,9 @@
 /* Applications overview. Layout rhythm and type follow the AI Services page;
    colour comes from the contextual roles in tokens.css. */
-.page {
-  --section-space:128px; --section-half-space:64px;
-  /* As on the homepage: secondary copy stays legible on paper and cream. */
-  --color-muted-foreground:color-mix(in display-p3, var(--palette-deep-green) 74%, transparent);
-  overflow:clip;
-}
+.page { --section-space:128px; overflow:clip; }
+/* As on the homepage: secondary copy stays legible on paper and cream. Scoped to the
+   light theme so it outranks tokens.css whatever order the stylesheets load in. */
+.page[data-theme='light'] { --color-muted-foreground:color-mix(in display-p3, var(--palette-deep-green) 74%, transparent); }
 .page :is(h1,h2,h3,h4,h5,h6) { text-box:trim-both cap alphabetic; }
 .kicker { display:flex; align-items:center; gap:10px; font-size:var(--text-label); line-height:20px; }
 .dot { width:6px; height:6px; flex:none; border-radius:50%; background:var(--palette-forest-green); }
@@ -230,7 +228,7 @@
   .engineeringMark { position:absolute; z-index:-1; right:-28vw; top:50%; width:72vw; translate:0 -50%; margin:0; }
 }
 @media (max-width:767px) {
-  .page { --section-space:88px; --section-half-space:44px; }
+  .page { --section-space:88px; }
   .hero { padding-block:calc(var(--header-height) + 56px) 72px; }
   .heroTitle { margin-top:32px; font-size:clamp(88px,30vw,140px); }
   .heroLead { margin-top:32px; font-size:21px; }
