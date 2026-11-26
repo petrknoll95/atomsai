@@ -1,6 +1,6 @@
 'use client';
 
-import { useId, useRef, useState, type KeyboardEvent, type ReactNode } from 'react';
+import { useId, useRef, useState, type HTMLAttributes, type KeyboardEvent, type ReactNode } from 'react';
 import styles from './feature-tabs.module.css';
 
 export type FeatureTab = { id: string; title: string; meta?: string; panel: ReactNode };
@@ -11,8 +11,10 @@ export type FeatureTab = { id: string; title: string; meta?: string; panel: Reac
  * between steps. Every panel stays mounted in one grid cell, so the stage
  * keeps the height of its tallest step and can crossfade between them.
  */
-export function FeatureTabs({ label, items, className = '', stageClassName = '' }: {
+export function FeatureTabs({ label, items, className = '', stageClassName = '', stageProps }: {
   label: string; items: FeatureTab[]; className?: string; stageClassName?: string;
+  /** Extra attributes for the stage, e.g. data-header-backdrop for a dark stage beside light content. */
+  stageProps?: HTMLAttributes<HTMLDivElement> & { [data: `data-${string}`]: string | boolean | undefined };
 }) {
   const [active, setActive] = useState(0);
   const tabs = useRef<(HTMLButtonElement | null)[]>([]);
@@ -39,9 +41,9 @@ export function FeatureTabs({ label, items, className = '', stageClassName = '' 
         <span className={styles.copy}><span className={styles.title}>{item.title}</span>{item.meta && <span className={styles.meta}>{item.meta}</span>}</span>
       </button>)}
     </div>
-    <div className={`${styles.stage} ${stageClassName}`}>
+    <div {...stageProps} className={`${styles.stage} ${stageClassName}`}>
       {items.map((item, index) => <div key={item.id} id={`${prefix}-${item.id}-panel`} role="tabpanel" aria-labelledby={`${prefix}-${item.id}-tab`}
-        className={styles.panel} data-active={active === index} aria-hidden={active !== index} inert={active !== index}>
+        tabIndex={active === index ? 0 : -1} className={styles.panel} data-active={active === index} aria-hidden={active !== index} inert={active !== index}>
         {item.panel}
       </div>)}
     </div>

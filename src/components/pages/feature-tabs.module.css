@@ -1,7 +1,10 @@
 .tabs { display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); gap:24px; align-items:start; }
 .list { display:flex; flex-direction:column; border-bottom:1px solid var(--color-border); }
 .tab { display:grid; grid-template-columns:40px minmax(0,1fr); align-items:baseline; gap:12px; width:100%; min-height:56px; padding:16px 0; border-top:1px solid var(--color-border); text-align:left; color:var(--color-muted-foreground); cursor:pointer; transition:color .24s ease; }
-.tab:focus-visible { outline:2px solid var(--color-ring); outline-offset:-2px; border-radius:4px; }
+/* Scoped under .list so it outranks the site-wide focus ring in styles/focus.css. */
+.list .tab:focus-visible { outline:2px solid var(--color-ring); outline-offset:-2px; border-radius:4px; }
+/* Drawn inside the panel, on the stage the panel colours its ring for. */
+.stage .panel:focus-visible { outline:2px solid var(--color-ring); outline-offset:-6px; border-radius:var(--radius-card); }
 .tab[data-active="true"] { color:var(--color-foreground); }
 @media (hover:hover) { .tab:hover { color:var(--color-foreground); } }
 .index { position:relative; font-size:var(--text-caption); line-height:20px; font-variant-numeric:tabular-nums; }
