@@ -46,6 +46,13 @@ const faq = section('faq');
 const outbound = { target: '_blank', rel: 'noopener noreferrer' } as const;
 const isOutbound = (href: string) => /^https?:\/\//.test(href);
 
+/**
+ * Dark cards that share their row with the light page keep the header on the
+ * page's theme; where a card spans the width on narrow screens, this zone turns
+ * the header dark over it.
+ */
+const HeaderZone = () => <span className={styles.headerZone} data-header-theme="dark" aria-hidden="true" />;
+
 /** Headline lines as the prototype breaks them; spans keep the shared line reveal intact. */
 function Lines({ text, after }: { text: string; after: string }) {
   const index = text.indexOf(after);
@@ -142,7 +149,8 @@ export function InfrastructurePage() {
         <FeatureTabs label={box.label} className={styles.boxTabs} stageClassName={styles.boxStage}
           items={box.blocks.map((block, index) => ({
             id: boxIcons[index], title: block.title, meta: block.label,
-            panel: <div className={styles.boxPanel} data-theme="dark">
+            panel: <div className={styles.boxPanel} data-theme="dark" data-header-theme="light">
+              <HeaderZone />
               <LineIcon name={boxIcons[index]} className={styles.boxIcon} />
               <div className={styles.boxCopy}>
                 <p className={styles.boxMeta}>{block.label}</p>
@@ -190,7 +198,9 @@ export function InfrastructurePage() {
         {build.blocks.map((block, index) => {
           const link = block.links[0];
           const external = isOutbound(link.href);
-          return <li key={block.title} className={styles.buildCard} data-tone={buildTones[index]} data-theme={buildTones[index] === 'dark' ? 'dark' : undefined}>
+          const dark = buildTones[index] === 'dark';
+          return <li key={block.title} className={styles.buildCard} data-tone={buildTones[index]} data-theme={dark ? 'dark' : undefined} data-header-theme={dark ? 'light' : undefined}>
+            {dark && <HeaderZone />}
             <LineArt name={buildArt[index]} className={styles.buildArt} />
             <p className={styles.buildMeta}>{block.label}</p>
             <h3 className={`display ${styles.cardTitle}`}>{block.title}</h3>
@@ -212,6 +222,7 @@ export function InfrastructurePage() {
         </div>
         <div className={styles.stackCode}>
           <CodeExamples examples={need(stack.examples, 'stack.examples')} />
+          <HeaderZone />
         </div>
       </div>
     </section>

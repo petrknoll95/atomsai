@@ -43,7 +43,9 @@ export function InfrastructureBandwidth({ content }: { content: BandwidthContent
         <div><dt>{content.transcriptLabel}</dt><dd>{content.transcript}</dd></div>
       </dl>
     </div>
-    <div className={styles.spectrum} data-theme="dark" aria-hidden="true">
+    {/* Beside the copy the header stays on the page's theme; stacked, the zone turns it dark over the spectrum. */}
+    <div className={styles.spectrum} data-theme="dark" data-header-theme="light" aria-hidden="true">
+      <span className={styles.headerZone} data-header-theme="dark" />
       <div className={styles.spectrumBars} style={{ '--cutoff': `${cutoff * 100}%` } as CSSProperties}>
         {spectrum.map(({ peak, rest }, index) => <i key={index} data-kept={index / bars < cutoff} data-band={index / bars < phoneBand}
           style={{ height: `${(peak * 78).toFixed(2)}%`, '--rest': rest.toFixed(3), animationDelay: `${-(index * 630) % 2200}ms` } as CSSProperties} />)}
