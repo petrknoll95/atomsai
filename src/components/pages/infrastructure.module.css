@@ -80,6 +80,8 @@
 .boxPattern>canvas { position:absolute; inset:0; opacity:.7; }
 .boxPattern::after { content:''; position:absolute; inset:0; background:linear-gradient(180deg,color-mix(in srgb,var(--palette-forest-shade) 35%,transparent),color-mix(in srgb,var(--palette-forest-shade) 92%,transparent) 70%); }
 .boxStage { align-self:stretch; min-height:480px; border-radius:var(--radius-card); }
+/* The stage carries theme-dark for its roles and focus ring, but the pattern behind it must show. */
+.boxTabsFrame .boxStage { background:transparent; }
 .boxPanel[data-theme] { position:relative; display:grid; grid-template-rows:1fr auto; gap:32px; height:100%; padding:36px; background:transparent; }
 .boxIcon { justify-self:end; width:clamp(96px,11vw,160px); height:auto; --icon-accent:var(--palette-sage-tint); }
 .boxCopy { display:flex; flex-direction:column; align-items:flex-start; gap:14px; max-width:54ch; }
@@ -203,7 +205,7 @@
   .fanCard { --tilt:0deg !important; --shift:0px !important; min-height:0; }
   .boxTabsFrame { display:block; }
   .boxPattern { display:none; }
-  .boxStage { min-height:0; background:var(--palette-forest-shade); }
+  .boxStage, .boxTabsFrame .boxStage { min-height:0; background:var(--palette-forest-shade); }
   .boxIcon { width:96px; }
   .lessonGrid { grid-template-columns:minmax(0,1fr); gap:16px; }
   .lessonCard { --tilt:0deg !important; }
