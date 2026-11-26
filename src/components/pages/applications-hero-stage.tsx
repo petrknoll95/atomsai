@@ -24,10 +24,10 @@ function route(geometry: Geometry, end: number) {
 /**
  * The hero's conversation stage: one Hello, three outcomes. Each event takes a
  * turn: its route draws in from the chip and its progress line runs (a CSS
- * animation, paused off screen) before the next one takes over. Decorative
- * (the hero copy carries the message), so it is hidden
- * from assistive technology. Reduced motion keeps the first event connected
- * and the clock still.
+ * animation, paused off screen) before the next one takes over. The three
+ * outcomes are read as a list; the chip with its ticking clock, the routes and
+ * the progress lines are decoration and hidden from assistive technology.
+ * Reduced motion keeps the first event connected and the clock still.
  */
 export function ApplicationsHeroStage({ source, events }: { source: { label: string; time: string }; events: HeroEvent[] }) {
   const root = useRef<HTMLDivElement>(null);
@@ -90,13 +90,13 @@ export function ApplicationsHeroStage({ source, events }: { source: { label: str
     return () => window.clearInterval(timer);
   }, [running]);
 
-  return <div ref={root} className={styles.stage} aria-hidden="true" data-running={running}>
-    <span className={styles.stageGlow} />
-    {geometry && <svg className={styles.routes} viewBox={`0 0 ${geometry.width} ${geometry.height}`} focusable="false">
+  return <div ref={root} className={styles.stage} data-running={running}>
+    <span className={styles.stageGlow} aria-hidden="true" />
+    {geometry && <svg className={styles.routes} viewBox={`0 0 ${geometry.width} ${geometry.height}`} aria-hidden="true" focusable="false">
       {geometry.ends.map((end, index) => <path key={`base-${index}`} className={styles.route} d={route(geometry, end)} />)}
       {geometry.ends.map((end, index) => <path key={`active-${index}`} className={styles.routeActive} data-on={index === active} d={route(geometry, end)} pathLength={1} />)}
     </svg>}
-    <div ref={chip} className={`theme-dark ${styles.source}`}>
+    <div ref={chip} className={`theme-dark ${styles.source}`} aria-hidden="true">
       <span className={`display ${styles.sourceLabel}`}>{source.label}</span>
       <span className={styles.clock}>{clock}</span>
       <span className={styles.sourcePulse} />
@@ -105,7 +105,7 @@ export function ApplicationsHeroStage({ source, events }: { source: { label: str
       {events.map((event, index) => <li key={event.text} ref={element => { cards.current[index] = element; }} className={styles.event} data-on={index === active}>
         <div className={styles.eventHead}>
           <span className={styles.eventProduct}>
-            <span className={styles.eventMark} style={{ maskImage: assetPath(`url("/assets/products/${event.mark}-mark.svg")`) } as CSSProperties} />
+            <span className={styles.eventMark} aria-hidden="true" style={{ maskImage: assetPath(`url("/assets/products/${event.mark}-mark.svg")`) } as CSSProperties} />
             {event.product}
           </span>
           <span className={styles.eventKind}>{event.kind}</span>
@@ -113,7 +113,7 @@ export function ApplicationsHeroStage({ source, events }: { source: { label: str
         <div className={styles.eventBody}>
           <p>{event.text}</p>
           <div className={styles.eventMeta}><span>{event.time}</span><span>{event.meta}</span><span className={styles.eventState}>{event.state}</span></div>
-          <span className={styles.eventProgress}>
+          <span className={styles.eventProgress} aria-hidden="true">
             <span onAnimationEnd={() => setActive(current => (current + 1) % events.length)} />
           </span>
         </div>
