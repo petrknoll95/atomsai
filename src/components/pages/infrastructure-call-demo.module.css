@@ -3,7 +3,7 @@
    pills and a faint dashboard outline on dark green. */
 .demo {
   --ui-ink:var(--palette-deep-green);
-  --ui-muted:color-mix(in srgb,var(--palette-deep-green) 70%,var(--palette-paper));
+  --ui-muted:color-mix(in srgb,var(--palette-deep-green) 76%,var(--palette-paper));
   --ui-line:color-mix(in srgb,var(--palette-deep-green) 10%,transparent);
   --ui-wrapper:color-mix(in srgb,var(--palette-cream-tint) 95%,transparent);
   --ui-radius:20px;
@@ -30,6 +30,8 @@
 .timer { margin-left:auto; font-size:12px; color:var(--ui-muted); font-variant-numeric:tabular-nums; }
 .playback { display:grid; flex:none; place-items:center; width:32px; height:32px; border-radius:50%; --button-clip-radius:50%; --button-fill:color-mix(in srgb,var(--ui-ink) 8%,transparent); color:var(--ui-ink); }
 @media (hover:hover) { .playback:hover { --button-fill:color-mix(in srgb,var(--ui-ink) 14%,transparent); } }
+/* A 44px hit area around the 32px control. */
+.playback::after { content:''; position:absolute; inset:-6px; border-radius:50%; }
 .playback[hidden], .interrupt[hidden] { display:none; }
 .surface { display:flex; flex-direction:column; gap:14px; padding:16px 18px 18px; border-radius:var(--ui-inner-radius); background:var(--palette-paper); }
 .wave { display:flex; align-items:center; justify-content:space-between; gap:2px; height:48px; padding-bottom:12px; border-bottom:1px solid var(--ui-line); color:color-mix(in srgb,var(--ui-ink) 22%,transparent); transition:color .3s ease; }

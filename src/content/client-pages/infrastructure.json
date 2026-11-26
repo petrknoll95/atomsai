@@ -534,6 +534,7 @@
     },
     "scenarioLabel": "Pick a scenario",
     "interrupt": "Interrupt it",
+    "interruptName": "Interrupt it now",
     "metrics": {
       "first": "First transcript",
       "reply": "Reply started",

@@ -9,7 +9,7 @@ type Step = { speaker?: string; text?: string; event?: string; delay: number; fi
 export type CallDemoContent = {
   label: string; status: string; business: string; agent: string;
   speakers: { agent: string; caller: string };
-  scenarioLabel: string; interrupt: string;
+  scenarioLabel: string; interrupt: string; interruptName: string;
   metrics: { first: string; reply: string; barge: string };
   interruption: { event: string; barge: number; steps: Step[] };
   defaultScenario: number;
@@ -32,6 +32,12 @@ const withMetrics = (metrics: Metrics, step: Step): Metrics => ({
   ...(step.reply ? { reply: step.reply } : {}),
   ...(step.barge ? { barge: step.barge } : {}),
 });
+
+/** The caller can barge in while the agent's newest line is still being spoken. */
+const interruptible = (view: View) => {
+  const last = view.messages[view.messages.length - 1];
+  return view.phase === 'playing' && view.speaking === 'agent' && last?.speaker === 'agent';
+};
 
 /** The finished exchange: what reduced motion and the server render show. */
 function completedView(content: CallDemoContent, scenario: number): View {
@@ -129,10 +135,7 @@ class CallSimulation {
     this.changed(this.view);
   }
 
-  get canInterrupt() {
-    const last = this.view.messages[this.view.messages.length - 1];
-    return this.view.phase === 'playing' && this.view.speaking === 'agent' && last?.speaker === 'agent';
-  }
+  get canInterrupt() { return interruptible(this.view); }
 
   interrupt() {
     if (!this.canInterrupt) return;
@@ -244,8 +247,7 @@ export function InfrastructureCallDemo({ content }: { content: CallDemoContent }
     simulation.interrupt();
   }
 
-  const last = view.messages[view.messages.length - 1];
-  const canInterrupt = view.phase === 'playing' && view.speaking === 'agent' && last?.speaker === 'agent';
+  const canInterrupt = interruptible(view);
   const playbackLabel = view.phase === 'playing' ? 'Pause the call' : view.phase === 'paused' ? 'Resume the call' : 'Replay the call';
   const { metrics } = view;
 
@@ -275,7 +277,7 @@ export function InfrastructureCallDemo({ content }: { content: CallDemoContent }
             </li>
             : <li key={message.key} className={styles.event}><p>{message.text}</p></li>)}
         </ol>
-        <button type="button" className={styles.interrupt} onClick={interrupt} aria-disabled={!canInterrupt} data-ready={canInterrupt} hidden={reduced}>{content.interrupt}</button>
+        <button type="button" className={styles.interrupt} onClick={interrupt} aria-label={content.interruptName} aria-disabled={!canInterrupt} data-ready={canInterrupt} hidden={reduced}>{content.interrupt}</button>
       </div>
       <dl className={styles.metrics}>
         <div><dt>{content.metrics.first}</dt><dd>{metrics.first ? `${metrics.first} ms` : '—'}</dd></div>
