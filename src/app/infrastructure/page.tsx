@@ -6,7 +6,7 @@ import { clientPages } from '@/components/pages/client-content';
 
 const content = clientPages.infrastructure;
 export const metadata: Metadata = shareMetadata({
-  title: `${content.label} | AtomsAI`,
+  title: 'Infrastructure — PyAI | AtomsAI',
   description: content.intro[0],
   path: content.route,
 });
