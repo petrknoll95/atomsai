@@ -115,11 +115,21 @@ const desktopMenus = useMemo(() => links.filter(link => link.children).map(link 
     if (!header) return;
     // Explicit section themes are the source of truth, not inferred pixel colors.
     const regions = Array.from(document.querySelectorAll<HTMLElement>('#smooth-content [data-theme], #smooth-content [data-header-theme]'));
+    // Opt-in: a dark panel that shares its row with light content. When it sits under
+    // only part of the header, one theme cannot suit every item, so show the backdrop.
+    const backdrops = Array.from(document.querySelectorAll<HTMLElement>('#smooth-content [data-header-backdrop]'));
     const update = () => {
       if (header.dataset.responsiveMenuOpen === 'true') { header.dataset.theme = 'light'; return; }
       if (header.dataset.desktopMenuOpen === 'true') { header.dataset.theme = 'light'; return; }
       // Read the rendered bounds, so ScrollSmoother and pinned hero movement agree.
       const bounds = header.getBoundingClientRect();
+      const backdrop = backdrops.some(region => {
+        const rect = region.getBoundingClientRect();
+        const under = rect.top < bounds.bottom && rect.bottom > bounds.top && rect.left < bounds.right && rect.right > bounds.left;
+        return under && (rect.left > bounds.left + 1 || rect.right < bounds.right - 1);
+      });
+      if (String(backdrop) !== header.dataset.headerBackdrop) header.dataset.headerBackdrop = String(backdrop);
+      if (backdrop) { if (header.dataset.theme !== 'light') header.dataset.theme = 'light'; return; }
       const sampleY = bounds.top + bounds.height / 2;
       const sampleX = window.innerWidth / 2;
       let theme = 'light';
@@ -134,7 +144,7 @@ const desktopMenus = useMemo(() => links.filter(link => link.children).map(link 
       }
       if (theme !== header.dataset.theme) header.dataset.theme = theme;
     };
-    const stop = observeScrollLayout(update, [header, ...regions]);
+    const stop = observeScrollLayout(update, [header, ...regions, ...backdrops]);
     const menu = new MutationObserver(update);
     menu.observe(header, { attributes: true, attributeFilter: ['data-responsive-menu-open', 'data-desktop-menu-open'] });
     return () => {

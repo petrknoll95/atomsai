@@ -96,7 +96,7 @@
 
 /* An open desktop menu and the navigation form one continuous full-width surface. */
 .header::before { content:''; position:absolute; top:calc(-1 * var(--header-offset)); bottom:0; left:calc(50% - 50vw); width:100vw; background:var(--palette-paper); opacity:0; pointer-events:none; transition:opacity .25s ease; }
-.header[data-desktop-menu-open='true']::before, .header[data-responsive-menu-open='true']::before { opacity:1; }
+.header[data-desktop-menu-open='true']::before, .header[data-responsive-menu-open='true']::before, .header[data-header-backdrop='true']::before { opacity:1; }
 .header[data-desktop-menu-open='true']::before { transition-duration:.12s; }
 .header[data-responsive-menu-open='true'] .headerBackdrop { visibility:hidden; }
 .header[data-responsive-menu-open='true'] { color:var(--palette-deep-green); z-index:10003; }
