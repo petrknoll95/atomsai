@@ -340,7 +340,8 @@
           "tags": [],
           "attribution": "Warren Lentz",
           "role": "Founder and CEO, Yellowstone Local",
-          "company": "Yellowstone Local"
+          "company": "Yellowstone Local",
+          "logo": "/assets/customers/yellowstone-local.png"
         },
         {
           "title": "",
@@ -358,7 +359,8 @@
           "tags": [],
           "attribution": "Giordano Faccani",
           "role": "Global Operations Manager, GoStudent",
-          "company": "GoStudent"
+          "company": "GoStudent",
+          "logo": "/assets/customers/gostudent.png"
         },
         {
           "title": "",
@@ -394,7 +396,8 @@
           "tags": [],
           "attribution": "Amit Kakar",
           "role": "CEO and Pharmacist, Avalon Pharmacy",
-          "company": "Avalon Pharmacy"
+          "company": "Avalon Pharmacy",
+          "logo": "/assets/customers/avalon-pharmacy.png"
         }
       ],
       "links": [

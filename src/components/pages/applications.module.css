@@ -166,6 +166,8 @@
 .quoteCard { flex:1; display:flex; flex-direction:column; gap:20px; margin:0; padding:28px; border-radius:var(--radius-card); background:var(--color-surface); color:var(--color-foreground); }
 .quoteTop { display:flex; align-items:center; justify-content:space-between; gap:12px; min-height:28px; }
 .quoteCompany { font-size:19px; line-height:1.1; }
+/* Customer logos sit in the same 28px row as the name; the files are trimmed to the mark. */
+.quoteLogo { display:block; width:auto; height:28px; max-width:min(100%,128px); object-fit:contain; object-position:left center; }
 .quoteProduct { font-size:14px; color:var(--color-surface-muted-foreground); }
 .quoteCard blockquote { flex:1; margin:0; font-size:clamp(19px,1.45vw,21px); line-height:1.24; letter-spacing:-.01em; text-wrap:pretty; }
 .quoteCard figcaption { display:grid; gap:4px; font-size:14px; line-height:1.4; color:var(--color-surface-muted-foreground); }

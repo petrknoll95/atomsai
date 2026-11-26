@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { markBounds, slitBlades, slitClip } from '@/lib/slit-logo';
-import { withBasePath } from '@/lib/base-path';
+import { assetPath, withBasePath } from '@/lib/base-path';
 import { ArrowIcon } from '@/components/arrow-icon';
 import { ButtonLink } from '@/components/ui';
 import content from '@/content/client-pages/applications.json';
@@ -11,7 +11,7 @@ import type { ContentBlock, ContentSection } from './client-content';
 import styles from './applications.module.css';
 
 /** The shared client-page shape, plus the fields this page adds to its JSON. */
-type Block = ContentBlock & { label: string; role?: string };
+type Block = ContentBlock & { label: string; role?: string; logo?: string };
 type Section = Omit<ContentSection, 'blocks' | 'stats'> & {
   blocks: Block[]; descriptor?: string; emphasis?: string; footer?: { title: string; body: string[] };
   stats?: { value: string; label: string; company?: string }[];
@@ -100,7 +100,12 @@ export function ApplicationsPage() {
       <ul className={styles.quotes}>
         {proof.blocks.map(block => <li key={block.quote}>
           <figure className={styles.quoteCard}>
-            <div className={styles.quoteTop}><span className={`display ${styles.quoteCompany}`}>{block.company}</span><ProductLockup name={block.label} className={styles.quoteProduct} /></div>
+            <div className={styles.quoteTop}>
+              {/* The customer's logo where the prototype has one; otherwise its name. */}
+              {block.logo ? <img className={styles.quoteLogo} src={assetPath(block.logo)} alt={block.company} height="64" loading="lazy" decoding="async" />
+                : <span className={`display ${styles.quoteCompany}`}>{block.company}</span>}
+              <ProductLockup name={block.label} className={styles.quoteProduct} />
+            </div>
             <blockquote className="display">{block.quote}</blockquote>
             <figcaption><span className={styles.quotePerson}>{block.attribution}</span><span>{block.role}</span></figcaption>
             <ButtonLink href={block.links[0].href} target="_blank" rel="noopener noreferrer" size="small" variant="ghost" className={styles.storyLink}>
