@@ -73,8 +73,8 @@
 .boxTabsFrame { position:relative; display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); column-gap:24px; }
 .boxTabs { position:relative; z-index:1; grid-column:1 / -1; grid-row:1; }
 .boxPattern { position:relative; grid-column:2; grid-row:1; overflow:hidden; border-radius:var(--radius-card); background:var(--palette-forest-shade); }
-.boxPattern>canvas { position:absolute; inset:0; opacity:.45; }
-.boxPattern::after { content:''; position:absolute; inset:0; background:linear-gradient(180deg,color-mix(in srgb,var(--palette-forest-shade) 50%,transparent),color-mix(in srgb,var(--palette-forest-shade) 90%,transparent)); }
+.boxPattern>canvas { position:absolute; inset:0; opacity:.7; }
+.boxPattern::after { content:''; position:absolute; inset:0; background:linear-gradient(180deg,color-mix(in srgb,var(--palette-forest-shade) 35%,transparent),color-mix(in srgb,var(--palette-forest-shade) 92%,transparent) 70%); }
 .boxStage { align-self:stretch; min-height:480px; border-radius:var(--radius-card); }
 .boxPanel[data-theme] { display:grid; grid-template-rows:1fr auto; gap:32px; height:100%; padding:36px; background:transparent; }
 .boxIcon { justify-self:end; width:clamp(96px,11vw,160px); height:auto; --icon-accent:var(--palette-sage-tint); }
@@ -143,7 +143,8 @@
 .buildCard:has(.buildLink:focus-visible) { outline:var(--focus-ring-width) solid color-mix(in srgb,var(--color-ring) var(--focus-ring-opacity),transparent); }
 .buildArt { width:auto; max-width:100%; height:110px; margin-bottom:24px; }
 .buildLink { display:inline-flex; align-items:center; gap:8px; margin-top:auto; padding-top:16px; font-size:15px; color:var(--color-foreground); }
-.buildLink:focus-visible { outline-color:transparent; }
+/* The card carries the focus ring for its stretched link. */
+.buildCard .buildLink:focus-visible { outline-color:transparent; box-shadow:none; }
 /* The whole card follows the link; the link text stays its accessible name. */
 .buildLink::after { content:''; position:absolute; inset:0; border-radius:inherit; }
 .buildLink>svg { transition:transform .3s ease; }
@@ -208,6 +209,8 @@
   .heroIntro { margin-top:24px; font-size:17px; }
   .heroActions { margin-top:32px; }
   .heroActions>a { width:100%; }
+  .heroNote>span+span { flex-basis:100%; }
+  .heroNote>span+span::before { content:none; }
   .sectionTitle { font-size:40px; }
   .sectionHead { grid-template-columns:minmax(0,1fr); gap:20px; margin-bottom:40px; }
   .sectionAside { grid-column:1; grid-row:3; align-self:start; }
