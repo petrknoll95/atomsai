@@ -7,7 +7,6 @@
   overflow:clip;
 }
 .page :is(h1,h2,h3,h4,h5,h6) { text-box:trim-both cap alphabetic; }
-.page section[id] { scroll-margin-top:112px; }
 .kicker { display:flex; align-items:center; gap:10px; font-size:var(--text-label); line-height:20px; }
 .dot { width:6px; height:6px; flex:none; border-radius:50%; background:var(--palette-forest-green); }
 .kickerRule { width:28px; height:1px; flex:none; background:currentColor; opacity:.35; }
@@ -75,7 +74,8 @@
 .stage[data-running="false"] :is(.eventProgress > span, .sourcePulse, .stageGlow) { animation-play-state:paused; }
 
 /* ---------- Every hello sets work in motion ---------- */
-.next { padding-top:var(--section-space); }
+/* Sections space with margins, so an in-page link lands on the content, not on empty padding. */
+.next { margin-top:var(--section-space); }
 .splitHead { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:64px; align-items:end; margin-bottom:56px; }
 .splitHead .sectionTitle { max-width:13ch; }
 .splitHead > p { max-width:48ch; font-size:18px; line-height:1.5; color:var(--color-muted-foreground); text-box:trim-both cap alphabetic; }
@@ -107,7 +107,7 @@
 .productCard:is(:hover,:focus-within) .productCardLink > svg { transform:translateY(2px); }
 
 /* ---------- Product chapters ---------- */
-.product { padding-top:var(--section-space); }
+.product { margin-top:var(--section-space); }
 .productHead { display:grid; grid-template-columns:minmax(0,7fr) minmax(0,5fr); gap:32px 64px; align-items:end; margin-bottom:56px; }
 .productLabel { grid-column:1 / -1; display:flex; flex-wrap:wrap; align-items:center; gap:8px 14px; font-size:var(--text-label); line-height:20px; color:var(--color-muted-foreground); }
 .productLabel .lockup { color:var(--color-foreground); }
@@ -152,7 +152,7 @@
 .productFootActionsOnly .productActions { justify-content:flex-start; }
 
 /* ---------- Customer results ---------- */
-.proof { padding-top:var(--section-space); }
+.proof { margin-top:var(--section-space); }
 .proofHead { display:flex; align-items:flex-end; justify-content:space-between; gap:24px 48px; margin-bottom:48px; }
 .proofHead .sectionTitle { max-width:16ch; margin-top:28px; }
 .stats { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); margin:0; border-top:1px solid var(--color-border); border-left:1px solid var(--color-border); }
@@ -196,7 +196,7 @@
 .statement[data-statement="scroll"] .emphasis[data-lit="true"] { color:var(--palette-iris-dark); }
 
 /* ---------- Closing ---------- */
-.closing { padding-block:var(--section-space); }
+.closing { margin-top:var(--section-space); padding-bottom:var(--section-space); }
 .closingInner { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:64px; align-items:end; padding:72px 48px; border-radius:var(--radius-panel); background:var(--palette-iris-light); }
 .closingInner .dot { background:var(--palette-iris-dark); }
 .closingTitle { max-width:14ch; margin-top:28px; font-size:clamp(36px,3.7vw,56px); line-height:1.02; text-wrap:balance; }
@@ -230,7 +230,6 @@
 }
 @media (max-width:767px) {
   .page { --section-space:88px; --section-half-space:44px; }
-  .page section[id] { scroll-margin-top:96px; }
   .hero { padding-block:calc(var(--header-height) + 56px) 72px; }
   .heroTitle { margin-top:32px; font-size:clamp(88px,30vw,140px); }
   .heroLead { margin-top:32px; font-size:21px; }

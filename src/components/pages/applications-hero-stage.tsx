@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties } from 'react';
+import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import { assetPath } from '@/lib/base-path';
 import styles from './applications.module.css';
 
@@ -39,7 +39,9 @@ export function ApplicationsHeroStage({ source, events }: { source: { label: str
   const [geometry, setGeometry] = useState<Geometry | null>(null);
 
   // Measure the real chip and card positions, so routes meet each card at any width.
-  useLayoutEffect(() => {
+  // The observer's first callback does the initial measure: a synchronous state
+  // update here would land mid-mount and throw off the smooth-scroll deep-link offset.
+  useEffect(() => {
     const stage = root.current;
     if (!stage) return;
     const measure = () => {
@@ -54,7 +56,6 @@ export function ApplicationsHeroStage({ source, events }: { source: { label: str
         ends: targets.map(target => target!.top + target!.height / 2 - bounds.top),
       });
     };
-    measure();
     const observer = new ResizeObserver(measure);
     observer.observe(stage);
     cards.current.forEach(card => card && observer.observe(card));
