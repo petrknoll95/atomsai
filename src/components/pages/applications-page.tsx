@@ -5,18 +5,11 @@ import { ArrowIcon } from '@/components/arrow-icon';
 import { ButtonLink } from '@/components/ui';
 import content from '@/content/client-pages/applications.json';
 import { ApplicationsHeroStage } from './applications-hero-stage';
-import { ApplicationsProduct, ProductLockup } from './applications-product';
+import { ApplicationsProduct, ProductLockup, type ApplicationsSection } from './applications-product';
 import { ApplicationsStatement } from './applications-statement';
-import type { ContentBlock, ContentSection } from './client-content';
 import styles from './applications.module.css';
 
-/** The shared client-page shape, plus the fields this page adds to its JSON. */
-type Block = ContentBlock & { label: string; role?: string; logo?: string };
-type Section = Omit<ContentSection, 'blocks' | 'stats'> & {
-  blocks: Block[]; descriptor?: string; emphasis?: string; footer?: { title: string; body: string[] };
-  stats?: { value: string; label: string; company?: string }[];
-};
-const sections: Section[] = content.sections;
+const sections: ApplicationsSection[] = content.sections;
 const section = (id: string) => sections.find(item => item.id === id)!;
 const next = section('next');
 const proof = section('proof');

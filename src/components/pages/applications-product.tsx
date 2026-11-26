@@ -2,14 +2,15 @@ import type { CSSProperties, ReactNode } from 'react';
 import { assetPath } from '@/lib/base-path';
 import { ArrowIcon } from '@/components/arrow-icon';
 import { ButtonLink } from '@/components/ui';
+import type { ContentBlock, ContentLink, ContentSection } from './client-content';
 import { FeatureTabs } from './feature-tabs';
 import styles from './applications.module.css';
 
-type Link = { label: string; href: string };
-type Step = { title: string; body: string[]; links: Link[]; quote?: string; attribution?: string; role?: string; company?: string; metric?: string };
-export type ProductSection = {
-  id: string; title: string; label: string; descriptor?: string; intro: string[]; blocks: Step[];
-  links: Link[]; footer?: { title: string; body: string[] };
+/** The shared client-page shape, plus the fields the Applications JSON adds. One type for the whole page. */
+export type ApplicationsBlock = ContentBlock & { label: string; role?: string; logo?: string };
+export type ApplicationsSection = Omit<ContentSection, 'blocks' | 'stats'> & {
+  blocks: ApplicationsBlock[]; descriptor?: string; emphasis?: string; footer?: { title: string; body: string[] };
+  stats?: { value: string; label: string; company?: string }[];
 };
 
 const isOutbound = (href: string) => /^https?:\/\//.test(href);
@@ -43,12 +44,12 @@ const glyphs: Record<string, ReactNode[]> = {
 
 const slug = (text: string) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
-function StepPanel({ step, index, product }: { step: Step; index: number; product: string }) {
+function StepPanel({ step, index, product }: { step: ApplicationsBlock; index: number; product: string }) {
   const story = step.links[0];
   return <div className={styles.stepPanel}>
     {/* Full-width on narrow screens: the header reads dark while this panel is beneath it. */}
     <span className={styles.headerZone} data-header-theme="dark" aria-hidden="true" />
-    <svg className={styles.glyph} viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">{glyphs[product][index]}</svg>
+    <svg className={styles.glyph} viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">{glyphs[product]?.[index]}</svg>
     <div className={styles.stepCopy}>
       <span className={styles.stepIndex}>{String(index + 1).padStart(2, '0')}</span>
       <h3 className={`display ${styles.stepTitle}`}>{step.title}</h3>
@@ -68,7 +69,7 @@ function StepPanel({ step, index, product }: { step: Step; index: number; produc
   </div>;
 }
 
-function Action({ link, primary }: { link: Link; primary: boolean }) {
+function Action({ link, primary }: { link: ContentLink; primary: boolean }) {
   const outbound = isOutbound(link.href);
   return <ButtonLink href={link.href} size="large" variant={primary ? 'primary' : 'outline'}
     {...(outbound ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
@@ -78,7 +79,7 @@ function Action({ link, primary }: { link: Link; primary: boolean }) {
 }
 
 /** One product chapter: the customer's question, five steps on a product-tinted stage, then the way out. */
-export function ApplicationsProduct({ section }: { section: ProductSection }) {
+export function ApplicationsProduct({ section }: { section: ApplicationsSection }) {
   const product = section.id;
   const headingId = `${product}-heading`;
   const [lead, ...rest] = section.intro;
