@@ -201,17 +201,17 @@ export function InfrastructurePage() {
           </li>;
         })}
       </ul>
-    </section>
-
-    <section id="stack" className={`page-container ${styles.stack}`} aria-labelledby="stack-heading">
-      <div className={styles.stackCopy}>
-        <h2 className={`display ${styles.stackTitle}`} id="stack-heading"><Lines text={stack.title} after="stack." /></h2>
-        <ul className={styles.stackList}>{need(stack.items, 'stack.items').map(item => {
-          const split = item.indexOf('?') + 1;
-          return <li key={item}><b>{item.slice(0, split)}</b>{item.slice(split)}</li>;
-        })}</ul>
+      {/* Part of building on the API, as in the prototype: a sub-heading, not a section of its own. */}
+      <div id="stack" className={styles.stack}>
+        <div className={styles.stackCopy}>
+          <h3 className={`display ${styles.stackTitle}`}><Lines text={stack.title} after="stack." /></h3>
+          <ul className={styles.stackList}>{need(stack.items, 'stack.items').map(item => {
+            const split = item.indexOf('?') + 1;
+            return <li key={item}><b>{item.slice(0, split)}</b>{item.slice(split)}</li>;
+          })}</ul>
+        </div>
+        <CodeExamples examples={need(stack.examples, 'stack.examples')} />
       </div>
-      <CodeExamples examples={need(stack.examples, 'stack.examples')} />
     </section>
 
     <section id="security" className={`page-container ${styles.security}`} aria-labelledby="security-heading">
