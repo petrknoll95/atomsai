@@ -435,7 +435,12 @@
           "body": [
             "A service business needs software that understands the job."
           ],
-          "links": [],
+          "links": [
+            {
+              "label": "Explore ServiceAgent",
+              "href": "#serviceagent"
+            }
+          ],
           "list": [],
           "label": "01",
           "category": "",
@@ -446,7 +451,12 @@
           "body": [
             "A sales or support team needs communication that works with its CRM."
           ],
-          "links": [],
+          "links": [
+            {
+              "label": "Explore JustCall",
+              "href": "#justcall"
+            }
+          ],
           "list": [],
           "label": "02",
           "category": "",
@@ -458,20 +468,8 @@
     }
   ],
   "closing": {
-    "label": "Applications",
-    "title": "There's a lot riding on the next hello.",
-    "body": [
-      "Find an application built for the work your business needs done, with the engineering already in place."
-    ],
-    "links": [
-      {
-        "label": "Explore JustCall",
-        "href": "#justcall"
-      },
-      {
-        "label": "Explore ServiceAgent",
-        "href": "#serviceagent"
-      }
-    ]
+    "title": "",
+    "body": [],
+    "links": []
   }
 }

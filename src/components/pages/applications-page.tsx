@@ -1,15 +1,13 @@
-import type { ReactNode } from 'react';
-import { markBounds, slitBlades, slitClip } from '@/lib/slit-logo';
 import { withBasePath } from '@/lib/base-path';
 import { ArrowIcon } from '@/components/arrow-icon';
 import { ButtonLink } from '@/components/ui';
+import { StatHighlights } from '@/components/home/stat-highlights';
 import content from '@/content/client-pages/applications.json';
 import { ApplicationsHeroStage } from './applications-hero-stage';
 import { ApplicationsProduct, ProductLockup, type ApplicationsSection } from './applications-product';
+import { ApplicationsProofStories } from './applications-proof';
 import { ApplicationsStatement } from './applications-statement';
 import { SectionIntro } from './section-intro';
-import { ApplicationsProofStories } from './applications-proof';
-import { StatHighlights } from '@/components/home/stat-highlights';
 import styles from './applications.module.css';
 
 const sections: ApplicationsSection[] = content.sections;
@@ -17,23 +15,13 @@ const section = (id: string) => sections.find(item => item.id === id)!;
 const next = section('next');
 const proof = section('proof');
 const engineering = section('engineering');
-const { hero, closing } = content;
 
-/** The still AtomsAI mark, from the same slit geometry as the animated logo. */
-function Mark({ className }: { className: string }) {
-  const bounds = markBounds();
-  return <svg className={className} viewBox={[bounds.x, bounds.y, bounds.width, bounds.height].join(' ')} fill="currentColor" aria-hidden="true" focusable="false">
-    <defs>{slitBlades().map((blade, index) => <clipPath key={index} id={`applications-mark-${index}`} clipPathUnits="userSpaceOnUse">
-      <rect x={blade.x} y={slitClip.y} width={blade.w} height={slitClip.height} />
-    </clipPath>)}</defs>
-    {slitBlades().map((blade, index) => <circle key={index} cx={blade.cx} cy="50" r={blade.r} clipPath={`url(#applications-mark-${index})`} />)}
-  </svg>;
-}
-
-function Kicker({ children, className = '' }: { children: ReactNode; className?: string }) {
-  return <p className={`${styles.kicker} ${className}`}><span className={styles.dot} aria-hidden="true" />{children}</p>;
-}
-
+/**
+ * Applications overview, composed like the homepage: a centred hero over one
+ * product panel, a light index of the two applications, their chapters, the
+ * customer proof and the engineering statement. The page's closing line sits in
+ * the footer's CTA band (see app/applications/page.tsx).
+ */
 export function ApplicationsPage() {
   return <main id="main" className={styles.page} data-theme="light">
     <section id="hero" className={`page-container ${styles.hero}`} aria-labelledby="hero-heading">
@@ -42,7 +30,7 @@ export function ApplicationsPage() {
         <p className={styles.heroLead}>{content.intro[1]}</p>
         <ButtonLink href={content.actions[0].href} className={styles.heroAction}>{content.actions[0].label}<ArrowIcon direction="down" size={16} /></ButtonLink>
       </header>
-      <ApplicationsHeroStage events={hero.events} className={styles.heroStage} />
+      <ApplicationsHeroStage events={content.hero.events} className={styles.heroStage} />
     </section>
 
     <section id="next" className={`page-container ${styles.next}`} aria-labelledby="next-heading">
@@ -76,28 +64,9 @@ export function ApplicationsPage() {
       <ApplicationsProofStories stories={proof.blocks} />
     </section>
 
-    <section id="engineering" className={styles.engineering} aria-labelledby="engineering-heading">
-      <span className={styles.engineeringGrid} aria-hidden="true" />
-      <div className={`page-container ${styles.engineeringLayout}`}>
-        <ApplicationsStatement id="engineering-heading" title={engineering.title}
-          kicker={<Kicker>{engineering.label}</Kicker>}
-          needs={engineering.blocks.map(block => ({ index: block.label, title: block.title, body: block.body[0] }))}
-          statement={engineering.intro[0]} emphasis={engineering.emphasis} />
-        <Mark className={styles.engineeringMark} />
-      </div>
-    </section>
-
-    <section id="talk" className={`page-container ${styles.closing}`} aria-labelledby="talk-heading">
-      <div className={styles.closingInner}>
-        <div><Kicker>{closing.label}</Kicker><h2 id="talk-heading" className={`display ${styles.closingTitle}`}>{closing.title}</h2></div>
-        <div>
-          <p>{closing.body[0]}</p>
-          <div className={styles.closingActions}>
-            <ButtonLink href={closing.links[0].href} size="large">{closing.links[0].label}<ArrowIcon direction="up" size={18} /></ButtonLink>
-            <ButtonLink href={closing.links[1].href} size="large" variant="outline">{closing.links[1].label}<ArrowIcon direction="up" size={18} /></ButtonLink>
-          </div>
-        </div>
-      </div>
+    <section id="engineering" className={`page-container ${styles.engineering}`} aria-labelledby="engineering-heading">
+      <ApplicationsStatement id="engineering-heading" title={engineering.title} statement={engineering.intro[0]} emphasis={engineering.emphasis}
+        needs={engineering.blocks.map(block => ({ title: block.title, body: block.body[0], link: block.links[0] }))} />
     </section>
   </main>;
 }

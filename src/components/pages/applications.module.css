@@ -6,9 +6,6 @@
    light theme so it outranks tokens.css whatever order the stylesheets load in. */
 .page[data-theme='light'] { --color-muted-foreground:color-mix(in display-p3, var(--palette-deep-green) 74%, transparent); }
 .page :is(h1,h2,h3,h4,h5,h6) { text-box:trim-both cap alphabetic; }
-.kicker { display:flex; align-items:center; gap:10px; font-size:var(--text-label); line-height:20px; }
-.dot { width:6px; height:6px; flex:none; border-radius:50%; background:var(--palette-forest-green); }
-.kickerRule { width:28px; height:1px; flex:none; background:currentColor; opacity:.35; }
 
 /* Product name beside its mark. */
 .lockup { display:inline-flex; align-items:center; gap:8px; font-family:var(--font-display); font-weight:400; font-variation-settings:normal; font-size:20px; line-height:1; letter-spacing:-.01em; white-space:nowrap; }
@@ -100,35 +97,23 @@ html .app .appLink:focus-visible { outline-color:transparent; box-shadow:none; }
 .statCompany { display:block; margin-top:8px; font-size:var(--text-label); line-height:1.4; color:var(--color-muted-foreground); }
 
 /* ---------- All that engineering ---------- */
-.engineering { position:relative; isolation:isolate; overflow:hidden; margin-top:var(--section-space); padding-block:144px; background:var(--palette-cream); }
-.engineeringGrid { position:absolute; inset:0; z-index:-1; pointer-events:none;
-  background-image:linear-gradient(var(--color-border) 1px, transparent 1px), linear-gradient(90deg, var(--color-border) 1px, transparent 1px);
-  background-size:96px 96px; background-position:center -1px; opacity:.6; mask-image:linear-gradient(180deg, transparent, #000 18%, #000 82%, transparent); }
-.engineeringLayout { position:relative; display:grid; grid-template-columns:minmax(0,7fr) minmax(0,5fr); align-items:center; gap:48px; }
-.engineeringMark { justify-self:end; width:min(100%, 520px); height:auto; margin-right:calc(-1 * var(--content-gutter)); color:color-mix(in srgb, var(--color-foreground) 6%, transparent); }
-.statement { display:grid; gap:36px; min-width:0; }
-.statementTitle { max-width:14ch; margin-top:4px; font-size:clamp(52px,6.6vw,104px); line-height:.94; letter-spacing:-.03em; text-wrap:balance; }
-.needs { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px 48px; max-width:680px; padding-block:24px; border-block:1px solid var(--color-border); }
-.needLabel { display:flex; align-items:center; gap:8px; font-size:12px; line-height:16px; letter-spacing:.14em; text-transform:uppercase; color:var(--color-muted-foreground); }
-.needRule { width:14px; height:1px; background:currentColor; opacity:.6; }
-.needText { margin-top:12px; max-width:30ch; font-family:var(--font-display); font-weight:400; font-variation-settings:normal; font-size:clamp(19px,1.45vw,22px); line-height:1.28; letter-spacing:-.005em; }
-.statementText { max-width:36ch; font-family:var(--font-display); font-weight:400; font-variation-settings:normal; font-size:clamp(26px,2.5vw,38px); line-height:1.15; letter-spacing:-.015em; text-wrap:pretty; }
-.emphasis { color:var(--palette-iris-dark); }
-.statementBar { position:relative; display:block; width:min(100%, 640px); height:1px; background:var(--color-border); }
-.statementBar::after { content:''; position:absolute; inset:0; background:var(--palette-iris-dark); transform:scaleX(var(--statement-progress, 1)); transform-origin:left; }
-/* Scroll reading: words wait muted until progress reaches them. */
-.statement[data-statement="scroll"] [data-word] { color:color-mix(in srgb, var(--color-foreground) 16%, transparent); transition:color .25s linear; }
-.statement[data-statement="scroll"] [data-word][data-lit="true"] { color:var(--color-foreground); }
-.statement[data-statement="scroll"] .emphasis[data-lit="true"] { color:var(--palette-iris-dark); }
-
-/* ---------- Closing ---------- */
-.closing { margin-top:var(--section-space); padding-bottom:var(--section-space); }
-.closingInner { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:64px; align-items:end; padding:72px 48px; border-radius:var(--radius-panel); background:var(--palette-iris-light); }
-.closingInner .dot { background:var(--palette-iris-dark); }
-.closingTitle { max-width:14ch; margin-top:28px; font-size:clamp(36px,3.7vw,56px); line-height:1.02; text-wrap:balance; }
-.closingInner > div:last-child { justify-self:end; max-width:460px; }
-.closingInner > div > p { margin-bottom:28px; font-size:16px; line-height:1.6; }
-.closingActions { display:flex; flex-wrap:wrap; gap:12px; }
+/* The homepage point of view (home/story-sections .statementHeadline) on the flat page: the
+   heading, then the claim running on beneath it in the muted tone, its last words in full colour. */
+.engineering { margin-top:var(--section-space); padding-bottom:var(--section-space); }
+.statement { min-width:0; }
+.statementTitle, .statementText { max-width:1120px; font-size:clamp(32px,4vw,64px); line-height:1.04; letter-spacing:-.02em; }
+.statementTitle { text-wrap:balance; }
+/* Trimmed like the heading, so the gap restores one line's leading between the two. */
+.statementText { margin-top:.4em; color:var(--color-muted-foreground); text-wrap:pretty; text-box:trim-both cap alphabetic; }
+.emphasis { color:var(--color-foreground); }
+/* The two needs: plain columns under a hairline, in the first two of three slots. */
+.needs { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px; margin-top:96px; }
+.need { display:flex; flex-direction:column; align-items:flex-start; padding-top:28px; border-top:1px solid var(--color-border); }
+.needTitle { font-size:var(--text-lead); line-height:1.3; font-weight:var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium),'ital' 100; }
+.needText { max-width:34ch; margin-top:14px; font-size:var(--text-body); line-height:1.5; color:var(--color-muted-foreground); text-wrap:pretty; }
+/* Ghost buttons hang their padding outside the text column, as on the homepage. */
+.needLink { margin:20px 0 0 -12px; }
+@media (pointer:coarse) { .needLink { min-height:44px; } }
 
 @media (max-width:1199px) {
   .productHead, .productFoot { gap:28px 40px; }
@@ -136,6 +121,7 @@ html .app .appLink:focus-visible { outline-color:transparent; box-shadow:none; }
 }
 @media (max-width:899px) {
   .productHead, .productFoot { grid-template-columns:minmax(0,1fr); }
+  .needs { grid-template-columns:repeat(2,minmax(0,1fr)); }
   .productTitle, .productLead, .productSub { grid-column:1; }
   .productActions { justify-content:flex-start; }
   /* The stage spans the content width here: the header reads dark while it is beneath. */
@@ -161,26 +147,8 @@ html .app .appLink:focus-visible { outline-color:transparent; box-shadow:none; }
   .stepQuote blockquote { font-size:17px; }
   .stepQuote .storyLink { margin-left:-12px; }
   .productFoot { margin-top:40px; }
+  .needs { grid-template-columns:minmax(0,1fr); gap:40px; margin-top:56px; }
 }
 @media (prefers-reduced-motion:reduce) {
   .appLink, .appLink > svg { transition:none; }
-}
-
-/* Previous engineering and closing layouts, until those sections move over. */
-@media (max-width:1199px) {
-  .engineeringLayout { grid-template-columns:minmax(0,1fr) minmax(0,.55fr); }
-  .closingInner { gap:48px; }
-}
-@media (max-width:899px) {
-  .engineeringLayout { grid-template-columns:minmax(0,1fr); }
-  .engineeringMark { position:absolute; z-index:-1; right:-28vw; top:50%; width:72vw; translate:0 -50%; margin:0; }
-}
-@media (max-width:767px) {
-  .engineering { padding-block:96px; }
-  .statementTitle { font-size:clamp(44px,12vw,64px); }
-  .needs { grid-template-columns:minmax(0,1fr); gap:20px; }
-  .engineeringMark { right:-50vw; top:58%; width:120vw; }
-  .closingInner { grid-template-columns:minmax(0,1fr); gap:32px; padding:48px 24px; border-radius:24px; }
-  .closingInner > div:last-child { justify-self:start; }
-  .closingTitle { margin-top:24px; font-size:38px; }
 }

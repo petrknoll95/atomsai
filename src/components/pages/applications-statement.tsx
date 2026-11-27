@@ -1,79 +1,33 @@
-'use client';
-
-import { Fragment, useLayoutEffect, useRef, type ReactNode } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ArrowIcon } from '@/components/arrow-icon';
+import { ButtonLink } from '@/components/ui';
+import type { ContentLink } from './client-content';
 import styles from './applications.module.css';
 
-type Need = { index: string; title: string; body: string };
-
-/** Words as spans, so scroll progress can light them in reading order. */
-function Words({ text, emphasis = '' }: { text: string; emphasis?: string }) {
-  const words = text.split(' ');
-  const emphasised = emphasis && text.endsWith(emphasis) ? emphasis.split(' ').length : 0;
-  return words.map((word, index) => <Fragment key={index}>
-    <span data-word className={index >= words.length - emphasised ? styles.emphasis : undefined}>{word}</span>{index < words.length - 1 ? ' ' : ''}
-  </Fragment>);
-}
+type Need = { title: string; body: string; link?: ContentLink };
 
 /**
- * "All that engineering": the statement reads in as the section scrolls
- * through the viewport, word by word from muted to full colour, and is fully
- * lit by the time all of it is on screen (it is not pinned, so no word should
- * stay muted while readable in view). Server HTML, reduced motion and print
- * show every word at full colour.
+ * "All that engineering": one statement in two tones on the flat page, as the
+ * homepage sets its point of view. The heading is the first clause; the claim
+ * runs on beneath it in the muted tone, and its last words return to the
+ * foreground. The two needs follow as plain columns under a hairline, each
+ * leading to the chapter that answers it. Both lines reveal like every other
+ * headline on the site, and end on this state.
  */
-export function ApplicationsStatement({ id, title, needs, statement, emphasis, kicker }: {
-  id: string; title: string; needs: Need[]; statement: string; emphasis?: string; kicker: ReactNode;
+export function ApplicationsStatement({ id, title, statement, emphasis = '', needs }: {
+  id: string; title: string; statement: string; emphasis?: string; needs: Need[];
 }) {
-  const root = useRef<HTMLDivElement>(null);
-  const bar = useRef<HTMLSpanElement>(null);
-
-  useLayoutEffect(() => {
-    const element = root.current;
-    if (!element) return;
-    gsap.registerPlugin(ScrollTrigger);
-    const words = [...element.querySelectorAll<HTMLElement>('[data-word]')];
-    const media = gsap.matchMedia();
-    media.add('(prefers-reduced-motion: no-preference)', () => {
-      let lit = -1;
-      const light = (progress: number) => {
-        const count = Math.round(progress * words.length * 1.02);
-        if (count !== lit) {
-          words.forEach((word, index) => { word.dataset.lit = String(index < count); });
-          lit = count;
-        }
-        bar.current?.style.setProperty('--statement-progress', progress.toFixed(3));
-      };
-      element.dataset.statement = 'scroll';
-      const trigger = ScrollTrigger.create({
-        trigger: element,
-        start: 'top 78%',
-        end: 'bottom bottom',
-        onUpdate: self => light(self.progress),
-        onRefresh: self => light(self.progress),
-      });
-      light(trigger.progress);
-      return () => {
-        trigger.kill();
-        delete element.dataset.statement;
-        words.forEach(word => { delete word.dataset.lit; });
-        bar.current?.style.removeProperty('--statement-progress');
-      };
-    });
-    return () => media.revert();
-  }, []);
-
-  return <div ref={root} className={styles.statement}>
-    {kicker}
-    <h2 id={id} className={`display ${styles.statementTitle}`} data-text-reveal="off"><Words text={title} /></h2>
+  const lead = emphasis && statement.endsWith(emphasis) ? statement.slice(0, -emphasis.length).trimEnd() : statement;
+  return <div className={styles.statement}>
+    <h2 id={id} className={`display ${styles.statementTitle}`}>{title}</h2>
+    <p className={`display ${styles.statementText}`} data-text-reveal>{lead}{lead !== statement && <> <span className={styles.emphasis}>{emphasis}</span></>}</p>
     <div className={styles.needs}>
       {needs.map(need => <div key={need.title} className={styles.need}>
-        <p className={styles.needLabel}><span>{need.index}</span><span className={styles.needRule} aria-hidden="true" />{need.title}</p>
-        <p className={styles.needText}><Words text={need.body} /></p>
+        <h3 className={styles.needTitle}>{need.title}</h3>
+        <p className={styles.needText}>{need.body}</p>
+        {need.link && <ButtonLink href={need.link.href} size="small" variant="ghost" className={styles.needLink}>
+          {need.link.label}<ArrowIcon direction="up" size={14} />
+        </ButtonLink>}
       </div>)}
     </div>
-    <p className={styles.statementText}><Words text={statement} emphasis={emphasis} /></p>
-    <span ref={bar} className={styles.statementBar} aria-hidden="true" />
   </div>;
 }
