@@ -183,7 +183,7 @@ const wave = Array.from({ length: 44 }, (_, index) => Math.round(30 + 70 * Math.
  * politely only after that choice, so the unattended loop stays quiet.
  * Reduced motion shows each finished exchange without playing it.
  */
-export function InfrastructureCallDemo({ content }: { content: CallDemoContent }) {
+export function InfrastructureCallDemo({ content, className = '' }: { content: CallDemoContent; className?: string }) {
   const rootRef = useRef<HTMLElement>(null);
   const transcriptRef = useRef<HTMLOListElement>(null);
   const playbackRef = useRef<HTMLButtonElement>(null);
@@ -263,8 +263,11 @@ export function InfrastructureCallDemo({ content }: { content: CallDemoContent }
   const playbackLabel = view.phase === 'playing' ? 'Pause the call' : view.phase === 'paused' ? 'Resume the call' : 'Replay the call';
   const { metrics } = view;
 
-  return <figure ref={rootRef} className={styles.demo} aria-label={content.label} data-phase={view.phase}>
-    <div className={styles.backdrop} aria-hidden="true"><span /><span /><span /></div>
+  return <figure ref={rootRef} className={`${styles.demo} ${className}`} aria-label={content.label} data-phase={view.phase}>
+    {/* The scenarios lead the frame, as the homepage scene's example pills do; they come first in focus order too. */}
+    <div className={styles.scenarios} role="group" aria-label={content.scenarioLabel}>
+      {content.scenarios.map((scenario, index) => <button key={scenario.label} type="button" aria-pressed={view.scenario === index} onClick={() => choose(index)}>{scenario.label}</button>)}
+    </div>
     <div className={styles.card}>
       <div className={styles.header}>
         <span className={styles.live}><i className={styles.liveDot} data-active={view.phase === 'playing'} aria-hidden="true" />{content.status} · <b>{content.business}</b></span>
@@ -296,9 +299,6 @@ export function InfrastructureCallDemo({ content }: { content: CallDemoContent }
         <div><dt>{content.metrics.reply}</dt><dd>{metrics.reply ? `${(metrics.reply / 1000).toFixed(2)} s` : '—'}</dd></div>
         <div><dt>{content.metrics.barge}</dt><dd>{metrics.barge ? `${metrics.barge} ms` : '—'}</dd></div>
       </dl>
-    </div>
-    <div className={styles.scenarios} role="group" aria-label={content.scenarioLabel}>
-      {content.scenarios.map((scenario, index) => <button key={scenario.label} type="button" aria-pressed={view.scenario === index} onClick={() => choose(index)}>{scenario.label}</button>)}
     </div>
   </figure>;
 }
