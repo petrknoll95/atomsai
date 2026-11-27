@@ -93,7 +93,7 @@ function RecordValue({ row, state }: { row: RecordRow; state: RowState }) {
 /** Order record #48213 as workflow step `step` (0–4) leaves it. */
 export function OrderRecordScene({ record, step }: { record: OrderRecord; step: number }) {
   const closed = step >= record.rows.length - 1;
-  return <Stage width={34}>
+  return <Stage width={36}>
     <Window title={record.title} meta={<span className={styles.recordMeta}>{record.reference}</span>} bodyClassName={styles.recordBody}
       footer={<>
         {closed ? <ScenePill tone="success"><Check />{record.status}</ScenePill> : <ScenePill live>{statuses[step]}</ScenePill>}
