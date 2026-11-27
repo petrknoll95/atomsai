@@ -24,7 +24,8 @@ function Stage({ children, width = 42 }: { children: ReactNode; width?: number }
 
 /** SceneWindow with a second white panel under the body, as the homepage PyAI cards end. */
 function Window({ title, meta, footer, children, className = '' }: { title: ReactNode; meta?: ReactNode; footer: ReactNode; children: ReactNode; className?: string }) {
-  return <div className={`${styles.window} ${className}`}>
+  // A light card that can pass under the fixed header while the panel around it is dark.
+  return <div className={`${styles.window} ${className}`} data-header-backdrop="">
     <div className={styles.windowHeader}><span className={styles.windowTitle}>{title}</span>{meta && <span className={styles.windowMeta}>{meta}</span>}</div>
     <div className={styles.windowBody}>{children}</div>
     <div className={styles.windowFooter}>{footer}</div>

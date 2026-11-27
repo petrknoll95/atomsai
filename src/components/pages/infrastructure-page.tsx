@@ -100,7 +100,7 @@ export function InfrastructurePage() {
       {/* One dark-green panel, as on the homepage: the things to try on the left, the line to call on the right. */}
       <div className={`theme-dark ${styles.demoPanel}`} data-theme="dark">
         <div className={styles.demoFrame}>
-          <div className={`theme-light ${styles.callCard}`}>
+          <div className={`theme-light ${styles.callCard}`} data-header-backdrop="">
             <div className={styles.callHeader}>
               <span className={styles.callStatus}><i className={styles.callLive} aria-hidden="true" />{demoLine.label}</span>
             </div>

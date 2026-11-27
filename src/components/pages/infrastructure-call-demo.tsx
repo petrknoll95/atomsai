@@ -271,7 +271,8 @@ export function InfrastructureCallDemo({ content, className = '' }: { content: C
     <div className={styles.scenarios} role="group" aria-label={content.scenarioLabel}>
       {content.scenarios.map((scenario, index) => <button key={scenario.label} type="button" aria-pressed={view.scenario === index} onClick={() => choose(index)}>{scenario.label}</button>)}
     </div>
-    <div className={styles.card}>
+    {/* A light card on the dark hero: the fixed header shows its paper backdrop over it. */}
+    <div className={styles.card} data-header-backdrop="">
       <div className={styles.header}>
         <span className={styles.live}><i className={styles.liveDot} data-active={view.phase === 'playing'} aria-hidden="true" />{content.status} · <b>{content.business}</b></span>
         <span className={styles.timer} aria-hidden="true">{time(view.elapsed)}</span>

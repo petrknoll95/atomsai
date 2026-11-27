@@ -46,7 +46,7 @@ export function InfrastructureBandwidth({ content }: { content: BandwidthContent
         </div>
         <div className={styles.spectrumScale}><span>0 Hz</span><span>20 kHz</span></div>
       </div>
-      <div className={`theme-light ${styles.tryInset}`}>
+      <div className={`theme-light ${styles.tryInset}`} data-header-backdrop="">
         <div className={styles.rangeField}>
           {/* Named for what it adjusts; the visible ends stay part of the name. */}
           <label htmlFor={id} className={styles.rangeLabels}>
