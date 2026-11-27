@@ -34,11 +34,24 @@
 .serviceBody { max-width:46ch; margin-top:24px; font-size:var(--text-body); line-height:1.5; color:var(--color-muted-foreground); text-wrap:pretty; }
 
 /* ---------- Work worth handing off ---------- */
-/* Two by two on the services' column line; each row's hairline runs across both columns. */
+/* The services' hairline system: each area under its own top hairline, a rule between columns.
+   Two by two on tablets, on the services' column line. */
 .areaGrid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); margin:0; padding:0; list-style:none; }
 .area { min-width:0; padding:32px var(--column-gutter) 56px 0; border-top:1px solid var(--color-border); }
-.area:nth-child(even) { padding-inline:var(--column-gutter) 0; }
-@media (min-width:768px) { .area:nth-last-child(-n+2) { padding-bottom:0; } }
+.area:nth-child(even) { padding-inline:var(--column-gutter) 0; border-inline-start:1px solid var(--color-border); }
+/* Subgrid keeps each row's titles and bodies level across its columns, whatever wraps. */
+@media (min-width:768px) {
+  .area { display:grid; grid-row:span 2; grid-template-rows:subgrid; row-gap:0; align-content:start; }
+  .area:nth-last-child(-n+2) { padding-bottom:8px; }
+}
+/* From 1024px one row of four, as the PyAI lessons row: the third column starts on the services' second column line. */
+@media (min-width:1024px) {
+  .areaGrid { grid-template-columns:repeat(4,minmax(0,1fr)); }
+  .area, .area:nth-child(even) { padding:32px var(--column-gutter) 8px; }
+  .area:first-child { padding-inline-start:0; }
+  .area:last-child { padding-inline-end:0; }
+  .area + .area { border-inline-start:1px solid var(--color-border); }
+}
 .areaTitle { font-size:clamp(24px,2vw,30px); line-height:1.1; text-wrap:balance; }
 .areaBody { max-width:42ch; margin-top:16px; font-size:var(--text-body); line-height:1.5; color:var(--color-muted-foreground); text-wrap:pretty; }
 
@@ -49,8 +62,9 @@
 .stats > dl > div:first-child { padding-inline-start:0; border-inline-start:0; }
 
 /* ---------- Yours to run, review, and improve ---------- */
-/* The PyAI security section's layout: the heading and its link, beside the statements on hairlines. */
-.ownership { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:clamp(32px,5vw,80px); }
+/* The PyAI security section's layout: the heading and its link, beside the statements on hairlines.
+   Twice the column gutter between, so the statements start on the services' second column line. */
+.ownership { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:calc(var(--column-gutter) * 2); }
 .ownershipIntro { display:flex; flex-direction:column; align-items:flex-start; gap:40px; min-width:0; }
 .ownershipTitle { max-width:14ch; font-size:clamp(36px,3.5vw,56px); line-height:.94; letter-spacing:-.015em; text-wrap:balance; }
 .ownershipAction { margin-top:auto; }
@@ -75,7 +89,7 @@
   .serviceBody { margin-top:20px; }
 
   .areaGrid { grid-template-columns:minmax(0,1fr); }
-  .area, .area:nth-child(even) { padding:28px 0 40px; }
+  .area, .area:nth-child(even) { padding:28px 0 40px; border-inline-start:0; }
   .area:last-child { padding-bottom:0; }
   .areaTitle { font-size:24px; }
   .areaBody { margin-top:14px; }
