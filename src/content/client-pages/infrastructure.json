@@ -18,10 +18,10 @@
   "sections": [
     {
       "id": "demo",
-      "title": "You've heard the claim. Have a conversation.",
+      "title": "You’ve heard the claim. Have a conversation.",
       "label": "Hear it yourself",
       "intro": [
-        "Call the agent and take it somewhere a script wouldn't cover."
+        "Call the agent and take it somewhere a script wouldn’t cover."
       ],
       "blocks": [
         {
@@ -65,7 +65,7 @@
     {
       "id": "box",
       "title": "Six things you can have running in an afternoon",
-      "label": "What's in the box",
+      "label": "What’s in the box",
       "intro": [
         "Build a voice agent or plug speech into your existing stack, with APIs for the conversation, call controls, and what happens afterward."
       ],
@@ -88,7 +88,7 @@
           "tags": []
         },
         {
-          "title": "You see the words as they're spoken",
+          "title": "You see the words as they’re spoken",
           "body": [
             "Hear gives your app a live view of the call, updating the transcript as the caller speaks and marking each utterance final. About 200 ms to the first partial, measured in-region.",
             "Build live captions, or index recorded calls for search."
@@ -257,13 +257,13 @@
       "kind": "cards",
       "tryIt": {
         "title": "What a phone line does to a voice",
-        "body": "Drag from a studio microphone to a phone line. The band above 3.4 kHz disappears. Hear was trained on what's left.",
+        "body": "Drag from a studio microphone to a phone line. The band above 3.4 kHz disappears. Hear was trained on what’s left.",
         "control": "Audio bandwidth",
         "from": "Studio mic",
         "to": "Phone line",
         "kept": "Bandwidth kept",
         "transcriptLabel": "Transcript",
-        "transcript": "\"Move my appointment to Monday.\""
+        "transcript": "“Move my appointment to Monday.”"
       },
       "note": "Measured in-region and published with the method. Not an SLA."
     },
@@ -292,7 +292,7 @@
         {
           "title": "Build on the API",
           "body": [
-            "You write the behavior, and we run the calls. Point your OpenAI SDK at it, and you're running in an afternoon."
+            "You write the behavior, and we run the calls. Point your OpenAI SDK at it, and you’re running in an afternoon."
           ],
           "links": [
             {
@@ -451,7 +451,7 @@
         {
           "title": "Does my OpenAI code work?",
           "body": [
-            "For speech and transcription, yes, after changing the base URL and the key. Real-time agents use PyAI's own connection, which the SDKs handle."
+            "For speech and transcription, yes, after changing the base URL and the key. Real-time agents use PyAI’s own connection, which the SDKs handle."
           ],
           "links": [],
           "list": [],
@@ -469,7 +469,7 @@
         {
           "title": "Where do I start?",
           "body": [
-            "Get a free sandbox key, or tell us what you're building and we'll start there."
+            "Get a free sandbox key, or tell us what you’re building and we’ll start there."
           ],
           "links": [],
           "list": [],
@@ -517,7 +517,7 @@
     "Live usage needs available credit."
   ],
   "callDemo": {
-    "label": "A call in progress, simulated with PyAI's published timings",
+    "label": "A call in progress, simulated with PyAI’s published timings",
     "status": "Live call",
     "business": "Elm Street Dental",
     "agent": "Ava",
@@ -633,13 +633,13 @@
           },
           {
             "speaker": "agent",
-            "text": "You're booked for Monday at 3:10 pm. I've sent a confirmation to your phone. Anything else?",
+            "text": "You’re booked for Monday at 3:10 pm. I’ve sent a confirmation to your phone. Anything else?",
             "delay": 380,
             "reply": 380
           },
           {
             "speaker": "caller",
-            "text": "No, that's all. Thanks.",
+            "text": "No, that’s all. Thanks.",
             "delay": 1100
           },
           {
@@ -664,7 +664,7 @@
           },
           {
             "speaker": "caller",
-            "text": "I want to confirm my appointment. It's under Jordan Lee, Tuesday at ten.",
+            "text": "I want to confirm my appointment. It’s under Jordan Lee, Tuesday at ten.",
             "delay": 1600,
             "first": 218
           },
