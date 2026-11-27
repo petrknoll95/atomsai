@@ -84,7 +84,8 @@ const homepageGroups = [
 ];
 
 /** A page's own closing line and actions for the dark CTA band, in place of the site-wide one. */
-export type FooterCta = { heading: ReactNode; lead?: ReactNode; actions: ReactNode };
+/** wide: a longer closing line (a full question) gets a wider measure, so it breaks into two lines, not three. */
+export type FooterCta = { heading: ReactNode; lead?: ReactNode; actions: ReactNode; wide?: boolean };
 
 /** The muted second clause of the CTA heading. */
 export function FooterCtaMuted({ children }: { children: ReactNode }) {
@@ -98,7 +99,7 @@ export function SiteFooterDirectory({ homepage = false, cta }: { homepage?: bool
     <section className={styles.cta} aria-labelledby="footer-directory-heading">
       <FooterMarkHalf side="start" className={styles.ctaSide} />
       <div className={styles.ctaPanel}>
-        <h2 id="footer-directory-heading" className={`display ${styles.heading}`}>{cta ? cta.heading : homepage
+        <h2 id="footer-directory-heading" className={`display ${styles.heading} ${cta?.wide ? styles.headingWide : ''}`}>{cta ? cta.heading : homepage
           ? <>The next build starts <span className={styles.headingMuted}>with your business.</span></>
           : <>Put AI to work <span className={styles.headingMuted}>in your business.</span></>}</h2>
         {cta?.lead && <p className={styles.lead}>{cta.lead}</p>}

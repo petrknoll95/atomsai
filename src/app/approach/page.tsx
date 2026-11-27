@@ -17,6 +17,7 @@ const footerCta = {
   heading: <>What would you change <FooterCtaMuted>about how work gets done?</FooterCtaMuted></>,
   lead: approachContent.closing.body[0],
   actions: <ButtonLink href="/company/contact?topic=services" size="large">Talk to AtomsAI</ButtonLink>,
+  wide: true,
 };
 
 export default function Page() {
