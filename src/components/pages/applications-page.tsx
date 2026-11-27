@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { markBounds, slitBlades, slitClip } from '@/lib/slit-logo';
-import { assetPath, withBasePath } from '@/lib/base-path';
+import { withBasePath } from '@/lib/base-path';
 import { ArrowIcon } from '@/components/arrow-icon';
 import { ButtonLink } from '@/components/ui';
 import content from '@/content/client-pages/applications.json';
@@ -8,6 +8,8 @@ import { ApplicationsHeroStage } from './applications-hero-stage';
 import { ApplicationsProduct, ProductLockup, type ApplicationsSection } from './applications-product';
 import { ApplicationsStatement } from './applications-statement';
 import { SectionIntro } from './section-intro';
+import { ApplicationsProofStories } from './applications-proof';
+import { StatHighlights } from '@/components/home/stat-highlights';
 import styles from './applications.module.css';
 
 const sections: ApplicationsSection[] = content.sections;
@@ -16,9 +18,6 @@ const next = section('next');
 const proof = section('proof');
 const engineering = section('engineering');
 const { hero, closing } = content;
-
-/** Splits "3×" or "80%" into the figure and its unit, so the unit can sit smaller beside it. */
-const figure = (value: string) => value.match(/^([\d.,]+)(.*)$/)?.slice(1) ?? [value, ''];
 
 /** The still AtomsAI mark, from the same slit geometry as the animated logo. */
 function Mark({ className }: { className: string }) {
@@ -62,38 +61,19 @@ export function ApplicationsPage() {
     <ApplicationsProduct section={section('justcall')} />
 
     <section id="proof" className={`page-container ${styles.proof}`} aria-labelledby="proof-heading">
-      <header className={styles.proofHead}>
-        <div><Kicker>{proof.label}</Kicker><h2 id="proof-heading" className={`display ${styles.sectionTitle}`}>{proof.title}</h2></div>
-        <ButtonLink href={proof.links[0].href} target="_blank" rel="noopener noreferrer" variant="ghost" className={styles.inlineLink}>
-          {proof.links[0].label}<span className="sr-only"> (opens in a new tab)</span><ArrowIcon direction="up-right" size={18} />
-        </ButtonLink>
-      </header>
-      <dl className={styles.stats}>
-        {proof.stats!.map(stat => {
-          const [number, unit] = figure(stat.value);
-          return <div key={stat.label}>
-            <dt><span>{stat.label}</span><span className={styles.statCompany}>{stat.company}</span></dt>
-            <dd className="display">{number}{unit && <span className={styles.statUnit}>{unit}</span>}</dd>
-          </div>;
-        })}
-      </dl>
-      <ul className={styles.quotes}>
-        {proof.blocks.map(block => <li key={block.quote}>
-          <figure className={styles.quoteCard}>
-            <div className={styles.quoteTop}>
-              {/* The customer's logo where the prototype has one; otherwise its name. */}
-              {block.logo ? <img className={styles.quoteLogo} src={assetPath(block.logo)} alt={block.company} height="64" loading="lazy" decoding="async" />
-                : <span className={`display ${styles.quoteCompany}`}>{block.company}</span>}
-              <ProductLockup name={block.label} className={styles.quoteProduct} />
-            </div>
-            <blockquote className="display">{block.quote}</blockquote>
-            <figcaption><span className={styles.quotePerson}>{block.attribution}</span><span>{block.role}</span></figcaption>
-            <ButtonLink href={block.links[0].href} target="_blank" rel="noopener noreferrer" size="small" variant="ghost" className={styles.storyLink}>
-              {block.links[0].label}<span className="sr-only">: {block.company} (opens in a new tab)</span><ArrowIcon direction="up-right" size={14} />
-            </ButtonLink>
-          </figure>
-        </li>)}
-      </ul>
+      <SectionIntro id="proof-heading" title={proof.title} action={
+        <ButtonLink href={proof.links[0].href} target="_blank" rel="noopener noreferrer" size="small" variant="secondary" className={styles.smallAction}>
+          {proof.links[0].label}<span className="sr-only"> (opens in a new tab)</span><ArrowIcon direction="up-right" size={14} />
+        </ButtonLink>} />
+      <div className={styles.stats}>
+        <StatHighlights>
+          {proof.stats!.map(stat => <div key={stat.label}>
+            <dt>{stat.label} <span className={styles.statCompany}>{stat.company}</span></dt>
+            <dd className="display">{stat.value}</dd>
+          </div>)}
+        </StatHighlights>
+      </div>
+      <ApplicationsProofStories stories={proof.blocks} />
     </section>
 
     <section id="engineering" className={styles.engineering} aria-labelledby="engineering-heading">

@@ -1,0 +1,51 @@
+/* Customer stories on /applications: logo tabs over one quote, set like the homepage stories
+   (home/proof.module.css .quote / .person, the 4px pagination bars) on the flat page. */
+.stories { margin-top:96px; }
+
+/* Each tab sits under its own bar, column for column with the stats strip above
+   (its gutters and rules); the selected bar is drawn in the foreground colour. */
+.tabs { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); }
+.tab { --start:var(--stat-gutter, 32px); --end:var(--stat-gutter, 32px); position:relative; display:flex; align-items:center; min-height:96px;
+  padding:28px var(--end) 4px var(--start); text-align:left; cursor:pointer; color:var(--color-muted-foreground); transition:color .3s ease; }
+.tab:first-child { --start:0px; }
+.tab:last-child { --end:0px; }
+.tab::before { content:''; position:absolute; top:0; left:var(--start); right:var(--end); height:4px; border-radius:var(--radius-control); background:var(--color-border); transition:background-color .3s ease; }
+.tab[aria-selected='true'] { color:var(--color-foreground); }
+.tab[aria-selected='true']::before { background:var(--color-foreground); }
+html .tab:focus-visible { outline:2px solid var(--color-ring); outline-offset:-2px; border-radius:6px; box-shadow:none; }
+/* Logo files are trimmed to the mark; the one customer without a file gets a wordmark of the same height. */
+.logo { display:block; width:auto; height:32px; max-width:100%; object-fit:contain; object-position:left center;
+  filter:grayscale(1) brightness(.5) contrast(1.5); opacity:.4; transition:opacity .3s ease; }
+.tab[aria-selected='true'] .logo { opacity:1; }
+@media (hover:hover) { .tab:hover { color:var(--color-foreground); } .tab:hover .logo { opacity:.8; } .tab[aria-selected='true']:hover .logo { opacity:1; } }
+.wordmark { font-size:20px; line-height:32px; letter-spacing:-.01em; white-space:nowrap; }
+
+.panels { display:grid; max-width:880px; margin-top:72px; }
+/* The link sits at the end of the person's row; panels share one cell, so every row lines up. */
+.panel { grid-area:1 / 1; position:relative; display:flex; flex-direction:column; align-items:flex-start; gap:40px; min-width:0;
+  visibility:hidden; opacity:0; transition:opacity .2s ease, visibility 0s linear .2s; }
+.panel[data-active='true'] { visibility:visible; opacity:1; transition:opacity .35s ease .05s, visibility 0s; }
+.figure { flex:1; display:flex; flex-direction:column; justify-content:space-between; gap:48px; width:100%; margin:0; }
+.quote { max-width:28ch; margin:0; font-size:var(--text-display-large); line-height:.98; text-wrap:balance; }
+.story { position:absolute; right:0; bottom:0; }
+.person { display:flex; flex-direction:column; gap:2px; font-size:var(--text-label); line-height:20px; }
+.person span:first-child { font-weight:var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium),'ital' 100; }
+.person span:last-child { color:var(--color-muted-foreground); }
+@media (pointer:coarse) { .story { min-height:44px; } }
+
+@media (max-width:767px) {
+  .stories { margin-top:64px; }
+  .tabs { grid-template-columns:repeat(2,minmax(0,1fr)); row-gap:8px; }
+  .tab { min-height:80px; padding-top:24px; }
+  .tab:nth-child(odd) { --start:0px; --end:var(--stat-gutter, 16px); }
+  .tab:nth-child(even) { --start:var(--stat-gutter, 16px); --end:0px; }
+  .logo { height:26px; }
+  .wordmark { font-size:16px; line-height:26px; white-space:normal; }
+  .panels { margin-top:48px; }
+  .panel, .figure { gap:28px; }
+  .quote { font-size:var(--text-display-medium); line-height:1; }
+  .story { position:static; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .tab, .tab::before, .logo, .panel, .panel[data-active='true'] { transition:none; }
+}
