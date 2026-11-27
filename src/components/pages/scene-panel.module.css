@@ -1,0 +1,45 @@
+/* The homepage "Now it's your turn" panel (home/applications-workflow.module.css), with
+   step titles in place of product names. The scene palette comes from the homepage too. */
+.panel {
+  composes: palette from '../home/application-scene-theme.module.css';
+  display:grid; grid-template-columns:minmax(0,.88fr) minmax(0,1fr); gap:24px;
+  padding:12px; border-radius:16px; background:var(--palette-forest-shade); color:var(--palette-cream);
+}
+.copy { display:flex; flex-direction:column; justify-content:flex-end; gap:40px; min-width:0; padding:48px 36px 48px 44px; }
+.list { display:flex; flex-direction:column; gap:10px; margin:0; padding:0; list-style:none; }
+.heading { margin:0; font:inherit; }
+.trigger { display:flex; width:100%; min-height:44px; align-items:center; text-align:left; cursor:pointer;
+  color:color-mix(in display-p3, var(--palette-cream) 42%, transparent); transition:color .35s ease; }
+.trigger:hover, .item[data-active='true'] .trigger { color:var(--palette-cream); }
+/* A visible ring on the dark panel; outranks the soft site-wide ring in styles/focus.css. */
+html .list .trigger:focus-visible { color:var(--palette-cream); outline:2px solid var(--palette-cream); outline-offset:4px; border-radius:6px; box-shadow:none; }
+.title { font-size:clamp(22px,1.9vw,28px); line-height:1.12; text-wrap:balance; }
+.detail { display:grid; grid-template-rows:0fr; opacity:0; transition:grid-template-rows .4s cubic-bezier(.25,.46,.45,.94), opacity .25s ease; }
+.detail > div { min-height:0; overflow:hidden; }
+.item[data-active='true'] .detail { grid-template-rows:1fr; opacity:1; }
+.detailCopy { display:flex; flex-direction:column; align-items:flex-start; gap:14px; padding:10px 0 12px; font-size:var(--text-body); line-height:1.5; color:color-mix(in display-p3, var(--palette-cream) 72%, transparent); }
+.detailCopy p { max-width:46ch; margin:0; text-wrap:pretty; }
+/* Ghost buttons hang their padding outside the text column, as on the homepage. */
+.detailCopy :global(.button-ghost) { margin-left:-12px; color:var(--palette-cream); }
+.aside { font-size:var(--text-label); line-height:1.5; color:color-mix(in display-p3, var(--palette-cream) 72%, transparent); }
+
+.visual { container-type:inline-size; position:relative; display:grid; min-width:0; min-height:600px; padding:40px 24px; border-radius:10px; overflow:clip; isolation:isolate; background:var(--scene-frame); }
+/* Every scene shares one cell, so the frame keeps the tallest scene's height. */
+.scene { grid-area:1 / 1; display:grid; place-items:center; min-width:0; font-size:clamp(10px, 2.3cqi, 14px);
+  visibility:hidden; opacity:0; transition:opacity .16s ease, visibility 0s linear .16s; }
+.scene[data-active='true'] { visibility:visible; opacity:1; transition:opacity .28s ease .04s, visibility 0s; }
+
+@media (max-width:1199px) {
+  .panel { gap:8px; grid-template-columns:minmax(0,.85fr) minmax(0,1fr); }
+  .copy { padding:32px 20px; }
+  .visual { min-height:560px; }
+}
+@media (max-width:899px) {
+  .panel { grid-template-columns:minmax(0,1fr); gap:16px; }
+  .copy { padding:24px 16px 8px; gap:28px; }
+  .visual { min-height:0; padding:32px 16px; }
+  .title { font-size:22px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .trigger, .detail, .scene, .scene[data-active='true'] { transition:none; }
+}
