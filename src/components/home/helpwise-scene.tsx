@@ -37,9 +37,14 @@ export function HelpwiseScene({ compact = false }: { compact?: boolean } = {}) {
         {['Mine', 'All', 'Assigned'].map(label => <div className={styles.sideItem} data-selected={label === 'All'} key={label}><Icon name="inbox" /><span>{label}</span></div>)}
       </div>
       <div className={styles.inbox}>
+        <div className={styles.searchRow}><div className={styles.search}><Icon name="search" /><span>Search conversations</span></div></div>
         <div className={styles.tabs}><span data-active="true">Open</span><span>Closed</span></div>
         {messages.slice(0, 4).map(message => <div className={styles.message} key={message.name}>
-          <div className={styles.messageCopy}><span className={styles.sender}>{message.name}</span><span className={styles.compactSubject}>{message.subject}</span></div><span className={styles.time}>{message.time}</span>
+          <div className={styles.messageCopy}>
+            <span className={styles.sender}>{message.name}</span>
+            <div className={styles.subject}>{message.tag && <span className={styles.tag}>{message.tag}</span>}<span className={styles.compactSubject}>{message.subject}</span></div>
+          </div>
+          <span className={styles.time}>{message.time}</span>
         </div>)}
       </div>
     </div>

@@ -21,6 +21,7 @@
 .navMarker { position:relative; display:block; isolation:isolate; }
 .navInk { display:flex; align-items:center; gap:8px; padding:6px 12px 6px 18px; }
 .navPill { position:absolute; inset:0; color:var(--color-primary-foreground); background:var(--color-primary); border-radius:999px; pointer-events:none; clip-path:inset(calc(50% - 3px) calc(100% - 6px) calc(50% - 3px) 0 round 999px); }
+.nav>a:focus-visible,.dropdown>summary:focus-visible { outline:2px solid currentColor; outline-offset:2px; }
 .nav>a { transition:var(--focus-transition); }
 /* The GSAP endpoint restores the exact source position and opacity. */
 @media (prefers-reduced-motion:reduce) { .nav>a { transition:none; } }
@@ -66,27 +67,18 @@
 .menuTextLink { display:flex; align-items:center; gap:12px; width:fit-content; padding-block:12px; margin-top:20px; }
 .productLinks { position:relative; width:100%; min-width:0; min-height:360px; display:flex; flex-direction:column; }
 
-.productHighlight { position:absolute; inset:0 0 auto; height:76px; border-radius:var(--radius-card); background:#f0f0f0; pointer-events:none; opacity:0; }
+.productHighlight { position:absolute; inset:0 0 auto; height:76px; border-radius:var(--radius-card); background:var(--menu-highlight-background); pointer-events:none; opacity:0; }
 .productLink { position:relative; display:flex; align-items:center; gap:12px; padding:16px; height:76px; flex:none; border-radius: var(--radius-card); }
 .productMark { width:32px; height:32px; flex:none; background:currentColor; mask-position:center; mask-size:contain; mask-repeat:no-repeat; }
 .productLinkCopy { display:flex; flex-direction:column; gap:4px; min-width:0; }
 .productLinkCopy>span:last-child { color:var(--color-muted-foreground); font-weight: var(--font-weight-normal); font-variation-settings:'wght' var(--font-weight-normal), 'ital' 100; line-height:1.4; }
 .allApplications { flex:1; display:flex; align-items:flex-end; padding:16px; }
-/* Render the full homepage scenes on a scaled canvas, clipping to the menu frame. */
-.productPreviewFrame { position:relative; container-type:inline-size; width:100%; height:380px; flex:none; overflow:clip; clip-path:inset(0 round var(--radius-card)); border-radius:var(--radius-card); background:var(--palette-forest-shade); }
+/* Desktop and mobile fit the same previews inside their frames. */
+.productPreviewFrame { composes: palette from './application-scene-theme.module.css'; position:relative; container-type:size; width:100%; height:380px; flex:none; overflow:clip; border-radius:var(--radius-card); background:var(--scene-frame); }
 .productPreview { position:absolute; inset:0; display:grid; place-items:center; visibility:hidden; opacity:0; isolation:isolate; }
 .previewScene { position:relative; width:100%; height:100%; }
-.previewCanvas { position:absolute; left:50%; top:50%; width:48em; font-size:14px; transform:translate(-50%, -50%) scale(calc(100cqw / 760px)); }
-.productPreview[data-product-preview='ServiceAgent'] .previewCanvas { width:44em; }
-.productPreview[data-product-preview='Helpwise'] .previewCanvas { left:24px; top:24px; width:80em; transform:scale(calc(100cqw / 760px)); transform-origin:top left; }
 
-/* Measured navigation label boxes prevent cumulative browser glyph rounding. */
-.nav > :nth-child(1) .navLabel { width:75px; }
-.nav > :nth-child(2) .navLabel { width:81px; }
-.nav > :nth-child(3) .navLabel { width:68px; }
-.nav > :nth-child(4) .navLabel { width:60px; }
-.nav > :nth-child(5) .navLabel { width:59px; }
-
+.navLabel { white-space:nowrap; }
 
 /* All application figures share one flat dark-green surface. */
 /* One persistent header: only theme and navigation visibility change. */
@@ -105,6 +97,7 @@
 /* An open desktop menu and the navigation form one continuous full-width surface. */
 .header::before { content:''; position:absolute; top:calc(-1 * var(--header-offset)); bottom:0; left:calc(50% - 50vw); width:100vw; background:var(--palette-paper); opacity:0; pointer-events:none; transition:opacity .25s ease; }
 .header[data-desktop-menu-open='true']::before, .header[data-responsive-menu-open='true']::before { opacity:1; }
+.header[data-desktop-menu-open='true']::before { transition-duration:.12s; }
 .header[data-responsive-menu-open='true'] .headerBackdrop { visibility:hidden; }
 .header[data-responsive-menu-open='true'] { color:var(--palette-deep-green); z-index:10003; }
 /* The opaque menu surface covers the blur without changing its compositing. */

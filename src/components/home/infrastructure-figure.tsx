@@ -3,6 +3,7 @@
 import { assetPath } from '@/lib/base-path';
 
 import { useEffect, useRef, type CSSProperties } from 'react';
+import { applyIllustrationTreatment } from './illustration-treatment';
 import illustrationBounds from './illustration-bounds.json';
 import styles from './infrastructure-figure.module.css';
 
@@ -57,6 +58,7 @@ export function InfrastructureFigure({ name, variant = 'panel' }: { name: Figure
         }
         // Reuse the card's existing hover/focus state. The figure's own pointer
         // handler is disabled here so crossing its bounds cannot cancel the card hover.
+        const removeTreatment = applyIllustrationTreatment(svg);
         const syncCard = () => handle.setActive?.(card?.dataset.active === 'true');
         const cardObserver = card && handle.setActive ? new MutationObserver(syncCard) : undefined;
         if (card && cardObserver) {
@@ -66,7 +68,7 @@ export function InfrastructureFigure({ name, variant = 'panel' }: { name: Figure
         const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
         const updateMotion = () => handle.set(figure.range[1]);
         preference.addEventListener('change', updateMotion);
-        destroy = () => { cardObserver?.disconnect(); preference.removeEventListener('change', updateMotion); handle.destroy(); svg.remove(); };
+        destroy = () => { removeTreatment(); cardObserver?.disconnect(); preference.removeEventListener('change', updateMotion); handle.destroy(); svg.remove(); };
         host.dataset.ready = 'true';
       } catch {
         // The authored static artwork is the complete no-script/error fallback.
@@ -79,7 +81,7 @@ export function InfrastructureFigure({ name, variant = 'panel' }: { name: Figure
     const bounds = illustrationBounds[name];
     return <div ref={hostRef} className={styles.outline} style={{ '--illustration-ink-ratio': bounds.width / 400 } as CSSProperties} aria-hidden="true" data-infrastructure-figure={name}>
       <div className={styles.outlineArt} style={{ aspectRatio: `${bounds.width} / ${bounds.height}` }}>
-        <span className={styles.outlineFallback} style={{ maskImage: assetPath(`url(/assets/illustrations/${name}-outline.svg)`) }} />
+        <img className={styles.outlineFallback} src={assetPath(`/assets/illustrations/${name}-outline.svg`)} alt="" />
         <div ref={stageRef} className={styles.stage} data-hairline={name} data-hairline-theme="light" />
       </div>
     </div>;

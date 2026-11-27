@@ -1,0 +1,4 @@
+interface:
+  display_name: "AtomsAI Blog Art"
+  short_description: "Create and review minimal abstract blog covers"
+  default_prompt: "Create an AtomsAI abstract blog cover using the article, current brand palette, and the skill QA rubric."

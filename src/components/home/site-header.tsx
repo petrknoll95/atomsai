@@ -4,7 +4,8 @@ import { withBasePath, assetPath } from '@/lib/base-path';
 
 import { ArrowIcon } from '@/components/arrow-icon';
 import Link from 'next/link';
-import { useEffect, useId, useLayoutEffect, useRef, useState } from 'react';
+import { observeScrollLayout } from '@/lib/observe-scroll-layout';
+import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ButtonLink } from '@/components/ui';
 import { AnimatedLogo } from '@/components/animated-logo';
@@ -14,15 +15,13 @@ import { MegaMenu } from './mega-menu';
 import { NavLinkMarker } from './nav-link-marker';
 import { ResponsiveMenu } from './responsive-menu';
 import { ResponsiveApplications } from './responsive-applications';
-import { navigationLinks as links, products } from './navigation-data';
-import { JustCallScene, HelpwiseScene, ServiceAgentScene, CallPageScene } from './application-scenes';
+import { navigationLinks, products, type MenuLink } from './navigation-data';
+import { ApplicationPreview } from './application-scenes';
 import styles from './hero.module.css';
 
 type Product = typeof products[number]['name'];
 
-const previewScenes = { JustCall: JustCallScene, Helpwise: HelpwiseScene, ServiceAgent: ServiceAgentScene, CallPage: CallPageScene };
-
-function ApplicationsMenu() {
+function ApplicationsMenu({ overviewHref = '/#applications' }: { overviewHref?: string }) {
   const [product, setProduct] = useState<Product>('ServiceAgent');
   const panelRef = useRef<HTMLDivElement>(null);
   const initialized = useRef(false);
@@ -76,33 +75,30 @@ function ApplicationsMenu() {
     <div className={styles.productLinks}>
       <div className={styles.productHighlight} data-product-highlight aria-hidden='true' />
       {products.map(item => <a key={item.name} href={withBasePath(item.href)} className={styles.productLink} data-active={product === item.name} onPointerEnter={() => setProduct(item.name)} onFocus={() => setProduct(item.name)}><span className={styles.productMark} aria-hidden='true' style={{ maskImage: assetPath(`url('/assets/products/${item.mark}')`) }} /><span className={styles.productLinkCopy}><span>{item.name}</span><span>{item.description}</span></span></a>)}
-      <div className={styles.allApplications}><ButtonLink href='/#applications' size='small' variant='outline'>All Applications</ButtonLink></div>
+      <div className={styles.allApplications}><ButtonLink href={overviewHref} size='small' variant='outline'>All Applications</ButtonLink></div>
     </div>
     </div>
     <div>
     <div className={`theme-dark ${styles.productPreviewFrame}`} aria-hidden='true'>
-      {products.map(item => {
-        const Scene = previewScenes[item.name];
-        return <div key={item.name} className={styles.productPreview} data-product-preview={item.name}>
-          <div className={styles.previewScene} data-preview-object><div className={styles.previewCanvas}><Scene /></div></div>
-        </div>;
-      })}
+      {products.map(item => <div key={item.name} className={styles.productPreview} data-product-preview={item.name}>
+        <div className={styles.previewScene} data-preview-object><ApplicationPreview product={item.name} /></div>
+      </div>)}
     </div>
     </div>
   </div>;
 }
 
-const responsiveMenus = links.filter(link => link.children).map(link => ({
+export function SiteHeader({ initialTheme = 'light', links = navigationLinks }: { initialTheme?: 'light' | 'dark'; links?: MenuLink[] } = {}) {
+const responsiveMenus = useMemo(() => links.filter(link => link.children).map(link => ({
   label: link.label,
-  content: <MegaMenu link={link} compact>{link.label === 'Applications' ? <ResponsiveApplications /> : undefined}</MegaMenu>,
-}));
+  content: <MegaMenu link={link} compact>{link.label === 'Applications' ? <ResponsiveApplications overviewHref={link.href} /> : undefined}</MegaMenu>,
+})), [links]);
 
-const desktopMenus = links.filter(link => link.children).map(link => ({
+const desktopMenus = useMemo(() => links.filter(link => link.children).map(link => ({
   label: link.label,
-  content: <MegaMenu link={link}>{link.label === 'Applications' ? <ApplicationsMenu /> : undefined}</MegaMenu>,
-}));
+  content: <MegaMenu link={link}>{link.label === 'Applications' ? <ApplicationsMenu overviewHref={link.href} /> : undefined}</MegaMenu>,
+})), [links]);
 
-export function SiteHeader({ initialTheme = 'light' }: { initialTheme?: 'light' | 'dark' } = {}) {
   const headerRef = useRef<HTMLElement>(null);
   const menuId = useId();
   const closeTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
@@ -138,9 +134,12 @@ export function SiteHeader({ initialTheme = 'light' }: { initialTheme?: 'light' 
       }
       if (theme !== header.dataset.theme) header.dataset.theme = theme;
     };
-    gsap.ticker.add(update);
+    const stop = observeScrollLayout(update, [header, ...regions]);
+    const menu = new MutationObserver(update);
+    menu.observe(header, { attributes: true, attributeFilter: ['data-responsive-menu-open', 'data-desktop-menu-open'] });
     return () => {
-      gsap.ticker.remove(update);
+      stop();
+      menu.disconnect();
     };
   }, []);
   useEffect(() => {

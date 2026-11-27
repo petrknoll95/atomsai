@@ -1,16 +1,35 @@
-/* Original Figma document profile: DISPLAY_P3. Numeric channels below come from
-   the Palette collection; they are not sRGB hex approximations. Provenance: docs/design/README.md. */
+/* Screen colors: atoms-ai-brand/src/data/colors.ts @ 3f1b08b (sRGB). */
 :root {
-  --palette-paper: color(display-p3 0.980392158 0.980392158 0.980392158);
-  --palette-cream: color(display-p3 0.964705884 0.945098042 0.909803927);
-  --palette-cream-tint: color(display-p3 0.941176474 0.941176474 0.925490201);
-  --palette-stone-tint: color(display-p3 0.922604859 0.922604859 0.894146502);
-  --palette-forest-shade: color(display-p3 0.062745102 0.137254909 0.117647059);
-  --palette-deep-green: color(display-p3 0.152941182 0.262745112 0.231372550);
-  --palette-forest-green: color(display-p3 0.258823544 0.400000006 0.352941185);
-  --palette-iris: color(display-p3 0.549019635 0.470588237 0.690196097);
-  --palette-iris-shade: color(display-p3 0.286274523 0.247058824 0.345098048);
-  --palette-iris-tint: color(display-p3 0.941176474 0.921568632 0.960784316);
+  --palette-forest-shade: #10231E;
+  --palette-deep-green: #1D3C34;
+  --palette-forest-green: #43695B;
+  --palette-sage: #5C7F71;
+  --palette-sage-tint: #94A596;
+  --palette-stone: #BAC5B9;
+  --palette-cream: #F6F1E8;
+  --palette-charcoal: #33413D;
+  --palette-graphite: #58625F;
+  --palette-slate: #7E8583;
+  --palette-ash: #A7AAA9;
+  --palette-mist: #D0D1D1;
+  --palette-paper: #FAFAFA;
+  --palette-iris-dark: #5D4777;
+  --palette-iris: #A77BCA;
+  --palette-iris-light: #D7C6E6;
+  --palette-crimson: #9A3324;
+  --palette-orange: #FF671F;
+  --palette-apricot: #FDBE87;
+  --palette-black: #000000;
+  --palette-grey-5: #292929;
+  --palette-grey-4: #4E4E4E;
+  --palette-grey-3: #777777;
+  --palette-grey-2: #A2A2A2;
+  --palette-grey-1: #D0D0D0;
+  --palette-white: #FFFFFF;
+  --palette-cream-tint: color-mix(in srgb, var(--palette-cream) 55%, var(--palette-paper));
+  --palette-stone-tint: color-mix(in srgb, var(--palette-stone) 25%, var(--palette-paper));
+  --palette-iris-shade: var(--palette-iris-dark);
+  --palette-iris-tint: var(--palette-iris-light);
   --page-max-width: 1600px;
   --page-gutter: 48px;
   /* Shared content rails match the header logo and outer action edge. */

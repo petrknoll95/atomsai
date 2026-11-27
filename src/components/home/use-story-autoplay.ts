@@ -45,6 +45,10 @@ export function useStoryAutoplay(embla: EmblaCarouselType | undefined) {
     if (!embla) return;
     const autoplay = embla.plugins().autoplay;
     const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const content = embla.rootNode();
+    const mobile = matchMedia('(max-width: 767px)');
+    let visible = false;
+    let browsingStats = false;
     let manuallyPaused = false;
     let animation: Animation | undefined;
 
@@ -63,8 +67,31 @@ export function useStoryAutoplay(embla: EmblaCarouselType | undefined) {
       }
     };
     const updatePlayback = () => {
-      if (manuallyPaused || document.hidden || motion.matches) autoplay.stop();
+      if (!visible || content.querySelector('[data-story-stats]:focus-visible') || browsingStats || manuallyPaused || document.hidden || motion.matches) autoplay.stop();
       else if (!autoplay.isPlaying()) autoplay.play();
+    };
+    const visibility = new IntersectionObserver(([entry]) => {
+      visible = entry.isIntersecting;
+      updatePlayback();
+    });
+    visibility.observe(root.current ?? content);
+    const startStatsGesture = (event: TouchEvent) => {
+      if (!(event.target instanceof Element) || !event.target.closest('[data-story-stats]') ||
+        !mobile.matches) return;
+      browsingStats = true;
+      updatePlayback();
+    };
+    const endStatsGesture = (event: TouchEvent) => {
+      if (!browsingStats || event.touches.length) return;
+      browsingStats = false;
+      updatePlayback();
+    };
+    const resetStatsLayout = () => {
+      browsingStats = false;
+      content.querySelectorAll('[data-story-stats]').forEach(row => {
+        row.scrollTo({ left: 0, behavior: 'instant' });
+      });
+      updatePlayback();
     };
     const select = () => {
       setActive(embla.selectedScrollSnap());
@@ -81,16 +108,30 @@ export function useStoryAutoplay(embla: EmblaCarouselType | undefined) {
     const reInit = () => { select(); updatePlayback(); };
     embla.on('select', select).on('reInit', reInit)
       .on('autoplay:timerset', startProgress).on('autoplay:timerstopped', freezeProgress);
+    const focusChanged = () => queueMicrotask(updatePlayback);
+    content.addEventListener('focusin', focusChanged);
+    content.addEventListener('focusout', focusChanged);
+    content.addEventListener('touchstart', startStatsGesture, { passive: true });
+    content.addEventListener('touchend', endStatsGesture);
+    content.addEventListener('touchcancel', endStatsGesture);
     document.addEventListener('visibilitychange', updatePlayback);
     motion.addEventListener('change', updatePlayback);
+    mobile.addEventListener('change', resetStatsLayout);
     updatePlayback();
     return () => {
+      visibility.disconnect();
       autoplay.stop();
       animation?.cancel();
       embla.off('select', select).off('reInit', reInit)
         .off('autoplay:timerset', startProgress).off('autoplay:timerstopped', freezeProgress);
+      content.removeEventListener('focusin', focusChanged);
+      content.removeEventListener('focusout', focusChanged);
+      content.removeEventListener('touchstart', startStatsGesture);
+      content.removeEventListener('touchend', endStatsGesture);
+      content.removeEventListener('touchcancel', endStatsGesture);
       document.removeEventListener('visibilitychange', updatePlayback);
       motion.removeEventListener('change', updatePlayback);
+      mobile.removeEventListener('change', resetStatsLayout);
       toggle.current = () => {};
     };
   }, [embla]);

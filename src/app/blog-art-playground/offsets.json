@@ -1,0 +1,28 @@
+{
+  "width": 1600,
+  "height": 900,
+  "defaultSeed": 9,
+  "maxSeed": 9999,
+  "palettes": [
+    {
+      "id": "forest-sage",
+      "name": "Forest & sage",
+      "tokens": ["forest-shade", "deep-green", "sage", "stone"]
+    },
+    {
+      "id": "gray-mist",
+      "name": "Gray & mist",
+      "tokens": ["grey-5", "grey-4", "grey-3", "mist"]
+    },
+    {
+      "id": "iris-light",
+      "name": "Iris Light",
+      "tokens": ["grey-5", "iris-light"]
+    },
+    {
+      "id": "orange-cream",
+      "name": "Orange & cream",
+      "tokens": ["crimson", "orange", "apricot", "cream"]
+    }
+  ]
+}

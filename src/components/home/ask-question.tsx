@@ -1,117 +1,97 @@
 'use client';
 
-import { assetPath } from '@/lib/base-path';
-
 import { ArrowIcon } from '@/components/arrow-icon';
-import { useCallback, useLayoutEffect, useRef, useState, type FormEvent } from 'react';
-import { gsap } from 'gsap';
+import { assetPath, withBasePath } from '@/lib/base-path';
 import { scrollToTarget } from '@/lib/page-scroll';
-import { slitMotion } from '@/lib/slit-logo';
-import { AnimatedLogo } from '../animated-logo';
+import { useEffect, useRef, useState, type FormEvent, type ReactNode } from 'react';
 import styles from './lower.module.css';
 
-// Deliberately local: this prototype makes no model request or product promises.
-const sampleAnswer = 'A useful starting point is the workflow you want to improve. Pick one repetitive task, identify the information it needs, and decide what a good result would look like. From there, explore an existing application or discuss a custom approach with the team. Start small, keep a person involved in important decisions, and use what you learn to shape the next step.';
-const thinkingDuration = slitMotion.seconds * 3;
+export type FaqEntry = {
+  question: string;
+  answer: ReactNode;
+  keywords?: readonly string[];
+};
 
-function GeneratedQuestion({ question, onComplete }: { question: string; onComplete: () => void }) {
-  const wrapper = useRef<HTMLDivElement>(null);
-  const [complete, setComplete] = useState(false);
+function normalize(value: string) {
+  return value.toLowerCase().match(/[a-z0-9]+/g)?.join(' ') ?? '';
+}
 
-  useLayoutEffect(() => {
-    const root = wrapper.current!;
-    const thinking = root.querySelector<HTMLElement>('[data-thinking]')!;
-    const slot = root.querySelector<HTMLElement>('[data-generated-slot]')!;
-    const body = root.querySelector<HTMLElement>('[data-generated-body]')!;
-    const words = root.querySelectorAll('[data-answer-word]');
-    const motion = matchMedia('(prefers-reduced-motion: reduce)');
-    const context = gsap.context(() => {
-      const timeline = gsap.timeline({ onComplete: () => { setComplete(true); onComplete(); } });
-      gsap.set(slot, { height: 0, opacity: 0 });
-      gsap.set(words, { opacity: 0, y: 3 });
-      timeline.fromTo(root, { height: 0, opacity: 0, y: 8 }, {
-        height: 'auto', opacity: 1, y: 0, duration: .55, ease: 'power3.out',
-        onComplete: () => {
-          gsap.set(root, { clearProps: 'height,overflow,transform' });
-          const bounds = root.getBoundingClientRect();
-          if (bounds.top < 112 || bounds.bottom > innerHeight - 32) scrollToTarget(root);
-        },
-      });
-      // Hold for three complete brand-mark cycles after the card has appeared.
-      timeline.to(thinking, { opacity: 0, height: 0, marginTop: 0, duration: .3 }, `+=${thinkingDuration}`)
-        .to(slot, { height: () => body.offsetHeight, opacity: 1, duration: .5, ease: 'power2.inOut', onComplete: () => { gsap.set(slot, { height: 'auto' }); } }, '<')
-        .to(words, { opacity: 1, y: 0, duration: .3, stagger: .035, ease: 'power2.out' }, '<.12');
-      const finish = () => { if (motion.matches) timeline.progress(1); };
-      finish();
-      motion.addEventListener('change', finish);
-      return () => motion.removeEventListener('change', finish);
-    }, root);
-    return () => context.revert();
-  }, [onComplete]);
+function findAnswer(question: string, entries: readonly FaqEntry[]) {
+  const query = normalize(question);
+  const exact = entries.find(entry => normalize(entry.question) === query);
+  if (exact) return exact;
 
-  return <div ref={wrapper} className={styles.generatedQuestion} data-generated-question>
-    <details className={styles.question} name="home-faq" open>
+  const paddedQuery = ` ${query} `;
+  let bestMatch: FaqEntry | undefined;
+  let bestScore = 0;
+  for (const entry of entries) {
+    const score = (entry.keywords ?? []).reduce((total, phrase) => {
+      const keyword = normalize(phrase);
+      return paddedQuery.includes(` ${keyword} `) ? total + keyword.split(' ').length ** 2 : total;
+    }, 0);
+    if (score <= bestScore) continue;
+    bestMatch = entry;
+    bestScore = score;
+  }
+  return bestMatch;
+}
+
+function QuestionResult({ question, answer, group }: { question: string; answer: ReactNode; group: string }) {
+  const result = useRef<HTMLDetailsElement>(null);
+  useEffect(() => {
+    const element = result.current;
+    if (!element) return;
+    const bounds = element.getBoundingClientRect();
+    if (bounds.top < 112 || bounds.bottom > innerHeight - 32) scrollToTarget(element);
+  }, []);
+
+  return <div className={styles.generatedQuestion} data-generated-question>
+    <details ref={result} className={styles.question} name={group} open>
       <summary>
         <span>{question}</span>
         <span className={styles.questionIcon} aria-hidden="true">
-          <img className={styles.openIcon} src={assetPath("/assets/figma/faq-IconArtwork.svg")} width="24" height="24" alt="" />
-          <img className={styles.closeIcon} src={assetPath("/assets/figma/faq-IconArtwork1.svg")} width="24" height="24" alt="" />
+          <img className={styles.openIcon} src={assetPath('/assets/figma/faq-IconArtwork.svg')} width="24" height="24" alt="" />
+          <img className={styles.closeIcon} src={assetPath('/assets/figma/faq-IconArtwork1.svg')} width="24" height="24" alt="" />
         </span>
       </summary>
-      <div className={styles.answerClip} aria-busy={!complete}>
-        <div data-thinking className={styles.thinking} aria-hidden="true">
-          {!complete && <AnimatedLogo className={styles.thinkingLogo} />}
-          Putting an answer together
-        </div>
-        <div data-generated-slot className={styles.generatedSlot} aria-hidden={!complete}>
-          <div data-generated-body className={styles.generatedBody}>
-            <p className={`${styles.answer} ${styles.generatedAnswer}`}>
-              {sampleAnswer.split(' ').map((word, index) => <span key={index}><span data-answer-word>{word}</span>{' '}</span>)}
-            </p>
-          </div>
-        </div>
+      <div className={styles.answerClip}>
+        <p className={`${styles.answer} ${styles.generatedAnswer}`} data-faq-answer>{answer}</p>
       </div>
     </details>
   </div>;
 }
 
-export function AskQuestion() {
-  const [questions, setQuestions] = useState<{ id: number; text: string }[]>([]);
+const noAnswer = <>We don’t have a published answer for that question. <a className="link-underline" href={withBasePath('/company/contact')}>Ask the AtomsAI team</a>.</>;
+
+export function AskQuestion({ entries, group }: { entries: readonly FaqEntry[]; group: string }) {
+  const [questions, setQuestions] = useState<{ id: number; text: string; match?: FaqEntry }[]>([]);
   const [draft, setDraft] = useState('');
-  const [busy, setBusy] = useState(false);
-  const [announcement, setAnnouncement] = useState('');
-  const pending = useRef(false);
   const nextId = useRef(0);
-  const finish = useCallback(() => {
-    pending.current = false;
-    setBusy(false);
-    setAnnouncement(`Sample answer ready. ${sampleAnswer}`);
-  }, []);
+  const latest = questions.at(-1);
 
   function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const question = draft.trim();
-    if (!question || pending.current) return;
-    pending.current = true;
-    setBusy(true);
-    event.currentTarget.closest('#faq')?.querySelectorAll<HTMLDetailsElement>('details[open]').forEach(item => { item.open = false; });
-    const entry = { id: nextId.current++, text: question };
+    if (!question) return;
+    event.currentTarget.closest('section')?.querySelectorAll<HTMLDetailsElement>('details[open]').forEach(item => { item.open = false; });
+    const entry = { id: nextId.current++, text: question, match: findAnswer(question, entries) };
     setQuestions(items => [...items, entry]);
     setDraft('');
-    setAnnouncement('Question added. Preparing a sample answer.');
   }
 
   return <>
-    {questions.map(question => <GeneratedQuestion key={question.id} question={question.text} onComplete={finish} />)}
+    {questions.map(({ id, text, match }) => <QuestionResult key={id} question={text} answer={match?.answer ?? noAnswer} group={group} />)}
     <form className={styles.customQuestionWrap} onSubmit={submit} aria-label="Ask a question">
       <div className={styles.customQuestion} data-focus-surface>
         <input type="text" name="question" aria-label="Ask a question" maxLength={500} autoComplete="off"
           placeholder="Can’t find your question? Ask it here..." value={draft} onChange={event => setDraft(event.target.value)} />
-        <button className={styles.questionSubmit} type="submit" aria-label={busy ? 'Preparing answer' : 'Submit question'} disabled={busy || !draft.trim()}>
+        <button className={styles.questionSubmit} type="submit" aria-label="Submit question" disabled={!draft.trim()}>
           <ArrowIcon direction="up" size={24} />
         </button>
       </div>
     </form>
-    <p className="sr-only" role="status" aria-live="polite" aria-atomic="true">{announcement}</p>
+    <p className="sr-only" role="status" aria-atomic="true">{latest && (latest.match
+      ? `Found an answer for “${latest.text}”.`
+      : `No published answer found for “${latest.text}”. You can contact the AtomsAI team.`)}</p>
   </>;
 }

@@ -4,8 +4,8 @@ import fs from 'node:fs/promises';
 const output = process.env.NAV_CHECK_OUTPUT || '/tmp/atoms-responsive-nav';
 const base = process.env.BASE_URL || 'http://localhost:3001';
 await fs.mkdir(output, { recursive: true });
-const groups = ['Applications', 'Infrastructure', 'Industries', 'Resources', 'Company'];
-const industries = ['Manufacturing', 'Insurance', 'Healthcare', 'Logistics', 'Lending', 'Real estate', 'Auto dealers', 'Retail & e-commerce'];
+const groups = ['Applications', 'Infrastructure', 'Use cases', 'Resources', 'Company'];
+const useCases = ['Book service calls', 'Coordinate patient visits', 'Follow up with customers', 'Answer admissions inquiries'];
 const sizes = [[320,568],[360,800],[375,812],[390,844],[430,932],[599,850],[600,850],[767,900],[768,1024],[899,900],[900,900],[1024,768],[1199,900],[1200,900],[1440,900],[1920,1080],[844,390],[667,375]];
 const results = [];
 const label = (panel, name) => panel.locator('[data-section-trigger]').filter({hasText:name});
@@ -43,13 +43,18 @@ for (const [engineName, engine] of Object.entries({chromium,webkit})) {
      await label(panel,group).click();await expect(label(panel,group)).toHaveAttribute('aria-expanded','true');
      assert.equal(await panel.locator('[data-section-trigger][aria-expanded="true"]').count(),1);
      await checkBounds(panel);
-     if(group==='Industries')for(const industry of industries)await expect(panel.getByRole('link',{name:industry,exact:true})).toBeVisible();
-     if(group==='Applications')for(const name of ['JustCall','Helpwise','ServiceAgent','CallPage']){
-      await panel.getByRole('button',{name:new RegExp(`^${name} `)}).click();
-      await expect(panel.locator(`[data-responsive-preview="${name}"]`)).toBeVisible();
-      await expect(panel.getByRole('link',{name:`Explore ${name}`,exact:true})).toBeVisible();await checkBounds(panel);
+     if(group==='Use cases')for(const useCase of useCases)await expect(panel.getByRole('link',{name:useCase,exact:true})).toBeVisible();
+     if(group==='Applications'){
+      const applications=panel.getByRole('region',{name:'Applications',exact:true});
+      await expect(applications.getByRole('button')).toHaveCount(0);
+      await expect(applications.locator('[data-responsive-preview]')).toHaveCount(0);
+      for(const [name,href] of [['JustCall','https://justcall.io/'],['Helpwise','https://helpwise.io/'],['ServiceAgent','https://serviceagent.ai/'],['CallPage','https://www.callpage.io/']]){
+       const link=applications.getByRole('link',{name:new RegExp(`^${name} `)});
+       await expect(link).toBeVisible();await expect(link).toHaveAttribute('href',href);
+      }
+      await expect(applications.getByRole('link',{name:'All applications',exact:true})).toBeVisible();
      }
-     if([320,390,768,1024,1199].includes(width)&&['Industries','Company','Infrastructure'].includes(group)){
+     if([320,390,768,1024,1199].includes(width)&&['Use cases','Company','Infrastructure'].includes(group)){
       await panel.evaluate(el=>{const row=el.querySelector('[data-section-trigger][aria-expanded="true"]');el.scrollTop+=row.getBoundingClientRect().top-el.getBoundingClientRect().top;});
       await panel.locator('img').evaluateAll(images=>Promise.all(images.map(image=>image.decode().catch(()=>{}))));
       await page.screenshot({path:`${output}/${engineName}-${width}-${group.toLowerCase()}.png`});
@@ -68,7 +73,7 @@ for (const [engineName, engine] of Object.entries({chromium,webkit})) {
   await expect(panel.getByRole('link',{name:'Privacy Policy',exact:true})).toBeFocused();await page.keyboard.press(tabKey);await expect(home).toBeFocused();
   await page.getByRole('button',{name:'Close navigation',exact:true}).focus();await page.keyboard.press(tabKey);await expect(label(panel,'Applications')).toBeFocused();
   await page.keyboard.press('Enter');await expect(label(panel,'Applications')).toHaveAttribute('aria-expanded','true');
-  await label(panel,'Industries').click();const scrollBefore=await page.evaluate(()=>window.scrollY);
+  await label(panel,'Use cases').click();const scrollBefore=await page.evaluate(()=>window.scrollY);
   await page.mouse.move(300,500);await page.mouse.wheel(0,650);await page.waitForTimeout(150);
   assert((await panel.evaluate(el=>el.scrollTop))>0);assert.equal(await page.evaluate(()=>window.scrollY),scrollBefore);
   // Resize out of the mobile navigation must release modal state and focus.
@@ -77,10 +82,17 @@ for (const [engineName, engine] of Object.entries({chromium,webkit})) {
   assert.notEqual(await page.evaluate(()=>document.documentElement.style.overflow),'hidden');
   // Hash navigation unlocks before scrolling and hands focus to the destination.
   await page.setViewportSize({width:390,height:844});await page.getByRole('button',{name:'Open navigation',exact:true}).click();
-  await label(panel,'Industries').click();await panel.getByRole('link',{name:'All industries',exact:true}).click();
+  await label(panel,'Use cases').click();await panel.getByRole('link',{name:'All use cases',exact:true}).click();
   await expect(panel).toBeHidden();await expect(page).toHaveURL(/#industries$/);
   assert(await page.evaluate(()=>document.getElementById('industries').contains(document.activeElement)));
   const anchorTop=await page.locator('#industries').evaluate(el=>el.getBoundingClientRect().top);assert(anchorTop>=0&&anchorTop<200,`Anchor offset ${anchorTop}`);
+  await page.getByRole('button',{name:'Open navigation',exact:true}).click();
+  await label(panel,'Use cases').click();
+  await panel.getByRole('link',{name:'Answer admissions inquiries',exact:true}).click();
+  await expect(panel).toBeHidden();
+  await expect(page).toHaveURL(/#industry-education$/);
+  await expect(page.locator('#industries h3')).toHaveText('Answer admissions inquiries');
+  await expect(page.locator('#industries').getByRole('link',{name:'Discuss your workflow',exact:true})).toHaveAttribute('href','/company/contact?topic=services');
   // Reopening and closing from a scrolled page must preserve scroll position.
   const position=await page.evaluate(()=>window.scrollY);await page.getByRole('button',{name:'Open navigation',exact:true}).click();await page.keyboard.press('Escape');
   assert(Math.abs(await page.evaluate(()=>window.scrollY)-position)<2);
@@ -92,7 +104,7 @@ for (const [engineName, engine] of Object.entries({chromium,webkit})) {
   await page.close();
   const touch=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true,reducedMotion:'reduce'});
   await touch.goto(base);await touch.getByRole('button',{name:'Open navigation',exact:true}).tap();
-  const touchPanel=touch.locator('[data-responsive-panel]');await label(touchPanel,'Industries').tap();
+  const touchPanel=touch.locator('[data-responsive-panel]');await label(touchPanel,'Use cases').tap();
   await touch.setViewportSize({width:844,height:390});await expect(touchPanel).toBeVisible();await checkBounds(touchPanel);
   await touch.getByRole('button',{name:'Close navigation',exact:true}).tap();await expect(touchPanel).toBeHidden();
   results.push({engine:engineName,keyboard:true,scrollLock:true,resize:true,anchors:true,rapidToggles:true,touch:true});

@@ -85,13 +85,12 @@ export function StoryPortraits({ master, slots, images, paused, onTogglePlayback
       container.querySelectorAll('img').forEach(image => {
         image.srcset = images[index].srcSet;
         image.src = images[index].src;
-        image.loading = 'eager';
       });
     };
     // Warm the local responsive assets near the carousel, not at page startup.
     const preload = new IntersectionObserver(entries => {
       if (!entries.some(entry => entry.isIntersecting)) return;
-      images.forEach((_, index) => { void load(index).catch(() => {}); });
+      void load(master.selectedScrollSnap()).catch(() => {});
       preload.disconnect();
     }, { rootMargin: '600px' });
     preload.observe(frame);
@@ -171,7 +170,7 @@ export function StoryPortraits({ master, slots, images, paused, onTogglePlayback
   return (
     <div ref={frameRef} data-story-portraits
       className={`${carousel.viewport} ${styles.portrait} ${styles.portraitCarousel}`} onDragStart={event => event.preventDefault()}>
-      <div ref={ref} className={carousel.portraitViewport} role="img" aria-label="Portrait accompanying the customer story">
+      <div ref={ref} className={carousel.portraitViewport} role="img" aria-label={images[0].alt}>
       <div className={carousel.portraitTrack} aria-hidden="true">
         {slots.map((slot, index) => <div key={slot} className={carousel.portraitSlide} data-portrait-slide={index} />)}
       </div>

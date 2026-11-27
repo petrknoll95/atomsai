@@ -1,0 +1,381 @@
+{
+  "label": "AI Services",
+  "route": "/approach",
+  "title": "Put AI where the work actually happens.",
+  "intro": [
+    "We find the process worth fixing, build AI into the systems you already run, and stay until it holds up in production. Then it runs without us."
+  ],
+  "actions": [
+    {
+      "label": "Talk to our team",
+      "href": "/company/contact"
+    },
+    {
+      "label": "See our approach",
+      "href": "#approach"
+    }
+  ],
+  "sections": [
+    {
+      "id": "workflow",
+      "title": "A request is rarely one task",
+      "label": "One request, five steps",
+      "intro": [
+        "A customer changes a delivery date. That means checking the order, finding a new slot, following policy, updating dispatch, and confirming the change.",
+        "We connect the steps that get the whole job done."
+      ],
+      "blocks": [
+        {
+          "title": "Customer request",
+          "body": [
+            "“Can we move Thursday’s delivery to Monday?”"
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Check availability",
+          "body": [
+            "Order #48213 found. Two Monday slots open."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Apply rules",
+          "body": [
+            "Free change inside 48 hours. No fee applies."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Update systems",
+          "body": [
+            "ERP order moved. Dispatch route rebuilt."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Confirm",
+          "body": [
+            "Text and email sent. Record closed."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        }
+      ],
+      "links": [],
+      "kind": "rows"
+    },
+    {
+      "id": "services",
+      "title": "Pick the right problem. Then build it right",
+      "label": "Two services",
+      "intro": [],
+      "blocks": [
+        {
+          "title": "AI Consulting",
+          "body": [
+            "Find the work worth automating.",
+            "We sit with your workflows, measure where time and money leak, and pick the few places AI will pay back."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "AI Engineering",
+          "body": [
+            "Make it work in your business.",
+            "Our engineers tune the models to your outcomes, connect your systems, and test it all against how your business actually runs."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        }
+      ],
+      "links": [],
+      "kind": "cards"
+    },
+    {
+      "id": "areas",
+      "title": "Work worth handing off",
+      "label": "Where it applies",
+      "intro": [],
+      "blocks": [
+        {
+          "title": "Customer conversations",
+          "body": [
+            "Answer inquiries, qualify requests, book appointments, and manage follow-ups."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Documents & records",
+          "body": [
+            "Read, verify, and process invoices, applications, and claims."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Business operations",
+          "body": [
+            "Handle order changes, approvals, and exceptions across teams and systems."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Customer intelligence",
+          "body": [
+            "Listen across every conversation, spot the risks, and surface the next action."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        }
+      ],
+      "links": [],
+      "kind": "cards"
+    },
+    {
+      "id": "integration",
+      "title": "Keep your tools. Connect the work",
+      "label": "Integration",
+      "intro": [
+        "Your systems already hold the context. We connect it to AI, with the permissions and approvals to act on it."
+      ],
+      "blocks": [],
+      "links": [],
+      "kind": "dark"
+    },
+    {
+      "id": "proven-in-production-at-scale",
+      "title": "Proven in production, at scale",
+      "label": "Track record",
+      "intro": [
+        "Our applications handle over a billion conversations a year, on models and infrastructure we build ourselves through PyAI. What we engineer for you comes from that experience."
+      ],
+      "blocks": [],
+      "links": [],
+      "kind": "statement",
+      "stats": [
+        {
+          "value": "1B+",
+          "label": "Conversations a year"
+        },
+        {
+          "value": "7,000+",
+          "label": "Businesses on our applications"
+        },
+        {
+          "value": "20+",
+          "label": "Countries"
+        },
+        {
+          "value": "2016",
+          "label": "Founded"
+        }
+      ]
+    },
+    {
+      "id": "approach",
+      "title": "You see it work before you run it",
+      "label": "Our approach",
+      "intro": [
+        "We build in your environment, test on your real cases, and measure quality, speed, and cost before anything goes live."
+      ],
+      "blocks": [
+        {
+          "title": "Find the workflow worth improving",
+          "body": [
+            "We sit with the people doing the work, measure where time and cost go, and agree on the one process to start with."
+          ],
+          "links": [],
+          "list": [
+            "Process map",
+            "Baseline metrics",
+            "Scope"
+          ],
+          "label": "Understand",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Map the data, decisions, and controls",
+          "body": [
+            "Which systems hold the context, which decisions AI can make, and which need a person. The controls are designed before the first line of code."
+          ],
+          "links": [],
+          "list": [
+            "Data sources",
+            "Decision rules",
+            "Approvals"
+          ],
+          "label": "Design",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Develop and integrate the solution",
+          "body": [
+            "We build in your environment and connect your systems, so what we test is what you will run."
+          ],
+          "links": [],
+          "list": [
+            "Your repository",
+            "Integrations",
+            "Your environment"
+          ],
+          "label": "Build",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Test performance against agreed targets",
+          "body": [
+            "Real scenarios, measured for quality, speed, and cost against the targets we set in step one. Nothing goes live on a demo."
+          ],
+          "links": [],
+          "list": [
+            "Evaluation set",
+            "Quality",
+            "Speed and cost"
+          ],
+          "label": "Validate",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Your code, evaluations, documentation, and operational controls",
+          "body": [
+            "Everything needed to run, review, and improve the system is handed to your team, with the evaluations that prove it works."
+          ],
+          "links": [],
+          "list": [
+            "Code",
+            "Evaluations",
+            "Runbook"
+          ],
+          "label": "Hand over",
+          "category": "",
+          "tags": []
+        }
+      ],
+      "links": [],
+      "kind": "rows"
+    },
+    {
+      "id": "ownership",
+      "title": "Yours to run, review, and improve",
+      "label": "Ownership",
+      "intro": [],
+      "blocks": [
+        {
+          "title": "Your code",
+          "body": [
+            "Your code lives in your repository."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Your rules",
+          "body": [
+            "Your rules determine what AI can do."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        },
+        {
+          "title": "Your team",
+          "body": [
+            "Your team has everything it needs to operate it without us."
+          ],
+          "links": [],
+          "list": [],
+          "label": "",
+          "category": "",
+          "tags": []
+        }
+      ],
+      "links": [
+        {
+          "label": "Explore Trust & Security",
+          "href": "/trust"
+        }
+      ],
+      "kind": "cards"
+    }
+  ],
+  "closing": {
+    "title": "What would you change about how work gets done?",
+    "body": [
+      "Bring us one process. We’ll help you decide whether AI makes sense, what it would take to build, and where to begin."
+    ],
+    "links": [
+      {
+        "label": "Talk to AtomsAI",
+        "href": "/company/contact"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "value": "1B+",
+      "label": "Conversations a year"
+    },
+    {
+      "value": "7,000+",
+      "label": "Businesses on our applications"
+    },
+    {
+      "value": "20+",
+      "label": "Countries"
+    },
+    {
+      "value": "2016",
+      "label": "Founded"
+    }
+  ]
+}

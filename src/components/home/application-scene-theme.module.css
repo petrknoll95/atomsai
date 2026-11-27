@@ -1,0 +1,12 @@
+.palette {
+  --scene-paper: var(--palette-paper);
+  --scene-ink: var(--palette-deep-green);
+  --scene-muted: color-mix(in display-p3, var(--scene-ink) 58%, transparent);
+  --scene-line: color-mix(in display-p3, var(--scene-ink) 10%, transparent);
+  --scene-shell: color-mix(in srgb, var(--scene-ink) 8%, var(--scene-paper));
+  --scene-soft: color-mix(in srgb, var(--scene-ink) 5%, var(--scene-paper));
+  --scene-control: color-mix(in srgb, var(--scene-ink) 10%, var(--scene-paper));
+  --scene-outline: color-mix(in display-p3, var(--scene-paper) 24%, var(--palette-forest-shade));
+  --scene-frame: color-mix(in display-p3, var(--scene-paper) 4%, var(--palette-forest-shade));
+  --scene-success: color-mix(in display-p3, var(--palette-forest-green) 16%, var(--scene-paper));
+}

@@ -11,3 +11,7 @@
   line-height:1;
   text-wrap:balance;
 }
+
+.description{max-width:660px;margin-top:32px;font-size:clamp(18px,2vw,22px);line-height:1.5;color:var(--color-muted-foreground);text-wrap:pretty;}
+
+.eyebrow{margin-bottom:28px;font-size:var(--text-label);line-height:1.5;color:var(--color-muted-foreground);}

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { usePatternData } from './use-pattern-data';
 import { createPatternRenderer } from './renderer';
 import type { PatternProps } from './types';
 
@@ -9,6 +10,7 @@ export type { PatternProps, PatternOptions, PatternKind, PatternColors, PatternC
 /** Static procedural pattern; changing props updates the shader, without a clock. */
 export function Pattern({ className, style, label, loading = 'eager', ...options }: PatternProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const data = usePatternData(options.kind, canvasRef, loading === 'lazy' ? '400px' : null);
   const rendererRef = useRef<ReturnType<typeof createPatternRenderer> | null>(null);
   const latest = useRef(options);
   const loadingMode = useRef(loading);
@@ -16,7 +18,7 @@ export function Pattern({ className, style, label, loading = 'eager', ...options
   const [error, setError] = useState<string | null>(null);
   useEffect(() => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    if (!canvas || !data) return;
     let frame = 0;
     let activated = false;
     let contextLost = false;
@@ -54,7 +56,7 @@ export function Pattern({ className, style, label, loading = 'eager', ...options
         if (signature === lastDraw) return;
         canvas.dataset.renderState = 'pending';
         try {
-          rendererRef.current ??= createPatternRenderer(canvas);
+          rendererRef.current ??= createPatternRenderer(canvas, data);
           rendererRef.current.render(latest.current, width, height, pixelRatio);
           lastDraw = signature;
           setError(null);
@@ -82,7 +84,7 @@ export function Pattern({ className, style, label, loading = 'eager', ...options
       canvas.removeEventListener('webglcontextlost', lost); canvas.removeEventListener('webglcontextrestored', restored);
       rendererRef.current?.dispose(); rendererRef.current = null; redraw.current = () => {};
     };
-  }, []);
+  }, [data]);
   useEffect(() => { latest.current = options; loadingMode.current = loading; redraw.current(); }, [options.kind, options.count, options.mode, options.fit, options.blurScale, options.rotation, options.zoom, options.panX, options.panY, options.colors, loading]); // eslint-disable-line react-hooks/exhaustive-deps
   return <>
     <canvas ref={canvasRef} className={className} style={{ display: 'block', width: '100%', height: '100%', ...style }} role='img' aria-label={label ?? `${options.kind} pattern, ${options.count} ${options.kind === 'concentric' ? 'rings' : 'slits'}`} data-pattern={options.kind} data-count={options.count} data-render-state='pending'>Procedural {options.kind} pattern.</canvas>

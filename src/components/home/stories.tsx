@@ -18,7 +18,10 @@ import { customerStories, storyPortraits, storySlots } from './story-data';
 export function Stories() {
   const autoplay = useMemo(() => createStoryAutoplay(), []);
   const fade = useMemo(() => Fade(), []);
-  const [emblaRef, embla] = useEmblaCarousel({ loop: true, startIndex: 0, duration: 32, breakpoints: { '(prefers-reduced-motion: reduce)': { duration: 0 } } }, [autoplay, fade]);
+  const [emblaRef, embla] = useEmblaCarousel({ loop: true, startIndex: 0, duration: 32,
+    watchDrag: (_, event) => !(matchMedia('(max-width: 767px)').matches &&
+      event.target instanceof Element && event.target.closest('[data-story-stats]')),
+    breakpoints: { '(prefers-reduced-motion: reduce)': { duration: 0 } } }, [autoplay, fade]);
   const { root, bars, active, paused, togglePlayback } = useStoryAutoplay(embla);
   useStoryReveal(embla);
   const [dialogStory, setDialogStory] = useState(customerStories[0]);
@@ -26,7 +29,10 @@ export function Stories() {
 
   return (
     <section ref={root} aria-roledescription="carousel" className={`page-container ${styles.stories}`} id="customer-stories" aria-labelledby="customer-stories-title">
-      <h2 id="customer-stories-title" className="sr-only">Customer stories</h2>
+      <header className={styles.storyHeader}>
+        <h2 id="customer-stories-title" className={`display ${styles.heading}`}>Proven on a billion conversations a year</h2>
+        <p>Sales teams, service businesses, and enterprises run AtomsAI on real calls, every day.</p>
+      </header>
       <div className={carousel.stage}>
       <StoryPortraits master={embla} slots={storySlots} images={storyPortraits} paused={paused} onTogglePlayback={togglePlayback} />
       <div id="customer-story-content" className={`${carousel.viewport} ${carousel.contentViewport}`} ref={emblaRef} onDragStart={event => event.preventDefault()}>
@@ -37,7 +43,7 @@ export function Stories() {
                 <div className={styles.portrait} data-portrait-slot aria-hidden="true" />
                 <div className={styles.storyContent}>
                   <div className={styles.quoteBlock}>
-                    <Eyebrow href="https://atomsai.com/resources/case-studies">Customer Stories</Eyebrow>
+                    <Eyebrow href={story.productHref}>with {story.product}</Eyebrow>
                     <figure className={styles.testimonial}>
                       <blockquote data-story-reveal className={`display ${styles.quote}`}>{story.quote}</blockquote>
                       <figcaption data-story-reveal className={styles.person}>
@@ -53,7 +59,7 @@ export function Stories() {
                 </div>
         
                 {/* Use the surrounding light theme so results remain readable on paper. */}
-                <div className={styles.metrics} aria-label="Customer results">
+                <div className={styles.metrics} data-story-stats tabIndex={active === index ? 0 : -1} role="group" aria-label={`${story.company} results`}>
                   {story.metrics.map(metric => <div key={metric.description} data-story-reveal className={styles.metric}>
                     <div className={styles.metricValues}>
                       {metric.before ? <>

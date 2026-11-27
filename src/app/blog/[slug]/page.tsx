@@ -1,3 +1,4 @@
+import { shareMetadata } from '@/lib/share-metadata';
 import { withBasePath } from '@/lib/base-path';
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -13,7 +14,13 @@ export function generateStaticParams() { return posts.map(({ slug }) => ({ slug 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = posts.find(item => item.slug === slug);
-  return post ? { title: `${post.title} | AtomsAI`, description: post.excerpt, alternates: { canonical: `https://atomsai.com/blog/${post.slug}` }, openGraph: { title: post.title, description: post.excerpt, type: 'article', publishedTime: post.date, authors: [post.author], images: [{ url: `https://atomsai.com${post.artwork}` }] } } : {};
+  if (!post) return {};
+  return shareMetadata({
+    path: `/blog/${post.slug}`,
+    title: `${post.title} | AtomsAI`,
+    description: post.excerpt,
+    article: post,
+  });
 }
 export default async function ArticlePage({ params }: Props) {
   const { slug } = await params;
@@ -38,6 +45,7 @@ export default async function ArticlePage({ params }: Props) {
         <h1 className="display">{post.title}</h1>
         <div className={styles.byline}><span>by {post.author}</span><span className={styles.separator} aria-hidden="true">•</span><time dateTime={post.date}>{date}</time></div>
       </header>
+      <div className={styles.cover}><BlogArt artwork={post.artwork} priority sizes="(max-width: 767px) 100vw, 675px" /></div>
       {/* The checked-in importer allowlists markup and strips source scripts/styles. */}
       <div className={styles.body} dangerouslySetInnerHTML={{ __html: body }} />
     </article>

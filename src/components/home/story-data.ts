@@ -7,6 +7,8 @@ export interface StoryPortrait {
 export interface CustomerStory {
   id: string;
   company: string;
+  product: string;
+  productHref: string;
   logo?: string;
   name: string;
   role: string;
@@ -14,54 +16,42 @@ export interface CustomerStory {
   portrait: StoryPortrait;
   metrics: { before?: string; value: string; description: string }[];
 }
-const stockPortrait = (name: string, alt: string): StoryPortrait => ({
+const storyImage = (name: string, alt: string): StoryPortrait => ({
   src: assetPath(`/assets/stories/${name}-960.webp`),
   srcSet: assetPath(`/assets/stories/${name}-480.webp 480w, /assets/stories/${name}-960.webp 960w`),
   alt,
 });
 
-// The original supplied Northwind story is retained. Additional stories are
-// illustrative demo copy, not customer claims; stock subjects are not endorsers.
+// Client-supplied testimonials, approved on 16 November 2026, with illustrative industry photography.
 export const customerStories: readonly CustomerStory[] = [
   {
-    id: 'northwind', company: 'Northwind Logistics', logo: assetPath('/assets/figma/stories-Company.svg'),
-    name: 'Aaron Vasquez', role: 'Global Operations Manager',
-    quote: '“The evals are what sold my board. I can show a number for accuracy and a number for cost, per workflow, per month.”',
-    portrait: { src: assetPath('/assets/figma/stories-Media.webp'), srcSet: assetPath('/assets/figma/stories-Media-512.webp 512w, /assets/figma/stories-Media-1024.webp 1024w, /assets/figma/stories-Media.webp 2048w'), alt: 'Aaron Vasquez seated beside a plinth' },
+    id: 'pinegrove', company: 'Pinegrove Realty', product: 'JustCall', productHref: 'https://justcall.io/',
+    name: 'Marco Bellini', role: 'Owner, Pinegrove Realty',
+    quote: '“Every new lead gets a call back in under a minute, in English or Spanish. We stopped losing weekend inquiries to whoever picked up first.”',
+    portrait: storyImage('pinegrove-property', 'A cream house with a green front door and a shaded garden'),
     metrics: [
-      { before: '78%', value: '94%', description: 'Invoice auto-match rate on 40k invoices/quarter' },
-      { before: '5 days', value: '4 hours', description: 'Month-end audit prep\nfirst two quarters' },
-      { value: '−81%', description: 'Cost per processed document vs. prior BPO rate' },
+      { value: '38%', description: 'Faster lead response' },
+      { value: '12h', description: 'Hours saved / week' },
     ],
   },
   {
-    id: 'linden-demo', company: 'Linden Commerce', name: 'Maya Chen', role: 'Head of Customer Experience',
-    quote: '“Our inbox used to run the day. Now every conversation has an owner, and our team has time to make the answer count.”',
-    portrait: stockPortrait('abigail-boone', 'Stock portrait of a smiling seated woman against a light gray background'),
+    id: 'brightline', company: 'Brightline Plumbing', product: 'ServiceAgent', productHref: 'https://serviceagent.ai/',
+    name: 'Dana Whitfield', role: 'Operations manager, Brightline Plumbing',
+    quote: '“After-hours calls used to hit voicemail. Now emergencies are booked and dispatched before my techs are even awake.”',
+    portrait: storyImage('brightline-plumbing', 'A plumber working on the copper pipes under a utility sink'),
     metrics: [
-      { before: '4 hours', value: '12 min', description: 'First-response time across support channels' },
-      { value: 'One inbox', description: 'Email, chat and customer context in one shared workspace' },
-      { value: '−42%', description: 'Reduction in repeat customer contacts' },
+      { value: '27%', description: 'More jobs booked' },
+      { value: '15h', description: 'Hours saved / week' },
     ],
   },
   {
-    id: 'fieldwork-demo', company: 'Fieldwork Services', name: 'Daniel Brooks', role: 'Director of Service Operations',
-    quote: '“When the team is out on a job, the phone still gets answered. Customers can book a visit without waiting for us to call back.”',
-    portrait: stockPortrait('brauer', 'Stock studio portrait of a smiling man seated on a stool against a light gray backdrop'),
+    id: 'kestrel', company: 'Kestrel Freight', product: 'AtomsAI engineers', productHref: '/approach',
+    name: 'Theo Marchetti', role: 'Engineering lead, Kestrel Freight',
+    quote: '“AtomsAI built a voice workflow on top of our own dispatch stack. It went to production in six weeks, not six months.”',
+    portrait: storyImage('kestrel-freight', 'A white freight truck at a warehouse loading bay'),
     metrics: [
-      { value: '24/7', description: 'An always-available first point of contact for service calls' },
-      { before: '3 steps', value: '1 call', description: 'From the initial enquiry to a confirmed appointment' },
-      { value: '+28%', description: 'Increase in enquiries converted to bookings' },
-    ],
-  },
-  {
-    id: 'clearpath-demo', company: 'Clearpath Assurance', name: 'Emma Wilson', role: 'Head of Claims Transformation',
-    quote: '“We spend less time finding the right document and more time making the right decision. The evidence stays with every answer.”',
-    portrait: stockPortrait('ageing-better', 'Stock studio portrait of a smiling woman in a beige jumpsuit seated against a pale gray backdrop'),
-    metrics: [
-      { before: '2 days', value: '30 min', description: 'Time to prepare a claim for review' },
-      { value: 'One view', description: 'Policy details, documents and supporting evidence together' },
-      { value: '−60%', description: 'Reduction in manual document handling' },
+      { value: '52%', description: 'Calls handled by AI' },
+      { value: '30h', description: 'Hours saved / week' },
     ],
   },
 ];

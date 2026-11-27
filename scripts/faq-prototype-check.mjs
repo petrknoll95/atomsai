@@ -1,74 +1,48 @@
 import { chromium, webkit, expect } from '@playwright/test';
 import assert from 'node:assert/strict';
-import fs from 'node:fs/promises';
-const results = [];
+
+const base = process.env.VISUAL_URL || 'http://127.0.0.1:3001';
 for (const [name, engine] of Object.entries({ chromium, webkit })) {
   const browser = await engine.launch();
   try {
     for (const width of [1440, 390]) {
-      const page = await browser.newPage({ viewport: { width, height: 1000 } });
+      const page = await browser.newPage({ viewport: { width, height: 1000 }, reducedMotion: 'reduce' });
       const errors = [];
-      page.on('pageerror', e => errors.push(e.message));
-      await page.goto('http://127.0.0.1:3001/#faq');
-      await expect(page.locator('html')).toHaveAttribute('data-smooth-scroll', 'true');
-      const input = page.getByRole('textbox', { name: 'Ask a question' });
-      const submit = page.getByRole('button', { name: 'Submit question', exact: true });
-      await expect(submit).toBeDisabled();
+      page.on('pageerror', error => errors.push(error.message));
+      await page.goto(`${base}/#faq`, { waitUntil: 'networkidle' });
+
+      const faq = page.locator('#faq');
+      const input = faq.getByRole('textbox', { name: 'Ask a question' });
+      const submit = faq.getByRole('button', { name: 'Submit question' });
+      const results = faq.locator('[data-generated-question]');
       await input.fill('   ');
+      await expect(submit).toBeDisabled();
       await input.press('Enter');
-      await expect(page.locator('[data-generated-question]')).toHaveCount(0);
-      await input.fill('Where should our team start with AI?');
-      await input.press('Enter');
-      const added = page.locator('[data-generated-question]');
-      await expect(added).toHaveCount(1);
-      await expect(added.locator('details')).toHaveAttribute('open', '');
-      await expect(added.locator('[aria-busy]')).toHaveAttribute('aria-busy', 'true');
-      await expect(input).toHaveValue('');
-      // Prevent duplicate submissions while allowing the next question to be drafted.
-      await input.fill('Can we try a small pilot first?');
-      await input.press('Enter');
-      await expect(added).toHaveCount(1);
-      const logo = added.locator('[data-animated-logo]');
-      await expect(logo).toHaveCSS('width', '20px');
-      const cycleSeconds = await logo.locator('animate').first().getAttribute('dur');
-      const threeLoopsMs = parseFloat(cycleSeconds) * 3 * 1000;
-      await page.waitForTimeout(threeLoopsMs - 500);
-      await expect(added.locator('[data-thinking]')).toHaveCSS('opacity', '1');
-      await expect(added.locator('[data-answer-word]').first()).toHaveCSS('opacity', '0');
-      const frames = await added.evaluate(async el => {
-        const frames = [];
-        const start = performance.now();
-        while (performance.now() - start < 3400) {
-          await new Promise(requestAnimationFrame);
-          frames.push({ height: el.getBoundingClientRect().height,
-            visible: [...el.querySelectorAll('[data-answer-word]')].filter(word => Number(getComputedStyle(word).opacity) > .8).length });
-        }
-        return frames;
-      });
-      assert(frames.some(f => f.visible > 0 && f.visible < 50), 'Answer should reveal progressively');
-      await expect(added.locator('[aria-busy]')).toHaveAttribute('aria-busy', 'false');
-      await expect(added.locator('[data-generated-slot]')).toHaveAttribute('aria-hidden', 'false');
-      await added.screenshot({ path: `docs/visual/faq-prototype/${name}-${width}.png` });
-      await submit.click();
-      await expect(added).toHaveCount(2);
-      await expect(added.nth(0).locator('details')).not.toHaveAttribute('open', '');
-      await expect(added.nth(1).locator('details')).toHaveAttribute('open', '');
-      await expect(added.nth(1).locator('[aria-busy]')).toHaveAttribute('aria-busy', 'false', { timeout: 20000 });
-      await added.nth(1).locator('summary').click();
-      await expect(added.nth(1).locator('details')).not.toHaveAttribute('open', '');
-      await added.nth(1).locator('summary').press('Enter');
-      await expect(added.nth(1).locator('details')).toHaveAttribute('open', '');
-      await page.emulateMedia({ reducedMotion: 'reduce' });
-      await input.fill('A'.repeat(200));
-      await input.press('Enter');
-      await expect(added).toHaveCount(3);
-      await expect(added.nth(2).locator('[aria-busy]')).toHaveAttribute('aria-busy', 'false');
+      await expect(results).toHaveCount(0);
+
+      for (const [query, text, link, destination] of [
+        ['How is our data protected?', 'product-specific documentation', 'Trust Center', '/trust'],
+        ['What can the front desk agent do?', 'handle calls, bookings, and office work', 'Listen to the ServiceAgent demos', '#applications'],
+        ['Can we integrate PyAI into our product?', 'PyAI infrastructure', 'PyAI infrastructure', 'https://pyai.com/'],
+        ['What is the weather tomorrow?', 'We don’t have a published answer', 'Ask the AtomsAI team', '/company/contact'],
+      ]) {
+        await input.fill(query);
+        await input.press('Enter');
+        await expect(input).toHaveValue('');
+        await expect(faq.locator('details[open]')).toHaveCount(1);
+        const answer = results.last().locator('[data-faq-answer]');
+        await expect(answer).toBeVisible();
+        await expect(answer).toContainText(text);
+        await expect(answer.getByRole('link', { name: link, exact: true })).toHaveAttribute('href', destination);
+      }
+      await expect(results).toHaveCount(4);
+      await results.first().locator('summary').press('Enter');
+      await expect(results.first().locator('[data-faq-answer]')).toBeVisible();
+      await expect(results.last().locator('[data-faq-answer]')).toBeHidden();
       assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'No horizontal overflow');
       assert.deepEqual(errors, []);
-      results.push({ browser: name, width, frames, blankInput: true, repeatedSubmissions: true, accordion: true, reducedMotion: true, errors });
       await page.close();
-      console.log(`${name} ${width}: passed`);
+      console.log(`${name} ${width}: FAQ answers, fallback, and accordion passed`);
     }
   } finally { await browser.close(); }
 }
-await fs.writeFile('docs/visual/faq-prototype/results.json', JSON.stringify(results, null, 2) + '\n');

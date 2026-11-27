@@ -1,0 +1,5 @@
+# Reproducible renderer views; keep recipes, production SVGs, reports and sheets.
+*/review/*.png
+!*/review/contact-sheet.png
+*/review/*.svg
+*/review/review.html

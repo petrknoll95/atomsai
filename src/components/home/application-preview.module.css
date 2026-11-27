@@ -1,0 +1,14 @@
+.canvas {
+  --preview-height: 720px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: grid;
+  justify-items: center;
+  width: 49em;
+  font-size: 14px;
+  transform: translate(-50%, -50%) scale(min(calc(100cqw / 760px), calc(100cqh / var(--preview-height))));
+}
+
+.canvas[data-preview-product='Helpwise'] { --preview-height: 470px; }
+.canvas[data-preview-product='ServiceAgent'] { --preview-height: 520px; }

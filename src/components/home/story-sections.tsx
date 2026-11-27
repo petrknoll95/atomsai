@@ -1,0 +1,85 @@
+import { ButtonLink, Eyebrow } from '@/components/ui';
+import { assetPath } from '@/lib/base-path';
+import { formatDate, posts } from '@/components/blog/blog-data';
+import { blogArtSource } from '@/components/blog/blog-art';
+import { StatHighlights } from './stat-highlights';
+import { ProductLogoMarquee } from './product-logo-marquee';
+import { ClipCard } from './clip-card';
+import styles from './story-sections.module.css';
+
+const productLogos = [
+  ['JustCall', 'justcall', 'https://justcall.io/'],
+  ['ServiceAgent', 'serviceagent', 'https://serviceagent.ai/'],
+  ['PyAI', 'pyai', 'https://pyai.com/'],
+  ['Helpwise', 'helpwise', 'https://helpwise.io/'],
+];
+
+export function ProductFamily({ className = '', marquee = false }: { className?: string; marquee?: boolean }) {
+  const logos = (marquee ? [...productLogos, ...productLogos] : productLogos).map(([name, mark, href], index) => {
+    const duplicate = index >= productLogos.length;
+    return <a key={index} href={href} aria-hidden={duplicate || undefined} tabIndex={duplicate ? -1 : undefined}>{mark === 'pyai'
+      ? <svg className={styles.productIcon} viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" strokeWidth="3.5"/><circle cx="32" cy="32" r="13" fill="currentColor"/></svg>
+      : <span className={styles.productIcon} aria-hidden="true" style={{ maskImage: `url("${assetPath(`/assets/products/${mark}-mark.svg`)}")` }}/>}<span>{name}</span></a>;
+  });
+  return <div className={`${styles.productFamily} ${className}`}>
+    <p className={styles.label}>One company behind every product here, from the apps to the models that power them.</p>
+    {marquee ? <ProductLogoMarquee>{logos}</ProductLogoMarquee> : <div>{logos}</div>}
+  </div>;
+}
+
+export function CompanyProof({ showProducts = true }: { showProducts?: boolean }) {
+  return <section id="company-story" className={`page-container ${styles.companyProof}`} aria-label="One company behind the products">
+    {showProducts && <ProductFamily />}
+    <div className={styles.proofRow}>
+      <header className={styles.proofIntro}>
+        <h2 className="display">See how teams put AI to work in everyday conversations.</h2>
+        <ButtonLink href="#customer-stories">See customer stories</ButtonLink>
+      </header>
+      <StatHighlights>
+        <div><dt>Conversations powered a year</dt><dd className="display">1B+</dd></div>
+        <div><dt>Customers worldwide</dt><dd className="display">7,000+</dd></div>
+        <div><dt>Countries served</dt><dd className="display">20+</dd></div>
+        <div><dt>Raised from Peak XV, Eight Roads, Base10</dt><dd className="display">~$56M</dd></div>
+      </StatHighlights>
+    </div>
+  </section>;
+}
+
+// The three newest blog posts; each whole column links to its article.
+const latestPosts = [...posts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3)
+  .map(post => ({ ...post, art: blogArtSource(post.artwork) }));
+
+const thumbnailMasters = new Set(['quotes-go-quiet', 'no-shows', 'speed-to-lead']);
+
+function noteSources(src: string) {
+  const match = src.match(/^(.+\/offsets\/articles)\/([^/]+)\.webp$/);
+  if (!match || !thumbnailMasters.has(match[2])) return undefined;
+  const [, directory, name] = match;
+  return [...[480, 800, 1200].map(width =>
+    `${assetPath(directory)}/thumbnails/${name}-${width}.webp ${width}w`
+  ), `${assetPath(src)} 1600w`].join(', ');
+}
+
+export function FieldNotes() {
+  return <section className={`page-container ${styles.section}`} aria-labelledby="field-notes-title">
+    <header className={styles.header}><h2 id="field-notes-title" className={`display ${styles.heading}`}>Notes from the field</h2><ButtonLink href="/blog" variant="outline">View all notes</ButtonLink></header>
+    <ul className={styles.notesGrid}>{latestPosts.map(post => <li key={post.slug}>
+      <ClipCard className={styles.noteCard} href={`/blog/${post.slug}`}>
+        <span className={styles.noteArt} data-clip-inset>
+          <img data-clip-zoom src={assetPath(post.art.src)} srcSet={noteSources(post.art.src)} loading="lazy" decoding="async" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1600px) 31vw, 470px" alt="" />
+        </span>
+        <h3 className="display">{post.title}</h3>
+        <p className={styles.noteMeta}><time dateTime={post.date}>{formatDate(post.date)}</time><span aria-hidden="true">·</span>{post.readingTime}</p>
+      </ClipCard>
+    </li>)}</ul>
+  </section>;
+}
+
+export function PointOfView() {
+  return <section className={`page-container ${styles.section} ${styles.statement}`} aria-labelledby="point-of-view-title">
+    <h2 id="point-of-view-title" className={`display ${styles.statementHeadline}`}>Frontier AI is easy to get. Making it hold up is the last mile. We build for that mile, on a billion conversations a year.</h2>
+    <Eyebrow href="/approach" className={styles.statementEyebrow}>Our point of view</Eyebrow>
+  </section>;
+}
+
+export { TrustSummary } from './trust-summary';

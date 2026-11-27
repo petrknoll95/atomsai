@@ -5,9 +5,6 @@
 @plugin 'tw-easing-gradients';
 /* Browser baseline calibration: +4% ascent, -4% descent; the font's 120% total
    em box is preserved. See docs/visual/README.md for comparison evidence. */
-@font-face { font-family:'PP Neue Montreal'; src:url('../../public/fonts/PPNeueMontreal-Variable.ttf') format('truetype'); font-style:normal; font-weight:200 800; font-display:swap; ascent-override:99.8%; descent-override:20.2%; }
-@font-face { font-family:'Founders Grotesk'; src:url('../../public/fonts/FoundersGrotesk-Regular.woff2') format('woff2'); font-style:normal; font-weight:400; font-display:swap; }
-@font-face { font-family:'Founders Grotesk'; src:url('../../public/fonts/FoundersGrotesk-Medium.woff2') format('woff2'); font-style:normal; font-weight:500; font-display:swap; }
 @layer base {
   html,body { overscroll-behavior:none; }
   html { scroll-behavior:smooth; scroll-padding-top:112px; }
@@ -23,6 +20,9 @@
   .page-container { width:100%; max-width:var(--page-max-width); margin-inline:auto; padding-inline:var(--content-gutter); }
   .display { font-family:var(--font-display); font-weight:400; font-variation-settings:normal; letter-spacing:-.015em; text-box:trim-both cap alphabetic; }
   .eyebrow { display:inline-flex; align-items:center; justify-content:center; align-self:flex-start; flex:none; gap:10px; width:fit-content; max-width:100%; min-height:40px; padding:6px 6px 6px 16px; border-radius:var(--radius-control); --button-fill:var(--color-secondary); color:var(--color-secondary-foreground); font-size:var(--text-label); font-weight:var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; line-height:20px; transition:background-color .3s ease, color .3s ease, var(--focus-transition);  --button-clip-radius:var(--radius-control);}
+  /* Translucent eyebrow for busy or dark backgrounds; hover/focus fill is shared with .eyebrow. */
+  .eyebrow-translucent { --button-fill:color-mix(in srgb,currentColor 10%,transparent); color:var(--color-foreground); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px); }
+  .eyebrow.eyebrow-translucent:is(:hover,:focus-visible) { --button-fill:var(--color-primary); color:var(--color-primary-foreground); }
   .eyebrow-arrow { display:grid; place-items:center; flex:none; width:28px; height:28px; overflow:hidden; border-radius:50%; background:color-mix(in srgb,currentColor 10%,transparent); transition:background-color .3s ease; }
   .eyebrow-arrow svg { transition:transform .4s cubic-bezier(.22,1,.36,1); }
   .eyebrow:is(:hover,:focus-visible) { --button-fill:var(--color-primary); color:var(--color-primary-foreground); }
@@ -40,6 +40,9 @@
   .button-primary:hover { --button-fill:color-mix(in srgb,var(--color-primary),var(--color-primary-foreground) 8%); }
   .button-secondary { --button-fill:var(--color-secondary); color:var(--color-secondary-foreground); }
   .button-secondary:hover { --button-fill:color-mix(in srgb,var(--color-secondary),var(--color-secondary-foreground) 8%); }
+  .button-ghost { --button-fill:transparent; color:var(--color-foreground); }
+  .button-ghost:focus-visible { --button-fill:var(--color-secondary); }
+  @media (hover:hover) { .button-ghost:hover { --button-fill:var(--color-secondary); } }
   .button-outline { --button-stroke:var(--color-control-border); --button-stroke-width:1px; border-width:1px; border-color:transparent; color:var(--color-foreground); transition:background-color .24s ease, color .24s ease, border-color .24s ease, var(--focus-transition); }
   .button-outline:is(:hover,:focus-visible) { --button-fill:var(--color-primary); color:var(--color-primary-foreground); --button-stroke:var(--color-primary); }
   @media (prefers-reduced-motion:reduce) { .button-outline { transition:none; } }
@@ -50,3 +53,8 @@
 html[data-smooth-scroll] { scroll-behavior:auto; }
 html[data-native-scroll], html[data-native-scroll] body { scroll-behavior:auto!important; }
 @media(max-width:767px) { html { scroll-padding-top:96px; } }
+
+/* Preserve the homepage palette while keeping secondary copy legible on paper. */
+main[data-homepage][data-theme='light'], main[data-homepage] [data-theme='light'] {
+  --color-muted-foreground: color-mix(in display-p3, var(--palette-deep-green) 74%, transparent);
+}

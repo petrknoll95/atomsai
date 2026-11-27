@@ -5,6 +5,7 @@ import justCall from './justcall-scene.module.css';
 import helpwise from './helpwise-scene.module.css';
 import serviceAgent from './serviceagent-scene.module.css';
 import callPage from './callpage-scene.module.css';
+import pyai from './pyai-scene.module.css';
 
 type Entrance = {
   selector: string;
@@ -33,7 +34,7 @@ const sequences: Entrance[][] = [
     { selector: part(helpwise.message), x: 26, y: 8, delay: 340, stagger: 55, duration: 700 },
   ],
   [
-    { selector: part(serviceAgent.card), y: 90, scale: .965, stagger: 130, duration: 1100 },
+    { selector: part(serviceAgent.card), y: 24, scale: .965, stagger: 130, duration: 1100 },
     { selector: part(serviceAgent.content), y: 12, delay: 220, stagger: 130, duration: 750 },
   ],
   [
@@ -43,10 +44,16 @@ const sequences: Entrance[][] = [
     { selector: part(callPage.heading), y: 14, delay: 360, duration: 750 },
     { selector: `${part(callPage.form)} > div`, y: 20, scale: .98, delay: 480, stagger: 90, duration: 800 },
   ],
+  [
+    { selector: part(pyai.console), y: 24, scale: .985, duration: 1100 },
+    { selector: part(pyai.input), x: -24, y: 40, scale: .96, delay: 90 },
+    { selector: part(pyai.result), x: 24, y: 48, scale: .96, delay: 210, duration: 1100 },
+    { selector: part(pyai.outputLine), y: 8, delay: 420, stagger: 100, duration: 700 },
+  ],
 ];
 
 /** Motion belongs to this workflow host; shared header figures remain unchanged. */
-export function useApplicationReveal(root: RefObject<HTMLElement | null>, active: number) {
+export function useApplicationReveal(root: RefObject<HTMLElement | null>, active: number, sequence = active) {
   useLayoutEffect(() => {
     const scene = root.current?.querySelector<HTMLElement>(`[data-application-scene="${active}"]`);
     if (!scene) return;
@@ -61,7 +68,7 @@ export function useApplicationReveal(root: RefObject<HTMLElement | null>, active
     const reveal = () => {
       reset();
       if (reduced.matches) return;
-      sequences[active].forEach(({ selector, x = 0, y = 0, scale = 1, delay = 0, stagger = 0, duration = 1000 }, group) => {
+      sequences[sequence].forEach(({ selector, x = 0, y = 0, scale = 1, delay = 0, stagger = 0, duration = 1000 }, group) => {
         scene.querySelectorAll<HTMLElement>(selector).forEach((element, index) => {
           // Individual transform properties preserve each figure's authored
           // centering transforms and its responsive coordinate system.
@@ -88,5 +95,5 @@ export function useApplicationReveal(root: RefObject<HTMLElement | null>, active
     reveal();
     reduced.addEventListener('change', reveal);
     return () => { reset(); reduced.removeEventListener('change', reveal); };
-  }, [root, active]);
+  }, [root, active, sequence]);
 }

@@ -1,31 +1,85 @@
 /* Only the hero stage is dark; shared wrappers also contain the light follow-up.
    A dark backing here bleeds through its fractional edge during smooth scroll. */
 .surface, .hero[data-variant='menu'] { background: var(--palette-paper); }
-.hero .stage { background: var(--palette-forest-shade); }
-.hero .stage:has([data-hero-pattern-state='open']) { background: var(--palette-paper); }
+.hero .stage { background: var(--palette-paper); }
 .hero[data-variant='menu'] { color: var(--color-foreground); }
 .hero { position: relative; }
-/* The copy stays in the first viewport; the pattern and fades continue below. */
-.stage { position: relative; height: 135svh; }
+/* The logo row closes the first viewport, with the stats continuing below it. */
+.stage {
+  --product-fade-height: clamp(80px, 18svh, 200px);
+  --copy-bottom-inset: calc(var(--product-fade-height) * .7);
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100svh;
+}
 .stage .field { height: 100%; }
+.productFooter {
+  --footer-inset: clamp(24px, 4svh, 40px);
+  position: relative;
+  padding-bottom: var(--footer-inset);
+  background: var(--palette-paper);
+  isolation: isolate;
+}
+.productFade {
+  position: absolute;
+  inset: auto 0 100%;
+  height: var(--product-fade-height);
+  z-index: -1;
+  pointer-events: none;
+}
+.logoTrack { display: contents; }
+.foldProducts .logoTrack a[aria-hidden] { display: none; }
+.productFooter .foldProducts { margin-bottom: 0; }
+@media (max-width: 1199px) {
+  .productFooter .foldProducts > p { margin-inline: auto; text-align: center; }
+  .productFooter .foldProducts > div { justify-content: center; column-gap: clamp(24px, 5vw, 56px); }
+}
+@media (max-width: 767px) {
+  .productFooter .foldProducts { grid-template-columns: minmax(0, 1fr); }
+  .productFooter .foldProducts > .logoViewport { display: block; overflow-x: auto; scrollbar-width: none; }
+  .productFooter .foldProducts > .logoViewport[data-enhanced] { overflow: hidden; }
+  .logoTrack { display: flex; align-items: center; touch-action: pan-y pinch-zoom; }
+  .logoTrack a { flex: 0 0 auto; padding-inline-end: 32px; }
+  .logoViewport[data-enhanced] .logoTrack a[aria-hidden] { display: flex; }
+  .hero .stage .maskedCopy { padding-block-start: calc(var(--header-height) + 36px); }
+  .productFooter .foldProducts a { font-size: clamp(20px, 5.6vw, 24px); }
+  .productFooter .foldProducts a > :first-child { width: clamp(28px, 7.5vw, 32px); height: clamp(28px, 7.5vw, 32px); }
+}
+@media (max-height: 740px) {
+  /* Keep the compact optical alignment as the fade extends behind the copy. */
+  .stage { --copy-bottom-inset: 44.8px; }
+}
+@media (max-width: 767px) and (max-height: 740px) {
+  .stage { --product-fade-height: 80px; }
+  .hero .copyEntrance { gap: 16px; }
+}
+/* Short landscape screens need room for both the copy and the complete logo row. */
+@media (max-height: 600px) { .stage { min-height: 680px; } }
 .backdrop {
+  --menu-columns: 8;
+  --menu-pattern-count: 10;
   --menu-track: calc((min(100vw, var(--page-max-width)) - 2 * var(--content-gutter)) / var(--menu-columns));
-  background: var(--palette-forest-shade);
+  /* Solid forest to 42%, then an eased fade to paper (tw-easing-gradients
+     ease-in-out on the element). The plugin's stops span the whole image, so
+     the image covers only the fading part. */
+  background-color: var(--palette-forest-shade);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 58%;
 }
 /* Decorative rendering may fail independently of the readable hero. */
 .backdrop [role='status'] { display: none; }
 
-.backdrop[data-hero-pattern-state='open'] { -webkit-mask-image: none; mask-image: none; }
-@media (prefers-reduced-motion: reduce) { .backdrop { -webkit-mask-image: none; mask-image: none; } }
 
-.source { opacity: 0; }
+.backdrop .patternEntrance { position: absolute; inset: 0; background: var(--palette-forest-shade); }
 .slit { position: absolute; top: 0; width: var(--menu-track); height: 100%; overflow: hidden; }
-.slitStrip { display: flex; width: 200%; height: 100%; }
-.slitCell { flex: 0 0 50%; height: 100%; overflow: hidden; }
-.slitContent { display: block; width: 100%; height: 100%; transform: scale(1.2); transform-origin: center; }
 .slitFade {
   position: absolute;
   inset-inline: 0;
+  background-image: var(--slit-fade);
+  --hero-fade-height: var(--wide-height);
+  --hero-fade-growth: var(--wide-growth);
   bottom: -24px;
   height: calc(var(--hero-fade-height, 42%) + 24px + var(--hero-fade-scroll, 0px) * var(--hero-fade-growth, .12));
   z-index: 1;
@@ -33,27 +87,23 @@
   /* Keep each fade's bottom aligned to the section during pattern parallax. */
   transform: translateY(calc(-1 * var(--hero-field-offset, 0px)));
 }
-.backdrop[data-hero-pattern-state='open'] .source { opacity: 1; }
-.backdrop[data-hero-pattern-state='open'] .slitStrip { visibility: hidden; }
-
-/* Both surfaces share viewport-aligned slit coordinates and reveal timing. */
-.backdrop, .maskedCopy {
-  --menu-track: calc((min(100vw, var(--page-max-width)) - 2 * var(--content-gutter)) / var(--menu-columns));
-  -webkit-mask-image: var(--hero-slit-masks);
-  mask-image: var(--hero-slit-masks);
-  -webkit-mask-size: var(--menu-track) 100%;
-  mask-size: var(--menu-track) 100%;
-  -webkit-mask-position: var(--hero-slit-positions);
-  mask-position: var(--hero-slit-positions);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
+/* Copy paints with the document. Only the decorative layer waits for a frame. */
 .hero .maskedCopy > div > * { opacity: 1; transform: none; transition: none; }
-.maskedCopy[data-hero-copy-state='open'], .maskedCopy:focus-within { -webkit-mask-image: none; mask-image: none; }
-@media (prefers-reduced-motion: reduce) { .maskedCopy { -webkit-mask-image: none; mask-image: none; } }
-.backdrop[data-hero-pattern-state='open'] { -webkit-mask-image: none; mask-image: none; }
-
-@media (scripting: enabled) { .maskedCopy:not([data-hero-copy-state]) { visibility: hidden; } }
+.slitPoster img { width:100%; height:100%; display:block; }
+.slitPoster { opacity:.55; }
+.patternEntrance[data-ready='true'] .slitPoster { opacity:0; }
+.patternEntrance[data-ready='false'] .glassField { opacity:0; }
+@media(max-width:767px){
+  .backdrop { --menu-columns:4; --menu-pattern-count:6; }
+  .slit[data-hero-slit='6'],
+  .slit[data-hero-slit='7'],.slit[data-hero-slit='8'],.slit[data-hero-slit='9'] { display:none; }
+  .slitFade { --hero-fade-height:var(--narrow-height); --hero-fade-growth:var(--narrow-growth); }
+}
+@media screen and (prefers-reduced-motion: no-preference) {
+  .hero .copyEntrance { animation: heroCopyIn 360ms cubic-bezier(.22,1,.36,1); }
+  .glassField, .slitPoster { transition: opacity 180ms ease-out; }
+}
+@keyframes heroCopyIn { from { transform: translateY(6px); } to { transform: none; } }
 
 /* Normal document flow makes the next section rise directly with scrolling. */
 .sectionReveal {
@@ -67,3 +117,38 @@
   justify-content: flex-start;
   padding-top: 0;
 }
+
+/* Announcement uses the shared eyebrow styles; only centre it and undo the hero CTA's link sizing. */
+.hero .announcement{align-self:center;height:auto;margin-top:0;}
+
+/* Center the copy between the navigation and the point where the fade visibly lightens. */
+.hero .maskedCopy {
+  position: relative;
+  inset: auto;
+  height: auto;
+  padding-block: calc(var(--header-height) + 12px) var(--copy-bottom-inset);
+  z-index: 1;
+  pointer-events: none;
+}
+.hero .copyEntrance { pointer-events: auto; }
+.hero .lead { color: var(--color-foreground); }
+/* Keep the logo row clear of the floating contact button on narrow phones. */
+@media (max-width: 359px) {
+  .productFooter { --footer-inset: 64px; }
+  .hero .copyEntrance h1 { font-size: 36px; }
+  .hero .copyEntrance > p { font-size: 14px; }
+}
+
+/* Desktop: give the headline room for one sentence per line; the lead keeps its own measure. */
+@media (min-width: 1200px) {
+  .hero .maskedCopy > div { width: min(100%, 1400px); }
+  /* About 10% below the shared title size (6.2vw, 104px max). */
+  .hero .maskedCopy h1 { font-size: clamp(52px, 5.6vw, 92px); }
+}
+
+/* One flute per grid column, including one overflow column on each side. */
+.glassField, .slitPoster { position:absolute; left:50%; top:0; width:calc(var(--menu-track) * var(--menu-pattern-count) * 800 / 840); height:100%; transform:translateX(-50%); }
+/* Tone the live reflections against the forest backing before the paper fades. */
+.patternEntrance[data-ready='true'] .glassField:has(> [data-fluted-hero='webgpu']) { opacity: .55; }
+.backdrop .patternEntrance::after { content:none; }
+.backdrop .patternEntrance:has([data-fluted-hero='fallback'])::after { content:''; }

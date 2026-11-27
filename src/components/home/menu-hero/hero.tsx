@@ -1,32 +1,24 @@
 'use client';
 
 import { useEffect, useRef, type ReactNode } from 'react';
-import { ButtonLink } from '@/components/ui';
+import { Announcement, ButtonLink } from '@/components/ui';
 import styles from '../prototype-hero/hero.module.css';
 import stars from '../starfield-hero/hero.module.css';
 import { MenuHeroBackdrop } from './backdrop';
 import menuHero from './hero.module.css';
 import { mountHeroScroll } from './transition';
 
-export function MenuPatternHero({ children }: { children: ReactNode }) {
+export function MenuPatternHero({ children, productFamily }: { children: ReactNode; productFamily: ReactNode }) {
   const trackRef = useRef<HTMLElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
   const fieldRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
     const track = trackRef.current!, stage = stageRef.current!;
-    let disposed = false;
     const copy = contentRef.current!;
-    // Reveal the authored layout only after its fonts have settled. The
-    // background and copy then enter through their aligned slit masks.
-    void document.fonts.ready.then(() => {
-      if (!disposed) copy.dataset.copyReady = 'true';
-    });
     const scroll = mountHeroScroll({ stage, field: fieldRef.current!, content: copy });
     track.dataset.enhanced = 'true';
     return () => {
-      disposed = true;
       scroll.destroy();
       delete track.dataset.enhanced;
     };
@@ -36,11 +28,16 @@ export function MenuPatternHero({ children }: { children: ReactNode }) {
     <div ref={stageRef} className={menuHero.stage} data-hero-stage data-theme='dark' data-header-light-at='0.6'>
       <div ref={fieldRef} className={`${styles.field} ${menuHero.field}`} aria-hidden='true' data-menu-hero-field><MenuHeroBackdrop /></div>
       <div ref={contentRef} className={`${styles.content} ${stars.content} ${menuHero.maskedCopy}`} data-hero-copy>
-        <div className={stars.group}>
-          <h1 id='hero-heading' tabIndex={-1} className={`display ${stars.title}`}>Powerful AI.<br/>Built for real use.</h1>
-          <p className={stars.lead}>Applications for everyday work. Models and infrastructure to build on. Custom engineering for the problems that need more.</p>
-          <ButtonLink href='#applications' variant='primary' size='large'>Explore applications</ButtonLink>
+        <div className={`${stars.group} ${menuHero.copyEntrance}`} data-hero-copy-entrance>
+          <Announcement href="#company-story" className={menuHero.announcement}>SaaS Labs is now AtomsAI</Announcement>
+          <h1 id='hero-heading' tabIndex={-1} className={`display ${stars.title}`} data-text-reveal='off'>AI that works today.<br/>Built to get better tomorrow.</h1>
+          <p className={`${stars.lead} ${menuHero.lead}`}>At AtomsAI, models power products. Products inform better technology. And solving new business problems gives both more to build on. Together, they make possible what no single product could.</p>
+          <ButtonLink href='/company/contact' variant='primary' size='large'>Talk to AtomsAI</ButtonLink>
         </div>
+      </div>
+      <div className={`theme-light ${menuHero.productFooter}`} data-theme="light" data-hero-products>
+        <div aria-hidden="true" className={`${menuHero.productFade} bg-ease-in-out-to-b from-transparent to-(--palette-paper)`} />
+        <div className="page-container">{productFamily}</div>
       </div>
     </div>
     <div className={`theme-light ${menuHero.sectionReveal}`} data-hero-reveal data-theme="light">

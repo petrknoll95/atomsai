@@ -1,0 +1,184 @@
+[
+  {
+    "width": 768,
+    "route": "/blog",
+    "scrollWidth": 768,
+    "images": [
+      {
+        "src": "/assets/blog/illustrations/quotes-go-quiet.webp",
+        "width": 448,
+        "height": 252,
+        "strokePx": 1.0080000000000002,
+        "loaded": true
+      },
+      {
+        "src": "/assets/blog/illustrations/no-shows.webp",
+        "width": 336,
+        "height": 336,
+        "strokePx": 1.344,
+        "loaded": true
+      },
+      {
+        "src": "/assets/blog/illustrations/speed-to-lead.webp",
+        "width": 336,
+        "height": 336,
+        "strokePx": 1.344,
+        "loaded": true
+      },
+      {
+        "src": "/assets/blog/illustrations/who-answers-at-7pm.webp",
+        "width": 336,
+        "height": 336,
+        "strokePx": 1.344,
+        "loaded": true
+      },
+      {
+        "src": "/assets/blog/illustrations/the-demo-was-never-the-hard-part.webp",
+        "width": 336,
+        "height": 336,
+        "strokePx": 1.344,
+        "loaded": true
+      },
+      {
+        "src": "/assets/blog/illustrations/write-the-evals-before-the-prompt.webp",
+        "width": 336,
+        "height": 336,
+        "strokePx": 1.344,
+        "loaded": true
+      },
+      {
+        "src": "/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.webp",
+        "width": 336,
+        "height": 336,
+        "strokePx": 1.344,
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "route": "/blog/who-answers-at-7pm",
+    "scrollWidth": 768,
+    "images": [
+      {
+        "src": "/assets/blog/illustrations/who-answers-at-7pm.webp",
+        "width": 675,
+        "height": 379.6875,
+        "strokePx": 1.51875,
+        "loaded": true
+      },
+      {
+        "src": "/assets/blog/illustrations/quotes-go-quiet.webp",
+        "width": 704,
+        "height": 396,
+        "strokePx": 1.584,
+        "loaded": true
+      },
+      {
+        "src": "/assets/blog/illustrations/no-shows.webp",
+        "width": 704,
+        "height": 396,
+        "strokePx": 1.584,
+        "loaded": true
+      },
+      {
+        "src": "/assets/blog/illustrations/speed-to-lead.webp",
+        "width": 704,
+        "height": 396,
+        "strokePx": 1.584,
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "width": 1101,
+    "route": "/blog",
+    "scrollWidth": 1101,
+    "images": [
+      {
+        "src": "/assets/blog/illustrations/quotes-go-quiet.webp",
+        "width": 670,
+        "height": 376.875,
+        "strokePx": 1.5075,
+        "loaded": true
+      },
+      {
+        "src": "/assets/blog/illustrations/no-shows.webp",
+        "width": 502.5,
+        "height": 502.5,
+        "strokePx": 2.0100000000000002,
+        "loaded": true
+      },
+      {
+        "src": "/assets/blog/illustrations/speed-to-lead.webp",
+        "width": 502.5,
+        "height": 502.5,
+        "strokePx": 2.0100000000000002,
+        "loaded": true
+      },
+      {
+        "src": "/assets/blog/illustrations/who-answers-at-7pm.webp",
+        "width": 502.5,
+        "height": 502.5,
+        "strokePx": 2.0100000000000002,
+        "loaded": true
+      },
+      {
+        "src": "/assets/blog/illustrations/the-demo-was-never-the-hard-part.webp",
+        "width": 502.5,
+        "height": 502.5,
+        "strokePx": 2.0100000000000002,
+        "loaded": true
+      },
+      {
+        "src": "/assets/blog/illustrations/write-the-evals-before-the-prompt.webp",
+        "width": 502.5,
+        "height": 502.5,
+        "strokePx": 2.0100000000000002,
+        "loaded": true
+      },
+      {
+        "src": "/assets/blog/illustrations/how-much-autonomy-should-an-agent-have.webp",
+        "width": 502.5,
+        "height": 502.5,
+        "strokePx": 2.0100000000000002,
+        "loaded": true
+      }
+    ]
+  },
+  {
+    "width": 1101,
+    "route": "/blog/who-answers-at-7pm",
+    "scrollWidth": 1101,
+    "images": [
+      {
+        "src": "/assets/blog/illustrations/who-answers-at-7pm.webp",
+        "width": 675,
+        "height": 379.6875,
+        "strokePx": 1.51875,
+        "loaded": true
+      },
+      {
+        "src": "/assets/blog/illustrations/quotes-go-quiet.webp",
+        "width": 335,
+        "height": 251.25,
+        "strokePx": 1.0050000000000001,
+        "loaded": true
+      },
+      {
+        "src": "/assets/blog/illustrations/no-shows.webp",
+        "width": 335,
+        "height": 251.25,
+        "strokePx": 1.0050000000000001,
+        "loaded": true
+      },
+      {
+        "src": "/assets/blog/illustrations/speed-to-lead.webp",
+        "width": 335,
+        "height": 251.25,
+        "strokePx": 1.0050000000000001,
+        "loaded": true
+      }
+    ]
+  }
+]

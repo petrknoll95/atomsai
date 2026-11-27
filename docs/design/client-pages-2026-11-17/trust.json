@@ -1,0 +1,140 @@
+{
+  "html": "\n<!-- HERO -->\n<section aria-labelledby=\"tsH\" class=\"ph ts-hero\">\n<h1 id=\"tsH\">Trust and Security</h1>\n<div class=\"ph-l\">\n<p>Independent audits, documented controls, and the reports your security and legal teams will ask for. Start with the JustCall Trust Center.</p>\n<div class=\"ph-b\"><a class=\"btn\" href=\"https://trust.justcall.io/\" rel=\"noopener\" target=\"_blank\">Open JustCall Trust Center </a><a class=\"btn soft\" href=\"#documents\">Request a document</a></div>\n</div>\n</section>\n<!-- CERTIFICATIONS: cream band, one card per framework, one request link each -->\n<section aria-labelledby=\"certH\" class=\"ts-cert\" id=\"certifications\">\n<div class=\"ts-cert-in\">\n<header class=\"ts-cert-h\">\n<span class=\"ey on-cream\"><i></i>Certifications</span>\n<h2 id=\"certH\">Six frameworks, independently assessed</h2>\n<p>Each one has its own report, and its own request link. Certifications listed here apply to JustCall. ServiceAgent and PyAI are listed <a href=\"#byproduct\">by product</a> below.</p>\n</header>\n<ul aria-label=\"JustCall certifications and frameworks\" class=\"ts-badges\">\n<li class=\"pop\"><span class=\"ts-bt\"><b>SOC 2</b><small>Type 2</small></span><p>Independent audit of security, availability, and confidentiality controls over a full observation period.</p><a class=\"ts-req\" href=\"https://trust.justcall.io/\" rel=\"noopener\" target=\"_blank\">Request SOC 2 report </a></li>\n<li class=\"pop\"><span class=\"ts-bt\"><b>ISO/IEC 27001</b><small>2022</small></span><p>Certified information security management system, covering how risk is assessed, treated, and reviewed.</p><a class=\"ts-req\" href=\"https://trust.justcall.io/\" rel=\"noopener\" target=\"_blank\">Request ISO certificate </a></li>\n<li class=\"pop\"><span class=\"ts-bt\"><b>PCI DSS</b><small>v4.0.0</small></span><p>Payment card data handled to the current PCI standard, including redaction during calls and transcripts.</p><a class=\"ts-req\" href=\"https://trust.justcall.io/\" rel=\"noopener\" target=\"_blank\">Request PCI attestation </a></li>\n<li class=\"pop\"><span class=\"ts-bt\"><b>HIPAA</b><small>Health data</small></span><p>Safeguards for protected health information, with a Business Associate Agreement available for covered entities.</p><a class=\"ts-req\" data-ph=\"placeholder address\" href=\"mailto:security@atomsai.com?subject=BAA%20request\">Request BAA </a></li>\n<li class=\"pop\"><span class=\"ts-bt\"><b>GDPR</b><small>EU privacy</small></span><p>Data-processing responsibilities, transfer safeguards, and data-subject rights, documented for EU customers.</p><a class=\"ts-req\" href=\"https://justcall.io/gdpr-compliance/\" rel=\"noopener\" target=\"_blank\">Read GDPR guidance </a></li>\n<li class=\"pop\"><span class=\"ts-bt\"><b>CSA STAR</b><small>Level 1</small></span><p>Cloud Security Alliance self-assessment, published against the Cloud Controls Matrix.</p><a class=\"ts-req\" href=\"https://trust.justcall.io/\" rel=\"noopener\" target=\"_blank\">View CSA STAR entry </a></li>\n</ul>\n</div>\n</section>\n<!-- CONTROLS: three groups, one line per control -->\n<section aria-labelledby=\"ctlH\" class=\"rail pd\" id=\"controls\">\n<header class=\"sec-h\">\n<span class=\"ey\"><i></i>Controls</span>\n<h2 id=\"ctlH\">How your data is protected</h2>\n<p>The controls behind the certifications, in the order security reviews ask for them.</p>\n</header>\n<div class=\"ts-ctl\">\n<div class=\"ts-grp pop\">\n<span class=\"ts-n\">01</span>\n<h3>Infrastructure &amp; application security</h3>\n<ul>\n<li>Independent penetration testing on a recurring schedule</li>\n<li>Vulnerability management with tracked remediation</li>\n<li>Secure development practices and code review</li>\n<li>Cloud hosting on AWS and Google Cloud, with security monitoring</li>\n</ul>\n<a class=\"lk\" href=\"#certifications\">The certifications </a>\n</div>\n<div class=\"ts-grp pop\">\n<span class=\"ts-n\">02</span>\n<h3>Identity &amp; access</h3>\n<ul>\n<li>Role-based permissions for every team member</li>\n<li>Multi-factor authentication</li>\n<li>Single sign-on options</li>\n<li>Restricted access to sensitive data, logged and reviewed</li>\n</ul>\n<a class=\"lk\" href=\"https://help.justcall.io/en/articles/1929254-data-control-tools-for-gdpr-compliance\" rel=\"noopener\" target=\"_blank\">Data control tools </a>\n</div>\n<div class=\"ts-grp pop\">\n<span class=\"ts-n\">03</span>\n<h3>Privacy &amp; data</h3>\n<ul>\n<li>TLS in transit, AES-256 at rest</li>\n<li>Regular backups and established data-handling procedures</li>\n<li>Recording retention you set, with automatic deletion</li>\n<li>Data Processing Agreements and documented AI training-data practices</li>\n</ul>\n<a class=\"lk\" href=\"https://help.justcall.io/en/articles/9841378-managing-privacy-settings-in-justcall-ai-transcription-and-redaction-options\" rel=\"noopener\" target=\"_blank\">Transcription and redaction settings </a>\n</div>\n</div>\n</section>\n<div aria-hidden=\"true\" class=\"gsep\"><i class=\"pl l\"></i><i class=\"pl r\"></i></div>\n<!-- DOCUMENTS: four sets, one request link each -->\n<section aria-labelledby=\"docH\" class=\"rail\" id=\"documents\">\n<header class=\"sec-h\">\n<span class=\"ey\"><i></i>Documentation</span>\n<h2 id=\"docH\">The documents behind the controls</h2>\n<p>Four sets, grouped the way security and legal teams ask for them. Each has its own request link.</p>\n</header>\n<div class=\"ts-docs\">\n<article class=\"ts-doc pop\"><span class=\"ts-n\">01</span><h3>Compliance reports</h3><p>SOC 2 Type 2, ISO 27001, PCI DSS, and CSA STAR documentation.</p><a class=\"ts-req\" href=\"https://trust.justcall.io/\" rel=\"noopener\" target=\"_blank\">Request compliance reports </a></article>\n<article class=\"ts-doc pop\"><span class=\"ts-n\">02</span><h3>Security assessments</h3><p>Penetration-test summaries, network documentation, and completed security questionnaires.</p><a class=\"ts-req\" href=\"https://trust.justcall.io/\" rel=\"noopener\" target=\"_blank\">Request pen-test summary </a></article>\n<article class=\"ts-doc pop\"><span class=\"ts-n\">03</span><h3>Privacy &amp; legal</h3><p>Privacy policies, Data Processing Agreements, and HIPAA Business Associate Agreements.</p><a class=\"ts-req\" data-ph=\"placeholder address\" href=\"mailto:security@atomsai.com?subject=DPA%20request\">Request DPA or BAA </a></article>\n<article class=\"ts-doc pop\"><span class=\"ts-n\">04</span><h3>Operational safeguards</h3><p>Access control, incident response, data retention, and infrastructure policies.</p><a class=\"ts-req\" href=\"https://trust.justcall.io/\" rel=\"noopener\" target=\"_blank\">Request policies </a></article>\n</div>\n</section>\n<!-- SECURITY IS PRODUCT-SPECIFIC: picker -->\n<section aria-labelledby=\"pkH\" class=\"ts-pick-w\" id=\"byproduct\">\n<div class=\"rail\">\n<header class=\"sec-h\">\n<span class=\"ey on-cream\"><i></i>By product</span>\n<h2 id=\"pkH\">What applies to your product</h2>\n<p>JustCall, ServiceAgent, and PyAI have different scopes. Choose your product for the protections and documents that apply to your deployment.</p>\n</header>\n<div class=\"ts-pick\" id=\"tsPick\">\n<div aria-label=\"Choose a product\" class=\"ts-tabs\" role=\"tablist\">\n<button aria-selected=\"true\" class=\"ts-tab on\" data-p=\"jc\" role=\"tab\" tabindex=\"0\"><span>JustCall</span></button>\n<button aria-selected=\"false\" class=\"ts-tab\" data-p=\"sa\" role=\"tab\" tabindex=\"-1\"><span>ServiceAgent</span></button>\n<button aria-selected=\"false\" class=\"ts-tab\" data-p=\"py\" role=\"tab\" tabindex=\"-1\"><b class=\"ts-py\">PyAI</b><span>PyAI</span></button>\n</div>\n<div class=\"ts-panels\">\n<div class=\"ts-panel on\" data-p=\"jc\" role=\"tabpanel\">\n<div class=\"ts-panel-l\"><span class=\"tg\">JustCall</span><h3>The CRM-friendly business phone system</h3><p>SOC 2 Type 2, ISO/IEC 27001:2022, PCI DSS v4.0.0, HIPAA, GDPR, and CSA STAR Level 1, with every attestation, certificate, and policy in one place.</p></div>\n<ul class=\"ts-links\">\n<li><a href=\"https://trust.justcall.io/\" rel=\"noopener\" target=\"_blank\"><span>JustCall Trust Center</span><small>Attestations, certificates, and policies</small></a></li>\n<li><a href=\"https://justcall.io/security-and-compliance/\" rel=\"noopener\" target=\"_blank\"><span>Security and compliance</span><small>Controls and vulnerability-reporting guidance</small></a></li>\n<li><a href=\"https://justcall.io/gdpr-compliance/\" rel=\"noopener\" target=\"_blank\"><span>GDPR guidance</span><small>Data-processing responsibilities and data rights</small></a></li>\n<li><a href=\"https://status.justcall.io/\" rel=\"noopener\" target=\"_blank\"><span>Service status</span><small>Availability and published incidents</small></a></li>\n</ul>\n</div>\n<div class=\"ts-panel\" data-p=\"sa\" role=\"tabpanel\">\n<div class=\"ts-panel-l\"><span class=\"tg\">ServiceAgent</span><h3>AI front and back office for home-service businesses</h3><p>How agent setup, business knowledge, and integrations handle your data. Certification scope to be confirmed.</p></div>\n<ul class=\"ts-links\">\n<li><a href=\"https://help.serviceagent.ai/\" rel=\"noopener\" target=\"_blank\"><span>ServiceAgent security information</span><small>Placeholder link until the security page is live</small></a></li>\n<li><a href=\"https://help.serviceagent.ai/\" rel=\"noopener\" target=\"_blank\"><span>ServiceAgent Help Center</span><small>Agent setup, CRM integrations, and webhooks</small></a></li>\n</ul>\n</div>\n<div class=\"ts-panel\" data-p=\"py\" role=\"tabpanel\">\n<div class=\"ts-panel-l\"><span class=\"tg\">PyAI</span><h3>Speech, voice agents, and telephony as one API</h3><p>Security reviewed, BAA on Enterprise, and a tamper-evident audit trail for every reviewed call. Certification scope to be confirmed.</p></div>\n<ul class=\"ts-links\">\n<li><a href=\"https://pyai.com/\" rel=\"noopener\" target=\"_blank\"><span>PyAI security information</span><small>Placeholder link until the security page is live</small></a></li>\n<li><a href=\"https://docs.pyai.com\" rel=\"noopener\" target=\"_blank\"><span>PyAI documentation</span><small>Keys, scopes, recording controls, and Trace</small></a></li>\n</ul>\n</div>\n</div>\n</div>\n</div>\n</section>\n<!-- FAQ: the long tail -->\n<section aria-labelledby=\"fqH\" class=\"fq\" id=\"faq\">\n<div class=\"fq-g\">\n<div class=\"fq-l\">\n<span class=\"ey\"><i></i>Questions</span>\n<h2 id=\"fqH\">The questions security reviews ask</h2>\n<p>Short answers here. The full detail is in the documents above. Items marked for confirmation are awaiting the security team.</p>\n</div>\n<div class=\"fq-r\">\n<details><summary>How is data encrypted?</summary><p>TLS for data in transit and AES-256 for data at rest, across JustCall. Key management details are in the SOC 2 report.</p></details>\n<details><summary>How are backups handled?</summary><p>Regular backups with established data-handling and restore procedures. Backup frequency and retention period: <mark class=\"ts-ph\">confirm with security team</mark>.</p></details>\n<details><summary>Do you run penetration tests?</summary><p>Yes, by an independent third party, alongside continuous vulnerability management. Summaries are available on request under NDA.</p></details>\n<details><summary>Where is my data stored, and can I choose a region?</summary><p>Infrastructure runs on AWS and Google Cloud. Available regions and residency options: <mark class=\"ts-ph\">confirm with security team</mark>.</p></details>\n<details><summary>Who are your subprocessors?</summary><p>The current list, and how changes are notified, is published in the JustCall Trust Center. Link to the list: <mark class=\"ts-ph\">confirm with security team</mark>.</p></details>\n<details><summary>Will you sign a DPA or a BAA?</summary><p>Yes. A Data Processing Agreement is available to every customer, and a HIPAA Business Associate Agreement to covered entities. Use the request links under Documentation.</p></details>\n<details><summary>How quickly are customers told about a security incident?</summary><p>Incident response is documented in the operational policies, and availability incidents are published on the status page. Notification window for data incidents: <mark class=\"ts-ph\">confirm with security team</mark>.</p></details>\n<details><summary>Is there a bug bounty or disclosure program?</summary><p>Vulnerability reports are accepted through the security and compliance page. Whether a paid bounty applies: <mark class=\"ts-ph\">confirm with security team</mark>.</p></details>\n</div>\n</div>\n</section>\n<!-- CLOSE -->\n<section aria-labelledby=\"ctH\" class=\"ct-f\" id=\"talk\">\n<div aria-hidden=\"true\" class=\"ct-bars\"><i style=\"--h:64%;--d:0.00s\"></i><i style=\"--h:52%;--d:0.37s\"></i><i style=\"--h:70%;--d:0.74s\"></i><i style=\"--h:46%;--d:1.11s\"></i><i style=\"--h:58%;--d:1.48s\"></i><i style=\"--h:48%;--d:1.85s\"></i><i style=\"--h:36%;--d:2.22s\"></i><i style=\"--h:22%;--d:2.59s\"></i><i style=\"--h:26%;--d:2.96s\"></i><i style=\"--h:38%;--d:0.33s\"></i><i style=\"--h:54%;--d:0.70s\"></i><i style=\"--h:60%;--d:1.07s\"></i><i style=\"--h:44%;--d:1.44s\"></i><i style=\"--h:68%;--d:1.81s\"></i><i style=\"--h:50%;--d:2.18s\"></i><i style=\"--h:66%;--d:2.55s\"></i></div>\n<div class=\"ct-in\">\n<span class=\"ct-ey\"><i></i>Trust &amp; security</span>\n<h2 id=\"ctH\">Have a security question?</h2>\n<p>Send it to the security team, or report a vulnerability through the security and compliance page.</p>\n<div class=\"ct-b\"><a class=\"ct-btn pri\" href=\"mailto:security@atomsai.com\">Contact security</a><a class=\"ct-btn\" href=\"https://justcall.io/security-and-compliance/\" rel=\"noopener\" target=\"_blank\">Report a vulnerability</a></div>\n</div>\n</section>\n",
+  "links": [
+    {
+      "href": "https://trust.justcall.io/",
+      "text": "OPEN JUSTCALL TRUST CENTER"
+    },
+    {
+      "href": "#documents",
+      "text": "REQUEST A DOCUMENT"
+    },
+    {
+      "href": "#byproduct",
+      "text": "by product"
+    },
+    {
+      "href": "https://trust.justcall.io/",
+      "text": "Request SOC 2 report"
+    },
+    {
+      "href": "https://trust.justcall.io/",
+      "text": "Request ISO certificate"
+    },
+    {
+      "href": "https://trust.justcall.io/",
+      "text": "Request PCI attestation"
+    },
+    {
+      "href": "mailto:security@atomsai.com?subject=BAA%20request",
+      "text": "Request BAA"
+    },
+    {
+      "href": "https://justcall.io/gdpr-compliance/",
+      "text": "Read GDPR guidance"
+    },
+    {
+      "href": "https://trust.justcall.io/",
+      "text": "View CSA STAR entry"
+    },
+    {
+      "href": "#certifications",
+      "text": "The certifications"
+    },
+    {
+      "href": "https://help.justcall.io/en/articles/1929254-data-control-tools-for-gdpr-compliance",
+      "text": "Data control tools"
+    },
+    {
+      "href": "https://help.justcall.io/en/articles/9841378-managing-privacy-settings-in-justcall-ai-transcription-and-redaction-options",
+      "text": "Transcription and redaction settings"
+    },
+    {
+      "href": "https://trust.justcall.io/",
+      "text": "Request compliance reports"
+    },
+    {
+      "href": "https://trust.justcall.io/",
+      "text": "Request pen-test summary"
+    },
+    {
+      "href": "mailto:security@atomsai.com?subject=DPA%20request",
+      "text": "Request DPA or BAA"
+    },
+    {
+      "href": "https://trust.justcall.io/",
+      "text": "Request policies"
+    },
+    {
+      "href": "https://trust.justcall.io/",
+      "text": "JustCall Trust Center\nAttestations, certificates, and policies"
+    },
+    {
+      "href": "https://justcall.io/security-and-compliance/",
+      "text": "Security and compliance\nControls and vulnerability-reporting guidance"
+    },
+    {
+      "href": "https://justcall.io/gdpr-compliance/",
+      "text": "GDPR guidance\nData-processing responsibilities and data rights"
+    },
+    {
+      "href": "https://status.justcall.io/",
+      "text": "Service status\nAvailability and published incidents"
+    },
+    {
+      "href": "https://help.serviceagent.ai/",
+      "text": "ServiceAgent security informationPlaceholder link until the security page is live"
+    },
+    {
+      "href": "https://help.serviceagent.ai/",
+      "text": "ServiceAgent Help CenterAgent setup, CRM integrations, and webhooks"
+    },
+    {
+      "href": "https://pyai.com/",
+      "text": "PyAI security informationPlaceholder link until the security page is live"
+    },
+    {
+      "href": "https://docs.pyai.com",
+      "text": "PyAI documentationKeys, scopes, recording controls, and Trace"
+    },
+    {
+      "href": "mailto:security@atomsai.com",
+      "text": "Contact security"
+    },
+    {
+      "href": "https://justcall.io/security-and-compliance/",
+      "text": "Report a vulnerability"
+    }
+  ],
+  "sections": [
+    {
+      "id": "",
+      "text": "Trust and Security\n\nIndependent audits, documented controls, and the reports your security and legal teams will ask for. Start with the JustCall Trust Center.\n\nOPEN JUSTCALL TRUST CENTER\nREQUEST A DOCUMENT"
+    },
+    {
+      "id": "certifications",
+      "text": "Certifications\nSix frameworks, independently assessed\n\nEach one has its own report, and its own request link. Certifications listed here apply to JustCall. ServiceAgent and PyAI are listed by product below.\n\nSOC 2\nTYPE 2\n\nIndependent audit of security, availability, and confidentiality controls over a full observation period.\n\nRequest SOC 2 report\nISO/IEC 27001\n2022\n\nCertified information security management system, covering how risk is assessed, treated, and reviewed.\n\nRequest ISO certificate\nPCI DSS\nV4.0.0\n\nPayment card data handled to the current PCI standard, including redaction during calls and transcripts.\n\nRequest PCI attestation\nHIPAA\nHEALTH DATA\n\nSafeguards for protected health information, with a Business Associate Agreement available for covered entities.\n\nRequest BAA\nGDPR\nEU PRIVACY\n\nData-processing responsibilities, transfer safeguards, and data-subject rights, documented for EU customers.\n\nRead GDPR guidance\nCSA STAR\nLEVEL 1\n\nCloud Security Alliance self-assessment, published against the Cloud Controls Matrix.\n\nView CSA STAR entry"
+    },
+    {
+      "id": "controls",
+      "text": "Controls\nHow your data is protected\n\nThe controls behind the certifications, in the order security reviews ask for them.\n\n01\nInfrastructure & application security\nIndependent penetration testing on a recurring schedule\nVulnerability management with tracked remediation\nSecure development practices and code review\nCloud hosting on AWS and Google Cloud, with security monitoring\nThe certifications\n02\nIdentity & access\nRole-based permissions for every team member\nMulti-factor authentication\nSingle sign-on options\nRestricted access to sensitive data, logged and reviewed\nData control tools\n03\nPrivacy & data\nTLS in transit, AES-256 at rest\nRegular backups and established data-handling procedures\nRecording retention you set, with automatic deletion\nData Processing Agreements and documented AI training-data practices\nTranscription and redaction settings"
+    },
+    {
+      "id": "documents",
+      "text": "Documentation\nThe documents behind the controls\n\nFour sets, grouped the way security and legal teams ask for them. Each has its own request link.\n\n01\nCompliance reports\n\nSOC 2 Type 2, ISO 27001, PCI DSS, and CSA STAR documentation.\n\nRequest compliance reports\n02\nSecurity assessments\n\nPenetration-test summaries, network documentation, and completed security questionnaires.\n\nRequest pen-test summary\n03\nPrivacy & legal\n\nPrivacy policies, Data Processing Agreements, and HIPAA Business Associate Agreements.\n\nRequest DPA or BAA\n04\nOperational safeguards\n\nAccess control, incident response, data retention, and infrastructure policies.\n\nRequest policies"
+    },
+    {
+      "id": "byproduct",
+      "text": "By product\nWhat applies to your product\n\nJustCall, ServiceAgent, and PyAI have different scopes. Choose your product for the protections and documents that apply to your deployment.\n\nPyAI\nJUSTCALL\nThe CRM-friendly business phone system\n\nSOC 2 Type 2, ISO/IEC 27001:2022, PCI DSS v4.0.0, HIPAA, GDPR, and CSA STAR Level 1, with every attestation, certificate, and policy in one place.\n\nJustCall Trust Center\nAttestations, certificates, and policies\nSecurity and compliance\nControls and vulnerability-reporting guidance\nGDPR guidance\nData-processing responsibilities and data rights\nService status\nAvailability and published incidents"
+    },
+    {
+      "id": "faq",
+      "text": "Questions\nThe questions security reviews ask\n\nShort answers here. The full detail is in the documents above. Items marked for confirmation are awaiting the security team.\n\nHow is data encrypted?\nHow are backups handled?\nDo you run penetration tests?\nWhere is my data stored, and can I choose a region?\nWho are your subprocessors?\nWill you sign a DPA or a BAA?\nHow quickly are customers told about a security incident?\nIs there a bug bounty or disclosure program?"
+    },
+    {
+      "id": "talk",
+      "text": "TRUST & SECURITY\nHave a security question?\n\nSend it to the security team, or report a vulnerability through the security and compliance page.\n\nContact security\nReport a vulnerability"
+    }
+  ],
+  "text": "Trust and Security\n\nIndependent audits, documented controls, and the reports your security and legal teams will ask for. Start with the JustCall Trust Center.\n\nOPEN JUSTCALL TRUST CENTER\nREQUEST A DOCUMENT\nCertifications\nSix frameworks, independently assessed\n\nEach one has its own report, and its own request link. Certifications listed here apply to JustCall. ServiceAgent and PyAI are listed by product below.\n\nSOC 2\nTYPE 2\n\nIndependent audit of security, availability, and confidentiality controls over a full observation period.\n\nRequest SOC 2 report\nISO/IEC 27001\n2022\n\nCertified information security management system, covering how risk is assessed, treated, and reviewed.\n\nRequest ISO certificate\nPCI DSS\nV4.0.0\n\nPayment card data handled to the current PCI standard, including redaction during calls and transcripts.\n\nRequest PCI attestation\nHIPAA\nHEALTH DATA\n\nSafeguards for protected health information, with a Business Associate Agreement available for covered entities.\n\nRequest BAA\nGDPR\nEU PRIVACY\n\nData-processing responsibilities, transfer safeguards, and data-subject rights, documented for EU customers.\n\nRead GDPR guidance\nCSA STAR\nLEVEL 1\n\nCloud Security Alliance self-assessment, published against the Cloud Controls Matrix.\n\nView CSA STAR entry\nControls\nHow your data is protected\n\nThe controls behind the certifications, in the order security reviews ask for them.\n\n01\nInfrastructure & application security\nIndependent penetration testing on a recurring schedule\nVulnerability management with tracked remediation\nSecure development practices and code review\nCloud hosting on AWS and Google Cloud, with security monitoring\nThe certifications\n02\nIdentity & access\nRole-based permissions for every team member\nMulti-factor authentication\nSingle sign-on options\nRestricted access to sensitive data, logged and reviewed\nData control tools\n03\nPrivacy & data\nTLS in transit, AES-256 at rest\nRegular backups and established data-handling procedures\nRecording retention you set, with automatic deletion\nData Processing Agreements and documented AI training-data practices\nTranscription and redaction settings\nDocumentation\nThe documents behind the controls\n\nFour sets, grouped the way security and legal teams ask for them. Each has its own request link.\n\n01\nCompliance reports\n\nSOC 2 Type 2, ISO 27001, PCI DSS, and CSA STAR documentation.\n\nRequest compliance reports\n02\nSecurity assessments\n\nPenetration-test summaries, network documentation, and completed security questionnaires.\n\nRequest pen-test summary\n03\nPrivacy & legal\n\nPrivacy policies, Data Processing Agreements, and HIPAA Business Associate Agreements.\n\nRequest DPA or BAA\n04\nOperational safeguards\n\nAccess control, incident response, data retention, and infrastructure policies.\n\nRequest policies\nBy product\nWhat applies to your product\n\nJustCall, ServiceAgent, and PyAI have different scopes. Choose your product for the protections and documents that apply to your deployment.\n\nPyAI\nJUSTCALL\nThe CRM-friendly business phone system\n\nSOC 2 Type 2, ISO/IEC 27001:2022, PCI DSS v4.0.0, HIPAA, GDPR, and CSA STAR Level 1, with every attestation, certificate, and policy in one place.\n\nJustCall Trust Center\nAttestations, certificates, and policies\nSecurity and compliance\nControls and vulnerability-reporting guidance\nGDPR guidance\nData-processing responsibilities and data rights\nService status\nAvailability and published incidents\nQuestions\nThe questions security reviews ask\n\nShort answers here. The full detail is in the documents above. Items marked for confirmation are awaiting the security team.\n\nHow is data encrypted?\nHow are backups handled?\nDo you run penetration tests?\nWhere is my data stored, and can I choose a region?\nWho are your subprocessors?\nWill you sign a DPA or a BAA?\nHow quickly are customers told about a security incident?\nIs there a bug bounty or disclosure program?\nTRUST & SECURITY\nHave a security question?\n\nSend it to the security team, or report a vulnerability through the security and compliance page.\n\nContact security\nReport a vulnerability"
+}

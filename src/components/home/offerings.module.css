@@ -1,6 +1,6 @@
 .section{padding-top:var(--section-space);padding-bottom:96px;}
-.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}
-.card{position:relative;isolation:isolate;display:flex;flex-direction:column;gap:128px;padding:40px;border-radius:var(--radius-card);background:transparent;overflow:visible;height:553px;}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+.card{position:relative;isolation:isolate;display:flex;flex-direction:column;gap:128px;padding:40px;border-radius:var(--radius-card);background:transparent;overflow:visible;min-height:500px;}
 .backgroundClip{--offering-inset:0px;position:absolute;inset:0;z-index:-1;pointer-events:none;clip-path:inset(var(--offering-inset) round 12px);}
 .backgroundLayer{position:absolute;inset:0;isolation:isolate;background:var(--color-surface);transform-origin:center;}
 .card[data-offering]:has(.illustration){gap:24px;}
@@ -12,5 +12,18 @@
 .title{font-size: var(--text-display-medium);line-height:1;}
 .link{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size: var(--text-body);line-height:22px;font-weight: var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100;}
 .card:focus-visible{--color-ring:var(--palette-deep-green);}
-@media(min-width:768px) and (max-width:1199px){.card{padding:28px;gap:96px;height:510px;}.title{font-size: var(--text-display-small);}.title br{display:none;}.tag{font-size: var(--text-caption);}.link{margin-top:auto;font-size: var(--text-label);}}
-@media(max-width:767px){.section{padding-bottom:64px;}.grid{grid-template-columns:1fr;}.card{height:480px;gap:80px;padding:32px;}.link{margin-top:auto;}.title{font-size: var(--text-display-medium);}}
+@media(min-width:768px) and (max-width:1199px){.card{padding:28px;gap:96px;min-height:500px;}.title{font-size: var(--text-display-small);}.title br{display:none;}.tag{font-size: var(--text-caption);}.link{margin-top:auto;font-size: var(--text-label);}}
+@media(max-width:767px){.section{padding-bottom:64px;}.grid{grid-template-columns:1fr;}.card{min-height:480px;gap:80px;padding:32px;}.link{margin-top:auto;}.title{font-size: var(--text-display-medium);}}
+
+.description{max-width:38ch;font-size:var(--text-body);line-height:1.5;color:var(--color-muted-foreground);}
+
+.card .illustration{height:180px;}
+.card .link{margin-top:24px;}
+/* Let the four layer descriptions set the card height, including in the hero reveal. */
+.section .card[data-offering]{height:auto;}
+
+.layerPath{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));list-style:none;margin:0 0 32px;padding:0;}
+.layerPath li{position:relative;display:flex;flex-direction:column;gap:12px;font-size:var(--text-label);line-height:1.4;padding-right:16px;}
+.layerPath li:not(:last-child)::before{content:'';position:absolute;top:15px;left:32px;right:0;height:1px;background:var(--palette-stone);}
+.layerPath span{display:grid;place-items:center;width:32px;height:32px;border:1px solid var(--palette-stone);border-radius:50%;color:var(--palette-iris-dark);font-size:12px;}
+@media(max-width:767px){.layerPath{grid-template-columns:1fr;gap:0;margin-bottom:28px;}.layerPath li{flex-direction:row;align-items:center;padding-bottom:16px;gap:16px;}.layerPath li:not(:last-child)::before{top:32px;left:15px;bottom:0;width:1px;height:auto;}.layerPath li:last-child{padding-bottom:0;}}
