@@ -10,18 +10,9 @@
     {
       "label": "Explore our applications",
       "href": "#next"
-    },
-    {
-      "label": "See customer results",
-      "href": "#proof"
     }
   ],
   "hero": {
-    "kicker": ["AtomsAI", "Applications"],
-    "source": {
-      "label": "Hello",
-      "time": "09:12:04"
-    },
     "events": [
       {
         "product": "JustCall",
@@ -58,7 +49,7 @@
       "title": "Every hello sets work in motion",
       "label": "",
       "intro": [
-        "For a service business, it's a job to assess, book, and finish. For a sales or support team, it's the next step with that customer. We build applications around what each business needs to happen next."
+        "We build applications around what each business needs to happen next."
       ],
       "blocks": [
         {

@@ -1,123 +1,94 @@
 'use client';
 
-import { useEffect, useRef, useState, type CSSProperties } from 'react';
-import { assetPath } from '@/lib/base-path';
-import styles from './applications.module.css';
+import { useEffect, useId, useRef, useState } from 'react';
+import { SceneCanvas, SceneMark, SceneMuted, ScenePill, SceneRow, SceneWindow } from './scene-kit';
+import styles from './applications-hero-stage.module.css';
 
 export type HeroEvent = { product: string; mark: string; kind: string; text: string; time: string; meta: string; state: string };
 
-/** Route geometry in stage pixels: from the Hello chip to each event card. */
-type Geometry = { width: number; height: number; startX: number; startY: number; endX: number; ends: number[] };
-
-const advanceAfter = (clock: string, seconds: number) => {
-  const [h, m, s] = clock.split(':').map(Number);
-  const total = (h * 3600 + m * 60 + s + seconds) % 86400;
-  return [Math.floor(total / 3600), Math.floor(total / 60) % 60, total % 60].map(part => String(part).padStart(2, '0')).join(':');
-};
-
-function route(geometry: Geometry, end: number) {
-  const { startX, startY, endX } = geometry;
-  const bend = startX + (endX - startX) * .5;
-  return `M${startX} ${startY} C${bend} ${startY} ${bend} ${end} ${endX} ${end}`;
-}
+/** How long each conversation stays on screen while the panel plays by itself. */
+const advanceAfter = 5000;
 
 /**
- * The hero's conversation stage: one Hello, three outcomes. Each event takes a
- * turn: its route draws in from the chip and its progress line runs (a CSS
- * animation, paused off screen) before the next one takes over. The three
- * outcomes are read as a list; the chip with its ticking clock, the routes and
- * the progress lines are decoration and hidden from assistive technology.
- * Reduced motion keeps the first event connected and the clock still.
+ * The hero's product moment, built like the homepage "Now it's your turn" panel:
+ * one dark-green panel, a row of choices on its inner frame, and one scene at a
+ * time. Each scene is the window an application shows after a hello; behind it
+ * a stencil list of the same conversations, as the homepage scenes keep a faint
+ * dashboard behind their cards.
+ *
+ * It plays by itself only while it is on screen, the tab is visible, the pointer
+ * is elsewhere and motion is welcome. Any click, tap or keyboard focus inside the
+ * panel stops it for good, so the visitor's choice is never taken away.
  */
-export function ApplicationsHeroStage({ source, events }: { source: { label: string; time: string }; events: HeroEvent[] }) {
+export function ApplicationsHeroStage({ events, className = '' }: { events: HeroEvent[]; className?: string }) {
   const root = useRef<HTMLDivElement>(null);
-  const chip = useRef<HTMLDivElement>(null);
-  const cards = useRef<(HTMLLIElement | null)[]>([]);
   const [active, setActive] = useState(0);
+  const [stopped, setStopped] = useState(false);
   const [running, setRunning] = useState(false);
-  const [clock, setClock] = useState(source.time);
-  const [geometry, setGeometry] = useState<Geometry | null>(null);
+  const scenesId = useId();
 
-  // Measure the real chip and card positions, so routes meet each card at any width.
-  // The observer's first callback does the initial measure: a synchronous state
-  // update here would land mid-mount and throw off the smooth-scroll deep-link offset.
   useEffect(() => {
-    const stage = root.current;
-    if (!stage) return;
-    const measure = () => {
-      const bounds = stage.getBoundingClientRect();
-      const from = chip.current?.getBoundingClientRect();
-      const targets = cards.current.map(card => card?.getBoundingClientRect());
-      if (!from || !bounds.width || targets.some(target => !target)) return;
-      setGeometry({
-        width: bounds.width, height: bounds.height,
-        startX: from.right - bounds.left, startY: from.top + from.height / 2 - bounds.top,
-        endX: Math.min(...targets.map(target => target!.left)) - bounds.left,
-        ends: targets.map(target => target!.top + target!.height / 2 - bounds.top),
-      });
-    };
-    const observer = new ResizeObserver(measure);
-    observer.observe(stage);
-    cards.current.forEach(card => card && observer.observe(card));
-    return () => observer.disconnect();
-  }, []);
-
-  // Run only while the stage is on screen, the tab is visible and motion is welcome.
-  useEffect(() => {
-    const stage = root.current;
-    if (!stage) return;
+    const element = root.current;
+    if (!element || stopped) return;
     const reduced = matchMedia('(prefers-reduced-motion: reduce)');
     let visible = false;
-    const update = () => {
-      const run = visible && !document.hidden && !reduced.matches;
-      setRunning(run);
-      if (reduced.matches) { setActive(0); setClock(source.time); }
-    };
-    const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; update(); }, { threshold: .2 });
-    observer.observe(stage);
+    let hovered = false;
+    const update = () => setRunning(visible && !hovered && !document.hidden && !reduced.matches);
+    const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; update(); }, { threshold: .35 });
+    const enter = () => { hovered = true; update(); };
+    const leave = () => { hovered = false; update(); };
+    const stop = () => { setRunning(false); setStopped(true); };
+    observer.observe(element);
+    element.addEventListener('pointerenter', enter);
+    element.addEventListener('pointerleave', leave);
+    element.addEventListener('pointerdown', stop);
+    element.addEventListener('focusin', stop);
     document.addEventListener('visibilitychange', update);
     reduced.addEventListener('change', update);
     return () => {
       observer.disconnect();
+      element.removeEventListener('pointerenter', enter);
+      element.removeEventListener('pointerleave', leave);
+      element.removeEventListener('pointerdown', stop);
+      element.removeEventListener('focusin', stop);
       document.removeEventListener('visibilitychange', update);
       reduced.removeEventListener('change', update);
     };
-  }, [source.time]);
+  }, [stopped]);
 
   useEffect(() => {
     if (!running) return;
-    const timer = window.setInterval(() => setClock(current => advanceAfter(current, 1)), 1000);
-    return () => window.clearInterval(timer);
-  }, [running]);
+    const timer = window.setTimeout(() => setActive(current => (current + 1) % events.length), advanceAfter);
+    return () => window.clearTimeout(timer);
+  }, [running, active, events.length]);
 
-  return <div ref={root} className={styles.stage} data-running={running}>
-    <span className={styles.stageGlow} aria-hidden="true" />
-    {geometry && <svg className={styles.routes} viewBox={`0 0 ${geometry.width} ${geometry.height}`} aria-hidden="true" focusable="false">
-      {geometry.ends.map((end, index) => <path key={`base-${index}`} className={styles.route} d={route(geometry, end)} />)}
-      {geometry.ends.map((end, index) => <path key={`active-${index}`} className={styles.routeActive} data-on={index === active} d={route(geometry, end)} pathLength={1} />)}
-    </svg>}
-    <div ref={chip} className={`theme-dark ${styles.source}`} aria-hidden="true">
-      <span className={`display ${styles.sourceLabel}`}>{source.label}</span>
-      <span className={styles.clock}>{clock}</span>
-      <span className={styles.sourcePulse} />
+  return <div ref={root} className={`theme-dark ${styles.panel} ${className}`} data-theme="dark">
+    <div className={styles.frame}>
+      <div className={styles.choices} role="group" aria-label="Conversations">
+        {events.map((event, index) => <button key={event.text} type="button" aria-pressed={active === index} aria-controls={scenesId}
+          onClick={() => { setStopped(true); setActive(index); }}>{event.kind}</button>)}
+      </div>
+      <div className={styles.scenes} id={scenesId}>
+        <div className={styles.composition}>
+          <div className={styles.feed} aria-hidden="true">
+            {events.map((event, index) => <div key={event.text} className={styles.feedRow} data-active={active === index}>
+              <SceneMark src={`${event.mark}-mark.svg`} />
+              <span className={styles.feedProduct}>{event.product}</span>
+              <span className={styles.feedMeta}>{event.kind} · {event.time}</span>
+            </div>)}
+          </div>
+          <div className={styles.windows}>
+            {events.map((event, index) => <div key={event.text} className={styles.scene} data-active={active === index} aria-hidden={active !== index}>
+              <SceneCanvas width={34}>
+                <SceneWindow title={event.product} mark={`${event.mark}-mark.svg`} meta={event.kind}>
+                  <p className={styles.eventText}>{event.text}</p>
+                  <SceneRow end={<ScenePill tone="success">{event.state}</ScenePill>}><SceneMuted>{event.time} · {event.meta}</SceneMuted></SceneRow>
+                </SceneWindow>
+              </SceneCanvas>
+            </div>)}
+          </div>
+        </div>
+      </div>
     </div>
-    <ol className={styles.events}>
-      {events.map((event, index) => <li key={event.text} ref={element => { cards.current[index] = element; }} className={styles.event} data-on={index === active}>
-        <div className={styles.eventHead}>
-          <span className={styles.eventProduct}>
-            <span className={styles.eventMark} aria-hidden="true" style={{ maskImage: assetPath(`url("/assets/products/${event.mark}-mark.svg")`) } as CSSProperties} />
-            {event.product}
-          </span>
-          <span className={styles.eventKind}>{event.kind}</span>
-        </div>
-        <div className={styles.eventBody}>
-          <p>{event.text}</p>
-          <div className={styles.eventMeta}><span>{event.time}</span><span>{event.meta}</span><span className={styles.eventState}>{event.state}</span></div>
-          <span className={styles.eventProgress} aria-hidden="true">
-            <span onAnimationEnd={() => setActive(current => (current + 1) % events.length)} />
-          </span>
-        </div>
-      </li>)}
-    </ol>
   </div>;
 }

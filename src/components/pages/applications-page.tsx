@@ -7,6 +7,7 @@ import content from '@/content/client-pages/applications.json';
 import { ApplicationsHeroStage } from './applications-hero-stage';
 import { ApplicationsProduct, ProductLockup, type ApplicationsSection } from './applications-product';
 import { ApplicationsStatement } from './applications-statement';
+import { SectionIntro } from './section-intro';
 import styles from './applications.module.css';
 
 const sections: ApplicationsSection[] = content.sections;
@@ -36,37 +37,23 @@ function Kicker({ children, className = '' }: { children: ReactNode; className?:
 
 export function ApplicationsPage() {
   return <main id="main" className={styles.page} data-theme="light">
-    <section id="hero" className={styles.hero} aria-labelledby="hero-heading">
-      <span className={styles.heroGrid} aria-hidden="true" />
-      <div className={`page-container ${styles.heroLayout}`}>
-        <div className={styles.heroCopy}>
-          <Kicker>{hero.kicker[0]}<span className={styles.kickerRule} aria-hidden="true" />{hero.kicker[1]}</Kicker>
-          <h1 id="hero-heading" className={`display ${styles.heroTitle}`}>{content.title}</h1>
-          <p className={`display ${styles.heroLead}`}>{content.intro[0]}</p>
-          <p className={styles.heroIntro}>{content.intro[1]}</p>
-          <div className={styles.heroActions}>
-            <ButtonLink href={content.actions[0].href} size="large">{content.actions[0].label}<ArrowIcon direction="down" size={18} /></ButtonLink>
-            <ButtonLink href={content.actions[1].href} size="large" variant="outline">{content.actions[1].label}</ButtonLink>
-          </div>
-        </div>
-        <ApplicationsHeroStage source={hero.source} events={hero.events} />
-      </div>
+    <section id="hero" className={`page-container ${styles.hero}`} aria-labelledby="hero-heading">
+      <header className={styles.heroIntro}>
+        <h1 id="hero-heading" className={`display ${styles.heroTitle}`}><span>{content.title}</span> <span className={styles.heroMuted}>{content.intro[0]}</span></h1>
+        <p className={styles.heroLead}>{content.intro[1]}</p>
+        <ButtonLink href={content.actions[0].href} className={styles.heroAction}>{content.actions[0].label}<ArrowIcon direction="down" size={16} /></ButtonLink>
+      </header>
+      <ApplicationsHeroStage events={hero.events} className={styles.heroStage} />
     </section>
 
     <section id="next" className={`page-container ${styles.next}`} aria-labelledby="next-heading">
-      <header className={styles.splitHead}>
-        <h2 id="next-heading" className={`display ${styles.sectionTitle}`}>{next.title}</h2>
-        <p>{next.intro[0]}</p>
-      </header>
-      <div className={styles.productCards}>
-        {next.blocks.map(block => <article key={block.label} className={styles.productCard} data-product={block.label.toLowerCase()}>
-          <div className={styles.productCardTop}><ProductLockup name={block.label} /><span className={styles.pill}>{block.category}</span></div>
-          <h3 className={`display ${styles.productCardTitle}`}>{block.title}</h3>
-          <p className={styles.productCardBody}>{block.body[0]}</p>
-          <div className={styles.productCardMore}>
-            <ul aria-label="What happens after the hello">{block.list.map(item => <li key={item}><ArrowIcon size={12} />{item}</li>)}</ul>
-          </div>
-          <a className={styles.productCardLink} href={withBasePath(block.links[0].href)}>{block.links[0].label}<ArrowIcon direction="down" size={16} /></a>
+      <SectionIntro id="next-heading" title={next.title} lead={next.intro[0]} />
+      <div className={styles.apps}>
+        {next.blocks.map(block => <article key={block.label} className={styles.app}>
+          <p className={styles.appFor}><ProductLockup name={block.label} /><span>{block.category}</span></p>
+          <h3 className={`display ${styles.appTitle}`}>{block.title}</h3>
+          <p className={styles.appBody}>{block.body[0]}</p>
+          <a className={styles.appLink} href={withBasePath(block.links[0].href)}>{block.links[0].label}<ArrowIcon direction="down" size={16} /></a>
         </article>)}
       </div>
     </section>

@@ -1,5 +1,6 @@
-/* Applications overview. Layout rhythm and type follow the AI Services page;
-   colour comes from the contextual roles in tokens.css. */
+/* Applications overview, composed like the homepage: flat page surfaces, homepage section
+   headers and one dark-green panel per product moment. Colour comes from the contextual
+   roles in tokens.css. */
 .page { --section-space:128px; overflow:clip; }
 /* As on the homepage: secondary copy stays legible on paper and cream. Scoped to the
    light theme so it outranks tokens.css whatever order the stylesheets load in. */
@@ -16,94 +17,36 @@
 .lockupMark { width:1.1em; height:1.1em; flex:none; background:currentColor; mask-position:center; mask-size:contain; mask-repeat:no-repeat; }
 
 /* ---------- Hero ---------- */
-.hero { position:relative; isolation:isolate; overflow:hidden; background:var(--palette-cream); padding-block:calc(var(--header-height) + 96px) 112px; }
-.heroGrid { position:absolute; inset:0; z-index:-1; pointer-events:none;
-  background-image:linear-gradient(var(--color-border) 1px, transparent 1px), linear-gradient(90deg, var(--color-border) 1px, transparent 1px);
-  background-size:96px 96px; background-position:center -1px;
-  mask-image:radial-gradient(70% 70% at 50% 45%, #000 15%, transparent 100%); opacity:.7; }
-.heroLayout { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:64px; align-items:center; }
-.heroCopy { min-width:0; }
-.heroTitle { margin:40px 0 0 -.04em; font-size:clamp(104px,15vw,224px); line-height:.85; letter-spacing:-.045em; }
-.heroLead { margin-top:48px; font-size:clamp(21px,1.75vw,26px); line-height:1.2; letter-spacing:-.012em; }
-.heroIntro { margin-top:16px; max-width:46ch; font-size:18px; line-height:1.5; color:var(--color-muted-foreground); }
-.heroActions { display:flex; flex-wrap:wrap; gap:12px; margin-top:36px; }
-
-/* Conversation stage: one Hello, three outcomes. */
-.stage { position:relative; display:grid; grid-template-columns:auto minmax(56px,1fr) minmax(0,296px); align-items:center; min-width:0; }
-.stageGlow { position:absolute; z-index:0; left:4%; top:50%; width:58%; aspect-ratio:1; translate:0 -50%; border-radius:50%; pointer-events:none;
-  background:radial-gradient(closest-side, color-mix(in srgb, var(--palette-sage-tint) 75%, transparent), transparent);
-  filter:blur(40px); opacity:.65; animation:glowDrift 14s ease-in-out infinite alternate; }
-@keyframes glowDrift { to { transform:translate(8%, -6%) scale(1.08); } }
-.routes { position:absolute; inset:0; z-index:1; width:100%; height:100%; overflow:visible; pointer-events:none; }
-.route { fill:none; stroke:color-mix(in srgb, var(--color-foreground) 26%, transparent); stroke-width:1.2; stroke-dasharray:3 5; }
-.routeActive { fill:none; stroke:var(--color-foreground); stroke-width:1.5; stroke-dasharray:1; stroke-dashoffset:1; opacity:0;
-  transition:opacity .3s ease, stroke-dashoffset 0s linear .3s; }
-.routeActive[data-on="true"] { stroke-dashoffset:0; opacity:1; transition:stroke-dashoffset 1s cubic-bezier(.65,0,.25,1), opacity .2s ease; }
-.source { position:relative; z-index:2; grid-column:1; display:grid; gap:6px; padding:14px 20px 14px 16px; border-radius:14px;
-  box-shadow:0 24px 50px -28px color-mix(in srgb, var(--palette-forest-shade) 60%, transparent); }
-.sourceLabel { font-size:28px; line-height:1; }
-.clock { font-size:11px; line-height:14px; letter-spacing:.14em; font-variant-numeric:tabular-nums; color:var(--color-muted-foreground); }
-.sourcePulse { position:absolute; right:-5px; top:50%; width:9px; height:9px; translate:0 -50%; border-radius:50%; background:var(--palette-sage-tint);
-  animation:sourcePulse 2.4s ease-out infinite; }
-@keyframes sourcePulse { from { box-shadow:0 0 0 0 color-mix(in srgb, var(--palette-sage-tint) 70%, transparent); } to { box-shadow:0 0 0 12px transparent; } }
-.events { position:relative; z-index:2; grid-column:3; display:grid; gap:12px; margin:0; padding:0; list-style:none; }
-.event { position:relative; padding:4px; border-radius:18px; background:color-mix(in srgb, var(--palette-cream-tint) 82%, transparent);
-  -webkit-backdrop-filter:blur(16px); backdrop-filter:blur(16px);
-  box-shadow:0 24px 48px -34px color-mix(in srgb, var(--palette-forest-shade) 50%, transparent), inset 0 0 0 1px var(--color-border-subtle);
-  transition:box-shadow .5s cubic-bezier(.22,1,.36,1); }
-.event[data-on="true"] { box-shadow:0 32px 64px -32px color-mix(in srgb, var(--palette-forest-shade) 55%, transparent), inset 0 0 0 1px color-mix(in srgb, var(--color-foreground) 28%, transparent); }
-/* Where the route meets the card. */
-.event::before { content:''; position:absolute; left:-4px; top:50%; width:7px; height:7px; translate:0 -50%; border-radius:50%;
-  background:var(--palette-cream); box-shadow:inset 0 0 0 1px color-mix(in srgb, var(--color-foreground) 40%, transparent); transition:background-color .4s ease; }
-.event[data-on="true"]::before { background:var(--color-foreground); }
-.eventHead { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:8px 10px 8px 12px; font-size:13px; line-height:16px; }
-.eventProduct { display:inline-flex; align-items:center; gap:6px; font-weight:var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium),'ital' 100; }
-.eventMark { width:14px; height:14px; flex:none; background:currentColor; mask-position:center; mask-size:contain; mask-repeat:no-repeat; }
-.eventKind { font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--color-surface-muted-foreground); white-space:nowrap; }
-.eventBody { position:relative; overflow:hidden; padding:12px 14px 16px; border-radius:14px; background:var(--palette-paper); }
-.eventBody p { margin:0; font-size:15px; line-height:1.3; text-wrap:pretty; }
-.eventMeta { display:flex; flex-wrap:wrap; align-items:center; gap:4px 10px; margin-top:10px; font-size:11px; line-height:16px; color:var(--color-surface-muted-foreground); font-variant-numeric:tabular-nums; }
-.eventState { margin-left:auto; padding:2px 8px; border-radius:999px; background:color-mix(in srgb, var(--color-foreground) 8%, transparent); color:var(--color-foreground); }
-.eventProgress { position:absolute; left:14px; right:14px; bottom:6px; height:2px; overflow:hidden; border-radius:2px; background:var(--color-border-subtle); opacity:0; transition:opacity .3s ease; }
-.event[data-on="true"] .eventProgress { opacity:1; }
-.eventProgress > span { display:block; height:100%; background:var(--palette-forest-green); transform:scaleX(0); transform-origin:left; }
-.event[data-on="true"] .eventProgress > span { animation:eventProgress 4.2s linear forwards; }
-@keyframes eventProgress { to { transform:scaleX(1); } }
-.stage[data-running="false"] :is(.eventProgress > span, .sourcePulse, .stageGlow) { animation-play-state:paused; }
+/* The homepage hero's stack: a two-tone headline, one sentence and one action, centred on the
+   flat page; then one dark-green panel carries the product moment. */
+.hero { padding-top:calc(var(--header-height) + 112px); }
+.heroIntro { display:flex; flex-direction:column; align-items:center; text-align:center; }
+.heroTitle { font-size:clamp(40px,4.6vw,76px); line-height:1; letter-spacing:-.015em; text-wrap:balance; }
+.heroTitle > span { display:block; }
+.heroMuted { color:var(--color-muted-foreground); }
+.heroLead { max-width:50ch; margin-top:32px; font-size:var(--text-lead); line-height:1.5; color:var(--color-muted-foreground); text-wrap:pretty; }
+.heroAction { margin-top:36px; }
+.heroStage { margin-top:80px; }
 
 /* ---------- Every hello sets work in motion ---------- */
 /* Sections space with margins, so an in-page link lands on the content, not on empty padding. */
 .next { margin-top:var(--section-space); }
-.splitHead { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:64px; align-items:start; margin-bottom:56px; }
-.splitHead .sectionTitle { max-width:13ch; }
-.splitHead > p { max-width:48ch; font-size:18px; line-height:1.5; color:var(--color-muted-foreground); text-box:trim-both cap alphabetic; }
-.productCards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
-.productCard { position:relative; display:flex; flex-direction:column; gap:16px; min-height:340px; padding:36px; border-radius:var(--radius-card);
-  background:var(--color-surface); color:var(--color-foreground); transition:transform .45s cubic-bezier(.22,1,.36,1), box-shadow .45s cubic-bezier(.22,1,.36,1); }
-@media (hover:hover) {
-  .productCard:hover { transform:translateY(-4px); box-shadow:0 36px 64px -44px color-mix(in srgb, var(--palette-black) 40%, transparent); }
-}
-.productCard:has(.productCardLink:focus-visible) { outline:var(--focus-ring-width) solid color-mix(in srgb, var(--color-ring) var(--focus-ring-opacity), transparent); }
-.productCardTop { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-bottom:12px; }
-.pill { padding:5px 10px; border-radius:999px; box-shadow:inset 0 0 0 1px color-mix(in srgb, currentColor 22%, transparent); font-size:12px; line-height:16px; white-space:nowrap; }
-.productCardTitle { max-width:20ch; font-size:clamp(28px,2.3vw,34px); line-height:1.08; text-wrap:balance; }
-.productCardBody { max-width:44ch; font-size:16px; line-height:1.5; color:var(--color-surface-muted-foreground); }
-/* What happens after the hello: its space is always reserved (no layout shift); the list
-   fades in with the card's hover or focus, and is always shown on touch. */
-.productCardMore { opacity:0; transform:translateY(6px); transition:opacity .4s ease, transform .5s cubic-bezier(.22,1,.36,1); }
-.productCardMore > ul { display:grid; gap:8px; margin:0; padding:0; list-style:none; }
-.productCardMore li { display:flex; align-items:baseline; gap:10px; font-size:15px; line-height:1.4; }
-.productCardMore li > svg { flex:none; color:var(--color-surface-muted-foreground); }
-.productCard:is(:hover,:focus-within) .productCardMore { opacity:1; transform:none; }
-@media (hover:none) { .productCardMore { opacity:1; transform:none; } }
-.productCardLink { margin-top:auto; display:inline-flex; align-items:center; gap:8px; width:fit-content; padding-top:8px; font-size:16px; line-height:20px; color:var(--color-foreground);
+/* Two open columns under a hairline, no card surface; each whole column links to its chapter. */
+.apps { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:64px; }
+.app { position:relative; display:flex; flex-direction:column; align-items:flex-start; padding-top:32px; border-top:1px solid var(--color-border); }
+.appFor { display:flex; flex-wrap:wrap; align-items:center; gap:8px 16px; font-size:var(--text-label); line-height:20px; color:var(--color-muted-foreground); }
+.appFor .lockup { color:var(--color-foreground); }
+.appTitle { max-width:18ch; margin-top:48px; font-size:clamp(28px,2.5vw,36px); line-height:1.08; text-wrap:balance; }
+.appBody { max-width:44ch; margin-top:20px; font-size:var(--text-body); line-height:1.5; color:var(--color-muted-foreground); text-wrap:pretty; }
+.appLink { display:inline-flex; align-items:center; gap:8px; min-height:44px; margin-top:16px; font-size:var(--text-body); line-height:20px; color:var(--color-foreground);
   font-weight:var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium),'ital' 100; transition:color .24s ease; }
-.productCardLink::after { content:''; position:absolute; inset:0; border-radius:inherit; }
-/* The card carries the ring; out-ranks the global focus rule in focus.css (0,2,2). */
-.productCard .productCardLink:focus-visible { outline-color:transparent; }
-.productCardLink > svg { transition:transform .35s cubic-bezier(.22,1,.36,1); }
-.productCard:hover .productCardLink { color:var(--color-surface-muted-foreground); }
-.productCard:is(:hover,:focus-within) .productCardLink > svg { transform:translateY(2px); }
+.appLink::after { content:''; position:absolute; inset:0; }
+.appLink > svg { transition:transform .35s cubic-bezier(.22,1,.36,1); }
+@media (hover:hover) { .app:hover .appLink { color:var(--color-muted-foreground); } }
+.app:is(:hover,:focus-within) .appLink > svg { transform:translateY(2px); }
+/* The column carries the ring; outranks the global focus rule in styles/focus.css. */
+html .app .appLink:focus-visible { outline-color:transparent; box-shadow:none; }
+.app:has(.appLink:focus-visible) { outline:2px solid var(--color-ring); outline-offset:12px; border-radius:4px; }
 
 /* ---------- Product chapters ---------- */
 .product { margin-top:var(--section-space); }
@@ -206,46 +149,25 @@
 .closingActions { display:flex; flex-wrap:wrap; gap:12px; }
 
 @media (max-width:1199px) {
-  .heroLayout { gap:40px; }
-  .heroLead { margin-top:40px; }
-  .stage { grid-template-columns:auto minmax(32px,1fr) minmax(0,264px); }
-  .sourceLabel { font-size:24px; }
-  .splitHead, .productHead, .productFoot { gap:28px 40px; }
-  .productCard { padding:32px 28px; }
+  .productHead, .productFoot { gap:28px 40px; }
   .stepPanel { padding:28px; min-height:500px; }
-  .quotes { grid-template-columns:repeat(2,minmax(0,1fr)); }
-  .engineeringLayout { grid-template-columns:minmax(0,1fr) minmax(0,.55fr); }
-  .closingInner { gap:48px; }
 }
 @media (max-width:899px) {
-  .heroLayout { grid-template-columns:minmax(0,1fr); gap:64px; }
-  .stage { grid-template-columns:auto minmax(64px,1fr) minmax(0,320px); }
   .productHead, .productFoot { grid-template-columns:minmax(0,1fr); }
   .productTitle, .productLead, .productSub { grid-column:1; }
   .productActions { justify-content:flex-start; }
-  .stats { grid-template-columns:repeat(2,minmax(0,1fr)); }
   /* The stage spans the content width here: the header reads dark while it is beneath. */
   .headerZone { position:absolute; inset:0; display:block; pointer-events:none; }
-  .engineeringLayout { grid-template-columns:minmax(0,1fr); }
-  .engineeringMark { position:absolute; z-index:-1; right:-28vw; top:50%; width:72vw; translate:0 -50%; margin:0; }
 }
 @media (max-width:767px) {
   .page { --section-space:88px; }
-  .hero { padding-block:calc(var(--header-height) + 56px) 72px; }
-  .heroTitle { margin-top:32px; font-size:clamp(88px,30vw,140px); }
-  .heroLead { margin-top:32px; font-size:21px; }
-  .heroIntro { font-size:17px; }
-  .heroActions { margin-top:28px; }
-  .heroGrid { background-size:64px 64px; }
-  .stage { grid-template-columns:minmax(0,1fr); gap:12px; justify-items:start; }
-  .routes, .stageGlow { display:none; }
-  .source, .events { grid-column:1; }
-  .events { width:100%; }
-  .event::before { display:none; }
-  .splitHead { grid-template-columns:minmax(0,1fr); gap:24px; margin-bottom:36px; }
-  .splitHead > p, .productLead { font-size:17px; }
-  .productCards { grid-template-columns:minmax(0,1fr); }
-  .productCard { min-height:0; padding:28px 24px; }
+  .hero { padding-top:calc(var(--header-height) + 64px); }
+  .heroLead { margin-top:24px; font-size:var(--text-body); }
+  .heroAction { margin-top:28px; }
+  .heroStage { margin-top:48px; }
+  .productLead { font-size:17px; }
+  .apps { grid-template-columns:minmax(0,1fr); gap:40px; }
+  .appTitle { margin-top:36px; }
   .productHead { gap:24px; margin-bottom:40px; }
   .productLabel { flex-direction:column; align-items:flex-start; gap:10px; }
   .labelDivider { display:none; }
@@ -257,14 +179,21 @@
   .stepQuote blockquote { font-size:17px; }
   .stepQuote .storyLink { margin-left:-12px; }
   .productFoot { margin-top:40px; }
-  .proofHead { flex-direction:column; align-items:flex-start; margin-bottom:36px; }
-  .proofHead .sectionTitle { margin-top:24px; }
-  .inlineLink { margin-inline:-20px 0; }
-  .stats > div { min-height:0; padding:28px 12px; gap:12px; }
-  .stats dt { font-size:14px; }
-  .stats dd { font-size:44px; }
-  .quotes { grid-template-columns:minmax(0,1fr); }
-  .quoteCard { padding:24px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .appLink, .appLink > svg { transition:none; }
+}
+
+/* Previous engineering and closing layouts, until those sections move over. */
+@media (max-width:1199px) {
+  .engineeringLayout { grid-template-columns:minmax(0,1fr) minmax(0,.55fr); }
+  .closingInner { gap:48px; }
+}
+@media (max-width:899px) {
+  .engineeringLayout { grid-template-columns:minmax(0,1fr); }
+  .engineeringMark { position:absolute; z-index:-1; right:-28vw; top:50%; width:72vw; translate:0 -50%; margin:0; }
+}
+@media (max-width:767px) {
   .engineering { padding-block:96px; }
   .statementTitle { font-size:clamp(44px,12vw,64px); }
   .needs { grid-template-columns:minmax(0,1fr); gap:20px; }
@@ -273,8 +202,17 @@
   .closingInner > div:last-child { justify-self:start; }
   .closingTitle { margin-top:24px; font-size:38px; }
 }
-@media (prefers-reduced-motion:reduce) {
-  .eventProgress { display:none; }
-  .productCard, .productCardMore, .productCardLink > svg, .routeActive, .event, .event::before { transition:none; }
-  .productCard:hover { transform:none; }
+
+/* Previous results layout, until that section moves over. */
+@media (max-width:1199px) { .quotes { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:899px) { .stats { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:767px) {
+  .proofHead { flex-direction:column; align-items:flex-start; margin-bottom:36px; }
+  .proofHead .sectionTitle { margin-top:24px; }
+  .inlineLink { margin-inline:-20px 0; }
+  .stats > div { min-height:0; padding:28px 12px; gap:12px; }
+  .stats dt { font-size:14px; }
+  .stats dd { font-size:44px; }
+  .quotes { grid-template-columns:minmax(0,1fr); }
+  .quoteCard { padding:24px; }
 }
