@@ -26,6 +26,18 @@ html .list .trigger:focus-visible { color:var(--palette-cream); outline:2px soli
 /* Ghost buttons hang their padding outside the text column, as on the homepage. */
 .detailCopy :global(.button-ghost) { margin-left:-12px; color:var(--palette-cream); }
 .aside { font-size:var(--text-label); line-height:1.5; color:color-mix(in display-p3, var(--palette-cream) 72%, transparent); }
+/* Links in the aside get the panel's ring too, not the soft site-wide one. */
+html .panel .aside :is(a, button):focus-visible { outline:2px solid var(--palette-cream); outline-offset:4px; box-shadow:none; }
+
+/* Light tone: the same panel on the pale scene shell, ink text at AA on the shell, scenes on paper. */
+.panel[data-tone='light'] { --ink-muted:color-mix(in srgb, var(--scene-ink) 76%, var(--scene-paper)); background:var(--scene-shell); color:var(--scene-ink); }
+.panel[data-tone='light'] .trigger { color:var(--ink-muted); }
+.panel[data-tone='light'] .trigger:hover, .panel[data-tone='light'] .item[data-active='true'] .trigger { color:var(--scene-ink); }
+html .panel[data-tone='light'] .list .trigger:focus-visible { color:var(--scene-ink); outline-color:var(--scene-ink); }
+.panel[data-tone='light'] :is(.detailCopy, .aside) { color:var(--ink-muted); }
+.panel[data-tone='light'] .detailCopy :global(.button-ghost) { color:var(--scene-ink); }
+html .panel[data-tone='light'] .aside :is(a, button):focus-visible { outline-color:var(--scene-ink); }
+.panel[data-tone='light'] :is(.visual, .inlineVisual) { background:var(--scene-paper); }
 
 .visual { container-type:inline-size; position:relative; display:grid; min-width:0; min-height:600px; padding:40px 24px; border-radius:10px; overflow:clip; isolation:isolate; background:var(--scene-frame); }
 /* Every scene shares one cell, so the frame keeps the tallest scene's height. */

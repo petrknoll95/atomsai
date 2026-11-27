@@ -21,8 +21,10 @@ function scrollPageBy(delta: number) {
  * Scenes picture what the detail says and stay hidden from assistive tech. Below
  * 900px the frame beside the list gives way to the open step's scene inside it.
  */
-export function ScenePanel({ label, items, aside, className = '', visualClassName = '' }: {
+export function ScenePanel({ label, items, aside, className = '', visualClassName = '', tone = 'dark' }: {
   label: string; items: ScenePanelItem[]; aside?: ReactNode; className?: string; visualClassName?: string;
+  /** light: the same panel on the pale scene shell, for a page that already has a dark step panel. */
+  tone?: 'dark' | 'light';
 }) {
   const [active, setActive] = useState(0);
   const triggers = useRef<(HTMLButtonElement | null)[]>([]);
@@ -43,7 +45,13 @@ export function ScenePanel({ label, items, aside, className = '', visualClassNam
     anchor.current = null;
     const trigger = saved && triggers.current[saved.index];
     if (!saved || !trigger) return;
-    const delta = trigger.getBoundingClientRect().top - saved.top;
+    const top = trigger.getBoundingClientRect().top;
+    let delta = top - saved.top;
+    // A step tapped low on the screen opens below the fold: lift it toward the header,
+    // just far enough for its detail and scene to come into view.
+    const detail = document.getElementById(trigger.getAttribute('aria-controls') ?? '');
+    const overflow = detail ? detail.getBoundingClientRect().bottom - window.innerHeight + 16 : 0;
+    if (overflow > 0) delta += Math.min(overflow, Math.max(0, saved.top - 112));
     if (Math.abs(delta) >= 1) scrollPageBy(delta);
   }, [active]);
 
@@ -57,7 +65,8 @@ export function ScenePanel({ label, items, aside, className = '', visualClassNam
     triggers.current[next]?.focus();
   }
 
-  return <div className={`theme-dark ${styles.panel} ${className}`} data-theme="dark" role="group" aria-label={label}>
+  const dark = tone === 'dark';
+  return <div className={`${dark ? 'theme-dark ' : ''}${styles.panel} ${className}`} data-theme={tone} data-tone={tone} role="group" aria-label={label}>
     <div className={styles.copy}>
       <ul className={styles.list}>
         {items.map((item, index) => {
