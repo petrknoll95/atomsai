@@ -21,7 +21,7 @@
       "title": "You've heard the claim. Have a conversation",
       "label": "Hear it yourself",
       "intro": [
-        "Call the agent and take it somewhere a script wouldn't cover. Ask a follow-up, correct a detail, or interrupt an answer. Then try your own instructions in the Playground."
+        "Call the agent and take it somewhere a script wouldn't cover."
       ],
       "blocks": [
         {
@@ -256,7 +256,6 @@
       "links": [],
       "kind": "cards",
       "tryIt": {
-        "label": "Try it",
         "title": "What a phone line does to a voice",
         "body": "Drag from a studio microphone to a phone line. The band above 3.4 kHz disappears. Hear was trained on what's left.",
         "control": "Audio bandwidth",
@@ -482,10 +481,8 @@
     }
   ],
   "closing": {
-    "title": "Get a key, or get in touch",
-    "body": [
-      "A free key needs no card and no sales call. If the workflow needs more than an API, tell us, and we'll build it with you."
-    ],
+    "title": "Get a key, or get in touch.",
+    "body": [],
     "links": [
       {
         "label": "Get a free API key",
@@ -495,8 +492,7 @@
         "label": "Talk to AtomsAI",
         "href": "/company/contact"
       }
-    ],
-    "label": "Start"
+    ]
   },
   "stats": [
     {
@@ -515,10 +511,6 @@
       "value": "200",
       "label": "Voices, 20 languages"
     }
-  ],
-  "kicker": [
-    "Infrastructure",
-    "PyAI"
   ],
   "note": [
     "Free sandbox key, no card.",
