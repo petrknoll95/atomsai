@@ -16,7 +16,8 @@
 .window { min-width:0; padding:var(--pad-outer); border-radius:var(--radius-outer); background:var(--scene-shell); }
 .header { display:flex; align-items:center; gap:.65em; min-height:3.25em; padding:.75em 1em; }
 .title { min-width:0; font-size:1.1em; line-height:1.2; font-weight:var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium),'ital' 100; }
-.meta { margin-left:auto; display:flex; align-items:center; gap:.4em; flex:none; font-size:.9em; color:var(--scene-muted); font-variant-numeric:tabular-nums; }
+.meta { margin-left:auto; display:flex; align-items:center; gap:.4em; flex:none; font-size:.9em; color:color-mix(in srgb, var(--scene-ink) 76%, var(--scene-paper)); font-variant-numeric:tabular-nums; }
+/* The header sits on the pale shell, so its secondary text is a step darker than in the white body (AA on the shell). */
 .mark { display:block; flex:none; width:1.4em; height:1.4em; background:currentColor; mask:center / contain no-repeat; }
 .body { display:grid; gap:.9em; min-width:0; padding:1.1em; border-radius:var(--radius-inner); background:var(--scene-paper); }
 
