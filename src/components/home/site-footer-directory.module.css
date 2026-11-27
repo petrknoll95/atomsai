@@ -35,6 +35,7 @@
   .container { padding-block: 80px; }
 }
 @media (max-width: 1199px) {
+  .lead { margin-top: -16px; }
   .container { padding-block: 56px; }
   .ctaPanel { gap: 40px; padding-block: 64px; }
   .ctaSide svg { max-width: 100%; }
@@ -56,6 +57,9 @@
   .ctaActions > * { width: 100%; }
   .navigation { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .heading { max-width: 20ch; }
+  /* A full question flows as one balanced run on phones, not five ragged lines. */
+  .headingWide { font-size: 34px; line-height: 1; }
+  .headingWide .headingMuted { display: inline; }
 }
 @media (prefers-reduced-motion: reduce) { .group a, .arrow { transition: none; } }
 
