@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import { withBasePath } from '@/lib/base-path';
 import { AnimatedLogo } from '@/components/animated-logo';
 import Link from 'next/link';
@@ -82,19 +83,29 @@ const homepageGroups = [
   ] },
 ];
 
+/** A page's own closing line and actions for the dark CTA band, in place of the site-wide one. */
+export type FooterCta = { heading: ReactNode; actions: ReactNode };
+
+/** The muted second clause of the CTA heading. */
+export function FooterCtaMuted({ children }: { children: ReactNode }) {
+  return <span className={styles.headingMuted}>{children}</span>;
+}
+
 /** Current footer, shared by every site page through SiteFooter. */
-export function SiteFooterDirectory({ homepage = false }: { homepage?: boolean }) {
+export function SiteFooterDirectory({ homepage = false, cta }: { homepage?: boolean; cta?: FooterCta }) {
   const interiorPaths: Record<string, string> = { '/company/about': '/company/about', '/company/careers': '/company/careers', '/company/press': '/company/press', '#customer-stories': '/customers/success-stories', '/customers/testimonials': '/customers/testimonials', '#faq': '/help' };
   return <footer className={`theme-dark ${styles.footer}`} data-theme="dark" data-footer-variant="directory">
     <section className={styles.cta} aria-labelledby="footer-directory-heading">
       <FooterMarkHalf side="start" className={styles.ctaSide} />
       <div className={styles.ctaPanel}>
-        <h2 id="footer-directory-heading" className={`display ${styles.heading}`}>{homepage
+        <h2 id="footer-directory-heading" className={`display ${styles.heading}`}>{cta ? cta.heading : homepage
           ? <>The next build starts <span className={styles.headingMuted}>with your business.</span></>
           : <>Put AI to work <span className={styles.headingMuted}>in your business.</span></>}</h2>
         <div className={styles.ctaActions}>
-          <ButtonLink href="/company/contact" size="large">Talk to AtomsAI</ButtonLink>
-          <ButtonLink href={applicationsPath} size="large" variant="outline">Explore applications</ButtonLink>
+          {cta ? cta.actions : <>
+            <ButtonLink href="/company/contact" size="large">Talk to AtomsAI</ButtonLink>
+            <ButtonLink href={applicationsPath} size="large" variant="outline">Explore applications</ButtonLink>
+          </>}
         </div>
       </div>
       <FooterMarkHalf side="end" className={styles.ctaSide} />
