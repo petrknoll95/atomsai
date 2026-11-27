@@ -1,0 +1,68 @@
+/* Composition for the Applications step scenes, on the scene-kit palette.
+   The pair mirrors the homepage ServiceAgent demo (home/serviceagent-scene.module.css):
+   a faint dashboard outline behind two windows, the second dropped beside an arrow. */
+.pair {
+  --gap: 2.25em;
+  --drop: 4.5em;
+  --stencil: color-mix(in srgb, var(--scene-outline) 45%, transparent);
+  position: relative; isolation: isolate;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); align-items: start; gap: var(--gap);
+}
+.pair::before {
+  content: ''; position: absolute; inset: -1.75em 1.25em; z-index: -1; pointer-events: none;
+  border: 1px solid var(--stencil); border-radius: 1em;
+  background:
+    linear-gradient(var(--stencil), var(--stencil)) 0 4.5em / 100% 1px no-repeat,
+    linear-gradient(var(--stencil), var(--stencil)) 0 calc(100% - 4.5em) / 100% 1px no-repeat;
+}
+.first, .second { position: relative; min-width: 0; }
+.second { margin-top: var(--drop); }
+.connector { position: absolute; inset: 4em 100% auto auto; display: grid; place-items: center; width: var(--gap);
+  color: color-mix(in display-p3, var(--scene-paper) 55%, transparent); }
+
+.request { font-size: 1.2em; line-height: 1.4; text-wrap: pretty; }
+.result { font-size: 1.2em; line-height: 1.25; text-wrap: balance;
+  font-weight: var(--font-weight-medium); font-variation-settings: 'wght' var(--font-weight-medium), 'ital' 100; }
+.rowTitle { min-width: 0; }
+
+/* Label beside value, as in the homepage call outcome. */
+.record { display: grid; margin: 0; }
+.record > div { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); align-items: center; gap: .75em; padding-block: .7em; border-top: 1px solid var(--scene-line); }
+.record > div:first-child { border-top: 0; padding-top: 0; }
+.record > div:last-child { padding-bottom: 0; }
+.result + .record > div:first-child, .person + .record > div:first-child { border-top: 1px solid var(--scene-line); padding-top: .7em; }
+.record dt { color: var(--scene-muted); }
+.record dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+
+.rows { display: grid; }
+
+.person { display: flex; align-items: center; gap: .75em; min-width: 0; }
+.avatar { display: grid; place-items: center; flex: none; width: 2.5em; height: 2.5em; border-radius: 50%;
+  background: var(--scene-control); font-size: .86em; letter-spacing: .02em; }
+.personText { display: grid; gap: .1em; min-width: 0; line-height: 1.3; }
+.personText > * { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.thread { display: grid; gap: .9em; }
+
+/* States in order, each with a check. */
+.progress { display: grid; margin: 0; padding: 0; list-style: none; }
+.progress li { display: flex; align-items: center; gap: .75em; min-width: 0; padding-block: .6em; border-top: 1px solid var(--scene-line); }
+.progress li:first-child { border-top: 0; padding-top: 0; }
+.progress li:last-child { padding-bottom: 0; }
+.progressState { margin-left: auto; flex: none; }
+.check { display: grid; place-items: center; flex: none; width: 1.6em; height: 1.6em; border-radius: 50%; background: var(--scene-success); }
+.check[data-done='false'] { background: var(--scene-control); color: var(--scene-muted); }
+.check svg { width: 1.1em; height: 1.1em; }
+
+.meter { display: flex; gap: .25em; }
+.meter i { width: 1.1em; height: .4em; border-radius: 1em; background: var(--scene-control); }
+.meter i[data-on='true'] { background: var(--scene-ink); }
+
+/* Narrow frames (phones): one column, the arrow turns down, a touch larger type. */
+@container (max-width: 460px) {
+  .pair { --gap: 2em; grid-template-columns: minmax(0, 1fr); font-size: 1.15em; }
+  .pair::before { content: none; }
+  .second { margin-top: 0; }
+  .connector { inset: auto 0 100%; width: auto; height: var(--gap); }
+  .connector svg { transform: rotate(90deg); }
+}
