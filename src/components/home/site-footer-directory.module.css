@@ -4,6 +4,8 @@
 .ctaPanel { grid-column: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 48px; min-height: clamp(360px, 31vw, 580px); padding: 64px 32px; text-align: center; }
 .heading { max-width: 15ch; font-size: clamp(40px, 4.9vw, 84px); line-height: .92; letter-spacing: -.015em; text-wrap: balance; }
 .headingMuted { color: var(--color-muted-foreground); }
+/* A page's own closing line under the heading (optional, FooterCta.lead); the panel's gap spaces it. */
+.lead { max-width: 46ch; margin-top: -24px; font-size: var(--text-lead); line-height: 1.5; color: var(--color-muted-foreground); text-wrap: pretty; }
 .ctaActions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
 /* Outline logo mark split across the gutters: the three left slits on the left, their mirror on the right. */
 /* Each half spans the band's full height and starts at the viewport edge, so it runs a little past
