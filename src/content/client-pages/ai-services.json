@@ -82,7 +82,35 @@
         }
       ],
       "links": [],
-      "kind": "rows"
+      "kind": "rows",
+      "record": {
+        "title": "Order record",
+        "reference": "#48213",
+        "rows": [
+          {
+            "label": "Request",
+            "value": "Move Thu delivery to Mon"
+          },
+          {
+            "label": "Delivery",
+            "previous": "Thu 14 Nov",
+            "value": "Mon 18 Nov"
+          },
+          {
+            "label": "Policy",
+            "value": "Free change · inside 48h"
+          },
+          {
+            "label": "Dispatch",
+            "value": "Route 7 → Route 3 · rebuilt"
+          },
+          {
+            "label": "Confirmation",
+            "value": "Text + email sent · 09:41"
+          }
+        ],
+        "status": "Record closed"
+      }
     },
     {
       "id": "services",
@@ -181,7 +209,42 @@
       ],
       "blocks": [],
       "links": [],
-      "kind": "dark"
+      "kind": "dark",
+      "diagram": [
+        {
+          "label": "Your systems",
+          "items": [
+            "CRM",
+            "ERP",
+            "Documents",
+            "Internal systems"
+          ]
+        },
+        {
+          "label": "AI + business rules",
+          "items": [
+            "AI",
+            "Business rules",
+            "Permissions"
+          ]
+        },
+        {
+          "label": "Actions & approvals",
+          "items": [
+            "Move delivery",
+            "Approve",
+            "Reject"
+          ]
+        },
+        {
+          "label": "Updated records",
+          "items": [
+            "Order updated",
+            "Dispatch updated",
+            "Customer told"
+          ]
+        }
+      ]
     },
     {
       "id": "proven-in-production-at-scale",
@@ -296,7 +359,12 @@
           "tags": []
         }
       ],
-      "links": [],
+      "links": [
+        {
+          "label": "Explore our approach with us",
+          "href": "/company/contact?topic=services"
+        }
+      ],
       "kind": "rows"
     },
     {
