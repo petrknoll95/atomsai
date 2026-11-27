@@ -46,7 +46,7 @@ function Telephony({ name }: { name: string }) {
     <div className={styles.pair}>
       <Window title={<Title name={name} />} meta="Outbound call"
         footer={<><i className={styles.dot} />Connected<span className={styles.end}><SceneMuted>0:12</SceneMuted></span></>}>
-        <SceneField label="Managed number"><span className={styles.number}>+1 (555) 010-0142</span></SceneField>
+        <SceneField label="Managed number"><span className={styles.number}>+1 (252) 555-0142</span></SceneField>
         <ScenePills><ScenePill>Transfer</ScenePill><ScenePill>Hold</ScenePill><ScenePill>Keypad</ScenePill></ScenePills>
       </Window>
       <SceneWindow title="Who picked up" meta="AMD" className={styles.dropped}>
@@ -138,7 +138,7 @@ function Recap({ name }: { name: string }) {
 function Trace({ name, beta }: { name: string; beta: boolean }) {
   return <Stage>
     <Window title={<Title name={name} beta={beta} />} meta="Scorecard"
-      footer={<><span className={styles.hashLabel}>Audit hash</span><code className={styles.hash}>sha256:4f9c0b…e21a7d</code><span className={styles.end}><SceneMuted>Tamper-evident</SceneMuted></span></>}>
+      footer={<><span className={styles.hashLabel}>Audit hash</span><code className={styles.hash}>4f9c0b…e21a7d</code><span className={styles.end}><SceneMuted>Tamper-evident</SceneMuted></span></>}>
       <div className={styles.finding}>
         <div className={styles.cited}>
           <span className={styles.label}>Finding <SceneMuted>· 0:09</SceneMuted></span>
