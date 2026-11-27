@@ -1,5 +1,5 @@
 import { ArrowIcon } from '@/components/arrow-icon';
-import { ButtonLink } from '@/components/ui';
+import { ButtonLink, Eyebrow } from '@/components/ui';
 import { Faq } from '@/components/home/faq';
 import { StatHighlights } from '@/components/home/stat-highlights';
 import source from '@/content/client-pages/infrastructure.json';
@@ -67,10 +67,15 @@ function PyAILockup({ className = '' }: { className?: string }) {
   </p>;
 }
 
-/** A link styled as a pill: an up-right arrow for other sites, which open in a new tab. */
-function PillLink({ link, variant = 'secondary', className = '' }: { link: ContentLink; variant?: 'primary' | 'secondary' | 'ghost'; className?: string }) {
+/**
+ * A link styled as a pill: an up-right arrow for other sites, which open in a new tab.
+ * Standalone on the page it takes the homepage's 44px size; inside a dark panel, a small ghost.
+ */
+function PillLink({ link, variant = 'secondary', size = 'medium', className = '' }: {
+  link: ContentLink; variant?: 'primary' | 'secondary' | 'ghost'; size?: 'small' | 'medium'; className?: string;
+}) {
   const external = isOutbound(link.href);
-  return <ButtonLink href={link.href} size="small" variant={variant} className={`${styles.pill} ${className}`} {...(external ? outbound : {})}>
+  return <ButtonLink href={link.href} size={size} variant={variant} className={`${size === 'small' ? styles.pill : ''} ${className}`} {...(external ? outbound : {})}>
     {link.label}<ArrowIcon direction={external ? 'up-right' : 'right'} size={16} />
   </ButtonLink>;
 }
@@ -123,14 +128,12 @@ export function InfrastructurePage() {
           </div>
         </div>
         <div className={styles.demoCopy}>
-          <ol className={styles.askList} aria-label="Three things to try on the call">
-            {demo.blocks.map((block, index) => <li key={block.title}>
-              <span className={styles.askIndex} aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
-              <span className={`display ${styles.askTitle}`}>{block.title}</span>
-            </li>)}
-          </ol>
+          {/* Plain names, as the homepage panel lists its products: the asks have no order. */}
+          <ul className={styles.askList} aria-label="Three things to try on the call">
+            {demo.blocks.map(block => <li key={block.title} className={`display ${styles.askTitle}`}>{block.title}</li>)}
+          </ul>
           <div className={styles.askNext}>
-            <PillLink link={playground} variant="ghost" className={styles.ghostLink} />
+            <PillLink link={playground} variant="ghost" size="small" className={styles.ghostLink} />
             <p>{demo.note}</p>
           </div>
         </div>
@@ -141,13 +144,12 @@ export function InfrastructurePage() {
 
     <section id="lessons" className={`page-container ${styles.lessons}`} aria-labelledby="lessons-heading">
       <SectionIntro id="lessons-heading" title={lessons.title} />
-      {/* Open columns, metric first, ruled like the numbers strip above. */}
-      <ol className={styles.columns}>
+      {/* Open columns: each lesson, then its evidence at the foot, the three ruled as one numbers strip. */}
+      <ol className={`${styles.columns} ${styles.lessonColumns}`}>
         {lessons.blocks.map(block => <li key={block.title}>
-          <p className={styles.metric}><span className="display">{block.metric}</span><span>{block.metricNote}</span></p>
-          <p className={`${styles.columnLabel} ${styles.lessonLabel}`}>{block.label}</p>
           <h3 className={`display ${styles.columnTitle}`}>{block.title}</h3>
           <p className={styles.columnBody}>{block.body[0]}</p>
+          <p className={styles.metric}><span className="display">{block.metric}</span><span>{block.metricNote}</span></p>
         </li>)}
       </ol>
       <p className={styles.columnsNote}>{lessons.note}</p>
@@ -156,9 +158,8 @@ export function InfrastructurePage() {
 
     <section id="build" className={`page-container ${styles.build}`} aria-labelledby="build-heading">
       <SectionIntro id="build-heading" title={build.title} />
-      <ul className={styles.columns}>
+      <ul className={`${styles.columns} ${styles.pathColumns}`}>
         {build.blocks.map(block => <li key={block.title}>
-          <p className={styles.columnLabel}>{block.label}</p>
           <h3 className={`display ${styles.columnTitle}`}>{block.title}</h3>
           <p className={styles.columnBody}>{block.body[0]}</p>
           <PillLink link={block.links[0]} className={styles.columnAction} />
@@ -185,7 +186,8 @@ export function InfrastructurePage() {
     <section id="security" className={`page-container ${styles.security}`} aria-labelledby="security-heading">
       <header className={styles.securityIntro}>
         <h2 className={`display ${styles.securityTitle}`} id="security-heading">{security.title}</h2>
-        <PillLink link={security.links[0]} className={styles.securityAction} />
+        {/* A section-level link, as the homepage trust summary's "Trust Center". */}
+        <Eyebrow href={security.links[0].href} className={styles.securityAction}>{security.links[0].label}</Eyebrow>
       </header>
       <ul className={styles.guarantees}>
         {security.blocks.map(block => <li key={block.title}>

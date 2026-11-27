@@ -5,7 +5,7 @@
 .line { display:block; }
 .srOnly { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
 .headerZone { display:none; }
-/* Pills in running sections: 32px on a fine pointer, a full 44px target on touch. */
+/* Small pills inside dark panels: 32px on a fine pointer, a full 44px target on touch. */
 @media (pointer:coarse) { .page .pill { height:44px; } 
 }
 
@@ -35,9 +35,8 @@
 .demoCopy { grid-column:1; grid-row:1; display:flex; flex-direction:column; justify-content:space-between; gap:48px; min-width:0; padding:40px 36px 36px 44px; }
 .demoFrame { grid-column:2; grid-row:1; display:grid; place-items:center; min-width:0; min-height:480px; padding:48px 24px; border-radius:10px; background:var(--scene-frame); }
 .askList { margin:0; padding:0; list-style:none; }
-.askList>li { display:flex; align-items:baseline; gap:20px; padding-block:24px; border-top:1px solid var(--color-border); }
+.askList>li { padding-block:24px; border-top:1px solid var(--color-border); }
 .askList>li:first-child { padding-top:0; border-top:0; }
-.askIndex { flex:none; width:2.5ch; font-size:var(--text-label); line-height:1; color:var(--color-muted-foreground); font-variant-numeric:tabular-nums; }
 .askTitle { font-size:clamp(26px,2.4vw,34px); line-height:1.05; }
 .askNext { display:flex; flex-direction:column; align-items:flex-start; gap:6px; }
 .askNext>p { max-width:44ch; font-size:var(--text-label); line-height:1.5; color:var(--color-muted-foreground); text-wrap:pretty; }
@@ -57,18 +56,24 @@
 .callNote { font-size:var(--text-label); line-height:1.5; color:var(--call-muted); }
 .callAction { margin-top:18px; }
 
-/* Lessons and paths: open columns on the page, ruled like the numbers strip. Subgrid keeps rows level across columns. */
+/* Lessons and paths: open columns on the page, a title, its body, then its foot. Subgrid keeps rows level across columns. */
 .lessons, .build { padding-bottom:var(--section-space); }
 .columns { --column-gutter:clamp(20px,2.5vw,40px); display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); margin:0; padding:0; list-style:none; }
-.columns>li { display:grid; grid-row:span 4; grid-template-rows:subgrid; row-gap:0; align-items:start; justify-items:start; min-width:0; padding-inline:var(--column-gutter); border-inline-start:1px solid var(--color-border); }
-.columns>li:first-child { padding-inline-start:0; border-inline-start:0; }
+.columns>li { display:grid; grid-row:span 3; grid-template-rows:subgrid; row-gap:0; align-items:start; justify-items:start; min-width:0; padding-inline:var(--column-gutter); }
+.columns>li:first-child { padding-inline-start:0; }
 .columns>li:last-child { padding-inline-end:0; }
-.metric { display:flex; flex-direction:column; gap:14px; }
-.metric>span:first-child { font-size:clamp(30px,2.7vw,40px); line-height:1.05; letter-spacing:-.02em; text-wrap:balance; font-variant-numeric:tabular-nums; }
+/* Paths are ruled between, like the numbers strip. */
+.pathColumns>li+li { border-inline-start:1px solid var(--color-border); }
+/* Each lesson's evidence at its foot: one number with one label. The three feet meet across the
+   gutters, so they read as the homepage numbers strip: hairlines above and below, rules between. */
+.metric { display:flex; flex-direction:column; align-items:flex-start; gap:12px; align-self:stretch; justify-self:stretch;
+  margin:48px calc(-1 * var(--column-gutter)) 0; padding:28px var(--column-gutter); border-block:1px solid var(--color-border); }
+.lessonColumns>li+li .metric { border-inline-start:1px solid var(--color-border); }
+.lessonColumns>li:first-child .metric { margin-inline-start:0; padding-inline-start:0; }
+.lessonColumns>li:last-child .metric { margin-inline-end:0; padding-inline-end:0; }
+.metric>span:first-child { font-size:clamp(24px,2.2vw,32px); line-height:1.05; letter-spacing:-.02em; text-wrap:balance; font-variant-numeric:tabular-nums; }
 .metric>span:last-child { font-size:var(--text-label); line-height:1.4; color:var(--color-muted-foreground); }
-.columnLabel { font-size:var(--text-label); line-height:1.4; color:var(--color-muted-foreground); }
-.lessonLabel { margin-top:56px; }
-.columnTitle { max-width:16ch; margin-top:16px; font-size:clamp(22px,1.9vw,28px); line-height:1.1; text-wrap:balance; }
+.columnTitle { max-width:16ch; font-size:clamp(22px,1.9vw,28px); line-height:1.1; text-wrap:balance; }
 .columnBody { max-width:38ch; margin-top:16px; font-size:var(--text-body); line-height:1.5; color:var(--color-muted-foreground); text-wrap:pretty; }
 .columnAction { align-self:end; margin-top:32px; }
 .columnsNote { margin-top:48px; font-size:var(--text-label); line-height:1.5; color:var(--color-muted-foreground); }
@@ -144,12 +149,6 @@ html .range:focus-visible { outline:2px solid var(--palette-deep-green); outline
   .demoFrame, .demoCopy { grid-column:1; grid-row:auto; }
   .demoFrame { min-height:0; padding:40px 16px; }
   .demoCopy { gap:32px; padding:20px 16px 16px; }
-  .columns { grid-template-columns:minmax(0,1fr); }
-  .columns>li { display:flex; flex-direction:column; grid-row:auto; padding:32px 0; border-inline-start:0; border-top:1px solid var(--color-border); }
-  .columns>li:first-child { padding-top:0; border-top:0; }
-  .columns>li:last-child { padding-bottom:0; }
-  .lessonLabel { margin-top:32px; }
-  .columnAction { align-self:flex-start; margin-top:24px; }
   .tryIt, .stack { grid-template-columns:minmax(0,1fr); }
   .tryIt { gap:32px; margin-top:88px; }
 
@@ -166,9 +165,20 @@ html .range:focus-visible { outline:2px solid var(--palette-deep-green); outline
   .stats { padding-top:56px; }
   .callBody { padding:28px 20px 20px; }
   .callNumber { font-size:clamp(28px,8vw,34px); }
-  .askList>li { gap:16px; padding-block:20px; }
+  .askList>li { padding-block:20px; }
   .askTitle { font-size:26px; }
-  .metric>span:first-child { font-size:32px; }
+  /* One column only below 768: each item stacks, its foot under a single hairline. */
+  .columns { grid-template-columns:minmax(0,1fr); }
+  .columns>li { display:flex; flex-direction:column; grid-row:auto; padding:32px 0; }
+  .columns>li:first-child { padding-top:0; }
+  .columns>li:last-child { padding-bottom:0; }
+  .pathColumns>li+li { border-inline-start:0; border-top:1px solid var(--color-border); }
+  .lessonColumns>li { padding-block:0; }
+  .lessonColumns>li+li { padding-top:56px; }
+  .metric, .lessonColumns>li:is(:first-child,:last-child) .metric { align-self:stretch; margin:28px 0 0; padding:20px 0 0; border-bottom:0; }
+  .lessonColumns>li+li .metric { border-inline-start:0; }
+  .metric>span:first-child { font-size:26px; }
+  .columnAction { align-self:flex-start; margin-top:24px; }
   .columnsNote { margin-top:40px; }
   .tryTitle { font-size:30px; }
   .spectrumBars { height:150px; }
