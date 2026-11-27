@@ -3,7 +3,7 @@
 import { useEffect, useRef, type ReactNode } from 'react';
 import styles from './story-sections.module.css';
 
-export function StatHighlights({ children }: { children: ReactNode }) {
+export function StatHighlights({ children, label = 'Company statistics' }: { children: ReactNode; label?: string }) {
   const list = useRef<HTMLDListElement>(null);
   useEffect(() => {
     if (!list.current || !('IntersectionObserver' in window)) return;
@@ -24,5 +24,5 @@ export function StatHighlights({ children }: { children: ReactNode }) {
       numbers.forEach(number => { delete number.dataset.highlight; });
     };
   }, []);
-  return <dl ref={list} className={styles.proofFacts} aria-label="Company statistics">{children}</dl>;
+  return <dl ref={list} className={styles.proofFacts} aria-label={label}>{children}</dl>;
 }

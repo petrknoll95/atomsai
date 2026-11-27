@@ -90,7 +90,7 @@ export function InfrastructurePage() {
     </section>
 
     <section className={`page-container ${styles.stats}`} aria-label="In numbers">
-      <StatHighlights>{need(content.stats, 'stats').map(stat =>
+      <StatHighlights label="In numbers">{need(content.stats, 'stats').map(stat =>
         <div key={stat.label}><dt>{stat.label}</dt><dd className="display">{stat.value}</dd></div>)}
       </StatHighlights>
     </section>

@@ -54,7 +54,7 @@ export function ApplicationsPage() {
           {proof.links[0].label}<span className="sr-only"> (opens in a new tab)</span><ArrowIcon direction="up-right" size={14} />
         </ButtonLink>} />
       <div className={styles.stats}>
-        <StatHighlights>
+        <StatHighlights label="Customer results">
           {proof.stats!.map(stat => <div key={stat.label}>
             <dt>{stat.label} <span className={styles.statCompany}>{stat.company}</span></dt>
             <dd className="display">{stat.value}</dd>
