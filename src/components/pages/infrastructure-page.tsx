@@ -2,19 +2,18 @@ import type { ReactNode } from 'react';
 import { ArrowIcon } from '@/components/arrow-icon';
 import { ButtonLink } from '@/components/ui';
 import { Faq } from '@/components/home/faq';
-import { Pattern } from '@/components/patterns/pattern';
 import { withBasePath } from '@/lib/base-path';
 import source from '@/content/client-pages/infrastructure.json';
 import type { ContentBlock, ContentLink, ContentPage, ContentSection } from './client-content';
 import { CodeExamples } from './content-catalog';
-import { FeatureTabs } from './feature-tabs';
 import { InfrastructureBandwidth, type BandwidthContent } from './infrastructure-bandwidth';
+import { InfrastructureBox } from './infrastructure-box';
 import { InfrastructureCallDemo, type CallDemoContent } from './infrastructure-call-demo';
 import { LineArt, LineIcon, type LineArtName, type LineIconName } from './infrastructure-icons';
 import styles from './infrastructure.module.css';
 
 /** The shared client-page shape, plus the fields only this page's prototype has. */
-type InfrastructureSection = Omit<ContentSection, 'blocks'> & {
+export type InfrastructureSection = Omit<ContentSection, 'blocks'> & {
   blocks: (ContentBlock & { metricNote?: string })[];
   line?: { label: string; number: string; href: string; note: string };
   note?: string;
@@ -36,7 +35,6 @@ const section = (id: string) => need(content.sections.find(entry => entry.id ===
 const demo = section('demo');
 const demoLine = need(demo.line, 'demo.line');
 const box = section('box');
-const boxMore = need(box.more, 'box.more');
 const lessons = section('lessons');
 const build = section('build');
 const stack = section('stack');
@@ -77,7 +75,6 @@ function TextLink({ href, children, className = '' }: { href: string; children: 
 }
 
 const fanIcons: LineIconName[] = ['followUp', 'correct', 'interrupt'];
-const boxIcons: LineIconName[] = ['telephony', 'hear', 'omni', 'speak', 'recap', 'trace'];
 const lessonIcons: LineIconName[] = ['phoneAudio', 'turnTaking', 'oneSystem'];
 const securityIcons: LineIconName[] = ['servers', 'keys', 'recording', 'evidence'];
 const buildArt: LineArtName[] = ['applications', 'api', 'services'];
@@ -139,37 +136,7 @@ export function InfrastructurePage() {
       </div>
     </section>
 
-    <section id="box" className={`page-container ${styles.box}`} aria-labelledby="box-heading">
-      <SectionHead id="box" label={box.label} title={box.title} intro={box.intro[0]}
-        action={<TextLink href={box.links[0].href}>{box.links[0].label}</TextLink>} />
-      <div className={styles.boxTabsFrame}>
-        <div className={styles.boxPattern} aria-hidden="true">
-          <Pattern kind="drift" count={16} mode="dark" fit="stretch" loading="lazy" label="" />
-        </div>
-        <FeatureTabs label={box.label} className={styles.boxTabs} stageClassName={`theme-dark ${styles.boxStage}`} stageProps={{ 'data-header-backdrop': '' }}
-          items={box.blocks.map((block, index) => ({
-            id: boxIcons[index], title: block.title, meta: block.label,
-            panel: <div className={styles.boxPanel} data-theme="dark" data-header-theme="light">
-              <HeaderZone />
-              <LineIcon name={boxIcons[index]} className={styles.boxIcon} />
-              <div className={styles.boxCopy}>
-                <p className={styles.boxMeta}>{block.label}</p>
-                <h3 className={`display ${styles.boxTitle}`}>{block.title}</h3>
-                <p className={styles.boxBody}>{block.body[0]}</p>
-                <p className={styles.boxUse}><ArrowIcon size={12} />{block.body[1]}</p>
-                <TextLink href={block.links[0].href} className={styles.boxDocs}>{block.links[0].label}</TextLink>
-              </div>
-            </div>,
-          }))} />
-      </div>
-      <p className={styles.boxMore}>
-        <b>{boxMore.lead}</b>{' '}
-        {boxMore.parts.map((part, index) => 'href' in part && part.href
-          ? <a key={index} className={styles.textLink} href={part.href} {...outbound}>{part.label}<ArrowIcon direction="up-right" size={12} /></a>
-          : <span key={index}>{part.text}</span>)}{' '}
-        <a className={styles.textLink} href={boxMore.link.href} {...outbound}>{boxMore.link.label}<ArrowIcon direction="up-right" size={12} /></a>
-      </p>
-    </section>
+    <InfrastructureBox section={box} />
 
     <section id="lessons" className={styles.lessons} aria-labelledby="lessons-heading">
       <div className="page-container">
