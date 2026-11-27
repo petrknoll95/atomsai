@@ -24,8 +24,10 @@
 .heroActions { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:8px; margin-top:36px; }
 .heroNote { margin-top:20px; font-size:var(--text-caption); line-height:1.4; color:var(--color-muted-foreground); }
 
-/* The homepage numbers strip (StatHighlights), without the intro column it has there. */
+/* The homepage numbers strip (StatHighlights), without the intro column it has there:
+   hairlines above and below, as the homepage company proof row and the Applications strip. */
 .stats { --stat-gutter:clamp(16px,2vw,32px); padding-top:80px; }
+.statsStrip { padding-block:clamp(28px,4vw,56px); border-block:1px solid var(--color-border); }
 .stats dl>div:first-child { padding-inline-start:0; border-inline-start:0; }
 
 /* Demo line: one dark-green panel, as the homepage "Now it's your turn". */

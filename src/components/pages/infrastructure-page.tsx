@@ -106,9 +106,11 @@ export function InfrastructurePage() {
     </section>
 
     <section className={`page-container ${styles.stats}`} aria-label="In numbers">
-      <StatHighlights label="In numbers">{need(content.stats, 'stats').map(stat =>
-        <div key={stat.label}><dt>{stat.label}</dt><dd className="display">{stat.value}</dd></div>)}
-      </StatHighlights>
+      <div className={styles.statsStrip}>
+        <StatHighlights label="In numbers">{need(content.stats, 'stats').map(stat =>
+          <div key={stat.label}><dt>{stat.label}</dt><dd className="display">{stat.value}</dd></div>)}
+        </StatHighlights>
+      </div>
     </section>
 
     <section id="demo" className={`page-container ${styles.demo}`} aria-labelledby="demo-heading">
