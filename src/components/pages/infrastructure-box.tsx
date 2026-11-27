@@ -31,9 +31,10 @@ export function InfrastructureBox({ section }: { section: InfrastructureSection 
         const docs = block.links[0];
         return {
           id: boxScenes[index] ?? `api-${index}`,
+          // The API's name, as the homepage panel names its products: "Telephony · AMD" … "Trace · Beta".
+          label: block.label,
           title: block.title,
           detail: <>
-            {beta && <span className={styles.beta}>Beta</span>}
             <p>{block.body[0]}</p>
             <p className={styles.use}><ArrowIcon size={14} className={styles.useArrow} />{block.body[1]}</p>
             <ButtonLink href={docs.href} size="small" variant="ghost" className={styles.docs} {...linkProps(docs.href)}>

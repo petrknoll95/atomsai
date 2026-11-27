@@ -7,9 +7,7 @@
 
 
 /* Inside the active step: the description, then what you can build with it, then the docs.
-   A product in beta says so first, in a small soft pill rather than an uppercase tag. */
-.beta { display:inline-flex; align-items:center; height:24px; padding-inline:10px; margin-bottom:-2px; border-radius:var(--radius-control);
-  background:var(--color-secondary); color:var(--color-secondary-foreground); font-size:var(--text-caption); line-height:16px; }
+   The step's label names the API, and says when it is in beta. */
 .use { display:flex; align-items:baseline; gap:10px; font-size:var(--text-label); line-height:1.5;
   color:color-mix(in display-p3, var(--palette-cream) 58%, transparent); }
 .useArrow { flex:none; translate:0 1px; }
