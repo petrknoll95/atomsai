@@ -62,8 +62,8 @@
 .callStatus { display:inline-flex; align-items:center; gap:8px; padding:4px 12px; border-radius:999px; background:var(--scene-control); font-size:var(--text-label); line-height:20px; }
 .callLive { width:6px; height:6px; flex:none; border-radius:50%; background:var(--palette-forest-green); }
 .callBody { display:flex; flex-direction:column; align-items:flex-start; gap:14px; padding:36px 28px 28px; border-radius:16px; background:var(--scene-paper); }
-/* The line box is only 1em tall; padding makes the call link a 44px+ target without moving it. */
-.callNumber { padding-block:6px; margin-block:-6px; border-radius:6px; font-size:clamp(30px,2.6vw,40px); line-height:1; letter-spacing:-.02em; white-space:nowrap; font-variant-numeric:tabular-nums; color:var(--scene-ink); transition:color .2s ease,var(--focus-transition); }
+/* The trimmed display line is only cap-high; padding makes the call link a 44px target without moving it. */
+.callNumber { padding-block:11px; margin-block:-11px; border-radius:6px; font-size:clamp(30px,2.6vw,40px); line-height:1; letter-spacing:-.02em; white-space:nowrap; font-variant-numeric:tabular-nums; color:var(--scene-ink); transition:color .2s ease,var(--focus-transition); }
 @media (hover:hover) { .callNumber:hover { color:var(--call-muted); } }
 .callNote { font-size:var(--text-label); line-height:1.5; color:var(--call-muted); }
 .callAction { margin-top:18px; }
@@ -188,9 +188,6 @@ html .range:focus-visible { outline:2px solid var(--palette-deep-green); outline
   .columnAction { align-self:flex-start; margin-top:24px; }
   .tryIt, .stack { grid-template-columns:minmax(0,1fr); }
   .tryIt { gap:32px; margin-top:88px; }
-  .security { grid-template-columns:minmax(0,1fr); gap:48px; }
-  .securityIntro { gap:28px; }
-  .securityAction { margin-top:0; }
   .boxTabsFrame { display:block; }
   .boxPattern { display:none; }
   .boxStage, .boxTabsFrame .boxStage { min-height:0; background:var(--palette-forest-shade); }
@@ -225,6 +222,10 @@ html .range:focus-visible { outline:2px solid var(--palette-deep-green); outline
   .tryOutput { grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); gap:16px; }
   .tryOutput dd { font-size:18px; }
   .stackList { margin-top:32px; }
+  /* Stacked as the homepage trust summary does: the heading and its link, then the list. */
+  .security { grid-template-columns:minmax(0,1fr); gap:40px; }
+  .securityIntro { gap:28px; }
+  .securityAction { margin-top:0; }
   .security { padding-bottom:16px; }
   .securityTitle { font-size:var(--text-display-medium); }
   .guarantees>li { padding-block:24px; }
