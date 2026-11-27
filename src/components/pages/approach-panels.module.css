@@ -1,11 +1,10 @@
 /* The two step panels on /approach (approach-workflow.tsx, approach-stages.tsx): a homepage
-   section opener on the light page, then the dark-green ScenePanel. */
+   section opener on the light page, then the ScenePanel (light for the workflow, dark for the stages). */
 .section { margin-top:var(--section-space); }
 
-/* The workflow's closing statement under its steps, ruled off like ServiceAgent's trade note. */
-.statement { max-width:46ch; margin:0; padding-top:24px; border-top:1px solid color-mix(in display-p3, var(--palette-cream) 14%, transparent);
-  color:var(--palette-cream); font-size:var(--text-body); line-height:1.4;
-  font-weight:var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; text-wrap:pretty; }
+/* The workflow's statement: the lead's second line, in the foreground, as the prototype's darker line. */
+.statement { display:block; margin-top:12px; color:var(--color-foreground);
+  font-weight:var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; }
 
 /* A stage opens on what it delivers, then how, then the three things it leaves behind. */
 .outcome { color:var(--palette-cream); }
