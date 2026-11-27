@@ -5,7 +5,7 @@
 /* As on the homepage: secondary copy stays legible on paper and cream. Scoped to the
    light theme so it outranks tokens.css whatever order the stylesheets load in. */
 .page[data-theme='light'] { --color-muted-foreground:color-mix(in display-p3, var(--palette-deep-green) 74%, transparent); }
-.page :is(h1,h2,h3,h4,h5,h6) { text-box:trim-both cap alphabetic; }
+.page :is(h1, h2, h3, h4, h5, h6) { text-box:trim-both cap alphabetic; }
 
 /* Product name beside its mark. */
 .lockup { display:inline-flex; align-items:center; gap:8px; font-family:var(--font-display); font-weight:400; font-variation-settings:normal; font-size:20px; line-height:1; letter-spacing:-.01em; white-space:nowrap; }
@@ -37,60 +37,17 @@
   font-weight:var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium),'ital' 100; transition:color .24s ease; }
 .appLink::after { content:''; position:absolute; inset:0; }
 .appLink > svg { transition:transform .35s cubic-bezier(.22,1,.36,1); }
-@media (hover:hover) { .app:hover .appLink { color:var(--color-muted-foreground); } }
-.app:is(:hover,:focus-within) .appLink > svg { transform:translateY(2px); }
+@media (hover:hover) { .app:hover .appLink { color:var(--color-muted-foreground); } 
+}
+.app:is(:hover, :focus-within) .appLink > svg { transform:translateY(2px); }
 /* The column carries the ring; outranks the global focus rule in styles/focus.css. */
 html .app .appLink:focus-visible { outline-color:transparent; box-shadow:none; }
 .app:has(.appLink:focus-visible) { outline:2px solid var(--color-ring); outline-offset:12px; border-radius:4px; }
 
-/* ---------- Product chapters ---------- */
-.product { margin-top:var(--section-space); }
-.productHead { display:grid; grid-template-columns:minmax(0,7fr) minmax(0,5fr); gap:32px 64px; align-items:start; margin-bottom:56px; }
-.productLabel { grid-column:1 / -1; display:flex; flex-wrap:wrap; align-items:center; gap:8px 14px; font-size:var(--text-label); line-height:20px; color:var(--color-muted-foreground); }
-.productLabel .lockup { color:var(--color-foreground); }
-.labelDivider { width:1px; height:16px; background:currentColor; opacity:.4; }
-.productTitle { grid-column:1; max-width:14ch; font-size:clamp(44px,5vw,76px); line-height:1; letter-spacing:-.03em; text-wrap:balance; }
-.productLead { grid-column:2; max-width:40ch; font-size:18px; line-height:1.5; color:var(--color-muted-foreground); text-box:trim-both cap alphabetic; }
-.productSub { grid-column:1; max-width:64ch; font-size:16px; line-height:1.55; color:var(--color-muted-foreground); }
-
-/* FeatureTabs stage, tinted per product. Dark roles come from .theme-dark (no data-theme:
-   on wide screens it sits beside light copy, so the header keeps its light mode). */
-.steps .stepStage { position:relative; isolation:isolate; overflow:hidden; border-radius:var(--radius-card); background:var(--palette-forest-shade);
-  --color-surface-muted-foreground:color-mix(in srgb, var(--palette-cream) 72%, transparent); --step-accent:var(--palette-sage-tint); }
-.steps .stepStage::before { content:''; position:absolute; inset:-6%; z-index:-1; pointer-events:none;
-  background:url('../../../public/assets/figma/menu-drift.webp') center / cover no-repeat; opacity:.5; }
-.steps .stepStage::after { content:''; position:absolute; inset:0; z-index:-1; pointer-events:none;
-  background:linear-gradient(180deg, color-mix(in srgb, var(--palette-forest-shade) 45%, transparent), color-mix(in srgb, var(--palette-forest-shade) 92%, transparent)); }
-/* JustCall: the same fluting carried in iris only, no green. */
-.product[data-product="justcall"] .stepStage { background:var(--palette-iris-dark); --step-accent:var(--palette-iris-light); }
-.product[data-product="justcall"] .stepStage::before { filter:grayscale(1) contrast(1.4) brightness(1.5); mix-blend-mode:luminosity; opacity:.55; }
-.product[data-product="justcall"] .stepStage::after {
-  background:linear-gradient(180deg, color-mix(in srgb, var(--palette-iris-dark) 30%, transparent), color-mix(in srgb, var(--palette-iris-dark) 90%, transparent)); }
-.stepPanel { display:grid; grid-template-rows:auto 1fr; gap:32px; height:100%; min-height:520px; padding:36px; color:var(--color-foreground); }
-.headerZone { display:none; }
-.glyph { justify-self:end; width:clamp(96px,10vw,136px); height:auto; stroke:var(--color-foreground); stroke-width:1.5; stroke-linejoin:miter; stroke-linecap:butt; opacity:.9; }
-.glyph * { vector-effect:non-scaling-stroke; }
-.glyph [data-accent] { stroke:var(--step-accent); }
-.stepCopy { align-self:end; display:grid; gap:14px; max-width:58ch; }
-.stepIndex { font-size:12px; line-height:16px; letter-spacing:.14em; color:var(--step-accent); font-variant-numeric:tabular-nums; }
-.stepTitle { margin-top:4px; font-size:clamp(28px,2.4vw,36px); line-height:1.08; text-wrap:balance; }
-.stepBody { font-size:16px; line-height:1.55; color:var(--color-surface-muted-foreground); }
-.stepQuote { display:grid; gap:12px; margin:10px 0 0; padding-top:18px; border-top:1px solid var(--color-border); }
-.stepQuote blockquote { margin:0; font-family:var(--font-display); font-weight:400; font-variation-settings:normal; font-size:18px; line-height:1.3; letter-spacing:-.005em; text-wrap:pretty; }
-.stepQuote figcaption { display:flex; flex-wrap:wrap; align-items:center; gap:4px 14px; font-size:13px; line-height:18px; color:var(--color-surface-muted-foreground); }
-.stepPerson { color:var(--color-foreground); font-weight:var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium),'ital' 100; }
-.stepMetric { font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--step-accent); }
-.stepQuote .storyLink { margin-left:auto; margin-right:-12px; }
-.productFoot { display:grid; grid-template-columns:minmax(0,7fr) minmax(0,5fr); gap:32px 64px; align-items:end; margin-top:48px; }
-.productFootActionsOnly { grid-template-columns:minmax(0,1fr); }
-.productFootTitle { font-size:clamp(24px,2vw,30px); line-height:1.1; }
-.productFootBody { margin-top:18px; max-width:52ch; font-size:16px; line-height:1.55; color:var(--color-muted-foreground); }
-.productActions { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:12px; }
-.productFootActionsOnly .productActions { justify-content:flex-start; }
-
 /* ---------- Customer results ---------- */
 .proof { --stat-gutter:clamp(16px,2vw,32px); margin-top:var(--section-space); }
-@media (pointer:coarse) { .smallAction { min-height:44px; } }
+@media (pointer:coarse) { .smallAction { min-height:44px; } 
+}
 /* The homepage stats strip (home/story-sections.module.css .proofRow), without its intro column. */
 .stats { padding-block:clamp(28px,4vw,56px); border-block:1px solid var(--color-border); }
 .stats > dl > div:first-child { border-inline-start:0; padding-inline-start:0; }
@@ -113,19 +70,11 @@ html .app .appLink:focus-visible { outline-color:transparent; box-shadow:none; }
 .needText { max-width:34ch; margin-top:14px; font-size:var(--text-body); line-height:1.5; color:var(--color-muted-foreground); text-wrap:pretty; }
 /* Ghost buttons hang their padding outside the text column, as on the homepage. */
 .needLink { margin:20px 0 0 -12px; }
-@media (pointer:coarse) { .needLink { min-height:44px; } }
-
-@media (max-width:1199px) {
-  .productHead, .productFoot { gap:28px 40px; }
-  .stepPanel { padding:28px; min-height:500px; }
+@media (pointer:coarse) { .needLink { min-height:44px; } 
 }
 @media (max-width:899px) {
-  .productHead, .productFoot { grid-template-columns:minmax(0,1fr); }
   .needs { grid-template-columns:repeat(2,minmax(0,1fr)); }
-  .productTitle, .productLead, .productSub { grid-column:1; }
-  .productActions { justify-content:flex-start; }
-  /* The stage spans the content width here: the header reads dark while it is beneath. */
-  .headerZone { position:absolute; inset:0; display:block; pointer-events:none; }
+
 }
 @media (max-width:767px) {
   .page { --section-space:88px; }
@@ -133,22 +82,12 @@ html .app .appLink:focus-visible { outline-color:transparent; box-shadow:none; }
   .heroLead { margin-top:24px; font-size:var(--text-body); }
   .heroAction { margin-top:28px; }
   .heroStage { margin-top:48px; }
-  .productLead { font-size:17px; }
   .apps { grid-template-columns:minmax(0,1fr); gap:40px; }
   .appTitle { margin-top:36px; }
-  .productHead { gap:24px; margin-bottom:40px; }
-  .productLabel { flex-direction:column; align-items:flex-start; gap:10px; }
-  .labelDivider { display:none; }
-  .productTitle { font-size:clamp(40px,11vw,56px); }
-  .stepPanel { min-height:440px; padding:24px; gap:24px; }
-  .glyph { width:88px; }
-  .stepTitle { font-size:28px; }
-  .stepBody { font-size:15px; }
-  .stepQuote blockquote { font-size:17px; }
-  .stepQuote .storyLink { margin-left:-12px; }
-  .productFoot { margin-top:40px; }
   .needs { grid-template-columns:minmax(0,1fr); gap:40px; margin-top:56px; }
+
 }
 @media (prefers-reduced-motion:reduce) {
   .appLink, .appLink > svg { transition:none; }
+
 }
