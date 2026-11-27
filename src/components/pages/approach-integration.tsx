@@ -46,6 +46,7 @@ export function ApproachIntegration({ section }: { section: ApproachSection }) {
       <ol className="sr-only">
         {diagram.map(column => <li key={column.label}>{column.label}: {column.items.join(', ')}</li>)}
       </ol>
+      {/* A width past any frame: the canvas fills the column and brings the scene palette. */}
       <SceneCanvas width={200} className={styles.canvas}>
         <div className={styles.diagram} aria-hidden="true">
           <p className={styles.caption} data-stage="1">{systems.label}</p>
