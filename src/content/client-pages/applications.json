@@ -423,12 +423,11 @@
     },
     {
       "id": "engineering",
-      "title": "All that engineering. Made simple to use",
+      "title": "All that engineering. Made simple to use.",
       "label": "Applications",
       "intro": [
         "AtomsAI builds models, infrastructure, and workflows into complete applications that fit how each business works, with the hard engineering already built in."
       ],
-      "emphasis": "already built in.",
       "blocks": [
         {
           "title": "Service",

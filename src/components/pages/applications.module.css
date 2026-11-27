@@ -54,14 +54,13 @@ html .app .appLink:focus-visible { outline-color:transparent; box-shadow:none; }
 
 /* ---------- All that engineering ---------- */
 /* The homepage point of view (home/story-sections .statementHeadline) on the flat page: the
-   heading, then the claim running on beneath it in the muted tone, its last words in full colour. */
+   heading, then the claim running on beneath it in the muted tone, as the homepage's two-tone heads end. */
 .engineering { margin-top:var(--section-space); padding-bottom:var(--section-space); }
 .statement { min-width:0; }
 .statementTitle, .statementText { max-width:1120px; font-size:clamp(32px,4vw,64px); line-height:1.04; letter-spacing:-.02em; }
 .statementTitle { text-wrap:balance; }
 /* Trimmed like the heading, so the gap restores one line's leading between the two. */
 .statementText { margin-top:.4em; color:var(--color-muted-foreground); text-wrap:pretty; text-box:trim-both cap alphabetic; }
-.emphasis { color:var(--color-foreground); }
 /* The two needs: plain columns under a hairline, in the first two of three slots. */
 .needs { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px; margin-top:96px; }
 .need { display:flex; flex-direction:column; align-items:flex-start; padding-top:28px; border-top:1px solid var(--color-border); }

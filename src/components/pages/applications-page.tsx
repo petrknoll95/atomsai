@@ -68,7 +68,7 @@ export function ApplicationsPage() {
     </section>
 
     <section id="engineering" className={`page-container ${styles.engineering}`} aria-labelledby="engineering-heading">
-      <ApplicationsStatement id="engineering-heading" title={engineering.title} statement={engineering.intro[0]} emphasis={engineering.emphasis}
+      <ApplicationsStatement id="engineering-heading" title={engineering.title} statement={engineering.intro[0]}
         needs={engineering.blocks.map(block => ({ title: block.title, body: block.body[0], link: block.links[0] }))} />
     </section>
   </main>;
