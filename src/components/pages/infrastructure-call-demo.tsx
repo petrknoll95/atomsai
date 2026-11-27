@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
+import { useEffect, useId, useRef, useState, useSyncExternalStore } from 'react';
 import styles from './infrastructure-call-demo.module.css';
 
 type Speaker = 'agent' | 'caller';
@@ -186,12 +186,17 @@ const wave = Array.from({ length: 44 }, (_, index) => Math.round(30 + 70 * Math.
 export function InfrastructureCallDemo({ content, className = '' }: { content: CallDemoContent; className?: string }) {
   const rootRef = useRef<HTMLElement>(null);
   const transcriptRef = useRef<HTMLOListElement>(null);
-  const playbackRef = useRef<HTMLButtonElement>(null);
-  const interruptRef = useRef<HTMLButtonElement>(null);
   const visible = useRef(false);
   const heldByUser = useRef(false);
   const [view, setView] = useState(() => completedView(content, content.defaultScenario));
-  const [simulation] = useState(() => new CallSimulation(content, setView));
+  const controlId = useId();
+  const [simulation] = useState(() => new CallSimulation(content, next => {
+    // The interrupt control leaves with the call, and a control that is hidden while
+    // focused drops focus to the page at once: hand it to playback before the update.
+    if (next.phase === 'complete' && document.activeElement?.id === `${controlId}-interrupt`)
+      document.getElementById(`${controlId}-playback`)?.focus({ preventScroll: true });
+    setView(next);
+  }));
   const [chosen, setChosen] = useState(false);
   // The server renders the motion layout; reduced motion swaps in the still exchange after hydration.
   const reduced = useSyncExternalStore(subscribeToMotion, () => matchMedia(motionQuery).matches, () => false);
@@ -252,8 +257,6 @@ export function InfrastructureCallDemo({ content, className = '' }: { content: C
   const complete = view.phase === 'complete';
   useEffect(() => {
     if (!complete || reduced) return;
-    // The interrupt control leaves with the call; keep keyboard focus in the card.
-    if (document.activeElement === interruptRef.current) playbackRef.current?.focus({ preventScroll: true });
     // The ended call can be scrolled back, starting from its newest line.
     const transcript = transcriptRef.current;
     if (transcript) transcript.scrollTop = transcript.scrollHeight;
@@ -272,7 +275,7 @@ export function InfrastructureCallDemo({ content, className = '' }: { content: C
       <div className={styles.header}>
         <span className={styles.live}><i className={styles.liveDot} data-active={view.phase === 'playing'} aria-hidden="true" />{content.status} · <b>{content.business}</b></span>
         <span className={styles.timer} aria-hidden="true">{time(view.elapsed)}</span>
-        <button ref={playbackRef} type="button" className={styles.playback} onClick={togglePlayback} aria-label={playbackLabel} hidden={reduced}>
+        <button id={`${controlId}-playback`} type="button" className={styles.playback} onClick={togglePlayback} aria-label={playbackLabel} hidden={reduced}>
           <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">{view.phase === 'playing'
             ? <path d="M5 3.5h2v9H5zm4 0h2v9H9z" fill="currentColor" />
             : view.phase === 'paused' ? <path d="M5 3.5 12 8l-7 4.5Z" fill="currentColor" />
@@ -292,7 +295,7 @@ export function InfrastructureCallDemo({ content, className = '' }: { content: C
             </li>
             : <li key={message.key} className={styles.event}><p>{message.text}</p></li>)}
         </ol>
-        <button ref={interruptRef} type="button" className={styles.interrupt} onClick={interrupt} aria-label={content.interruptName} aria-disabled={!canInterrupt} data-ready={canInterrupt} hidden={reduced || complete}>{content.interrupt}</button>
+        <button id={`${controlId}-interrupt`} type="button" className={styles.interrupt} onClick={interrupt} aria-label={content.interruptName} aria-disabled={!canInterrupt} data-ready={canInterrupt} hidden={reduced || complete}>{content.interrupt}</button>
       </div>
       <dl className={styles.metrics}>
         <div><dt>{content.metrics.first}</dt><dd>{metrics.first ? `${metrics.first} ms` : '—'}</dd></div>
