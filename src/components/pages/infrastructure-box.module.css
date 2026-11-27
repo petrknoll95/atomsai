@@ -1,10 +1,6 @@
 /* What's in the box: the homepage section opener, then the "Now it's your turn" panel. */
 .box { padding-block:var(--section-half-space, 64px) var(--section-space, 128px); }
 
-/* The one section action: a small soft pill, as the homepage uses after a headline. */
-.action { position:relative; }
-@media (pointer:coarse) { .action::after { content:''; position:absolute; inset:-6px 0; } }
-
 
 /* Inside the active step: the description, then what you can build with it, then the docs.
    The step's label names the API, and says when it is in beta. */

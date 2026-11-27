@@ -22,7 +22,7 @@ export function InfrastructureBox({ section }: { section: InfrastructureSection 
   const explore = section.links[0];
   return <section id="box" className={`page-container ${styles.box}`} aria-labelledby="box-heading">
     <SectionIntro id="box-heading" title={section.title} lead={section.intro[0]}
-      action={<ButtonLink href={explore.href} size="small" variant="secondary" className={styles.action} {...linkProps(explore.href)}>
+      action={<ButtonLink href={explore.href} variant="secondary" {...linkProps(explore.href)}>
         {explore.label}<ArrowIcon direction={isOutbound(explore.href) ? 'up-right' : 'right'} size={16} />
       </ButtonLink>} />
     <ScenePanel label={section.label} className={styles.panel}
