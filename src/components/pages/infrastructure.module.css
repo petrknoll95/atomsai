@@ -107,8 +107,9 @@
 .range::-moz-range-track { height:4px; border-radius:999px; background:var(--track); }
 .range::-moz-range-progress { height:4px; border-radius:999px; background:var(--palette-deep-green); }
 .range::-moz-range-thumb { width:14px; height:14px; border:3px solid var(--palette-paper); border-radius:50%; background:var(--palette-deep-green); box-shadow:0 0 0 1px var(--palette-deep-green); }
-/* The track is thin, so the slider takes a firmer ring than the site's soft one. */
-html .range:focus-visible { outline:2px solid var(--palette-deep-green); outline-offset:4px; }
+/* The track is thin, so the slider takes a firmer ring than the site's soft one. At (0,3,1) it
+   outranks the site-wide html :is(:focus-visible, …) at (0,2,2) in styles/focus.css. */
+html .rangeField .range:focus-visible { outline:2px solid var(--color-ring); outline-offset:4px; }
 @media (pointer:coarse) { .range { height:44px; } 
 }
 .tryOutput { display:grid; grid-template-columns:7.5em minmax(0,1fr); gap:24px; margin:0; padding-top:16px; border-top:1px solid var(--scene-line); }
