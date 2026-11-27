@@ -29,7 +29,7 @@ const Tick = () => <svg className={styles.tick} viewBox="0 0 16 16" aria-hidden=
 /**
  * "Keep your tools. Connect the work": the prototype's four-stage path, your systems into AI and
  * its rules, out to an action someone approves, and on to the records it updates. One pale scene,
- * left to right on wide screens and top to bottom on phones. The drawing is a picture; the
+ * left to right on wide screens, two by two on tablets and top to bottom on phones. The drawing is a picture; the
  * ordered list beside it says the same for screen readers.
  */
 export function ApproachIntegration({ section }: { section: ApproachSection }) {
