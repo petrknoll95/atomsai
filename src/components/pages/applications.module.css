@@ -21,7 +21,8 @@
 .heroMuted { color:var(--color-muted-foreground); }
 .heroLead { max-width:50ch; margin-top:32px; font-size:var(--text-lead); line-height:1.5; color:var(--color-muted-foreground); text-wrap:pretty; }
 .heroAction { margin-top:36px; }
-.heroStage { margin-top:80px; }
+/* Narrower than the page, centred under the copy, so the scene fills its frame. */
+.heroStage { width:100%; max-width:1040px; margin:80px auto 0; }
 
 /* ---------- Every hello sets work in motion ---------- */
 /* Sections space with margins, so an in-page link lands on the content, not on empty padding. */

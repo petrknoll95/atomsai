@@ -27,8 +27,8 @@
         "product": "ServiceAgent",
         "mark": "serviceagent",
         "kind": "Service request",
-        "text": "\"Can someone come today?\" Booked for 7:30 am, tech notified",
-        "time": "11:48 pm",
+        "text": "“Can someone come today?” Booked for 7:30\u00a0am, tech notified",
+        "time": "11:48\u00a0pm",
         "meta": "HVAC · no-cool",
         "state": "Booked"
       },
