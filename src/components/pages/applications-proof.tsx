@@ -7,16 +7,19 @@ import { ButtonLink, Eyebrow } from '@/components/ui';
 import type { ApplicationsBlock } from './applications-product';
 import styles from './applications-proof.module.css';
 
+type Stat = { value: string; label: string; company?: string };
+
 /**
- * Customer stories, one voice at a time: the customers' logos are tabs and the
- * selected customer's quote reads at the homepage story size. Tabs follow the
- * WAI-ARIA pattern with manual activation: arrow keys, Home and End move focus,
- * Enter or Space selects. Nothing plays by itself. Every panel stays mounted in
- * one grid cell, so the section keeps the tallest quote's height; each names
- * the product behind the story, so Tab moves from the tabs straight into it.
+ * Customer stories, one voice at a time: a row of customer logos are the tabs,
+ * and the selected customer's story fills the row beneath, set like the homepage
+ * story: the quote on the left; on the right the person, the figure the stats
+ * strip credits to the same company (when there is one) and the story link.
+ * Tabs follow the WAI-ARIA pattern with manual activation: arrow keys, Home and
+ * End move focus, Enter or Space selects. Nothing plays by itself. Every panel
+ * stays mounted in one grid cell, so the section keeps the tallest story's height.
  */
-export function ApplicationsProofStories({ stories }: { stories: ApplicationsBlock[] }) {
-  const [active, setActive] = useState(0);
+export function ApplicationsProofStories({ stories, stats = [], initial = 0 }: { stories: ApplicationsBlock[]; stats?: Stat[]; initial?: number }) {
+  const [active, setActive] = useState(initial);
   const tabs = useRef<(HTMLButtonElement | null)[]>([]);
   const prefix = useId();
 
@@ -41,17 +44,21 @@ export function ApplicationsProofStories({ stories }: { stories: ApplicationsBlo
       </button>)}
     </div>
     <div className={styles.panels}>
-      {stories.map((story, index) => <div key={story.company} className={styles.panel} role="tabpanel"
-        id={`${prefix}-panel-${index}`} aria-labelledby={`${prefix}-tab-${index}`} data-active={active === index} inert={active !== index}>
-        <Eyebrow href={`#${story.label.toLowerCase()}`}>with {story.label}</Eyebrow>
-        <figure className={styles.figure}>
+      {stories.map((story, index) => {
+        const figure = stats.find(stat => stat.company === story.company);
+        return <div key={story.company} className={styles.panel} role="tabpanel"
+          id={`${prefix}-panel-${index}`} aria-labelledby={`${prefix}-tab-${index}`} data-active={active === index} inert={active !== index}>
+          <Eyebrow href={`#${story.label.toLowerCase()}`} className={styles.eyebrow}>with {story.label}</Eyebrow>
           <blockquote className={`display ${styles.quote}`}>{story.quote}</blockquote>
-          <figcaption className={styles.person}><span>{story.attribution}</span><span>{story.role}</span></figcaption>
-        </figure>
-        <ButtonLink href={story.links[0].href} target="_blank" rel="noopener noreferrer" size="small" variant="outline" className={styles.story}>
-          {story.links[0].label}<span className="sr-only">: {story.company} (opens in a new tab)</span><ArrowIcon direction="up-right" size={14} />
-        </ButtonLink>
-      </div>)}
+          <div className={styles.aside}>
+            <p className={styles.person}><span>{story.attribution}</span><span>{story.role}</span></p>
+            {figure && <p className={styles.figure}><span className="display">{figure.value}</span><span>{figure.label}</span></p>}
+            <ButtonLink href={story.links[0].href} target="_blank" rel="noopener noreferrer" variant="outline">
+              {story.links[0].label}<span className="sr-only">: {story.company} (opens in a new tab)</span><ArrowIcon direction="up-right" size={16} />
+            </ButtonLink>
+          </div>
+        </div>;
+      })}
     </div>
   </div>;
 }

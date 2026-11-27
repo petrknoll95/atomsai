@@ -46,8 +46,6 @@ html .app .appLink:focus-visible { outline-color:transparent; box-shadow:none; }
 
 /* ---------- Customer results ---------- */
 .proof { --stat-gutter:clamp(16px,2vw,32px); margin-top:var(--section-space); }
-@media (pointer:coarse) { .smallAction { min-height:44px; } 
-}
 /* The homepage stats strip (home/story-sections.module.css .proofRow), without its intro column. */
 .stats { padding-block:clamp(28px,4vw,56px); border-block:1px solid var(--color-border); }
 .stats > dl > div:first-child { border-inline-start:0; padding-inline-start:0; }
