@@ -1,7 +1,7 @@
 {
   "label": "Infrastructure / PyAI",
   "route": "/infrastructure",
-  "title": "The voice AI behind a billion phone calls a year. Now yours",
+  "title": "The voice AI behind a billion phone calls a year. Now yours.",
   "intro": [
     "The stack behind JustCall, ServiceAgent, and Helpwise, as one OpenAI-compatible API. Point your SDK at it, get a free key, and have an agent on a real number this week."
   ],
@@ -18,7 +18,7 @@
   "sections": [
     {
       "id": "demo",
-      "title": "You've heard the claim. Have a conversation",
+      "title": "You've heard the claim. Have a conversation.",
       "label": "Hear it yourself",
       "intro": [
         "Call the agent and take it somewhere a script wouldn't cover."
@@ -327,7 +327,7 @@
     },
     {
       "id": "stack",
-      "title": "Keep your stack. Nothing you run today has to go",
+      "title": "Keep your stack. Nothing you run today has to go.",
       "label": "",
       "intro": [],
       "blocks": [],
