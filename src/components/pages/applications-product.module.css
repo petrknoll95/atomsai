@@ -6,7 +6,7 @@
 .lockup { color: var(--color-foreground); }
 .intro > p { max-width: 56ch; }
 
-/* Header actions: a small pill out to the product, a quiet arrow link to the homepage demo. */
+/* Header actions: a full-size button out to the product, a quiet arrow link to the homepage demo. */
 .action > svg { transition: transform .3s cubic-bezier(.22,1,.36,1); }
 .action:is(:hover,:focus-visible) > svg { transform: translate(1px, -1px); }
 .quietAction:is(:hover,:focus-visible) > svg { transform: translateX(2px); }

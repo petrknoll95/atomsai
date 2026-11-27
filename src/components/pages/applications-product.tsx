@@ -12,34 +12,32 @@ import styles from './applications-product.module.css';
 /** The shared client-page shape, plus the fields the Applications JSON adds. One type for the whole page. */
 export type ApplicationsBlock = ContentBlock & { label: string; role?: string; logo?: string };
 export type ApplicationsSection = Omit<ContentSection, 'blocks' | 'stats'> & {
-  blocks: ApplicationsBlock[]; descriptor?: string; emphasis?: string; footer?: { title: string; body: string[] };
+  blocks: ApplicationsBlock[]; descriptor?: string; footer?: { title: string; body: string[] };
   stats?: { value: string; label: string; company?: string }[];
 };
 
 const isOutbound = (href: string) => /^https?:\/\//.test(href);
 const slug = (text: string) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-/** The customer's question is set, not typed: curly quotes around the headline. */
-const curly = (text: string) => text.replace(/^"/, '“').replace(/"$/, '”');
 const sentence = (text: string) => /[.!?]$/.test(text) ? text : `${text}.`;
 
 /** Product name beside its mark, the mark drawn in the current text colour. */
-export function ProductLockup({ name, className = '' }: { name: string; className?: string }) {
-  return <span className={`${lockupStyles.lockup} ${className}`}>
+export function ProductLockup({ name, id, className = '' }: { name: string; id?: string; className?: string }) {
+  return <span id={id} className={`${lockupStyles.lockup} ${className}`}>
     <span className={lockupStyles.lockupMark} aria-hidden="true"
       style={{ maskImage: assetPath(`url("/assets/products/${name.toLowerCase()}-mark.svg")`) } as CSSProperties} />
     <span>{name}</span>
   </span>;
 }
 
-/** One small pill out to the product, one quiet arrow link to the homepage demo. */
+/** One full-size button out to the product (the homepage's medium primary), one quiet arrow link to the homepage demo. */
 function Actions({ links }: { links: ContentLink[] }) {
   return <>{links.map((link, index) => {
     const outbound = isOutbound(link.href);
-    return <ButtonLink key={link.label} href={link.href} size="small" variant={index === 0 ? 'primary' : 'ghost'}
+    return <ButtonLink key={link.label} href={link.href} size={index === 0 ? 'medium' : 'small'} variant={index === 0 ? 'primary' : 'ghost'}
       className={`${styles.action} ${index === 0 ? '' : styles.quietAction}`}
       {...(outbound ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
       {link.label}{outbound && <span className="sr-only"> (opens in a new tab)</span>}
-      <ArrowIcon direction={outbound ? 'up-right' : 'right'} size={14} />
+      <ArrowIcon direction={outbound ? 'up-right' : 'right'} size={index === 0 ? 16 : 14} />
     </ButtonLink>;
   })}</>;
 }
@@ -68,17 +66,21 @@ function TradeNote({ footer, className }: { footer: { title: string; body: strin
   </div>;
 }
 
-/** One product chapter: the product, the customer's question, what it does, then each step beside its scene. */
+/**
+ * One product chapter: the product, the customer’s question, what it does, then each step beside its scene.
+ * The region is named by both the product and the question, so landmarks tell the chapters apart.
+ */
 export function ApplicationsProduct({ section }: { section: ApplicationsSection }) {
   const product = section.id;
   const headingId = `${product}-heading`;
+  const lockupId = `${product}-lockup`;
   const scenes = productScenes[product] ?? [];
   // ServiceAgent's descriptor repeats its second paragraph; JustCall's opens the paragraph.
   const lead = [...(product === 'justcall' && section.descriptor ? [sentence(section.descriptor)] : []), ...section.intro].join(' ');
-  return <section id={section.id} className={`page-container ${styles.chapter}`} aria-labelledby={headingId} data-product={product}>
+  return <section id={section.id} className={`page-container ${styles.chapter}`} aria-labelledby={`${lockupId} ${headingId}`} data-product={product}>
     <div className={styles.head}>
-      <ProductLockup name={section.label} className={styles.lockup} />
-      <SectionIntro id={headingId} title={curly(section.title)} lead={lead} action={<Actions links={section.links} />} className={styles.intro} />
+      <ProductLockup id={lockupId} name={section.label} className={styles.lockup} />
+      <SectionIntro id={headingId} title={section.title} lead={lead} action={<Actions links={section.links} />} className={styles.intro} />
     </div>
     <ScenePanel label={`${section.label} steps`} visualClassName={styles.visual}
       items={section.blocks.map((step, index) => ({

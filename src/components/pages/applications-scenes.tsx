@@ -64,45 +64,55 @@ function Meter({ value, of = 5 }: { value: number; of?: number }) {
 
 /* ---------- ServiceAgent ---------- */
 
+/*
+ * One cast, one role each, none shared with the homepage's AI agents: the homeowner
+ * who calls at night, the crew, and two other customers after the job. Clock times
+ * keep their am or pm on the same line.
+ */
+const homeowner = 'Hannah Cole';
+const technician = 'Marcus Webb';
+const callTime = '11:48\u00a0pm';
+const firstSlot = '7:30\u00a0am';
+
 const serviceAgentScenes: ReactNode[] = [
   // Know what the job needs: the call answered at night, the job and its urgency captured.
-  <Pair key="job" first={<SceneWindow title="Incoming call" meta="11:48 pm">
-    <SceneSoft><p className={styles.request}>“Can someone come today?”</p><SceneMuted>Olivia Bennett</SceneMuted></SceneSoft>
+  <Pair key="job" first={<SceneWindow title="Incoming call" meta={callTime}>
+    <SceneSoft><p className={styles.request}>“Can someone come today?”</p><SceneMuted>{homeowner}</SceneMuted></SceneSoft>
     <ScenePills><ScenePill live>Call answered</ScenePill></ScenePills>
   </SceneWindow>} second={<SceneWindow title="Job details" mark={serviceAgent} meta={<ScenePill tone="ink">Urgent</ScenePill>}>
     <Result>Job details and urgency captured</Result>
-    <Record rows={[['Trade', 'HVAC'], ['Issue', 'AC breakdown'], ['Customer', 'Olivia Bennett'], ['Urgency', 'Today']]} />
+    <Record rows={[['Trade', 'HVAC'], ['Issue', 'AC breakdown'], ['Customer', homeowner], ['Urgency', 'First slot']]} />
   </SceneWindow>} />,
 
-  // Get the right visit booked: technician availability, a schedule change, the visit booked.
-  <Pair key="visit" first={<SceneWindow title="Technicians" meta="Today">
+  // Get the right visit booked: the crew's first slots tomorrow, a schedule change, the visit booked.
+  <Pair key="visit" first={<SceneWindow title="Technicians" meta="Tomorrow">
     <div className={styles.rows}>
-      <SceneRow end={<ScenePill tone="success">7:30 am</ScenePill>}><Person name="Ethan Brooks" role="HVAC" /></SceneRow>
-      <SceneRow end={<SceneMuted>Rescheduled</SceneMuted>}><Person name="Sophia Reed" role="Plumbing" /></SceneRow>
-      <SceneRow end={<SceneMuted>Available</SceneMuted>}><Person name="Daniel Moore" role="Electrical" /></SceneRow>
+      <SceneRow end={<ScenePill tone="success">{firstSlot}</ScenePill>}><Person name={technician} role="HVAC" /></SceneRow>
+      <SceneRow end={<SceneMuted>Rescheduled</SceneMuted>}><Person name="Lena Ortiz" role="Plumbing" /></SceneRow>
+      <SceneRow end={<SceneMuted>Available</SceneMuted>}><Person name="Sam Patel" role="Electrical" /></SceneRow>
     </div>
   </SceneWindow>} second={<SceneWindow title="Appointment" mark={serviceAgent} meta={<ScenePill tone="success">Booked</ScenePill>}>
     <Result>Visit booked around the crew</Result>
-    <Record rows={[['Job', 'AC breakdown'], ['Technician', 'Ethan Brooks'], ['Arrival', '7:30 am']]} />
+    <Record rows={[['Job', 'AC breakdown'], ['Technician', technician], ['Arrival', `Tomorrow, ${firstSlot}`]]} />
     <SceneEvent>Tech notified</SceneEvent>
   </SceneWindow>} />,
 
   // Keep customers in the loop: confirmation and reminder sent; the job at hand when she calls back.
-  <Pair key="loop" first={<SceneWindow title="Messages" meta="Olivia Bennett">
+  <Pair key="loop" first={<SceneWindow title="Messages" meta={homeowner}>
     <div className={styles.thread}>
-      <SceneLine speaker="Confirmation" side="end">Booked for 7:30 am, tech notified</SceneLine>
+      <SceneLine speaker="Confirmation" side="end">Booked for {firstSlot}, tech notified</SceneLine>
       <SceneEvent>Reminder sent</SceneEvent>
-      <SceneLine speaker="Update" side="end">Ethan Brooks, 7:30 am</SceneLine>
+      <SceneLine speaker="Update" side="end">{technician} is on the way</SceneLine>
     </div>
   </SceneWindow>} second={<SceneWindow title="Incoming call" mark={serviceAgent} meta={<ScenePill live>Calling back</ScenePill>}>
-    <Person name="Olivia Bennett" role="Customer" />
-    <Record rows={[['Job', 'AC breakdown'], ['Technician', 'Ethan Brooks'], ['Arrival', '7:30 am'], ['Status', <ScenePill key="s" tone="success">Booked</ScenePill>]]} />
+    <Person name={homeowner} role="Customer" />
+    <Record rows={[['Job', 'AC breakdown'], ['Technician', technician], ['Arrival', firstSlot], ['Status', <ScenePill key="s" tone="success">Booked</ScenePill>]]} />
   </SceneWindow>} />,
 
   // See the job through to payment: estimate, invoice, payment and follow-up on one job.
   <Pair key="payment" first={<SceneWindow title="Job" meta="AC breakdown">
-    <Person name="Olivia Bennett" role="Customer" />
-    <Record rows={[['Technician', 'Ethan Brooks'], ['Visit', '7:30 am'], ['Trade', 'HVAC']]} />
+    <Person name={homeowner} role="Customer" />
+    <Record rows={[['Technician', technician], ['Visit', firstSlot], ['Trade', 'HVAC']]} />
   </SceneWindow>} second={<SceneWindow title="Estimate to payment" mark={serviceAgent} meta={<ScenePill tone="success">Paid</ScenePill>}>
     <Progress steps={[
       { label: 'Estimate', state: <ScenePill>Approved</ScenePill> },
@@ -112,14 +122,14 @@ const serviceAgentScenes: ReactNode[] = [
     ]} />
   </SceneWindow>} />,
 
-  // Make today's customers tomorrow's business: follow-ups, a review request, a return visit.
+  // Make today’s customers tomorrow’s business: follow-ups, a review request, a return visit.
   <Pair key="return" first={<SceneWindow title="After the job" meta="This week">
     <div className={styles.rows}>
-      <SceneRow end={<ScenePill tone="success">Review request</ScenePill>}><Person name="Olivia Bennett" role="AC breakdown" /></SceneRow>
+      <SceneRow end={<ScenePill tone="success">Review request</ScenePill>}><Person name={homeowner} role="AC breakdown" /></SceneRow>
       <SceneRow end={<ScenePill>Follow-up</ScenePill>}><Person name="James Turner" role="Plumbing repair" /></SceneRow>
-      <SceneRow end={<ScenePill>Return visit</ScenePill>}><Person name="Grace Kim" role="Roof inspection" /></SceneRow>
+      <SceneRow end={<ScenePill>Return visit</ScenePill>}><Person name="Ruth Alvarez" role="Roof inspection" /></SceneRow>
     </div>
-  </SceneWindow>} second={<SceneWindow title="Olivia Bennett" mark={serviceAgent} meta="Customer">
+  </SceneWindow>} second={<SceneWindow title={homeowner} mark={serviceAgent} meta="Customer">
     <Progress steps={[
       { label: 'Job complete', state: <SceneMuted>AC breakdown</SceneMuted> },
       { label: 'Follow-up', state: <ScenePill>Sent</ScenePill> },
@@ -131,23 +141,27 @@ const serviceAgentScenes: ReactNode[] = [
 
 /* ---------- JustCall ---------- */
 
+/* Prospects on the dialer, one customer who calls and texts, the AI agent, a teammate and a rep. */
+const prospect = 'Nina Shah';
+const customer = 'Aisha Grant';
+
 const justCallScenes: ReactNode[] = [
   // Make the calling hour count: the three dialing modes, the queue, and the CRM context behind the next try.
   <Pair key="dialer" first={<SceneWindow title="Dialer" mark={justCall} meta={<ScenePill live>Calling</ScenePill>}>
     <ScenePills><ScenePill>Power</ScenePill><ScenePill tone="ink">Dynamic</ScenePill><ScenePill>Predictive</ScenePill></ScenePills>
     <div className={styles.rows}>
-      <SceneRow end={<ScenePill tone="success">Connected</ScenePill>}><Person name="Sophia Reed" role="Prospect" /></SceneRow>
-      <SceneRow end={<SceneMuted>Voicemail</SceneMuted>}><Person name="Daniel Moore" role="Prospect" /></SceneRow>
-      <SceneRow end={<SceneMuted>Next</SceneMuted>}><Person name="Grace Kim" role="Prospect" /></SceneRow>
+      <SceneRow end={<ScenePill tone="success">Connected</ScenePill>}><Person name={prospect} role="Prospect" /></SceneRow>
+      <SceneRow end={<SceneMuted>Voicemail</SceneMuted>}><Person name="Owen Price" role="Prospect" /></SceneRow>
+      <SceneRow end={<SceneMuted>Next</SceneMuted>}><Person name="Clara Jensen" role="Prospect" /></SceneRow>
     </div>
   </SceneWindow>} second={<SceneWindow title="CRM record" meta="Prospect">
-    <Person name="Sophia Reed" role="Form fill" />
+    <Person name={prospect} role="Form fill" />
     <Record rows={[['Last outcome', 'Voicemail'], ['Next attempt', 'Dynamic dialing'], ['This call', <ScenePill key="c" tone="success">Connected</ScenePill>]]} />
   </SceneWindow>} />,
 
   // Be there when customers call: route by need and availability, AI or the team.
   <Pair key="route" first={<SceneWindow title="Incoming call" meta="09:12">
-    <Person name="Grace Kim" role="Customer" />
+    <Person name={customer} role="Customer" />
     <Record rows={[['Need', 'Support'], ['Team', 'Available'], ['Language', 'en-US · es-MX']]} />
   </SceneWindow>} second={<SceneWindow title="Routing" mark={justCall} meta="Inbound">
     <div className={styles.rows}>
@@ -157,25 +171,25 @@ const justCallScenes: ReactNode[] = [
   </SceneWindow>} />,
 
   // Carry the conversation into SMS: a text on the outcome, a reply, all on the record.
-  <Pair key="sms" first={<SceneWindow title="Customer record" meta="Grace Kim">
+  <Pair key="sms" first={<SceneWindow title="Customer record" meta={customer}>
     <Progress steps={[
       { label: 'Call', state: <SceneMuted>Connected</SceneMuted> },
       { label: 'Text', state: <ScenePill>Sent</ScenePill> },
       { label: 'Reply', state: <ScenePill tone="success">Received</ScenePill> },
       { label: 'Follow-up', state: <SceneMuted>Scheduled</SceneMuted>, done: false },
     ]} />
-  </SceneWindow>} second={<SceneWindow title="SMS" mark={justCall} meta="Grace Kim">
+  </SceneWindow>} second={<SceneWindow title="SMS" mark={justCall} meta={customer}>
     <div className={styles.thread}>
       <SceneEvent>Follow-up text sent on the outcome</SceneEvent>
-      <SceneLine speaker="Grace Kim">“You have my details, right?”</SceneLine>
+      <SceneLine speaker={customer}>“You have my details, right?”</SceneLine>
       <SceneEvent>Call and text logged to the CRM</SceneEvent>
     </div>
   </SceneWindow>} />,
 
-  // Give AI a job and a goal: what the voice agent knows and aims for, and when it hands off.
+  // Give AI a job and a goal: what the voice agent knows and aims for (the support quote beside it), and when it hands off.
   <Pair key="agent" first={<SceneWindow title="AI voice agent" mark={justCall} meta={<ScenePill live>Live</ScenePill>}>
-    <Person name="Steven Carter" role="Voice agent" />
-    <Record rows={[['Job', 'Policy questions'], ['Knowledge', 'Warranty timelines'], ['Goal', 'Meetings booked']]} />
+    <Person name="June Harper" role="Voice agent" />
+    <Record rows={[['Job', 'Policy questions'], ['Knowledge', 'Warranty timelines'], ['Goal', 'Resolve or hand off']]} />
   </SceneWindow>} second={<SceneWindow title="Human handoff" meta={<ScenePill>Rule</ScenePill>}>
     <SceneSoft><SceneMuted>When</SceneMuted><p>A conversation needs a human touch</p></SceneSoft>
     <SceneRow end={<ScenePill tone="success">Hand to human</ScenePill>}><Person name="Maya" role="Your team" /></SceneRow>
@@ -185,7 +199,7 @@ const justCallScenes: ReactNode[] = [
   <Pair key="coach" first={<SceneWindow title="Call summary" mark={justCall} meta="14:05">
     <ScenePills><ScenePill>Recording</ScenePill><ScenePill>Transcript</ScenePill><ScenePill tone="ink">Summary</ScenePill></ScenePills>
     <Record rows={[['Outcome', 'Resolved'], ['Next step', 'Follow-up text'], ['Record', <ScenePill key="l" tone="success">Logged</ScenePill>]]} />
-  </SceneWindow>} second={<SceneWindow title="Coaching" meta="Daniel Moore">
+  </SceneWindow>} second={<SceneWindow title="Coaching" meta="Ben Okafor">
     <div className={styles.rows}>
       <SceneRow end={<SceneMuted>On the record</SceneMuted>}><span className={styles.rowTitle}>Summary</span></SceneRow>
       <SceneRow end={<Meter value={4} />}><span className={styles.rowTitle}>AI score</span></SceneRow>
