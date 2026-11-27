@@ -57,6 +57,16 @@ export function splitAfter(text: string, after: string): [string, string] {
  */
 const HeaderZone = () => <span className={styles.headerZone} data-header-theme="dark" aria-hidden="true" />;
 
+/** The product's name beside its mark, as the Applications chapters open; the mark is the homepage's inline PyAI one. */
+function PyAILockup({ className = '' }: { className?: string }) {
+  return <p className={`${styles.lockup} ${className}`}>
+    <svg className={styles.lockupMark} viewBox="8 8 48 48" aria-hidden="true">
+      <circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" strokeWidth="3.5" /><circle cx="32" cy="32" r="13" fill="currentColor" />
+    </svg>
+    <span>PyAI</span>
+  </p>;
+}
+
 /** A link styled as a pill: an up-right arrow for other sites, which open in a new tab. */
 function PillLink({ link, variant = 'secondary', className = '' }: { link: ContentLink; variant?: 'primary' | 'secondary' | 'ghost'; className?: string }) {
   const external = isOutbound(link.href);
@@ -77,6 +87,7 @@ export function InfrastructurePage() {
     <section id="hero" className={styles.hero} aria-labelledby="hero-heading" data-theme="dark">
       <div className="page-container">
         <header className={styles.heroHead}>
+          <PyAILockup />
           <h1 className={`display ${styles.title}`} id="hero-heading">{claim} <span className={styles.titleMuted}>{turn}</span></h1>
           <p className={styles.heroIntro}>{content.intro[0]}</p>
           <div className={styles.heroActions}>
