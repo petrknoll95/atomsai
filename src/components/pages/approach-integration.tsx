@@ -3,8 +3,11 @@ import { SectionIntro } from './section-intro';
 import type { ApproachSection, DiagramColumn } from './approach-content';
 import styles from './approach-integration.module.css';
 
-/** The two clauses of a two-tone headline: up to and including the first full stop, then the rest. */
-function splitAtStop(text: string): [string, string] {
+/**
+ * The two clauses of a two-tone headline: up to and including the first full stop, then the rest,
+ * which the page sets muted. Shared by every two-sentence heading on the page.
+ */
+export function splitAtStop(text: string): [string, string] {
   const stop = text.indexOf('. ');
   return stop < 0 ? [text, ''] : [text.slice(0, stop + 1), text.slice(stop + 2)];
 }

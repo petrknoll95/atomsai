@@ -8,7 +8,7 @@
   "actions": [
     {
       "label": "Talk to our team",
-      "href": "/company/contact"
+      "href": "/company/contact?topic=services"
     },
     {
       "label": "See our approach",
@@ -424,26 +424,8 @@
     "links": [
       {
         "label": "Talk to AtomsAI",
-        "href": "/company/contact"
+        "href": "/company/contact?topic=services"
       }
     ]
-  },
-  "stats": [
-    {
-      "value": "1B+",
-      "label": "Conversations a year"
-    },
-    {
-      "value": "7,000+",
-      "label": "Businesses on our applications"
-    },
-    {
-      "value": "20+",
-      "label": "Countries"
-    },
-    {
-      "value": "2016",
-      "label": "Founded"
-    }
-  ]
+  }
 }

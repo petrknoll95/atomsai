@@ -2,7 +2,7 @@ import { ArrowIcon } from '@/components/arrow-icon';
 import { ButtonLink, Eyebrow } from '@/components/ui';
 import { StatHighlights } from '@/components/home/stat-highlights';
 import { approachContent, approachSection } from './approach-content';
-import { ApproachIntegration } from './approach-integration';
+import { ApproachIntegration, splitAtStop } from './approach-integration';
 import { ApproachStages } from './approach-stages';
 import { ApproachWorkflow } from './approach-workflow';
 import { SectionIntro } from './section-intro';
@@ -12,6 +12,8 @@ const services = approachSection('services');
 const areas = approachSection('areas');
 const proof = approachSection('proven-in-production-at-scale');
 const ownership = approachSection('ownership');
+const [contact, tour] = approachContent.actions;
+const [servicesClaim, servicesTurn] = splitAtStop(services.title);
 
 /**
  * AI Services, in the prototype's order and the homepage's language: a centred statement, the
@@ -22,17 +24,19 @@ const ownership = approachSection('ownership');
 export function ApproachPage() {
   return <main id="main" className={styles.page} data-theme="light">
     <section id="hero" className={`page-container ${styles.hero}`} aria-labelledby="hero-heading">
+      {/* The page's name above the claim, as the PyAI hero names its product: quiet display text, no mark. */}
+      <p className={`display ${styles.heroName}`}>{approachContent.label}</p>
       <SectionIntro as="h1" id="hero-heading" className={styles.heroIntro} title={approachContent.title} lead={approachContent.intro[0]} action={<>
-        <ButtonLink href="/company/contact?topic=services">Talk to our team<ArrowIcon size={16} /></ButtonLink>
-        <ButtonLink href="#approach" variant="ghost">See our approach<ArrowIcon direction="down" size={16} /></ButtonLink>
+        <ButtonLink href={contact.href}>{contact.label}<ArrowIcon size={16} /></ButtonLink>
+        <ButtonLink href={tour.href} variant="ghost">{tour.label}<ArrowIcon direction="down" size={16} /></ButtonLink>
       </>} />
     </section>
 
     <ApproachWorkflow section={approachSection('workflow')} />
 
-    {/* Two open columns under one hairline: the service, then what it is for, at the same size. */}
-    <section id="services" className={`page-container ${styles.services}`} aria-labelledby="services-heading">
-      <SectionIntro id="services-heading" title={services.title} />
+    {/* Two open columns under one hairline, a rule between: the service, then what it is for, at the same size. */}
+    <section id="services" className="page-container" aria-labelledby="services-heading">
+      <SectionIntro id="services-heading" title={servicesClaim} muted={servicesTurn} />
       <div className={styles.serviceColumns}>
         {services.blocks.map(block => <article key={block.title} className={styles.service}>
           <h3 className={`display ${styles.serviceTitle}`}>{block.title}. <span className={styles.muted}>{block.body[0]}</span></h3>
@@ -41,8 +45,8 @@ export function ApproachPage() {
       </div>
     </section>
 
-    {/* The four areas on the services' column line, one hairline per row. */}
-    <section id="areas" className={`page-container ${styles.areas}`} aria-labelledby="areas-heading">
+    {/* The four areas in one ruled row on wide screens, two by two on tablets; the third column starts on the services' second column line. */}
+    <section id="areas" className="page-container" aria-labelledby="areas-heading">
       <SectionIntro id="areas-heading" title={areas.title} />
       <ul className={styles.areaGrid}>
         {areas.blocks.map(block => <li key={block.title} className={styles.area}>

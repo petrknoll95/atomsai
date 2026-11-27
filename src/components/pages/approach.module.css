@@ -15,8 +15,11 @@
 /* ---------- Hero ---------- */
 /* The Applications hero's stack without a scene: the headline, one sentence and two actions, centred on the flat page. */
 .hero { padding-top:calc(var(--header-height) + 136px); }
+/* The page's name, set like the PyAI hero's product lockup (infrastructure.module.css .lockup) without the mark. */
+.heroName { width:fit-content; margin:0 auto 36px; font-size:22px; line-height:1; letter-spacing:-.01em; white-space:nowrap; color:var(--color-foreground); text-box:trim-both cap alphabetic; }
 .hero .heroIntro { align-items:center; margin-bottom:0; text-align:center; }
-.hero .heroIntro > h1 { max-width:15ch; font-size:clamp(40px,4.6vw,76px); line-height:1; letter-spacing:-.015em; }
+/* The page's one H1 stays above the 48px section headings at every width; phones have their own size below. */
+.hero .heroIntro > h1 { max-width:15ch; font-size:clamp(52px,4.6vw,76px); line-height:1; letter-spacing:-.015em; }
 .hero .heroIntro > p { max-width:52ch; margin-top:32px; font-size:var(--text-lead); text-wrap:balance; }
 .hero .heroIntro > div { justify-content:center; gap:8px; margin-top:36px; }
 
@@ -60,6 +63,7 @@
 @media (max-width:767px) {
   .page { --section-space:88px; }
   .hero { padding-top:calc(var(--header-height) + 72px); }
+  .heroName { margin-bottom:28px; font-size:20px; }
   .hero .heroIntro > h1 { font-size:clamp(38px,10.4vw,56px); }
   .hero .heroIntro > p { margin-top:24px; font-size:var(--text-body); }
   .hero .heroIntro > div { margin-top:28px; gap:4px; }
