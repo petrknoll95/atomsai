@@ -1,0 +1,23 @@
+/* The two step panels on /approach (approach-workflow.tsx, approach-stages.tsx): a homepage
+   section opener on the light page, then the dark-green ScenePanel. */
+.section { margin-top:var(--section-space); }
+
+/* The workflow's closing statement under its steps, ruled off like ServiceAgent's trade note. */
+.statement { max-width:46ch; margin:0; padding-top:24px; border-top:1px solid color-mix(in display-p3, var(--palette-cream) 14%, transparent);
+  color:var(--palette-cream); font-size:var(--text-body); line-height:1.4;
+  font-weight:var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium), 'ital' 100; text-wrap:pretty; }
+
+/* A stage opens on what it delivers, then how, then the three things it leaves behind. */
+.outcome { color:var(--palette-cream); }
+.deliverables { align-self:stretch; overflow:clip; font-size:var(--text-label); line-height:20px;
+  color:color-mix(in display-p3, var(--palette-cream) 58%, transparent); }
+.deliverables ul { display:flex; flex-wrap:wrap; margin:0 0 0 -1.25em; padding:0; list-style:none; }
+.deliverables li { white-space:nowrap; }
+.separator { display:inline-block; width:1.25em; text-align:center; }
+
+/* The panel's one next step: a small ghost link whose padding hangs into the gutter, as on PyAI. */
+.asideLink { margin-left:-12px; color:var(--palette-cream); }
+.asideLink > svg { transition:transform .3s cubic-bezier(.22,1,.36,1); }
+.asideLink:is(:hover,:focus-visible) > svg { transform:translateX(2px); }
+@media (pointer:coarse) { .asideLink.asideLink { height:44px; } }
+@media (prefers-reduced-motion:reduce) { .asideLink > svg { transition:none; } }

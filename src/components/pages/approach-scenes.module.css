@@ -1,0 +1,98 @@
+/* Composition for the /approach scenes (approach-scenes.tsx), on the homepage scene palette
+   (home/application-scene-theme) that SceneCanvas brings. Sizes are in em so a scene scales with its frame. */
+
+/* Every scene sits on the same faint dashboard outline, as the homepage's and PyAI's do: a fixed
+   stage, narrower than the windows, so they overhang it the way the homepage cards do. */
+.stage { --stencil:color-mix(in srgb, var(--scene-outline) 45%, transparent); position:relative; isolation:isolate; justify-content:center; min-height:34em; }
+.stage::before { content:''; position:absolute; inset:0 2.25em; z-index:-1; border:1px solid var(--stencil); border-radius:1em; pointer-events:none;
+  background:
+    linear-gradient(var(--stencil), var(--stencil)) 0 3.5em / 100% 1px no-repeat,
+    linear-gradient(var(--stencil), var(--stencil)) 0 calc(100% - 3.5em) / 100% 1px no-repeat; }
+
+/* A window with an optional footer panel, composed from the kit's own window parts. */
+.window { composes:window from './scene-kit.module.css'; display:grid; gap:.25em; }
+.windowHeader { composes:header from './scene-kit.module.css'; }
+.windowTitle { composes:title from './scene-kit.module.css'; }
+.windowMeta { composes:meta from './scene-kit.module.css'; }
+.windowBody { composes:body from './scene-kit.module.css'; }
+.windowFooter { composes:body from './scene-kit.module.css'; display:flex; align-items:center; gap:.75em; padding-block:.85em; }
+.end { margin-left:auto; }
+.label { font-size:.84em; line-height:1.3; color:var(--scene-muted); }
+
+.check { width:1.1em; height:1.1em; flex:none; }
+.done { display:grid; place-items:center; flex:none; width:1.6em; height:1.6em; border-radius:50%; background:var(--scene-success); }
+.dot { display:inline-block; width:.5em; height:.5em; flex:none; border-radius:50%; background:var(--palette-sage); }
+.placeholder { display:block; flex:none; max-width:100%; height:.55em; border-radius:1em; background:var(--scene-control); }
+.code { font-family:ui-monospace, 'SF Mono', Menlo, monospace; font-size:.9em; letter-spacing:-.01em; }
+.rows { display:grid; }
+
+/* Two windows side by side, the second dropped below the first. */
+.pair { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:1.25em; align-items:start; }
+.first, .dropped { min-width:0; }
+.dropped { margin-top:4.5em; }
+
+/* ---------- Order record ---------- */
+/* Rows carry their own inset, so the open step's row can take a quiet fill edge to edge. */
+.recordBody { padding:.3em; }
+.record { display:grid; margin:0; }
+.record > div { position:relative; display:grid; grid-template-columns:7em minmax(0,1fr); align-items:baseline; gap:.75em; padding:.8em .75em; border-radius:.7em; }
+/* Hairlines between rows, inset to the text; the marked row needs none above or below it. */
+.record > div + div::before { content:''; position:absolute; top:0; left:.75em; right:.75em; height:1px; background:var(--scene-line); }
+.record > div[data-state='active']::before, .record > div[data-state='active'] + div::before { content:none; }
+.record > div[data-state='active'] { background:var(--scene-soft); }
+/* The reference reads as one word, not a column of figures. */
+.recordMeta { font-variant-numeric:normal; }
+.record dt { color:var(--scene-muted); }
+.record dd { margin:0; min-width:0; overflow-wrap:anywhere; }
+.record > div[data-state='held'] dd { color:var(--scene-muted); }
+.previous { color:var(--scene-muted); text-decoration-thickness:1px; }
+/* How far the request has come: one mark per step. */
+.steps { display:flex; gap:.25em; margin-left:auto; }
+.steps i { width:1.1em; height:.35em; border-radius:1em; background:var(--scene-control); }
+.steps i[data-on='true'] { background:var(--scene-ink); }
+
+/* ---------- Understand ---------- */
+/* The process as a line of steps. */
+.map { position:relative; display:grid; margin:0; padding:0; list-style:none; }
+.map::before { content:''; position:absolute; left:calc(.4em - .5px); top:1.2em; bottom:1.2em; width:1px; background:var(--scene-outline); opacity:.5; }
+.map li { position:relative; display:flex; align-items:center; gap:.8em; min-width:0; padding-block:.55em; }
+.node { position:relative; flex:none; width:.8em; height:.8em; border-radius:50%; background:var(--scene-paper); box-shadow:inset 0 0 0 1.5px var(--scene-ink); }
+/* Where time and cost go, per step: columns without numbers. */
+.columns { display:flex; align-items:flex-end; gap:.3em; height:4.5em; margin-top:.35em; }
+.columns i { flex:1; min-width:0; border-radius:.3em .3em .15em .15em; background:var(--scene-control); }
+.columns i[data-peak='true'] { background:var(--scene-ink); }
+
+/* ---------- Design ---------- */
+.approval { display:grid; gap:.45em; width:100%; min-width:0; }
+.approvalRow { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:.5em .75em; }
+
+/* ---------- Build ---------- */
+.file { display:flex; align-items:center; justify-content:space-between; gap:1em; min-width:0; }
+.rows .file { min-height:1.45em; }
+
+/* ---------- Validate ---------- */
+.readouts { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.7em 1.5em; width:100%; }
+.readouts > div { gap:.6em; }
+.track { position:relative; display:block; height:.45em; margin-block:.35em; border-radius:1em; background:var(--scene-control); }
+.track > i { position:absolute; inset:0 auto 0 0; width:var(--value); border-radius:inherit; background:var(--scene-ink); }
+/* The agreed target: a sage tick across the track, explained once under both readouts. */
+.track > b { position:absolute; top:-.4em; bottom:-.4em; left:var(--target); width:2px; margin-left:-1px; border-radius:1px; background:var(--palette-sage); }
+.targetNote { grid-column:1 / -1; display:flex; align-items:center; gap:.55em; font-size:.84em; color:var(--scene-muted); }
+.targetMark { flex:none; width:2px; height:1.1em; border-radius:1px; background:var(--palette-sage); }
+
+/* ---------- Hand over ---------- */
+.checklist { display:grid; margin:0; padding:0; list-style:none; }
+.checklist li { display:flex; align-items:center; gap:.75em; padding-block:.6em; border-top:1px solid var(--scene-line); }
+.checklist li:first-child { border-top:0; padding-top:0; }
+.checklist li:last-child { padding-bottom:0; }
+.doc { display:grid; gap:1em; }
+.doc > div { display:grid; gap:.45em; }
+.docHeading { font-weight:var(--font-weight-medium); font-variation-settings:'wght' var(--font-weight-medium),'ital' 100; }
+
+/* Narrow frames (phones): windows stack, the dropped one rises to meet the first, type a touch larger. */
+@container (max-width:480px) {
+  .stage { font-size:max(1em, 11px); min-height:0; padding-block:2em; }
+  .stage::before { inset:0 1em; }
+  .pair { grid-template-columns:minmax(0,1fr); gap:.75em; }
+  .dropped { margin-top:0; }
+}
