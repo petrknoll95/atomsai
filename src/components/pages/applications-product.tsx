@@ -33,7 +33,7 @@ export function ProductLockup({ name, id, className = '' }: { name: string; id?:
 function Actions({ links }: { links: ContentLink[] }) {
   return <>{links.map((link, index) => {
     const outbound = isOutbound(link.href);
-    return <ButtonLink key={link.label} href={link.href} size={index === 0 ? 'medium' : 'small'} variant={index === 0 ? 'primary' : 'ghost'}
+    return <ButtonLink key={link.label} href={link.href} size="medium" variant={index === 0 ? 'primary' : 'ghost'}
       className={`${styles.action} ${index === 0 ? '' : styles.quietAction}`}
       {...(outbound ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
       {link.label}{outbound && <span className="sr-only"> (opens in a new tab)</span>}
