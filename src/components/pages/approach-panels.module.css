@@ -20,3 +20,8 @@
 .asideLink:is(:hover,:focus-visible) > svg { transform:translateX(2px); }
 @media (pointer:coarse) { .asideLink.asideLink { height:44px; } }
 @media (prefers-reduced-motion:reduce) { .asideLink > svg { transition:none; } }
+
+/* The stage frame holds the tallest open stage (Hand over's outcome wraps to two lines), so switching
+   stages never moves the page below, as the Applications chapters' --visual-height does. */
+@media (min-width:900px) { .stageVisual.stageVisual { min-height:var(--stage-height, 632px); } }
+@media (min-width:900px) and (max-width:1199px) { .stageVisual { --stage-height:600px; } }

@@ -1,7 +1,7 @@
 import { ArrowIcon } from '@/components/arrow-icon';
 import { ButtonLink } from '@/components/ui';
 import type { ApproachSection } from './approach-content';
-import { StageScene } from './approach-scenes';
+import { StageScene, stageSummary } from './approach-scenes';
 import { ScenePanel } from './scene-panel';
 import { SectionIntro } from './section-intro';
 import styles from './approach-panels.module.css';
@@ -21,9 +21,10 @@ export function ApproachStages({ section }: { section: ApproachSection }) {
   return <section id="approach" className={`page-container ${styles.section}`} aria-labelledby="approach-heading">
     <SectionIntro id="approach-heading" title={section.title} lead={section.intro[0]} />
     <div id="step-1">
-      <ScenePanel label={section.label}
+      <ScenePanel label={section.label} visualClassName={styles.stageVisual}
         items={section.blocks.map((block, index) => {
           const stage = block.label || block.title;
+          const summary = stageSummary(index, block.list);
           return {
             id: slug(stage),
             label: number(index),
@@ -35,6 +36,8 @@ export function ApproachStages({ section }: { section: ApproachSection }) {
               <div className={styles.deliverables}>
                 <ul>{block.list.map(item => <li key={item}><span className={styles.separator} aria-hidden="true">·</span>{item}</li>)}</ul>
               </div>
+              {/* The scene is hidden from assistive tech; this is what it shows beyond the copy. */}
+              {summary && <p className="sr-only">{summary}</p>}
             </>,
             scene: <StageScene index={index} deliverables={block.list} />,
           };
