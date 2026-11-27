@@ -8,16 +8,18 @@
 .copy { display:flex; flex-direction:column; justify-content:flex-end; gap:40px; min-width:0; padding:48px 36px 48px 44px; }
 .list { display:flex; flex-direction:column; gap:10px; margin:0; padding:0; list-style:none; }
 .heading { margin:0; font:inherit; }
-.trigger { display:flex; width:100%; min-height:44px; align-items:center; text-align:left; cursor:pointer;
-  color:color-mix(in display-p3, var(--palette-cream) 42%, transparent); transition:color .35s ease; }
+/* Inactive steps stay at AA (4.5:1) on the panel: their titles are under the 24px large-text size on most widths. */
+.trigger { display:flex; flex-direction:column; justify-content:center; align-items:flex-start; gap:4px; width:100%; min-height:44px; text-align:left; cursor:pointer;
+  color:color-mix(in display-p3, var(--palette-cream) 58%, transparent); transition:color .35s ease; }
 .trigger:hover, .item[data-active='true'] .trigger { color:var(--palette-cream); }
 /* A visible ring on the dark panel; outranks the soft site-wide ring in styles/focus.css. */
 html .list .trigger:focus-visible { color:var(--palette-cream); outline:2px solid var(--palette-cream); outline-offset:4px; border-radius:6px; box-shadow:none; }
+.label { font-size:var(--text-label); line-height:20px; }
 .title { font-size:clamp(22px,1.9vw,28px); line-height:1.12; text-wrap:balance; }
 .detail { display:grid; grid-template-rows:0fr; opacity:0; transition:grid-template-rows .4s cubic-bezier(.25,.46,.45,.94), opacity .25s ease; }
 .detail > div { min-height:0; overflow:hidden; }
-/* Room for the ghost links' focus ring and hover fill, which hang 12px into the gutter. */
-.detail > div { margin-inline:-12px; padding-inline:12px; }
+/* Room for the ghost links' hover fill, which hangs 12px into the gutter, and for their focus ring outside it. */
+.detail > div { --hang:calc(12px + var(--focus-ring-width, 4px)); margin-inline:calc(-1 * var(--hang)); padding-inline:var(--hang); }
 .item[data-active='true'] .detail { grid-template-rows:1fr; opacity:1; }
 .detailCopy { display:flex; flex-direction:column; align-items:flex-start; gap:14px; padding:10px 0 12px; font-size:var(--text-body); line-height:1.5; color:color-mix(in display-p3, var(--palette-cream) 72%, transparent); }
 .detailCopy p { max-width:46ch; margin:0; text-wrap:pretty; }
@@ -44,6 +46,8 @@ html .list .trigger:focus-visible { color:var(--palette-cream); outline:2px soli
   .inlineVisual { container-type:inline-size; display:grid; place-items:center; margin:8px 0 4px; padding:28px 12px; border-radius:10px; background:var(--scene-frame); }
   .inlineScene { display:grid; place-items:center; width:100%; min-width:0; font-size:clamp(10px, 2.6cqi, 14px); }
   .title { font-size:22px; }
+  /* Steps open at once here, so the tapped one can be held in place (scene-panel.tsx). */
+  .detail { transition:none; }
 }
 @media (prefers-reduced-motion:reduce) {
   .trigger, .detail, .scene, .scene[data-active='true'] { transition:none; }

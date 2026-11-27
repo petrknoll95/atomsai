@@ -1,9 +1,17 @@
 'use client';
 
-import { useId, useRef, useState, type KeyboardEvent, type ReactNode } from 'react';
+import { ScrollSmoother } from 'gsap/ScrollSmoother';
+import { useId, useLayoutEffect, useRef, useState, type KeyboardEvent, type ReactNode } from 'react';
 import styles from './scene-panel.module.css';
 
-export type ScenePanelItem = { id: string; title: string; detail?: ReactNode; scene: ReactNode };
+export type ScenePanelItem = { id: string; title: string; label?: string; detail?: ReactNode; scene: ReactNode };
+
+/** Scroll the page by a few pixels at once, whether ScrollSmoother or the browser is scrolling it. */
+function scrollPageBy(delta: number) {
+  const smoother = ScrollSmoother.get();
+  if (smoother) smoother.scrollTop(smoother.scrollTop() + delta);
+  else window.scrollBy({ top: delta, behavior: 'instant' });
+}
 
 /**
  * The homepage "Now it's your turn" panel, for interior pages: one dark-green
@@ -18,7 +26,26 @@ export function ScenePanel({ label, items, aside, className = '', visualClassNam
 }) {
   const [active, setActive] = useState(0);
   const triggers = useRef<(HTMLButtonElement | null)[]>([]);
+  const anchor = useRef<{ index: number; top: number } | null>(null);
   const prefix = useId();
+
+  function select(index: number) {
+    if (index === active) return;
+    // On phones the open step's detail and scene sit in the list, so closing one above the
+    // tapped step would pull it up out of view: remember where it was and keep it there.
+    const trigger = triggers.current[index];
+    if (trigger && window.matchMedia('(max-width: 899px)').matches) anchor.current = { index, top: trigger.getBoundingClientRect().top };
+    setActive(index);
+  }
+
+  useLayoutEffect(() => {
+    const saved = anchor.current;
+    anchor.current = null;
+    const trigger = saved && triggers.current[saved.index];
+    if (!saved || !trigger) return;
+    const delta = trigger.getBoundingClientRect().top - saved.top;
+    if (Math.abs(delta) >= 1) scrollPageBy(delta);
+  }, [active]);
 
   function move(event: KeyboardEvent<HTMLButtonElement>, index: number) {
     const last = items.length - 1;
@@ -39,7 +66,8 @@ export function ScenePanel({ label, items, aside, className = '', visualClassNam
             <h3 className={styles.heading}>
               <button type="button" className={styles.trigger} ref={element => { triggers.current[index] = element; }}
                 id={`${prefix}-${item.id}-trigger`} aria-expanded={open} aria-controls={item.detail ? `${prefix}-${item.id}-detail` : undefined}
-                onClick={() => setActive(index)} onKeyDown={event => move(event, index)}>
+                onClick={() => select(index)} onKeyDown={event => move(event, index)}>
+                {item.label && <span className={styles.label}>{item.label}</span>}
                 <span className={`display ${styles.title}`}>{item.title}</span>
               </button>
             </h3>
