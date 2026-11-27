@@ -1,0 +1,34 @@
+/* What's in the box: the homepage section opener, then the "Now it's your turn" panel. */
+.box { padding-block:var(--section-half-space, 64px) var(--section-space, 128px); }
+
+/* The one section action: a small soft pill, as the homepage uses after a headline. */
+.action { position:relative; }
+@media (pointer:coarse) { .action::after { content:''; position:absolute; inset:-6px 0; } }
+
+/* Inside the active step: the description, then what you can build with it, then the docs. */
+.use { display:flex; align-items:baseline; gap:10px; font-size:var(--text-label); line-height:1.5;
+  color:color-mix(in display-p3, var(--palette-cream) 58%, transparent); }
+.useArrow { flex:none; translate:0 1px; }
+.docs { margin-top:-4px; }
+@media (pointer:coarse) { .docs.docs { height:44px; } }
+
+/* One quiet line that extends the list, as wide as the list column. */
+.more { max-width:min(62ch, calc((100% - 48px) * .88 / 1.88 + 12px)); margin-top:28px; font-size:var(--text-label); line-height:1.6;
+  color:var(--color-muted-foreground); text-wrap:pretty; }
+.moreLead { color:var(--color-foreground); }
+/* Text links in running copy, not buttons: a quiet underline, muted on hover. */
+.textLink { color:var(--color-foreground); text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px;
+  text-decoration-color:color-mix(in display-p3, currentColor 40%, transparent); transition:color .2s ease, text-decoration-color .2s ease; }
+.textLink > svg { margin-left:2px; }
+@media (hover:hover) { .textLink:hover { color:var(--color-muted-foreground); } }
+.textLink:focus-visible { border-radius:2px; }
+
+@media (max-width:1199px) {
+  .more { max-width:min(62ch, calc((100% - 32px) * .85 / 1.85 + 12px)); }
+}
+@media (max-width:899px) {
+  .more { max-width:62ch; margin-top:24px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .textLink { transition:none; }
+}
