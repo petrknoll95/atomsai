@@ -17,7 +17,8 @@ export function SceneCanvas({ children, width = 30, className = '' }: { children
 export function SceneWindow({ title, mark, meta, children, className = '' }: {
   title: ReactNode; mark?: string; meta?: ReactNode; children: ReactNode; className?: string;
 }) {
-  return <div className={`${styles.window} ${className}`}>
+  // A light card that can pass under the fixed header while the panel around it is dark.
+  return <div className={`${styles.window} ${className}`} data-header-backdrop="">
     <div className={styles.header}>
       {mark && <SceneMark src={mark} />}
       <span className={styles.title}>{title}</span>

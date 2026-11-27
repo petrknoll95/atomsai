@@ -117,13 +117,17 @@ const desktopMenus = useMemo(() => links.filter(link => link.children).map(link 
     const regions = Array.from(document.querySelectorAll<HTMLElement>('#smooth-content [data-theme], #smooth-content [data-header-theme]'));
     // Opt-in: a dark panel that shares its row with light content. When it sits under
     // only part of the header, one theme cannot suit every item, so show the backdrop.
-    const backdrops = Array.from(document.querySelectorAll<HTMLElement>('#smooth-content [data-header-backdrop]'));
+    // Light cards inside dark panels opt in too; they can appear later (a step's scene opening),
+    // so they are looked up on every update, and hidden ones (an inactive scene) are skipped.
+    const findBackdrops = () => Array.from(document.querySelectorAll<HTMLElement>('#smooth-content [data-header-backdrop]'))
+      .filter(region => region.checkVisibility?.({ visibilityProperty: true, opacityProperty: true }) ?? true);
+    const backdrops = findBackdrops();
     const update = () => {
       if (header.dataset.responsiveMenuOpen === 'true') { header.dataset.theme = 'light'; return; }
       if (header.dataset.desktopMenuOpen === 'true') { header.dataset.theme = 'light'; return; }
       // Read the rendered bounds, so ScrollSmoother and pinned hero movement agree.
       const bounds = header.getBoundingClientRect();
-      const backdrop = backdrops.some(region => {
+      const backdrop = findBackdrops().some(region => {
         const rect = region.getBoundingClientRect();
         const under = rect.top < bounds.bottom && rect.bottom > bounds.top && rect.left < bounds.right && rect.right > bounds.left;
         return under && (rect.left > bounds.left + 1 || rect.right < bounds.right - 1);

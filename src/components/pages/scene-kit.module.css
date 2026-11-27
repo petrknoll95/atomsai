@@ -7,6 +7,9 @@
   color:var(--scene-ink); font-family:var(--font-sans); line-height:1.45; text-align:left;
   font-weight:var(--font-weight-normal); font-variation-settings:'wght' var(--font-weight-normal),'ital' 100;
 }
+/* Secondary text in scenes stays at AA on the pale shell and on paper (the homepage palette's 58% does not).
+   Doubled to outrank the composed palette class on the same element. */
+.canvas.canvas { --scene-muted:color-mix(in srgb, var(--scene-ink) 72%, var(--scene-paper)); }
 .canvas * { box-sizing:border-box; }
 .canvas p { margin:0; }
 
