@@ -10,7 +10,8 @@ export type ScenePanelItem = { id: string; title: string; detail?: ReactNode; sc
  * panel with a list of steps on the left and the selected step's product scene
  * on the right. Each step is a disclosure button, so its detail can hold links.
  * Arrow keys, Home and End move between steps, as on the homepage.
- * Scenes picture what the detail says and stay hidden from assistive tech.
+ * Scenes picture what the detail says and stay hidden from assistive tech. Below
+ * 900px the frame beside the list gives way to the open step's scene inside it.
  */
 export function ScenePanel({ label, items, aside, className = '', visualClassName = '' }: {
   label: string; items: ScenePanelItem[]; aside?: ReactNode; className?: string; visualClassName?: string;
@@ -44,7 +45,11 @@ export function ScenePanel({ label, items, aside, className = '', visualClassNam
             </h3>
             {item.detail && <div className={styles.detail} id={`${prefix}-${item.id}-detail`} role="region" aria-labelledby={`${prefix}-${item.id}-trigger`}
               aria-hidden={!open} inert={!open}>
-              <div><div className={styles.detailCopy}>{item.detail}</div></div>
+              <div>
+                <div className={styles.detailCopy}>{item.detail}</div>
+                {/* Phones show the step's scene right under it, where the tap happened. */}
+                <div className={styles.inlineVisual} aria-hidden="true"><div className={styles.inlineScene}>{open && item.scene}</div></div>
+              </div>
             </div>}
           </li>;
         })}

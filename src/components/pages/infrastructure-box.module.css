@@ -5,9 +5,6 @@
 .action { position:relative; }
 @media (pointer:coarse) { .action::after { content:''; position:absolute; inset:-6px 0; } }
 
-/* ScenePanel clips each step's detail at the list edge, which cut the docs link's hover fill and
-   focus ring where the ghost button hangs into the gutter. Give the clip room on this panel. */
-.panel [role='region'] > div { margin-inline:-12px; padding-inline:12px; }
 
 /* Inside the active step: the description, then what you can build with it, then the docs.
    A product in beta says so first, in a small soft pill rather than an uppercase tag. */

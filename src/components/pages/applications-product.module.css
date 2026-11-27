@@ -25,21 +25,13 @@
   .chapter .visual { min-height: var(--visual-height); }
 }
 
-/* ServiceAgent's trade note: under the steps in the panel, or under the panel on phones. */
-.aside, .note { display: grid; gap: 8px; max-width: 46ch; }
-.aside p, .note p { margin: 0; }
+/* ServiceAgent's trade note, under the steps in the panel. */
+.aside { display: grid; gap: 8px; max-width: 46ch; }
+.aside p { margin: 0; }
 .aside { padding-top: 24px; border-top: 1px solid color-mix(in display-p3, var(--palette-cream) 14%, transparent); }
 .aside .noteTitle { color: var(--palette-cream); }
 .noteTitle { font-size: var(--text-body); line-height: 1.4;
   font-weight: var(--font-weight-medium); font-variation-settings: 'wght' var(--font-weight-medium), 'ital' 100; }
-.note { display: none; max-width: 56ch; margin-top: 32px; font-size: var(--text-body); line-height: 1.5; color: var(--color-muted-foreground); }
-.note .noteTitle { color: var(--color-foreground); }
-@media (max-width: 899px) {
-  /* Room above and below the dashboard outline once the frame sits under the steps. */
-  .chapter .visual { padding-block: 48px; }
-  .chapter :has(> .aside) { display: none; }
-  .note { display: grid; }
-}
 
 @media (pointer: coarse) {
   .action { min-height: 44px; }

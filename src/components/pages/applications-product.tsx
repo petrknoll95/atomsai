@@ -27,7 +27,7 @@ export function ProductLockup({ name, className = '' }: { name: string; classNam
   return <span className={`${lockupStyles.lockup} ${className}`}>
     <span className={lockupStyles.lockupMark} aria-hidden="true"
       style={{ maskImage: assetPath(`url("/assets/products/${name.toLowerCase()}-mark.svg")`) } as CSSProperties} />
-    <span className={lockupStyles.lockupName}>{name}</span>
+    <span>{name}</span>
   </span>;
 }
 
@@ -60,7 +60,7 @@ function StepDetail({ step }: { step: ApplicationsBlock }) {
   </>;
 }
 
-/** ServiceAgent's closing note on the trade: beside the steps on wide screens, under the panel on phones. */
+/** ServiceAgent's closing note on the trade, under the steps in the panel. */
 function TradeNote({ footer, className }: { footer: { title: string; body: string[] }; className: string }) {
   return <div className={className}>
     <p className={styles.noteTitle}>{footer.title}</p>
@@ -85,7 +85,5 @@ export function ApplicationsProduct({ section }: { section: ApplicationsSection 
         id: slug(step.title), title: step.title, detail: <StepDetail step={step} />, scene: scenes[index],
       }))}
       aside={section.footer && <TradeNote footer={section.footer} className={styles.aside} />} />
-    {/* On phones the note follows the panel, so each step's scene sits right under the steps. */}
-    {section.footer && <TradeNote footer={section.footer} className={styles.note} />}
   </section>;
 }
