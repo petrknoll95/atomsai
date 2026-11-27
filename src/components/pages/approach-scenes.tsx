@@ -8,10 +8,10 @@ import styles from './approach-scenes.module.css';
  * pale windows on a faint dashboard outline. One order record follows the five
  * workflow steps; one scene per approach stage pictures its three deliverables
  * as working artefacts. Words come from the page's own copy (the steps, the
- * record, the integration diagram, the stage copy) plus plain interface labels;
- * grey lines stand in for text a scene does not need to spell out, and nothing
- * carries a number the page does not. Scenes are pictures: ScenePanel hides them
- * from assistive tech, so each step's detail says in words what its scene adds.
+ * record, the integration diagram, the stage copy) plus plain interface labels,
+ * and nothing carries a number the page does not. Scenes are pictures: ScenePanel
+ * hides them from assistive tech, so each step's detail says in words what its
+ * scene adds.
  */
 
 const workflow = approachSection('workflow');
@@ -22,8 +22,15 @@ const processSteps = workflow.blocks.map(block => block.title);
 const systems = diagram[0]?.items ?? [];
 /** Move delivery, Approve, Reject. */
 const [action = '', approve = '', reject = ''] = diagram[2]?.items ?? [];
-const request = workflow.record?.rows[0]?.value ?? '';
-const policy = workflow.record?.rows[2]?.value ?? '';
+const record = workflow.record?.rows ?? [];
+/** Move Thu delivery to Mon. */
+const request = record[0]?.value ?? '';
+/** Free change · inside 48h: the rule AI applies on its own. */
+const policy = record[2]?.value ?? '';
+/** The same change outside the free window, which goes to a person. */
+const outsidePolicy = 'Change · outside 48h';
+/** Text + email sent (the record's confirmation, without its time). */
+const confirmation = record[4]?.value.split(' · ')[0] ?? '';
 
 /* ---------- Parts ---------- */
 
@@ -55,11 +62,6 @@ function Check() {
 
 function Done() {
   return <span className={styles.done}><Check /></span>;
-}
-
-/** A neutral grey line standing in for text. */
-function Placeholder({ width }: { width: number }) {
-  return <i className={styles.placeholder} style={{ width: `${width}em` }} />;
 }
 
 /** A readout without a number: how far a measure reaches, and where its target sits. */
@@ -159,7 +161,7 @@ function Design([sources, rules, approvals]: string[]) {
         </div>}>
         <div className={styles.rows}>
           <SceneRow end={<ScenePill tone="success">AI decides</ScenePill>}>{policy}</SceneRow>
-          <SceneRow end={<ScenePill>Needs a person</ScenePill>}><Placeholder width={7} /></SceneRow>
+          <SceneRow end={<ScenePill>Needs a person</ScenePill>}>{outsidePolicy}</SceneRow>
         </div>
       </Window>} />
   </Stage>;
@@ -167,51 +169,55 @@ function Design([sources, rules, approvals]: string[]) {
 
 /** Build: the work in your repository, your systems connected, all of it running in your environment. */
 function Build([repository, integrations, environment]: string[]) {
+  // Each folder names what it holds: the systems Design mapped, the rules it set, the scenarios Validate runs.
+  const folders = [['integrations/', systems.join(' · ')], ['decision-rules/', 'Inside 48h · Outside 48h'], ['evaluations/', 'Real scenarios']];
   return <Stage>
     <Pair
       first={<Window title={repository} meta={<code className={styles.code}>main</code>}>
         <div className={styles.rows}>
-          {['integrations/', 'decision-rules/', 'evaluations/'].map((path, index) => <SceneRow key={path}>
-            <span className={styles.file}><code className={styles.code}>{path}</code><Placeholder width={[6, 4.5, 5.5][index]} /></span>
-          </SceneRow>)}
+          {folders.map(([path, contents]) => <SceneRow key={path}><code className={styles.code}>{path}</code><span className={styles.label}>{contents}</span></SceneRow>)}
         </div>
       </Window>}
       second={<Window title={integrations} footer={<><i className={styles.dot} />{environment}</>}>
-        <div className={styles.rows}>{systems.slice(0, 3).map(system => <SceneRow key={system} end={<ScenePill tone="success">Connected</ScenePill>}>{system}</SceneRow>)}</div>
+        <div className={styles.rows}>{systems.map(system => <SceneRow key={system} end={<ScenePill tone="success">Connected</ScenePill>}>{system}</SceneRow>)}</div>
       </Window>} />
   </Stage>;
 }
 
-/** Validate: real scenarios run as an evaluation set, read out for quality, speed and cost against the agreed targets. */
+/** The delivery change as evaluation cases: each scenario, what it should come to, and a pass. */
+const evaluationCases = [[request, policy], ['Move a delivery outside 48h', 'Needs a person'], ['Confirm the change', confirmation]];
+
+/** Validate: real scenarios run as an evaluation set, read out for quality, speed and cost, both past the agreed targets. */
 function Validate([set, quality, speedAndCost]: string[]) {
   return <Stage width={38}>
     <Window title={set} meta="Real scenarios"
       footer={<div className={styles.readouts}>
         <SceneField label={quality}><Track value={86} target={72} /></SceneField>
-        <SceneField label={speedAndCost}><Track value={46} target={64} /></SceneField>
-        <span className={styles.targetNote}><b className={styles.targetMark} />Agreed target</span>
+        <SceneField label={speedAndCost}><Track value={78} target={64} /></SceneField>
+        <div className={styles.targetRow}>
+          <span className={styles.targetNote}><b className={styles.targetMark} />Agreed target</span>
+          <ScenePill tone="success"><Check />Targets met</ScenePill>
+        </div>
       </div>}>
       <div className={styles.rows}>
-        <SceneRow end={<Done />}>{request}</SceneRow>
-        <SceneRow end={<Done />}><Placeholder width={11} /></SceneRow>
-        <SceneRow end={<Done />}><Placeholder width={8.5} /></SceneRow>
+        {evaluationCases.map(([scenario, outcome]) => <SceneRow key={scenario} end={<Done />}>{scenario}<span className={styles.label}>{outcome}</span></SceneRow>)}
       </div>
     </Window>
   </Stage>;
 }
 
+/** What the runbook covers, in the page's words: where it runs, what a person checks, how it changes. */
+const runbook = [['Run', 'In your environment'], ['Review', 'Decisions that need a person'], ['Improve', 'Change a rule, re-run the evaluations']];
+
 /** Hand over: code, evaluations and runbook handed to your team; the runbook covers running, reviewing and improving it. */
-function HandOver([code, evaluations, runbook]: string[]) {
+function HandOver([code, evaluations, guide]: string[]) {
   return <Stage>
     <Pair
       first={<Window title="Handed to your team">
-        <ul className={styles.checklist}>{[code, evaluations, runbook].map(item => <li key={item}><Done />{item}</li>)}</ul>
+        <ul className={styles.checklist}>{[code, evaluations, guide].map(item => <li key={item}><Done />{item}</li>)}</ul>
       </Window>}
-      second={<Window title={runbook}>
-        <div className={styles.doc}>{[['Run', 9], ['Review', 7.5], ['Improve', 8.5]].map(([heading, width]) => <div key={heading}>
-          <span className={styles.docHeading}>{heading}</span>
-          <Placeholder width={width as number} /><Placeholder width={(width as number) - 2.5} />
-        </div>)}</div>
+      second={<Window title={guide}>
+        <div className={styles.rows}>{runbook.map(([heading, line]) => <SceneRow key={heading}>{heading}<span className={styles.label}>{line}</span></SceneRow>)}</div>
       </Window>} />
   </Stage>;
 }
@@ -222,4 +228,13 @@ const stageScenes = [Understand, Design, Build, Validate, HandOver];
 export function StageScene({ index, deliverables }: { index: number; deliverables: string[] }) {
   const Scene = stageScenes[index];
   return Scene ? Scene(deliverables) : null;
+}
+
+/**
+ * Validate's scene in words, for that stage's detail (the scene is hidden from assistive tech):
+ * every case passes and both readouts clear their agreed targets. Other stages get ''.
+ */
+export function stageSummary(index: number, [set = '', quality = '', speedAndCost = '']: string[]) {
+  if (index !== 3) return '';
+  return `Every scenario in the ${set.toLowerCase()} passes, and both readouts, ${quality.toLowerCase()} and ${speedAndCost.toLowerCase()}, clear their agreed targets.`;
 }
