@@ -11,6 +11,7 @@
   --ui-radius:20px;
   --ui-inset:4px;
   --ui-inner-radius:calc(var(--ui-radius) - var(--ui-inset));
+  --interrupt-height:36px;
   position:relative; isolation:isolate; display:flex; flex-direction:column; gap:32px; min-width:0; margin:0;
   padding:24px 24px 56px; border-radius:var(--radius-card); background:var(--scene-frame);
   font-family:var(--font-sans); font-size:14px; line-height:1.45;
@@ -41,9 +42,9 @@
 @keyframes talk { from { transform:scaleY(.25); } to { transform:scaleY(1); } }
 /* Newest lines sit at the bottom; older ones fade out of the top edge. */
 .transcript { --transcript-height:292px; display:flex; flex-direction:column; justify-content:flex-end; gap:12px; height:var(--transcript-height); margin:0; padding:0; overflow:hidden; list-style:none; -webkit-mask-image:linear-gradient(to bottom,transparent,#000 56px); mask-image:linear-gradient(to bottom,transparent,#000 56px); }
-/* An ended call hides the interrupt control (36px + 14px gap) and gives its space to the
+/* An ended call hides the interrupt control (its height + the 14px gap) and gives its space to the
    transcript, which scrolls back from the newest line so the whole exchange stays reachable. */
-.demo[data-phase='complete'] .transcript { justify-content:flex-start; height:calc(var(--transcript-height) + 50px); overflow-y:auto; overscroll-behavior:contain; }
+.demo[data-phase='complete'] .transcript { justify-content:flex-start; height:calc(var(--transcript-height) + var(--interrupt-height) + 14px); overflow-y:auto; overscroll-behavior:contain; }
 .demo[data-phase='complete'] .transcript > :first-child { margin-top:auto; }
 .message { display:flex; flex-direction:column; align-items:flex-start; gap:4px; max-width:84%; animation:enter .35s ease both; }
 .message[data-speaker='caller'] { align-self:flex-end; align-items:flex-end; text-align:right; }
@@ -54,7 +55,7 @@
 .event { align-self:center; max-width:100%; animation:enter .35s ease both; }
 .event p { padding:5px 10px; border:1px dashed color-mix(in srgb,var(--ui-ink) 28%,transparent); border-radius:999px; font-size:11px; line-height:16px; color:var(--ui-muted); text-align:center; }
 @keyframes enter { from { opacity:0; transform:translateY(6px); } }
-.interrupt { align-self:flex-end; height:36px; padding:0 16px; border-radius:999px; --button-clip-radius:999px; --button-fill:transparent; --button-stroke:color-mix(in srgb,var(--ui-ink) 22%,transparent); --button-stroke-width:1px; color:var(--ui-muted); font-size:13px; cursor:default; transition:color .2s ease; }
+.interrupt { align-self:flex-end; height:var(--interrupt-height); padding:0 16px; border-radius:999px; --button-clip-radius:999px; --button-fill:transparent; --button-stroke:color-mix(in srgb,var(--ui-ink) 22%,transparent); --button-stroke-width:1px; color:var(--ui-muted); font-size:13px; cursor:default; transition:color .2s ease; }
 .interrupt[data-ready='true'] { --button-fill:var(--ui-ink); --button-stroke:var(--ui-ink); color:var(--palette-paper); cursor:pointer; }
 .interrupt[data-ready='true']::after { content:''; position:absolute; inset:-5px; border:1px solid color-mix(in srgb,var(--ui-ink) 40%,transparent); border-radius:inherit; pointer-events:none; animation:ready 1.2s ease-out infinite; }
 @keyframes ready { from { opacity:1; transform:scale(.94); } to { opacity:0; transform:scale(1.08); } }
@@ -70,7 +71,8 @@
   color:var(--scene-paper); transition:color .3s ease,var(--focus-transition); }
 .scenarios>button:is(:hover,:focus-visible), .scenarios>button[aria-pressed='true'] { --button-fill:var(--scene-paper); color:var(--scene-ink); }
 html .scenarios>button:focus-visible { outline:2px solid var(--palette-cream); outline-offset:3px; box-shadow:none; }
-@media (pointer:coarse) { .scenarios>button { min-height:44px; } }
+/* Touch: the timed interrupt control is a full 44px target, as its neighbours are. */
+@media (pointer:coarse) { .scenarios>button { min-height:44px; } .demo { --interrupt-height:44px; } }
 
 @media (max-width:1199px) {
   .transcript { --transcript-height:272px; }
