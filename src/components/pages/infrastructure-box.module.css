@@ -5,6 +5,10 @@
 .action { position:relative; }
 @media (pointer:coarse) { .action::after { content:''; position:absolute; inset:-6px 0; } }
 
+/* ScenePanel clips each step's detail at the list edge, which cut the docs link's hover fill and
+   focus ring where the ghost button hangs into the gutter. Give the clip room on this panel. */
+.panel [role='region'] > div { margin-inline:-12px; padding-inline:12px; }
+
 /* Inside the active step: the description, then what you can build with it, then the docs. */
 .use { display:flex; align-items:baseline; gap:10px; font-size:var(--text-label); line-height:1.5;
   color:color-mix(in display-p3, var(--palette-cream) 58%, transparent); }
@@ -22,6 +26,11 @@
 .textLink > svg { margin-left:2px; }
 @media (hover:hover) { .textLink:hover { color:var(--color-muted-foreground); } }
 .textLink:focus-visible { border-radius:2px; }
+/* Inline links stay text, but get a finger-sized hit area on touch screens. */
+@media (pointer:coarse) {
+  .textLink { position:relative; }
+  .textLink::after { content:''; position:absolute; inset:-13px -4px; }
+}
 
 @media (max-width:1199px) {
   .more { max-width:min(62ch, calc((100% - 32px) * .85 / 1.85 + 12px)); }
